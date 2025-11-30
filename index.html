@@ -47,8 +47,8 @@
             ResponsiveContainer, Brush, BarChart, AreaChart, Area, Cell 
         } = Recharts;
 
-        // --- SAMPLE DATA FALLBACK ---
-        // Used if 'All_Sermons_Clean.txt' cannot be fetched (e.g. in preview mode)
+        // --- EMBEDDED STARTING DATA (Sample from your uploads) ---
+        // This ensures the site works immediately even if the external fetch fails.
         const DEFAULT_DATA_CONTENT = `================================================================================
 TUCSON TABERNACLE SERMON ARCHIVE
 Total Sermons: 413
@@ -205,7 +205,7 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
             return cleaned.trim();
         };
 
-        // --- Icons (Moved inside Babel script to fix SyntaxError) ---
+        // --- Icons (Moved inside Babel script) ---
         const ChevronDown = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="6 9 12 15 18 9"/></svg>;
         const ChevronUp = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="18 15 12 9 6 15"/></svg>;
         const Upload = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>;
@@ -355,8 +355,8 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
                     } catch (err) {
                         console.warn("Auto-fetch failed or preview mode:", err);
                         // Fallback: Load sample data
-                        setOriginalText(FALLBACK_DATA);
-                        processSermonText(FALLBACK_DATA);
+                        setOriginalText(DEFAULT_DATA_CONTENT);
+                        processSermonText(DEFAULT_DATA_CONTENT);
                         setAvailableChannels([{ name: "Sample Data", filename: "sample" }]);
                         setSelectedChannelKey("Sample Data");
                     } finally {
@@ -389,8 +389,8 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
                 const channelConfig = availableChannels.find(c => c.name === newKey);
                 if (channelConfig) {
                     if (channelConfig.filename === "sample") {
-                        setOriginalText(FALLBACK_DATA);
-                        processSermonText(FALLBACK_DATA);
+                        setOriginalText(DEFAULT_DATA_CONTENT);
+                        processSermonText(DEFAULT_DATA_CONTENT);
                     } else {
                         loadChannelData(channelConfig.filename);
                     }
