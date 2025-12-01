@@ -3,6 +3,10 @@ import re
 import json
 import datetime
 import argparse
+import random
+import time
+import requests
+import xml.etree.ElementTree as ET
 import scrapetube
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
@@ -10,6 +14,22 @@ from pytubefix.cli import on_progress
 # --- CONFIGURATION ---
 CONFIG_FILES = ["channels.json", "config.json"]
 DATA_DIR = "data"
+
+# Standard Browser User-Agents (From your working script)
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15"
+]
+
+def get_random_headers():
+    return {
+        "User-Agent": random.choice(USER_AGENTS),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.youtube.com/",
+    }
 
 def load_config():
     for config_file in CONFIG_FILES:
@@ -52,53 +72,77 @@ URL:     https://www.youtube.com/watch?v={video_id}
 """
     return header + transcript_text + "\n"
 
+def xml_to_text(xml_content):
+    """
+    Parses the raw XML transcript from YouTube into clean text.
+    """
+    try:
+        root = ET.fromstring(xml_content)
+        clean_lines = []
+        
+        for child in root:
+            if child.tag == 'text':
+                text = child.text or ""
+                # Decode HTML entities manually just in case
+                text = text.replace('&nbsp;', ' ').replace('&#39;', "'").replace('&quot;', '"').replace('&amp;', '&')
+                text = " ".join(text.split())
+                
+                if text:
+                    clean_lines.append(text)
+        return " ".join(clean_lines)
+    except Exception as e:
+        print(f"XML Parsing Error: {e}")
+        return None
+
 def get_transcript_text(video_id):
     """
-    Fetches transcript using pytubefix.
+    Fetches transcript using the side-channel method (requests + spoofed headers)
+    adapted from transcript_scraper.py.
     """
     url = f"https://www.youtube.com/watch?v={video_id}"
+    
+    # Initialize YouTube object
+    # Note: verify if use_oauth=True is strictly necessary for your specific videos. 
+    # Usually False is better for CI/CD unless you have age-gated content.
+    yt = YouTube(url, use_oauth=False, allow_oauth_cache=False, on_progress_callback=on_progress)
+    
+    # 1. Get the Caption Track Object
     try:
-        # Initialize YouTube object
-        # use_oauth=False helps avoid login prompts in headless environments
-        yt = YouTube(url, use_oauth=False, allow_oauth_cache=False, on_progress_callback=on_progress)
+        # Trigger title fetch to ensure metadata is loaded
+        _ = yt.title 
         
-        # pytubefix captions search
-        caption = None
+        caption_track = None
+        # Priority search for English captions
+        if 'en' in yt.captions: caption_track = yt.captions['en']
+        elif 'a.en' in yt.captions: caption_track = yt.captions['a.en']
+        elif 'en-US' in yt.captions: caption_track = yt.captions['en-US']
         
-        # 1. Try standard English ('en')
-        try: caption = yt.captions['en']
-        except: pass
-            
-        # 2. Try auto-generated English ('a.en')
-        if not caption:
-            try: caption = yt.captions['a.en']
-            except: pass
-        
-        # 3. Fallback: Search for any code containing 'en'
-        if not caption:
+        # Fallback search
+        if not caption_track:
             for code in yt.captions:
-                if 'en' in code.code:
-                    caption = code
+                if code.code.startswith('en'):
+                    caption_track = yt.captions[code]
                     break
         
-        if not caption:
-            # List available codes for debugging log
+        if not caption_track:
+             # Debugging: List available codes
             available = [c.code for c in yt.captions]
             raise Exception(f"No English captions found. Available: {available}")
 
-        # Generate SRT (Timed Text)
-        srt_text = caption.generate_srt_captions()
+        # 2. Download Content (Side-Channel Request)
+        # This is the secret sauce from your working script
+        print(f"   Downloading caption XML from: {caption_track.url[:50]}...")
+        response = requests.get(caption_track.url, headers=get_random_headers())
         
-        # Clean SRT to plain text (remove timestamps and line numbers)
-        lines = srt_text.splitlines()
-        clean_lines = []
-        for line in lines:
-            if '-->' in line: continue      # Skip timestamps
-            if line.strip().isdigit(): continue # Skip sequence numbers
-            if not line.strip(): continue       # Skip empty lines
-            clean_lines.append(line.strip())
-            
-        return " ".join(clean_lines)
+        if response.status_code == 200:
+            clean_text = xml_to_text(response.text)
+            if not clean_text:
+                raise Exception("Transcript downloaded but parsed empty.")
+            return clean_text
+        elif response.status_code == 429:
+            raise Exception("Rate Limit (429) encountered during caption download.")
+        else:
+            raise Exception(f"HTTP Error {response.status_code} fetching caption.")
 
     except Exception as e:
         raise e
@@ -161,6 +205,9 @@ def process_channel(church_name, config, limit=10):
         print(f"NEW CONTENT FOUND: {title} ({video_id})")
 
         try:
+            # Add a small delay to be polite to YouTube API
+            time.sleep(random.uniform(1, 3))
+            
             text_formatted = get_transcript_text(video_id)
             entry = format_sermon_entry(video_id, title, fallback_date, text_formatted, church_name)
             new_entries.append(entry)
