@@ -25,7 +25,6 @@ def get_existing_video_ids(filepath):
         return set()
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    # Matches: youtube.com/watch?v=ID
     ids = set(re.findall(r'youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})', content))
     return ids
 
@@ -60,22 +59,20 @@ def get_transcript_text(video_id):
     url = f"https://www.youtube.com/watch?v={video_id}"
     try:
         # Initialize YouTube object
-        # use_oauth=False helps avoid login prompts in headless mode
+        # use_oauth=False helps avoid login prompts in headless environments
         yt = YouTube(url, use_oauth=False, allow_oauth_cache=False, on_progress_callback=on_progress)
         
-        # 1. Try standard English captions
+        # pytubefix captions search
         caption = None
-        try:
-            caption = yt.captions['en']
-        except:
-            pass
+        
+        # 1. Try standard English ('en')
+        try: caption = yt.captions['en']
+        except: pass
             
         # 2. Try auto-generated English ('a.en')
         if not caption:
-            try:
-                caption = yt.captions['a.en']
-            except:
-                pass
+            try: caption = yt.captions['a.en']
+            except: pass
         
         # 3. Fallback: Search for any code containing 'en'
         if not caption:
@@ -85,7 +82,7 @@ def get_transcript_text(video_id):
                     break
         
         if not caption:
-            # List available codes for debugging
+            # List available codes for debugging log
             available = [c.code for c in yt.captions]
             raise Exception(f"No English captions found. Available: {available}")
 
@@ -116,11 +113,12 @@ def process_channel(church_name, config, limit=10):
     print(f"\n--------------------------------------------------")
     print(f"Processing Channel: {church_name}")
     
-    # Remove sub-paths to ensure we scan the root channel
+    # Clean URL to get base channel
     base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
+    print(f"Base URL: {base_channel_url}")
     
     existing_ids = get_existing_video_ids(filepath)
-    print(f"Found {len(existing_ids)} existing videos in database.")
+    print(f"Found {len(existing_ids)} existing videos.")
 
     all_videos = []
     
