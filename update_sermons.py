@@ -4,6 +4,7 @@ import json
 import datetime
 import argparse
 import scrapetube
+import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
 
@@ -17,7 +18,6 @@ def load_config():
             print(f"Loading configuration from: {config_file}")
             with open(config_file, 'r') as f:
                 return json.load(f)
-    
     print(f"ERROR: No configuration file found. Checked: {CONFIG_FILES}")
     return {}
 
@@ -26,7 +26,6 @@ def get_existing_video_ids(filepath):
         return set()
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    # Matches: youtube.com/watch?v=ID
     ids = set(re.findall(r'youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})', content))
     return ids
 
@@ -56,26 +55,28 @@ URL:     https://www.youtube.com/watch?v={video_id}
 
 def get_transcript_text(video_id):
     """
-    Tries to fetch transcript using multiple methods to be robust against library version issues.
+    Fetches transcript using standard API for version 0.6.2
     """
     formatter = TextFormatter()
     
-    # Method 1: Modern list_transcripts (preferred)
     try:
         transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-        # Prefer manual English, fallback to auto
+        
+        # Prioritize English
         try:
             transcript = transcript_list.find_manually_created_transcript(['en'])
         except:
-            transcript = transcript_list.find_generated_transcript(['en'])
+            try:
+                transcript = transcript_list.find_generated_transcript(['en'])
+            except:
+                # If no English, grab the first available (e.g. auto-translated or original)
+                # This is a permissive fallback
+                transcript = transcript_list.find_transcript(['en']) 
         
         return formatter.format_transcript(transcript.fetch())
-    except AttributeError:
-        # Fallback for "no attribute list_transcripts" error
-        print(f"Warning: list_transcripts missing. Trying legacy get_transcript for {video_id}...")
-        transcript_data = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
-        return formatter.format_transcript(transcript_data)
+        
     except Exception as e:
+        # Re-raise exception to be handled by the caller's logging
         raise e
 
 def process_channel(church_name, config, limit=10):
@@ -83,12 +84,13 @@ def process_channel(church_name, config, limit=10):
     filename = config['filename']
     filepath = os.path.join(DATA_DIR, filename)
     
+    # Ensure data directory exists
     os.makedirs(DATA_DIR, exist_ok=True)
 
     print(f"\n--------------------------------------------------")
     print(f"Processing Channel: {church_name}")
     
-    # Clean URL
+    # URL Parsing
     base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
     print(f"Base URL: {base_channel_url}")
 
@@ -103,7 +105,8 @@ def process_channel(church_name, config, limit=10):
         streams = list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=limit))
         print(f"Found {len(streams)} streams.")
         all_videos.extend(streams)
-    except: pass
+    except Exception as e:
+        print(f"Stream scan error: {e}")
 
     # Scan Videos
     try:
@@ -111,7 +114,8 @@ def process_channel(church_name, config, limit=10):
         uploads = list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=limit))
         print(f"Found {len(uploads)} videos.")
         all_videos.extend(uploads)
-    except: pass
+    except Exception as e:
+        print(f"Video scan error: {e}")
 
     unique_videos = {v['videoId']: v for v in all_videos}.values()
     
@@ -126,10 +130,8 @@ def process_channel(church_name, config, limit=10):
 
     for video in unique_videos:
         video_id = video['videoId']
-        try:
-            title = video['title']['runs'][0]['text']
-        except:
-            title = "Unknown Title"
+        try: title = video['title']['runs'][0]['text']
+        except: title = "Unknown Title"
         
         if video_id in existing_ids:
             continue
@@ -141,9 +143,9 @@ def process_channel(church_name, config, limit=10):
             entry = format_sermon_entry(video_id, title, fallback_date, text_formatted, church_name)
             new_entries.append(entry)
             print(f"✅ Transcript downloaded.")
-            
         except Exception as e:
-            print(f"❌ Skipping {video_id}: {e}")
+            # This captures errors like "Transcripts Disabled" or API failures
+            print(f"❌ Skipping {video_id}: {str(e)}")
 
     if new_entries:
         print(f"Writing {len(new_entries)} new sermons to {filepath}...")
@@ -156,17 +158,13 @@ def process_channel(church_name, config, limit=10):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--limit', type=int, default=10, help='Max videos to check per channel')
+    parser.add_argument('--limit', type=int, default=10)
     args = parser.parse_args()
 
-    print("Starting Update Script...")
-    channels = load_config()
+    print(f"YOUTUBE TRANSCRIPT API VERSION: {youtube_transcript_api.__version__}")
     
-    if not channels:
-        print("EXITING: No channels found.")
-        return
-
-    print(f"Found {len(channels)} channels in config.")
+    channels = load_config()
+    if not channels: return
 
     for name, config in channels.items():
         process_channel(name, config, args.limit)
