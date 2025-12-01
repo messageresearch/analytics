@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tucson Tabernacle William Branham Mention Tracker</title>
+    <title>Sermon Mention Analytics</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -47,70 +47,9 @@
             ResponsiveContainer, Brush, BarChart, AreaChart, Area, Cell 
         } = Recharts;
 
-        // --- EMBEDDED STARTING DATA (Sample from your uploads) ---
-        // This ensures the site works immediately even if the external fetch fails.
-        const DEFAULT_DATA_CONTENT = `================================================================================
-TUCSON TABERNACLE SERMON ARCHIVE
-Total Sermons: 413
-================================================================================
-
-
-################################################################################
-START OF FILE: 2020-03-18 - Tucson Tabernacle Service Wednesday March 18th, 2020 7 PM - Unknown Speaker - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2020-03-18
-Title:   Tucson Tabernacle Service Wednesday March 18th, 2020 7 PM
-Speaker: Unknown Speaker
-URL:     https://www.youtube.com/watch?v=4Brr4Txav8A
-========================================
-
-Good evening god bless you to those of you here in the sanctuary and to all of you listening in. Lord prepare me to be a sanctuary. Brother Branham taught us that we are the temple of the Holy Ghost. As William Branham said in the message, we must be born again. We look at the eagle age and we see the prophet of God. Brother Branham always pointed us back to the word. 
-
-################################################################################
-START OF FILE: 2020-03-22 - Tucson Tabernacle Service Sunday March 22nd, 2020 10 AM - Unknown Speaker - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2020-03-22
-Title:   Tucson Tabernacle Service Sunday March 22nd, 2020 10 AM
-Speaker: Unknown Speaker
-URL:     https://www.youtube.com/watch?v=xyz
-========================================
-
-We gather today in his name. The days are evil but we have a shelter. As Brother Branham said, the name of the Lord is a strong tower. We run into it and are safe. William Branham saw this day coming.
-
-################################################################################
-START OF FILE: 2020-04-01 - Prayer Meeting - Brother Daniel Evans - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2020-04-01
-Title:   Wednesday Prayer Meeting
-Speaker: Brother Daniel Evans
-URL:     https://www.youtube.com/watch?v=abc
-========================================
-
-We are here to pray. Prayer changes things. We believe the message. We believe what was spoken by the prophet. Brother Branham dedicated his life to prayer.
-
-################################################################################
-START OF FILE: 2020-04-05 - The Token on Display - Brother Daniel Evans - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2020-04-05
-Title:   The Token on Display
-Speaker: Brother Daniel Evans
-URL:     https://www.youtube.com/watch?v=def
-========================================
-
-The token must be on display. It is the life of Christ in you. William Branham preached the Token message. It is the seal of God.
-
+        // --- EMBEDDED DEFAULT DATA (Fallback only) ---
+        // Used if channels.json fails to load (e.g. local preview without server)
+        const DEFAULT_DATA_CONTENT = `
 ################################################################################
 START OF FILE: 2025-11-16 - Persecution of the Saints - Brother Daniel Evans - Clean.txt
 ################################################################################
@@ -120,52 +59,11 @@ SERMON DETAILS
 Date:    2025-11-16
 Title:   Persecution of the Saints and Standing on the Word of God
 Speaker: Brother Daniel Evans
+Church:  Tucson Tabernacle (Sample)
 URL:     https://www.youtube.com/watch?v=I-HYR1ldGK0
 ========================================
 
 God bless you saints. We are standing on the Rock. We remember what Brother Branham told us about the third pull. It is here. The bride is making herself ready. As Brother William Branham said, the squeeze is coming. But we fear not. We hold to the message of the hour.
-
-################################################################################
-START OF FILE: 2025-11-19 - What House Will You Build Me - Daniel Evans - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2025-11-19
-Title:   What House Will You Build Me? Laying a Foundation for the Dedication
-Speaker: Brother Daniel Evans
-URL:     https://www.youtube.com/watch?v=_ukKW_3ncyc
-========================================
-
-We are building a house for the Lord. Not just this building, but our hearts. Brother Branham dedicated his life. We dedicate this tabernacle. William Branham was a sign to this generation. We follow that sign.
-
-################################################################################
-START OF FILE: 2025-11-23 - Tucson Tabernacle Church Dedication Day 2 - Steeve Brisson - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2025-11-23
-Title:   Tucson Tabernacle Church Dedication, Day 2, Healer of the Broken Pieces
-Speaker: Steeve Brisson
-URL:     https://www.youtube.com/watch?v=_BdzJ47BDIE
-========================================
-
-He heals the broken pieces. Just as he healed the clay vessel in the potter's house. Brother Branham spoke of the potter and the clay. We are clay in his hands. William Branham brought us this truth.
-
-################################################################################
-START OF FILE: 2025-11-23 - Dedicating the True Tabernacle - Daniel Evans - Clean.txt
-################################################################################
-
-SERMON DETAILS
-========================================
-Date:    2025-11-23
-Title:   Dedicating the True Tabernacle, Tucson Tabernacle Church Dedication, Day 3
-Speaker: Brother Daniel Evans
-URL:     https://www.youtube.com/watch?v=N4ifq1b_FHo
-========================================
-
-This is the day of dedication. We dedicate this place to the Lord Jesus Christ. We thank God for the message of the hour sent through his servant Brother Branham. As William Branham said, the token must be on display. We display that token today.
 `;
 
         // --- Helpers ---
@@ -333,6 +231,7 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
                     setIsProcessing(true);
                     try {
                         // 1. Fetch channels.json config
+                        // We look for 'channels.json' in the same directory
                         const configRes = await fetch('channels.json');
                         if (!configRes.ok) throw new Error("Config not found");
                         
@@ -347,14 +246,16 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
                             const firstChannel = channelList[0];
                             setSelectedChannelKey(firstChannel.name);
                             
-                            // Load its data
+                            // Load its data (file path from config, usually in data/)
+                            // Note: Python script saves to data/, so we fetch from data/
+                            // But if the config has "filename": "TucsonTabernacle.txt", we assume it is in data/
                             await loadChannelData(firstChannel.filename);
                         } else {
                             throw new Error("No channels in config");
                         }
                     } catch (err) {
                         console.warn("Auto-fetch failed or preview mode:", err);
-                        // Fallback: Load sample data
+                        // Fallback: Load sample data so app isn't empty
                         setOriginalText(DEFAULT_DATA_CONTENT);
                         processSermonText(DEFAULT_DATA_CONTENT);
                         setAvailableChannels([{ name: "Sample Data", filename: "sample" }]);
@@ -369,7 +270,7 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
             const loadChannelData = async (filename) => {
                 setIsProcessing(true);
                 try {
-                    // Look in data/ folder
+                    // Look in data/ folder by default as per user instructions
                     const res = await fetch(`data/${filename}`);
                     if (!res.ok) throw new Error(`File ${filename} not found`);
                     const text = await res.text();
@@ -378,6 +279,9 @@ This is the day of dedication. We dedicate this place to the Lord Jesus Christ. 
                 } catch (err) {
                     console.error(err);
                     setError(`Failed to load data for ${filename}`);
+                    // Fallback to embedded sample if file fetch fails
+                    setOriginalText(DEFAULT_DATA_CONTENT);
+                    processSermonText(DEFAULT_DATA_CONTENT);
                 } finally {
                     setIsProcessing(false);
                 }
