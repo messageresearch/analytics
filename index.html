@@ -8,8 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
     <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
@@ -32,13 +34,12 @@
             const [fullText, setFullText] = useState("Loading text...");
             
             useEffect(() => {
-                // Try fetching relative to where index.html is
+                // Fetch the raw text file directly from GitHub Pages
+                // We handle the case where data might be missing
                 fetch(sermon.path)
                     .then(res => {
-                        if (res.ok) return res.text();
-                        // Fallback: Try looking in root if data folder isn't found
-                        const filename = sermon.path.split('/').pop();
-                        return "Text not found. Ensure the 'data' folder is uploaded to GitHub.";
+                        if (!res.ok) return "Transcript text not found. Ensure the 'data' folder is uploaded to GitHub in the root directory.";
+                        return res.text();
                     })
                     .then(setFullText)
                     .catch(err => setFullText("Error loading transcript."));
@@ -77,9 +78,6 @@
             const [view, setView] = useState('dashboard');
             const [selectedChurches, setSelectedChurches] = useState([]);
             
-            // Track where we found the data (root or site_api folder) to build subsequent paths
-            const [apiPrefix, setApiPrefix] = useState("site_api/");
-
             // Search State
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
@@ -89,45 +87,39 @@
             // Modal State
             const [selectedSermon, setSelectedSermon] = useState(null);
 
-            // 1. Load Metadata with Fallback
+            // 1. Load Metadata with Fallback and Error Handling
             useEffect(() => {
                 const loadData = async () => {
                     try {
-                        // Attempt 1: Look in site_api/ folder (Standard)
+                        // Check if file exists in site_api/
                         let response = await fetch('site_api/metadata.json');
-                        let prefix = "site_api/";
                         
-                        // Attempt 2: Look in root (Common Upload Mistake)
                         if (!response.ok) {
-                            console.warn("site_api/metadata.json not found. Trying root metadata.json...");
-                            response = await fetch('metadata.json');
-                            prefix = ""; 
-                        }
-
-                        if (!response.ok) {
-                            throw new Error("Could not find metadata.json in 'site_api/' or root.");
+                            // If failed, check if user accidentally put it in root
+                            const rootResponse = await fetch('metadata.json');
+                            if (rootResponse.ok) {
+                                throw new Error("File Mismatch: 'metadata.json' is in the root folder, but the app expects it in a folder named 'site_api'. Please create a folder named 'site_api' on GitHub and move your JSON files into it.");
+                            }
+                            throw new Error("Could not find 'site_api/metadata.json'. Did you upload the 'site_api' folder to GitHub?");
                         }
 
                         const data = await response.json();
-                        setApiPrefix(prefix);
                         setMeta(data.sermons);
                         setTotalChunks(data.totalChunks || 0);
                         
-                        // Default to all churches selected
                         const unique = [...new Set(data.sermons.map(s => s.church))];
                         setSelectedChurches(unique);
                         setLoading(false);
                     } catch (err) {
-                        console.error("Fatal Error:", err);
+                        console.error(err);
                         setError(err.message);
                         setLoading(false);
                     }
                 };
-
                 loadData();
             }, []);
 
-            // 2. Search Logic
+            // 2. Search Logic (Chunked Loading)
             const handleSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
                 setIsSearching(true);
@@ -137,20 +129,21 @@
                 const term = searchQuery.toLowerCase();
                 const matches = [];
 
-                // Loop through all chunks using the detected prefix
+                // Loop through all chunks
                 for (let i = 0; i < totalChunks; i++) {
                     setSearchProgress(`Scanning database chunk ${i + 1} of ${totalChunks}...`);
                     try {
-                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
-                        if (!res.ok) continue;
-                        
+                        const res = await fetch(`site_api/text_chunk_${i}.json`);
+                        if (!res.ok) continue; 
                         const chunk = await res.json();
                         
                         // Search inside this chunk
                         chunk.forEach(item => {
                             if (item.text.toLowerCase().includes(term)) {
+                                // Find metadata for this ID
                                 const info = meta.find(m => m.id === item.id);
                                 if (info) {
+                                    // Create a snippet
                                     const idx = item.text.toLowerCase().indexOf(term);
                                     const start = Math.max(0, idx - 60);
                                     const end = Math.min(item.text.length, idx + 100);
@@ -202,12 +195,21 @@
 
             if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-500 animate-pulse">Loading Database...</div>;
             
+            // ERROR SCREEN
             if (error) return (
-                <div className="h-screen flex flex-col items-center justify-center p-4 text-center">
+                <div className="h-screen flex flex-col items-center justify-center p-8 text-center bg-red-50">
                     <div className="text-red-500 text-6xl mb-4">⚠️</div>
-                    <h1 className="text-xl font-bold text-gray-800">Database Error</h1>
-                    <p className="text-gray-600 mt-2">{error}</p>
-                    <p className="text-sm text-gray-400 mt-4">Make sure you uploaded the 'site_api' folder correctly to GitHub.</p>
+                    <h1 className="text-2xl font-bold text-gray-800 mb-2">Setup Error</h1>
+                    <p className="text-gray-800 font-medium">{error}</p>
+                    <div className="mt-8 bg-white p-4 rounded border text-sm text-left">
+                        <p className="font-bold mb-2">Required GitHub Folder Structure:</p>
+                        <ul className="list-disc pl-5 space-y-1 font-mono text-gray-600">
+                            <li>/index.html</li>
+                            <li>/site_api/metadata.json</li>
+                            <li>/site_api/text_chunk_0.json</li>
+                            <li>/data/Church_Name/sermon.txt</li>
+                        </ul>
+                    </div>
                 </div>
             );
 
@@ -253,7 +255,7 @@
                                     </div>
                                     <div className="mt-6 pt-4 border-t text-xs text-gray-400">
                                         Total Sermons: {meta.length}<br/>
-                                        Database loaded from: {apiPrefix || "root"}
+                                        Source: site_api/metadata.json
                                     </div>
                                 </div>
 
