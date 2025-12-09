@@ -3,789 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sermon Mention Analytics</title>
+    <title>William Branham Mention Tracker</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Prop Types (Required for Recharts UMD) -->
-    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
-    
-    <!-- Recharts (Stable 2.x version) -->
     <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
-    
-    <!-- Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        .drop-zone { transition: all 0.3s ease; }
-        .drop-zone.active { border-color: #3b82f6; background-color: #eff6ff; }
-        
-        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-        
-        /* Modal Animation */
-        .modal-enter { opacity: 0; transform: scale(0.95); }
-        .modal-enter-active { opacity: 1; transform: scale(1); transition: all 200ms ease-out; }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useMemo, useCallback, useEffect } = React;
-        const { 
-            ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
-            ResponsiveContainer, Brush, BarChart, AreaChart, Area, Cell 
-        } = Recharts;
+        const { useState, useEffect, useMemo } = React;
+        const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Brush } = Recharts;
 
-        // --- EMBEDDED DEFAULT DATA (Fallback only) ---
-        // Used if channels.json fails to load (e.g. local preview without server)
-        const DEFAULT_DATA_CONTENT = `
-################################################################################
-START OF FILE: 2025-11-16 - Persecution of the Saints - Brother Daniel Evans - Clean.txt
-################################################################################
+        const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2"];
 
-SERMON DETAILS
-========================================
-Date:    2025-11-16
-Title:   Persecution of the Saints and Standing on the Word of God
-Speaker: Brother Daniel Evans
-Church:  Tucson Tabernacle (Sample)
-URL:     https://www.youtube.com/watch?v=I-HYR1ldGK0
-========================================
+        // --- COMPONENTS ---
 
-God bless you saints. We are standing on the Rock. We remember what Brother Branham told us about the third pull. It is here. The bride is making herself ready. As Brother William Branham said, the squeeze is coming. But we fear not. We hold to the message of the hour.
-`;
+        const SermonModal = ({ sermon, onClose }) => {
+            const [fullText, setFullText] = useState("Loading text...");
+            
+            useEffect(() => {
+                // Fetch the raw text file directly from GitHub Pages
+                fetch(sermon.path)
+                    .then(res => res.ok ? res.text() : "Text not available.")
+                    .then(setFullText)
+                    .catch(err => setFullText("Error loading transcript."));
+            }, [sermon]);
 
-        // --- Helpers ---
-        const formatDate = (timestamp, formatType) => {
-            const date = new Date(timestamp);
-            if (formatType === 'Quarter') {
-                const month = date.getMonth(); 
-                const quarter = Math.floor(month / 3) + 1;
-                return `Q${quarter} ${date.getFullYear()}`;
-            }
-            if (formatType === 'QuarterShort') {
-                const month = date.getMonth();
-                const quarter = Math.floor(month / 3) + 1;
-                return `Q${quarter} '${date.getFullYear().toString().substr(2)}`;
-            }
-            return date.toLocaleDateString();
-        };
-
-        const getQuarterlyTicks = (startObj, endObj) => {
-            const ticks = [];
-            let current = new Date(startObj.getFullYear(), Math.floor(startObj.getMonth() / 3) * 3, 1);
-            const endTime = endObj.getTime();
-            while (current.getTime() <= endTime) {
-                ticks.push(current.getTime());
-                current.setMonth(current.getMonth() + 3);
-                current = new Date(current); 
-            }
-            return ticks;
-        };
-
-        const normalizeSpeaker = (name) => {
-            if (!name) return "Unknown Speaker";
-            let cleaned = name;
-            cleaned = cleaned.replace(/\s*[-–—|].*$/, '');
-            cleaned = cleaned.replace(/^Brother\s+/i, '');
-            cleaned = cleaned.replace(/^Pastor\s+/i, '');
-            return cleaned.trim();
-        };
-
-        // --- Icons (Moved inside Babel script) ---
-        const ChevronDown = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="6 9 12 15 18 9"/></svg>;
-        const ChevronUp = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="18 15 12 9 6 15"/></svg>;
-        const Upload = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>;
-        const FileText = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>;
-        const BarChart2 = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>;
-        const AlertCircle = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>;
-        const User = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>;
-        const FilterIcon = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>;
-        const XIcon = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>;
-        const TrendingDown = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>;
-        const Percent = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>;
-        const Calendar = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>;
-        const Search = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>;
-        const AlertTriangle = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>;
-        const Download = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>;
-        const RefreshCw = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>;
-        const Database = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>;
-
-        // --- SUB-COMPONENTS ---
-        
-        const ExpandableSnippet = ({ fullText, term, index, matchIndex }) => {
-            const [isExpanded, setIsExpanded] = useState(false);
-
-            const snippet = useMemo(() => {
-                if (!fullText || (!matchIndex && matchIndex !== 0)) return "";
-                const padding = isExpanded ? 4000 : 1000; 
-                const start = Math.max(0, matchIndex - padding);
-                const end = Math.min(fullText.length, matchIndex + (term ? term.length : 0) + padding);
-                
-                let text = fullText.substring(start, end);
-                if (start > 0) text = "..." + text;
-                if (end < fullText.length) text = text + "...";
-                return text;
-            }, [fullText, matchIndex, term, isExpanded]);
-
-            const highlightedContent = useMemo(() => {
-                if (!term) return snippet;
-                const parts = snippet.split(new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'));
-                return (
-                    <span>
-                        {parts.map((part, i) => 
-                            part.toLowerCase() === term.toLowerCase() ? 
-                                <span key={i} className="bg-yellow-200 text-yellow-900 font-bold px-1 rounded">{part}</span> : 
-                                part
-                        )}
-                    </span>
-                );
-            }, [snippet, term]);
+            const highlight = (text, term) => {
+                if (!term) return text;
+                const parts = text.split(new RegExp(`(${term})`, 'gi'));
+                return parts.map((part, i) => part.toLowerCase() === term.toLowerCase() ? 
+                    <span key={i} className="bg-yellow-200 font-bold">{part}</span> : part);
+            };
 
             return (
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-sm leading-relaxed text-gray-700 transition-all">
-                    <div className="flex justify-between items-start mb-2">
-                        <span className="text-xs font-mono text-gray-400">Mention #{index + 1}</span>
-                        <button onClick={() => setIsExpanded(!isExpanded)} className="text-xs flex items-center gap-1 text-blue-600 hover:text-blue-800 font-medium bg-blue-50 px-2 py-1 rounded">
-                            {isExpanded ? <><ChevronUp className="w-3 h-3" /> Show Less</> : <><ChevronDown className="w-3 h-3" /> Expand Context</>}
-                        </button>
+                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={onClose}>
+                    <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                        <div className="p-4 border-b flex justify-between items-center bg-gray-50 rounded-t-xl">
+                            <div>
+                                <h2 className="text-xl font-bold">{sermon.title}</h2>
+                                <p className="text-sm text-gray-500">{sermon.church} • {sermon.date}</p>
+                            </div>
+                            <button onClick={onClose} className="text-gray-500 hover:text-red-500 font-bold text-xl px-2">&times;</button>
+                        </div>
+                        <div className="p-6 overflow-y-auto whitespace-pre-wrap text-sm leading-relaxed font-serif">
+                            {sermon.searchTerm ? highlight(fullText, sermon.searchTerm) : fullText}
+                        </div>
                     </div>
-                    <div className="prose prose-sm max-w-none whitespace-pre-wrap">{highlightedContent}</div>
                 </div>
             );
         };
 
-        const StatCard = ({ title, value, icon, sub, highlight }) => (
-            <div className={`bg-white p-6 rounded-xl shadow-sm border ${highlight ? 'border-orange-200 bg-orange-50' : 'border-gray-200'}`}>
-                <div className="flex justify-between items-start mb-4">
-                    <div>
-                        <p className="text-sm font-medium text-gray-500 mb-1">{title}</p>
-                        <h4 className="text-2xl font-bold text-gray-900">{value}</h4>
-                    </div>
-                    <div className="p-2 bg-gray-50 rounded-lg">{icon}</div>
-                </div>
-                {sub && <p className="text-xs text-gray-400">{sub}</p>}
-            </div>
-        );
-
-        const CustomTooltip = ({ active, payload, label }) => {
-            if (active && payload && payload.length) {
-                const data = payload[0].payload;
-                return (
-                    <div className="bg-white p-4 shadow-xl rounded-lg border border-gray-100 ring-1 ring-black ring-opacity-5">
-                        <p className="font-bold text-gray-900 mb-1">{data.dateStr}</p>
-                        <p className="text-xs text-gray-500 mb-3 max-w-xs">{data.title}</p>
-                        <div className="space-y-2 text-sm">
-                            <div className="flex justify-between gap-8 items-center">
-                                <span className="text-gray-600">Total Mentions:</span> 
-                                <span className="font-bold text-blue-600 text-lg">{data.totalMentions}</span>
-                            </div>
-                            <div className="flex justify-between gap-8 items-center pt-2 border-t border-gray-100">
-                                <span className="text-purple-600 font-medium">Rolling Avg Count:</span> 
-                                <span className="font-mono text-gray-700">{data.rollingAvg}</span>
-                            </div>
-                            <div className="flex justify-between gap-8 items-center pt-2 border-t border-gray-100">
-                                <span className="text-red-500 font-medium">Rolling Silence Rate:</span> 
-                                <span className="font-mono text-gray-700">{data.rollingZeroPercent}%</span>
-                            </div>
-                        </div>
-                    </div>
-                );
-            }
-            return null;
-        };
-
         const App = () => {
-            const [rawSermons, setRawSermons] = useState([]);
-            const [originalText, setOriginalText] = useState("");
-            const [isProcessing, setIsProcessing] = useState(true);
-            const [dragActive, setDragActive] = useState(false);
-            const [error, setError] = useState(null);
+            const [meta, setMeta] = useState([]);
+            const [totalChunks, setTotalChunks] = useState(0);
+            const [loading, setLoading] = useState(true);
+            const [view, setView] = useState('dashboard');
+            const [selectedChurches, setSelectedChurches] = useState([]);
+            
+            // Search State
+            const [searchQuery, setSearchQuery] = useState("");
+            const [searchResults, setSearchResults] = useState([]);
+            const [isSearching, setIsSearching] = useState(false);
+            const [searchProgress, setSearchProgress] = useState("");
 
-            const [availableChannels, setAvailableChannels] = useState([]);
-            const [selectedChannelKey, setSelectedChannelKey] = useState(null);
-
-            const [rollingDays, setRollingDays] = useState(180);
-            const [selectedSpeaker, setSelectedSpeaker] = useState("All");
+            // Modal State
             const [selectedSermon, setSelectedSermon] = useState(null);
-            const [searchTerm, setSearchTerm] = useState("");
-            const [globalSearchTerm, setGlobalSearchTerm] = useState("");
-            const [globalSearchResults, setGlobalSearchResults] = useState([]);
-            
-            const [brushDomain, setBrushDomain] = useState(null);
 
-            // --- INITIALIZATION LOGIC ---
+            // 1. Load Metadata Only (Fast)
             useEffect(() => {
-                const init = async () => {
-                    setIsProcessing(true);
-                    try {
-                        // 1. Fetch channels.json config
-                        // We look for 'channels.json' in the same directory
-                        const configRes = await fetch('channels.json');
-                        if (!configRes.ok) throw new Error("Config not found");
-                        
-                        const config = await configRes.json();
-                        const channelKeys = Object.keys(config);
-                        
-                        if (channelKeys.length > 0) {
-                            const channelList = channelKeys.map(key => ({ name: key, ...config[key] }));
-                            setAvailableChannels(channelList);
-                            
-                            // Default to first channel
-                            const firstChannel = channelList[0];
-                            setSelectedChannelKey(firstChannel.name);
-                            
-                            // Load its data (file path from config, usually in data/)
-                            // Note: Python script saves to data/, so we fetch from data/
-                            // But if the config has "filename": "TucsonTabernacle.txt", we assume it is in data/
-                            await loadChannelData(firstChannel.filename);
-                        } else {
-                            throw new Error("No channels in config");
-                        }
-                    } catch (err) {
-                        console.warn("Auto-fetch failed or preview mode:", err);
-                        // Fallback: Load sample data so app isn't empty
-                        setOriginalText(DEFAULT_DATA_CONTENT);
-                        processSermonText(DEFAULT_DATA_CONTENT);
-                        setAvailableChannels([{ name: "Sample Data", filename: "sample" }]);
-                        setSelectedChannelKey("Sample Data");
-                    } finally {
-                        setIsProcessing(false);
-                    }
-                };
-                init();
+                fetch('site_api/metadata.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        setMeta(data.sermons);
+                        setTotalChunks(data.totalChunks);
+                        // Default to all churches selected
+                        const unique = [...new Set(data.sermons.map(s => s.church))];
+                        setSelectedChurches(unique);
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        console.error("Failed to load metadata", err);
+                        setLoading(false);
+                    });
             }, []);
 
-            const loadChannelData = async (filename) => {
-                setIsProcessing(true);
-                try {
-                    // Look in data/ folder by default as per user instructions
-                    const res = await fetch(`data/${filename}`);
-                    if (!res.ok) throw new Error(`File ${filename} not found`);
-                    const text = await res.text();
-                    setOriginalText(text);
-                    processSermonText(text);
-                } catch (err) {
-                    console.error(err);
-                    setError(`Failed to load data for ${filename}`);
-                    // Fallback to embedded sample if file fetch fails
-                    setOriginalText(DEFAULT_DATA_CONTENT);
-                    processSermonText(DEFAULT_DATA_CONTENT);
-                } finally {
-                    setIsProcessing(false);
-                }
-            };
+            // 2. Search Logic (Chunked Loading)
+            const handleSearch = async () => {
+                if (!searchQuery || searchQuery.length < 3) return;
+                setIsSearching(true);
+                setSearchResults([]);
+                setSearchProgress("Initializing...");
 
-            const handleChannelChange = (e) => {
-                const newKey = e.target.value;
-                setSelectedChannelKey(newKey);
-                const channelConfig = availableChannels.find(c => c.name === newKey);
-                if (channelConfig) {
-                    if (channelConfig.filename === "sample") {
-                        setOriginalText(DEFAULT_DATA_CONTENT);
-                        processSermonText(DEFAULT_DATA_CONTENT);
-                    } else {
-                        loadChannelData(channelConfig.filename);
-                    }
-                }
-            };
+                const term = searchQuery.toLowerCase();
+                const matches = [];
 
-            const handleFile = (file) => {
-                setIsProcessing(true);
-                setError(null);
-                const reader = new FileReader();
-                reader.onload = (e) => {
+                // Loop through all chunks
+                for (let i = 0; i < totalChunks; i++) {
+                    setSearchProgress(`Scanning database chunk ${i + 1} of ${totalChunks}...`);
                     try {
-                        const text = e.target.result;
-                        setOriginalText(text);
-                        processSermonText(text);
-                        setIsProcessing(false);
-                        // Add "Custom Upload" to channel list if not present
-                        if (!availableChannels.find(c => c.name === "Custom Upload")) {
-                            setAvailableChannels(prev => [...prev, { name: "Custom Upload", filename: "custom" }]);
-                            setSelectedChannelKey("Custom Upload");
-                        }
-                    } catch (err) {
-                        console.error(err);
-                        setError("Failed to parse file.");
-                        setIsProcessing(false);
-                    }
-                };
-                reader.readAsText(file);
-            };
-
-            const downloadTranscripts = () => {
-                const blob = new Blob([originalText], { type: 'text/plain' });
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${selectedChannelKey || 'sermon'}_transcripts.txt`;
-                a.click();
-                window.URL.revokeObjectURL(url);
-            };
-
-            // ... (Search and processing functions remain largely the same)
-            const performGlobalSearch = () => {
-                if (!globalSearchTerm || globalSearchTerm.length < 3) return;
-                const results = [];
-                const regex = new RegExp(`(${globalSearchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-                rawSermons.forEach(sermon => {
-                    let match;
-                    regex.lastIndex = 0; 
-                    while ((match = regex.exec(sermon.fullText)) !== null) {
-                        const start = Math.max(0, match.index - 60);
-                        const end = Math.min(sermon.fullText.length, match.index + match[0].length + 60);
-                        let snippet = sermon.fullText.substring(start, end);
-                        if (start > 0) snippet = "..." + snippet;
-                        if (end < sermon.fullText.length) snippet = snippet + "...";
+                        const res = await fetch(`site_api/text_chunk_${i}.json`);
+                        const chunk = await res.json();
                         
-                        results.push({
-                            sermonId: sermon.id,
-                            date: sermon.dateStr,
-                            title: sermon.title,
-                            speaker: sermon.speaker,
-                            previewSnippet: snippet,
-                            term: match[0],
-                            matchIndex: match.index, 
-                            sermonData: sermon 
+                        // Search inside this chunk
+                        chunk.forEach(item => {
+                            if (item.text.toLowerCase().includes(term)) {
+                                // Find metadata for this ID
+                                const info = meta.find(m => m.id === item.id);
+                                if (info) {
+                                    // Create a snippet
+                                    const idx = item.text.toLowerCase().indexOf(term);
+                                    const start = Math.max(0, idx - 60);
+                                    const end = Math.min(item.text.length, idx + 100);
+                                    const snippet = "..." + item.text.substring(start, end) + "...";
+                                    matches.push({ ...info, snippet });
+                                }
+                            }
                         });
-                    }
-                });
-                setGlobalSearchResults(results);
-            };
-
-            const handleSearchResultClick = (res) => {
-                setSelectedSermon({
-                    ...res.sermonData,
-                    searchMode: true,
-                    searchTerm: res.term,
-                    customMentions: [{ term: res.term, index: res.matchIndex }]
-                });
-            };
-
-            const processSermonText = (text) => {
-                const chunks = text.split(/#{80}\s+START OF FILE:/);
-                const parsedData = [];
-                const fuzzyRegex = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
-
-                for (let i = 1; i < chunks.length; i++) {
-                    const chunk = chunks[i];
-                    const dateMatch = chunk.match(/Date:\s+(\d{4}-\d{2}-\d{2})/);
-                    const titleMatch = chunk.match(/Title:\s+(.+)/);
-                    const speakerMatch = chunk.match(/Speaker:\s+(.+)/);
-                    const dateStr = dateMatch ? dateMatch[1] : null;
-                    const title = titleMatch ? titleMatch[1].trim() : "Unknown Title";
-                    const rawSpeaker = speakerMatch ? speakerMatch[1].trim() : "Unknown Speaker";
-                    const speaker = normalizeSpeaker(rawSpeaker);
-                    const detailsSplit = chunk.split('========================================');
-                    const body = detailsSplit.length > 1 ? detailsSplit[detailsSplit.length - 1] : chunk;
-                    const bodyLower = body.toLowerCase();
-                    const wordCount = body.trim().split(/\s+/).length;
-                    const mentionList = [];
-                    let match;
-                    fuzzyRegex.lastIndex = 0; 
-                    while ((match = fuzzyRegex.exec(bodyLower)) !== null) {
-                        mentionList.push({ term: match[0], index: match.index });
-                    }
-                    const totalMentions = mentionList.length;
-                    if (dateStr) {
-                        const dObj = new Date(dateStr);
-                        parsedData.push({
-                            id: i,
-                            dateStr,
-                            dateObj: dObj, 
-                            dateTimestamp: dObj.getTime(),
-                            title,
-                            speaker,
-                            wordCount,
-                            totalMentions,
-                            mentions: mentionList, 
-                            fullText: body, 
-                            fullTextLower: bodyLower,
-                            isZero: totalMentions === 0 ? 1 : 0 
-                        });
+                    } catch (e) {
+                        console.error(`Error loading chunk ${i}`, e);
                     }
                 }
-                parsedData.sort((a, b) => a.dateObj - b.dateObj);
-                setRawSermons(parsedData);
-                setBrushDomain(null);
+                
+                setSearchResults(matches);
+                setIsSearching(false);
+                setSearchProgress("");
             };
 
-            const uniqueSpeakers = useMemo(() => {
-                const speakers = new Set(rawSermons.map(s => s.speaker));
-                return ["All", ...Array.from(speakers).sort()];
-            }, [rawSermons]);
-
-            const filteredSermons = useMemo(() => {
-                let filtered = rawSermons;
-                if (selectedSpeaker !== "All") {
-                    filtered = filtered.filter(s => s.speaker === selectedSpeaker);
-                }
-                if (searchTerm) {
-                    const lowerTerm = searchTerm.toLowerCase();
-                    filtered = filtered.filter(s => s.fullTextLower.includes(lowerTerm) || s.title.toLowerCase().includes(lowerTerm));
-                }
-                return filtered;
-            }, [rawSermons, selectedSpeaker, searchTerm]);
-
+            // 3. Chart Data Prep
             const chartData = useMemo(() => {
-                return filteredSermons.map((currentSermon, index, array) => {
-                    const cutoffDate = new Date(currentSermon.dateObj);
-                    cutoffDate.setDate(cutoffDate.getDate() - rollingDays);
-                    let sumMentions = 0;
-                    let count = 0;
-                    let zeroCount = 0;
-                    for (let i = index; i >= 0; i--) {
-                        const prevSermon = array[i];
-                        if (prevSermon.dateObj < cutoffDate) break;
-                        sumMentions += prevSermon.totalMentions;
-                        if (prevSermon.totalMentions === 0) zeroCount++;
-                        count++;
-                    }
-                    const averageMentions = count > 0 ? sumMentions / count : 0;
-                    const zeroPercent = count > 0 ? (zeroCount / count) * 100 : 0;
-                    return { 
-                        ...currentSermon, 
-                        rollingAvg: parseFloat(averageMentions.toFixed(2)),
-                        rollingZeroPercent: parseFloat(zeroPercent.toFixed(1))
-                    };
+                if (meta.length === 0) return [];
+                const months = {};
+                
+                meta.forEach(s => {
+                    if (!selectedChurches.includes(s.church)) return;
+                    const m = s.date.substring(0, 7); // YYYY-MM
+                    if (!months[m]) months[m] = { date: m, time: new Date(m).getTime() };
+                    if (!months[m][s.church]) months[m][s.church] = { count: 0, mentions: 0 };
+                    
+                    months[m][s.church].count++;
+                    months[m][s.church].mentions += s.mentionCount;
                 });
-            }, [filteredSermons, rollingDays]);
 
-            const yearlyTrends = useMemo(() => {
-                const years = {};
-                filteredSermons.forEach(s => {
-                    const y = s.dateObj.getFullYear();
-                    if (!years[y]) years[y] = { year: y, total: 0, zero: 0, hasMention: 0 };
-                    years[y].total++;
-                    if (s.totalMentions === 0) years[y].zero++;
-                    else years[y].hasMention++;
-                });
-                return Object.values(years).sort((a, b) => a.year - b.year).map(y => ({
-                    ...y,
-                    zeroPct: parseFloat(((y.zero / y.total) * 100).toFixed(1)),
-                    hasPct: parseFloat(((y.hasMention / y.total) * 100).toFixed(1))
-                }));
-            }, [filteredSermons]);
+                return Object.values(months)
+                    .map(entry => {
+                        const row = { date: entry.date, time: entry.time };
+                        selectedChurches.forEach(c => {
+                            if (entry[c]) {
+                                // Calculate Average Mentions per Sermon
+                                row[c] = parseFloat((entry[c].mentions / entry[c].count).toFixed(2));
+                            } else {
+                                row[c] = 0;
+                            }
+                        });
+                        return row;
+                    })
+                    .sort((a, b) => a.time - b.time);
+            }, [meta, selectedChurches]);
 
-            const stats = useMemo(() => {
-                if (chartData.length === 0) return null;
-                const totalSermons = chartData.length;
-                const totalMentions = chartData.reduce((acc, s) => acc + s.totalMentions, 0);
-                const maxMentions = Math.max(...chartData.map(s => s.totalMentions));
-                const zeroMentionSermons = chartData.filter(s => s.totalMentions === 0).length;
-                const lastPoint = chartData[chartData.length - 1];
-                const avgMentions = lastPoint ? lastPoint.rollingAvg : 0;
-                const zeroRate = lastPoint ? lastPoint.rollingZeroPercent + "%" : "0%";
-                return { totalSermons, totalMentions, maxMentions, zeroMentionSermons, avgMentions, zeroRate };
-            }, [chartData]);
-
-            const axisTicks = useMemo(() => {
-                if (chartData.length === 0) return [];
-                const startDate = chartData[0].dateObj;
-                const endDate = chartData[chartData.length - 1].dateObj;
-                return getQuarterlyTicks(startDate, endDate);
-            }, [chartData, brushDomain]);
-
-            const handleBrushChange = (e) => {
-                if (e && e.startIndex !== undefined && e.endIndex !== undefined) {
-                    setBrushDomain({ startIndex: e.startIndex, endIndex: e.endIndex });
-                } else {
-                    setBrushDomain(null);
-                }
-            };
-
-            const onChartClick = (data) => {
-                if (data && data.activePayload && data.activePayload.length > 0) {
-                    const clickedSermon = data.activePayload[0].payload;
-                    const cleanSermon = { ...clickedSermon, searchMode: false };
-                    setSelectedSermon(cleanSermon);
-                }
-            };
-
-            const handleDrag = useCallback((e) => {
-                e.preventDefault(); e.stopPropagation();
-                if (e.type === "dragenter" || e.type === "dragover") setDragActive(true);
-                else if (e.type === "dragleave") setDragActive(false);
-            }, []);
-            
-            const handleDrop = useCallback((e) => {
-                e.preventDefault(); e.stopPropagation();
-                setDragActive(false);
-                if (e.dataTransfer.files?.[0]) handleFile(e.dataTransfer.files[0]);
-            }, []);
-
-            // Initial Loading View
-            if (rawSermons.length === 0 && isProcessing) {
-                return (
-                    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-                        <div className="text-center">
-                            <RefreshCw className="w-12 h-12 text-blue-500 animate-spin mx-auto mb-4" />
-                            <h2 className="text-xl font-bold text-gray-700">Loading Church Data...</h2>
-                            <p className="text-gray-500 mt-2">Checking for configuration and transcripts.</p>
-                        </div>
-                    </div>
-                );
-            }
-
-            // Fallback (Manual Upload Only if all fetches failed)
-            if (rawSermons.length === 0 && !isProcessing) {
-                return (
-                    <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50">
-                        <div className={`w-full max-w-xl p-10 rounded-2xl border-2 border-dashed flex flex-col items-center justify-center text-center bg-white shadow-sm cursor-pointer drop-zone ${dragActive ? 'active' : 'border-gray-300'}`} onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop} onClick={() => document.getElementById('file-upload').click()}>
-                            <input type="file" id="file-upload" className="hidden" accept=".txt" onChange={(e) => e.target.files[0] && handleFile(e.target.files[0])} />
-                            <div className="bg-blue-100 p-4 rounded-full mb-4"><Upload className="w-8 h-8 text-blue-600" /></div>
-                            <h2 className="text-2xl font-bold text-gray-800 mb-2">Upload Transcript Data</h2>
-                            <p className="text-gray-500 mb-6">Drag and drop your sermon text file to begin.</p>
-                            {error && <p className="text-red-500 font-medium mt-2">{error}</p>}
-                        </div>
-                    </div>
-                );
-            }
+            if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-500">Loading Database...</div>;
 
             return (
-                <div className="min-h-screen p-4 md:p-8 max-w-[1600px] mx-auto bg-gray-50 relative pb-20">
-                    
-                    {/* Disclaimer & Update Zone */}
-                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                        <div className="flex items-start gap-3">
-                            <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
-                            <div>
-                                <h3 className="text-sm font-semibold text-yellow-800">Data Disclaimer</h3>
-                                <p className="text-xs text-yellow-700 mt-1 max-w-2xl">
-                                    This data is based solely on available YouTube automated transcripts. It does not represent all sermons preached. Only videos with accessible transcripts were processed.
-                                </p>
-                            </div>
-                        </div>
-                        <div className={`flex items-center gap-3 px-4 py-2 rounded-lg border-2 border-dashed bg-white cursor-pointer hover:bg-gray-50 transition-colors ${dragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'}`} onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop} onClick={() => document.getElementById('update-upload').click()}>
-                            <input type="file" id="update-upload" className="hidden" accept=".txt" onChange={(e) => e.target.files[0] && handleFile(e.target.files[0])} />
-                            <RefreshCw className="w-4 h-4 text-gray-500" />
-                            <div className="text-xs text-left">
-                                <p className="font-semibold text-gray-700">Update Data</p>
-                                <p className="text-gray-400">Drop file to override</p>
-                            </div>
-                        </div>
-                    </div>
-
+                <div className="min-h-screen pb-12">
                     {/* Header */}
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
-                        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
-                            <div>
-                                <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
-                                    Sermon Mention Tracker
-                                    <span className="text-sm font-normal text-gray-500 bg-gray-100 px-3 py-1 rounded-full">{rawSermons.length} processed</span>
-                                </h1>
-                                <p className="text-gray-500 mt-1">Analyzing mentions of "William Branham" & "Brother Branham"</p>
-                            </div>
-                            <div className="flex flex-wrap gap-4 items-end">
-                                {/* CHURCH SELECTOR */}
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1"><Database className="w-3 h-3" /> Select Church / Channel</label>
-                                    <select 
-                                        className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 shadow-sm"
-                                        value={selectedChannelKey || ""}
-                                        onChange={handleChannelChange}
-                                    >
-                                        {availableChannels.map((c, i) => (
-                                            <option key={i} value={c.name}>{c.name}</option>
-                                        ))}
-                                    </select>
-                                </div>
-
-                                {/* Speaker Filter */}
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1"><FilterIcon className="w-3 h-3" /> Filter Speaker</label>
-                                    <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-64 p-2.5" value={selectedSpeaker} onChange={(e) => setSelectedSpeaker(e.target.value)}>
-                                        {uniqueSpeakers.map(s => <option key={s} value={s}>{s}</option>)}
-                                    </select>
-                                </div>
-                                {/* Rolling Avg */}
-                                <div className="flex flex-col gap-1">
-                                    <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Rolling Avg Window</label>
-                                    <div className="inline-flex rounded-md shadow-sm" role="group">
-                                        {[7, 30, 180].map(d => (
-                                            <button key={d} type="button" onClick={() => setRollingDays(d)} className={`px-4 py-2 text-sm font-medium border border-gray-200 ${rollingDays === d ? 'bg-blue-600 text-white' : 'bg-white text-gray-900 hover:bg-gray-100'} ${d === 7 ? 'rounded-l-lg' : ''} ${d === 180 ? 'rounded-r-lg' : ''}`}>
-                                                {d === 180 ? '6 Months' : `${d} Days`}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
+                    <div className="bg-white border-b sticky top-0 z-40 shadow-sm">
+                        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+                            <h1 className="font-bold text-xl text-gray-800 flex items-center gap-2">
+                                <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">v2.0</span>
+                                Transcript Tracker
+                            </h1>
+                            <div className="flex gap-4">
+                                <button onClick={() => setView('dashboard')} className={`text-sm font-medium ${view === 'dashboard' ? 'text-blue-600' : 'text-gray-500'}`}>Dashboard</button>
+                                <button onClick={() => setView('search')} className={`text-sm font-medium ${view === 'search' ? 'text-blue-600' : 'text-gray-500'}`}>Global Search</button>
+                                <button onClick={() => setView('data')} className={`text-sm font-medium ${view === 'data' ? 'text-blue-600' : 'text-gray-500'}`}>Data & Download</button>
                             </div>
                         </div>
                     </div>
 
-                    {/* Stats */}
-                    {stats && (
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
-                            <StatCard title="Sermons" value={stats.totalSermons} icon={<FileText className="text-blue-500" />} />
-                            <StatCard title="Mentions" value={stats.totalMentions.toLocaleString()} icon={<User className="text-green-500" />} />
-                            <StatCard title="Peak" value={stats.maxMentions} icon={<BarChart2 className="text-purple-500" />} sub="Max in one" />
-                            <StatCard title="Zero Count" value={stats.zeroMentionSermons} icon={<AlertCircle className="text-orange-500" />} sub="Sermons" highlight={true} />
-                            <StatCard title="Avg Mentions" value={stats.avgMentions} icon={<TrendingDown className="text-indigo-500" />} sub="Current Trend" />
-                            <StatCard title="Zero Rate" value={stats.zeroRate} icon={<Percent className="text-red-500" />} sub="Current Trend" highlight={true} />
-                        </div>
-                    )}
-
-                    {/* CHART SECTION (Split) */}
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
-                        <h3 className="text-lg font-bold text-gray-800 mb-6">Sermon Mentions (Raw Count)</h3>
-                        <div className="h-[250px] w-full mb-8">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={chartData} onClick={onChartClick} margin={{ top: 10, right: 30, left: 20, bottom: 0 }} style={{ cursor: 'pointer' }} syncId="sermonTime">
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis dataKey="dateTimestamp" type="number" domain={brushDomain ? [chartData[brushDomain.startIndex].dateTimestamp, chartData[brushDomain.endIndex].dateTimestamp] : ['dataMin', 'dataMax']} scale="time" hide />
-                                    <YAxis tick={{fill: '#6b7280', fontSize: 12}} label={{ value: 'Count', angle: -90, position: 'insideLeft', fill: '#9ca3af', fontSize: 12 }} domain={['auto', 'auto']} />
-                                    <Tooltip content={<CustomTooltip />} />
-                                    <Bar dataKey="totalMentions" name="Sermon Mentions" barSize={8} fill="#cbd5e1" />
-                                </BarChart>
-                            </ResponsiveContainer>
-                        </div>
-
-                        <div className="border-t border-gray-100 my-6"></div>
-
-                        <h3 className="text-lg font-bold text-gray-800 mb-2">Rolling Trends ({rollingDays === 180 ? '6 Month' : `${rollingDays} Day`} Window)</h3>
-                        <div className="h-[300px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <ComposedChart data={chartData} onClick={onChartClick} margin={{ top: 10, right: 30, left: 20, bottom: 60 }} style={{ cursor: 'pointer' }} syncId="sermonTime">
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis 
-                                        dataKey="dateTimestamp"
-                                        type="number"
-                                        domain={brushDomain ? [chartData[brushDomain.startIndex].dateTimestamp, chartData[brushDomain.endIndex].dateTimestamp] : ['dataMin', 'dataMax']}
-                                        scale="time"
-                                        ticks={axisTicks}
-                                        tickFormatter={(unixTime) => formatDate(unixTime, 'Quarter')}
-                                        interval={0}
-                                        angle={-45}
-                                        textAnchor="end"
-                                        height={80}
-                                        tick={{fill: '#6b7280', fontSize: 12}} 
-                                    />
-                                    <YAxis yAxisId="left" tick={{fill: '#2563eb', fontSize: 12}} domain={['auto', 'auto']} />
-                                    <YAxis yAxisId="right" orientation="right" tick={{fill: '#ef4444', fontSize: 12}} unit="%" domain={[0, 100]} />
-                                    <Tooltip content={<CustomTooltip />} />
-                                    <Line yAxisId="left" type="monotone" dataKey="rollingAvg" name="Avg Count" stroke="#2563eb" strokeWidth={3} dot={false} />
-                                    <Line yAxisId="right" type="monotone" dataKey="rollingZeroPercent" name="Silence Rate" stroke="#ef4444" strokeWidth={2} dot={false} strokeDasharray="5 5" />
-                                    <Brush dataKey="dateTimestamp" height={30} y={260} stroke="#94a3b8" tickFormatter={(unixTime) => formatDate(unixTime, 'QuarterShort')} onChange={handleBrushChange} />
-                                </ComposedChart>
-                            </ResponsiveContainer>
-                        </div>
-                    </div>
-
-                    {/* Yearly Trends */}
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
-                        <div className="flex items-center gap-2 mb-6 border-b border-gray-100 pb-4">
-                            <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><Calendar className="w-5 h-5" /></div>
-                            <div><h3 className="text-xl font-bold text-gray-900">Yearly Consistency Analysis</h3><p className="text-sm text-gray-500">Long-term trend of sermons <span className="text-blue-600 font-bold">with mentions</span> vs <span className="text-red-600 font-bold">silence</span>.</p></div>
-                        </div>
-                        <div className="h-[300px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={yearlyTrends} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                                    <XAxis dataKey="year" tick={{fill: '#6b7280'}} />
-                                    <YAxis unit="%" tick={{fill: '#6b7280'}} />
-                                    <Tooltip content={({ active, payload }) => {
-                                        if (active && payload && payload.length) {
-                                            const d = payload[0].payload;
-                                            return <div className="bg-white p-3 shadow-lg rounded border border-gray-100 text-sm"><strong>{d.year}</strong><div className="mt-1 text-red-600">Silence: {d.zero} ({d.zeroPct}%)</div><div className="text-blue-600">Mentions: {d.hasMention} ({d.hasPct}%)</div></div>;
-                                        }
-                                        return null;
-                                    }} />
-                                    <Legend />
-                                    <Bar dataKey="hasPct" name="% With Mentions" stackId="a" fill="#3b82f6" />
-                                    <Bar dataKey="zeroPct" name="% Silence" stackId="a" fill="#ef4444" />
-                                </BarChart>
-                            </ResponsiveContainer>
-                        </div>
-                    </div>
-
-                    {/* Table */}
-                    <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mb-6">
-                        <div className="p-6 border-b border-gray-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                            <h3 className="text-lg font-bold text-gray-800">Sermon Details</h3>
-                            <input type="text" className="pl-4 pr-4 py-2 border border-gray-300 rounded-lg text-sm w-64" placeholder="Filter..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-                        </div>
-                        <div className="overflow-x-auto max-h-[500px]">
-                            <table className="w-full text-left text-sm text-gray-600 relative">
-                                <thead className="bg-gray-50 text-gray-700 uppercase font-medium text-xs sticky top-0 z-10 shadow-sm">
-                                    <tr><th className="px-6 py-4">Date</th><th className="px-6 py-4">Title</th><th className="px-6 py-4">Speaker</th><th className="px-6 py-4 text-right">Count</th></tr>
-                                </thead>
-                                <tbody className="divide-y divide-gray-100">
-                                    {chartData.map((sermon) => (
-                                        <tr key={sermon.id} onClick={() => setSelectedSermon(sermon)} className={`hover:bg-gray-50 cursor-pointer ${sermon.totalMentions === 0 ? 'bg-red-50 hover:bg-red-100' : ''}`}>
-                                            <td className="px-6 py-4 whitespace-nowrap">{sermon.dateStr}</td>
-                                            <td className="px-6 py-4 font-medium text-gray-900">{sermon.title}</td>
-                                            <td className="px-6 py-4 truncate">{sermon.speaker}</td>
-                                            <td className="px-6 py-4 text-right font-bold text-blue-600">{sermon.totalMentions}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    {/* Global Search */}
-                    <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-6 shadow-sm">
-                        <div className="flex flex-col md:flex-row justify-between gap-4 mb-6">
-                            <h3 className="text-lg font-bold text-indigo-900">Database Tools</h3>
-                            <button onClick={downloadTranscripts} className="flex items-center gap-2 px-4 py-2 bg-white text-indigo-600 border border-indigo-200 rounded-lg shadow-sm"><Download className="w-4 h-4" /> Download (.txt)</button>
-                        </div>
-                        <div className="flex gap-2 mb-6">
-                            <input type="text" className="flex-1 p-3 border border-indigo-200 rounded-lg outline-none shadow-sm" placeholder="Search ALL transcripts..." value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && performGlobalSearch()} />
-                            <button onClick={performGlobalSearch} className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md"><Search className="w-4 h-4" /></button>
-                        </div>
-                        {globalSearchResults.length > 0 && (
-                            <div className="bg-white rounded-lg border border-indigo-100 overflow-hidden shadow-sm max-h-[400px] overflow-y-auto">
-                                {globalSearchResults.map((res, idx) => (
-                                    <div key={idx} className="p-4 hover:bg-gray-50 transition-colors cursor-pointer border-b border-gray-100" onClick={() => handleSearchResultClick(res)}>
-                                        <div className="flex justify-between text-xs text-gray-500 mb-1"><span className="font-bold">{res.date}</span><span>{res.speaker}</span></div>
-                                        <h4 className="text-sm font-medium text-indigo-600 mb-2">{res.title}</h4>
-                                        <p className="text-sm text-gray-600 p-2 rounded border border-gray-100 bg-gray-50">{highlightText(res.previewSnippet, res.term)}</p>
+                    <div className="max-w-7xl mx-auto px-4 mt-8">
+                        {/* DASHBOARD VIEW */}
+                        {view === 'dashboard' && (
+                            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                                {/* Sidebar */}
+                                <div className="bg-white p-4 rounded-xl shadow-sm border h-fit">
+                                    <h3 className="font-bold text-gray-700 mb-4">Filter Churches</h3>
+                                    <div className="space-y-2 max-h-[60vh] overflow-y-auto">
+                                        {[...new Set(meta.map(s => s.church))].sort().map(c => (
+                                            <label key={c} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1 rounded">
+                                                <input 
+                                                    type="checkbox" 
+                                                    checked={selectedChurches.includes(c)}
+                                                    onChange={(e) => {
+                                                        if(e.target.checked) setSelectedChurches([...selectedChurches, c]);
+                                                        else setSelectedChurches(selectedChurches.filter(x => x !== c));
+                                                    }}
+                                                    className="rounded text-blue-600"
+                                                />
+                                                <span className="text-sm truncate">{c}</span>
+                                            </label>
+                                        ))}
                                     </div>
-                                ))}
+                                </div>
+
+                                {/* Main Chart */}
+                                <div className="lg:col-span-3 bg-white p-6 rounded-xl shadow-sm border">
+                                    <h3 className="font-bold text-lg mb-6 text-gray-800">Average "Branham" Mentions Per Sermon (Monthly)</h3>
+                                    <div className="h-[400px]">
+                                        <ResponsiveContainer width="100%" height="100%">
+                                            <LineChart data={chartData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                                                <XAxis dataKey="date" />
+                                                <YAxis />
+                                                <Tooltip />
+                                                <Legend />
+                                                {selectedChurches.map((c, i) => (
+                                                    <Line 
+                                                        key={c} 
+                                                        type="monotone" 
+                                                        dataKey={c} 
+                                                        stroke={COLORS[i % COLORS.length]} 
+                                                        strokeWidth={2} 
+                                                        dot={false}
+                                                        connectNulls={true}
+                                                    />
+                                                ))}
+                                                <Brush dataKey="date" height={30} stroke="#cbd5e1" />
+                                            </LineChart>
+                                        </ResponsiveContainer>
+                                    </div>
+                                </div>
                             </div>
                         )}
-                        {globalSearchTerm && globalSearchResults.length === 0 && <p className="text-center text-gray-400 italic py-4">No matches found. Try a different term or press Search.</p>}
-                    </div>
 
-                    {/* Modal */}
-                    {selectedSermon && (
-                        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50" onClick={() => setSelectedSermon(null)}>
-                            <div className="bg-white rounded-xl shadow-2xl w-full max-w-3xl max-h-[80vh] flex flex-col" onClick={e => e.stopPropagation()}>
-                                <div className="p-6 border-b border-gray-200 flex justify-between items-start">
-                                    <div><h2 className="text-xl font-bold text-gray-900">{selectedSermon.title}</h2><p className="text-sm text-gray-500 mt-1">{selectedSermon.dateStr} • {selectedSermon.speaker}</p></div>
-                                    <button onClick={() => setSelectedSermon(null)} className="p-2 hover:bg-gray-100 rounded-full text-gray-500"><XIcon className="w-5 h-5" /></button>
+                        {/* SEARCH VIEW */}
+                        {view === 'search' && (
+                            <div className="max-w-3xl mx-auto">
+                                <div className="bg-white p-8 rounded-xl shadow-sm border text-center mb-8">
+                                    <h2 className="text-2xl font-bold mb-2">Search Everything</h2>
+                                    <p className="text-gray-500 mb-6">Search across {meta.length} sermons from all churches.</p>
+                                    <div className="flex gap-2">
+                                        <input 
+                                            type="text" 
+                                            className="flex-1 border p-3 rounded-lg text-lg outline-none focus:ring-2 ring-blue-500"
+                                            placeholder="Enter keyword or phrase..."
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                                        />
+                                        <button 
+                                            onClick={handleSearch}
+                                            disabled={isSearching}
+                                            className="bg-blue-600 text-white px-6 rounded-lg font-bold hover:bg-blue-700 disabled:opacity-50"
+                                        >
+                                            {isSearching ? "..." : "Search"}
+                                        </button>
+                                    </div>
+                                    {isSearching && <p className="mt-4 text-blue-600 animate-pulse">{searchProgress}</p>}
                                 </div>
-                                <div className="p-6 overflow-y-auto bg-gray-50">
-                                    {selectedSermon.searchMode ? (
-                                        <div className="space-y-4">
-                                            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-100 text-sm mb-4"><h3 className="font-bold text-indigo-800 mb-2">Search Result</h3><p className="text-indigo-700">Match: <span className="font-mono bg-white px-1 rounded border border-indigo-200">{selectedSermon.searchTerm}</span></p></div>
-                                            {selectedSermon.customMentions.map((m, idx) => <ExpandableSnippet key={idx} fullText={selectedSermon.fullText} term={selectedSermon.searchTerm} matchIndex={m.index} index={idx} />)}
+
+                                <div className="space-y-4">
+                                    {searchResults.map((res, i) => (
+                                        <div 
+                                            key={i} 
+                                            onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})}
+                                            className="bg-white p-5 rounded-lg border hover:border-blue-400 cursor-pointer transition shadow-sm"
+                                        >
+                                            <div className="flex justify-between">
+                                                <h4 className="font-bold text-blue-600">{res.title}</h4>
+                                                <span className="text-xs bg-gray-100 px-2 py-1 rounded">{res.date}</span>
+                                            </div>
+                                            <p className="text-xs text-gray-500 mb-2">{res.church} • {res.speaker}</p>
+                                            <div className="bg-gray-50 p-3 rounded text-sm text-gray-700 font-serif italic border-l-4 border-gray-300">
+                                                "{res.snippet}"
+                                            </div>
                                         </div>
-                                    ) : (
-                                        <>
-                                            {selectedSermon.mentions.length === 0 ? <div className="text-center py-10 text-gray-500"><AlertCircle className="w-10 h-10 mx-auto mb-3 text-gray-300" /><p>No mentions found.</p></div> : (
-                                                <div className="space-y-4">
-                                                    <div className="flex justify-between items-center mb-4"><h3 className="text-sm font-bold text-gray-700 uppercase tracking-wide">Context Snippets ({selectedSermon.mentions.length})</h3></div>
-                                                    {selectedSermon.mentions.map((m, idx) => <ExpandableSnippet key={idx} fullText={selectedSermon.fullText} term={m.term} matchIndex={m.index} index={idx} />)}
-                                                </div>
-                                            )}
-                                        </>
+                                    ))}
+                                    {searchResults.length === 0 && !isSearching && searchQuery && (
+                                        <p className="text-center text-gray-400">No results found.</p>
                                     )}
                                 </div>
                             </div>
-                        </div>
+                        )}
+
+                        {/* DATA VIEW */}
+                        {view === 'data' && (
+                            <div className="max-w-2xl mx-auto text-center bg-white p-12 rounded-xl border shadow-sm">
+                                <div className="mb-6 bg-blue-50 w-20 h-20 mx-auto rounded-full flex items-center justify-center text-blue-600 text-3xl">⬇️</div>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">Download Database</h2>
+                                <p className="text-gray-600 mb-8 leading-relaxed">
+                                    You can download the entire sermon database, organized by church folders, as a single ZIP file.
+                                    This includes all {meta.length} transcripts currently in the system.
+                                </p>
+                                <a 
+                                    href="all_sermons_archive.zip" 
+                                    download
+                                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl shadow-lg transition transform hover:-translate-y-1"
+                                >
+                                    Download All Transcripts (.zip)
+                                </a>
+                                <p className="mt-6 text-xs text-gray-400">Last Updated: {meta.length > 0 ? new Date(meta[0].timestamp).toLocaleDateString() : 'Unknown'}</p>
+                            </div>
+                        )}
+                    </div>
+
+                    {selectedSermon && (
+                        <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />
                     )}
                 </div>
             );

@@ -1,10 +1,34 @@
 {
+  "Believers Christian Fellowship": {
+    "url": "https://www.youtube.com/@believerschristianfellowsh2466",
+    "filename": "BelieversChristianFellowship.txt"
+  },
+  "Cedar Hills - Church of the Cross": {
+    "url": "https://www.youtube.com/@CedarHillsChurchoftheCross",
+    "filename": "CedarHillsChurchOfTheCross.txt"
+  },
+  "Evening Light Tabernacle": {
+    "url": "https://www.youtube.com/@EveningLightTabernacle",
+    "filename": "EveningLightTabernacle.txt"
+  },
+  "Literal Life Church": {
+    "url": "https://www.youtube.com/@LiteralLifeChurch",
+    "filename": "LiteralLifeChurch.txt"
+  },
+  "Flagstaff Mission Tabernacle": {
+    "url": "https://www.youtube.com/@flagstaffmissiontabernacle5927",
+    "filename": "FlagstaffMissionTabernacle.txt"
+  },
+  "Jericho Tabernacle": {
+    "url": "https://www.youtube.com/@JerichoTabernacle/videos",
+    "filename": "JerichoTabernacle.txt"
+  },
   "Tucson Tabernacle": {
-    "url": "https://www.youtube.com/@TucsonTabernacle/streams",
+    "url": "https://www.youtube.com/@TucsonTabernacle",
     "filename": "TucsonTabernacle.txt"
   },
   "Evening Light Fellowship": {
-    "url": "https://www.youtube.com/@eveninglightfellowshipaz/streams",
+    "url": "https://www.youtube.com/@eveninglightfellowshipaz",
     "filename": "EveningLightFellowship.txt"
   }
 }
