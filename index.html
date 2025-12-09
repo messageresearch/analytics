@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Branham Mention Tracker</title>
+    <title>Message Follower Analytics Hub</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -11,354 +11,473 @@
     <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
     <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: #f8fafc; }
+        .highlight-match { background-color: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; border-radius: 2px; }
+        .stat-card { transition: all 0.2s; }
+        .stat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo } = React;
-        const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Brush } = Recharts;
+        const { useState, useEffect, useMemo, useRef } = React;
+        const { 
+            ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
+            ResponsiveContainer, Brush, AreaChart, Area 
+        } = Recharts;
 
-        const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2"];
+        // --- ICONS ---
+        const Icon = ({ name, size = 20, className = "" }) => {
+            const icons = {
+                search: <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />,
+                filter: <path d="M12.37 19.63c.45.63 1.37.63 1.82 0l8.5-12A1.5 1.5 0 0 0 21.46 5.5H2.54a1.5 1.5 0 0 0-1.23 2.13l8.5 12Z" />,
+                download: <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m7-10l5 5m0 0-5 5m5-5H3" />,
+                x: <path d="M18 6 6 18M6 6l12 12" />,
+                barChart: <path d="M18 20V10M12 20V4M6 20v-6" />,
+                fileText: <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />,
+                users: <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />,
+                calendar: <path d="M8 2v4m8-4v4m-12 4h16m-16 4h16m-16 4h16" />
+            };
+            return (
+                <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+                    {icons[name] || icons.search}
+                </svg>
+            );
+        };
+
+        const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2", "#be123c", "#4f46e5"];
 
         // --- COMPONENTS ---
 
+        const StatCard = ({ title, value, sub, icon, color = "blue" }) => (
+            <div className={`bg-white p-5 rounded-xl border border-${color}-100 shadow-sm stat-card flex justify-between items-start`}>
+                <div>
+                    <p className="text-gray-500 text-xs font-bold uppercase tracking-wider">{title}</p>
+                    <h3 className={`text-2xl font-bold text-gray-900 mt-1`}>{value}</h3>
+                    {sub && <p className={`text-xs text-${color}-600 mt-1 font-medium`}>{sub}</p>}
+                </div>
+                <div className={`p-2 bg-${color}-50 text-${color}-600 rounded-lg`}>
+                    <Icon name={icon} size={20} />
+                </div>
+            </div>
+        );
+
         const SermonModal = ({ sermon, onClose }) => {
-            const [fullText, setFullText] = useState("Loading text...");
+            const [fullText, setFullText] = useState("Loading transcript...");
+            const contentRef = useRef(null);
             
             useEffect(() => {
-                // Fetch the raw text file directly from GitHub Pages
-                // We handle the case where data might be missing
                 fetch(sermon.path)
                     .then(res => {
-                        if (!res.ok) return "Transcript text not found. Ensure the 'data' folder is uploaded to GitHub in the root directory.";
+                        if (!res.ok) return "Transcript text not found on server.";
                         return res.text();
                     })
                     .then(setFullText)
                     .catch(err => setFullText("Error loading transcript."));
             }, [sermon]);
 
+            // Auto-scroll to highlight
+            useEffect(() => {
+                if (fullText && sermon.searchTerm && contentRef.current) {
+                    // Slight delay to ensure render
+                    setTimeout(() => {
+                        const match = contentRef.current.querySelector('.highlight-match');
+                        if (match) {
+                            match.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }, 500);
+                }
+            }, [fullText, sermon.searchTerm]);
+
             const highlight = (text, term) => {
                 if (!term) return text;
-                const parts = text.split(new RegExp(`(${term})`, 'gi'));
-                return parts.map((part, i) => part.toLowerCase() === term.toLowerCase() ? 
-                    <span key={i} className="bg-yellow-200 font-bold">{part}</span> : part);
+                const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                const parts = text.split(regex);
+                return parts.map((part, i) => 
+                    regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part
+                );
             };
 
             return (
-                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={onClose}>
-                    <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl h-[85vh] flex flex-col" onClick={e => e.stopPropagation()}>
-                        <div className="p-4 border-b flex justify-between items-center bg-gray-50 rounded-t-xl">
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
+                        <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
                             <div>
-                                <h2 className="text-xl font-bold">{sermon.title}</h2>
-                                <p className="text-sm text-gray-500">{sermon.church} • {sermon.date}</p>
+                                <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
+                                <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
+                                    <span className="bg-white border px-2 py-0.5 rounded shadow-sm">{sermon.church}</span>
+                                    <span className="bg-white border px-2 py-0.5 rounded shadow-sm">{sermon.date}</span>
+                                    <span className="bg-white border px-2 py-0.5 rounded shadow-sm">{sermon.speaker}</span>
+                                    {sermon.searchTerm && <span className="bg-yellow-100 text-yellow-800 border border-yellow-200 px-2 py-0.5 rounded font-medium">Found: "{sermon.searchTerm}"</span>}
+                                </div>
                             </div>
-                            <button onClick={onClose} className="text-gray-500 hover:text-red-500 font-bold text-xl px-2">&times;</button>
+                            <button onClick={onClose} className="p-2 hover:bg-red-100 text-gray-400 hover:text-red-600 rounded-full transition"><Icon name="x" /></button>
                         </div>
-                        <div className="p-6 overflow-y-auto whitespace-pre-wrap text-sm leading-relaxed font-serif">
-                            {sermon.searchTerm ? highlight(fullText, sermon.searchTerm) : fullText}
+                        <div className="flex-1 overflow-y-auto p-8 bg-white" ref={contentRef}>
+                            <div className="max-w-3xl mx-auto whitespace-pre-wrap font-serif text-gray-800 leading-relaxed text-base">
+                                {sermon.searchTerm ? highlight(fullText, sermon.searchTerm) : fullText}
+                            </div>
+                        </div>
+                        <div className="p-4 border-t bg-gray-50 text-right text-xs text-gray-400">
+                            ID: {sermon.id} • Words: {sermon.wordCount}
                         </div>
                     </div>
                 </div>
             );
         };
 
+        const FilterDropdown = ({ label, value, options, onChange }) => (
+            <div className="flex flex-col gap-1">
+                <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">{label}</label>
+                <select 
+                    className="bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 shadow-sm"
+                    value={value}
+                    onChange={(e) => onChange(e.target.value)}
+                >
+                    <option value="All">All {label}s</option>
+                    {options.map(o => <option key={o} value={o}>{o}</option>)}
+                </select>
+            </div>
+        );
+
         const App = () => {
-            const [meta, setMeta] = useState([]);
+            // --- STATE ---
+            const [rawData, setRawData] = useState([]);
             const [totalChunks, setTotalChunks] = useState(0);
             const [loading, setLoading] = useState(true);
             const [error, setError] = useState(null);
-            const [view, setView] = useState('dashboard');
-            const [selectedChurches, setSelectedChurches] = useState([]);
             
-            // Search State
+            // FILTERS
+            const [selectedChurches, setSelectedChurches] = useState([]);
+            const [filterSpeaker, setFilterSpeaker] = useState("All");
+            const [filterYear, setFilterYear] = useState("All");
+            const [filterType, setFilterType] = useState("All");
+            const [filterLang, setFilterLang] = useState("All");
+            
+            // SEARCH
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
             const [isSearching, setIsSearching] = useState(false);
             const [searchProgress, setSearchProgress] = useState("");
+            const [apiPrefix, setApiPrefix] = useState("site_api/");
 
-            // Modal State
+            // UI
             const [selectedSermon, setSelectedSermon] = useState(null);
+            const [view, setView] = useState("dashboard"); // dashboard, search
 
-            // 1. Load Metadata with Fallback and Error Handling
+            // --- LOAD DATA ---
             useEffect(() => {
-                const loadData = async () => {
+                const init = async () => {
                     try {
-                        // Check if file exists in site_api/
-                        let response = await fetch('site_api/metadata.json');
-                        
-                        if (!response.ok) {
-                            // If failed, check if user accidentally put it in root
-                            const rootResponse = await fetch('metadata.json');
-                            if (rootResponse.ok) {
-                                throw new Error("File Mismatch: 'metadata.json' is in the root folder, but the app expects it in a folder named 'site_api'. Please create a folder named 'site_api' on GitHub and move your JSON files into it.");
-                            }
-                            throw new Error("Could not find 'site_api/metadata.json'. Did you upload the 'site_api' folder to GitHub?");
+                        let res = await fetch('site_api/metadata.json');
+                        let prefix = "site_api/";
+                        if (!res.ok) {
+                            res = await fetch('metadata.json');
+                            prefix = "";
                         }
-
-                        const data = await response.json();
-                        setMeta(data.sermons);
-                        setTotalChunks(data.totalChunks || 0);
+                        if (!res.ok) throw new Error("Metadata not found. Please upload site_api folder.");
                         
-                        const unique = [...new Set(data.sermons.map(s => s.church))];
-                        setSelectedChurches(unique);
+                        const json = await res.json();
+                        // Fix date objects
+                        const processed = json.sermons.map(s => ({
+                            ...s,
+                            dateObj: new Date(s.timestamp),
+                            path: prefix + s.path // Fix path relative to index
+                        }));
+                        
+                        setRawData(processed);
+                        setTotalChunks(json.totalChunks || 0);
+                        setApiPrefix(prefix);
+                        
+                        // Set Defaults
+                        const uniqueChurches = [...new Set(processed.map(s => s.church))];
+                        setSelectedChurches(uniqueChurches);
                         setLoading(false);
-                    } catch (err) {
-                        console.error(err);
-                        setError(err.message);
+                    } catch (e) {
+                        console.error(e);
+                        setError(e.message);
                         setLoading(false);
                     }
                 };
-                loadData();
+                init();
             }, []);
 
-            // 2. Search Logic (Chunked Loading)
-            const handleSearch = async () => {
+            // --- FILTER LOGIC ---
+            const filteredData = useMemo(() => {
+                return rawData.filter(s => {
+                    if (selectedChurches.length > 0 && !selectedChurches.includes(s.church)) return false;
+                    if (filterSpeaker !== "All" && s.speaker !== filterSpeaker) return false;
+                    if (filterYear !== "All" && s.year !== filterYear) return false;
+                    if (filterType !== "All" && s.type !== filterType) return false;
+                    if (filterLang !== "All" && s.language !== filterLang) return false;
+                    return true;
+                });
+            }, [rawData, selectedChurches, filterSpeaker, filterYear, filterType, filterLang]);
+
+            // --- DROPDOWN OPTIONS ---
+            const options = useMemo(() => {
+                const get unique() {
+                    return (key) => [...new Set(rawData.map(s => s[key]))].filter(Boolean).sort();
+                }
+                return {
+                    speakers: unique('speaker'),
+                    years: unique('year').reverse(),
+                    types: unique('type'),
+                    langs: unique('language'),
+                    churches: unique('church')
+                };
+            }, [rawData]);
+
+            // --- STATS CALC ---
+            const stats = useMemo(() => {
+                if (!filteredData.length) return null;
+                const totalSermons = filteredData.length;
+                const totalMentions = filteredData.reduce((acc, s) => acc + s.mentionCount, 0);
+                const maxMentions = Math.max(...filteredData.map(s => s.mentionCount));
+                const zeroCount = filteredData.filter(s => s.mentionCount === 0).length;
+                const avg = (totalMentions / totalSermons).toFixed(1);
+                const zeroRate = ((zeroCount / totalSermons) * 100).toFixed(1) + "%";
+                return { totalSermons, totalMentions, maxMentions, zeroCount, avg, zeroRate };
+            }, [filteredData]);
+
+            // --- CHART DATA ---
+            const chartData = useMemo(() => {
+                if (!filteredData.length) return [];
+                const buckets = {};
+                
+                filteredData.forEach(s => {
+                    const key = s.date.substring(0, 7); // YYYY-MM
+                    if (!buckets[key]) buckets[key] = { date: key, timestamp: new Date(key).getTime() };
+                    
+                    if (!buckets[key][s.church]) buckets[key][s.church] = { sum: 0, count: 0 };
+                    buckets[key][s.church].sum += s.mentionCount;
+                    buckets[key][s.church].count++;
+                });
+
+                return Object.values(buckets).map(b => {
+                    const row = { date: b.date, timestamp: b.timestamp };
+                    selectedChurches.forEach(c => {
+                        if (b[c]) row[c] = parseFloat((b[c].sum / b[c].count).toFixed(2));
+                        else row[c] = 0;
+                    });
+                    return row;
+                }).sort((a, b) => a.timestamp - b.timestamp);
+            }, [filteredData, selectedChurches]);
+
+            // --- SEARCH FUNCTION ---
+            const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
                 setIsSearching(true);
                 setSearchResults([]);
                 setSearchProgress("Initializing...");
-
+                
                 const term = searchQuery.toLowerCase();
                 const matches = [];
-
-                // Loop through all chunks
+                
                 for (let i = 0; i < totalChunks; i++) {
-                    setSearchProgress(`Scanning database chunk ${i + 1} of ${totalChunks}...`);
+                    setSearchProgress(`Scanning database chunk ${i + 1}/${totalChunks}...`);
                     try {
-                        const res = await fetch(`site_api/text_chunk_${i}.json`);
-                        if (!res.ok) continue; 
+                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
+                        if (!res.ok) continue;
                         const chunk = await res.json();
                         
-                        // Search inside this chunk
                         chunk.forEach(item => {
                             if (item.text.toLowerCase().includes(term)) {
-                                // Find metadata for this ID
-                                const info = meta.find(m => m.id === item.id);
-                                if (info) {
-                                    // Create a snippet
+                                const meta = rawData.find(r => r.id === item.id);
+                                if (meta) {
+                                    // Generate Snippet
                                     const idx = item.text.toLowerCase().indexOf(term);
-                                    const start = Math.max(0, idx - 60);
-                                    const end = Math.min(item.text.length, idx + 100);
+                                    const start = Math.max(0, idx - 80);
+                                    const end = Math.min(item.text.length, idx + 120);
                                     const snippet = "..." + item.text.substring(start, end) + "...";
-                                    matches.push({ ...info, snippet });
+                                    matches.push({ ...meta, snippet });
                                 }
                             }
                         });
-                    } catch (e) {
-                        console.error(`Error loading chunk ${i}`, e);
-                    }
+                    } catch (e) { console.error(e); }
                 }
-                
                 setSearchResults(matches);
                 setIsSearching(false);
                 setSearchProgress("");
             };
 
-            // 3. Chart Data Prep
-            const chartData = useMemo(() => {
-                if (meta.length === 0) return [];
-                const months = {};
-                
-                meta.forEach(s => {
-                    if (!selectedChurches.includes(s.church)) return;
-                    const m = s.date.substring(0, 7); // YYYY-MM
-                    if (!months[m]) months[m] = { date: m, time: new Date(m).getTime() };
-                    if (!months[m][s.church]) months[m][s.church] = { count: 0, mentions: 0 };
-                    
-                    months[m][s.church].count++;
-                    months[m][s.church].mentions += s.mentionCount;
-                });
-
-                return Object.values(months)
-                    .map(entry => {
-                        const row = { date: entry.date, time: entry.time };
-                        selectedChurches.forEach(c => {
-                            if (entry[c]) {
-                                // Calculate Average Mentions per Sermon
-                                row[c] = parseFloat((entry[c].mentions / entry[c].count).toFixed(2));
-                            } else {
-                                row[c] = 0;
-                            }
-                        });
-                        return row;
-                    })
-                    .sort((a, b) => a.time - b.time);
-            }, [meta, selectedChurches]);
-
-            if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-500 animate-pulse">Loading Database...</div>;
-            
-            // ERROR SCREEN
-            if (error) return (
-                <div className="h-screen flex flex-col items-center justify-center p-8 text-center bg-red-50">
-                    <div className="text-red-500 text-6xl mb-4">⚠️</div>
-                    <h1 className="text-2xl font-bold text-gray-800 mb-2">Setup Error</h1>
-                    <p className="text-gray-800 font-medium">{error}</p>
-                    <div className="mt-8 bg-white p-4 rounded border text-sm text-left">
-                        <p className="font-bold mb-2">Required GitHub Folder Structure:</p>
-                        <ul className="list-disc pl-5 space-y-1 font-mono text-gray-600">
-                            <li>/index.html</li>
-                            <li>/site_api/metadata.json</li>
-                            <li>/site_api/text_chunk_0.json</li>
-                            <li>/data/Church_Name/sermon.txt</li>
-                        </ul>
-                    </div>
-                </div>
-            );
+            if (loading) return <div className="h-screen flex items-center justify-center text-gray-500 font-medium">Loading Analytics...</div>;
+            if (error) return <div className="h-screen flex items-center justify-center text-red-500 font-bold">{error}</div>;
 
             return (
-                <div className="min-h-screen pb-12">
-                    {/* Header */}
-                    <div className="bg-white border-b sticky top-0 z-40 shadow-sm">
-                        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-                            <h1 className="font-bold text-xl text-gray-800 flex items-center gap-2">
-                                <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">v2.1</span>
-                                Transcript Tracker
-                            </h1>
-                            <div className="flex gap-4">
-                                <button onClick={() => setView('dashboard')} className={`text-sm font-medium ${view === 'dashboard' ? 'text-blue-600' : 'text-gray-500'}`}>Dashboard</button>
-                                <button onClick={() => setView('search')} className={`text-sm font-medium ${view === 'search' ? 'text-blue-600' : 'text-gray-500'}`}>Global Search</button>
-                                <button onClick={() => setView('data')} className={`text-sm font-medium ${view === 'data' ? 'text-blue-600' : 'text-gray-500'}`}>Data & Download</button>
+                <div className="min-h-screen pb-20">
+                    {/* NAV */}
+                    <nav className="bg-white border-b sticky top-0 z-30 shadow-sm">
+                        <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+                            <div className="flex items-center gap-3">
+                                <div className="bg-blue-600 text-white p-2 rounded-lg"><Icon name="barChart" /></div>
+                                <span className="font-bold text-lg text-gray-800 hidden md:block">Message Analytics Hub</span>
+                            </div>
+                            <div className="flex gap-1 bg-gray-100 p-1 rounded-lg">
+                                <button onClick={() => setView('dashboard')} className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${view === 'dashboard' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500'}`}>Dashboard</button>
+                                <button onClick={() => setView('search')} className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${view === 'search' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500'}`}>Deep Search</button>
                             </div>
                         </div>
-                    </div>
+                    </nav>
 
-                    <div className="max-w-7xl mx-auto px-4 mt-8">
-                        {/* DASHBOARD VIEW */}
-                        {view === 'dashboard' && (
-                            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                                {/* Sidebar */}
-                                <div className="bg-white p-4 rounded-xl shadow-sm border h-fit">
-                                    <h3 className="font-bold text-gray-700 mb-4">Filter Churches</h3>
-                                    <div className="space-y-2 max-h-[60vh] overflow-y-auto">
-                                        {[...new Set(meta.map(s => s.church))].sort().map(c => (
-                                            <label key={c} className="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-1 rounded">
-                                                <input 
-                                                    type="checkbox" 
-                                                    checked={selectedChurches.includes(c)}
-                                                    onChange={(e) => {
-                                                        if(e.target.checked) setSelectedChurches([...selectedChurches, c]);
-                                                        else setSelectedChurches(selectedChurches.filter(x => x !== c));
-                                                    }}
-                                                    className="rounded text-blue-600"
-                                                />
-                                                <span className="text-sm truncate">{c}</span>
+                    <main className="max-w-7xl mx-auto px-4 mt-8">
+                        
+                        {/* --- FILTERS (ALWAYS VISIBLE) --- */}
+                        <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-4">
+                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" size={18} /> Global Filters</h3>
+                                <button onClick={() => {setFilterSpeaker("All"); setFilterYear("All"); setFilterType("All"); setFilterLang("All"); setSelectedChurches(options.churches);}} className="text-xs text-blue-500 hover:underline">Reset Filters</button>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                                <FilterDropdown label="Speaker" value={filterSpeaker} options={options.speakers} onChange={setFilterSpeaker} />
+                                <FilterDropdown label="Year" value={filterYear} options={options.years} onChange={setFilterYear} />
+                                <FilterDropdown label="Category" value={filterType} options={options.types} onChange={setFilterType} />
+                                <FilterDropdown label="Language" value={filterLang} options={options.langs} onChange={setFilterLang} />
+                                {/* Church Toggle is custom */}
+                                <div className="relative group lg:col-span-1">
+                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Churches</label>
+                                    <button className="mt-1 w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center">
+                                        <span>{selectedChurches.length} Selected</span>
+                                        <span className="text-xs text-blue-500">Edit</span>
+                                    </button>
+                                    <div className="absolute top-full left-0 w-64 bg-white border shadow-xl rounded-lg p-3 hidden group-hover:block z-20 max-h-60 overflow-y-auto">
+                                        {options.churches.map(c => (
+                                            <label key={c} className="flex items-center gap-2 p-1 hover:bg-gray-50 rounded cursor-pointer">
+                                                <input type="checkbox" checked={selectedChurches.includes(c)} onChange={(e) => e.target.checked ? setSelectedChurches([...selectedChurches, c]) : setSelectedChurches(selectedChurches.filter(x => x !== c))} className="text-blue-600 rounded" />
+                                                <span className="text-xs truncate">{c}</span>
                                             </label>
                                         ))}
                                     </div>
-                                    <div className="mt-6 pt-4 border-t text-xs text-gray-400">
-                                        Total Sermons: {meta.length}<br/>
-                                        Source: site_api/metadata.json
-                                    </div>
-                                </div>
-
-                                {/* Main Chart */}
-                                <div className="lg:col-span-3 bg-white p-6 rounded-xl shadow-sm border">
-                                    <h3 className="font-bold text-lg mb-6 text-gray-800">Average "Branham" Mentions Per Sermon (Monthly)</h3>
-                                    <div className="h-[400px]">
-                                        <ResponsiveContainer width="100%" height="100%">
-                                            <LineChart data={chartData}>
-                                                <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                                                <XAxis dataKey="date" />
-                                                <YAxis />
-                                                <Tooltip />
-                                                <Legend />
-                                                {selectedChurches.map((c, i) => (
-                                                    <Line 
-                                                        key={c} 
-                                                        type="monotone" 
-                                                        dataKey={c} 
-                                                        stroke={COLORS[i % COLORS.length]} 
-                                                        strokeWidth={2} 
-                                                        dot={false}
-                                                        connectNulls={true}
-                                                    />
-                                                ))}
-                                                <Brush dataKey="date" height={30} stroke="#cbd5e1" />
-                                            </LineChart>
-                                        </ResponsiveContainer>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+
+                        {view === 'dashboard' && (
+                            <>
+                                {/* STAT CARDS */}
+                                {stats && (
+                                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                                        <StatCard title="Total Sermons" value={stats.totalSermons} icon="fileText" color="blue" />
+                                        <StatCard title="Total Mentions" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
+                                        <StatCard title="Avg Mentions" value={stats.avg} sub="Per Sermon" icon="barChart" color="indigo" />
+                                        <StatCard title="Peak Count" value={stats.maxMentions} sub="In One Sermon" icon="barChart" color="purple" />
+                                        <StatCard title="Zero Mentions" value={stats.zeroCount} sub="Sermons" icon="x" color="red" />
+                                        <StatCard title="Zero Rate" value={stats.zeroRate} sub="Of Selection" icon="x" color="orange" />
+                                    </div>
+                                )}
+
+                                {/* MAIN CHART */}
+                                <div className="bg-white p-6 rounded-xl border shadow-sm mb-8 h-[450px]">
+                                    <h3 className="font-bold text-gray-800 mb-6">Mention Trends Over Time (Monthly Average)</h3>
+                                    <ResponsiveContainer width="100%" height="90%">
+                                        <LineChart data={chartData} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                            <XAxis dataKey="date" tick={{fontSize: 12, fill: '#6b7280'}} />
+                                            <YAxis tick={{fontSize: 12, fill: '#6b7280'}} />
+                                            <Tooltip contentStyle={{borderRadius: '8px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: 'none'}} />
+                                            <Legend />
+                                            {selectedChurches.map((c, i) => (
+                                                <Line key={c} type="monotone" dataKey={c} stroke={COLORS[i % COLORS.length]} strokeWidth={3} dot={false} connectNulls />
+                                            ))}
+                                            <Brush dataKey="date" height={30} stroke="#cbd5e1" />
+                                        </LineChart>
+                                    </ResponsiveContainer>
+                                </div>
+
+                                {/* DATA TABLE */}
+                                <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
+                                    <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+                                        <h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3>
+                                    </div>
+                                    <div className="overflow-x-auto max-h-[600px]">
+                                        <table className="w-full text-sm text-left text-gray-500">
+                                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0 z-10">
+                                                <tr>
+                                                    <th className="px-6 py-3">Date</th>
+                                                    <th className="px-6 py-3">Church</th>
+                                                    <th className="px-6 py-3">Title</th>
+                                                    <th className="px-6 py-3">Speaker</th>
+                                                    <th className="px-6 py-3 text-right">Mentions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-gray-100">
+                                                {filteredData.map(s => (
+                                                    <tr key={s.id} onClick={() => setSelectedSermon(s)} className="hover:bg-blue-50 cursor-pointer transition">
+                                                        <td className="px-6 py-4 whitespace-nowrap">{s.date}</td>
+                                                        <td className="px-6 py-4 whitespace-nowrap">
+                                                            <span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{s.church}</span>
+                                                        </td>
+                                                        <td className="px-6 py-4 font-medium text-gray-900">{s.title}</td>
+                                                        <td className="px-6 py-4">{s.speaker}</td>
+                                                        <td className={`px-6 py-4 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </>
                         )}
 
-                        {/* SEARCH VIEW */}
                         {view === 'search' && (
-                            <div className="max-w-3xl mx-auto">
-                                <div className="bg-white p-8 rounded-xl shadow-sm border text-center mb-8">
-                                    <h2 className="text-2xl font-bold mb-2">Search Everything</h2>
-                                    <p className="text-gray-500 mb-6">Search across {meta.length} sermons from all churches.</p>
-                                    <div className="flex gap-2">
+                            <div className="max-w-4xl mx-auto">
+                                <div className="bg-white p-8 rounded-xl border shadow-sm text-center mb-8">
+                                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Deep Transcript Search</h2>
+                                    <p className="text-gray-500 mb-6">Search every word spoken in {filteredData.length} sermons.</p>
+                                    <div className="flex gap-2 relative">
+                                        <Icon name="search" className="absolute left-4 top-3.5 text-gray-400" />
                                         <input 
                                             type="text" 
-                                            className="flex-1 border p-3 rounded-lg text-lg outline-none focus:ring-2 ring-blue-500"
-                                            placeholder="Enter keyword or phrase..."
+                                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-lg shadow-sm"
+                                            placeholder="Search for quotes, doctrine, or names..."
                                             value={searchQuery}
                                             onChange={(e) => setSearchQuery(e.target.value)}
-                                            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                                            onKeyDown={(e) => e.key === 'Enter' && performSearch()}
                                         />
                                         <button 
-                                            onClick={handleSearch}
+                                            onClick={performSearch}
                                             disabled={isSearching}
-                                            className="bg-blue-600 text-white px-6 rounded-lg font-bold hover:bg-blue-700 disabled:opacity-50"
+                                            className="bg-blue-600 text-white px-8 rounded-lg font-bold hover:bg-blue-700 transition disabled:opacity-50"
                                         >
                                             {isSearching ? "..." : "Search"}
                                         </button>
                                     </div>
-                                    {isSearching && <p className="mt-4 text-blue-600 animate-pulse">{searchProgress}</p>}
+                                    {isSearching && <p className="mt-4 text-blue-600 animate-pulse text-sm">{searchProgress}</p>}
                                 </div>
 
                                 <div className="space-y-4">
                                     {searchResults.map((res, i) => (
-                                        <div 
-                                            key={i} 
-                                            onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})}
-                                            className="bg-white p-5 rounded-lg border hover:border-blue-400 cursor-pointer transition shadow-sm"
-                                        >
-                                            <div className="flex justify-between">
-                                                <h4 className="font-bold text-blue-600">{res.title}</h4>
-                                                <span className="text-xs bg-gray-100 px-2 py-1 rounded">{res.date}</span>
+                                        <div key={i} onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})} className="bg-white p-6 rounded-xl border hover:border-blue-300 shadow-sm cursor-pointer transition group">
+                                            <div className="flex justify-between items-start mb-3">
+                                                <div>
+                                                    <h4 className="text-lg font-bold text-blue-600 group-hover:underline">{res.title}</h4>
+                                                    <p className="text-sm text-gray-500">{res.date} • {res.church} • {res.speaker}</p>
+                                                </div>
+                                                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-bold">{res.mentionCount} Mentions</span>
                                             </div>
-                                            <p className="text-xs text-gray-500 mb-2">{res.church} • {res.speaker}</p>
-                                            <div className="bg-gray-50 p-3 rounded text-sm text-gray-700 font-serif italic border-l-4 border-gray-300">
+                                            <p className="text-gray-600 bg-gray-50 p-4 rounded-lg text-sm font-serif italic border-l-4 border-gray-300">
                                                 "{res.snippet}"
-                                            </div>
+                                            </p>
                                         </div>
                                     ))}
-                                    {searchResults.length === 0 && !isSearching && searchQuery && (
-                                        <p className="text-center text-gray-400">No results found.</p>
+                                    {!isSearching && searchQuery && searchResults.length === 0 && (
+                                        <div className="text-center py-12 text-gray-400">No results found in the database.</div>
                                     )}
                                 </div>
                             </div>
                         )}
 
-                        {/* DATA VIEW */}
-                        {view === 'data' && (
-                            <div className="max-w-2xl mx-auto text-center bg-white p-12 rounded-xl border shadow-sm">
-                                <div className="mb-6 bg-blue-50 w-20 h-20 mx-auto rounded-full flex items-center justify-center text-blue-600 text-3xl">⬇️</div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-4">Download Database</h2>
-                                <p className="text-gray-600 mb-8 leading-relaxed">
-                                    You can download the entire sermon database, organized by church folders, as a single ZIP file.
-                                    This includes all {meta.length} transcripts currently in the system.
-                                </p>
-                                <a 
-                                    href="all_sermons_archive.zip" 
-                                    download
-                                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl shadow-lg transition transform hover:-translate-y-1"
-                                >
-                                    Download All Transcripts (.zip)
-                                </a>
-                                <p className="mt-6 text-xs text-gray-400">Last Updated: {meta.length > 0 ? new Date(meta[0].timestamp).toLocaleDateString() : 'Unknown'}</p>
-                            </div>
-                        )}
-                    </div>
+                    </main>
 
                     {selectedSermon && (
                         <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />
