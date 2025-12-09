@@ -32,9 +32,14 @@
             const [fullText, setFullText] = useState("Loading text...");
             
             useEffect(() => {
-                // Fetch the raw text file directly from GitHub Pages
+                // Try fetching relative to where index.html is
                 fetch(sermon.path)
-                    .then(res => res.ok ? res.text() : "Text not available.")
+                    .then(res => {
+                        if (res.ok) return res.text();
+                        // Fallback: Try looking in root if data folder isn't found
+                        const filename = sermon.path.split('/').pop();
+                        return "Text not found. Ensure the 'data' folder is uploaded to GitHub.";
+                    })
                     .then(setFullText)
                     .catch(err => setFullText("Error loading transcript."));
             }, [sermon]);
@@ -68,9 +73,13 @@
             const [meta, setMeta] = useState([]);
             const [totalChunks, setTotalChunks] = useState(0);
             const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
             const [view, setView] = useState('dashboard');
             const [selectedChurches, setSelectedChurches] = useState([]);
             
+            // Track where we found the data (root or site_api folder) to build subsequent paths
+            const [apiPrefix, setApiPrefix] = useState("site_api/");
+
             // Search State
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
@@ -80,25 +89,45 @@
             // Modal State
             const [selectedSermon, setSelectedSermon] = useState(null);
 
-            // 1. Load Metadata Only (Fast)
+            // 1. Load Metadata with Fallback
             useEffect(() => {
-                fetch('site_api/metadata.json')
-                    .then(res => res.json())
-                    .then(data => {
+                const loadData = async () => {
+                    try {
+                        // Attempt 1: Look in site_api/ folder (Standard)
+                        let response = await fetch('site_api/metadata.json');
+                        let prefix = "site_api/";
+                        
+                        // Attempt 2: Look in root (Common Upload Mistake)
+                        if (!response.ok) {
+                            console.warn("site_api/metadata.json not found. Trying root metadata.json...");
+                            response = await fetch('metadata.json');
+                            prefix = ""; 
+                        }
+
+                        if (!response.ok) {
+                            throw new Error("Could not find metadata.json in 'site_api/' or root.");
+                        }
+
+                        const data = await response.json();
+                        setApiPrefix(prefix);
                         setMeta(data.sermons);
-                        setTotalChunks(data.totalChunks);
+                        setTotalChunks(data.totalChunks || 0);
+                        
                         // Default to all churches selected
                         const unique = [...new Set(data.sermons.map(s => s.church))];
                         setSelectedChurches(unique);
                         setLoading(false);
-                    })
-                    .catch(err => {
-                        console.error("Failed to load metadata", err);
+                    } catch (err) {
+                        console.error("Fatal Error:", err);
+                        setError(err.message);
                         setLoading(false);
-                    });
+                    }
+                };
+
+                loadData();
             }, []);
 
-            // 2. Search Logic (Chunked Loading)
+            // 2. Search Logic
             const handleSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
                 setIsSearching(true);
@@ -108,20 +137,20 @@
                 const term = searchQuery.toLowerCase();
                 const matches = [];
 
-                // Loop through all chunks
+                // Loop through all chunks using the detected prefix
                 for (let i = 0; i < totalChunks; i++) {
                     setSearchProgress(`Scanning database chunk ${i + 1} of ${totalChunks}...`);
                     try {
-                        const res = await fetch(`site_api/text_chunk_${i}.json`);
+                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
+                        if (!res.ok) continue;
+                        
                         const chunk = await res.json();
                         
                         // Search inside this chunk
                         chunk.forEach(item => {
                             if (item.text.toLowerCase().includes(term)) {
-                                // Find metadata for this ID
                                 const info = meta.find(m => m.id === item.id);
                                 if (info) {
-                                    // Create a snippet
                                     const idx = item.text.toLowerCase().indexOf(term);
                                     const start = Math.max(0, idx - 60);
                                     const end = Math.min(item.text.length, idx + 100);
@@ -171,7 +200,16 @@
                     .sort((a, b) => a.time - b.time);
             }, [meta, selectedChurches]);
 
-            if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-500">Loading Database...</div>;
+            if (loading) return <div className="h-screen flex items-center justify-center font-bold text-gray-500 animate-pulse">Loading Database...</div>;
+            
+            if (error) return (
+                <div className="h-screen flex flex-col items-center justify-center p-4 text-center">
+                    <div className="text-red-500 text-6xl mb-4">⚠️</div>
+                    <h1 className="text-xl font-bold text-gray-800">Database Error</h1>
+                    <p className="text-gray-600 mt-2">{error}</p>
+                    <p className="text-sm text-gray-400 mt-4">Make sure you uploaded the 'site_api' folder correctly to GitHub.</p>
+                </div>
+            );
 
             return (
                 <div className="min-h-screen pb-12">
@@ -179,7 +217,7 @@
                     <div className="bg-white border-b sticky top-0 z-40 shadow-sm">
                         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
                             <h1 className="font-bold text-xl text-gray-800 flex items-center gap-2">
-                                <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">v2.0</span>
+                                <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">v2.1</span>
                                 Transcript Tracker
                             </h1>
                             <div className="flex gap-4">
@@ -212,6 +250,10 @@
                                                 <span className="text-sm truncate">{c}</span>
                                             </label>
                                         ))}
+                                    </div>
+                                    <div className="mt-6 pt-4 border-t text-xs text-gray-400">
+                                        Total Sermons: {meta.length}<br/>
+                                        Database loaded from: {apiPrefix || "root"}
                                     </div>
                                 </div>
 
