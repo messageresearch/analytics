@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Follower Analytics Hub</title>
+    <title>William Branham Mention Tracker</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -11,16 +11,18 @@
     <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
     <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; background-color: #f8fafc; }
-        .highlight-match { background-color: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; border-radius: 2px; }
+        .highlight-match { background-color: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; }
         .stat-card { transition: all 0.2s; }
         .stat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-        ::-webkit-scrollbar { width: 8px; height: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body>
@@ -28,14 +30,27 @@
 
     <script type="text/babel">
         const { useState, useEffect, useMemo, useRef } = React;
-        // FIX: Added LineChart to imports to prevent crash
         const { 
-            LineChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
-            ResponsiveContainer, Brush, AreaChart, Area 
+            ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
+            ResponsiveContainer, Brush, BarChart, Area, Cell 
         } = Recharts;
 
+        // --- CONFIGURATION ---
+        const CHANNEL_SOURCES = [
+            { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
+            { name: "Cedar Hills - Church of the Cross", url: "https://www.youtube.com/@CedarHillsChurchoftheCross" },
+            { name: "Evening Light Tabernacle", url: "https://www.youtube.com/@EveningLightTabernacle" },
+            { name: "Literal Life Church", url: "https://www.youtube.com/@LiteralLifeChurch" },
+            { name: "Flagstaff Mission Tabernacle", url: "https://www.youtube.com/@flagstaffmissiontabernacle5927" },
+            { name: "Jericho Tabernacle", url: "https://www.youtube.com/@JerichoTabernacle/videos" },
+            { name: "Tucson Tabernacle", url: "https://www.youtube.com/@TucsonTabernacle" },
+            { name: "Evening Light Fellowship", url: "https://www.youtube.com/@eveninglightfellowshipaz" }
+        ];
+
+        const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2", "#be123c", "#4f46e5"];
+
         // --- ICONS ---
-        const Icon = ({ name, size = 20, className = "" }) => {
+        const Icon = ({ name, size = 18, className = "" }) => {
             const icons = {
                 search: <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />,
                 filter: <path d="M12.37 19.63c.45.63 1.37.63 1.82 0l8.5-12A1.5 1.5 0 0 0 21.46 5.5H2.54a1.5 1.5 0 0 0-1.23 2.13l8.5 12Z" />,
@@ -44,7 +59,9 @@
                 barChart: <path d="M18 20V10M12 20V4M6 20v-6" />,
                 fileText: <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />,
                 users: <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />,
-                calendar: <path d="M8 2v4m8-4v4m-12 4h16m-16 4h16m-16 4h16" />
+                calendar: <path d="M8 2v4m8-4v4m-12 4h16m-16 4h16m-16 4h16" />,
+                chevronDown: <path d="m6 9 6 6 6-6" />,
+                info: <path d="M12 16v-4m0-4h.01M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -53,32 +70,67 @@
             );
         };
 
-        const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2", "#be123c", "#4f46e5"];
+        // --- COMPONENTS ---
 
-        // --- ERROR BOUNDARY ---
-        class ErrorBoundary extends React.Component {
-            constructor(props) { super(props); this.state = { hasError: false, error: null }; }
-            static getDerivedStateFromError(error) { return { hasError: true, error }; }
-            render() {
-                if (this.state.hasError) {
-                    return (
-                        <div className="min-h-screen flex items-center justify-center bg-red-50 p-4">
-                            <div className="bg-white p-8 rounded-xl shadow-xl max-w-lg border border-red-100">
-                                <h2 className="text-2xl font-bold text-red-600 mb-2">Something went wrong</h2>
-                                <p className="text-gray-600 mb-4">The application crashed. Here is the error:</p>
-                                <div className="bg-gray-100 p-4 rounded text-xs font-mono text-red-800 overflow-auto mb-4">
-                                    {this.state.error.toString()}
-                                </div>
-                                <button onClick={() => window.location.reload()} className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">Reload Page</button>
+        const MultiSelect = ({ label, options, selected, onChange }) => {
+            const [isOpen, setIsOpen] = useState(false);
+            const ref = useRef(null);
+
+            useEffect(() => {
+                const handleClickOutside = (event) => {
+                    if (ref.current && !ref.current.contains(event.target)) setIsOpen(false);
+                };
+                document.addEventListener("mousedown", handleClickOutside);
+                return () => document.removeEventListener("mousedown", handleClickOutside);
+            }, []);
+
+            const toggleOption = (opt) => {
+                if (selected.includes(opt)) onChange(selected.filter(s => s !== opt));
+                else onChange([...selected, opt]);
+            };
+
+            const selectAll = () => onChange(options);
+            const clearAll = () => onChange([]);
+
+            return (
+                <div className="relative" ref={ref}>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 block">{label}</label>
+                    <button 
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center hover:border-blue-400 transition"
+                    >
+                        <span className="truncate">
+                            {selected.length === 0 ? "Select..." : 
+                             selected.length === options.length ? "All Selected" : 
+                             `${selected.length} Selected`}
+                        </span>
+                        <Icon name="chevronDown" size={14} className="text-gray-400" />
+                    </button>
+                    
+                    {isOpen && (
+                        <div className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 shadow-xl rounded-lg z-50 max-h-60 flex flex-col">
+                            <div className="p-2 border-b flex justify-between bg-gray-50 rounded-t-lg">
+                                <button onClick={selectAll} className="text-xs text-blue-600 hover:text-blue-800 font-medium">Select All</button>
+                                <button onClick={clearAll} className="text-xs text-red-500 hover:text-red-700 font-medium">Clear</button>
+                            </div>
+                            <div className="overflow-y-auto p-1 custom-scrollbar">
+                                {options.map(opt => (
+                                    <label key={opt} className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded cursor-pointer">
+                                        <input 
+                                            type="checkbox" 
+                                            checked={selected.includes(opt)}
+                                            onChange={() => toggleOption(opt)}
+                                            className="rounded text-blue-600 focus:ring-blue-500" 
+                                        />
+                                        <span className="text-sm text-gray-700 truncate">{opt}</span>
+                                    </label>
+                                ))}
                             </div>
                         </div>
-                    );
-                }
-                return this.props.children;
-            }
-        }
-
-        // --- COMPONENTS ---
+                    )}
+                </div>
+            );
+        };
 
         const StatCard = ({ title, value, sub, icon, color = "blue" }) => (
             <div className={`bg-white p-5 rounded-xl border border-${color}-100 shadow-sm stat-card flex justify-between items-start`}>
@@ -93,134 +145,69 @@
             </div>
         );
 
-        const SermonModal = ({ sermon, onClose }) => {
-            const [fullText, setFullText] = useState("Loading transcript...");
-            const contentRef = useRef(null);
-            
-            useEffect(() => {
-                // FIX: Removed 'prefix' from here. Data is always in root data/ folder.
-                fetch(sermon.path)
-                    .then(res => {
-                        if (!res.ok) return "Transcript text not found on server. Ensure 'data' folder is uploaded.";
-                        return res.text();
-                    })
-                    .then(setFullText)
-                    .catch(err => setFullText("Error loading transcript."));
-            }, [sermon]);
-
-            useEffect(() => {
-                if (fullText && sermon.searchTerm && contentRef.current) {
-                    setTimeout(() => {
-                        const match = contentRef.current.querySelector('.highlight-match');
-                        if (match) match.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }, 500);
-                }
-            }, [fullText, sermon.searchTerm]);
-
-            const highlight = (text, term) => {
-                if (!term) return text;
-                const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-                const parts = text.split(regex);
-                return parts.map((part, i) => 
-                    regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part
-                );
-            };
-
-            return (
-                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
-                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
-                        <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
-                            <div>
-                                <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
-                                <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
-                                    <span className="bg-white border px-2 py-0.5 rounded shadow-sm">{sermon.church}</span>
-                                    <span className="bg-white border px-2 py-0.5 rounded shadow-sm">{sermon.date}</span>
-                                    {sermon.searchTerm && <span className="bg-yellow-100 text-yellow-800 border border-yellow-200 px-2 py-0.5 rounded font-medium">Found: "{sermon.searchTerm}"</span>}
-                                </div>
-                            </div>
-                            <button onClick={onClose} className="p-2 hover:bg-red-100 text-gray-400 hover:text-red-600 rounded-full transition"><Icon name="x" /></button>
-                        </div>
-                        <div className="flex-1 overflow-y-auto p-8 bg-white" ref={contentRef}>
-                            <div className="max-w-3xl mx-auto whitespace-pre-wrap font-serif text-gray-800 leading-relaxed text-base">
-                                {sermon.searchTerm ? highlight(fullText, sermon.searchTerm) : fullText}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            );
-        };
-
-        const FilterDropdown = ({ label, value, options, onChange }) => (
-            <div className="flex flex-col gap-1">
-                <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">{label}</label>
-                <select 
-                    className="bg-white border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 shadow-sm"
-                    value={value}
-                    onChange={(e) => onChange(e.target.value)}
-                >
-                    <option value="All">All {label}s</option>
-                    {options.map(o => <option key={o} value={o}>{o}</option>)}
-                </select>
-            </div>
-        );
-
         const App = () => {
             const [rawData, setRawData] = useState([]);
-            const [totalChunks, setTotalChunks] = useState(0);
             const [loading, setLoading] = useState(true);
             const [error, setError] = useState(null);
             const [apiPrefix, setApiPrefix] = useState("site_api/");
+            const [totalChunks, setTotalChunks] = useState(0);
+
+            // --- FILTERS STATE ---
+            const [selChurches, setSelChurches] = useState([]);
+            const [selSpeakers, setSelSpeakers] = useState([]);
+            const [selYears, setSelYears] = useState([]);
+            const [selTypes, setSelTypes] = useState([]);
+            const [selLangs, setSelLangs] = useState([]);
             
-            // FILTERS
-            const [selectedChurches, setSelectedChurches] = useState([]);
-            const [filterSpeaker, setFilterSpeaker] = useState("All");
-            const [filterYear, setFilterYear] = useState("All");
-            const [filterType, setFilterType] = useState("All");
-            const [filterLang, setFilterLang] = useState("All");
+            // --- SETTINGS STATE ---
+            const [rollingDays, setRollingDays] = useState(30);
+            const [view, setView] = useState("dashboard"); // dashboard, search, data
             
-            // SEARCH
+            // --- SEARCH STATE ---
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
             const [isSearching, setIsSearching] = useState(false);
             const [searchProgress, setSearchProgress] = useState("");
 
-            // UI
+            // --- MODAL STATE ---
             const [selectedSermon, setSelectedSermon] = useState(null);
-            const [view, setView] = useState("dashboard");
+            
+            // --- DOWNLOAD STATE ---
+            const [isZipping, setIsZipping] = useState(false);
+            const [zipProgress, setZipProgress] = useState("");
 
-            // --- LOAD DATA ---
+            // 1. INITIAL LOAD
             useEffect(() => {
                 const init = async () => {
                     try {
                         let res = await fetch('site_api/metadata.json');
                         let prefix = "site_api/";
                         if (!res.ok) {
-                            // Fallback to root if site_api folder missing
                             res = await fetch('metadata.json');
                             prefix = "";
                         }
-                        if (!res.ok) throw new Error("Metadata file not found in 'site_api/' or root.");
+                        if (!res.ok) throw new Error("Metadata not found.");
                         
                         const json = await res.json();
-                        // Safeguard: Ensure json.sermons exists
-                        const list = json.sermons || [];
-                        
-                        const processed = list.map(s => ({
+                        const list = (json.sermons || []).map(s => ({
                             ...s,
                             dateObj: new Date(s.timestamp),
-                            // FIX: Do not prepend prefix to s.path. Data is always in root 'data/'
                             path: s.path 
                         }));
                         
-                        setRawData(processed);
+                        setRawData(list);
                         setTotalChunks(json.totalChunks || 0);
                         setApiPrefix(prefix);
+
+                        // Init Filters (Select All)
+                        setSelChurches([...new Set(list.map(s => s.church))]);
+                        setSelSpeakers([...new Set(list.map(s => s.speaker))]);
+                        setSelYears([...new Set(list.map(s => s.year))]);
+                        setSelTypes([...new Set(list.map(s => s.type))]);
+                        setSelLangs([...new Set(list.map(s => s.language))]);
                         
-                        const uniqueChurches = [...new Set(processed.map(s => s.church))];
-                        setSelectedChurches(uniqueChurches);
                         setLoading(false);
                     } catch (e) {
-                        console.error(e);
                         setError(e.message);
                         setLoading(false);
                     }
@@ -228,31 +215,29 @@
                 init();
             }, []);
 
-            // --- FILTER LOGIC ---
-            const filteredData = useMemo(() => {
-                return rawData.filter(s => {
-                    if (selectedChurches.length > 0 && !selectedChurches.includes(s.church)) return false;
-                    if (filterSpeaker !== "All" && s.speaker !== filterSpeaker) return false;
-                    if (filterYear !== "All" && s.year !== filterYear) return false;
-                    if (filterType !== "All" && s.type !== filterType) return false;
-                    if (filterLang !== "All" && s.language !== filterLang) return false;
-                    return true;
-                });
-            }, [rawData, selectedChurches, filterSpeaker, filterYear, filterType, filterLang]);
-
-            // --- DROPDOWN OPTIONS ---
+            // 2. FILTER LOGIC
             const options = useMemo(() => {
-                const get = (key) => [...new Set(rawData.map(s => s[key]))].filter(Boolean).sort();
+                const getUnique = (k) => [...new Set(rawData.map(s => s[k]))].filter(Boolean).sort();
                 return {
-                    speakers: get('speaker'),
-                    years: get('year').reverse(),
-                    types: get('type'),
-                    langs: get('language'),
-                    churches: get('church')
+                    churches: getUnique('church'),
+                    speakers: getUnique('speaker'),
+                    years: getUnique('year').reverse(),
+                    types: getUnique('type'),
+                    langs: getUnique('language')
                 };
             }, [rawData]);
 
-            // --- STATS ---
+            const filteredData = useMemo(() => {
+                return rawData.filter(s => 
+                    selChurches.includes(s.church) &&
+                    selSpeakers.includes(s.speaker) &&
+                    selYears.includes(s.year) &&
+                    selTypes.includes(s.type) &&
+                    selLangs.includes(s.language)
+                );
+            }, [rawData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
+
+            // 3. STATS
             const stats = useMemo(() => {
                 if (!filteredData.length) return null;
                 const total = filteredData.length;
@@ -265,32 +250,104 @@
                     maxMentions: max, 
                     zeroCount: zero, 
                     avg: (mentions / total).toFixed(1), 
-                    zeroRate: ((zero / total) * 100).toFixed(1) + "%" 
+                    zeroRate: ((zero / total) * 100).toFixed(1)
                 };
             }, [filteredData]);
 
-            // --- CHART DATA ---
-            const chartData = useMemo(() => {
+            // 4. CHART DATA: TRENDS & ROLLING AVG
+            const trendData = useMemo(() => {
                 if (!filteredData.length) return [];
-                const buckets = {};
-                filteredData.forEach(s => {
-                    const key = s.date.substring(0, 7); // YYYY-MM
-                    if (!buckets[key]) buckets[key] = { date: key, timestamp: new Date(key).getTime() };
-                    if (!buckets[key][s.church]) buckets[key][s.church] = { sum: 0, count: 0 };
-                    buckets[key][s.church].sum += s.mentionCount;
-                    buckets[key][s.church].count++;
+                
+                // Sort by date first
+                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
+                
+                return sorted.map((item, index, arr) => {
+                    // Calculate Rolling Average
+                    const cutoff = item.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
+                    let sum = 0, count = 0;
+                    
+                    // Look backwards
+                    for (let i = index; i >= 0; i--) {
+                        if (arr[i].timestamp < cutoff) break;
+                        sum += arr[i].mentionCount;
+                        count++;
+                    }
+                    
+                    return {
+                        ...item,
+                        rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0
+                    };
                 });
-                return Object.values(buckets).map(b => {
-                    const row = { date: b.date, timestamp: b.timestamp };
-                    selectedChurches.forEach(c => {
-                        if (b[c]) row[c] = parseFloat((b[c].sum / b[c].count).toFixed(2));
-                        else row[c] = null; // null breaks the line in Recharts, 0 drops it to bottom
-                    });
-                    return row;
-                }).sort((a, b) => a.timestamp - b.timestamp);
-            }, [filteredData, selectedChurches]);
+            }, [filteredData, rollingDays]);
 
-            // --- SEARCH ---
+            // 5. CHART DATA: YEARLY SILENCE
+            const yearlyStats = useMemo(() => {
+                const map = {};
+                filteredData.forEach(s => {
+                    if (!map[s.year]) map[s.year] = { year: s.year, total: 0, zero: 0, has: 0 };
+                    map[s.year].total++;
+                    if (s.mentionCount === 0) map[s.year].zero++;
+                    else map[s.year].has++;
+                });
+                return Object.values(map).sort((a,b) => b.year - a.year).map(y => ({
+                    ...y,
+                    zeroPct: parseFloat(((y.zero / y.total) * 100).toFixed(1)),
+                    hasPct: parseFloat(((y.has / y.total) * 100).toFixed(1))
+                })).reverse();
+            }, [filteredData]);
+
+            // 6. DOWNLOAD HANDLER (Advanced)
+            const handleCustomDownload = async () => {
+                setIsZipping(true);
+                setZipProgress("Initializing...");
+                const zip = new JSZip();
+                const folder = zip.folder("Filtered_Sermons");
+                
+                try {
+                    // We need to fetch text for the filtered list.
+                    // This could be heavy, so we limit to chunk scanning if possible, 
+                    // OR we download individual files if count is low. 
+                    // Better approach: Scan the chunks again since we have the map.
+                    
+                    // Optimisation: Build a Set of needed IDs
+                    const neededIds = new Set(filteredData.map(s => s.id));
+                    let processed = 0;
+
+                    for(let i=0; i<totalChunks; i++) {
+                        setZipProgress(`Processing Database Chunk ${i+1}/${totalChunks}...`);
+                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
+                        if(res.ok) {
+                            const chunk = await res.json();
+                            chunk.forEach(item => {
+                                if(neededIds.has(item.id)) {
+                                    // Find meta for filename
+                                    const meta = filteredData.find(f => f.id === item.id);
+                                    if(meta) {
+                                        const cleanTitle = `${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_');
+                                        folder.file(`${cleanTitle}.txt`, item.text);
+                                        processed++;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                    
+                    setZipProgress("Compressing files...");
+                    const content = await zip.generateAsync({type:"blob"});
+                    const url = window.URL.createObjectURL(content);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `Custom_Sermon_Export_${new Date().toISOString().split('T')[0]}.zip`;
+                    a.click();
+                    
+                } catch(e) {
+                    alert("Download failed: " + e.message);
+                } finally {
+                    setIsZipping(false);
+                }
+            };
+
+            // 7. SEARCH HANDLER
             const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
                 setIsSearching(true);
@@ -320,110 +377,116 @@
                 }
                 setSearchResults(matches);
                 setIsSearching(false);
-                setSearchProgress("");
             };
 
-            if (loading) return <div className="h-screen flex items-center justify-center text-gray-500">Loading Analytics...</div>;
-            if (error) return <div className="h-screen flex items-center justify-center text-red-500 font-bold">{error}</div>;
+            if (loading) return <div className="h-screen flex items-center justify-center font-medium text-gray-500">Loading Database...</div>;
+            if (error) return <div className="h-screen flex items-center justify-center text-red-600 font-bold">{error}</div>;
 
             return (
-                <div className="min-h-screen pb-20">
-                    <nav className="bg-white border-b sticky top-0 z-30 shadow-sm">
+                <div className="min-h-screen pb-20 relative">
+                    {/* TOP BAR */}
+                    <div className="bg-white border-b sticky top-0 z-30 shadow-sm">
                         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                             <div className="flex items-center gap-3">
-                                <div className="bg-blue-600 text-white p-2 rounded-lg"><Icon name="barChart" /></div>
-                                <span className="font-bold text-lg text-gray-800 hidden md:block">Message Analytics Hub</span>
+                                <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
+                                <h1 className="font-bold text-lg text-gray-900 hidden md:block">William Branham Mention Tracker</h1>
                             </div>
-                            <div className="flex gap-1 bg-gray-100 p-1 rounded-lg">
-                                <button onClick={() => setView('dashboard')} className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${view === 'dashboard' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500'}`}>Dashboard</button>
-                                <button onClick={() => setView('search')} className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${view === 'search' ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500'}`}>Deep Search</button>
+                            <div className="flex bg-gray-100 p-1 rounded-lg">
+                                {['dashboard', 'search', 'data'].map(tab => (
+                                    <button 
+                                        key={tab}
+                                        onClick={() => setView(tab)} 
+                                        className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
+                                    >
+                                        {tab}
+                                    </button>
+                                ))}
                             </div>
                         </div>
-                    </nav>
+                    </div>
+
+                    {/* DISCLAIMER BANNER */}
+                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4">
+                        <span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.
+                    </div>
 
                     <main className="max-w-7xl mx-auto px-4 mt-8">
-                        {/* FILTERS */}
+                        
+                        {/* GLOBAL FILTERS */}
                         <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
-                            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-4">
-                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" size={18} /> Global Filters</h3>
-                                <button onClick={() => {setFilterSpeaker("All"); setFilterYear("All"); setFilterType("All"); setFilterLang("All"); setSelectedChurches(options.churches);}} className="text-xs text-blue-500 hover:underline">Reset Filters</button>
+                            <div className="flex justify-between items-center mb-4">
+                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
+                                <button onClick={() => {
+                                    setSelChurches(options.churches);
+                                    setSelSpeakers(options.speakers);
+                                    setSelYears(options.years);
+                                    setSelTypes(options.types);
+                                    setSelLangs(options.langs);
+                                }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                                <FilterDropdown label="Speaker" value={filterSpeaker} options={options.speakers} onChange={setFilterSpeaker} />
-                                <FilterDropdown label="Year" value={filterYear} options={options.years} onChange={setFilterYear} />
-                                <FilterDropdown label="Category" value={filterType} options={options.types} onChange={setFilterType} />
-                                <FilterDropdown label="Language" value={filterLang} options={options.langs} onChange={setFilterLang} />
-                                <div className="relative group lg:col-span-1">
-                                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wide">Churches</label>
-                                    <button className="mt-1 w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center">
-                                        <span>{selectedChurches.length} Selected</span>
-                                        <span className="text-xs text-blue-500">Edit</span>
-                                    </button>
-                                    <div className="absolute top-full left-0 w-64 bg-white border shadow-xl rounded-lg p-3 hidden group-hover:block z-20 max-h-60 overflow-y-auto">
-                                        {options.churches.map(c => (
-                                            <label key={c} className="flex items-center gap-2 p-1 hover:bg-gray-50 rounded cursor-pointer">
-                                                <input type="checkbox" checked={selectedChurches.includes(c)} onChange={(e) => e.target.checked ? setSelectedChurches([...selectedChurches, c]) : setSelectedChurches(selectedChurches.filter(x => x !== c))} className="text-blue-600 rounded" />
-                                                <span className="text-xs truncate">{c}</span>
-                                            </label>
-                                        ))}
-                                    </div>
-                                </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+                                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+                                <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
+                                <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
+                                <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
                             </div>
                         </div>
 
                         {view === 'dashboard' && stats && (
                             <>
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                                {/* KPI CARDS */}
+                                <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 mb-8">
                                     <StatCard title="Total Sermons" value={stats.totalSermons} icon="fileText" color="blue" />
                                     <StatCard title="Total Mentions" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
                                     <StatCard title="Avg Mentions" value={stats.avg} sub="Per Sermon" icon="barChart" color="indigo" />
-                                    <StatCard title="Peak Count" value={stats.maxMentions} sub="In One Sermon" icon="barChart" color="purple" />
+                                    <StatCard title="Peak Count" value={stats.maxMentions} icon="barChart" color="purple" />
                                     <StatCard title="Zero Mentions" value={stats.zeroCount} sub="Sermons" icon="x" color="red" />
-                                    <StatCard title="Zero Rate" value={stats.zeroRate} sub="Of Selection" icon="x" color="orange" />
+                                    <StatCard title="Zero Rate" value={`${stats.zeroRate}%`} sub="Of Selection" icon="x" color="orange" />
                                 </div>
 
-                                <div className="bg-white p-6 rounded-xl border shadow-sm mb-8 h-[450px]">
-                                    <h3 className="font-bold text-gray-800 mb-6">Mention Trends Over Time (Monthly Average)</h3>
-                                    <ResponsiveContainer width="100%" height="90%">
-                                        <LineChart data={chartData} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                            <XAxis dataKey="date" tick={{fontSize: 12, fill: '#6b7280'}} />
-                                            <YAxis tick={{fontSize: 12, fill: '#6b7280'}} />
-                                            <Tooltip contentStyle={{borderRadius: '8px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: 'none'}} />
-                                            <Legend />
-                                            {selectedChurches.map((c, i) => (
-                                                <Line key={c} type="monotone" dataKey={c} stroke={COLORS[i % COLORS.length]} strokeWidth={3} dot={false} connectNulls />
-                                            ))}
-                                            <Brush dataKey="date" height={30} stroke="#cbd5e1" />
-                                        </LineChart>
-                                    </ResponsiveContainer>
-                                </div>
-
-                                <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-                                    <div className="p-6 border-b border-gray-100"><h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3></div>
-                                    <div className="overflow-x-auto max-h-[600px]">
-                                        <table className="w-full text-sm text-left text-gray-500">
-                                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0 z-10">
-                                                <tr>
-                                                    <th className="px-6 py-3">Date</th>
-                                                    <th className="px-6 py-3">Church</th>
-                                                    <th className="px-6 py-3">Title</th>
-                                                    <th className="px-6 py-3">Speaker</th>
-                                                    <th className="px-6 py-3 text-right">Mentions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-gray-100">
-                                                {filteredData.map(s => (
-                                                    <tr key={s.id} onClick={() => setSelectedSermon(s)} className="hover:bg-blue-50 cursor-pointer transition">
-                                                        <td className="px-6 py-4 whitespace-nowrap">{s.date}</td>
-                                                        <td className="px-6 py-4 whitespace-nowrap"><span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{s.church}</span></td>
-                                                        <td className="px-6 py-4 font-medium text-gray-900">{s.title}</td>
-                                                        <td className="px-6 py-4">{s.speaker}</td>
-                                                        <td className={`px-6 py-4 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
-                                                    </tr>
+                                {/* MAIN TREND CHART */}
+                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                                    <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                        <div className="flex justify-between items-center mb-6">
+                                            <h3 className="font-bold text-gray-800">Mentions Trend & Rolling Average</h3>
+                                            <div className="flex bg-gray-100 rounded-lg p-1">
+                                                {[7, 30, 180].map(d => (
+                                                    <button key={d} onClick={() => setRollingDays(d)} className={`px-3 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>
+                                                        {d === 180 ? '6 Mo' : `${d} Days`}
+                                                    </button>
                                                 ))}
-                                            </tbody>
-                                        </table>
+                                            </div>
+                                        </div>
+                                        <ResponsiveContainer width="100%" height="85%">
+                                            <ComposedChart data={trendData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                                <XAxis dataKey="date" tick={{fontSize: 10}} minTickGap={30} />
+                                                <YAxis yAxisId="left" tick={{fontSize: 10}} />
+                                                <YAxis yAxisId="right" orientation="right" hide />
+                                                <Tooltip contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                                                <Legend wrapperStyle={{fontSize: '12px', paddingTop: '10px'}} />
+                                                <Bar yAxisId="left" dataKey="mentionCount" name="Mentions (Raw)" fill="#cbd5e1" barSize={4} />
+                                                <Line yAxisId="left" type="monotone" dataKey="rollingAvg" name={`Rolling Avg (${rollingDays}d)`} stroke="#2563eb" strokeWidth={3} dot={false} />
+                                            </ComposedChart>
+                                        </ResponsiveContainer>
+                                    </div>
+
+                                    {/* YEARLY SILENCE CHART */}
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                        <h3 className="font-bold text-gray-800 mb-2">Yearly Consistency</h3>
+                                        <p className="text-xs text-gray-500 mb-6">Percentage of sermons with vs. without mentions</p>
+                                        <ResponsiveContainer width="100%" height="85%">
+                                            <BarChart data={yearlyStats} layout="vertical" margin={{left: 0}}>
+                                                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                                                <XAxis type="number" unit="%" tick={{fontSize: 10}} />
+                                                <YAxis dataKey="year" type="category" tick={{fontSize: 11, fontWeight: 'bold'}} width={40} />
+                                                <Tooltip cursor={{fill: 'transparent'}} />
+                                                <Legend />
+                                                <Bar dataKey="hasPct" name="% With Mentions" stackId="a" fill="#3b82f6" />
+                                                <Bar dataKey="zeroPct" name="% Zero Mentions" stackId="a" fill="#ef4444" />
+                                            </BarChart>
+                                        </ResponsiveContainer>
                                     </div>
                                 </div>
                             </>
@@ -433,20 +496,29 @@
                             <div className="max-w-4xl mx-auto">
                                 <div className="bg-white p-8 rounded-xl border shadow-sm text-center mb-8">
                                     <h2 className="text-2xl font-bold text-gray-900 mb-2">Deep Transcript Search</h2>
-                                    <p className="text-gray-500 mb-6">Search every word spoken in {filteredData.length} sermons.</p>
+                                    <p className="text-gray-500 mb-6">Searching {filteredData.length} filtered sermons.</p>
                                     <div className="flex gap-2 relative">
                                         <Icon name="search" className="absolute left-4 top-3.5 text-gray-400" />
-                                        <input type="text" className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-lg shadow-sm" placeholder="Search for quotes, doctrine, or names..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && performSearch()} />
-                                        <button onClick={performSearch} disabled={isSearching} className="bg-blue-600 text-white px-8 rounded-lg font-bold hover:bg-blue-700 transition disabled:opacity-50">{isSearching ? "..." : "Search"}</button>
+                                        <input 
+                                            type="text" 
+                                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-lg shadow-sm"
+                                            placeholder="Search quote, doctrine, or name..."
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                            onKeyDown={(e) => e.key === 'Enter' && performSearch()}
+                                        />
+                                        <button onClick={performSearch} disabled={isSearching} className="bg-blue-600 text-white px-8 rounded-lg font-bold hover:bg-blue-700 disabled:opacity-50">
+                                            {isSearching ? "..." : "Search"}
+                                        </button>
                                     </div>
                                     {isSearching && <p className="mt-4 text-blue-600 animate-pulse text-sm">{searchProgress}</p>}
                                 </div>
                                 <div className="space-y-4">
                                     {searchResults.map((res, i) => (
-                                        <div key={i} onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})} className="bg-white p-6 rounded-xl border hover:border-blue-300 shadow-sm cursor-pointer transition group">
+                                        <div key={i} onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})} className="bg-white p-6 rounded-xl border hover:border-blue-300 shadow-sm cursor-pointer transition">
                                             <div className="flex justify-between items-start mb-3">
                                                 <div>
-                                                    <h4 className="text-lg font-bold text-blue-600 group-hover:underline">{res.title}</h4>
+                                                    <h4 className="text-lg font-bold text-blue-600 hover:underline">{res.title}</h4>
                                                     <p className="text-sm text-gray-500">{res.date} • {res.church} • {res.speaker}</p>
                                                 </div>
                                                 <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-bold">{res.mentionCount} Mentions</span>
@@ -454,13 +526,85 @@
                                             <p className="text-gray-600 bg-gray-50 p-4 rounded-lg text-sm font-serif italic border-l-4 border-gray-300">"{res.snippet}"</p>
                                         </div>
                                     ))}
-                                    {!isSearching && searchQuery && searchResults.length === 0 && <div className="text-center py-12 text-gray-400">No results found in the database.</div>}
                                 </div>
                             </div>
                         )}
+
+                        {view === 'data' && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
+                                    <p className="text-gray-600 mb-6 text-sm">Download raw transcripts for offline analysis. The "Custom Filtered Zip" will respect your current filters in the Dashboard.</p>
+                                    
+                                    <div className="space-y-3">
+                                        <a href="all_sermons_archive.zip" download className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition">
+                                            <span>Download Full Archive (All)</span>
+                                        </a>
+                                        
+                                        <button 
+                                            onClick={handleCustomDownload} 
+                                            disabled={isZipping}
+                                            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50"
+                                        >
+                                            {isZipping ? <span>{zipProgress}</span> : <span>Download Custom Zip ({filteredData.length} Files)</span>}
+                                        </button>
+                                        
+                                        <button onClick={() => {
+                                            const blob = new Blob([JSON.stringify(filteredData, null, 2)], {type: 'application/json'});
+                                            const url = window.URL.createObjectURL(blob);
+                                            const a = document.createElement('a'); a.href = url; a.download = 'metadata_export.json'; a.click();
+                                        }} className="w-full border border-blue-200 text-blue-600 hover:bg-blue-50 font-bold py-3 px-4 rounded-lg">
+                                            Export Metadata (JSON)
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources</h3>
+                                    <p className="text-gray-600 mb-4 text-sm">Data is sourced from the following YouTube channels:</p>
+                                    <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                                        {CHANNEL_SOURCES.map((c, i) => (
+                                            <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100">
+                                                <span className="font-medium text-gray-700">{c.name}</span>
+                                                <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-xs">Visit Channel &rarr;</a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        )}
+
                     </main>
 
-                    {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
+                    {/* MODAL FOR SINGLE TRANSCRIPT */}
+                    {selectedSermon && (
+                        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={() => setSelectedSermon(null)}>
+                            <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
+                                <div className="p-5 border-b flex justify-between bg-gray-50">
+                                    <div>
+                                        <h2 className="font-bold text-xl">{selectedSermon.title}</h2>
+                                        <p className="text-sm text-gray-500">{selectedSermon.date} • {selectedSermon.speaker}</p>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <button onClick={() => {
+                                            const a = document.createElement('a');
+                                            a.href = selectedSermon.path;
+                                            a.download = `${selectedSermon.date} - ${selectedSermon.title}.txt`;
+                                            a.click();
+                                        }} className="p-2 bg-blue-100 text-blue-700 rounded hover:bg-blue-200" title="Download Text">
+                                            <Icon name="download" />
+                                        </button>
+                                        <button onClick={() => setSelectedSermon(null)} className="p-2 bg-red-100 text-red-700 rounded hover:bg-red-200">
+                                            <Icon name="x" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="flex-1 overflow-y-auto p-0">
+                                    <SermonModal sermon={selectedSermon} onClose={() => {}} />
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
             );
         };
