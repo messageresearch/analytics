@@ -16,7 +16,7 @@
 
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; background-color: #f8fafc; }
-        .highlight-match { background-color: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; }
+        .highlight-match { background-color: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; border-bottom: 2px solid #eab308; }
         .stat-card { transition: all 0.2s; }
         .stat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
@@ -36,6 +36,9 @@
         } = Recharts;
 
         // --- CONFIGURATION ---
+        // EXACT REGEX from Python Script to ensure counts match perfectly
+        const MENTION_REGEX = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
+
         const CHANNEL_SOURCES = [
             { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
             { name: "Cedar Hills - Church of the Cross", url: "https://www.youtube.com/@CedarHillsChurchoftheCross" },
@@ -64,7 +67,8 @@
                 info: <path d="M12 16v-4m0-4h.01M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z" />,
                 lineChart: <path d="M3 3v18h18" />,
                 eye: <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />,
-                alignLeft: <path d="M21 6H3m18 6H3m18 6H3" />
+                alignLeft: <path d="M21 6H3m18 6H3m18 6H3" />,
+                activity: <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -132,33 +136,38 @@
             </div>
         );
 
-        // --- IMPROVED MODAL WITH SNIPPETS ---
+        // --- IMPROVED MODAL WITH EXACT MATCHING ---
         const SermonModal = ({ sermon, onClose }) => {
             const [fullText, setFullText] = useState("");
             const [isLoading, setIsLoading] = useState(true);
-            const [viewMode, setViewMode] = useState("snippets"); // 'snippets' or 'full'
+            const [viewMode, setViewMode] = useState("snippets");
             const [snippets, setSnippets] = useState([]);
 
             useEffect(() => {
+                setIsLoading(true);
                 fetch(sermon.path)
                     .then(res => res.ok ? res.text() : "Transcript not available.")
                     .then(text => {
                         setFullText(text);
                         setIsLoading(false);
                         
-                        // Generate Snippets
-                        const term = sermon.searchTerm || "William Branham|Brother Branham";
-                        const regex = new RegExp(`(${term})`, 'gi');
+                        // STRICT MATCH LOGIC
+                        // We use the same Regex as the Python script to ensure counts match perfectly.
+                        const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : MENTION_REGEX;
                         const matches = [];
                         let match;
-                        while ((match = regex.exec(text)) !== null) {
+                        
+                        // We must clone the regex for iteration to avoid state issues
+                        const iterRegex = new RegExp(regex);
+                        
+                        while ((match = iterRegex.exec(text)) !== null) {
                             const start = Math.max(0, match.index - 150);
                             const end = Math.min(text.length, match.index + match[0].length + 150);
                             matches.push(text.substring(start, end));
                         }
-                        setSnippets(matches);
                         
-                        // If no matches, default to full text
+                        // If no "Branham" mentions but user searched for something else, use that
+                        setSnippets(matches);
                         if (matches.length === 0) setViewMode("full");
                     })
                     .catch(() => {
@@ -167,8 +176,9 @@
                     });
             }, [sermon]);
 
-            const highlight = (text, term) => {
-                const regex = new RegExp(`(${term || "William Branham|Brother Branham"})`, 'gi');
+            const highlight = (text, searchTerm) => {
+                // Use search term if exists, otherwise default strict regex
+                const regex = searchTerm ? new RegExp(`(${searchTerm})`, 'gi') : MENTION_REGEX;
                 const parts = text.split(regex);
                 return parts.map((part, i) => 
                     regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part
@@ -185,45 +195,31 @@
             return (
                 <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
                     <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
-                        {/* Header */}
                         <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
                             <div className="flex-1 pr-4">
                                 <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
                                 <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.church}</span>
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
-                                    <span className="bg-white border px-2 py-0.5 rounded">{sermon.speaker}</span>
                                     <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{sermon.mentionCount} Mentions</span>
+                                    <span className="bg-blue-100 text-blue-800 border border-blue-200 px-2 py-0.5 rounded font-bold">WAI: {sermon.wai}</span>
                                 </div>
                             </div>
                             <div className="flex gap-2">
-                                <button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg transition" title="Download">
-                                    <Icon name="download" />
-                                </button>
-                                <button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition">
-                                    <Icon name="x" />
-                                </button>
+                                <button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg transition" title="Download"><Icon name="download" /></button>
+                                <button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition"><Icon name="x" /></button>
                             </div>
                         </div>
 
-                        {/* Toolbar */}
                         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
-                            <button 
-                                onClick={() => setViewMode("snippets")}
-                                className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}
-                                disabled={snippets.length === 0}
-                            >
-                                <Icon name="eye" size={16} /> Mentions ({snippets.length})
+                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={snippets.length === 0}>
+                                <Icon name="eye" size={16} /> Matches ({snippets.length})
                             </button>
-                            <button 
-                                onClick={() => setViewMode("full")}
-                                className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}
-                            >
+                            <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}>
                                 <Icon name="alignLeft" size={16} /> Full Transcript
                             </button>
                         </div>
 
-                        {/* Content */}
                         <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
                             {isLoading ? (
                                 <p className="text-center text-gray-400 italic">Loading content...</p>
@@ -231,12 +227,12 @@
                                 <div className="max-w-3xl mx-auto space-y-6">
                                     {snippets.length > 0 ? snippets.map((snip, i) => (
                                         <div key={i} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm">
-                                            <p className="text-gray-400 text-xs font-sans font-bold mb-2 uppercase tracking-wide">Mention #{i+1}</p>
+                                            <p className="text-gray-400 text-xs font-sans font-bold mb-2 uppercase tracking-wide">Match #{i+1}</p>
                                             <p>...{highlight(snip, sermon.searchTerm)}...</p>
                                         </div>
                                     )) : (
                                         <div className="text-center py-10 text-gray-400">
-                                            <p>No direct mentions found in search context.</p>
+                                            <p>No direct matches found in text.</p>
                                             <button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button>
                                         </div>
                                     )}
@@ -264,36 +260,39 @@
             const [selSpeakers, setSelSpeakers] = useState([]);
             const [selYears, setSelYears] = useState([]);
             const [selTypes, setSelTypes] = useState([]);
-            const [selLangs, setSelLangs] = useState([]); // Default will be set in useEffect
+            const [selLangs, setSelLangs] = useState([]);
             
             // SETTINGS
             const [rollingDays, setRollingDays] = useState(30);
             const [view, setView] = useState("dashboard");
             
-            // SEARCH & MODAL
+            // MODAL & DOWNLOAD
+            const [selectedSermon, setSelectedSermon] = useState(null);
+            const [isZipping, setIsZipping] = useState(false);
+            const [zipProgress, setZipProgress] = useState("");
+            
+            // SEARCH
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
             const [isSearching, setIsSearching] = useState(false);
             const [searchProgress, setSearchProgress] = useState("");
-            const [selectedSermon, setSelectedSermon] = useState(null);
-            
-            // DOWNLOAD
-            const [isZipping, setIsZipping] = useState(false);
-            const [zipProgress, setZipProgress] = useState("");
 
             useEffect(() => {
                 const init = async () => {
                     try {
                         let res = await fetch('site_api/metadata.json');
                         let prefix = "site_api/";
-                        if (!res.ok) {
-                            res = await fetch('metadata.json');
-                            prefix = "";
-                        }
+                        if (!res.ok) { res = await fetch('metadata.json'); prefix = ""; }
                         if (!res.ok) throw new Error("Metadata not found.");
                         
                         const json = await res.json();
-                        const list = (json.sermons || []).map(s => ({ ...s, dateObj: new Date(s.timestamp), path: s.path }));
+                        const list = (json.sermons || []).map(s => ({ 
+                            ...s, 
+                            dateObj: new Date(s.timestamp), 
+                            path: s.path,
+                            // CALCULATE WEIGHTED ACTIVITY INDEX
+                            wai: s.wordCount > 0 ? parseFloat(((s.mentionCount / s.wordCount) * 1000).toFixed(2)) : 0
+                        }));
                         
                         setRawData(list);
                         setTotalChunks(json.totalChunks || 0);
@@ -302,13 +301,16 @@
                         // Init Filters
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
-                        setSelYears([...new Set(list.map(s => s.year))]);
                         setSelTypes([...new Set(list.map(s => s.type))]);
                         
-                        // Default to English if available, otherwise select all
+                        // DEFAULT YEARS: 2020 - Current
+                        const years = [...new Set(list.map(s => s.year))];
+                        const defaultYears = years.filter(y => parseInt(y) >= 2020);
+                        setSelYears(defaultYears.length > 0 ? defaultYears : years);
+                        
+                        // Default to English
                         const langs = [...new Set(list.map(s => s.language))];
-                        if (langs.includes("English")) setSelLangs(["English"]);
-                        else setSelLangs(langs);
+                        setSelLangs(langs.includes("English") ? ["English"] : langs);
                         
                         setLoading(false);
                     } catch (e) { setError(e.message); setLoading(false); }
@@ -353,6 +355,7 @@
                 };
             }, [filteredData]);
 
+            // --- CHART 1: STANDARD ROLLING AVG ---
             const trendData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
@@ -368,23 +371,38 @@
                 });
             }, [filteredData, rollingDays]);
 
+            // --- CHART 2: WEIGHTED ACTIVITY INDEX (NEW) ---
+            const waiData = useMemo(() => {
+                if (!filteredData.length) return [];
+                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
+                return sorted.map((item, index, arr) => {
+                    // Calculate Rolling WAI
+                    const cutoff = item.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
+                    let sumWai = 0, count = 0;
+                    for (let i = index; i >= 0; i--) {
+                        if (arr[i].timestamp < cutoff) break;
+                        sumWai += item.wai; // Use Pre-calculated WAI
+                        count++;
+                    }
+                    return { 
+                        ...item, 
+                        rollingWai: count > 0 ? parseFloat((sumWai / count).toFixed(2)) : 0 
+                    };
+                });
+            }, [filteredData, rollingDays]);
+
             const comparisonData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const grouped = {};
                 selChurches.forEach(c => grouped[c] = []);
                 filteredData.forEach(s => { if (grouped[s.church]) grouped[s.church].push(s); });
-
                 const points = [];
                 Object.keys(grouped).forEach(church => {
                     const sermons = grouped[church].sort((a,b) => a.timestamp - b.timestamp);
                     sermons.forEach((s, idx) => {
                         const cutoff = s.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
                         let sum = 0, count = 0;
-                        for (let i = idx; i >= 0; i--) {
-                            if (sermons[i].timestamp < cutoff) break;
-                            sum += sermons[i].mentionCount;
-                            count++;
-                        }
+                        for (let i = idx; i >= 0; i--) { if (sermons[i].timestamp < cutoff) break; sum += sermons[i].mentionCount; count++; }
                         const point = { timestamp: s.timestamp };
                         point[church] = parseFloat((sum / count).toFixed(1));
                         points.push(point);
@@ -407,11 +425,10 @@
                 })).reverse();
             }, [filteredData]);
 
+            // DOWNLOAD & SEARCH HANDLERS
             const handleCustomDownload = async () => {
-                setIsZipping(true);
-                setZipProgress("Initializing...");
-                const zip = new JSZip();
-                const folder = zip.folder("Filtered_Sermons");
+                setIsZipping(true); setZipProgress("Initializing...");
+                const zip = new JSZip(); const folder = zip.folder("Filtered_Sermons");
                 try {
                     const neededIds = new Set(filteredData.map(s => s.id));
                     for(let i=0; i<totalChunks; i++) {
@@ -419,52 +436,30 @@
                         const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
                         if(res.ok) {
                             const chunk = await res.json();
-                            chunk.forEach(item => {
-                                if(neededIds.has(item.id)) {
-                                    const meta = filteredData.find(f => f.id === item.id);
-                                    if(meta) {
-                                        const cleanTitle = `${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_');
-                                        folder.file(`${cleanTitle}.txt`, item.text);
-                                    }
-                                }
-                            });
+                            chunk.forEach(item => { if(neededIds.has(item.id)) { const meta = filteredData.find(f => f.id === item.id); if(meta) folder.file(`${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_') + ".txt", item.text); } });
                         }
                     }
                     setZipProgress("Compressing...");
                     const content = await zip.generateAsync({type:"blob"});
-                    const url = window.URL.createObjectURL(content);
-                    const a = document.createElement('a'); a.href = url; a.download = `Custom_Sermon_Export.zip`; a.click();
-                } catch(e) { alert("Download failed: " + e.message); } finally { setIsZipping(false); }
+                    const a = document.createElement('a'); a.href = window.URL.createObjectURL(content); a.download = `Custom_Sermon_Export.zip`; a.click();
+                } catch(e) { alert("Download failed"); } finally { setIsZipping(false); }
             };
 
             const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
-                setIsSearching(true);
-                setSearchResults([]);
-                setSearchProgress("Initializing...");
-                const term = searchQuery.toLowerCase();
-                const matches = [];
+                setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
+                const term = searchQuery.toLowerCase(); const matches = [];
                 for (let i = 0; i < totalChunks; i++) {
                     setSearchProgress(`Scanning chunk ${i + 1}/${totalChunks}...`);
-                    try {
-                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
-                        if (!res.ok) continue;
-                        const chunk = await res.json();
-                        chunk.forEach(item => {
-                            if (item.text.toLowerCase().includes(term)) {
-                                const meta = rawData.find(r => r.id === item.id);
-                                if (meta) {
-                                    const idx = item.text.toLowerCase().indexOf(term);
-                                    const start = Math.max(0, idx - 80);
-                                    const end = Math.min(item.text.length, idx + 120);
-                                    matches.push({ ...meta, snippet: "..." + item.text.substring(start, end) + "..." });
-                                }
-                            }
-                        });
-                    } catch (e) { console.error(e); }
+                    try { const res = await fetch(`${apiPrefix}text_chunk_${i}.json`); if (!res.ok) continue; const chunk = await res.json();
+                        chunk.forEach(item => { if (item.text.toLowerCase().includes(term)) { const meta = rawData.find(r => r.id === item.id); if (meta) { 
+                            const idx = item.text.toLowerCase().indexOf(term);
+                            const snippet = "..." + item.text.substring(Math.max(0, idx - 80), Math.min(item.text.length, idx + 120)) + "...";
+                            matches.push({ ...meta, snippet }); 
+                        }}});
+                    } catch (e) {}
                 }
-                setSearchResults(matches);
-                setIsSearching(false);
+                setSearchResults(matches); setIsSearching(false);
             };
 
             const formatDate = (ts) => new Date(ts).toLocaleDateString();
@@ -488,9 +483,7 @@
                         </div>
                     </div>
 
-                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4">
-                        <span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.
-                    </div>
+                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
 
                     <main className="max-w-7xl mx-auto px-4 mt-8">
                         <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
@@ -518,14 +511,13 @@
                                     <StatCard title="Zero Rate" value={`${stats.zeroRate}%`} sub="Of Selection" icon="x" color="orange" />
                                 </div>
 
+                                {/* CHART ROW 1: Trends & Yearly */}
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[450px]">
                                         <div className="flex justify-between items-center mb-6">
-                                            <h3 className="font-bold text-gray-800">Mentions Trend & Rolling Average (Overall)</h3>
+                                            <h3 className="font-bold text-gray-800">Mentions Trend & Rolling Average (Raw Count)</h3>
                                             <div className="flex bg-gray-100 rounded-lg p-1">
-                                                {[7, 30, 180].map(d => (
-                                                    <button key={d} onClick={() => setRollingDays(d)} className={`px-3 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d === 180 ? '6 Mo' : `${d} Days`}</button>
-                                                ))}
+                                                {[7, 30, 180].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-3 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d === 180 ? '6 Mo' : `${d} Days`}</button>)}
                                             </div>
                                         </div>
                                         <ResponsiveContainer width="100%" height="85%">
@@ -536,7 +528,7 @@
                                                 <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
                                                 <Legend wrapperStyle={{fontSize: '12px', paddingTop: '10px'}} />
                                                 <Bar yAxisId="left" dataKey="mentionCount" name="Mentions (Raw)" fill="#cbd5e1" barSize={3} />
-                                                <Line yAxisId="left" type="monotone" dataKey="rollingAvg" name={`Rolling Avg (${rollingDays}d)`} stroke="#2563eb" strokeWidth={3} dot={false} />
+                                                <Line yAxisId="left" type="monotone" dataKey="rollingAvg" name={`Rolling Avg (${rollingDays}d)`} stroke="#2563eb" strokeWidth={3} dot={{r: 2}} connectNulls={true} />
                                             </ComposedChart>
                                         </ResponsiveContainer>
                                     </div>
@@ -557,29 +549,51 @@
                                     </div>
                                 </div>
 
-                                <div className="bg-white p-6 rounded-xl border shadow-sm mb-8 h-[500px]">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <div>
-                                            <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Church Trend Comparison</h3>
-                                            <p className="text-xs text-gray-500 mt-1">Comparing independent {rollingDays}-day rolling averages for each selected church.</p>
+                                {/* CHART ROW 2: WAI & Comparison */}
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                        <div className="flex justify-between items-center mb-6">
+                                            <div>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Weighted Activity Index (WAI)</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Normalizes counts by sermon length. (Mentions / Words * 1000).</p>
+                                            </div>
                                         </div>
+                                        <ResponsiveContainer width="100%" height="85%">
+                                            <ComposedChart data={waiData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
+                                                <YAxis tick={{fontSize: 10}} label={{ value: 'Intensity', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
+                                                <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                                                <Bar dataKey="wai" name="WAI Score" fill="#e0e7ff" barSize={3} />
+                                                <Line type="monotone" dataKey="rollingWai" name={`WAI Trend (${rollingDays}d)`} stroke="#4f46e5" strokeWidth={3} dot={{r: 2}} connectNulls={true} />
+                                            </ComposedChart>
+                                        </ResponsiveContainer>
                                     </div>
-                                    <ResponsiveContainer width="100%" height="85%">
-                                        <LineChart data={comparisonData}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                            <YAxis tick={{fontSize: 10}} label={{ value: 'Avg Mentions', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
-                                            <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
-                                            {selChurches.map((church, i) => (
-                                                <Line key={church} type="monotone" dataKey={church} stroke={COLORS[i % COLORS.length]} strokeWidth={2} dot={false} connectNulls={true} />
-                                            ))}
-                                        </LineChart>
-                                    </ResponsiveContainer>
+
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                        <div className="flex justify-between items-center mb-6">
+                                            <div>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Church Trend Comparison</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Comparing independent {rollingDays}-day rolling averages.</p>
+                                            </div>
+                                        </div>
+                                        <ResponsiveContainer width="100%" height="85%">
+                                            <LineChart data={comparisonData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
+                                                <YAxis tick={{fontSize: 10}} />
+                                                <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                                                <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
+                                                {selChurches.map((church, i) => (
+                                                    <Line key={church} type="monotone" dataKey={church} stroke={getColor(i)} strokeWidth={2} dot={{r: 2}} connectNulls={true} />
+                                                ))}
+                                            </LineChart>
+                                        </ResponsiveContainer>
+                                    </div>
                                 </div>
 
                                 <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-                                    <div className="p-6 border-b border-gray-100 flex justify-between items-center"><h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3></div>
+                                    <div className="p-6 border-b border-gray-100"><h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3></div>
                                     <div className="overflow-x-auto max-h-[600px]">
                                         <table className="w-full text-sm text-left text-gray-500">
                                             <thead className="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0 z-10 shadow-sm">
@@ -589,6 +603,7 @@
                                                     <th className="px-6 py-3">Title</th>
                                                     <th className="px-6 py-3">Speaker</th>
                                                     <th className="px-6 py-3 text-right">Mentions</th>
+                                                    <th className="px-6 py-3 text-right">WAI</th>
                                                     <th className="px-6 py-3 text-center">Action</th>
                                                 </tr>
                                             </thead>
@@ -600,8 +615,9 @@
                                                         <td className="px-6 py-4 font-medium text-gray-900">{s.title}</td>
                                                         <td className="px-6 py-4">{s.speaker}</td>
                                                         <td className={`px-6 py-4 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
+                                                        <td className="px-6 py-4 text-right text-xs">{s.wai}</td>
                                                         <td className="px-6 py-4 text-center">
-                                                            <button onClick={(e) => { e.stopPropagation(); const a = document.createElement('a'); a.href = s.path; a.download = `${s.date} - ${s.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600" title="Download Transcript"><Icon name="download" size={16} /></button>
+                                                            <button onClick={(e) => { e.stopPropagation(); const a = document.createElement('a'); a.href = s.path; a.download = `${s.date} - ${s.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600"><Icon name="download" size={16} /></button>
                                                         </td>
                                                     </tr>
                                                 ))}
@@ -611,12 +627,10 @@
                                 </div>
                             </>
                         )}
-
                         {view === 'search' && (
                             <div className="max-w-4xl mx-auto">
                                 <div className="bg-white p-8 rounded-xl border shadow-sm text-center mb-8">
                                     <h2 className="text-2xl font-bold text-gray-900 mb-2">Deep Transcript Search</h2>
-                                    <p className="text-gray-500 mb-6">Searching {filteredData.length} filtered sermons.</p>
                                     <div className="flex gap-2 relative">
                                         <Icon name="search" className="absolute left-4 top-3.5 text-gray-400" />
                                         <input type="text" className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-lg shadow-sm" placeholder="Search quote, doctrine, or name..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && performSearch()} />
@@ -628,10 +642,7 @@
                                     {searchResults.map((res, i) => (
                                         <div key={i} onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})} className="bg-white p-6 rounded-xl border hover:border-blue-300 shadow-sm cursor-pointer transition">
                                             <div className="flex justify-between items-start mb-3">
-                                                <div>
-                                                    <h4 className="text-lg font-bold text-blue-600 hover:underline">{res.title}</h4>
-                                                    <p className="text-sm text-gray-500">{res.date} • {res.church} • {res.speaker}</p>
-                                                </div>
+                                                <div><h4 className="text-lg font-bold text-blue-600 hover:underline">{res.title}</h4><p className="text-sm text-gray-500">{res.date} • {res.church}</p></div>
                                                 <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-bold">{res.mentionCount} Mentions</span>
                                             </div>
                                             <p className="text-gray-600 bg-gray-50 p-4 rounded-lg text-sm font-serif italic border-l-4 border-gray-300">"{res.snippet}"</p>
@@ -640,39 +651,28 @@
                                 </div>
                             </div>
                         )}
-
                         {view === 'data' && (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="bg-white p-8 rounded-xl border shadow-sm">
                                     <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
-                                    <p className="text-gray-600 mb-6 text-sm">Download raw transcripts for offline analysis.</p>
                                     <div className="space-y-3">
                                         <a href="all_sermons_archive.zip" download className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition"><span>Download Full Archive (All)</span></a>
                                         <button onClick={handleCustomDownload} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Filtered Zip ({filteredData.length} Files)</span>}</button>
                                     </div>
-                                    <p className="mt-4 text-xs text-gray-400">The "Filtered Zip" generates a new archive containing only the sermons currently shown in your Dashboard.</p>
                                 </div>
                                 <div className="bg-white p-8 rounded-xl border shadow-sm">
                                     <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources</h3>
-                                    <p className="text-gray-600 mb-4 text-sm">Data is sourced from the following YouTube channels:</p>
                                     <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-                                        {CHANNEL_SOURCES.map((c, i) => (
-                                            <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100">
-                                                <span className="font-medium text-gray-700">{c.name}</span>
-                                                <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-xs">Visit Channel &rarr;</a>
-                                            </li>
-                                        ))}
+                                        {CHANNEL_SOURCES.map((c, i) => <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100"><span className="font-medium text-gray-700">{c.name}</span><a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-xs">Visit Channel &rarr;</a></li>)}
                                     </ul>
                                 </div>
                             </div>
                         )}
                     </main>
-
                     {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
                 </div>
             );
         };
-
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<React.StrictMode><App /></React.StrictMode>);
     </script>
