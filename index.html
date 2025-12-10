@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Branham Mention Tracker</title>
+    <title>Message Analytics</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -29,14 +29,13 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo, useRef } = React;
+        const { useState, useEffect, useMemo, useRef, useCallback } = React;
         const { 
             ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
-            ResponsiveContainer, Brush, BarChart, LineChart 
+            ResponsiveContainer, Brush, BarChart, LineChart, Scatter 
         } = Recharts;
 
         // --- CONFIGURATION ---
-        // EXACT REGEX from Python Script to ensure counts match perfectly
         const MENTION_REGEX = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
 
         const CHANNEL_SOURCES = [
@@ -82,20 +81,11 @@
         const MultiSelect = ({ label, options, selected, onChange }) => {
             const [isOpen, setIsOpen] = useState(false);
             const ref = useRef(null);
-
             useEffect(() => {
-                const handleClickOutside = (event) => {
-                    if (ref.current && !ref.current.contains(event.target)) setIsOpen(false);
-                };
-                document.addEventListener("mousedown", handleClickOutside);
-                return () => document.removeEventListener("mousedown", handleClickOutside);
+                const handleClickOutside = (event) => { if (ref.current && !ref.current.contains(event.target)) setIsOpen(false); };
+                document.addEventListener("mousedown", handleClickOutside); return () => document.removeEventListener("mousedown", handleClickOutside);
             }, []);
-
-            const toggleOption = (opt) => {
-                if (selected.includes(opt)) onChange(selected.filter(s => s !== opt));
-                else onChange([...selected, opt]);
-            };
-
+            const toggleOption = (opt) => { selected.includes(opt) ? onChange(selected.filter(s => s !== opt)) : onChange([...selected, opt]); };
             return (
                 <div className="relative" ref={ref}>
                     <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 block">{label}</label>
@@ -136,7 +126,7 @@
             </div>
         );
 
-        // --- IMPROVED MODAL WITH EXACT MATCHING ---
+        // --- IMPROVED SNIPPET LOGIC ---
         const SermonModal = ({ sermon, onClose }) => {
             const [fullText, setFullText] = useState("");
             const [isLoading, setIsLoading] = useState(true);
@@ -151,45 +141,35 @@
                         setFullText(text);
                         setIsLoading(false);
                         
-                        // STRICT MATCH LOGIC
-                        // We use the same Regex as the Python script to ensure counts match perfectly.
                         const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : MENTION_REGEX;
                         const matches = [];
                         let match;
                         
-                        // We must clone the regex for iteration to avoid state issues
+                        // New clone for iteration
                         const iterRegex = new RegExp(regex);
                         
                         while ((match = iterRegex.exec(text)) !== null) {
-                            const start = Math.max(0, match.index - 150);
-                            const end = Math.min(text.length, match.index + match[0].length + 150);
+                            // CENTER THE MATCH: Grab 100 chars before and 100 after
+                            const center = match.index + (match[0].length / 2);
+                            const start = Math.max(0, Math.floor(center - 100));
+                            const end = Math.min(text.length, Math.floor(center + 100));
                             matches.push(text.substring(start, end));
                         }
                         
-                        // If no "Branham" mentions but user searched for something else, use that
                         setSnippets(matches);
                         if (matches.length === 0) setViewMode("full");
                     })
-                    .catch(() => {
-                        setFullText("Error loading transcript.");
-                        setIsLoading(false);
-                    });
+                    .catch(() => { setFullText("Error loading transcript."); setIsLoading(false); });
             }, [sermon]);
 
             const highlight = (text, searchTerm) => {
-                // Use search term if exists, otherwise default strict regex
                 const regex = searchTerm ? new RegExp(`(${searchTerm})`, 'gi') : MENTION_REGEX;
                 const parts = text.split(regex);
-                return parts.map((part, i) => 
-                    regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part
-                );
+                return parts.map((part, i) => regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part);
             };
 
             const downloadText = () => {
-                const a = document.createElement('a');
-                a.href = sermon.path;
-                a.download = `${sermon.date} - ${sermon.title}.txt`;
-                a.click();
+                const a = document.createElement('a'); a.href = sermon.path; a.download = `${sermon.date} - ${sermon.title}.txt`; a.click();
             };
 
             return (
@@ -210,38 +190,25 @@
                                 <button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition"><Icon name="x" /></button>
                             </div>
                         </div>
-
                         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
                             <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={snippets.length === 0}>
-                                <Icon name="eye" size={16} /> Matches ({snippets.length})
+                                <Icon name="eye" size={16} /> Context ({snippets.length})
                             </button>
                             <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}>
                                 <Icon name="alignLeft" size={16} /> Full Transcript
                             </button>
                         </div>
-
                         <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
-                            {isLoading ? (
-                                <p className="text-center text-gray-400 italic">Loading content...</p>
-                            ) : viewMode === 'snippets' ? (
+                            {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode === 'snippets' ? (
                                 <div className="max-w-3xl mx-auto space-y-6">
                                     {snippets.length > 0 ? snippets.map((snip, i) => (
                                         <div key={i} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm">
                                             <p className="text-gray-400 text-xs font-sans font-bold mb-2 uppercase tracking-wide">Match #{i+1}</p>
                                             <p>...{highlight(snip, sermon.searchTerm)}...</p>
                                         </div>
-                                    )) : (
-                                        <div className="text-center py-10 text-gray-400">
-                                            <p>No direct matches found in text.</p>
-                                            <button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button>
-                                        </div>
-                                    )}
+                                    )) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
                                 </div>
-                            ) : (
-                                <div className="max-w-3xl mx-auto whitespace-pre-wrap">
-                                    {highlight(fullText, sermon.searchTerm)}
-                                </div>
-                            )}
+                            ) : <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>}
                         </div>
                     </div>
                 </div>
@@ -255,18 +222,20 @@
             const [apiPrefix, setApiPrefix] = useState("site_api/");
             const [totalChunks, setTotalChunks] = useState(0);
 
-            // FILTERS
+            // FILTERS & SETTINGS
             const [selChurches, setSelChurches] = useState([]);
             const [selSpeakers, setSelSpeakers] = useState([]);
             const [selYears, setSelYears] = useState([]);
             const [selTypes, setSelTypes] = useState([]);
             const [selLangs, setSelLangs] = useState([]);
-            
-            // SETTINGS
             const [rollingDays, setRollingDays] = useState(30);
             const [view, setView] = useState("dashboard");
             
-            // MODAL & DOWNLOAD
+            // PAGINATION
+            const [page, setPage] = useState(1);
+            const PAGE_SIZE = 50;
+
+            // MODALS & DOWNLOADS
             const [selectedSermon, setSelectedSermon] = useState(null);
             const [isZipping, setIsZipping] = useState(false);
             const [zipProgress, setZipProgress] = useState("");
@@ -290,7 +259,6 @@
                             ...s, 
                             dateObj: new Date(s.timestamp), 
                             path: s.path,
-                            // CALCULATE WEIGHTED ACTIVITY INDEX
                             wai: s.wordCount > 0 ? parseFloat(((s.mentionCount / s.wordCount) * 1000).toFixed(2)) : 0
                         }));
                         
@@ -303,12 +271,10 @@
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         setSelTypes([...new Set(list.map(s => s.type))]);
                         
-                        // DEFAULT YEARS: 2020 - Current
                         const years = [...new Set(list.map(s => s.year))];
                         const defaultYears = years.filter(y => parseInt(y) >= 2020);
                         setSelYears(defaultYears.length > 0 ? defaultYears : years);
                         
-                        // Default to English
                         const langs = [...new Set(list.map(s => s.language))];
                         setSelLangs(langs.includes("English") ? ["English"] : langs);
                         
@@ -339,6 +305,14 @@
                 );
             }, [rawData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
 
+            // Reset page when filters change
+            useEffect(() => setPage(1), [filteredData]);
+
+            // Paginated Data for List
+            const displayedSermons = useMemo(() => {
+                return filteredData.slice(0, page * PAGE_SIZE);
+            }, [filteredData, page]);
+
             const stats = useMemo(() => {
                 if (!filteredData.length) return null;
                 const total = filteredData.length;
@@ -355,44 +329,30 @@
                 };
             }, [filteredData]);
 
-            // --- CHART 1: STANDARD ROLLING AVG ---
-            const trendData = useMemo(() => {
+            // --- CHART: COMPARATIVE WAI ---
+            const comparativeWaiData = useMemo(() => {
                 if (!filteredData.length) return [];
-                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
-                return sorted.map((item, index, arr) => {
-                    const cutoff = item.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
-                    let sum = 0, count = 0;
-                    for (let i = index; i >= 0; i--) {
-                        if (arr[i].timestamp < cutoff) break;
-                        sum += arr[i].mentionCount;
-                        count++;
-                    }
-                    return { ...item, rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 };
+                const grouped = {};
+                selChurches.forEach(c => grouped[c] = []);
+                filteredData.forEach(s => { if (grouped[s.church]) grouped[s.church].push(s); });
+                const points = [];
+                Object.keys(grouped).forEach(church => {
+                    const sermons = grouped[church].sort((a,b) => a.timestamp - b.timestamp);
+                    sermons.forEach((s, idx) => {
+                        const cutoff = s.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
+                        let sum = 0, count = 0;
+                        for (let i = idx; i >= 0; i--) { if (sermons[i].timestamp < cutoff) break; sum += sermons[i].wai; count++; }
+                        const point = { timestamp: s.timestamp };
+                        point[church] = parseFloat((sum / count).toFixed(2));
+                        points.push(point);
+                    });
                 });
-            }, [filteredData, rollingDays]);
+                return points.sort((a,b) => a.timestamp - b.timestamp);
+            }, [filteredData, rollingDays, selChurches]);
 
-            // --- CHART 2: WEIGHTED ACTIVITY INDEX (NEW) ---
-            const waiData = useMemo(() => {
-                if (!filteredData.length) return [];
-                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
-                return sorted.map((item, index, arr) => {
-                    // Calculate Rolling WAI
-                    const cutoff = item.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
-                    let sumWai = 0, count = 0;
-                    for (let i = index; i >= 0; i--) {
-                        if (arr[i].timestamp < cutoff) break;
-                        sumWai += item.wai; // Use Pre-calculated WAI
-                        count++;
-                    }
-                    return { 
-                        ...item, 
-                        rollingWai: count > 0 ? parseFloat((sumWai / count).toFixed(2)) : 0 
-                    };
-                });
-            }, [filteredData, rollingDays]);
-
-            const comparisonData = useMemo(() => {
-                if (!filteredData.length) return [];
+            // --- CHART: COMPARATIVE MENTIONS (SCATTER-LIKE) ---
+            const comparativeMentionsData = useMemo(() => {
+                 if (!filteredData.length) return [];
                 const grouped = {};
                 selChurches.forEach(c => grouped[c] = []);
                 filteredData.forEach(s => { if (grouped[s.church]) grouped[s.church].push(s); });
@@ -411,21 +371,23 @@
                 return points.sort((a,b) => a.timestamp - b.timestamp);
             }, [filteredData, rollingDays, selChurches]);
 
-            const yearlyStats = useMemo(() => {
-                const map = {};
-                filteredData.forEach(s => {
-                    if (!map[s.year]) map[s.year] = { year: s.year, total: 0, zero: 0, has: 0 };
-                    map[s.year].total++;
-                    if (s.mentionCount === 0) map[s.year].zero++; else map[s.year].has++;
-                });
-                return Object.values(map).sort((a,b) => b.year - a.year).map(y => ({
-                    ...y,
-                    zeroPct: parseFloat(((y.zero / y.total) * 100).toFixed(1)),
-                    hasPct: parseFloat(((y.has / y.total) * 100).toFixed(1))
-                })).reverse();
-            }, [filteredData]);
-
-            // DOWNLOAD & SEARCH HANDLERS
+            const performSearch = async () => {
+                if (!searchQuery || searchQuery.length < 3) return;
+                setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
+                const term = searchQuery.toLowerCase(); const matches = [];
+                for (let i = 0; i < totalChunks; i++) {
+                    setSearchProgress(`Scanning chunk ${i + 1}/${totalChunks}...`);
+                    try { const res = await fetch(`${apiPrefix}text_chunk_${i}.json`); if (!res.ok) continue; const chunk = await res.json();
+                        chunk.forEach(item => { if (item.text.toLowerCase().includes(term)) { const meta = rawData.find(r => r.id === item.id); if (meta) { 
+                            const idx = item.text.toLowerCase().indexOf(term);
+                            const snippet = "..." + item.text.substring(Math.max(0, idx - 80), Math.min(item.text.length, idx + 120)) + "...";
+                            matches.push({ ...meta, snippet }); 
+                        }}});
+                    } catch (e) {}
+                }
+                setSearchResults(matches); setIsSearching(false);
+            };
+            
             const handleCustomDownload = async () => {
                 setIsZipping(true); setZipProgress("Initializing...");
                 const zip = new JSZip(); const folder = zip.folder("Filtered_Sermons");
@@ -445,23 +407,6 @@
                 } catch(e) { alert("Download failed"); } finally { setIsZipping(false); }
             };
 
-            const performSearch = async () => {
-                if (!searchQuery || searchQuery.length < 3) return;
-                setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
-                const term = searchQuery.toLowerCase(); const matches = [];
-                for (let i = 0; i < totalChunks; i++) {
-                    setSearchProgress(`Scanning chunk ${i + 1}/${totalChunks}...`);
-                    try { const res = await fetch(`${apiPrefix}text_chunk_${i}.json`); if (!res.ok) continue; const chunk = await res.json();
-                        chunk.forEach(item => { if (item.text.toLowerCase().includes(term)) { const meta = rawData.find(r => r.id === item.id); if (meta) { 
-                            const idx = item.text.toLowerCase().indexOf(term);
-                            const snippet = "..." + item.text.substring(Math.max(0, idx - 80), Math.min(item.text.length, idx + 120)) + "...";
-                            matches.push({ ...meta, snippet }); 
-                        }}});
-                    } catch (e) {}
-                }
-                setSearchResults(matches); setIsSearching(false);
-            };
-
             const formatDate = (ts) => new Date(ts).toLocaleDateString();
 
             if (loading) return <div className="h-screen flex items-center justify-center font-medium text-gray-500">Loading Database...</div>;
@@ -473,7 +418,10 @@
                         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                             <div className="flex items-center gap-3">
                                 <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <h1 className="font-bold text-lg text-gray-900 hidden md:block">William Branham Mention Tracker</h1>
+                                <div>
+                                    <h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics</h1>
+                                    <p className="text-xs text-gray-500">William Branham Mention Tracker</p>
+                                </div>
                             </div>
                             <div className="flex bg-gray-100 p-1 rounded-lg">
                                 {['dashboard', 'search', 'data'].map(tab => (
@@ -511,77 +459,43 @@
                                     <StatCard title="Zero Rate" value={`${stats.zeroRate}%`} sub="Of Selection" icon="x" color="orange" />
                                 </div>
 
-                                {/* CHART ROW 1: Trends & Yearly */}
-                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-                                    <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[450px]">
-                                        <div className="flex justify-between items-center mb-6">
-                                            <h3 className="font-bold text-gray-800">Mentions Trend & Rolling Average (Raw Count)</h3>
-                                            <div className="flex bg-gray-100 rounded-lg p-1">
-                                                {[7, 30, 180].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-3 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d === 180 ? '6 Mo' : `${d} Days`}</button>)}
-                                            </div>
-                                        </div>
-                                        <ResponsiveContainer width="100%" height="85%">
-                                            <ComposedChart data={trendData}>
-                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={30} />
-                                                <YAxis yAxisId="left" tick={{fontSize: 10}} />
-                                                <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                                <Legend wrapperStyle={{fontSize: '12px', paddingTop: '10px'}} />
-                                                <Bar yAxisId="left" dataKey="mentionCount" name="Mentions (Raw)" fill="#cbd5e1" barSize={3} />
-                                                <Line yAxisId="left" type="monotone" dataKey="rollingAvg" name={`Rolling Avg (${rollingDays}d)`} stroke="#2563eb" strokeWidth={3} dot={{r: 2}} connectNulls={true} />
-                                            </ComposedChart>
-                                        </ResponsiveContainer>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
-                                        <h3 className="font-bold text-gray-800 mb-2">Yearly Consistency</h3>
-                                        <p className="text-xs text-gray-500 mb-6">Percentage of sermons with vs. without mentions</p>
-                                        <ResponsiveContainer width="100%" height="85%">
-                                            <BarChart data={yearlyStats} layout="vertical" margin={{left: 0}}>
-                                                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                                                <XAxis type="number" unit="%" tick={{fontSize: 10}} />
-                                                <YAxis dataKey="year" type="category" tick={{fontSize: 11, fontWeight: 'bold'}} width={40} />
-                                                <Tooltip cursor={{fill: 'transparent'}} />
-                                                <Legend />
-                                                <Bar dataKey="hasPct" name="% With Mentions" stackId="a" fill="#3b82f6" />
-                                                <Bar dataKey="zeroPct" name="% Zero Mentions" stackId="a" fill="#ef4444" />
-                                            </BarChart>
-                                        </ResponsiveContainer>
-                                    </div>
-                                </div>
-
-                                {/* CHART ROW 2: WAI & Comparison */}
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px]">
                                         <div className="flex justify-between items-center mb-6">
                                             <div>
-                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Weighted Activity Index (WAI)</h3>
-                                                <p className="text-xs text-gray-500 mt-1">Normalizes counts by sermon length. (Mentions / Words * 1000).</p>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Mention Count Comparison</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Rolling average of raw mentions per church.</p>
+                                            </div>
+                                            <div className="flex bg-gray-100 rounded-lg p-1">
+                                                {[30, 90, 180].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-2 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d}d</button>)}
                                             </div>
                                         </div>
                                         <ResponsiveContainer width="100%" height="85%">
-                                            <ComposedChart data={waiData}>
+                                            <LineChart data={comparativeMentionsData}>
                                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                                 <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                                <YAxis tick={{fontSize: 10}} label={{ value: 'Intensity', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
+                                                <YAxis tick={{fontSize: 10}} label={{ value: 'Avg Mentions', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
                                                 <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                                <Bar dataKey="wai" name="WAI Score" fill="#e0e7ff" barSize={3} />
-                                                <Line type="monotone" dataKey="rollingWai" name={`WAI Trend (${rollingDays}d)`} stroke="#4f46e5" strokeWidth={3} dot={{r: 2}} connectNulls={true} />
-                                            </ComposedChart>
+                                                <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
+                                                {selChurches.map((church, i) => (
+                                                    <Line key={church} type="monotone" dataKey={church} stroke={getColor(i)} strokeWidth={2} dot={{r: 2}} connectNulls={true} />
+                                                ))}
+                                            </LineChart>
                                         </ResponsiveContainer>
                                     </div>
 
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[450px]">
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px]">
                                         <div className="flex justify-between items-center mb-6">
                                             <div>
-                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Church Trend Comparison</h3>
-                                                <p className="text-xs text-gray-500 mt-1">Comparing independent {rollingDays}-day rolling averages.</p>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Weighted Activity Comparison</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Rolling average of Intensity (Mentions/Words).</p>
                                             </div>
                                         </div>
                                         <ResponsiveContainer width="100%" height="85%">
-                                            <LineChart data={comparisonData}>
+                                            <LineChart data={comparativeWaiData}>
                                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                                 <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                                <YAxis tick={{fontSize: 10}} />
+                                                <YAxis tick={{fontSize: 10}} label={{ value: 'WAI Score', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
                                                 <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
                                                 <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
                                                 {selChurches.map((church, i) => (
@@ -593,10 +507,12 @@
                                 </div>
 
                                 <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-                                    <div className="p-6 border-b border-gray-100"><h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3></div>
-                                    <div className="overflow-x-auto max-h-[600px]">
+                                    <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+                                        <h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3>
+                                    </div>
+                                    <div className="overflow-x-auto">
                                         <table className="w-full text-sm text-left text-gray-500">
-                                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 sticky top-0 z-10 shadow-sm">
+                                            <thead className="text-xs text-gray-700 uppercase bg-gray-50">
                                                 <tr>
                                                     <th className="px-6 py-3">Date</th>
                                                     <th className="px-6 py-3">Church</th>
@@ -608,11 +524,11 @@
                                                 </tr>
                                             </thead>
                                             <tbody className="divide-y divide-gray-100">
-                                                {filteredData.map(s => (
+                                                {displayedSermons.map(s => (
                                                     <tr key={s.id} onClick={() => setSelectedSermon(s)} className="hover:bg-blue-50 cursor-pointer transition">
                                                         <td className="px-6 py-4 whitespace-nowrap">{s.date}</td>
                                                         <td className="px-6 py-4 whitespace-nowrap"><span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{s.church}</span></td>
-                                                        <td className="px-6 py-4 font-medium text-gray-900">{s.title}</td>
+                                                        <td className="px-6 py-4 font-medium text-gray-900 line-clamp-1">{s.title}</td>
                                                         <td className="px-6 py-4">{s.speaker}</td>
                                                         <td className={`px-6 py-4 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
                                                         <td className="px-6 py-4 text-right text-xs">{s.wai}</td>
@@ -624,9 +540,15 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    {filteredData.length > displayedSermons.length && (
+                                        <div className="p-4 text-center border-t">
+                                            <button onClick={() => setPage(p => p + 1)} className="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 px-6 rounded-lg transition">Load More Sermons</button>
+                                        </div>
+                                    )}
                                 </div>
                             </>
                         )}
+
                         {view === 'search' && (
                             <div className="max-w-4xl mx-auto">
                                 <div className="bg-white p-8 rounded-xl border shadow-sm text-center mb-8">
