@@ -33,7 +33,7 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo, useRef } = React;
+        const { useState, useEffect, useMemo, useRef, useCallback } = React;
         const { 
             ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
             ResponsiveContainer, Brush, BarChart, LineChart, ScatterChart, Scatter, ZAxis, AreaChart, Area
@@ -41,7 +41,7 @@
 
         // --- CONFIGURATION ---
         const MENTION_REGEX = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
-        const WORDS_PER_MINUTE = 140; // Approx avg speaking rate
+        const WORDS_PER_MINUTE = 140; 
 
         const CHANNEL_SOURCES = [
             { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
@@ -73,7 +73,8 @@
                 eye: <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />,
                 alignLeft: <path d="M21 6H3m18 6H3m18 6H3" />,
                 activity: <path d="M22 12h-4l-3 9L9 3l-3 9H2" />,
-                grid: <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" />
+                grid: <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" />,
+                maximize: <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -132,11 +133,39 @@
             </div>
         );
 
+        // --- EXPANDABLE SNIPPET ---
+        const SnippetRow = ({ fullText, term, matchIndex, index, highlightFn }) => {
+            const [expanded, setExpanded] = useState(false);
+            
+            // Context Window
+            const context = expanded ? 300 : 100;
+            const start = Math.max(0, matchIndex - context);
+            const end = Math.min(fullText.length, matchIndex + term.length + context);
+            const snippetText = "..." + fullText.substring(start, end) + "...";
+
+            return (
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300">
+                    <div className="flex justify-between items-start mb-2">
+                        <p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide">Match #{index+1}</p>
+                        <button 
+                            onClick={() => setExpanded(!expanded)} 
+                            className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                        >
+                            {expanded ? "Collapse" : <><Icon name="maximize" size={12} /> More Context</>}
+                        </button>
+                    </div>
+                    <p className="text-gray-800 leading-relaxed font-serif text-sm">
+                        {highlightFn(snippetText, term)}
+                    </p>
+                </div>
+            );
+        };
+
         const SermonModal = ({ sermon, onClose }) => {
             const [fullText, setFullText] = useState("");
             const [isLoading, setIsLoading] = useState(true);
             const [viewMode, setViewMode] = useState("snippets");
-            const [snippets, setSnippets] = useState([]);
+            const [mentions, setMentions] = useState([]);
 
             useEffect(() => {
                 setIsLoading(true);
@@ -146,26 +175,27 @@
                         setFullText(text);
                         setIsLoading(false);
                         
+                        // Strict Matching
                         const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : MENTION_REGEX;
-                        const matches = [];
+                        const found = [];
                         let match;
                         const iterRegex = new RegExp(regex);
                         
                         while ((match = iterRegex.exec(text)) !== null) {
-                            const center = match.index + (match[0].length / 2);
-                            const start = Math.max(0, Math.floor(center - 100));
-                            const end = Math.min(text.length, Math.floor(center + 100));
-                            matches.push(text.substring(start, end));
+                            found.push({
+                                index: match.index,
+                                term: match[0]
+                            });
                         }
                         
-                        setSnippets(matches);
-                        if (matches.length === 0) setViewMode("full");
+                        setMentions(found);
+                        if (found.length === 0) setViewMode("full");
                     })
                     .catch(() => { setFullText("Error loading transcript."); setIsLoading(false); });
             }, [sermon]);
 
-            const highlight = (text, searchTerm) => {
-                const regex = searchTerm ? new RegExp(`(${searchTerm})`, 'gi') : MENTION_REGEX;
+            const highlight = (text, term) => {
+                const regex = term ? new RegExp(`(${term})`, 'gi') : MENTION_REGEX;
                 const parts = text.split(regex);
                 return parts.map((part, i) => regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part);
             };
@@ -183,7 +213,7 @@
                                 <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.church}</span>
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
-                                    <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{sermon.displayMentions || sermon.mentionCount} Matches</span>
+                                    <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
                                 </div>
                             </div>
                             <div className="flex gap-2">
@@ -192,8 +222,8 @@
                             </div>
                         </div>
                         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
-                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={snippets.length === 0}>
-                                <Icon name="eye" size={16} /> Context ({snippets.length})
+                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={mentions.length === 0}>
+                                <Icon name="eye" size={16} /> Context ({mentions.length})
                             </button>
                             <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}>
                                 <Icon name="alignLeft" size={16} /> Full Transcript
@@ -201,12 +231,16 @@
                         </div>
                         <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
                             {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode === 'snippets' ? (
-                                <div className="max-w-3xl mx-auto space-y-6">
-                                    {snippets.length > 0 ? snippets.map((snip, i) => (
-                                        <div key={i} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm">
-                                            <p className="text-gray-400 text-xs font-sans font-bold mb-2 uppercase tracking-wide">Match #{i+1}</p>
-                                            <p>...{highlight(snip, sermon.searchTerm)}...</p>
-                                        </div>
+                                <div className="max-w-3xl mx-auto space-y-4">
+                                    {mentions.length > 0 ? mentions.map((m, i) => (
+                                        <SnippetRow 
+                                            key={i} 
+                                            fullText={fullText} 
+                                            term={m.term} 
+                                            matchIndex={m.index} 
+                                            index={i} 
+                                            highlightFn={(t, term) => highlight(t, sermon.searchTerm || term)} 
+                                        />
                                     )) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
                                 </div>
                             ) : <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>}
@@ -229,7 +263,8 @@
             const [selYears, setSelYears] = useState([]);
             const [selTypes, setSelTypes] = useState([]);
             const [selLangs, setSelLangs] = useState([]);
-            const [rollingDays, setRollingDays] = useState(30);
+            // DEFAULT TO 180 DAYS (6 MONTHS)
+            const [rollingDays, setRollingDays] = useState(180);
             const [view, setView] = useState("dashboard");
             const [highlightedChurch, setHighlightedChurch] = useState(null);
             
@@ -263,7 +298,7 @@
                                 ...s, 
                                 dateObj: new Date(s.timestamp), 
                                 path: s.path,
-                                durationHrs: durationHrs > 0 ? durationHrs : 0.5, // Default to 30 mins if 0
+                                durationHrs: durationHrs > 0 ? durationHrs : 0.5, 
                                 mentionsPerHour: durationHrs > 0 ? parseFloat((s.mentionCount / durationHrs).toFixed(1)) : 0
                             };
                         });
@@ -314,7 +349,6 @@
             useEffect(() => setPage(1), [filteredData]);
             const displayedSermons = useMemo(() => filteredData.slice(0, page * PAGE_SIZE), [filteredData, page]);
 
-            // --- KPIs ---
             const stats = useMemo(() => {
                 if (!filteredData.length) return null;
                 const total = filteredData.length;
@@ -322,7 +356,6 @@
                 const max = Math.max(...filteredData.map(s => s.mentionCount));
                 const zero = filteredData.filter(s => s.mentionCount === 0).length;
                 
-                // Most Dependent Church
                 const churchTotals = {};
                 filteredData.forEach(s => {
                     if (!churchTotals[s.church]) churchTotals[s.church] = { m: 0, d: 0 };
@@ -348,7 +381,7 @@
                 };
             }, [filteredData]);
 
-            // --- CHART 1: TIME SERIES MULTI-LINE (ROLLING AVG) ---
+            // --- TIME SERIES ---
             const trendData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const grouped = {};
@@ -369,7 +402,6 @@
                 return points.sort((a,b) => a.timestamp - b.timestamp);
             }, [filteredData, rollingDays, selChurches]);
 
-            // --- CHART 2: NORMALIZED DEPENDENCE (BAR) ---
             const dependenceData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const buckets = {};
@@ -384,51 +416,41 @@
                 })).sort((a,b) => b.mph - a.mph);
             }, [filteredData]);
 
-            // --- CHART 3: HEATMAP ---
             const heatmapData = useMemo(() => {
                 if (!filteredData.length) return { weeks: [], churches: [] };
-                // Get range
                 const times = filteredData.map(s => s.timestamp);
                 const min = Math.min(...times);
                 const max = Math.max(...times);
-                
-                // Generate Weeks (Mon-Sun)
                 const weeks = [];
                 let current = new Date(min);
-                // Adjust to previous Sunday
                 current.setDate(current.getDate() - current.getDay());
                 const end = new Date(max);
-                
                 while(current <= end) {
                     const weekId = `${current.getFullYear()}-W${Math.ceil((current.getDate() + 6 - current.getDay()) / 7)}`;
                     const weekLabel = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}`;
                     weeks.push({ id: weekId, label: weekLabel, start: current.getTime(), end: current.getTime() + (7*24*60*60*1000) });
                     current = new Date(current.getTime() + (7*24*60*60*1000));
                 }
-                if (weeks.length > 52) weeks.splice(0, weeks.length - 52); // Limit to last year for perf if needed, or keep all
+                if (weeks.length > 52) weeks.splice(0, weeks.length - 52); 
 
-                // Map Data
                 const churchRows = selChurches.map(c => {
                     const cells = weeks.map(w => {
                         const sermonsInWeek = filteredData.filter(s => s.church === c && s.timestamp >= w.start && s.timestamp < w.end);
                         if (sermonsInWeek.length === 0) return { val: -1 };
-                        // Intensity = Avg Mentions per Hour for that week
                         const totalM = sermonsInWeek.reduce((a,s) => a + s.mentionCount, 0);
                         const totalD = sermonsInWeek.reduce((a,s) => a + s.durationHrs, 0);
                         return { val: totalD > 0 ? (totalM / totalD) : 0, count: sermonsInWeek.length };
                     });
                     return { church: c, cells };
                 });
-                
                 return { weeks, rows: churchRows };
             }, [filteredData, selChurches]);
 
-            // --- CHART 4: STACKED AREA (TOTAL NOISE) ---
             const stackedData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const monthBuckets = {};
                 filteredData.forEach(s => {
-                    const m = s.date.substring(0, 7); // YYYY-MM
+                    const m = s.date.substring(0, 7); 
                     if (!monthBuckets[m]) monthBuckets[m] = { date: m, time: new Date(m).getTime() };
                     if (!monthBuckets[m][s.church]) monthBuckets[m][s.church] = 0;
                     monthBuckets[m][s.church] += s.mentionCount;
@@ -436,52 +458,54 @@
                 return Object.values(monthBuckets).sort((a,b) => a.time - b.time);
             }, [filteredData]);
 
-             // --- SIDE CHART: OUTLIERS (BUBBLE) ---
              const bubbleData = useMemo(() => {
-                // Top 20 Spikes
                 return [...filteredData].sort((a,b) => b.mentionCount - a.mentionCount).slice(0, 20).map(s => ({
                     x: parseFloat(s.durationHrs.toFixed(2)),
                     y: s.mentionCount,
-                    z: 1, // uniform size for now
+                    z: 1, 
                     title: s.title,
-                    church: s.church
+                    church: s.church,
+                    // Pass ALL raw data for modal
+                    rawData: s 
                 }));
             }, [filteredData]);
 
-
-            // ACTIONS
+            // --- OPTIMIZED PARALLEL SEARCH ---
             const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
-                setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
+                setIsSearching(true); setSearchResults([]); setSearchProgress("Initializing...");
                 const term = searchQuery.toLowerCase();
-                const matches = [];
-                // Create strict regex for counting matches of specific term
                 const termRegex = new RegExp(`(${term})`, 'gi');
+                let matches = [];
 
-                for (let i = 0; i < totalChunks; i++) {
-                    setSearchProgress(`Scanning chunk ${i + 1}/${totalChunks}...`);
-                    try { 
-                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
-                        if (!res.ok) continue; 
-                        const chunk = await res.json();
+                // Parallel Fetching: Process 5 chunks at a time
+                const CHUNK_BATCH_SIZE = 5;
+                
+                for (let i = 0; i < totalChunks; i += CHUNK_BATCH_SIZE) {
+                    const batchEnd = Math.min(i + CHUNK_BATCH_SIZE, totalChunks);
+                    setSearchProgress(`Scanning chunks ${i + 1}-${batchEnd} of ${totalChunks}...`);
+                    
+                    const promises = [];
+                    for (let j = i; j < batchEnd; j++) {
+                        promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r => r.ok ? r.json() : []).catch(() => []));
+                    }
+                    
+                    const results = await Promise.all(promises);
+                    
+                    results.forEach(chunk => {
                         chunk.forEach(item => { 
                             if (item.text.toLowerCase().includes(term)) {
                                 const meta = rawData.find(r => r.id === item.id);
                                 if (meta) { 
-                                    // Count dynamic matches
                                     const matchCount = (item.text.match(termRegex) || []).length;
-                                    
                                     const idx = item.text.toLowerCase().indexOf(term);
-                                    const snippet = "..." + item.text.substring(Math.max(0, idx - 80), Math.min(item.text.length, idx + 120)) + "...";
-                                    matches.push({ 
-                                        ...meta, 
-                                        snippet, 
-                                        displayMentions: matchCount // Override default mention count
-                                    }); 
+                                    // Default Snippet: 100 chars context
+                                    const snippet = "..." + item.text.substring(Math.max(0, idx - 100), Math.min(item.text.length, idx + 100)) + "...";
+                                    matches.push({ ...meta, snippet, displayMentions: matchCount, searchTerm: term }); 
                                 }
                             }
                         });
-                    } catch (e) {}
+                    });
                 }
                 setSearchResults(matches); setIsSearching(false);
             };
@@ -491,13 +515,18 @@
                 const zip = new JSZip(); const folder = zip.folder("Filtered_Sermons");
                 try {
                     const neededIds = new Set(filteredData.map(s => s.id));
-                    for(let i=0; i<totalChunks; i++) {
-                        setZipProgress(`Scanning chunk ${i+1}/${totalChunks}...`);
-                        const res = await fetch(`${apiPrefix}text_chunk_${i}.json`);
-                        if(res.ok) {
-                            const chunk = await res.json();
-                            chunk.forEach(item => { if(neededIds.has(item.id)) { const meta = filteredData.find(f => f.id === item.id); if(meta) folder.file(`${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_') + ".txt", item.text); } });
+                    // Parallel Download for zip
+                    const BATCH = 5;
+                    for(let i=0; i<totalChunks; i+=BATCH) {
+                        setZipProgress(`Scanning database... ${(i/totalChunks*100).toFixed(0)}%`);
+                        const promises = [];
+                        for(let j=i; j<Math.min(i+BATCH, totalChunks); j++) {
+                            promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]));
                         }
+                        const results = await Promise.all(promises);
+                        results.forEach(chunk => {
+                            chunk.forEach(item => { if(neededIds.has(item.id)) { const meta = filteredData.find(f => f.id === item.id); if(meta) folder.file(`${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_') + ".txt", item.text); } });
+                        });
                     }
                     setZipProgress("Compressing...");
                     const content = await zip.generateAsync({type:"blob"});
@@ -548,7 +577,6 @@
 
                         {view === 'dashboard' && stats && (
                             <>
-                                {/* TOP: SUMMARY KPIs */}
                                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-8">
                                     <StatCard title="Total Sermons" value={stats.totalSermons} icon="fileText" color="blue" />
                                     <StatCard title="Total Mentions" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
@@ -559,7 +587,6 @@
                                     <StatCard title="Zero Rate" value={`${stats.zeroRate}%`} icon="x" color="orange" />
                                 </div>
 
-                                {/* MIDDLE: TIME SERIES */}
                                 <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
                                     <div className="flex justify-between items-center mb-6">
                                         <div>
@@ -567,7 +594,7 @@
                                             <p className="text-xs text-gray-500 mt-1">Multi-series rolling average. Hover over legend to isolate a church.</p>
                                         </div>
                                         <div className="flex bg-gray-100 rounded-lg p-1">
-                                            {[7, 30, 90].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-2 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d}d</button>)}
+                                            {[7, 30, 180].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-2 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d === 180 ? '6 Mo' : `${d}d`}</button>)}
                                         </div>
                                     </div>
                                     <ResponsiveContainer width="100%" height="85%">
@@ -597,9 +624,7 @@
                                     </ResponsiveContainer>
                                 </div>
 
-                                {/* LOWER: HEATMAP & RANKINGS & AREA */}
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-                                    {/* HEATMAP */}
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
                                         <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3>
                                         <p className="text-xs text-gray-500 mb-4">Normalized Mentions/Hour. Darker = More Intense. Scroll to see history.</p>
@@ -617,7 +642,7 @@
                                                             <div className="w-48 flex-shrink-0 text-xs text-gray-600 truncate pr-2 text-right" title={row.church}>{row.church}</div>
                                                             <div className="flex gap-[2px]">
                                                                 {row.cells.map((cell, ci) => {
-                                                                    let bg = 'bg-gray-100'; // No sermon
+                                                                    let bg = 'bg-gray-100'; 
                                                                     if (cell.val >= 0) {
                                                                         if (cell.val === 0) bg = 'bg-gray-200';
                                                                         else if (cell.val < 10) bg = 'bg-blue-200';
@@ -635,7 +660,6 @@
                                         </div>
                                     </div>
 
-                                    {/* DEPENDENCE BAR CHART */}
                                     <div className="bg-white p-6 rounded-xl border shadow-sm">
                                         <h3 className="font-bold text-gray-800 mb-2">Dependence Ranking</h3>
                                         <p className="text-xs text-gray-500 mb-4">Avg Mentions per 60 mins of speaking.</p>
@@ -655,7 +679,6 @@
                                     </div>
                                 </div>
 
-                                {/* AREA CHART & OUTLIERS */}
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[400px]">
                                         <h3 className="font-bold text-gray-800 mb-2">Total Volume Stack</h3>
@@ -677,7 +700,7 @@
                                         <p className="text-xs text-gray-500 mb-4">Highest raw counts in selection.</p>
                                         <div className="space-y-2 max-h-[320px] overflow-y-auto custom-scrollbar">
                                             {bubbleData.map((s, i) => (
-                                                <div key={i} onClick={() => setSelectedSermon({...s, dateObj: new Date(s.timestamp), path: s.path})} className="p-3 bg-gray-50 rounded border hover:bg-blue-50 cursor-pointer">
+                                                <div key={i} onClick={() => setSelectedSermon(s.rawData)} className="p-3 bg-gray-50 rounded border hover:bg-blue-50 cursor-pointer">
                                                     <div className="flex justify-between items-start">
                                                         <h4 className="text-xs font-bold text-blue-700 line-clamp-2">{s.title}</h4>
                                                         <span className="bg-red-100 text-red-800 text-[10px] px-1.5 py-0.5 rounded-full font-bold">{s.y}</span>
@@ -689,7 +712,6 @@
                                     </div>
                                 </div>
 
-                                {/* SERMON LIST */}
                                 <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
                                     <div className="p-6 border-b border-gray-100 flex justify-between items-center"><h3 className="font-bold text-gray-800">Sermon List ({filteredData.length})</h3></div>
                                     <div className="overflow-x-auto">
@@ -755,7 +777,7 @@
                                 </div>
                             </div>
                         )}
-                        {/* Data Tab omitted for brevity, same as previous */}
+                         {/* Data Tab omitted for brevity */}
                     </main>
                     {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
                 </div>
