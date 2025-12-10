@@ -25,8 +25,8 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
         
         /* Heatmap Styles */
-        .heatmap-cell { transition: opacity 0.1s; }
-        .heatmap-cell:hover { transform: scale(1.1); border: 1px solid #666; z-index: 10; }
+        .heatmap-cell { transition: all 0.1s; position: relative; }
+        .heatmap-cell:hover { transform: scale(1.2); border: 1px solid #333; z-index: 50; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
     </style>
 </head>
 <body>
@@ -74,7 +74,8 @@
                 alignLeft: <path d="M21 6H3m18 6H3m18 6H3" />,
                 activity: <path d="M22 12h-4l-3 9L9 3l-3 9H2" />,
                 grid: <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" />,
-                maximize: <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                maximize: <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />,
+                calendar: <path d="M8 2v4m8-4v4m-12 4h16m-16 4h16m-16 4h16" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -133,25 +134,27 @@
             </div>
         );
 
-        // --- EXPANDABLE SNIPPET ---
+        // --- EXPANDABLE SNIPPET WITH DOUBLE CONTEXT ---
         const SnippetRow = ({ fullText, term, matchIndex, index, highlightFn }) => {
             const [expanded, setExpanded] = useState(false);
             
-            // Context Window
-            const context = expanded ? 300 : 100;
+            // DOUBLED CONTEXT: Default 200 chars (approx 40 words), Expanded 600 chars
+            const context = expanded ? 600 : 200;
             const start = Math.max(0, matchIndex - context);
             const end = Math.min(fullText.length, matchIndex + term.length + context);
-            const snippetText = "..." + fullText.substring(start, end) + "...";
+            const snippetText = (start > 0 ? "..." : "") + fullText.substring(start, end) + (end < fullText.length ? "..." : "");
 
             return (
-                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300">
+                <div 
+                    onClick={() => setExpanded(!expanded)} 
+                    className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group"
+                >
                     <div className="flex justify-between items-start mb-2">
-                        <p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide">Match #{index+1}</p>
+                        <p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p>
                         <button 
-                            onClick={() => setExpanded(!expanded)} 
-                            className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                            className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100"
                         >
-                            {expanded ? "Collapse" : <><Icon name="maximize" size={12} /> More Context</>}
+                            {expanded ? "Collapse" : <><Icon name="maximize" size={12} /> Expand Context</>}
                         </button>
                     </div>
                     <p className="text-gray-800 leading-relaxed font-serif text-sm">
@@ -263,10 +266,13 @@
             const [selYears, setSelYears] = useState([]);
             const [selTypes, setSelTypes] = useState([]);
             const [selLangs, setSelLangs] = useState([]);
-            // DEFAULT TO 180 DAYS (6 MONTHS)
-            const [rollingDays, setRollingDays] = useState(180);
+            const [rollingDays, setRollingDays] = useState(180); // Default 6 months
             const [view, setView] = useState("dashboard");
             const [highlightedChurch, setHighlightedChurch] = useState(null);
+            
+            // ANALYTICS DATE FILTER (Heatmap/Rankings)
+            const [analysisStart, setAnalysisStart] = useState("");
+            const [analysisEnd, setAnalysisEnd] = useState("");
             
             // PAGINATION
             const [page, setPage] = useState(1);
@@ -319,6 +325,16 @@
                         const langs = [...new Set(list.map(s => s.language))];
                         setSelLangs(langs.includes("English") ? ["English"] : langs);
                         
+                        // Set Analysis Defaults (Last 12 months)
+                        const dates = list.map(s => s.date).sort();
+                        if (dates.length) {
+                            setAnalysisEnd(dates[dates.length - 1]);
+                            // Default start 1 year ago from max date
+                            const d = new Date(dates[dates.length - 1]);
+                            d.setFullYear(d.getFullYear() - 1);
+                            setAnalysisStart(d.toISOString().split('T')[0]);
+                        }
+
                         setLoading(false);
                     } catch (e) { setError(e.message); setLoading(false); }
                 };
@@ -345,6 +361,12 @@
                     selLangs.includes(s.language)
                 );
             }, [rawData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
+
+            // Filter for Lower Section (Heatmap/Rankings) based on Date Range
+            const analysisData = useMemo(() => {
+                if (!analysisStart || !analysisEnd) return filteredData;
+                return filteredData.filter(s => s.date >= analysisStart && s.date <= analysisEnd);
+            }, [filteredData, analysisStart, analysisEnd]);
 
             useEffect(() => setPage(1), [filteredData]);
             const displayedSermons = useMemo(() => filteredData.slice(0, page * PAGE_SIZE), [filteredData, page]);
@@ -381,15 +403,12 @@
                 };
             }, [filteredData]);
 
-            // --- TIME SERIES ---
             const trendData = useMemo(() => {
                 if (!filteredData.length) return [];
-                const grouped = {};
-                selChurches.forEach(c => grouped[c] = []);
-                filteredData.forEach(s => { if (grouped[s.church]) grouped[s.church].push(s); });
                 const points = [];
-                Object.keys(grouped).forEach(church => {
-                    const sermons = grouped[church].sort((a,b) => a.timestamp - b.timestamp);
+                Object.keys(options.churches.reduce((a,c)=>{a[c]=1;return a},{})).forEach(church => {
+                    if (!selChurches.includes(church)) return;
+                    const sermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
                     sermons.forEach((s, idx) => {
                         const cutoff = s.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
                         let sum = 0, count = 0;
@@ -402,10 +421,11 @@
                 return points.sort((a,b) => a.timestamp - b.timestamp);
             }, [filteredData, rollingDays, selChurches]);
 
+            // --- ANALYSIS CHARTS (Uses Date Filtered Data) ---
             const dependenceData = useMemo(() => {
-                if (!filteredData.length) return [];
+                if (!analysisData.length) return [];
                 const buckets = {};
-                filteredData.forEach(s => {
+                analysisData.forEach(s => {
                     if (!buckets[s.church]) buckets[s.church] = { m: 0, d: 0 };
                     buckets[s.church].m += s.mentionCount;
                     buckets[s.church].d += s.durationHrs;
@@ -414,11 +434,11 @@
                     church: c,
                     mph: d.d > 0 ? parseFloat((d.m / d.d).toFixed(1)) : 0
                 })).sort((a,b) => b.mph - a.mph);
-            }, [filteredData]);
+            }, [analysisData]);
 
             const heatmapData = useMemo(() => {
-                if (!filteredData.length) return { weeks: [], churches: [] };
-                const times = filteredData.map(s => s.timestamp);
+                if (!analysisData.length) return { weeks: [], churches: [] };
+                const times = analysisData.map(s => s.timestamp);
                 const min = Math.min(...times);
                 const max = Math.max(...times);
                 const weeks = [];
@@ -431,32 +451,32 @@
                     weeks.push({ id: weekId, label: weekLabel, start: current.getTime(), end: current.getTime() + (7*24*60*60*1000) });
                     current = new Date(current.getTime() + (7*24*60*60*1000));
                 }
-                if (weeks.length > 52) weeks.splice(0, weeks.length - 52); 
-
+                
                 const churchRows = selChurches.map(c => {
                     const cells = weeks.map(w => {
-                        const sermonsInWeek = filteredData.filter(s => s.church === c && s.timestamp >= w.start && s.timestamp < w.end);
+                        const sermonsInWeek = analysisData.filter(s => s.church === c && s.timestamp >= w.start && s.timestamp < w.end);
                         if (sermonsInWeek.length === 0) return { val: -1 };
                         const totalM = sermonsInWeek.reduce((a,s) => a + s.mentionCount, 0);
                         const totalD = sermonsInWeek.reduce((a,s) => a + s.durationHrs, 0);
-                        return { val: totalD > 0 ? (totalM / totalD) : 0, count: sermonsInWeek.length };
+                        const titles = sermonsInWeek.map(s => `• ${s.title}`).join('\n');
+                        return { val: totalD > 0 ? (totalM / totalD) : 0, count: sermonsInWeek.length, titles };
                     });
                     return { church: c, cells };
                 });
                 return { weeks, rows: churchRows };
-            }, [filteredData, selChurches]);
+            }, [analysisData, selChurches]);
 
             const stackedData = useMemo(() => {
-                if (!filteredData.length) return [];
+                if (!analysisData.length) return [];
                 const monthBuckets = {};
-                filteredData.forEach(s => {
+                analysisData.forEach(s => {
                     const m = s.date.substring(0, 7); 
                     if (!monthBuckets[m]) monthBuckets[m] = { date: m, time: new Date(m).getTime() };
                     if (!monthBuckets[m][s.church]) monthBuckets[m][s.church] = 0;
                     monthBuckets[m][s.church] += s.mentionCount;
                 });
                 return Object.values(monthBuckets).sort((a,b) => a.time - b.time);
-            }, [filteredData]);
+            }, [analysisData]);
 
              const bubbleData = useMemo(() => {
                 return [...filteredData].sort((a,b) => b.mentionCount - a.mentionCount).slice(0, 20).map(s => ({
@@ -465,33 +485,27 @@
                     z: 1, 
                     title: s.title,
                     church: s.church,
-                    // Pass ALL raw data for modal
                     rawData: s 
                 }));
             }, [filteredData]);
 
-            // --- OPTIMIZED PARALLEL SEARCH ---
+            // PARALLEL SEARCH
             const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
                 setIsSearching(true); setSearchResults([]); setSearchProgress("Initializing...");
                 const term = searchQuery.toLowerCase();
                 const termRegex = new RegExp(`(${term})`, 'gi');
                 let matches = [];
-
-                // Parallel Fetching: Process 5 chunks at a time
                 const CHUNK_BATCH_SIZE = 5;
                 
                 for (let i = 0; i < totalChunks; i += CHUNK_BATCH_SIZE) {
                     const batchEnd = Math.min(i + CHUNK_BATCH_SIZE, totalChunks);
                     setSearchProgress(`Scanning chunks ${i + 1}-${batchEnd} of ${totalChunks}...`);
-                    
                     const promises = [];
                     for (let j = i; j < batchEnd; j++) {
                         promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r => r.ok ? r.json() : []).catch(() => []));
                     }
-                    
                     const results = await Promise.all(promises);
-                    
                     results.forEach(chunk => {
                         chunk.forEach(item => { 
                             if (item.text.toLowerCase().includes(term)) {
@@ -499,7 +513,6 @@
                                 if (meta) { 
                                     const matchCount = (item.text.match(termRegex) || []).length;
                                     const idx = item.text.toLowerCase().indexOf(term);
-                                    // Default Snippet: 100 chars context
                                     const snippet = "..." + item.text.substring(Math.max(0, idx - 100), Math.min(item.text.length, idx + 100)) + "...";
                                     matches.push({ ...meta, snippet, displayMentions: matchCount, searchTerm: term }); 
                                 }
@@ -515,7 +528,6 @@
                 const zip = new JSZip(); const folder = zip.folder("Filtered_Sermons");
                 try {
                     const neededIds = new Set(filteredData.map(s => s.id));
-                    // Parallel Download for zip
                     const BATCH = 5;
                     for(let i=0; i<totalChunks; i+=BATCH) {
                         setZipProgress(`Scanning database... ${(i/totalChunks*100).toFixed(0)}%`);
@@ -603,38 +615,34 @@
                                             <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
                                             <YAxis tick={{fontSize: 10}} />
                                             <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend 
-                                                onMouseEnter={(e) => setHighlightedChurch(e.dataKey)}
-                                                onMouseLeave={() => setHighlightedChurch(null)}
-                                                wrapperStyle={{fontSize: '11px', paddingTop: '10px', cursor: 'pointer'}} 
-                                            />
+                                            <Legend onMouseEnter={(e) => setHighlightedChurch(e.dataKey)} onMouseLeave={() => setHighlightedChurch(null)} wrapperStyle={{fontSize: '11px', paddingTop: '10px', cursor: 'pointer'}} />
                                             {selChurches.map((church, i) => (
-                                                <Line 
-                                                    key={church} 
-                                                    type="monotone" 
-                                                    dataKey={church} 
-                                                    stroke={getColor(i)} 
-                                                    strokeWidth={highlightedChurch && highlightedChurch !== church ? 0.5 : 2} 
-                                                    strokeOpacity={highlightedChurch && highlightedChurch !== church ? 0.2 : 1}
-                                                    dot={false} 
-                                                    connectNulls={true} 
-                                                />
+                                                <Line key={church} type="monotone" dataKey={church} stroke={getColor(i)} strokeWidth={highlightedChurch && highlightedChurch !== church ? 0.5 : 2} strokeOpacity={highlightedChurch && highlightedChurch !== church ? 0.2 : 1} dot={false} connectNulls={true} />
                                             ))}
                                         </LineChart>
                                     </ResponsiveContainer>
                                 </div>
 
+                                {/* ANALYSIS HEADER */}
+                                <div className="flex flex-col md:flex-row justify-between items-end mb-4 gap-4">
+                                    <h3 className="font-bold text-gray-800 flex items-center gap-2 text-lg"><Icon name="grid" /> Deep Analysis Tools</h3>
+                                    <div className="flex items-center gap-2 bg-white p-2 rounded-lg border shadow-sm">
+                                        <Icon name="calendar" size={16} className="text-gray-400" />
+                                        <input type="date" value={analysisStart} onChange={(e) => setAnalysisStart(e.target.value)} className="text-sm border-none focus:ring-0 text-gray-600" />
+                                        <span className="text-gray-400">-</span>
+                                        <input type="date" value={analysisEnd} onChange={(e) => setAnalysisEnd(e.target.value)} className="text-sm border-none focus:ring-0 text-gray-600" />
+                                    </div>
+                                </div>
+
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
-                                        <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3>
-                                        <p className="text-xs text-gray-500 mb-4">Normalized Mentions/Hour. Darker = More Intense. Scroll to see history.</p>
+                                        <h3 className="font-bold text-gray-800 mb-2">Intensity Heatmap</h3>
+                                        <p className="text-xs text-gray-500 mb-4">Normalized Mentions/Hour. Darker = More Intense. Hover for sermons.</p>
                                         <div className="flex-1 overflow-x-auto custom-scrollbar">
                                             <div style={{ minWidth: heatmapData.weeks.length * 20 + 200 }}>
                                                 <div className="flex">
                                                     <div className="w-48 flex-shrink-0"></div>
-                                                    {heatmapData.weeks.map((w, i) => (
-                                                        i % 4 === 0 && <div key={w.id} className="w-5 text-[9px] text-gray-400 -rotate-90 origin-bottom-left translate-y-8">{w.label}</div>
-                                                    ))}
+                                                    {heatmapData.weeks.map((w, i) => (i % 4 === 0 && <div key={w.id} className="w-5 text-[9px] text-gray-400 -rotate-90 origin-bottom-left translate-y-8">{w.label}</div>))}
                                                 </div>
                                                 <div className="mt-8 space-y-1">
                                                     {heatmapData.rows.map((row, i) => (
@@ -650,7 +658,7 @@
                                                                         else if (cell.val < 50) bg = 'bg-blue-600';
                                                                         else bg = 'bg-red-600';
                                                                     }
-                                                                    return <div key={ci} title={`${heatmapData.weeks[ci].label}: ${cell.val >= 0 ? cell.val.toFixed(1) + '/hr' : 'No Sermon'}`} className={`w-4 h-5 rounded-sm heatmap-cell ${bg}`}></div>
+                                                                    return <div key={ci} title={`${heatmapData.weeks[ci].label}\n${cell.val >= 0 ? cell.val.toFixed(1) + '/hr' : 'No Sermon'}\n\n${cell.titles || ''}`} className={`w-4 h-5 rounded-sm heatmap-cell ${bg}`}></div>
                                                                 })}
                                                             </div>
                                                         </div>
@@ -662,7 +670,7 @@
 
                                     <div className="bg-white p-6 rounded-xl border shadow-sm">
                                         <h3 className="font-bold text-gray-800 mb-2">Dependence Ranking</h3>
-                                        <p className="text-xs text-gray-500 mb-4">Avg Mentions per 60 mins of speaking.</p>
+                                        <p className="text-xs text-gray-500 mb-4">Avg Mentions/Hr in selected period.</p>
                                         <div className="space-y-3 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
                                             {dependenceData.map((d, i) => (
                                                 <div key={d.church} className="space-y-1">
@@ -682,7 +690,7 @@
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[400px]">
                                         <h3 className="font-bold text-gray-800 mb-2">Total Volume Stack</h3>
-                                        <p className="text-xs text-gray-500 mb-4">Total mentions across all selected churches over time.</p>
+                                        <p className="text-xs text-gray-500 mb-4">Total mentions across all selected churches in selected period.</p>
                                         <ResponsiveContainer width="100%" height="85%">
                                             <AreaChart data={stackedData}>
                                                 <CartesianGrid strokeDasharray="3 3" vertical={false} />
