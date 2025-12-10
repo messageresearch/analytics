@@ -24,7 +24,6 @@
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
         
-        /* Heatmap Styles */
         .heatmap-cell { transition: all 0.1s; position: relative; }
         .heatmap-cell:hover { transform: scale(1.2); border: 1px solid #333; z-index: 50; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
     </style>
@@ -40,7 +39,8 @@
         } = Recharts;
 
         // --- CONFIGURATION ---
-        const MENTION_REGEX = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
+        // Base pattern string (we will clone this RegExp to avoid stateful /g issues)
+        const MENTION_PATTERN = "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m";
         const WORDS_PER_MINUTE = 140; 
 
         const CHANNEL_SOURCES = [
@@ -134,11 +134,8 @@
             </div>
         );
 
-        // --- EXPANDABLE SNIPPET WITH DOUBLE CONTEXT ---
         const SnippetRow = ({ fullText, term, matchIndex, index, highlightFn }) => {
             const [expanded, setExpanded] = useState(false);
-            
-            // DOUBLED CONTEXT: Default 200 chars (approx 40 words), Expanded 600 chars
             const context = expanded ? 600 : 200;
             const start = Math.max(0, matchIndex - context);
             const end = Math.min(fullText.length, matchIndex + term.length + context);
@@ -151,9 +148,7 @@
                 >
                     <div className="flex justify-between items-start mb-2">
                         <p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p>
-                        <button 
-                            className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100"
-                        >
+                        <button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">
                             {expanded ? "Collapse" : <><Icon name="maximize" size={12} /> Expand Context</>}
                         </button>
                     </div>
@@ -178,17 +173,14 @@
                         setFullText(text);
                         setIsLoading(false);
                         
-                        // Strict Matching
-                        const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : MENTION_REGEX;
+                        // Strict Matching - Use NEW RegExp to avoid stateful /g issues
+                        const regexStr = sermon.searchTerm ? `(${sermon.searchTerm})` : MENTION_PATTERN;
+                        const regex = new RegExp(regexStr, 'gi');
+                        
                         const found = [];
                         let match;
-                        const iterRegex = new RegExp(regex);
-                        
-                        while ((match = iterRegex.exec(text)) !== null) {
-                            found.push({
-                                index: match.index,
-                                term: match[0]
-                            });
+                        while ((match = regex.exec(text)) !== null) {
+                            found.push({ index: match.index, term: match[0] });
                         }
                         
                         setMentions(found);
@@ -198,7 +190,9 @@
             }, [sermon]);
 
             const highlight = (text, term) => {
-                const regex = term ? new RegExp(`(${term})`, 'gi') : MENTION_REGEX;
+                // Always create NEW RegExp for rendering to prevent state issues
+                const regexStr = term ? `(${term})` : MENTION_PATTERN;
+                const regex = new RegExp(regexStr, 'gi');
                 const parts = text.split(regex);
                 return parts.map((part, i) => regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part);
             };
@@ -266,24 +260,20 @@
             const [selYears, setSelYears] = useState([]);
             const [selTypes, setSelTypes] = useState([]);
             const [selLangs, setSelLangs] = useState([]);
-            const [rollingDays, setRollingDays] = useState(180); // Default 6 months
+            const [rollingWeeks, setRollingWeeks] = useState(26); // Default 26 Weeks (~6 months)
             const [view, setView] = useState("dashboard");
             const [highlightedChurch, setHighlightedChurch] = useState(null);
             
-            // ANALYTICS DATE FILTER (Heatmap/Rankings)
+            // ANALYTICS DATE FILTER
             const [analysisStart, setAnalysisStart] = useState("");
             const [analysisEnd, setAnalysisEnd] = useState("");
             
-            // PAGINATION
             const [page, setPage] = useState(1);
             const PAGE_SIZE = 50;
 
-            // MODALS & DOWNLOADS
             const [selectedSermon, setSelectedSermon] = useState(null);
             const [isZipping, setIsZipping] = useState(false);
             const [zipProgress, setZipProgress] = useState("");
-            
-            // SEARCH
             const [searchQuery, setSearchQuery] = useState("");
             const [searchResults, setSearchResults] = useState([]);
             const [isSearching, setIsSearching] = useState(false);
@@ -313,7 +303,6 @@
                         setTotalChunks(json.totalChunks || 0);
                         setApiPrefix(prefix);
 
-                        // Init Filters
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         setSelTypes([...new Set(list.map(s => s.type))]);
@@ -325,11 +314,9 @@
                         const langs = [...new Set(list.map(s => s.language))];
                         setSelLangs(langs.includes("English") ? ["English"] : langs);
                         
-                        // Set Analysis Defaults (Last 12 months)
                         const dates = list.map(s => s.date).sort();
                         if (dates.length) {
                             setAnalysisEnd(dates[dates.length - 1]);
-                            // Default start 1 year ago from max date
                             const d = new Date(dates[dates.length - 1]);
                             d.setFullYear(d.getFullYear() - 1);
                             setAnalysisStart(d.toISOString().split('T')[0]);
@@ -362,7 +349,6 @@
                 );
             }, [rawData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
 
-            // Filter for Lower Section (Heatmap/Rankings) based on Date Range
             const analysisData = useMemo(() => {
                 if (!analysisStart || !analysisEnd) return filteredData;
                 return filteredData.filter(s => s.date >= analysisStart && s.date <= analysisEnd);
@@ -403,25 +389,50 @@
                 };
             }, [filteredData]);
 
+            // --- AGGREGATION: PER WEEK ROLLING AVERAGE ---
             const trendData = useMemo(() => {
                 if (!filteredData.length) return [];
-                const points = [];
-                Object.keys(options.churches.reduce((a,c)=>{a[c]=1;return a},{})).forEach(church => {
-                    if (!selChurches.includes(church)) return;
-                    const sermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
-                    sermons.forEach((s, idx) => {
-                        const cutoff = s.timestamp - (rollingDays * 24 * 60 * 60 * 1000);
-                        let sum = 0, count = 0;
-                        for (let i = idx; i >= 0; i--) { if (sermons[i].timestamp < cutoff) break; sum += s.mentionCount; count++; }
-                        const point = { timestamp: s.timestamp };
-                        point[church] = parseFloat((sum / count).toFixed(1));
-                        points.push(point);
-                    });
+                
+                // 1. Group by Week (ISO week start) per church
+                const weeklyData = {}; // { timestamp: { church1: count, church2: count ... } }
+                
+                filteredData.forEach(s => {
+                    const d = new Date(s.timestamp);
+                    const day = d.getDay();
+                    const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Adjust to Monday
+                    const weekStart = new Date(d.setDate(diff)).setHours(0,0,0,0);
+                    
+                    if (!weeklyData[weekStart]) weeklyData[weekStart] = { timestamp: weekStart };
+                    if (!weeklyData[weekStart][s.church]) weeklyData[weekStart][s.church] = 0;
+                    
+                    weeklyData[weekStart][s.church] += s.mentionCount;
                 });
-                return points.sort((a,b) => a.timestamp - b.timestamp);
-            }, [filteredData, rollingDays, selChurches]);
 
-            // --- ANALYSIS CHARTS (Uses Date Filtered Data) ---
+                const sortedWeeks = Object.values(weeklyData).sort((a,b) => a.timestamp - b.timestamp);
+                const result = [];
+
+                // 2. Rolling Average on Weekly Sums
+                sortedWeeks.forEach((week, index, arr) => {
+                    const entry = { timestamp: week.timestamp };
+                    selChurches.forEach(church => {
+                        let sum = 0, count = 0;
+                        // Look back N weeks
+                        for (let i = index; i >= 0; i--) {
+                            if (arr[i].timestamp < week.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000)) break;
+                            if (arr[i][church] !== undefined) {
+                                sum += arr[i][church];
+                                count++;
+                            }
+                        }
+                        if (count > 0) entry[church] = parseFloat((sum / count).toFixed(1));
+                    });
+                    result.push(entry);
+                });
+
+                return result;
+            }, [filteredData, rollingWeeks, selChurches]);
+
+            // --- ANALYSIS CHARTS ---
             const dependenceData = useMemo(() => {
                 if (!analysisData.length) return [];
                 const buckets = {};
@@ -489,10 +500,10 @@
                 }));
             }, [filteredData]);
 
-            // PARALLEL SEARCH
+            // ACTIONS
             const performSearch = async () => {
                 if (!searchQuery || searchQuery.length < 3) return;
-                setIsSearching(true); setSearchResults([]); setSearchProgress("Initializing...");
+                setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
                 const term = searchQuery.toLowerCase();
                 const termRegex = new RegExp(`(${term})`, 'gi');
                 let matches = [];
@@ -603,21 +614,34 @@
                                     <div className="flex justify-between items-center mb-6">
                                         <div>
                                             <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Frequency Over Time</h3>
-                                            <p className="text-xs text-gray-500 mt-1">Multi-series rolling average. Hover over legend to isolate a church.</p>
+                                            <p className="text-xs text-gray-500 mt-1">Total Mentions Per Week (Rolling Average). Hover over legend to isolate.</p>
                                         </div>
                                         <div className="flex bg-gray-100 rounded-lg p-1">
-                                            {[7, 30, 180].map(d => <button key={d} onClick={() => setRollingDays(d)} className={`px-2 py-1 text-xs font-medium rounded ${rollingDays === d ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{d === 180 ? '6 Mo' : `${d}d`}</button>)}
+                                            {[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w} Wks</button>)}
                                         </div>
                                     </div>
                                     <ResponsiveContainer width="100%" height="85%">
                                         <LineChart data={trendData}>
                                             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                             <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                            <YAxis tick={{fontSize: 10}} />
+                                            <YAxis tick={{fontSize: 10}} label={{ value: 'Wkly Sum', angle: -90, position: 'insideLeft', style: {fontSize: 10} }} />
                                             <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend onMouseEnter={(e) => setHighlightedChurch(e.dataKey)} onMouseLeave={() => setHighlightedChurch(null)} wrapperStyle={{fontSize: '11px', paddingTop: '10px', cursor: 'pointer'}} />
+                                            <Legend 
+                                                onMouseEnter={(e) => setHighlightedChurch(e.dataKey)}
+                                                onMouseLeave={() => setHighlightedChurch(null)}
+                                                wrapperStyle={{fontSize: '11px', paddingTop: '10px', cursor: 'pointer'}} 
+                                            />
                                             {selChurches.map((church, i) => (
-                                                <Line key={church} type="monotone" dataKey={church} stroke={getColor(i)} strokeWidth={highlightedChurch && highlightedChurch !== church ? 0.5 : 2} strokeOpacity={highlightedChurch && highlightedChurch !== church ? 0.2 : 1} dot={false} connectNulls={true} />
+                                                <Line 
+                                                    key={church} 
+                                                    type="monotone" 
+                                                    dataKey={church} 
+                                                    stroke={getColor(i)} 
+                                                    strokeWidth={highlightedChurch && highlightedChurch !== church ? 0.5 : 2} 
+                                                    strokeOpacity={highlightedChurch && highlightedChurch !== church ? 0.2 : 1}
+                                                    dot={false} 
+                                                    connectNulls={true} 
+                                                />
                                             ))}
                                         </LineChart>
                                     </ResponsiveContainer>
@@ -636,13 +660,15 @@
 
                                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                     <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
-                                        <h3 className="font-bold text-gray-800 mb-2">Intensity Heatmap</h3>
-                                        <p className="text-xs text-gray-500 mb-4">Normalized Mentions/Hour. Darker = More Intense. Hover for sermons.</p>
+                                        <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3>
+                                        <p className="text-xs text-gray-500 mb-4">Normalized Mentions/Hour. Darker = More Intense. Scroll to see history.</p>
                                         <div className="flex-1 overflow-x-auto custom-scrollbar">
                                             <div style={{ minWidth: heatmapData.weeks.length * 20 + 200 }}>
                                                 <div className="flex">
                                                     <div className="w-48 flex-shrink-0"></div>
-                                                    {heatmapData.weeks.map((w, i) => (i % 4 === 0 && <div key={w.id} className="w-5 text-[9px] text-gray-400 -rotate-90 origin-bottom-left translate-y-8">{w.label}</div>))}
+                                                    {heatmapData.weeks.map((w, i) => (
+                                                        i % 4 === 0 && <div key={w.id} className="w-5 text-[9px] text-gray-400 -rotate-90 origin-bottom-left translate-y-8">{w.label}</div>
+                                                    ))}
                                                 </div>
                                                 <div className="mt-8 space-y-1">
                                                     {heatmapData.rows.map((row, i) => (
