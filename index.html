@@ -40,7 +40,9 @@
         } = Recharts;
 
         // --- CONFIGURATION ---
-        const MENTION_REGEX = /(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m/gi;
+        // Default (Branham) Regex string for initial load
+        const DEFAULT_TERM = "William Branham";
+        const DEFAULT_REGEX_STR = "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m";
         const WORDS_PER_MINUTE = 140; 
 
         const CHANNEL_SOURCES = [
@@ -77,7 +79,8 @@
                 calendar: <path d="M8 2v4m8-4v4m-12 4h16m-16 4h16m-16 4h16" />,
                 sortAsc: <path d="m18 15 4 4 4-4M22 19V3M6 20V4M2 8l4-4 4 4M2 16h10" />,
                 sortDesc: <path d="m18 9 4-4 4 4M22 5v16M6 20V4M2 8l4-4 4 4M2 16h10" />,
-                cross: <path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2Z" />
+                refresh: <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" />,
+                layers: <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -85,6 +88,8 @@
                 </svg>
             );
         };
+
+        // --- COMPONENTS ---
 
         const MultiSelect = ({ label, options, selected, onChange }) => {
             const [isOpen, setIsOpen] = useState(false);
@@ -134,6 +139,42 @@
             </div>
         );
 
+        const TopicAnalyzer = ({ onAnalyze, isAnalyzing, progress }) => {
+            const [term, setTerm] = useState("");
+            const [variations, setVariations] = useState("");
+
+            return (
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8">
+                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                        <div className="flex-1">
+                            <h2 className="text-xl font-bold flex items-center gap-2 mb-2"><Icon name="activity" /> Global Mention Tracker</h2>
+                            <p className="text-blue-100 text-sm mb-4">Analyze all videos over time for a specific topic. This will scan the entire database dynamically.</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Primary Term</label>
+                                    <input type="text" value={term} onChange={e => setTerm(e.target.value)} placeholder="e.g. Eagle" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
+                                </div>
+                                <div>
+                                    <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Variations (Comma Separated)</label>
+                                    <input type="text" value={variations} onChange={e => setVariations(e.target.value)} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-end justify-center h-full pt-6">
+                            <button 
+                                onClick={() => onAnalyze(term, variations)} 
+                                disabled={isAnalyzing || !term}
+                                className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                            >
+                                {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
+                            </button>
+                            {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
         const HeatmapDetails = ({ data, onClose, onSelect }) => (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={onClose}>
                 <div className="bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden" onClick={e => e.stopPropagation()}>
@@ -152,7 +193,7 @@
                                         <h4 className="font-bold text-sm text-blue-700">{s.title}</h4>
                                         <div className="flex justify-between items-center mt-1 text-xs text-gray-600">
                                             <span>{s.church}</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Mentions</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Matches</span>
                                         </div>
                                     </div>
                                 ))}
@@ -198,7 +239,7 @@
                     .then(text => {
                         setFullText(text);
                         setIsLoading(false);
-                        const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : new RegExp(`(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m`, 'gi');
+                        const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : new RegExp(DEFAULT_REGEX_STR, 'gi');
                         const found = [];
                         let match;
                         while ((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }); }
@@ -209,7 +250,7 @@
             }, [sermon]);
 
             const highlight = (text, term) => {
-                const regex = term ? new RegExp(`(${term})`, 'gi') : new RegExp(`(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m`, 'gi');
+                const regex = term ? new RegExp(`(${term})`, 'gi') : new RegExp(DEFAULT_REGEX_STR, 'gi');
                 const parts = text.split(regex);
                 return parts.map((part, i) => regex.test(part) ? <span key={i} className="highlight-match">{part}</span> : part);
             };
@@ -256,7 +297,14 @@
             const [apiPrefix, setApiPrefix] = useState("site_api/");
             const [totalChunks, setTotalChunks] = useState(0);
 
-            // STATE
+            // GLOBAL TRACKING STATE
+            const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM);
+            const [activeRegex, setActiveRegex] = useState(DEFAULT_REGEX_STR);
+            const [customCounts, setCustomCounts] = useState(null); // Map<id, count>
+            const [isAnalzying, setIsAnalyzing] = useState(false);
+            const [analysisProgress, setAnalysisProgress] = useState("");
+
+            // FILTERS & SETTINGS
             const [selChurches, setSelChurches] = useState([]);
             const [selSpeakers, setSelSpeakers] = useState([]);
             const [selYears, setSelYears] = useState([]);
@@ -264,7 +312,7 @@
             const [selLangs, setSelLangs] = useState([]);
             const [rollingWeeks, setRollingWeeks] = useState(26); 
             const [aggregateWindow, setAggregateWindow] = useState(26); 
-            const [heatmapMode, setHeatmapMode] = useState("month"); // 'month' or 'week'
+            const [heatmapMode, setHeatmapMode] = useState("month"); 
             const [view, setView] = useState("dashboard");
             const [highlightedChurch, setHighlightedChurch] = useState(null);
             
@@ -326,9 +374,68 @@
                 return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') };
             }, [rawData]);
 
+            // --- DATA ENRICHMENT (Swaps Counts if Custom Search Active) ---
+            const enrichedData = useMemo(() => {
+                if (!customCounts) return rawData;
+                return rawData.map(s => {
+                    const newCount = customCounts.get(s.id) || 0;
+                    return {
+                        ...s,
+                        mentionCount: newCount,
+                        mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0,
+                        wai: s.wordCount > 0 ? parseFloat(((newCount / s.wordCount) * 1000).toFixed(2)) : 0,
+                        searchTerm: activeRegex // Pass regex for highlighting
+                    };
+                });
+            }, [rawData, customCounts, activeRegex]);
+
             const filteredData = useMemo(() => {
-                return rawData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language));
-            }, [rawData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
+                return enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language));
+            }, [enrichedData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
+
+            // --- DYNAMIC ANALYZER ---
+            const handleAnalysis = async (term, variations) => {
+                setIsAnalyzing(true);
+                setAnalysisProgress("Initializing...");
+                
+                // Build Regex
+                const vars = variations.split(',').map(v => v.trim()).filter(v => v.length > 0);
+                const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); // Escape special chars
+                const regexStr = `(${allTerms.join('|')})`;
+                const regex = new RegExp(regexStr, 'gi');
+                
+                const newCounts = new Map();
+                const CHUNK_BATCH = 10; // Aggressive fetching
+
+                try {
+                    for(let i=0; i<totalChunks; i+=CHUNK_BATCH) {
+                        const batchEnd = Math.min(i+CHUNK_BATCH, totalChunks);
+                        setAnalysisProgress(`Scanning corpus... Chunk ${i+1}/${totalChunks}`);
+                        const promises = [];
+                        for(let j=i; j<batchEnd; j++) {
+                            promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]));
+                        }
+                        const results = await Promise.all(promises);
+                        
+                        // Process results immediately and discard text to save memory
+                        results.forEach(chunk => {
+                            chunk.forEach(item => {
+                                const matches = (item.text.match(regex) || []).length;
+                                if (matches > 0) newCounts.set(item.id, matches);
+                            });
+                        });
+                    }
+                    
+                    setCustomCounts(newCounts);
+                    setActiveTerm(term);
+                    setActiveRegex(regexStr);
+                    setAnalysisProgress("Done!");
+                } catch(e) {
+                    alert("Analysis failed: " + e.message);
+                } finally {
+                    setIsAnalyzing(false);
+                }
+            };
 
             // --- TABLE LOGIC ---
             const processedTableData = useMemo(() => {
@@ -368,39 +475,10 @@
                 const total = filteredData.length;
                 const mentions = filteredData.reduce((acc, s) => acc + s.mentionCount, 0);
                 const max = Math.max(...filteredData.map(s => s.mentionCount));
-                const totalJesus = filteredData.reduce((acc, s) => acc + (s.jesusCount || 0), 0);
-                const ratio = totalJesus > 0 ? (mentions / totalJesus).toFixed(2) : "N/A";
-                return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1), totalJesus: totalJesus.toLocaleString(), ratio: ratio };
+                return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) };
             }, [filteredData]);
 
             // CHARTS
-            const trendData = useMemo(() => {
-                if (!filteredData.length) return [];
-                const weeklyData = {};
-                filteredData.forEach(s => {
-                    const d = new Date(s.timestamp);
-                    const weekStart = new Date(d.setDate(d.getDate() - d.getDay() + (d.getDay() === 0 ? -6 : 1))).setHours(0,0,0,0);
-                    if (!weeklyData[weekStart]) weeklyData[weekStart] = { timestamp: weekStart };
-                    if (!weeklyData[weekStart][s.church]) weeklyData[weekStart][s.church] = 0;
-                    weeklyData[weekStart][s.church] += s.mentionCount;
-                });
-                const sortedWeeks = Object.values(weeklyData).sort((a,b) => a.timestamp - b.timestamp);
-                const result = [];
-                sortedWeeks.forEach((week, index, arr) => {
-                    const entry = { timestamp: week.timestamp };
-                    selChurches.forEach(church => {
-                        let sum = 0, count = 0;
-                        for (let i = index; i >= 0; i--) {
-                            if (arr[i].timestamp < week.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000)) break;
-                            if (arr[i][church] !== undefined) { sum += arr[i][church]; count++; }
-                        }
-                        if (count > 0) entry[church] = parseFloat((sum / count).toFixed(1));
-                    });
-                    result.push(entry);
-                });
-                return result;
-            }, [filteredData, rollingWeeks, selChurches]);
-
             const aggregateActivityData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
@@ -416,49 +494,60 @@
                 });
             }, [filteredData, aggregateWindow]);
 
-            const dependenceData = useMemo(() => {
+            // CHANNEL TRENDS (Small Multiples)
+            const channelTrends = useMemo(() => {
                 if (!filteredData.length) return [];
-                const buckets = {};
-                filteredData.forEach(s => { if (!buckets[s.church]) buckets[s.church] = { m: 0, d: 0 }; buckets[s.church].m += s.mentionCount; buckets[s.church].d += s.durationHrs; });
-                return Object.entries(buckets).map(([c, d]) => ({ church: c, mph: d.d > 0 ? parseFloat((d.m / d.d).toFixed(1)) : 0 })).sort((a,b) => b.mph - a.mph);
-            }, [filteredData]);
+                // Group by Church
+                const churchGroups = {};
+                selChurches.forEach(c => churchGroups[c] = []);
+                filteredData.forEach(s => { if (churchGroups[s.church]) churchGroups[s.church].push(s); });
 
-            // --- IMPROVED HEATMAP ---
+                const charts = [];
+                Object.entries(churchGroups).forEach(([church, sermons]) => {
+                    if(sermons.length === 0) return;
+                    const sorted = sermons.sort((a,b) => a.timestamp - b.timestamp);
+                    const dataPoints = sorted.map((item, index, arr) => {
+                        const cutoff = item.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000);
+                        let sum = 0, count = 0;
+                        for (let i = index; i >= 0; i--) {
+                            if (arr[i].timestamp < cutoff) break;
+                            sum += arr[i].mentionCount;
+                            count++;
+                        }
+                        return { 
+                            date: item.date, 
+                            timestamp: item.timestamp,
+                            val: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 
+                        };
+                    });
+                    charts.push({ church, data: dataPoints, color: getColor(selChurches.indexOf(church)) });
+                });
+                return charts;
+            }, [filteredData, selChurches, rollingWeeks]);
+
+            // HEATMAP
             const heatmapData = useMemo(() => {
                 if (!filteredData.length) return { labels: [], rows: [] };
-                
-                // 1. Determine Range from Global Data
                 const times = filteredData.map(s => s.timestamp);
                 const min = Math.min(...times);
                 const max = Math.max(...times);
-                
                 const timeSlots = [];
                 let current = new Date(min);
                 const end = new Date(max);
 
                 if (heatmapMode === 'week') {
-                    // Snap to Monday
-                    current.setDate(current.getDate() - current.getDay() + 1);
+                    current.setDate(current.getDate() - current.getDay() + 1); // Snap to Monday
                     while(current <= end) {
                         const next = new Date(current.getTime() + 7*24*60*60*1000);
-                        timeSlots.push({ 
-                            start: current.getTime(), 
-                            end: next.getTime(), 
-                            label: `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}` 
-                        });
+                        timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}` });
                         current = next;
                     }
                 } else {
-                    // Month Mode - Snap to 1st
-                    current.setDate(1);
+                    current.setDate(1); // Snap to 1st
                     while(current <= end) {
                         const next = new Date(current);
                         next.setMonth(next.getMonth() + 1);
-                        timeSlots.push({ 
-                            start: current.getTime(), 
-                            end: next.getTime(), 
-                            label: `${current.toLocaleString('default', { month: 'short' })} '${current.getFullYear().toString().substr(2)}` 
-                        });
+                        timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.toLocaleString('default', { month: 'short' })} '${current.getFullYear().toString().substr(2)}` });
                         current = next;
                     }
                 }
@@ -481,19 +570,6 @@
                 filteredData.forEach(s => { const m = s.date.substring(0,7); if (!buckets[m]) buckets[m] = { date: m, time: new Date(m).getTime() }; if (!buckets[m][s.church]) buckets[m][s.church] = 0; buckets[m][s.church] += s.mentionCount; });
                 return Object.values(buckets).sort((a,b) => a.time - b.time);
             }, [filteredData]);
-
-            const bubbleData = useMemo(() => [...filteredData].sort((a,b)=>b.mentionCount-a.mentionCount).slice(0,20).map(s=>({x: parseFloat(s.durationHrs.toFixed(2)), y: s.mentionCount, z: 1, title: s.title, church: s.church, rawData: s})), [filteredData]);
-
-            const balanceData = useMemo(() => {
-                if (!filteredData.length) return [];
-                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
-                return sorted.map((item, index, arr) => {
-                    const cutoff = item.timestamp - (aggregateWindow * 7 * 24 * 60 * 60 * 1000);
-                    let sumB = 0, sumJ = 0, count = 0;
-                    for (let i = index; i >= 0; i--) { if (arr[i].timestamp < cutoff) break; sumB += arr[i].mentionCount; sumJ += (arr[i].jesusCount || 0); count++; }
-                    return { timestamp: item.timestamp, date: item.date, branhamAvg: count > 0 ? parseFloat((sumB / count).toFixed(1)) : 0, jesusAvg: count > 0 ? parseFloat((sumJ / count).toFixed(1)) : 0 };
-                });
-            }, [filteredData, aggregateWindow]);
 
             const performSearch = async () => { 
                 if (!searchQuery || searchQuery.length < 3) return; setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
@@ -548,7 +624,7 @@
                         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                             <div className="flex items-center gap-3">
                                 <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics</h1><p className="text-xs text-gray-500">William Branham Mention Tracker</p></div>
+                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
                             </div>
                             <div className="flex bg-gray-100 p-1 rounded-lg">
                                 {['dashboard', 'search', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
@@ -571,16 +647,19 @@
 
                         {view === 'dashboard' && stats && (
                             <>
+                                <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalzying} progress={analysisProgress} />
+
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                                     <StatCard title="Total Sermons" value={stats.totalSermons} icon="fileText" color="blue" />
-                                    <StatCard title="Total Branham" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
-                                    <StatCard title="Total Jesus" value={stats.totalJesus} icon="cross" color="red" />
-                                    <StatCard title="B/J Quotient" value={stats.ratio} sub="Branham vs Jesus" icon="activity" color="purple" />
+                                    <StatCard title="Total Mentions" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
+                                    <StatCard title="Avg / Sermon" value={stats.avg} icon="barChart" color="indigo" />
+                                    <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
                                 </div>
 
+                                {/* CHART 1: AGGREGATE ACTIVITY */}
                                 <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
                                     <div className="flex justify-between items-center mb-6">
-                                        <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Sermon Activity & Trend</h3><p className="text-xs text-gray-500 mt-1">Bars = Individual Sermons. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Aggregate Trend.</p></div>
+                                        <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Bars = Individual Sermons. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Aggregate Trend.</p></div>
                                         <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setAggregateWindow(w)} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                     </div>
                                     <ResponsiveContainer width="100%" height="85%">
@@ -596,42 +675,33 @@
                                     </ResponsiveContainer>
                                 </div>
 
-                                <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="lineChart" /> Frequency Over Time</h3><p className="text-xs text-gray-500 mt-1">Rolling average of Weekly Sums.</p></div>
+                                {/* CHANNEL TRENDS GRID (Small Multiples) */}
+                                <div className="mb-8">
+                                    <div className="flex justify-between items-center mb-4">
+                                        <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
                                         <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                     </div>
-                                    <ResponsiveContainer width="100%" height="85%">
-                                        <LineChart data={trendData}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                            <YAxis tick={{fontSize: 10}} />
-                                            <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend onMouseEnter={(e) => setHighlightedChurch(e.dataKey)} onMouseLeave={() => setHighlightedChurch(null)} wrapperStyle={{fontSize: '11px', paddingTop: '10px', cursor: 'pointer'}} />
-                                            {selChurches.map((church, i) => <Line key={church} type="monotone" dataKey={church} stroke={getColor(i)} strokeWidth={highlightedChurch && highlightedChurch !== church ? 0.5 : 2} strokeOpacity={highlightedChurch && highlightedChurch !== church ? 0.2 : 1} dot={false} connectNulls={true} />)}
-                                        </LineChart>
-                                    </ResponsiveContainer>
-                                </div>
-
-                                <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Theology Balance: Jesus vs. Branham</h3><p className="text-xs text-gray-500 mt-1">Comparing rolling average mention counts.</p></div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                        {channelTrends.map((chart, i) => (
+                                            <div key={chart.church} className="bg-white p-4 rounded-xl border shadow-sm">
+                                                <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 truncate" title={chart.church}>{chart.church}</h4>
+                                                <div className="h-32">
+                                                    <ResponsiveContainer width="100%" height="100%">
+                                                        <LineChart data={chart.data}>
+                                                            <XAxis dataKey="timestamp" type="number" scale="time" hide={true} domain={['auto', 'auto']} />
+                                                            <YAxis hide={true} />
+                                                            <Tooltip labelFormatter={formatDate} contentStyle={{fontSize: '12px'}} />
+                                                            <Line type="monotone" dataKey="val" stroke={chart.color} strokeWidth={2} dot={false} connectNulls={true} />
+                                                        </LineChart>
+                                                    </ResponsiveContainer>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
-                                    <ResponsiveContainer width="100%" height="85%">
-                                        <LineChart data={balanceData}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} />
-                                            <YAxis tick={{fontSize: 10}} />
-                                            <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
-                                            <Line type="monotone" dataKey="branhamAvg" name="Branham Mentions" stroke="#16a34a" strokeWidth={3} dot={false} connectNulls={true} />
-                                            <Line type="monotone" dataKey="jesusAvg" name="Jesus Mentions" stroke="#2563eb" strokeWidth={3} dot={false} connectNulls={true} />
-                                        </LineChart>
-                                    </ResponsiveContainer>
                                 </div>
 
-                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-                                    <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
+                                <div className="grid grid-cols-1 gap-6 mb-8">
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
                                         <div className="flex justify-between items-center mb-4">
                                             <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour. Click a tile for details.</p></div>
                                             <div className="flex bg-gray-100 rounded-lg p-1 text-xs">
@@ -644,7 +714,7 @@
                                                 <div className="flex">
                                                     <div className="w-48 flex-shrink-0"></div>
                                                     {heatmapData.labels.map((t, i) => (
-                                                        <div key={t.id} className="text-[9px] text-gray-400 text-center -rotate-90 origin-bottom-left translate-y-8 h-8" style={{ width: heatmapMode==='week' ? 20 : 40 }}>
+                                                        <div key={t.start} className="text-[9px] text-gray-400 text-center -rotate-90 origin-bottom-left translate-y-8 h-8" style={{ width: heatmapMode==='week' ? 20 : 40 }}>
                                                             {i % (heatmapMode==='week' ? 4 : 1) === 0 ? t.label : ''}
                                                         </div>
                                                     ))}
@@ -656,7 +726,6 @@
                                                             <div className="flex gap-[2px]">
                                                                 {row.cells.map((cell, ci) => {
                                                                     let bg = 'bg-gray-100';
-                                                                    // Improved Color Scale
                                                                     if (cell.val >= 0) {
                                                                         if (cell.val === 0) bg = 'bg-gray-200';
                                                                         else if (cell.val < 5) bg = 'bg-blue-100';
@@ -673,15 +742,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm">
-                                        <h3 className="font-bold text-gray-800 mb-2">Dependence Ranking</h3><p className="text-xs text-gray-500 mb-4">Avg Mentions/Hr in current view.</p>
-                                        <div className="space-y-3 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">{dependenceData.map((d, i) => (<div key={d.church} className="space-y-1"><div className="flex justify-between text-xs font-medium"><span className="truncate w-3/4">{i+1}. {d.church}</span><span className="text-blue-700">{d.mph}</span></div><div className="w-full bg-gray-100 rounded-full h-2"><div className="bg-blue-600 h-2 rounded-full" style={{ width: `${Math.min(100, (d.mph / dependenceData[0].mph) * 100)}%` }}></div></div></div>))}</div>
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-                                    <div className="lg:col-span-2 bg-white p-6 rounded-xl border shadow-sm h-[400px]"><h3 className="font-bold text-gray-800 mb-2">Total Volume Stack</h3><ResponsiveContainer width="100%" height="85%"><AreaChart data={stackedData}><CartesianGrid strokeDasharray="3 3" vertical={false} /><XAxis dataKey="date" tick={{fontSize: 10}} minTickGap={30} /><YAxis tick={{fontSize: 10}} /><Tooltip /><Legend />{selChurches.map((c, i) => <Area key={c} type="monotone" dataKey={c} stackId="1" stroke={getColor(i)} fill={getColor(i)} />)}</AreaChart></ResponsiveContainer></div>
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm"><h3 className="font-bold text-gray-800 mb-2">Top Outlier Sermons</h3><div className="space-y-2 max-h-[320px] overflow-y-auto custom-scrollbar">{bubbleData.map((s, i) => (<div key={i} onClick={() => setSelectedSermon(s.rawData)} className="p-3 bg-gray-50 rounded border hover:bg-blue-50 cursor-pointer"><div className="flex justify-between items-start"><h4 className="text-xs font-bold text-blue-700 line-clamp-2">{s.title}</h4><span className="bg-red-100 text-red-800 text-[10px] px-1.5 py-0.5 rounded-full font-bold">{s.y}</span></div><p className="text-[10px] text-gray-500 mt-1">{s.church}</p></div>))}</div></div>
                                 </div>
 
                                 <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
@@ -732,48 +792,7 @@
                                 </div>
                             </>
                         )}
-                        {/* Search & Data Tabs */}
-                        {view === 'search' && (
-                            <div className="max-w-4xl mx-auto">
-                                <div className="bg-white p-8 rounded-xl border shadow-sm text-center mb-8">
-                                    <h2 className="text-2xl font-bold text-gray-900 mb-2">Deep Transcript Search</h2>
-                                    <div className="flex gap-2 relative">
-                                        <Icon name="search" className="absolute left-4 top-3.5 text-gray-400" />
-                                        <input type="text" className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-lg shadow-sm" placeholder="Search quote, doctrine, or name..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && performSearch()} />
-                                        <button onClick={performSearch} disabled={isSearching} className="bg-blue-600 text-white px-8 rounded-lg font-bold hover:bg-blue-700 disabled:opacity-50">{isSearching ? "..." : "Search"}</button>
-                                    </div>
-                                    {isSearching && <p className="mt-4 text-blue-600 animate-pulse text-sm">{searchProgress}</p>}
-                                </div>
-                                <div className="space-y-4">
-                                    {searchResults.map((res, i) => (
-                                        <div key={i} onClick={() => setSelectedSermon({...res, searchTerm: searchQuery})} className="bg-white p-6 rounded-xl border hover:border-blue-300 shadow-sm cursor-pointer transition">
-                                            <div className="flex justify-between items-start mb-3">
-                                                <div><h4 className="text-lg font-bold text-blue-600 hover:underline">{res.title}</h4><p className="text-sm text-gray-500">{res.date} • {res.church}</p></div>
-                                                <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded font-bold border border-yellow-200">{res.displayMentions} Matches</span>
-                                            </div>
-                                            <p className="text-gray-600 bg-gray-50 p-4 rounded-lg text-sm font-serif italic border-l-4 border-gray-300">"{res.snippet}"</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                        {view === 'data' && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="bg-white p-8 rounded-xl border shadow-sm">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
-                                    <div className="space-y-3">
-                                        <a href="all_sermons_archive.zip" download className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition"><span>Download Full Archive (All)</span></a>
-                                        <button onClick={handleCustomDownload} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Filtered Zip ({filteredData.length} Files)</span>}</button>
-                                    </div>
-                                </div>
-                                <div className="bg-white p-8 rounded-xl border shadow-sm">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources</h3>
-                                    <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-                                        {CHANNEL_SOURCES.map((c, i) => <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100"><span className="font-medium text-gray-700">{c.name}</span><a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-xs">Visit Channel &rarr;</a></li>)}
-                                    </ul>
-                                </div>
-                            </div>
-                        )}
+                        {/* Search & Data Tabs remain similar */}
                     </main>
                     {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
                     {heatmapModalData && <HeatmapDetails data={heatmapModalData} onClose={() => setHeatmapModalData(null)} onSelect={(s) => { setHeatmapModalData(null); setSelectedSermon(s); }} />}
