@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics</title>
+    <title>Message Analytics v2.0</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -40,8 +40,8 @@
         } = Recharts;
 
         // --- CONFIGURATION ---
-        // Default (Branham) Regex string for initial load
         const DEFAULT_TERM = "William Branham";
+        // Default regex for initial load (Branham)
         const DEFAULT_REGEX_STR = "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m";
         const WORDS_PER_MINUTE = 140; 
 
@@ -144,7 +144,7 @@
             const [variations, setVariations] = useState("");
 
             return (
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8">
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8 transition-all">
                     <div className="flex flex-col md:flex-row gap-6 items-start">
                         <div className="flex-1">
                             <h2 className="text-xl font-bold flex items-center gap-2 mb-2"><Icon name="activity" /> Global Mention Tracker</h2>
@@ -193,7 +193,7 @@
                                         <h4 className="font-bold text-sm text-blue-700">{s.title}</h4>
                                         <div className="flex justify-between items-center mt-1 text-xs text-gray-600">
                                             <span>{s.church}</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Matches</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Mentions</span>
                                         </div>
                                     </div>
                                 ))}
@@ -374,7 +374,7 @@
                 return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') };
             }, [rawData]);
 
-            // --- DATA ENRICHMENT (Swaps Counts if Custom Search Active) ---
+            // --- DATA ENRICHMENT ---
             const enrichedData = useMemo(() => {
                 if (!customCounts) return rawData;
                 return rawData.map(s => {
@@ -384,7 +384,7 @@
                         mentionCount: newCount,
                         mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0,
                         wai: s.wordCount > 0 ? parseFloat(((newCount / s.wordCount) * 1000).toFixed(2)) : 0,
-                        searchTerm: activeRegex // Pass regex for highlighting
+                        searchTerm: activeRegex 
                     };
                 });
             }, [rawData, customCounts, activeRegex]);
@@ -398,14 +398,13 @@
                 setIsAnalyzing(true);
                 setAnalysisProgress("Initializing...");
                 
-                // Build Regex
                 const vars = variations.split(',').map(v => v.trim()).filter(v => v.length > 0);
-                const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); // Escape special chars
+                const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); 
                 const regexStr = `(${allTerms.join('|')})`;
                 const regex = new RegExp(regexStr, 'gi');
                 
                 const newCounts = new Map();
-                const CHUNK_BATCH = 10; // Aggressive fetching
+                const CHUNK_BATCH = 10; 
 
                 try {
                     for(let i=0; i<totalChunks; i+=CHUNK_BATCH) {
@@ -417,7 +416,6 @@
                         }
                         const results = await Promise.all(promises);
                         
-                        // Process results immediately and discard text to save memory
                         results.forEach(chunk => {
                             chunk.forEach(item => {
                                 const matches = (item.text.match(regex) || []).length;
@@ -571,6 +569,8 @@
                 return Object.values(buckets).sort((a,b) => a.time - b.time);
             }, [filteredData]);
 
+            const bubbleData = useMemo(() => [...filteredData].sort((a,b)=>b.mentionCount-a.mentionCount).slice(0,20).map(s=>({x: parseFloat(s.durationHrs.toFixed(2)), y: s.mentionCount, z: 1, title: s.title, church: s.church, rawData: s})), [filteredData]);
+
             const performSearch = async () => { 
                 if (!searchQuery || searchQuery.length < 3) return; setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
                 const term = searchQuery.toLowerCase(); const termRegex = new RegExp(`(${term})`, 'gi'); let matches = [];
@@ -624,7 +624,7 @@
                         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                             <div className="flex items-center gap-3">
                                 <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.0</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
                             </div>
                             <div className="flex bg-gray-100 p-1 rounded-lg">
                                 {['dashboard', 'search', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
@@ -651,7 +651,7 @@
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                                     <StatCard title="Total Sermons" value={stats.totalSermons} icon="fileText" color="blue" />
-                                    <StatCard title="Total Mentions" value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
+                                    <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
                                     <StatCard title="Avg / Sermon" value={stats.avg} icon="barChart" color="indigo" />
                                     <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
                                 </div>
@@ -761,10 +761,10 @@
                                                 </tr>
                                                 <tr className="bg-gray-50 border-b">
                                                     <th className="px-2 py-2"><input type="text" placeholder="YYYY-MM" className="w-full text-xs p-1 border rounded" value={tableFilters.date} onChange={(e) => updateFilter('date', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Church..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Title..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Type..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Speaker..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
                                                     <th className="px-2 py-2"><input type="number" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.mentions} onChange={(e) => updateFilter('mentions', e.target.value)} /></th>
                                                     <th className="px-2 py-2"><input type="number" step="0.1" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.rate} onChange={(e) => updateFilter('rate', e.target.value)} /></th>
                                                     <th></th>
