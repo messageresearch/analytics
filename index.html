@@ -124,10 +124,10 @@
         };
 
         const StatCard = ({ title, value, sub, icon, color = "blue", fullWidth=false }) => (
-            <div className={`bg-white p-5 rounded-xl border border-${color}-100 shadow-sm stat-card flex justify-between items-start ${fullWidth ? 'col-span-2' : ''}`}>
+            <div className={`bg-white p-4 rounded-xl border border-${color}-100 shadow-sm stat-card flex justify-between items-start ${fullWidth ? 'col-span-2' : ''}`}>
                 <div>
                     <p className="text-gray-500 text-xs font-bold uppercase tracking-wider">{title}</p>
-                    <h3 className={`text-2xl font-bold text-gray-900 mt-1`}>{value}</h3>
+                    <h3 className={`text-xl md:text-2xl font-bold text-gray-900 mt-1`}>{value}</h3>
                     {sub && <p className={`text-xs text-${color}-600 mt-1 font-medium`}>{sub}</p>}
                 </div>
                 <div className={`p-2 bg-${color}-50 text-${color}-600 rounded-lg`}>
@@ -143,7 +143,7 @@
             return (
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8 transition-all">
                     <div className="flex flex-col md:flex-row gap-6 items-start">
-                        <div className="flex-1">
+                        <div className="flex-1 w-full">
                             <h2 className="text-xl font-bold flex items-center gap-2 mb-2"><Icon name="activity" /> Global Mention Tracker</h2>
                             <p className="text-blue-100 text-sm mb-4">Analyze all videos over time for a specific topic. This will scan the entire database dynamically.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -157,15 +157,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-end justify-center h-full pt-6">
+                        <div className="flex flex-col items-end justify-center h-full pt-4 md:pt-6 w-full md:w-auto">
                             <button 
                                 onClick={() => onAnalyze(term, variations)} 
                                 disabled={isAnalyzing || !term}
-                                className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                                className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 w-full md:w-auto justify-center"
                             >
                                 {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
                             </button>
-                            {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+                            {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono text-center md:text-right w-full">{progress}</p>}
                         </div>
                     </div>
                 </div>
@@ -173,24 +173,24 @@
         };
 
         const HeatmapDetails = ({ data, onClose, onSelect }) => (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={onClose}>
-                <div className="bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden" onClick={e => e.stopPropagation()}>
-                    <div className="p-4 border-b bg-gray-50 flex justify-between items-center">
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onClose}>
+                <div className="bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden flex flex-col max-h-[80vh]" onClick={e => e.stopPropagation()}>
+                    <div className="p-4 border-b bg-gray-50 flex justify-between items-center shrink-0">
                         <div>
                             <h3 className="font-bold text-gray-900">Activity Details</h3>
                             <p className="text-xs text-gray-500">{data.label}</p>
                         </div>
                         <button onClick={onClose} className="p-1 hover:bg-gray-200 rounded"><Icon name="x" /></button>
                     </div>
-                    <div className="max-h-80 overflow-y-auto p-2 custom-scrollbar">
+                    <div className="flex-1 overflow-y-auto p-2 custom-scrollbar">
                         {data.sermons && data.sermons.length > 0 ? (
                             <div className="space-y-2">
                                 {data.sermons.map((s, i) => (
                                     <div key={i} onClick={() => onSelect(s)} className="p-3 border rounded-lg hover:bg-blue-50 cursor-pointer transition">
-                                        <h4 className="font-bold text-sm text-blue-700">{s.title}</h4>
+                                        <h4 className="font-bold text-sm text-blue-700 line-clamp-1">{s.title}</h4>
                                         <div className="flex justify-between items-center mt-1 text-xs text-gray-600">
-                                            <span>{s.church}</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Mentions</span>
+                                            <span className="truncate max-w-[60%]">{s.church}</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold whitespace-nowrap">{s.mentionCount} Matches</span>
                                         </div>
                                     </div>
                                 ))}
@@ -203,46 +203,46 @@
             </div>
         );
 
-        // --- NEW: EXPANDED CHART MODAL ---
+        // --- CHART MODAL ---
         const ChartModal = ({ chart, onClose }) => {
             const formatDate = (ts) => new Date(ts).toLocaleDateString();
             return (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={onClose}>
-                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[80vh] flex flex-col" onClick={e => e.stopPropagation()}>
-                        <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
-                            <div>
-                                <h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2>
-                                <p className="text-sm text-gray-500">Detailed Mention History & Trend</p>
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[70vh] md:h-[80vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
+                        <div className="p-4 md:p-6 border-b flex justify-between items-center bg-gray-50">
+                            <div className="min-w-0 pr-4">
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900 truncate">{chart.church}</h2>
+                                <p className="text-xs md:text-sm text-gray-500">Detailed Mention History & Trend</p>
                             </div>
-                            <button onClick={onClose} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition"><Icon name="x" /></button>
+                            <button onClick={onClose} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition shrink-0"><Icon name="x" /></button>
                         </div>
-                        <div className="flex-1 p-6">
+                        <div className="flex-1 p-4 md:p-6 min-h-0">
                             <ResponsiveContainer width="100%" height="100%">
                                 <ComposedChart data={chart.data}>
                                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 12}} />
-                                    <YAxis tick={{fontSize: 12}} />
+                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={40} />
+                                    <YAxis tick={{fontSize: 10}} width={30} />
                                     <Tooltip 
                                         labelFormatter={formatDate}
                                         content={({ active, payload, label }) => {
                                             if (active && payload && payload.length) {
                                                 const data = payload[0].payload;
                                                 return (
-                                                    <div className="bg-white p-4 border border-gray-200 shadow-xl rounded-lg text-sm">
+                                                    <div className="bg-white p-3 border border-gray-200 shadow-xl rounded-lg text-xs md:text-sm">
                                                         <p className="font-bold mb-1 text-gray-900">{formatDate(label)}</p>
-                                                        <p className="font-semibold text-blue-700 mb-2">{data.title}</p>
-                                                        <div className="flex justify-between gap-8 text-gray-600"><span>Speaker:</span><span className="font-medium">{data.speaker}</span></div>
-                                                        <div className="flex justify-between gap-8 text-gray-600"><span>Raw Count:</span><span className="font-bold text-black">{data.mentionCount}</span></div>
-                                                        <div className="flex justify-between gap-8 text-gray-600 mt-1 pt-1 border-t"><span>Trend Avg:</span><span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span></div>
+                                                        <p className="font-semibold text-blue-700 mb-2 max-w-[200px] truncate">{data.title}</p>
+                                                        <div className="flex justify-between gap-4 text-gray-600"><span>Speaker:</span><span className="font-medium truncate max-w-[100px]">{data.speaker}</span></div>
+                                                        <div className="flex justify-between gap-4 text-gray-600"><span>Raw Count:</span><span className="font-bold text-black">{data.mentionCount}</span></div>
+                                                        <div className="flex justify-between gap-4 text-gray-600 mt-1 pt-1 border-t"><span>Trend Avg:</span><span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span></div>
                                                     </div>
                                                 );
                                             }
                                             return null;
                                         }}
                                     />
-                                    <Legend />
-                                    <Bar dataKey="mentionCount" name="Mentions (Raw)" fill="#94a3b8" barSize={4} />
-                                    <Line type="monotone" dataKey="rollingAvg" name="Trend (Rolling Avg)" stroke={chart.color} strokeWidth={3} dot={false} activeDot={{r: 6}} connectNulls={true} />
+                                    <Legend wrapperStyle={{fontSize: '12px'}} />
+                                    <Bar dataKey="mentionCount" name="Mentions (Raw)" fill="#94a3b8" barSize={3} />
+                                    <Line type="monotone" dataKey="rollingAvg" name="Trend (Rolling Avg)" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 6}} connectNulls={true} />
                                 </ComposedChart>
                             </ResponsiveContainer>
                         </div>
@@ -305,25 +305,25 @@
             return (
                 <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
                     <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
-                        <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
-                            <div className="flex-1 pr-4">
+                        <div className="p-5 border-b bg-gray-50 flex justify-between items-start shrink-0">
+                            <div className="flex-1 pr-4 min-w-0">
                                 <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
                                 <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.church}</span>
                                     <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
-                                    <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
+                                    <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold whitespace-nowrap">{mentions.length} Matches</span>
                                 </div>
                             </div>
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 shrink-0">
                                 <button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg transition" title="Download"><Icon name="download" /></button>
                                 <button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition"><Icon name="x" /></button>
                             </div>
                         </div>
-                        <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
-                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={mentions.length === 0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
-                            <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+                        <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10 shrink-0 overflow-x-auto">
+                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition whitespace-nowrap ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={mentions.length === 0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
+                            <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition whitespace-nowrap ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
                         </div>
-                        <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
+                        <div className="flex-1 overflow-y-auto p-4 md:p-8 bg-white font-serif text-gray-800 leading-relaxed text-base min-h-0">
                             {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode === 'snippets' ? (
                                 <div className="max-w-3xl mx-auto space-y-4">
                                     {mentions.length > 0 ? mentions.map((m, i) => <SnippetRow key={i} fullText={fullText} term={m.term} matchIndex={m.index} index={i} highlightFn={(t, term) => highlight(t, sermon.searchTerm || term)} />) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
@@ -407,16 +407,13 @@
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         
-                        // Default Year: 2020+
                         const years = [...new Set(list.map(s => s.year))].sort().reverse();
                         const defaultYears = years.filter(y => parseInt(y) >= 2020);
                         setSelYears(defaultYears.length > 0 ? defaultYears : years);
 
-                        // Default Category: Full Sermon
                         const types = [...new Set(list.map(s => s.type))];
                         setSelTypes(types.includes("Full Sermon") ? ["Full Sermon"] : types);
 
-                        // Default Lang: English & Spanish
                         const langs = [...new Set(list.map(s => s.language))];
                         const defaultLangs = langs.filter(l => ["English", "Spanish"].includes(l));
                         setSelLangs(defaultLangs.length > 0 ? defaultLangs : langs);
@@ -432,7 +429,6 @@
                 return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') };
             }, [rawData]);
 
-            // --- DATA ENRICHMENT ---
             const enrichedData = useMemo(() => {
                 if (!customCounts) return rawData;
                 return rawData.map(s => {
@@ -451,19 +447,15 @@
                 return enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language));
             }, [enrichedData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
 
-            // --- DYNAMIC ANALYZER ---
             const handleAnalysis = async (term, variations) => {
                 setIsAnalyzing(true);
                 setAnalysisProgress("Initializing...");
-                
                 const vars = variations.split(',').map(v => v.trim()).filter(v => v.length > 0);
                 const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); 
                 const regexStr = `(${allTerms.join('|')})`;
                 const regex = new RegExp(regexStr, 'gi');
-                
                 const newCounts = new Map();
                 const CHUNK_BATCH = 10; 
-
                 try {
                     for(let i=0; i<totalChunks; i+=CHUNK_BATCH) {
                         const batchEnd = Math.min(i+CHUNK_BATCH, totalChunks);
@@ -473,7 +465,6 @@
                             promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]));
                         }
                         const results = await Promise.all(promises);
-                        
                         results.forEach(chunk => {
                             chunk.forEach(item => {
                                 const matches = (item.text.match(regex) || []).length;
@@ -481,7 +472,6 @@
                             });
                         });
                     }
-                    
                     setCustomCounts(newCounts);
                     setActiveTerm(term);
                     setActiveRegex(regexStr);
@@ -493,7 +483,6 @@
                 }
             };
 
-            // --- TABLE LOGIC ---
             const processedTableData = useMemo(() => {
                 let data = [...filteredData];
                 if (tableFilters.date) data = data.filter(s => s.date.includes(tableFilters.date));
@@ -550,18 +539,14 @@
                 });
             }, [filteredData, aggregateWindow]);
 
-            // CHANNEL TRENDS (Small Multiples) - UPDATED FOR BARS
             const channelTrends = useMemo(() => {
                 if (!filteredData.length) return [];
                 const charts = [];
                 selChurches.forEach((church, index) => {
-                    // Filter sermons for this church
                     const churchSermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
                     if (churchSermons.length === 0) return;
-
-                    // Compute Rolling Average per sermon
                     const dataPoints = churchSermons.map((sermon, idx, arr) => {
-                        const cutoff = sermon.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000); // Using rollingWeeks to control smoothness
+                        const cutoff = sermon.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000);
                         let sum = 0, count = 0;
                         for (let i = idx; i >= 0; i--) {
                             if (arr[i].timestamp < cutoff) break;
@@ -569,18 +554,13 @@
                             count++;
                         }
                         const avg = count > 0 ? parseFloat((sum / count).toFixed(1)) : 0;
-                        return {
-                            ...sermon,
-                            rollingAvg: avg
-                        };
+                        return { ...sermon, rollingAvg: avg };
                     });
-
                     charts.push({ church, data: dataPoints, color: getColor(index) });
                 });
                 return charts;
             }, [filteredData, selChurches, rollingWeeks]);
 
-            // HEATMAP
             const heatmapData = useMemo(() => {
                 if (!filteredData.length) return { labels: [], rows: [] };
                 const times = filteredData.map(s => s.timestamp);
@@ -591,14 +571,14 @@
                 const end = new Date(max);
 
                 if (heatmapMode === 'week') {
-                    current.setDate(current.getDate() - current.getDay() + 1); // Snap to Monday
+                    current.setDate(current.getDate() - current.getDay() + 1); 
                     while(current <= end) {
                         const next = new Date(current.getTime() + 7*24*60*60*1000);
                         timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}` });
                         current = next;
                     }
                 } else {
-                    current.setDate(1); // Snap to 1st
+                    current.setDate(1); 
                     while(current <= end) {
                         const next = new Date(current);
                         next.setMonth(next.getMonth() + 1);
@@ -618,13 +598,6 @@
                 }));
                 return { labels: timeSlots, rows: churchRows };
             }, [filteredData, selChurches, heatmapMode]);
-
-            const stackedData = useMemo(() => {
-                if (!filteredData.length) return [];
-                const buckets = {};
-                filteredData.forEach(s => { const m = s.date.substring(0,7); if (!buckets[m]) buckets[m] = { date: m, time: new Date(m).getTime() }; if (!buckets[m][s.church]) buckets[m][s.church] = 0; buckets[m][s.church] += s.mentionCount; });
-                return Object.values(buckets).sort((a,b) => a.time - b.time);
-            }, [filteredData]);
 
             const performSearch = async () => { 
                 if (!searchQuery || searchQuery.length < 3) return; setIsSearching(true); setSearchResults([]); setSearchProgress("Scanning...");
@@ -676,20 +649,42 @@
             return (
                 <div className="min-h-screen pb-20 relative">
                     <div className="bg-white border-b sticky top-0 z-30 shadow-sm">
-                        <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
-                            <div className="flex items-center gap-3">
-                                <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.3</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                        <div className="max-w-7xl mx-auto px-4 py-2 md:h-16 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
+                            {/* Top Row: Logo & Title */}
+                            <div className="flex items-center gap-3 w-full md:w-auto">
+                                <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200 shrink-0">
+                                    <Icon name="barChart" size={20} />
+                                </div>
+                                <div className="min-w-0">
+                                    <h1 className="font-bold text-lg text-gray-900 leading-tight truncate">Message Analytics v2.3</h1>
+                                    <p className="text-xs text-gray-500 truncate">
+                                        Tracking: <span className="font-bold text-blue-700">{activeTerm}</span>
+                                    </p>
+                                </div>
+                                {/* Mobile Date (Right aligned on top row) */}
+                                <div className="ml-auto md:hidden text-[10px] text-gray-400">
+                                    {dataDate && <span>{dataDate.split(' ')[0]}</span>}
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4">
-                                {dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}
-                                <div className="flex bg-gray-100 p-1 rounded-lg">
-                                    {['dashboard', 'search', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
+
+                            {/* Bottom Row (Mobile) / Right Side (Desktop): Tabs */}
+                            <div className="flex items-center gap-4 w-full md:w-auto">
+                                {dataDate && <div className="hidden md:block text-xs text-gray-400 whitespace-nowrap">Updated: {dataDate}</div>}
+                                <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">
+                                    {['dashboard', 'search', 'data'].map(tab => (
+                                        <button 
+                                            key={tab} 
+                                            onClick={() => setView(tab)} 
+                                            className={`flex-1 md:flex-none px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
+                                        >
+                                            {tab}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
+                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-[10px] md:text-xs text-center py-2 px-4 leading-tight"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
 
                     <main className="max-w-7xl mx-auto px-4 mt-8">
                         <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
@@ -714,7 +709,6 @@
                                     <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
                                 </div>
 
-                                {/* CHART 1: AGGREGATE ACTIVITY */}
                                 <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
                                     <div className="flex justify-between items-center mb-6">
                                         <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Bars = Individual Sermons. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Aggregate Trend.</p></div>
@@ -733,12 +727,12 @@
                                     </ResponsiveContainer>
                                 </div>
 
-                                {/* CHANNEL BREAKDOWN (Small Multiples) */}
+                                {/* CHANNEL BREAKDOWN */}
                                 <div className="mb-8">
                                     <div className="flex justify-between items-center mb-4">
                                         <div>
                                             <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
-                                            <p className="text-xs text-gray-500 mt-1">Click any chart to enlarge.</p>
+                                            <p className="text-xs text-gray-500 mt-1">Bars: Individual Sermons | Line: Rolling Average</p>
                                         </div>
                                         <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                     </div>
@@ -756,7 +750,6 @@
                                                             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                                                             <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={30} />
                                                             <YAxis tick={{fontSize: 9}} width={30} />
-                                                            <Tooltip labelFormatter={formatDate} contentStyle={{fontSize: '12px'}} />
                                                             <Bar dataKey="mentionCount" fill="#cbd5e1" barSize={2} isAnimationActive={false} />
                                                             <Line type="monotone" dataKey="rollingAvg" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 4}} connectNulls={true} isAnimationActive={false} />
                                                         </ComposedChart>
