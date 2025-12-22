@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.1</title>
+    <title>Message Analytics v2.2</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -59,7 +59,6 @@
         const getColor = (index) => COLORS[index % COLORS.length];
 
         const Icon = ({ name, size = 18, className = "" }) => {
-            // FIXED: Wrapped multi-path icons in <g> tags to prevent JSX syntax errors
             const icons = {
                 search: <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />,
                 filter: <path d="M12.37 19.63c.45.63 1.37.63 1.82 0l8.5-12A1.5 1.5 0 0 0 21.46 5.5H2.54a1.5 1.5 0 0 0-1.23 2.13l8.5 12Z" />,
@@ -88,6 +87,8 @@
                 </svg>
             );
         };
+
+        // --- COMPONENTS ---
 
         const MultiSelect = ({ label, options, selected, onChange }) => {
             const [isOpen, setIsOpen] = useState(false);
@@ -489,33 +490,32 @@
                 });
             }, [filteredData, aggregateWindow]);
 
-            // CHANNEL TRENDS (Small Multiples)
+            // CHANNEL TRENDS (Small Multiples) - UPDATED FOR BARS
             const channelTrends = useMemo(() => {
                 if (!filteredData.length) return [];
-                // Group by Church
-                const churchGroups = {};
-                selChurches.forEach(c => churchGroups[c] = []);
-                filteredData.forEach(s => { if (churchGroups[s.church]) churchGroups[s.church].push(s); });
-
                 const charts = [];
-                Object.entries(churchGroups).forEach(([church, sermons]) => {
-                    if(sermons.length === 0) return;
-                    const sorted = sermons.sort((a,b) => a.timestamp - b.timestamp);
-                    const dataPoints = sorted.map((item, index, arr) => {
-                        const cutoff = item.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000);
+                selChurches.forEach((church, index) => {
+                    // Filter sermons for this church
+                    const churchSermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
+                    if (churchSermons.length === 0) return;
+
+                    // Compute Rolling Average per sermon
+                    const dataPoints = churchSermons.map((sermon, idx, arr) => {
+                        const cutoff = sermon.timestamp - (rollingWeeks * 7 * 24 * 60 * 60 * 1000); // Using rollingWeeks to control smoothness
                         let sum = 0, count = 0;
-                        for (let i = index; i >= 0; i--) {
+                        for (let i = idx; i >= 0; i--) {
                             if (arr[i].timestamp < cutoff) break;
                             sum += arr[i].mentionCount;
                             count++;
                         }
-                        return { 
-                            date: item.date, 
-                            timestamp: item.timestamp,
-                            val: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 
+                        const avg = count > 0 ? parseFloat((sum / count).toFixed(1)) : 0;
+                        return {
+                            ...sermon,
+                            rollingAvg: avg
                         };
                     });
-                    charts.push({ church, data: dataPoints, color: getColor(selChurches.indexOf(church)) });
+
+                    charts.push({ church, data: dataPoints, color: getColor(index) });
                 });
                 return charts;
             }, [filteredData, selChurches, rollingWeeks]);
@@ -619,7 +619,7 @@
                         <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                             <div className="flex items-center gap-3">
                                 <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.1</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.2</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
                             </div>
                             <div className="flex bg-gray-100 p-1 rounded-lg">
                                 {['dashboard', 'search', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
@@ -670,10 +670,13 @@
                                     </ResponsiveContainer>
                                 </div>
 
-                                {/* CHANNEL TRENDS GRID (Small Multiples) */}
+                                {/* CHANNEL BREAKDOWN (Small Multiples) */}
                                 <div className="mb-8">
                                     <div className="flex justify-between items-center mb-4">
-                                        <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
+                                        <div>
+                                            <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
+                                            <p className="text-xs text-gray-500 mt-1">Bars: Individual Sermons | Line: Rolling Average</p>
+                                        </div>
                                         <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -682,12 +685,36 @@
                                                 <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 truncate" title={chart.church}>{chart.church}</h4>
                                                 <div className="h-32">
                                                     <ResponsiveContainer width="100%" height="100%">
-                                                        <LineChart data={chart.data}>
-                                                            <XAxis dataKey="timestamp" type="number" scale="time" hide={true} domain={['auto', 'auto']} />
-                                                            <YAxis hide={true} />
-                                                            <Tooltip labelFormatter={formatDate} contentStyle={{fontSize: '12px'}} />
-                                                            <Line type="monotone" dataKey="val" stroke={chart.color} strokeWidth={2} dot={false} connectNulls={true} />
-                                                        </LineChart>
+                                                        <ComposedChart data={chart.data}>
+                                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={30} />
+                                                            <YAxis tick={{fontSize: 9}} width={30} />
+                                                            <Tooltip 
+                                                                labelFormatter={formatDate}
+                                                                content={({ active, payload, label }) => {
+                                                                    if (active && payload && payload.length) {
+                                                                        const data = payload[0].payload;
+                                                                        return (
+                                                                            <div className="bg-white p-2 border border-gray-200 shadow-lg rounded text-xs">
+                                                                                <p className="font-bold mb-1">{formatDate(label)}</p>
+                                                                                <p className="font-semibold text-gray-700 line-clamp-1">{data.title}</p>
+                                                                                <div className="mt-1 flex justify-between gap-4">
+                                                                                    <span className="text-gray-500">Mentions:</span>
+                                                                                    <span className="font-bold">{data.mentionCount}</span>
+                                                                                </div>
+                                                                                <div className="flex justify-between gap-4">
+                                                                                    <span className="text-gray-500">Avg:</span>
+                                                                                    <span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        );
+                                                                    }
+                                                                    return null;
+                                                                }}
+                                                            />
+                                                            <Bar dataKey="mentionCount" fill="#cbd5e1" barSize={2} isAnimationActive={false} />
+                                                            <Line type="monotone" dataKey="rollingAvg" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 4}} connectNulls={true} isAnimationActive={false} />
+                                                        </ComposedChart>
                                                     </ResponsiveContainer>
                                                 </div>
                                             </div>
@@ -756,10 +783,10 @@
                                                 </tr>
                                                 <tr className="bg-gray-50 border-b">
                                                     <th className="px-2 py-2"><input type="text" placeholder="YYYY-MM" className="w-full text-xs p-1 border rounded" value={tableFilters.date} onChange={(e) => updateFilter('date', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Church..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Title..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Type..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter Speaker..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
+                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
                                                     <th className="px-2 py-2"><input type="number" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.mentions} onChange={(e) => updateFilter('mentions', e.target.value)} /></th>
                                                     <th className="px-2 py-2"><input type="number" step="0.1" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.rate} onChange={(e) => updateFilter('rate', e.target.value)} /></th>
                                                     <th></th>
