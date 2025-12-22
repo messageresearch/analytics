@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.3.1</title>
+    <title>Message Analytics v2.4</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -87,8 +87,6 @@
                 </svg>
             );
         };
-
-        // --- COMPONENTS ---
 
         const MultiSelect = ({ label, options, selected, onChange }) => {
             const [isOpen, setIsOpen] = useState(false);
@@ -192,7 +190,7 @@
                                         <h4 className="font-bold text-sm text-blue-700 line-clamp-1">{s.title}</h4>
                                         <div className="flex justify-between items-center mt-1 text-xs text-gray-600">
                                             <span className="truncate max-w-[60%]">{s.church}</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold whitespace-nowrap">{s.mentionCount} Mentions</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold whitespace-nowrap">{s.mentionCount} Matches</span>
                                         </div>
                                     </div>
                                 ))}
@@ -205,7 +203,6 @@
             </div>
         );
 
-        // --- CHART MODAL ---
         const ChartModal = ({ chart, onClose }) => {
             const formatDate = (ts) => new Date(ts).toLocaleDateString();
             return (
@@ -669,7 +666,7 @@
                             <div className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
                                 {dataDate && <div className="text-xs text-gray-400 whitespace-nowrap">Updated: {dataDate.split(' ')[0]}</div>}
                                 <div className="flex bg-gray-100 p-1 rounded-lg w-auto">
-                                    {['dashboard', 'search', 'data'].map(tab => (
+                                    {['dashboard', 'data'].map(tab => (
                                         <button 
                                             key={tab} 
                                             onClick={() => setView(tab)} 
@@ -851,7 +848,23 @@
                                 </div>
                             </>
                         )}
-                        {/* Search & Data Tabs remain similar */}
+                        {view === 'data' && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
+                                    <div className="space-y-3">
+                                        <a href="all_sermons_archive.zip" download className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition"><span>Download Full Archive (All)</span></a>
+                                        <button onClick={handleCustomDownload} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Filtered Zip ({filteredData.length} Files)</span>}</button>
+                                    </div>
+                                </div>
+                                <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources</h3>
+                                    <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                                        {CHANNEL_SOURCES.map((c, i) => <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100"><span className="font-medium text-gray-700">{c.name}</span><a href={c.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-xs">Visit Channel &rarr;</a></li>)}
+                                    </ul>
+                                </div>
+                            </div>
+                        )}
                     </main>
                     {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
                     {heatmapModalData && <HeatmapDetails data={heatmapModalData} onClose={() => setHeatmapModalData(null)} onSelect={(s) => { setHeatmapModalData(null); setSelectedSermon(s); }} />}
