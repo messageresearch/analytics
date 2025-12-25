@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.8</title>
+    <title>Message Analytics v2.9</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -40,7 +40,7 @@
             ResponsiveContainer, Brush, AreaChart, Area
         } = Recharts;
 
-        // --- ERROR BOUNDARY (Prevents White Screen of Death) ---
+        // --- ERROR BOUNDARY ---
         class ErrorBoundary extends Component {
             constructor(props) { super(props); this.state = { hasError: false, error: null }; }
             static getDerivedStateFromError(error) { return { hasError: true, error }; }
@@ -50,9 +50,9 @@
                     return (
                         <div className="min-h-screen flex items-center justify-center bg-red-50 p-4">
                             <div className="bg-white p-8 rounded-xl shadow-xl border border-red-200 max-w-lg w-full">
-                                <h2 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h2>
-                                <p className="text-gray-700 mb-4">The application encountered an unexpected error while rendering.</p>
-                                <div className="bg-gray-100 p-4 rounded text-xs font-mono text-gray-800 overflow-auto max-h-40 border">
+                                <h2 className="text-2xl font-bold text-red-600 mb-4">Dashboard Error</h2>
+                                <p className="text-gray-700 mb-4 text-sm">A rendering error occurred. This usually happens if the data file contains invalid dates or unexpected formats.</p>
+                                <div className="bg-gray-100 p-4 rounded text-xs font-mono text-red-800 overflow-auto max-h-40 border">
                                     {this.state.error && this.state.error.toString()}
                                 </div>
                                 <button onClick={() => window.location.reload()} className="mt-6 w-full bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition">Reload Page</button>
@@ -69,7 +69,6 @@
         const DEFAULT_REGEX_STR = "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m";
         const WORDS_PER_MINUTE = 140; 
         
-        // Default Channels if JSON fails
         const DEFAULT_CHANNELS = [
             { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
             { name: "Cedar Hills - Church of the Cross", url: "https://www.youtube.com/@CedarHillsChurchoftheCross" },
@@ -84,6 +83,7 @@
         const COLORS = ["#2563eb", "#dc2626", "#16a34a", "#d97706", "#9333ea", "#0891b2", "#be123c", "#4f46e5"];
         const getColor = (index) => COLORS[index % COLORS.length];
 
+        // SAFE ICONS (Wrapped properly)
         const Icon = ({ name, size = 18, className = "" }) => {
             const icons = {
                 search: <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />,
@@ -118,6 +118,7 @@
         const resampleData = (data, windowType = 'month') => {
             const buckets = {};
             data.forEach(item => {
+                if(!item.timestamp || isNaN(item.timestamp)) return; // Safety check
                 const date = new Date(item.timestamp);
                 let key, label, ts;
                 if (windowType === 'month') {
@@ -371,13 +372,15 @@
                             const cRes = await fetch(prefix + 'channels.json');
                             if(cRes.ok) {
                                 const cData = await cRes.json();
-                                if(Array.isArray(cData)) setChannels(cData);
+                                if(Array.isArray(cData) && cData.length > 0 && cData[0].name) {
+                                    setChannels(cData);
+                                }
                             }
                         } catch(e) { console.warn("Using default channels"); }
 
                         const currentTimestamp = new Date().getTime();
                         const list = (json.sermons || [])
-                            .filter(s => s.timestamp <= currentTimestamp) 
+                            .filter(s => s.timestamp && s.timestamp <= currentTimestamp) 
                             .map(s => {
                                 const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60;
                                 return { 
@@ -396,7 +399,10 @@
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         
                         const currentYear = new Date().getFullYear();
-                        const years = [...new Set(list.map(s => s.year))].filter(y => parseInt(y) <= currentYear).sort().reverse();
+                        const years = [...new Set(list.map(s => s.year))]
+                            .filter(y => { const n = parseInt(y); return !isNaN(n) && n <= currentYear; })
+                            .sort().reverse();
+                        
                         const defaultYears = years.filter(y => parseInt(y) >= 2020);
                         setSelYears(defaultYears.length > 0 ? defaultYears : years);
 
@@ -433,8 +439,10 @@
 
             const dateDomain = useMemo(() => {
                 if (selYears.length === 0) return ['auto', 'auto'];
-                const minYear = Math.min(...selYears.map(y => parseInt(y)));
-                const maxYear = Math.max(...selYears.map(y => parseInt(y)));
+                const validYears = selYears.map(y => parseInt(y)).filter(y => !isNaN(y));
+                if (validYears.length === 0) return ['auto', 'auto'];
+                const minYear = Math.min(...validYears);
+                const maxYear = Math.max(...validYears);
                 return [new Date(minYear, 0, 1).getTime(), new Date(maxYear, 11, 31).getTime()];
             }, [selYears]);
 
@@ -540,7 +548,10 @@
                 } catch(e) { alert("Error."); } finally { setIsZipping(false); }
             };
 
-            const formatDate = (ts) => new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            const formatDate = (ts) => {
+                if(!ts || isNaN(ts)) return "";
+                return new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            };
 
             const displayedSermons = useMemo(() => {
                 let data = [...filteredData];
@@ -583,7 +594,7 @@
                             <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                    <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.8</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                                    <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.9</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     {dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}
@@ -650,7 +661,7 @@
                                         </ResponsiveContainer>
                                     </div>
 
-                                    {/* CHANNEL BREAKDOWN (Restored to Bar + Line) */}
+                                    {/* CHANNEL BREAKDOWN */}
                                     <div className="mb-8">
                                         <div className="flex justify-between items-center mb-4">
                                             <div>
@@ -681,50 +692,6 @@
                                                     </div>
                                                 </div>
                                             ))}
-                                        </div>
-                                    </div>
-
-                                    <div className="grid grid-cols-1 gap-6 mb-8">
-                                        <div className="bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
-                                            <div className="flex justify-between items-center mb-4">
-                                                <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour. Click a tile for details.</p></div>
-                                                <div className="flex bg-gray-100 rounded-lg p-1 text-xs">
-                                                    <button onClick={() => setHeatmapMode("month")} className={`px-3 py-1 rounded ${heatmapMode === 'month' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Month</button>
-                                                    <button onClick={() => setHeatmapMode("week")} className={`px-3 py-1 rounded ${heatmapMode === 'week' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Week</button>
-                                                </div>
-                                            </div>
-                                            <div className="flex-1 overflow-x-auto custom-scrollbar">
-                                                <div style={{ minWidth: heatmapData.labels.length * (heatmapMode==='week' ? 20 : 40) + 200 }}>
-                                                    <div className="flex">
-                                                        <div className="w-48 flex-shrink-0"></div>
-                                                        {heatmapData.labels.map((t, i) => (
-                                                            <div key={t.start} className="text-[9px] text-gray-400 text-center -rotate-90 origin-bottom-left translate-y-8 h-8" style={{ width: heatmapMode==='week' ? 20 : 40 }}>
-                                                                {i % (heatmapMode==='week' ? 4 : 1) === 0 ? t.label : ''}
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                    <div className="mt-8 space-y-1">
-                                                        {heatmapData.rows.map((row, i) => (
-                                                            <div key={row.church} className="flex items-center h-6">
-                                                                <div className="w-48 flex-shrink-0 text-xs text-gray-600 truncate pr-2 text-right" title={row.church}>{row.church}</div>
-                                                                <div className="flex gap-[2px]">
-                                                                    {row.cells.map((cell, ci) => {
-                                                                        let bg = 'bg-gray-100';
-                                                                        if (cell.val >= 0) {
-                                                                            if (cell.val === 0) bg = 'bg-gray-200';
-                                                                            else if (cell.val < 5) bg = 'bg-blue-100';
-                                                                            else if (cell.val < 15) bg = 'bg-blue-300';
-                                                                            else if (cell.val < 30) bg = 'bg-blue-500';
-                                                                            else bg = 'bg-purple-600';
-                                                                        }
-                                                                        return <div key={ci} onClick={() => cell.val >= 0 && setHeatmapModalData({ ...cell, label: heatmapData.labels[ci].label })} title={`${heatmapData.labels[ci].label}\n${cell.val >= 0 ? cell.val.toFixed(1) + '/hr' : 'No Sermon'}\n\n${cell.titles || ''}`} className={`rounded-sm heatmap-cell ${bg}`} style={{ width: heatmapMode==='week' ? 18 : 38, height: 20 }}></div>
-                                                                    })}
-                                                                </div>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -788,7 +755,7 @@
                                     </div>
                                     <div className="bg-white p-8 rounded-xl border shadow-sm">
                                         <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources ({channels.length} Channels)</h3>
-                                        <ul className="space-y-2 pr-2">
+                                        <ul className="space-y-2 pr-2 max-h-[400px] overflow-y-auto custom-scrollbar">
                                             {channels.map((c, i) => (
                                                 <a key={i} href={c.url} target="_blank" rel="noopener noreferrer" className="channel-link-row block text-sm bg-gray-50 p-3 rounded border flex justify-between items-center transition">
                                                     <span className="font-medium text-gray-700">{c.name}</span>
