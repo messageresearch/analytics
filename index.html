@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.16</title>
+    <title>Message Analytics v2.17</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -27,25 +27,46 @@
         th:hover { background-color: #f3f4f6; }
         .heatmap-cell { transition: all 0.1s; position: relative; cursor: pointer; }
         .heatmap-cell:hover { transform: scale(1.1); border: 1px solid #333; z-index: 40; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        .channel-link-row:hover { background-color: #eff6ff; border-color: #bfdbfe; }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo, useRef, useCallback } = React;
+        const { useState, useEffect, useMemo, useRef, useCallback, Component } = React;
         const { 
             ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
-            ResponsiveContainer, Brush, BarChart, LineChart, ScatterChart, Scatter, ZAxis, AreaChart, Area
+            ResponsiveContainer, Brush, AreaChart, Area
         } = Recharts;
+
+        // --- ERROR BOUNDARY ---
+        class ErrorBoundary extends Component {
+            constructor(props) { super(props); this.state = { hasError: false, error: null }; }
+            static getDerivedStateFromError(error) { return { hasError: true, error }; }
+            componentDidCatch(error, errorInfo) { console.error("Uncaught error:", error, errorInfo); }
+            render() {
+                if (this.state.hasError) {
+                    return (
+                        <div className="min-h-screen flex items-center justify-center bg-red-50 p-4">
+                            <div className="bg-white p-8 rounded-xl shadow-xl border border-red-200 max-w-lg w-full text-center">
+                                <h2 className="text-2xl font-bold text-red-600 mb-4">Application Error</h2>
+                                <p className="text-gray-600 mb-4">A critical error stopped the dashboard.</p>
+                                <button onClick={() => window.location.reload()} className="bg-red-600 text-white font-bold py-2 px-6 rounded hover:bg-red-700 transition">Reload Page</button>
+                            </div>
+                        </div>
+                    );
+                }
+                return this.props.children;
+            }
+        }
 
         // --- CONFIGURATION ---
         const DEFAULT_TERM = "William Branham";
         const DEFAULT_REGEX_STR = "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m";
         const WORDS_PER_MINUTE = 140; 
-        const CHART_POINT_THRESHOLD = 800; // Max points to render before grouping
-
-        const CHANNEL_SOURCES = [
+        
+        const DEFAULT_CHANNELS = [
             { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
             { name: "Cedar Hills - Church of the Cross", url: "https://www.youtube.com/@CedarHillsChurchoftheCross" },
             { name: "Evening Light Tabernacle", url: "https://www.youtube.com/@EveningLightTabernacle" },
@@ -80,7 +101,8 @@
                 sortAsc: <path d="m18 15 4 4 4-4M22 19V3M6 20V4M2 8l4-4 4 4M2 16h10" />,
                 sortDesc: <path d="m18 9 4-4 4 4M22 5v16M6 20V4M2 8l4-4 4 4M2 16h10" />,
                 refresh: <g><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></g>,
-                layers: <g><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></g>
+                layers: <g><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></g>,
+                link: <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
             };
             return (
                 <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -89,45 +111,39 @@
             );
         };
 
-        // --- DATA RESAMPLER FOR PERFORMANCE ---
-        // Groups data points by week/month if dataset is too large to render individual bars
-        const resampleData = (data, threshold = CHART_POINT_THRESHOLD) => {
-            if (data.length <= threshold) return { data, isSampled: false };
-
+        // --- BUCKETING LOGIC (Not Sampling) ---
+        // Sums volume for cleaner charts without deleting data
+        const bucketData = (data, windowType = 'month') => {
             const buckets = {};
-            // If huge, bucket by month-year, else week
-            const useMonth = data.length > 3000; 
-
             data.forEach(item => {
+                if(!item.timestamp || isNaN(item.timestamp)) return;
                 const date = new Date(item.timestamp);
-                let key;
-                if (useMonth) {
-                    key = `${date.getFullYear()}-${date.getMonth()}`; // Month Bucket
+                let key, label, ts;
+                if (windowType === 'month') {
+                    key = `${date.getFullYear()}-${date.getMonth()}`;
+                    ts = new Date(date.getFullYear(), date.getMonth(), 1).getTime();
+                    label = date.toLocaleString('default', { month: 'short', year: '2-digit' });
                 } else {
-                    // Week Bucket (Monday)
                     const d = new Date(date);
-                    const day = d.getDay(), diff = d.getDate() - day + (day == 0 ? -6 : 1);
+                    const day = d.getDay(), diff = d.getDate() - day + (day == 0 ? -6 : 1); 
                     const monday = new Date(d.setDate(diff));
-                    key = monday.setHours(0,0,0,0);
+                    monday.setHours(0,0,0,0);
+                    key = monday.getTime();
+                    ts = key;
+                    label = monday.toLocaleDateString();
                 }
-
-                if (!buckets[key]) {
-                    buckets[key] = { timestamp: parseInt(key) || new Date(item.year, new Date(item.timestamp).getMonth(), 1).getTime(), mentionCount: 0, count: 0, rollingSum: 0 };
-                }
+                if (!buckets[key]) buckets[key] = { timestamp: ts, mentionCount: 0, count: 0, label };
                 buckets[key].mentionCount += item.mentionCount;
-                buckets[key].rollingSum += (item.rollingAvg || 0); // Sum averages to re-average later
                 buckets[key].count++;
             });
-
-            const sampled = Object.values(buckets).sort((a,b) => a.timestamp - b.timestamp).map(b => ({
-                ...b,
-                rollingAvg: parseFloat((b.rollingSum / b.count).toFixed(1)),
-                title: useMonth ? "Monthly Aggregate" : "Weekly Aggregate",
-                church: "Multiple",
-                speaker: "Multiple"
-            }));
-
-            return { data: sampled, isSampled: true };
+            // Calculate Rolling Avg on the Buckets
+            const result = Object.values(buckets).sort((a,b) => a.timestamp - b.timestamp);
+            // 6-period rolling average (e.g. 6 months)
+            return result.map((item, idx, arr) => {
+                let sum = 0, count = 0;
+                for (let i = idx; i >= Math.max(0, idx - 5); i--) { sum += arr[i].mentionCount; count++; }
+                return { ...item, rollingAvg: count > 0 ? parseFloat((sum/count).toFixed(1)) : 0 };
+            });
         };
 
         const MultiSelect = ({ label, options, selected, onChange }) => {
@@ -181,7 +197,6 @@
         const TopicAnalyzer = ({ onAnalyze, isAnalyzing, progress }) => {
             const [term, setTerm] = useState("");
             const [variations, setVariations] = useState("");
-
             return (
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8 transition-all">
                     <div className="flex flex-col md:flex-row gap-6 items-start">
@@ -200,93 +215,10 @@
                             </div>
                         </div>
                         <div className="flex flex-col items-end justify-center h-full pt-6">
-                            <button 
-                                onClick={() => onAnalyze(term, variations)} 
-                                disabled={isAnalyzing || !term}
-                                className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
-                            >
+                            <button onClick={() => onAnalyze(term, variations)} disabled={isAnalyzing || !term} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
                                 {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
                             </button>
                             {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
-                        </div>
-                    </div>
-                </div>
-            );
-        };
-
-        const HeatmapDetails = ({ data, onClose, onSelect }) => (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={onClose}>
-                <div className="bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden" onClick={e => e.stopPropagation()}>
-                    <div className="p-4 border-b bg-gray-50 flex justify-between items-center">
-                        <div>
-                            <h3 className="font-bold text-gray-900">Activity Details</h3>
-                            <p className="text-xs text-gray-500">{data.label}</p>
-                        </div>
-                        <button onClick={onClose} className="p-1 hover:bg-gray-200 rounded"><Icon name="x" /></button>
-                    </div>
-                    <div className="max-h-80 overflow-y-auto p-2 custom-scrollbar">
-                        {data.sermons && data.sermons.length > 0 ? (
-                            <div className="space-y-2">
-                                {data.sermons.map((s, i) => (
-                                    <div key={i} onClick={() => onSelect(s)} className="p-3 border rounded-lg hover:bg-blue-50 cursor-pointer transition">
-                                        <h4 className="font-bold text-sm text-blue-700">{s.title}</h4>
-                                        <div className="flex justify-between items-center mt-1 text-xs text-gray-600">
-                                            <span>{s.church}</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded font-bold">{s.mentionCount} Mentions</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        ) : (
-                            <div className="p-4 text-center text-gray-500">No sermons found for this period.</div>
-                        )}
-                    </div>
-                </div>
-            </div>
-        );
-
-        // --- NEW: EXPANDED CHART MODAL ---
-        const ChartModal = ({ chart, onClose }) => {
-            const formatDate = (ts) => new Date(ts).toLocaleDateString();
-            return (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={onClose}>
-                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[80vh] flex flex-col" onClick={e => e.stopPropagation()}>
-                        <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
-                            <div>
-                                <h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2>
-                                <p className="text-sm text-gray-500">Detailed Mention History & Trend</p>
-                            </div>
-                            <button onClick={onClose} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition"><Icon name="x" /></button>
-                        </div>
-                        <div className="flex-1 p-6">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <ComposedChart data={chart.data}>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 12}} minTickGap={120} />
-                                    <YAxis tick={{fontSize: 12}} />
-                                    <Tooltip 
-                                        labelFormatter={formatDate}
-                                        content={({ active, payload, label }) => {
-                                            if (active && payload && payload.length) {
-                                                const data = payload[0].payload;
-                                                return (
-                                                    <div className="bg-white p-4 border border-gray-200 shadow-xl rounded-lg text-sm">
-                                                        <p className="font-bold mb-1 text-gray-900">{formatDate(label)}</p>
-                                                        <p className="font-semibold text-blue-700 mb-2">{data.title}</p>
-                                                        {data.speaker !== "Multiple" && <div className="flex justify-between gap-8 text-gray-600"><span>Speaker:</span><span className="font-medium">{data.speaker}</span></div>}
-                                                        <div className="flex justify-between gap-8 text-gray-600"><span>Raw Count:</span><span className="font-bold text-black">{data.mentionCount}</span></div>
-                                                        <div className="flex justify-between gap-8 text-gray-600 mt-1 pt-1 border-t"><span>Trend Avg:</span><span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span></div>
-                                                    </div>
-                                                );
-                                            }
-                                            return null;
-                                        }}
-                                    />
-                                    <Legend />
-                                    <Bar dataKey="mentionCount" name="Mentions (Raw)" fill="#94a3b8" barSize={4} />
-                                    <Line type="monotone" dataKey="rollingAvg" name="Trend (Rolling Avg)" stroke={chart.color} strokeWidth={3} dot={false} activeDot={{r: 6}} connectNulls={true} />
-                                </ComposedChart>
-                            </ResponsiveContainer>
                         </div>
                     </div>
                 </div>
@@ -299,16 +231,40 @@
             const start = Math.max(0, matchIndex - context);
             const end = Math.min(fullText.length, matchIndex + term.length + context);
             const snippetText = (start > 0 ? "..." : "") + fullText.substring(start, end) + (end < fullText.length ? "..." : "");
-
             return (
                 <div onClick={() => setExpanded(!expanded)} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group">
-                    <div className="flex justify-between items-start mb-2">
-                        <p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p>
-                        <button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">
-                            {expanded ? "Collapse" : <><Icon name="maximize" size={12} /> Expand Context</>}
-                        </button>
-                    </div>
+                    <div className="flex justify-between items-start mb-2"><p className="text-gray-400 text-xs font-bold uppercase">Match #{index+1}</p></div>
                     <p className="text-gray-800 leading-relaxed font-serif text-sm">{highlightFn(snippetText, term)}</p>
+                </div>
+            );
+        };
+
+        const ChartModal = ({ chart, onClose, domain }) => {
+            const formatDate = (ts) => {
+                if(!ts || isNaN(ts)) return "";
+                return new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            };
+            return (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={onClose}>
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl h-[85vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                        <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
+                            <div><h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2></div>
+                            <button onClick={onClose} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition"><Icon name="x" /></button>
+                        </div>
+                        <div className="flex-1 p-6">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <ComposedChart data={chart.data}>
+                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={formatDate} tick={{fontSize: 12}} minTickGap={150} />
+                                    <YAxis tick={{fontSize: 12}} />
+                                    <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px'}} />
+                                    <Legend />
+                                    <Bar dataKey="mentionCount" name="Mentions" fill="#94a3b8" barSize={4} />
+                                    <Line type="monotone" dataKey="rollingAvg" name="Trend" stroke={chart.color} strokeWidth={3} dot={false} connectNulls={true} />
+                                </ComposedChart>
+                            </ResponsiveContainer>
+                        </div>
+                    </div>
                 </div>
             );
         };
@@ -321,17 +277,12 @@
 
             useEffect(() => {
                 setIsLoading(true);
-                fetch(sermon.path)
-                    .then(res => res.ok ? res.text() : "Transcript not available.")
+                fetch(sermon.path).then(res => res.ok ? res.text() : "Transcript not available.")
                     .then(text => {
-                        setFullText(text);
-                        setIsLoading(false);
+                        setFullText(text); setIsLoading(false);
                         const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : new RegExp(DEFAULT_REGEX_STR, 'gi');
-                        const found = [];
-                        let match;
-                        while ((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }); }
-                        setMentions(found);
-                        if (found.length === 0) setViewMode("full");
+                        const found = []; let match; while ((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }); }
+                        setMentions(found); if (found.length === 0) setViewMode("full");
                     })
                     .catch(() => { setFullText("Error loading transcript."); setIsLoading(false); });
             }, [sermon]);
@@ -356,20 +307,15 @@
                                     <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
                                 </div>
                             </div>
-                            <div className="flex gap-2">
-                                <button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg transition" title="Download"><Icon name="download" /></button>
-                                <button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition"><Icon name="x" /></button>
-                            </div>
+                            <div className="flex gap-2"><button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button><button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button></div>
                         </div>
                         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
-                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`} disabled={mentions.length === 0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
-                            <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:bg-gray-100'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+                            <button onClick={() => setViewMode("snippets")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode === 'snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length === 0}><Icon name="eye" size={16} /> Context</button>
+                            <button onClick={() => setViewMode("full")} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode === 'full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
                         </div>
                         <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
-                            {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode === 'snippets' ? (
-                                <div className="max-w-3xl mx-auto space-y-4">
-                                    {mentions.length > 0 ? mentions.map((m, i) => <SnippetRow key={i} fullText={fullText} term={m.term} matchIndex={m.index} index={i} highlightFn={(t, term) => highlight(t, sermon.searchTerm || term)} />) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
-                                </div>
+                            {isLoading ? <p className="text-center text-gray-400 italic">Loading...</p> : viewMode === 'snippets' ? (
+                                <div className="max-w-3xl mx-auto space-y-4">{mentions.map((m, i) => <SnippetRow key={i} fullText={fullText} term={m.term} matchIndex={m.index} index={i} highlightFn={highlight} />)}</div>
                             ) : <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>}
                         </div>
                     </div>
@@ -384,15 +330,14 @@
             const [apiPrefix, setApiPrefix] = useState("site_api/");
             const [totalChunks, setTotalChunks] = useState(0);
             const [dataDate, setDataDate] = useState(null);
+            const [channels, setChannels] = useState(DEFAULT_CHANNELS);
 
-            // GLOBAL TRACKING STATE
             const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM);
             const [activeRegex, setActiveRegex] = useState(DEFAULT_REGEX_STR);
             const [customCounts, setCustomCounts] = useState(null); 
             const [isAnalyzing, setIsAnalyzing] = useState(false);
             const [analysisProgress, setAnalysisProgress] = useState("");
 
-            // FILTERS & SETTINGS
             const [selChurches, setSelChurches] = useState([]);
             const [selSpeakers, setSelSpeakers] = useState([]);
             const [selYears, setSelYears] = useState([]);
@@ -402,17 +347,14 @@
             const [aggregateWindow, setAggregateWindow] = useState(26); 
             const [heatmapMode, setHeatmapMode] = useState("month"); 
             const [view, setView] = useState("dashboard");
-            const [highlightedChurch, setHighlightedChurch] = useState(null);
+            const [expandedChart, setExpandedChart] = useState(null);
+            const [selectedSermon, setSelectedSermon] = useState(null);
             
-            // TABLE FILTERS
             const [tableFilters, setTableFilters] = useState({ date: '', church: '', title: '', speaker: '', category: '', mentions: '', rate: '' });
             const [page, setPage] = useState(1);
             const [sortConfig, setSortConfig] = useState({ key: 'date', direction: 'desc' });
             const PAGE_SIZE = 50;
 
-            const [selectedSermon, setSelectedSermon] = useState(null);
-            const [expandedChart, setExpandedChart] = useState(null);
-            const [heatmapModalData, setHeatmapModalData] = useState(null); 
             const [isZipping, setIsZipping] = useState(false);
             const [zipProgress, setZipProgress] = useState("");
 
@@ -427,29 +369,34 @@
                         const json = await res.json();
                         setDataDate(json.generated || "Unknown");
 
-                        const currentTimestamp = new Date().getTime();
-                        // Optimization: Pre-process only essential data initially
-                        const list = (json.sermons || [])
-                            .filter(s => s.timestamp <= currentTimestamp) 
-                            .map(s => {
-                                const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60;
-                                return { 
-                                    ...s, 
-                                    path: s.path,
-                                    durationHrs: durationHrs > 0 ? durationHrs : 0.5, 
-                                    mentionsPerHour: durationHrs > 0 ? parseFloat((s.mentionCount / durationHrs).toFixed(1)) : 0
-                                };
-                            });
+                        try {
+                            const cRes = await fetch(prefix + 'channels.json');
+                            if(cRes.ok) {
+                                const cData = await cRes.json();
+                                if(Array.isArray(cData) && cData.length > 0) setChannels(cData);
+                            }
+                        } catch(e) { console.warn("Using default channels"); }
+
+                        // STABLE LOAD - NO FUTURE FILTERING HERE
+                        const list = (json.sermons || []).map(s => {
+                            const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60;
+                            return { 
+                                ...s, 
+                                path: s.path,
+                                durationHrs: durationHrs > 0 ? durationHrs : 0.5, 
+                                mentionsPerHour: durationHrs > 0 ? parseFloat((s.mentionCount / durationHrs).toFixed(1)) : 0
+                            };
+                        });
                         setRawData(list);
                         setTotalChunks(json.totalChunks || 0);
                         setApiPrefix(prefix);
 
-                        // --- DEFAULTS ---
+                        // DEFAULTS
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         
                         const currentYear = new Date().getFullYear();
-                        const years = [...new Set(list.map(s => s.year))].filter(y => parseInt(y) <= currentYear).sort().reverse();
+                        const years = [...new Set(list.map(s => s.year))].sort().reverse();
                         const defaultYears = years.filter(y => parseInt(y) >= 2020);
                         setSelYears(defaultYears.length > 0 ? defaultYears : years);
 
@@ -467,22 +414,15 @@
             }, []);
 
             const options = useMemo(() => {
-                // Optimization: Don't recalc full options on every render if rawData doesn't change
                 const getUnique = (k) => [...new Set(rawData.map(s => s[k]))].filter(Boolean).sort();
                 return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') };
             }, [rawData]);
 
-            // --- DATA ENRICHMENT ---
             const enrichedData = useMemo(() => {
                 if (!customCounts) return rawData;
                 return rawData.map(s => {
                     const newCount = customCounts.get(s.id) || 0;
-                    return {
-                        ...s,
-                        mentionCount: newCount,
-                        mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0,
-                        searchTerm: activeRegex 
-                    };
+                    return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex };
                 });
             }, [rawData, customCounts, activeRegex]);
 
@@ -490,29 +430,32 @@
                 return enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language));
             }, [enrichedData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
 
-            // --- DYNAMIC ANALYZER ---
+            // HARDENED DATE DOMAIN
+            const dateDomain = useMemo(() => {
+                if (selYears.length === 0) return ['auto', 'auto'];
+                const validYears = selYears.map(y => parseInt(y)).filter(y => !isNaN(y));
+                if (validYears.length === 0) return ['auto', 'auto'];
+                const minYear = Math.min(...validYears);
+                const maxYear = Math.max(...validYears);
+                return [new Date(minYear, 0, 1).getTime(), new Date(maxYear, 11, 31).getTime()];
+            }, [selYears]);
+
             const handleAnalysis = async (term, variations) => {
                 setIsAnalyzing(true);
-                setAnalysisProgress("Initializing...");
-                
                 const vars = variations.split(',').map(v => v.trim()).filter(v => v.length > 0);
                 const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); 
-                const regexStr = `(${allTerms.join('|')})`;
-                const regex = new RegExp(regexStr, 'gi');
-                
+                const regex = new RegExp(`(${allTerms.join('|')})`, 'gi');
                 const newCounts = new Map();
-                const CHUNK_BATCH = 5; 
+                const CHUNK_BATCH = 50; 
 
                 try {
                     for(let i=0; i<totalChunks; i+=CHUNK_BATCH) {
-                        const batchEnd = Math.min(i+CHUNK_BATCH, totalChunks);
-                        setAnalysisProgress(`Scanning corpus... Chunk ${i+1}/${totalChunks}`);
+                        setAnalysisProgress(`Scanning ${(i/totalChunks*100).toFixed(0)}%...`);
                         const promises = [];
-                        for(let j=i; j<batchEnd; j++) {
+                        for(let j=i; j<Math.min(i+CHUNK_BATCH, totalChunks); j++) {
                             promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]));
                         }
                         const results = await Promise.all(promises);
-                        
                         results.forEach(chunk => {
                             chunk.forEach(item => {
                                 const matches = (item.text.match(regex) || []).length;
@@ -520,25 +463,88 @@
                             });
                         });
                     }
-                    
-                    setCustomCounts(newCounts);
-                    setActiveTerm(term);
-                    setActiveRegex(regexStr);
-                    setAnalysisProgress("Done!");
-                } catch(e) {
-                    alert("Analysis failed: " + e.message);
-                } finally {
-                    setIsAnalyzing(false);
-                }
+                    setCustomCounts(newCounts); setActiveTerm(term); setActiveRegex(regex.source);
+                } catch(e) { alert("Analysis failed."); } finally { setIsAnalyzing(false); }
             };
 
-            // --- TABLE LOGIC ---
-            const processedTableData = useMemo(() => {
+            const stats = useMemo(() => {
+                if (!filteredData.length) return null;
+                const total = filteredData.length;
+                const mentions = filteredData.reduce((acc, s) => acc + s.mentionCount, 0);
+                const max = Math.max(...filteredData.map(s => s.mentionCount));
+                return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) };
+            }, [filteredData]);
+
+            // MAIN CHART: VOLUME (AREA) + TREND (LINE)
+            const aggregatedChartData = useMemo(() => {
+                if (!filteredData.length) return [];
+                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
+                const yearSpan = selYears.length;
+                const isWideRange = yearSpan > 3;
+
+                // Always use bucketing for stability on large datasets
+                const bucketed = resampleData(sorted, isWideRange ? 'month' : 'week');
+                return bucketed;
+            }, [filteredData, selYears]);
+
+            // INDIVIDUAL CHARTS: BAR (COUNTS) + LINE (TREND)
+            const channelTrends = useMemo(() => {
+                if (!filteredData.length) return [];
+                const charts = [];
+                const windowMs = rollingWeeks * 7 * 24 * 60 * 60 * 1000;
+
+                selChurches.forEach((church, index) => {
+                    const churchSermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
+                    if (churchSermons.length === 0) return;
+                    
+                    let left = 0, sum = 0, count = 0;
+                    const dataPoints = churchSermons.map((sermon) => {
+                        sum += sermon.mentionCount; count++;
+                        while (left < churchSermons.length && sermon.timestamp - churchSermons[left].timestamp > windowMs) { 
+                            sum -= churchSermons[left].mentionCount; count--; left++; 
+                        }
+                        return { ...sermon, rollingAvg: count > 0 ? parseFloat((sum/count).toFixed(1)) : 0 };
+                    });
+                    charts.push({ church, data: dataPoints, color: getColor(index) });
+                });
+                return charts;
+            }, [filteredData, selChurches, rollingWeeks]);
+
+            const handleCustomDownload = async (dataToDownload) => {
+                setIsZipping(true); setZipProgress("Init...");
+                const zip = new JSZip(); const folder = zip.folder("Archive");
+                const neededIds = new Set(dataToDownload.map(s => s.id));
+                const BATCH = 50; 
+                try {
+                    for(let i=0; i<totalChunks; i+=BATCH) {
+                        setZipProgress(`Processing ${(i/totalChunks*100).toFixed(0)}%`);
+                        const promises = [];
+                        for(let j=i; j<Math.min(i+BATCH, totalChunks); j++) {
+                            promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]));
+                        }
+                        const results = await Promise.all(promises);
+                        results.forEach(chunk => { chunk.forEach(item => { if(neededIds.has(item.id)) folder.file(`${item.id}`, item.text); }); });
+                    }
+                    setZipProgress("Zipping...");
+                    const content = await zip.generateAsync({type:"blob"});
+                    const a = document.createElement('a'); a.href = window.URL.createObjectURL(content); a.download = `Sermons.zip`; a.click();
+                } catch(e) { alert("Error."); } finally { setIsZipping(false); }
+            };
+
+            const formatDate = (ts) => {
+                if(!ts || isNaN(ts)) return "";
+                return new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            };
+
+            const displayedSermons = useMemo(() => {
                 let data = [...filteredData];
                 if (tableFilters.date) data = data.filter(s => s.date.includes(tableFilters.date));
                 if (tableFilters.church) data = data.filter(s => s.church.toLowerCase().includes(tableFilters.church.toLowerCase()));
                 if (tableFilters.title) data = data.filter(s => s.title.toLowerCase().includes(tableFilters.title.toLowerCase()));
-                // ... (other filters)
+                if (tableFilters.speaker) data = data.filter(s => s.speaker.toLowerCase().includes(tableFilters.speaker.toLowerCase()));
+                if (tableFilters.category) data = data.filter(s => s.type.toLowerCase().includes(tableFilters.category.toLowerCase()));
+                if (tableFilters.mentions) data = data.filter(s => s.mentionCount >= parseInt(tableFilters.mentions));
+                if (tableFilters.rate) data = data.filter(s => s.mentionsPerHour >= parseFloat(tableFilters.rate));
                 
                 if (sortConfig.key) {
                     data.sort((a, b) => {
@@ -551,10 +557,9 @@
                         return 0;
                     });
                 }
-                return data;
-            }, [filteredData, sortConfig, tableFilters]);
+                return data.slice(0, page * PAGE_SIZE);
+            }, [filteredData, sortConfig, tableFilters, page]);
 
-            const displayedSermons = useMemo(() => processedTableData.slice(0, page * PAGE_SIZE), [processedTableData, page]);
             const handleSort = (key) => {
                 let direction = 'asc';
                 if (sortConfig.key === key && sortConfig.direction === 'asc') direction = 'desc';
@@ -562,357 +567,188 @@
             };
             const updateFilter = (key, val) => { setTableFilters(prev => ({...prev, [key]: val})); setPage(1); };
 
-            const stats = useMemo(() => {
-                if (!filteredData.length) return null;
-                const total = filteredData.length;
-                const mentions = filteredData.reduce((acc, s) => acc + s.mentionCount, 0);
-                const max = Math.max(...filteredData.map(s => s.mentionCount));
-                return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) };
-            }, [filteredData]);
-
-            // --- CHARTS WITH SAMPLING (MODIFIED FOR VOLUME/TREND REQUEST) ---
-            const aggregateActivityData = useMemo(() => {
-                if (!filteredData.length) return [];
-                const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
-                const windowMs = aggregateWindow * 7 * 24 * 60 * 60 * 1000;
-                let left = 0, sum = 0, count = 0;
-                
-                const raw = sorted.map((item, right) => {
-                    sum += item.mentionCount;
-                    count++;
-                    while (item.timestamp - sorted[left].timestamp > windowMs) {
-                        sum -= sorted[left].mentionCount;
-                        count--;
-                        left++;
-                    }
-                    return { ...item, rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 };
-                });
-
-                // Apply Sampling
-                return resampleData(raw).data;
-            }, [filteredData, aggregateWindow]);
-
-            const channelTrends = useMemo(() => {
-                if (!filteredData.length) return [];
-                const charts = [];
-                const windowMs = rollingWeeks * 7 * 24 * 60 * 60 * 1000;
-
-                selChurches.forEach((church, index) => {
-                    const churchSermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
-                    if (churchSermons.length === 0) return;
-
-                    let left = 0, sum = 0, count = 0;
-                    const raw = churchSermons.map((sermon, right) => {
-                        sum += sermon.mentionCount;
-                        count++;
-                        while (sermon.timestamp - churchSermons[left].timestamp > windowMs) {
-                            sum -= churchSermons[left].mentionCount;
-                            count--;
-                            left++;
-                        }
-                        return { ...sermon, rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 };
-                    });
-                    
-                    charts.push({ church, data: resampleData(raw).data, color: getColor(index) });
-                });
-                return charts;
-            }, [filteredData, selChurches, rollingWeeks]);
-
-            // HEATMAP
-            const heatmapData = useMemo(() => {
-                if (!filteredData.length) return { labels: [], rows: [] };
-                const times = filteredData.map(s => s.timestamp);
-                const min = Math.min(...times);
-                const max = Math.max(...times);
-                const timeSlots = [];
-                let current = new Date(min);
-                const end = new Date(max);
-
-                if (heatmapMode === 'week') {
-                    current.setDate(current.getDate() - current.getDay() + 1); // Snap to Monday
-                    while(current <= end) {
-                        const next = new Date(current.getTime() + 7*24*60*60*1000);
-                        timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}` });
-                        current = next;
-                    }
-                } else {
-                    current.setDate(1); // Snap to 1st
-                    while(current <= end) {
-                        const next = new Date(current);
-                        next.setMonth(next.getMonth() + 1);
-                        timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.toLocaleString('default', { month: 'short' })} '${current.getFullYear().toString().substr(2)}` });
-                        current = next;
-                    }
-                }
-
-                const churchRows = selChurches.map(c => ({
-                    church: c,
-                    cells: timeSlots.map(t => {
-                        const sermons = filteredData.filter(s => s.church === c && s.timestamp >= t.start && s.timestamp < t.end);
-                        if (!sermons.length) return { val: -1 };
-                        const tm = sermons.reduce((a,s)=>a+s.mentionCount,0), td = sermons.reduce((a,s)=>a+s.durationHrs,0);
-                        return { val: td > 0 ? tm/td : 0, count: sermons.length, sermons: sermons };
-                    })
-                }));
-                return { labels: timeSlots, rows: churchRows };
-            }, [filteredData, selChurches, heatmapMode]);
-
-            const handleCustomDownload = async (dataToDownload) => {
-                setIsZipping(true); setZipProgress("Initializing...");
-                const zip = new JSZip(); const folder = zip.folder("Archive");
-                try {
-                    const neededIds = new Set(dataToDownload.map(s => s.id));
-                    const BATCH = 5;
-                    for(let i=0; i<totalChunks; i+=BATCH) {
-                        setZipProgress(`Processing... ${(i/totalChunks*100).toFixed(0)}%`);
-                        const promises = [];
-                        for(let j=i; j<Math.min(i+BATCH, totalChunks); j++) {
-                            promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]));
-                        }
-                        const results = await Promise.all(promises);
-                        results.forEach(chunk => {
-                            chunk.forEach(item => { if(neededIds.has(item.id)) { const meta = dataToDownload.find(f => f.id === item.id); if(meta) folder.file(`${meta.date} - ${meta.church} - ${meta.title}`.replace(/[^a-z0-9 \-\.]/gi, '_') + ".txt", item.text); } });
-                        });
-                    }
-                    setZipProgress("Compressing...");
-                    const content = await zip.generateAsync({type:"blob"});
-                    const a = document.createElement('a'); a.href = window.URL.createObjectURL(content); a.download = `Sermon_Archive.zip`; a.click();
-                } catch(e) { alert("Download failed"); } finally { setIsZipping(false); }
-            };
-
-            const formatDate = (ts) => new Date(ts).toLocaleDateString();
-
             if (loading) return <div className="h-screen flex items-center justify-center font-medium text-gray-500">Loading Database...</div>;
             if (error) return <div className="h-screen flex items-center justify-center text-red-600 font-bold">{error}</div>;
 
             return (
-                <div className="min-h-screen pb-20 relative">
-                    <div className="bg-white border-b sticky top-0 z-30 shadow-sm">
-                        <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
-                            <div className="flex items-center gap-3">
-                                <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.16</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                {dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}
-                                <div className="flex bg-gray-100 p-1 rounded-lg">
-                                    {['dashboard', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
+                <ErrorBoundary>
+                    <div className="min-h-screen pb-20 relative">
+                        <div className="bg-white border-b sticky top-0 z-30 shadow-sm">
+                            <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+                                <div className="flex items-center gap-3">
+                                    <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
+                                    <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.17</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    {dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}
+                                    <div className="flex bg-gray-100 p-1 rounded-lg">
+                                        {['dashboard', 'data'].map(tab => (<button key={tab} onClick={() => setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view === tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
 
-                    <main className="max-w-7xl mx-auto px-4 mt-8">
-                        <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
-                            <div className="flex justify-between items-center mb-4"><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3><button onClick={() => { setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs); }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button></div>
-                            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                                <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
-                                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
-                                <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
-                                <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
-                                <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
+                        <main className="max-w-7xl mx-auto px-4 mt-8">
+                            <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
+                                <div className="flex justify-between items-center mb-4"><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3><button onClick={() => { setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs); }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button></div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                    <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+                                    <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+                                    <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
+                                    <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
+                                    <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
+                                </div>
                             </div>
-                        </div>
 
-                        {view === 'dashboard' && stats && (
-                            <>
-                                <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} />
+                            {view === 'dashboard' && stats && (
+                                <>
+                                    <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} />
 
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                                    <StatCard title="Total Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" />
-                                    <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
-                                    <StatCard title="Avg / Sermon" value={stats.avg} icon="barChart" color="indigo" />
-                                    <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
-                                </div>
-
-                                {/* CHART 1: AGGREGATE ACTIVITY - MODIFIED FOR VOLUME/TREND */}
-                                <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Area = Volume (Sampled). Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Aggregate Trend.</p></div>
-                                        <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setAggregateWindow(w)} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                        <StatCard title="Total Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" />
+                                        <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
+                                        <StatCard title="Avg / Sermon" value={stats.avg} icon="barChart" color="indigo" />
+                                        <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
                                     </div>
-                                    <ResponsiveContainer width="100%" height="85%">
-                                        <ComposedChart data={aggregateActivityData}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
-                                            <YAxis tick={{fontSize: 10}} />
-                                            <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                            <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
-                                            <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} />
-                                            <Line type="monotone" dataKey="rollingAvg" name="Trend" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
-                                        </ComposedChart>
-                                    </ResponsiveContainer>
-                                </div>
 
-                                {/* CHANNEL BREAKDOWN (Small Multiples) */}
-                                <div className="mb-8">
-                                    <div className="flex justify-between items-center mb-4">
-                                        <div>
-                                            <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
-                                            <p className="text-xs text-gray-500 mt-1">Click any chart to enlarge.</p>
-                                        </div>
-                                        <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
-                                    </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                        {channelTrends.map((chart, i) => (
-                                            <div 
-                                                key={chart.church} 
-                                                onClick={() => setExpandedChart({ church: chart.church, data: chart.data, color: chart.color })}
-                                                className="bg-white p-4 rounded-xl border shadow-sm hover:shadow-md transition cursor-pointer"
-                                            >
-                                                <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 truncate" title={chart.church}>{chart.church}</h4>
-                                                <div className="h-32">
-                                                    <ResponsiveContainer width="100%" height="100%">
-                                                        <ComposedChart data={chart.data}>
-                                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                                            <XAxis dataKey="timestamp" type="number" scale="time" domain={['auto', 'auto']} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={100} />
-                                                            <YAxis tick={{fontSize: 9}} width={30} />
-                                                            <Tooltip 
-                                                                labelFormatter={formatDate}
-                                                                content={({ active, payload, label }) => {
-                                                                    if (active && payload && payload.length) {
-                                                                        const data = payload[0].payload;
-                                                                        return (
-                                                                            <div className="bg-white p-2 border border-gray-200 shadow-lg rounded text-xs">
-                                                                                <p className="font-bold mb-1">{formatDate(label)}</p>
-                                                                                <div className="flex justify-between gap-4"><span className="text-gray-500">Mentions:</span><span className="font-bold">{data.mentionCount}</span></div>
-                                                                                <div className="flex justify-between gap-4"><span className="text-gray-500">Avg:</span><span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span></div>
-                                                                            </div>
-                                                                        );
-                                                                    }
-                                                                    return null;
-                                                                }}
-                                                            />
-                                                            <Bar dataKey="mentionCount" fill="#cbd5e1" barSize={2} isAnimationActive={false} />
-                                                            <Line type="monotone" dataKey="rollingAvg" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 4}} connectNulls={true} isAnimationActive={false} />
-                                                        </ComposedChart>
-                                                    </ResponsiveContainer>
-                                                </div>
+                                    {/* MAIN CHART: VOLUME (AREA) + TREND (LINE) */}
+                                    <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
+                                        <div className="flex justify-between items-center mb-6">
+                                            <div>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Cumulative Volume & Trend ({activeTerm})</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Area = Volume (Sum of Mentions). Line = 6-Period Rolling Trend.</p>
                                             </div>
-                                        ))}
+                                        </div>
+                                        <ResponsiveContainer width="100%" height="85%">
+                                            <ComposedChart data={aggregatedChartData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
+                                                <YAxis tick={{fontSize: 10}} />
+                                                <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                                                <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
+                                                <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} />
+                                                <Line type="monotone" dataKey="rollingAvg" name="Trend" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                                            </ComposedChart>
+                                        </ResponsiveContainer>
                                     </div>
-                                </div>
 
-                                <div className="grid grid-cols-1 gap-6 mb-8">
-                                    <div className="bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
+                                    {/* CHANNEL BREAKDOWN */}
+                                    <div className="mb-8">
                                         <div className="flex justify-between items-center mb-4">
-                                            <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour. Click a tile for details.</p></div>
-                                            <div className="flex bg-gray-100 rounded-lg p-1 text-xs">
-                                                <button onClick={() => setHeatmapMode("month")} className={`px-3 py-1 rounded ${heatmapMode === 'month' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Month</button>
-                                                <button onClick={() => setHeatmapMode("week")} className={`px-3 py-1 rounded ${heatmapMode === 'week' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Week</button>
+                                            <div>
+                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
+                                                <p className="text-xs text-gray-500 mt-1">Bars: Counts | Line: Rolling Avg</p>
                                             </div>
+                                            <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                         </div>
-                                        <div className="flex-1 overflow-x-auto custom-scrollbar">
-                                            <div style={{ minWidth: heatmapData.labels.length * (heatmapMode==='week' ? 20 : 40) + 200 }}>
-                                                <div className="flex">
-                                                    <div className="w-48 flex-shrink-0"></div>
-                                                    {heatmapData.labels.map((t, i) => (
-                                                        <div key={t.start} className="text-[9px] text-gray-400 text-center -rotate-90 origin-bottom-left translate-y-8 h-8" style={{ width: heatmapMode==='week' ? 20 : 40 }}>
-                                                            {i % (heatmapMode==='week' ? 4 : 1) === 0 ? t.label : ''}
-                                                        </div>
-                                                    ))}
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                            {channelTrends.map((chart, i) => (
+                                                <div 
+                                                    key={chart.church} 
+                                                    onClick={() => setExpandedChart({ church: chart.church, data: chart.data, color: chart.color })}
+                                                    className="bg-white p-4 rounded-xl border shadow-sm hover:shadow-md transition cursor-pointer"
+                                                >
+                                                    <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 truncate" title={chart.church}>{chart.church}</h4>
+                                                    <div className="h-32">
+                                                        <ResponsiveContainer width="100%" height="100%">
+                                                            <ComposedChart data={chart.data}>
+                                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={100} />
+                                                                <YAxis tick={{fontSize: 9}} width={30} />
+                                                                <Tooltip labelFormatter={formatDate} contentStyle={{fontSize: '12px'}} />
+                                                                <Bar dataKey="mentionCount" fill="#e2e8f0" barSize={2} isAnimationActive={false} />
+                                                                <Line type="monotone" dataKey="rollingAvg" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 4}} connectNulls={true} isAnimationActive={false} />
+                                                            </ComposedChart>
+                                                        </ResponsiveContainer>
+                                                    </div>
                                                 </div>
-                                                <div className="mt-8 space-y-1">
-                                                    {heatmapData.rows.map((row, i) => (
-                                                        <div key={row.church} className="flex items-center h-6">
-                                                            <div className="w-48 flex-shrink-0 text-xs text-gray-600 truncate pr-2 text-right" title={row.church}>{row.church}</div>
-                                                            <div className="flex gap-[2px]">
-                                                                {row.cells.map((cell, ci) => {
-                                                                    let bg = 'bg-gray-100';
-                                                                    if (cell.val >= 0) {
-                                                                        if (cell.val === 0) bg = 'bg-gray-200';
-                                                                        else if (cell.val < 5) bg = 'bg-blue-100';
-                                                                        else if (cell.val < 15) bg = 'bg-blue-300';
-                                                                        else if (cell.val < 30) bg = 'bg-blue-500';
-                                                                        else bg = 'bg-purple-600';
-                                                                    }
-                                                                    return <div key={ci} onClick={() => cell.val >= 0 && setHeatmapModalData({ ...cell, label: heatmapData.labels[ci].label })} title={`${heatmapData.labels[ci].label}\n${cell.val >= 0 ? cell.val.toFixed(1) + '/hr' : 'No Sermon'}\n\n${cell.titles || ''}`} className={`rounded-sm heatmap-cell ${bg}`} style={{ width: heatmapMode==='week' ? 18 : 38, height: 20 }}></div>
-                                                                })}
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
+                                            ))}
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
-                                    <div className="p-6 border-b border-gray-100 flex justify-between items-center"><h3 className="font-bold text-gray-800">Sermon List ({processedTableData.length})</h3></div>
-                                    <div className="overflow-x-auto">
-                                        <table className="w-full text-sm text-left text-gray-500 table-fixed">
-                                            <thead className="text-xs text-gray-700 uppercase bg-gray-50">
-                                                <tr>
-                                                    <th onClick={() => handleSort('date')} className="px-4 py-3 w-28"><div className="flex items-center gap-1">Date {sortConfig.key==='date' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('church')} className="px-4 py-3 w-48"><div className="flex items-center gap-1">Church {sortConfig.key==='church' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('title')} className="px-4 py-3 w-64"><div className="flex items-center gap-1">Title {sortConfig.key==='title' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('type')} className="px-4 py-3 w-32"><div className="flex items-center gap-1">Type {sortConfig.key==='type' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('speaker')} className="px-4 py-3 w-40"><div className="flex items-center gap-1">Speaker {sortConfig.key==='speaker' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('mentionCount')} className="px-4 py-3 w-24 text-right"><div className="flex items-center justify-end gap-1">Mentions {sortConfig.key==='mentionCount' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th onClick={() => handleSort('mentionsPerHour')} className="px-4 py-3 w-24 text-right"><div className="flex items-center justify-end gap-1">Rate/Hr {sortConfig.key==='mentionsPerHour' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
-                                                    <th className="px-4 py-3 w-20 text-center">Action</th>
-                                                </tr>
-                                                <tr className="bg-gray-50 border-b">
-                                                    <th className="px-2 py-2"><input type="text" placeholder="YYYY-MM" className="w-full text-xs p-1 border rounded" value={tableFilters.date} onChange={(e) => updateFilter('date', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="number" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.mentions} onChange={(e) => updateFilter('mentions', e.target.value)} /></th>
-                                                    <th className="px-2 py-2"><input type="number" step="0.1" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.rate} onChange={(e) => updateFilter('rate', e.target.value)} /></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-gray-100">
-                                                {displayedSermons.map(s => (
-                                                    <tr key={s.id} onClick={() => setSelectedSermon(s)} className="hover:bg-blue-50 cursor-pointer transition">
-                                                        <td className="px-4 py-3 truncate" title={s.date}>{s.date}</td>
-                                                        <td className="px-4 py-3 truncate" title={s.church}><span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{s.church}</span></td>
-                                                        <td className="px-4 py-3 font-medium text-gray-900 truncate" title={s.title}>{s.title}</td>
-                                                        <td className="px-4 py-3 truncate" title={s.type}><span className="bg-gray-50 px-2 py-1 rounded text-xs border">{s.type}</span></td>
-                                                        <td className="px-4 py-3 truncate" title={s.speaker}>{s.speaker}</td>
-                                                        <td className={`px-4 py-3 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
-                                                        <td className="px-4 py-3 text-right text-xs">{s.mentionsPerHour}</td>
-                                                        <td className="px-4 py-3 text-center">
-                                                            <button onClick={(e) => { e.stopPropagation(); const a = document.createElement('a'); a.href = s.path; a.download = `${s.date} - ${s.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600"><Icon name="download" size={16} /></button>
-                                                        </td>
+                                    <div className="bg-white rounded-xl border shadow-sm overflow-hidden mb-8">
+                                        <div className="p-6 border-b border-gray-100 flex justify-between items-center"><h3 className="font-bold text-gray-800">Sermon List ({processedTableData.length})</h3></div>
+                                        <div className="overflow-x-auto">
+                                            <table className="w-full text-sm text-left text-gray-500 table-fixed">
+                                                <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+                                                    <tr>
+                                                        <th onClick={() => handleSort('date')} className="px-4 py-3 w-28"><div className="flex items-center gap-1">Date {sortConfig.key==='date' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('church')} className="px-4 py-3 w-48"><div className="flex items-center gap-1">Church {sortConfig.key==='church' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('title')} className="px-4 py-3 w-64"><div className="flex items-center gap-1">Title {sortConfig.key==='title' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('type')} className="px-4 py-3 w-32"><div className="flex items-center gap-1">Type {sortConfig.key==='type' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('speaker')} className="px-4 py-3 w-40"><div className="flex items-center gap-1">Speaker {sortConfig.key==='speaker' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('mentionCount')} className="px-4 py-3 w-24 text-right"><div className="flex items-center justify-end gap-1">Mentions {sortConfig.key==='mentionCount' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th onClick={() => handleSort('mentionsPerHour')} className="px-4 py-3 w-24 text-right"><div className="flex items-center justify-end gap-1">Rate/Hr {sortConfig.key==='mentionsPerHour' && (sortConfig.direction==='asc'?<Icon name="sortAsc" size={14}/>:<Icon name="sortDesc" size={14}/>)}</div></th>
+                                                        <th className="px-4 py-3 w-20 text-center">Action</th>
                                                     </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
+                                                    <tr className="bg-gray-50 border-b">
+                                                        <th className="px-2 py-2"><input type="text" placeholder="YYYY-MM" className="w-full text-xs p-1 border rounded" value={tableFilters.date} onChange={(e) => updateFilter('date', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.church} onChange={(e) => updateFilter('church', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.title} onChange={(e) => updateFilter('title', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.category} onChange={(e) => updateFilter('category', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="text" placeholder="Filter..." className="w-full text-xs p-1 border rounded" value={tableFilters.speaker} onChange={(e) => updateFilter('speaker', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="number" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.mentions} onChange={(e) => updateFilter('mentions', e.target.value)} /></th>
+                                                        <th className="px-2 py-2"><input type="number" step="0.1" placeholder="Min" className="w-full text-xs p-1 border rounded text-right" value={tableFilters.rate} onChange={(e) => updateFilter('rate', e.target.value)} /></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody className="divide-y divide-gray-100">
+                                                    {displayedSermons.map(s => (
+                                                        <tr key={s.id} onClick={() => setSelectedSermon(s)} className="hover:bg-blue-50 cursor-pointer transition">
+                                                            <td className="px-4 py-3 truncate" title={s.date}>{s.date}</td>
+                                                            <td className="px-4 py-3 truncate" title={s.church}><span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{s.church}</span></td>
+                                                            <td className="px-4 py-3 font-medium text-gray-900 truncate" title={s.title}>{s.title}</td>
+                                                            <td className="px-4 py-3 truncate" title={s.type}><span className="bg-gray-50 px-2 py-1 rounded text-xs border">{s.type}</span></td>
+                                                            <td className="px-4 py-3 truncate" title={s.speaker}>{s.speaker}</td>
+                                                            <td className={`px-4 py-3 text-right font-bold ${s.mentionCount === 0 ? 'text-red-500' : 'text-blue-600'}`}>{s.mentionCount}</td>
+                                                            <td className="px-4 py-3 text-right text-xs">{s.mentionsPerHour}</td>
+                                                            <td className="px-4 py-3 text-center">
+                                                                <button onClick={(e) => { e.stopPropagation(); const a = document.createElement('a'); a.href = s.path; a.download = `${s.date} - ${s.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600"><Icon name="download" size={16} /></button>
+                                                            </td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        {processedTableData.length > displayedSermons.length && <div className="p-4 text-center border-t"><button onClick={() => setPage(p => p + 1)} className="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 px-6 rounded-lg transition">Load More Sermons</button></div>}
                                     </div>
-                                    {processedTableData.length > displayedSermons.length && <div className="p-4 text-center border-t"><button onClick={() => setPage(p => p + 1)} className="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-2 px-6 rounded-lg transition">Load More Sermons</button></div>}
-                                </div>
-                            </>
-                        )}
-                        
-                        {view === 'data' && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="bg-white p-8 rounded-xl border shadow-sm">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
-                                    <div className="space-y-3">
-                                        <button onClick={() => handleCustomDownload(rawData)} disabled={isZipping} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Full Archive (All Sermons)</span>}</button>
-                                        <button onClick={() => handleCustomDownload(filteredData)} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Filtered Zip ({filteredData.length} Files)</span>}</button>
+                                </>
+                            )}
+                            
+                            {view === 'data' && (
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
+                                        <div className="space-y-3">
+                                            <button onClick={() => handleCustomDownload(rawData)} disabled={isZipping} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Full Archive (All Sermons)</span>}</button>
+                                            <button onClick={() => handleCustomDownload(filteredData)} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Filtered Zip ({filteredData.length} Files)</span>}</button>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-8 rounded-xl border shadow-sm">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources ({channels.length} Channels)</h3>
+                                        <ul className="space-y-2 pr-2 max-h-[400px] overflow-y-auto custom-scrollbar">
+                                            {channels.map((c, i) => (
+                                                <a key={i} href={c.url} target="_blank" rel="noopener noreferrer" className="channel-link-row block text-sm bg-gray-50 p-3 rounded border flex justify-between items-center transition">
+                                                    <span className="font-medium text-gray-700">{c.name}</span>
+                                                    <Icon name="link" size={14} className="text-blue-400" />
+                                                </a>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
-                                <div className="bg-white p-8 rounded-xl border shadow-sm">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="info" /> Data Sources</h3>
-                                    <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-                                        {[...new Set(rawData.map(s => s.church))].sort().map((c, i) => <li key={i} className="text-sm bg-gray-50 p-3 rounded border flex justify-between items-center hover:bg-gray-100"><span className="font-medium text-gray-700">{c}</span></li>)}
-                                    </ul>
-                                </div>
-                            </div>
-                        )}
-                    </main>
-                    {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
-                    {heatmapModalData && <HeatmapDetails data={heatmapModalData} onClose={() => setHeatmapModalData(null)} onSelect={(s) => { setHeatmapModalData(null); setSelectedSermon(s); }} />}
-                    {expandedChart && <ChartModal chart={expandedChart} onClose={() => setExpandedChart(null)} />}
-                </div>
+                            )}
+                        </main>
+                        {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
+                        {heatmapModalData && <HeatmapDetails data={heatmapModalData} onClose={() => setHeatmapModalData(null)} onSelect={(s) => { setHeatmapModalData(null); setSelectedSermon(s); }} />}
+                        {expandedChart && <ChartModal chart={expandedChart} domain={dateDomain} onClose={() => setExpandedChart(null)} />}
+                    </div>
+                </ErrorBoundary>
             );
         };
+
+        const Root = () => <ErrorBoundary><App /></ErrorBoundary>;
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<React.StrictMode><App /></React.StrictMode>);
+        root.render(<React.StrictMode><Root /></React.StrictMode>);
     </script>
 </body>
 </html>
