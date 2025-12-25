@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.11</title>
+    <title>Message Analytics v2.12 (Stable)</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -50,8 +50,7 @@
                     return (
                         <div className="min-h-screen flex items-center justify-center bg-red-50 p-4">
                             <div className="bg-white p-8 rounded-xl shadow-xl border border-red-200 max-w-lg w-full">
-                                <h2 className="text-2xl font-bold text-red-600 mb-4">Application Error</h2>
-                                <p className="text-gray-700 mb-4 text-sm">A critical error stopped the dashboard from loading. Check the console for details.</p>
+                                <h2 className="text-2xl font-bold text-red-600 mb-4">Dashboard Error</h2>
                                 <div className="bg-gray-100 p-4 rounded text-xs font-mono text-red-800 overflow-auto max-h-40 border mb-4">
                                     {this.state.error && this.state.error.toString()}
                                 </div>
@@ -250,7 +249,6 @@
             );
         };
 
-        // --- SNIPPET ROW MOVED OUTSIDE FOR SAFETY ---
         const SnippetRow = ({ fullText, term, matchIndex, index, highlightFn }) => {
             const [expanded, setExpanded] = useState(false);
             const context = expanded ? 600 : 200;
@@ -373,9 +371,7 @@
                             }
                         } catch(e) { console.warn("Using default channels"); }
 
-                        // IMPORTANT: Do NOT filter future dates from rawData here.
-                        // This causes empty datasets and crashes if the data is all in the future.
-                        // We filter them only in the Years selector.
+                        // REVERT TO v2.5 LOGIC: NO DATE FILTERING ON LOAD
                         const list = (json.sermons || []).map(s => {
                             const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60;
                             return { 
@@ -389,15 +385,13 @@
                         setTotalChunks(json.totalChunks || 0);
                         setApiPrefix(prefix);
 
+                        // DEFAULTS
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         
                         const currentYear = new Date().getFullYear();
-                        const years = [...new Set(list.map(s => s.year))]
-                            .filter(y => { const n = parseInt(y); return !isNaN(n) && n <= currentYear; })
-                            .sort().reverse();
-                        
-                        const defaultYears = years.filter(y => parseInt(y) >= 2020);
+                        const years = [...new Set(list.map(s => s.year))].sort().reverse();
+                        const defaultYears = years.filter(y => parseInt(y) >= 2020 && parseInt(y) <= currentYear); // Visual filter only
                         setSelYears(defaultYears.length > 0 ? defaultYears : years);
 
                         const types = [...new Set(list.map(s => s.type))];
@@ -478,26 +472,13 @@
             const aggregatedChartData = useMemo(() => {
                 if (!filteredData.length) return [];
                 const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
-                const yearSpan = selYears.length;
-                const isWideRange = yearSpan > 3;
-
-                if (isWideRange) {
-                    const monthly = resampleData(sorted, 'month');
-                    return monthly.map((item, idx, arr) => {
-                        let sum = 0, count = 0;
-                        for (let i = idx; i >= Math.max(0, idx - 6); i--) { sum += arr[i].mentionCount; count++; }
-                        return { ...item, rollingAvg: count > 0 ? parseFloat((sum/count).toFixed(1)) : 0 };
-                    });
-                } else {
-                    const windowMs = aggregateWindow * 7 * 24 * 60 * 60 * 1000;
-                    let left = 0, sum = 0, count = 0;
-                    return sorted.map((item) => {
-                        sum += item.mentionCount; count++;
-                        while (item.timestamp - sorted[left].timestamp > windowMs) { sum -= sorted[left].mentionCount; count--; left++; }
-                        return { ...item, rollingAvg: count > 0 ? parseFloat((sum/count).toFixed(1)) : 0 };
-                    });
-                }
-            }, [filteredData, selYears, aggregateWindow]);
+                const monthly = resampleData(sorted, 'month');
+                return monthly.map((item, idx, arr) => {
+                    let sum = 0, count = 0;
+                    for (let i = idx; i >= Math.max(0, idx - 6); i--) { sum += arr[i].mentionCount; count++; }
+                    return { ...item, rollingAvg: count > 0 ? parseFloat((sum/count).toFixed(1)) : 0 };
+                });
+            }, [filteredData, selYears]);
 
             // INDIVIDUAL CHARTS: BAR (COUNTS) + LINE (TREND)
             const channelTrends = useMemo(() => {
@@ -589,7 +570,7 @@
                             <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div>
-                                    <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.11</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
+                                    <div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.12</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     {dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}
@@ -628,31 +609,20 @@
                                         <div className="flex justify-between items-center mb-6">
                                             <div>
                                                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3>
-                                                <p className="text-xs text-gray-500 mt-1">{selYears.length > 3 ? "Monthly Volume + 6-Mo Rolling Avg" : "Individual Sermons + Rolling Avg"}</p>
+                                                <p className="text-xs text-gray-500 mt-1">Monthly Volume + 6-Mo Rolling Avg</p>
                                             </div>
                                             <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setAggregateWindow(w)} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                         </div>
                                         <ResponsiveContainer width="100%" height="85%">
-                                            {selYears.length > 3 ? (
-                                                <ComposedChart data={aggregatedChartData}>
-                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
-                                                    <YAxis tick={{fontSize: 10}} />
-                                                    <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
-                                                    <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
-                                                    <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="none" fill="#93c5fd" fillOpacity={0.6} isAnimationActive={false} />
-                                                    <Line type="monotone" dataKey="rollingAvg" name="6-Mo Trend" stroke="#2563eb" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
-                                                </ComposedChart>
-                                            ) : (
-                                                <ComposedChart data={aggregatedChartData}>
-                                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
-                                                    <YAxis tick={{fontSize: 10}} />
-                                                    <Tooltip labelFormatter={formatDate} />
-                                                    <Bar dataKey="mentionCount" name="Mentions" fill="#cbd5e1" barSize={3} isAnimationActive={false} />
-                                                    <Line type="monotone" dataKey="rollingAvg" name="Trend" stroke="#2563eb" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
-                                                </ComposedChart>
-                                            )}
+                                            <ComposedChart data={aggregatedChartData}>
+                                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
+                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
+                                                <YAxis tick={{fontSize: 10}} />
+                                                <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                                                <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
+                                                <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="none" fill="#93c5fd" fillOpacity={0.6} isAnimationActive={false} />
+                                                <Line type="monotone" dataKey="rollingAvg" name="6-Mo Trend" stroke="#2563eb" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                                            </ComposedChart>
                                         </ResponsiveContainer>
                                     </div>
 
@@ -687,50 +657,6 @@
                                                     </div>
                                                 </div>
                                             ))}
-                                        </div>
-                                    </div>
-
-                                    <div className="grid grid-cols-1 gap-6 mb-8">
-                                        <div className="bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
-                                            <div className="flex justify-between items-center mb-4">
-                                                <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour. Click a tile for details.</p></div>
-                                                <div className="flex bg-gray-100 rounded-lg p-1 text-xs">
-                                                    <button onClick={() => setHeatmapMode("month")} className={`px-3 py-1 rounded ${heatmapMode === 'month' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Month</button>
-                                                    <button onClick={() => setHeatmapMode("week")} className={`px-3 py-1 rounded ${heatmapMode === 'week' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Week</button>
-                                                </div>
-                                            </div>
-                                            <div className="flex-1 overflow-x-auto custom-scrollbar">
-                                                <div style={{ minWidth: heatmapData.labels.length * (heatmapMode==='week' ? 20 : 40) + 200 }}>
-                                                    <div className="flex">
-                                                        <div className="w-48 flex-shrink-0"></div>
-                                                        {heatmapData.labels.map((t, i) => (
-                                                            <div key={t.start} className="text-[9px] text-gray-400 text-center -rotate-90 origin-bottom-left translate-y-8 h-8" style={{ width: heatmapMode==='week' ? 20 : 40 }}>
-                                                                {i % (heatmapMode==='week' ? 4 : 1) === 0 ? t.label : ''}
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                    <div className="mt-8 space-y-1">
-                                                        {heatmapData.rows.map((row, i) => (
-                                                            <div key={row.church} className="flex items-center h-6">
-                                                                <div className="w-48 flex-shrink-0 text-xs text-gray-600 truncate pr-2 text-right" title={row.church}>{row.church}</div>
-                                                                <div className="flex gap-[2px]">
-                                                                    {row.cells.map((cell, ci) => {
-                                                                        let bg = 'bg-gray-100';
-                                                                        if (cell.val >= 0) {
-                                                                            if (cell.val === 0) bg = 'bg-gray-200';
-                                                                            else if (cell.val < 5) bg = 'bg-blue-100';
-                                                                            else if (cell.val < 15) bg = 'bg-blue-300';
-                                                                            else if (cell.val < 30) bg = 'bg-blue-500';
-                                                                            else bg = 'bg-purple-600';
-                                                                        }
-                                                                        return <div key={ci} onClick={() => cell.val >= 0 && setHeatmapModalData({ ...cell, label: heatmapData.labels[ci].label })} title={`${heatmapData.labels[ci].label}\n${cell.val >= 0 ? cell.val.toFixed(1) + '/hr' : 'No Sermon'}\n\n${cell.titles || ''}`} className={`rounded-sm heatmap-cell ${bg}`} style={{ width: heatmapMode==='week' ? 18 : 38, height: 20 }}></div>
-                                                                    })}
-                                                                </div>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 
