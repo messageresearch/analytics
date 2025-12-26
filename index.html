@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Analytics v2.20 (Unified Axis)</title>
+    <title>Message Analytics v2.21 (Identical Ticks)</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -27,6 +27,7 @@
         th:hover { background-color: #f3f4f6; }
         .heatmap-cell { transition: all 0.1s; position: relative; cursor: pointer; }
         .heatmap-cell:hover { transform: scale(1.1); border: 1px solid #333; z-index: 40; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        .channel-link-row:hover { background-color: #eff6ff; border-color: #bfdbfe; }
     </style>
 </head>
 <body>
@@ -66,7 +67,7 @@
         const WORDS_PER_MINUTE = 140; 
         const CHART_POINT_THRESHOLD = 800; 
 
-        const CHANNEL_SOURCES = [
+        const DEFAULT_CHANNELS = [
             { name: "Believers Christian Fellowship", url: "https://www.youtube.com/@believerschristianfellowsh2466" },
             { name: "Cedar Hills - Church of the Cross", url: "https://www.youtube.com/@CedarHillsChurchoftheCross" },
             { name: "Evening Light Tabernacle", url: "https://www.youtube.com/@EveningLightTabernacle" },
@@ -139,7 +140,7 @@
                     buckets[key] = { timestamp: ts, mentionCount: 0, count: 0, rollingSum: 0 };
                 }
                 buckets[key].mentionCount += item.mentionCount;
-                buckets[key].rollingSum += (item.rollingAvg || 0);
+                buckets[key].rollingSum += (item.rollingAvg || 0); 
                 buckets[key].count++;
             });
 
@@ -269,14 +270,14 @@
             </div>
         );
 
-        const ChartModal = ({ chart, onClose, domain }) => {
+        const ChartModal = ({ chart, onClose, domain, ticks }) => {
             const formatDate = (ts) => {
                 if(!ts || isNaN(ts)) return "";
                 return new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
             };
             return (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={onClose}>
-                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[80vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl h-[85vh] flex flex-col" onClick={e => e.stopPropagation()}>
                         <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2>
@@ -288,9 +289,9 @@
                             <ResponsiveContainer width="100%" height="100%">
                                 <ComposedChart data={chart.data}>
                                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={formatDate} tick={{fontSize: 12}} minTickGap={120} />
+                                    <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} ticks={ticks} tickFormatter={formatDate} tick={{fontSize: 12}} />
                                     <YAxis tick={{fontSize: 12}} />
-                                    <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px'}} />
+                                    <Tooltip labelFormatter={formatDate} />
                                     <Legend />
                                     <Bar dataKey="mentionCount" name="Mentions (Raw)" fill="#94a3b8" barSize={4} />
                                     <Line type="monotone" dataKey="rollingAvg" name="Trend (Rolling Avg)" stroke={chart.color} strokeWidth={3} dot={false} activeDot={{r: 6}} connectNulls={true} />
@@ -330,8 +331,7 @@
 
             useEffect(() => {
                 setIsLoading(true);
-                fetch(sermon.path)
-                    .then(res => res.ok ? res.text() : "Transcript not available.")
+                fetch(sermon.path).then(res => res.ok ? res.text() : "Transcript not available.")
                     .then(text => {
                         setFullText(text);
                         setIsLoading(false);
@@ -377,7 +377,7 @@
                         <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
                             {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode === 'snippets' ? (
                                 <div className="max-w-3xl mx-auto space-y-4">
-                                    {mentions.length > 0 ? mentions.map((m, i) => <SnippetRow key={i} fullText={fullText} term={m.term} matchIndex={m.index} index={i} highlightFn={(t, term) => highlight(t, sermon.searchTerm || term)} />) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
+                                    {mentions.length > 0 ? mentions.map((m, i) => <SnippetRow key={i} fullText={fullText} term={m.term} matchIndex={m.index} index={i} highlightFn={highlight} />) : <div className="text-center py-10 text-gray-400"><p>No direct matches found.</p><button onClick={() => setViewMode("full")} className="text-blue-500 underline mt-2">View full transcript</button></div>}
                                 </div>
                             ) : <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>}
                         </div>
@@ -393,15 +393,14 @@
             const [apiPrefix, setApiPrefix] = useState("site_api/");
             const [totalChunks, setTotalChunks] = useState(0);
             const [dataDate, setDataDate] = useState(null);
+            const [channels, setChannels] = useState(DEFAULT_CHANNELS);
 
-            // GLOBAL TRACKING STATE
             const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM);
             const [activeRegex, setActiveRegex] = useState(DEFAULT_REGEX_STR);
             const [customCounts, setCustomCounts] = useState(null); 
             const [isAnalyzing, setIsAnalyzing] = useState(false);
             const [analysisProgress, setAnalysisProgress] = useState("");
 
-            // FILTERS & SETTINGS
             const [selChurches, setSelChurches] = useState([]);
             const [selSpeakers, setSelSpeakers] = useState([]);
             const [selYears, setSelYears] = useState([]);
@@ -411,16 +410,14 @@
             const [aggregateWindow, setAggregateWindow] = useState(26); 
             const [heatmapMode, setHeatmapMode] = useState("month"); 
             const [view, setView] = useState("dashboard");
+            const [expandedChart, setExpandedChart] = useState(null);
+            const [selectedSermon, setSelectedSermon] = useState(null);
             
-            // TABLE FILTERS
             const [tableFilters, setTableFilters] = useState({ date: '', church: '', title: '', speaker: '', category: '', mentions: '', rate: '' });
             const [page, setPage] = useState(1);
             const [sortConfig, setSortConfig] = useState({ key: 'date', direction: 'desc' });
             const PAGE_SIZE = 50;
 
-            const [selectedSermon, setSelectedSermon] = useState(null);
-            const [expandedChart, setExpandedChart] = useState(null);
-            const [heatmapModalData, setHeatmapModalData] = useState(null); 
             const [isZipping, setIsZipping] = useState(false);
             const [zipProgress, setZipProgress] = useState("");
 
@@ -435,8 +432,15 @@
                         const json = await res.json();
                         setDataDate(json.generated || "Unknown");
 
+                        try {
+                            const cRes = await fetch(prefix + 'channels.json');
+                            if(cRes.ok) {
+                                const cData = await cRes.json();
+                                if(Array.isArray(cData) && cData.length > 0) setChannels(cData);
+                            }
+                        } catch(e) { console.warn("Using default channels"); }
+
                         const currentTimestamp = new Date().getTime();
-                        // Optimization: Pre-process only essential data initially
                         const list = (json.sermons || [])
                             .filter(s => s.timestamp <= currentTimestamp) 
                             .map(s => {
@@ -452,7 +456,6 @@
                         setTotalChunks(json.totalChunks || 0);
                         setApiPrefix(prefix);
 
-                        // --- DEFAULTS ---
                         setSelChurches([...new Set(list.map(s => s.church))]);
                         setSelSpeakers([...new Set(list.map(s => s.speaker))]);
                         
@@ -475,12 +478,10 @@
             }, []);
 
             const options = useMemo(() => {
-                // Optimization: Don't recalc full options on every render if rawData doesn't change
                 const getUnique = (k) => [...new Set(rawData.map(s => s[k]))].filter(Boolean).sort();
                 return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') };
             }, [rawData]);
 
-            // --- DATA ENRICHMENT ---
             const enrichedData = useMemo(() => {
                 if (!customCounts) return rawData;
                 return rawData.map(s => {
@@ -498,30 +499,32 @@
                 return enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language));
             }, [enrichedData, selChurches, selSpeakers, selYears, selTypes, selLangs]);
 
-            // GLOBAL DOMAIN
-            const dateDomain = useMemo(() => {
-                if (selYears.length === 0) return ['auto', 'auto'];
-                const validYears = selYears.map(y => parseInt(y)).filter(y => !isNaN(y));
-                if (validYears.length === 0) return ['auto', 'auto'];
-                const minYear = Math.min(...validYears);
-                const maxYear = Math.max(...validYears);
-                // Force X-Axis to timestamps for strict range
-                return [new Date(minYear, 0, 1).getTime(), new Date(maxYear, 11, 31).getTime()];
+            // --- STRICT CHART TICKS & DOMAIN ---
+            const chartConfig = useMemo(() => {
+                if (selYears.length === 0) return { domain: ['auto', 'auto'], ticks: [] };
+                const vals = selYears.map(y => parseInt(y)).filter(y => !isNaN(y)).sort((a,b)=>a-b);
+                if (vals.length === 0) return { domain: ['auto', 'auto'], ticks: [] };
+                
+                const minYear = vals[0];
+                const maxYear = vals[vals.length - 1];
+                const ticks = [];
+                for(let y=minYear; y<=maxYear; y++) ticks.push(new Date(y, 0, 1).getTime());
+                
+                return {
+                    domain: [new Date(minYear, 0, 1).getTime(), new Date(maxYear, 11, 31).getTime()],
+                    ticks
+                };
             }, [selYears]);
 
-            // --- DYNAMIC ANALYZER ---
             const handleAnalysis = async (term, variations) => {
                 setIsAnalyzing(true);
                 setAnalysisProgress("Initializing...");
-                
                 const vars = variations.split(',').map(v => v.trim()).filter(v => v.length > 0);
                 const allTerms = [term, ...vars].map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); 
                 const regexStr = `(${allTerms.join('|')})`;
                 const regex = new RegExp(regexStr, 'gi');
-                
                 const newCounts = new Map();
                 const CHUNK_BATCH = 5; 
-
                 try {
                     for(let i=0; i<totalChunks; i+=CHUNK_BATCH) {
                         const batchEnd = Math.min(i+CHUNK_BATCH, totalChunks);
@@ -531,7 +534,6 @@
                             promises.push(fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=>r.ok?r.json():[]).catch(()=>[]));
                         }
                         const results = await Promise.all(promises);
-                        
                         results.forEach(chunk => {
                             chunk.forEach(item => {
                                 const matches = (item.text.match(regex) || []).length;
@@ -539,26 +541,18 @@
                             });
                         });
                     }
-                    
                     setCustomCounts(newCounts);
                     setActiveTerm(term);
                     setActiveRegex(regexStr);
                     setAnalysisProgress("Done!");
-                } catch(e) {
-                    alert("Analysis failed: " + e.message);
-                } finally {
-                    setIsAnalyzing(false);
-                }
+                } catch(e) { alert("Analysis failed: " + e.message); } finally { setIsAnalyzing(false); }
             };
 
-            // --- TABLE LOGIC ---
             const processedTableData = useMemo(() => {
                 let data = [...filteredData];
                 if (tableFilters.date) data = data.filter(s => s.date.includes(tableFilters.date));
                 if (tableFilters.church) data = data.filter(s => s.church.toLowerCase().includes(tableFilters.church.toLowerCase()));
                 if (tableFilters.title) data = data.filter(s => s.title.toLowerCase().includes(tableFilters.title.toLowerCase()));
-                // ... (other filters)
-                
                 if (sortConfig.key) {
                     data.sort((a, b) => {
                         let aVal = a[sortConfig.key];
@@ -595,19 +589,11 @@
                 const sorted = [...filteredData].sort((a,b) => a.timestamp - b.timestamp);
                 const windowMs = aggregateWindow * 7 * 24 * 60 * 60 * 1000;
                 let left = 0, sum = 0, count = 0;
-                
                 const raw = sorted.map((item, right) => {
-                    sum += item.mentionCount;
-                    count++;
-                    while (item.timestamp - sorted[left].timestamp > windowMs) {
-                        sum -= sorted[left].mentionCount;
-                        count--;
-                        left++;
-                    }
+                    sum += item.mentionCount; count++;
+                    while (item.timestamp - sorted[left].timestamp > windowMs) { sum -= sorted[left].mentionCount; count--; left++; }
                     return { ...item, rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 };
                 });
-
-                // Apply Sampling
                 return resampleData(raw).data;
             }, [filteredData, aggregateWindow]);
 
@@ -615,23 +601,15 @@
                 if (!filteredData.length) return [];
                 const charts = [];
                 const windowMs = rollingWeeks * 7 * 24 * 60 * 60 * 1000;
-
                 selChurches.forEach((church, index) => {
                     const churchSermons = filteredData.filter(s => s.church === church).sort((a,b) => a.timestamp - b.timestamp);
                     if (churchSermons.length === 0) return;
-
                     let left = 0, sum = 0, count = 0;
                     const raw = churchSermons.map((sermon, right) => {
-                        sum += sermon.mentionCount;
-                        count++;
-                        while (sermon.timestamp - churchSermons[left].timestamp > windowMs) {
-                            sum -= churchSermons[left].mentionCount;
-                            count--;
-                            left++;
-                        }
+                        sum += sermon.mentionCount; count++;
+                        while (sermon.timestamp - churchSermons[left].timestamp > windowMs) { sum -= churchSermons[left].mentionCount; count--; left++; }
                         return { ...sermon, rollingAvg: count > 0 ? parseFloat((sum / count).toFixed(1)) : 0 };
                     });
-                    
                     charts.push({ church, data: resampleData(raw).data, color: getColor(index) });
                 });
                 return charts;
@@ -646,16 +624,15 @@
                 const timeSlots = [];
                 let current = new Date(min);
                 const end = new Date(max);
-
                 if (heatmapMode === 'week') {
-                    current.setDate(current.getDate() - current.getDay() + 1); // Snap to Monday
+                    current.setDate(current.getDate() - current.getDay() + 1); 
                     while(current <= end) {
                         const next = new Date(current.getTime() + 7*24*60*60*1000);
                         timeSlots.push({ start: current.getTime(), end: next.getTime(), label: `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear().toString().substr(2)}` });
                         current = next;
                     }
                 } else {
-                    current.setDate(1); // Snap to 1st
+                    current.setDate(1); 
                     while(current <= end) {
                         const next = new Date(current);
                         next.setMonth(next.getMonth() + 1);
@@ -663,7 +640,6 @@
                         current = next;
                     }
                 }
-
                 const churchRows = selChurches.map(c => ({
                     church: c,
                     cells: timeSlots.map(t => {
@@ -699,7 +675,10 @@
                 } catch(e) { alert("Download failed"); } finally { setIsZipping(false); }
             };
 
-            const formatDate = (ts) => new Date(ts).toLocaleDateString();
+            const formatDate = (ts) => {
+                if(!ts || isNaN(ts)) return "";
+                return new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            };
 
             if (loading) return <div className="h-screen flex items-center justify-center font-medium text-gray-500">Loading Database...</div>;
             if (error) return <div className="h-screen flex items-center justify-center text-red-600 font-bold">{error}</div>;
@@ -746,64 +725,42 @@
                                         <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" />
                                     </div>
 
-                                    {/* CHART 1: AGGREGATE ACTIVITY - MODIFIED FOR VOLUME/TREND */}
+                                    {/* CHART 1: AGGREGATE ACTIVITY - VOLUME/TREND */}
                                     <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
                                         <div className="flex justify-between items-center mb-6">
-                                            <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Area = Volume (Sampled). Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Aggregate Trend.</p></div>
+                                            <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Cumulative Volume & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Area = Volume. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Trend.</p></div>
                                             <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setAggregateWindow(w)} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                         </div>
                                         <ResponsiveContainer width="100%" height="85%">
                                             <ComposedChart data={aggregateActivityData}>
                                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={120} />
+                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={chartConfig.domain} ticks={chartConfig.ticks} tickFormatter={formatDate} tick={{fontSize: 10}} minTickGap={100} />
                                                 <YAxis tick={{fontSize: 10}} />
                                                 <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'}} />
                                                 <Legend wrapperStyle={{fontSize: '11px', paddingTop: '10px'}} />
                                                 <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} />
-                                                <Line type="monotone" dataKey="rollingAvg" name="Aggregate Rolling Avg" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                                                <Line type="monotone" dataKey="rollingAvg" name="Trend" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
                                             </ComposedChart>
                                         </ResponsiveContainer>
                                     </div>
 
-                                    {/* CHANNEL BREAKDOWN (Small Multiples) - STRICT X-AXIS */}
+                                    {/* CHANNEL BREAKDOWN */}
                                     <div className="mb-8">
                                         <div className="flex justify-between items-center mb-4">
-                                            <div>
-                                                <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3>
-                                                <p className="text-xs text-gray-500 mt-1">Click any chart to enlarge.</p>
-                                            </div>
+                                            <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="layers" /> Channel Breakdown</h3><p className="text-xs text-gray-500 mt-1">Click to enlarge.</p></div>
                                             <div className="flex bg-gray-100 rounded-lg p-1">{[4, 12, 26].map(w => <button key={w} onClick={() => setRollingWeeks(w)} className={`px-2 py-1 text-xs font-medium rounded ${rollingWeeks === w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w === 4 ? '1 Mo' : w === 12 ? '3 Mo' : '6 Mo'}</button>)}</div>
                                         </div>
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                             {channelTrends.map((chart, i) => (
-                                                <div 
-                                                    key={chart.church} 
-                                                    onClick={() => setExpandedChart({ church: chart.church, data: chart.data, color: chart.color })}
-                                                    className="bg-white p-4 rounded-xl border shadow-sm hover:shadow-md transition cursor-pointer"
-                                                >
+                                                <div key={chart.church} onClick={() => setExpandedChart({ church: chart.church, data: chart.data, color: chart.color })} className="bg-white p-4 rounded-xl border shadow-sm hover:shadow-md transition cursor-pointer">
                                                     <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 truncate" title={chart.church}>{chart.church}</h4>
                                                     <div className="h-32">
                                                         <ResponsiveContainer width="100%" height="100%">
                                                             <ComposedChart data={chart.data}>
                                                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={100} />
+                                                                <XAxis dataKey="timestamp" type="number" scale="time" domain={chartConfig.domain} ticks={chartConfig.ticks} tickFormatter={formatDate} tick={{fontSize: 9}} minTickGap={100} />
                                                                 <YAxis tick={{fontSize: 9}} width={30} />
-                                                                <Tooltip 
-                                                                    labelFormatter={formatDate}
-                                                                    content={({ active, payload, label }) => {
-                                                                        if (active && payload && payload.length) {
-                                                                            const data = payload[0].payload;
-                                                                            return (
-                                                                                <div className="bg-white p-2 border border-gray-200 shadow-lg rounded text-xs">
-                                                                                    <p className="font-bold mb-1">{formatDate(label)}</p>
-                                                                                    <div className="flex justify-between gap-4"><span className="text-gray-500">Mentions:</span><span className="font-bold">{data.mentionCount}</span></div>
-                                                                                    <div className="flex justify-between gap-4"><span className="text-gray-500">Avg:</span><span className="font-bold" style={{color: chart.color}}>{data.rollingAvg}</span></div>
-                                                                                </div>
-                                                                            );
-                                                                        }
-                                                                        return null;
-                                                                    }}
-                                                                />
+                                                                <Tooltip labelFormatter={formatDate} contentStyle={{fontSize: '12px'}} />
                                                                 <Bar dataKey="mentionCount" fill="#cbd5e1" barSize={2} isAnimationActive={false} />
                                                                 <Line type="monotone" dataKey="rollingAvg" stroke={chart.color} strokeWidth={2} dot={false} activeDot={{r: 4}} connectNulls={true} isAnimationActive={false} />
                                                             </ComposedChart>
@@ -814,10 +771,11 @@
                                         </div>
                                     </div>
 
+                                    {/* HEATMAP & LIST REMAIN SAME */}
                                     <div className="grid grid-cols-1 gap-6 mb-8">
                                         <div className="bg-white p-6 rounded-xl border shadow-sm overflow-hidden flex flex-col">
                                             <div className="flex justify-between items-center mb-4">
-                                                <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour. Click a tile for details.</p></div>
+                                                <div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="grid" /> Intensity Heatmap</h3><p className="text-xs text-gray-500">Normalized Mentions/Hour.</p></div>
                                                 <div className="flex bg-gray-100 rounded-lg p-1 text-xs">
                                                     <button onClick={() => setHeatmapMode("month")} className={`px-3 py-1 rounded ${heatmapMode === 'month' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Month</button>
                                                     <button onClick={() => setHeatmapMode("week")} className={`px-3 py-1 rounded ${heatmapMode === 'week' ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Week</button>
@@ -927,7 +885,7 @@
                         </main>
                         {selectedSermon && <SermonModal sermon={selectedSermon} onClose={() => setSelectedSermon(null)} />}
                         {heatmapModalData && <HeatmapDetails data={heatmapModalData} onClose={() => setHeatmapModalData(null)} onSelect={(s) => { setHeatmapModalData(null); setSelectedSermon(s); }} />}
-                        {expandedChart && <ChartModal chart={expandedChart} domain={dateDomain} onClose={() => setExpandedChart(null)} />}
+                        {expandedChart && <ChartModal chart={expandedChart} domain={chartConfig.domain} ticks={chartConfig.ticks} onClose={() => setExpandedChart(null)} />}
                     </div>
                 </ErrorBoundary>
             );
