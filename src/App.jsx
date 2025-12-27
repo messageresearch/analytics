@@ -15,7 +15,7 @@ import SermonModal from './components/SermonModal'
 import ChartModal from './components/ChartModal'
 import HeatmapDetails from './components/HeatmapDetails'
 import ChannelChart from './components/ChannelChart'
-import ChannelPreviewModal from './components/ChannelPreviewModal'
+// Channel preview modal removed — channel links open directly in a new tab
 import useDebouncedCallback from './hooks/useDebouncedCallback'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR, DEFAULT_VARIATIONS, WORDS_PER_MINUTE, CHART_POINT_THRESHOLD, getColor } from './constants_local'
 
@@ -85,7 +85,7 @@ export default function App(){
   const [heatmapModalData, setHeatmapModalData] = useState(null)
   const [channelSearch, setChannelSearch] = useState('')
   const [channelSort, setChannelSort] = useState('name_asc')
-  const [previewChannel, setPreviewChannel] = useState(null)
+  // preview modal removed: clicking a channel now opens its URL directly
   const [transcriptSummaryCounts, setTranscriptSummaryCounts] = useState({})
 
   // TABLE
@@ -425,7 +425,7 @@ export default function App(){
             <div className="flex items-center gap-3 min-w-0">
               <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200 flex-shrink-0"><Icon name="barChart" /></div>
               <div className="min-w-0 flex-1">
-                <h1 className="font-bold text-base md:text-lg text-gray-900 leading-tight truncate">Message Analytics v2.26</h1>
+                <h1 className="font-bold text-base md:text-lg text-gray-900 leading-tight truncate">Message Analytics v3.0</h1>
                 <p className="text-xs text-gray-500 truncate">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p>
               </div>
             </div>
@@ -621,7 +621,7 @@ export default function App(){
                       const href = c.url || c.link || c.href || '#'
                       return (
                         <li key={i}>
-                          <div onClick={()=>setPreviewChannel(c)} className="channel-link-row block text-sm bg-gray-50 p-3 rounded border transition hover:bg-gray-100 cursor-pointer">
+                          <div onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }} className="channel-link-row block text-sm bg-gray-50 p-3 rounded border transition hover:bg-gray-100 cursor-pointer">
                             <div className="flex items-center justify-between gap-3">
                               <div className="min-w-0">
                                 <div className="font-medium text-gray-700 truncate">{name}</div>
@@ -635,7 +635,7 @@ export default function App(){
                     })
                   })()}
                 </ul>
-                {previewChannel && <ChannelPreviewModal channel={previewChannel} apiPrefix={apiPrefix} onClose={()=>setPreviewChannel(null)} />}
+                {/* channel preview modal removed — clicking opens channel URL in a new tab */}
               </div>
             </div>
           )}
