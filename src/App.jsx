@@ -409,9 +409,18 @@ export default function App(){
     <ErrorBoundary>
       <div className="min-h-screen pb-20 relative">
         <div className="bg-white border-b sticky top-0 z-30 shadow-sm">
-          <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
-            <div className="flex items-center gap-3"><div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200"><Icon name="barChart" /></div><div><h1 className="font-bold text-lg text-gray-900 leading-tight">Message Analytics v2.26</h1><p className="text-xs text-gray-500">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p></div></div>
-            <div className="flex items-center gap-4">{dataDate && <div className="text-xs text-gray-400">Updated: {dataDate}</div>}<div className="flex bg-gray-100 p-1 rounded-lg">{['dashboard','data'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-4 py-1.5 rounded-md text-sm font-medium transition capitalize ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div></div>
+          <div className="max-w-7xl mx-auto px-4 py-3 md:py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="bg-blue-600 text-white p-2 rounded-lg shadow-lg shadow-blue-200 flex-shrink-0"><Icon name="barChart" /></div>
+              <div className="min-w-0 flex-1">
+                <h1 className="font-bold text-base md:text-lg text-gray-900 leading-tight truncate">Message Analytics v2.26</h1>
+                <p className="text-xs text-gray-500 truncate">Tracking: <span className="font-bold text-blue-700">{activeTerm}</span></p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4 w-full md:w-auto">
+              {dataDate && <div className="text-xs text-gray-400 text-center md:text-right">Updated: {dataDate}</div>}
+              <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{['dashboard','data'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div>
+            </div>
           </div>
         </div>
         <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
