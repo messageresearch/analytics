@@ -100,62 +100,21 @@ export default function VirtualizedTable({
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
   }
 
-  // Mobile Card View with proper rendering
-  const CardRow = ({ index, style }) => {
-    if (index < 0 || index >= data.length) return null
-    const row = data[index]
-    if (!row) return null
-    
-    return (
-      <div
-        style={{ ...style, overflow: 'visible' }}
-        className="px-3 py-3 hover:bg-gray-50 border-b cursor-pointer bg-white"
-        onClick={() => onRowClick && onRowClick(row)}
-      >
-        <div className="grid grid-cols-2 gap-3 text-sm">
-          {columns.filter(col => col.key !== 'action').slice(0, 4).map(col => (
-            <div key={col.key} className="flex flex-col min-w-0">
-              <div className="text-xs font-bold text-gray-600 uppercase tracking-wide">{col.label}</div>
-              <div className="text-gray-900 truncate text-xs">
-                {col.render ? col.render(row) : (row[col.key] || '-')}
-              </div>
-            </div>
-          ))}
-          <div className="col-span-2 flex justify-end pt-2 border-t">
-            <button
-              onClick={(e) => {
-                e.stopPropagation()
-                const a = document.createElement('a')
-                a.href = row.path
-                a.download = `${row.date} - ${row.title}.txt`
-                a.click()
-              }}
-              className="text-gray-400 hover:text-blue-600 transition"
-              title="Download transcript"
-            >
-              <Icon name="download" size={16} />
-            </button>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  // Desktop Table Row View
+  // Table Row View (used for both mobile and desktop)
   const Row = ({ index, style }) => {
     const row = data[index]
     return (
       <div
         style={{ ...style }}
-        className="px-4 py-3 hover:bg-gray-50 border-b cursor-pointer"
+        className={`px-3 py-2 hover:bg-gray-50 border-b cursor-pointer ${isMobile ? 'text-xs' : ''}`}
         onClick={() => onRowClick && onRowClick(row)}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: '12px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
           {columns.map(col => {
             const content = col.render ? col.render(row) : row[col.key]
             const title = typeof content === 'string' ? content : (typeof row[col.key] === 'string' ? row[col.key] : '')
             return (
-              <div key={col.key} title={title} className={`${col.className || 'text-sm text-gray-700'} truncate`}>
+              <div key={col.key} title={title} className={`${col.className || (isMobile ? 'text-xs text-gray-700' : 'text-sm text-gray-700')} truncate`}>
                 {content}
               </div>
             )
@@ -165,33 +124,20 @@ export default function VirtualizedTable({
     )
   }
 
-  if (isMobile) {
-    return (
-      <div className="w-full border rounded-lg bg-white overflow-hidden">
-        <div className="px-4 py-3 border-b bg-gray-50 sticky top-0 z-10">
-          <p className="text-xs text-gray-600 font-medium">Showing {data.length.toLocaleString()} sermons</p>
-        </div>
-        <List height={height} itemCount={data.length} itemSize={rowHeight} width={'100%'}>
-          {CardRow}
-        </List>
-      </div>
-    )
-  }
-
-  // Desktop table view
+  // Single table view for both mobile and desktop
   return (
     <div className="w-full border rounded-lg bg-white overflow-x-auto">
-      <div className="px-4 py-3 border-b bg-gray-50 sticky top-0 z-10">
-        <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: '12px', alignItems: 'center' }}>
+      <div className={`px-3 py-3 border-b bg-gray-50 sticky top-0 z-10 ${isMobile ? 'text-xs' : ''}`}>
+        <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
-              <div className={col.headerClass || 'text-xs text-gray-600 font-medium flex items-center'}>
+              <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
                 <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
                   <span>{col.label}</span>
                   <SortIndicator key={col.key} />
                 </button>
               </div>
-              {idx < columns.length - 1 && (
+              {!isMobile && idx < columns.length - 1 && (
                 <div
                   onMouseDown={(e) => handleMouseDown(e, col.key)}
                   className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
@@ -204,23 +150,25 @@ export default function VirtualizedTable({
           ))}
         </div>
         {/* filters row */}
-        <div className="mt-2" style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: '12px', alignItems: 'center' }}>
-          {columns.map(col => (
-            <div key={col.key}>
-              {col.filterKey ? (
-                <input
-                  type={col.filterType || 'text'}
-                  placeholder={col.filterPlaceholder || 'Filter...'}
-                  value={filters[col.filterKey] || ''}
-                  onChange={(e)=>onFilterChange(col.filterKey, e.target.value)}
-                  className="w-full text-xs p-1 border rounded"
-                />
-              ) : <div />}
-            </div>
-          ))}
-        </div>
+        {!isMobile && (
+          <div className="mt-2" style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: '12px', alignItems: 'center' }}>
+            {columns.map(col => (
+              <div key={col.key}>
+                {col.filterKey ? (
+                  <input
+                    type={col.filterType || 'text'}
+                    placeholder={col.filterPlaceholder || 'Filter...'}
+                    value={filters[col.filterKey] || ''}
+                    onChange={(e)=>onFilterChange(col.filterKey, e.target.value)}
+                    className="w-full text-xs p-1 border rounded"
+                  />
+                ) : <div />}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-      <List height={height} itemCount={data.length} itemSize={rowHeight} width={'100%'}>
+      <List height={isMobile ? Math.min(height, window?.innerHeight - 300 || 400) : height} itemCount={data.length} itemSize={isMobile ? 48 : rowHeight} width={'100%'}>
         {Row}
       </List>
     </div>
