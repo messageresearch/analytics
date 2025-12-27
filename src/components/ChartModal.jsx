@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { ComposedChart, Line, Bar, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import Icon from './Icon'
 import resampleData from '../utils/resample'
 
