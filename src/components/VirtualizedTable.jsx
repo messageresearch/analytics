@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { useMemo, useState, useEffect, forwardRef } from 'react'
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
@@ -119,6 +119,16 @@ export default function VirtualizedTable({
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
   }
 
+  // Custom outer element for react-window List to prevent horizontal scrolling
+  const ListOuter = forwardRef(({ style, children, ...rest }, ref) => {
+    const merged = { ...style, overflowX: 'hidden' }
+    return (
+      <div ref={ref} style={merged} {...rest}>
+        {children}
+      </div>
+    )
+  })
+
   // Table Row View (used for both mobile and desktop)
   const Row = ({ index, style }) => {
     const row = data[index]
@@ -187,7 +197,7 @@ export default function VirtualizedTable({
           </div>
         )}
       </div>
-      <List height={isMobile ? Math.min(height, window?.innerHeight - 300 || 400) : height} itemCount={data.length} itemSize={isMobile ? 48 : rowHeight} width={'100%'}>
+      <List outerElementType={ListOuter} height={isMobile ? Math.min(height, window?.innerHeight - 300 || 400) : height} itemCount={data.length} itemSize={isMobile ? 48 : rowHeight} width={'100%'}>
         {Row}
       </List>
     </div>
