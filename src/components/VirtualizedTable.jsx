@@ -66,8 +66,27 @@ export default function VirtualizedTable({
     }
   }, [])
 
-  // Get effective column width (customized or default)
-  const getColWidth = (col) => columnWidths[col.key] || col.width || '1fr'
+  // Get effective column width (customized or default, adapted for mobile)
+  const getColWidth = (col) => {
+    if (columnWidths[col.key]) return columnWidths[col.key]
+    
+    if (isMobile) {
+      // Use much narrower widths on mobile
+      const mobileWidths = {
+        'date': '70px',
+        'church': '100px',
+        'title': '120px',
+        'type': '70px',
+        'speaker': '90px',
+        'mentionCount': '60px',
+        'mentionsPerHour': '60px',
+        'action': '40px'
+      }
+      return mobileWidths[col.key] || '80px'
+    }
+    
+    return col.width || '1fr'
+  }
 
   // Handle column resize
   const handleMouseDown = (e, colKey) => {
