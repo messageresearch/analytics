@@ -6,7 +6,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/wmbmentions.github.io/',
   plugins: [react()],
-  publicDir: 'public',
   server: { port: 5173 },
   build: { outDir: 'docs' }
 })
