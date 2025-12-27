@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 
@@ -9,6 +9,17 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   const [showRegex, setShowRegex] = useState(isRegexLike(initialVariations))
   const [rawRegex, setRawRegex] = useState(isRegexLike(initialVariations) ? initialVariations : '')
   const [regexError, setRegexError] = useState(null)
+
+  const prevTermRef = useRef(term)
+  useEffect(() => {
+    // If the user clears the primary term and the previous value was the default,
+    // clear the raw regex and hide the advanced regex box to avoid accidental searches.
+    if ((term || '').trim() === '' && (prevTermRef.current || '') === DEFAULT_TERM) {
+      setRawRegex('')
+      setShowRegex(false)
+    }
+    prevTermRef.current = term
+  }, [term])
 
   const validateRegex = (r) => {
     if (!r) return null
