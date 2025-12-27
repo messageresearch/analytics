@@ -12,9 +12,12 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
 
   const prevTermRef = useRef(term)
   useEffect(() => {
-    // If the user clears the primary term and the previous value was the default,
-    // clear the raw regex and hide the advanced regex box to avoid accidental searches.
-    if ((term || '').trim() === '' && (prevTermRef.current || '') === DEFAULT_TERM) {
+    // If the user modifies the primary term (enters a new search or clears it),
+    // and the previous value was the default, clear the raw regex and hide the
+    // advanced regex box to prevent accidentally using the default William Branham regex.
+    const prevTerm = prevTermRef.current || ''
+    const currentTerm = (term || '').trim()
+    if (prevTerm === DEFAULT_TERM && currentTerm !== DEFAULT_TERM) {
       setRawRegex('')
       setShowRegex(false)
     }
