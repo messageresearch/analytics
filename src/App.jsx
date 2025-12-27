@@ -180,6 +180,7 @@ export default function App(){
   useEffect(()=>{
     if(!channels || channels.length===0) return
     const build = async () => {
+        const rawGitPrefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/'
       try{
         const map = {}
         const churchNames = channels.map(c=>c.name).filter(Boolean)
@@ -198,8 +199,19 @@ export default function App(){
                   console.debug('Trying summary path', tryPath)
                   const r = await fetch(tryPath)
                   console.debug('Response', tryPath, r && r.status)
-                  if(!r.ok) continue
-                  txt = await r.text()
+                  // If the normal fetch fails, try the raw GitHubusercontent path (fallback)
+                  if(!r.ok){
+                    try{
+                      const rawPath = rawGitPrefix + (('' + tryPath).replace(/^\/+/, ''))
+                      console.debug('Trying raw GitHub path', rawPath)
+                      const rr = await fetch(rawPath)
+                      console.debug('Response raw', rawPath, rr && rr.status)
+                      if(!rr.ok) continue
+                      txt = await rr.text()
+                    }catch(e){ console.debug('Raw fetch error', tryPath, e && e.message); continue }
+                  } else {
+                    txt = await r.text()
+                  }
                   // Basic validation: reject HTML responses (SPA fallback) or non-CSV content
                   const tl = (txt||'').trim()
                   if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
