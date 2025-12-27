@@ -15,28 +15,31 @@ export default function VirtualizedTable({
 }){
   // Column width customization state
   const [columnWidths, setColumnWidths] = useState({})
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 768)
   const [resizing, setResizing] = useState(null)
 
   // Initialize column widths from localStorage or use defaults
   useEffect(() => {
-    const saved = localStorage.getItem('columnWidths')
-    if (saved) {
-      try {
-        setColumnWidths(JSON.parse(saved))
-      } catch (e) {}
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+      const saved = localStorage.getItem('columnWidths')
+      if (saved) {
+        try {
+          setColumnWidths(JSON.parse(saved))
+        } catch (e) {}
+      }
     }
   }, [])
 
   // Save column widths to localStorage whenever they change
   useEffect(() => {
-    if (Object.keys(columnWidths).length > 0) {
+    if (Object.keys(columnWidths).length > 0 && typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
       localStorage.setItem('columnWidths', JSON.stringify(columnWidths))
     }
   }, [columnWidths])
 
   // Handle window resize for mobile detection
   useEffect(() => {
+    if (typeof window === 'undefined') return
     const handleResize = () => setIsMobile(window.innerWidth < 768)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
