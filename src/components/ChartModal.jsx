@@ -131,10 +131,10 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
         </div>
         <div className="flex-1 p-6">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={computed.data} margin={{ bottom: 90, left: 0, right: 0, top: 0 }}>
+            <ComposedChart data={computed.data} margin={{ bottom: 120, left: 50, right: 20, top: 20 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
               <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={fmt} tick={{fontSize:10, angle: -45, textAnchor: 'end', height: 100}} interval={Math.ceil(computed.data.length / 4)} />
-              <YAxis tick={{fontSize:12}} label={{ value: '# mentions', angle: -90, position: 'insideLeft', offset: 0, style: { fontSize: 12, fill: '#6b7280' } }} />
+              <YAxis tick={{fontSize:12}} label={{ value: '# mentions', angle: -90, position: 'insideLeft', offset: -10, style: { fontSize: 12, fill: '#6b7280' } }} />
               <Tooltip content={({ active, payload, label }) => {
                 if(!active || !payload || !payload.length) return null
                 const p = payload[0].payload
@@ -169,7 +169,7 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
                   )
                 }
               }} labelFormatter={fmt} contentStyle={{borderRadius:'8px'}} />
-              <Legend />
+              <Legend verticalAlign="top" height={36} />
               {chartType === 'bar' ? (
                 <>
                   <Bar dataKey="mentionCount" name="Mentions" fill="#94a3b8" barSize={6} onClick={(p)=>{ if(showRaw){ if(onSelectSermon) onSelectSermon(p.payload, 0) } }} />
