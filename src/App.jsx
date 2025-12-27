@@ -370,10 +370,13 @@ export default function App(){
         return { ...sermon, rollingAvg: count>0?parseFloat((sum/count).toFixed(1)):0 }
       })
       const tcounts = transcriptSummaryCounts && (transcriptSummaryCounts[church] || transcriptSummaryCounts[(church||'').replace(/\s+/g,'_')] || transcriptSummaryCounts[(church||'').replace(/[^0-9A-Za-z]+/g,'_').toLowerCase()])
-      charts.push({ church, raw, data: resampleData(raw, undefined, activeTerm), color: getColor(index), transcriptCounts: tcounts || null })
+      // Find channel URL from channels list
+      const channelData = channels.find(c => c.name === church)
+      const url = channelData && (channelData.url || channelData.link || channelData.href) || null
+      charts.push({ church, raw, data: resampleData(raw, undefined, activeTerm), color: getColor(index), transcriptCounts: tcounts || null, url })
     })
     return charts
-  }, [filteredData, selChurches, rollingWeeks, transcriptSummaryCounts, activeTerm])
+  }, [filteredData, selChurches, rollingWeeks, transcriptSummaryCounts, activeTerm, channels])
 
   const heatmapData = useMemo(()=>{
     if(!filteredData.length) return { labels: [], rows: [] }

@@ -102,6 +102,7 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
         <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
           <div>
             <h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2>
+            {chart.url && <div className="text-sm mt-1"><a href={chart.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline">{chart.url}</a></div>}
             {searchTerm ? <div className="text-sm text-blue-600">Search: <span className="font-semibold text-blue-800">{searchTerm}</span></div> : null}
             <div className="text-sm text-gray-500">Min: {computed.min} • Max: {computed.max}</div>
           </div>
@@ -130,7 +131,7 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
         </div>
         <div className="flex-1 p-6">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={computed.data} margin={{ bottom: 60, left: 0, right: 0, top: 0 }}>
+            <ComposedChart data={computed.data} margin={{ bottom: 90, left: 0, right: 0, top: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
               <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={fmt} tick={{fontSize:10, angle: -45, textAnchor: 'end', height: 100}} interval={Math.ceil(computed.data.length / 4)} />
               <YAxis tick={{fontSize:12}} label={{ value: '# mentions', angle: -90, position: 'insideLeft', offset: 0, style: { fontSize: 12, fill: '#6b7280' } }} />
