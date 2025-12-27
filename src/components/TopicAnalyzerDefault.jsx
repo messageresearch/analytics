@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 
 export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '' }) {
@@ -16,8 +17,9 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
 
   const handleRun = () => {
     const t = (term || '').trim()
-    if (!t) return
-    if (showRegex && rawRegex) {
+    // Allow running when either a term exists or a raw regex is provided
+    if (!t && !(showRegex && rawRegex && rawRegex.trim())) return
+    if (showRegex && rawRegex && rawRegex.trim()) {
       const err = validateRegex(rawRegex)
       if (err) { setRegexError(err); return }
       setRegexError(null)
@@ -26,6 +28,17 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
     }
     const vars = (variations || '').split(',').map(v => v.trim()).filter(Boolean)
     onAnalyze(t, vars, null)
+  }
+
+  const handleResetDefaults = () => {
+    setTerm(DEFAULT_TERM)
+    // DEFAULT_REGEX_STR is regex-like so show advanced box
+    setShowRegex(true)
+    setRawRegex(DEFAULT_REGEX_STR)
+    setVariations('')
+    setRegexError(null)
+    // trigger analysis with default regex
+    onAnalyze(DEFAULT_TERM, [], DEFAULT_REGEX_STR)
   }
 
   return (
@@ -54,11 +67,16 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
           </div>
         </div>
 
-        <div className="flex flex-col items-end justify-center h-full">
-          <button onClick={handleRun} disabled={isAnalyzing || !(term && term.trim().length)} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
+          <div className="flex flex-col items-end justify-center h-full">
+          <div className="flex flex-col items-end gap-3">
+            <div className="flex gap-2">
+              <button onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(showRegex && rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
             {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
-          </button>
-          {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+            </button>
+              <button onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white text-gray-700 font-medium py-2 px-3 rounded-lg shadow-sm hover:bg-gray-50 transition">Reset Defaults</button>
+            </div>
+            {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+          </div>
         </div>
       </div>
     </div>

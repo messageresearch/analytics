@@ -290,7 +290,8 @@ export default function App(){
   const dateDomain = useMemo(()=>{ if(selYears.length===0) return ['auto','auto']; const validYears = selYears.map(y=>parseInt(y)).filter(y=>!isNaN(y)); if(validYears.length===0) return ['auto','auto']; const minYear = Math.min(...validYears); const maxYear = Math.max(...validYears); return [new Date(minYear,0,1).getTime(), new Date(maxYear,11,31).getTime()] }, [selYears])
 
   const handleAnalysis = async (term, variations, rawRegex = null) => {
-    if(!term || !term.trim()) return
+    // Allow analysis when either a term is provided or a raw regex is provided
+    if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
     lastAnalysisRef.current = { term, regex: rawRegex || null }
     setIsAnalyzing(true)
     setAnalysisProgress('Starting...')
