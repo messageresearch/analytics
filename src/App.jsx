@@ -110,10 +110,25 @@ export default function App(){
   useEffect(()=>{
     const init = async ()=>{
       try{
-        let res = await fetch('site_api/metadata.json')
-        let prefix='site_api/'
-        if(!res.ok){ res = await fetch('metadata.json'); prefix = '' }
-        if(!res.ok) throw new Error('Metadata not found.')
+        // Try multiple paths for metadata.json with fallback to raw.githubusercontent
+        const metaPaths = [
+          'site_api/metadata.json',
+          '/wmbmentions.github.io/site_api/metadata.json',
+          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json',
+          'metadata.json'
+        ]
+        let res = null
+        let prefix = 'site_api/'
+        for (const path of metaPaths) {
+          try {
+            res = await fetch(path)
+            if (res.ok) {
+              prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/site_api/' : 'site_api/')
+              break
+            }
+          } catch (e) {}
+        }
+        if (!res || !res.ok) throw new Error('Metadata not found.')
         const json = await res.json()
         setDataDate(json.generated || 'Unknown')
         try{
@@ -129,7 +144,15 @@ export default function App(){
             }catch(e){ console.warn('Static channels import failed early', e) }
           }
           // Try a few paths so channels.json is found whether it's in site_api/ or at repo root
-          const tries = [prefix + 'channels.json', '/channels.json', 'channels.json']
+          const tries = [
+            prefix + 'channels.json',
+            '/wmbmentions.github.io/site_api/channels.json',
+            '/wmbmentions.github.io/channels.json',
+            'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/channels.json',
+            'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/channels.json',
+            '/channels.json',
+            'channels.json'
+          ]
           let cRes = null
           let cData = null
           for(const p of tries){
