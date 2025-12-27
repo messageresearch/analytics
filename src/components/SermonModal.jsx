@@ -21,11 +21,15 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
   const [isLoading, setIsLoading] = useState(true)
   const [viewMode, setViewMode] = useState('snippets')
   const [mentions, setMentions] = useState([])
+  const [videoUrl, setVideoUrl] = useState('')
 
   useEffect(()=>{
     setIsLoading(true)
     fetch(sermon.path).then(res=>res.ok?res.text():'Transcript not available.').then(text=>{
       setFullText(text); setIsLoading(false)
+      // Extract YouTube URL from transcript if available
+      const ytMatch = text.match(/https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[A-Za-z0-9_\-]+|youtu\.be\/[A-Za-z0-9_\-]+)/i)
+      if(ytMatch) setVideoUrl(ytMatch[0])
       const regex = sermon.searchTerm ? new RegExp(`(${sermon.searchTerm})`, 'gi') : new RegExp(DEFAULT_REGEX_STR, 'gi')
       const found = []; let match; while((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }) }
       setMentions(found);
@@ -66,6 +70,11 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
           <div className="flex-1 pr-4">
             <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
             <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600"><span className="bg-white border px-2 py-0.5 rounded">{sermon.church}</span><span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span><span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span></div>
+            {videoUrl && (
+              <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="inline-block mt-3 px-3 py-1 bg-red-600 text-white text-sm hover:bg-red-700 rounded font-medium">
+                ▶ Watch on YouTube
+              </a>
+            )}
           </div>
           <div className="flex gap-2"><button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button><button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button></div>
         </div>
