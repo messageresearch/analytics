@@ -1,0 +1,92 @@
+import React, { useState } from 'react'
+import Icon from './Icon'
+
+export default function TopicAnalyzerClean({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '' }) {
+  const [term, setTerm] = useState(initialTerm || '')
+  const [variations, setVariations] = useState(initialVariations || '')
+  const [showRegex, setShowRegex] = useState(false)
+  const [rawRegex, setRawRegex] = useState('')
+  const [regexError, setRegexError] = useState(null)
+
+  const validateRegex = (r) => {
+    if (!r) return null
+    try { new RegExp(r); return null } catch (e) { return (e && e.message) ? e.message : 'Invalid regex' }
+  }
+
+  const handleRun = () => {
+    const t = (term || '').trim()
+    if (!t) return
+    if (showRegex && rawRegex) {
+      const err = validateRegex(rawRegex)
+      if (err) { setRegexError(err); return }
+      setRegexError(null)
+      onAnalyze(t, [], rawRegex)
+      return
+    }
+    const vars = (variations || '').split(',').map(v => v.trim()).filter(Boolean)
+    import React, { useState } from 'react'
+    import Icon from './Icon'
+
+    export default function TopicAnalyzerClean({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '' }) {
+      const [term, setTerm] = useState(initialTerm || '')
+      const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
+      const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
+      const [showRegex, setShowRegex] = useState(isRegexLike(initialVariations))
+      const [rawRegex, setRawRegex] = useState(isRegexLike(initialVariations) ? initialVariations : '')
+      const [regexError, setRegexError] = useState(null)
+
+      const validateRegex = (r) => {
+        if (!r) return null
+        try { new RegExp(r); return null } catch (e) { return (e && e.message) ? e.message : 'Invalid regex' }
+      }
+
+      const handleRun = () => {
+        const t = (term || '').trim()
+        if (!t) return
+        if (showRegex && rawRegex) {
+          const err = validateRegex(rawRegex)
+          if (err) { setRegexError(err); return }
+          setRegexError(null)
+          onAnalyze(t, [], rawRegex)
+          return
+        }
+        const vars = (variations || '').split(',').map(v => v.trim()).filter(Boolean)
+        onAnalyze(t, vars, null)
+      }
+
+      return (
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8 transition-all">
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-bold flex items-center gap-2 mb-2"><Icon name="activity" /> Global Mention Tracker</h2>
+              <p className="text-blue-100 text-sm mb-4">Analyze all videos over time for a specific topic. This will scan the entire database dynamically.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Primary Term</label>
+                  <input type="text" value={term} onChange={e => setTerm(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagle" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Variations (Comma Separated)</label>
+                  <input type="text" value={variations} onChange={e => setVariations(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
+                  <div className="mt-2 flex items-center gap-3">
+                    <label className="text-xs text-blue-100">Advanced:</label>
+                    <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 underline">{showRegex ? 'Hide Regex' : 'Show Regex (advanced)'}</button>
+                  </div>
+                  {showRegex && <div className="w-full mt-2">
+                    <textarea value={rawRegex} onChange={e => { setRawRegex(e.target.value); setRegexError(validateRegex(e.target.value)) }} placeholder="Enter raw regex pattern" className="w-full h-20 text-sm p-2 rounded border" />
+                    {regexError && <div className="text-xs text-red-200 mt-1">Regex error: {regexError}</div>}
+                  </div>}
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-end justify-center h-full">
+              <button onClick={handleRun} disabled={isAnalyzing || !(term && term.trim().length)} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
+                {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
+              </button>
+              {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+            </div>
+          </div>
+        </div>
+      )
+    }
