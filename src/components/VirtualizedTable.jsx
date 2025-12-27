@@ -15,34 +15,55 @@ export default function VirtualizedTable({
 }){
   // Column width customization state
   const [columnWidths, setColumnWidths] = useState({})
-  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(false)
   const [resizing, setResizing] = useState(null)
 
-  // Initialize column widths from localStorage or use defaults
+  // Initialize mobile detection and column widths
   useEffect(() => {
-    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
-      const saved = localStorage.getItem('columnWidths')
-      if (saved) {
-        try {
+    if (typeof window === 'undefined') return
+    
+    // Set initial mobile state
+    setIsMobile(window.innerWidth < 768)
+    
+    // Load saved column widths
+    if (typeof localStorage !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('columnWidths')
+        if (saved) {
           setColumnWidths(JSON.parse(saved))
-        } catch (e) {}
+        }
+      } catch (e) {
+        console.warn('Failed to load column widths:', e)
       }
     }
   }, [])
 
   // Save column widths to localStorage whenever they change
   useEffect(() => {
-    if (Object.keys(columnWidths).length > 0 && typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+    if (typeof window === 'undefined' || typeof localStorage === 'undefined') return
+    if (Object.keys(columnWidths).length === 0) return
+    
+    try {
       localStorage.setItem('columnWidths', JSON.stringify(columnWidths))
+    } catch (e) {
+      console.warn('Failed to save column widths:', e)
     }
   }, [columnWidths])
 
   // Handle window resize for mobile detection
   useEffect(() => {
     if (typeof window === 'undefined') return
-    const handleResize = () => setIsMobile(window.innerWidth < 768)
+    
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
     window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+    return () => {
+      try {
+        window.removeEventListener('resize', handleResize)
+      } catch (e) {}
+    }
   }, [])
 
   // Get effective column width (customized or default)
@@ -79,20 +100,24 @@ export default function VirtualizedTable({
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
   }
 
-  // Mobile Card View
-  const CardRow = ({ index }) => {
+  // Mobile Card View with proper rendering
+  const CardRow = ({ index, style }) => {
+    if (index < 0 || index >= data.length) return null
     const row = data[index]
+    if (!row) return null
+    
     return (
       <div
-        className="bg-white border-b p-4 hover:bg-gray-50 cursor-pointer transition"
+        style={{ ...style, overflow: 'visible' }}
+        className="px-3 py-3 hover:bg-gray-50 border-b cursor-pointer bg-white"
         onClick={() => onRowClick && onRowClick(row)}
       >
         <div className="grid grid-cols-2 gap-3 text-sm">
-          {columns.filter(col => col.key !== 'action').map(col => (
-            <div key={col.key} className="flex flex-col">
+          {columns.filter(col => col.key !== 'action').slice(0, 4).map(col => (
+            <div key={col.key} className="flex flex-col min-w-0">
               <div className="text-xs font-bold text-gray-600 uppercase tracking-wide">{col.label}</div>
-              <div className="text-gray-900 truncate">
-                {col.render ? col.render(row) : row[col.key]}
+              <div className="text-gray-900 truncate text-xs">
+                {col.render ? col.render(row) : (row[col.key] || '-')}
               </div>
             </div>
           ))}
@@ -108,7 +133,7 @@ export default function VirtualizedTable({
               className="text-gray-400 hover:text-blue-600 transition"
               title="Download transcript"
             >
-              <Icon name="download" size={18} />
+              <Icon name="download" size={16} />
             </button>
           </div>
         </div>
@@ -142,15 +167,13 @@ export default function VirtualizedTable({
 
   if (isMobile) {
     return (
-      <div className="w-full border rounded-lg bg-white">
-        <div className="px-4 py-3 border-b bg-gray-50">
+      <div className="w-full border rounded-lg bg-white overflow-hidden">
+        <div className="px-4 py-3 border-b bg-gray-50 sticky top-0 z-10">
           <p className="text-xs text-gray-600 font-medium">Showing {data.length.toLocaleString()} sermons</p>
         </div>
-        <div className="overflow-y-auto" style={{ maxHeight: height }}>
-          {data.map((row, idx) => (
-            <CardRow key={idx} index={idx} />
-          ))}
-        </div>
+        <List height={height} itemCount={data.length} itemSize={rowHeight} width={'100%'}>
+          {CardRow}
+        </List>
       </div>
     )
   }
