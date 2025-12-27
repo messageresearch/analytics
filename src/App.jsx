@@ -375,6 +375,8 @@ export default function App(){
       const url = channelData && (channelData.url || channelData.link || channelData.href) || null
       charts.push({ church, raw, data: resampleData(raw, undefined, activeTerm), color: getColor(index), transcriptCounts: tcounts || null, url })
     })
+    // Sort charts alphabetically by church name
+    charts.sort((a, b) => a.church.localeCompare(b.church))
     return charts
   }, [filteredData, selChurches, rollingWeeks, transcriptSummaryCounts, activeTerm, channels])
 
