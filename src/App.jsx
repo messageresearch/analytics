@@ -650,7 +650,7 @@ export default function App(){
           const target = normalize(expandedChart.church || expandedChart.name)
           const fresh = channelTrends && channelTrends.find(c => normalize(c.church) === target)
           const chartToShow = fresh ? { ...fresh, showRaw: expandedChart.showRaw || false } : expandedChart
-          return (<ChartModal chart={chartToShow} domain={dateDomain} searchTerm={activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || ''} onClose={()=>setExpandedChart(null)} onSelectSermon={(s, focusIndex)=>{ setExpandedChart(null); setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(focusIndex || 0); }} />)
+          return (<ChartModal chart={chartToShow} domain={dateDomain} searchTerm={activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || ''} onClose={()=>setExpandedChart(null)} onSelectSermon={(s, focusIndex)=>{ setExpandedChart(null); setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(focusIndex || 0); }} />)
         })()}
       </div>
     </ErrorBoundary>

@@ -132,7 +132,7 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart data={computed.data}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-              <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={fmt} tick={{fontSize:12}} minTickGap={120} />
+              <XAxis dataKey="timestamp" type="number" scale="time" domain={domain} tickFormatter={fmt} tick={{fontSize:11}} minTickGap={200} tickCount={8} />
               <YAxis tick={{fontSize:12}} label={{ value: '# mentions', angle: -90, position: 'insideLeft', offset: 0, style: { fontSize: 12, fill: '#6b7280' } }} />
               <Tooltip content={({ active, payload, label }) => {
                 if(!active || !payload || !payload.length) return null
