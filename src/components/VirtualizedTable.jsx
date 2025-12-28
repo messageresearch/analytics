@@ -72,22 +72,31 @@ export default function VirtualizedTable({
 
   // Sync horizontal scroll between header and List's internal scroll
   useEffect(() => {
-    if (typeof window === 'undefined' || !listRef.current) return
+    if (typeof window === 'undefined') return
     
-    // Get the List's inner grid element (which contains the actual rows)
-    const listElement = listRef.current
-    // The List's scrollable container is the element itself
+    // Try to find the scrollable element inside the List component
+    // react-window renders a scrollable div inside the List
+    const findScrollableElement = () => {
+      if (listRef.current && listRef.current.scrollableNodeRef) {
+        return listRef.current.scrollableNodeRef
+      }
+      // Fallback: look for a scrollable div in the DOM
+      const listElement = document.querySelector('[role="presentation"]')
+      return listElement
+    }
     
-    const handleListScroll = () => {
-      if (headerRef.current && listElement) {
-        // Sync header scroll position with List scroll
-        headerRef.current.scrollLeft = listElement.scrollLeft
+    const scrollableElement = findScrollableElement()
+    if (!scrollableElement) return
+    
+    const handleListScroll = (e) => {
+      if (headerRef.current) {
+        headerRef.current.scrollLeft = e.target.scrollLeft
       }
     }
     
-    listElement.addEventListener('scroll', handleListScroll)
+    scrollableElement.addEventListener('scroll', handleListScroll)
     return () => {
-      listElement.removeEventListener('scroll', handleListScroll)
+      scrollableElement.removeEventListener('scroll', handleListScroll)
     }
   }, [])
 
