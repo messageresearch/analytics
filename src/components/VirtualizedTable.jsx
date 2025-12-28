@@ -188,12 +188,22 @@ export default function VirtualizedTable({
     )
   }
 
-  // Single table view for both mobile and desktop with locked header and data scroll
+  // Single scrollable container with sticky header and List for true horizontal lock
   return (
     <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      {/* Header - scrollable, will be synced with List scroll */}
-      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} overflow-x-auto overflow-y-hidden`}>
-        <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', whiteSpace: 'nowrap' }}>
+      <div className="flex-1 overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
+        {/* Sticky header inside scrollable container */}
+        <div
+          className={`sticky top-0 z-10 bg-gray-50 border-b px-3 py-3 ${isMobile ? 'text-xs' : ''}`}
+          style={{
+            minWidth: totalWidth,
+            display: 'grid',
+            gridTemplateColumns: gridTemplate,
+            gap: isMobile ? '8px' : '12px',
+            alignItems: 'center',
+            whiteSpace: 'nowrap',
+          }}
+        >
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
               <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
@@ -214,21 +224,18 @@ export default function VirtualizedTable({
             </div>
           ))}
         </div>
-      </div>
-      
-      {/* List container - scroll position will be synced to header */}
-      <div className="flex-1 overflow-hidden">
-        {/* Data rows - List ref allows us to sync scroll to header */}
-        <List
-          ref={listRef}
-          height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
-          itemCount={data.length}
-          itemSize={isMobile ? 48 : rowHeight}
-          width={'100%'}
-          innerElementType={InnerElement}
-        >
-          {Row}
-        </List>
+        {/* Data rows - List width matches header for perfect lock */}
+        <div style={{ minWidth: totalWidth }}>
+          <List
+            height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
+            itemCount={data.length}
+            itemSize={isMobile ? 48 : rowHeight}
+            width={totalWidth}
+            innerElementType={InnerElement}
+          >
+            {Row}
+          </List>
+        </div>
       </div>
     </div>
   )
