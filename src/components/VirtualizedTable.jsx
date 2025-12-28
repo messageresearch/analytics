@@ -19,6 +19,7 @@ export default function VirtualizedTable({
   const [resizing, setResizing] = useState(null)
   const headerRef = useRef(null)
   const dataRef = useRef(null)
+  const [scrollLeft, setScrollLeft] = useState(0)
 
   // Initialize mobile detection and column widths
   useEffect(() => {
@@ -73,9 +74,7 @@ export default function VirtualizedTable({
     if (typeof window === 'undefined' || !dataRef.current) return
     
     const handleDataScroll = (e) => {
-      if (headerRef.current) {
-        headerRef.current.scrollLeft = e.target.scrollLeft
-      }
+      setScrollLeft(e.target.scrollLeft)
     }
     
     dataRef.current.addEventListener('scroll', handleDataScroll)
@@ -88,7 +87,7 @@ export default function VirtualizedTable({
 
   // Also sync when header is scrolled
   useEffect(() => {
-    if (typeof window === 'undefined' || !headerRef.current) return
+    if (typeof window === 'undefined' || !headerRef.current || !dataRef.current) return
     
     const handleHeaderScroll = (e) => {
       if (dataRef.current) {
@@ -184,9 +183,9 @@ export default function VirtualizedTable({
   // Single table view for both mobile and desktop with frozen header
   return (
     <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      {/* Frozen header - always visible at top */}
-      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} overflow-x-auto`} style={{ overflowY: 'hidden' }}>
-        <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
+      {/* Frozen header pinned at top with separate scroll sync */}
+      <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} relative z-20`} style={{ overflow: 'hidden' }}>
+        <div ref={headerRef} style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', transform: `translateX(-${scrollLeft || 0}px)`, transition: 'none' }}>
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
               <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
@@ -209,8 +208,8 @@ export default function VirtualizedTable({
         </div>
       </div>
       
-      {/* Data rows with synchronized horizontal scroll */}
-      <div ref={dataRef} className="flex-1 overflow-x-auto">
+      {/* Data rows container with horizontal scroll */}
+      <div ref={dataRef} className="flex-1 overflow-x-auto overflow-y-hidden">
         <List 
           height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height} 
           itemCount={data.length} 
