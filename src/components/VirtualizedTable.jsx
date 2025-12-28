@@ -19,6 +19,7 @@ export default function VirtualizedTable({
   const [resizing, setResizing] = useState(null)
   const headerRef = useRef(null)
   const dataRef = useRef(null)
+  const listRef = useRef(null)
   const [scrollLeft, setScrollLeft] = useState(0)
 
   // Initialize mobile detection and column widths
@@ -69,19 +70,24 @@ export default function VirtualizedTable({
     }
   }, [])
 
-  // Sync horizontal scroll between header and data rows
+  // Sync horizontal scroll between header and List's internal scroll
   useEffect(() => {
-    if (typeof window === 'undefined' || !dataRef.current) return
+    if (typeof window === 'undefined' || !listRef.current) return
     
-    const handleDataScroll = (e) => {
-      setScrollLeft(e.target.scrollLeft)
+    // Get the List's inner grid element (which contains the actual rows)
+    const listElement = listRef.current
+    // The List's scrollable container is the element itself
+    
+    const handleListScroll = () => {
+      if (headerRef.current && listElement) {
+        // Sync header scroll position with List scroll
+        headerRef.current.scrollLeft = listElement.scrollLeft
+      }
     }
     
-    dataRef.current.addEventListener('scroll', handleDataScroll)
+    listElement.addEventListener('scroll', handleListScroll)
     return () => {
-      if (dataRef.current) {
-        dataRef.current.removeEventListener('scroll', handleDataScroll)
-      }
+      listElement.removeEventListener('scroll', handleListScroll)
     }
   }, [])
 
@@ -200,38 +206,36 @@ export default function VirtualizedTable({
   // Single table view for both mobile and desktop with locked header and data scroll
   return (
     <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      {/* Outer scrollable container with header and data locked together */}
-      <div ref={dataRef} className="flex-1 overflow-x-auto overflow-y-hidden">
-        {/* Header - sticky at top, scrolls horizontally with data */}
-        <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} sticky top-0 z-20`}>
-          <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
-            {columns.map((col, idx) => (
-              <div key={col.key} className="relative">
-                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
-                  <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
-                    <span>{col.label}</span>
-                    <SortIndicator key={col.key} />
-                  </button>
-                </div>
-                {!isMobile && idx < columns.length - 1 && (
-                  <div
-                    onMouseDown={(e) => handleMouseDown(e, col.key)}
-                    className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
-                      resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
-                    }`}
-                    title="Drag to resize column"
-                  />
-                )}
+      {/* Header - scrollable, will be synced with List scroll */}
+      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} overflow-x-auto overflow-y-hidden`}>
+        <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', whiteSpace: 'nowrap' }}>
+          {columns.map((col, idx) => (
+            <div key={col.key} className="relative">
+              <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
+                <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
+                  <span>{col.label}</span>
+                  <SortIndicator key={col.key} />
+                </button>
               </div>
-            ))}
-          </div>
+              {!isMobile && idx < columns.length - 1 && (
+                <div
+                  onMouseDown={(e) => handleMouseDown(e, col.key)}
+                  className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
+                    resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
+                  }`}
+                  title="Drag to resize column"
+                />
+              )}
+            </div>
+          ))}
         </div>
-        
-        {/* Data rows - share same scroll container as header. Use a custom
-            inner element so the inner width matches the column widths and
-            horizontal scrolling happens on `dataRef`. Keep viewport width at 100%
-            so parent container handles horizontal scroll, not List itself. */}
+      </div>
+      
+      {/* List container - scroll position will be synced to header */}
+      <div className="flex-1 overflow-hidden">
+        {/* Data rows - List ref allows us to sync scroll to header */}
         <List
+          ref={listRef}
           height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
           itemCount={data.length}
           itemSize={isMobile ? 48 : rowHeight}
