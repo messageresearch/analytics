@@ -76,23 +76,54 @@ export default function VirtualizedTable({
     
     let isHeaderScrolling = false
     let isListScrolling = false
+    let scrollableElement = null
     
-    // Try to find the scrollable element inside the List component
-    const findScrollableElement = () => {
-      if (listRef.current && listRef.current.scrollableNodeRef) {
-        return listRef.current.scrollableNodeRef
+    // Delay finding the scrollable element to allow react-window to render
+    const findElementTimer = setTimeout(() => {
+      if (listRef.current) {
+        // React-window creates a div with overflow properties
+        // Try to get it from the List's DOM node
+        const listNode = listRef.current
+        
+        // If listRef is the actual div (parent of the scrollable container)
+        if (listNode.scrollHeight !== undefined && listNode.scrollWidth !== undefined) {
+          scrollableElement = listNode
+        } else {
+          // Try to find the scrollable child
+          const scrollableChild = listNode.querySelector('[style*="overflow"]') || 
+                                 listNode.querySelector('div[style*="position"]')
+          if (scrollableChild) {
+            scrollableElement = scrollableChild
+          }
+        }
       }
-      // Fallback: look for a scrollable div in the DOM
-      const listElement = document.querySelector('[role="presentation"]')
-      return listElement
+    }, 100)
+    
+    return () => clearTimeout(findElementTimer)
+  }, [])
+  
+  // Set up scroll sync listeners
+  useEffect(() => {
+    if (typeof window === 'undefined' || !headerRef.current) return
+    
+    // Try to find the scrollable element inside the List
+    let scrollableElement = null
+    if (listRef.current) {
+      scrollableElement = listRef.current
+      // If the ref is to the wrapper, find the actual scrollable container
+      if (listRef.current.parentElement && listRef.current.parentElement.scrollWidth > listRef.current.parentElement.clientWidth) {
+        scrollableElement = listRef.current.parentElement
+      }
     }
     
-    const scrollableElement = findScrollableElement()
-    if (!scrollableElement || !headerRef.current) return
+    if (!scrollableElement) return
+    
+    let isHeaderScrolling = false
+    let isListScrolling = false
     
     // When List scrolls, update header
     const handleListScroll = (e) => {
-      if (!isHeaderScrolling) {
+      if (!isHeaderScrolling && headerRef.current) {
         isListScrolling = true
         headerRef.current.scrollLeft = e.target.scrollLeft
         isListScrolling = false
@@ -101,7 +132,7 @@ export default function VirtualizedTable({
     
     // When header scrolls, update List
     const handleHeaderScroll = (e) => {
-      if (!isListScrolling) {
+      if (!isListScrolling && scrollableElement) {
         isHeaderScrolling = true
         scrollableElement.scrollLeft = e.target.scrollLeft
         isHeaderScrolling = false
@@ -112,7 +143,9 @@ export default function VirtualizedTable({
     headerRef.current.addEventListener('scroll', handleHeaderScroll)
     
     return () => {
-      scrollableElement.removeEventListener('scroll', handleListScroll)
+      if (scrollableElement) {
+        scrollableElement.removeEventListener('scroll', handleListScroll)
+      }
       if (headerRef.current) {
         headerRef.current.removeEventListener('scroll', handleHeaderScroll)
       }
