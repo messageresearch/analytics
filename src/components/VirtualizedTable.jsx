@@ -17,9 +17,6 @@ export default function VirtualizedTable({
   const [columnWidths, setColumnWidths] = useState({})
   const [isMobile, setIsMobile] = useState(false)
   const [resizing, setResizing] = useState(null)
-  const scrollContainerRef = useRef(null)
-  const headerRef = useRef(null)
-  const [scrollLeft, setScrollLeft] = useState(0)
 
   // Initialize mobile detection and column widths
   useEffect(() => {
@@ -67,38 +64,6 @@ export default function VirtualizedTable({
         window.removeEventListener('resize', handleResize)
       } catch (e) {}
     }
-  }, [])
-
-  // Sync horizontal scroll between header and data container
-  useEffect(() => {
-    if (typeof window === 'undefined' || !scrollContainerRef.current) return
-    
-    const handleScroll = (e) => {
-      const scrollLeft = e.target.scrollLeft
-      setScrollLeft(scrollLeft)
-      if (headerRef.current) {
-        headerRef.current.scrollLeft = scrollLeft
-      }
-    }
-    
-    const container = scrollContainerRef.current
-    container.addEventListener('scroll', handleScroll)
-    return () => container.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  // Also sync when header is scrolled
-  useEffect(() => {
-    if (typeof window === 'undefined' || !headerRef.current || !scrollContainerRef.current) return
-    
-    const handleHeaderScroll = (e) => {
-      if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollLeft = e.target.scrollLeft
-      }
-    }
-    
-    const header = headerRef.current
-    header.addEventListener('scroll', handleHeaderScroll)
-    return () => header.removeEventListener('scroll', handleHeaderScroll)
   }, [])
 
   // Get effective column width (customized or default, adapted for mobile)
@@ -178,10 +143,14 @@ export default function VirtualizedTable({
     )
   }
 
-  // Single table view for both mobile and desktop
-  return (
-    <div ref={scrollContainerRef} className="w-full border rounded-lg bg-white overflow-x-auto">
-      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 sticky top-0 z-10 ${isMobile ? 'text-xs' : ''} overflow-x-auto`} style={{ overflowY: 'hidden' }}>
+  // Single table view for both mobile and desktop with header and data locked together
+  const headerHeight = isMobile ? 60 : 80
+  
+  // Custom wrapper to combine header + list in a single scrolling context
+  const InnerComponent = forwardRef(({ style, children }, ref) => (
+    <div ref={ref} style={style} className="w-full">
+      {/* Header - fixed width, scrolls with outer container */}
+      <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''}`}>
         <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
@@ -203,28 +172,25 @@ export default function VirtualizedTable({
             </div>
           ))}
         </div>
-        {/* filters row */}
-        {!isMobile && (
-          <div className="mt-2" style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: '12px', alignItems: 'center' }}>
-            {columns.map(col => (
-              <div key={col.key}>
-                {col.filterKey ? (
-                  <input
-                    type={col.filterType || 'text'}
-                    placeholder={col.filterPlaceholder || 'Filter...'}
-                    value={filters[col.filterKey] || ''}
-                    onChange={(e)=>onFilterChange(col.filterKey, e.target.value)}
-                    className="w-full text-xs p-1 border rounded"
-                  />
-                ) : <div />}
-              </div>
-            ))}
-          </div>
-        )}
       </div>
-      <List height={isMobile ? Math.min(height, window?.innerHeight - 300 || 400) : height} itemCount={data.length} itemSize={isMobile ? 48 : rowHeight} width={'100%'}>
-        {Row}
-      </List>
+      {/* Data rows */}
+      {children}
+    </div>
+  ))
+
+  return (
+    <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
+      <div className="overflow-x-auto flex-1">
+        <List 
+          innerElementType={InnerComponent}
+          height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height} 
+          itemCount={data.length} 
+          itemSize={isMobile ? 48 : rowHeight} 
+          width={'100%'}
+        >
+          {Row}
+        </List>
+      </div>
     </div>
   )
 }
