@@ -229,12 +229,13 @@ export default function VirtualizedTable({
         
         {/* Data rows - share same scroll container as header. Use a custom
             inner element so the inner width matches the column widths and
-            horizontal scrolling happens on `dataRef`. */}
+            horizontal scrolling happens on `dataRef`. Keep viewport width at 100%
+            so parent container handles horizontal scroll, not List itself. */}
         <List
           height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
           itemCount={data.length}
           itemSize={isMobile ? 48 : rowHeight}
-          width={totalWidth}
+          width={'100%'}
           innerElementType={InnerElement}
         >
           {Row}
