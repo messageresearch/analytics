@@ -133,6 +133,41 @@ export default function VirtualizedTable({
 
   const gridTemplate = useMemo(() => columns.map(c => getColWidth(c)).join(' '), [columns, columnWidths])
 
+  // Compute a pixel width total for all columns so we can force the
+  // react-window inner element to that width. This ensures horizontal
+  // scrolling occurs on the shared outer container (`dataRef`) so the
+  // sticky header scrolls horizontally together with the rows.
+  const totalWidth = useMemo(() => {
+    const fallbackPx = 120 // default fallback per column when fractional sizes used
+    let total = 0
+    columns.forEach(c => {
+      const w = getColWidth(c)
+      if (typeof w === 'string' && w.endsWith('px')) {
+        total += parseInt(w, 10) || fallbackPx
+      } else if (typeof w === 'string' && w.endsWith('%')) {
+        // percentage widths can't be resolved here; use fallback
+        total += fallbackPx
+      } else if (typeof w === 'string' && w.includes('fr')) {
+        total += fallbackPx
+      } else if (typeof w === 'number') {
+        total += w
+      } else {
+        total += fallbackPx
+      }
+    })
+    return total
+  }, [columns, columnWidths, isMobile])
+
+  // Custom inner element for react-window to force computed width
+  const InnerElement = forwardRef(({ style, children, ...rest }, ref) => {
+    const newStyle = { ...style, width: Math.max(style?.width || 0, totalWidth) }
+    return (
+      <div ref={ref} style={newStyle} {...rest}>
+        {children}
+      </div>
+    )
+  })
+
   const SortIndicator = ({ key }) => {
     if (!sortConfig || sortConfig.key !== key) return null
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
@@ -192,12 +227,15 @@ export default function VirtualizedTable({
           </div>
         </div>
         
-        {/* Data rows - share same scroll container as header */}
-        <List 
-          height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height} 
-          itemCount={data.length} 
-          itemSize={isMobile ? 48 : rowHeight} 
-          width={'100%'}
+        {/* Data rows - share same scroll container as header. Use a custom
+            inner element so the inner width matches the column widths and
+            horizontal scrolling happens on `dataRef`. */}
+        <List
+          height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
+          itemCount={data.length}
+          itemSize={isMobile ? 48 : rowHeight}
+          width={totalWidth}
+          innerElementType={InnerElement}
         >
           {Row}
         </List>
