@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, forwardRef } from 'react'
+import React, { useMemo, useState, useEffect, forwardRef, useRef } from 'react'
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
@@ -17,6 +17,9 @@ export default function VirtualizedTable({
   const [columnWidths, setColumnWidths] = useState({})
   const [isMobile, setIsMobile] = useState(false)
   const [resizing, setResizing] = useState(null)
+  const scrollContainerRef = useRef(null)
+  const headerRef = useRef(null)
+  const [scrollLeft, setScrollLeft] = useState(0)
 
   // Initialize mobile detection and column widths
   useEffect(() => {
@@ -64,6 +67,38 @@ export default function VirtualizedTable({
         window.removeEventListener('resize', handleResize)
       } catch (e) {}
     }
+  }, [])
+
+  // Sync horizontal scroll between header and data container
+  useEffect(() => {
+    if (typeof window === 'undefined' || !scrollContainerRef.current) return
+    
+    const handleScroll = (e) => {
+      const scrollLeft = e.target.scrollLeft
+      setScrollLeft(scrollLeft)
+      if (headerRef.current) {
+        headerRef.current.scrollLeft = scrollLeft
+      }
+    }
+    
+    const container = scrollContainerRef.current
+    container.addEventListener('scroll', handleScroll)
+    return () => container.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Also sync when header is scrolled
+  useEffect(() => {
+    if (typeof window === 'undefined' || !headerRef.current || !scrollContainerRef.current) return
+    
+    const handleHeaderScroll = (e) => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.scrollLeft = e.target.scrollLeft
+      }
+    }
+    
+    const header = headerRef.current
+    header.addEventListener('scroll', handleHeaderScroll)
+    return () => header.removeEventListener('scroll', handleHeaderScroll)
   }, [])
 
   // Get effective column width (customized or default, adapted for mobile)
@@ -155,8 +190,8 @@ export default function VirtualizedTable({
 
   // Single table view for both mobile and desktop
   return (
-    <div className="w-full border rounded-lg bg-white overflow-x-auto">
-      <div className={`px-3 py-3 border-b bg-gray-50 sticky top-0 z-10 ${isMobile ? 'text-xs' : ''}`}>
+    <div ref={scrollContainerRef} className="w-full border rounded-lg bg-white overflow-x-auto">
+      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 sticky top-0 z-10 ${isMobile ? 'text-xs' : ''} overflow-x-auto`} style={{ overflowY: 'hidden' }}>
         <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
