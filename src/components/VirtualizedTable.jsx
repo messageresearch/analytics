@@ -190,42 +190,46 @@ export default function VirtualizedTable({
 
   // Single scrollable container with sticky header and List for true horizontal lock
   return (
-    <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      <div className="flex-1 overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
-        {/* Sticky header inside scrollable container */}
-        <div
-          className={`sticky top-0 z-10 bg-gray-50 border-b px-3 py-3 ${isMobile ? 'text-xs' : ''}`}
-          style={{
-            minWidth: totalWidth,
-            display: 'grid',
-            gridTemplateColumns: gridTemplate,
-            gap: isMobile ? '8px' : '12px',
-            alignItems: 'center',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          {columns.map((col, idx) => (
-            <div key={col.key} className="relative">
-              <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
-                <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
-                  <span>{col.label}</span>
-                  <SortIndicator key={col.key} />
-                </button>
+    <div className="w-full border rounded-lg bg-white" style={{ overflow: 'visible' }}>
+      <div
+        className="overflow-x-auto"
+        style={{ WebkitOverflowScrolling: 'touch', width: '100%' }}
+      >
+        <div style={{ minWidth: totalWidth, width: totalWidth }}>
+          {/* Sticky header inside scrollable container */}
+          <div
+            className={`sticky top-0 z-10 bg-gray-50 border-b px-3 py-3 ${isMobile ? 'text-xs' : ''}`}
+            style={{
+              minWidth: totalWidth,
+              width: totalWidth,
+              display: 'grid',
+              gridTemplateColumns: gridTemplate,
+              gap: isMobile ? '8px' : '12px',
+              alignItems: 'center',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {columns.map((col, idx) => (
+              <div key={col.key} className="relative">
+                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
+                  <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
+                    <span>{col.label}</span>
+                    <SortIndicator key={col.key} />
+                  </button>
+                </div>
+                {!isMobile && idx < columns.length - 1 && (
+                  <div
+                    onMouseDown={(e) => handleMouseDown(e, col.key)}
+                    className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
+                      resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
+                    }`}
+                    title="Drag to resize column"
+                  />
+                )}
               </div>
-              {!isMobile && idx < columns.length - 1 && (
-                <div
-                  onMouseDown={(e) => handleMouseDown(e, col.key)}
-                  className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
-                    resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
-                  }`}
-                  title="Drag to resize column"
-                />
-              )}
-            </div>
-          ))}
-        </div>
-        {/* Data rows - List width matches header for perfect lock */}
-        <div style={{ minWidth: totalWidth }}>
+            ))}
+          </div>
+          {/* Data rows - List width matches header for perfect lock */}
           <List
             height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
             itemCount={data.length}
