@@ -85,24 +85,6 @@ export default function VirtualizedTable({
     }
   }, [])
 
-  // Also sync when header is scrolled
-  useEffect(() => {
-    if (typeof window === 'undefined' || !headerRef.current || !dataRef.current) return
-    
-    const handleHeaderScroll = (e) => {
-      if (dataRef.current) {
-        dataRef.current.scrollLeft = e.target.scrollLeft
-      }
-    }
-    
-    headerRef.current.addEventListener('scroll', handleHeaderScroll)
-    return () => {
-      if (headerRef.current) {
-        headerRef.current.removeEventListener('scroll', handleHeaderScroll)
-      }
-    }
-  }, [])
-
   // Get effective column width (customized or default, adapted for mobile)
   const getColWidth = (col) => {
     if (columnWidths[col.key]) return columnWidths[col.key]
@@ -180,36 +162,37 @@ export default function VirtualizedTable({
     )
   }
 
-  // Single table view for both mobile and desktop with frozen header
+  // Single table view for both mobile and desktop with locked header and data scroll
   return (
     <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      {/* Frozen header pinned at top with separate scroll sync */}
-      <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} relative z-20`} style={{ overflow: 'hidden' }}>
-        <div ref={headerRef} style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', transform: `translateX(-${scrollLeft || 0}px)`, transition: 'none' }}>
-          {columns.map((col, idx) => (
-            <div key={col.key} className="relative">
-              <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
-                <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
-                  <span>{col.label}</span>
-                  <SortIndicator key={col.key} />
-                </button>
-              </div>
-              {!isMobile && idx < columns.length - 1 && (
-                <div
-                  onMouseDown={(e) => handleMouseDown(e, col.key)}
-                  className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
-                    resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
-                  }`}
-                  title="Drag to resize column"
-                />
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-      
-      {/* Data rows container with horizontal scroll */}
+      {/* Outer scrollable container with header and data locked together */}
       <div ref={dataRef} className="flex-1 overflow-x-auto overflow-y-hidden">
+        {/* Header - sticky at top, scrolls horizontally with data */}
+        <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} sticky top-0 z-20`}>
+          <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
+            {columns.map((col, idx) => (
+              <div key={col.key} className="relative">
+                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
+                  <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
+                    <span>{col.label}</span>
+                    <SortIndicator key={col.key} />
+                  </button>
+                </div>
+                {!isMobile && idx < columns.length - 1 && (
+                  <div
+                    onMouseDown={(e) => handleMouseDown(e, col.key)}
+                    className={`absolute right-0 top-0 bottom-0 w-1 cursor-col-resize hover:bg-blue-500 transition ${
+                      resizing === col.key ? 'bg-blue-500' : 'bg-gray-300'
+                    }`}
+                    title="Drag to resize column"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Data rows - share same scroll container as header */}
         <List 
           height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height} 
           itemCount={data.length} 
