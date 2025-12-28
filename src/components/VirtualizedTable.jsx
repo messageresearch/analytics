@@ -70,86 +70,10 @@ export default function VirtualizedTable({
     }
   }, [])
 
-  // Sync horizontal scroll between header and List's internal scroll (bidirectional)
+  // Skip scroll sync for now - it's causing issues with react-window
+  // The header and List will scroll independently but both are visible
   useEffect(() => {
-    if (typeof window === 'undefined') return
-    
-    let isHeaderScrolling = false
-    let isListScrolling = false
-    let scrollableElement = null
-    
-    // Delay finding the scrollable element to allow react-window to render
-    const findElementTimer = setTimeout(() => {
-      if (listRef.current) {
-        // React-window creates a div with overflow properties
-        // Try to get it from the List's DOM node
-        const listNode = listRef.current
-        
-        // If listRef is the actual div (parent of the scrollable container)
-        if (listNode.scrollHeight !== undefined && listNode.scrollWidth !== undefined) {
-          scrollableElement = listNode
-        } else {
-          // Try to find the scrollable child
-          const scrollableChild = listNode.querySelector('[style*="overflow"]') || 
-                                 listNode.querySelector('div[style*="position"]')
-          if (scrollableChild) {
-            scrollableElement = scrollableChild
-          }
-        }
-      }
-    }, 100)
-    
-    return () => clearTimeout(findElementTimer)
-  }, [])
-  
-  // Set up scroll sync listeners
-  useEffect(() => {
-    if (typeof window === 'undefined' || !headerRef.current) return
-    
-    // Try to find the scrollable element inside the List
-    let scrollableElement = null
-    if (listRef.current) {
-      scrollableElement = listRef.current
-      // If the ref is to the wrapper, find the actual scrollable container
-      if (listRef.current.parentElement && listRef.current.parentElement.scrollWidth > listRef.current.parentElement.clientWidth) {
-        scrollableElement = listRef.current.parentElement
-      }
-    }
-    
-    if (!scrollableElement) return
-    
-    let isHeaderScrolling = false
-    let isListScrolling = false
-    
-    // When List scrolls, update header
-    const handleListScroll = (e) => {
-      if (!isHeaderScrolling && headerRef.current) {
-        isListScrolling = true
-        headerRef.current.scrollLeft = e.target.scrollLeft
-        isListScrolling = false
-      }
-    }
-    
-    // When header scrolls, update List
-    const handleHeaderScroll = (e) => {
-      if (!isListScrolling && scrollableElement) {
-        isHeaderScrolling = true
-        scrollableElement.scrollLeft = e.target.scrollLeft
-        isHeaderScrolling = false
-      }
-    }
-    
-    scrollableElement.addEventListener('scroll', handleListScroll)
-    headerRef.current.addEventListener('scroll', handleHeaderScroll)
-    
-    return () => {
-      if (scrollableElement) {
-        scrollableElement.removeEventListener('scroll', handleListScroll)
-      }
-      if (headerRef.current) {
-        headerRef.current.removeEventListener('scroll', handleHeaderScroll)
-      }
-    }
+    return () => {}
   }, [])
 
   // Get effective column width (customized or default, adapted for mobile)
