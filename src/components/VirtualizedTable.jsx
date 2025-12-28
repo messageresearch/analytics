@@ -17,6 +17,8 @@ export default function VirtualizedTable({
   const [columnWidths, setColumnWidths] = useState({})
   const [isMobile, setIsMobile] = useState(false)
   const [resizing, setResizing] = useState(null)
+  const headerRef = useRef(null)
+  const dataRef = useRef(null)
 
   // Initialize mobile detection and column widths
   useEffect(() => {
@@ -63,6 +65,42 @@ export default function VirtualizedTable({
       try {
         window.removeEventListener('resize', handleResize)
       } catch (e) {}
+    }
+  }, [])
+
+  // Sync horizontal scroll between header and data rows
+  useEffect(() => {
+    if (typeof window === 'undefined' || !dataRef.current) return
+    
+    const handleDataScroll = (e) => {
+      if (headerRef.current) {
+        headerRef.current.scrollLeft = e.target.scrollLeft
+      }
+    }
+    
+    dataRef.current.addEventListener('scroll', handleDataScroll)
+    return () => {
+      if (dataRef.current) {
+        dataRef.current.removeEventListener('scroll', handleDataScroll)
+      }
+    }
+  }, [])
+
+  // Also sync when header is scrolled
+  useEffect(() => {
+    if (typeof window === 'undefined' || !headerRef.current) return
+    
+    const handleHeaderScroll = (e) => {
+      if (dataRef.current) {
+        dataRef.current.scrollLeft = e.target.scrollLeft
+      }
+    }
+    
+    headerRef.current.addEventListener('scroll', handleHeaderScroll)
+    return () => {
+      if (headerRef.current) {
+        headerRef.current.removeEventListener('scroll', handleHeaderScroll)
+      }
     }
   }, [])
 
@@ -143,14 +181,11 @@ export default function VirtualizedTable({
     )
   }
 
-  // Single table view for both mobile and desktop with header and data locked together
-  const headerHeight = isMobile ? 60 : 80
-  
-  // Custom wrapper to combine header + list in a single scrolling context
-  const InnerComponent = forwardRef(({ style, children }, ref) => (
-    <div ref={ref} style={style} className="w-full">
-      {/* Header - fixed width, scrolls with outer container */}
-      <div className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''}`}>
+  // Single table view for both mobile and desktop with frozen header
+  return (
+    <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
+      {/* Frozen header - always visible at top */}
+      <div ref={headerRef} className={`px-3 py-3 border-b bg-gray-50 ${isMobile ? 'text-xs' : ''} overflow-x-auto`} style={{ overflowY: 'hidden' }}>
         <div style={{ display:'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
           {columns.map((col, idx) => (
             <div key={col.key} className="relative">
@@ -173,16 +208,10 @@ export default function VirtualizedTable({
           ))}
         </div>
       </div>
-      {/* Data rows */}
-      {children}
-    </div>
-  ))
-
-  return (
-    <div className="w-full border rounded-lg bg-white overflow-hidden flex flex-col">
-      <div className="overflow-x-auto flex-1">
+      
+      {/* Data rows with synchronized horizontal scroll */}
+      <div ref={dataRef} className="flex-1 overflow-x-auto">
         <List 
-          innerElementType={InnerComponent}
           height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height} 
           itemCount={data.length} 
           itemSize={isMobile ? 48 : rowHeight} 
