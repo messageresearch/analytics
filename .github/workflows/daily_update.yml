@@ -1,11 +1,10 @@
 name: Update Transcripts
 
 on:
-  schedule:
-    # Run at minute 0 past every 4th hour
-    - cron: '0 */4 * * *'
-   # Manual trigger allowed (no inputs required)
-  workflow_dispatch: 
+  # Deprecated: this workflow used to push transcript updates on a schedule.
+  # The repo now uses `update_and_deploy.yml` for scheduled updates + deploys.
+  # Keep manual trigger only to avoid overlapping automated pushes.
+  workflow_dispatch:
 
 permissions:
   contents: write

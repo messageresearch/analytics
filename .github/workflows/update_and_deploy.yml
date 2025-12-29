@@ -6,9 +6,8 @@ permissions:
   id-token: write
 
 on:
-  # Runs on a schedule (e.g., once a day at midnight UTC)
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */4 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   # Also runs on pushes to the main branch to deploy code changes
@@ -21,16 +20,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-data:
-    name: "Update Sermon Data"
+  update-build-deploy:
+    name: "Update Data, Build, and Deploy"
     runs-on: ubuntu-latest
 
-    # Prevent the workflow from endlessly re-triggering itself when it pushes
-    # an "Automated data update" commit.
-    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
-
-    outputs:
-      pushed: ${{ steps.push_data.outputs.pushed }}
+    # Skip runs triggered by the workflow's own automated commits to avoid
+    # self-trigger loops.
+    if: ${{ github.event_name != 'push' || (!contains(github.event.head_commit.message, 'Automated data update') && !contains(github.event.head_commit.message, 'Auto-update transcripts')) }}
 
     steps:
     - name: "Checkout Code"
@@ -39,7 +35,7 @@ jobs:
     - name: "Set up Python"
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10' # Or your preferred version
+        python-version: '3.10'
 
     - name: "Install Python Dependencies"
       run: |
@@ -53,41 +49,21 @@ jobs:
       run: python generate_site_data.py
 
     - name: "Commit and Push Data Changes"
-      id: push_data
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/ site_api/ speakers.json
-        # Check if there are changes to commit
         if git diff --staged --quiet; then
-          echo "No changes to commit."
-          echo "pushed=false" >> "$GITHUB_OUTPUT"
+          echo "No data changes to commit."
         else
           git commit -m "Automated data update"
           git push
-          echo "pushed=true" >> "$GITHUB_OUTPUT"
         fi
-
-  build-and-deploy:
-    name: "Build and Deploy to GitHub Pages"
-    needs: update-data # This job runs only after the data update is complete
-    runs-on: ubuntu-latest
-
-    # Deploy strategy:
-    # - If update-data pushed a new commit, this run should stop; the next run
-    #   (triggered by the bot push) will deploy the updated data.
-    # - If update-data made no changes, deploy in the same run.
-    # - If update-data was skipped because this is a bot push, still deploy.
-    if: ${{ always() && needs.update-data.result != 'failure' && (github.actor == 'github-actions[bot]' || needs.update-data.outputs.pushed != 'true') }}
-
-    steps:
-    - name: "Checkout Code"
-      uses: actions/checkout@v4
 
     - name: "Set up Node.js"
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # Or your preferred version
+        node-version: '20'
         cache: 'npm'
 
     - name: "Install NPM Dependencies"
