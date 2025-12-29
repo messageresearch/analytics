@@ -1,2 +1,6 @@
 scrapetube
 pytubefix
+requests
+spacy
+beautifulsoup4
+yt-dlp
