@@ -16,6 +16,16 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     return ()=> clearTimeout(timer)
   },[search])
 
+  // Clear all selections when user starts typing a search term
+  const handleSearchChange = useCallback((e)=>{
+    const newSearch = e.target.value
+    // If going from empty to non-empty search, clear all selections
+    if(newSearch.length > 0 && search.length === 0 && selected.length > 0){
+      onChange([])
+    }
+    setSearch(newSearch)
+  },[search, selected.length, onChange])
+
   useEffect(()=>{
     const handleClickOutside = (e)=>{ if(ref.current && !ref.current.contains(e.target)) setIsOpen(false) }
     document.addEventListener('mousedown', handleClickOutside)
@@ -104,8 +114,8 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
               ref={searchRef}
               type="text"
               value={search}
-              onChange={(e)=>setSearch(e.target.value)}
-              placeholder="Search..."
+              onChange={handleSearchChange}
+              placeholder="Search (clears current selection)..."
               className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
             />
             <div className="flex justify-between mt-2">
