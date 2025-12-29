@@ -7,6 +7,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
   const [isBatchUpdating, setIsBatchUpdating] = useState(false)
+  const [lastSearchTerm, setLastSearchTerm] = useState('')
   const ref = useRef(null)
   const searchRef = useRef(null)
 
@@ -51,12 +52,16 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   },[selected, selectedSet, onChange])
 
   const selectAllFiltered = useCallback(()=> {
-    // Capture current matches before any state changes
+    // Capture current matches and search term before any state changes
     const matchesToAdd = [...filteredOptions]
     const currentSelected = [...selected]
+    const searchUsed = debouncedSearch.trim()
     
     if(matchesToAdd.length > 500) setIsBatchUpdating(true)
     if(matchesToAdd.length > 100) setIsOpen(false)
+    
+    // Save the search term used for display
+    if(searchUsed) setLastSearchTerm(searchUsed)
     
     // Use captured values in the transition
     startTransition(()=>{
@@ -64,7 +69,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
       for(let i=0; i<matchesToAdd.length; i++) newSet.add(matchesToAdd[i])
       onChange([...newSet])
     })
-  },[selected, filteredOptions, onChange])
+  },[selected, filteredOptions, debouncedSearch, onChange])
 
   const clearFiltered = useCallback(()=> {
     // Capture current matches before any state changes
@@ -73,6 +78,9 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     
     if(filteredOptions.length > 500) setIsBatchUpdating(true)
     if(filteredOptions.length > 100) setIsOpen(false)
+    
+    // Clear the last search term when clearing
+    setLastSearchTerm('')
     
     startTransition(()=>{
       onChange(currentSelected.filter(s => !matchesToRemove.has(s)))
@@ -104,7 +112,13 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     <div className={"relative" + (wide ? " max-w-2xl w-full" : "") } ref={ref}>
       <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 block">{label}</label>
       <button onClick={()=>setIsOpen(!isOpen)} disabled={isBatchUpdating} className={"w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center hover:border-blue-400 transition" + (wide ? " !max-w-2xl" : "") + (isBatchUpdating ? " opacity-50 cursor-wait" : "")}>
-        <span className="truncate">{isBatchUpdating ? 'Updating...' : selected.length===0 ? 'Select...' : selected.length===options.length ? 'All Selected' : `${selected.length} Selected`}</span>
+        <span className="truncate">
+          {isBatchUpdating ? 'Updating...' : 
+           selected.length===0 ? 'Select...' : 
+           selected.length===options.length ? 'All Selected' : 
+           lastSearchTerm ? `${selected.length} matching "${lastSearchTerm}"` :
+           `${selected.length} Selected`}
+        </span>
         <Icon name="chevronDown" size={14} className="text-gray-400" />
       </button>
       {isOpen && (
