@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-07-21 - Congregational Worship - Unknown Speaker - Clean.txt
+START OF FILE: 2025-07-21 - Congregational Worship - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-07-21
 Title:   Congregational Worship
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Worship Service
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=5YeXnWklWlU
 ========================================

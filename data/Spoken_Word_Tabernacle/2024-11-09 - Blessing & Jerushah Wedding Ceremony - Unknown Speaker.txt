@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-11-09 - Blessing & Jerushah Wedding Ceremony - Unknown Speaker - Clean.txt
+START OF FILE: 2024-11-09 - Blessing & Jerushah Wedding Ceremony - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-11-09
 Title:   Blessing & Jerushah Wedding Ceremony
 Speaker: Unknown Speaker
 Church:  Spoken Word Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=p_KB4sPoqsQ
 ========================================

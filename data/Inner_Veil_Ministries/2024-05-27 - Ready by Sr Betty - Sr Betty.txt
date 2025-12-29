@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-05-27 - Ready by Sr Betty - Sr Betty - Clean.txt
+START OF FILE: 2024-05-27 - Ready by Sr Betty - Sr Betty.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-05-27
 Title:   Ready by Sr Betty
 Speaker: Sr Betty
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=9vpsQi1OI9s
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2019-12-22 - FGLT 2019 Christmas Caroling Concert - Unknown Speaker - Clean.txt
+START OF FILE: 2019-12-22 - FGLT 2019 Christmas Caroling Concert - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2019-12-22
 Title:   FGLT 2019 Christmas Caroling Concert
 Speaker: Unknown Speaker
 Church:  Full Gospel Lighthouse Tabernacle
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=AoC-_qd-BE8
 ========================================

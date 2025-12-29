@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-06-29 - Revival | Sister Jenny Oliver - Jenny Oliver - Clean.txt
+START OF FILE: 2023-06-29 - Revival  Sister Jenny Oliver - Jenny Oliver.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-06-29
 Title:   Revival | Sister Jenny Oliver
 Speaker: Jenny Oliver
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=qX1g88BBl-M
 ========================================

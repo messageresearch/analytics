@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-06-09 - She's Taken Up (End Time Message Song) - Unknown Speaker - Clean.txt
+START OF FILE: 2020-06-09 - She's Taken Up (End Time Message Song) - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-06-09
 Title:   She's Taken Up (End Time Message Song)
 Speaker: Unknown Speaker
 Church:  Son Of Man Revealed Ministries
-Type:    Worship Service
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=Y7ouKE1-J0Y
 ========================================

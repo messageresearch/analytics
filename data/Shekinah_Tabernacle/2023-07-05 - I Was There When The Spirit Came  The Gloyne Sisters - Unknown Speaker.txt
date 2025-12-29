@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-07-05 - I Was There When The Spirit Came | The Gloyne Sisters - Unknown Speaker - Clean.txt
+START OF FILE: 2023-07-05 - I Was There When The Spirit Came  The Gloyne Sisters - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-07-05
 Title:   I Was There When The Spirit Came | The Gloyne Sisters
 Speaker: Unknown Speaker
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=cTKhu5Ypy14
 ========================================

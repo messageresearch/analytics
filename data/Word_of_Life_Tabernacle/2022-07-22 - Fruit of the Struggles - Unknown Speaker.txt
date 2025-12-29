@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-07-22 - Fruit of the Struggles - Unknown Speaker - Clean.txt
+START OF FILE: 2022-07-22 - Fruit of the Struggles - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-07-22
 Title:   Fruit of the Struggles
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=ki7r8e_YVrY
 ========================================

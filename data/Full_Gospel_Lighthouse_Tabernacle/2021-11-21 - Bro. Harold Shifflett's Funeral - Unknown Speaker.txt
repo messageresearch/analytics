@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-11-21 - Bro. Harold Shifflett's Funeral - Unknown Speaker - Clean.txt
+START OF FILE: 2021-11-21 - Bro. Harold Shifflett's Funeral - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-11-21
 Title:   Bro. Harold Shifflett's Funeral
 Speaker: Unknown Speaker
 Church:  Full Gospel Lighthouse Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=3gd-vEtU1MI
 ========================================

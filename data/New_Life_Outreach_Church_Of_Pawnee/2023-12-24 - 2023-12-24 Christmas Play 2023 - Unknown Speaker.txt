@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-12-24 - 2023-12-24 Christmas Play 2023 - Unknown Speaker - Clean.txt
+START OF FILE: 2023-12-24 - 2023-12-24 Christmas Play 2023 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-12-24
 Title:   2023-12-24 Christmas Play 2023
 Speaker: Unknown Speaker
 Church:  New Life Outreach Church Of Pawnee
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=0DaTGfhQgRU
 ========================================

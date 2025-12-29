@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-04-13 - 04-13-25 | Sermon Clip: “The Angels Ascend With Our Requests and Descend with Answers” - Unknown Speaker - Clean.txt
+START OF FILE: 2025-04-13 - 04-13-25  Sermon Clip “The Angels Ascend With Our Requests and Descend with Answers” - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-04-13
 Title:   04-13-25 | Sermon Clip: “The Angels Ascend With Our Requests and Descend with Answers”
 Speaker: Unknown Speaker
 Church:  End Time Message Tabernacle
-Type:    Sermon Clip
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=DzLNBs7UJr0
 ========================================

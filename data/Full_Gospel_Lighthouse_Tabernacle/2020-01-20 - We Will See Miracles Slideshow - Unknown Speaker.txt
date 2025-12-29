@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-01-20 - We Will See Miracles Slideshow - Unknown Speaker - Clean.txt
+START OF FILE: 2020-01-20 - We Will See Miracles Slideshow - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-01-20
 Title:   We Will See Miracles Slideshow
 Speaker: Unknown Speaker
 Church:  Full Gospel Lighthouse Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=Z0o9b5XC3pQ
 ========================================

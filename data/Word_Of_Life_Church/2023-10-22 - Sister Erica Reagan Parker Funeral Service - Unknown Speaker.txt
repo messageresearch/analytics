@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-10-22 - Sister Erica Reagan Parker Funeral Service - Unknown Speaker - Clean.txt
+START OF FILE: 2023-10-22 - Sister Erica Reagan Parker Funeral Service - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-10-22
 Title:   Sister Erica Reagan Parker Funeral Service
 Speaker: Unknown Speaker
 Church:  Word Of Life Church
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=F7kTAjDmg6Y
 ========================================

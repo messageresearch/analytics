@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-10-13 - The Blessing / Awesome / His Eye Is On The Sparrow - Bro. Phillip Roncali, Sis. Laura Burns, Choir - Phillip Roncali - Clean.txt
+START OF FILE: 2025-10-13 - The Blessing  Awesome  His Eye Is On The Sparrow - Bro. Phillip Roncali, Sis. Laura Burns, Choir - Phillip Roncali.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-10-13
 Title:   The Blessing / Awesome / His Eye Is On The Sparrow - Bro. Phillip Roncali, Sis. Laura Burns, Choir
 Speaker: Phillip Roncali
 Church:  Evening Light Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=6W031cUxETE
 ========================================

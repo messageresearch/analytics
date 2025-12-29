@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-08-30 - Special | Mon absolue | Bro Steve Nsupi - Steve Nsupi - Clean.txt
+START OF FILE: 2020-08-30 - Special  Mon absolue  Bro Steve Nsupi - Steve Nsupi.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-08-30
 Title:   Special | Mon absolue | Bro Steve Nsupi
 Speaker: Steve Nsupi
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=GllqgXuF3sc
 ========================================

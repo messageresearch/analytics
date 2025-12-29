@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-10-29 - Hold The Lifeline | Brother Simon Oliver - Simon Oliver - Clean.txt
+START OF FILE: 2024-10-29 - Hold The Lifeline  Brother Simon Oliver - Simon Oliver.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-10-29
 Title:   Hold The Lifeline | Brother Simon Oliver
 Speaker: Simon Oliver
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=5-6_S6Uml3c
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-11 - Special Song: One Day At A Time | Bro Polycap & Sr - Unknown Speaker - Clean.txt
+START OF FILE: 2022-12-11 - Special Song One Day At A Time  Bro Polycap & Sr - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-11
 Title:   Special Song: One Day At A Time | Bro Polycap & Sr
 Speaker: Unknown Speaker
 Church:  Days of the Voice Fellowship
-Type:    Worship Service
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=7jTA5gg17Lc
 ========================================

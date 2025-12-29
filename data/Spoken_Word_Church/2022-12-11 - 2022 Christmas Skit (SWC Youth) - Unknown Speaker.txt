@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-11 - 2022 Christmas Skit (SWC Youth) - Unknown Speaker - Clean.txt
+START OF FILE: 2022-12-11 - 2022 Christmas Skit (SWC Youth) - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-11
 Title:   2022 Christmas Skit (SWC Youth)
 Speaker: Unknown Speaker
 Church:  Spoken Word Church
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=C5kPN5i007s
 ========================================

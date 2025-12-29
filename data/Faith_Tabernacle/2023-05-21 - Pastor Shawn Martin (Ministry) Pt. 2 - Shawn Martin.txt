@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-05-21 - Pastor Shawn Martin (Ministry) Pt. 2 - Shawn Martin - Clean.txt
+START OF FILE: 2023-05-21 - Pastor Shawn Martin (Ministry) Pt. 2 - Shawn Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-05-21
 Title:   Pastor Shawn Martin (Ministry) Pt. 2
 Speaker: Shawn Martin
 Church:  Faith Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=2mVn4Q2ezhA
 ========================================

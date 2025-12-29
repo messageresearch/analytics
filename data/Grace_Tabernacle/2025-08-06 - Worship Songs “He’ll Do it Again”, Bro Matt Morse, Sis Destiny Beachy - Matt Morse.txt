@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-08-06 - Worship Songs “He’ll Do it Again”, Bro Matt Morse, Sis Destiny Beachy - Matt Morse - Clean.txt
+START OF FILE: 2025-08-06 - Worship Songs “He’ll Do it Again”, Bro Matt Morse, Sis Destiny Beachy - Matt Morse.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-08-06
 Title:   Worship Songs “He’ll Do it Again”, Bro Matt Morse, Sis Destiny Beachy
 Speaker: Matt Morse
 Church:  Grace Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=jnFJxZM_s8U
 ========================================

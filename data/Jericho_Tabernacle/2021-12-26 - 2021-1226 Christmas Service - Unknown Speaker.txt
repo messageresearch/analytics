@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-26 - 2021-1226 Christmas Service - Unknown Speaker - Clean.txt
+START OF FILE: 2021-12-26 - 2021-1226 Christmas Service - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-26
 Title:   2021-1226 Christmas Service
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Christmas Program
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=Y-aLTfZkefU
 ========================================

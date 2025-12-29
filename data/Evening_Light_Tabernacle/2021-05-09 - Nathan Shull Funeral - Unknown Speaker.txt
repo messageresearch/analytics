@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-05-09 - Nathan Shull Funeral - Unknown Speaker - Clean.txt
+START OF FILE: 2021-05-09 - Nathan Shull Funeral - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-05-09
 Title:   Nathan Shull Funeral
 Speaker: Unknown Speaker
 Church:  Evening Light Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=o6kWjqHCYco
 ========================================

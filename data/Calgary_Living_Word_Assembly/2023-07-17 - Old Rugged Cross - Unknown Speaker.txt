@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-07-17 - Old Rugged Cross - Unknown Speaker - Clean.txt
+START OF FILE: 2023-07-17 - Old Rugged Cross - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-07-17
 Title:   Old Rugged Cross
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=xsg7_wxgJMo
 ========================================

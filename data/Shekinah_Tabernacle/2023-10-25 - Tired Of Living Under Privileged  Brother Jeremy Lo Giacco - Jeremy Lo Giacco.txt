@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-10-25 - Tired Of Living Under Privileged | Brother Jeremy Lo Giacco - Jeremy Lo Giacco - Clean.txt
+START OF FILE: 2023-10-25 - Tired Of Living Under Privileged  Brother Jeremy Lo Giacco - Jeremy Lo Giacco.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-10-25
 Title:   Tired Of Living Under Privileged | Brother Jeremy Lo Giacco
 Speaker: Jeremy Lo Giacco
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=KI3DTod7V6A
 ========================================

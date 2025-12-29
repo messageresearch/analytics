@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-04-20 - 04-18-25 | Sermon Clip: "When God Speaks, Its Already Done" - Unknown Speaker - Clean.txt
+START OF FILE: 2025-04-20 - 04-18-25  Sermon Clip When God Speaks, Its Already Done - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-04-20
 Title:   04-18-25 | Sermon Clip: "When God Speaks, Its Already Done"
 Speaker: Unknown Speaker
 Church:  End Time Message Tabernacle
-Type:    Sermon Clip
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=ay_nA-bBRt0
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-10-08 - Danielle Santana & Peter Rodriguez Wedding - Unknown Speaker - Clean.txt
+START OF FILE: 2023-10-08 - Danielle Santana & Peter Rodriguez Wedding - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-10-08
 Title:   Danielle Santana & Peter Rodriguez Wedding
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=DD09Vn7vdy0
 ========================================

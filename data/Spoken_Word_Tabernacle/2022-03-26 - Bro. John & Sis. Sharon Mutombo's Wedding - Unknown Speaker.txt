@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-03-26 - Bro. John & Sis. Sharon Mutombo's Wedding - Unknown Speaker - Clean.txt
+START OF FILE: 2022-03-26 - Bro. John & Sis. Sharon Mutombo's Wedding - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-03-26
 Title:   Bro. John & Sis. Sharon Mutombo's Wedding
 Speaker: Unknown Speaker
 Church:  Spoken Word Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=SkIgprB1jVE
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-04-25 - There Was Never A Time - Unknown Speaker - Clean.txt
+START OF FILE: 2023-04-25 - There Was Never A Time - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-04-25
 Title:   There Was Never A Time
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=HBDBRTe6hdc
 ========================================

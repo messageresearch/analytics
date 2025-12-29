@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-05-14 - May 14, 2022 | Wedding of Bro. Gabe Rodriguez & Sis. Mari Guerra - Gabe Rodriguez - Clean.txt
+START OF FILE: 2022-05-14 - May 14, 2022  Wedding of Bro. Gabe Rodriguez & Sis. Mari Guerra - Gabe Rodriguez.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-05-14
 Title:   May 14, 2022 | Wedding of Bro. Gabe Rodriguez & Sis. Mari Guerra
 Speaker: Gabe Rodriguez
 Church:  Cedar Hills - Church of the Cross
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=8ZHjZNIaZ94
 ========================================

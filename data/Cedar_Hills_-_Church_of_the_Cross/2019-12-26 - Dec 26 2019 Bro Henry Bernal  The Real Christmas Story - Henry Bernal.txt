@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2019-12-26 - Dec 26 2019 Bro Henry Bernal  The Real Christmas Story - Henry Bernal - Clean.txt
+START OF FILE: 2019-12-26 - Dec 26 2019 Bro Henry Bernal  The Real Christmas Story - Henry Bernal.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2019-12-26
 Title:   Dec 26 2019 Bro Henry Bernal  The Real Christmas Story
 Speaker: Henry Bernal
 Church:  Cedar Hills - Church of the Cross
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=SimP3cVu_ZE
 ========================================

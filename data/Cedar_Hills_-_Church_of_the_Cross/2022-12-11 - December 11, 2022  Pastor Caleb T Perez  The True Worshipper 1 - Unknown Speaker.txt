@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-11 - December 11, 2022 | Pastor Caleb T Perez | "The True Worshipper 1" - Unknown Speaker - Clean.txt
+START OF FILE: 2022-12-11 - December 11, 2022  Pastor Caleb T Perez  The True Worshipper 1 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-11
 Title:   December 11, 2022 | Pastor Caleb T Perez | "The True Worshipper 1"
 Speaker: Unknown Speaker
 Church:  Cedar Hills - Church of the Cross
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=MVW-0zfOSsI
 ========================================

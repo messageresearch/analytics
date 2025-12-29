@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-04-11 - Remind Me Dear Lord - Unknown Speaker - Clean.txt
+START OF FILE: 2024-04-11 - Remind Me Dear Lord - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-04-11
 Title:   Remind Me Dear Lord
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=YAg1sBg6YC0
 ========================================

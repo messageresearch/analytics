@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-07-12 - Everywhere | Sheri LaFontaine - Sheri LaFontaine - Clean.txt
+START OF FILE: 2024-07-12 - Everywhere  Sheri LaFontaine - Sheri LaFontaine.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-07-12
 Title:   Everywhere | Sheri LaFontaine
 Speaker: Sheri LaFontaine
 Church:  Literal Life Church
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=1NeHOW-L8aI
 ========================================

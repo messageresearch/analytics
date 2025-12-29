@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-04-27 - April 27, 2024 | Wedding of Noah Perez & Rebecca Rodriguez - Noah Perez - Clean.txt
+START OF FILE: 2024-04-27 - April 27, 2024  Wedding of Noah Perez & Rebecca Rodriguez - Noah Perez.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-04-27
 Title:   April 27, 2024 | Wedding of Noah Perez & Rebecca Rodriguez
 Speaker: Noah Perez
 Church:  Cedar Hills - Church of the Cross
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=n3wxG5LTBCc
 ========================================

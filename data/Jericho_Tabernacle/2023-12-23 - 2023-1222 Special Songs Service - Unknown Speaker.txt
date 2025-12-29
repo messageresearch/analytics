@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-12-23 - 2023-1222 Special Songs Service - Unknown Speaker - Clean.txt
+START OF FILE: 2023-12-23 - 2023-1222 Special Songs Service - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-12-23
 Title:   2023-1222 Special Songs Service
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=WAb4grNiOeI
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-09-01 - Sinza Worship Music Concert (Session 4), Original Composed Songs  @innerveilministries  on 01.09.24 - Unknown Speaker - Clean.txt
+START OF FILE: 2024-09-01 - Sinza Worship Music Concert (Session 4), Original Composed Songs  @innerveilministries  on 01.09.24 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-09-01
 Title:   Sinza Worship Music Concert (Session 4), Original Composed Songs  @innerveilministries  on 01.09.24
 Speaker: Unknown Speaker
 Church:  Inner Veil Ministries
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=7SDB7sXlWjo
 ========================================

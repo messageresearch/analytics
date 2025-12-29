@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-07-05 - I'll Do My Best | Wesley VanWyk - Unknown Speaker - Clean.txt
+START OF FILE: 2024-07-05 - I'll Do My Best  Wesley VanWyk - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-07-05
 Title:   I'll Do My Best | Wesley VanWyk
 Speaker: Unknown Speaker
 Church:  Literal Life Church
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=QivfWH2ovmw
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-11-06 - The Hamilton's Wedding - Unknown Speaker - Clean.txt
+START OF FILE: 2022-11-06 - The Hamilton's Wedding - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-11-06
 Title:   The Hamilton's Wedding
 Speaker: Unknown Speaker
 Church:  Spoken Word Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=1FbBSmu7bQE
 ========================================

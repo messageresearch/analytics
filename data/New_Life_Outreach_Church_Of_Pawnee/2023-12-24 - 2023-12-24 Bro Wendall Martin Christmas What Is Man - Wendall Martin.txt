@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-12-24 - 2023-12-24 Bro Wendall Martin "Christmas: What Is Man?" - Wendall Martin - Clean.txt
+START OF FILE: 2023-12-24 - 2023-12-24 Bro Wendall Martin Christmas What Is Man - Wendall Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-12-24
 Title:   2023-12-24 Bro Wendall Martin "Christmas: What Is Man?"
 Speaker: Wendall Martin
 Church:  New Life Outreach Church Of Pawnee
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=5DDl2jrrX30
 ========================================

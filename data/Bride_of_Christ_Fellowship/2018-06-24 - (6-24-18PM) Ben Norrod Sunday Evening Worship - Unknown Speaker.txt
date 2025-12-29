@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2018-06-24 - (6-24-18PM) Ben Norrod Sunday Evening Worship - Unknown Speaker - Clean.txt
+START OF FILE: 2018-06-24 - (6-24-18PM) Ben Norrod Sunday Evening Worship - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2018-06-24
 Title:   (6-24-18PM) Ben Norrod Sunday Evening Worship
 Speaker: Unknown Speaker
 Church:  Bride of Christ Fellowship
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=Jmilut15_sY
 ========================================

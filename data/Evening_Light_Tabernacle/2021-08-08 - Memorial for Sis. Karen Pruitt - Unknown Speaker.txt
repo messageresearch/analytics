@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-08-08 - Memorial for Sis. Karen Pruitt - Unknown Speaker - Clean.txt
+START OF FILE: 2021-08-08 - Memorial for Sis. Karen Pruitt - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-08-08
 Title:   Memorial for Sis. Karen Pruitt
 Speaker: Unknown Speaker
 Church:  Evening Light Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=WH68LQxZg1k
 ========================================

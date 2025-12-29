@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2019-01-10 - Testimony/Song Service - Unknown Speaker - Clean.txt
+START OF FILE: 2019-01-10 - TestimonySong Service - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2019-01-10
 Title:   Testimony/Song Service
 Speaker: Unknown Speaker
 Church:  Believer's Spoken Word Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=G3aYO6e0V9w
 ========================================

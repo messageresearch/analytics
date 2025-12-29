@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-03-10 - Precious Memories by Brother Jonathan Byakika - Jonathan Byakika - Clean.txt
+START OF FILE: 2023-03-10 - Precious Memories by Brother Jonathan Byakika - Jonathan Byakika.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-03-10
 Title:   Precious Memories by Brother Jonathan Byakika
 Speaker: Jonathan Byakika
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=HKVgvnlT7AY
 ========================================

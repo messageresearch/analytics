@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-05-27 - Worship by Sr Faith Ibale King'ori - Unknown Speaker - Clean.txt
+START OF FILE: 2024-05-27 - Worship by Sr Faith Ibale King'ori - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-05-27
 Title:   Worship by Sr Faith Ibale King'ori
 Speaker: Unknown Speaker
 Church:  Inner Veil Ministries
-Type:    Worship Service
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=6U7gTE6-mkA
 ========================================

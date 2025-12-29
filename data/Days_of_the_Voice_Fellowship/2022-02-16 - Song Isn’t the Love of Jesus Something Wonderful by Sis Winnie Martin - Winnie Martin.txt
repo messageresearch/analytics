@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-02-16 - Song: Isn’t the Love of Jesus Something Wonderful by Sis Winnie Martin - Winnie Martin - Clean.txt
+START OF FILE: 2022-02-16 - Song Isn’t the Love of Jesus Something Wonderful by Sis Winnie Martin - Winnie Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-02-16
 Title:   Song: Isn’t the Love of Jesus Something Wonderful by Sis Winnie Martin
 Speaker: Winnie Martin
 Church:  Days of the Voice Fellowship
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=LGUnLG5huGE
 ========================================

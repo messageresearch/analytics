@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-06 - Memorial Service for Brother Daniel Gutierrez - Daniel Gutierrez - Clean.txt
+START OF FILE: 2022-12-06 - Memorial Service for Brother Daniel Gutierrez - Daniel Gutierrez.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-06
 Title:   Memorial Service for Brother Daniel Gutierrez
 Speaker: Daniel Gutierrez
 Church:  Jericho Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=2ph8i4LZVAc
 ========================================

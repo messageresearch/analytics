@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-02-15 - I give Myself Away - Sisters Elizabeth & Charity - Unknown Speaker - Clean.txt
+START OF FILE: 2025-02-15 - I give Myself Away - Sisters Elizabeth & Charity - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-02-15
 Title:   I give Myself Away - Sisters Elizabeth & Charity
 Speaker: Unknown Speaker
 Church:  Days of the Voice Fellowship
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=Ku09TaD4XKU
 ========================================

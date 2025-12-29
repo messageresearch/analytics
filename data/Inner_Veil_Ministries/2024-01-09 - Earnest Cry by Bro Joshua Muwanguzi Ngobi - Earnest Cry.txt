@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-01-09 - Earnest Cry by Bro Joshua Muwanguzi Ngobi - Earnest Cry - Clean.txt
+START OF FILE: 2024-01-09 - Earnest Cry by Bro Joshua Muwanguzi Ngobi - Earnest Cry.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-01-09
 Title:   Earnest Cry by Bro Joshua Muwanguzi Ngobi
 Speaker: Earnest Cry
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=vYwParQciWM
 ========================================

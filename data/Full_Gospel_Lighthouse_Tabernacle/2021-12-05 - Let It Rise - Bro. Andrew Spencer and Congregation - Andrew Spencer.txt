@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-05 - Let It Rise - Bro. Andrew Spencer and Congregation - Andrew Spencer - Clean.txt
+START OF FILE: 2021-12-05 - Let It Rise - Bro. Andrew Spencer and Congregation - Andrew Spencer.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-05
 Title:   Let It Rise - Bro. Andrew Spencer and Congregation
 Speaker: Andrew Spencer
 Church:  Full Gospel Lighthouse Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=8tXb5lsLdds
 ========================================

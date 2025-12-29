@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-08-27 - Counting My Blessings | Sister Tabitha & Doves - Counting My Blessings - Clean.txt
+START OF FILE: 2024-08-27 - Counting My Blessings  Sister Tabitha & Doves - Counting My Blessings.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-08-27
 Title:   Counting My Blessings | Sister Tabitha & Doves
 Speaker: Counting My Blessings
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=L1oXcgiamug
 ========================================

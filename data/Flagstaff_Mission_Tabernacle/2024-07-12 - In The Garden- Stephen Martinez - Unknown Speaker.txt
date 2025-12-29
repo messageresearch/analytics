@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-07-12 - In The Garden- Stephen Martinez - Unknown Speaker - Clean.txt
+START OF FILE: 2024-07-12 - In The Garden- Stephen Martinez - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-07-12
 Title:   In The Garden- Stephen Martinez
 Speaker: Unknown Speaker
 Church:  Flagstaff Mission Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=XvBPAA4nYuI
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-01-09 - It Shall Be Well by Sister Faith Ibale Kingo'ri - It Shall Be Well - Clean.txt
+START OF FILE: 2024-01-09 - It Shall Be Well by Sister Faith Ibale Kingo'ri - It Shall Be Well.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-01-09
 Title:   It Shall Be Well by Sister Faith Ibale Kingo'ri
 Speaker: It Shall Be Well
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=dfB6-sjKjCo
 ========================================

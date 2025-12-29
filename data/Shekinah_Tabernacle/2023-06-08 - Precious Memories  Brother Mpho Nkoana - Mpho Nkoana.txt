@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-06-08 - Precious Memories | Brother Mpho Nkoana - Mpho Nkoana - Clean.txt
+START OF FILE: 2023-06-08 - Precious Memories  Brother Mpho Nkoana - Mpho Nkoana.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-06-08
 Title:   Precious Memories | Brother Mpho Nkoana
 Speaker: Mpho Nkoana
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=TpCWl8Ie_Pc
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-03-09 - I Lay Me Down by Sister Faith Ibale - Faith Ibale - Clean.txt
+START OF FILE: 2023-03-09 - I Lay Me Down by Sister Faith Ibale - Faith Ibale.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-03-09
 Title:   I Lay Me Down by Sister Faith Ibale
 Speaker: Faith Ibale
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=3cgHFDROtzk
 ========================================

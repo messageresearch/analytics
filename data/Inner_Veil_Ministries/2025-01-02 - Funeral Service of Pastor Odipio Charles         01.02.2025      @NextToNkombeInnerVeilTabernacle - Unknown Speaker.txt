@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-01-02 - Funeral Service of Pastor Odipio Charles    |     01.02.2025    |  @NextToNkombeInnerVeilTabernacle - Unknown Speaker - Clean.txt
+START OF FILE: 2025-01-02 - Funeral Service of Pastor Odipio Charles         01.02.2025      @NextToNkombeInnerVeilTabernacle - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-01-02
 Title:   Funeral Service of Pastor Odipio Charles    |     01.02.2025    |  @NextToNkombeInnerVeilTabernacle
 Speaker: Unknown Speaker
 Church:  Inner Veil Ministries
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=EDQ4UfN0giQ
 ========================================

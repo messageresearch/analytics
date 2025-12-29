@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-10-12 - Goodness and Mercy - Bro. Phillip Roncali, Bro. Andrew Spencer, Sis. Jessica Adams - Phillip Roncali - Clean.txt
+START OF FILE: 2025-10-12 - Goodness and Mercy - Bro. Phillip Roncali, Bro. Andrew Spencer, Sis. Jessica Adams - Phillip Roncali.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-10-12
 Title:   Goodness and Mercy - Bro. Phillip Roncali, Bro. Andrew Spencer, Sis. Jessica Adams
 Speaker: Phillip Roncali
 Church:  Evening Light Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=ojYDd3LQ2II
 ========================================

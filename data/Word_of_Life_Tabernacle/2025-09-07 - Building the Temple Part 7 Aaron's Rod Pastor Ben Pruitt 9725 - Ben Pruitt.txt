@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-09-07 - Building the Temple Part 7 "Aaron's Rod" Pastor Ben Pruitt 9/7/25 - Ben Pruitt - Clean.txt
+START OF FILE: 2025-09-07 - Building the Temple Part 7 Aaron's Rod Pastor Ben Pruitt 9725 - Ben Pruitt.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-09-07
 Title:   Building the Temple Part 7 "Aaron's Rod" Pastor Ben Pruitt 9/7/25
 Speaker: Ben Pruitt
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=b3_qQLTeM3I
 ========================================

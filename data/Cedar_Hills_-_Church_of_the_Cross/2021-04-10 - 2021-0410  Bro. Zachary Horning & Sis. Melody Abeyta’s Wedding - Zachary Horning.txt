@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-04-10 - 2021-0410 | Bro. Zachary Horning & Sis. Melody Abeyta’s Wedding - Zachary Horning - Clean.txt
+START OF FILE: 2021-04-10 - 2021-0410  Bro. Zachary Horning & Sis. Melody Abeyta’s Wedding - Zachary Horning.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-04-10
 Title:   2021-0410 | Bro. Zachary Horning & Sis. Melody Abeyta’s Wedding
 Speaker: Zachary Horning
 Church:  Cedar Hills - Church of the Cross
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=QpnfVqJe58I
 ========================================

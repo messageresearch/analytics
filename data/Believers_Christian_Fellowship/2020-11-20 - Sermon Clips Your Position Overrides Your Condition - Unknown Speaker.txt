@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-11-20 - Sermon Clips: Your Position Overrides Your Condition - Unknown Speaker - Clean.txt
+START OF FILE: 2020-11-20 - Sermon Clips Your Position Overrides Your Condition - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-11-20
 Title:   Sermon Clips: Your Position Overrides Your Condition
 Speaker: Unknown Speaker
 Church:  Believers Christian Fellowship
-Type:    Sermon Clip
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=lxG95XtZ5P0
 ========================================

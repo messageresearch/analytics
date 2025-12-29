@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-01-16 - Goodness & Mercy - Elise Hornyak at Bethel Youth Camp 2023 - Unknown Speaker - Clean.txt
+START OF FILE: 2024-01-16 - Goodness & Mercy - Elise Hornyak at Bethel Youth Camp 2023 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-01-16
 Title:   Goodness & Mercy - Elise Hornyak at Bethel Youth Camp 2023
 Speaker: Unknown Speaker
 Church:  Bethel Tabernacle
-Type:    Youth Camp
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=8g5dRZMa6xU
 ========================================

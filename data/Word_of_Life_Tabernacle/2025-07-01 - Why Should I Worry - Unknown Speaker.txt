@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-07-01 - Why Should I Worry - Unknown Speaker - Clean.txt
+START OF FILE: 2025-07-01 - Why Should I Worry - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-07-01
 Title:   Why Should I Worry
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=MXX_r-G0BEI
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-03-30 - Sermon Clip: 250330 -Chad Lamb: The Church in Trouble - Chad Lamb - Clean.txt
+START OF FILE: 2025-03-30 - Sermon Clip 250330 -Chad Lamb The Church in Trouble - Chad Lamb.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-03-30
 Title:   Sermon Clip: 250330 -Chad Lamb: The Church in Trouble
 Speaker: Chad Lamb
 Church:  Believers Christian Fellowship
-Type:    Sermon Clip
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=7VfRXwamUHM
 ========================================

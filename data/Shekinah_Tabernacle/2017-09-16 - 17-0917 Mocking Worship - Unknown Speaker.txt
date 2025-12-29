@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2017-09-16 - 17-0917 Mocking Worship - Unknown Speaker - Clean.txt
+START OF FILE: 2017-09-16 - 17-0917 Mocking Worship - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2017-09-16
 Title:   17-0917 Mocking Worship
 Speaker: Unknown Speaker
 Church:  Shekinah Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=CfZbB24qisY
 ========================================
