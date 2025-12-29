@@ -6,14 +6,8 @@ permissions:
   id-token: write
 
 on:
-  schedule:
-    - cron: '0 */4 * * *'
-  # Allows you to run this workflow manually from the Actions tab
+  # Disabled for now: manual trigger only.
   workflow_dispatch:
-  # Also runs on pushes to the main branch to deploy code changes
-  push:
-    branches:
-      - main
 
 concurrency:
   group: update-and-deploy-${{ github.ref }}
