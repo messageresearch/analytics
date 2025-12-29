@@ -1,5 +1,10 @@
 name: Update Data and Deploy Site
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 on:
   # Runs on a schedule (e.g., once a day at midnight UTC)
   schedule:
@@ -11,10 +16,21 @@ on:
     branches:
       - main
 
+concurrency:
+  group: update-and-deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update-data:
     name: "Update Sermon Data"
     runs-on: ubuntu-latest
+
+    # Prevent the workflow from endlessly re-triggering itself when it pushes
+    # an "Automated data update" commit.
+    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
+
+    outputs:
+      pushed: ${{ steps.push_data.outputs.pushed }}
 
     steps:
     - name: "Checkout Code"
@@ -37,6 +53,7 @@ jobs:
       run: python generate_site_data.py
 
     - name: "Commit and Push Data Changes"
+      id: push_data
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -44,19 +61,24 @@ jobs:
         # Check if there are changes to commit
         if git diff --staged --quiet; then
           echo "No changes to commit."
+          echo "pushed=false" >> "$GITHUB_OUTPUT"
         else
           git commit -m "Automated data update"
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
         fi
 
   build-and-deploy:
     name: "Build and Deploy to GitHub Pages"
     needs: update-data # This job runs only after the data update is complete
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Needed to push to the gh-pages branch
-      pages: write
-      id-token: write
+
+    # Deploy strategy:
+    # - If update-data pushed a new commit, this run should stop; the next run
+    #   (triggered by the bot push) will deploy the updated data.
+    # - If update-data made no changes, deploy in the same run.
+    # - If update-data was skipped because this is a bot push, still deploy.
+    if: ${{ always() && needs.update-data.result != 'failure' && (github.actor == 'github-actions[bot]' || needs.update-data.outputs.pushed != 'true') }}
 
     steps:
     - name: "Checkout Code"
@@ -72,12 +94,12 @@ jobs:
       run: npm install
 
     - name: "Build the Website"
-      run: npm run build # Assuming your build script is named 'build' in package.json
+      run: npm run build:gh
 
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./dist # The folder where your built site is located (e.g., 'dist', 'build')
+        path: ./docs
 
     - name: Deploy to GitHub Pages
       id: deployment
