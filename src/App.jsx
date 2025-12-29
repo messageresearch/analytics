@@ -72,7 +72,7 @@ export default function App(){
   // FILTERS
   const [selChurches, setSelChurches] = useState([])
   // Speaker filter removed
-    const [selTitles, setSelTitles] = useState([])
+  const [selTitles, setSelTitles] = useState([])
   const [selYears, setSelYears] = useState([])
   const [selTypes, setSelTypes] = useState([])
   const [selLangs, setSelLangs] = useState([])
@@ -90,8 +90,7 @@ export default function App(){
   const [transcriptSummaryCounts, setTranscriptSummaryCounts] = useState({})
 
   // TABLE
-  const [tableFilters, setTableFilters] = useState({ date:'', church:'', title:'', speaker:'', category:'', mentions:'', rate:'' })
-    const [tableFilters, setTableFilters] = useState({ date:'', church:'', title:'', category:'', mentions:'', rate:'' })
+  const [tableFilters, setTableFilters] = useState({ date:'', church:'', title:'', category:'', mentions:'', rate:'' })
   const [page, setPage] = useState(1)
   const [sortConfig, setSortConfig] = useState({ key: 'mentionCount', direction: 'desc' })
   const PAGE_SIZE = 50
@@ -191,6 +190,7 @@ export default function App(){
         const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
         setSelChurches([...new Set(list.map(s=>s.church))]);
+        setSelTitles([...new Set(list.map(s=>s.title))].filter(Boolean));
           setSelChurches([...new Set(list.map(s=>s.church))]);
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
@@ -430,7 +430,6 @@ export default function App(){
     if(tableFilters.date) data = data.filter(s=>s.date.includes(tableFilters.date))
     if(tableFilters.church) data = data.filter(s=>s.church.toLowerCase().includes(tableFilters.church.toLowerCase()))
     if(tableFilters.title) data = data.filter(s=>s.title.toLowerCase().includes(tableFilters.title.toLowerCase()))
-    if(tableFilters.speaker) data = data.filter(s=>s.speaker.toLowerCase().includes(tableFilters.speaker.toLowerCase()))
     if(tableFilters.category) data = data.filter(s=>s.type.toLowerCase().includes(tableFilters.category.toLowerCase()))
     if(tableFilters.mentions) data = data.filter(s=>s.mentionCount >= parseInt(tableFilters.mentions))
     if(tableFilters.rate) data = data.filter(s=>s.mentionsPerHour >= parseFloat(tableFilters.rate))
@@ -478,14 +477,7 @@ export default function App(){
               <button onClick={()=>{ setSelChurches(options.churches); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
-                <div className="md:col-span-2 lg:col-span-3">
-                  <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
-                </div>
-                <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
-                <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
-                <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
-              </div>
+              <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
               <div className="md:col-span-2 lg:col-span-3">
                 <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
               </div>
@@ -546,7 +538,6 @@ export default function App(){
                     { key: 'church', label: 'Church', width: '180px', filterKey: 'church', render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
                     { key: 'title', label: 'Title', width: '2fr', filterKey: 'title', render: (r) => (<div className="font-medium text-gray-900 truncate">{r.title}</div>) },
                     { key: 'type', label: 'Type', width: '120px', filterKey: 'category', render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
-                    { key: 'speaker', label: 'Speaker', width: '160px', filterKey: 'speaker', render: (r) => r.speaker },
                     { key: 'mentionCount', label: 'Mentions', width: '100px', filterKey: 'mentions', filterType: 'number', render: (r) => (<div className={`text-right font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '100px', filterKey: 'rate', filterType: 'number', render: (r) => (<div className="text-right text-xs">{r.mentionsPerHour}</div>) },
                     { key: 'action', label: 'Action', width: '60px', render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600"><Icon name="download" size={16} /></button>) }
