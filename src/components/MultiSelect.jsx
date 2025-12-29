@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Icon from './Icon'
 
-export default function MultiSelect({ label, options, selected, onChange }){
+export default function MultiSelect({ label, options, selected, onChange, wide }){
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef(null)
   useEffect(()=>{
