@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react'
+import React, { useState, useRef, useEffect, useMemo, useCallback, startTransition } from 'react'
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
@@ -6,6 +6,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   const [isOpen, setIsOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
+  const [isBatchUpdating, setIsBatchUpdating] = useState(false)
   const ref = useRef(null)
   const searchRef = useRef(null)
 
@@ -23,7 +24,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
 
   useEffect(()=>{
     if(isOpen && searchRef.current) searchRef.current.focus()
-    if(!isOpen){ setSearch(''); setDebouncedSearch('') }
+    if(!isOpen){ setSearch(''); setDebouncedSearch(''); setIsBatchUpdating(false) }
   },[isOpen])
 
   // Convert selected to Set for O(1) lookups
@@ -40,14 +41,26 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   },[selected, selectedSet, onChange])
 
   const selectAllFiltered = useCallback(()=> {
-    const newSet = new Set(selected)
-    filteredOptions.forEach(o => newSet.add(o))
-    onChange([...newSet])
+    if(filteredOptions.length > 500) setIsBatchUpdating(true)
+    // Close dropdown immediately for large batch operations
+    if(filteredOptions.length > 100) setIsOpen(false)
+    
+    // Use startTransition for non-blocking update
+    startTransition(()=>{
+      const newSet = new Set(selected)
+      for(let i=0; i<filteredOptions.length; i++) newSet.add(filteredOptions[i])
+      onChange([...newSet])
+    })
   },[selected, filteredOptions, onChange])
 
   const clearFiltered = useCallback(()=> {
-    const toRemove = new Set(filteredOptions)
-    onChange(selected.filter(s => !toRemove.has(s)))
+    if(filteredOptions.length > 500) setIsBatchUpdating(true)
+    if(filteredOptions.length > 100) setIsOpen(false)
+    
+    startTransition(()=>{
+      const toRemove = new Set(filteredOptions)
+      onChange(selected.filter(s => !toRemove.has(s)))
+    })
   },[selected, filteredOptions, onChange])
 
   // Virtualized row renderer
@@ -74,8 +87,8 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   return (
     <div className={"relative" + (wide ? " max-w-2xl w-full" : "") } ref={ref}>
       <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 block">{label}</label>
-      <button onClick={()=>setIsOpen(!isOpen)} className={"w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center hover:border-blue-400 transition" + (wide ? " !max-w-2xl" : "") }>
-        <span className="truncate">{selected.length===0 ? 'Select...' : selected.length===options.length ? 'All Selected' : `${selected.length} Selected`}</span>
+      <button onClick={()=>setIsOpen(!isOpen)} disabled={isBatchUpdating} className={"w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center hover:border-blue-400 transition" + (wide ? " !max-w-2xl" : "") + (isBatchUpdating ? " opacity-50 cursor-wait" : "")}>
+        <span className="truncate">{isBatchUpdating ? 'Updating...' : selected.length===0 ? 'Select...' : selected.length===options.length ? 'All Selected' : `${selected.length} Selected`}</span>
         <Icon name="chevronDown" size={14} className="text-gray-400" />
       </button>
       {isOpen && (
