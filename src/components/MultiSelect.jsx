@@ -41,25 +41,31 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   },[selected, selectedSet, onChange])
 
   const selectAllFiltered = useCallback(()=> {
-    if(filteredOptions.length > 500) setIsBatchUpdating(true)
-    // Close dropdown immediately for large batch operations
-    if(filteredOptions.length > 100) setIsOpen(false)
+    // Capture current matches before any state changes
+    const matchesToAdd = [...filteredOptions]
+    const currentSelected = [...selected]
     
-    // Use startTransition for non-blocking update
+    if(matchesToAdd.length > 500) setIsBatchUpdating(true)
+    if(matchesToAdd.length > 100) setIsOpen(false)
+    
+    // Use captured values in the transition
     startTransition(()=>{
-      const newSet = new Set(selected)
-      for(let i=0; i<filteredOptions.length; i++) newSet.add(filteredOptions[i])
+      const newSet = new Set(currentSelected)
+      for(let i=0; i<matchesToAdd.length; i++) newSet.add(matchesToAdd[i])
       onChange([...newSet])
     })
   },[selected, filteredOptions, onChange])
 
   const clearFiltered = useCallback(()=> {
+    // Capture current matches before any state changes
+    const matchesToRemove = new Set(filteredOptions)
+    const currentSelected = [...selected]
+    
     if(filteredOptions.length > 500) setIsBatchUpdating(true)
     if(filteredOptions.length > 100) setIsOpen(false)
     
     startTransition(()=>{
-      const toRemove = new Set(filteredOptions)
-      onChange(selected.filter(s => !toRemove.has(s)))
+      onChange(currentSelected.filter(s => !matchesToRemove.has(s)))
     })
   },[selected, filteredOptions, onChange])
 
