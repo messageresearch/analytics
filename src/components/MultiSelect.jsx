@@ -17,15 +17,10 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     return ()=> clearTimeout(timer)
   },[search])
 
-  // Clear all selections when user starts typing a search term
+  // Just update search - no auto-clear anymore since we have Add option
   const handleSearchChange = useCallback((e)=>{
-    const newSearch = e.target.value
-    // If going from empty to non-empty search, clear all selections
-    if(newSearch.length > 0 && search.length === 0 && selected.length > 0){
-      onChange([])
-    }
-    setSearch(newSearch)
-  },[search, selected.length, onChange])
+    setSearch(e.target.value)
+  },[])
 
   useEffect(()=>{
     const handleClickOutside = (e)=>{ if(ref.current && !ref.current.contains(e.target)) setIsOpen(false) }
@@ -54,7 +49,6 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
   const selectAllFiltered = useCallback(()=> {
     // Capture current matches and search term before any state changes
     const matchesToAdd = [...filteredOptions]
-    const currentSelected = [...selected]
     const searchUsed = debouncedSearch.trim()
     
     if(matchesToAdd.length > 500) setIsBatchUpdating(true)
@@ -63,7 +57,26 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     // Save the search term used for display
     if(searchUsed) setLastSearchTerm(searchUsed)
     
-    // Use captured values in the transition
+    // Replace: start fresh with only the matches
+    startTransition(()=>{
+      onChange([...matchesToAdd])
+    })
+  },[filteredOptions, debouncedSearch, onChange])
+
+  // Add matches to existing selection
+  const addToFiltered = useCallback(()=> {
+    const matchesToAdd = [...filteredOptions]
+    const currentSelected = [...selected]
+    const searchUsed = debouncedSearch.trim()
+    
+    if(matchesToAdd.length > 500) setIsBatchUpdating(true)
+    if(matchesToAdd.length > 100) setIsOpen(false)
+    
+    // Append search term to display
+    if(searchUsed){
+      setLastSearchTerm(prev => prev ? `${prev}, ${searchUsed}` : searchUsed)
+    }
+    
     startTransition(()=>{
       const newSet = new Set(currentSelected)
       for(let i=0; i<matchesToAdd.length; i++) newSet.add(matchesToAdd[i])
@@ -86,6 +99,19 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
       onChange(currentSelected.filter(s => !matchesToRemove.has(s)))
     })
   },[selected, filteredOptions, onChange])
+
+  // Handle Enter key to select/add matches
+  const handleKeyDown = useCallback((e)=>{
+    if(e.key === 'Enter' && debouncedSearch.trim() && filteredOptions.length > 0){
+      e.preventDefault()
+      // If there are existing selections, add to them; otherwise replace
+      if(selected.length > 0){
+        addToFiltered()
+      } else {
+        selectAllFiltered()
+      }
+    }
+  },[debouncedSearch, filteredOptions.length, selected.length, addToFiltered, selectAllFiltered])
 
   // Virtualized row renderer
   const Row = useCallback(({ index, style })=>{
@@ -129,16 +155,35 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
               type="text"
               value={search}
               onChange={handleSearchChange}
-              placeholder="Search (clears current selection)..."
+              onKeyDown={handleKeyDown}
+              placeholder="Search and press Enter..."
               className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
             />
-            <div className="flex justify-between mt-2">
-              <button onClick={selectAllFiltered} className="text-xs text-blue-600 hover:text-blue-800 font-medium">
-                {debouncedSearch ? `Select ${filteredOptions.length} Matches` : 'Select All'}
-              </button>
-              <button onClick={clearFiltered} className="text-xs text-red-500 hover:text-red-700 font-medium">
-                {debouncedSearch ? 'Clear Matches' : 'Clear'}
-              </button>
+            <div className="flex justify-between mt-2 gap-2">
+              {debouncedSearch ? (
+                <>
+                  <button onClick={selectAllFiltered} className="text-xs text-blue-600 hover:text-blue-800 font-medium">
+                    Select {filteredOptions.length}
+                  </button>
+                  {selected.length > 0 && (
+                    <button onClick={addToFiltered} className="text-xs text-green-600 hover:text-green-800 font-medium">
+                      + Add {filteredOptions.length}
+                    </button>
+                  )}
+                  <button onClick={clearFiltered} className="text-xs text-red-500 hover:text-red-700 font-medium ml-auto">
+                    Clear Matches
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button onClick={selectAllFiltered} className="text-xs text-blue-600 hover:text-blue-800 font-medium">
+                    Select All
+                  </button>
+                  <button onClick={clearFiltered} className="text-xs text-red-500 hover:text-red-700 font-medium">
+                    Clear
+                  </button>
+                </>
+              )}
             </div>
           </div>
           {filteredOptions.length === 0 ? (
