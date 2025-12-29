@@ -273,13 +273,10 @@ export default function App(){
     build()
   }, [channels, apiPrefix])
 
-  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') } }, [rawData])
-    const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
+  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
   const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
-
   const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selTitles, selYears, selTypes, selLangs])
-    const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
     const map = transcriptSummaryCounts || {}
@@ -476,11 +473,9 @@ export default function App(){
             <div className="flex justify-between items-center mb-4">
               <div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
-                <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}</span></div>
-                  <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span></div>
+                <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span></div>
               </div>
-              <button onClick={()=>{ setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
-                <button onClick={()=>{ setSelChurches(options.churches); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
+              <button onClick={()=>{ setSelChurches(options.churches); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
