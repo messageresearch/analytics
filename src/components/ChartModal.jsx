@@ -144,7 +144,6 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
                     <div className="bg-white p-3 rounded shadow text-sm max-w-sm">
                       <div className="font-semibold truncate">{p.title}</div>
                       <div className="text-xs text-gray-500">{p.church} • {new Date(p.timestamp).toLocaleDateString()}</div>
-                      <div className="mt-2 text-xs">Speaker: <strong>{p.speaker || 'Unknown'}</strong></div>
                       <div className="mt-1 text-xs">Duration: <strong>{p.durationHrs ? p.durationHrs.toFixed(2) + ' hrs' : 'n/a'}</strong> • Rate/hr: <strong>{p.mentionsPerHour || 0}</strong></div>
                       <div className="mt-2 text-xs">Mentions: <strong>{p.mentionCount}</strong></div>
                       <div className="mt-3"><button onClick={(e)=>{ e.stopPropagation(); if(onSelectSermon) onSelectSermon(p, 0) }} className="text-blue-600 text-xs">Open Transcript & Jump</button></div>
@@ -161,7 +160,7 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
                       <div className="mt-2 text-xs">Sermons in bucket:</div>
                       <ul className="max-h-40 overflow-auto mt-2">
                         {bucket.sermons.slice(0,20).map((s,i)=> (
-                          <li key={s.id || i} className="py-1 border-b border-gray-100"><button onClick={()=>{ if(onSelectSermon) onSelectSermon(s, 0) }} className="text-left text-sm text-blue-600 truncate">{s.date} • {s.title} — {s.speaker}</button></li>
+                          <li key={s.id || i} className="py-1 border-b border-gray-100"><button onClick={()=>{ if(onSelectSermon) onSelectSermon(s, 0) }} className="text-left text-sm text-blue-600 truncate">{s.date} • {s.title}</button></li>
                         ))}
                         {bucket.sermons.length > 20 && <li className="text-xs text-gray-500">... {bucket.sermons.length - 20} more</li>}
                       </ul>

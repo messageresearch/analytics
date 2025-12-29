@@ -477,7 +477,9 @@ export default function App(){
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
               <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
-              <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+              <div className="md:col-span-2 lg:col-span-3">
+                <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
+              </div>
               <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
               <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
               <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
