@@ -71,7 +71,8 @@ export default function App(){
 
   // FILTERS
   const [selChurches, setSelChurches] = useState([])
-  const [selSpeakers, setSelSpeakers] = useState([])
+  // Speaker filter removed
+    const [selTitles, setSelTitles] = useState([])
   const [selYears, setSelYears] = useState([])
   const [selTypes, setSelTypes] = useState([])
   const [selLangs, setSelLangs] = useState([])
@@ -90,6 +91,7 @@ export default function App(){
 
   // TABLE
   const [tableFilters, setTableFilters] = useState({ date:'', church:'', title:'', speaker:'', category:'', mentions:'', rate:'' })
+    const [tableFilters, setTableFilters] = useState({ date:'', church:'', title:'', category:'', mentions:'', rate:'' })
   const [page, setPage] = useState(1)
   const [sortConfig, setSortConfig] = useState({ key: 'mentionCount', direction: 'desc' })
   const PAGE_SIZE = 50
@@ -188,7 +190,8 @@ export default function App(){
         const currentTimestamp = new Date().getTime()
         const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
-        setSelChurches([...new Set(list.map(s=>s.church))]); setSelSpeakers([...new Set(list.map(s=>s.speaker))])
+        setSelChurches([...new Set(list.map(s=>s.church))]);
+          setSelChurches([...new Set(list.map(s=>s.church))]);
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
         const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
@@ -271,10 +274,12 @@ export default function App(){
   }, [channels, apiPrefix])
 
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language') } }, [rawData])
+    const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
   const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
 
-  const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selSpeakers, selYears, selTypes, selLangs])
+  const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selTitles, selYears, selTypes, selLangs])
+    const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
     const map = transcriptSummaryCounts || {}
@@ -472,11 +477,20 @@ export default function App(){
               <div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
                 <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}</span></div>
+                  <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span></div>
               </div>
               <button onClick={()=>{ setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
+                <button onClick={()=>{ setSelChurches(options.churches); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+                <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+                <div className="md:col-span-2 lg:col-span-3">
+                  <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
+                </div>
+                <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
+                <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
+                <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
+              </div>
               <div className="md:col-span-2 lg:col-span-3">
                 <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
               </div>
