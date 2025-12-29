@@ -7,5 +7,5 @@ export default defineConfig({
   base: '/wmbmentions.github.io/',
   plugins: [react()],
   server: { port: 5173 },
-  build: { outDir: 'docs' }
+  build: { outDir: 'docs', emptyOutDir: false }
 })
