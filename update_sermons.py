@@ -691,7 +691,10 @@ def determine_sermon_date(title, description, yt_obj):
         except: pass
     return "Unknown Date"
 
-def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type):
+def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type, description=""):
+    # Truncate description if too long (keep first 2000 chars)
+    desc_text = description[:2000] + "..." if len(description) > 2000 else description
+    desc_section = f"Description:\n{desc_text}\n" if desc_text.strip() else ""
     return (
         f"################################################################################\n"
         f"START OF FILE: {date_str} - {title} - {speaker} - Clean.txt\n"
@@ -706,6 +709,9 @@ def format_sermon_entry(video_id, title, date_str, transcript_text, church_name,
         f"Language:{language}\n"
         f"URL:     https://www.youtube.com/watch?v={video_id}\n"
         f"========================================\n\n"
+        f"{desc_section}"
+        f"TRANSCRIPT\n"
+        f"========================================\n"
         f"{transcript_text}\n"
     )
 def xml_to_text(xml_content):
@@ -854,6 +860,136 @@ def load_summary_history_csv(church_name):
             for row in reader: history[row['url']] = row
     except: pass
     return history
+
+def metadata_only_scan(church_name, config, known_speakers):
+    """
+    Scans a YouTube channel for ALL videos and collects metadata (date, title, description)
+    WITHOUT downloading transcripts. Useful for quickly cataloging all videos.
+    PRESERVES all existing entries - never deletes previous data.
+    """
+    channel_url = config['url']
+    clean_channel_name = church_name.replace(' ', '_')
+    channel_dir = os.path.join(DATA_DIR, clean_channel_name)
+    os.makedirs(channel_dir, exist_ok=True)
+
+    print(f"\n" + "="*60)
+    print(f"METADATA-ONLY SCAN: {church_name}")
+    print(f"="*60)
+    print(f"   🔍 Scanning for ALL videos (no transcript download)...")
+    
+    # Load existing history - NEVER DELETE existing entries
+    existing_history = load_summary_history_csv(church_name)
+    print(f"   📂 Loaded {len(existing_history)} existing entries from summary.")
+    
+    base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
+    all_videos = []
+    
+    try:
+        print(f"   🌐 Fetching video list from YouTube (no limit)...")
+        all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=None)))
+        all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=None)))
+    except Exception as e:
+        print(f"   ⚠️ Scrape Error: {e}")
+        return
+    
+    # Deduplicate
+    unique_videos_map = {v['videoId']: v for v in all_videos}
+    unique_videos = list(unique_videos_map.values())
+    print(f"   📊 Found {len(unique_videos)} unique videos on channel.")
+    
+    if len(unique_videos) == 0:
+        print("   ❌ No videos found.")
+        return
+    
+    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+    new_count = 0
+    updated_count = 0
+    
+    for i, video in enumerate(unique_videos, 1):
+        video_id = video['videoId']
+        video_url = f"https://www.youtube.com/watch?v={video_id}"
+        
+        try:
+            title = video['title']['runs'][0]['text']
+        except:
+            title = "Unknown Title"
+        
+        # Check if already exists in history
+        if video_url in existing_history:
+            existing = existing_history[video_url]
+            # Update title if changed, but preserve everything else
+            if existing.get('title') != title:
+                existing['title'] = title
+                existing['last_checked'] = today_str
+                updated_count += 1
+            continue
+        
+        # New video - fetch metadata from YouTube
+        print(f"   [{i}/{len(unique_videos)}] NEW: {title[:60]}...")
+        
+        try:
+            time.sleep(random.uniform(2, 5))  # Shorter delay for metadata-only
+            yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
+            description = yt_obj.description or ""
+            sermon_date = determine_sermon_date(title, description, yt_obj)
+            
+            # Identify speaker from title and description
+            speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+            speaker = normalize_speaker(speaker)
+            speaker = clean_name(speaker)
+            
+            video_type = determine_video_type(title, speaker)
+            if video_type == "Memorial Service" and speaker != "William M. Branham":
+                speaker = "Unknown Speaker"
+            
+            # Sanitize description for CSV
+            desc_for_csv = description.replace('\n', ' ').replace('\r', ' ')[:500] if description else ""
+            
+            # Add to history (status = "Metadata Only" to indicate no transcript)
+            existing_history[video_url] = {
+                "date": sermon_date,
+                "status": "Metadata Only",
+                "speaker": speaker,
+                "title": title,
+                "url": video_url,
+                "last_checked": today_str,
+                "language": "Unknown",
+                "type": video_type,
+                "description": desc_for_csv
+            }
+            new_count += 1
+            
+        except Exception as e:
+            print(f"      ⚠️ Error fetching metadata: {str(e)[:50]}")
+            # Still add with minimal info
+            existing_history[video_url] = {
+                "date": "Unknown Date",
+                "status": "Metadata Error",
+                "speaker": "Unknown Speaker",
+                "title": title,
+                "url": video_url,
+                "last_checked": today_str,
+                "language": "Unknown",
+                "type": "Unknown",
+                "description": ""
+            }
+            new_count += 1
+    
+    # Write merged summary CSV
+    csv_path = get_summary_file_path(church_name, ".csv")
+    summary_list = list(existing_history.values())
+    
+    try:
+        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"])
+            writer.writeheader()
+            writer.writerows(summary_list)
+        print(f"\n   ✅ SCAN COMPLETE")
+        print(f"      New videos found: {new_count}")
+        print(f"      Titles updated: {updated_count}")
+        print(f"      Total entries: {len(summary_list)}")
+    except Exception as e:
+        print(f"   ❌ Error writing summary CSV: {e}")
 
 def update_file_header_and_name(channel_dir, old_entry, new_speaker, new_date, title, church_name, language, video_type):
     old_safe_title = sanitize_filename(old_entry['title'])
@@ -1110,6 +1246,9 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 speaker = "Unknown Speaker"
 
             status = "Success"
+            # Sanitize description for CSV (remove newlines, limit length)
+            desc_for_csv = description.replace('\n', ' ').replace('\r', ' ')[:500] if description else ""
+            
             if not transcript_text:
                 status = "No Transcript"
                 print(f"   ❌ No Transcript found (Lang: {language}).")
@@ -1119,32 +1258,46 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 filename = f"{sermon_date} - {safe_title} - {safe_speaker}.txt"
                 filepath = os.path.join(channel_dir, filename)
                 if not os.path.exists(filepath):
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description)
                     with open(filepath, 'a', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ Transcript downloaded & Saved (Lang: {language}).")
                 else:
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description)
                     with open(filepath, 'w', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ File updated.")
 
             current_summary_list.append({
                 "date": sermon_date, "status": status, "speaker": speaker,
                 "title": title, "url": video_url, "last_checked": today_str,
-                "language": language, "type": video_type
+                "language": language, "type": video_type, "description": desc_for_csv
             })
         except Exception as e:
             print(f"   ❌ Error: {str(e)}")
             current_summary_list.append({
                 "date": "Error", "status": "Failed", "speaker": "Unknown",
                 "title": title, "url": video_url, "last_checked": today_str,
-                "language": "Unknown", "type": "Unknown"
-           
+                "language": "Unknown", "type": "Unknown", "description": ""
             })
 
     csv_path = get_summary_file_path(church_name, ".csv")
     # --- NEW LOGIC: Ensure every .txt transcript is represented in the summary CSV ---
     channel_dir = os.path.join(DATA_DIR, church_name.replace(' ', '_'))
     txt_files = [f for f in os.listdir(channel_dir) if f.endswith('.txt')]
+    
+    # Build a set of URLs from current_summary_list for fast lookup
+    processed_urls = set()
+    for entry in current_summary_list:
+        if entry.get('url'):
+            processed_urls.add(entry.get('url'))
+    
+    # IMPORTANT: Preserve entries from existing history that weren't in this scan
+    # (e.g., unlisted videos from supplemental scrapers like Shalom Tabernacle website)
+    for url, hist_entry in history.items():
+        if url not in processed_urls:
+            # This entry exists in history but wasn't processed in this run - PRESERVE IT
+            current_summary_list.append(hist_entry)
+            processed_urls.add(url)
+    
     # Build a set of (date, title, speaker) from current_summary_list for fast lookup
     summary_keys = set()
     for entry in current_summary_list:
@@ -1186,15 +1339,38 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 "url": url,
                 "last_checked": last_checked,
                 "language": language,
-                "type": video_type
+                "type": video_type,
+                "description": ""  # Empty for legacy files
             })
             summary_keys.add((date, title, speaker))
+    
+    # Deduplicate by URL before writing (keep most recent entry based on last_checked)
+    url_to_entry = {}
+    for entry in current_summary_list:
+        url = entry.get('url', '')
+        if url:
+            existing = url_to_entry.get(url)
+            if existing:
+                # Keep the entry with the more recent last_checked date
+                existing_date = existing.get('last_checked', '1900-01-01')
+                new_date = entry.get('last_checked', '1900-01-01')
+                if new_date >= existing_date:
+                    url_to_entry[url] = entry
+            else:
+                url_to_entry[url] = entry
+        else:
+            # Entries without URL - use (date, title, speaker) as key
+            key = (entry.get('date', ''), entry.get('title', ''), entry.get('speaker', ''))
+            url_to_entry[str(key)] = entry
+    
+    final_summary_list = list(url_to_entry.values())
+    
     # Write the updated summary CSV
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type"])
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"])
             writer.writeheader()
-            writer.writerows(current_summary_list)
+            writer.writerows(final_summary_list)
     except Exception as e:
         print(f"   ❌ Error writing summary CSV: {e}")
     
@@ -1240,12 +1416,39 @@ def main():
         print(" 1. Single Channel Scrape")
         print(" 2. All Channels Scrape")
         print(" 3. Run Deep Self-Healing & Cleanup (No Scraping)")
+        print(" 4. Metadata-Only Scan (No Transcripts)")
         print("="*50)
         
         action = input("\n👉 Enter Number: ").strip()
         
         if action == '3':
             heal_archive(DATA_DIR)
+            return
+        
+        if action == '4':
+            print("\n--- METADATA-ONLY SCAN ---")
+            print("This scans ALL videos for metadata (date, title, description)")
+            print("without downloading transcripts. Existing entries are preserved.\n")
+            print("Available channels:")
+            for i, name in enumerate(channels.keys(), 1):
+                print(f"  {i}. {name}")
+            print(f"  0. All Channels")
+            choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
+            
+            if choice == '0':
+                for name, config in channels.items():
+                    metadata_only_scan(name, config, known_speakers)
+            else:
+                try:
+                    idx = int(choice) - 1
+                    channel_names = list(channels.keys())
+                    if 0 <= idx < len(channel_names):
+                        name = channel_names[idx]
+                        metadata_only_scan(name, channels[name], known_speakers)
+                    else:
+                        print("Invalid selection.")
+                except ValueError:
+                    print("Invalid input.")
             return
 
         # --- CHANNEL SELECTION ---
