@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-06-11 - "New Wine for the Wedding" Pastor Ben Pruitt Sunday Morning 6/11/23 - Unknown Speaker - Clean.txt
+START OF FILE: 2023-06-11 - New Wine for the Wedding Pastor Ben Pruitt Sunday Morning 61123 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-06-11
 Title:   "New Wine for the Wedding" Pastor Ben Pruitt Sunday Morning 6/11/23
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=HgD4mLzs-6o
 ========================================

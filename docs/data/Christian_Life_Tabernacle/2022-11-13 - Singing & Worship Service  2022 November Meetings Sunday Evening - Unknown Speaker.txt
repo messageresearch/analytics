@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-11-13 - Singing & Worship Service | 2022 November Meetings: Sunday Evening - Unknown Speaker - Clean.txt
+START OF FILE: 2022-11-13 - Singing & Worship Service  2022 November Meetings Sunday Evening - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-11-13
 Title:   Singing & Worship Service | 2022 November Meetings: Sunday Evening
 Speaker: Unknown Speaker
 Church:  Christian Life Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=Vt4Mkbmz610
 ========================================

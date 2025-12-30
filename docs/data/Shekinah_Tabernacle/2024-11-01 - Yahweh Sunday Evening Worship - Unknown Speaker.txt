@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-11-01 - Yahweh Sunday Evening Worship - Unknown Speaker - Clean.txt
+START OF FILE: 2024-11-01 - Yahweh Sunday Evening Worship - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-11-01
 Title:   Yahweh Sunday Evening Worship
 Speaker: Unknown Speaker
 Church:  Shekinah Tabernacle
-Type:    Worship Service
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=NSd_N_orrh8
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-06-14 - Because of Jesus | Gideon and Gabriella LaFontaine - Gabriella LaFontaine - Clean.txt
+START OF FILE: 2024-06-14 - Because of Jesus  Gideon and Gabriella LaFontaine - Gabriella LaFontaine.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-06-14
 Title:   Because of Jesus | Gideon and Gabriella LaFontaine
 Speaker: Gabriella LaFontaine
 Church:  Literal Life Church
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=TPZI7-RYAz8
 ========================================

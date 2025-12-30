@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-10-24 - When I Lay My Isaac Down - Bro. Sam Patton & Family - Sam Patton - Clean.txt
+START OF FILE: 2025-10-24 - When I Lay My Isaac Down - Bro. Sam Patton & Family - Sam Patton.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-10-24
 Title:   When I Lay My Isaac Down - Bro. Sam Patton & Family
 Speaker: Sam Patton
 Church:  Evening Light Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=nhwHd_teaU4
 ========================================

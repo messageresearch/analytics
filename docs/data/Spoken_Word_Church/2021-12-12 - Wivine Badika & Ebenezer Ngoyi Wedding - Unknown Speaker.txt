@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-12 - Wivine Badika & Ebenezer Ngoyi Wedding - Unknown Speaker - Clean.txt
+START OF FILE: 2021-12-12 - Wivine Badika & Ebenezer Ngoyi Wedding - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-12
 Title:   Wivine Badika & Ebenezer Ngoyi Wedding
 Speaker: Unknown Speaker
 Church:  Spoken Word Church
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=h1o5TGr0rIc
 ========================================

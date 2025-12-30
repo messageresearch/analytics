@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-01-26 - I Sing Because I'm Happy - Elyse Hornyak at Bethel Youth Camp 2024 - Unknown Speaker - Clean.txt
+START OF FILE: 2025-01-26 - I Sing Because I'm Happy - Elyse Hornyak at Bethel Youth Camp 2024 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-01-26
 Title:   I Sing Because I'm Happy - Elyse Hornyak at Bethel Youth Camp 2024
 Speaker: Unknown Speaker
 Church:  Bethel Tabernacle
-Type:    Youth Camp
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=bT-gqltjOfk
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-07-18 - Help Is On The Way - Unknown Speaker - Clean.txt
+START OF FILE: 2023-07-18 - Help Is On The Way - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-07-18
 Title:   Help Is On The Way
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=L3ruCl5N9xc
 ========================================

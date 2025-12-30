@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-11-01 - Standing On Holy Ground | Brother Graham Peterson - Graham Peterson - Clean.txt
+START OF FILE: 2024-11-01 - Standing On Holy Ground  Brother Graham Peterson - Graham Peterson.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-11-01
 Title:   Standing On Holy Ground | Brother Graham Peterson
 Speaker: Graham Peterson
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=EQXSm7_3gAE
 ========================================

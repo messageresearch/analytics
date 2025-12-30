@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-04-04 - A Better World | Joshua Mavinga - Joshua Mavinga - Clean.txt
+START OF FILE: 2021-04-04 - A Better World  Joshua Mavinga - Joshua Mavinga.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-04-04
 Title:   A Better World | Joshua Mavinga
 Speaker: Joshua Mavinga
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=f7feS_lVULU
 ========================================

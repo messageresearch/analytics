@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-02-12 - 02-12-24 | Memorial Service Of Our Sister Isabella Maria Martinez - Unknown Speaker - Clean.txt
+START OF FILE: 2024-02-12 - 02-12-24  Memorial Service Of Our Sister Isabella Maria Martinez - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-02-12
 Title:   02-12-24 | Memorial Service Of Our Sister Isabella Maria Martinez
 Speaker: Unknown Speaker
 Church:  End Time Message Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=GAeewMj_AQw
 ========================================

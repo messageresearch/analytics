@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-01-08 - Funeral Service of Pastor Ronnie Gengan and Bro. Shawn Gengan - Unknown Speaker - Clean.txt
+START OF FILE: 2021-01-08 - Funeral Service of Pastor Ronnie Gengan and Bro. Shawn Gengan - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-01-08
 Title:   Funeral Service of Pastor Ronnie Gengan and Bro. Shawn Gengan
 Speaker: Unknown Speaker
 Church:  Son Of Man Revealed Ministries
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=vmJ6WJztEsY
 ========================================

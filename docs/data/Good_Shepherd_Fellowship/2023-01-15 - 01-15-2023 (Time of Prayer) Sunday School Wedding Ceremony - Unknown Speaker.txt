@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-01-15 - 01-15-2023 (Time of Prayer) Sunday School: Wedding Ceremony - Unknown Speaker - Clean.txt
+START OF FILE: 2023-01-15 - 01-15-2023 (Time of Prayer) Sunday School Wedding Ceremony - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-01-15
 Title:   01-15-2023 (Time of Prayer) Sunday School: Wedding Ceremony
 Speaker: Unknown Speaker
 Church:  Good Shepherd Fellowship
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=XusfxJkxtpw
 ========================================

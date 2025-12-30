@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-07-17 - Evidence Of Your Goodness - Unknown Speaker - Clean.txt
+START OF FILE: 2023-07-17 - Evidence Of Your Goodness - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-07-17
 Title:   Evidence Of Your Goodness
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=RE65DfDaH2A
 ========================================

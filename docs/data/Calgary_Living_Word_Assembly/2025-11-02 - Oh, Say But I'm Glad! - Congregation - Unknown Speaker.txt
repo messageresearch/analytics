@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-11-02 - Oh, Say But I'm Glad! - Congregation - Unknown Speaker - Clean.txt
+START OF FILE: 2025-11-02 - Oh, Say But I'm Glad! - Congregation - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-11-02
 Title:   Oh, Say But I'm Glad! - Congregation
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=ujB-u6xh88k
 ========================================

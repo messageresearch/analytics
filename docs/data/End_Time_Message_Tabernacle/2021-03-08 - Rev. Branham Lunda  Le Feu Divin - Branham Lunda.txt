@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-03-08 - Rev. Branham Lunda | Le Feu Divin - Branham Lunda - Clean.txt
+START OF FILE: 2021-03-08 - Rev. Branham Lunda  Le Feu Divin - Branham Lunda.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-03-08
 Title:   Rev. Branham Lunda | Le Feu Divin
 Speaker: Branham Lunda
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=kIBOIOWk5bs
 ========================================

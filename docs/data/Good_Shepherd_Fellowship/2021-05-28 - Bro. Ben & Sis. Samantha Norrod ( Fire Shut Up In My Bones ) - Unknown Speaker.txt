@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-05-28 - Bro. Ben & Sis. Samantha Norrod ( Fire Shut Up In My Bones ) - Unknown Speaker - Clean.txt
+START OF FILE: 2021-05-28 - Bro. Ben & Sis. Samantha Norrod ( Fire Shut Up In My Bones ) - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-05-28
 Title:   Bro. Ben & Sis. Samantha Norrod ( Fire Shut Up In My Bones )
 Speaker: Unknown Speaker
 Church:  Good Shepherd Fellowship
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=XBAYTT4hGZE
 ========================================

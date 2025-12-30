@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-07-19 - Overcome | Esther Leitner, Vivian Leitner, Corrie Leitner, Ben Aho - Ben Aho - Clean.txt
+START OF FILE: 2024-07-19 - Overcome  Esther Leitner, Vivian Leitner, Corrie Leitner, Ben Aho - Ben Aho.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-07-19
 Title:   Overcome | Esther Leitner, Vivian Leitner, Corrie Leitner, Ben Aho
 Speaker: Ben Aho
 Church:  Literal Life Church
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=Hn6WfRCijms
 ========================================

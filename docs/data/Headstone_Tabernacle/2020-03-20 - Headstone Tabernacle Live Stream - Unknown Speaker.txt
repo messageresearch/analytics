@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-03-20 - Headstone Tabernacle Live Stream - Unknown Speaker - Clean.txt
+START OF FILE: 2020-03-20 - Headstone Tabernacle Live Stream - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-03-20
 Title:   Headstone Tabernacle Live Stream
 Speaker: Unknown Speaker
 Church:  Headstone Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=A6mc0kdtXx8
 ========================================

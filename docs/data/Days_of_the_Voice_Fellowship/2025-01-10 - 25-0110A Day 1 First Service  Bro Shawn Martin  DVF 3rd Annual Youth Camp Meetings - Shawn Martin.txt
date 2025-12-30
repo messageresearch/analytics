@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-01-10 - 25-0110A Day 1 First Service | Bro Shawn Martin | DVF 3rd Annual Youth Camp Meetings - Shawn Martin - Clean.txt
+START OF FILE: 2025-01-10 - 25-0110A Day 1 First Service  Bro Shawn Martin  DVF 3rd Annual Youth Camp Meetings - Shawn Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-01-10
 Title:   25-0110A Day 1 First Service | Bro Shawn Martin | DVF 3rd Annual Youth Camp Meetings
 Speaker: Shawn Martin
 Church:  Days of the Voice Fellowship
-Type:    Youth Camp
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=7rtwh_cG9VM
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-24 - Christmas Greetings from Jericho Tabernacle - Unknown Speaker - Clean.txt
+START OF FILE: 2021-12-24 - Christmas Greetings from Jericho Tabernacle - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-24
 Title:   Christmas Greetings from Jericho Tabernacle
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Christmas Program
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=q665VQ_CCEo
 ========================================

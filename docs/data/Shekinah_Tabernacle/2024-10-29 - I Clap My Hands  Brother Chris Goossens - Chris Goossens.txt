@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-10-29 - I Clap My Hands | Brother Chris Goossens - Chris Goossens - Clean.txt
+START OF FILE: 2024-10-29 - I Clap My Hands  Brother Chris Goossens - Chris Goossens.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-10-29
 Title:   I Clap My Hands | Brother Chris Goossens
 Speaker: Chris Goossens
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=U-QO_6LM11w
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-12-31 - Special | Accept Mon Offrande | Bro. Patrick Nkongolo. - Patrick Nkongolo - Clean.txt
+START OF FILE: 2020-12-31 - Special  Accept Mon Offrande  Bro. Patrick Nkongolo. - Patrick Nkongolo.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-12-31
 Title:   Special | Accept Mon Offrande | Bro. Patrick Nkongolo.
 Speaker: Patrick Nkongolo
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=nCU9Z7Q9DwE
 ========================================

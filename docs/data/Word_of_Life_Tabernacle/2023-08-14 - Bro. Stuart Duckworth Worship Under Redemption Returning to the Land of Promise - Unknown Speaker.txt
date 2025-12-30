@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-08-14 - Bro. Stuart Duckworth Worship Under Redemption "Returning to the Land of Promise" - Unknown Speaker - Clean.txt
+START OF FILE: 2023-08-14 - Bro. Stuart Duckworth Worship Under Redemption Returning to the Land of Promise - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-08-14
 Title:   Bro. Stuart Duckworth Worship Under Redemption "Returning to the Land of Promise"
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=a0_5MXedDtQ
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-12-16 - Christmas Play 2024 12-15-24 - Unknown Speaker - Clean.txt
+START OF FILE: 2024-12-16 - Christmas Play 2024 12-15-24 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-12-16
 Title:   Christmas Play 2024 12-15-24
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=BKckZk6GG-Y
 ========================================

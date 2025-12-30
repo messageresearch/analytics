@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-12 - Christmas as Told By Bethel Tabernacle Kids - Unknown Speaker - Clean.txt
+START OF FILE: 2021-12-12 - Christmas as Told By Bethel Tabernacle Kids - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-12
 Title:   Christmas as Told By Bethel Tabernacle Kids
 Speaker: Unknown Speaker
 Church:  Bethel Tabernacle
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=lV9pKXHYBlU
 ========================================

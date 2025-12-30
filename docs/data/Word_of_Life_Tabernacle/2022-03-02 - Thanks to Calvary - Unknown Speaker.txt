@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-03-02 - Thanks to Calvary - Unknown Speaker - Clean.txt
+START OF FILE: 2022-03-02 - Thanks to Calvary - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-03-02
 Title:   Thanks to Calvary
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=t1hVbyX-Oko
 ========================================

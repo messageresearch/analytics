@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-10-01 - October 1, 2022 | Wedding of Julian Hill & Elisabeth Gallego - Elisabeth Gallego - Clean.txt
+START OF FILE: 2022-10-01 - October 1, 2022  Wedding of Julian Hill & Elisabeth Gallego - Elisabeth Gallego.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-10-01
 Title:   October 1, 2022 | Wedding of Julian Hill & Elisabeth Gallego
 Speaker: Elisabeth Gallego
 Church:  Cedar Hills - Church of the Cross
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=iQWIiLhsYqo
 ========================================

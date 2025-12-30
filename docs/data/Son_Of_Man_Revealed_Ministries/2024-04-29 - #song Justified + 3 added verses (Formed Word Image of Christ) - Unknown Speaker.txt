@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-04-29 - #song Justified + 3 added verses (Formed Word Image of Christ) - Unknown Speaker - Clean.txt
+START OF FILE: 2024-04-29 - #song Justified + 3 added verses (Formed Word Image of Christ) - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-04-29
 Title:   #song Justified + 3 added verses (Formed Word Image of Christ)
 Speaker: Unknown Speaker
 Church:  Son Of Man Revealed Ministries
-Type:    Worship Service
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=eI-nmiHqY3U
 ========================================

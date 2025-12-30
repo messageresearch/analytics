@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-10-28 - Your Cries Have Awoken The Master  - Wes Ardiel at Bethel Youth Camp 2024 - Unknown Speaker - Clean.txt
+START OF FILE: 2024-10-28 - Your Cries Have Awoken The Master  - Wes Ardiel at Bethel Youth Camp 2024 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-10-28
 Title:   Your Cries Have Awoken The Master  - Wes Ardiel at Bethel Youth Camp 2024
 Speaker: Unknown Speaker
 Church:  Bethel Tabernacle
-Type:    Youth Camp
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=4MQ1YtDrzu0
 ========================================

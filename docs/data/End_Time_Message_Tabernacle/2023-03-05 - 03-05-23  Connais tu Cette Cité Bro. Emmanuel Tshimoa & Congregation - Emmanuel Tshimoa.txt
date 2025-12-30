@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-03-05 - 03-05-23 | Connais tu Cette Cité: Bro. Emmanuel Tshimoa & Congregation - Emmanuel Tshimoa - Clean.txt
+START OF FILE: 2023-03-05 - 03-05-23  Connais tu Cette Cité Bro. Emmanuel Tshimoa & Congregation - Emmanuel Tshimoa.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-03-05
 Title:   03-05-23 | Connais tu Cette Cité: Bro. Emmanuel Tshimoa & Congregation
 Speaker: Emmanuel Tshimoa
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=6bMONRS4Q68
 ========================================

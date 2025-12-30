@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-09-01 - I Praise You - Zoe Burns - Clean.txt
+START OF FILE: 2025-09-01 - I Praise You - Zoe Burns.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-09-01
 Title:   I Praise You
 Speaker: Zoe Burns
 Church:  Evening Light Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=rcPtpPXrmkA
 ========================================

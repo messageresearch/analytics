@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-12-22 - The Funeral Service Of Bro. Jason Rajkoomar - Unknown Speaker - Clean.txt
+START OF FILE: 2021-12-22 - The Funeral Service Of Bro. Jason Rajkoomar - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-12-22
 Title:   The Funeral Service Of Bro. Jason Rajkoomar
 Speaker: Unknown Speaker
 Church:  Headstone Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=0LXg1j-Ti2I
 ========================================

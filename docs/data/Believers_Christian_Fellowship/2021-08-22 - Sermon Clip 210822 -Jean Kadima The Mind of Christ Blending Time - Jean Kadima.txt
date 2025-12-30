@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-08-22 - Sermon Clip: 210822 -Jean Kadima: The Mind of Christ: Blending Time - Jean Kadima - Clean.txt
+START OF FILE: 2021-08-22 - Sermon Clip 210822 -Jean Kadima The Mind of Christ Blending Time - Jean Kadima.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-08-22
 Title:   Sermon Clip: 210822 -Jean Kadima: The Mind of Christ: Blending Time
 Speaker: Jean Kadima
 Church:  Believers Christian Fellowship
-Type:    Sermon Clip
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=OzKSOsiZk3o
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-07-11 - ‘Flame Of My Heart’ & ‘Pour Your Spirit Out’ - Bro. Ashton Crook - Ashton Crook - Clean.txt
+START OF FILE: 2025-07-11 - ‘Flame Of My Heart’ & ‘Pour Your Spirit Out’ - Bro. Ashton Crook - Ashton Crook.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-07-11
 Title:   ‘Flame Of My Heart’ & ‘Pour Your Spirit Out’ - Bro. Ashton Crook
 Speaker: Ashton Crook
 Church:  True Word Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=PJDzOWkP0fs
 ========================================

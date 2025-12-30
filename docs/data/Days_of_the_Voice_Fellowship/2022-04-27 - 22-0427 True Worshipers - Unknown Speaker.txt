@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-04-27 - 22-0427 True Worshipers - Unknown Speaker - Clean.txt
+START OF FILE: 2022-04-27 - 22-0427 True Worshipers - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-04-27
 Title:   22-0427 True Worshipers
 Speaker: Unknown Speaker
 Church:  Days of the Voice Fellowship
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=jRYGYVNSoXk
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-03-24 - Scars | Brother Mareon Malan - Mareon Malan - Clean.txt
+START OF FILE: 2024-03-24 - Scars  Brother Mareon Malan - Mareon Malan.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-03-24
 Title:   Scars | Brother Mareon Malan
 Speaker: Mareon Malan
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=nPAZVhXmX0A
 ========================================

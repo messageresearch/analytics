@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-11 - DVF Specials: Four Days Late | Bro Peterson Alinda - Peterson Alinda - Clean.txt
+START OF FILE: 2022-12-11 - DVF Specials Four Days Late  Bro Peterson Alinda - Peterson Alinda.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-11
 Title:   DVF Specials: Four Days Late | Bro Peterson Alinda
 Speaker: Peterson Alinda
 Church:  Days of the Voice Fellowship
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=AIQPdrSwWyE
 ========================================

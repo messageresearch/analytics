@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-10-30 - Someday Soon | Brother Ralph Alefaio & Sons - Ralph Alefaio - Clean.txt
+START OF FILE: 2024-10-30 - Someday Soon  Brother Ralph Alefaio & Sons - Ralph Alefaio.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-10-30
 Title:   Someday Soon | Brother Ralph Alefaio & Sons
 Speaker: Ralph Alefaio
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=1pFYjId82c0
 ========================================

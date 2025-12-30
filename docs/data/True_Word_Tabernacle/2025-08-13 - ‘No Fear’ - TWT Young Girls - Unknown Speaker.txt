@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-08-13 - ‘No Fear’ - TWT Young Girls - Unknown Speaker - Clean.txt
+START OF FILE: 2025-08-13 - ‘No Fear’ - TWT Young Girls - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-08-13
 Title:   ‘No Fear’ - TWT Young Girls
 Speaker: Unknown Speaker
 Church:  True Word Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=9ObodEUIKcY
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-08-11 - Daystar - Unknown Speaker - Clean.txt
+START OF FILE: 2023-08-11 - Daystar - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-08-11
 Title:   Daystar
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=nsMrP9I70ng
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-07-29 - It Was Me - Unknown Speaker - Clean.txt
+START OF FILE: 2022-07-29 - It Was Me - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-07-29
 Title:   It Was Me
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=1yZqEiGZLdY
 ========================================

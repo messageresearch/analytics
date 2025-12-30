@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-08-05 - God is God - Unknown Speaker - Clean.txt
+START OF FILE: 2025-08-05 - God is God - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-08-05
 Title:   God is God
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=n0rjl6ejog0
 ========================================

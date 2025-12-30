@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-12-23 - Dec 22, 2024 | Christmas Program - Unknown Speaker - Clean.txt
+START OF FILE: 2024-12-23 - Dec 22, 2024  Christmas Program - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-12-23
 Title:   Dec 22, 2024 | Christmas Program
 Speaker: Unknown Speaker
 Church:  Cedar Hills - Church of the Cross
-Type:    Christmas Program
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=Ac1tv4LZh-w
 ========================================

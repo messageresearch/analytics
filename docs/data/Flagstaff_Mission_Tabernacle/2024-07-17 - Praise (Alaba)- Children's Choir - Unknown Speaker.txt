@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-07-17 - Praise (Alaba)- Children's Choir - Unknown Speaker - Clean.txt
+START OF FILE: 2024-07-17 - Praise (Alaba)- Children's Choir - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-07-17
 Title:   Praise (Alaba)- Children's Choir
 Speaker: Unknown Speaker
 Church:  Flagstaff Mission Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=3C2LtA_Tb84
 ========================================

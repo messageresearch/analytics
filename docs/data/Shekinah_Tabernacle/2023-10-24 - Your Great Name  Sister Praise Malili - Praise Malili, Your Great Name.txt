@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-10-24 - Your Great Name | Sister Praise Malili - Praise Malili, Your Great Name - Clean.txt
+START OF FILE: 2023-10-24 - Your Great Name  Sister Praise Malili - Praise Malili, Your Great Name.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-10-24
 Title:   Your Great Name | Sister Praise Malili
 Speaker: Praise Malili, Your Great Name
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=lyVhzW6qW9Y
 ========================================

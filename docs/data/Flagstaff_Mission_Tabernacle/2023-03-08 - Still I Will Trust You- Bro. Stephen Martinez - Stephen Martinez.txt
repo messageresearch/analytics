@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-03-08 - Still I Will Trust You- Bro. Stephen Martinez - Stephen Martinez - Clean.txt
+START OF FILE: 2023-03-08 - Still I Will Trust You- Bro. Stephen Martinez - Stephen Martinez.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-03-08
 Title:   Still I Will Trust You- Bro. Stephen Martinez
 Speaker: Stephen Martinez
 Church:  Flagstaff Mission Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=fa5ob-IiqrA
 ========================================

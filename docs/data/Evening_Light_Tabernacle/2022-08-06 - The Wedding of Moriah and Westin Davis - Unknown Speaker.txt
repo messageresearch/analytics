@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-08-06 - The Wedding of Moriah and Westin Davis - Unknown Speaker - Clean.txt
+START OF FILE: 2022-08-06 - The Wedding of Moriah and Westin Davis - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-08-06
 Title:   The Wedding of Moriah and Westin Davis
 Speaker: Unknown Speaker
 Church:  Evening Light Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=WH7bBKsyVCg
 ========================================

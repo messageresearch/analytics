@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-08-24 - TWT Youth Camp Saturday 8/21/2021 - Unknown Speaker - Clean.txt
+START OF FILE: 2021-08-24 - TWT Youth Camp Saturday 8212021 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-08-24
 Title:   TWT Youth Camp Saturday 8/21/2021
 Speaker: Unknown Speaker
 Church:  True Word Tabernacle
-Type:    Youth Camp
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=x58rziYWhoA
 ========================================

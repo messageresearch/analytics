@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-11-17 - Memorial Service For Bro. Michael Mc Mayo - Unknown Speaker - Clean.txt
+START OF FILE: 2024-11-17 - Memorial Service For Bro. Michael Mc Mayo - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-11-17
 Title:   Memorial Service For Bro. Michael Mc Mayo
 Speaker: Unknown Speaker
 Church:  Headstone Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=tNlB2Hyo2D0
 ========================================

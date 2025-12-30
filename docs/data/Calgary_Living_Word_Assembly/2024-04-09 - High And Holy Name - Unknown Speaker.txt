@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-04-09 - High And Holy Name - Unknown Speaker - Clean.txt
+START OF FILE: 2024-04-09 - High And Holy Name - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-04-09
 Title:   High And Holy Name
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=7TRDWejgQco
 ========================================

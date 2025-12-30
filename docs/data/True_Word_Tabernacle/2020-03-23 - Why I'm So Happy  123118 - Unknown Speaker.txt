@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-03-23 - Why I'm So Happy  12/31/18 - Unknown Speaker - Clean.txt
+START OF FILE: 2020-03-23 - Why I'm So Happy  123118 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-03-23
 Title:   Why I'm So Happy  12/31/18
 Speaker: Unknown Speaker
 Church:  True Word Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=3jZRAi1devI
 ========================================

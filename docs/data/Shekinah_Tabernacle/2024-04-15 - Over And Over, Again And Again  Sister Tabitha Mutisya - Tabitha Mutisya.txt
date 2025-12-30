@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-04-15 - Over And Over, Again And Again | Sister Tabitha Mutisya - Tabitha Mutisya - Clean.txt
+START OF FILE: 2024-04-15 - Over And Over, Again And Again  Sister Tabitha Mutisya - Tabitha Mutisya.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-04-15
 Title:   Over And Over, Again And Again | Sister Tabitha Mutisya
 Speaker: Tabitha Mutisya
 Church:  Shekinah Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=kAW47W-I6kU
 ========================================

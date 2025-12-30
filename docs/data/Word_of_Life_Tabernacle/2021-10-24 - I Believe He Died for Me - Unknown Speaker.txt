@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-10-24 - I Believe He Died for Me - Unknown Speaker - Clean.txt
+START OF FILE: 2021-10-24 - I Believe He Died for Me - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-10-24
 Title:   I Believe He Died for Me
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=XB4zUl_hlOo
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-05-24 - We Have Stepped Into Eternity - Ray Harrell - Ray Harrell - Clean.txt
+START OF FILE: 2025-05-24 - We Have Stepped Into Eternity - Ray Harrell - Ray Harrell.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-05-24
 Title:   We Have Stepped Into Eternity - Ray Harrell
 Speaker: Ray Harrell
 Church:  Bethel Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=kyRWk2wEu_0
 ========================================

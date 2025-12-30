@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-10-05 - The Wedding of Lily & Silas Green - Unknown Speaker - Clean.txt
+START OF FILE: 2024-10-05 - The Wedding of Lily & Silas Green - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-10-05
 Title:   The Wedding of Lily & Silas Green
 Speaker: Unknown Speaker
 Church:  Evening Light Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=hgHRui0fRMo
 ========================================

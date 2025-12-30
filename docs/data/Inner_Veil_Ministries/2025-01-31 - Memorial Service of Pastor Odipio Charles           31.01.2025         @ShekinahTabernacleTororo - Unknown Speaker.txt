@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2025-01-31 - Memorial Service of Pastor Odipio Charles      |     31.01.2025     |    @ShekinahTabernacleTororo - Unknown Speaker - Clean.txt
+START OF FILE: 2025-01-31 - Memorial Service of Pastor Odipio Charles           31.01.2025         @ShekinahTabernacleTororo - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2025-01-31
 Title:   Memorial Service of Pastor Odipio Charles      |     31.01.2025     |    @ShekinahTabernacleTororo
 Speaker: Unknown Speaker
 Church:  Inner Veil Ministries
-Type:    Memorial Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=fAc6uiX6yDc
 ========================================

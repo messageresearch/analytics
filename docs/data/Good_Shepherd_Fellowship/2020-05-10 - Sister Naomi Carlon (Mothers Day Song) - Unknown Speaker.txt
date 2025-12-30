@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-05-10 - Sister Naomi Carlon (Mothers Day Song) - Unknown Speaker - Clean.txt
+START OF FILE: 2020-05-10 - Sister Naomi Carlon (Mothers Day Song) - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-05-10
 Title:   Sister Naomi Carlon (Mothers Day Song)
 Speaker: Unknown Speaker
 Church:  Good Shepherd Fellowship
-Type:    Worship Service
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=IFWtykuYlX8
 ========================================

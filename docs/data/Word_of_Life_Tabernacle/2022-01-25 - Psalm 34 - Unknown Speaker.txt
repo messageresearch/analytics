@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-01-25 - Psalm 34 - Unknown Speaker - Clean.txt
+START OF FILE: 2022-01-25 - Psalm 34 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-01-25
 Title:   Psalm 34
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=6eQGE9NZhK8
 ========================================

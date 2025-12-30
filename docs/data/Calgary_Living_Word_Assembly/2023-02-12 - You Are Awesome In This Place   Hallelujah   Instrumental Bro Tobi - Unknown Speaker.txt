@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-02-12 - You Are Awesome In This Place   Hallelujah   Instrumental Bro Tobi - Unknown Speaker - Clean.txt
+START OF FILE: 2023-02-12 - You Are Awesome In This Place   Hallelujah   Instrumental Bro Tobi - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-02-12
 Title:   You Are Awesome In This Place   Hallelujah   Instrumental Bro Tobi
 Speaker: Unknown Speaker
 Church:  Calgary Living Word Assembly
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=IyHOa1GNIsE
 ========================================

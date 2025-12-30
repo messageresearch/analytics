@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-05-11 - It's Already Done! -Bro. Patrick Nkongolo. - Patrick Nkongolo - Clean.txt
+START OF FILE: 2020-05-11 - It's Already Done! -Bro. Patrick Nkongolo. - Patrick Nkongolo.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-05-11
 Title:   It's Already Done! -Bro. Patrick Nkongolo.
 Speaker: Patrick Nkongolo
 Church:  End Time Message Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=VjmgwNQVmRo
 ========================================

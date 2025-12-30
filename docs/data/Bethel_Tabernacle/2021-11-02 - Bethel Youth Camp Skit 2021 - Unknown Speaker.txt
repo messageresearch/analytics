@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-11-02 - Bethel Youth Camp Skit 2021 - Unknown Speaker - Clean.txt
+START OF FILE: 2021-11-02 - Bethel Youth Camp Skit 2021 - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-11-02
 Title:   Bethel Youth Camp Skit 2021
 Speaker: Unknown Speaker
 Church:  Bethel Tabernacle
-Type:    Youth Camp
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=wgLfOODYoa8
 ========================================

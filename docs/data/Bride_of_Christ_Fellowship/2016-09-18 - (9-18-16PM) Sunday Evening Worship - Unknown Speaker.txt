@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2016-09-18 - (9-18-16PM) Sunday Evening Worship - Unknown Speaker - Clean.txt
+START OF FILE: 2016-09-18 - (9-18-16PM) Sunday Evening Worship - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2016-09-18
 Title:   (9-18-16PM) Sunday Evening Worship
 Speaker: Unknown Speaker
 Church:  Bride of Christ Fellowship
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=Tkf6lIgtvWQ
 ========================================

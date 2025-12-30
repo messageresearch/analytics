@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-12-02 - 2020-1107 Pablo & Esmeralda Espinosa Wedding - Unknown Speaker - Clean.txt
+START OF FILE: 2020-12-02 - 2020-1107 Pablo & Esmeralda Espinosa Wedding - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-12-02
 Title:   2020-1107 Pablo & Esmeralda Espinosa Wedding
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=DAq3X5e9L5Y
 ========================================

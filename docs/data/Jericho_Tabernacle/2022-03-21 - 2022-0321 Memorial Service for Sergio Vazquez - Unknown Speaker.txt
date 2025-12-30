@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-03-21 - 2022-0321 Memorial Service for Sergio Vazquez - Unknown Speaker - Clean.txt
+START OF FILE: 2022-03-21 - 2022-0321 Memorial Service for Sergio Vazquez - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-03-21
 Title:   2022-0321 Memorial Service for Sergio Vazquez
 Speaker: Unknown Speaker
 Church:  Jericho Tabernacle
-Type:    Memorial Service
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=cmN5KgVjaBo
 ========================================

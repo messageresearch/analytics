@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2019-02-07 - The LORD Is My Song - Unknown Speaker - Clean.txt
+START OF FILE: 2019-02-07 - The LORD Is My Song - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2019-02-07
 Title:   The LORD Is My Song
 Speaker: Unknown Speaker
 Church:  Believer's Spoken Word Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=6-VW2Xglhao
 ========================================

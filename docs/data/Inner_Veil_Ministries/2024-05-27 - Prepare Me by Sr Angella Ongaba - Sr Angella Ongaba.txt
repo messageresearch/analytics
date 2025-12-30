@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2024-05-27 - Prepare Me by Sr Angella Ongaba - Sr Angella Ongaba - Clean.txt
+START OF FILE: 2024-05-27 - Prepare Me by Sr Angella Ongaba - Sr Angella Ongaba.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2024-05-27
 Title:   Prepare Me by Sr Angella Ongaba
 Speaker: Sr Angella Ongaba
 Church:  Inner Veil Ministries
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=EqOpkO5YUJk
 ========================================

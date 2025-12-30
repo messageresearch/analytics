@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-02-28 - He’s Ready to Come, I’m Ready to Go - Unknown Speaker - Clean.txt
+START OF FILE: 2023-02-28 - He’s Ready to Come, I’m Ready to Go - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-02-28
 Title:   He’s Ready to Come, I’m Ready to Go
 Speaker: Unknown Speaker
 Church:  Word of Life Tabernacle
-Type:    Full Sermon
+Type:    Song / Worship
 Language:English
 URL:     https://www.youtube.com/watch?v=uHELZ2rBbyo
 ========================================

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-10-30 - The Wedding of Adrianna and Ben Stemen - Unknown Speaker - Clean.txt
+START OF FILE: 2021-10-30 - The Wedding of Adrianna and Ben Stemen - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-10-30
 Title:   The Wedding of Adrianna and Ben Stemen
 Speaker: Unknown Speaker
 Church:  Evening Light Tabernacle
-Type:    Wedding
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=_FhCHBVYKLM
 ========================================

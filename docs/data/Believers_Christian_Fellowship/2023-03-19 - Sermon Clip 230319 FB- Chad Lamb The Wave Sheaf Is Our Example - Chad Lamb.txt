@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-03-19 - Sermon Clip: 230319 FB- Chad Lamb: The Wave Sheaf Is Our Example - Chad Lamb - Clean.txt
+START OF FILE: 2023-03-19 - Sermon Clip 230319 FB- Chad Lamb The Wave Sheaf Is Our Example - Chad Lamb.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-03-19
 Title:   Sermon Clip: 230319 FB- Chad Lamb: The Wave Sheaf Is Our Example
 Speaker: Chad Lamb
 Church:  Believers Christian Fellowship
-Type:    Sermon Clip
+Type:    Full Sermon
 Language:English
 URL:     https://www.youtube.com/watch?v=yE9K3xxRg44
 ========================================

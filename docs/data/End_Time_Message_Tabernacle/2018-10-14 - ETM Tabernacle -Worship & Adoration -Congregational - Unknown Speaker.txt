@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2018-10-14 - ETM Tabernacle -Worship & Adoration -Congregational - Unknown Speaker - Clean.txt
+START OF FILE: 2018-10-14 - ETM Tabernacle -Worship & Adoration -Congregational - Unknown Speaker.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2018-10-14
 Title:   ETM Tabernacle -Worship & Adoration -Congregational
 Speaker: Unknown Speaker
 Church:  End Time Message Tabernacle
-Type:    Worship Service
+Type:    Full Sermon
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=28WNyVMh_qM
 ========================================
