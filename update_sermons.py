@@ -866,6 +866,7 @@ def metadata_only_scan(church_name, config, known_speakers):
     Scans a YouTube channel for ALL videos and collects metadata (date, title, description)
     WITHOUT downloading transcripts. Useful for quickly cataloging all videos.
     PRESERVES all existing entries - never deletes previous data.
+    Also processes unlisted URLs from existing summary CSV.
     """
     channel_url = config['url']
     clean_channel_name = church_name.replace(' ', '_')
@@ -890,12 +891,27 @@ def metadata_only_scan(church_name, config, known_speakers):
         all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=None)))
     except Exception as e:
         print(f"   ⚠️ Scrape Error: {e}")
-        return
     
-    # Deduplicate
+    # Deduplicate channel videos
     unique_videos_map = {v['videoId']: v for v in all_videos}
+    
+    # CRITICAL: Also include unlisted URLs from existing summary CSV
+    # These may be videos discovered via supplemental scrapers (e.g., church website)
+    unlisted_count = 0
+    for url, entry in existing_history.items():
+        if url and 'watch?v=' in url:
+            video_id = url.split('watch?v=')[-1].split('&')[0]
+            if video_id not in unique_videos_map:
+                # This is an unlisted video - add it to the processing queue
+                unique_videos_map[video_id] = {
+                    'videoId': video_id,
+                    'title': {'runs': [{'text': entry.get('title', 'Unknown Title')}]},
+                    '_from_summary': True  # Flag to identify unlisted videos
+                }
+                unlisted_count += 1
+    
     unique_videos = list(unique_videos_map.values())
-    print(f"   📊 Found {len(unique_videos)} unique videos on channel.")
+    print(f"   📊 Found {len(unique_videos) - unlisted_count} videos on channel + {unlisted_count} unlisted from summary.")
     
     if len(unique_videos) == 0:
         print("   ❌ No videos found.")
@@ -904,10 +920,12 @@ def metadata_only_scan(church_name, config, known_speakers):
     today_str = datetime.datetime.now().strftime("%Y-%m-%d")
     new_count = 0
     updated_count = 0
+    unlisted_updated = 0
     
     for i, video in enumerate(unique_videos, 1):
         video_id = video['videoId']
         video_url = f"https://www.youtube.com/watch?v={video_id}"
+        is_unlisted = video.get('_from_summary', False)
         
         try:
             title = video['title']['runs'][0]['text']
@@ -917,7 +935,34 @@ def metadata_only_scan(church_name, config, known_speakers):
         # Check if already exists in history
         if video_url in existing_history:
             existing = existing_history[video_url]
-            # Update title if changed, but preserve everything else
+            existing_status = existing.get('status', '')
+            
+            # For unlisted videos or those with incomplete metadata, try to refresh
+            if is_unlisted and existing_status in ['Metadata Only', 'Metadata Error', 'No Transcript']:
+                print(f"   [{i}/{len(unique_videos)}] UNLISTED REFRESH: {title[:50]}...")
+                try:
+                    time.sleep(random.uniform(2, 5))
+                    yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
+                    description = yt_obj.description or ""
+                    
+                    # Update metadata if we got better info
+                    if description and not existing.get('description'):
+                        existing['description'] = description.replace('\n', ' ').replace('\r', ' ')[:500]
+                    if existing.get('date') == 'Unknown Date':
+                        existing['date'] = determine_sermon_date(title, description, yt_obj)
+                    if existing.get('speaker') == 'Unknown Speaker':
+                        speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+                        speaker = normalize_speaker(speaker)
+                        speaker = clean_name(speaker)
+                        existing['speaker'] = speaker
+                    
+                    existing['last_checked'] = today_str
+                    unlisted_updated += 1
+                except Exception as e:
+                    print(f"      ⚠️ Could not refresh unlisted video: {str(e)[:40]}")
+                continue
+            
+            # For regular videos, just update title if changed
             if existing.get('title') != title:
                 existing['title'] = title
                 existing['last_checked'] = today_str
@@ -987,6 +1032,7 @@ def metadata_only_scan(church_name, config, known_speakers):
         print(f"\n   ✅ SCAN COMPLETE")
         print(f"      New videos found: {new_count}")
         print(f"      Titles updated: {updated_count}")
+        print(f"      Unlisted refreshed: {unlisted_updated}")
         print(f"      Total entries: {len(summary_list)}")
     except Exception as e:
         print(f"   ❌ Error writing summary CSV: {e}")
@@ -1131,6 +1177,26 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         if 'manual_date' not in v: unique_videos_map[v['videoId']] = v
     for v in all_videos:
         if 'manual_date' in v: unique_videos_map[v['videoId']] = v
+
+    # CRITICAL: Also include unlisted URLs from summary CSV history
+    # These may be videos discovered via supplemental scrapers (e.g., church website)
+    unlisted_from_history = 0
+    for url, entry in history.items():
+        if url and 'watch?v=' in url:
+            video_id = url.split('watch?v=')[-1].split('&')[0]
+            if video_id not in unique_videos_map:
+                # This is an unlisted video from history - add to processing queue
+                unique_videos_map[video_id] = {
+                    'videoId': video_id,
+                    'title': {'runs': [{'text': entry.get('title', 'Unknown Title')}]},
+                    'manual_date': entry.get('date') if entry.get('date') != 'Unknown Date' else None,
+                    'manual_speaker': entry.get('speaker') if entry.get('speaker') != 'Unknown Speaker' else None,
+                    '_from_history': True  # Flag to identify videos from history
+                }
+                unlisted_from_history += 1
+    
+    if unlisted_from_history > 0:
+        print(f"   📋 Added {unlisted_from_history} unlisted videos from summary CSV.")
 
     unique_videos = unique_videos_map.values()
     print(f"   Videos found: {len(unique_videos)}")
