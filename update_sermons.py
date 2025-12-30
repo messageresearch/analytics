@@ -497,12 +497,20 @@ def heal_archive(data_dir, force=False):
             if change_detected or force:
                 updated_files_count += 1
             
-        # Write back updated Summary CSV
+        # Write back updated Summary CSV (with deduplication)
         try:
+            # Deduplicate by (date, title) before writing
+            seen_keys = set()
+            deduped_rows = []
+            for row in new_rows:
+                key = (row.get('date', '').strip(), row.get('title', '').strip())
+                if key not in seen_keys:
+                    seen_keys.add(key)
+                    deduped_rows.append(row)
             with open(summary_path, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=headers)
                 writer.writeheader()
-                writer.writerows(new_rows)
+                writer.writerows(deduped_rows)
         except: pass
 
     # --- STEP 4: UPDATE SPEAKERS.JSON ---

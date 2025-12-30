@@ -175,6 +175,7 @@ def main():
     # Now build a master CSV directly from the summary files (faster than scanning transcripts)
     try:
         master_rows = []
+        seen_ids = set()  # Track seen IDs to prevent duplicates
         header_written = False
         master_path = os.path.join(OUTPUT_DIR, 'master_sermons.csv')
         print(f"   Building master CSV at {master_path}...")
@@ -235,6 +236,10 @@ def main():
                                     title = max(candidates, key=lambda s: len(s))
                             # final id
                             uid = normalize_key(church_name) + '_' + normalize_key(title) + '_' + (date.replace('-', '') if date else '')
+                            # Skip duplicates (same id)
+                            if uid in seen_ids:
+                                continue
+                            seen_ids.add(uid)
                             master_rows.append([uid, date, church_name, title, speaker, vtype, lang, video])
                 except Exception as e:
                     print(f"Failed to parse summary CSV {path}: {e}")
