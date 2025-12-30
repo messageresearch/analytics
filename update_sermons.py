@@ -1598,9 +1598,32 @@ def main():
                     days_back = 7
             except ValueError:
                 days_back = 7
-            print(f"\n🔄 Scanning all channels for videos from the last {days_back} days...\n")
-            for name, config in channels.items():
-                process_channel(name, config, known_speakers, days_back=days_back)
+            
+            print(f"\nAvailable channels:")
+            for i, name in enumerate(channels.keys(), 1):
+                print(f"  {i}. {name}")
+            print(f"  0. All Channels")
+            choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
+            
+            if choice == '0':
+                print(f"\n🔄 Scanning ALL channels for videos from the last {days_back} days...\n")
+                for name, config in channels.items():
+                    process_channel(name, config, known_speakers, days_back=days_back)
+            else:
+                try:
+                    idx = int(choice) - 1
+                    channel_names = list(channels.keys())
+                    if 0 <= idx < len(channel_names):
+                        name = channel_names[idx]
+                        print(f"\n🔄 Scanning {name} for videos from the last {days_back} days...\n")
+                        process_channel(name, channels[name], known_speakers, days_back=days_back)
+                    else:
+                        print("Invalid selection.")
+                        return
+                except ValueError:
+                    print("Invalid input.")
+                    return
+            
             print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
             return
