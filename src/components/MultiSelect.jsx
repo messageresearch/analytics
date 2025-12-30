@@ -100,18 +100,14 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
     })
   },[selected, filteredOptions, onChange])
 
-  // Handle Enter key to select/add matches
+  // Handle Enter key to select matches
   const handleKeyDown = useCallback((e)=>{
     if(e.key === 'Enter' && debouncedSearch.trim() && filteredOptions.length > 0){
       e.preventDefault()
-      // If there are existing selections, add to them; otherwise replace
-      if(selected.length > 0){
-        addToFiltered()
-      } else {
-        selectAllFiltered()
-      }
+      // Enter always selects (replaces), use "+ Add" button to append
+      selectAllFiltered()
     }
-  },[debouncedSearch, filteredOptions.length, selected.length, addToFiltered, selectAllFiltered])
+  },[debouncedSearch, filteredOptions.length, selectAllFiltered])
 
   // Virtualized row renderer
   const Row = useCallback(({ index, style })=>{
