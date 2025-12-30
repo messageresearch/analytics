@@ -311,6 +311,25 @@ def main():
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:
         json.dump(master_data, f)
 
+    # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
+    import shutil
+    DOCS_DIR = "docs"
+    print(f"\n   Syncing to {DOCS_DIR}/ for GitHub Pages...")
+    
+    # Sync data folder
+    docs_data = os.path.join(DOCS_DIR, DATA_DIR)
+    if os.path.exists(docs_data):
+        shutil.rmtree(docs_data)
+    shutil.copytree(DATA_DIR, docs_data)
+    print(f"   ✅ Copied {DATA_DIR}/ → {docs_data}/")
+    
+    # Sync site_api folder
+    docs_api = os.path.join(DOCS_DIR, OUTPUT_DIR)
+    if os.path.exists(docs_api):
+        shutil.rmtree(docs_api)
+    shutil.copytree(OUTPUT_DIR, docs_api)
+    print(f"   ✅ Copied {OUTPUT_DIR}/ → {docs_api}/")
+
     print("\n✅ GENERATION COMPLETE")
 
 if __name__ == "__main__":
