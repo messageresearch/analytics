@@ -129,7 +129,7 @@ export default function VirtualizedTable({
   // scrolling occurs on the shared outer container (`dataRef`) so the
   // sticky header scrolls horizontally together with the rows.
   const totalWidth = useMemo(() => {
-    const fallbackPx = 120 // default fallback per column when fractional sizes used
+    const fallbackPx = 200 // larger fallback for fractional sizes to ensure content fits
     let total = 0
     columns.forEach(c => {
       const w = getColWidth(c)
@@ -139,14 +139,18 @@ export default function VirtualizedTable({
         // percentage widths can't be resolved here; use fallback
         total += fallbackPx
       } else if (typeof w === 'string' && w.includes('fr')) {
-        total += fallbackPx
+        // For fractional units, multiply by the fr value for better sizing
+        const frMatch = w.match(/(\d+)fr/)
+        const frValue = frMatch ? parseInt(frMatch[1], 10) : 1
+        total += fallbackPx * frValue
       } else if (typeof w === 'number') {
         total += w
       } else {
         total += fallbackPx
       }
     })
-    return total
+    // Add some padding to ensure all columns are visible
+    return total + 60
   }, [columns, columnWidths, isMobile])
 
   // Custom inner element for react-window to force computed width
@@ -170,15 +174,19 @@ export default function VirtualizedTable({
     return (
       <div
         style={{ ...style }}
-        className={`px-3 py-2 hover:bg-gray-50 border-b cursor-pointer ${isMobile ? 'text-xs' : ''}`}
+        className={`hover:bg-gray-50 border-b cursor-pointer ${isMobile ? 'text-xs' : ''}`}
         onClick={() => onRowClick && onRowClick(row)}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', padding: '8px 12px' }}>
           {columns.map(col => {
             const content = col.render ? col.render(row) : row[col.key]
             const title = typeof content === 'string' ? content : (typeof row[col.key] === 'string' ? row[col.key] : '')
             return (
-              <div key={col.key} title={title} className={`${col.className || (isMobile ? 'text-xs text-gray-700' : 'text-sm text-gray-700')} truncate`}>
+              <div 
+                key={col.key} 
+                title={title} 
+                className={`${col.className || (isMobile ? 'text-xs text-gray-700' : 'text-sm text-gray-700')} ${col.noTruncate ? '' : 'truncate'} ${col.centered ? 'text-center' : ''}`}
+              >
                 {content}
               </div>
             )
@@ -188,17 +196,32 @@ export default function VirtualizedTable({
     )
   }
 
-  // Single scrollable container with sticky header and List for true horizontal lock
+  // Sync horizontal scroll between header and list
+  const handleContainerScroll = (e) => {
+    setScrollLeft(e.target.scrollLeft)
+  }
+
+  // Double the default height for larger viewing area
+  const effectiveHeight = isMobile ? Math.min(height * 2, typeof window !== 'undefined' ? window.innerHeight - 200 : 800) : height * 2
+
+  // Single scrollable container with sticky header and virtualized list
   return (
-    <div className="w-full border rounded-lg bg-white" style={{ overflow: 'visible' }}>
+    <div className="w-full border rounded-lg bg-white relative overflow-hidden">
+      {/* Outer scrollable container for horizontal scroll */}
       <div
-        className="overflow-x-auto"
-        style={{ WebkitOverflowScrolling: 'touch', width: '100%' }}
+        ref={dataRef}
+        className="overflow-x-auto overflow-y-hidden"
+        style={{ 
+          WebkitOverflowScrolling: 'touch', 
+          width: '100%',
+        }}
+        onScroll={handleContainerScroll}
       >
-        <div style={{ minWidth: totalWidth, width: totalWidth }}>
-          {/* Sticky header inside scrollable container */}
+        <div style={{ minWidth: totalWidth, width: 'max-content' }}>
+          {/* Fixed header that stays in place during vertical scroll */}
           <div
-            className={`sticky top-0 z-10 bg-gray-50 border-b px-3 py-3 ${isMobile ? 'text-xs' : ''}`}
+            ref={headerRef}
+            className={`sticky top-0 z-20 bg-gray-50 border-b ${isMobile ? 'text-xs' : ''}`}
             style={{
               minWidth: totalWidth,
               width: totalWidth,
@@ -207,13 +230,14 @@ export default function VirtualizedTable({
               gap: isMobile ? '8px' : '12px',
               alignItems: 'center',
               whiteSpace: 'nowrap',
+              padding: '12px 12px',
             }}
           >
             {columns.map((col, idx) => (
               <div key={col.key} className="relative">
-                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center`}>
-                  <button onClick={() => onSort(col.key)} className="flex items-center text-left w-full hover:text-gray-900">
-                    <span>{col.label}</span>
+                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center ${col.centered ? 'justify-center' : ''}`}>
+                  <button onClick={() => onSort(col.key)} className={`flex items-center w-full hover:text-gray-900 ${col.centered ? 'justify-center text-center' : 'text-left'}`}>
+                    <span className="truncate">{col.label}</span>
                     <SortIndicator key={col.key} />
                   </button>
                 </div>
@@ -229,12 +253,15 @@ export default function VirtualizedTable({
               </div>
             ))}
           </div>
-          {/* Data rows - List width matches header for perfect lock */}
+          
+          {/* Data rows - virtualized List for performance */}
           <List
-            height={isMobile ? Math.min(height, typeof window !== 'undefined' ? window.innerHeight - 300 : 400) : height}
+            ref={listRef}
+            height={effectiveHeight}
             itemCount={data.length}
             itemSize={isMobile ? 48 : rowHeight}
             width={totalWidth}
+            style={{ overflowX: 'hidden', overflowY: 'auto' }}
             innerElementType={InnerElement}
           >
             {Row}

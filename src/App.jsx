@@ -524,8 +524,8 @@ export default function App(){
                 ))}
               </div>
               <div className="bg-white rounded-xl border shadow-sm overflow-hidden mb-8 p-6">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="font-bold text-gray-800">Sermon List ({processedTableData.length.toLocaleString()})</h3>
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
+                  <h3 className="font-bold text-gray-800">Transcript List ({processedTableData.length.toLocaleString()})</h3>
                   {(customCounts && (activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term))) ? (
                     <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded font-medium">Sorted by mentions for: <span className="font-semibold">{activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term)}</span></div>
                   ) : (sortConfig && sortConfig.key === 'mentionCount' && sortConfig.direction === 'desc') ? (
@@ -538,9 +538,9 @@ export default function App(){
                     { key: 'church', label: 'Church', width: '180px', filterKey: 'church', render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
                     { key: 'title', label: 'Title', width: '2fr', filterKey: 'title', render: (r) => (<div className="font-medium text-gray-900 truncate">{r.title}</div>) },
                     { key: 'type', label: 'Type', width: '120px', filterKey: 'category', render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
-                    { key: 'mentionCount', label: 'Mentions', width: '100px', filterKey: 'mentions', filterType: 'number', render: (r) => (<div className={`text-right font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
-                    { key: 'mentionsPerHour', label: 'Rate/Hr', width: '100px', filterKey: 'rate', filterType: 'number', render: (r) => (<div className="text-right text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'action', label: 'Action', width: '60px', render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600"><Icon name="download" size={16} /></button>) }
+                    { key: 'mentionCount', label: 'Mentions', width: '100px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
+                    { key: 'mentionsPerHour', label: 'Rate/Hr', width: '80px', filterKey: 'rate', filterType: 'number', centered: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
+                    { key: 'action', label: 'Download', width: '100px', centered: true, noTruncate: true, render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600 flex items-center justify-center w-full"><Icon name="download" size={18} /></button>) }
                   ]}
                   data={processedTableData}
                   rowHeight={64}
