@@ -201,13 +201,14 @@ def main():
                             for cell in r:
                                 if cell and ("youtube.com/watch" in cell or "youtu.be/" in cell):
                                     video = cell.strip(); break
-                            # guess date, title, speaker, type, language
+                            # guess date, title, speaker, type, language, description
                             date = ''
                             title = ''
                             speaker = ''
                             vtype = ''
                             lang = ''
-                            # heuristics: common layout: date, status, speaker, title, url, generated, language, type
+                            desc = ''
+                            # heuristics: common layout: date, status, speaker, title, url, generated, language, type, description
                             if len(r) >= 4:
                                 date = r[0].strip()
                                 speaker = r[2].strip() if len(r) > 2 else ''
@@ -219,11 +220,13 @@ def main():
                                 if speaker in SPEAKER_HEAL_LIST:
                                     speaker = "Unknown Speaker"
                                 title = r[3].strip() if len(r) > 3 else ''
-                            # try to get language/type if present
+                            # try to get language/type/description if present
                             if len(r) > 6:
                                 lang = r[6].strip()
                             if len(r) > 7:
                                 vtype = r[7].strip()
+                            if len(r) > 8:
+                                desc = r[8].strip()
                             # fallback: detect date-like cell anywhere
                             if not date:
                                 for cell in r:
@@ -240,7 +243,7 @@ def main():
                             if uid in seen_ids:
                                 continue
                             seen_ids.add(uid)
-                            master_rows.append([uid, date, church_name, title, speaker, vtype, lang, video])
+                            master_rows.append([uid, date, church_name, title, speaker, vtype, lang, video, desc])
                 except Exception as e:
                     print(f"Failed to parse summary CSV {path}: {e}")
         # write master CSV
@@ -249,7 +252,7 @@ def main():
                 # BOM for Excel
                 out.write('\ufeff')
                 writer = csv.writer(out)
-                writer.writerow(['id','date','church','title','speaker','type','language','videoUrl'])
+                writer.writerow(['id','date','church','title','speaker','type','language','videoUrl','description'])
                 for row in master_rows:
                     writer.writerow(row)
             print(f"   Wrote master CSV with {len(master_rows)} rows")
