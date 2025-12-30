@@ -140,6 +140,50 @@ def load_config():
             with open(config_file, 'r') as f: return json.load(f)
     return {}
 
+def parse_published_time(published_text, max_days=1):
+    """
+    Parse YouTube's relative time text (e.g., '3 days ago', '1 week ago')
+    Returns True if the video is within max_days, False otherwise.
+    """
+    if not published_text:
+        return False
+    text = published_text.lower().strip()
+    
+    # Handle "Streamed X ago" or "Premiered X ago"
+    text = text.replace('streamed ', '').replace('premiered ', '')
+    
+    # Parse the time text
+    try:
+        if 'just now' in text or 'moment' in text:
+            return True
+        elif 'second' in text or 'minute' in text:
+            return True
+        elif 'hour' in text:
+            return True
+        elif 'day' in text:
+            match = re.search(r'(\d+)\s*day', text)
+            if match:
+                days = int(match.group(1))
+                return days <= max_days
+            return max_days >= 1
+        elif 'week' in text:
+            match = re.search(r'(\d+)\s*week', text)
+            if match:
+                weeks = int(match.group(1))
+                return (weeks * 7) <= max_days
+            return max_days >= 7
+        elif 'month' in text:
+            match = re.search(r'(\d+)\s*month', text)
+            if match:
+                months = int(match.group(1))
+                return (months * 30) <= max_days
+            return max_days >= 30
+        elif 'year' in text:
+            return max_days >= 365
+    except:
+        pass
+    return False
+
 # --- TEXT CLEANING & NORMALIZATION ---
 def sanitize_filename(text):
     return re.sub(r'[\\/*?:"<>|]', "", text).strip()
@@ -1111,7 +1155,18 @@ def deep_clean_speakers_list(speakers_set):
                 cleaned_set.add(name)
     return cleaned_set
 
-def process_channel(church_name, config, known_speakers, limit=None, recent_only=False):
+def process_channel(church_name, config, known_speakers, limit=None, recent_only=False, days_back=None):
+    """
+    Process a YouTube channel for sermon transcripts.
+    
+    Args:
+        church_name: Name of the church/channel
+        config: Channel configuration dict
+        known_speakers: Set of known speaker names
+        limit: Max number of videos to scan (None = no limit)
+        recent_only: Legacy flag for 24-hour mode (deprecated, use days_back=1)
+        days_back: Number of days to look back (None = full archive, 7 = last week)
+    """
     channel_url = config['url']
     clean_channel_name = church_name.replace(' ', '_')
     channel_dir = os.path.join(DATA_DIR, clean_channel_name)
@@ -1121,8 +1176,11 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     print(f"Processing Channel: {church_name}")
     if limit:
         print(f"   📊 Scan Limit: Most recent {limit} videos.")
+    elif days_back:
+        print(f"   📊 Scan Limit: Videos from the last {days_back} days.")
     elif recent_only:
         print(f"   📊 Scan Limit: Videos in the last 24 hours.")
+        days_back = 1  # Convert legacy flag to days_back
     else:
         print(f"   📊 Scan Limit: FULL ARCHIVE.")
     time.sleep(1)
@@ -1217,11 +1275,11 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         try: title = video['title']['runs'][0]['text']
         except: title = "Unknown Title"
         
-        # Check if the video is recent enough to be processed
-        if recent_only and church_name != "Shalom Tabernacle" and church_name != "Shalom Tabernacle Tucson":
+        # Check if the video is recent enough to be processed (when using days_back filter)
+        if days_back and church_name != "Shalom Tabernacle" and church_name != "Shalom Tabernacle Tucson":
             published_time_text = video.get('publishedTimeText', {}).get('simpleText', '')
-            if not parse_published_time(published_time_text):
-                continue # Skip if the video is older than 24 hours
+            if not parse_published_time(published_time_text, max_days=days_back):
+                continue # Skip if the video is older than days_back
 
         manual_date = video.get('manual_date')
         manual_speaker = video.get('manual_speaker')
@@ -1448,6 +1506,7 @@ def main():
     try:
         parser = argparse.ArgumentParser(description="Update sermon transcripts from YouTube channels.")
         parser.add_argument('--recent', action='store_true', help="Only process videos uploaded in the last 24 hours.")
+        parser.add_argument('--days', type=int, default=None, help="Only process videos from the last N days (default: 7 for automation).")
         parser.add_argument('--heal', action='store_true', help="Only run the heal archive process.")
         parser.add_argument('--force', action='store_true', help="Force re-processing of all files during healing.")
         args = parser.parse_args()
@@ -1467,22 +1526,33 @@ def main():
         known_speakers = deep_clean_speakers_list(raw_speakers)
         save_json_file(SPEAKERS_FILE, known_speakers)
         
+        # When running with --days, process all channels for that time period
+        if args.days:
+            print(f"\\n🔄 PARTIAL SCRAPE: Last {args.days} days for ALL channels")
+            print("="*50)
+            for name, config in channels.items():
+                process_channel(name, config, known_speakers, days_back=args.days)
+            print(f"\\n✅ Partial scrape ({args.days} days) complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
+            return
+        
         # When running with --recent, we don't need a menu.
         if args.recent:
             for name, config in channels.items():
-                process_channel(name, config, known_speakers, recent_only=True)
-            print("\n✅ Recent scrape complete. Running Post--Scrape Self-Healing...")
+                process_channel(name, config, known_speakers, days_back=1)
+            print("\\n✅ Recent scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
             return
 
         # --- MENU ---
-        print("\n" + "="*50)
+        print("\\n" + "="*50)
         print("ACTION SELECTION")
         print("="*50)
         print(" 1. Single Channel Scrape")
         print(" 2. All Channels Scrape")
         print(" 3. Run Deep Self-Healing & Cleanup (No Scraping)")
         print(" 4. Metadata-Only Scan (No Transcripts)")
+        print(" 5. Partial Scrape (Last N Days)")
         print("="*50)
         
         action = input("\n👉 Enter Number: ").strip()
@@ -1515,6 +1585,24 @@ def main():
                         print("Invalid selection.")
                 except ValueError:
                     print("Invalid input.")
+            return
+        
+        if action == '5':
+            print("\n--- PARTIAL SCRAPE (Last N Days) ---")
+            print("This scrapes only videos uploaded within the specified number of days.")
+            print("Existing transcripts are preserved. Only new videos are downloaded.\n")
+            days_input = input("👉 Enter number of days to look back (default 7): ").strip()
+            try:
+                days_back = int(days_input) if days_input else 7
+                if days_back < 1:
+                    days_back = 7
+            except ValueError:
+                days_back = 7
+            print(f"\n🔄 Scanning all channels for videos from the last {days_back} days...\n")
+            for name, config in channels.items():
+                process_channel(name, config, known_speakers, days_back=days_back)
+            print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
             return
 
         # --- CHANNEL SELECTION ---
