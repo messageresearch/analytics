@@ -621,6 +621,209 @@ def heal_archive(data_dir, force=False):
     print(f"✅ Healing Complete. Corrected {updated_files_count} files/entries.")
     print(f"✨ Global Speaker List Optimized: {len(final_speakers)} unique speakers.")
 
+def heal_speakers_from_csv(csv_path="master_sermons_with_speaker_detected.csv"):
+    """
+    Heals speaker names in transcript files and summary CSVs based on a CSV file
+    with corrected speakers in the 'speaker_detected' column.
+    
+    The input CSV should have at minimum these columns:
+    - videoUrl: YouTube URL to identify the sermon
+    - speaker_detected: The corrected speaker name to apply
+    - church: Church name (to find the right folder/summary)
+    - title: Sermon title (for matching)
+    - date: Sermon date (for matching)
+    
+    This function:
+    1. Reads the CSV with speaker_detected corrections
+    2. For each entry where speaker_detected differs from current speaker:
+       - Updates the transcript .txt file (header + filename)
+       - Updates the Summary CSV entry
+    3. Never deletes any entries - only modifies speaker field
+    """
+    print("\n" + "="*60)
+    print("🔧 SPEAKER HEALING FROM CSV")
+    print(f"   Source file: {csv_path}")
+    print("="*60)
+    
+    if not os.path.exists(csv_path):
+        print(f"❌ File not found: {csv_path}")
+        return
+    
+    # Load the corrections CSV
+    corrections = []
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Only include rows where speaker_detected is provided and non-empty
+                speaker_detected = row.get('speaker_detected', '').strip()
+                if speaker_detected:
+                    corrections.append(row)
+        print(f"   📋 Loaded {len(corrections)} rows with speaker_detected values")
+    except Exception as e:
+        print(f"❌ Error reading CSV: {e}")
+        return
+    
+    if not corrections:
+        print("   ⚠️ No corrections found in CSV")
+        return
+    
+    # Group corrections by church for efficient processing
+    by_church = {}
+    for row in corrections:
+        church = row.get('church', '').strip()
+        if church:
+            if church not in by_church:
+                by_church[church] = []
+            by_church[church].append(row)
+    
+    updated_transcripts = 0
+    updated_summaries = 0
+    skipped_same = 0
+    skipped_not_found = 0
+    
+    # Process each church
+    for church_name, church_corrections in by_church.items():
+        church_folder = church_name.replace(' ', '_')
+        church_dir = os.path.join(DATA_DIR, church_folder)
+        summary_path = os.path.join(DATA_DIR, f"{church_folder}_Summary.csv")
+        
+        print(f"\n   🏥 Processing: {church_name} ({len(church_corrections)} corrections)")
+        
+        # Load existing summary CSV
+        summary_rows = []
+        summary_by_url = {}
+        if os.path.exists(summary_path):
+            try:
+                with open(summary_path, 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        summary_rows.append(row)
+                        url = row.get('url', '')
+                        if url:
+                            summary_by_url[url] = row
+            except Exception as e:
+                print(f"      ⚠️ Error reading summary: {e}")
+        
+        summary_modified = False
+        
+        for correction in church_corrections:
+            video_url = correction.get('videoUrl', '').strip()
+            new_speaker = correction.get('speaker_detected', '').strip()
+            old_speaker = correction.get('speaker', '').strip()
+            title = correction.get('title', '').strip()
+            date = correction.get('date', '').strip()
+            video_type = correction.get('type', 'Full Sermon').strip()
+            language = correction.get('language', 'English').strip()
+            
+            # Skip if speaker_detected is same as current speaker
+            if new_speaker.lower() == old_speaker.lower():
+                skipped_same += 1
+                continue
+            
+            # Normalize the new speaker
+            new_speaker = normalize_speaker(new_speaker)
+            new_speaker = clean_name(new_speaker)
+            
+            if not new_speaker or new_speaker == "Unknown Speaker":
+                continue
+            
+            # --- Update Summary CSV ---
+            if video_url in summary_by_url:
+                summary_entry = summary_by_url[video_url]
+                if summary_entry.get('speaker') != new_speaker:
+                    summary_entry['speaker'] = new_speaker
+                    summary_modified = True
+                    updated_summaries += 1
+            
+            # --- Update Transcript File ---
+            if os.path.isdir(church_dir):
+                # Build old filename pattern
+                safe_title = sanitize_filename(title)
+                safe_old_speaker = sanitize_filename(old_speaker)
+                safe_new_speaker = sanitize_filename(new_speaker)
+                
+                old_filename = f"{date} - {safe_title} - {safe_old_speaker}.txt"
+                new_filename = f"{date} - {safe_title} - {safe_new_speaker}.txt"
+                old_filepath = os.path.join(church_dir, old_filename)
+                new_filepath = os.path.join(church_dir, new_filename)
+                
+                if os.path.exists(old_filepath):
+                    try:
+                        with open(old_filepath, 'r', encoding='utf-8') as f:
+                            content = f.read()
+                        
+                        # Update speaker in header
+                        content = re.sub(r'Speaker:.*', f'Speaker: {new_speaker}', content)
+                        content = re.sub(r'START OF FILE:.*', f'START OF FILE: {new_filename}', content)
+                        
+                        # Write to new filename
+                        with open(new_filepath, 'w', encoding='utf-8') as f:
+                            f.write(content)
+                        
+                        # Remove old file if different
+                        if old_filepath != new_filepath:
+                            os.remove(old_filepath)
+                        
+                        updated_transcripts += 1
+                        print(f"      ✅ {old_speaker} → {new_speaker}: {title[:40]}...")
+                    except Exception as e:
+                        print(f"      ⚠️ Error updating transcript: {e}")
+                else:
+                    # Try to find file by other means (partial match)
+                    found = False
+                    for txt_file in os.listdir(church_dir):
+                        if txt_file.endswith('.txt') and date in txt_file and safe_title[:20] in txt_file:
+                            old_filepath = os.path.join(church_dir, txt_file)
+                            try:
+                                with open(old_filepath, 'r', encoding='utf-8') as f:
+                                    content = f.read()
+                                content = re.sub(r'Speaker:.*', f'Speaker: {new_speaker}', content)
+                                content = re.sub(r'START OF FILE:.*', f'START OF FILE: {new_filename}', content)
+                                with open(new_filepath, 'w', encoding='utf-8') as f:
+                                    f.write(content)
+                                if old_filepath != new_filepath:
+                                    os.remove(old_filepath)
+                                updated_transcripts += 1
+                                found = True
+                                print(f"      ✅ {old_speaker} → {new_speaker}: {title[:40]}...")
+                                break
+                            except:
+                                pass
+                    if not found:
+                        skipped_not_found += 1
+        
+        # Write updated summary CSV
+        if summary_modified and summary_rows:
+            try:
+                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"]
+                with open(summary_path, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                    writer.writeheader()
+                    writer.writerows(summary_rows)
+                print(f"      📝 Summary CSV updated")
+            except Exception as e:
+                print(f"      ⚠️ Error writing summary: {e}")
+    
+    # Update speakers.json with new speakers
+    known_speakers = load_json_file(SPEAKERS_FILE)
+    for correction in corrections:
+        new_speaker = correction.get('speaker_detected', '').strip()
+        if new_speaker and new_speaker != "Unknown Speaker":
+            new_speaker = normalize_speaker(new_speaker)
+            new_speaker = clean_name(new_speaker)
+            if new_speaker and is_valid_person_name(new_speaker):
+                known_speakers.add(new_speaker)
+    save_json_file(SPEAKERS_FILE, known_speakers)
+    
+    print("\n" + "="*60)
+    print("📊 SPEAKER HEALING SUMMARY")
+    print(f"   ✅ Transcripts updated: {updated_transcripts}")
+    print(f"   ✅ Summary entries updated: {updated_summaries}")
+    print(f"   ⏭️ Skipped (same speaker): {skipped_same}")
+    print(f"   ⚠️ Skipped (file not found): {skipped_not_found}")
+    print("="*60)
+
 # --- MAIN LOGIC (UNCHANGED EXCEPT MENU) ---
 # ... (Previous helper functions identify_speaker_dynamic, process_channel, etc. remain here) ...
 # For brevity, I am including the critical `process_channel` and `main` updates below.
@@ -1553,6 +1756,7 @@ def main():
         print(" 3. Run Deep Self-Healing & Cleanup (No Scraping)")
         print(" 4. Metadata-Only Scan (No Transcripts)")
         print(" 5. Partial Scrape (Last N Days)")
+        print(" 6. Heal Speakers from CSV (speaker_detected)")
         print("="*50)
         
         action = input("\n👉 Enter Number: ").strip()
@@ -1626,6 +1830,16 @@ def main():
             
             print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
+            return
+        
+        if action == '6':
+            print("\n--- HEAL SPEAKERS FROM CSV ---")
+            print("This updates speaker names in transcript files and Summary CSVs")
+            print("based on the 'speaker_detected' column from a corrected CSV file.\n")
+            default_csv = "master_sermons_with_speaker_detected.csv"
+            csv_input = input(f"👉 Enter CSV path (default: {default_csv}): ").strip()
+            csv_path = csv_input if csv_input else default_csv
+            heal_speakers_from_csv(csv_path)
             return
 
         # --- CHANNEL SELECTION ---
