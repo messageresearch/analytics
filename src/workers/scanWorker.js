@@ -43,14 +43,18 @@ self.addEventListener('message', async (ev) => {
   if (msg.type === 'cancel') { cancelled = true; return }
   if (msg.type !== 'analyze') return
   cancelled = false
-  const { term, variations, apiPrefix = 'site_api/', totalChunks = 0, chunkBatch = 25 } = msg
+  const { term, variations, apiPrefix = 'site_api/', totalChunks = 0, chunkBatch = 25, wholeWords = true } = msg
   try {
     self.postMessage({ type: 'started', totalChunks, chunkBatch })
     const db = await openDB().catch((e)=>{ self.postMessage({ type: 'log', message: 'indexeddb-open-failed', error: String(e) }); return null })
     const vars = Array.isArray(variations) ? variations.map(v=>(''+v).trim()).filter(Boolean) : (''+ (variations || '')).split(',').map(v=>v.trim()).filter(Boolean)
     const allTerms = [term, ...vars].map(t=>t.replace(/[.*+?^${}()|[\\]\\]/g,'\\\\$&'))
-    const regex = new RegExp(`(${allTerms.join('|')})`, 'gi')
+    // Conditionally use word boundaries based on wholeWords option
+    const regex = wholeWords 
+      ? new RegExp(`\\b(${allTerms.join('|')})\\b`, 'gi')
+      : new RegExp(`(${allTerms.join('|')})`, 'gi')
     const counts = Object.create(null)
+    const termCounts = Object.create(null) // Track individual term matches
     let processedChunks = 0
     for (let i = 0; i < totalChunks; i += chunkBatch) {
       if (cancelled) break
@@ -74,8 +78,15 @@ self.addEventListener('message', async (ev) => {
         if (cancelled) break
         for (const item of chunk) {
           try {
-            const matches = (item.text && item.text.match(regex)) ? item.text.match(regex).length : 0
-            if (matches > 0) counts[item.id] = (counts[item.id] || 0) + matches
+            const matchList = item.text ? item.text.match(regex) : null
+            if (matchList && matchList.length > 0) {
+              counts[item.id] = (counts[item.id] || 0) + matchList.length
+              // Track individual term counts (case-insensitive)
+              for(const m of matchList){
+                const key = m.toLowerCase()
+                termCounts[key] = (termCounts[key] || 0) + 1
+              }
+            }
           } catch(e) { /* ignore bad items */ }
         }
       }
@@ -88,7 +99,11 @@ self.addEventListener('message', async (ev) => {
     }
     // Send back as array of entries to avoid Map/complex transfer issues
     const entries = Object.entries(counts)
-    self.postMessage({ type: 'result', counts: entries })
+    // Sort matched terms by count descending
+    const sortedTerms = Object.entries(termCounts)
+      .map(([t, c]) => ({ term: t, count: c }))
+      .sort((a, b) => b.count - a.count)
+    self.postMessage({ type: 'result', counts: entries, matchedTerms: sortedTerms })
   } catch (err) {
     self.postMessage({ type: 'error', message: String(err) })
   }

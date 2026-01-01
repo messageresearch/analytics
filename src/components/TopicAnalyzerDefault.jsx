@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from 'react'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 
-export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '' }) {
+export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [] }) {
   const [term, setTerm] = useState(initialTerm || '')
   const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
   const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
   const [showRegex, setShowRegex] = useState(isRegexLike(initialVariations))
   const [rawRegex, setRawRegex] = useState(isRegexLike(initialVariations) ? initialVariations : '')
   const [regexError, setRegexError] = useState(null)
+  const [wholeWords, setWholeWords] = useState(true) // Default to exact word matching
 
   const prevTermRef = useRef(term)
   useEffect(() => {
@@ -37,11 +38,11 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
       const err = validateRegex(rawRegex)
       if (err) { setRegexError(err); return }
       setRegexError(null)
-      onAnalyze(t, [], rawRegex)
+      onAnalyze(t, [], rawRegex, { wholeWords: false }) // Raw regex ignores wholeWords
       return
     }
     const vars = (variations || '').split(',').map(v => v.trim()).filter(Boolean)
-    onAnalyze(t, vars, null)
+    onAnalyze(t, vars, null, { wholeWords })
   }
 
   const handleResetDefaults = () => {
@@ -51,8 +52,9 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
     setRawRegex(DEFAULT_REGEX_STR)
     setVariations('')
     setRegexError(null)
+    setWholeWords(true)
     // trigger analysis with default regex
-    onAnalyze(DEFAULT_TERM, [], DEFAULT_REGEX_STR)
+    onAnalyze(DEFAULT_TERM, [], DEFAULT_REGEX_STR, { wholeWords: false })
   }
 
   return (
@@ -69,9 +71,15 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
             <div>
               <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Variations (Comma Separated)</label>
               <input type="text" value={variations} onChange={e => setVariations(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
-              <div className="mt-2 flex items-center gap-3">
-                <label className="text-xs text-blue-100">Advanced:</label>
-                <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 underline">{showRegex ? 'Hide Regex' : 'Show Regex (advanced)'}</button>
+              <div className="mt-2 flex items-center gap-4 flex-wrap">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" checked={wholeWords} onChange={e => setWholeWords(e.target.checked)} className="rounded text-blue-600 focus:ring-blue-400" disabled={showRegex} />
+                  <span className="text-xs text-blue-100">Whole words only</span>
+                </label>
+                <div className="flex items-center gap-2">
+                  <label className="text-xs text-blue-100">Advanced:</label>
+                  <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 underline">{showRegex ? 'Hide Regex' : 'Show Regex'}</button>
+                </div>
               </div>
               {showRegex && <div className="w-full mt-2">
                 <textarea value={rawRegex} onChange={e => { setRawRegex(e.target.value); setRegexError(validateRegex(e.target.value)) }} placeholder="Enter raw regex pattern" className="w-full h-20 text-sm p-2 rounded border text-gray-900" />
@@ -79,14 +87,25 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
               </div>}
             </div>
           </div>
+          {/* Display matched terms after analysis */}
+          {matchedTerms && matchedTerms.length > 0 && !isAnalyzing && (
+            <div className="mt-4 pt-4 border-t border-blue-400/30">
+              <p className="text-xs text-blue-200 font-semibold mb-2">Terms Found in Results:</p>
+              <div className="flex flex-wrap gap-2">
+                {matchedTerms.slice(0, 20).map((t, i) => (
+                  <span key={i} className="bg-blue-500/40 text-white text-xs px-2 py-1 rounded-full">{t.term} <span className="text-blue-200">({t.count.toLocaleString()})</span></span>
+                ))}
+                {matchedTerms.length > 20 && <span className="text-blue-200 text-xs">+{matchedTerms.length - 20} more</span>}
+              </div>
+            </div>
+          )}
         </div>
-
-          <div className="flex flex-col items-end justify-center h-full">
+        <div className="flex flex-col items-end justify-center h-full">
           <div className="flex flex-col items-end gap-3">
             <div className="flex gap-2">
               <button onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(showRegex && rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
-            {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
-            </button>
+                {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
+              </button>
               <button onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white text-gray-700 font-medium py-2 px-3 rounded-lg shadow-sm hover:bg-gray-50 transition">Reset Defaults</button>
             </div>
             {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}

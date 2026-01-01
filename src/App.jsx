@@ -65,6 +65,7 @@ export default function App(){
   const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM)
   const [activeRegex, setActiveRegex] = useState(DEFAULT_REGEX_STR)
   const [customCounts, setCustomCounts] = useState(null)
+  const [matchedTerms, setMatchedTerms] = useState([]) // Track which terms were matched and their counts
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [analysisProgress, setAnalysisProgress] = useState('')
   const lastAnalysisRef = useRef({ term: null, regex: null })
@@ -314,21 +315,24 @@ export default function App(){
 
   const dateDomain = useMemo(()=>{ if(selYears.length===0) return ['auto','auto']; const validYears = selYears.map(y=>parseInt(y)).filter(y=>!isNaN(y)); if(validYears.length===0) return ['auto','auto']; const minYear = Math.min(...validYears); const maxYear = Math.max(...validYears); return [new Date(minYear,0,1).getTime(), new Date(maxYear,11,31).getTime()] }, [selYears])
 
-  const handleAnalysis = async (term, variations, rawRegex = null) => {
+  const handleAnalysis = async (term, variations, rawRegex = null, options = {}) => {
     // Allow analysis when either a term is provided or a raw regex is provided
     if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
     lastAnalysisRef.current = { term, regex: rawRegex || null }
     setIsAnalyzing(true)
     setAnalysisProgress('Starting...')
+    setMatchedTerms([]) // Clear previous matched terms
     // Run the main-thread scanner directly (worker removed)
-    await scanOnMainThread(term, variations, rawRegex)
+    await scanOnMainThread(term, variations, rawRegex, options)
   }
 
   // Fallback: scan chunks on the main thread in batches (used when worker isn't available)
-  const scanOnMainThread = async (term, variations, rawRegex = null) => {
+  const scanOnMainThread = async (term, variations, rawRegex = null, options = {}) => {
+    const { wholeWords = true } = options
     try{
       const BATCH = 250
       let regex
+      const termCounts = Object.create(null) // Track individual term matches
       if(rawRegex && (''+rawRegex).trim()){
         try{ regex = new RegExp(rawRegex, 'gi') }catch(e){ setAnalysisProgress('Invalid regex'); setIsAnalyzing(false); return }
       } else {
@@ -336,7 +340,12 @@ export default function App(){
         const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
         const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
         const patterns = [term, ...vars].map(t => isRegexLike(t) ? t : escapeRe(t))
-        regex = new RegExp(`(${patterns.join('|')})`, 'gi')
+        // Conditionally use word boundaries based on wholeWords option
+        if(wholeWords){
+          regex = new RegExp(`\\b(${patterns.join('|')})\\b`, 'gi')
+        } else {
+          regex = new RegExp(`(${patterns.join('|')})`, 'gi')
+        }
       }
       const counts = Object.create(null)
       let processedChunks = 0
@@ -352,8 +361,15 @@ export default function App(){
         for(const chunk of results){
           for(const item of chunk){
             try{
-              const matches = (item.text && item.text.match(regex)) ? item.text.match(regex).length : 0
-              if(matches>0) counts[item.id] = (counts[item.id]||0) + matches
+              const matchList = item.text ? item.text.match(regex) : null
+              if(matchList && matchList.length > 0){
+                counts[item.id] = (counts[item.id]||0) + matchList.length
+                // Track individual term counts (case-insensitive)
+                for(const m of matchList){
+                  const key = m.toLowerCase()
+                  termCounts[key] = (termCounts[key] || 0) + 1
+                }
+              }
             }catch(e){}
           }
         }
@@ -367,6 +383,11 @@ export default function App(){
       setCustomCounts(map)
       setActiveTerm(term)
       setActiveRegex(rawRegex && rawRegex.trim() ? rawRegex : regex.source)
+      // Set matched terms sorted by count descending
+      const sortedTerms = Object.entries(termCounts)
+        .map(([t, c]) => ({ term: t, count: c }))
+        .sort((a, b) => b.count - a.count)
+      setMatchedTerms(sortedTerms)
       setIsAnalyzing(false)
       setAnalysisProgress('Completed (fallback)')
     }catch(e){ console.error('Main-thread scan failed', e); setIsAnalyzing(false); setAnalysisProgress('Error') }
@@ -378,8 +399,18 @@ export default function App(){
     if(!filteredData.length) return []
     const sorted = [...filteredData].sort((a,b)=>a.timestamp - b.timestamp)
     const monthly = resampleData(sorted, undefined, activeTerm)
-    return monthly.map((item, idx, arr)=>{ let sum=0, count=0; for(let i=idx;i>=Math.max(0, idx-6); i--){ sum += arr[i].mentionCount; count++ } return { ...item, rollingAvg: count>0?parseFloat((sum/count).toFixed(1)):0 } })
-  }, [filteredData, aggregateWindow])
+    // Convert weeks to approximate months for rolling average window
+    // 4 weeks ≈ 1 month, 12 weeks ≈ 3 months, 26 weeks ≈ 6 months
+    const windowMonths = Math.max(1, Math.round(aggregateWindow / 4))
+    return monthly.map((item, idx, arr)=>{ 
+      let sum=0, count=0
+      for(let i=idx; i>=Math.max(0, idx-(windowMonths-1)); i--){ 
+        sum += arr[i].mentionCount
+        count++ 
+      } 
+      return { ...item, rollingAvg: count>0?parseFloat((sum/count).toFixed(1)):0 } 
+    })
+  }, [filteredData, aggregateWindow, activeTerm])
 
   const channelTrends = useMemo(()=>{
     if(!filteredData.length) return []
@@ -489,7 +520,7 @@ export default function App(){
 
           {view === 'dashboard' && stats && (
             <>
-              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} />
+              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} />
               <div className="grid grid-cols-2 md:grid-cols-7 gap-4 mb-8">
                 <StatCard title="Total Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" />
                 <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
