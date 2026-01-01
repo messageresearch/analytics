@@ -129,9 +129,23 @@ def parse_sermon(filepath, church, filename, summary_map=None):
         print(f"Skipping {filename}: {e}")
         return None
 
+def cleanup_old_chunks():
+    """Remove all existing text_chunk_*.json files before regenerating."""
+    import glob
+    pattern = os.path.join(OUTPUT_DIR, f"{SEARCH_CHUNK_PREFIX}*.json")
+    old_chunks = glob.glob(pattern)
+    if old_chunks:
+        print(f"   Cleaning up {len(old_chunks)} old text chunk files...")
+        for chunk_file in old_chunks:
+            try:
+                os.remove(chunk_file)
+            except Exception as e:
+                print(f"   Warning: Could not remove {chunk_file}: {e}")
+
 def main():
     print("--- 🚀 GENERATING SITE DATA v4 (With videoUrl index) ---")
     ensure_dir(OUTPUT_DIR)
+    cleanup_old_chunks()
     # Build summary CSV index: map normalized(title)|normalized(date) -> youtube URL
     summary_map = {}
     print("   Building summary CSV index...")
