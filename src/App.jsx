@@ -72,7 +72,7 @@ export default function App(){
 
   // FILTERS
   const [selChurches, setSelChurches] = useState([])
-  // Speaker filter removed
+  const [selSpeakers, setSelSpeakers] = useState([])
   const [selTitles, setSelTitles] = useState([])
   const [selYears, setSelYears] = useState([])
   const [selTypes, setSelTypes] = useState([])
@@ -87,6 +87,10 @@ export default function App(){
   const [heatmapModalData, setHeatmapModalData] = useState(null)
   const [channelSearch, setChannelSearch] = useState('')
   const [channelSort, setChannelSort] = useState('name_asc')
+  // Pinned popup for main chart - click to freeze the tooltip
+  const [mainChartPinnedBucket, setMainChartPinnedBucket] = useState(null)
+  const [mainChartPinnedPosition, setMainChartPinnedPosition] = useState({ x: 0, y: 0 })
+  const mainChartPinnedRef = useRef(null)
   // preview modal removed: clicking a channel now opens its URL directly
   const [transcriptSummaryCounts, setTranscriptSummaryCounts] = useState({})
 
@@ -99,6 +103,18 @@ export default function App(){
   const [isZipping, setIsZipping] = useState(false)
   const [zipProgress, setZipProgress] = useState('')
   const [isExportingMaster, setIsExportingMaster] = useState(false)
+
+  // Close main chart pinned popup when clicking outside
+  useEffect(() => {
+    if (!mainChartPinnedBucket) return
+    const handleClickOutside = (e) => {
+      if (mainChartPinnedRef.current && !mainChartPinnedRef.current.contains(e.target)) {
+        setMainChartPinnedBucket(null)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [mainChartPinnedBucket])
 
   // When a custom analysis runs and `customCounts` is set, default the table
   // to sort by mentions (highest first) so the most relevant sermons surface.
@@ -191,8 +207,8 @@ export default function App(){
         const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
         setSelChurches([...new Set(list.map(s=>s.church))]);
+        setSelSpeakers([...new Set(list.map(s=>s.speaker))].filter(Boolean));
         setSelTitles([...new Set(list.map(s=>s.title))].filter(Boolean));
-          setSelChurches([...new Set(list.map(s=>s.church))]);
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
         const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
@@ -274,10 +290,10 @@ export default function App(){
     build()
   }, [channels, apiPrefix])
 
-  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
+  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
   const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
-  const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selTitles, selYears, selTypes, selLangs])
+  const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
     const map = transcriptSummaryCounts || {}
@@ -398,7 +414,33 @@ export default function App(){
   const aggregatedChartData = useMemo(()=>{
     if(!filteredData.length) return []
     const sorted = [...filteredData].sort((a,b)=>a.timestamp - b.timestamp)
-    const monthly = resampleData(sorted, undefined, activeTerm)
+    
+    // Build buckets with sermons included for pinned popup
+    const useMonth = sorted.length > 3000
+    const buckets = {}
+    sorted.forEach(item => {
+      if(!item.timestamp || isNaN(item.timestamp)) return
+      const date = new Date(item.timestamp)
+      let key, ts
+      if (useMonth) {
+        key = `${date.getFullYear()}-${date.getMonth()}`
+        ts = new Date(date.getFullYear(), date.getMonth(), 1).getTime()
+      } else {
+        const d = new Date(date)
+        const day = d.getDay(), diff = d.getDate() - day + (day == 0 ? -6 : 1)
+        const monday = new Date(d.setDate(diff))
+        monday.setHours(0,0,0,0)
+        key = monday.getTime()
+        ts = key
+      }
+      if (!buckets[key]) buckets[key] = { timestamp: ts, mentionCount: 0, count: 0, sermons: [] }
+      buckets[key].mentionCount += item.mentionCount || 0
+      buckets[key].count++
+      buckets[key].sermons.push(item)
+    })
+    
+    const monthly = Object.values(buckets).sort((a,b)=>a.timestamp-b.timestamp)
+    
     // Convert weeks to approximate months for rolling average window
     // 4 weeks ≈ 1 month, 12 weeks ≈ 3 months, 26 weeks ≈ 6 months
     const windowMonths = Math.max(1, Math.round(aggregateWindow / 4))
@@ -503,12 +545,13 @@ export default function App(){
             <div className="flex justify-between items-center mb-4">
               <div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
-                <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Selected Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span></div>
+                <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}</span> • Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span></div>
               </div>
-              <button onClick={()=>{ setSelChurches(options.churches); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
+              <button onClick={()=>{ setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
               <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+              <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
               <div className="md:col-span-2 lg:col-span-3">
                 <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
               </div>
@@ -531,19 +574,123 @@ export default function App(){
                 <StatCard title="Without transcript" value={(() => totalsMemo.without).call ? totalsMemo.without.toLocaleString() : totalsMemo.without.toLocaleString()} icon="x" color="red" />
               </div>
 
-              <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8">
-                <div className="flex justify-between items-center mb-6"><div><h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3><p className="text-xs text-gray-500 mt-1">Area = Volume. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Trend.</p></div><div className="flex bg-gray-100 rounded-lg p-1">{[4,12,26].map(w=> <button key={w} onClick={()=>setAggregateWindow(w)} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{w===4? '1 Mo' : w===12? '3 Mo' : '6 Mo'}</button>)}</div></div>
+              <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8 relative">
+                <div className="flex justify-between items-center mb-6">
+                  <div>
+                    <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3>
+                    <p className="text-xs text-gray-500 mt-1">Area = Volume. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Rolling Avg. Click a bar to browse sermons.</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-gray-500" title="Rolling average window for trend line smoothing">Trend Window:</span>
+                    <div className="flex bg-gray-100 rounded-lg p-1" title="Shorter = more responsive, Longer = smoother trend">
+                      {[{w:4,l:'1 Mo',t:'1-month rolling average'},{w:12,l:'3 Mo',t:'3-month rolling average'},{w:26,l:'6 Mo',t:'6-month rolling average'}].map(({w,l,t})=> 
+                        <button key={w} onClick={()=>setAggregateWindow(w)} title={t} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
+                      )}
+                    </div>
+                  </div>
+                </div>
                 <ResponsiveContainer width="100%" height="85%">
-                  <ComposedChart data={aggregatedChartData}>
+                  <ComposedChart 
+                    data={aggregatedChartData}
+                    onClick={(e) => {
+                      if (e && e.activePayload && e.activePayload[0]) {
+                        const bucket = aggregatedChartData.find(d => d.timestamp === e.activePayload[0].payload.timestamp)
+                        if (bucket) {
+                          setMainChartPinnedBucket(bucket)
+                          setMainChartPinnedPosition({ x: e.chartX || 200, y: e.chartY || 100 })
+                        }
+                      }
+                    }}
+                  >
                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                     <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize:10}} minTickGap={120} />
                     <YAxis tick={{fontSize:10}} />
-                    <Tooltip labelFormatter={formatDate} contentStyle={{borderRadius:'8px', border:'none', boxShadow:'0 4px 6px -1px rgba(0,0,0,0.1)'}} />
+                    <Tooltip 
+                      content={({ active, payload }) => {
+                        if (mainChartPinnedBucket) return null
+                        if (!active || !payload || !payload.length) return null
+                        const p = payload[0].payload
+                        const useMonth = aggregatedChartData.length > 150
+                        const dateLabel = useMonth 
+                          ? new Date(p.timestamp).toLocaleDateString(undefined, {month:'long', year:'numeric'})
+                          : `Week of ${new Date(p.timestamp).toLocaleDateString(undefined, {month:'short', day:'numeric'})} - ${new Date(p.timestamp + 6*24*60*60*1000).toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'})}`
+                        return (
+                          <div className="bg-white p-3 rounded-lg shadow-lg text-sm border border-gray-200">
+                            <div className="font-bold text-gray-900">{dateLabel}</div>
+                            <div className="text-xs text-gray-500 mt-1">{p.mentionCount} mentions • {p.sermons?.length || 0} sermon{(p.sermons?.length || 0) !== 1 ? 's' : ''}</div>
+                            <div className="mt-2 text-blue-600 text-xs font-medium">Click to browse sermons →</div>
+                          </div>
+                        )
+                      }}
+                    />
                     <Legend wrapperStyle={{fontSize:'11px', paddingTop:'10px'}} />
-                    <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} />
+                    <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} cursor="pointer" />
                     <Line type="monotone" dataKey="rollingAvg" name="Aggregate Rolling Avg" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
                   </ComposedChart>
                 </ResponsiveContainer>
+
+                {/* Pinned popup for main chart */}
+                {mainChartPinnedBucket && (
+                  <div 
+                    ref={mainChartPinnedRef}
+                    className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 w-96 max-h-[400px] flex flex-col z-50"
+                    style={{ 
+                      left: Math.min(mainChartPinnedPosition.x + 60, window.innerWidth - 450), 
+                      top: Math.max(20, Math.min(mainChartPinnedPosition.y, 300))
+                    }}
+                  >
+                    <div className="p-4 border-b border-gray-100">
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <div className="font-bold text-gray-900">
+                            {aggregatedChartData.length > 150 
+                              ? new Date(mainChartPinnedBucket.timestamp).toLocaleDateString(undefined, {month:'long', year:'numeric'})
+                              : `Week of ${new Date(mainChartPinnedBucket.timestamp).toLocaleDateString(undefined, {month:'short', day:'numeric'})} - ${new Date(mainChartPinnedBucket.timestamp + 6*24*60*60*1000).toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'})}`
+                            }
+                          </div>
+                          <div className="text-sm text-gray-500 mt-1">{mainChartPinnedBucket.sermons?.length || 0} sermon{(mainChartPinnedBucket.sermons?.length || 0) !== 1 ? 's' : ''}</div>
+                        </div>
+                        <button onClick={()=>setMainChartPinnedBucket(null)} className="p-1 hover:bg-gray-100 rounded-full"><Icon name="x" /></button>
+                      </div>
+                      <div className="flex gap-4 mt-3 text-sm">
+                        <div className="text-center">
+                          <div className="text-xl font-bold text-blue-600">{mainChartPinnedBucket.mentionCount}</div>
+                          <div className="text-xs text-gray-500">mentions</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-xl font-bold text-gray-700">{mainChartPinnedBucket.sermons?.length ? (mainChartPinnedBucket.mentionCount / mainChartPinnedBucket.sermons.length).toFixed(1) : 0}</div>
+                          <div className="text-xs text-gray-500">avg/sermon</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-xl font-bold text-emerald-600">{mainChartPinnedBucket.rollingAvg || 'n/a'}</div>
+                          <div className="text-xs text-gray-500">trend</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-xs font-medium text-gray-600 px-4 pt-3 pb-2">Click a sermon to view transcript:</div>
+                    <div className="flex-1 overflow-auto px-3 pb-3">
+                      <div className="space-y-2">
+                        {(mainChartPinnedBucket.sermons || []).map((s,i)=> (
+                          <button 
+                            key={s.id || i}
+                            onClick={()=>{ setSelectedSermon(s); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
+                            className="w-full text-left p-3 bg-gray-50 rounded-lg border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all group"
+                          >
+                            <div className="font-medium text-gray-900 group-hover:text-blue-600 line-clamp-2">{s.title || 'Untitled'}</div>
+                            <div className="flex justify-between items-center mt-2 text-xs">
+                              <span className="text-gray-500">{s.church || 'Unknown'}</span>
+                              <span className="text-gray-400">{new Date(s.timestamp).toLocaleDateString()}</span>
+                            </div>
+                            <div className="flex justify-between items-center mt-1 text-xs">
+                              <span className="text-blue-600 font-medium">{s.mentionCount || 0} mentions</span>
+                              {s.durationHrs && <span className="text-gray-400">{s.durationHrs.toFixed(1)} hrs</span>}
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Channel breakdown */}
