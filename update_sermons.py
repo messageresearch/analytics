@@ -621,7 +621,7 @@ def heal_archive(data_dir, force=False):
     print(f"✅ Healing Complete. Corrected {updated_files_count} files/entries.")
     print(f"✨ Global Speaker List Optimized: {len(final_speakers)} unique speakers.")
 
-def heal_speakers_from_csv(csv_path="master_sermons_with_speaker_detected.csv"):
+def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.csv"):
     """
     Heals speaker names in transcript files and summary CSVs based on a CSV file
     with corrected speakers in the 'speaker_detected' column.
