@@ -103,6 +103,270 @@ CATEGORY_TITLES = {
     "New Years Day Items", "Picture Slideshow"
 }
 
+# --- SPEAKER DETECTION LOG FUNCTION ---
+def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
+    """
+    Write speaker detection statistics to a timestamped log file in the data folder.
+    
+    Args:
+        stats_dict: Dictionary containing statistics like:
+            - total_processed: Total number of entries processed
+            - speakers_detected: Number of entries with detected speakers
+            - unknown_speakers: Number of entries with unknown speakers
+            - transcripts_updated: Number of transcript files updated (optional)
+            - summaries_updated: Number of summary CSV entries updated (optional)
+            - skipped_same: Number skipped because speaker was same (optional)
+            - skipped_not_found: Number skipped because file not found (optional)
+            - by_church: Dict of church-level stats (optional)
+        operation_name: Name of the operation for the log header
+    """
+    timestamp = datetime.datetime.now()
+    filename = f"speaker_detection_log_{timestamp.strftime('%Y%m%d_%H%M%S')}.txt"
+    filepath = os.path.join(DATA_DIR, filename)
+    
+    total = stats_dict.get('total_processed', 0)
+    detected = stats_dict.get('speakers_detected', 0)
+    unknown = stats_dict.get('unknown_speakers', 0)
+    
+    # Calculate detection rate
+    detection_rate = (detected / total * 100) if total > 0 else 0
+    
+    lines = [
+        "=" * 70,
+        f"SPEAKER DETECTION LOG - {operation_name}",
+        f"Generated: {timestamp.strftime('%Y-%m-%d %H:%M:%S')}",
+        "=" * 70,
+        "",
+        "SUMMARY STATISTICS",
+        "-" * 40,
+        f"Total Entries Processed:    {total:,}",
+        f"Speakers Detected:          {detected:,}",
+        f"Unknown Speakers:           {unknown:,}",
+        f"Detection Rate:             {detection_rate:.1f}%",
+        "",
+    ]
+    
+    # Add optional stats if present
+    if 'speakers_corrected' in stats_dict:
+        lines.append(f"Speakers Corrected:         {stats_dict['speakers_corrected']:,}")
+    if 'speakers_redetected' in stats_dict:
+        lines.append(f"Speakers Re-detected:       {stats_dict['speakers_redetected']:,}")
+    if 'transcripts_updated' in stats_dict:
+        lines.append(f"Transcripts Updated:        {stats_dict['transcripts_updated']:,}")
+    if 'summaries_updated' in stats_dict:
+        lines.append(f"Summary Entries Updated:    {stats_dict['summaries_updated']:,}")
+    if 'skipped_same' in stats_dict:
+        lines.append(f"Skipped (Same Speaker):     {stats_dict['skipped_same']:,}")
+    if 'skipped_not_found' in stats_dict:
+        lines.append(f"Skipped (File Not Found):   {stats_dict['skipped_not_found']:,}")
+    
+    # Add church-level breakdown if present
+    if 'by_church' in stats_dict and stats_dict['by_church']:
+        lines.extend([
+            "",
+            "BY CHURCH BREAKDOWN",
+            "-" * 40,
+        ])
+        for church, church_stats in sorted(stats_dict['by_church'].items()):
+            church_total = church_stats.get('total', 0)
+            church_detected = church_stats.get('detected', 0)
+            church_unknown = church_stats.get('unknown', 0)
+            church_rate = (church_detected / church_total * 100) if church_total > 0 else 0
+            lines.append(f"{church}:")
+            lines.append(f"    Total: {church_total:,}  |  Detected: {church_detected:,}  |  Unknown: {church_unknown:,}  |  Rate: {church_rate:.1f}%")
+    
+    # Add new speakers discovered if present
+    if 'new_speakers' in stats_dict and stats_dict['new_speakers']:
+        lines.extend([
+            "",
+            "NEW SPEAKERS DISCOVERED",
+            "-" * 40,
+        ])
+        for speaker in sorted(stats_dict['new_speakers']):
+            lines.append(f"  • {speaker}")
+    
+    lines.extend([
+        "",
+        "=" * 70,
+        "END OF LOG",
+        "=" * 70,
+    ])
+    
+    try:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+        print(f"\n📄 Log saved to: {filepath}")
+        return filepath
+    except Exception as e:
+        print(f"⚠️ Error writing log file: {e}")
+        return None
+
+# --- IMPROVED SPEAKER DETECTION (from speaker_detector.py) ---
+# Known speakers - first names mapped to full names (for completing partial detections)
+KNOWN_SPEAKERS_MAP = {
+    'Faustin': 'Faustin Lukumuena',
+    'Theo': 'Theo Ovid',
+    'Busobozi': 'Busobozi Talemwa',
+}
+
+# Common honorific prefixes used in sermon titles
+HONORIFICS = [
+    r'Bro\.?', r'Brother', r'Sis\.?', r'Sister', r'Pastor', r'Pr\.?', r'Rev\.?', 
+    r'Reverend', r'Elder', r'Deacon', r'Minister', r'Dr\.?', r'Bishop', 
+    r'Apostle', r'Evangelist', r'Prophet', r'Hno\.?', r'Hermano', r'Hermana',
+    r'Founder', r'Associate\s+Pastor', r'Ministering', r'Ministered\s+by',
+    r'Br\.?', r'Sr\.?', r'Ptr\.?', r'Pst\.?', r'Past\.?', r'Founding\s+Pastor',
+]
+HONORIFIC_PATTERN = r'(?:' + '|'.join(HONORIFICS) + r')'
+
+# Common words that indicate a speaker follows
+SPEAKER_INDICATORS = [
+    r'by', r'with', r'from', r'featuring', r'feat\.?', r'ft\.?', 
+    r'ministered\s+by', r'preached\s+by', r'delivered\s+by',
+    r'speaker[:\s]', r'minister[:\s]',
+]
+
+# Pattern for name-like sequences (capitalized words)
+NAME_PATTERN = r"[A-Z][a-z]+(?:[\s'-][A-Z][a-z]+)*"
+
+# Words/patterns that should NOT be considered names (expanded from speaker_detector.py)
+NON_NAME_PATTERNS = [
+    r'^Part\b', r'^Pt\.?\b', r'^Episode\b', r'^Ep\.?\b', r'^Vol\.?\b',
+    r'^The\b', r'^A\b', r'^An\b', r'^This\b', r'^That\b', r'^Our\b', r'^My\b',
+    r'^God\b', r'^Jesus\b', r'^Christ\b', r'^Lord\b', r'^Holy\b', r'^Spirit\b',
+    r'^Sunday\b', r'^Monday\b', r'^Tuesday\b', r'^Wednesday\b', r'^Thursday\b', r'^Friday\b', r'^Saturday\b',
+    r'^January\b', r'^February\b', r'^March\b', r'^April\b', r'^May\b', r'^June\b',
+    r'^July\b', r'^August\b', r'^September\b', r'^October\b', r'^November\b', r'^December\b',
+    r'^Morning\b', r'^Evening\b', r'^Night\b', r'^Service\b', r'^Meeting\b',
+    r'^Live\b', r'^Livestream\b', r'^Prayer\b', r'^Worship\b', r'^Praise\b',
+    r'^Camp\b', r'^Revival\b', r'^Conference\b', r'^Convention\b',
+    r'^Full\b', r'^Gospel\b', r'^Sermon\b', r'^Message\b', r'^Word\b',
+    r'^Church\b', r'^Tabernacle\b', r'^Temple\b', r'^Chapel\b',
+    r'^Special\b', r'^Memorial\b', r'^Funeral\b', r'^Wedding\b',
+    r'^Christmas\b', r'^Easter\b', r'^Thanksgiving\b', r'^New\s+Year',
+    r'^\d', r'^[A-Z]{2,5}$',
+    r'^Clip[:\s]?', r'^Youth\b', r'^Children\b', r'^School$',
+    r'^Entering\b', r'^Possessors\b', r'^Walking\b', r'^Standing\b', r'^Seeking\b',
+    r'^Living\b', r'^Being\b', r'^Having\b', r'^Getting\b', r'^Finding\b',
+    r'^Knowing\b', r'^Understanding\b', r'^Believing\b', r'^Trusting\b',
+    r'^Coming\b', r'^Going\b', r'^Turning\b', r'^Following\b', r'^Looking\b',
+    r'^Pressing\b', r'^Holding\b', r'^Keeping\b', r'^Fighting\b', r'^Running\b',
+    r'^Waiting\b', r'^Resting\b', r'^Abiding\b', r'^Dwelling\b', r'^Rising\b',
+    r'^Breaking\b', r'^Building\b', r'^Growing\b', r'^Changing\b', r'^Moving\b',
+    r'^Overcoming\b', r'^Victorious\b', r'^Triumphant\b', r'^Faithful\b',
+    r'^Anointed\b', r'^Chosen\b', r'^Called\b', r'^Blessed\b', r'^Redeemed\b',
+    r'^Taped\b', r'^Questions\b', r'^Answers\b',
+]
+
+# Date patterns to strip from potential names
+DATE_PATTERNS = [
+    r'\s+on\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)(?:\s+\d{1,2}(?:st|nd|rd|th)?)?(?:,?\s*\d{4})?',
+    r'\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s*\d{4})?',
+    r'\b\d{1,2}[-/]\d{1,2}[-/]\d{2,4}\b',
+    r'\b\d{4}[-/]\d{1,2}[-/]\d{1,2}\b',
+    r'\b\d{6}\b',
+]
+
+# Hardcoded speaker data for Tucson Tabernacle (TT) titles
+# This data was scraped from the Tucson Tabernacle website, not YouTube
+TUCSON_TABERNACLE_SPEAKERS = {
+    "TT Friday December 16th, 2022 7 PM Service": "Joe Adams",
+    "TT Sunday December 11th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Sunday November 27th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Sunday November 20th, 2022 5 PM Service": "Aaron Guerra",
+    "TT Sunday November 20th, 2022 10 AM Service": "Daniel Evans",
+    "TT Wednesday November 16th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Wednesday November 9th, 2022 7 PM Service": "Daniel Evans",
+    "TT Sunday November 6th, 2022 5 PM Service": "Lyle Johnson",
+    "TT Wednesday November 2nd, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday October 30th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Sunday October 30th, 2022 5 PM Service": "Aaron Guerra",
+    "TT Wednesday October 26th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Wednesday October 19th, 2022 7 PM Service": "Peter McFadden",
+    "TT Sunday October 16th, 2022 5 PM Service": "Noel Johnson",
+    "TT Sunday October 16th, 2022 10 AM Service": "Daniel Evans",
+    "TT Wednesday October 12th, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday October 9th, 2022 5 PM Service": "Matthew Watkins",
+    "TT Sunday October 9th, 2022 10 AM Service": "Matthew Watkins",
+    "TT Wednesday October 5th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday October 2nd, 2022 5 PM Service": "Daniel Evans",
+    "TT Sunday October 2nd, 2022 10 AM Service": "Peter McFadden",
+    "TT Sunday September 25th, 2022 5 PM Service": "Reggie Plett",
+    "TT Sunday September 25th, 2022 10 AM Service": "Reggie Plett",
+    "TT Sunday September 18th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Wednesday Sep 14th, 2022 7 PM Service": "Peter McFadden",
+    "TT Sunday September 11th, 2022 5 PM Service": "Lyle Johnson",
+    "TT Wednesday Sep 7th, 2022 7 PM Service": "Peter McFadden",
+    "TT Sunday September 4th, 2022 10 AM Service": "Daniel Evans",
+    "TT Wednesday Aug 31st, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday August 28th, 2022 5 PM Service": "Joe Adams",
+    "TT Wednesday Aug  24th, 2022 7 PM Service": "Peter McFadden",
+    "TT Sunday Aug 14th, 2022 10 AM Service": "Matthew Watkins",
+    "TT Sunday August 14th, 2022 5 PM Service": "Matthew Watkins",
+    "TT Wednesday Aug  10th, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday August 7th, 2022 5 PM Service": "Lyle Johnson",
+    "TT Sunday Aug 7th, 2022 10 AM Service": "Daniel Evans",
+    "TT Sunday July 31st, 2022 10 AM Service": "Aaron Guerra",
+    "TT Wednesday July 27th, 2022 7 PM Service": "William M. Branham",
+    "TT Wednesday July 20th, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday July 17th, 2022 10 AM Service": "Peter McFadden",
+    "TT Wednesday July 13th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday July 10th, 2022 5 PM Service": "Daniel Evans",
+    "TT Sunday July 3rd, 2022 10 AM Service": "Martin Warner",
+    "TT Sunday June 26th, 2022 5 PM Service": "Matthew Watkins",
+    "TT Sunday June 26th, 2022 10 AM Service": "Matthew Watkins",
+    "TT Wednesday June 22nd, 2022 7 PM Service": "William M. Branham",
+    "TT Wednesday June 15th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday June 12th, 2022 10 AM Service": "Daniel Evans",
+    "TT Wednesday June 8th, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday June 5th, 2022 10 AM Service": "Joe Adams",
+    "TT Sunday June 5th, 2022 5 PM Service": "Joe Adams",
+    "TT Wednesday June 1st, 2022 7 PM Service": "Robert Figueroa",
+    "TT Sunday May 29th, 2022 5 PM Service": "Lyle Johnson",
+    "TT Wednesday May 25th, 2022 7 PM Service": "Daniel Evans",
+    "TT Sunday May 22nd, 2022 5 PM Service": "Reggie Plett",
+    "TT Sunday May 15th, 2022 10 AM Service": "Isaiah Chisolm",
+    "TT Sunday May 15th, 2022 5 PM Service": "Isaiah Chisolm",
+    "TT Sunday May 8th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Wednesday May 4th, 2022 7 PM Service": "Robert Figueroa",
+    "TT Sunday May 1st, 2022 10 AM Service": "Tim Cross",
+    "TT Sunday April 24th, 2022 10 AM Service": "Daniel Evans",
+    "TT Sunday April 17th, 2022 10 AM Service": "Daniel Evans",
+    "TT Sunday April 10th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Wednesday April 6th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday April 3th, 2022 10 AM Service": "Daniel Evans",
+    "TT Sunday April 3rd, 2022 5 PM Service": "Robert Figueroa",
+    "TT Wednesday March 23rd, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday March 20th, 2022 5 PM Service": "Peter McFadden",
+    "TT Sunday March 20th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Sunday March 13th, 2022 10 AM Service": "Aaron Guerra",
+    "TT Sunday March 13th, 2022 5 PM Service": "Jesse Wilson",
+    "TT Sunday March 6th, 2022 5 PM Service": "Daniel Evans",
+    "TT Wednesday March 2nd, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday February 27th, 2022 10 AM Service": "Bernhard Frank",
+    "TT Sunday February 20th, 2022 5 PM Service": "Reggie Plett",
+    "TT Sunday February 13th, 2022 5 PM Service": "Martin Warner",
+    "TT Wednesday February 9th, 2022 7 PM Service": "William M. Branham",
+    "TT Sunday February 6th, 2022 5 PM Service": "Peter McFadden",
+    "TT Wednesday February 2nd, 2022 7 PM Service": "Lyle Johnson",
+    "TT Sunday January 30th, 2022 10 AM Service": "Joe Adams",
+    "TT Wednesday January 26th, 2022 7 PM Service": "Daniel Evans",
+    "TT Sunday January 23rd 2022 10 AM Service": "Steve Shelley",
+    "TT Sunday January 23rd, 2022 5 PM Service": "Steve Shelley",
+    "TT Sunday January 16th, 2022 10 AM Service": "Tim Cross",
+    "TT Wednesday January 5th, 2022 7 PM Service": "Lyle Johnson",
+    "TT Wednesday December 29th, 2021 7 PM Service": "Daniel Evans",
+    "TT Sunday December 26th, 2021 10 AM Service": "Aaron Guerra",
+    "TT Sunday December 19th, 2021 5 PM Service": "Peter McFadden",
+    "TT Sunday December 19th, 2021 10 AM Service": "Aaron Guerra",
+    "TT Wednesday December 15th, 2021 7 PM Service": "Lyle Johnson",
+    "TT Sunday December 12th, 2021 5 PM Service": "Tim Cross",
+    "TT Sunday December 5th, 2021 5 PM Service": "Dale Smith",
+    "TT Sunday November 21st, 2021 5 PM Service": "Joe Adams",
+    "TT Wednesday November 10th, 2021 7 PM Service": "William M. Branham",
+    "TT Sunday July 26th, 2020 10 AM Service": "Matthew Watkins",
+}
+
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64 x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -191,13 +455,41 @@ def sanitize_filename(text):
 def split_multiple_speakers(text):
     return [p.strip() for p in re.split(r'\s+&\s+|\s+and\s+|\s*/\s*|,\s*', text) if p.strip()]
 
-def normalize_speaker(speaker):
-    if not speaker or speaker == "Unknown Speaker": return speaker
+def remove_dates_from_name(text):
+    """Remove date patterns from text."""
+    for pattern in DATE_PATTERNS:
+        text = re.sub(pattern, ' ', text, flags=re.IGNORECASE)
+    return re.sub(r'\s+', ' ', text).strip()
+
+def normalize_speaker(speaker, title=""):
+    """
+    Normalize speaker name and filter out non-speakers.
+    Returns empty string if the name should be filtered out.
+    """
+    if not speaker or speaker == "Unknown Speaker": 
+        return speaker
+    
+    speaker = speaker.strip()
     s_lower = speaker.lower()
     
-    # Specific fix maps
+    # Specific fix maps - William Branham variations
+    william_branham_patterns = [
+        r'^William\s+Marrion\s+Branham$',
+        r'^William\s+Marion\s+Branham$',
+        r'^William\s+Branham$',
+        r'^William\s+M\.?\s+Branham$',
+        r'^Williams\s+Branham$',
+        r'^Prophet\s+William\s+(?:M\.?\s+)?(?:Marrion\s+)?Branham$',
+    ]
+    for pattern in william_branham_patterns:
+        if re.match(pattern, speaker, re.IGNORECASE):
+            return "William M. Branham"
+    
     if "prophet" in s_lower and "branham" in s_lower: return "William M. Branham"
     if "william" in s_lower and "branham" in s_lower: return "William M. Branham"
+    if speaker.lower() == "branham": return "William M. Branham"
+    
+    # Other specific normalizations
     if "isaiah" in s_lower and "brooks" in s_lower: return "Isiah Brooks"
     if "caleb" in s_lower and "perez" in s_lower: return "Caleb Perez"
     if "daniel" in s_lower and "evans" in s_lower: return "Daniel Evans"
@@ -205,25 +497,132 @@ def normalize_speaker(speaker):
     if "andrew spencer" in s_lower and "july" in s_lower: return "Andrew Spencer"
     if "pr" in s_lower and "busobozi" in s_lower: return "Busobozi Talemwa"
     if "joel pruitt" in s_lower and "youth" in s_lower: return "Joel Pruitt"
+    if re.match(r'^Dan\s+Evans$', speaker, re.IGNORECASE): return 'Daniel Evans'
+    if re.match(r'^Faustin\s+Luk', speaker, re.IGNORECASE): return 'Faustin Lukumuena'
 
     # Choir Fixes
     if "choir" in s_lower:
         if "evening light" in s_lower: return "Evening Light Choir"
         if "bethel" in s_lower: return "Bethel Tabernacle Choir"
         return "Church Choir"
-
+    
+    # Filter out church/organization names
+    church_patterns = [
+        r'\b(?:Church|Tabernacle|Chapel|Temple|Ministry|Ministries|Fellowship)\b',
+        r'\bInner\s+Veil\b', r'\bETM\s+Tab(?:ernacle)?\b', r'\bFGLT\b', r'\bBCF\b',
+        r'\bCongregation\b', r'\bChoir\b', r'\bSouth\s+Africa\b', r'\bIvory\s+Coast\b',
+    ]
+    for pattern in church_patterns:
+        if re.search(pattern, speaker, re.IGNORECASE):
+            return ""
+    
+    # Filter out memorial service names (deceased, not speaker)
+    if re.search(r'\bMemorial\b', speaker, re.IGNORECASE): return ""
+    if title and re.search(r'\bMemorial\b', title, re.IGNORECASE):
+        if 'billy paul' in speaker.lower(): return ""
+    
+    # Filter out topic phrases that look like names
+    topic_patterns = [
+        r'^Apostolic\s+Power\b', r'^Smoking\s+Habits\b', r'^Accepting\s+Trouble\b',
+        r'^When\s+Jesus\b', r'^Prepare\s+Yourself\b', r'^Instrumental\b',
+        r'\bBaptism$', r'\bPt\.?\s*\d*$', r'\bPart\s*\d*$', r'\bMusic$',
+        r'^Song$', r'^Branham\s+Come\b', r'^Branham\s+Saw\b',
+        r'^of\s+Christianity$', r'^Of\s+Malachi$', r'^What\s+Is\s+The\s+',
+        r'^Reversal\s+Of\s+', r'^Perplexity\s+Of\s+', r'^Fit\s+To\s+Rule$',
+        r'^At\s+Midnight$', r'^Atmosphere$', r'^Vaunteth\s+Not\b',
+        r'^The\s+Appeal\b', r'^Character\s+With\b', r'^Battling\s+To\b',
+        r'^\w+ing\s+The\s+', r'^\w+ed\s+By\s+',
+    ]
+    for pattern in topic_patterns:
+        if re.search(pattern, speaker, re.IGNORECASE):
+            return ""
+    
+    # Filter out non-person patterns
+    non_person_patterns = [
+        r'^Report$', r'^Worship$', r'^Prayer$', r'^Watch\s+Night\b',
+        r'^\d+$', r'^Sisters$', r'^Sound\s+Of\s+Freedom$',
+        r'^Faith\s+Is\s+Our\s+Victory$', r'^Friend\s+Of\s+God$',
+        r'^Highway\s+To\s+Heaven$', r'^Goodness\s+Of\s+God$',
+        r'^Shout\s+To\s+The\s+Lord$', r'^Through\s+The\s+Fire$',
+        r'^As\s+The\s+Deer$', r'^Mark\s+Of\s+The\s+Beast$',
+        r'^Marriage\s+And\s+Divorce$', r'^Look\s+To\s+Jesus$',
+        r'^Congregational\s+Worship$', r'^Missionary\s+Report$',
+    ]
+    for pattern in non_person_patterns:
+        if re.match(pattern, speaker, re.IGNORECASE):
+            return ""
+    
+    # Clean up trailing topic words
+    speaker = re.sub(r'\s+(?:Worship|Under|Redemption|At|Study|Pt|Part|Pastor|In)\s+.*$', '', speaker, flags=re.IGNORECASE)
+    
     return speaker.strip()
 
 def clean_name(name):
-    # Remove Titles
-    name = re.sub(r'^(By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Hna\.?|Hno\.?|Pastor|Bishop|Rev\.?|Evangelist|Guest Minister|Song Leader|Elder|Founding)\s+', '', name, flags=re.IGNORECASE)
-    # Remove Trailing Punctuation
-    name = name.strip(" .,:;-|")
+    """Clean up extracted name - improved version."""
+    if not name:
+        return ""
+    
+    # Remove leading/trailing punctuation and whitespace
+    name = re.sub(r'^[\s\-:,;\.\'\"]+', '', name)
+    name = re.sub(r'[\s\-:,;\.\'\"]+$', '', name)
+    
+    # Remove leading honorifics
+    name = re.sub(r'^(?:By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Sr\.?|Hna\.?|Hno\.?|Pastor|Ptr\.?|Pst\.?|Bishop|Rev\.?|Evangelist|Guest\s+Minister|Song\s+Leader|Elder|Founding)\s+', '', name, flags=re.IGNORECASE)
+    
+    # Remove dates - especially "on Month" patterns
+    name = re.sub(r'\s+on\s+(?:January|February|March|April|May|June|July|August|September|October|November|December).*$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\s+on\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?.*$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d.*$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing abbreviated months
+    name = re.sub(r'\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?$', '', name, flags=re.IGNORECASE)
+    
+    # Remove other dates
+    name = remove_dates_from_name(name)
+    
+    # Remove part numbers
+    name = re.sub(r'\s*\(?(?:Part|Pt\.?)\s*\d+\)?.*$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing date words
+    name = re.sub(r'\s+(?:on|at|from|during)\s*$', '', name, flags=re.IGNORECASE)
+    
+    # Remove location info like "at Church Name"
+    name = re.sub(r'\s+at\s+[A-Z].*$', '', name)
+    
+    # Clean up quotes
+    name = re.sub(r'["\'"]+', '', name)
+    
+    # Remove trailing "and Congregation", etc.
+    name = re.sub(r'\s+and\s+(?:Congregation|Saints|Sis\.?|Bro\.?|Sister|Brother).*$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing time/service words
+    name = re.sub(r'\s+(?:Morning|Evening|Afternoon|Night|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\s*(?:Service|Night|Morning|Evening|Communion)?.*$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\s+(?:Service|Worship|Meeting|Night|Communion)$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing "Eve" and "Instrumental"
+    name = re.sub(r'\s+Eve$', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\s+Instrumental$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing sermon-related suffixes
+    name = re.sub(r'\s+(?:Minister\s+Meeting|Youth\s+Service|Youth|Timestamps|Esther|Part\s*\d*)$', '', name, flags=re.IGNORECASE)
+    
+    # Remove trailing numbers like "1 of 2"
+    name = re.sub(r'\s*[\[\(]?\d+\s+of\s+\d+[\]\)]?$', '', name, flags=re.IGNORECASE)
+    
+    # Remove ALL CAPS suffix (likely sermon titles)
+    name = re.sub(r'\s+[A-Z]{2,}(?:\s+[A-Z]{2,})*$', '', name)
+    
     # Remove trailing junk words
+    name = name.strip(" .,:;-|")
     words = name.split()
     while words and words[-1].lower() in INVALID_NAME_TERMS:
         words.pop()
-    return " ".join(words)
+    name = " ".join(words)
+    
+    # Clean multiple spaces
+    name = re.sub(r'\s+', ' ', name).strip()
+    
+    return name
 
 # --- AUTHORITATIVE SPEAKER CHECK ---
 def get_canonical_speaker(speaker, speakers_set, speakers_file):
@@ -246,40 +645,79 @@ def get_canonical_speaker(speaker, speakers_set, speakers_file):
     print(f"[NEW SPEAKER ADDED] '{speaker.strip()}' added to {speakers_file}")
     return speaker.strip()
 
-def is_valid_person_name(text):
+def is_valid_person_name(text, title=""):
+    """Check if text looks like a valid person name - improved version."""
+    if not text or not text.strip():
+        return False
+    
     text = text.strip()
-    if not text: return False
-    # Add specific exceptions for valid names that might otherwise fail
-    if text.lower() in ["church choir", "bloteh won", "chris take", "tim cross"]:
-        return True
     t_lower = text.lower()
     
-    # Reject obivous junk
-    if t_lower.startswith("the ") or t_lower.startswith("a ") or t_lower.startswith("an "): return False
-    if t_lower.startswith("i ") or t_lower.startswith("my ") or t_lower.startswith("if "): return False
-    if "hymn" in t_lower or "service" in t_lower: return False
+    # Add specific exceptions for valid names that might otherwise fail
+    valid_exceptions = ["church choir", "bloteh won", "chris take", "tim cross", 
+                       "william m. branham", "isiah brooks", "daniel evans", "caleb perez"]
+    if t_lower in valid_exceptions:
+        return True
     
+    # Check against NON_NAME_PATTERNS
+    for pattern in NON_NAME_PATTERNS:
+        if re.match(pattern, text, re.IGNORECASE):
+            return False
+    
+    # Reject obvious junk
+    if t_lower.startswith(("the ", "a ", "an ", "i ", "my ", "if ", "this ", "that ", "when ", "where ", "what ", "how ", "why ")): 
+        return False
+    if t_lower.endswith((" the", " a", " is", " are", " was", " be")):
+        return False
+    
+    # Reject service/content words
+    service_words = ["hymn", "service", "sermon", "worship", "meeting", "prayer", "song", 
+                     "baptism", "dedication", "funeral", "memorial", "testimony", "testimonies",
+                     "communion", "supper", "revival", "conference", "camp"]
+    for word in service_words:
+        if word in t_lower:
+            return False
+    
+    # Reject topic keywords
+    topic_keywords = ["how", "why", "when", "where", "what", "should", "must", "will",
+                      "shall", "being", "having", "taking", "making", "getting", "going"]
+    for word in topic_keywords:
+        if t_lower.startswith(word + " ") or t_lower.endswith(" " + word):
+            return False
+    
+    # Check invalid terms
     text_words = t_lower.split()
     for word in text_words:
         w_clean = word.strip(".,:;-")
         if w_clean in INVALID_NAME_TERMS:
             return False
-            
+    
+    # Must have reasonable word count (2-5 words typical for names)
     words = text.split()
-    if not (2 <= len(words) <= 5): return False
+    if not (2 <= len(words) <= 5):
+        return False
     
     # Capitalization Check
-    allowed_lowercase = {'de', 'la', 'van', 'der', 'st', 'mc', 'mac', 'del', 'dos', 'da', 'von'}
+    allowed_lowercase = {'de', 'la', 'van', 'der', 'st', 'mc', 'mac', 'del', 'dos', 'da', 'von', 'di', 'le', 'du', 'al', 'el'}
     for w in words:
-        clean_w = w.replace('.', '')
-        if not clean_w.isalpha(): return False
+        clean_w = w.replace('.', '').replace("'", "").replace("-", "")
+        # Allow names with apostrophes and hyphens
+        if not clean_w.isalpha(): 
+            # Check if it's just punctuation issues
+            if re.match(r'^[A-Za-z\'\-\.]+$', w):
+                continue
+            return False
         if not w[0].isupper():
-            if w.lower() not in allowed_lowercase: return False
-            
+            if w.lower() not in allowed_lowercase: 
+                return False
+    
+    # Use spaCy if available for entity checking
     if nlp:
         doc = nlp(text)
         for ent in doc.ents:
-            if ent.label_ in ["ORG", "DATE", "TIME", "GPE", "PRODUCT", "FAC"]: return False
+            if ent.label_ in ["ORG", "DATE", "TIME", "GPE", "PRODUCT", "FAC", "EVENT", "LAW", "WORK_OF_ART"]: 
+                return False
+    
     return True
 
 # --- ADVANCED HEALING LOGIC ---
@@ -356,6 +794,20 @@ def heal_archive(data_dir, force=False):
     
     updated_files_count = 0
     cleaned_speakers = set()
+    
+    # Load known speakers for full speaker detection
+    known_speakers = load_json_file(SPEAKERS_FILE)
+    
+    # Statistics tracking for speaker detection
+    heal_stats = {
+        'total_processed': 0,
+        'speakers_detected': 0,
+        'unknown_speakers': 0,
+        'speakers_redetected': 0,
+        'speakers_corrected': 0,
+        'new_speakers': set(),
+        'by_church': {}
+    }
     # Shadow master summary file for detected speakers
     SHADOW_MASTER_FILE = os.path.join(data_dir, "shadow_master_speakers.csv")
     shadow_rows = []
@@ -370,6 +822,9 @@ def heal_archive(data_dir, force=False):
         if not os.path.exists(summary_path): continue
         
         print(f"   🏥 Healing: {church_folder.replace('_', ' ')}...")
+        
+        # Initialize per-church stats
+        church_stats = {'total': 0, 'detected': 0, 'unknown': 0}
         
         new_rows = []
         headers = []
@@ -431,6 +886,11 @@ def heal_archive(data_dir, force=False):
 
         for row in rows:
             original_speaker = row.get('speaker', 'Unknown Speaker')
+            
+            # Track stats
+            church_stats['total'] += 1
+            heal_stats['total_processed'] += 1
+            
             # Collect detected speaker for shadow master file
             detected_date = datetime.datetime.now().strftime("%Y-%m-%d")
             shadow_rows.append({
@@ -472,6 +932,23 @@ def heal_archive(data_dir, force=False):
                 # Only run smart correction if it's not a special case
                 new_speaker = smart_speaker_correction(original_speaker, original_title)
 
+            # --- STEP 1.5: FULL SPEAKER DETECTION FOR UNKNOWN SPEAKERS ---
+            # If speaker is still unknown after smart correction, run full detection algorithm
+            if new_speaker == "Unknown Speaker" or not new_speaker:
+                description = row.get('description', '')
+                detected_speaker, is_new = identify_speaker_dynamic(original_title, description, known_speakers)
+                detected_speaker = normalize_speaker(detected_speaker)
+                detected_speaker = clean_name(detected_speaker)
+                
+                if detected_speaker and detected_speaker != "Unknown Speaker":
+                    new_speaker = detected_speaker
+                    heal_stats['speakers_redetected'] += 1
+                    print(f"      🔍 DETECTED: '{original_title[:40]}...' -> {new_speaker}")
+                    if is_new:
+                        heal_stats['new_speakers'].add(new_speaker)
+                        known_speakers.add(new_speaker)
+                        print(f"      🎉 NEW SPEAKER LEARNED: {new_speaker}")
+
             # --- STEP 2: SONG DETECTION FROM CONTENT (can override above) ---
             # Construct filename to find transcript
             safe_title = sanitize_filename(original_title)
@@ -494,6 +971,13 @@ def heal_archive(data_dir, force=False):
             if not force and new_speaker == original_speaker and new_type == original_type:
                 new_rows.append(row)
                 cleaned_speakers.add(new_speaker)
+                # Track stats for unchanged rows too
+                if new_speaker and new_speaker != "Unknown Speaker":
+                    church_stats['detected'] += 1
+                    heal_stats['speakers_detected'] += 1
+                else:
+                    church_stats['unknown'] += 1
+                    heal_stats['unknown_speakers'] += 1
                 continue
                 
             # SOMETHING CHANGED -> UPDATE FILE & DB
@@ -501,6 +985,7 @@ def heal_archive(data_dir, force=False):
             if new_speaker != original_speaker:
                 print(f"      - Speaker Change: '{original_speaker}' -> '{new_speaker}'")
                 change_detected = True
+                heal_stats['speakers_corrected'] += 1
             if new_type != original_type:
                 print(f"      - Type Change: '{original_type}' -> '{new_type}'")
                 change_detected = True
@@ -540,6 +1025,18 @@ def heal_archive(data_dir, force=False):
             cleaned_speakers.add(canonical_speaker)
             if change_detected or force:
                 updated_files_count += 1
+            
+            # Track final speaker status for stats
+            if canonical_speaker and canonical_speaker != "Unknown Speaker":
+                church_stats['detected'] += 1
+                heal_stats['speakers_detected'] += 1
+            else:
+                church_stats['unknown'] += 1
+                heal_stats['unknown_speakers'] += 1
+            
+        # Save church stats if any rows processed
+        if church_stats['total'] > 0:
+            heal_stats['by_church'][church_folder.replace('_', ' ')] = church_stats
             
         # Write back updated Summary CSV (with deduplication)
         try:
@@ -620,6 +1117,10 @@ def heal_archive(data_dir, force=False):
         print(f"❌ Failed to update shadow master summary: {e}")
     print(f"✅ Healing Complete. Corrected {updated_files_count} files/entries.")
     print(f"✨ Global Speaker List Optimized: {len(final_speakers)} unique speakers.")
+    print(f"🔍 Speakers Re-detected: {heal_stats['speakers_redetected']}")
+    
+    # Write speaker detection log
+    write_speaker_detection_log(heal_stats, operation_name="Heal Archive")
 
 def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.csv"):
     """
@@ -807,12 +1308,15 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
     
     # Update speakers.json with new speakers
     known_speakers = load_json_file(SPEAKERS_FILE)
+    new_speakers_added = set()
     for correction in corrections:
         new_speaker = correction.get('speaker_detected', '').strip()
         if new_speaker and new_speaker != "Unknown Speaker":
             new_speaker = normalize_speaker(new_speaker)
             new_speaker = clean_name(new_speaker)
             if new_speaker and is_valid_person_name(new_speaker):
+                if new_speaker not in known_speakers:
+                    new_speakers_added.add(new_speaker)
                 known_speakers.add(new_speaker)
     save_json_file(SPEAKERS_FILE, known_speakers)
     
@@ -823,58 +1327,1354 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
     print(f"   ⏭️ Skipped (same speaker): {skipped_same}")
     print(f"   ⚠️ Skipped (file not found): {skipped_not_found}")
     print("="*60)
+    
+    # Write statistics to log file
+    total_processed = len(corrections)
+    speakers_detected = updated_transcripts + updated_summaries + skipped_same
+    unknown_speakers = skipped_not_found
+    
+    stats = {
+        'total_processed': total_processed,
+        'speakers_detected': speakers_detected,
+        'unknown_speakers': unknown_speakers,
+        'transcripts_updated': updated_transcripts,
+        'summaries_updated': updated_summaries,
+        'skipped_same': skipped_same,
+        'skipped_not_found': skipped_not_found,
+        'new_speakers': new_speakers_added,
+    }
+    write_speaker_detection_log(stats, operation_name="Heal Speakers from CSV")
 
-# --- MAIN LOGIC (UNCHANGED EXCEPT MENU) ---
-# ... (Previous helper functions identify_speaker_dynamic, process_channel, etc. remain here) ...
-# For brevity, I am including the critical `process_channel` and `main` updates below.
+
+def backfill_descriptions(data_dir=None, dry_run=False, churches=None, limit=None):
+    """
+    Backfill video descriptions into existing transcript files that are missing them.
+    
+    This function:
+    1. Scans all transcript .txt files in data_dir
+    2. Checks if each file has a Description section
+    3. If missing, extracts the video ID from the URL in the file
+    4. Fetches the description from YouTube
+    5. Updates the file with the description section
+    
+    Args:
+        data_dir: Path to data directory (defaults to DATA_DIR)
+        dry_run: If True, only report what would be done without making changes
+        churches: List of church folder names to process (None = all churches)
+        limit: Maximum number of files to process (None = no limit)
+    
+    Returns:
+        Tuple of (files_updated, files_skipped, files_with_errors)
+    """
+    if data_dir is None:
+        data_dir = DATA_DIR
+    
+    print("\n" + "="*60)
+    print("📝 BACKFILLING VIDEO DESCRIPTIONS INTO TRANSCRIPT FILES")
+    if dry_run:
+        print("   ⚠️ DRY RUN MODE - No files will be modified")
+    if churches:
+        print(f"   🏛️ Churches filter: {', '.join(churches)}")
+    if limit:
+        print(f"   📊 Limit: {limit} files max")
+    print("="*60)
+    
+    files_updated = 0
+    files_skipped = 0
+    files_already_have_desc = 0
+    files_with_errors = 0
+    files_no_transcript = 0
+    limit_reached = False
+    
+    # Get list of church folders to process
+    all_church_folders = sorted(os.listdir(data_dir))
+    
+    # Filter by specified churches if provided
+    if churches:
+        # Normalize church names for matching (handle underscores/spaces)
+        normalized_churches = []
+        for c in churches:
+            normalized_churches.append(c)
+            normalized_churches.append(c.replace(' ', '_'))
+            normalized_churches.append(c.replace('_', ' '))
+        
+        church_folders = [f for f in all_church_folders 
+                         if f in normalized_churches or 
+                         any(c.lower() in f.lower() for c in churches)]
+    else:
+        church_folders = all_church_folders
+    
+    # Iterate through church folders
+    for church_folder in church_folders:
+        if limit_reached:
+            break
+            
+        church_path = os.path.join(data_dir, church_folder)
+        if not os.path.isdir(church_path):
+            continue
+        if church_folder.startswith('.') or church_folder.endswith('.csv'):
+            continue
+        
+        print(f"\n📂 Processing: {church_folder}")
+        church_updated = 0
+        church_skipped = 0
+        
+        for filename in sorted(os.listdir(church_path)):
+            # Check if we've hit the limit
+            if limit and files_updated >= limit:
+                print(f"\n⚠️ Limit of {limit} files reached. Stopping.")
+                limit_reached = True
+                break
+                
+            if not filename.endswith('.txt'):
+                continue
+            
+            filepath = os.path.join(church_path, filename)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # Check if file already has a Description section
+                if 'Description:' in content and content.find('Description:') < content.find('TRANSCRIPT'):
+                    files_already_have_desc += 1
+                    continue
+                
+                # Extract video ID from URL in file
+                url_match = re.search(r'URL:\s*(https?://[^\s]+)', content)
+                if not url_match:
+                    files_skipped += 1
+                    church_skipped += 1
+                    continue
+                
+                url = url_match.group(1).strip()
+                video_id = None
+                if 'v=' in url:
+                    video_id = url.split('v=')[1].split('&')[0]
+                elif 'youtu.be/' in url:
+                    video_id = url.split('/')[-1].split('?')[0]
+                
+                if not video_id:
+                    files_skipped += 1
+                    church_skipped += 1
+                    continue
+                
+                if dry_run:
+                    print(f"   Would fetch description for: {filename[:60]}...")
+                    files_updated += 1
+                    church_updated += 1
+                    continue
+                
+                # Fetch description from YouTube
+                try:
+                    _, description, yt_obj = get_transcript_data(video_id)
+                except Exception as e:
+                    print(f"   ⚠️ Error fetching {filename[:40]}: {e}")
+                    files_with_errors += 1
+                    continue
+                
+                if not description or not description.strip():
+                    files_no_transcript += 1
+                    continue
+                
+                # Truncate description if too long
+                desc_text = description[:2000] + "..." if len(description) > 2000 else description
+                desc_section = f"Description:\n{desc_text}\n\n"
+                
+                # Insert description section before TRANSCRIPT section
+                if 'TRANSCRIPT' in content:
+                    new_content = content.replace(
+                        'TRANSCRIPT\n========================================',
+                        f'{desc_section}TRANSCRIPT\n========================================'
+                    )
+                else:
+                    # Fallback: insert after the header block
+                    new_content = re.sub(
+                        r'(========================================\n\n)',
+                        f'\\1{desc_section}',
+                        content,
+                        count=1
+                    )
+                
+                # Write updated content
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                
+                files_updated += 1
+                church_updated += 1
+                print(f"   ✅ Added description to: {filename[:50]}...")
+                
+            except Exception as e:
+                print(f"   ❌ Error processing {filename}: {e}")
+                files_with_errors += 1
+        
+        if church_updated > 0:
+            print(f"   📊 Church summary: {church_updated} updated, {church_skipped} skipped")
+    
+    print("\n" + "="*60)
+    print("📊 DESCRIPTION BACKFILL SUMMARY")
+    print(f"   ✅ Files updated: {files_updated}")
+    print(f"   ✓ Already had description: {files_already_have_desc}")
+    print(f"   ⏭️ Skipped (no URL/video ID): {files_skipped}")
+    print(f"   📭 No description available: {files_no_transcript}")
+    print(f"   ❌ Errors: {files_with_errors}")
+    print("="*60)
+    
+    return files_updated, files_skipped, files_with_errors
+
+
+# --- SPEAKER EXTRACTION PATTERN FUNCTIONS ---
+def is_valid_name(name):
+    """Alias for is_valid_person_name for compatibility."""
+    return is_valid_person_name(name)
+
+def remove_dates(text):
+    """Remove date patterns from text."""
+    for pattern in DATE_PATTERNS:
+        text = re.sub(pattern, ' ', text, flags=re.IGNORECASE)
+    return re.sub(r'\s+', ' ', text).strip()
+
+def extract_speaker_pattern1(title):
+    """Pattern 1: Honorific + Name - 'Bro. Ron Spencer', 'Pastor John Smith'"""
+    pattern = rf'{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    matches = re.findall(pattern, title, re.IGNORECASE)
+    for match in matches:
+        name = clean_name(match)
+        if is_valid_name(name):
+            return name
+    # Handle "Bro.Name.Name" pattern (no spaces)
+    pattern2 = r'Bro\.([A-Z][a-z]+)\.([A-Z][a-z]+)'
+    match = re.search(pattern2, title)
+    if match:
+        name = f"{match.group(1)} {match.group(2)}"
+        name = clean_name(name)
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern2(title):
+    """Pattern 2: '- Name on Date' or '- Name'"""
+    pattern = rf'[-–—]\s*{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'[-–—]\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s+(?:on|at)\s+'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern3(title):
+    """Pattern 3: 'Name - Title' or 'Name: Title'"""
+    pattern = r'^\d{6}\s*[-–—]?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s*:\s*[A-Z]'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'[-–—]\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s*:\s*[A-Z]'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern4(title):
+    """Pattern 4: '|' separator patterns"""
+    parts = re.split(r'\s*\|\s*', title)
+    for part in parts:
+        pattern = rf'{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)'
+        match = re.search(pattern, part, re.IGNORECASE)
+        if match:
+            name = clean_name(match.group(1))
+            if is_valid_name(name):
+                return name
+    if len(parts) >= 3:
+        for part in parts[1:-1]:
+            part = part.strip()
+            if re.match(r'^[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2}$', part):
+                name = clean_name(part)
+                if is_valid_name(name):
+                    return name
+    return None
+
+def extract_speaker_pattern5(title):
+    """Pattern 5: Date prefix patterns"""
+    pattern = rf'^\d{{2,4}}[-/]\d{{2}}[-/]\d{{2,4}}\s+{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = rf'^\d{{6}}\s*[-–—]?\s*{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)\s*:'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern6(title):
+    """Pattern 6: 'by Honorific Name' patterns"""
+    pattern = rf'(?:by|with|from)\s+{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern7(title):
+    """Pattern 7: Parenthetical speaker info"""
+    pattern = rf'\({HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)\)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern8(title):
+    """Pattern 8: Title is just a name"""
+    clean_title = remove_dates(title)
+    clean_title = re.sub(r'^\d{2,4}[-/]\d{2}[-/]\d{2,4}\s*', '', clean_title)
+    clean_title = re.sub(r'\s*[-–—]\s*\d.*$', '', clean_title)
+    clean_title = clean_title.strip()
+    pattern = rf'^{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)$'
+    match = re.search(pattern, clean_title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    if re.match(r'^[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3}$', clean_title):
+        if is_valid_name(clean_title):
+            return clean_title
+    return None
+
+def extract_speaker_pattern9(title):
+    """Pattern 9: Name followed by topic"""
+    pattern = r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s*[-–—:]\s*[A-Z]'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name) and not re.match(r'^(?:The|A|An|This|Our|My|God|Jesus|Christ|Lord|Holy)\s', name, re.IGNORECASE):
+            return name
+    return None
+
+def extract_speaker_pattern10(title):
+    """Pattern 10: After quoted title"""
+    pattern = rf'["\'"]+[^"\']+["\'"]+\s*[-–—]\s*{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern11(title):
+    """Pattern 11: Colon-separated patterns"""
+    pattern = rf':\s*{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'(?:Speaker|Minister|Preacher|Pastor|Guest)[\s:]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern12(title):
+    """Pattern 12: Sunday School / Special formats"""
+    pattern = rf'(?:Sunday\s+School|Bible\s+Study|Prayer\s+Meeting)[\s:]+{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern13(title):
+    """Pattern 13: Double-pipe patterns"""
+    parts = re.split(r'\s*\|\|\s*', title)
+    for part in parts:
+        pattern = rf'{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+        match = re.search(pattern, part, re.IGNORECASE)
+        if match:
+            name = clean_name(match.group(1))
+            if is_valid_name(name):
+                return name
+    return None
+
+def extract_speaker_pattern14(title):
+    """Pattern 14: Bracket patterns"""
+    clean_title = re.sub(r'\[[^\]]+\]', '', title)
+    pattern = rf'{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, clean_title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern15(title):
+    """Pattern 15: Complex date-name patterns"""
+    pattern = rf'^\d{{2}}[-]?\d{{4}}\s*[-–—]?\s*({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)\s*:'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = rf'\d{{4}}[-/]\d{{2}}[-/]\d{{2}}\s+{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern16(title):
+    """Pattern 16: Sermon Clip formats"""
+    pattern = r'Sermon\s+Clips?[:\s]+\d{6}\s*[-–—]\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)[\s:]+[A-Z]'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'Sermon\s+Clips?\s*[-:]\s*\d{6}\s*[-–—]\s*([A-Z][a-z]+(?:\s+[A-Za-z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern17(title):
+    """Pattern 17: YYMMDD - Name - Title or YYMMDD-Name:Title"""
+    pattern = r'^\d{6}\s*[-–—]\s*([A-Z][a-z]+(?:\s+(?:del\s+)?[A-Z][a-z]+)+)\s*[-–—]\s*[A-Z]'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'^\d{6}[-–—]([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s*:'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern18(title):
+    """Pattern 18: Honorific + Name followed by topic"""
+    pattern = rf'^{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){{1,2}})\s+[A-Z][a-z]+'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            remaining = title[match.end(1):].strip()
+            if len(remaining.split()) >= 2:
+                return name
+    return None
+
+def extract_speaker_pattern19(title):
+    """Pattern 19: Pastor Name followed by topic"""
+    pattern = r'^(?:Pastor|Rev\.?|Reverend)[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+))\s+[A-Z][a-z]+'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern20(title):
+    """Pattern 20: Name after topic - Name"""
+    pattern = r'[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*(?:\(|$|at\s)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*$'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern21(title):
+    """Pattern 21: Parenthetical date format - Name after"""
+    pattern = r'^\(\d{1,2}[-/]\d{1,2}[-/]\d{2,4}\)\s+.*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern22(title):
+    """Pattern 22: Topic: Name at end"""
+    pattern = r':\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*$'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern23(title):
+    """Pattern 23: Wade Dale / Samuel Dale style"""
+    pattern = r'^\d{2}[-]?\d{4}(?:am|pm)?\s*[-–—]\s*.*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+)\s*$'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern24(title):
+    """Pattern 24: Sermon Clip with different spacing"""
+    pattern = r'Sermon\s+Clips?:\d{6}[ap]?\s*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+)[\s:]+[A-Z]'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern25(title):
+    """Pattern 25: -Past. / Pastor in Spanish"""
+    pattern = r'[-–—]?\s*Past\.?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern26(title):
+    """Pattern 26: Minister pattern"""
+    pattern = rf'/\s*(?:Minister|Visiting\s+Minister)?\s*{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern27(title):
+    """Pattern 27: Sunday School date pattern"""
+    pattern = r'\(Sunday\s+School\)\s*\d{6}\s*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern28(title):
+    """Pattern 28: Brother with apostrophe"""
+    pattern = r"Brother\s+([A-Z][a-z]+(?:\s+[A-Z]'?[A-Za-z]+)+)"
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern29(title):
+    """Pattern 29: Name with middle initial/suffix"""
+    pattern = rf'{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z]\.?)?\s+[A-Z][a-z]+(?:,?\s*(?:Sr\.?|Jr\.?|III|II|IV))?)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        name = re.sub(r'\s+[A-Z]\.\s*', ' ', name)
+        name = re.sub(r',?\s*(?:Sr\.?|Jr\.?|III|II|IV)$', '', name)
+        name = re.sub(r'\s+', ' ', name).strip()
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern30(title):
+    """Pattern 30: Date MM/DD/YY(M) Name"""
+    pattern = r'\d{1,2}/\d{1,2}/\d{2,4}[AaMm]?\s+([A-Z][a-z]+\s+[A-Z][a-z]+)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern31(title):
+    """Pattern 31: YY MMDD space separated then name"""
+    pattern = r'^\d{2}\s+\d{4}(?:\s+\w+)+\s+([A-Z][a-z]+\s+[A-Z][a-z]+)\s*$'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern32(title):
+    """Pattern 32: YYYY MMDDXX format"""
+    pattern = r'^\d{4}\s+\d{4}[AaPpMm]{0,2}\s+.*[-–—,]\s*(?:Pst\.?|Pastor)?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        name = re.sub(r',\s*[A-Z][a-z]+$', '', name)
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern33(title):
+    """Pattern 33: Topic Part X - Name"""
+    pattern = r'(?:Part|Pt\.?)\s*\d+\s*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*$'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern34(title):
+    """Pattern 34: Sisters' patterns"""
+    pattern = r"Sisters?['\s]+([A-Z][a-z]+(?:\s+and\s+[A-Z][a-z]+)?)"
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern35(title):
+    """Pattern 35: fr/Bro French style"""
+    pattern = r'[-–—,\s]+(?:fr|Br|Bro)\.?\s+([A-Z][a-zéèêëàâäôöùûüç]+(?:\s+[A-Z][a-z]+)*)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern36(title):
+    """Pattern 36: YYMMDD[ap] - Name: Title"""
+    pattern = r'^\d{6}[ap]?\s*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name) and not re.match(r'^(?:Rapturing|Celebrating|Receiving|Eve)\s', name):
+            return name
+    return None
+
+def extract_speaker_pattern37(title):
+    """Pattern 37: YYMMDD: Name - Title"""
+    pattern = r'^\d{6}\s*:\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*[-–—]'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern38(title):
+    """Pattern 38: YYMMDD - Name: Topic"""
+    pattern = r'^\d{6}\s+[-–—]\s+([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern39(title):
+    """Pattern 39: 'by Name' at end"""
+    pattern = r'\bby\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s*$'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern40(title):
+    """Pattern 40: Sermon Clip various formats"""
+    pattern = r'Sermon\s+Clip\s*\d*\s*:\s*\d{5,6}\s*[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'Sermon\s+Clip\s*:\s*\d{6}[ap]?\s+([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    pattern = r'Sermon\s+Clip\s*:\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*:'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern41(title):
+    """Pattern 41: YYYY-MMDD ... - Hno. Name (Spanish)"""
+    pattern = rf'\d{{4}}[-]?\d{{4}}\s+.*[-–—]\s*{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern42(title):
+    """Pattern 42: WMB / William Branham patterns"""
+    if re.search(r'[-–—]\s*(?:Rev\.?\s+)?WMB\s*$', title, re.IGNORECASE):
+        return "William M. Branham"
+    if re.search(r'[-–—]\s*Rev\.\s+William\s+M\.?\s+Branham', title, re.IGNORECASE):
+        return "William M. Branham"
+    pattern = r'Taped\s+Sermon\s*:\s*William\s+(?:M\.?\s+)?(?:Marrion\s+)?Branham\s*:'
+    if re.search(pattern, title, re.IGNORECASE):
+        return "William M. Branham"
+    if re.search(r'Prophet\s+William\s+(?:M\.?\s+)?(?:Marrion\s+)?Branham', title, re.IGNORECASE):
+        return "William M. Branham"
+    if re.search(r'[-–—]\s*(?:Rev\.?\s+)?William\s+(?:M\.?\s+)?(?:Marrion\s+)?Branham\s*$', title, re.IGNORECASE):
+        return "William M. Branham"
+    return None
+
+def extract_speaker_pattern43(title):
+    """Pattern 43: Date | ... Pst. Name"""
+    pattern = rf'\d{{2}}[-/]\d{{2}}[-/]\d{{2,4}}\s*\|.*[-–—:]\s*{HONORIFIC_PATTERN}[\s\.]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern44(title):
+    """Pattern 44: Name with lowercase middle (Danny del Mundo)"""
+    pattern = r'^\d{6}\s*[-–—]\s*([A-Z][a-z]+\s+(?:del\s+|de\s+|van\s+|von\s+)?[A-Z][a-z]+)\s*:'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern45(title):
+    """Pattern 45: Topic - Name - 1 of 2"""
+    pattern = r'[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*[-–—\[\(]\s*(?:Part\s*)?\d+\s+of\s+\d+'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern46(title):
+    """Pattern 46: Name Suffix (Minister Meeting, etc.)"""
+    pattern = r'[-–—]\s*([A-Z][a-z]+\s+[A-Z][a-z]+)\s+(?:Minister\s+Meeting|Youth\s+Service|Fellowship|Convention)$'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern47(title):
+    """Pattern 47: Hno's. Name & Name (multiple speakers)"""
+    pattern = r"Hno'?s?\.?\s+([A-Z][a-z]+\s+[A-Z][a-z]+)\s*[&]\s*([A-Z][a-z]+\s+[A-Z][a-z]+)"
+    match = re.search(pattern, title)
+    if match:
+        name1 = clean_name(match.group(1))
+        name2 = clean_name(match.group(2))
+        if is_valid_name(name1) and is_valid_name(name2):
+            return f"{name1} & {name2}"
+    return None
+
+def extract_speaker_pattern47b(title):
+    """Pattern 47b: Multi-speaker with different honorifics
+    Examples: 'Bro. David and Sis. Faith Kegley', 'Bro Tobi and Bro Feran'
+    """
+    # Pattern: Honorific Name and Honorific Name
+    pattern = r'(?:Bro\.?|Brother|Sis\.?|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+and\s+(?:Bro\.?|Brother|Sis\.?|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name1 = clean_name(match.group(1))
+        name2 = clean_name(match.group(2))
+        if name1 and name2:
+            return f"{name1} & {name2}"
+    # Also handle "&" instead of "and"
+    pattern2 = r'(?:Bro\.?|Brother|Sis\.?|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*&\s*(?:Bro\.?|Brother|Sis\.?|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)'
+    match2 = re.search(pattern2, title, re.IGNORECASE)
+    if match2:
+        name1 = clean_name(match2.group(1))
+        name2 = clean_name(match2.group(2))
+        if name1 and name2:
+            return f"{name1} & {name2}"
+    return None
+
+def extract_speaker_pattern48(title):
+    """Pattern 48: Bro. Name (single name) followed by dash, end, or & Choir"""
+    pattern = r'(?:Bro\.?|Brother|Sis\.?|Sister|Pastor)\s+([A-Z][a-z]+)(?:\s*[-–—]|\s*&\s*(?:Choir|Saints)|\s*$)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = match.group(1).strip()
+        if name and len(name) > 1 and name[0].isupper():
+            if name.lower() not in ['the', 'and', 'for', 'with', 'from', 'god']:
+                return name
+    return None
+
+def extract_speaker_pattern49(title):
+    """Pattern 49: -Sis. Name (no space before honorific)"""
+    pattern = r'-(?:Sis|Bro|Sister|Brother)\.?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        name = re.sub(r'\s*&\s*Saints\.?$', '', name, flags=re.IGNORECASE)
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern50(title):
+    """Pattern 50: Founding Pastor"""
+    pattern = r'Founding\s+Pastor\s*[-|]\s*([A-Z][a-z]+(?:\s+[A-Z]\.?)?\s+[A-Z][a-z]+(?:\s+(?:Sr|Jr|III|IV)\.?)?)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern51(title):
+    """Pattern 51: X Sisters group names"""
+    pattern = r'(?:The\s+)?([A-Z][a-z]+)\s+Sisters'
+    match = re.search(pattern, title)
+    if match:
+        name = match.group(1)
+        if name.lower() not in ['the', 'and', 'our', 'all', 'some']:
+            return f"{name} Sisters"
+    return None
+
+def extract_speaker_pattern52(title):
+    """Pattern 52: Pastor Name. LastName (typo period)"""
+    pattern = r'(?:Pastor|Bro\.?|Brother)\s+([A-Z][a-z]+)\.\s+([A-Z][a-z]+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = f"{match.group(1)} {match.group(2)}"
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern53(title):
+    """Pattern 53: Pastor Initial LastName"""
+    pattern = r'(?:Pastor|Bro\.?|Brother)\s+([A-Z](?:\.[A-Z])?\.?)\s+([A-Z][a-z]+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        initial = match.group(1).rstrip('.')
+        lastname = match.group(2)
+        return f"{initial} {lastname}"
+    return None
+
+def extract_speaker_pattern54(title):
+    """Pattern 54: Brothers' Name and Name"""
+    pattern = r"(?:Brothers?'?|Sisters?'?)\s+([A-Z][a-z]+(?:(?:\s*,\s*|\s+and\s+|\s*&\s*)[A-Z][a-z]+)*)"
+    match = re.search(pattern, title)
+    if match:
+        names = match.group(1)
+        names = re.sub(r'\s+and\s+', ', ', names)
+        names = re.sub(r'\s*&\s*', ', ', names)
+        return names
+    return None
+
+def extract_speaker_pattern55(title):
+    """Pattern 55: Sis. Name S. (with initial at end)"""
+    pattern = r'(?:Sis\.|Sister|Bro\.|Brother)\s+([A-Z][a-z]+)\s+([A-Z])\.?\s*$'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return f"{match.group(1)} {match.group(2)}."
+    return None
+
+def extract_speaker_pattern56(title):
+    """Pattern 56: YYYY-MM-DD Bro. Name - Topic"""
+    pattern = r'\d{4}-\d{2}-\d{2}\s+(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+([A-Z][a-z]+)\s*[-–—]'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = match.group(1)
+        if name and len(name) > 2:
+            return name
+    return None
+
+def extract_speaker_pattern57(title):
+    """Pattern 57: Sis. joy & Happiness Name"""
+    pattern = r'(?:Sis\.|Sister|Bro\.|Brother)\s+([A-Za-z]+(?:\s*&\s*[A-Z][a-z]+)*\s+[A-Z][a-z]+)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name = match.group(1)
+        if name and name[0].islower():
+            name = name[0].upper() + name[1:]
+        return name
+    return None
+
+def extract_speaker_pattern58(title):
+    """Pattern 58: Bro. Name & Choir"""
+    pattern = r'(?:Bro\.|Brother|Sis\.|Sister)\s+([A-Z][a-z]+)\s*&\s*(?:Choir|Saints)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern59(title):
+    """Pattern 59: Sister Name Name"""
+    pattern = r'(?<![A-Za-z])Sister\s+([A-Z][a-z]+\s+[A-Z][a-z]+)'
+    match = re.search(pattern, title)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    return None
+
+def extract_speaker_pattern60(title):
+    """Pattern 60: Bro. Name O. with initial at end before dash"""
+    pattern = r'(?:Bro\.|Brother|Sis\.|Sister)\s+([A-Z][a-z]+)\s+([A-Z])\.?\s*[-–—]'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return f"{match.group(1)} {match.group(2)}."
+    return None
+
+def extract_speaker_pattern61(title):
+    """Pattern 61: Bro. Ovid, Headstone"""
+    pattern = r'(?:Bro\.|Brother|Pastor)\s+([A-Z][a-z]+),\s*(?:Headstone|[A-Z][a-z]+\s+(?:Tabernacle|Church))'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern62(title):
+    """Pattern 62: Pastor Name (Country)"""
+    pattern = r'Pastor\s+([A-Z][a-z]+)\s*\([A-Z][a-z]+\)'
+    match = re.search(pattern, title)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern63(title):
+    """Pattern 63: Bro. Name + Something"""
+    pattern = r'(?:Bro\.|Brother)\s+([A-Z][a-z]+)\s*\+'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern64(title):
+    """Pattern 64: Topic: Bro. Name Date"""
+    pattern = r':\s*(?:Bro\.|Brother|Sis\.|Sister)\s+([A-Z][a-z]+)\s+\d'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern65(title):
+    """Pattern 65: -Bro. Name Date"""
+    pattern = r'-(?:Bro\.|Brother|Sis\.|Sister)\s+([A-Z][a-z]+)\s+\d'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern66(title):
+    """Pattern 66: Sr Name & Sisters"""
+    pattern = r'Sr\.?\s+([A-Z][a-z]+)\s*&\s*Sisters'
+    match = re.search(pattern, title)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern67(title):
+    """Pattern 67: Sr. Name -"""
+    pattern = r'Sr\.\s+([A-Z][a-z]+)\s*[-–—]'
+    match = re.search(pattern, title)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern68(title):
+    """Pattern 68: Bro. Name & S Name Name"""
+    pattern = r'(?:Bro\.|Brother)\s+([A-Z][a-z]+)\s*&\s*(?:S\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        return f"{match.group(1)} & {match.group(2)}"
+    return None
+
+def extract_speaker_pattern69(title):
+    """Pattern 69: Pastor Name |"""
+    pattern = r'Pastor\s+([A-Z][a-z]+)\s*\|'
+    match = re.search(pattern, title)
+    if match:
+        return match.group(1)
+    return None
+
+def extract_speaker_pattern70(title):
+    """Pattern 70: Generic multi-speaker patterns with &"""
+    pattern = r'(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+and\s+(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name1 = clean_name(match.group(1))
+        name2 = clean_name(match.group(2))
+        if name1 and name2:
+            return f"{name1} & {name2}"
+    pattern2 = r'(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s*&\s*(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)'
+    match2 = re.search(pattern2, title, re.IGNORECASE)
+    if match2:
+        name1 = clean_name(match2.group(1))
+        name2 = clean_name(match2.group(2))
+        if name1 and name2:
+            return f"{name1} & {name2}"
+    return None
+
+def normalize_text(text):
+    """Normalize unicode and clean up text."""
+    if not text or not isinstance(text, str):
+        return ""
+    import unicodedata
+    # Normalize unicode
+    text = unicodedata.normalize('NFKD', text)
+    # Replace smart quotes and other special chars
+    text = text.replace('"', '"').replace('"', '"').replace(''', "'").replace(''', "'")
+    text = text.replace('–', '-').replace('—', '-')
+    return text.strip()
+
+def final_validation(speaker, title=""):
+    """Final validation and normalization of speaker name - enhanced version."""
+    if not speaker or speaker == "Unknown Speaker":
+        return speaker
+    
+    speaker = speaker.strip()
+    
+    # Handle "By Name" pattern FIRST - extract just the name
+    by_match = re.match(r'^By\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)$', speaker)
+    if by_match:
+        extracted = by_match.group(1)
+        if re.match(r'^[A-Z][a-z]+\s+[A-Z][a-z]+', extracted):
+            speaker = extracted
+        else:
+            return "Unknown Speaker"
+    
+    # Block names starting with prepositions/articles
+    if re.match(r'^(?:in|to|of|by|on|at|for|and|the)\s+', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+    
+    # Block names ending with "and" or "&" (incomplete multi-speaker)
+    if re.search(r'\s+(?:and|&)\s*$', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+    
+    # Block "School" as a standalone name
+    if speaker.lower() == 'school':
+        return "Unknown Speaker"
+    
+    # Block names containing time/service words
+    time_words = ['Evening', 'Morning', 'Night', 'Afternoon', 'Midnight']
+    for word in time_words:
+        if word.lower() in speaker.lower():
+            if not re.match(r'^[A-Z][a-z]+\s+' + word + r'$', speaker, re.IGNORECASE):
+                return "Unknown Speaker"
+    
+    # Block names ending with service-related words
+    if re.search(r'\b(?:Service|Meeting|Worship|Testimonies|Consequences|Chronicles|Promises|Word)$', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+    
+    # Block obvious non-name patterns that slipped through
+    bad_patterns = [
+        r'^Watchnight$', r'^Controlling\s+', r'^Everlasting\s+', r'^Witnessing\s+',
+        r'^Atmosphere\s+', r'^Misunderstanding\s+', r'^Grace\s+and$',
+        r'Yahweh\s+.*\s+Worship', r'^For\s+Us$', r'^By\s+Me$', r'^Of\s+Time$',
+        r'^Of\s+Those\b', r'^Of\s+His\b', r'^Of\s+Revelation\b', r'^To\s+Know\b',
+        r'^To\s+His\b', r'^And\s+The\b', r'and\s+the\s+Prostitute',
+        r'^at\s+Tucson', r'^to\s+Chronicles',
+    ]
+    for pattern in bad_patterns:
+        if re.search(pattern, speaker, re.IGNORECASE):
+            return "Unknown Speaker"
+    
+    # Apply normalization
+    speaker = normalize_speaker(speaker, title)
+    if not speaker:
+        return "Unknown Speaker"
+    
+    # Clean the name
+    speaker = clean_name(speaker)
+    if not speaker:
+        return "Unknown Speaker"
+    
+    # Validate
+    if not is_valid_name(speaker):
+        # Try one more time with just the first two words
+        words = speaker.split()
+        if len(words) >= 2:
+            short_name = " ".join(words[:2])
+            if is_valid_name(short_name):
+                return short_name
+        return "Unknown Speaker"
+    
+    return speaker
+
+# List of all pattern extraction functions in order
+SPEAKER_PATTERN_FUNCTIONS = [
+    extract_speaker_pattern42,  # William Branham patterns first (priority)
+    extract_speaker_pattern1,   # Honorific + Name
+    extract_speaker_pattern2,   # - Name on Date
+    extract_speaker_pattern3,   # Name - Title
+    extract_speaker_pattern4,   # Pipe separator
+    extract_speaker_pattern5,   # Date prefix
+    extract_speaker_pattern6,   # by Honorific Name
+    extract_speaker_pattern7,   # Parenthetical
+    extract_speaker_pattern10,  # After quoted title
+    extract_speaker_pattern11,  # Colon-separated
+    extract_speaker_pattern12,  # Sunday School
+    extract_speaker_pattern13,  # Double-pipe
+    extract_speaker_pattern14,  # Bracket patterns
+    extract_speaker_pattern15,  # Complex date-name
+    extract_speaker_pattern16,  # Sermon Clip
+    extract_speaker_pattern17,  # YYMMDD - Name - Title
+    extract_speaker_pattern18,  # Honorific + Name + topic
+    extract_speaker_pattern19,  # Pastor Name + topic
+    extract_speaker_pattern20,  # Name after topic
+    extract_speaker_pattern21,  # Parenthetical date
+    extract_speaker_pattern22,  # Topic: Name
+    extract_speaker_pattern23,  # Wade Dale style
+    extract_speaker_pattern24,  # Sermon Clip spacing
+    extract_speaker_pattern25,  # Past. Spanish
+    extract_speaker_pattern26,  # Minister pattern
+    extract_speaker_pattern27,  # Sunday School date
+    extract_speaker_pattern28,  # Brother apostrophe
+    extract_speaker_pattern29,  # Middle initial
+    extract_speaker_pattern30,  # MM/DD/YY Name
+    extract_speaker_pattern31,  # YY MMDD Name
+    extract_speaker_pattern32,  # YYYY MMDDXX
+    extract_speaker_pattern33,  # Part X - Name
+    extract_speaker_pattern34,  # Sisters'
+    extract_speaker_pattern35,  # French style
+    extract_speaker_pattern36,  # YYMMDD[ap]
+    extract_speaker_pattern37,  # YYMMDD:
+    extract_speaker_pattern38,  # YYMMDD - Name:
+    extract_speaker_pattern39,  # by Name end
+    extract_speaker_pattern40,  # Sermon Clip various
+    extract_speaker_pattern41,  # Spanish YYYY-MMDD
+    extract_speaker_pattern43,  # Date | Pst.
+    extract_speaker_pattern44,  # del/de names
+    extract_speaker_pattern45,  # Name - 1 of 2
+    extract_speaker_pattern46,  # Name Suffix
+    extract_speaker_pattern47,  # Hno's multiple
+    extract_speaker_pattern47b, # Multi-speaker: Bro Name and Sis Name
+    extract_speaker_pattern70,  # Multi-speaker &
+    extract_speaker_pattern48,  # Single name Bro.
+    extract_speaker_pattern49,  # -Sis.
+    extract_speaker_pattern50,  # Founding Pastor
+    extract_speaker_pattern51,  # X Sisters
+    extract_speaker_pattern52,  # Name. Typo
+    extract_speaker_pattern53,  # Initial LastName
+    extract_speaker_pattern54,  # Brothers'
+    extract_speaker_pattern55,  # Name S.
+    extract_speaker_pattern56,  # YYYY-MM-DD Bro.
+    extract_speaker_pattern57,  # joy & Happiness
+    extract_speaker_pattern58,  # Name & Choir
+    extract_speaker_pattern59,  # Sister Name Name
+    extract_speaker_pattern60,  # Name O. -
+    extract_speaker_pattern61,  # Ovid, Headstone
+    extract_speaker_pattern62,  # Name (Country)
+    extract_speaker_pattern63,  # Name +
+    extract_speaker_pattern64,  # : Bro. Name Date
+    extract_speaker_pattern65,  # -Bro. Name Date
+    extract_speaker_pattern66,  # Sr & Sisters
+    extract_speaker_pattern67,  # Sr. Name -
+    extract_speaker_pattern68,  # Name & S Name
+    extract_speaker_pattern69,  # Pastor Name |
+    extract_speaker_pattern8,   # Just a name (last resort)
+    extract_speaker_pattern9,   # Name: Topic (last resort)
+]
+
+# --- MAIN LOGIC ---
+def is_boilerplate_description(description):
+    """Check if description is a boilerplate message that won't contain speaker info."""
+    if not description:
+        return True
+    desc = description.strip()
+    boilerplate_starts = [
+        'If these messages have blessed you',
+        'Online',
+        'Sunday Online',
+        'Thank you for watching',
+        'Please subscribe',
+        'Like and subscribe',
+        'Follow us on',
+        'Visit our website',
+        'For more information',
+        'Connect with us',
+    ]
+    for start in boilerplate_starts:
+        if desc.startswith(start):
+            return True
+    boilerplate_contains = [
+        'We do not own the rights',
+        'All rights reserved',
+        'Copyright',
+        '©',
+    ]
+    for phrase in boilerplate_contains:
+        if phrase in desc:
+            return True
+    return False
+
+def extract_speaker_from_description(description):
+    """
+    Extract speaker name from YouTube video description.
+    Descriptions often have speaker info in specific formats.
+    """
+    if not description or is_boilerplate_description(description):
+        return None
+    
+    # Skip if description mentions "Interpreter" - that's not the main speaker
+    if 'Interpreter' in description or 'interpreter' in description:
+        return None
+    
+    # Check for explicit speaker indicators in description
+    # Pattern: "Speaker: Name" or "Preacher: Name" or "Minister: Name"
+    speaker_label_pattern = r'(?:Speaker|Preacher|Minister|Pastor|Ministered by)[:\s]+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)'
+    match = re.search(speaker_label_pattern, description, re.IGNORECASE)
+    if match:
+        name = clean_name(match.group(1))
+        if is_valid_name(name):
+            return name
+    
+    # Check for honorific + name at start of description
+    if description.strip().startswith(('Pst.', 'Past.', 'Pastor', 'Bro.', 'Brother', 'Sis.', 'Sister')):
+        pattern = rf'^{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+        match = re.search(pattern, description.strip(), re.IGNORECASE)
+        if match:
+            name = clean_name(match.group(1))
+            if is_valid_name(name):
+                return name
+    
+    # Try the first few lines of description (often has speaker info)
+    first_lines = description.split('\n')[:3]
+    for line in first_lines:
+        line = line.strip()
+        if not line:
+            continue
+        # Try pattern extraction on each line
+        for pattern_func in SPEAKER_PATTERN_FUNCTIONS[:30]:  # Use top 30 patterns
+            try:
+                result = pattern_func(line)
+                if result:
+                    validated = final_validation(result, line)
+                    if validated and validated != "Unknown Speaker":
+                        return validated
+            except Exception:
+                continue
+    
+    return None
 
 def identify_speaker_dynamic(title, description, known_speakers):
+    """
+    Enhanced speaker identification using 70+ pattern extraction functions.
+    """
+    # First check Tucson Tabernacle hardcoded speakers (scraped from their website)
+    if title in TUCSON_TABERNACLE_SPEAKERS:
+        return TUCSON_TABERNACLE_SPEAKERS[title], True
+    
+    # Also check with normalized whitespace (TT titles sometimes have extra spaces)
+    normalized_title = re.sub(r'\s+', ' ', title).strip()
+    for tt_title, tt_speaker in TUCSON_TABERNACLE_SPEAKERS.items():
+        if re.sub(r'\s+', ' ', tt_title).strip() == normalized_title:
+            return tt_speaker, True
+    
+    # Check for known speakers in text (title + description)
     found_speakers = set()
     search_text = f"{title}\n{description}"
     for name in known_speakers:
-        if name in search_text: found_speakers.add(name)
-
-    # Patterns (same as before)
-    pipe_date_pattern = r"(?:\b|^)(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},?\s+\d{4}\s*\|\s*(?:Pastor|Bro\.?|Brother|Bishop|Elder|Rev\.?)\s+([A-Z][a-zA-Z\.]+(?:\s+[A-Z][a-zA-Z\.]+)+)(?:\s+[-–—|])"
-    match = re.search(pipe_date_pattern, title)
-    if match:
-        candidate = clean_name(match.group(1))
-        if is_valid_person_name(candidate): return normalize_speaker(candidate), True
-
-    date_name_pattern = r"(?:\b|^)\d{6}\s*[-–—:|]\s*([A-Za-z\.\s]+)(?:\s*[-–—:|]|\s+on\s+)"
-    match = re.search(date_name_pattern, title)
-    if match:
-        candidate = clean_name(match.group(1))
-        if is_valid_person_name(candidate): return normalize_speaker(candidate), True
-
-    pattern = r"(?:Bro\.?|Brother|Brothers|Bros\.?|Pastor|Bishop|Rev\.?|Evangelist|Guest Minister|Elder|Hno\.?|Hna\.?)\s+([A-Z][a-zA-Z\.]+(?:[\s]+[A-Z][a-zA-Z\.]+)*)"
-    matches = re.findall(pattern, title)
-    for match in matches:
-        clean = clean_name(match)
-        if is_valid_person_name(clean): return normalize_speaker(clean), True
-
-    on_date_pattern = r"(?:Bro\.?|Brother|Pastor|Bishop)\s+([A-Z][a-zA-Z\.]+(?:\s+[A-Z][a-zA-Z\.]+)+)\s+on\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
-    match = re.search(on_date_pattern, title)
-    if match:
-        clean = clean_name(match.group(1))
-        if is_valid_person_name(clean): return normalize_speaker(clean), True
-
-    if not found_speakers:
-        separators = [r'\s[-–—]\s', r'\s[:|]\s', r'\sby\s']
-        for sep in separators:
-            parts = re.split(sep, title)
-            if len(parts) > 1:
-                candidate = clean_name(parts[0].strip())
-                if is_valid_person_name(candidate): found_speakers.add(candidate)
-                candidate_end = clean_name(parts[-1].strip())
-                if is_valid_person_name(candidate_end): found_speakers.add(candidate_end)
-
+        if name in search_text:
+            found_speakers.add(name)
+    
+    # Try all pattern extraction functions on title in order
+    title_speaker = None
+    for pattern_func in SPEAKER_PATTERN_FUNCTIONS:
+        try:
+            result = pattern_func(title)
+            if result:
+                # Apply final validation
+                validated = final_validation(result, title)
+                if validated and validated != "Unknown Speaker":
+                    title_speaker = normalize_speaker(validated, title)
+                    break
+        except Exception:
+            continue
+    
+    # If we found a speaker from title, verify/enhance with description
+    if title_speaker:
+        desc_speaker = extract_speaker_from_description(description)
+        if desc_speaker:
+            # If title detection looks like a topic (not a real name), prefer description
+            if re.match(r'^[A-Z][a-z]+\s+(?:Of|To|In|The|And|With|For|By|At|On)\s+', title_speaker):
+                return normalize_speaker(desc_speaker, title), True
+            # If title has just a first name and description has full name, prefer description
+            if len(title_speaker.split()) == 1 and len(desc_speaker.split()) >= 2:
+                if title_speaker.lower() in desc_speaker.lower():
+                    return normalize_speaker(desc_speaker, title), True
+        return title_speaker, True
+    
+    # No speaker from title - try description with full pattern matching
+    desc_speaker = extract_speaker_from_description(description)
+    if desc_speaker:
+        return normalize_speaker(desc_speaker, title), False
+    
+    # Try more patterns on description as fallback
+    if description and not is_boilerplate_description(description):
+        for pattern_func in SPEAKER_PATTERN_FUNCTIONS[:40]:  # Use first 40 patterns on description
+            try:
+                result = pattern_func(description)
+                if result:
+                    validated = final_validation(result, title)
+                    if validated and validated != "Unknown Speaker":
+                        return normalize_speaker(validated, title), False
+            except Exception:
+                continue
+    
+    # Fallback: Check for any known speaker match
     if found_speakers:
         final_list = consolidate_names(found_speakers)
-        normalized_list = [normalize_speaker(s) for s in final_list]
+        normalized_list = [normalize_speaker(s, title) for s in final_list]
+        normalized_list = [s for s in normalized_list if s]  # Remove empty
         normalized_list = sorted(list(set(normalized_list)))
-        if normalized_list: return ", ".join(normalized_list), False
-
+        if normalized_list:
+            return ", ".join(normalized_list), False
+    
+    # Last resort: try separator-based extraction on title
+    separators = [r'\s[-–—]\s', r'\s[:|]\s', r'\sby\s']
+    for sep in separators:
+        parts = re.split(sep, title)
+        if len(parts) > 1:
+            candidate = clean_name(parts[0].strip())
+            if is_valid_person_name(candidate):
+                validated = final_validation(candidate, title)
+                if validated and validated != "Unknown Speaker":
+                    return normalize_speaker(validated, title), False
+            candidate_end = clean_name(parts[-1].strip())
+            if is_valid_person_name(candidate_end):
+                validated = final_validation(candidate_end, title)
+                if validated and validated != "Unknown Speaker":
+                    return normalize_speaker(validated, title), False
+    
     return "Unknown Speaker", False
 
 def determine_video_type(title, speaker):
@@ -938,13 +2738,15 @@ def determine_sermon_date(title, description, yt_obj):
         except: pass
     return "Unknown Date"
 
-def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type, description=""):
+def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type, description="", filename=None):
     # Truncate description if too long (keep first 2000 chars)
     desc_text = description[:2000] + "..." if len(description) > 2000 else description
     desc_section = f"Description:\n{desc_text}\n" if desc_text.strip() else ""
+    # Use provided filename or construct one (ensuring header matches actual filename)
+    header_filename = filename if filename else f"{date_str} - {title} - {speaker}.txt"
     return (
         f"################################################################################\n"
-        f"START OF FILE: {date_str} - {title} - {speaker} - Clean.txt\n"
+        f"START OF FILE: {header_filename}\n"
         f"################################################################################\n\n"
         f"SERMON DETAILS\n"
         f"========================================\n"
@@ -1369,7 +3171,18 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         limit: Max number of videos to scan (None = no limit)
         recent_only: Legacy flag for 24-hour mode (deprecated, use days_back=1)
         days_back: Number of days to look back (None = full archive, 7 = last week)
+    
+    Returns:
+        dict: Statistics about speaker detection for this channel
     """
+    # Initialize stats tracking
+    channel_stats = {
+        'total_processed': 0,
+        'speakers_detected': 0,
+        'unknown_speakers': 0,
+        'new_speakers': set()
+    }
+    
     channel_url = config['url']
     clean_channel_name = church_name.replace(' ', '_')
     channel_dir = os.path.join(DATA_DIR, clean_channel_name)
@@ -1464,7 +3277,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     
     if len(unique_videos) == 0:
         print("   ❌ SKIPPING: No videos found.")
-        return
+        return channel_stats  # Return empty stats
 
     current_summary_list = [] 
     count = 0
@@ -1491,6 +3304,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             speaker = normalize_speaker(manual_speaker)
             if speaker not in known_speakers:
                 known_speakers.add(speaker)
+                channel_stats['new_speakers'].add(speaker)
                 save_json_file(SPEAKERS_FILE, known_speakers)
         else:
             speaker, is_new = identify_speaker_dynamic(title, "", known_speakers)
@@ -1498,11 +3312,19 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             speaker = clean_name(speaker) 
             if is_new:
                 print(f"   🎉 LEARNED NEW SPEAKER: {speaker}")
+                channel_stats['new_speakers'].add(speaker)
                 save_json_file(SPEAKERS_FILE, known_speakers)
 
         video_type = determine_video_type(title, speaker)
         if video_type == "Memorial Service" and speaker != "William M. Branham":
             speaker = "Unknown Speaker"
+        
+        # Track speaker detection stats
+        channel_stats['total_processed'] += 1
+        if speaker and speaker != "Unknown Speaker":
+            channel_stats['speakers_detected'] += 1
+        else:
+            channel_stats['unknown_speakers'] += 1
 
         history_entry = history.get(video_url)
         needs_download = True
@@ -1585,11 +3407,11 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 filename = f"{sermon_date} - {safe_title} - {safe_speaker}.txt"
                 filepath = os.path.join(channel_dir, filename)
                 if not os.path.exists(filepath):
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename)
                     with open(filepath, 'a', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ Transcript downloaded & Saved (Lang: {language}).")
                 else:
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename)
                     with open(filepath, 'w', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ File updated.")
 
@@ -1703,6 +3525,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     
     save_json_file(SPEAKERS_FILE, known_speakers)
     print(f"SUCCESS: {church_name} complete.")
+    
+    return channel_stats
 
 def main():
     prevent_sleep()
@@ -1712,7 +3536,16 @@ def main():
         parser.add_argument('--days', type=int, default=None, help="Only process videos from the last N days (default: 7 for automation).")
         parser.add_argument('--heal', action='store_true', help="Only run the heal archive process.")
         parser.add_argument('--force', action='store_true', help="Force re-processing of all files during healing.")
+        parser.add_argument('--backfill-descriptions', action='store_true', help="Backfill video descriptions into existing transcript files.")
+        parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill-descriptions).")
+        parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times). Use with --backfill-descriptions.")
+        parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process. Use with --backfill-descriptions.")
         args = parser.parse_args()
+
+        if args.backfill_descriptions:
+            print("Backfilling video descriptions into transcript files...")
+            backfill_descriptions(DATA_DIR, dry_run=args.dry_run, churches=args.church, limit=args.limit)
+            return
 
         if args.heal:
             print("Running deep archive healing & cleanup...")
@@ -1733,16 +3566,42 @@ def main():
         if args.days:
             print(f"\\n🔄 PARTIAL SCRAPE: Last {args.days} days for ALL channels")
             print("="*50)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
             for name, config in channels.items():
-                process_channel(name, config, known_speakers, days_back=args.days)
+                channel_stats = process_channel(name, config, known_speakers, days_back=args.days)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape (Last {args.days} Days)")
             print(f"\\n✅ Partial scrape ({args.days} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
             return
         
         # When running with --recent, we don't need a menu.
         if args.recent:
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
             for name, config in channels.items():
-                process_channel(name, config, known_speakers, days_back=1)
+                channel_stats = process_channel(name, config, known_speakers, days_back=1)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name="Recent Scrape (Last 24 Hours)")
             print("\\n✅ Recent scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
             return
@@ -1809,10 +3668,23 @@ def main():
             print(f"  0. All Channels")
             choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
             
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            
             if choice == '0':
                 print(f"\n🔄 Scanning ALL channels for videos from the last {days_back} days...\n")
                 for name, config in channels.items():
-                    process_channel(name, config, known_speakers, days_back=days_back)
+                    channel_stats = process_channel(name, config, known_speakers, days_back=days_back)
+                    if channel_stats:
+                        all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                        all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                        all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                        all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                        if channel_stats.get('total_processed', 0) > 0:
+                            all_stats['by_church'][name] = {
+                                'total': channel_stats.get('total_processed', 0),
+                                'detected': channel_stats.get('speakers_detected', 0),
+                                'unknown': channel_stats.get('unknown_speakers', 0)
+                            }
             else:
                 try:
                     idx = int(choice) - 1
@@ -1820,7 +3692,18 @@ def main():
                     if 0 <= idx < len(channel_names):
                         name = channel_names[idx]
                         print(f"\n🔄 Scanning {name} for videos from the last {days_back} days...\n")
-                        process_channel(name, channels[name], known_speakers, days_back=days_back)
+                        channel_stats = process_channel(name, channels[name], known_speakers, days_back=days_back)
+                        if channel_stats:
+                            all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                            all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                            all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                            all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                            if channel_stats.get('total_processed', 0) > 0:
+                                all_stats['by_church'][name] = {
+                                    'total': channel_stats.get('total_processed', 0),
+                                    'detected': channel_stats.get('speakers_detected', 0),
+                                    'unknown': channel_stats.get('unknown_speakers', 0)
+                                }
                     else:
                         print("Invalid selection.")
                         return
@@ -1828,6 +3711,7 @@ def main():
                     print("Invalid input.")
                     return
             
+            write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape Menu (Last {days_back} Days)")
             print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
             return
@@ -1847,12 +3731,38 @@ def main():
         if action == '1':
             channel_name = input("Enter Channel Name: ").strip()
             if channel_name in channels:
-                process_channel(channel_name, channels[channel_name], known_speakers)
+                channel_stats = process_channel(channel_name, channels[channel_name], known_speakers)
+                if channel_stats and channel_stats.get('total_processed', 0) > 0:
+                    all_stats = {
+                        'total_processed': channel_stats.get('total_processed', 0),
+                        'speakers_detected': channel_stats.get('speakers_detected', 0),
+                        'unknown_speakers': channel_stats.get('unknown_speakers', 0),
+                        'new_speakers': channel_stats.get('new_speakers', set()),
+                        'by_church': {channel_name: {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }}
+                    }
+                    write_speaker_detection_log(all_stats, operation_name=f"Single Channel Scrape: {channel_name}")
             else:
                 print("Channel not found!")
         elif action == '2':
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
             for name, config in channels.items():
-                process_channel(name, config, known_speakers)
+                channel_stats = process_channel(name, config, known_speakers)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name="All Channels Full Scrape")
         else:
             print("Invalid action. Exiting.")
     except Exception as e:
