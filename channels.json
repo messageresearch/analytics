@@ -131,10 +131,6 @@
     "url": "https://www.youtube.com/@newlifeoutreachchurchpawnee",
     "filename": "NewLifeOutreachChurchOfPawnee.txt"
   },
-  "Tabernaculo Obra Maestra": {
-    "url": "https://www.youtube.com/@obramaestra5497",
-    "filename": "ObraMaestra.txt"
-  },
   "Phoenix Lighthouse Tabernacle": {
     "url": "https://www.youtube.com/@PhoenixLighthouseTabernacle",
     "filename": "PhoenixLighthouseTabernacle.txt"
@@ -159,13 +155,13 @@
     "url": "https://www.youtube.com/@sonofmanrevealedministries",
     "filename": "SonOfManRevealedMinistries.txt"
   },
-  "Spirit Of Truth Assembly": {
-    "url": "https://www.youtube.com/@SpiritOfTruthAssembly",
-    "filename": "SpiritOfTruthAssembly.txt"
-  },
   "Spirit and Truth Tabernacle": {
     "url": "https://www.youtube.com/@SpiritandTruthTabernacle",
     "filename": "SpiritAndTruthTabernacle.txt"
+  },
+  "Spirit Of Truth Assembly": {
+    "url": "https://www.youtube.com/@SpiritOfTruthAssembly",
+    "filename": "SpiritOfTruthAssembly.txt"
   },
   "Spoken Word Church": {
     "url": "https://www.youtube.com/@SpokenWordBride",
@@ -182,6 +178,10 @@
   "Tabernaculo La Voz Del Septimo": {
     "url": "https://www.youtube.com/@tabernaculolavozdelseptimo395",
     "filename": "TabernaculoLaVozDelSeptimo.txt"
+  },
+  "Tabernaculo Obra Maestra": {
+    "url": "https://www.youtube.com/@obramaestra5497",
+    "filename": "ObraMaestra.txt"
   },
   "The Word of God Tabernacle": {
     "url": "https://www.youtube.com/@thewordofgodtabernacle",
