@@ -1,0 +1,38 @@
+======================================================================
+SPEAKER DETECTION LOG - Single Channel Scrape: Tabernaculo Obra Maestra
+Generated: 2025-12-31 22:36:21
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    264
+Speakers Detected:          32
+Unknown Speakers:           232
+Detection Rate:             12.1%
+
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+Tabernaculo Obra Maestra:
+    Total: 264  |  Detected: 32  |  Unknown: 232  |  Rate: 12.1%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Bloteh Won
+  • Cesar Gil
+  • Elmer Ortega
+  • Gonzlez Galindo
+  • Jonathan Saucedo
+  • Jonathan Saucedo Int
+  • Juan De Dios
+  • Mother Eagle
+  • Peter Okosun
+  • Raul Gonzales Galindo
+  • Robert Figueroa
+  • Roberto Figueroa Pastor
+  • Sergio Hernandez
+  • Tabernaculo Obra Maestra
+
+======================================================================
+END OF LOG
+======================================================================

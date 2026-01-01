@@ -1,0 +1,70 @@
+======================================================================
+SPEAKER DETECTION LOG - Single Channel Scrape: Arizona Believers Church
+Generated: 2026-01-01 00:51:19
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    544
+Speakers Detected:          108
+Unknown Speakers:           436
+Detection Rate:             19.9%
+
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+Arizona Believers Church:
+    Total: 544  |  Detected: 108  |  Unknown: 436  |  Rate: 19.9%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Aaron Oglesby
+  • Abraham Mairah
+  • Andre Petit
+  • Barry Coffey
+  • Ben Pruitt
+  • Boaz Romero
+  • Brilliant Beauty
+  • Chris Cavanaugh
+  • Cosmetic Christians
+  • Craig Booher
+  • Daniel Evans
+  • Daniel Ofori-Darko
+  • David McGeary
+  • Deceptive Form
+  • Dress Codes
+  • Ed Hammermeister
+  • Eliezer Castillo
+  • Gustav Panknin
+  • Invert Always Invert
+  • Jacek Walach
+  • Jack Duff
+  • Jason DeMars
+  • Jason Watkins
+  • John Andes
+  • Kidri Diggs
+  • Loyal Carlon
+  • Manuel Correa
+  • Matthew Watkins
+  • Mixed Media
+  • Nathaniel Sias
+  • Octavio Ordonez
+  • Paul LaFontaine
+  • Peter McFadden
+  • Present Context
+  • Ray Muetz
+  • Reggie Plett
+  • Resolving Evil
+  • Sacred Symmetry
+  • Sonlit Vessels
+  • Spiritual Personality Disorder
+  • Steeve Brisson
+  • Stephen Coffey
+  • Sympathetic Resonance
+  • Tim Cross
+  • Tim Dodd
+  • Timothy Ashong
+
+======================================================================
+END OF LOG
+======================================================================

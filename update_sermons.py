@@ -3729,24 +3729,34 @@ def main():
         # --- CHANNEL SELECTION ---
         channel_name = ""
         if action == '1':
-            channel_name = input("Enter Channel Name: ").strip()
-            if channel_name in channels:
-                channel_stats = process_channel(channel_name, channels[channel_name], known_speakers)
-                if channel_stats and channel_stats.get('total_processed', 0) > 0:
-                    all_stats = {
-                        'total_processed': channel_stats.get('total_processed', 0),
-                        'speakers_detected': channel_stats.get('speakers_detected', 0),
-                        'unknown_speakers': channel_stats.get('unknown_speakers', 0),
-                        'new_speakers': channel_stats.get('new_speakers', set()),
-                        'by_church': {channel_name: {
-                            'total': channel_stats.get('total_processed', 0),
-                            'detected': channel_stats.get('speakers_detected', 0),
-                            'unknown': channel_stats.get('unknown_speakers', 0)
-                        }}
-                    }
-                    write_speaker_detection_log(all_stats, operation_name=f"Single Channel Scrape: {channel_name}")
-            else:
-                print("Channel not found!")
+            print("\nAvailable channels:")
+            channel_names = list(channels.keys())
+            for i, name in enumerate(channel_names, 1):
+                print(f"  {i}. {name}")
+            choice = input("\n👉 Enter channel number: ").strip()
+            try:
+                idx = int(choice) - 1
+                if 0 <= idx < len(channel_names):
+                    channel_name = channel_names[idx]
+                    print(f"\n🔄 Scraping {channel_name}...\n")
+                    channel_stats = process_channel(channel_name, channels[channel_name], known_speakers)
+                    if channel_stats and channel_stats.get('total_processed', 0) > 0:
+                        all_stats = {
+                            'total_processed': channel_stats.get('total_processed', 0),
+                            'speakers_detected': channel_stats.get('speakers_detected', 0),
+                            'unknown_speakers': channel_stats.get('unknown_speakers', 0),
+                            'new_speakers': channel_stats.get('new_speakers', set()),
+                            'by_church': {channel_name: {
+                                'total': channel_stats.get('total_processed', 0),
+                                'detected': channel_stats.get('speakers_detected', 0),
+                                'unknown': channel_stats.get('unknown_speakers', 0)
+                            }}
+                        }
+                        write_speaker_detection_log(all_stats, operation_name=f"Single Channel Scrape: {channel_name}")
+                else:
+                    print("Invalid selection.")
+            except ValueError:
+                print("Invalid input.")
         elif action == '2':
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
             for name, config in channels.items():
