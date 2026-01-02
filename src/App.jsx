@@ -702,9 +702,25 @@ export default function App(){
                 <Icon name="info" size={16} />
                 <span>How does this site work? (Click to expand)</span>
               </summary>
-              <div className="mt-3 text-blue-900 space-y-2 text-xs leading-relaxed">
+              <div className="mt-3 text-blue-900 space-y-3 text-xs leading-relaxed">
                 <p><strong>📺 Data Source:</strong> This site aggregates sermon transcripts from <strong>church YouTube channels</strong> — not individual speakers. We monitor specific church channels and download their video transcripts when available.</p>
-                <p><strong>🔍 What we track:</strong> We analyze how often "Brother Branham" (and variations) are mentioned in each sermon, helping you discover which churches actively reference his ministry.</p>
+                
+                <div className="bg-blue-100 rounded-lg p-3 space-y-2">
+                  <p><strong>🔍 Search Engine:</strong> By default, we search for "William Branham" (Brother Branham) mentions, but <strong>you can search for anything</strong>. The search is highly flexible to accommodate YouTube's AI-generated transcripts, which often contain spelling errors due to speaker accents, audio quality, or AI interpretation.</p>
+                  
+                  <p className="font-semibold mt-2">Search Fields:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Search Term:</strong> The main word or phrase you're looking for.</li>
+                    <li><strong>Variations:</strong> Add alternate spellings or related terms (comma-separated). For example: "branham, branam, branum" — no regex knowledge needed!</li>
+                    <li><strong>Regex Pattern:</strong> For advanced users — a regular expression that matches multiple variations at once. This is powerful for handling transcript errors.</li>
+                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "rape" will also find "grape", "grapevine", etc.</li>
+                  </ul>
+                  
+                  <p className="mt-2"><strong>Why Regex?</strong> YouTube transcripts have many spelling variations. For "Brother Branham", we use:<br/>
+                  <code className="bg-blue-200 px-1 rounded text-[10px] break-all">{'\\b(?:(?:brother\\s+william)|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m\\b'}</code><br/>
+                  This single pattern matches 250+ variations like "brother branham", "william branam", "brother branum", "william brandham", etc.</p>
+                </div>
+
                 <p><strong>⚠️ Speaker Data Limitations:</strong> Speaker names are extracted from video titles/descriptions using automated detection. This data may be <strong>incomplete or inaccurate</strong> — many videos don't include speaker information, and our algorithm can't always detect it reliably.</p>
                 <p><strong>📊 Charts by Church:</strong> Each chart below represents a <strong>church channel</strong>, not a speaker. The data shows sermon activity and mention frequency over time for that church.</p>
               </div>
