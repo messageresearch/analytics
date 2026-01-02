@@ -15,6 +15,7 @@ import SermonModal from './components/SermonModal'
 import ChartModal from './components/ChartModal'
 import HeatmapDetails from './components/HeatmapDetails'
 import ChannelChart from './components/ChannelChart'
+import LazyChannelChart from './components/LazyChannelChart'
 // Channel preview modal removed — channel links open directly in a new tab
 import useDebouncedCallback from './hooks/useDebouncedCallback'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR, DEFAULT_VARIATIONS, WORDS_PER_MINUTE, CHART_POINT_THRESHOLD, getColor } from './constants_local'
@@ -60,6 +61,7 @@ export default function App(){
   const [totalChunks, setTotalChunks] = useState(0)
   const [dataDate, setDataDate] = useState(null)
   const [channels, setChannels] = useState([])
+  const channelsLoadedRef = useRef(false) // Prevent redundant setChannels calls
 
   // GLOBAL
   const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM)
@@ -160,14 +162,16 @@ export default function App(){
         setDataDate(json.generated || 'Unknown')
         try{
           // If build-time static import exists, populate channels immediately so Data tab isn't empty during dev
-          if(staticChannels && (!channels || channels.length === 0)){
+          // Skip if channels already loaded to prevent redundant setChannels triggering duplicate builds
+          if(staticChannels && !channelsLoadedRef.current && (!channels || channels.length === 0)){
             try{
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
                 cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
               }
-              if(cList.length>0) setChannels(cList)
+              // Don't set channels here - wait for fetch to complete to avoid double build
+              // if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed early', e) }
           }
           // Try a few paths so channels.json is found whether it's in site_api/ or at repo root
@@ -196,19 +200,25 @@ export default function App(){
             else if(cData && typeof cData === 'object'){
               cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
             }
-            if(cList.length > 0) setChannels(cList)
+            if(cList.length > 0) {
+              channelsLoadedRef.current = true
+              setChannels(cList)
+            }
           } else {
             console.warn('channels.json not found at tried paths')
           }
           // If no channels loaded via fetch, fall back to static import (build-time)
-          if((!cData || (Array.isArray(cData) && cData.length===0) || (cData && typeof cData === 'object' && Object.keys(cData).length===0)) && staticChannels){
+          if(!channelsLoadedRef.current && (!cData || (Array.isArray(cData) && cData.length===0) || (cData && typeof cData === 'object' && Object.keys(cData).length===0)) && staticChannels){
             try{
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
                 cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
               }
-              if(cList.length>0) setChannels(cList)
+              if(cList.length>0) {
+                channelsLoadedRef.current = true
+                setChannels(cList)
+              }
             }catch(e){ console.warn('Static channels import failed', e) }
           }
         }catch(e){ console.warn('Using default channels', e) }
@@ -788,7 +798,7 @@ export default function App(){
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {channelTrends.map((c, idx) => (
                   <div key={c.church || idx} className="bg-white p-4 rounded-xl border shadow-sm">
-                    <ChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
+                    <LazyChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
                   </div>
                 ))}
               </div>
