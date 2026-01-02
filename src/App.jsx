@@ -712,13 +712,13 @@ export default function App(){
                   <ul className="list-disc list-inside space-y-1 ml-2">
                     <li><strong>Search Term:</strong> The main word or phrase you're looking for.</li>
                     <li><strong>Variations:</strong> Add alternate spellings or related terms (comma-separated). For example: "branham, branam, branum" — no regex knowledge needed!</li>
-                    <li><strong>Regex Pattern:</strong> For advanced users — a regular expression that matches multiple variations at once. This is powerful for handling transcript errors.</li>
-                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "rape" will also find "grape", "grapevine", etc.</li>
+                    <li><strong>Regex Pattern:</strong> For advanced users — a regular expression that matches multiple variations at once. This is powerful for handling transcript errors. <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">Learn regex at regex101.com ↗</a></li>
+                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "heart", "start", "p<strong>art</strong>y", etc.</li>
                   </ul>
                   
                   <p className="mt-2"><strong>Why Regex?</strong> YouTube transcripts have many spelling variations. For "Brother Branham", we use:<br/>
                   <code className="bg-blue-200 px-1 rounded text-[10px] break-all">{'\\b(?:(?:brother\\s+william)|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m\\b'}</code><br/>
-                  This single pattern matches 250+ variations like "brother branham", "william branam", "brother branum", "william brandham", etc.</p>
+                  This single pattern matches 250+ variations like "brother branham", "william branam", "brother branum", "william brandham", etc. You can test and visualize patterns at <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">regex101.com ↗</a></p>
                 </div>
 
                 <p><strong>⚠️ Speaker Data Limitations:</strong> Speaker names are extracted from video titles/descriptions using automated detection. This data may be <strong>incomplete or inaccurate</strong> — many videos don't include speaker information, and our algorithm can't always detect it reliably.</p>
