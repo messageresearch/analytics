@@ -92,12 +92,13 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
                     type="button" 
                     onClick={() => {
                       const result = expandRegex(rawRegex)
+                      console.log('Regex expansion result:', result)
                       setPreviewData(result)
                       setShowPreview(true)
                     }}
                     className="mt-2 text-xs bg-blue-500/50 hover:bg-blue-500/70 text-white px-3 py-1 rounded transition flex items-center gap-1"
                   >
-                    <Icon name="eye" size={12} /> Preview Matches ({'>'}500 variations)
+                    <Icon name="eye" size={12} /> Preview Pattern Matches
                   </button>
                 )}
               </div>}
@@ -158,13 +159,17 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
                     {previewData.truncated && <span className="text-amber-600 ml-2">(truncated at 500 for performance)</span>}
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 max-h-[50vh] overflow-y-auto">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-1 text-xs font-mono">
-                      {previewData.matches.map((match, i) => (
-                        <div key={i} className="bg-white px-2 py-1 rounded border border-gray-200 truncate" title={match}>
-                          {match || <span className="text-gray-400">(empty)</span>}
-                        </div>
-                      ))}
-                    </div>
+                    {previewData.matches && previewData.matches.length > 0 ? (
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-1 text-xs font-mono">
+                        {previewData.matches.map((match, i) => (
+                          <div key={i} className="bg-white px-2 py-1 rounded border border-gray-200 truncate" title={String(match)}>
+                            {match && String(match).trim() ? String(match) : <span className="text-gray-400">(empty)</span>}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-gray-500 text-center py-4">No matches found. The pattern may be too complex to expand.</div>
+                    )}
                   </div>
                   <div className="mt-4 text-xs text-gray-500">
                     <p><strong>Note:</strong> This preview shows possible string matches based on expanding character classes and alternations. 
