@@ -141,7 +141,16 @@ export default function App(){
           try {
             res = await fetch(path)
             if (res.ok) {
-              prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/site_api/' : 'site_api/')
+              // Determine prefix - use absolute URL for worker compatibility
+              if (path.includes('raw.githubusercontent')) {
+                prefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/'
+              } else if (path.includes('/wmbmentions.github.io/')) {
+                // Convert to absolute URL for worker compatibility
+                prefix = new URL('/wmbmentions.github.io/site_api/', window.location.origin).href
+              } else {
+                // Convert relative path to absolute URL for worker compatibility
+                prefix = new URL('site_api/', window.location.href).href
+              }
               break
             }
           } catch (e) {}
