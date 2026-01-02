@@ -324,6 +324,51 @@ def main():
     
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:
         json.dump(master_data, f)
+    
+    # Generate slim metadata for faster initial load (~2MB vs ~14MB)
+    # Removes: path (3.3MB), videoUrl (1MB) - reconstruct on-demand
+    # Uses numeric index as id instead of full filename (saves ~2MB)
+    slim_sermons = []
+    id_to_full = {}  # Map numeric id to full sermon data for on-demand loading
+    
+    for idx, sermon in enumerate(master_data['sermons']):
+        slim_sermons.append({
+            "i": idx,  # numeric index as id
+            "c": sermon['church'],
+            "d": sermon['date'],
+            "y": sermon['year'],
+            "ts": sermon['timestamp'],
+            "t": sermon['title'],
+            "s": sermon['speaker'],
+            "tp": sermon['type'],
+            "l": sermon['language'],
+            "m": sermon['mentionCount'],
+            "j": sermon['jesusCount'],
+            "w": sermon['wordCount'],
+            "h": 1 if sermon['path'] else 0,  # hasTranscript boolean
+        })
+        id_to_full[idx] = {
+            "id": sermon['id'],
+            "path": sermon['path'],
+            "videoUrl": sermon['videoUrl']
+        }
+    
+    slim_data = {
+        "generated": master_data['generated'],
+        "totalChunks": master_data['totalChunks'],
+        "sermons": slim_sermons
+    }
+    
+    with open(os.path.join(OUTPUT_DIR, 'metadata_slim.json'), 'w', encoding='utf-8') as f:
+        json.dump(slim_data, f, separators=(',', ':'))  # Compact JSON
+    
+    # Save id mapping for on-demand path/videoUrl lookup
+    with open(os.path.join(OUTPUT_DIR, 'sermon_details.json'), 'w', encoding='utf-8') as f:
+        json.dump(id_to_full, f)
+    
+    slim_size = os.path.getsize(os.path.join(OUTPUT_DIR, 'metadata_slim.json')) / 1024 / 1024
+    full_size = os.path.getsize(os.path.join(OUTPUT_DIR, META_FILE)) / 1024 / 1024
+    print(f"   ✅ Generated metadata_slim.json ({slim_size:.1f}MB vs {full_size:.1f}MB full)")
 
     # Generate available_churches.json - list of churches that have Summary CSVs
     available_churches = []

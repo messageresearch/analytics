@@ -127,39 +127,109 @@ export default function App(){
     }
   }, [customCounts])
 
+  // Sermon details cache for on-demand loading of path/videoUrl
+  const sermonDetailsRef = useRef(null)
+  const sermonDetailsCacheRef = useRef(new Map())
+  const sermonDetailsLoadedRef = useRef(false)
+  
+  // Helper to get sermon details (path, videoUrl, full id) on demand
+  const getSermonDetails = useCallback(async (sermon) => {
+    // If sermon already has path/videoUrl (full metadata was loaded), return it
+    if (sermon.path && sermon.videoUrl !== null) {
+      return { path: sermon.path, videoUrl: sermon.videoUrl, id: sermon.id }
+    }
+    
+    // Check cache first
+    const cacheKey = sermon.id
+    if (sermonDetailsCacheRef.current.has(cacheKey)) {
+      return sermonDetailsCacheRef.current.get(cacheKey)
+    }
+    
+    // Load full details file if not yet loaded
+    if (!sermonDetailsLoadedRef.current && sermonDetailsRef.current) {
+      try {
+        const res = await fetch(sermonDetailsRef.current)
+        if (res.ok) {
+          const allDetails = await res.json()
+          // Populate cache
+          for (const [idx, details] of Object.entries(allDetails)) {
+            sermonDetailsCacheRef.current.set(parseInt(idx), details)
+          }
+          sermonDetailsLoadedRef.current = true
+        }
+      } catch (e) {
+        console.warn('Failed to load sermon details', e)
+      }
+    }
+    
+    // Return from cache (numeric id from slim format)
+    const details = sermonDetailsCacheRef.current.get(cacheKey)
+    return details || { path: null, videoUrl: '', id: sermon.id }
+  }, [])
+
   useEffect(()=>{
     const init = async ()=>{
       try{
-        // Try multiple paths for metadata.json with fallback to raw.githubusercontent
-        const metaPaths = [
+        // Try slim metadata first (much smaller ~2MB vs ~14MB)
+        const slimPaths = [
+          'site_api/metadata_slim.json',
+          '/wmbmentions.github.io/site_api/metadata_slim.json',
+          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata_slim.json'
+        ]
+        const fullPaths = [
           'site_api/metadata.json',
           '/wmbmentions.github.io/site_api/metadata.json',
-          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json',
-          'metadata.json'
+          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json'
         ]
+        
         let res = null
         let prefix = 'site_api/'
-        for (const path of metaPaths) {
+        let isSlim = false
+        
+        // Try slim metadata first
+        for (const path of slimPaths) {
           try {
             res = await fetch(path)
             if (res.ok) {
-              // Determine prefix - use absolute URL for worker compatibility
+              isSlim = true
               if (path.includes('raw.githubusercontent')) {
                 prefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/'
               } else if (path.includes('/wmbmentions.github.io/')) {
-                // Convert to absolute URL for worker compatibility
                 prefix = new URL('/wmbmentions.github.io/site_api/', window.location.origin).href
               } else {
-                // Convert relative path to absolute URL for worker compatibility
                 prefix = new URL('site_api/', window.location.href).href
               }
               break
             }
           } catch (e) {}
         }
+        
+        // Fallback to full metadata if slim not found
+        if (!res || !res.ok) {
+          for (const path of fullPaths) {
+            try {
+              res = await fetch(path)
+              if (res.ok) {
+                if (path.includes('raw.githubusercontent')) {
+                  prefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/'
+                } else if (path.includes('/wmbmentions.github.io/')) {
+                  prefix = new URL('/wmbmentions.github.io/site_api/', window.location.origin).href
+                } else {
+                  prefix = new URL('site_api/', window.location.href).href
+                }
+                break
+              }
+            } catch (e) {}
+          }
+        }
+        
         if (!res || !res.ok) throw new Error('Metadata not found.')
         const json = await res.json()
         setDataDate(json.generated || 'Unknown')
+        
+        // Store details URL prefix for on-demand loading
+        sermonDetailsRef.current = prefix + 'sermon_details.json'
+        
         try{
           // If build-time static import exists, populate channels immediately so Data tab isn't empty during dev
           // Skip if channels already loaded to prevent redundant setChannels triggering duplicate builds
@@ -223,7 +293,40 @@ export default function App(){
           }
         }catch(e){ console.warn('Using default channels', e) }
         const currentTimestamp = new Date().getTime()
-        const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
+        
+        // Handle both slim (short keys) and full metadata formats
+        const list = (json.sermons || []).filter(s => {
+          const ts = s.timestamp || s.ts || 0
+          return ts <= currentTimestamp
+        }).map(s => {
+          // Normalize slim format (short keys) to full format
+          const sermon = s.i !== undefined ? {
+            id: s.i,  // numeric index for slim format
+            church: s.c,
+            date: s.d,
+            year: s.y,
+            timestamp: s.ts,
+            title: s.t,
+            speaker: s.s,
+            type: s.tp,
+            language: s.l,
+            mentionCount: s.m,
+            jesusCount: s.j,
+            wordCount: s.w,
+            hasTranscript: s.h === 1,
+            path: null,  // loaded on-demand
+            videoUrl: null  // loaded on-demand
+          } : s
+          
+          const wordCount = sermon.wordCount || 0
+          const durationHrs = (wordCount / WORDS_PER_MINUTE) / 60
+          return {
+            ...sermon,
+            durationHrs: durationHrs > 0 ? durationHrs : 0.5,
+            mentionsPerHour: durationHrs > 0 ? parseFloat((sermon.mentionCount / durationHrs).toFixed(1)) : 0
+          }
+        })
+        
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
         setSelChurches([...new Set(list.map(s=>s.church))]);
         setSelSpeakers([...new Set(list.map(s=>s.speaker))].filter(Boolean));
@@ -305,7 +408,7 @@ export default function App(){
       if(total > 0) return { total, with: withT, without }
     }
     const total = rawData.length
-    const withT = rawData.filter(s=>s && s.path).length
+    const withT = rawData.filter(s=>s && (s.path || s.hasTranscript)).length
     return { total, with: withT, without: Math.max(0, total - withT) }
   }, [transcriptSummaryCounts, rawData])
 
@@ -769,7 +872,21 @@ export default function App(){
                     { key: 'type', label: 'Type', width: '120px', filterKey: 'category', render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '100px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '80px', filterKey: 'rate', filterType: 'number', centered: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'action', label: 'Download', width: '100px', centered: true, noTruncate: true, render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600 flex items-center justify-center w-full"><Icon name="download" size={18} /></button>) }
+                    { key: 'action', label: 'Download', width: '100px', centered: true, noTruncate: true, render: (r) => (<button onClick={async (e)=>{ 
+                      e.stopPropagation()
+                      // Get path on-demand if using slim metadata
+                      let path = r.path
+                      if (!path && r.hasTranscript) {
+                        const details = await getSermonDetails(r)
+                        path = details.path
+                      }
+                      if (path) {
+                        const a = document.createElement('a')
+                        a.href = path
+                        a.download = `${r.date} - ${r.title}.txt`
+                        a.click()
+                      }
+                    }} className={`flex items-center justify-center w-full ${(r.path || r.hasTranscript) ? 'text-gray-400 hover:text-blue-600' : 'text-gray-200 cursor-not-allowed'}`} disabled={!r.path && !r.hasTranscript}><Icon name="download" size={18} /></button>) }
                   ]}
                   data={processedTableData}
                   rowHeight={64}

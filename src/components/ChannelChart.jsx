@@ -17,7 +17,8 @@ export default function ChannelChart({ church, data = [], raw = [], color = '#60
     if(propTranscriptCounts) return propTranscriptCounts
     const items = (raw && raw.length) ? raw : (data && data.length ? data : [])
     const total = items.length
-    const withTranscript = items.filter(it => it && it.path).length
+    // Support both slim format (hasTranscript) and full format (path)
+    const withTranscript = items.filter(it => it && (it.path || it.hasTranscript)).length
     const withoutTranscript = total - withTranscript
     return { total, withTranscript, withoutTranscript }
   }, [raw, data, propTranscriptCounts])
