@@ -743,7 +743,7 @@ export default function App(){
                 <div className="bg-blue-100 rounded-lg p-3 space-y-2 mt-3">
                   <p className="font-semibold">📜 Transcript List:</p>
                   <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by date (newest first) with columns for date, title, church, speaker, mention count, and transcript availability.</li>
+                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by <strong>highest mention count first</strong>, with columns for date, title, church, speaker, mention count, and transcript availability.</li>
                     <li><strong>Sorting:</strong> Click any column header to sort by that column. Click again to reverse the sort order. An arrow (▲/▼) indicates the current sort direction.</li>
                     <li><strong>Column Resizing:</strong> Drag the border between column headers to resize columns to your preference.</li>
                     <li><strong>Row Selection:</strong> Click on any row to open a detailed modal showing the full sermon information, a direct link to the YouTube video, and (if available) the full transcript text with your search terms highlighted in yellow.</li>
