@@ -16,6 +16,8 @@ ZIP_FILENAME = "all_sermons_archive.zip"
 
 # Regex Patterns
 MENTION_REGEX = r"(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m"
+# Default regex used by the frontend - must match exactly!
+DEFAULT_REGEX = r"\b(?:(?:brother\s+william)|william|brother)\s+br[aeiou]n[dh]*[aeiou]m\b"
 JESUS_REGEX = r"\bJesus\b" # Strict word boundary to avoid partial matches
 
 def ensure_dir(directory):
@@ -141,6 +143,26 @@ def cleanup_old_chunks():
                 os.remove(chunk_file)
             except Exception as e:
                 print(f"   Warning: Could not remove {chunk_file}: {e}")
+
+def collect_default_matches(all_texts):
+    """
+    Collect all unique matched terms from the default regex across all sermon texts.
+    Returns a dict of {lowercase_term: count} for the "Terms Found in Results" feature.
+    This pre-computation allows the site to load instantly without scanning all chunks.
+    """
+    term_counts = {}
+    compiled_regex = re.compile(DEFAULT_REGEX, re.IGNORECASE)
+    
+    for text in all_texts:
+        matches = compiled_regex.findall(text)
+        for match in matches:
+            # Normalize: lowercase and collapse whitespace
+            normalized = ' '.join(match.lower().split())
+            term_counts[normalized] = term_counts.get(normalized, 0) + 1
+    
+    # Sort by count (descending) for consistent output
+    sorted_terms = sorted(term_counts.items(), key=lambda x: (-x[1], x[0]))
+    return sorted_terms
 
 def main():
     print("--- 🚀 GENERATING SITE DATA v4 (With videoUrl index) ---")
@@ -276,6 +298,7 @@ def main():
         print(f"Failed to build master CSV: {e}")
     
     all_meta = []
+    all_texts = []  # Collect all sermon texts for default regex pre-computation
     current_chunk = []
     current_chunk_size = 0
     chunk_index = 0
@@ -298,6 +321,7 @@ def main():
                         # Override display name in metadata
                         data['meta']['church'] = church_display
                         all_meta.append(data['meta'])
+                        all_texts.append(data['text'])  # Collect text for default regex matching
                         
                         text_entry = {"id": data['meta']['id'], "text": data['text']}
                         text_size = len(data['text'].encode('utf-8'))
@@ -316,10 +340,16 @@ def main():
             json.dump(current_chunk, f)
         chunk_index += 1
 
+    # Pre-compute default regex matches for instant page load
+    print("   Pre-computing default regex matches...")
+    default_matches = collect_default_matches(all_texts)
+    print(f"   Found {len(default_matches)} unique term variations, {sum(c for _, c in default_matches)} total matches")
+
     master_data = {
         "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalChunks": chunk_index,
-        "sermons": sorted(all_meta, key=lambda x: x['timestamp'], reverse=True)
+        "sermons": sorted(all_meta, key=lambda x: x['timestamp'], reverse=True),
+        "defaultSearchTerms": [{"term": term, "count": count} for term, count in default_matches]
     }
     
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:
@@ -344,20 +374,29 @@ def main():
 
     # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
     import shutil
+    import subprocess
     DOCS_DIR = "docs"
     print(f"\n   Syncing to {DOCS_DIR}/ for GitHub Pages...")
     
+    # Helper to robustly remove directory (handles iCloud sync issues)
+    def robust_rmtree(path):
+        if not os.path.exists(path):
+            return
+        try:
+            shutil.rmtree(path)
+        except OSError:
+            # Fallback to rm -rf for stubborn iCloud-synced directories
+            subprocess.run(['rm', '-rf', path], check=False)
+    
     # Sync data folder
     docs_data = os.path.join(DOCS_DIR, DATA_DIR)
-    if os.path.exists(docs_data):
-        shutil.rmtree(docs_data)
+    robust_rmtree(docs_data)
     shutil.copytree(DATA_DIR, docs_data)
     print(f"   ✅ Copied {DATA_DIR}/ → {docs_data}/")
     
     # Sync site_api folder
     docs_api = os.path.join(DOCS_DIR, OUTPUT_DIR)
-    if os.path.exists(docs_api):
-        shutil.rmtree(docs_api)
+    robust_rmtree(docs_api)
     shutil.copytree(OUTPUT_DIR, docs_api)
     print(f"   ✅ Copied {OUTPUT_DIR}/ → {docs_api}/")
 

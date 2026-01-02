@@ -5,6 +5,7 @@ import {
 } from 'recharts'
 import JSZip from 'jszip'
 import resampleData from './utils/resample'
+import { getCachedChunks, cacheChunks, getCacheStats } from './utils/chunkCache'
 import Icon from './components/Icon'
 import staticChannels from '../channels.json'
 import MultiSelect from './components/MultiSelect'
@@ -125,6 +126,9 @@ export default function App(){
     }
   }, [customCounts])
 
+  // NOTE: Auto-run removed - pre-computed defaultSearchTerms from metadata.json now used instead
+  // This eliminates the sluggish initial load that occurred when scanning all chunks on startup
+
   useEffect(()=>{
     const init = async ()=>{
       try{
@@ -212,6 +216,11 @@ export default function App(){
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
         const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
+        
+        // Load pre-computed default search terms if available (eliminates sluggish auto-run)
+        if (json.defaultSearchTerms && Array.isArray(json.defaultSearchTerms)) {
+          setMatchedTerms(json.defaultSearchTerms)
+        }
         
         setLoading(false)
       }catch(e){ setError(e.message); setLoading(false) }
@@ -349,15 +358,15 @@ export default function App(){
     setIsAnalyzing(true)
     setAnalysisProgress('Starting...')
     setMatchedTerms([]) // Clear previous matched terms
-    // Run the main-thread scanner directly (worker removed)
+    // Run the main-thread scanner directly
     await scanOnMainThread(term, variations, rawRegex, options)
   }
 
-  // Fallback: scan chunks on the main thread in batches (used when worker isn't available)
+  // Scan chunks on the main thread with IndexedDB caching
   const scanOnMainThread = async (term, variations, rawRegex = null, options = {}) => {
     const { wholeWords = true } = options
     try{
-      const BATCH = 250
+      const BATCH = 50 // Smaller batches for better progress updates
       let regex
       const termCounts = Object.create(null) // Track individual term matches
       if(rawRegex && (''+rawRegex).trim()){
@@ -367,7 +376,6 @@ export default function App(){
         const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
         const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
         const patterns = [term, ...vars].map(t => isRegexLike(t) ? t : escapeRe(t))
-        // Conditionally use word boundaries based on wholeWords option
         if(wholeWords){
           regex = new RegExp(`\\b(${patterns.join('|')})\\b`, 'gi')
         } else {
@@ -375,48 +383,98 @@ export default function App(){
         }
       }
       const counts = Object.create(null)
-      let processedChunks = 0
       const total = totalChunks || 0
-      if(!total || total === 0){ setAnalysisProgress('No chunks to scan (fallback)'); setIsAnalyzing(false); return }
-      for(let i=0;i<total;i+=BATCH){
-        const promises = []
-        for(let j=i;j<Math.min(i+BATCH, total); j++){
-          const p = fetch(`${apiPrefix}text_chunk_${j}.json`).then(r=> r.ok? r.json(): []).catch(()=>[])
-          promises.push(p)
-        }
-        const results = await Promise.all(promises)
-        for(const chunk of results){
-          for(const item of chunk){
-            try{
-              const matchList = item.text ? item.text.match(regex) : null
-              if(matchList && matchList.length > 0){
-                counts[item.id] = (counts[item.id]||0) + matchList.length
-                // Track individual term counts (case-insensitive)
-                for(const m of matchList){
-                  const key = m.toLowerCase()
-                  termCounts[key] = (termCounts[key] || 0) + 1
-                }
+      if(!total || total === 0){ setAnalysisProgress('No chunks to scan'); setIsAnalyzing(false); return }
+      
+      // Check IndexedDB cache first
+      setAnalysisProgress('Checking cache...')
+      const allIndices = Array.from({ length: total }, (_, i) => i)
+      const cachedData = await getCachedChunks(allIndices)
+      const cachedCount = cachedData.size
+      const uncachedIndices = allIndices.filter(i => !cachedData.has(i))
+      
+      setAnalysisProgress(`Found ${cachedCount}/${total} chunks cached`)
+      await new Promise(r => setTimeout(r, 100)) // Brief pause to show cache status
+      
+      let processedChunks = 0
+      
+      // Process cached chunks first (fast!)
+      for (const [idx, chunk] of cachedData.entries()) {
+        for(const item of chunk){
+          try{
+            const matchList = item.text ? item.text.match(regex) : null
+            if(matchList && matchList.length > 0){
+              counts[item.id] = (counts[item.id]||0) + matchList.length
+              for(const m of matchList){
+                const key = m.toLowerCase()
+                termCounts[key] = (termCounts[key] || 0) + 1
               }
-            }catch(e){}
-          }
+            }
+          }catch(e){}
         }
-        processedChunks += results.length
-        setAnalysisProgress(`Scanning ${total?Math.round((processedChunks/total)*100):0}% (${processedChunks}/${total})`)
-        // yield to UI briefly so the browser can remain responsive
-        await new Promise(r => setTimeout(r, 20))
+        processedChunks++
+        if (processedChunks % 20 === 0) {
+          setAnalysisProgress(`Searching cached: ${Math.round((processedChunks/total)*100)}%`)
+        }
       }
+      
+      // Fetch and process uncached chunks
+      if (uncachedIndices.length > 0) {
+        setAnalysisProgress(`Downloading ${uncachedIndices.length} uncached chunks...`)
+        const newlyCached = new Map()
+        
+        for(let i=0; i<uncachedIndices.length; i+=BATCH){
+          const batchIndices = uncachedIndices.slice(i, i+BATCH)
+          const promises = batchIndices.map(j =>
+            fetch(`${apiPrefix}text_chunk_${j}.json`)
+              .then(r => r.ok ? r.json() : [])
+              .then(data => ({ idx: j, data }))
+              .catch(() => ({ idx: j, data: [] }))
+          )
+          const results = await Promise.all(promises)
+          
+          for(const { idx, data } of results){
+            // Cache this chunk for next time
+            if (data.length > 0) {
+              newlyCached.set(idx, data)
+            }
+            for(const item of data){
+              try{
+                const matchList = item.text ? item.text.match(regex) : null
+                if(matchList && matchList.length > 0){
+                  counts[item.id] = (counts[item.id]||0) + matchList.length
+                  for(const m of matchList){
+                    const key = m.toLowerCase()
+                    termCounts[key] = (termCounts[key] || 0) + 1
+                  }
+                }
+              }catch(e){}
+            }
+            processedChunks++
+          }
+          setAnalysisProgress(`Scanning ${Math.round((processedChunks/total)*100)}% (${processedChunks}/${total})`)
+          await new Promise(r => setTimeout(r, 10))
+        }
+        
+        // Cache newly fetched chunks in background
+        if (newlyCached.size > 0) {
+          cacheChunks(newlyCached).then(() => {
+            console.log(`Cached ${newlyCached.size} chunks for faster future searches`)
+          })
+        }
+      }
+      
       const entries = Object.entries(counts)
       const map = new Map(entries.map(([id,c])=>[id, c]))
       setCustomCounts(map)
       setActiveTerm(term)
       setActiveRegex(rawRegex && rawRegex.trim() ? rawRegex : regex.source)
-      // Set matched terms sorted by count descending
       const sortedTerms = Object.entries(termCounts)
         .map(([t, c]) => ({ term: t, count: c }))
         .sort((a, b) => b.count - a.count)
       setMatchedTerms(sortedTerms)
       setIsAnalyzing(false)
-      setAnalysisProgress('Completed (fallback)')
+      setAnalysisProgress(cachedCount === total ? 'Complete (from cache ⚡)' : 'Complete')
     }catch(e){ console.error('Main-thread scan failed', e); setIsAnalyzing(false); setAnalysisProgress('Error') }
   }
 
@@ -549,7 +607,7 @@ export default function App(){
             </div>
           </div>
         </div>
-        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
+        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and may not represent all sermons preached during this timeframe.</div>
 
         {/* How It Works Overview */}
         <div className="bg-blue-50 border-b border-blue-100">
@@ -570,7 +628,7 @@ export default function App(){
                     <li><strong>Search Term:</strong> The main word or phrase you're looking for.</li>
                     <li><strong>Variations:</strong> Add alternate spellings or related terms (comma-separated). For example: "branham, branam, branum" — no regex knowledge needed!</li>
                     <li><strong>Regex Pattern:</strong> For advanced users — a regular expression that matches multiple variations at once. This is powerful for handling transcript errors. <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">Learn regex at regex101.com ↗</a></li>
-                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "heart", "start", "p<strong>art</strong>y", etc.</li>
+                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "heart", "start", "party", etc.</li>
                   </ul>
                   
                   <p className="mt-2"><strong>Why Regex?</strong> YouTube transcripts have many spelling variations. For "Brother Branham", we use:<br/>
@@ -579,6 +637,34 @@ export default function App(){
                 </div>
 
                 <p><strong>⚠️ Speaker Data Limitations:</strong> Speaker names are extracted from video titles/descriptions using automated detection. This data may be <strong>incomplete or inaccurate</strong> — many videos don't include speaker information, and our algorithm can't always detect it reliably.</p>
+                
+                <div className="bg-blue-100 rounded-lg p-3 space-y-2">
+                  <p className="font-semibold">📈 Understanding the Charts:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Main Dashboard Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
+                    <li><strong>Rolling Averages:</strong> The rolling average lines smooth out daily fluctuations to reveal trends. A rising rolling average indicates increasing mention frequency over time.</li>
+                    <li><strong>Individual Church Charts:</strong> Each church has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-blue-100 rounded-lg p-3 space-y-2">
+                  <p className="font-semibold">📋 Data Views:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Dashboard Tab:</strong> Visual charts and statistics. Best for seeing trends and patterns at a glance.</li>
+                    <li><strong>Data Tab:</strong> A searchable, sortable table of all sermons. You can filter, sort by any column, and click rows to view sermon details. Great for finding specific sermons or doing detailed analysis.</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-blue-100 rounded-lg p-3 space-y-2">
+                  <p className="font-semibold">📜 Transcript List:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by highest mention count first, with columns for date, title, church, speaker, mention count, and transcript availability.</li>
+                    <li><strong>Sorting:</strong> Click any column header to sort by that column. Click again to reverse the sort order. An arrow (▲/▼) indicates the current sort direction.</li>
+                    <li><strong>Column Resizing:</strong> Drag the border between column headers to resize columns to your preference.</li>
+                    <li><strong>Row Selection:</strong> Click on any row to open a detailed modal showing the full sermon information, a direct link to the YouTube video, and (if available) the full transcript text with your search terms highlighted in yellow.</li>
+                  </ul>
+                </div>
+                
                 <p><strong>📊 Charts by Church:</strong> Each chart below represents a <strong>church channel</strong>, not a speaker. The data shows sermon activity and mention frequency over time for that church.</p>
               </div>
             </details>

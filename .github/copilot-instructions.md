@@ -1,5 +1,18 @@
 # Copilot Instructions
 
+## ⚠️ CRITICAL: Git Deployment Rules
+
+**NEVER commit or push to git without explicit user permission.** Always ask the user before running any of these commands:
+- `git commit`
+- `git push`
+- `git add` followed by commit
+- Any deployment scripts
+
+This is a production website. Untested commits have caused outages. Always:
+1. Test changes thoroughly in the dev server (`npm run dev`)
+2. Ask the user to verify the changes work
+3. Only then, ASK FOR PERMISSION before committing/deploying
+
 ## Project Overview
 
 This project is a static website that provides a searchable archive of sermon transcripts. The site is built using a Python-based data processing pipeline and a modern frontend framework.

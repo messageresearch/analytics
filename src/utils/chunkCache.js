@@ -1,7 +1,7 @@
 // IndexedDB cache for text chunks - enables instant repeat searches
 
 const DB_NAME = 'sermon-search-cache'
-const DB_VERSION = 1
+const DB_VERSION = 2  // Bumped to fix version conflict
 const STORE_NAME = 'text_chunks'
 const META_STORE = 'cache_meta'
 
@@ -13,7 +13,18 @@ function openDB() {
   dbPromise = new Promise((resolve, reject) => {
     const request = indexedDB.open(DB_NAME, DB_VERSION)
     
-    request.onerror = () => reject(request.error)
+    request.onerror = (e) => {
+      // If version error, delete and retry
+      if (e.target.error?.name === 'VersionError') {
+        console.log('IndexedDB version conflict, resetting cache...')
+        dbPromise = null
+        indexedDB.deleteDatabase(DB_NAME).onsuccess = () => {
+          openDB().then(resolve).catch(reject)
+        }
+      } else {
+        reject(request.error)
+      }
+    }
     request.onsuccess = () => resolve(request.result)
     
     request.onupgradeneeded = (event) => {
