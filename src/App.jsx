@@ -729,7 +729,6 @@ export default function App(){
                     <li><strong>Main Dashboard Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
                     <li><strong>Rolling Averages:</strong> The "7-day" and "30-day" rolling average lines smooth out daily fluctuations to reveal trends. A rising rolling average indicates increasing mention frequency over time.</li>
                     <li><strong>Individual Church Charts:</strong> Each church has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
-                    <li><strong>Heatmap View:</strong> Toggle to see a calendar heatmap showing activity intensity by day/week.</li>
                   </ul>
                 </div>
 
@@ -738,7 +737,16 @@ export default function App(){
                   <ul className="list-disc list-inside space-y-1 ml-2">
                     <li><strong>Dashboard Tab:</strong> Visual charts and statistics. Best for seeing trends and patterns at a glance.</li>
                     <li><strong>Data Tab:</strong> A searchable, sortable table of all sermons. You can filter, sort by any column, and click rows to view sermon details. Great for finding specific sermons or doing detailed analysis.</li>
-                    <li><strong>Transcript List:</strong> When you click on a sermon (from charts or the data table), a modal shows the sermon details including a link to the YouTube video. If a transcript is available, you can view the full text with your search terms highlighted.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-100 rounded-lg p-3 space-y-2 mt-3">
+                  <p className="font-semibold">📜 Transcript List:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by date (newest first) with columns for date, title, church, speaker, mention count, and transcript availability.</li>
+                    <li><strong>Sorting:</strong> Click any column header to sort by that column. Click again to reverse the sort order. An arrow (▲/▼) indicates the current sort direction.</li>
+                    <li><strong>Column Resizing:</strong> Drag the border between column headers to resize columns to your preference.</li>
+                    <li><strong>Row Selection:</strong> Click on any row to open a detailed modal showing the full sermon information, a direct link to the YouTube video, and (if available) the full transcript text with your search terms highlighted in yellow.</li>
                   </ul>
                 </div>
 
