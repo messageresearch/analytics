@@ -220,70 +220,70 @@ export default function App(){
   },[])
 
   // Build per-channel transcript availability map once `channels` is available
+  // Only loads churches that have summary CSV files (skips unscraped churches)
   useEffect(()=>{
     if(!channels || channels.length===0) return
     const build = async () => {
-        const rawGitPrefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/'
       try{
         const map = {}
         const churchNames = channels.map(c=>c.name).filter(Boolean)
-        for(const name of churchNames){
+        
+        // Fetch all summaries in parallel for speed - only try one path per church
+        const fetchPromises = churchNames.map(async (name) => {
           const base = ('' + name).trim()
-          // Prefer underscore-normalized filenames first (matches files in repo `data/`)
-          const variants = [ base.replace(/\s+/g,'_'), base.replace(/[^0-9A-Za-z]+/g,'_').replace(/^_+|_+$/g,''), base.replace(/\s+/g,'-'), base.toLowerCase().replace(/\s+/g,'_'), base ]
-          let found = false
-            for(const v of variants){
-              if(!v) continue
-              // Prefer repository `data/` files first, then absolute `/data/`, then `site_api/data/` (apiPrefix)
-              const candidates = [ `data/${v}_Summary.csv`, `/data/${v}_Summary.csv`, `${apiPrefix}data/${v}_Summary.csv` ]
-              let txt = null
-              for(const tryPath of candidates){
-                try{
-                  console.debug('Trying summary path', tryPath)
-                  const r = await fetch(tryPath)
-                  console.debug('Response', tryPath, r && r.status)
-                  // If the normal fetch fails, try the raw GitHubusercontent path (fallback)
-                  if(!r.ok){
-                    try{
-                      const rawPath = rawGitPrefix + (('' + tryPath).replace(/^\/+/, ''))
-                      console.debug('Trying raw GitHub path', rawPath)
-                      const rr = await fetch(rawPath)
-                      console.debug('Response raw', rawPath, rr && rr.status)
-                      if(!rr.ok) continue
-                      txt = await rr.text()
-                    }catch(e){ console.debug('Raw fetch error', tryPath, e && e.message); continue }
-                  } else {
-                    txt = await r.text()
-                  }
-                  // Basic validation: reject HTML responses (SPA fallback) or non-CSV content
-                  const tl = (txt||'').trim()
-                  if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
-                    console.debug('Rejecting fetched summary as non-CSV or too small', tryPath, 'len', tl.length)
-                    txt = null
-                    continue
-                  }
-                  console.debug('Loaded summary for', name, 'from', tryPath, 'length', (txt||'').length)
-                  break
-                }catch(e){ console.debug('Fetch error', tryPath, e && e.message) }
-              }
-            if(!txt) continue
-            const lines = txt.split(/\r?\n/).filter(Boolean)
-            if(lines.length <= 1){ const counts = { total: 0, withTranscript: 0, withoutTranscript: 0 }; map[name] = counts; map[base.replace(/\s+/g,'_')] = counts; map[base.replace(/[^0-9A-Za-z]+/g,'_').toLowerCase()] = counts; found = true; break }
-            const header = lines[0].split(',').map(h=>h.trim())
-            const statusIdx = header.findIndex(h => /status/i.test(h))
-            let withT = 0
-            for(let i=1;i<lines.length;i++){ const cols = lines[i].split(','); const status = (cols[statusIdx] || '').trim(); if(/success/i.test(status)) withT++ }
-            const total = Math.max(0, lines.length-1)
-            const counts = { total, withTranscript: withT, withoutTranscript: total - withT }
-            map[name] = counts
-            map[base.replace(/\s+/g,'_')] = counts
-            map[base.replace(/[^0-9A-Za-z]+/g,'_').toLowerCase()] = counts
-            found = true
-            break
+          const normalized = base.replace(/\s+/g,'_')
+          const tryPath = `${apiPrefix}data/${normalized}_Summary.csv`
+          
+          try {
+            const r = await fetch(tryPath)
+            if (!r.ok) return { name, base, normalized, txt: null } // Not scraped yet, skip silently
+            
+            const txt = await r.text()
+            const tl = (txt||'').trim()
+            // Reject HTML responses (SPA fallback) or non-CSV content
+            if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
+              return { name, base, normalized, txt: null }
+            }
+            return { name, base, normalized, txt }
+          } catch(e) {
+            return { name, base, normalized, txt: null } // Network error, skip
           }
-          if(!found) map[name] = null
+        })
+        
+        const results = await Promise.all(fetchPromises)
+        
+        // Process results
+        for (const { name, base, normalized, txt } of results) {
+          if (!txt) {
+            // Church not scraped yet - don't add to map (will be excluded from Data tab)
+            continue
+          }
+          
+          const lines = txt.split(/\r?\n/).filter(Boolean)
+          if(lines.length <= 1) {
+            const counts = { total: 0, withTranscript: 0, withoutTranscript: 0 }
+            map[name] = counts
+            map[normalized] = counts
+            map[base.replace(/[^0-9A-Za-z]+/g,'_').toLowerCase()] = counts
+            continue
+          }
+          
+          const header = lines[0].split(',').map(h=>h.trim())
+          const statusIdx = header.findIndex(h => /status/i.test(h))
+          let withT = 0
+          for(let i=1;i<lines.length;i++) {
+            const cols = lines[i].split(',')
+            const status = (cols[statusIdx] || '').trim()
+            if(/success/i.test(status)) withT++
+          }
+          const total = Math.max(0, lines.length-1)
+          const counts = { total, withTranscript: withT, withoutTranscript: total - withT }
+          map[name] = counts
+          map[normalized] = counts
+          map[base.replace(/[^0-9A-Za-z]+/g,'_').toLowerCase()] = counts
         }
-      	console.debug('Transcript summary counts map built, keys:', Object.keys(map).length)
+        
+        console.debug('Transcript summary counts map built, keys:', Object.keys(map).length, '(skipped unscraped churches)')
         setTranscriptSummaryCounts(map)
       }catch(e){ console.warn('Failed to build transcript summary counts', e) }
     }
