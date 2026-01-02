@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 
-export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [] }) {
+export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [], cacheStatus = null }) {
   const [term, setTerm] = useState(initialTerm || '')
   const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
   const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
@@ -109,6 +109,14 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
               <button onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white text-gray-700 font-medium py-2 px-3 rounded-lg shadow-sm hover:bg-gray-50 transition">Reset Defaults</button>
             </div>
             {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
+            {/* Cache status indicator */}
+            {cacheStatus && cacheStatus.total > 0 && !isAnalyzing && (
+              <div className="text-xs text-blue-200 flex items-center gap-1" title="Cached chunks enable faster repeat searches">
+                <Icon name="database" size={12} />
+                <span>{cacheStatus.cached}/{cacheStatus.total} cached</span>
+                {cacheStatus.cached === cacheStatus.total && <span className="text-green-300 ml-1">⚡ Instant</span>}
+              </div>
+            )}
           </div>
         </div>
       </div>

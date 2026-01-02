@@ -342,6 +342,55 @@ export default function App(){
 
   const dateDomain = useMemo(()=>{ if(selYears.length===0) return ['auto','auto']; const validYears = selYears.map(y=>parseInt(y)).filter(y=>!isNaN(y)); if(validYears.length===0) return ['auto','auto']; const minYear = Math.min(...validYears); const maxYear = Math.max(...validYears); return [new Date(minYear,0,1).getTime(), new Date(maxYear,11,31).getTime()] }, [selYears])
 
+  // Web Worker for search - runs in background thread
+  const searchWorkerRef = useRef(null)
+  const [cacheStatus, setCacheStatus] = useState({ cached: 0, total: 0 })
+  
+  // Initialize search worker
+  useEffect(() => {
+    try {
+      searchWorkerRef.current = new Worker(new URL('./workers/searchWorker.js', import.meta.url), { type: 'module' })
+      
+      searchWorkerRef.current.onmessage = (event) => {
+        const { type, ...data } = event.data
+        
+        if (type === 'progress') {
+          setAnalysisProgress(data.message)
+          if (data.cached !== undefined) {
+            setCacheStatus({ cached: data.cached, total: data.total })
+          }
+        } else if (type === 'complete') {
+          const map = new Map(data.counts.map(([id, c]) => [id, c]))
+          setCustomCounts(map)
+          setActiveTerm(lastAnalysisRef.current?.term || '')
+          setActiveRegex(data.regexSource)
+          setMatchedTerms(data.matchedTerms)
+          setIsAnalyzing(false)
+          setAnalysisProgress('Complete')
+        } else if (type === 'error') {
+          setAnalysisProgress('Error: ' + data.message)
+          setIsAnalyzing(false)
+        } else if (type === 'cached') {
+          console.log(`Cached ${data.count} new chunks for faster future searches`)
+        }
+      }
+      
+      searchWorkerRef.current.onerror = (e) => {
+        console.error('Search worker error:', e)
+        setIsAnalyzing(false)
+        setAnalysisProgress('Worker error - falling back')
+      }
+    } catch (e) {
+      console.warn('Web Worker not supported, will use main thread fallback')
+    }
+    
+    return () => {
+      if (searchWorkerRef.current) {
+        searchWorkerRef.current.terminate()
+      }
+    }
+  }, [])
+
   const handleAnalysis = async (term, variations, rawRegex = null, options = {}) => {
     // Allow analysis when either a term is provided or a raw regex is provided
     if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
@@ -349,8 +398,30 @@ export default function App(){
     setIsAnalyzing(true)
     setAnalysisProgress('Starting...')
     setMatchedTerms([]) // Clear previous matched terms
-    // Run the main-thread scanner directly (worker removed)
-    await scanOnMainThread(term, variations, rawRegex, options)
+    
+    // Use Web Worker if available
+    if (searchWorkerRef.current) {
+      searchWorkerRef.current.postMessage({
+        type: 'search',
+        term,
+        variations,
+        rawRegex,
+        options,
+        totalChunks,
+        apiPrefix
+      })
+    } else {
+      // Fallback to main thread
+      await scanOnMainThread(term, variations, rawRegex, options)
+    }
+  }
+  
+  // Clear search cache (exposed for debugging/admin)
+  const clearSearchCache = () => {
+    if (searchWorkerRef.current) {
+      searchWorkerRef.current.postMessage({ type: 'clearCache' })
+      setCacheStatus({ cached: 0, total: totalChunks })
+    }
   }
 
   // Fallback: scan chunks on the main thread in batches (used when worker isn't available)
@@ -574,7 +645,7 @@ export default function App(){
 
           {view === 'dashboard' && stats && (
             <>
-              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} />
+              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} cacheStatus={{ cached: cacheStatus.cached, total: totalChunks }} />
               <div className="grid grid-cols-2 md:grid-cols-7 gap-4 mb-8">
                 <StatCard title="Total Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" />
                 <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
