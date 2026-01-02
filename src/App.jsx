@@ -375,24 +375,7 @@ export default function App(){
 
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
-  const enrichedData = useMemo(()=>{ 
-    if(!customCounts) return rawData; 
-    // Debug: Log key types to diagnose mismatch
-    if(customCounts.size > 0 && rawData.length > 0) {
-      const firstMapKey = customCounts.keys().next().value
-      const firstRawId = rawData[0].id
-      console.log('DEBUG customCounts:', { 
-        mapSize: customCounts.size, 
-        firstMapKey, 
-        firstMapKeyType: typeof firstMapKey,
-        firstRawId,
-        firstRawIdType: typeof firstRawId,
-        lookupResult: customCounts.get(firstRawId),
-        sampleKeys: [...customCounts.keys()].slice(0, 5)
-      })
-    }
-    return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) 
-  }, [rawData, customCounts, activeRegex])
+  const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
   const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
@@ -709,7 +692,7 @@ export default function App(){
             </div>
           </div>
         </div>
-        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and may not represent all sermons preached during this timeframe.</div>
+        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
 
         {/* How It Works Overview */}
         <div className="bg-blue-50 border-b border-blue-100">
@@ -730,7 +713,7 @@ export default function App(){
                     <li><strong>Search Term:</strong> The main word or phrase you're looking for.</li>
                     <li><strong>Variations:</strong> Add alternate spellings or related terms (comma-separated). For example: "branham, branam, branum" — no regex knowledge needed!</li>
                     <li><strong>Regex Pattern:</strong> For advanced users — a regular expression that matches multiple variations at once. This is powerful for handling transcript errors. <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">Learn regex at regex101.com ↗</a></li>
-                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "he<strong>art</strong>", "st<strong>art</strong>", "p<strong>art</strong>y", etc.</li>
+                    <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "heart", "start", "p<strong>art</strong>y", etc.</li>
                   </ul>
                   
                   <p className="mt-2"><strong>Why Regex?</strong> YouTube transcripts have many spelling variations. For "Brother Branham", we use:<br/>
@@ -739,35 +722,7 @@ export default function App(){
                 </div>
 
                 <p><strong>⚠️ Speaker Data Limitations:</strong> Speaker names are extracted from video titles/descriptions using automated detection. This data may be <strong>incomplete or inaccurate</strong> — many videos don't include speaker information, and our algorithm can't always detect it reliably.</p>
-                
-                <div className="bg-blue-100 rounded-lg p-3 space-y-2 mt-3">
-                  <p className="font-semibold">📈 Understanding the Charts:</p>
-                  <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Main Dashboard Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
-                    <li><strong>Rolling Averages:</strong> The "7-day" and "30-day" rolling average lines smooth out daily fluctuations to reveal trends. A rising rolling average indicates increasing mention frequency over time.</li>
-                    <li><strong>Individual Church Charts:</strong> Each church has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-100 rounded-lg p-3 space-y-2 mt-3">
-                  <p className="font-semibold">📋 Data Views:</p>
-                  <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Dashboard Tab:</strong> Visual charts and statistics. Best for seeing trends and patterns at a glance.</li>
-                    <li><strong>Data Tab:</strong> A searchable, sortable table of all sermons. You can filter, sort by any column, and click rows to view sermon details. Great for finding specific sermons or doing detailed analysis.</li>
-                  </ul>
-                </div>
-
-                <div className="bg-blue-100 rounded-lg p-3 space-y-2 mt-3">
-                  <p className="font-semibold">📜 Transcript List:</p>
-                  <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by <strong>highest mention count first</strong>, with columns for date, title, church, speaker, mention count, and transcript availability.</li>
-                    <li><strong>Sorting:</strong> Click any column header to sort by that column. Click again to reverse the sort order. An arrow (▲/▼) indicates the current sort direction.</li>
-                    <li><strong>Column Resizing:</strong> Drag the border between column headers to resize columns to your preference.</li>
-                    <li><strong>Row Selection:</strong> Click on any row to open a detailed modal showing the full sermon information, a direct link to the YouTube video, and (if available) the full transcript text with your search terms highlighted in yellow.</li>
-                  </ul>
-                </div>
-
-                <p className="mt-3"><strong>📊 Charts by Church:</strong> Each chart below represents a <strong>church channel</strong>, not a speaker. The data shows sermon activity and mention frequency over time for that church.</p>
+                <p><strong>📊 Charts by Church:</strong> Each chart below represents a <strong>church channel</strong>, not a speaker. The data shows sermon activity and mention frequency over time for that church.</p>
               </div>
             </details>
           </div>

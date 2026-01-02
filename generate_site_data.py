@@ -275,9 +275,12 @@ def main():
     except Exception as e:
         print(f"Failed to build master CSV: {e}")
     
-    all_data = []  # Collect all sermon data (meta + text) first
+    all_meta = []
+    current_chunk = []
+    current_chunk_size = 0
+    chunk_index = 0
     
-    # First pass: collect all sermon data
+    # with zipfile.ZipFile(ZIP_FILENAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
     for church_folder in os.listdir(DATA_DIR):
         church_path = os.path.join(DATA_DIR, church_folder)
         if os.path.isdir(church_path):
@@ -288,41 +291,25 @@ def main():
             for filename in os.listdir(church_path):
                 if filename.endswith(".txt"):
                     file_full_path = os.path.join(church_path, filename)
+                    # zipf.write(file_full_path, arcname=f"{church_folder}/{filename}")
                     
                     data = parse_sermon(file_full_path, church_folder, filename) # Keep folder name for path
                     if data:
                         # Override display name in metadata
                         data['meta']['church'] = church_display
-                        all_data.append(data)
-    
-    # Sort all data by timestamp (descending) - same order as slim metadata
-    all_data.sort(key=lambda x: x['meta']['timestamp'], reverse=True)
-    
-    # Create filename → numeric ID mapping based on sorted order
-    filename_to_idx = {}
-    all_meta = []
-    for idx, data in enumerate(all_data):
-        filename_to_idx[data['meta']['id']] = idx
-        all_meta.append(data['meta'])
-    
-    # Second pass: write text chunks with numeric IDs
-    current_chunk = []
-    current_chunk_size = 0
-    chunk_index = 0
-    
-    for idx, data in enumerate(all_data):
-        # Use numeric ID that matches slim metadata
-        text_entry = {"id": idx, "text": data['text']}
-        text_size = len(data['text'].encode('utf-8'))
-        current_chunk.append(text_entry)
-        current_chunk_size += text_size
-        
-        if current_chunk_size >= CHUNK_SIZE_LIMIT:
-            with open(os.path.join(OUTPUT_DIR, f"{SEARCH_CHUNK_PREFIX}{chunk_index}.json"), 'w', encoding='utf-8') as f:
-                json.dump(current_chunk, f)
-            current_chunk = []
-            current_chunk_size = 0
-            chunk_index += 1
+                        all_meta.append(data['meta'])
+                        
+                        text_entry = {"id": data['meta']['id'], "text": data['text']}
+                        text_size = len(data['text'].encode('utf-8'))
+                        current_chunk.append(text_entry)
+                        current_chunk_size += text_size
+                        
+                        if current_chunk_size >= CHUNK_SIZE_LIMIT:
+                            with open(os.path.join(OUTPUT_DIR, f"{SEARCH_CHUNK_PREFIX}{chunk_index}.json"), 'w', encoding='utf-8') as f:
+                                json.dump(current_chunk, f)
+                            current_chunk = []
+                            current_chunk_size = 0
+                            chunk_index += 1
 
     if current_chunk:
         with open(os.path.join(OUTPUT_DIR, f"{SEARCH_CHUNK_PREFIX}{chunk_index}.json"), 'w', encoding='utf-8') as f:
@@ -332,7 +319,7 @@ def main():
     master_data = {
         "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalChunks": chunk_index,
-        "sermons": all_meta  # Already sorted
+        "sermons": sorted(all_meta, key=lambda x: x['timestamp'], reverse=True)
     }
     
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:

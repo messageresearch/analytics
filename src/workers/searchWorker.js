@@ -3,7 +3,7 @@
 
 // IndexedDB functions (duplicated here since workers can't import from main bundle)
 const DB_NAME = 'sermon-search-cache'
-const DB_VERSION = 2  // Bumped to force cache refresh after ID type fix (string → int)
+const DB_VERSION = 1
 const STORE_NAME = 'text_chunks'
 
 function openDB() {
