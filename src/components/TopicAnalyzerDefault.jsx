@@ -160,10 +160,10 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 max-h-[50vh] overflow-y-auto">
                     {previewData.matches && previewData.matches.length > 0 ? (
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-1 text-xs font-mono">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-1 text-sm font-mono">
                         {previewData.matches.map((match, i) => (
-                          <div key={i} className="bg-white px-2 py-1 rounded border border-gray-200 truncate" title={String(match)}>
-                            {match && String(match).trim() ? String(match) : <span className="text-gray-400">(empty)</span>}
+                          <div key={i} className="bg-white text-gray-900 px-2 py-1 rounded border border-gray-200 truncate" title={String(match)}>
+                            {String(match) || <span className="text-gray-400">(empty)</span>}
                           </div>
                         ))}
                       </div>

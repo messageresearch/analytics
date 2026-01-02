@@ -155,7 +155,9 @@ export default function VirtualizedTable({
 
   // Custom inner element for react-window to force computed width
   const InnerElement = forwardRef(({ style, children, ...rest }, ref) => {
-    const newStyle = { ...style, width: Math.max(style?.width || 0, totalWidth) }
+    const computedWidth = Math.max(style?.width || 0, totalWidth)
+    const safeWidth = Number.isFinite(computedWidth) ? computedWidth : totalWidth
+    const newStyle = { ...style, width: safeWidth }
     return (
       <div ref={ref} style={newStyle} {...rest}>
         {children}
@@ -163,8 +165,8 @@ export default function VirtualizedTable({
     )
   })
 
-  const SortIndicator = ({ key }) => {
-    if (!sortConfig || sortConfig.key !== key) return null
+  const SortIndicator = ({ columnKey }) => {
+    if (!sortConfig || sortConfig.key !== columnKey) return null
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
   }
 
@@ -238,7 +240,7 @@ export default function VirtualizedTable({
                 <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center ${col.centered ? 'justify-center' : ''}`}>
                   <button onClick={() => onSort(col.key)} className={`flex items-center w-full hover:text-gray-900 ${col.centered ? 'justify-center text-center' : 'text-left'}`}>
                     <span className="truncate">{col.label}</span>
-                    <SortIndicator key={col.key} />
+                    <SortIndicator columnKey={col.key} />
                   </button>
                 </div>
                 {!isMobile && idx < columns.length - 1 && (
