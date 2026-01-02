@@ -375,7 +375,24 @@ export default function App(){
 
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
-  const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
+  const enrichedData = useMemo(()=>{ 
+    if(!customCounts) return rawData; 
+    // Debug: Log key types to diagnose mismatch
+    if(customCounts.size > 0 && rawData.length > 0) {
+      const firstMapKey = customCounts.keys().next().value
+      const firstRawId = rawData[0].id
+      console.log('DEBUG customCounts:', { 
+        mapSize: customCounts.size, 
+        firstMapKey, 
+        firstMapKeyType: typeof firstMapKey,
+        firstRawId,
+        firstRawIdType: typeof firstRawId,
+        lookupResult: customCounts.get(firstRawId),
+        sampleKeys: [...customCounts.keys()].slice(0, 5)
+      })
+    }
+    return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) 
+  }, [rawData, customCounts, activeRegex])
   const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
