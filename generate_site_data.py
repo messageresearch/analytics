@@ -327,20 +327,68 @@ def main():
 
     # Generate available_churches.json - list of churches that have Summary CSVs
     available_churches = []
+    transcript_summary_counts = {}  # Pre-computed counts for faster client load
+    
     for fname in os.listdir(DATA_DIR):
         if fname.endswith("_Summary.csv"):
             church_name = fname.rsplit('_Summary.csv', 1)[0]
+            display_name = church_name.replace('_', ' ')
+            
             # Store both normalized (with underscores) and display name (with spaces)
             available_churches.append({
                 "normalized": church_name,
-                "display": church_name.replace('_', ' ')
+                "display": display_name
             })
+            
+            # Pre-compute transcript counts from CSV
+            csv_path = os.path.join(DATA_DIR, fname)
+            try:
+                total = 0
+                with_transcript = 0
+                with open(csv_path, 'r', encoding='utf-8') as csvfile:
+                    reader = csv.reader(csvfile)
+                    rows = list(reader)
+                    if rows:
+                        # Find status column
+                        header = [c.strip().lower() for c in rows[0]]
+                        status_idx = -1
+                        for i, h in enumerate(header):
+                            if 'status' in h:
+                                status_idx = i
+                                break
+                        
+                        # Count rows (excluding header)
+                        for r in rows[1:]:
+                            if not r or all(not c.strip() for c in r):
+                                continue
+                            total += 1
+                            if status_idx >= 0 and status_idx < len(r):
+                                if 'success' in r[status_idx].lower():
+                                    with_transcript += 1
+                
+                counts = {
+                    "total": total,
+                    "withTranscript": with_transcript,
+                    "withoutTranscript": total - with_transcript
+                }
+                # Store under multiple keys for easy lookup
+                transcript_summary_counts[church_name] = counts
+                transcript_summary_counts[display_name] = counts
+            except Exception as e:
+                print(f"   ⚠️  Could not parse {fname}: {e}")
+    
     available_churches.sort(key=lambda x: x['display'])
     
     available_path = os.path.join(OUTPUT_DIR, 'available_churches.json')
     with open(available_path, 'w', encoding='utf-8') as f:
         json.dump(available_churches, f)
     print(f"   ✅ Generated {available_path} with {len(available_churches)} churches")
+    
+    # Save pre-computed transcript summary counts (eliminates 37 CSV fetches on client)
+    counts_path = os.path.join(OUTPUT_DIR, 'transcript_counts.json')
+    with open(counts_path, 'w', encoding='utf-8') as f:
+        json.dump(transcript_summary_counts, f)
+    print(f"   ✅ Generated {counts_path} with {len(available_churches)} churches")
 
     # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
     import shutil
