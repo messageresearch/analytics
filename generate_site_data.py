@@ -325,6 +325,23 @@ def main():
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:
         json.dump(master_data, f)
 
+    # Generate available_churches.json - list of churches that have Summary CSVs
+    available_churches = []
+    for fname in os.listdir(DATA_DIR):
+        if fname.endswith("_Summary.csv"):
+            church_name = fname.rsplit('_Summary.csv', 1)[0]
+            # Store both normalized (with underscores) and display name (with spaces)
+            available_churches.append({
+                "normalized": church_name,
+                "display": church_name.replace('_', ' ')
+            })
+    available_churches.sort(key=lambda x: x['display'])
+    
+    available_path = os.path.join(OUTPUT_DIR, 'available_churches.json')
+    with open(available_path, 'w', encoding='utf-8') as f:
+        json.dump(available_churches, f)
+    print(f"   ✅ Generated {available_path} with {len(available_churches)} churches")
+
     # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
     import shutil
     DOCS_DIR = "docs"

@@ -3540,6 +3540,7 @@ def main():
         parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill-descriptions).")
         parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times). Use with --backfill-descriptions.")
         parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process. Use with --backfill-descriptions.")
+        parser.add_argument('--unscraped', action='store_true', help="Only scrape channels that don't have a Summary CSV file yet.")
         args = parser.parse_args()
 
         if args.backfill_descriptions:
@@ -3606,6 +3607,51 @@ def main():
             heal_archive(DATA_DIR)
             return
 
+        # When running with --unscraped, scrape only channels without Summary CSV
+        if args.unscraped:
+            print("\\n🔄 UNSCRAPED CHANNELS ONLY")
+            print("="*50)
+            
+            # Find unscraped channels (no Summary CSV)
+            unscraped_channels = {}
+            for name, config in channels.items():
+                normalized_name = name.replace(' ', '_')
+                summary_path = os.path.join(DATA_DIR, f"{normalized_name}_Summary.csv")
+                if not os.path.exists(summary_path):
+                    unscraped_channels[name] = config
+            
+            if not unscraped_channels:
+                print("✅ All channels have been scraped! No unscraped channels found.")
+                return
+            
+            print(f"Found {len(unscraped_channels)} unscraped channel(s):")
+            for name in unscraped_channels.keys():
+                print(f"  • {name}")
+            print()
+            
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            for name, config in unscraped_channels.items():
+                print(f"\\n{'='*50}")
+                print(f"SCRAPING: {name}")
+                print(f"{'='*50}")
+                channel_stats = process_channel(name, config, known_speakers)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            
+            write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape (CLI)")
+            print(f"\\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
+            return
+
         # --- MENU ---
         print("\\n" + "="*50)
         print("ACTION SELECTION")
@@ -3616,6 +3662,7 @@ def main():
         print(" 4. Metadata-Only Scan (No Transcripts)")
         print(" 5. Partial Scrape (Last N Days)")
         print(" 6. Heal Speakers from CSV (speaker_detected)")
+        print(" 7. Scrape Unscraped Channels Only (No Summary CSV)")
         print("="*50)
         
         action = input("\n👉 Enter Number: ").strip()
@@ -3724,6 +3771,82 @@ def main():
             csv_input = input(f"👉 Enter CSV path (default: {default_csv}): ").strip()
             csv_path = csv_input if csv_input else default_csv
             heal_speakers_from_csv(csv_path)
+            return
+
+        if action == '7':
+            print("\n--- SCRAPE UNSCRAPED CHANNELS ONLY ---")
+            print("This scrapes only channels that don't have a Summary CSV file yet.")
+            print("Useful for prioritizing new churches before doing a full re-scrape.\n")
+            
+            # Find unscraped channels (no Summary CSV)
+            unscraped_channels = {}
+            for name, config in channels.items():
+                # Normalize church name to match file naming convention
+                normalized_name = name.replace(' ', '_')
+                summary_path = os.path.join(DATA_DIR, f"{normalized_name}_Summary.csv")
+                if not os.path.exists(summary_path):
+                    unscraped_channels[name] = config
+            
+            if not unscraped_channels:
+                print("✅ All channels have been scraped! No unscraped channels found.")
+                return
+            
+            print(f"Found {len(unscraped_channels)} unscraped channel(s):")
+            for i, name in enumerate(unscraped_channels.keys(), 1):
+                print(f"  {i}. {name}")
+            print(f"  0. Scrape ALL unscraped channels")
+            
+            choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
+            
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            
+            if choice == '0':
+                print(f"\n🔄 Scraping ALL {len(unscraped_channels)} unscraped channels...\n")
+                for name, config in unscraped_channels.items():
+                    print(f"\n{'='*50}")
+                    print(f"SCRAPING: {name}")
+                    print(f"{'='*50}")
+                    channel_stats = process_channel(name, config, known_speakers)
+                    if channel_stats:
+                        all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                        all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                        all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                        all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                        if channel_stats.get('total_processed', 0) > 0:
+                            all_stats['by_church'][name] = {
+                                'total': channel_stats.get('total_processed', 0),
+                                'detected': channel_stats.get('speakers_detected', 0),
+                                'unknown': channel_stats.get('unknown_speakers', 0)
+                            }
+            else:
+                try:
+                    idx = int(choice) - 1
+                    channel_names = list(unscraped_channels.keys())
+                    if 0 <= idx < len(channel_names):
+                        name = channel_names[idx]
+                        print(f"\n🔄 Scraping {name}...\n")
+                        channel_stats = process_channel(name, unscraped_channels[name], known_speakers)
+                        if channel_stats:
+                            all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                            all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                            all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                            all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                            if channel_stats.get('total_processed', 0) > 0:
+                                all_stats['by_church'][name] = {
+                                    'total': channel_stats.get('total_processed', 0),
+                                    'detected': channel_stats.get('speakers_detected', 0),
+                                    'unknown': channel_stats.get('unknown_speakers', 0)
+                                }
+                    else:
+                        print("Invalid selection.")
+                        return
+                except ValueError:
+                    print("Invalid input.")
+                    return
+            
+            write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape")
+            print(f"\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
             return
 
         # --- CHANNEL SELECTION ---

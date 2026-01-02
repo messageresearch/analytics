@@ -221,39 +221,52 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4" onClick={onClose}>
-      <div ref={containerRef} className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl h-[85vh] flex flex-col" onClick={e=>e.stopPropagation()}>
-        <div className="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-2xl">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">{chart.church}</h2>
-            {chart.url && <div className="text-sm mt-1"><a href={chart.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline">{chart.url}</a></div>}
-            {searchTerm ? <div className="text-sm text-blue-600">Search: <span className="font-semibold text-blue-800">{searchTerm}</span></div> : null}
-            <div className="text-sm text-gray-500">Min: {computed.min} • Max: {computed.max}{!showRaw && ` • Trend: ${trendWindow === 4 ? '1 Mo' : trendWindow === 12 ? '3 Mo' : '6 Mo'}`}</div>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-2 sm:p-4" onClick={onClose}>
+      <div ref={containerRef} className="bg-white rounded-2xl shadow-2xl w-full max-w-6xl h-[95vh] sm:h-[85vh] flex flex-col overflow-hidden" onClick={e=>e.stopPropagation()}>
+        {/* Mobile close button - fixed at top */}
+        <button onClick={onClose} className="sm:hidden absolute top-4 right-4 z-50 p-3 bg-gray-800/80 hover:bg-gray-900 text-white rounded-full shadow-lg transition" aria-label="Close">
+          <Icon name="x" size={24} />
+        </button>
+        
+        <div className="p-4 sm:p-6 border-b bg-gray-50 rounded-t-2xl flex-shrink-0 overflow-x-auto">
+          {/* Header row with title and close button */}
+          <div className="flex justify-between items-start gap-4 mb-3 sm:mb-0">
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg sm:text-2xl font-bold text-gray-900 truncate pr-12 sm:pr-0">{chart.church}</h2>
+              {chart.url && <div className="text-xs sm:text-sm mt-1 truncate"><a href={chart.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline">{chart.url}</a></div>}
+              {searchTerm ? <div className="text-xs sm:text-sm text-blue-600">Search: <span className="font-semibold text-blue-800">{searchTerm}</span></div> : null}
+              <div className="text-xs sm:text-sm text-gray-500">Min: {computed.min} • Max: {computed.max}{!showRaw && ` • Trend: ${trendWindow === 4 ? '1 Mo' : trendWindow === 12 ? '3 Mo' : '6 Mo'}`}</div>
+            </div>
+            {/* Desktop close button */}
+            <button onClick={onClose} className="hidden sm:flex p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition flex-shrink-0"><Icon name="x" /></button>
           </div>
-            <div className="flex items-center gap-3">
+          
+          {/* Controls row - scrollable on mobile */}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-3 sm:mt-4">
             {!showRaw && (
               <>
-                <label className="text-xs text-gray-600" title="Rolling average window for trend line smoothing">Trend Window</label>
+                <label className="text-xs text-gray-600 hidden sm:inline" title="Rolling average window for trend line smoothing">Trend</label>
                 <div className="flex bg-gray-100 rounded-lg p-1" title="Shorter = more responsive, Longer = smoother trend">
-                  {[{v:4,l:'1 Mo',t:'1-month rolling average'},{v:12,l:'3 Mo',t:'3-month rolling average'},{v:26,l:'6 Mo',t:'6-month rolling average'}].map(({v,l,t})=> 
+                  {[{v:4,l:'1Mo',t:'1-month rolling average'},{v:12,l:'3Mo',t:'3-month rolling average'},{v:26,l:'6Mo',t:'6-month rolling average'}].map(({v,l,t})=> 
                     <button key={v} onClick={()=>setTrendWindow(v)} title={t} className={`px-2 py-1 text-xs font-medium rounded ${trendWindow===v ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
                   )}
                 </div>
               </>
             )}
-            <label className="text-xs text-gray-600">Type</label>
-            <select value={chartType} onChange={(e)=>setChartType(e.target.value)} className="text-sm border rounded px-2 py-1">
+            <label className="text-xs text-gray-600 hidden sm:inline">Type</label>
+            <select value={chartType} onChange={(e)=>setChartType(e.target.value)} className="text-xs sm:text-sm border rounded px-2 py-1">
               <option value="bar">Bar</option>
-              <option value="area">Area+Line</option>
+              <option value="area">Area</option>
             </select>
-              <label className="text-xs text-gray-600">View</label>
-              <select value={showRaw? 'raw' : 'agg'} onChange={(e)=>setShowRaw(e.target.value === 'raw')} className="text-sm border rounded px-2 py-1" title="Weekly Totals shows aggregated data with trends; Individual Sermons shows each sermon as a point">
-                <option value="agg">Weekly Totals</option>
-                <option value="raw">Individual Sermons</option>
-              </select>
-            <button onClick={exportPNG} className="text-sm bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded">Export PNG</button>
-            <button onClick={exportCSV} className="text-sm bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded">Export CSV</button>
-            <button onClick={onClose} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full transition"><Icon name="x" /></button>
+            <label className="text-xs text-gray-600 hidden sm:inline">View</label>
+            <select value={showRaw? 'raw' : 'agg'} onChange={(e)=>setShowRaw(e.target.value === 'raw')} className="text-xs sm:text-sm border rounded px-2 py-1" title="Weekly Totals shows aggregated data with trends; Individual Sermons shows each sermon as a point">
+              <option value="agg">Weekly</option>
+              <option value="raw">Sermons</option>
+            </select>
+            <div className="flex gap-1 sm:gap-2 ml-auto">
+              <button onClick={exportPNG} className="text-xs sm:text-sm bg-gray-100 hover:bg-gray-200 px-2 sm:px-3 py-1 sm:py-2 rounded" title="Export as PNG"><span className="hidden sm:inline">Export </span>PNG</button>
+              <button onClick={exportCSV} className="text-xs sm:text-sm bg-gray-100 hover:bg-gray-200 px-2 sm:px-3 py-1 sm:py-2 rounded" title="Export as CSV"><span className="hidden sm:inline">Export </span>CSV</button>
+            </div>
           </div>
         </div>
         <div className="flex-1 p-6 relative">
@@ -349,10 +362,10 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
           {pinnedBucket && !showRaw && (
             <div 
               ref={pinnedRef}
-              className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 w-96 max-h-[500px] flex flex-col z-50"
+              className="fixed sm:absolute inset-x-2 sm:inset-x-auto bottom-2 sm:bottom-auto bg-white rounded-xl shadow-2xl border border-gray-200 sm:w-96 max-h-[60vh] sm:max-h-[500px] flex flex-col z-50"
               style={{ 
-                left: Math.min(pinnedPosition.x, window.innerWidth - 450), 
-                top: Math.max(20, Math.min(pinnedPosition.y - 50, window.innerHeight - 550))
+                left: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.min(pinnedPosition.x, window.innerWidth - 450) : undefined, 
+                top: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.max(20, Math.min(pinnedPosition.y - 50, window.innerHeight - 550)) : undefined
               }}
             >
               <div className="p-4 border-b border-gray-100">
@@ -409,10 +422,10 @@ export default function ChartModal({ chart, onClose, domain, formatDate, onSelec
           {pinnedSermon && showRaw && (
             <div 
               ref={pinnedRef}
-              className="absolute bg-white rounded-xl shadow-2xl border border-gray-200 w-80 z-50"
+              className="fixed sm:absolute inset-x-2 sm:inset-x-auto bottom-2 sm:bottom-auto bg-white rounded-xl shadow-2xl border border-gray-200 sm:w-80 z-50"
               style={{ 
-                left: Math.min(pinnedPosition.x, window.innerWidth - 400), 
-                top: Math.max(20, Math.min(pinnedPosition.y - 50, window.innerHeight - 400))
+                left: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.min(pinnedPosition.x, window.innerWidth - 400) : undefined, 
+                top: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.max(20, Math.min(pinnedPosition.y - 50, window.innerHeight - 400)) : undefined
               }}
             >
               <div className="p-4">
