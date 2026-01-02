@@ -11,6 +11,7 @@ export default function Icon({ name, size = 18, className = '' }){
     users: <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />,
     chevronDown: <path d="m6 9 6 6 6-6" />,
     info: <path d="M12 16v-4m0-4h.01M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z" />,
+    warning: <path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />,
     lineChart: <path d="M3 3v18h18" />,
     eye: <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />,
     alignLeft: <path d="M21 6H3m18 6H3m18 6H3" />,

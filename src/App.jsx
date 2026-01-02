@@ -694,6 +694,24 @@ export default function App(){
         </div>
         <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and does not represent all sermons preached during this timeframe.</div>
 
+        {/* How It Works Overview */}
+        <div className="bg-blue-50 border-b border-blue-100">
+          <div className="max-w-7xl mx-auto px-4 py-3">
+            <details className="text-sm">
+              <summary className="cursor-pointer font-semibold text-blue-800 hover:text-blue-600 flex items-center gap-2">
+                <Icon name="info" size={16} />
+                <span>How does this site work? (Click to expand)</span>
+              </summary>
+              <div className="mt-3 text-blue-900 space-y-2 text-xs leading-relaxed">
+                <p><strong>📺 Data Source:</strong> This site aggregates sermon transcripts from <strong>church YouTube channels</strong> — not individual speakers. We monitor specific church channels and download their video transcripts when available.</p>
+                <p><strong>🔍 What we track:</strong> We analyze how often "Brother Branham" (and variations) are mentioned in each sermon, helping you discover which churches actively reference his ministry.</p>
+                <p><strong>⚠️ Speaker Data Limitations:</strong> Speaker names are extracted from video titles/descriptions using automated detection. This data may be <strong>incomplete or inaccurate</strong> — many videos don't include speaker information, and our algorithm can't always detect it reliably.</p>
+                <p><strong>📊 Charts by Church:</strong> Each chart below represents a <strong>church channel</strong>, not a speaker. The data shows sermon activity and mention frequency over time for that church.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
         <main className="max-w-7xl mx-auto px-4 mt-8">
           <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
             <div className="flex justify-between items-center mb-4">
@@ -705,7 +723,13 @@ export default function App(){
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
               <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
-              <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+              <div>
+                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+                <div className="text-xs text-amber-600 mt-1 flex items-center gap-1" title="Speaker names are extracted from video titles/descriptions and may be incomplete or inaccurate">
+                  <Icon name="warning" size={12} />
+                  <span>Data may be incomplete</span>
+                </div>
+              </div>
               <div className="md:col-span-2 lg:col-span-3">
                 <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
               </div>
