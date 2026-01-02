@@ -360,6 +360,13 @@ def main():
         shutil.rmtree(docs_api)
     shutil.copytree(OUTPUT_DIR, docs_api)
     print(f"   ✅ Copied {OUTPUT_DIR}/ → {docs_api}/")
+    
+    # Copy channels.json to docs/site_api/ for faster loading (avoids 404 fallback)
+    channels_src = "channels.json"
+    channels_dst = os.path.join(docs_api, "channels.json")
+    if os.path.exists(channels_src):
+        shutil.copy2(channels_src, channels_dst)
+        print(f"   ✅ Copied {channels_src} → {channels_dst}")
 
     print("\n✅ GENERATION COMPLETE")
 
