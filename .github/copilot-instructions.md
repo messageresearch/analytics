@@ -11,7 +11,18 @@
 This is a production website. Untested commits have caused outages. Always:
 1. Test changes thoroughly in the dev server (`npm run dev`)
 2. Ask the user to verify the changes work
-3. Only then, ASK FOR PERMISSION before committing/deploying
+3. **Run `npm run build`** to compile frontend changes into `docs/`
+4. Only then, ASK FOR PERMISSION before committing/deploying
+
+### Deployment Checklist
+Before pushing any changes that include frontend (`src/`) modifications:
+- [ ] `npm run dev` - Test in dev server
+- [ ] User confirms changes work
+- [ ] `npm run build` - Build production bundle to `docs/`
+- [ ] `git add -A && git commit` - Stage and commit all changes
+- [ ] `git push` - Push to GitHub
+
+**Note:** The `docs/` folder is served by GitHub Pages. If you only commit `src/` changes without running `npm run build`, the live site will NOT update!
 
 ## Project Overview
 
