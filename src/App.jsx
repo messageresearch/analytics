@@ -228,38 +228,29 @@ export default function App(){
         const map = {}
         const churchNames = channels.map(c=>c.name).filter(Boolean)
         
-        // Determine base path for data files (apiPrefix points to site_api/, data is sibling)
-        const dataBase = apiPrefix ? apiPrefix.replace(/site_api\/?$/, '') + 'data/' : 'data/'
+        // Determine base path for data files - use production path directly
+        const dataBase = '/wmbmentions.github.io/data/'
         
-        // Fetch all summaries in parallel for speed - try multiple paths per church
+        // Fetch all summaries in parallel for speed - single path per church
         const fetchPromises = churchNames.map(async (name) => {
           const base = ('' + name).trim()
           const normalized = base.replace(/\s+/g,'_')
+          const tryPath = `${dataBase}${normalized}_Summary.csv`
           
-          // Try multiple paths: production path, then relative path
-          const paths = [
-            `${dataBase}${normalized}_Summary.csv`,
-            `/wmbmentions.github.io/data/${normalized}_Summary.csv`,
-            `data/${normalized}_Summary.csv`
-          ]
-          
-          for (const tryPath of paths) {
-            try {
-              const r = await fetch(tryPath)
-              if (!r.ok) continue
-              
-              const txt = await r.text()
-              const tl = (txt||'').trim()
-              // Reject HTML responses (SPA fallback) or non-CSV content
-              if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
-                continue
-              }
-              return { name, base, normalized, txt }
-            } catch(e) {
-              continue
+          try {
+            const r = await fetch(tryPath)
+            if (!r.ok) return { name, base, normalized, txt: null } // Not scraped yet
+            
+            const txt = await r.text()
+            const tl = (txt||'').trim()
+            // Reject HTML responses (SPA fallback) or non-CSV content
+            if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
+              return { name, base, normalized, txt: null }
             }
+            return { name, base, normalized, txt }
+          } catch(e) {
+            return { name, base, normalized, txt: null }
           }
-          return { name, base, normalized, txt: null } // Not found at any path
         })
         
         const results = await Promise.all(fetchPromises)
