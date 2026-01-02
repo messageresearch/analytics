@@ -5,7 +5,7 @@ import {
 } from 'recharts'
 import JSZip from 'jszip'
 import resampleData from './utils/resample'
-import { getCachedChunks, cacheChunks, getCacheStats } from './utils/chunkCache'
+import { getCachedChunks, cacheChunks, getCacheStats, isCacheValid, setCacheVersion, clearCache } from './utils/chunkCache'
 import Icon from './components/Icon'
 import staticChannels from '../channels.json'
 import MultiSelect from './components/MultiSelect'
@@ -152,7 +152,16 @@ export default function App(){
         }
         if (!res || !res.ok) throw new Error('Metadata not found.')
         const json = await res.json()
-        setDataDate(json.generated || 'Unknown')
+        const dataVersion = json.generated || 'Unknown'
+        setDataDate(dataVersion)
+        
+        // Auto-invalidate cache if data version changed
+        const cacheValid = await isCacheValid(dataVersion)
+        if (!cacheValid) {
+          console.log('Data version changed, clearing chunk cache...')
+          await clearCache()
+          await setCacheVersion(dataVersion)
+        }
         try{
           // If build-time static import exists, populate channels immediately so Data tab isn't empty during dev
           if(staticChannels && (!channels || channels.length === 0)){
@@ -312,7 +321,14 @@ export default function App(){
 
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
-  const enrichedData = useMemo(()=>{ if(!customCounts) return rawData; return rawData.map(s=>{ const newCount = customCounts.get(s.id) || 0; return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } }) }, [rawData, customCounts, activeRegex])
+  // Optimize: only create new objects for items that have custom counts (reduces memory pressure on mobile)
+  const enrichedData = useMemo(()=>{ 
+    if(!customCounts || customCounts.size === 0) return rawData
+    return rawData.map(s => { 
+      const newCount = customCounts.get(s.id) || 0
+      return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } 
+    }) 
+  }, [rawData, customCounts, activeRegex])
   const filteredData = useMemo(()=> enrichedData.filter(s => selChurches.includes(s.church) && selSpeakers.includes(s.speaker) && selTitles.includes(s.title) && selYears.includes(s.year) && selTypes.includes(s.type) && selLangs.includes(s.language)), [enrichedData, selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs])
 
   const totalsMemo = useMemo(()=>{
@@ -351,6 +367,12 @@ export default function App(){
 
   const dateDomain = useMemo(()=>{ if(selYears.length===0) return ['auto','auto']; const validYears = selYears.map(y=>parseInt(y)).filter(y=>!isNaN(y)); if(validYears.length===0) return ['auto','auto']; const minYear = Math.min(...validYears); const maxYear = Math.max(...validYears); return [new Date(minYear,0,1).getTime(), new Date(maxYear,11,31).getTime()] }, [selYears])
 
+  // Detect mobile for memory-conscious processing
+  const isMobile = useMemo(() => {
+    if (typeof window === 'undefined') return false
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768
+  }, [])
+
   const handleAnalysis = async (term, variations, rawRegex = null, options = {}) => {
     // Allow analysis when either a term is provided or a raw regex is provided
     if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
@@ -359,16 +381,17 @@ export default function App(){
     setAnalysisProgress('Starting...')
     setMatchedTerms([]) // Clear previous matched terms
     // Run the main-thread scanner directly
-    await scanOnMainThread(term, variations, rawRegex, options)
+    await scanOnMainThread(term, variations, rawRegex, { ...options, isMobile })
   }
 
   // Scan chunks on the main thread with IndexedDB caching
   const scanOnMainThread = async (term, variations, rawRegex = null, options = {}) => {
-    const { wholeWords = true } = options
+    const { wholeWords = true, isMobile = false } = options
     try{
-      const BATCH = 50 // Smaller batches for better progress updates
+      const BATCH = 50
       let regex
-      const termCounts = Object.create(null) // Track individual term matches
+      // Skip detailed term counting on mobile to save memory
+      const termCounts = isMobile ? null : Object.create(null)
       if(rawRegex && (''+rawRegex).trim()){
         try{ regex = new RegExp(rawRegex, 'gi') }catch(e){ setAnalysisProgress('Invalid regex'); setIsAnalyzing(false); return }
       } else {
@@ -386,42 +409,51 @@ export default function App(){
       const total = totalChunks || 0
       if(!total || total === 0){ setAnalysisProgress('No chunks to scan'); setIsAnalyzing(false); return }
       
-      // Check IndexedDB cache first
-      setAnalysisProgress('Checking cache...')
-      const allIndices = Array.from({ length: total }, (_, i) => i)
-      const cachedData = await getCachedChunks(allIndices)
+      // Check IndexedDB cache first (skip on mobile for speed)
+      let cachedData = new Map()
+      let uncachedIndices = Array.from({ length: total }, (_, i) => i)
+      
+      if (!isMobile) {
+        setAnalysisProgress('Checking cache...')
+        const allIndices = Array.from({ length: total }, (_, i) => i)
+        cachedData = await getCachedChunks(allIndices)
+        uncachedIndices = allIndices.filter(i => !cachedData.has(i))
+        setAnalysisProgress(`Found ${cachedData.size}/${total} chunks cached`)
+        await new Promise(r => setTimeout(r, 50))
+      }
+      
       const cachedCount = cachedData.size
-      const uncachedIndices = allIndices.filter(i => !cachedData.has(i))
-      
-      setAnalysisProgress(`Found ${cachedCount}/${total} chunks cached`)
-      await new Promise(r => setTimeout(r, 100)) // Brief pause to show cache status
-      
       let processedChunks = 0
       
-      // Process cached chunks first (fast!)
-      for (const [idx, chunk] of cachedData.entries()) {
-        for(const item of chunk){
-          try{
-            const matchList = item.text ? item.text.match(regex) : null
-            if(matchList && matchList.length > 0){
-              counts[item.id] = (counts[item.id]||0) + matchList.length
-              for(const m of matchList){
-                const key = m.toLowerCase()
-                termCounts[key] = (termCounts[key] || 0) + 1
+      // Process cached chunks first (desktop only)
+      if (cachedData.size > 0) {
+        for (const [idx, chunk] of cachedData.entries()) {
+          for(const item of chunk){
+            try{
+              const matchList = item.text ? item.text.match(regex) : null
+              if(matchList && matchList.length > 0){
+                counts[item.id] = (counts[item.id]||0) + matchList.length
+                if (termCounts) {
+                  for(const m of matchList){
+                    const key = m.toLowerCase()
+                    termCounts[key] = (termCounts[key] || 0) + 1
+                  }
+                }
               }
-            }
-          }catch(e){}
-        }
-        processedChunks++
-        if (processedChunks % 20 === 0) {
-          setAnalysisProgress(`Searching cached: ${Math.round((processedChunks/total)*100)}%`)
+            }catch(e){}
+          }
+          processedChunks++
+          if (processedChunks % 20 === 0) {
+            setAnalysisProgress(`Searching cached: ${Math.round((processedChunks/total)*100)}%`)
+          }
         }
       }
       
       // Fetch and process uncached chunks
       if (uncachedIndices.length > 0) {
-        setAnalysisProgress(`Downloading ${uncachedIndices.length} uncached chunks...`)
-        const newlyCached = new Map()
+        setAnalysisProgress(`Downloading ${uncachedIndices.length} chunks...`)
+        // Skip caching on mobile to reduce memory pressure
+        const newlyCached = isMobile ? null : new Map()
         
         for(let i=0; i<uncachedIndices.length; i+=BATCH){
           const batchIndices = uncachedIndices.slice(i, i+BATCH)
@@ -434,8 +466,8 @@ export default function App(){
           const results = await Promise.all(promises)
           
           for(const { idx, data } of results){
-            // Cache this chunk for next time
-            if (data.length > 0) {
+            // Cache this chunk for next time (desktop only)
+            if (newlyCached && data.length > 0) {
               newlyCached.set(idx, data)
             }
             for(const item of data){
@@ -443,35 +475,59 @@ export default function App(){
                 const matchList = item.text ? item.text.match(regex) : null
                 if(matchList && matchList.length > 0){
                   counts[item.id] = (counts[item.id]||0) + matchList.length
-                  for(const m of matchList){
-                    const key = m.toLowerCase()
-                    termCounts[key] = (termCounts[key] || 0) + 1
+                  if (termCounts) {
+                    for(const m of matchList){
+                      const key = m.toLowerCase()
+                      termCounts[key] = (termCounts[key] || 0) + 1
+                    }
                   }
                 }
               }catch(e){}
             }
             processedChunks++
           }
-          setAnalysisProgress(`Scanning ${Math.round((processedChunks/total)*100)}% (${processedChunks}/${total})`)
-          await new Promise(r => setTimeout(r, 10))
+          setAnalysisProgress(`Scanning ${Math.round((processedChunks/total)*100)}%`)
+          await new Promise(r => setTimeout(r, 5))
         }
         
-        // Cache newly fetched chunks in background
-        if (newlyCached.size > 0) {
-          cacheChunks(newlyCached).then(() => {
-            console.log(`Cached ${newlyCached.size} chunks for faster future searches`)
-          })
+        // Cache newly fetched chunks in background (desktop only)
+        if (newlyCached && newlyCached.size > 0) {
+          setTimeout(() => {
+            cacheChunks(newlyCached).then(() => {
+              console.log(`Cached ${newlyCached.size} chunks for faster future searches`)
+            }).catch(e => console.warn('Cache failed:', e))
+          }, 500)
         }
       }
       
-      const entries = Object.entries(counts)
-      const map = new Map(entries.map(([id,c])=>[id, c]))
+      // Finalize results
+      setAnalysisProgress('Finalizing...')
+      
+      // Build Map directly from counts object
+      const map = new Map()
+      for (const id in counts) {
+        if (Object.hasOwn(counts, id)) {
+          map.set(id, counts[id])
+        }
+      }
+      
       setCustomCounts(map)
       setActiveTerm(term)
       setActiveRegex(rawRegex && rawRegex.trim() ? rawRegex : regex.source)
-      const sortedTerms = Object.entries(termCounts)
-        .map(([t, c]) => ({ term: t, count: c }))
-        .sort((a, b) => b.count - a.count)
+      
+      // Process term counts (desktop only)
+      let sortedTerms = []
+      if (termCounts) {
+        const termEntries = []
+        for (const t in termCounts) {
+          if (Object.hasOwn(termCounts, t)) {
+            termEntries.push({ term: t, count: termCounts[t] })
+          }
+        }
+        termEntries.sort((a, b) => b.count - a.count)
+        sortedTerms = termEntries.slice(0, 50)
+      }
+      
       setMatchedTerms(sortedTerms)
       setIsAnalyzing(false)
       setAnalysisProgress(cachedCount === total ? 'Complete (from cache ⚡)' : 'Complete')
