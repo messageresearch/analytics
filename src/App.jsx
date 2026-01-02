@@ -15,7 +15,6 @@ import SermonModal from './components/SermonModal'
 import ChartModal from './components/ChartModal'
 import HeatmapDetails from './components/HeatmapDetails'
 import ChannelChart from './components/ChannelChart'
-import LazyChannelChart from './components/LazyChannelChart'
 // Channel preview modal removed — channel links open directly in a new tab
 import useDebouncedCallback from './hooks/useDebouncedCallback'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR, DEFAULT_VARIATIONS, WORDS_PER_MINUTE, CHART_POINT_THRESHOLD, getColor } from './constants_local'
@@ -61,7 +60,6 @@ export default function App(){
   const [totalChunks, setTotalChunks] = useState(0)
   const [dataDate, setDataDate] = useState(null)
   const [channels, setChannels] = useState([])
-  const channelsLoadedRef = useRef(false) // Prevent redundant setChannels calls
 
   // GLOBAL
   const [activeTerm, setActiveTerm] = useState(DEFAULT_TERM)
@@ -127,121 +125,40 @@ export default function App(){
     }
   }, [customCounts])
 
-  // Sermon details cache for on-demand loading of path/videoUrl
-  const sermonDetailsRef = useRef(null)
-  const sermonDetailsCacheRef = useRef(new Map())
-  const sermonDetailsLoadedRef = useRef(false)
-  
-  // Helper to get sermon details (path, videoUrl, full id) on demand
-  const getSermonDetails = useCallback(async (sermon) => {
-    // If sermon already has path/videoUrl (full metadata was loaded), return it
-    if (sermon.path && sermon.videoUrl !== null) {
-      return { path: sermon.path, videoUrl: sermon.videoUrl, id: sermon.id }
-    }
-    
-    // Check cache first
-    const cacheKey = sermon.id
-    if (sermonDetailsCacheRef.current.has(cacheKey)) {
-      return sermonDetailsCacheRef.current.get(cacheKey)
-    }
-    
-    // Load full details file if not yet loaded
-    if (!sermonDetailsLoadedRef.current && sermonDetailsRef.current) {
-      try {
-        const res = await fetch(sermonDetailsRef.current)
-        if (res.ok) {
-          const allDetails = await res.json()
-          // Populate cache
-          for (const [idx, details] of Object.entries(allDetails)) {
-            sermonDetailsCacheRef.current.set(parseInt(idx), details)
-          }
-          sermonDetailsLoadedRef.current = true
-        }
-      } catch (e) {
-        console.warn('Failed to load sermon details', e)
-      }
-    }
-    
-    // Return from cache (numeric id from slim format)
-    const details = sermonDetailsCacheRef.current.get(cacheKey)
-    return details || { path: null, videoUrl: '', id: sermon.id }
-  }, [])
-
   useEffect(()=>{
     const init = async ()=>{
       try{
-        // Try slim metadata first (much smaller ~2MB vs ~14MB)
-        const slimPaths = [
-          'site_api/metadata_slim.json',
-          '/wmbmentions.github.io/site_api/metadata_slim.json',
-          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata_slim.json'
-        ]
-        const fullPaths = [
+        // Try multiple paths for metadata.json with fallback to raw.githubusercontent
+        const metaPaths = [
           'site_api/metadata.json',
           '/wmbmentions.github.io/site_api/metadata.json',
-          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json'
+          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json',
+          'metadata.json'
         ]
-        
         let res = null
         let prefix = 'site_api/'
-        let isSlim = false
-        
-        // Try slim metadata first
-        for (const path of slimPaths) {
+        for (const path of metaPaths) {
           try {
             res = await fetch(path)
             if (res.ok) {
-              isSlim = true
-              if (path.includes('raw.githubusercontent')) {
-                prefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/'
-              } else if (path.includes('/wmbmentions.github.io/')) {
-                prefix = new URL('/wmbmentions.github.io/site_api/', window.location.origin).href
-              } else {
-                prefix = new URL('site_api/', window.location.href).href
-              }
+              prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/site_api/' : 'site_api/')
               break
             }
           } catch (e) {}
         }
-        
-        // Fallback to full metadata if slim not found
-        if (!res || !res.ok) {
-          for (const path of fullPaths) {
-            try {
-              res = await fetch(path)
-              if (res.ok) {
-                if (path.includes('raw.githubusercontent')) {
-                  prefix = 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/'
-                } else if (path.includes('/wmbmentions.github.io/')) {
-                  prefix = new URL('/wmbmentions.github.io/site_api/', window.location.origin).href
-                } else {
-                  prefix = new URL('site_api/', window.location.href).href
-                }
-                break
-              }
-            } catch (e) {}
-          }
-        }
-        
         if (!res || !res.ok) throw new Error('Metadata not found.')
         const json = await res.json()
         setDataDate(json.generated || 'Unknown')
-        
-        // Store details URL prefix for on-demand loading
-        sermonDetailsRef.current = prefix + 'sermon_details.json'
-        
         try{
           // If build-time static import exists, populate channels immediately so Data tab isn't empty during dev
-          // Skip if channels already loaded to prevent redundant setChannels triggering duplicate builds
-          if(staticChannels && !channelsLoadedRef.current && (!channels || channels.length === 0)){
+          if(staticChannels && (!channels || channels.length === 0)){
             try{
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
                 cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
               }
-              // Don't set channels here - wait for fetch to complete to avoid double build
-              // if(cList.length>0) setChannels(cList)
+              if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed early', e) }
           }
           // Try a few paths so channels.json is found whether it's in site_api/ or at repo root
@@ -270,63 +187,24 @@ export default function App(){
             else if(cData && typeof cData === 'object'){
               cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
             }
-            if(cList.length > 0) {
-              channelsLoadedRef.current = true
-              setChannels(cList)
-            }
+            if(cList.length > 0) setChannels(cList)
           } else {
             console.warn('channels.json not found at tried paths')
           }
           // If no channels loaded via fetch, fall back to static import (build-time)
-          if(!channelsLoadedRef.current && (!cData || (Array.isArray(cData) && cData.length===0) || (cData && typeof cData === 'object' && Object.keys(cData).length===0)) && staticChannels){
+          if((!cData || (Array.isArray(cData) && cData.length===0) || (cData && typeof cData === 'object' && Object.keys(cData).length===0)) && staticChannels){
             try{
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
                 cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
               }
-              if(cList.length>0) {
-                channelsLoadedRef.current = true
-                setChannels(cList)
-              }
+              if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed', e) }
           }
         }catch(e){ console.warn('Using default channels', e) }
         const currentTimestamp = new Date().getTime()
-        
-        // Handle both slim (short keys) and full metadata formats
-        const list = (json.sermons || []).filter(s => {
-          const ts = s.timestamp || s.ts || 0
-          return ts <= currentTimestamp
-        }).map(s => {
-          // Normalize slim format (short keys) to full format
-          const sermon = s.i !== undefined ? {
-            id: s.i,  // numeric index for slim format
-            church: s.c,
-            date: s.d,
-            year: s.y,
-            timestamp: s.ts,
-            title: s.t,
-            speaker: s.s,
-            type: s.tp,
-            language: s.l,
-            mentionCount: s.m,
-            jesusCount: s.j,
-            wordCount: s.w,
-            hasTranscript: s.h === 1,
-            path: null,  // loaded on-demand
-            videoUrl: null  // loaded on-demand
-          } : s
-          
-          const wordCount = sermon.wordCount || 0
-          const durationHrs = (wordCount / WORDS_PER_MINUTE) / 60
-          return {
-            ...sermon,
-            durationHrs: durationHrs > 0 ? durationHrs : 0.5,
-            mentionsPerHour: durationHrs > 0 ? parseFloat((sermon.mentionCount / durationHrs).toFixed(1)) : 0
-          }
-        })
-        
+        const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
         setSelChurches([...new Set(list.map(s=>s.church))]);
         setSelSpeakers([...new Set(list.map(s=>s.speaker))].filter(Boolean));
@@ -341,37 +219,87 @@ export default function App(){
     init()
   },[])
 
-  // Build per-channel transcript availability map using pre-computed transcript_counts.json
-  // This eliminates fetching 37 individual CSV files on every page load
+  // Build per-channel transcript availability map using available_churches.json manifest
+  // This eliminates 404 errors for unscraped churches
   useEffect(()=>{
     const build = async () => {
       try{
+        const map = {}
+        const dataBase = '/wmbmentions.github.io/data/'
         const apiBase = '/wmbmentions.github.io/site_api/'
         
-        // Try to load pre-computed transcript counts (generated by generate_site_data.py)
-        const countsPaths = [
-          `${apiBase}transcript_counts.json`,
-          'site_api/transcript_counts.json',
-          'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/transcript_counts.json'
-        ]
-        
-        for (const path of countsPaths) {
-          try {
-            const res = await fetch(path)
-            if (res.ok) {
-              const map = await res.json()
-              console.debug('Transcript summary counts loaded from pre-computed file, keys:', Object.keys(map).length)
-              setTranscriptSummaryCounts(map)
-              return
-            }
-          } catch(e) {}
+        // First, fetch the manifest of available churches (generated by generate_site_data.py)
+        let availableChurches = []
+        try {
+          const manifestRes = await fetch(`${apiBase}available_churches.json`)
+          if (manifestRes.ok) {
+            availableChurches = await manifestRes.json()
+          }
+        } catch(e) {
+          console.debug('Could not load available_churches.json manifest, falling back to channels list')
         }
         
-        console.warn('Pre-computed transcript_counts.json not found, transcript counts will be unavailable')
-      }catch(e){ console.warn('Failed to load transcript summary counts', e) }
+        // If manifest not available, fall back to channels list (will cause 404s for unscraped)
+        const churchesToFetch = availableChurches.length > 0 
+          ? availableChurches.map(c => ({ name: c.display, normalized: c.normalized }))
+          : (channels || []).map(c => ({ name: c.name, normalized: (c.name || '').replace(/\s+/g, '_') }))
+        
+        if (churchesToFetch.length === 0) return
+        
+        // Fetch all summaries in parallel for speed
+        const fetchPromises = churchesToFetch.map(async ({ name, normalized }) => {
+          const tryPath = `${dataBase}${normalized}_Summary.csv`
+          
+          try {
+            const r = await fetch(tryPath)
+            if (!r.ok) return { name, normalized, txt: null }
+            
+            const txt = await r.text()
+            const tl = (txt||'').trim()
+            // Reject HTML responses (SPA fallback) or non-CSV content
+            if(tl.startsWith('<') || !tl.includes('date,') || tl.length < 100){
+              return { name, normalized, txt: null }
+            }
+            return { name, normalized, txt }
+          } catch(e) {
+            return { name, normalized, txt: null }
+          }
+        })
+        
+        const results = await Promise.all(fetchPromises)
+        
+        // Process results
+        for (const { name, normalized, txt } of results) {
+          if (!txt) continue
+          
+          const lines = txt.split(/\r?\n/).filter(Boolean)
+          if(lines.length <= 1) {
+            const counts = { total: 0, withTranscript: 0, withoutTranscript: 0 }
+            map[name] = counts
+            map[normalized] = counts
+            continue
+          }
+          
+          const header = lines[0].split(',').map(h=>h.trim())
+          const statusIdx = header.findIndex(h => /status/i.test(h))
+          let withT = 0
+          for(let i=1;i<lines.length;i++) {
+            const cols = lines[i].split(',')
+            const status = (cols[statusIdx] || '').trim()
+            if(/success/i.test(status)) withT++
+          }
+          const total = Math.max(0, lines.length-1)
+          const counts = { total, withTranscript: withT, withoutTranscript: total - withT }
+          map[name] = counts
+          map[normalized] = counts
+        }
+        
+        console.debug('Transcript summary counts map built, keys:', Object.keys(map).length)
+        setTranscriptSummaryCounts(map)
+      }catch(e){ console.warn('Failed to build transcript summary counts', e) }
     }
     build()
-  }, [])
+  }, [channels])
 
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
 
@@ -408,60 +336,11 @@ export default function App(){
       if(total > 0) return { total, with: withT, without }
     }
     const total = rawData.length
-    const withT = rawData.filter(s=>s && (s.path || s.hasTranscript)).length
+    const withT = rawData.filter(s=>s && s.path).length
     return { total, with: withT, without: Math.max(0, total - withT) }
   }, [transcriptSummaryCounts, rawData])
 
   const dateDomain = useMemo(()=>{ if(selYears.length===0) return ['auto','auto']; const validYears = selYears.map(y=>parseInt(y)).filter(y=>!isNaN(y)); if(validYears.length===0) return ['auto','auto']; const minYear = Math.min(...validYears); const maxYear = Math.max(...validYears); return [new Date(minYear,0,1).getTime(), new Date(maxYear,11,31).getTime()] }, [selYears])
-
-  // Web Worker for search - runs in background thread
-  const searchWorkerRef = useRef(null)
-  const [cacheStatus, setCacheStatus] = useState({ cached: 0, total: 0 })
-  
-  // Initialize search worker
-  useEffect(() => {
-    try {
-      searchWorkerRef.current = new Worker(new URL('./workers/searchWorker.js', import.meta.url), { type: 'module' })
-      
-      searchWorkerRef.current.onmessage = (event) => {
-        const { type, ...data } = event.data
-        
-        if (type === 'progress') {
-          setAnalysisProgress(data.message)
-          if (data.cached !== undefined) {
-            setCacheStatus({ cached: data.cached, total: data.total })
-          }
-        } else if (type === 'complete') {
-          const map = new Map(data.counts.map(([id, c]) => [id, c]))
-          setCustomCounts(map)
-          setActiveTerm(lastAnalysisRef.current?.term || '')
-          setActiveRegex(data.regexSource)
-          setMatchedTerms(data.matchedTerms)
-          setIsAnalyzing(false)
-          setAnalysisProgress('Complete')
-        } else if (type === 'error') {
-          setAnalysisProgress('Error: ' + data.message)
-          setIsAnalyzing(false)
-        } else if (type === 'cached') {
-          console.log(`Cached ${data.count} new chunks for faster future searches`)
-        }
-      }
-      
-      searchWorkerRef.current.onerror = (e) => {
-        console.error('Search worker error:', e)
-        setIsAnalyzing(false)
-        setAnalysisProgress('Worker error - falling back')
-      }
-    } catch (e) {
-      console.warn('Web Worker not supported, will use main thread fallback')
-    }
-    
-    return () => {
-      if (searchWorkerRef.current) {
-        searchWorkerRef.current.terminate()
-      }
-    }
-  }, [])
 
   const handleAnalysis = async (term, variations, rawRegex = null, options = {}) => {
     // Allow analysis when either a term is provided or a raw regex is provided
@@ -470,30 +349,8 @@ export default function App(){
     setIsAnalyzing(true)
     setAnalysisProgress('Starting...')
     setMatchedTerms([]) // Clear previous matched terms
-    
-    // Use Web Worker if available
-    if (searchWorkerRef.current) {
-      searchWorkerRef.current.postMessage({
-        type: 'search',
-        term,
-        variations,
-        rawRegex,
-        options,
-        totalChunks,
-        apiPrefix
-      })
-    } else {
-      // Fallback to main thread
-      await scanOnMainThread(term, variations, rawRegex, options)
-    }
-  }
-  
-  // Clear search cache (exposed for debugging/admin)
-  const clearSearchCache = () => {
-    if (searchWorkerRef.current) {
-      searchWorkerRef.current.postMessage({ type: 'clearCache' })
-      setCacheStatus({ cached: 0, total: totalChunks })
-    }
+    // Run the main-thread scanner directly (worker removed)
+    await scanOnMainThread(term, variations, rawRegex, options)
   }
 
   // Fallback: scan chunks on the main thread in batches (used when worker isn't available)
@@ -757,7 +614,7 @@ export default function App(){
 
           {view === 'dashboard' && stats && (
             <>
-              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} cacheStatus={{ cached: cacheStatus.cached, total: totalChunks }} />
+              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} />
               <div className="grid grid-cols-2 md:grid-cols-7 gap-4 mb-8">
                 <StatCard title="Total Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" />
                 <StatCard title={`Total ${activeTerm}`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" />
@@ -891,7 +748,7 @@ export default function App(){
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {channelTrends.map((c, idx) => (
                   <div key={c.church || idx} className="bg-white p-4 rounded-xl border shadow-sm">
-                    <LazyChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
+                    <ChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
                   </div>
                 ))}
               </div>
@@ -912,21 +769,7 @@ export default function App(){
                     { key: 'type', label: 'Type', width: '120px', filterKey: 'category', render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '100px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '80px', filterKey: 'rate', filterType: 'number', centered: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'action', label: 'Download', width: '100px', centered: true, noTruncate: true, render: (r) => (<button onClick={async (e)=>{ 
-                      e.stopPropagation()
-                      // Get path on-demand if using slim metadata
-                      let path = r.path
-                      if (!path && r.hasTranscript) {
-                        const details = await getSermonDetails(r)
-                        path = details.path
-                      }
-                      if (path) {
-                        const a = document.createElement('a')
-                        a.href = path
-                        a.download = `${r.date} - ${r.title}.txt`
-                        a.click()
-                      }
-                    }} className={`flex items-center justify-center w-full ${(r.path || r.hasTranscript) ? 'text-gray-400 hover:text-blue-600' : 'text-gray-200 cursor-not-allowed'}`} disabled={!r.path && !r.hasTranscript}><Icon name="download" size={18} /></button>) }
+                    { key: 'action', label: 'Download', width: '100px', centered: true, noTruncate: true, render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600 flex items-center justify-center w-full"><Icon name="download" size={18} /></button>) }
                   ]}
                   data={processedTableData}
                   rowHeight={64}

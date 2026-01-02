@@ -324,116 +324,23 @@ def main():
     
     with open(os.path.join(OUTPUT_DIR, META_FILE), 'w', encoding='utf-8') as f:
         json.dump(master_data, f)
-    
-    # Generate slim metadata for faster initial load (~2MB vs ~14MB)
-    # Removes: path (3.3MB), videoUrl (1MB) - reconstruct on-demand
-    # Uses numeric index as id instead of full filename (saves ~2MB)
-    slim_sermons = []
-    id_to_full = {}  # Map numeric id to full sermon data for on-demand loading
-    
-    for idx, sermon in enumerate(master_data['sermons']):
-        slim_sermons.append({
-            "i": idx,  # numeric index as id
-            "c": sermon['church'],
-            "d": sermon['date'],
-            "y": sermon['year'],
-            "ts": sermon['timestamp'],
-            "t": sermon['title'],
-            "s": sermon['speaker'],
-            "tp": sermon['type'],
-            "l": sermon['language'],
-            "m": sermon['mentionCount'],
-            "j": sermon['jesusCount'],
-            "w": sermon['wordCount'],
-            "h": 1 if sermon['path'] else 0,  # hasTranscript boolean
-        })
-        id_to_full[idx] = {
-            "id": sermon['id'],
-            "path": sermon['path'],
-            "videoUrl": sermon['videoUrl']
-        }
-    
-    slim_data = {
-        "generated": master_data['generated'],
-        "totalChunks": master_data['totalChunks'],
-        "sermons": slim_sermons
-    }
-    
-    with open(os.path.join(OUTPUT_DIR, 'metadata_slim.json'), 'w', encoding='utf-8') as f:
-        json.dump(slim_data, f, separators=(',', ':'))  # Compact JSON
-    
-    # Save id mapping for on-demand path/videoUrl lookup
-    with open(os.path.join(OUTPUT_DIR, 'sermon_details.json'), 'w', encoding='utf-8') as f:
-        json.dump(id_to_full, f)
-    
-    slim_size = os.path.getsize(os.path.join(OUTPUT_DIR, 'metadata_slim.json')) / 1024 / 1024
-    full_size = os.path.getsize(os.path.join(OUTPUT_DIR, META_FILE)) / 1024 / 1024
-    print(f"   ✅ Generated metadata_slim.json ({slim_size:.1f}MB vs {full_size:.1f}MB full)")
 
     # Generate available_churches.json - list of churches that have Summary CSVs
     available_churches = []
-    transcript_summary_counts = {}  # Pre-computed counts for faster client load
-    
     for fname in os.listdir(DATA_DIR):
         if fname.endswith("_Summary.csv"):
             church_name = fname.rsplit('_Summary.csv', 1)[0]
-            display_name = church_name.replace('_', ' ')
-            
             # Store both normalized (with underscores) and display name (with spaces)
             available_churches.append({
                 "normalized": church_name,
-                "display": display_name
+                "display": church_name.replace('_', ' ')
             })
-            
-            # Pre-compute transcript counts from CSV
-            csv_path = os.path.join(DATA_DIR, fname)
-            try:
-                total = 0
-                with_transcript = 0
-                with open(csv_path, 'r', encoding='utf-8') as csvfile:
-                    reader = csv.reader(csvfile)
-                    rows = list(reader)
-                    if rows:
-                        # Find status column
-                        header = [c.strip().lower() for c in rows[0]]
-                        status_idx = -1
-                        for i, h in enumerate(header):
-                            if 'status' in h:
-                                status_idx = i
-                                break
-                        
-                        # Count rows (excluding header)
-                        for r in rows[1:]:
-                            if not r or all(not c.strip() for c in r):
-                                continue
-                            total += 1
-                            if status_idx >= 0 and status_idx < len(r):
-                                if 'success' in r[status_idx].lower():
-                                    with_transcript += 1
-                
-                counts = {
-                    "total": total,
-                    "withTranscript": with_transcript,
-                    "withoutTranscript": total - with_transcript
-                }
-                # Store under multiple keys for easy lookup
-                transcript_summary_counts[church_name] = counts
-                transcript_summary_counts[display_name] = counts
-            except Exception as e:
-                print(f"   ⚠️  Could not parse {fname}: {e}")
-    
     available_churches.sort(key=lambda x: x['display'])
     
     available_path = os.path.join(OUTPUT_DIR, 'available_churches.json')
     with open(available_path, 'w', encoding='utf-8') as f:
         json.dump(available_churches, f)
     print(f"   ✅ Generated {available_path} with {len(available_churches)} churches")
-    
-    # Save pre-computed transcript summary counts (eliminates 37 CSV fetches on client)
-    counts_path = os.path.join(OUTPUT_DIR, 'transcript_counts.json')
-    with open(counts_path, 'w', encoding='utf-8') as f:
-        json.dump(transcript_summary_counts, f)
-    print(f"   ✅ Generated {counts_path} with {len(available_churches)} churches")
 
     # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
     import shutil
@@ -453,13 +360,6 @@ def main():
         shutil.rmtree(docs_api)
     shutil.copytree(OUTPUT_DIR, docs_api)
     print(f"   ✅ Copied {OUTPUT_DIR}/ → {docs_api}/")
-    
-    # Copy channels.json to docs/site_api/ for faster loading (avoids 404 fallback)
-    channels_src = "channels.json"
-    channels_dst = os.path.join(docs_api, "channels.json")
-    if os.path.exists(channels_src):
-        shutil.copy2(channels_src, channels_dst)
-        print(f"   ✅ Copied {channels_src} → {channels_dst}")
 
     print("\n✅ GENERATION COMPLETE")
 

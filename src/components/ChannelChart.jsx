@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useEffect } from 'react'
 import { ResponsiveContainer, ComposedChart, Area, Line, XAxis, YAxis, Tooltip } from 'recharts'
 
 const formatDate = (ts) => new Date(ts).toLocaleDateString(undefined, { month: 'short', year: '2-digit' })
@@ -17,13 +17,18 @@ export default function ChannelChart({ church, data = [], raw = [], color = '#60
     if(propTranscriptCounts) return propTranscriptCounts
     const items = (raw && raw.length) ? raw : (data && data.length ? data : [])
     const total = items.length
-    // Support both slim format (hasTranscript) and full format (path)
-    const withTranscript = items.filter(it => it && (it.path || it.hasTranscript)).length
+    const withTranscript = items.filter(it => it && it.path).length
     const withoutTranscript = total - withTranscript
     return { total, withTranscript, withoutTranscript }
   }, [raw, data, propTranscriptCounts])
 
-  // Debug timing removed - was misleading (measured time to next paint across all charts, not this chart's render)
+  useEffect(()=>{
+    const t0 = performance.now()
+    requestAnimationFrame(()=>{
+      const dur = performance.now() - t0
+      console.debug(`ChannelChart render ${church}: ${dur.toFixed(2)}ms`)
+    })
+  }, [data, color, church])
 
   return (
     <div className="relative cursor-pointer" onClick={()=>onExpand({ church, data: raw.length?raw:data, color, showRaw: true })}>
