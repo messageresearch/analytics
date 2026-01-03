@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useMemo, useCallback, startTransiti
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
-export default function MultiSelect({ label, options, selected, onChange, wide, medium }){
+export default function MultiSelect({ label, options, selected, onChange, wide, medium, aliases }){
   const [isOpen, setIsOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
@@ -39,8 +39,16 @@ export default function MultiSelect({ label, options, selected, onChange, wide, 
   const filteredOptions = useMemo(()=>{
     if(!debouncedSearch.trim()) return options
     const lower = debouncedSearch.toLowerCase()
-    return options.filter(opt => opt.toLowerCase().includes(lower))
-  },[options, debouncedSearch])
+    return options.filter(opt => {
+      // Check main option name
+      if (opt.toLowerCase().includes(lower)) return true
+      // Check aliases (legacy names) if provided
+      if (aliases && aliases[opt]) {
+        return aliases[opt].some(alias => alias.toLowerCase().includes(lower))
+      }
+      return false
+    })
+  },[options, debouncedSearch, aliases])
 
   const toggleOption = useCallback((opt)=>{
     selectedSet.has(opt) ? onChange(selected.filter(s=>s!==opt)) : onChange([...selected,opt])

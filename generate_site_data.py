@@ -18,7 +18,6 @@ ZIP_FILENAME = "all_sermons_archive.zip"
 MENTION_REGEX = r"(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m"
 # Default regex used by the frontend - must match exactly!
 DEFAULT_REGEX = r"\b(?:(?:brother\s+william)|william|brother)\s+br[aeiou]n[dh]*[aeiou]m\b"
-JESUS_REGEX = r"\bJesus\b" # Strict word boundary to avoid partial matches
 
 def ensure_dir(directory):
     if not os.path.exists(directory):
@@ -89,7 +88,6 @@ def parse_sermon(filepath, church, filename, summary_map=None):
 
         # Counts
         branham_mentions = len(re.findall(MENTION_REGEX, content, re.IGNORECASE))
-        jesus_mentions = len(re.findall(JESUS_REGEX, content, re.IGNORECASE))
         word_count = len(content.split())
         
         rel_path = f"data/{church}/{filename}".replace(" ", "%20")
@@ -120,7 +118,6 @@ def parse_sermon(filepath, church, filename, summary_map=None):
                 "type": video_type,
                 "language": language,
                 "mentionCount": branham_mentions,
-                "jesusCount": jesus_mentions,
                 "wordCount": word_count,
                 "path": rel_path,
                 "videoUrl": video_url or ""
@@ -303,6 +300,10 @@ def main():
     current_chunk_size = 0
     chunk_index = 0
     
+    # Current year for filtering out invalid future dates
+    current_year = datetime.datetime.now().year
+    skipped_future = 0
+    
     # with zipfile.ZipFile(ZIP_FILENAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
     for church_folder in os.listdir(DATA_DIR):
         church_path = os.path.join(DATA_DIR, church_folder)
@@ -318,6 +319,15 @@ def main():
                     
                     data = parse_sermon(file_full_path, church_folder, filename) # Keep folder name for path
                     if data:
+                        # Filter out invalid future years (data entry errors)
+                        try:
+                            sermon_year = int(data['meta']['year'])
+                            if sermon_year > current_year:
+                                skipped_future += 1
+                                continue  # Skip this sermon
+                        except (ValueError, TypeError):
+                            pass  # Keep sermons with unknown year
+                        
                         # Override display name in metadata
                         data['meta']['church'] = church_display
                         all_meta.append(data['meta'])
@@ -344,10 +354,14 @@ def main():
     print("   Pre-computing default regex matches...")
     default_matches = collect_default_matches(all_texts)
     print(f"   Found {len(default_matches)} unique term variations, {sum(c for _, c in default_matches)} total matches")
+    
+    if skipped_future > 0:
+        print(f"   ⚠️  Skipped {skipped_future} sermons with invalid future dates (year > {current_year})")
 
     master_data = {
         "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalChunks": chunk_index,
+        "totalSermons": len(all_meta),
         "sermons": sorted(all_meta, key=lambda x: x['timestamp'], reverse=True),
         "defaultSearchTerms": [{"term": term, "count": count} for term, count in default_matches]
     }

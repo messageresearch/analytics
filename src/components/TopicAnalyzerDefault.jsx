@@ -3,7 +3,7 @@ import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 import { expandRegex } from '../utils/regexExpander'
 
-export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [], cacheStatus = null }) {
+export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [], cacheStatus = null, totalTranscripts = 0 }) {
   const [term, setTerm] = useState(initialTerm || '')
   const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
   const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
@@ -13,6 +13,12 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   const [wholeWords, setWholeWords] = useState(true) // Default to exact word matching
   const [showPreview, setShowPreview] = useState(false)
   const [previewData, setPreviewData] = useState({ matches: [], truncated: false, error: null })
+  const [showAllTerms, setShowAllTerms] = useState(false)
+  
+  // Format transcript count (e.g., 25910 -> "25,900+")
+  const formattedCount = totalTranscripts > 0 
+    ? `${(Math.floor(totalTranscripts / 100) * 100).toLocaleString()}+` 
+    : '25,000+'
 
   const prevTermRef = useRef(term)
   useEffect(() => {
@@ -61,82 +67,116 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   }
 
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg mb-8 transition-all">
-      <div className="flex flex-col md:flex-row gap-6 items-center">
-        <div className="flex-1">
-          <h2 className="text-xl font-bold flex items-center gap-2 mb-2"><Icon name="activity" /> Global Mention Tracker</h2>
-          <p className="text-blue-100 text-sm mb-4">Analyze all videos over time for a specific topic. This will scan the entire database dynamically.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-4 rounded-xl text-white shadow-lg mb-6 transition-all">
+      <div className="flex flex-col lg:flex-row gap-3 items-stretch">
+        <div className="flex-1 min-w-0">
+          <h2 className="text-base font-bold flex items-center gap-2"><Icon name="search" size={18} /> Transcript Search Engine</h2>
+          <p className="text-blue-100 text-xs mb-2">Search across all {formattedCount} sermon transcripts for any topic or phrase.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
-              <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Primary Term</label>
-              <input type="text" value={term} onChange={e => setTerm(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagle" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
+              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Primary Term</label>
+              <input type="text" value={term} onChange={e => setTerm(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagle" className="w-full text-gray-900 px-3 py-1.5 rounded-lg outline-none focus:ring-2 focus:ring-blue-400 text-sm" />
             </div>
             <div>
-              <label className="text-xs font-bold uppercase tracking-wide text-blue-200 mb-1 block">Variations (Comma Separated)</label>
-              <input type="text" value={variations} onChange={e => setVariations(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-blue-400" />
-              <div className="mt-2 flex items-center gap-4 flex-wrap">
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" checked={wholeWords} onChange={e => setWholeWords(e.target.checked)} className="rounded text-blue-600 focus:ring-blue-400" disabled={showRegex} />
-                  <span className="text-xs text-blue-100">Whole words only</span>
-                </label>
-                <div className="flex items-center gap-2">
-                  <label className="text-xs text-blue-100">Advanced:</label>
-                  <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 underline">{showRegex ? 'Hide Regex' : 'Show Regex'}</button>
-                </div>
-              </div>
-              {showRegex && <div className="w-full mt-2">
-                <textarea value={rawRegex} onChange={e => { setRawRegex(e.target.value); setRegexError(validateRegex(e.target.value)) }} placeholder="Enter raw regex pattern" className="w-full h-20 text-sm p-2 rounded border text-gray-900" />
-                {regexError && <div className="text-xs text-red-200 mt-1">Regex error: {regexError}</div>}
-                {rawRegex && !regexError && (
-                  <button 
-                    type="button" 
-                    onClick={() => {
-                      const result = expandRegex(rawRegex)
-                      console.log('Regex expansion result:', result)
-                      setPreviewData(result)
-                      setShowPreview(true)
-                    }}
-                    className="mt-2 text-xs bg-blue-500/50 hover:bg-blue-500/70 text-white px-3 py-1 rounded transition flex items-center gap-1"
-                  >
-                    <Icon name="eye" size={12} /> Preview Pattern Matches
-                  </button>
-                )}
-              </div>}
+              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Variations (Comma Separated)</label>
+              <input type="text" value={variations} onChange={e => setVariations(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-1.5 rounded-lg outline-none focus:ring-2 focus:ring-blue-400 text-sm" />
             </div>
           </div>
-          {/* Display matched terms after analysis - shows results from entire database, not filtered view */}
-          {matchedTerms && matchedTerms.length > 0 && !isAnalyzing && (
-            <div className="mt-4 pt-4 border-t border-blue-400/30">
-              <p className="text-xs text-blue-200 font-semibold mb-2">Terms Found in Results <span className="font-normal">(entire database, may differ from filtered view below)</span>:</p>
-              <div className="flex flex-wrap gap-2">
-                {matchedTerms.slice(0, 20).map((t, i) => (
-                  <span key={i} className="bg-blue-500/40 text-white text-xs px-2 py-1 rounded-full">{t.term} <span className="text-blue-200">({t.count.toLocaleString()})</span></span>
-                ))}
-                {matchedTerms.length > 20 && <span className="text-blue-200 text-xs">+{matchedTerms.length - 20} more</span>}
+          <div className="mt-1.5 flex items-center gap-4 flex-wrap">
+            <label className="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" checked={wholeWords} onChange={e => setWholeWords(e.target.checked)} className="rounded text-blue-600 focus:ring-blue-400 w-3.5 h-3.5" disabled={showRegex} />
+              <span className="text-xs text-blue-100">Whole words only</span>
+            </label>
+            <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 hover:text-white transition">
+              Advanced: <span className="underline">{showRegex ? 'Hide Regex' : 'Show Regex'}</span>
+            </button>
+          </div>
+          {showRegex && <div className="mt-2 flex items-start gap-2">
+            <textarea 
+              value={rawRegex} 
+              onChange={e => { 
+                setRawRegex(e.target.value); 
+                setRegexError(validateRegex(e.target.value));
+                // Auto-resize
+                e.target.style.height = 'auto';
+                e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px';
+              }} 
+              placeholder="Enter raw regex pattern" 
+              className="flex-1 text-xs px-2 py-1.5 rounded border text-gray-900 font-mono resize-y overflow-hidden"
+              style={{ minHeight: '32px', maxHeight: '120px' }}
+              rows={1}
+            />
+            {rawRegex && !regexError && (
+              <button 
+                type="button" 
+                onClick={() => {
+                  const result = expandRegex(rawRegex)
+                  setPreviewData(result)
+                  setShowPreview(true)
+                }}
+                className="text-xs bg-blue-500/50 hover:bg-blue-500/70 text-white px-2 py-1.5 rounded transition flex items-center gap-1 whitespace-nowrap"
+              >
+                <Icon name="eye" size={12} /> Preview
+              </button>
+            )}
+            {regexError && <span className="text-xs text-red-200 py-1.5">Invalid</span>}
+          </div>}
+        </div>
+        <div className="flex flex-row lg:flex-col items-center lg:items-stretch justify-center gap-2 lg:w-[130px]">
+          <button type="button" onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(showRegex && rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm w-full">
+            {isAnalyzing ? <><Icon name="refresh" className="animate-spin" size={16} /> Scanning...</> : <><Icon name="search" size={16} /> Search</>}
+          </button>
+          <button type="button" onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white/90 text-gray-700 font-medium py-0.5 px-4 rounded shadow-sm hover:bg-white transition text-xs w-full">Reset Defaults</button>
+          {isAnalyzing && progress && (
+            <div className="w-full space-y-1">
+              <div className="w-full bg-blue-900/50 rounded-full h-2 overflow-hidden">
+                <div 
+                  className="h-full bg-gradient-to-r from-blue-400 to-green-400 rounded-full transition-all duration-300 ease-out"
+                  style={{ width: `${progress.percent || 0}%` }}
+                />
               </div>
+              <p className="text-xs text-blue-100 text-center">{progress.status}</p>
+              {progress.detail && <p className="text-xs text-blue-300/70 text-center">{progress.detail}</p>}
+            </div>
+          )}
+          {cacheStatus && cacheStatus.total > 0 && !isAnalyzing && (
+            <div className="text-xs text-blue-200 flex items-center gap-1" title="Cached chunks enable faster repeat searches">
+              <Icon name="database" size={12} />
+              <span>{cacheStatus.cached}/{cacheStatus.total}</span>
+              {cacheStatus.cached === cacheStatus.total && <span className="text-green-300">⚡</span>}
             </div>
           )}
         </div>
-        <div className="flex flex-col items-end justify-center h-full">
-          <div className="flex flex-col items-end gap-3">
-            <div className="flex gap-2">
-              <button type="button" onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(showRegex && rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
-                {isAnalyzing ? <><Icon name="refresh" className="animate-spin" /> Scanning...</> : <><Icon name="search" /> Run Analysis</>}
+      </div>
+      {/* Display matched terms after analysis - shows results from entire database, not filtered view */}
+      {matchedTerms && matchedTerms.length > 0 && !isAnalyzing && (
+        <div className="mt-2 pt-2 border-t border-blue-400/30">
+          <div className="flex items-center gap-2 mb-1">
+            <p className="text-xs text-blue-200 font-semibold">Terms Found in Entire Database</p>
+            <span className="text-xs text-blue-300/60 italic">• filtered results below may differ</span>
+          </div>
+          <div className="flex flex-wrap gap-1">
+            {matchedTerms.slice(0, showAllTerms ? matchedTerms.length : 30).map((t, i) => {
+              const maxCount = matchedTerms[0]?.count || 1
+              const opacity = 0.3 + (t.count / maxCount) * 0.7
+              return (
+                <span key={i} className="text-white text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: `rgba(59, 130, 246, ${opacity})` }}>
+                  {t.term} <span className="opacity-75">({t.count.toLocaleString()})</span>
+                </span>
+              )
+            })}
+            {matchedTerms.length > 30 && (
+              <button 
+                type="button" 
+                onClick={() => setShowAllTerms(!showAllTerms)} 
+                className="text-blue-200 text-xs self-center hover:text-white transition underline cursor-pointer"
+              >
+                {showAllTerms ? 'Show less' : `+${matchedTerms.length - 30} more`}
               </button>
-              <button type="button" onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white text-gray-700 font-medium py-2 px-3 rounded-lg shadow-sm hover:bg-gray-50 transition">Reset Defaults</button>
-            </div>
-            {isAnalyzing && <p className="text-xs text-blue-200 mt-2 font-mono">{progress}</p>}
-            {/* Cache status indicator */}
-            {cacheStatus && cacheStatus.total > 0 && !isAnalyzing && (
-              <div className="text-xs text-blue-200 flex items-center gap-1" title="Cached chunks enable faster repeat searches">
-                <Icon name="database" size={12} />
-                <span>{cacheStatus.cached}/{cacheStatus.total} cached</span>
-                {cacheStatus.cached === cacheStatus.total && <span className="text-green-300 ml-1">⚡ Instant</span>}
-              </div>
             )}
           </div>
         </div>
-      </div>
+      )}
 
       {/* Regex Preview Modal */}
       {showPreview && (
