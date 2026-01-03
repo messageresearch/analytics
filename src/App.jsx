@@ -224,7 +224,7 @@ export default function App(){
         setSelTitles([...new Set(list.map(s=>s.title))].filter(Boolean));
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
-        const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
+        const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish','Unknown'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
         
         // Load pre-computed default search terms if available (eliminates sluggish auto-run)
         if (json.defaultSearchTerms && Array.isArray(json.defaultSearchTerms)) {

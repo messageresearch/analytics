@@ -31,6 +31,16 @@
     "url": "https://www.youtube.com/@CedarHillsChurchoftheCross",
     "filename": "CedarHillsChurchOfTheCross.txt"
   },
+  "Cloverdale Bibleway": {
+    "url": null,
+    "filename": "CloverdaleBibleway.txt",
+    "playlists": [
+      {
+        "id": "PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq",
+        "name": "Cloverdale Bibleway"
+      }
+    ]
+  },
   "Christian Life Tabernacle": {
     "url": "https://www.youtube.com/@ChristianLifeTabernacleDFW",
     "filename": "ChristianLifeTabernacle.txt"
@@ -47,17 +57,29 @@
     "url": "https://www.youtube.com/@ELTabernacleMinistries",
     "filename": "ELTabernacleMinistries.txt"
   },
-  "End Time Message Tabernacle": {
+  "Edmonton Restored Word Fellowship": {
+    "url": "https://www.youtube.com/@EdmontonRWF",
+    "filename": "EdmontonRestoredWordFellowship.txt"
+  },
+  "End Time Message Tabernacle CA": {
+    "url": "https://www.youtube.com/@ETMTab",
+    "filename": "EndTimeMessageTabernacleCA.txt"
+  },
+  "End Time Message Tabernacle CO": {
     "url": "https://www.youtube.com/@EndTimeMessageTabernacle",
-    "filename": "EndTimeMessageTabernacle.txt"
+    "filename": "EndTimeMessageTabernacleCO.txt"
   },
   "Evangelismo Para El Rapto": {
     "url": "https://www.youtube.com/@evangelismoparaelraptojuan2097",
     "filename": "EvangelismoParaElRapto.txt"
   },
-  "Evening Light Fellowship": {
+  "Evening Light Fellowship AZ": {
     "url": "https://www.youtube.com/@eveninglightfellowshipaz",
-    "filename": "EveningLightFellowship.txt"
+    "filename": "EveningLightFellowshipAZ.txt"
+  },
+  "Evening Light Fellowship CA": {
+    "url": "https://www.youtube.com/@eveninglightfellowship",
+    "filename": "EveningLightFellowshipCA.txt"
   },
   "Evening Light Tabernacle": {
     "url": "https://www.youtube.com/@EveningLightTabernacle",
@@ -143,6 +165,10 @@
     "url": "https://www.youtube.com/@phoenixtabernacleinc.servi2657",
     "filename": "PhoenixTabernacleInc.txt"
   },
+  "Rapturing Grace Tabernacle": {
+    "url": "https://www.youtube.com/@rapturinggrace",
+    "filename": "RapturingGraceTabernacle.txt"
+  },
   "Send The Light Church": {
     "url": "https://www.youtube.com/@sendthelightchurch9361",
     "filename": "SendTheLightChurch.txt"
@@ -201,7 +227,13 @@
   },
   "Word Of Life Church": {
     "url": "https://www.youtube.com/@woljclivestream7237",
-    "filename": "WordOfLifeChurch.txt"
+    "filename": "WordOfLifeChurch.txt",
+    "playlists": [
+      {
+        "id": "PLcc7wUjgrVThVM5u2fmIcdUjEYbs-gFL_",
+        "name": "Happy Valley Church of Jesus Christ (Legacy)"
+      }
+    ]
   },
   "Word of Life Tabernacle": {
     "url": "https://www.youtube.com/@wordoflifetabernaclehardya7993",

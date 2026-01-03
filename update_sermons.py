@@ -15,8 +15,14 @@ import subprocess
 import csv
 import shutil
 import ShalomTabernacleSermonScraperv2 as st_scraper
-from pytubefix import YouTube
+from pytubefix import YouTube, Playlist
 from pytubefix.cli import on_progress
+
+# Import WOLJC speaker scraper for post-processing Word of Life Church videos
+try:
+    from woljc_speaker_scraper import update_speakers_for_videos as woljc_update_speakers
+except ImportError:
+    woljc_update_speakers = None
 
 # --- CONFIGURATION ---
 CONFIG_FILES = ["channels.json", "config.json"]
@@ -397,6 +403,48 @@ def save_json_file(filepath, data):
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(sorted(list(data)), f, indent=2)
     except Exception as e: pass
+
+
+def fetch_playlist_videos(playlist_id, limit=None):
+    """
+    Fetch videos from a YouTube playlist using pytubefix.
+    Returns a list of video objects compatible with the scrapetube format.
+    
+    Args:
+        playlist_id: The YouTube playlist ID
+        limit: Maximum number of videos to fetch (None for all)
+    
+    Returns:
+        List of video dictionaries with 'videoId' and 'title' keys
+    """
+    videos = []
+    try:
+        playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
+        p = Playlist(playlist_url)
+        
+        video_urls = list(p.video_urls)
+        if limit:
+            video_urls = video_urls[:limit]
+        
+        for url in video_urls:
+            # Extract video ID from URL
+            if 'v=' in url:
+                video_id = url.split('v=')[1].split('&')[0]
+            else:
+                video_id = url.split('/')[-1].split('?')[0]
+            
+            # Create video object compatible with scrapetube format
+            videos.append({
+                'videoId': video_id,
+                'title': {'runs': [{'text': ''}]},  # Title will be fetched later during processing
+                '_from_playlist': True,
+                '_playlist_id': playlist_id
+            })
+    except Exception as e:
+        print(f"      ⚠️ Error fetching playlist: {e}")
+    
+    return videos
+
 
 def load_config():
     for config_file in CONFIG_FILES:
@@ -2931,15 +2979,30 @@ def metadata_only_scan(church_name, config, known_speakers):
     existing_history = load_summary_history_csv(church_name)
     print(f"   📂 Loaded {len(existing_history)} existing entries from summary.")
     
-    base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
+    base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0] if channel_url else None
     all_videos = []
     
-    try:
-        print(f"   🌐 Fetching video list from YouTube (no limit)...")
-        all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=None)))
-        all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=None)))
-    except Exception as e:
-        print(f"   ⚠️ Scrape Error: {e}")
+    # Only scrape YouTube channel if URL is provided
+    if base_channel_url:
+        try:
+            print(f"   🌐 Fetching video list from YouTube (no limit)...")
+            all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=None)))
+            all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=None)))
+        except Exception as e:
+            print(f"   ⚠️ Scrape Error: {e}")
+    else:
+        print(f"   ℹ️ No channel URL - scanning playlists only...")
+    
+    # Also fetch videos from configured playlists (e.g., legacy/archived content)
+    playlists = config.get('playlists', [])
+    for playlist_info in playlists:
+        playlist_id = playlist_info.get('id')
+        playlist_name = playlist_info.get('name', playlist_id)
+        if playlist_id:
+            print(f"   📋 Scanning playlist: {playlist_name}...")
+            playlist_videos = fetch_playlist_videos(playlist_id, limit=None)
+            print(f"      Found {len(playlist_videos)} videos in playlist.")
+            all_videos.extend(playlist_videos)
     
     # Deduplicate channel videos
     unique_videos_map = {v['videoId']: v for v in all_videos}
@@ -3204,7 +3267,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     history = load_summary_history_csv(church_name)
     history = clean_history_of_bad_speakers(history)
 
-    base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
+    base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0] if channel_url else None
     all_videos = []
     
     # --- SHALOM TABERNACLE SPECIFIC LOGIC ---
@@ -3239,12 +3302,28 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         if archive_videos:
             print(f"   📂 Added {len(archive_videos)} archive videos to queue.")
             all_videos.extend(archive_videos)
-        try:
-            print(f"   🔍 Scanning YouTube for videos...")
-            all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=limit)))
-            all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=limit)))
-        except Exception as e:
-            print(f"   ⚠️ Scrape Error: {e}")
+        
+        # Only scrape YouTube channel if URL is provided
+        if base_channel_url:
+            try:
+                print(f"   🔍 Scanning YouTube for videos...")
+                all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='streams', limit=limit)))
+                all_videos.extend(list(scrapetube.get_channel(channel_url=base_channel_url, content_type='videos', limit=limit)))
+            except Exception as e:
+                print(f"   ⚠️ Scrape Error: {e}")
+        else:
+            print(f"   ℹ️ No channel URL - scanning playlists only...")
+        
+        # Also fetch videos from configured playlists (e.g., legacy/archived content)
+        playlists = config.get('playlists', [])
+        for playlist_info in playlists:
+            playlist_id = playlist_info.get('id')
+            playlist_name = playlist_info.get('name', playlist_id)
+            if playlist_id:
+                print(f"   📋 Scanning playlist: {playlist_name}...")
+                playlist_videos = fetch_playlist_videos(playlist_id, limit=limit)
+                print(f"      Found {len(playlist_videos)} videos in playlist.")
+                all_videos.extend(playlist_videos)
 
     unique_videos_map = {}
     for v in all_videos:
@@ -3493,6 +3572,40 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             })
             summary_keys.add((date, title, speaker))
     
+    # --- WOLJC POST-PROCESSING: Update speakers for Word of Life Church ---
+    if church_name == "Word Of Life Church" and woljc_update_speakers:
+        # Find entries with Unknown Speaker that were just processed
+        unknown_entries = [e for e in current_summary_list 
+                          if e.get('speaker') == "Unknown Speaker" and e.get('date')]
+        if unknown_entries:
+            try:
+                woljc_result = woljc_update_speakers(unknown_entries, dry_run=False)
+                if woljc_result.get('updated', 0) > 0:
+                    # Also rename any transcript files that were updated
+                    channel_dir = os.path.join(DATA_DIR, church_name.replace(' ', '_'))
+                    for match in woljc_result.get('matches', []):
+                        old_speaker = match['old_speaker']
+                        new_speaker = match['new_speaker']
+                        date = match['date']
+                        title = match['title']
+                        # Find and rename the transcript file
+                        for filename in os.listdir(channel_dir):
+                            if filename.endswith('.txt') and filename.startswith(date):
+                                if old_speaker in filename or 'Unknown Speaker' in filename:
+                                    safe_title = sanitize_filename(title)
+                                    safe_speaker = sanitize_filename(new_speaker)
+                                    new_filename = f"{date} - {safe_title} - {safe_speaker}.txt"
+                                    old_path = os.path.join(channel_dir, filename)
+                                    new_path = os.path.join(channel_dir, new_filename)
+                                    if old_path != new_path and os.path.exists(old_path):
+                                        try:
+                                            os.rename(old_path, new_path)
+                                        except OSError:
+                                            pass
+                                    break
+            except Exception as e:
+                print(f"   ⚠️ WOLJC speaker update error: {e}")
+    
     # Deduplicate by URL before writing (keep most recent entry based on last_checked)
     url_to_entry = {}
     for entry in current_summary_list:
@@ -3528,6 +3641,262 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     
     return channel_stats
 
+
+def list_pending_videos(data_dir, churches=None, include_no_transcript=False):
+    """
+    List all videos that don't have transcripts yet (Metadata Only and optionally No Transcript).
+    
+    Args:
+        data_dir: Directory containing the Summary CSV files
+        churches: Optional list of specific churches to filter by
+        include_no_transcript: If True, also include 'No Transcript' videos
+    """
+    statuses = ['Metadata Only']
+    if include_no_transcript:
+        statuses.append('No Transcript')
+    
+    status_label = "Metadata Only" + (" + No Transcript" if include_no_transcript else "")
+    
+    print("\n" + "=" * 70)
+    print(f"LISTING VIDEOS: {status_label}")
+    print("=" * 70)
+    
+    # Find all Summary CSV files
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    
+    grand_total = 0
+    
+    for csv_file in sorted(csv_files):
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        
+        # Filter by church if specified
+        if churches:
+            if not any(c.lower() in church_name.lower() for c in churches):
+                continue
+        
+        csv_path = os.path.join(data_dir, csv_file)
+        
+        # Load CSV
+        rows = []
+        try:
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    rows.append(row)
+        except Exception as e:
+            continue
+        
+        # Find matching entries
+        pending = [r for r in rows if r.get('status') in statuses]
+        
+        if not pending:
+            continue
+        
+        print(f"\n📂 {church_name}: {len(pending)} videos")
+        print("-" * 60)
+        
+        # Group by status
+        metadata_only = [r for r in pending if r.get('status') == 'Metadata Only']
+        no_transcript = [r for r in pending if r.get('status') == 'No Transcript']
+        
+        if metadata_only:
+            print(f"  Metadata Only ({len(metadata_only)}):")
+            for entry in metadata_only:
+                date = entry.get('date', 'Unknown')
+                title = entry.get('title', 'Unknown')[:50]
+                speaker = entry.get('speaker', 'Unknown')
+                print(f"    {date} | {speaker[:20]:<20} | {title}")
+        
+        if no_transcript:
+            print(f"  No Transcript ({len(no_transcript)}):")
+            for entry in no_transcript:
+                date = entry.get('date', 'Unknown')
+                title = entry.get('title', 'Unknown')[:50]
+                speaker = entry.get('speaker', 'Unknown')
+                print(f"    {date} | {speaker[:20]:<20} | {title}")
+        
+        grand_total += len(pending)
+    
+    print("\n" + "=" * 70)
+    print(f"TOTAL: {grand_total} videos without transcripts")
+    print("=" * 70)
+
+
+def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_transcript=False):
+    """
+    Retry fetching transcripts for videos that currently have 'Metadata Only' status.
+    
+    Args:
+        data_dir: Directory containing the Summary CSV files
+        churches: Optional list of specific churches to process (matches partial names)
+        limit: Maximum number of videos to retry per church
+        include_no_transcript: If True, also retry 'No Transcript' videos
+    """
+    statuses = ['Metadata Only']
+    if include_no_transcript:
+        statuses.append('No Transcript')
+    
+    status_label = "Metadata Only" + (" + No Transcript" if include_no_transcript else "")
+    
+    print("\n" + "=" * 70)
+    print(f"RETRY VIDEOS: {status_label}")
+    print("=" * 70)
+    
+    # Load known speakers
+    known_speakers = load_json_file(SPEAKERS_FILE)
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
+    
+    # Find all Summary CSV files
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    
+    total_retried = 0
+    total_success = 0
+    total_failed = 0
+    
+    for csv_file in sorted(csv_files):
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        
+        # Filter by church if specified
+        if churches:
+            if not any(c.lower() in church_name.lower() for c in churches):
+                continue
+        
+        csv_path = os.path.join(data_dir, csv_file)
+        church_dir = os.path.join(data_dir, csv_file.replace('_Summary.csv', ''))
+        
+        # Load CSV
+        rows = []
+        try:
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    rows.append(row)
+        except Exception as e:
+            print(f"   ⚠️ Error reading {csv_file}: {e}")
+            continue
+        
+        # Find entries to retry
+        to_retry = [r for r in rows if r.get('status') in statuses]
+        
+        if not to_retry:
+            continue
+        
+        print(f"\n📂 {church_name}: {len(to_retry)} entries to retry")
+        
+        # Apply limit if specified
+        if limit:
+            to_retry = to_retry[:limit]
+            print(f"   (Limited to {limit} entries)")
+        
+        retried = 0
+        success = 0
+        failed = 0
+        
+        for entry in to_retry:
+            url = entry.get('url', '')
+            title = entry.get('title', 'Unknown')
+            
+            if not url or 'youtube.com' not in url:
+                continue
+            
+            # Extract video ID
+            if 'v=' in url:
+                video_id = url.split('v=')[1].split('&')[0]
+            else:
+                video_id = url.split('/')[-1].split('?')[0]
+            
+            print(f"   [{retried + 1}] Retrying: {title[:50]}...")
+            retried += 1
+            
+            try:
+                time.sleep(random.uniform(3, 8))  # Rate limiting
+                transcript_text, description, yt_obj = get_transcript_data(video_id)
+                
+                if not transcript_text:
+                    print(f"       ❌ Still no transcript available")
+                    failed += 1
+                    entry['status'] = 'No Transcript'
+                    entry['last_checked'] = today_str
+                    continue
+                
+                # Got a transcript! Update the entry
+                speaker = entry.get('speaker', 'Unknown Speaker')
+                sermon_date = entry.get('date', 'Unknown Date')
+                language = determine_language(title, yt_obj) if yt_obj else 'Unknown'
+                video_type = entry.get('type', 'Full Sermon')
+                
+                # Update speaker if currently unknown
+                if speaker == 'Unknown Speaker' and description:
+                    new_speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+                    new_speaker = normalize_speaker(new_speaker)
+                    new_speaker = clean_name(new_speaker)
+                    if new_speaker != 'Unknown Speaker':
+                        speaker = new_speaker
+                
+                # Update date if unknown
+                if sermon_date == 'Unknown Date' and yt_obj:
+                    sermon_date = determine_sermon_date(title, description, yt_obj)
+                
+                # Create transcript file
+                if not os.path.exists(church_dir):
+                    os.makedirs(church_dir)
+                
+                safe_title = sanitize_filename(title)
+                safe_speaker = sanitize_filename(speaker)
+                filename = f"{sermon_date} - {safe_title} - {safe_speaker}.txt"
+                filepath = os.path.join(church_dir, filename)
+                
+                if not os.path.exists(filepath):
+                    content = format_sermon_entry(
+                        video_id, title, sermon_date, transcript_text,
+                        church_name, speaker, language, video_type, description, filename=filename
+                    )
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(content)
+                    print(f"       ✅ Transcript saved: {filename[:50]}...")
+                else:
+                    print(f"       ✅ Transcript already exists")
+                
+                # Update CSV entry
+                entry['status'] = 'Success'
+                entry['speaker'] = speaker
+                entry['date'] = sermon_date
+                entry['language'] = language
+                entry['last_checked'] = today_str
+                if description:
+                    entry['description'] = description.replace('\n', ' ').replace('\r', ' ')[:500]
+                
+                success += 1
+                
+            except Exception as e:
+                print(f"       ⚠️ Error: {str(e)[:50]}")
+                entry['last_checked'] = today_str
+                failed += 1
+        
+        # Save updated CSV
+        if retried > 0:
+            try:
+                with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                    fieldnames = ['date', 'status', 'speaker', 'title', 'url', 'last_checked', 'language', 'type', 'description']
+                    writer = csv.DictWriter(f, fieldnames=fieldnames)
+                    writer.writeheader()
+                    writer.writerows(rows)
+                print(f"   📝 Updated {csv_file}")
+            except Exception as e:
+                print(f"   ❌ Error saving CSV: {e}")
+        
+        total_retried += retried
+        total_success += success
+        total_failed += failed
+        print(f"   Results: {success} success, {failed} failed")
+    
+    print("\n" + "=" * 70)
+    print(f"RETRY COMPLETE: {total_retried} videos processed")
+    print(f"  ✅ Success: {total_success}")
+    print(f"  ❌ Failed:  {total_failed}")
+    print("=" * 70)
+
+
 def main():
     prevent_sleep()
     try:
@@ -3538,10 +3907,23 @@ def main():
         parser.add_argument('--force', action='store_true', help="Force re-processing of all files during healing.")
         parser.add_argument('--backfill-descriptions', action='store_true', help="Backfill video descriptions into existing transcript files.")
         parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill-descriptions).")
-        parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times). Use with --backfill-descriptions.")
-        parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process. Use with --backfill-descriptions.")
+        parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times).")
+        parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process.")
         parser.add_argument('--unscraped', action='store_true', help="Only scrape channels that don't have a Summary CSV file yet.")
+        parser.add_argument('--list-pending', action='store_true', help="List all videos without transcripts (Metadata Only).")
+        parser.add_argument('--retry-metadata', action='store_true', help="Retry fetching transcripts for 'Metadata Only' videos.")
+        parser.add_argument('--include-no-transcript', action='store_true', help="Include 'No Transcript' videos when listing or retrying.")
         args = parser.parse_args()
+
+        if args.list_pending:
+            list_pending_videos(DATA_DIR, churches=args.church, include_no_transcript=args.include_no_transcript)
+            return
+
+        if args.retry_metadata:
+            status_label = "'Metadata Only'" + (" and 'No Transcript'" if args.include_no_transcript else "")
+            print(f"Retrying transcript fetch for {status_label} videos...")
+            retry_metadata_only_videos(DATA_DIR, churches=args.church, limit=args.limit, include_no_transcript=args.include_no_transcript)
+            return
 
         if args.backfill_descriptions:
             print("Backfilling video descriptions into transcript files...")
