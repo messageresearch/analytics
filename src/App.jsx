@@ -234,7 +234,7 @@ export default function App(){
         setSelChurchesRaw([...new Set(list.map(s=>s.church))]);
         setSelSpeakersRaw([...new Set(list.map(s=>s.speaker))].filter(Boolean));
         setSelTitlesRaw([...new Set(list.map(s=>s.title))].filter(Boolean));
-        const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYearsRaw(defaultYears.length>0?defaultYears:years)
+        const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2010); setSelYearsRaw(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypesRaw(types)
         const langs = [...new Set(list.map(s=>s.language))]; setSelLangsRaw(langs)  // Default: ALL languages selected
         
@@ -861,8 +861,8 @@ export default function App(){
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
                 <div className="text-xs text-gray-500 mt-1">
                   Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • 
-                  Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}{selSpeakers.length < filteredOptions.speakers.length ? `/${filteredOptions.speakers.length}` : ''}</span> • 
-                  Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}{selTitles.length < filteredOptions.titles.length ? `/${filteredOptions.titles.length}` : ''}</span>
+                  Speakers: <span className="font-medium text-gray-700">{selSpeakers.filter(s => filteredOptions.speakers.includes(s)).length.toLocaleString()} of {filteredOptions.speakers.length.toLocaleString()} available</span> • 
+                  Transcripts: <span className="font-medium text-gray-700">{filteredData.length.toLocaleString()} of {rawData.length.toLocaleString()}</span>
                   {isPending && <span className="ml-2 text-blue-500">⟳</span>}
                 </div>
               </div>
@@ -883,11 +883,11 @@ export default function App(){
                 </div>
               </div>
               <div className="md:col-span-2">
-                <MultiSelect label="Titles" options={filteredOptions.titles} selected={selTitles} onChange={setSelTitles} wide allOptions={options.titles} />
+                <MultiSelect label="Video Titles" options={filteredOptions.titles} selected={selTitles} onChange={setSelTitles} wide allOptions={options.titles} />
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <MultiSelect label="Years" options={filteredOptions.years} selected={selYears} onChange={setSelYears} allOptions={options.years} />
+              <MultiSelect label={`Years${selYears.length > 0 ? ` (${Math.min(...selYears.map(y => parseInt(y)))}–${Math.max(...selYears.map(y => parseInt(y)))})` : ''}`} options={filteredOptions.years} selected={selYears} onChange={setSelYears} allOptions={options.years} />
               <MultiSelect label="Categories" options={filteredOptions.types} selected={selTypes} onChange={setSelTypes} allOptions={options.types} />
               <MultiSelect label="Languages" options={filteredOptions.langs} selected={selLangs} onChange={setSelLangs} allOptions={options.langs} />
             </div>

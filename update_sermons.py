@@ -1384,7 +1384,7 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
         # Write updated summary CSV
         if summary_modified and summary_rows:
             try:
-                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"]
+                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
                 with open(summary_path, 'w', newline='', encoding='utf-8') as f:
                     writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
                     writer.writeheader()
@@ -1554,7 +1554,7 @@ def backfill_descriptions(data_dir=None, dry_run=False, churches=None, limit=Non
                 
                 # Fetch description from YouTube
                 try:
-                    _, description, yt_obj = get_transcript_data(video_id)
+                    _, description, yt_obj, _ = get_transcript_data(video_id)
                 except Exception as e:
                     print(f"   ⚠️ Error fetching {filename[:40]}: {e}")
                     files_with_errors += 1
@@ -1608,6 +1608,562 @@ def backfill_descriptions(data_dir=None, dry_run=False, churches=None, limit=Non
     print("="*60)
     
     return files_updated, files_skipped, files_with_errors
+
+
+def add_timestamps_for_video(video_url_or_id, data_dir=None):
+    """
+    Add timestamped transcript for a specific video that has already been scraped.
+    
+    This function:
+    1. Extracts the video ID from the URL
+    2. Searches for the existing transcript file in data_dir
+    3. Fetches timestamped captions from YouTube
+    4. Creates the .timestamped.txt file
+    
+    Args:
+        video_url_or_id: YouTube URL or video ID (e.g., "dQw4w9WgXcQ" or "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        data_dir: Path to data directory (defaults to DATA_DIR)
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    if data_dir is None:
+        data_dir = DATA_DIR
+    
+    # Extract video ID from URL or use as-is
+    video_id = video_url_or_id
+    if 'youtube.com' in video_url_or_id or 'youtu.be' in video_url_or_id:
+        # Extract video ID from various URL formats
+        match = re.search(r'(?:v=|youtu\.be/)([a-zA-Z0-9_-]+)', video_url_or_id)
+        if match:
+            video_id = match.group(1)
+        else:
+            print(f"❌ Could not extract video ID from: {video_url_or_id}")
+            return False
+    
+    print("\n" + "="*60)
+    print("📍 ADDING TIMESTAMPS FOR SPECIFIC VIDEO")
+    print(f"   🎬 Video ID: {video_id}")
+    print("="*60)
+    
+    # Search for the existing transcript file
+    found_file = None
+    found_church = None
+    
+    for church_folder in os.listdir(data_dir):
+        church_path = os.path.join(data_dir, church_folder)
+        if not os.path.isdir(church_path):
+            continue
+        if church_folder.startswith('.') or church_folder.endswith('.csv'):
+            continue
+        
+        for filename in os.listdir(church_path):
+            if not filename.endswith('.txt') or filename.endswith('.timestamped.txt'):
+                continue
+            
+            filepath = os.path.join(church_path, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read(2000)  # Check header only
+                
+                if video_id in content:
+                    found_file = filepath
+                    found_church = church_folder
+                    break
+            except:
+                continue
+        
+        if found_file:
+            break
+    
+    if not found_file:
+        print(f"❌ No existing transcript found for video ID: {video_id}")
+        print("   This video may not have been scraped yet, or the video ID is incorrect.")
+        return False
+    
+    print(f"   📂 Found in: {found_church}")
+    print(f"   📄 File: {os.path.basename(found_file)}")
+    
+    # Check if timestamps already exist
+    timestamped_path = found_file.replace('.txt', '.timestamped.txt')
+    if os.path.exists(timestamped_path):
+        print(f"   ⚠️ Timestamped file already exists: {os.path.basename(timestamped_path)}")
+        response = input("   Do you want to overwrite it? (y/N): ").strip().lower()
+        if response != 'y':
+            print("   ⏭️ Skipped.")
+            return False
+    
+    # Fetch timestamps from YouTube
+    print(f"   🔄 Fetching timestamps from YouTube...")
+    try:
+        time.sleep(1)  # Rate limiting
+        _, _, _, raw_xml = get_transcript_data(video_id)
+        
+        if not raw_xml:
+            print(f"   ❌ No captions available for this video.")
+            return False
+        
+        # Parse timestamps and save
+        segments = xml_to_timestamped_segments(raw_xml)
+        if segments:
+            if save_timestamp_data(found_file, video_id, segments):
+                print(f"   ✅ Created timestamped transcript ({len(segments)} segments)")
+                print(f"   📄 Saved to: {os.path.basename(timestamped_path)}")
+                return True
+            else:
+                print(f"   ❌ Failed to save timestamps")
+                return False
+        else:
+            print(f"   ❌ No segments parsed from captions")
+            return False
+            
+    except Exception as e:
+        print(f"   ❌ Error fetching timestamps: {e}")
+        return False
+
+
+def backfill_timestamps(data_dir=None, dry_run=False, churches=None, limit=None):
+    """
+    Backfill timestamped transcript data for existing .txt files that are missing .timestamps.json.
+    
+    This function:
+    1. Scans all transcript .txt files in data_dir
+    2. Checks if each file has a corresponding .timestamps.json
+    3. If missing, extracts the video ID from the URL in the file
+    4. Fetches the caption XML from YouTube
+    5. Parses timestamps and creates the .timestamps.json file
+    
+    Args:
+        data_dir: Path to data directory (defaults to DATA_DIR)
+        dry_run: If True, only report what would be done without making changes
+        churches: List of church folder names to process (None = all churches)
+        limit: Maximum number of files to process (None = no limit)
+    
+    Returns:
+        Tuple of (files_updated, files_skipped, files_with_errors)
+    """
+    if data_dir is None:
+        data_dir = DATA_DIR
+    
+    print("\n" + "="*60)
+    print("📍 BACKFILLING TIMESTAMPS FOR TRANSCRIPT FILES")
+    if dry_run:
+        print("   ⚠️ DRY RUN MODE - No files will be created")
+    if churches:
+        print(f"   🏛️ Churches filter: {', '.join(churches)}")
+    if limit:
+        print(f"   📊 Limit: {limit} files max")
+    print("="*60)
+    
+    files_created = 0
+    files_skipped = 0
+    files_already_have_timestamps = 0
+    files_with_errors = 0
+    files_no_captions = 0
+    limit_reached = False
+    
+    # Get list of church folders to process
+    all_church_folders = sorted(os.listdir(data_dir))
+    
+    # Filter by specified churches if provided
+    if churches:
+        # Normalize church names for matching (handle underscores/spaces)
+        normalized_churches = []
+        for c in churches:
+            normalized_churches.append(c)
+            normalized_churches.append(c.replace(' ', '_'))
+            normalized_churches.append(c.replace('_', ' '))
+        
+        church_folders = [f for f in all_church_folders 
+                         if f in normalized_churches or 
+                         any(c.lower() in f.lower() for c in churches)]
+    else:
+        church_folders = all_church_folders
+    
+    # Count total .txt files without .timestamps.json for progress
+    total_to_process = 0
+    for church_folder in church_folders:
+        church_path = os.path.join(data_dir, church_folder)
+        if not os.path.isdir(church_path):
+            continue
+        if church_folder.startswith('.') or church_folder.endswith('.csv'):
+            continue
+        for filename in os.listdir(church_path):
+            if filename.endswith('.txt'):
+                json_path = os.path.join(church_path, filename.replace('.txt', '.timestamps.json'))
+                if not os.path.exists(json_path):
+                    total_to_process += 1
+    
+    print(f"   📄 Found {total_to_process} transcript files without timestamps")
+    
+    processed = 0
+    
+    # Iterate through church folders
+    for church_folder in church_folders:
+        if limit_reached:
+            break
+            
+        church_path = os.path.join(data_dir, church_folder)
+        if not os.path.isdir(church_path):
+            continue
+        if church_folder.startswith('.') or church_folder.endswith('.csv'):
+            continue
+        
+        print(f"\n📂 Processing: {church_folder}")
+        church_created = 0
+        church_skipped = 0
+        
+        for filename in sorted(os.listdir(church_path)):
+            # Check if we've hit the limit
+            if limit and files_created >= limit:
+                print(f"\n⚠️ Limit of {limit} files reached. Stopping.")
+                limit_reached = True
+                break
+                
+            if not filename.endswith('.txt') or filename.endswith('.timestamped.txt'):
+                continue
+            
+            filepath = os.path.join(church_path, filename)
+            timestamped_path = filepath.replace('.txt', '.timestamped.txt')
+            
+            # Skip if timestamped transcript already exists
+            if os.path.exists(timestamped_path):
+                files_already_have_timestamps += 1
+                continue
+            
+            processed += 1
+            
+            # Read the file to extract video ID from URL
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read(2000)  # Only need the header
+            except Exception as e:
+                print(f"   ⚠️ Error reading {filename}: {e}")
+                files_with_errors += 1
+                continue
+            
+            # Extract video ID from URL line
+            url_match = re.search(r'URL:\s*https://www\.youtube\.com/watch\?v=([a-zA-Z0-9_-]+)', content)
+            if not url_match:
+                files_skipped += 1
+                church_skipped += 1
+                continue
+            
+            video_id = url_match.group(1)
+            
+            if dry_run:
+                print(f"   [{processed}/{total_to_process}] Would fetch timestamps for: {filename[:50]}...")
+                files_created += 1
+                church_created += 1
+                continue
+            
+            print(f"   [{processed}/{total_to_process}] Fetching timestamps for: {filename[:50]}...")
+            
+            # Fetch captions from YouTube
+            try:
+                time.sleep(1)  # Rate limiting
+                _, _, _, raw_xml = get_transcript_data(video_id)
+                
+                if not raw_xml:
+                    files_no_captions += 1
+                    print(f"      ⏭️ No captions available")
+                    continue
+                
+                # Parse timestamps and save
+                segments = xml_to_timestamped_segments(raw_xml)
+                if segments:
+                    if save_timestamp_data(filepath, video_id, segments):
+                        files_created += 1
+                        church_created += 1
+                        print(f"      ✅ Created timestamps ({len(segments)} segments)")
+                    else:
+                        files_with_errors += 1
+                        print(f"      ❌ Failed to save timestamps")
+                else:
+                    files_no_captions += 1
+                    print(f"      ⏭️ No segments parsed")
+                    
+            except Exception as e:
+                print(f"      ❌ Error: {str(e)[:50]}")
+                files_with_errors += 1
+        
+        if church_created > 0:
+            print(f"   📊 Church summary: {church_created} created, {church_skipped} skipped")
+    
+    print("\n" + "="*60)
+    print("📊 TIMESTAMP BACKFILL SUMMARY")
+    print(f"   ✅ Timestamp files created: {files_created}")
+    print(f"   ✓ Already had timestamps: {files_already_have_timestamps}")
+    print(f"   ⏭️ Skipped (no URL/video ID): {files_skipped}")
+    print(f"   📭 No captions available: {files_no_captions}")
+    print(f"   ❌ Errors: {files_with_errors}")
+    print("="*60)
+    
+    return files_created, files_skipped, files_with_errors
+
+
+def migrate_csv_add_church_names(data_dir):
+    """
+    Quick migration to add church name column to all existing CSV summary files.
+    The church name is derived from the CSV filename.
+    """
+    print("\n" + "="*60)
+    print("🏛️ MIGRATING CSV FILES: Adding Church Names")
+    print("="*60)
+    
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    updated_count = 0
+    skipped_count = 0
+    
+    for csv_file in sorted(csv_files):
+        csv_path = os.path.join(data_dir, csv_file)
+        
+        # Extract church name from filename (e.g., "Arizona_Believers_Church_Summary.csv" -> "Arizona Believers Church")
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        
+        try:
+            # Read existing CSV
+            rows = []
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                original_fieldnames = reader.fieldnames or []
+                for row in reader:
+                    # Add church name if not present or empty
+                    if 'church' not in row or not row.get('church'):
+                        row['church'] = church_name
+                    rows.append(row)
+            
+            # Define complete fieldnames including new columns
+            fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+            
+            # Write updated CSV
+            with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                writer.writeheader()
+                writer.writerows(rows)
+            
+            print(f"   ✅ {church_name}: {len(rows)} entries updated")
+            updated_count += 1
+            
+        except Exception as e:
+            print(f"   ❌ Error processing {csv_file}: {e}")
+            skipped_count += 1
+    
+    print("\n" + "="*60)
+    print("📊 MIGRATION SUMMARY")
+    print(f"   ✅ CSV files updated: {updated_count}")
+    print(f"   ❌ Errors: {skipped_count}")
+    print("="*60)
+    
+    return updated_count, skipped_count
+
+
+def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=None):
+    """
+    Scrape duration metadata for videos that are missing it in CSV summary files.
+    """
+    print("\n" + "="*60)
+    print("⏱️ BACKFILLING VIDEO DURATION METADATA")
+    if dry_run:
+        print("   🔍 DRY RUN MODE - No changes will be made")
+    if churches:
+        print(f"   📂 Filtering to churches: {churches}")
+    if limit:
+        print(f"   🔢 Limit: {limit} videos per church")
+    print("="*60)
+    
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    
+    total_updated = 0
+    total_skipped = 0
+    total_errors = 0
+    
+    for csv_file in sorted(csv_files):
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        
+        # Filter by church if specified
+        if churches:
+            church_list = [c.strip().lower() for c in churches.split(',')]
+            if not any(c in church_name.lower() for c in church_list):
+                continue
+        
+        csv_path = os.path.join(data_dir, csv_file)
+        print(f"\n📂 Processing: {church_name}")
+        
+        try:
+            # Read existing CSV
+            rows = []
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                rows = list(reader)
+            
+            # Find entries missing duration
+            missing_duration = []
+            for i, row in enumerate(rows):
+                duration = row.get('duration', '')
+                if not duration or duration == '0' or duration == '':
+                    url = row.get('url', '')
+                    if url and 'watch?v=' in url:
+                        missing_duration.append((i, row))
+            
+            if not missing_duration:
+                print(f"   ✓ All {len(rows)} entries have duration")
+                total_skipped += len(rows)
+                continue
+            
+            print(f"   📊 Found {len(missing_duration)} entries missing duration")
+            
+            # Apply limit
+            to_process = missing_duration[:limit] if limit else missing_duration
+            
+            updated_in_church = 0
+            for idx, (row_idx, row) in enumerate(to_process, 1):
+                url = row.get('url', '')
+                video_id = url.split('watch?v=')[-1].split('&')[0]
+                title = row.get('title', '')[:40]
+                
+                if dry_run:
+                    print(f"   [{idx}/{len(to_process)}] Would fetch duration for: {title}...")
+                    updated_in_church += 1
+                    continue
+                
+                print(f"   [{idx}/{len(to_process)}] Fetching: {title}...")
+                
+                try:
+                    time.sleep(1)  # Rate limiting
+                    yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
+                    duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
+                    duration_minutes = int(duration_seconds / 60) if duration_seconds else 0
+                    
+                    rows[row_idx]['duration'] = duration_minutes
+                    print(f"      ✅ Duration: {duration_minutes}m")
+                    updated_in_church += 1
+                    
+                except Exception as e:
+                    print(f"      ❌ Error: {str(e)[:40]}")
+                    total_errors += 1
+            
+            # Write updated CSV
+            if not dry_run and updated_in_church > 0:
+                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+                with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                    writer.writeheader()
+                    writer.writerows(rows)
+                print(f"   📝 Saved {updated_in_church} duration updates")
+            
+            total_updated += updated_in_church
+            
+        except Exception as e:
+            print(f"   ❌ Error processing {csv_file}: {e}")
+            total_errors += 1
+    
+    print("\n" + "="*60)
+    print("📊 DURATION BACKFILL SUMMARY")
+    print(f"   ✅ Durations updated: {total_updated}")
+    print(f"   ✓ Skipped (already have duration): {total_skipped}")
+    print(f"   ❌ Errors: {total_errors}")
+    print("="*60)
+    
+    return total_updated, total_skipped, total_errors
+
+
+def heal_video_categories(data_dir, dry_run=False, churches=None):
+    """
+    Post-scrape healing function to re-evaluate and fix video type categories.
+    Uses title, description, and duration to determine correct category.
+    """
+    print("\n" + "="*60)
+    print("🏷️ HEALING VIDEO CATEGORIES")
+    if dry_run:
+        print("   🔍 DRY RUN MODE - No changes will be made")
+    if churches:
+        print(f"   📂 Filtering to churches: {churches}")
+    print("="*60)
+    
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    
+    total_fixed = 0
+    total_unchanged = 0
+    category_changes = {}  # Track what changed to what
+    
+    for csv_file in sorted(csv_files):
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        
+        # Filter by church if specified
+        if churches:
+            church_list = [c.strip().lower() for c in churches.split(',')]
+            if not any(c in church_name.lower() for c in church_list):
+                continue
+        
+        csv_path = os.path.join(data_dir, csv_file)
+        
+        try:
+            # Read existing CSV
+            rows = []
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                rows = list(reader)
+            
+            fixed_in_church = 0
+            
+            for row in rows:
+                title = row.get('title', '')
+                speaker = row.get('speaker', 'Unknown Speaker')
+                description = row.get('description', '')
+                old_type = row.get('type', 'Full Sermon')
+                duration = int(row.get('duration', 0) or 0)
+                
+                # Create a mock yt_obj-like object for duration
+                class MockYT:
+                    def __init__(self, dur):
+                        self.length = dur * 60  # Convert back to seconds
+                
+                mock_yt = MockYT(duration) if duration > 0 else None
+                
+                # Re-determine video type
+                new_type = determine_video_type(title, speaker, None, mock_yt, description)
+                
+                if new_type != old_type:
+                    change_key = f"{old_type} -> {new_type}"
+                    category_changes[change_key] = category_changes.get(change_key, 0) + 1
+                    
+                    if not dry_run:
+                        row['type'] = new_type
+                    
+                    fixed_in_church += 1
+                else:
+                    total_unchanged += 1
+            
+            if fixed_in_church > 0:
+                print(f"   📂 {church_name}: {fixed_in_church} categories updated")
+                
+                # Write updated CSV
+                if not dry_run:
+                    fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+                    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                        writer.writeheader()
+                        writer.writerows(rows)
+                
+                total_fixed += fixed_in_church
+            
+        except Exception as e:
+            print(f"   ❌ Error processing {csv_file}: {e}")
+    
+    print("\n" + "="*60)
+    print("📊 CATEGORY HEALING SUMMARY")
+    print(f"   ✅ Categories fixed: {total_fixed}")
+    print(f"   ✓ Already correct: {total_unchanged}")
+    
+    if category_changes:
+        print("\n   📋 Changes breakdown:")
+        for change, count in sorted(category_changes.items(), key=lambda x: -x[1]):
+            print(f"      {change}: {count}")
+    
+    print("="*60)
+    
+    return total_fixed, total_unchanged
 
 
 # --- SPEAKER EXTRACTION PATTERN FUNCTIONS ---
@@ -2764,17 +3320,140 @@ def identify_speaker_dynamic(title, description, known_speakers):
     
     return "Unknown Speaker", False
 
-def determine_video_type(title, speaker):
+def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, description=""):
     title_lower = title.lower()
+    desc_lower = (description or "").lower()
+    text_to_search = title_lower + " " + desc_lower  # Combined search text
+    
+    # Get duration if available
+    duration_minutes = 0
+    if yt_obj:
+        try:
+            duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
+            duration_minutes = duration_seconds / 60 if duration_seconds else 0
+        except:
+            pass
+    
+    # Tape Service - William Branham recordings
     if speaker == "William M. Branham": return "Tape Service"
-    if "memorial" in title_lower or "celebrating the life" in title_lower or "funeral" in title_lower: return "Memorial Service"
-    if "wedding" in title_lower: return "Wedding"
-    if "youth camp" in title_lower: return "Youth Camp"
-    if "christmas" in title_lower or "nativity" in title_lower: return "Christmas Program"
-    if "clip" in title_lower: return "Sermon Clip"
-    if ("worship" in title_lower or "song" in title_lower) and "song of solomon" not in title_lower:
-        if speaker == "Unknown Speaker": return "Worship Service"
-    return "Full Sermon"
+    
+    # Memorial/Funeral Services
+    if any(term in text_to_search for term in ["memorial", "celebrating the life", "funeral", "home going", "homegoing", "tribute", "in memory", "in loving memory"]): 
+        return "Memorial Service"
+    
+    # Wedding
+    if any(term in text_to_search for term in ["wedding", "marriage ceremony"]): 
+        return "Wedding"
+    
+    # Baby/Child Dedication
+    if any(term in text_to_search for term in ["baby dedication", "child dedication", "dedication service"]):
+        return "Dedication Service"
+    
+    # Baptism Services
+    if any(term in text_to_search for term in ["baptism", "baptismal", "water service"]):
+        return "Baptism Service"
+    
+    # Communion/Lord's Supper
+    if any(term in text_to_search for term in ["communion", "lord's supper", "lords supper", "foot washing", "footwashing"]):
+        return "Communion Service"
+    
+    # Youth/Children's Programs
+    if any(term in text_to_search for term in ["youth camp", "youth service", "youth meeting"]):
+        return "Youth Service"
+    if any(term in text_to_search for term in ["sunday school", "children's", "childrens"]) or ("kids" in title_lower):
+        return "Sunday School"
+    
+    # Special Holiday Programs
+    if any(term in text_to_search for term in ["christmas", "nativity"]): 
+        return "Christmas Program"
+    if any(term in text_to_search for term in ["easter", "resurrection sunday"]) or ("resurrection" in title_lower):
+        return "Easter Program"
+    if "thanksgiving" in text_to_search:
+        return "Thanksgiving Service"
+    if "new year" in text_to_search:
+        return "New Year Service"
+    
+    # Convention/Camp Meeting
+    if any(term in text_to_search for term in ["convention", "camp meeting", "campmeeting"]):
+        return "Convention"
+    
+    # Prayer Meeting/Bible Study
+    if any(term in text_to_search for term in ["prayer meeting", "prayer service"]):
+        return "Prayer Meeting"
+    if any(term in text_to_search for term in ["bible study", "bible class"]):
+        return "Bible Study"
+    
+    # Q&A Sessions
+    if any(term in text_to_search for term in ["q&a", "q & a", "questions and answers", "question and answer"]):
+        return "Q&A Session"
+    
+    # Testimony Service
+    if any(term in text_to_search for term in ["testimony", "testimonies"]):
+        return "Testimony Service"
+    
+    # Sermon Clip
+    if any(term in text_to_search for term in ["clip", "excerpt", "highlight"]): 
+        return "Sermon Clip"
+    
+    # Song Special - explicit title/description match first
+    if any(term in text_to_search for term in ["song special", "special song"]):
+        return "Song Special"
+    
+    # Worship Service - explicit title/description match
+    if "worship service" in text_to_search:
+        return "Worship Service"
+    
+    # Song Special - short videos with high [Music] ratio
+    # Check title hints first
+    song_title_hints = ["special" in title_lower and ("song" in title_lower or "music" in title_lower or "sing" in title_lower),
+                        "solo" in title_lower,
+                        "duet" in title_lower,
+                        "quartet" in title_lower,
+                        "choir" in title_lower and "special" in title_lower,
+                        "hymn" in title_lower and len(title) < 60]
+    if any(song_title_hints):
+        return "Song Special"
+    
+    # Analyze transcript and duration for Song Special detection
+    if transcript_text and duration_minutes > 0:
+        try:
+            # Count [Music] tags and total words
+            music_count = transcript_text.lower().count('[music]') + transcript_text.lower().count('(music)')
+            word_count = len(transcript_text.split())
+            
+            # Song Special criteria:
+            # - Under 20 minutes
+            # - High music ratio (more than 1 music tag per 100 words, or very short with any music)
+            if duration_minutes < 20:
+                if word_count > 0:
+                    music_ratio = music_count / (word_count / 100)  # Music tags per 100 words
+                    # Short video (< 10 min) with significant music presence
+                    if duration_minutes < 10 and music_count >= 2 and music_ratio > 0.5:
+                        return "Song Special"
+                    # Medium short video (10-20 min) with high music ratio
+                    if duration_minutes < 20 and music_ratio > 1.0:
+                        return "Song Special"
+                # Very short transcript with music tags likely a song
+                if word_count < 500 and music_count >= 2:
+                    return "Song Special"
+        except:
+            pass
+    
+    # Worship/Song Service (only if no identified speaker) - full-length worship sessions
+    if any(term in text_to_search for term in ["worship", "song service", "praise service", "singing"]) and "song of solomon" not in text_to_search:
+        if speaker == "Unknown Speaker": 
+            return "Worship Service"
+    
+    # Full Sermon - videos 60+ minutes with identified speaker
+    if duration_minutes >= 60:
+        return "Full Sermon"
+    
+    # Short Service - videos under 60 minutes (not matching other categories)
+    if duration_minutes > 0 and duration_minutes < 60:
+        return "Short Service"
+    
+    # Default when duration unknown
+    return "Service"
 
 def determine_language(title, yt_obj):
     title_lower = title.lower()
@@ -2927,25 +3606,36 @@ def determine_sermon_date(title, description, yt_obj):
         except: pass
     return "Unknown Date"
 
-def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type, description="", filename=None):
+def format_sermon_entry(video_id, title, date_str, transcript_text, church_name, speaker, language, video_type, description="", filename=None, duration_minutes=0):
     # Truncate description if too long (keep first 2000 chars)
     desc_text = description[:2000] + "..." if len(description) > 2000 else description
     desc_section = f"Description:\n{desc_text}\n" if desc_text.strip() else ""
     # Use provided filename or construct one (ensuring header matches actual filename)
     header_filename = filename if filename else f"{date_str} - {title} - {speaker}.txt"
+    # Format duration as human-readable
+    if duration_minutes > 0:
+        hours = int(duration_minutes // 60)
+        mins = int(duration_minutes % 60)
+        if hours > 0:
+            duration_str = f"{hours}h {mins}m"
+        else:
+            duration_str = f"{mins}m"
+    else:
+        duration_str = "Unknown"
     return (
         f"################################################################################\n"
         f"START OF FILE: {header_filename}\n"
         f"################################################################################\n\n"
         f"SERMON DETAILS\n"
         f"========================================\n"
-        f"Date:    {date_str}\n"
-        f"Title:   {title}\n"
-        f"Speaker: {speaker}\n"
-        f"Church:  {church_name}\n"
-        f"Type:    {video_type}\n"
-        f"Language:{language}\n"
-        f"URL:     https://www.youtube.com/watch?v={video_id}\n"
+        f"Date:     {date_str}\n"
+        f"Title:    {title}\n"
+        f"Speaker:  {speaker}\n"
+        f"Church:   {church_name}\n"
+        f"Type:     {video_type}\n"
+        f"Duration: {duration_str}\n"
+        f"Language: {language}\n"
+        f"URL:      https://www.youtube.com/watch?v={video_id}\n"
         f"========================================\n\n"
         f"{desc_section}"
         f"TRANSCRIPT\n"
@@ -2965,6 +3655,104 @@ def xml_to_text(xml_content):
         return " ".join(clean_lines)
     except: return None
 
+def xml_to_timestamped_segments(xml_content):
+    """
+    Parse YouTube caption XML into timestamped segments.
+    Returns a list of dicts: [{"start": float, "dur": float, "text": str}, ...]
+    """
+    try:
+        root = ET.fromstring(xml_content)
+        segments = []
+        for child in root:
+            if child.tag == 'text':
+                start = float(child.get('start', 0))
+                dur = float(child.get('dur', 0))
+                text = child.text or ""
+                # Clean up HTML entities
+                text = text.replace('&nbsp;', ' ').replace('&#39;', "'").replace('&quot;', '"').replace('&amp;', '&')
+                text = " ".join(text.split())
+                if text:  # Only include non-empty segments
+                    segments.append({
+                        "start": round(start, 2),
+                        "dur": round(dur, 2),
+                        "text": text
+                    })
+        return segments
+    except Exception as e:
+        print(f"      ⚠️ Error parsing timestamped segments: {e}")
+        return None
+
+def format_timestamp(seconds):
+    """Convert seconds to human-readable timestamp [H:MM:SS] or [M:SS]."""
+    hours = int(seconds // 3600)
+    minutes = int((seconds % 3600) // 60)
+    secs = int(seconds % 60)
+    if hours > 0:
+        return f"[{hours}:{minutes:02d}:{secs:02d}]"
+    else:
+        return f"[{minutes}:{secs:02d}]"
+
+def segments_to_timestamped_text(segments):
+    """
+    Convert timestamp segments to human-readable timestamped text.
+    Each line starts with a timestamp like [0:00] or [1:23:45]
+    """
+    if not segments:
+        return None
+    
+    lines = []
+    for seg in segments:
+        timestamp = format_timestamp(seg['start'])
+        text = seg['text']
+        lines.append(f"{timestamp} {text}")
+    
+    return "\n".join(lines)
+
+def save_timestamp_data(filepath, video_id, segments):
+    """
+    Save timestamped transcript as a .timestamped.txt file alongside the plain .txt file.
+    filepath: Path to the .txt file (will replace .txt with .timestamped.txt)
+    """
+    if not segments:
+        return False
+    
+    timestamped_path = filepath.replace('.txt', '.timestamped.txt')
+    
+    try:
+        # Convert segments to timestamped text
+        timestamped_text = segments_to_timestamped_text(segments)
+        if not timestamped_text:
+            return False
+        
+        # Build header similar to regular transcript
+        # Extract info from filepath
+        filename = os.path.basename(filepath)
+        timestamped_filename = filename.replace('.txt', '.timestamped.txt')
+        
+        header = (
+            f"################################################################################\n"
+            f"TIMESTAMPED TRANSCRIPT\n"
+            f"################################################################################\n"
+            f"Source: {filename}\n"
+            f"Video ID: {video_id}\n"
+            f"Segments: {len(segments)}\n"
+            f"URL: https://www.youtube.com/watch?v={video_id}\n"
+            f"================================================================================\n"
+            f"Click any timestamp to jump to that point in the video.\n"
+            f"Format: [M:SS] or [H:MM:SS] followed by transcript text.\n"
+            f"================================================================================\n\n"
+        )
+        
+        with open(timestamped_path, 'w', encoding='utf-8') as f:
+            f.write(header)
+            f.write(timestamped_text)
+            f.write("\n")
+        
+        return True
+    except Exception as e:
+        print(f"      ⚠️ Error saving timestamped transcript: {e}")
+        return False
+
 def fetch_captions_with_client(video_id, client_type):
     url = f"https://www.youtube.com/watch?v={video_id}"
     yt = YouTube(url, client=client_type, use_oauth=False, allow_oauth_cache=False)
@@ -2981,6 +3769,11 @@ def fetch_captions_with_client(video_id, client_type):
     return caption_track, yt
 
 def get_transcript_data(video_id):
+    """
+    Fetch transcript data for a YouTube video.
+    Returns: (plain_text, description, yt_obj, raw_xml)
+    raw_xml can be used to extract timestamped segments.
+    """
     caption_track = None
     yt_obj = None
     try: caption_track, yt_obj = fetch_captions_with_client(video_id, 'WEB')
@@ -2988,18 +3781,19 @@ def get_transcript_data(video_id):
     if not caption_track:
         try: caption_track, yt_obj = fetch_captions_with_client(video_id, 'ANDROID')
         except: pass
-    if not yt_obj: return None, "", None
+    if not yt_obj: return None, "", None, None
     description = ""
     try: description = yt_obj.description or ""
     except: pass
-    if not caption_track: return None, description, yt_obj
+    if not caption_track: return None, description, yt_obj, None
     try:
         response = requests.get(caption_track.url, headers=get_random_headers())
         if response.status_code == 200:
-            clean_text = xml_to_text(response.text)
-            return clean_text, description, yt_obj
-        else: return None, description, yt_obj
-    except: return None, description, yt_obj
+            raw_xml = response.text
+            clean_text = xml_to_text(raw_xml)
+            return clean_text, description, yt_obj, raw_xml
+        else: return None, description, yt_obj, None
+    except: return None, description, yt_obj, None
 
 def load_shalom_csv(filepath):
     videos = []
@@ -3194,7 +3988,7 @@ def metadata_only_scan(church_name, config, known_speakers):
             if is_unlisted and existing_status in ['Metadata Only', 'Metadata Error', 'No Transcript']:
                 print(f"   [{i}/{len(unique_videos)}] UNLISTED REFRESH: {title[:50]}...")
                 try:
-                    time.sleep(random.uniform(2, 5))
+                    time.sleep(1)  # Rate limiting
                     yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
                     description = yt_obj.description or ""
                     
@@ -3226,7 +4020,7 @@ def metadata_only_scan(church_name, config, known_speakers):
         print(f"   [{i}/{len(unique_videos)}] NEW: {title[:60]}...")
         
         try:
-            time.sleep(random.uniform(2, 5))  # Shorter delay for metadata-only
+            time.sleep(1)  # Rate limiting
             yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
             description = yt_obj.description or ""
             sermon_date = determine_sermon_date(title, description, yt_obj)
@@ -3236,7 +4030,15 @@ def metadata_only_scan(church_name, config, known_speakers):
             speaker = normalize_speaker(speaker)
             speaker = clean_name(speaker)
             
-            video_type = determine_video_type(title, speaker)
+            # Get duration for video type detection
+            duration_minutes = 0
+            try:
+                duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
+                duration_minutes = duration_seconds / 60 if duration_seconds else 0
+            except:
+                pass
+            
+            video_type = determine_video_type(title, speaker, None, yt_obj, description)
             if video_type == "Memorial Service" and speaker != "William M. Branham":
                 speaker = "Unknown Speaker"
             
@@ -3253,7 +4055,9 @@ def metadata_only_scan(church_name, config, known_speakers):
                 "last_checked": today_str,
                 "language": "Unknown",
                 "type": video_type,
-                "description": desc_for_csv
+                "description": desc_for_csv,
+                "duration": int(duration_minutes) if duration_minutes else 0,
+                "church": church_name
             }
             new_count += 1
             
@@ -3269,7 +4073,9 @@ def metadata_only_scan(church_name, config, known_speakers):
                 "last_checked": today_str,
                 "language": "Unknown",
                 "type": "Unknown",
-                "description": ""
+                "description": "",
+                "duration": 0,
+                "church": church_name
             }
             new_count += 1
     
@@ -3279,7 +4085,7 @@ def metadata_only_scan(church_name, config, known_speakers):
     
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"])
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"])
             writer.writeheader()
             writer.writerows(summary_list)
         print(f"\n   ✅ SCAN COMPLETE")
@@ -3600,19 +4406,33 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
 
         print(f"[{count}/{total}] PROCESSING: {title}")
         try:
-            time.sleep(random.uniform(5, 12)) 
-            transcript_text, description, yt_obj = get_transcript_data(video_id)
+            time.sleep(1)  # Rate limiting
+            transcript_text, description, yt_obj, raw_xml = get_transcript_data(video_id)
             if manual_date: sermon_date = manual_date
             else: sermon_date = determine_sermon_date(title, description, yt_obj)
             language = determine_language(title, yt_obj)
+            
+            # Get video duration
+            duration_minutes = 0
+            if yt_obj:
+                try:
+                    duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
+                    duration_minutes = duration_seconds / 60 if duration_seconds else 0
+                except:
+                    pass
+            
             if speaker == "Unknown Speaker":
                 speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
                 speaker = normalize_speaker(speaker)
                 speaker = clean_name(speaker)
             
-            video_type = determine_video_type(title, speaker)
+            video_type = determine_video_type(title, speaker, transcript_text, yt_obj, description)
             if video_type == "Memorial Service" and speaker != "William M. Branham":
                 speaker = "Unknown Speaker"
+            
+            # Print speaker and category identification
+            duration_str = f"{int(duration_minutes)}m" if duration_minutes > 0 else "?"
+            print(f"   👤 Speaker: {speaker} | 📂 Type: {video_type} | ⏱️ {duration_str}")
 
             status = "Success"
             # Sanitize description for CSV (remove newlines, limit length)
@@ -3627,25 +4447,34 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 filename = f"{sermon_date} - {safe_title} - {safe_speaker}.txt"
                 filepath = os.path.join(channel_dir, filename)
                 if not os.path.exists(filepath):
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename, duration_minutes=duration_minutes)
                     with open(filepath, 'a', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ Transcript downloaded & Saved (Lang: {language}).")
                 else:
-                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename)
+                    entry = format_sermon_entry(video_id, title, sermon_date, transcript_text, church_name, speaker, language, video_type, description, filename=filename, duration_minutes=duration_minutes)
                     with open(filepath, 'w', encoding='utf-8') as f: f.write(entry)
                     print(f"   ✅ File updated.")
+                
+                # Save timestamped segments if available
+                if raw_xml:
+                    segments = xml_to_timestamped_segments(raw_xml)
+                    if segments and save_timestamp_data(filepath, video_id, segments):
+                        print(f"   📍 Timestamps saved ({len(segments)} segments).")
 
             current_summary_list.append({
                 "date": sermon_date, "status": status, "speaker": speaker,
                 "title": title, "url": video_url, "last_checked": today_str,
-                "language": language, "type": video_type, "description": desc_for_csv
+                "language": language, "type": video_type, "description": desc_for_csv,
+                "duration": int(duration_minutes) if duration_minutes else 0,
+                "church": church_name
             })
         except Exception as e:
             print(f"   ❌ Error: {str(e)}")
             current_summary_list.append({
                 "date": "Error", "status": "Failed", "speaker": "Unknown",
                 "title": title, "url": video_url, "last_checked": today_str,
-                "language": "Unknown", "type": "Unknown", "description": ""
+                "language": "Unknown", "type": "Unknown", "description": "",
+                "duration": 0, "church": church_name
             })
 
     csv_path = get_summary_file_path(church_name, ".csv")
@@ -3773,7 +4602,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     # Write the updated summary CSV
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description"])
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"])
             writer.writeheader()
             writer.writerows(final_summary_list)
     except Exception as e:
@@ -3952,8 +4781,8 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
             retried += 1
             
             try:
-                time.sleep(random.uniform(3, 8))  # Rate limiting
-                transcript_text, description, yt_obj = get_transcript_data(video_id)
+                time.sleep(1)  # Rate limiting
+                transcript_text, description, yt_obj, raw_xml = get_transcript_data(video_id)
                 
                 if not transcript_text:
                     print(f"       ❌ Still no transcript available")
@@ -3997,6 +4826,12 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
                     with open(filepath, 'w', encoding='utf-8') as f:
                         f.write(content)
                     print(f"       ✅ Transcript saved: {filename[:50]}...")
+                    
+                    # Save timestamped segments if available
+                    if raw_xml:
+                        segments = xml_to_timestamped_segments(raw_xml)
+                        if segments and save_timestamp_data(filepath, video_id, segments):
+                            print(f"       📍 Timestamps saved ({len(segments)} segments).")
                 else:
                     print(f"       ✅ Transcript already exists")
                 
@@ -4020,7 +4855,7 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
         if retried > 0:
             try:
                 with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-                    fieldnames = ['date', 'status', 'speaker', 'title', 'url', 'last_checked', 'language', 'type', 'description']
+                    fieldnames = ['date', 'status', 'speaker', 'title', 'url', 'last_checked', 'language', 'type', 'description', 'duration', 'church']
                     writer = csv.DictWriter(f, fieldnames=fieldnames)
                     writer.writeheader()
                     writer.writerows(rows)
@@ -4049,14 +4884,40 @@ def main():
         parser.add_argument('--heal', action='store_true', help="Only run the heal archive process.")
         parser.add_argument('--force', action='store_true', help="Force re-processing of all files during healing.")
         parser.add_argument('--backfill-descriptions', action='store_true', help="Backfill video descriptions into existing transcript files.")
-        parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill-descriptions).")
+        parser.add_argument('--backfill-timestamps', action='store_true', help="Backfill timestamped transcript data for files missing .timestamped.txt.")
+        parser.add_argument('--backfill-duration', action='store_true', help="Backfill video duration metadata for entries missing it.")
+        parser.add_argument('--migrate-church-names', action='store_true', help="Add church name column to all existing CSV summary files.")
+        parser.add_argument('--heal-categories', action='store_true', help="Re-evaluate and fix video type categories based on title, description, and duration.")
+        parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill operations).")
         parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times).")
         parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process.")
         parser.add_argument('--unscraped', action='store_true', help="Only scrape channels that don't have a Summary CSV file yet.")
         parser.add_argument('--list-pending', action='store_true', help="List all videos without transcripts (Metadata Only).")
         parser.add_argument('--retry-metadata', action='store_true', help="Retry fetching transcripts for 'Metadata Only' videos.")
         parser.add_argument('--include-no-transcript', action='store_true', help="Include 'No Transcript' videos when listing or retrying.")
+        parser.add_argument('--add-timestamps-video', type=str, metavar='URL', help="Add timestamps to a specific video by URL or video ID.")
         args = parser.parse_args()
+
+        if args.add_timestamps_video:
+            add_timestamps_for_video(args.add_timestamps_video, DATA_DIR)
+            return
+
+        if args.migrate_church_names:
+            print("Migrating CSV files to add church names...")
+            migrate_csv_add_church_names(DATA_DIR)
+            return
+
+        if args.backfill_duration:
+            print("Backfilling video duration metadata...")
+            churches_str = ','.join(args.church) if args.church else None
+            backfill_duration_metadata(DATA_DIR, dry_run=args.dry_run, churches=churches_str, limit=args.limit)
+            return
+
+        if args.heal_categories:
+            print("Healing video categories...")
+            churches_str = ','.join(args.church) if args.church else None
+            heal_video_categories(DATA_DIR, dry_run=args.dry_run, churches=churches_str)
+            return
 
         if args.list_pending:
             list_pending_videos(DATA_DIR, churches=args.church, include_no_transcript=args.include_no_transcript)
@@ -4066,6 +4927,11 @@ def main():
             status_label = "'Metadata Only'" + (" and 'No Transcript'" if args.include_no_transcript else "")
             print(f"Retrying transcript fetch for {status_label} videos...")
             retry_metadata_only_videos(DATA_DIR, churches=args.church, limit=args.limit, include_no_transcript=args.include_no_transcript)
+            return
+
+        if args.backfill_timestamps:
+            print("Backfilling timestamps for transcript files...")
+            backfill_timestamps(DATA_DIR, dry_run=args.dry_run, churches=args.church, limit=args.limit)
             return
 
         if args.backfill_descriptions:
@@ -4407,7 +5273,29 @@ def main():
                 print("Invalid input.")
         elif action == '2':
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
-            for name, config in channels.items():
+            
+            # Sort channels: unscraped first, then alphabetically
+            def channel_sort_key(item):
+                name, config = item
+                summary_path = get_summary_file_path(name, ".csv")
+                has_summary = os.path.exists(summary_path)
+                # Return tuple: (0 if unscraped else 1, name) for sorting
+                return (0 if not has_summary else 1, name.lower())
+            
+            sorted_channels = sorted(channels.items(), key=channel_sort_key)
+            total_channels = len(sorted_channels)
+            
+            # Count unscraped for display
+            unscraped_count = sum(1 for name, _ in sorted_channels if not os.path.exists(get_summary_file_path(name, ".csv")))
+            if unscraped_count > 0:
+                print(f"\n📋 Processing order: {unscraped_count} unscraped channel(s) first, then {total_channels - unscraped_count} existing channel(s)")
+            
+            for idx, (name, config) in enumerate(sorted_channels, 1):
+                remaining = total_channels - idx
+                print(f"\n{'='*60}")
+                print(f"📺 CHANNEL {idx}/{total_channels}: {name}")
+                print(f"{'='*60}")
+                
                 channel_stats = process_channel(name, config, known_speakers)
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
@@ -4420,6 +5308,12 @@ def main():
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+                
+                if remaining > 0:
+                    print(f"\n✅ Finished {name}. {remaining} channel(s) remaining...")
+                else:
+                    print(f"\n🎉 Finished {name}. All channels complete!")
+                    
             write_speaker_detection_log(all_stats, operation_name="All Channels Full Scrape")
         else:
             print("Invalid action. Exiting.")
