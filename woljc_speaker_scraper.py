@@ -319,6 +319,42 @@ def find_transcript_file(date, title, old_speaker):
     return None
 
 
+def update_transcript_speaker_header(filepath, new_speaker):
+    """
+    Update the Speaker: line in the transcript file's internal header.
+    This ensures the internal metadata matches the filename.
+    
+    Returns:
+        bool: True if updated, False if no update needed or error
+    """
+    try:
+        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+        
+        # Check if file has a Speaker: line in the header (first 500 chars typically)
+        header_match = re.search(r'^(Speaker:\s*)(.+)$', content, re.MULTILINE)
+        
+        if header_match:
+            old_speaker = header_match.group(2).strip()
+            # Only update if different
+            if old_speaker != new_speaker:
+                # Replace the Speaker: line
+                new_content = re.sub(
+                    r'^(Speaker:\s*)(.+)$',
+                    f'Speaker: {new_speaker}',
+                    content,
+                    count=1,
+                    flags=re.MULTILINE
+                )
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                return True
+        return False
+    except Exception as e:
+        print(f"  Warning: Could not update header in {filepath}: {e}")
+        return False
+
+
 def rename_transcript_file(old_filename, date, title, new_speaker):
     """Rename transcript file with new speaker name."""
     if not old_filename:
@@ -340,7 +376,7 @@ def rename_transcript_file(old_filename, date, title, new_speaker):
     new_path = os.path.join(TRANSCRIPT_DIR, new_filename)
     
     if old_path != new_path:
-        return (old_path, new_path, old_filename, new_filename)
+        return (old_path, new_path, old_filename, new_filename, new_speaker)
     return None
 
 
@@ -534,16 +570,23 @@ def main():
         save_csv(csv_rows)
         print(f"  Updated {CSV_FILE}")
         
-        # Rename files
+        # Rename files AND update internal headers
         renamed = 0
-        for old_path, new_path, old_name, new_name in file_renames:
+        headers_updated = 0
+        for old_path, new_path, old_name, new_name, new_speaker in file_renames:
             try:
+                # CRITICAL: Update the internal Speaker: header BEFORE renaming
+                if update_transcript_speaker_header(old_path, new_speaker):
+                    headers_updated += 1
+                
+                # Then rename the file
                 os.rename(old_path, new_path)
                 renamed += 1
             except OSError as e:
                 print(f"  Error renaming {old_name}: {e}")
         
         print(f"  Renamed {renamed} transcript files")
+        print(f"  Updated {headers_updated} internal Speaker: headers")
         
         # Final count
         new_unknown = sum(1 for r in csv_rows if r['speaker'] == "Unknown Speaker")

@@ -500,6 +500,45 @@ def parse_published_time(published_text, max_days=1):
 def sanitize_filename(text):
     return re.sub(r'[\\/*?:"<>|]', "", text).strip()
 
+def update_transcript_speaker_header(filepath, new_speaker):
+    """
+    Update the Speaker: line in the transcript file's internal header.
+    This ensures the internal metadata matches the filename.
+    
+    CRITICAL: This must be called BEFORE renaming transcript files to prevent
+    the mismatch bug where filename has correct speaker but internal header 
+    still says "Unknown Speaker".
+    
+    Returns:
+        bool: True if updated, False if no update needed or error
+    """
+    try:
+        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+        
+        # Check if file has a Speaker: line in the header (first 500 chars typically)
+        header_match = re.search(r'^(Speaker:\s*)(.+)$', content, re.MULTILINE)
+        
+        if header_match:
+            old_speaker = header_match.group(2).strip()
+            # Only update if different
+            if old_speaker != new_speaker:
+                # Replace the Speaker: line
+                new_content = re.sub(
+                    r'^(Speaker:\s*)(.+)$',
+                    f'Speaker: {new_speaker}',
+                    content,
+                    count=1,
+                    flags=re.MULTILINE
+                )
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                return True
+        return False
+    except Exception as e:
+        # Silently fail - don't break the main process
+        return False
+
 def split_multiple_speakers(text):
     return [p.strip() for p in re.split(r'\s+&\s+|\s+and\s+|\s*/\s*|,\s*', text) if p.strip()]
 
@@ -3599,6 +3638,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                                     new_path = os.path.join(channel_dir, new_filename)
                                     if old_path != new_path and os.path.exists(old_path):
                                         try:
+                                            # CRITICAL: Update internal Speaker: header BEFORE renaming
+                                            update_transcript_speaker_header(old_path, new_speaker)
                                             os.rename(old_path, new_path)
                                         except OSError:
                                             pass
