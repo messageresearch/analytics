@@ -299,23 +299,49 @@ export default function App(){
   const [coverageShowPercent, setCoverageShowPercent] = useState(false)
   const [coverageExpanded, setCoverageExpanded] = useState(false)
   const [coverageTab, setCoverageTab] = useState('bars') // 'bars' or 'heatmap'
+  const [speakerDisplayLimit, setSpeakerDisplayLimit] = useState(100)
   const churchCoverageData = useMemo(() => {
     if (!rawData.length) return []
     const churchMap = new Map()
     for (const s of rawData) {
       if (!churchMap.has(s.church)) {
-        churchMap.set(s.church, { church: s.church, count: 0, minDate: s.timestamp, maxDate: s.timestamp })
+        churchMap.set(s.church, { 
+          church: s.church, 
+          count: 0, 
+          minDate: s.timestamp, 
+          maxDate: s.timestamp,
+          speakers: new Set(),
+          unknownSpeakerCount: 0,
+          categories: new Map()
+        })
       }
       const entry = churchMap.get(s.church)
       entry.count++
       if (s.timestamp < entry.minDate) entry.minDate = s.timestamp
       if (s.timestamp > entry.maxDate) entry.maxDate = s.timestamp
+      // Track speakers - "Unknown Speaker" is used for unidentified speakers
+      const speaker = s.speaker || 'Unknown Speaker'
+      if (speaker === 'Unknown Speaker') {
+        entry.unknownSpeakerCount++
+      } else {
+        entry.speakers.add(speaker)
+      }
+      // Track categories
+      const category = s.type || 'Unknown'
+      entry.categories.set(category, (entry.categories.get(category) || 0) + 1)
     }
     const total = rawData.length
     const result = Array.from(churchMap.values()).map(c => ({
-      ...c,
+      church: c.church,
+      count: c.count,
+      minDate: c.minDate,
+      maxDate: c.maxDate,
       percent: ((c.count / total) * 100).toFixed(1),
-      dateRange: `${new Date(c.minDate).getFullYear()} - ${new Date(c.maxDate).getFullYear()}`
+      dateRange: `${new Date(c.minDate).getFullYear()} - ${new Date(c.maxDate).getFullYear()}`,
+      speakerCount: c.speakers.size,
+      unknownSpeakerCount: c.unknownSpeakerCount,
+      identifiedCount: c.count - c.unknownSpeakerCount,
+      categories: Object.fromEntries(c.categories)
     }))
     result.sort((a, b) => b.count - a.count)
     return result
@@ -799,44 +825,47 @@ export default function App(){
           </div>
 
           {/* Transcript Coverage by Church - shows ENTIRE database, ignores filters */}
-          <div className={`bg-white p-6 rounded-xl border shadow-sm mb-8 ${!coverageExpanded ? 'hover:border-blue-300 transition-colors' : ''}`}>
-            <div className="flex justify-between items-center">
+          <div className={`bg-white p-4 sm:p-6 rounded-xl border shadow-sm mb-8 ${!coverageExpanded ? 'hover:border-blue-300 transition-colors' : ''}`}>
+            <div className="flex flex-col gap-3">
+              {/* Title row - always visible */}
               <div 
-                className={`flex items-center gap-2 cursor-pointer select-none ${!coverageExpanded ? 'hover:text-blue-600' : ''}`} 
+                className={`flex flex-wrap items-center gap-2 cursor-pointer select-none ${!coverageExpanded ? 'hover:text-blue-600' : ''}`} 
                 onClick={() => setCoverageExpanded(!coverageExpanded)}
               >
-                <div className={`p-1 rounded ${!coverageExpanded ? 'bg-blue-100 text-blue-600' : ''}`}>
+                <div className={`p-1 rounded flex-shrink-0 ${!coverageExpanded ? 'bg-blue-100 text-blue-600' : ''}`}>
                   <Icon name={coverageExpanded ? 'chevronDown' : 'chevronRight'} size={16} />
                 </div>
-                <h3 className="font-bold text-gray-800 flex items-center gap-2">
-                  <Icon name="barChart" /> Transcript Coverage by Church
+                <h3 className="font-bold text-gray-800 flex items-center gap-2 text-sm sm:text-base">
+                  <Icon name="barChart" /> <span>Coverage by Church</span>
                 </h3>
-                <span className="text-xs text-gray-500 ml-2">({churchCoverageData.length} churches • {rawData.length.toLocaleString()} total transcripts)</span>
-                {!coverageExpanded && <span className="text-xs text-blue-500 ml-2 font-medium">Click to expand</span>}
+                <span className="text-xs text-gray-500 w-full sm:w-auto sm:ml-2">({churchCoverageData.length} churches • {rawData.length.toLocaleString()} total transcripts)</span>
+                {!coverageExpanded && <span className="text-xs text-blue-500 font-medium hidden sm:inline">Click to expand</span>}
               </div>
+              
+              {/* Controls row - only when expanded */}
               {coverageExpanded && (
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-4">
                   {/* Tab selector */}
                   <div className="flex bg-gray-100 rounded-lg p-1">
-                    <button onClick={() => setCoverageTab('bars')} className={`px-3 py-1 text-xs font-medium rounded ${coverageTab === 'bars' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                    <button onClick={() => setCoverageTab('bars')} className={`px-2 sm:px-3 py-1 text-xs font-medium rounded ${coverageTab === 'bars' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
                       Bar Chart
                     </button>
-                    <button onClick={() => setCoverageTab('heatmap')} className={`px-3 py-1 text-xs font-medium rounded ${coverageTab === 'heatmap' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                    <button onClick={() => setCoverageTab('heatmap')} className={`px-2 sm:px-3 py-1 text-xs font-medium rounded ${coverageTab === 'heatmap' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
                       Church × Year
                     </button>
-                    <button onClick={() => setCoverageTab('speakers')} className={`px-3 py-1 text-xs font-medium rounded ${coverageTab === 'speakers' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                    <button onClick={() => setCoverageTab('speakers')} className={`px-2 sm:px-3 py-1 text-xs font-medium rounded ${coverageTab === 'speakers' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
                       Speaker × Year
                     </button>
                   </div>
                   {/* Count/% toggle for bar chart only */}
                   {coverageTab === 'bars' && (
-                    <>
+                    <div className="flex items-center gap-2">
                       <span className="text-xs text-gray-500">Show:</span>
                       <div className="flex bg-gray-100 rounded-lg p-1">
                         <button onClick={() => setCoverageShowPercent(false)} className={`px-2 py-1 text-xs font-medium rounded ${!coverageShowPercent ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>Count</button>
                         <button onClick={() => setCoverageShowPercent(true)} className={`px-2 py-1 text-xs font-medium rounded ${coverageShowPercent ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>% of Total</button>
                       </div>
-                    </>
+                    </div>
                   )}
                 </div>
               )}
@@ -851,35 +880,74 @@ export default function App(){
             )}
             
             {/* Bar Chart Tab */}
-            {coverageExpanded && coverageTab === 'bars' && churchCoverageData.length > 0 && (
-              <div style={{ height: Math.max(400, churchCoverageData.length * 22) }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={churchCoverageData} layout="vertical" margin={{ top: 5, right: 80, left: 10, bottom: 5 }} barSize={12}>
-                    <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                    <XAxis type="number" tickFormatter={v => coverageShowPercent ? `${v}%` : v.toLocaleString()} />
-                    <YAxis 
-                      type="category" 
-                      dataKey="church" 
-                      width={280} 
-                      tick={{ fontSize: 11 }} 
-                      interval={0}
-                    />
+            {coverageExpanded && coverageTab === 'bars' && churchCoverageData.length > 0 && (() => {
+              const maxCount = Math.max(...churchCoverageData.map(d => d.count))
+              const maxTick = Math.ceil(maxCount / 250) * 250
+              const ticks = []
+              for (let i = 0; i <= maxTick; i += 250) ticks.push(i)
+              return (
+              <div className="-mx-4 sm:mx-0 px-2 sm:px-0">
+                <p className="text-xs text-gray-500 mb-2 px-1">Click a bar to see more detailed data about that church's transcripts. Darker bars = more transcripts.</p>
+                <div className="text-xs text-gray-600 font-medium text-center mb-1">{coverageShowPercent ? '% of Total Transcripts' : 'Number of Transcripts'}</div>
+                <div style={{ height: Math.max(400, churchCoverageData.length * 22) }}>
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={churchCoverageData} layout="vertical" margin={{ top: 20, right: 30, left: 5, bottom: 5 }} barSize={12}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                      <XAxis 
+                        type="number" 
+                        tickFormatter={v => coverageShowPercent ? `${v}%` : v.toLocaleString()} 
+                        orientation="top"
+                        axisLine={false}
+                        tickLine={false}
+                        tick={{ fontSize: 9 }}
+                        ticks={coverageShowPercent ? [0, 2, 4, 6, 8, 10] : ticks}
+                        domain={coverageShowPercent ? [0, 10] : [0, maxTick]}
+                      />
+                      <XAxis 
+                        type="number" 
+                        tickFormatter={v => coverageShowPercent ? `${v}%` : v.toLocaleString()} 
+                        xAxisId="bottom"
+                        orientation="bottom"
+                        tick={{ fontSize: 9 }}
+                        ticks={coverageShowPercent ? [0, 2, 4, 6, 8, 10] : ticks}
+                        domain={coverageShowPercent ? [0, 10] : [0, maxTick]}
+                      />
+                      <YAxis 
+                        type="category" 
+                        dataKey="church" 
+                        width={typeof window !== 'undefined' && window.innerWidth < 640 ? 110 : 200} 
+                        tick={{ fontSize: typeof window !== 'undefined' && window.innerWidth < 640 ? 8 : 11 }} 
+                        interval={0}
+                        tickFormatter={v => typeof window !== 'undefined' && window.innerWidth < 640 ? v : v}
+                      />
                     <Tooltip 
                       content={({ active, payload }) => {
-                        if (active && payload && payload.length) {
-                          const d = payload[0].payload
-                          const isSelected = selChurches.includes(d.church)
-                          return (
-                            <div className="bg-white border rounded-lg shadow-lg p-3 text-sm">
-                              <p className="font-bold text-gray-800">{d.church}</p>
-                              <p className="text-blue-600">Transcripts: <span className="font-semibold">{d.count.toLocaleString()}</span></p>
-                              <p className="text-gray-600">Coverage: {d.dateRange}</p>
-                              <p className="text-gray-600">{d.percent}% of total transcripts</p>
-                              {isSelected && <p className="text-green-600 text-xs mt-1">✓ Currently selected in filters</p>}
+                        if (!active || !payload || !payload.length) return null
+                        const d = payload[0].payload
+                        const isSelected = selChurches.includes(d.church)
+                        const categoryEntries = Object.entries(d.categories || {}).sort((a, b) => b[1] - a[1])
+                        return (
+                          <div className="bg-white border rounded-lg shadow-lg p-3 text-sm max-w-xs">
+                            <p className="font-bold text-gray-800 mb-2">{d.church}</p>
+                            <div className="space-y-1">
+                              <p className="text-blue-600">📊 Transcripts: <span className="font-semibold">{d.count.toLocaleString()}</span> <span className="text-gray-400">({d.percent}%)</span></p>
+                              <p className="text-gray-600">📅 Coverage: {d.dateRange}</p>
+                              <p className="text-green-600">👤 Speakers: <span className="font-semibold">{d.speakerCount}</span> identified</p>
+                              <p className="text-amber-600 text-xs ml-4">↳ {d.identifiedCount.toLocaleString()} transcripts with known speaker</p>
+                              <p className="text-amber-600 text-xs ml-4">↳ {d.unknownSpeakerCount.toLocaleString()} transcripts with unknown speaker</p>
+                              {categoryEntries.length > 0 && (
+                                <div className="mt-2 pt-2 border-t">
+                                  <p className="text-gray-700 font-medium text-xs">📁 Categories:</p>
+                                  <div className="text-xs text-gray-600 ml-2">
+                                    {categoryEntries.map(([cat, count]) => (
+                                      <p key={cat}>{cat}: {count.toLocaleString()}</p>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
                             </div>
-                          )
-                        }
-                        return null
+                          </div>
+                        )
                       }}
                     />
                     <Bar dataKey={coverageShowPercent ? 'percent' : 'count'} radius={[0, 4, 4, 0]}>
@@ -908,27 +976,34 @@ export default function App(){
                     </Bar>
                   </BarChart>
                 </ResponsiveContainer>
+                </div>
               </div>
-            )}
+              )
+            })()}
             
             {/* Year Heatmap Tab */}
             {coverageExpanded && coverageTab === 'heatmap' && churchYearHeatmap.churches.length > 0 && (
-              <div className="w-full">
-                {/* CSS Grid heatmap - responsive columns */}
+              <div className="w-full -mx-4 sm:mx-0 px-1 sm:px-0">
+                {/* CSS Grid heatmap - very compact on mobile */}
                 <div 
-                  className="grid gap-px bg-gray-200 border rounded overflow-hidden"
+                  className="grid gap-px bg-gray-200 border rounded"
                   style={{ 
-                    gridTemplateColumns: `minmax(140px, 200px) repeat(${churchYearHeatmap.years.length}, minmax(28px, 1fr)) 50px`
+                    gridTemplateColumns: `${typeof window !== 'undefined' && window.innerWidth < 640 ? 50 : 200}px repeat(${churchYearHeatmap.years.length}, 1fr) ${typeof window !== 'undefined' && window.innerWidth < 640 ? 32 : 50}px`,
+                    fontSize: 'clamp(6px, 1.5vw, 12px)'
                   }}
                 >
                   {/* Header row */}
-                  <div className="bg-gray-100 p-2 text-xs font-semibold text-gray-700 sticky top-0">Church</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10">
+                    <span className="hidden sm:inline">Church</span>
+                    <span className="sm:hidden text-[5px]">Church / Year →</span>
+                  </div>
                   {churchYearHeatmap.years.map(year => (
-                    <div key={year} className="bg-gray-100 p-1 text-xs font-semibold text-gray-600 text-center sticky top-0">
-                      '{String(year).slice(-2)}
+                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0">
+                      <span className="hidden sm:inline">'{String(year).slice(-2)}</span>
+                      <span className="sm:hidden text-[5px]">'{String(year).slice(-2)}</span>
                     </div>
                   ))}
-                  <div className="bg-gray-100 p-1 text-xs font-semibold text-gray-600 text-center sticky top-0">Total</div>
+                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0">Total</div>
                   
                   {/* Church rows */}
                   {churchYearHeatmap.churches.map((church, churchIdx) => {
@@ -938,7 +1013,7 @@ export default function App(){
                       <React.Fragment key={church}>
                         {/* Church name cell */}
                         <div 
-                          className={`p-1.5 text-xs text-gray-700 truncate cursor-pointer hover:bg-blue-50 transition-colors ${isSelected ? 'bg-blue-100 font-semibold' : 'bg-white'}`}
+                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-blue-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden ${isSelected ? 'bg-blue-100 font-semibold' : 'bg-white'}`}
                           title={`${church} - Click to filter`}
                           onClick={() => {
                             if (isSelected) {
@@ -964,7 +1039,7 @@ export default function App(){
                           return (
                             <div 
                               key={`${church}-${year}`}
-                              className="p-0.5 text-xs text-center relative group cursor-pointer"
+                              className="p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0"
                               style={{ backgroundColor: bgColor, color: textColor }}
                               title={`${church} (${year}): ${count} transcript${count !== 1 ? 's' : ''}`}
                               onClick={() => {
@@ -975,13 +1050,14 @@ export default function App(){
                                 }
                               }}
                             >
-                              {count > 0 ? count : '·'}
+                              <span className="hidden sm:inline">{count > 0 ? count : '·'}</span>
+                              <span className="sm:hidden text-[3px]">{count > 0 ? count : ''}</span>
                             </div>
                           )
                         })}
                         {/* Total cell */}
                         <div 
-                          className={`p-0.5 text-xs text-center font-medium cursor-pointer hover:bg-blue-50 ${isSelected ? 'bg-blue-100' : 'bg-gray-50'}`}
+                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-blue-50 whitespace-nowrap ${isSelected ? 'bg-blue-100' : 'bg-gray-50'}`}
                           onClick={() => {
                             if (isSelected) {
                               setSelChurches(options.churches)
@@ -990,26 +1066,26 @@ export default function App(){
                             }
                           }}
                         >
-                          {churchTotal}
+                          {churchTotal.toLocaleString()}
                         </div>
                       </React.Fragment>
                     )
                   })}
                   
                   {/* Year totals row */}
-                  <div className="bg-gray-100 p-1.5 text-xs font-semibold text-gray-700">Totals</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700">Totals</div>
                   {churchYearHeatmap.years.map(year => {
                     let yearTotal = 0
                     for (const church of churchYearHeatmap.churches) {
                       yearTotal += churchYearHeatmap.data.get(`${church}|${year}`) || 0
                     }
                     return (
-                      <div key={`total-${year}`} className="bg-gray-100 p-0.5 text-xs text-center font-medium text-gray-700">
-                        {yearTotal || ''}
+                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700">
+                        <span className="hidden sm:inline">{yearTotal || ''}</span>
                       </div>
                     )
                   })}
-                  <div className="bg-gray-100 p-0.5 text-xs text-center font-bold text-gray-700">
+                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap">
                     {rawData.length.toLocaleString()}
                   </div>
                 </div>
@@ -1021,31 +1097,49 @@ export default function App(){
             
             {/* Speaker × Year Heatmap Tab */}
             {coverageExpanded && coverageTab === 'speakers' && speakerYearHeatmap.speakers.length > 0 && (
-              <div className="w-full">
+              <div className="w-full -mx-4 sm:mx-0 px-1 sm:px-0">
+                {/* Summary header */}
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2 px-1">
+                  <div className="text-xs sm:text-sm text-gray-600">
+                    <span className="font-semibold text-green-600">{speakerYearHeatmap.speakers.length}</span> speakers · 
+                    <span className="font-semibold">{rawData.length.toLocaleString()}</span> total transcripts
+                    {speakerYearHeatmap.speakers.length > speakerDisplayLimit && (
+                      <span className="text-gray-400"> · Showing top {Math.min(speakerDisplayLimit, speakerYearHeatmap.speakers.length)}</span>
+                    )}
+                  </div>
+                </div>
+                <p className="text-[10px] sm:text-xs text-gray-500 italic mb-2 px-1">
+                  Note: "Unknown" speakers appear when church channels don't include the speaker name in the video title or description, so our detection algorithm cannot identify them yet.
+                </p>
                 <div 
-                  className="grid gap-px bg-gray-200 border rounded overflow-hidden"
+                  className="grid gap-px bg-gray-200 border rounded"
                   style={{ 
-                    gridTemplateColumns: `minmax(120px, 180px) repeat(${speakerYearHeatmap.years.length}, minmax(28px, 1fr)) 50px`
+                    gridTemplateColumns: `${typeof window !== 'undefined' && window.innerWidth < 640 ? 50 : 180}px repeat(${speakerYearHeatmap.years.length}, 1fr) ${typeof window !== 'undefined' && window.innerWidth < 640 ? 32 : 50}px`,
+                    fontSize: 'clamp(6px, 1.5vw, 12px)'
                   }}
                 >
                   {/* Header row */}
-                  <div className="bg-gray-100 p-2 text-xs font-semibold text-gray-700 sticky top-0">Speaker</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10">
+                    <span className="hidden sm:inline">Speaker</span>
+                    <span className="sm:hidden text-[5px]">Speaker / Year →</span>
+                  </div>
                   {speakerYearHeatmap.years.map(year => (
-                    <div key={year} className="bg-gray-100 p-1 text-xs font-semibold text-gray-600 text-center sticky top-0">
-                      '{String(year).slice(-2)}
+                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0">
+                      <span className="hidden sm:inline">'{String(year).slice(-2)}</span>
+                      <span className="sm:hidden text-[5px]">'{String(year).slice(-2)}</span>
                     </div>
                   ))}
-                  <div className="bg-gray-100 p-1 text-xs font-semibold text-gray-600 text-center sticky top-0">Total</div>
+                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0">Total</div>
                   
-                  {/* Speaker rows */}
-                  {speakerYearHeatmap.speakers.map((speaker) => {
+                  {/* Speaker rows - limited display */}
+                  {speakerYearHeatmap.speakers.slice(0, speakerDisplayLimit).map((speaker) => {
                     const speakerTotal = speakerYearHeatmap.speakerTotals.get(speaker) || 0
                     const isSelected = selSpeakers.length === 1 && selSpeakers[0] === speaker
                     return (
                       <React.Fragment key={speaker}>
                         {/* Speaker name cell */}
                         <div 
-                          className={`p-1.5 text-xs text-gray-700 truncate cursor-pointer hover:bg-green-50 transition-colors ${isSelected ? 'bg-green-100 font-semibold' : 'bg-white'}`}
+                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-green-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden ${isSelected ? 'bg-green-100 font-semibold' : 'bg-white'}`}
                           title={`${speaker} - Click to filter`}
                           onClick={() => {
                             if (isSelected) {
@@ -1072,7 +1166,7 @@ export default function App(){
                           return (
                             <div 
                               key={`${speaker}-${year}`}
-                              className="p-0.5 text-xs text-center relative group cursor-pointer"
+                              className="p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0"
                               style={{ backgroundColor: bgColor, color: textColor }}
                               title={`${speaker} (${year}): ${count} transcript${count !== 1 ? 's' : ''}`}
                               onClick={() => {
@@ -1083,13 +1177,14 @@ export default function App(){
                                 }
                               }}
                             >
-                              {count > 0 ? count : '·'}
+                              <span className="hidden sm:inline">{count > 0 ? count : '·'}</span>
+                              <span className="sm:hidden text-[3px]">{count > 0 ? count : ''}</span>
                             </div>
                           )
                         })}
                         {/* Total cell */}
                         <div 
-                          className={`p-0.5 text-xs text-center font-medium cursor-pointer hover:bg-green-50 ${isSelected ? 'bg-green-100' : 'bg-gray-50'}`}
+                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-green-50 whitespace-nowrap ${isSelected ? 'bg-green-100' : 'bg-gray-50'}`}
                           onClick={() => {
                             if (isSelected) {
                               setSelSpeakers(options.speakers)
@@ -1098,35 +1193,62 @@ export default function App(){
                             }
                           }}
                         >
-                          {speakerTotal}
+                          {speakerTotal.toLocaleString()}
                         </div>
                       </React.Fragment>
                     )
                   })}
                   
                   {/* Year totals row */}
-                  <div className="bg-gray-100 p-1.5 text-xs font-semibold text-gray-700">Totals</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700">Totals</div>
                   {speakerYearHeatmap.years.map(year => {
                     let yearTotal = 0
                     for (const speaker of speakerYearHeatmap.speakers) {
                       yearTotal += speakerYearHeatmap.data.get(`${speaker}|${year}`) || 0
                     }
                     return (
-                      <div key={`total-${year}`} className="bg-gray-100 p-0.5 text-xs text-center font-medium text-gray-700">
-                        {yearTotal || ''}
+                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700">
+                        <span className="hidden sm:inline">{yearTotal || ''}</span>
                       </div>
                     )
                   })}
-                  <div className="bg-gray-100 p-0.5 text-xs text-center font-bold text-gray-700">
+                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap">
                     {rawData.length.toLocaleString()}
                   </div>
                 </div>
+                
+                {/* Show more/less buttons */}
+                {speakerYearHeatmap.speakers.length > 100 && (
+                  <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
+                    {speakerDisplayLimit < speakerYearHeatmap.speakers.length && (
+                      <button
+                        onClick={() => setSpeakerDisplayLimit(prev => Math.min(prev + 100, speakerYearHeatmap.speakers.length))}
+                        className="px-3 py-1.5 text-xs sm:text-sm bg-green-50 text-green-700 rounded-lg hover:bg-green-100 transition-colors font-medium"
+                      >
+                        Show {Math.min(100, speakerYearHeatmap.speakers.length - speakerDisplayLimit)} more speakers
+                      </button>
+                    )}
+                    {speakerDisplayLimit > 100 && (
+                      <button
+                        onClick={() => setSpeakerDisplayLimit(100)}
+                        className="px-3 py-1.5 text-xs sm:text-sm bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+                      >
+                        Show top 100 only
+                      </button>
+                    )}
+                    {speakerDisplayLimit < speakerYearHeatmap.speakers.length && (
+                      <button
+                        onClick={() => setSpeakerDisplayLimit(speakerYearHeatmap.speakers.length)}
+                        className="px-3 py-1.5 text-xs sm:text-sm bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+                      >
+                        Show all {speakerYearHeatmap.speakers.length}
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
             )}
             
-            {coverageExpanded && coverageTab === 'bars' && (
-              <p className="text-xs text-gray-500 mt-2">Click a bar to filter by that church. Darker bars = more transcripts.</p>
-            )}
             {coverageExpanded && coverageTab === 'heatmap' && (
               <p className="text-xs text-gray-500 mt-2">Click any cell or church name to filter. Darker blue = more transcripts. '·' = no data for that year.</p>
             )}

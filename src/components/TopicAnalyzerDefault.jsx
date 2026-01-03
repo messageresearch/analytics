@@ -97,14 +97,16 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
               onChange={e => { 
                 setRawRegex(e.target.value); 
                 setRegexError(validateRegex(e.target.value));
-                // Auto-resize
-                e.target.style.height = 'auto';
-                e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px';
+                // Auto-resize on desktop, keep 4 rows min on mobile
+                if (window.innerWidth >= 640) {
+                  e.target.style.height = 'auto';
+                  e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px';
+                }
               }} 
               placeholder="Enter raw regex pattern" 
               className="flex-1 text-xs px-2 py-1.5 rounded border text-gray-900 font-mono resize-y overflow-hidden"
-              style={{ minHeight: '32px', maxHeight: '120px' }}
-              rows={1}
+              style={{ minHeight: typeof window !== 'undefined' && window.innerWidth < 640 ? '80px' : '32px', maxHeight: '120px' }}
+              rows={typeof window !== 'undefined' && window.innerWidth < 640 ? 4 : 1}
             />
             {rawRegex && !regexError && (
               <button 
