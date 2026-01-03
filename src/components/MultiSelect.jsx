@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useMemo, useCallback, startTransiti
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
-export default function MultiSelect({ label, options, selected, onChange, wide }){
+export default function MultiSelect({ label, options, selected, onChange, wide, medium }){
   const [isOpen, setIsOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
@@ -130,8 +130,10 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
 
   const listHeight = Math.min(filteredOptions.length * 36, 280)
 
+  const widthClass = wide ? " max-w-2xl w-full" : medium ? " min-w-[280px]" : ""
+
   return (
-    <div className={"relative" + (wide ? " max-w-2xl w-full" : "") } ref={ref}>
+    <div className={"relative" + widthClass} ref={ref}>
       <label className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1 block">{label}</label>
       <button onClick={()=>setIsOpen(!isOpen)} disabled={isBatchUpdating} className={"w-full bg-white border border-gray-300 text-left text-sm text-gray-700 rounded-lg p-2.5 shadow-sm flex justify-between items-center hover:border-blue-400 transition" + (wide ? " !max-w-2xl" : "") + (isBatchUpdating ? " opacity-50 cursor-wait" : "")}>
         <span className="truncate">
@@ -144,7 +146,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide }
         <Icon name="chevronDown" size={14} className="text-gray-400" />
       </button>
       {isOpen && (
-        <div className={"absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 shadow-xl rounded-lg z-50 flex flex-col" + (wide ? " !max-w-2xl" : "") }>
+        <div className={"absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 shadow-xl rounded-lg z-50 flex flex-col" + (wide ? " !max-w-2xl" : medium ? " min-w-[280px]" : "") }>
           <div className="p-2 border-b bg-gray-50 rounded-t-lg">
             <input
               ref={searchRef}

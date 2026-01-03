@@ -224,7 +224,7 @@ export default function App(){
         setSelTitles([...new Set(list.map(s=>s.title))].filter(Boolean));
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2020); setSelYears(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypes(types)
-        const langs = [...new Set(list.map(s=>s.language))]; const defaultLangs = langs.filter(l => ['English','Spanish','Unknown'].includes(l)); setSelLangs(defaultLangs.length>0?defaultLangs:langs)
+        const langs = [...new Set(list.map(s=>s.language))]; setSelLangs(langs)  // Default: ALL languages selected
         
         // Load pre-computed default search terms if available (eliminates sluggish auto-run)
         if (json.defaultSearchTerms && Array.isArray(json.defaultSearchTerms)) {
@@ -736,18 +736,20 @@ export default function App(){
               </div>
               <button onClick={()=>{ setSelChurches(options.churches); setSelSpeakers(options.speakers); setSelTitles(options.titles); setSelYears(options.years); setSelTypes(options.types); setSelLangs(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+              <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} medium />
               <div>
-                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} />
+                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} wide />
                 <div className="text-xs text-amber-600 mt-1 flex items-center gap-1" title="Speaker names are extracted from video titles/descriptions and may be incomplete or inaccurate">
                   <Icon name="warning" size={12} />
                   <span>Data may be incomplete</span>
                 </div>
               </div>
-              <div className="md:col-span-2 lg:col-span-3">
+              <div className="md:col-span-2">
                 <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
               </div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
               <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
               <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
@@ -863,7 +865,7 @@ export default function App(){
                     <div className="text-xs font-medium text-gray-600 px-4 pt-3 pb-2">Click a sermon to view transcript:</div>
                     <div className="flex-1 overflow-auto px-3 pb-3">
                       <div className="space-y-2">
-                        {(mainChartPinnedBucket.sermons || []).map((s,i)=> (
+                        {[...(mainChartPinnedBucket.sermons || [])].sort((a,b) => (b.mentionCount || 0) - (a.mentionCount || 0)).map((s,i)=> (
                           <button 
                             key={s.id || i}
                             onClick={()=>{ setSelectedSermon(s); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 

@@ -2801,12 +2801,50 @@ def validate_year(date_str):
         return date_str
     except: return None
 
+def extract_spoken_word_date(text):
+    """
+    Extract date from Spoken Word Church title format: YY-MMDD(am/pm)
+    Examples: 10-0704, 08-1214, 09-0521pm, 10-0411am
+    
+    Returns: date string in YYYY-MM-DD format, or None if not matched
+    """
+    match = re.match(r'^(\d{2})-(\d{2})(\d{2})(am|pm)?', text.strip(), re.IGNORECASE)
+    if not match:
+        return None
+    
+    year_2digit = int(match.group(1))
+    month = match.group(2)
+    day = match.group(3)
+    
+    # Convert 2-digit year (assumes 2000s for 00-29, 1900s for 30-99)
+    year_4digit = 2000 + year_2digit if year_2digit <= 29 else 1900 + year_2digit
+    
+    try:
+        month_int, day_int = int(month), int(day)
+        if 1 <= month_int <= 12 and 1 <= day_int <= 31:
+            dt = datetime.datetime(year_4digit, month_int, day_int)
+            return dt.strftime("%Y-%m-%d")
+    except (ValueError, OverflowError):
+        pass
+    return None
+
 def extract_date_from_text(text):
+    # First try Spoken Word Church YY-MMDD format (must be at start of title)
+    spoken_word_date = extract_spoken_word_date(text)
+    if spoken_word_date: return spoken_word_date
+    
+    # Standard YYYY-MM-DD or YYYY/MM/DD format
     match = re.search(r'(\d{4})[-./](\d{2})[-./](\d{2})', text)
     if match: return validate_year(f"{match.group(1)}-{match.group(2)}-{match.group(3)}")
+    # MM-DD-YYYY format
     match = re.search(r'(\d{2})[-./](\d{2})[-./](\d{4})', text)
     if match: return validate_year(f"{match.group(3)}-{match.group(1)}-{match.group(2)}")
+    # YYMMDD format (compact)
     match = re.search(r'\b(2[0-9])(\d{2})(\d{2})\b', text)
+    if match:
+        year = 2000 + int(match.group(1))
+        return validate_year(f"{year}-{match.group(2)}-{match.group(3)}")
+    # Month Day, Year format (e.g., "January 15, 2020")
     match = re.search(r'([A-Z][a-z]+)\s+(\d{1,2}),?\s+(\d{4})', text)
     if match:
         try:
@@ -2815,11 +2853,75 @@ def extract_date_from_text(text):
         except: pass
     return None
 
+def extract_streamed_live_date(text):
+    """
+    Extract date from "Streamed live on" or similar phrases in YouTube descriptions.
+    YouTube uses formats like:
+    - "Streamed live on Mar 15, 2023"
+    - "Streamed live on March 15, 2023"
+    - "streamed on Sunday 25th August, 2019"
+    - "was streamed on 14 May 2023"
+    
+    Returns: date string in YYYY-MM-DD format, or None if not matched
+    """
+    if not text:
+        return None
+    
+    # Pattern 1: "Streamed live on Month Day, Year" or "streamed on Month Day, Year"
+    match = re.search(r'[Ss]treamed\s+(?:live\s+)?on\s+([A-Z][a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})', text)
+    if match:
+        try:
+            month_str, day, year = match.group(1), match.group(2), match.group(3)
+            dt = datetime.datetime.strptime(f"{month_str} {day} {year}", "%B %d %Y")
+            return validate_year(dt.strftime("%Y-%m-%d"))
+        except ValueError:
+            # Try abbreviated month
+            try:
+                dt = datetime.datetime.strptime(f"{month_str} {day} {year}", "%b %d %Y")
+                return validate_year(dt.strftime("%Y-%m-%d"))
+            except ValueError:
+                pass
+    
+    # Pattern 2: "streamed on Day Month Year" (e.g., "streamed on 14 May 2023")
+    match = re.search(r'[Ss]treamed\s+(?:live\s+)?on\s+(\d{1,2})(?:st|nd|rd|th)?\s+([A-Z][a-z]+),?\s+(\d{4})', text)
+    if match:
+        try:
+            day, month_str, year = match.group(1), match.group(2), match.group(3)
+            dt = datetime.datetime.strptime(f"{day} {month_str} {year}", "%d %B %Y")
+            return validate_year(dt.strftime("%Y-%m-%d"))
+        except ValueError:
+            try:
+                dt = datetime.datetime.strptime(f"{day} {month_str} {year}", "%d %b %Y")
+                return validate_year(dt.strftime("%Y-%m-%d"))
+            except ValueError:
+                pass
+    
+    # Pattern 3: "streamed on Sunday 25th August, 2019" (with day of week)
+    match = re.search(r'[Ss]treamed\s+(?:live\s+)?on\s+(?:Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\s+(\d{1,2})(?:st|nd|rd|th)?\s+([A-Z][a-z]+),?\s+(\d{4})', text)
+    if match:
+        try:
+            day, month_str, year = match.group(1), match.group(2), match.group(3)
+            dt = datetime.datetime.strptime(f"{day} {month_str} {year}", "%d %B %Y")
+            return validate_year(dt.strftime("%Y-%m-%d"))
+        except ValueError:
+            pass
+    
+    return None
+
 def determine_sermon_date(title, description, yt_obj):
+    # Priority 1: Check for "Streamed live on" date in description (most reliable for livestreams/tape services)
+    streamed_date = extract_streamed_live_date(description)
+    if streamed_date: return streamed_date
+    
+    # Priority 2: Extract date from title
     date = extract_date_from_text(title)
     if date: return date
+    
+    # Priority 3: Extract date from description (other date formats)
     date = extract_date_from_text(description)
     if date: return date
+    
+    # Priority 4: Fall back to YouTube publish date
     if yt_obj:
         try: return yt_obj.publish_date.strftime("%Y-%m-%d")
         except: pass
