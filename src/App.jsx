@@ -90,6 +90,7 @@ export default function App(){
   
   const [rollingWeeks, setRollingWeeks] = useState(26)
   const [aggregateWindow, setAggregateWindow] = useState(26)
+  const [chartMode, setChartMode] = useState('mentions') // 'mentions' or 'volume'
   const [view, setView] = useState('dashboard')
   const [expandedChart, setExpandedChart] = useState(null)
   const [selectedSermon, setSelectedSermon] = useState(null)
@@ -248,7 +249,59 @@ export default function App(){
     init()
   },[])
 
+  // All unique options from raw data (used for reset and initial state)
   const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
+  
+  // SMART CASCADING FILTERS: Options adjust based on selected churches
+  // Simpler cascade: Church → Speakers/Titles/Years/Types/Langs (all based only on church)
+  // This prevents circular dependencies that empty out all filters
+  const filteredOptions = useMemo(() => {
+    const churchSet = new Set(selChurches)
+    const speakerSet = new Set(selSpeakers)
+    
+    // All sermons from selected churches (the base filter for everything else)
+    const churchFilteredSermons = rawData.filter(s => churchSet.has(s.church))
+    
+    // Speakers: only speakers who appear in selected churches
+    const speakersFiltered = [...new Set(
+      churchFilteredSermons.map(s => s.speaker)
+    )].filter(Boolean).sort()
+    
+    // Titles: filtered by selected churches, and optionally by speakers if narrowed
+    const titlesFiltered = [...new Set(
+      churchFilteredSermons.filter(s => {
+        // If speakers have been narrowed (not all selected), also filter titles by speaker
+        if (selSpeakers.length > 0 && selSpeakers.length < speakersFiltered.length) {
+          return speakerSet.has(s.speaker)
+        }
+        return true
+      }).map(s => s.title)
+    )].filter(Boolean).sort()
+    
+    // Years: only years that have data for selected churches
+    const yearsFiltered = [...new Set(
+      churchFilteredSermons.map(s => s.year)
+    )].filter(Boolean).sort().reverse()
+    
+    // Categories: only categories that exist for selected churches
+    const typesFiltered = [...new Set(
+      churchFilteredSermons.map(s => s.type)
+    )].filter(Boolean).sort()
+    
+    // Languages: only languages that exist for selected churches  
+    const langsFiltered = [...new Set(
+      churchFilteredSermons.map(s => s.language)
+    )].filter(Boolean).sort()
+    
+    return {
+      churches: options.churches, // Churches always show all (top-level filter)
+      speakers: speakersFiltered,
+      titles: titlesFiltered,
+      years: yearsFiltered,
+      types: typesFiltered,
+      langs: langsFiltered
+    }
+  }, [rawData, options, selChurches, selSpeakers])
 
   // Build church aliases map from staticChannels (for legacy name search)
   const churchAliases = useMemo(() => {
@@ -617,12 +670,18 @@ export default function App(){
     // 4 weeks ≈ 1 month, 12 weeks ≈ 3 months, 26 weeks ≈ 6 months
     const windowMonths = Math.max(1, Math.round(aggregateWindow / 4))
     return monthly.map((item, idx, arr)=>{ 
-      let sum=0, count=0
+      // Calculate rolling averages for both mentions and volume
+      let mentionSum=0, volumeSum=0, windowCount=0
       for(let i=idx; i>=Math.max(0, idx-(windowMonths-1)); i--){ 
-        sum += arr[i].mentionCount
-        count++ 
+        mentionSum += arr[i].mentionCount
+        volumeSum += arr[i].count
+        windowCount++ 
       } 
-      return { ...item, rollingAvg: count>0?parseFloat((sum/count).toFixed(1)):0 } 
+      return { 
+        ...item, 
+        rollingAvg: windowCount>0 ? parseFloat((mentionSum/windowCount).toFixed(1)) : 0,
+        volumeRollingAvg: windowCount>0 ? parseFloat((volumeSum/windowCount).toFixed(1)) : 0
+      } 
     })
   }, [filteredData, aggregateWindow, activeTerm])
 
@@ -800,27 +859,37 @@ export default function App(){
             <div className="flex justify-between items-center mb-4">
               <div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
-                <div className="text-xs text-gray-500 mt-1">Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}</span> • Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}</span>{isPending && <span className="ml-2 text-blue-500">⟳</span>}</div>
+                <div className="text-xs text-gray-500 mt-1">
+                  Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • 
+                  Speakers: <span className="font-medium text-gray-700">{selSpeakers.length.toLocaleString()}{selSpeakers.length < filteredOptions.speakers.length ? `/${filteredOptions.speakers.length}` : ''}</span> • 
+                  Titles: <span className="font-medium text-gray-700">{selTitles.length.toLocaleString()}{selTitles.length < filteredOptions.titles.length ? `/${filteredOptions.titles.length}` : ''}</span>
+                  {isPending && <span className="ml-2 text-blue-500">⟳</span>}
+                </div>
               </div>
               <button onClick={()=>{ setSelChurchesRaw(options.churches); setSelSpeakersRaw(options.speakers); setSelTitlesRaw(options.titles); setSelYearsRaw(options.years); setSelTypesRaw(options.types); setSelLangsRaw(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
+            </div>
+            {/* Smart filter hint - always visible */}
+            <div className="text-xs text-blue-600 bg-blue-50 rounded px-2 py-1 mb-3 flex items-center gap-1">
+              <Icon name="info" size={12} />
+              <span>Smart filters: Options adjust based on selected churches</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
               <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} medium aliases={churchAliases} />
               <div>
-                <MultiSelect label="Speakers" options={options.speakers} selected={selSpeakers} onChange={setSelSpeakers} wide />
+                <MultiSelect label="Speakers" options={filteredOptions.speakers} selected={selSpeakers} onChange={setSelSpeakers} wide allOptions={options.speakers} />
                 <div className="text-xs text-amber-600 mt-1 flex items-center gap-1" title="Speaker names are extracted from video titles/descriptions and may be incomplete or inaccurate">
                   <Icon name="warning" size={12} />
                   <span>Data may be incomplete</span>
                 </div>
               </div>
               <div className="md:col-span-2">
-                <MultiSelect label="Titles" options={options.titles} selected={selTitles} onChange={setSelTitles} wide />
+                <MultiSelect label="Titles" options={filteredOptions.titles} selected={selTitles} onChange={setSelTitles} wide allOptions={options.titles} />
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <MultiSelect label="Years" options={options.years} selected={selYears} onChange={setSelYears} />
-              <MultiSelect label="Categories" options={options.types} selected={selTypes} onChange={setSelTypes} />
-              <MultiSelect label="Languages" options={options.langs} selected={selLangs} onChange={setSelLangs} />
+              <MultiSelect label="Years" options={filteredOptions.years} selected={selYears} onChange={setSelYears} allOptions={options.years} />
+              <MultiSelect label="Categories" options={filteredOptions.types} selected={selTypes} onChange={setSelTypes} allOptions={options.types} />
+              <MultiSelect label="Languages" options={filteredOptions.langs} selected={selLangs} onChange={setSelLangs} allOptions={options.langs} />
             </div>
           </div>
 
@@ -915,10 +984,9 @@ export default function App(){
                       <YAxis 
                         type="category" 
                         dataKey="church" 
-                        width={typeof window !== 'undefined' && window.innerWidth < 640 ? 110 : 200} 
+                        width={typeof window !== 'undefined' && window.innerWidth < 640 ? 120 : 260} 
                         tick={{ fontSize: typeof window !== 'undefined' && window.innerWidth < 640 ? 8 : 11 }} 
                         interval={0}
-                        tickFormatter={v => typeof window !== 'undefined' && window.innerWidth < 640 ? v : v}
                       />
                     <Tooltip 
                       content={({ active, payload }) => {
@@ -986,34 +1054,35 @@ export default function App(){
               <div className="w-full -mx-4 sm:mx-0 px-1 sm:px-0">
                 {/* CSS Grid heatmap - very compact on mobile */}
                 <div 
-                  className="grid gap-px bg-gray-200 border rounded"
+                  className="grid border border-gray-300 rounded overflow-hidden"
                   style={{ 
                     gridTemplateColumns: `${typeof window !== 'undefined' && window.innerWidth < 640 ? 50 : 200}px repeat(${churchYearHeatmap.years.length}, 1fr) ${typeof window !== 'undefined' && window.innerWidth < 640 ? 32 : 50}px`,
                     fontSize: 'clamp(6px, 1.5vw, 12px)'
                   }}
                 >
                   {/* Header row */}
-                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10">
+                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10 border-b border-r border-gray-300">
                     <span className="hidden sm:inline">Church</span>
                     <span className="sm:hidden text-[5px]">Church / Year →</span>
                   </div>
                   {churchYearHeatmap.years.map(year => (
-                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0">
+                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0 border-b border-r border-gray-300">
                       <span className="hidden sm:inline">'{String(year).slice(-2)}</span>
                       <span className="sm:hidden text-[5px]">'{String(year).slice(-2)}</span>
                     </div>
                   ))}
-                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0">Total</div>
+                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0 border-b border-gray-300">Total</div>
                   
                   {/* Church rows */}
                   {churchYearHeatmap.churches.map((church, churchIdx) => {
                     const churchTotal = churchCoverageData.find(c => c.church === church)?.count || 0
                     const isSelected = selChurches.length === 1 && selChurches[0] === church
+                    const isLastRow = churchIdx === churchYearHeatmap.churches.length - 1
                     return (
                       <React.Fragment key={church}>
                         {/* Church name cell */}
                         <div 
-                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-blue-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden ${isSelected ? 'bg-blue-100 font-semibold' : 'bg-white'}`}
+                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-blue-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden border-r border-gray-300 ${!isLastRow ? 'border-b border-gray-200' : ''} ${isSelected ? 'bg-blue-100 font-semibold' : 'bg-white'}`}
                           title={`${church} - Click to filter`}
                           onClick={() => {
                             if (isSelected) {
@@ -1039,7 +1108,7 @@ export default function App(){
                           return (
                             <div 
                               key={`${church}-${year}`}
-                              className="p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0"
+                              className={`p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0 border-r border-gray-200 ${!isLastRow ? 'border-b border-gray-200' : ''}`}
                               style={{ backgroundColor: bgColor, color: textColor }}
                               title={`${church} (${year}): ${count} transcript${count !== 1 ? 's' : ''}`}
                               onClick={() => {
@@ -1057,7 +1126,7 @@ export default function App(){
                         })}
                         {/* Total cell */}
                         <div 
-                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-blue-50 whitespace-nowrap ${isSelected ? 'bg-blue-100' : 'bg-gray-50'}`}
+                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-blue-50 whitespace-nowrap ${!isLastRow ? 'border-b border-gray-200' : ''} ${isSelected ? 'bg-blue-100' : 'bg-gray-50'}`}
                           onClick={() => {
                             if (isSelected) {
                               setSelChurches(options.churches)
@@ -1073,19 +1142,19 @@ export default function App(){
                   })}
                   
                   {/* Year totals row */}
-                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700">Totals</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700 border-t border-r border-gray-300">Totals</div>
                   {churchYearHeatmap.years.map(year => {
                     let yearTotal = 0
                     for (const church of churchYearHeatmap.churches) {
                       yearTotal += churchYearHeatmap.data.get(`${church}|${year}`) || 0
                     }
                     return (
-                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700">
+                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700 border-t border-r border-gray-300">
                         <span className="hidden sm:inline">{yearTotal || ''}</span>
                       </div>
                     )
                   })}
-                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap">
+                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap border-t border-gray-300">
                     {rawData.length.toLocaleString()}
                   </div>
                 </div>
@@ -1112,34 +1181,35 @@ export default function App(){
                   Note: "Unknown" speakers appear when church channels don't include the speaker name in the video title or description, so our detection algorithm cannot identify them yet.
                 </p>
                 <div 
-                  className="grid gap-px bg-gray-200 border rounded"
+                  className="grid border border-gray-300 rounded overflow-hidden"
                   style={{ 
                     gridTemplateColumns: `${typeof window !== 'undefined' && window.innerWidth < 640 ? 50 : 180}px repeat(${speakerYearHeatmap.years.length}, 1fr) ${typeof window !== 'undefined' && window.innerWidth < 640 ? 32 : 50}px`,
                     fontSize: 'clamp(6px, 1.5vw, 12px)'
                   }}
                 >
                   {/* Header row */}
-                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10">
+                  <div className="bg-gray-100 p-0.5 sm:p-2 font-semibold text-gray-700 sticky left-0 z-10 border-b border-r border-gray-300">
                     <span className="hidden sm:inline">Speaker</span>
                     <span className="sm:hidden text-[5px]">Speaker / Year →</span>
                   </div>
                   {speakerYearHeatmap.years.map(year => (
-                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0">
+                    <div key={year} className="bg-gray-100 p-0 sm:p-0.5 font-semibold text-gray-600 text-center sticky top-0 border-b border-r border-gray-300">
                       <span className="hidden sm:inline">'{String(year).slice(-2)}</span>
                       <span className="sm:hidden text-[5px]">'{String(year).slice(-2)}</span>
                     </div>
                   ))}
-                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0">Total</div>
+                  <div className="bg-gray-100 p-0.5 font-semibold text-gray-600 text-center sticky top-0 border-b border-gray-300">Total</div>
                   
                   {/* Speaker rows - limited display */}
-                  {speakerYearHeatmap.speakers.slice(0, speakerDisplayLimit).map((speaker) => {
+                  {speakerYearHeatmap.speakers.slice(0, speakerDisplayLimit).map((speaker, speakerIdx) => {
                     const speakerTotal = speakerYearHeatmap.speakerTotals.get(speaker) || 0
                     const isSelected = selSpeakers.length === 1 && selSpeakers[0] === speaker
+                    const isLastRow = speakerIdx === Math.min(speakerDisplayLimit, speakerYearHeatmap.speakers.length) - 1
                     return (
                       <React.Fragment key={speaker}>
                         {/* Speaker name cell */}
                         <div 
-                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-green-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden ${isSelected ? 'bg-green-100 font-semibold' : 'bg-white'}`}
+                          className={`p-0.5 sm:p-1.5 text-gray-700 cursor-pointer hover:bg-green-50 transition-colors sticky left-0 z-10 text-[5px] sm:text-xs sm:truncate line-clamp-2 sm:line-clamp-none overflow-hidden border-r border-gray-300 ${!isLastRow ? 'border-b border-gray-200' : ''} ${isSelected ? 'bg-green-100 font-semibold' : 'bg-white'}`}
                           title={`${speaker} - Click to filter`}
                           onClick={() => {
                             if (isSelected) {
@@ -1166,7 +1236,7 @@ export default function App(){
                           return (
                             <div 
                               key={`${speaker}-${year}`}
-                              className="p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0"
+                              className={`p-0 sm:p-0.5 text-center relative group cursor-pointer min-h-[14px] sm:min-h-0 border-r border-gray-200 ${!isLastRow ? 'border-b border-gray-200' : ''}`}
                               style={{ backgroundColor: bgColor, color: textColor }}
                               title={`${speaker} (${year}): ${count} transcript${count !== 1 ? 's' : ''}`}
                               onClick={() => {
@@ -1184,7 +1254,7 @@ export default function App(){
                         })}
                         {/* Total cell */}
                         <div 
-                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-green-50 whitespace-nowrap ${isSelected ? 'bg-green-100' : 'bg-gray-50'}`}
+                          className={`px-1 py-0 sm:p-0.5 text-center font-medium cursor-pointer hover:bg-green-50 whitespace-nowrap ${!isLastRow ? 'border-b border-gray-200' : ''} ${isSelected ? 'bg-green-100' : 'bg-gray-50'}`}
                           onClick={() => {
                             if (isSelected) {
                               setSelSpeakers(options.speakers)
@@ -1200,19 +1270,19 @@ export default function App(){
                   })}
                   
                   {/* Year totals row */}
-                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700">Totals</div>
+                  <div className="bg-gray-100 p-0.5 sm:p-1.5 font-semibold text-gray-700 border-t border-r border-gray-300">Totals</div>
                   {speakerYearHeatmap.years.map(year => {
                     let yearTotal = 0
                     for (const speaker of speakerYearHeatmap.speakers) {
                       yearTotal += speakerYearHeatmap.data.get(`${speaker}|${year}`) || 0
                     }
                     return (
-                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700">
+                      <div key={`total-${year}`} className="bg-gray-100 p-0 sm:p-0.5 text-center font-medium text-gray-700 border-t border-r border-gray-300">
                         <span className="hidden sm:inline">{yearTotal || ''}</span>
                       </div>
                     )
                   })}
-                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap">
+                  <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap border-t border-gray-300">
                     {rawData.length.toLocaleString()}
                   </div>
                 </div>
@@ -1269,17 +1339,35 @@ export default function App(){
               </div>
 
               <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8 relative">
-                <div className="flex justify-between items-center mb-6">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
                   <div>
-                    <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="activity" /> Detailed Activity & Trend ({activeTerm})</h3>
-                    <p className="text-xs text-gray-500 mt-1">Area = Volume. Line = {aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} Rolling Avg. Click a bar to browse sermons.</p>
+                    <h3 className="font-bold text-gray-800 flex items-center gap-2">
+                      <Icon name="activity" /> 
+                      {chartMode === 'mentions' ? `${activeTerm} Activity & Trend` : 'Transcript Volume Over Time'}
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1">
+                      {chartMode === 'mentions' 
+                        ? `Based on filters + search. Line = ${aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} rolling avg. Click a datapoint to browse.`
+                        : `Based on filters only (ignores search). Line = ${aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} rolling avg. Click a datapoint to browse.`
+                      }
+                    </p>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500" title="Rolling average window for trend line smoothing">Trend Window:</span>
-                    <div className="flex bg-gray-100 rounded-lg p-1" title="Shorter = more responsive, Longer = smoother trend">
-                      {[{w:4,l:'1 Mo',t:'1-month rolling average'},{w:12,l:'3 Mo',t:'3-month rolling average'},{w:26,l:'6 Mo',t:'6-month rolling average'}].map(({w,l,t})=> 
-                        <button key={w} onClick={()=>setAggregateWindow(w)} title={t} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
-                      )}
+                  <div className="flex flex-wrap items-center gap-3">
+                    <div className="flex bg-gray-100 rounded-lg p-1" title="Toggle between search mentions and total transcript volume">
+                      <button onClick={()=>setChartMode('mentions')} className={`px-2 py-1 text-xs font-medium rounded transition-colors ${chartMode==='mentions' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                        Mentions
+                      </button>
+                      <button onClick={()=>setChartMode('volume')} className={`px-2 py-1 text-xs font-medium rounded transition-colors ${chartMode==='volume' ? 'bg-white shadow text-emerald-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                        All Transcripts
+                      </button>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs text-gray-500 hidden sm:inline" title="Rolling average window for trend line smoothing">Avg Window:</span>
+                      <div className="flex bg-gray-100 rounded-lg p-1" title="Rolling average window: Shorter = more responsive trend line, Longer = smoother trend line">
+                        {[{w:4,l:'1 Mo',t:'1-month rolling average'},{w:12,l:'3 Mo',t:'3-month rolling average'},{w:26,l:'6 Mo',t:'6-month rolling average'}].map(({w,l,t})=> 
+                          <button key={w} onClick={()=>setAggregateWindow(w)} title={t} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1298,7 +1386,15 @@ export default function App(){
                   >
                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                     <XAxis dataKey="timestamp" type="number" scale="time" domain={dateDomain} tickFormatter={formatDate} tick={{fontSize:10}} minTickGap={120} />
-                    <YAxis tick={{fontSize:10}} />
+                    <YAxis 
+                      tick={{fontSize:10}} 
+                      label={{ 
+                        value: chartMode === 'mentions' ? 'Mention Count' : 'Transcript Count', 
+                        angle: -90, 
+                        position: 'insideLeft', 
+                        style: { textAnchor: 'middle', fontSize: 11, fill: '#6b7280' } 
+                      }} 
+                    />
                     <Tooltip 
                       content={({ active, payload }) => {
                         if (mainChartPinnedBucket) return null
@@ -1311,15 +1407,29 @@ export default function App(){
                         return (
                           <div className="bg-white p-3 rounded-lg shadow-lg text-sm border border-gray-200">
                             <div className="font-bold text-gray-900">{dateLabel}</div>
-                            <div className="text-xs text-gray-500 mt-1">{p.mentionCount} mentions • {p.sermons?.length || 0} sermon{(p.sermons?.length || 0) !== 1 ? 's' : ''}</div>
+                            <div className="text-xs text-gray-500 mt-1">
+                              {chartMode === 'mentions' 
+                                ? <>{p.mentionCount} mentions • {p.count} transcript{p.count !== 1 ? 's' : ''}</>
+                                : <>{p.count} transcript{p.count !== 1 ? 's' : ''} • {p.mentionCount} mentions</>
+                              }
+                            </div>
                             <div className="mt-2 text-blue-600 text-xs font-medium">Click to browse sermons →</div>
                           </div>
                         )
                       }}
                     />
                     <Legend wrapperStyle={{fontSize:'11px', paddingTop:'10px', marginBottom: '20px'}} />
-                    <Area type="monotone" dataKey="mentionCount" name="Volume" stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} cursor="pointer" />
-                    <Line type="monotone" dataKey="rollingAvg" name="Aggregate Rolling Avg" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                    {chartMode === 'mentions' ? (
+                      <>
+                        <Area type="monotone" dataKey="mentionCount" name={`${activeTerm} Mentions`} stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} cursor="pointer" />
+                        <Line type="monotone" dataKey="rollingAvg" name="Rolling Avg" stroke="#1d4ed8" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                      </>
+                    ) : (
+                      <>
+                        <Area type="monotone" dataKey="count" name="Transcripts" stroke="#6ee7b7" fill="#a7f3d0" fillOpacity={1} isAnimationActive={false} cursor="pointer" />
+                        <Line type="monotone" dataKey="volumeRollingAvg" name="Rolling Avg" stroke="#059669" strokeWidth={3} dot={false} connectNulls={true} isAnimationActive={false} />
+                      </>
+                    )}
                   </ComposedChart>
                 </ResponsiveContainer>
 
@@ -1347,18 +1457,37 @@ export default function App(){
                         <button onClick={()=>setMainChartPinnedBucket(null)} className="p-1 hover:bg-gray-100 rounded-full"><Icon name="x" /></button>
                       </div>
                       <div className="flex gap-4 mt-3 text-sm">
-                        <div className="text-center">
-                          <div className="text-xl font-bold text-blue-600">{mainChartPinnedBucket.mentionCount}</div>
-                          <div className="text-xs text-gray-500">mentions</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-xl font-bold text-gray-700">{mainChartPinnedBucket.sermons?.length ? (mainChartPinnedBucket.mentionCount / mainChartPinnedBucket.sermons.length).toFixed(1) : 0}</div>
-                          <div className="text-xs text-gray-500">avg/sermon</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-xl font-bold text-emerald-600">{mainChartPinnedBucket.rollingAvg || 'n/a'}</div>
-                          <div className="text-xs text-gray-500">trend</div>
-                        </div>
+                        {chartMode === 'mentions' ? (
+                          <>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-blue-600">{mainChartPinnedBucket.mentionCount}</div>
+                              <div className="text-xs text-gray-500">mentions</div>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-gray-700">{mainChartPinnedBucket.count ? (mainChartPinnedBucket.mentionCount / mainChartPinnedBucket.count).toFixed(1) : 0}</div>
+                              <div className="text-xs text-gray-500">avg/sermon</div>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-emerald-600">{mainChartPinnedBucket.rollingAvg || 'n/a'}</div>
+                              <div className="text-xs text-gray-500">trend</div>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-emerald-600">{mainChartPinnedBucket.count}</div>
+                              <div className="text-xs text-gray-500">transcripts</div>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-blue-600">{mainChartPinnedBucket.mentionCount}</div>
+                              <div className="text-xs text-gray-500">mentions</div>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-xl font-bold text-gray-700">{mainChartPinnedBucket.volumeRollingAvg || 'n/a'}</div>
+                              <div className="text-xs text-gray-500">trend</div>
+                            </div>
+                          </>
+                        )}
                       </div>
                     </div>
                     <div className="text-xs font-medium text-gray-600 px-4 pt-3 pb-2">Click a sermon to view transcript:</div>

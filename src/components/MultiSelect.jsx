@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useMemo, useCallback, startTransiti
 import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
-export default function MultiSelect({ label, options, selected, onChange, wide, medium, aliases }){
+export default function MultiSelect({ label, options, selected, onChange, wide, medium, aliases, allOptions }){
   const [isOpen, setIsOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [debouncedSearch, setDebouncedSearch] = useState('')
@@ -10,12 +10,18 @@ export default function MultiSelect({ label, options, selected, onChange, wide, 
   const [lastSearchTerm, setLastSearchTerm] = useState('')
   const ref = useRef(null)
   const searchRef = useRef(null)
+  
+  // Use allOptions for "total" count if provided (for cascading filters)
+  const totalOptions = allOptions || options
 
   // Debounce search input (150ms)
   useEffect(()=>{
     const timer = setTimeout(()=> setDebouncedSearch(search), 150)
     return ()=> clearTimeout(timer)
   },[search])
+  
+  // Note: Auto-clean disabled - was causing cascade issues when selecting churches
+  // Instead, we just show filtered options and let users manually adjust selections
 
   // Just update search - no auto-clear anymore since we have Add option
   const handleSearchChange = useCallback((e)=>{
@@ -147,8 +153,9 @@ export default function MultiSelect({ label, options, selected, onChange, wide, 
         <span className="truncate">
           {isBatchUpdating ? 'Updating...' : 
            selected.length===0 ? 'Select...' : 
-           selected.length===options.length ? 'All Selected' : 
+           selected.length===options.length ? (options.length === totalOptions.length ? 'All Selected' : `All ${options.length} of ${totalOptions.length} available`) : 
            lastSearchTerm ? `${selected.length} matching "${lastSearchTerm}"` :
+           allOptions && options.length < totalOptions.length ? `${options.length} of ${totalOptions.length} available` :
            `${selected.length} Selected`}
         </span>
         <Icon name="chevronDown" size={14} className="text-gray-400" />
@@ -183,7 +190,7 @@ export default function MultiSelect({ label, options, selected, onChange, wide, 
               ) : (
                 <>
                   <button onClick={selectAllFiltered} className="text-xs text-blue-600 hover:text-blue-800 font-medium">
-                    Select All
+                    Select All{allOptions && options.length < totalOptions.length ? ` (${options.length} of ${totalOptions.length})` : ''}
                   </button>
                   <button onClick={clearFiltered} className="text-xs text-red-500 hover:text-red-700 font-medium">
                     Clear
