@@ -4,13 +4,14 @@ START OF FILE: 2023-11-08 - Bro. Octavio Ordonez Paul a Prisoner - Octavio Ordon
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-08
-Title:   Bro. Octavio Ordonez: Paul a Prisoner
-Speaker: Octavio Ordonez
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qXQBdQaAreY
+Date:     2023-11-08
+Title:    Bro. Octavio Ordonez: Paul a Prisoner
+Speaker:  Octavio Ordonez
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=qXQBdQaAreY
 ========================================
 
 Description:

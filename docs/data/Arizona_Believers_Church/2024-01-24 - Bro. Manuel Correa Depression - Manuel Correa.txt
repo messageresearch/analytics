@@ -4,13 +4,14 @@ START OF FILE: 2024-01-24 - Bro. Manuel Correa Depression - Manuel Correa.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-24
-Title:   Bro. Manuel Correa: Depression
-Speaker: Manuel Correa
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GAhOfqkiN7I
+Date:     2024-01-24
+Title:    Bro. Manuel Correa: Depression
+Speaker:  Manuel Correa
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=GAhOfqkiN7I
 ========================================
 
 Description:

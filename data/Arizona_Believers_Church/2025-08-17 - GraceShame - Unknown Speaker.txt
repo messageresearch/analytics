@@ -4,13 +4,14 @@ START OF FILE: 2025-08-17 - GraceShame - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-17
-Title:   Grace\Shame
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5RqxJ-_jqpQ
+Date:     2025-08-17
+Title:    Grace\Shame
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=5RqxJ-_jqpQ
 ========================================
 
 Description:

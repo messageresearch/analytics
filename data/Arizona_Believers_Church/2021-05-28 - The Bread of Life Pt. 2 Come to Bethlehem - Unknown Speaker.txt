@@ -4,13 +4,14 @@ START OF FILE: 2021-05-28 - The Bread of Life Pt. 2 Come to Bethlehem - Unknown 
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-28
-Title:   The Bread of Life Pt. 2: Come to Bethlehem
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yr0dU3Y4Qtk
+Date:     2021-05-28
+Title:    The Bread of Life Pt. 2: Come to Bethlehem
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=yr0dU3Y4Qtk
 ========================================
 
 Description:

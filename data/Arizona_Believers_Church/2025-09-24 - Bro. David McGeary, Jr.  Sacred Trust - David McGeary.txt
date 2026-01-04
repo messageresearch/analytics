@@ -4,13 +4,14 @@ START OF FILE: 2025-09-24 - Bro. David McGeary, Jr.  Sacred Trust - David McGear
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-24
-Title:   Bro. David McGeary, Jr.:  Sacred Trust
-Speaker: David McGeary
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t6Kk-mjlld8
+Date:     2025-09-24
+Title:    Bro. David McGeary, Jr.:  Sacred Trust
+Speaker:  David McGeary
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=t6Kk-mjlld8
 ========================================
 
 Description:

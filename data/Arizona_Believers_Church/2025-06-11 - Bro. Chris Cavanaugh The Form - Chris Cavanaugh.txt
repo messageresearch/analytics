@@ -4,13 +4,14 @@ START OF FILE: 2025-06-11 - Bro. Chris Cavanaugh The Form - Chris Cavanaugh.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-11
-Title:   Bro. Chris Cavanaugh: The Form
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2OeI4_Dux1E
+Date:     2025-06-11
+Title:    Bro. Chris Cavanaugh: The Form
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=2OeI4_Dux1E
 ========================================
 
 Description:

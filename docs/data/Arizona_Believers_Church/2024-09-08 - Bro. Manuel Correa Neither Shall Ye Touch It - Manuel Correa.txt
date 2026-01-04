@@ -4,13 +4,14 @@ START OF FILE: 2024-09-08 - Bro. Manuel Correa Neither Shall Ye Touch It - Manue
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-08
-Title:   Bro. Manuel Correa: Neither Shall Ye Touch It
-Speaker: Manuel Correa
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=i1CyhdGEINg
+Date:     2024-09-08
+Title:    Bro. Manuel Correa: Neither Shall Ye Touch It
+Speaker:  Manuel Correa
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 59m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=i1CyhdGEINg
 ========================================
 
 Description:

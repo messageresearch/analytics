@@ -4,13 +4,14 @@ START OF FILE: 2022-06-08 - Bro. Manuel Correa - Complexes - Manuel Correa.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-08
-Title:   Bro. Manuel Correa - Complexes
-Speaker: Manuel Correa
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t_kFzWToTZY
+Date:     2022-06-08
+Title:    Bro. Manuel Correa - Complexes
+Speaker:  Manuel Correa
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=t_kFzWToTZY
 ========================================
 
 Description:

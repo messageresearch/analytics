@@ -4,13 +4,14 @@ START OF FILE: 2020-11-25 - Who is My Neighbor Pt. 10 - Aaron McGeary.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-25
-Title:   Who is My Neighbor? Pt. 10
-Speaker: Aaron McGeary
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tTHDofKgU1I
+Date:     2020-11-25
+Title:    Who is My Neighbor? Pt. 10
+Speaker:  Aaron McGeary
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=tTHDofKgU1I
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-02-02 - Bro. Eliezer Castillo Grace Through Faith - Eliezer 
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-02
-Title:   Bro. Eliezer Castillo: Grace Through Faith
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BvoXPMOdS7Y
+Date:     2025-02-02
+Title:    Bro. Eliezer Castillo: Grace Through Faith
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=BvoXPMOdS7Y
 ========================================
 
 Description:

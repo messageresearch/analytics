@@ -4,13 +4,14 @@ START OF FILE: 2022-08-17 - Bro. Chris Cavanaugh The Overview Effect - Chris Cav
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-17
-Title:   Bro. Chris Cavanaugh: The Overview Effect
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=864gUfXnQNQ
+Date:     2022-08-17
+Title:    Bro. Chris Cavanaugh: The Overview Effect
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=864gUfXnQNQ
 ========================================
 
 Description:

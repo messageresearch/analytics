@@ -4,13 +4,14 @@ START OF FILE: 2024-01-21 - Bro. Tim Dodd Combat Pt. 2 - Tim Dodd.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-21
-Title:   Bro. Tim Dodd: Combat Pt. 2
-Speaker: Tim Dodd
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DMJB-HezGS0
+Date:     2024-01-21
+Title:    Bro. Tim Dodd: Combat Pt. 2
+Speaker:  Tim Dodd
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=DMJB-HezGS0
 ========================================
 
 Description:

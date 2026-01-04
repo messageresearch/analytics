@@ -4,13 +4,14 @@ START OF FILE: 2025-12-03 - Bro. Stephen Coffey Child of God - Stephen Coffey.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-03
-Title:   Bro. Stephen Coffey: Child of God
-Speaker: Stephen Coffey
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iWz3nBFQCYY
+Date:     2025-12-03
+Title:    Bro. Stephen Coffey: Child of God
+Speaker:  Stephen Coffey
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=iWz3nBFQCYY
 ========================================
 
 Description:

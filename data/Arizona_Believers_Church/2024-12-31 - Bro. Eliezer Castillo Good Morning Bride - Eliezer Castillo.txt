@@ -4,13 +4,14 @@ START OF FILE: 2024-12-31 - Bro. Eliezer Castillo Good Morning Bride - Eliezer C
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-31
-Title:   Bro. Eliezer Castillo: Good Morning Bride
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YA5TS1LPlRc
+Date:     2024-12-31
+Title:    Bro. Eliezer Castillo: Good Morning Bride
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=YA5TS1LPlRc
 ========================================
 
 Description:

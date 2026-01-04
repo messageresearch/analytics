@@ -4,13 +4,14 @@ START OF FILE: 2022-06-29 - Bro Matthew Watkins - Being Changed Pt. 1 - Matthew 
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-29
-Title:   Bro Matthew Watkins - Being Changed Pt. 1
-Speaker: Matthew Watkins
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dNcoKwVlpFI
+Date:     2022-06-29
+Title:    Bro Matthew Watkins - Being Changed Pt. 1
+Speaker:  Matthew Watkins
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=dNcoKwVlpFI
 ========================================
 
 Description:

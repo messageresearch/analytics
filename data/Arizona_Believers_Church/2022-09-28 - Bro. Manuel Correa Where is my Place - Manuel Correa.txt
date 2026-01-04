@@ -4,13 +4,14 @@ START OF FILE: 2022-09-28 - Bro. Manuel Correa Where is my Place - Manuel Correa
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-28
-Title:   Bro. Manuel Correa: Where is my Place?
-Speaker: Manuel Correa
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BlVm09dYUr8
+Date:     2022-09-28
+Title:    Bro. Manuel Correa: Where is my Place?
+Speaker:  Manuel Correa
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=BlVm09dYUr8
 ========================================
 
 Description:

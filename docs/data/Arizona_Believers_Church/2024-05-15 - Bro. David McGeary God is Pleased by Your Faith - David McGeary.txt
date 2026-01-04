@@ -4,13 +4,14 @@ START OF FILE: 2024-05-15 - Bro. David McGeary God is Pleased by Your Faith - Da
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-15
-Title:   Bro. David McGeary: God is Pleased by Your Faith
-Speaker: David McGeary
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y1zYC9p9G0k
+Date:     2024-05-15
+Title:    Bro. David McGeary: God is Pleased by Your Faith
+Speaker:  David McGeary
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=y1zYC9p9G0k
 ========================================
 
 Description:

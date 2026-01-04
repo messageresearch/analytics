@@ -4,13 +4,14 @@ START OF FILE: 2024-02-28 - Bro. Ed Hammermeister Rizpah's Supplication - Ed Ham
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-28
-Title:   Bro. Ed Hammermeister: Rizpah's Supplication
-Speaker: Ed Hammermeister
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JXJsXYMs8Pg
+Date:     2024-02-28
+Title:    Bro. Ed Hammermeister: Rizpah's Supplication
+Speaker:  Ed Hammermeister
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=JXJsXYMs8Pg
 ========================================
 
 Description:

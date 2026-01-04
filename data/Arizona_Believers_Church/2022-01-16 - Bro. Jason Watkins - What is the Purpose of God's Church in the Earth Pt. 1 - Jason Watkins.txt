@@ -4,13 +4,14 @@ START OF FILE: 2022-01-16 - Bro. Jason Watkins - What is the Purpose of God's Ch
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-16
-Title:   Bro. Jason Watkins - What is the Purpose of God's Church in the Earth Pt. 1
-Speaker: Jason Watkins
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ElPkuRT0hpA
+Date:     2022-01-16
+Title:    Bro. Jason Watkins - What is the Purpose of God's Church in the Earth Pt. 1
+Speaker:  Jason Watkins
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=ElPkuRT0hpA
 ========================================
 
 Description:

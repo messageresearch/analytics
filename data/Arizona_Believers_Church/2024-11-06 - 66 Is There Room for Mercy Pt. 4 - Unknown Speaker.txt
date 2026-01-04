@@ -4,13 +4,14 @@ START OF FILE: 2024-11-06 - 66 Is There Room for Mercy Pt. 4 - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-06
-Title:   66 Is There Room for Mercy? Pt. 4
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BkN0on_PkYc
+Date:     2024-11-06
+Title:    66 Is There Room for Mercy? Pt. 4
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=BkN0on_PkYc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - Motherhood Return to the Office - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   Motherhood: Return to the Office
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Qd5OlEE6FYs
+Date:     2022-05-08
+Title:    Motherhood: Return to the Office
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=Qd5OlEE6FYs
 ========================================
 
 Description:

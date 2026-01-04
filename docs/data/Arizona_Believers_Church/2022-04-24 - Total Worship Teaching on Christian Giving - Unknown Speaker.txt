@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - Total Worship Teaching on Christian Giving - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   Total Worship: Teaching on Christian Giving
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=Dhp1LnEHOGM
+Date:     2022-04-24
+Title:    Total Worship: Teaching on Christian Giving
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Worship Service
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=Dhp1LnEHOGM
 ========================================
 
 Description:

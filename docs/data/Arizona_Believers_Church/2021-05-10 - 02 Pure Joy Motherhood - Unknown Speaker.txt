@@ -4,13 +4,14 @@ START OF FILE: 2021-05-10 - 02 Pure Joy Motherhood - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-10
-Title:   02 Pure Joy: Motherhood
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RA3QG6UXEw4
+Date:     2021-05-10
+Title:    02 Pure Joy: Motherhood
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=RA3QG6UXEw4
 ========================================
 
 Description:

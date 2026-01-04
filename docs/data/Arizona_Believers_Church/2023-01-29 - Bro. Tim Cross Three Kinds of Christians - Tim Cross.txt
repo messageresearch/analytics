@@ -4,13 +4,14 @@ START OF FILE: 2023-01-29 - Bro. Tim Cross Three Kinds of Christians - Tim Cross
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-29
-Title:   Bro. Tim Cross: Three Kinds of Christians
-Speaker: Tim Cross
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gN-u5OhBMSw
+Date:     2023-01-29
+Title:    Bro. Tim Cross: Three Kinds of Christians
+Speaker:  Tim Cross
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=gN-u5OhBMSw
 ========================================
 
 Description:

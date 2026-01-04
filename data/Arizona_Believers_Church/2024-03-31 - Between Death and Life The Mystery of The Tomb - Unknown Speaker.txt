@@ -4,13 +4,14 @@ START OF FILE: 2024-03-31 - Between Death and Life The Mystery of The Tomb - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-31
-Title:   Between Death and Life: The Mystery of The Tomb
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oUGitXGN9GA
+Date:     2024-03-31
+Title:    Between Death and Life: The Mystery of The Tomb
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=oUGitXGN9GA
 ========================================
 
 Description:

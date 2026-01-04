@@ -4,13 +4,14 @@ START OF FILE: 2021-07-21 - The Bread of Life Pt. 10 A Showdown Pt. 2 - Unknown 
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-21
-Title:   The Bread of Life Pt. 10: A Showdown Pt. 2
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gWTByZEE0AQ
+Date:     2021-07-21
+Title:    The Bread of Life Pt. 10: A Showdown Pt. 2
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=gWTByZEE0AQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - 05 A Matter of Faith (Human or Divine) - Unknown Spe
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   05 A Matter of Faith (Human or Divine?)
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=49UOUwAwY5M
+Date:     2022-09-21
+Title:    05 A Matter of Faith (Human or Divine?)
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=49UOUwAwY5M
 ========================================
 
 Description:

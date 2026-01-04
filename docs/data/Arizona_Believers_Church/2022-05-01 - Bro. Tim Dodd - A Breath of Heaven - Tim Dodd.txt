@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - Bro. Tim Dodd - A Breath of Heaven - Tim Dodd.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   Bro. Tim Dodd - A Breath of Heaven
-Speaker: Tim Dodd
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z_On-rvhx3Q
+Date:     2022-05-01
+Title:    Bro. Tim Dodd - A Breath of Heaven
+Speaker:  Tim Dodd
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z_On-rvhx3Q
 ========================================
 
 Description:

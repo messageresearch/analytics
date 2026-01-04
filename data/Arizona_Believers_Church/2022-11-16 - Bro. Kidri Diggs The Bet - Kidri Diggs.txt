@@ -4,13 +4,14 @@ START OF FILE: 2022-11-16 - Bro. Kidri Diggs The Bet - Kidri Diggs.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-16
-Title:   Bro. Kidri Diggs: The Bet
-Speaker: Kidri Diggs
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RDnkfGyR5WQ
+Date:     2022-11-16
+Title:    Bro. Kidri Diggs: The Bet
+Speaker:  Kidri Diggs
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=RDnkfGyR5WQ
 ========================================
 
 Description:

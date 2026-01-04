@@ -4,13 +4,14 @@ START OF FILE: 2024-10-20 - Bro. Reggie Plett PTSD Pt. 1 What's Wrong with Me - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-20
-Title:   Bro. Reggie Plett: PTSD Pt. 1 What's Wrong with Me?
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LDkMnVcWnx0
+Date:     2024-10-20
+Title:    Bro. Reggie Plett: PTSD Pt. 1 What's Wrong with Me?
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=LDkMnVcWnx0
 ========================================
 
 Description:

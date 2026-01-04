@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - Bro. Tim Dodd - The Integrity of the Soul Purpose - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   Bro. Tim Dodd - The Integrity of the Soul Purpose
-Speaker: Tim Dodd
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=avvJ7KwO0Nc
+Date:     2022-05-01
+Title:    Bro. Tim Dodd - The Integrity of the Soul Purpose
+Speaker:  Tim Dodd
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=avvJ7KwO0Nc
 ========================================
 
 Description:

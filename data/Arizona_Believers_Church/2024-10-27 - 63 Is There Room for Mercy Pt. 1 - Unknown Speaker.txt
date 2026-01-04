@@ -4,13 +4,14 @@ START OF FILE: 2024-10-27 - 63 Is There Room for Mercy Pt. 1 - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-27
-Title:   63 Is There Room for Mercy? Pt. 1
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ytUNheg-h2c
+Date:     2024-10-27
+Title:    63 Is There Room for Mercy? Pt. 1
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=ytUNheg-h2c
 ========================================
 
 Description:

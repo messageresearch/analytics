@@ -4,13 +4,14 @@ START OF FILE: 2022-05-11 - Bro. Chris Cavanaugh - The X Factor Representation -
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-11
-Title:   Bro. Chris Cavanaugh - The X Factor Representation
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Eul9ze7R_9w
+Date:     2022-05-11
+Title:    Bro. Chris Cavanaugh - The X Factor Representation
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=Eul9ze7R_9w
 ========================================
 
 Description:

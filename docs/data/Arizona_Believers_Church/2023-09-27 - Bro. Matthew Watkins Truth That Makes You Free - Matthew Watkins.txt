@@ -4,13 +4,14 @@ START OF FILE: 2023-09-27 - Bro. Matthew Watkins Truth That Makes You Free - Mat
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-27
-Title:   Bro. Matthew Watkins: Truth That Makes You Free
-Speaker: Matthew Watkins
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-G_JrjEs2TA
+Date:     2023-09-27
+Title:    Bro. Matthew Watkins: Truth That Makes You Free
+Speaker:  Matthew Watkins
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=-G_JrjEs2TA
 ========================================
 
 Description:

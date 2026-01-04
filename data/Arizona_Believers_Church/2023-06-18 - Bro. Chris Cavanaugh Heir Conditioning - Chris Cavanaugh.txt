@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - Bro. Chris Cavanaugh Heir Conditioning - Chris Cavan
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   Bro. Chris Cavanaugh: Heir Conditioning
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T8O5PDqhS7E
+Date:     2023-06-18
+Title:    Bro. Chris Cavanaugh: Heir Conditioning
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=T8O5PDqhS7E
 ========================================
 
 Description:

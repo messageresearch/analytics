@@ -4,13 +4,14 @@ START OF FILE: 2022-08-24 - Bro. Reggie Plett Good Success - Reggie Plett.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-24
-Title:   Bro. Reggie Plett: Good Success
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N0GKaVOtkiY
+Date:     2022-08-24
+Title:    Bro. Reggie Plett: Good Success
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=N0GKaVOtkiY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-29 - Original Reality  Present Context - Present Context.
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-29
-Title:   Original Reality : Present Context
-Speaker: Present Context
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LeVskXou4kk
+Date:     2025-01-29
+Title:    Original Reality : Present Context
+Speaker:  Present Context
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=LeVskXou4kk
 ========================================
 
 Description:

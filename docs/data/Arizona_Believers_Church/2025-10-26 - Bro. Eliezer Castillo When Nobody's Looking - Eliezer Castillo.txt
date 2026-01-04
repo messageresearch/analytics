@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - Bro. Eliezer Castillo When Nobody's Looking - Elieze
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   Bro. Eliezer Castillo: When Nobody's Looking
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jLVlaf9wg40
+Date:     2025-10-26
+Title:    Bro. Eliezer Castillo: When Nobody's Looking
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=jLVlaf9wg40
 ========================================
 
 Description:

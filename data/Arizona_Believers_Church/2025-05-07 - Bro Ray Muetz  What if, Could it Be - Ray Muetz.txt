@@ -4,13 +4,14 @@ START OF FILE: 2025-05-07 - Bro Ray Muetz  What if, Could it Be - Ray Muetz.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-07
-Title:   Bro Ray Muetz:  What if, Could it Be
-Speaker: Ray Muetz
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=p57G0el7PJU
+Date:     2025-05-07
+Title:    Bro Ray Muetz:  What if, Could it Be
+Speaker:  Ray Muetz
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=p57G0el7PJU
 ========================================
 
 Description:

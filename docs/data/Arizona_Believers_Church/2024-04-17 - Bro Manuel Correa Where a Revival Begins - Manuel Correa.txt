@@ -4,13 +4,14 @@ START OF FILE: 2024-04-17 - Bro Manuel Correa Where a Revival Begins - Manuel Co
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-17
-Title:   Bro Manuel Correa: Where a Revival Begins
-Speaker: Manuel Correa
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=yh4zyFhe4qc
+Date:     2024-04-17
+Title:    Bro Manuel Correa: Where a Revival Begins
+Speaker:  Manuel Correa
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 3m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=yh4zyFhe4qc
 ========================================
 
 Description:

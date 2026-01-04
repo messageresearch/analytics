@@ -4,13 +4,14 @@ START OF FILE: 2021-08-22 - Bro. John Andes - The Generation With a New Heart A 
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-22
-Title:   Bro. John Andes - The Generation With a New Heart: A Restored Heart
-Speaker: John Andes
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=35aFM0Jsj7w
+Date:     2021-08-22
+Title:    Bro. John Andes - The Generation With a New Heart: A Restored Heart
+Speaker:  John Andes
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=35aFM0Jsj7w
 ========================================
 
 Description:

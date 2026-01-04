@@ -4,13 +4,14 @@ START OF FILE: 2025-06-08 - Bro. Reggie Plett Prepared - Reggie Plett.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-08
-Title:   Bro. Reggie Plett: Prepared
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PkoSE7GvEMs
+Date:     2025-06-08
+Title:    Bro. Reggie Plett: Prepared
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=PkoSE7GvEMs
 ========================================
 
 Description:

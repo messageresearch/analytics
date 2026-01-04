@@ -4,13 +4,14 @@ START OF FILE: 2024-11-10 - Bro. Jason DeMars A Word Family - Jason DeMars.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-10
-Title:   Bro. Jason DeMars: A Word Family
-Speaker: Jason DeMars
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VnUpr2EQvHU
+Date:     2024-11-10
+Title:    Bro. Jason DeMars: A Word Family
+Speaker:  Jason DeMars
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=VnUpr2EQvHU
 ========================================
 
 Description:

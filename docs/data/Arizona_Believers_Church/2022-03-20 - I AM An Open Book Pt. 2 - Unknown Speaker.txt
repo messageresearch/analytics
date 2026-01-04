@@ -4,13 +4,14 @@ START OF FILE: 2022-03-20 - I AM An Open Book Pt. 2 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-20
-Title:   I AM: An Open Book Pt. 2
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XxTtn71xQzw
+Date:     2022-03-20
+Title:    I AM: An Open Book Pt. 2
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=XxTtn71xQzw
 ========================================
 
 Description:

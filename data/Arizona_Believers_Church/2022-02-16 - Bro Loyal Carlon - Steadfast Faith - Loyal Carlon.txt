@@ -4,13 +4,14 @@ START OF FILE: 2022-02-16 - Bro Loyal Carlon - Steadfast Faith - Loyal Carlon.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-16
-Title:   Bro Loyal Carlon - Steadfast Faith
-Speaker: Loyal Carlon
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iEi-C5OrnZY
+Date:     2022-02-16
+Title:    Bro Loyal Carlon - Steadfast Faith
+Speaker:  Loyal Carlon
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=iEi-C5OrnZY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-19 - Bro. Steeve Brisson The Greatest Purpose (The Prophe
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-19
-Title:   Bro. Steeve Brisson: The Greatest Purpose (The Prophet Test)
-Speaker: Steeve Brisson
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=D4dAdPhZIw0
+Date:     2025-01-19
+Title:    Bro. Steeve Brisson: The Greatest Purpose (The Prophet Test)
+Speaker:  Steeve Brisson
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=D4dAdPhZIw0
 ========================================
 
 Description:

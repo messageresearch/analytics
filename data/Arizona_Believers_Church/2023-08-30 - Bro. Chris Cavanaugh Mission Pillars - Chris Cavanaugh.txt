@@ -4,13 +4,14 @@ START OF FILE: 2023-08-30 - Bro. Chris Cavanaugh Mission Pillars - Chris Cavanau
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-30
-Title:   Bro. Chris Cavanaugh: Mission Pillars
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vY7TemPj46s
+Date:     2023-08-30
+Title:    Bro. Chris Cavanaugh: Mission Pillars
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=vY7TemPj46s
 ========================================
 
 Description:

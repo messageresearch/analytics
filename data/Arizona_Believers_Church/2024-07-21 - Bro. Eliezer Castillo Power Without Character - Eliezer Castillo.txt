@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - Bro. Eliezer Castillo Power Without Character - Elie
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   Bro. Eliezer Castillo: Power Without Character
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7ilTeGnSPGk
+Date:     2024-07-21
+Title:    Bro. Eliezer Castillo: Power Without Character
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=7ilTeGnSPGk
 ========================================
 
 Description:

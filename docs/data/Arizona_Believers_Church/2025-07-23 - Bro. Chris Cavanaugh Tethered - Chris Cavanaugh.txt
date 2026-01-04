@@ -4,13 +4,14 @@ START OF FILE: 2025-07-23 - Bro. Chris Cavanaugh Tethered - Chris Cavanaugh.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-23
-Title:   Bro. Chris Cavanaugh: Tethered
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BeiPy77D28A
+Date:     2025-07-23
+Title:    Bro. Chris Cavanaugh: Tethered
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=BeiPy77D28A
 ========================================
 
 Description:

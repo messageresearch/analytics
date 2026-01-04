@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - Bro. Reggie Plett Building Blocks of the Believer - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   Bro. Reggie Plett: Building Blocks of the Believer
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ro2JNAc5mo8
+Date:     2024-01-28
+Title:    Bro. Reggie Plett: Building Blocks of the Believer
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ro2JNAc5mo8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-24 - Bro. Eliezer Castillo Made in The Image of God - Eli
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-24
-Title:   Bro. Eliezer Castillo: Made in The Image of God
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LPgb_jkDquw
+Date:     2024-07-24
+Title:    Bro. Eliezer Castillo: Made in The Image of God
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=LPgb_jkDquw
 ========================================
 
 Description:

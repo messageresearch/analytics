@@ -4,13 +4,14 @@ START OF FILE: 2023-08-23 - Bro. Eliezer Castillo Reflecting the Heavenly - Elie
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-23
-Title:   Bro. Eliezer Castillo: Reflecting the Heavenly
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=h-cMnAEyVDc
+Date:     2023-08-23
+Title:    Bro. Eliezer Castillo: Reflecting the Heavenly
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=h-cMnAEyVDc
 ========================================
 
 Description:

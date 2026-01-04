@@ -4,13 +4,14 @@ START OF FILE: 2022-04-13 - I AM An Open Book Pt. 6 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-13
-Title:   I AM: An Open Book Pt. 6
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QUdzgbRGtyg
+Date:     2022-04-13
+Title:    I AM: An Open Book Pt. 6
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=QUdzgbRGtyg
 ========================================
 
 Description:

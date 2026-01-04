@@ -4,13 +4,14 @@ START OF FILE: 2022-11-09 - Bro. Chris Cavanaugh Simple Things - Chris Cavanaugh
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-09
-Title:   Bro. Chris Cavanaugh: Simple Things
-Speaker: Chris Cavanaugh
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ONDr2jlfwbw
+Date:     2022-11-09
+Title:    Bro. Chris Cavanaugh: Simple Things
+Speaker:  Chris Cavanaugh
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ONDr2jlfwbw
 ========================================
 
 Description:

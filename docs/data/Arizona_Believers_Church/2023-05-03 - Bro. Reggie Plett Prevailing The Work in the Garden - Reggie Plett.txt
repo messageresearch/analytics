@@ -4,13 +4,14 @@ START OF FILE: 2023-05-03 - Bro. Reggie Plett Prevailing The Work in the Garden 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-03
-Title:   Bro. Reggie Plett: Prevailing: The Work in the Garden
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5dE1f13QJS4
+Date:     2023-05-03
+Title:    Bro. Reggie Plett: Prevailing: The Work in the Garden
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=5dE1f13QJS4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-05-15 - Bro. Reggie Plett - A Message for Daughters - Reggie
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-15
-Title:   Bro. Reggie Plett - A Message for Daughters
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=czj_raDTN7I
+Date:     2022-05-15
+Title:    Bro. Reggie Plett - A Message for Daughters
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=czj_raDTN7I
 ========================================
 
 Description:

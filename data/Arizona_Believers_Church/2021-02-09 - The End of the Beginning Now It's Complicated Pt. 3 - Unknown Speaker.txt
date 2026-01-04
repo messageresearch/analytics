@@ -4,13 +4,14 @@ START OF FILE: 2021-02-09 - The End of the Beginning Now It's Complicated Pt. 3 
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-09
-Title:   The End of the Beginning: Now It's Complicated Pt. 3
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3WW3wqZ5JUU
+Date:     2021-02-09
+Title:    The End of the Beginning: Now It's Complicated Pt. 3
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=3WW3wqZ5JUU
 ========================================
 
 Description:

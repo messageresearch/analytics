@@ -4,13 +4,14 @@ START OF FILE: 2022-10-26 - 08 A Matter of Faith (A Miracle or Medicine) - Unkno
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-26
-Title:   08 A Matter of Faith (A Miracle or Medicine?)
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DNXjbMGlteE
+Date:     2022-10-26
+Title:    08 A Matter of Faith (A Miracle or Medicine?)
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=DNXjbMGlteE
 ========================================
 
 Description:

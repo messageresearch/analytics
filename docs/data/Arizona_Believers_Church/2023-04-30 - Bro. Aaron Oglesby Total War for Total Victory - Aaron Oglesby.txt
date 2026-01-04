@@ -4,13 +4,14 @@ START OF FILE: 2023-04-30 - Bro. Aaron Oglesby Total War for Total Victory - Aar
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-30
-Title:   Bro. Aaron Oglesby: Total War for Total Victory
-Speaker: Aaron Oglesby
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1qHg4CTI00Q
+Date:     2023-04-30
+Title:    Bro. Aaron Oglesby: Total War for Total Victory
+Speaker:  Aaron Oglesby
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=1qHg4CTI00Q
 ========================================
 
 Description:

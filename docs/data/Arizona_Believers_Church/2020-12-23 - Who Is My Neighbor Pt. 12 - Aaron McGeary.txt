@@ -4,13 +4,14 @@ START OF FILE: 2020-12-23 - Who Is My Neighbor Pt. 12 - Aaron McGeary.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-23
-Title:   Who Is My Neighbor? Pt. 12
-Speaker: Aaron McGeary
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4O576cBB4Iw
+Date:     2020-12-23
+Title:    Who Is My Neighbor? Pt. 12
+Speaker:  Aaron McGeary
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=4O576cBB4Iw
 ========================================
 
 Description:

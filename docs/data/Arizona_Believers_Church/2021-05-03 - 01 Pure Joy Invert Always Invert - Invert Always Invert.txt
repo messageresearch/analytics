@@ -4,13 +4,14 @@ START OF FILE: 2021-05-03 - 01 Pure Joy Invert Always Invert - Invert Always Inv
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-03
-Title:   01 Pure Joy: Invert Always Invert
-Speaker: Invert Always Invert
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VDv8GWeHoyc
+Date:     2021-05-03
+Title:    01 Pure Joy: Invert Always Invert
+Speaker:  Invert Always Invert
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=VDv8GWeHoyc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-03-28 - Hungry - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-28
-Title:   Hungry?
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5aMPyKEulXs
+Date:     2021-03-28
+Title:    Hungry?
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=5aMPyKEulXs
 ========================================
 
 Description:

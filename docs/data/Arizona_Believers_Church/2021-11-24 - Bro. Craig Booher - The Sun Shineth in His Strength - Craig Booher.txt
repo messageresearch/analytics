@@ -4,13 +4,14 @@ START OF FILE: 2021-11-24 - Bro. Craig Booher - The Sun Shineth in His Strength 
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-24
-Title:   Bro. Craig Booher - The Sun Shineth in His Strength
-Speaker: Craig Booher
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ceU7-YsbWvw
+Date:     2021-11-24
+Title:    Bro. Craig Booher - The Sun Shineth in His Strength
+Speaker:  Craig Booher
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=ceU7-YsbWvw
 ========================================
 
 Description:

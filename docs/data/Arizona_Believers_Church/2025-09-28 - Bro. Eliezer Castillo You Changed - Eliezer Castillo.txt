@@ -4,13 +4,14 @@ START OF FILE: 2025-09-28 - Bro. Eliezer Castillo You Changed - Eliezer Castillo
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-28
-Title:   Bro. Eliezer Castillo: You Changed
-Speaker: Eliezer Castillo
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qWLr4Bf8UY8
+Date:     2025-09-28
+Title:    Bro. Eliezer Castillo: You Changed
+Speaker:  Eliezer Castillo
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=qWLr4Bf8UY8
 ========================================
 
 Description:

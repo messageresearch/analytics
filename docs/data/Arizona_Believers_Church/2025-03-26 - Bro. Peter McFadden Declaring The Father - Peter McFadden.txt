@@ -4,13 +4,14 @@ START OF FILE: 2025-03-26 - Bro. Peter McFadden Declaring The Father - Peter McF
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-26
-Title:   Bro. Peter McFadden: Declaring The Father
-Speaker: Peter McFadden
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q-FyOGecQZE
+Date:     2025-03-26
+Title:    Bro. Peter McFadden: Declaring The Father
+Speaker:  Peter McFadden
+Church:   Arizona Believers Church
+Type:     Short Service
+Duration: 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=q-FyOGecQZE
 ========================================
 
 Description:

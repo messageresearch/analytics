@@ -4,13 +4,14 @@ START OF FILE: 2023-05-17 - 06 How Does Love Look - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-17
-Title:   06 How Does Love Look?
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f0xUlZACvns
+Date:     2023-05-17
+Title:    06 How Does Love Look?
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=f0xUlZACvns
 ========================================
 
 Description:

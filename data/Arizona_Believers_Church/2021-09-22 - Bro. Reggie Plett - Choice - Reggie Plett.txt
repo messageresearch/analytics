@@ -4,13 +4,14 @@ START OF FILE: 2021-09-22 - Bro. Reggie Plett - Choice - Reggie Plett.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-22
-Title:   Bro. Reggie Plett - Choice
-Speaker: Reggie Plett
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fu55mYOdUUY
+Date:     2021-09-22
+Title:    Bro. Reggie Plett - Choice
+Speaker:  Reggie Plett
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=fu55mYOdUUY
 ========================================
 
 Description:

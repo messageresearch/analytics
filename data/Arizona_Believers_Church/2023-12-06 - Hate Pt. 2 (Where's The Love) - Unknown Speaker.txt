@@ -4,13 +4,14 @@ START OF FILE: 2023-12-06 - Hate Pt. 2 (Where's The Love) - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-06
-Title:   Hate Pt. 2 (Where's The Love?)
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UF5CNB9ZLWk
+Date:     2023-12-06
+Title:    Hate Pt. 2 (Where's The Love?)
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=UF5CNB9ZLWk
 ========================================
 
 Description:

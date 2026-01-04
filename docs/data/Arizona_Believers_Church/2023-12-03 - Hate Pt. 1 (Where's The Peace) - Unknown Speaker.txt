@@ -4,13 +4,14 @@ START OF FILE: 2023-12-03 - Hate Pt. 1 (Where's The Peace) - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-03
-Title:   Hate Pt. 1 (Where's The Peace?)
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3zsbasKAeOQ
+Date:     2023-12-03
+Title:    Hate Pt. 1 (Where's The Peace?)
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=3zsbasKAeOQ
 ========================================
 
 Description:

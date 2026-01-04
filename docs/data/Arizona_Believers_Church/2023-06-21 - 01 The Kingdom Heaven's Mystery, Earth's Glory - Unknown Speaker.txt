@@ -4,13 +4,14 @@ START OF FILE: 2023-06-21 - 01 The Kingdom Heaven's Mystery, Earth's Glory - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-21
-Title:   01 The Kingdom: Heaven's Mystery, Earth's Glory
-Speaker: Unknown Speaker
-Church:  Arizona Believers Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nQd62lO8npo
+Date:     2023-06-21
+Title:    01 The Kingdom: Heaven's Mystery, Earth's Glory
+Speaker:  Unknown Speaker
+Church:   Arizona Believers Church
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=nQd62lO8npo
 ========================================
 
 Description:
