@@ -3,7 +3,7 @@ import { FixedSizeList as List } from 'react-window'
 import Icon from './Icon'
 
 export default function VirtualizedTable({
-  columns,
+  columns: rawColumns,
   data,
   rowHeight = 64,
   height = 600,
@@ -21,6 +21,14 @@ export default function VirtualizedTable({
   const dataRef = useRef(null)
   const listRef = useRef(null)
   const [scrollLeft, setScrollLeft] = useState(0)
+
+  // Filter columns based on mobile state
+  const columns = useMemo(() => {
+    if (isMobile) {
+      return rawColumns.filter(col => !col.hideOnMobile)
+    }
+    return rawColumns
+  }, [rawColumns, isMobile])
 
   // Initialize mobile detection and column widths
   useEffect(() => {
@@ -81,16 +89,16 @@ export default function VirtualizedTable({
     if (columnWidths[col.key]) return columnWidths[col.key]
     
     if (isMobile) {
-      // Use much narrower widths on mobile
+      // Use narrower but still readable widths on mobile
       const mobileWidths = {
-        'date': '70px',
-        'church': '100px',
-        'title': '120px',
+        'date': '80px',
+        'church': '110px',
+        'title': '140px',
         'type': '70px',
-        'speaker': '90px',
-        'mentionCount': '60px',
-        'mentionsPerHour': '60px',
-        'action': '40px'
+        'speaker': '100px',
+        'mentionCount': '65px',
+        'mentionsPerHour': '55px',
+        'action': '50px'
       }
       return mobileWidths[col.key] || '80px'
     }
@@ -173,11 +181,11 @@ export default function VirtualizedTable({
     const row = data[index]
     return (
       <div
-        style={{ ...style }}
+        style={{ ...style, minWidth: totalWidth }}
         className={`hover:bg-gray-50 border-b cursor-pointer ${isMobile ? 'text-xs' : ''}`}
         onClick={() => onRowClick && onRowClick(row)}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', padding: '8px 12px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', padding: '8px 12px', minWidth: totalWidth }}>
           {columns.map(col => {
             const content = col.render ? col.render(row) : row[col.key]
             const title = typeof content === 'string' ? content : (typeof row[col.key] === 'string' ? row[col.key] : '')

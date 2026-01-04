@@ -1140,7 +1140,7 @@ export default function App(){
         </div>
         <div className="text-center text-gray-500 mt-12">
           <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mb-3"></div>
-          <p className="font-medium">Loading {totalSermons > 0 ? `${Math.floor(totalSermons / 1000).toLocaleString()},000+` : '25,000+'} transcripts...</p>
+          <p className="font-medium">Loading 30,000+ transcripts...</p>
           <p className="text-xs text-gray-400 mt-1">Preparing search database</p>
         </div>
       </div>
@@ -1951,7 +1951,7 @@ export default function App(){
                   </div>
                 )}
               </div>
-              <div className="bg-white rounded-xl border shadow-sm overflow-hidden mb-8 p-6">
+              <div className="bg-white rounded-xl border shadow-sm mb-8 p-4 sm:p-6 overflow-x-auto">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
                   <h3 className="font-bold text-gray-800">Transcript List ({processedTableData.length.toLocaleString()})</h3>
                   {(customCounts && (activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term))) ? (
@@ -1963,12 +1963,12 @@ export default function App(){
                   <VirtualizedTable
                   columns={[
                     { key: 'date', label: 'Date', width: '110px', filterKey: 'date', filterPlaceholder: 'YYYY-MM', render: (r) => r.date },
-                    { key: 'church', label: 'Church', width: '160px', filterKey: 'church', render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
-                    { key: 'speaker', label: 'Speaker', width: '140px', filterKey: 'speaker', render: (r) => (<span className="text-xs text-gray-600 truncate">{r.speaker || '—'}</span>) },
+                    { key: 'church', label: 'Church', width: '160px', filterKey: 'church', hideOnMobile: true, render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
+                    { key: 'speaker', label: 'Speaker', width: '140px', filterKey: 'speaker', hideOnMobile: true, render: (r) => (<span className="text-xs text-gray-600 truncate">{r.speaker || '—'}</span>) },
                     { key: 'title', label: 'Title', width: '2fr', filterKey: 'title', render: (r) => (<div className="font-medium text-gray-900 truncate">{r.title}</div>) },
-                    { key: 'type', label: 'Type', width: '100px', filterKey: 'category', render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
+                    { key: 'type', label: 'Type', width: '100px', filterKey: 'category', hideOnMobile: true, render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '90px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
-                    { key: 'mentionsPerHour', label: 'Rate/Hr', width: '70px', filterKey: 'rate', filterType: 'number', centered: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
+                    { key: 'mentionsPerHour', label: 'Rate/Hr', width: '70px', filterKey: 'rate', filterType: 'number', centered: true, hideOnMobile: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
                     { key: 'action', label: 'Download', width: '80px', centered: true, noTruncate: true, render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600 flex items-center justify-center w-full"><Icon name="download" size={18} /></button>) }
                   ]}
                   data={processedTableData}
