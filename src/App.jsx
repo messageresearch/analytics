@@ -15,6 +15,7 @@ import StatCard from './components/StatCard'
 import SermonModal from './components/SermonModal'
 import ChartModal from './components/ChartModal'
 import ChannelChart from './components/ChannelChart'
+import LazyChannelChart from './components/LazyChannelChart'
 // Channel preview modal removed — channel links open directly in a new tab
 import useDebouncedCallback from './hooks/useDebouncedCallback'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR, DEFAULT_VARIATIONS, WORDS_PER_MINUTE, CHART_POINT_THRESHOLD, getColor } from './constants_local'
@@ -112,7 +113,7 @@ export default function App(){
   const [isZipping, setIsZipping] = useState(false)
   const [zipProgress, setZipProgress] = useState('')
   const [isExportingMaster, setIsExportingMaster] = useState(false)
-  const [chartsCollapsed, setChartsCollapsed] = useState(false)
+  const [chartsCollapsed, setChartsCollapsed] = useState(true)
 
   // Close main chart pinned popup when clicking outside
   useEffect(() => {
@@ -317,6 +318,19 @@ export default function App(){
     return aliases
   }, [])
 
+  // Compute transcript stats for the main dashboard
+  const transcriptStats = useMemo(() => {
+    const total = rawData.length
+    const withTranscript = rawData.filter(s => s.hasTranscript === true || (s.hasTranscript === undefined && s.path)).length
+    const withoutTranscript = total - withTranscript
+    return { total, withTranscript, withoutTranscript }
+  }, [rawData])
+
+  // Filter to only items with transcripts (for display counts)
+  const transcriptsOnly = useMemo(() => 
+    rawData.filter(s => s.hasTranscript === true || (s.hasTranscript === undefined && s.path))
+  , [rawData])
+
   // Optimize: only create new objects for items that have custom counts (reduces memory pressure on mobile)
   const enrichedData = useMemo(()=>{ 
     if(!customCounts || customCounts.size === 0) return rawData
@@ -475,7 +489,7 @@ export default function App(){
   const handleAnalysis = async (term, variations, rawRegex = null, options = {}) => {
     // Allow analysis when either a term is provided or a raw regex is provided
     if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
-    lastAnalysisRef.current = { term, regex: rawRegex || null }
+    lastAnalysisRef.current = { term, regex: rawRegex || null, wholeWords: options.wholeWords !== false }
     setIsAnalyzing(true)
     setAnalysisProgress({ status: 'Preparing search...', percent: 0 })
     setMatchedTerms([]) // Clear previous matched terms
@@ -951,7 +965,7 @@ export default function App(){
     }catch(e){ console.error('Main-thread scan failed', e); setIsAnalyzing(false); setAnalysisProgress({ status: 'Search failed', percent: 0, error: true }) }
   }
 
-  const stats = useMemo(()=>{ if(!filteredData.length) return null; const total = filteredData.length; const mentions = filteredData.reduce((acc,s)=>acc+s.mentionCount,0); const max = Math.max(...filteredData.map(s=>s.mentionCount)); return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) } }, [filteredData])
+  const stats = useMemo(()=>{ if(!filteredData.length) return null; const withTranscripts = filteredData.filter(s => s.hasTranscript !== false); const total = withTranscripts.length; const mentions = withTranscripts.reduce((acc,s)=>acc+s.mentionCount,0); let max = 0; let peakSermon = null; withTranscripts.forEach(s => { if(s.mentionCount > max) { max = s.mentionCount; peakSermon = s; } }); return { totalSermons: total, totalMentions: mentions, maxMentions: max, peakSermon, avg: total > 0 ? (mentions / total).toFixed(1) : '0' } }, [filteredData])
   
   // Church scrape stats for Data tab - count transcripts and find latest date per church
   const churchScrapeStats = useMemo(() => {
@@ -962,8 +976,13 @@ export default function App(){
       if (!stats[church]) {
         stats[church] = { count: 0, latestDate: null, latestTitle: '' }
       }
-      stats[church].count++
-      if (!stats[church].latestDate || s.date > stats[church].latestDate) {
+      // Only count items with transcripts for the count
+      if (s.hasTranscript !== false) {
+        stats[church].count++
+      }
+      // Skip 'Unknown Date' and empty dates when finding latest
+      const isValidDate = s.date && s.date !== 'Unknown Date' && s.date !== 'Unknown' && /^\d{4}-\d{2}-\d{2}$/.test(s.date)
+      if (isValidDate && (!stats[church].latestDate || s.date > stats[church].latestDate)) {
         stats[church].latestDate = s.date
         stats[church].latestTitle = s.title
       }
@@ -1078,7 +1097,7 @@ export default function App(){
   const formatDate = (ts) => new Date(ts).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })
 
   const processedTableData = useMemo(()=>{
-    let data = [...filteredData]
+    let data = filteredData.filter(s => s.hasTranscript !== false)
     if(tableFilters.date) data = data.filter(s=>s.date.includes(tableFilters.date))
     if(tableFilters.church) data = data.filter(s=>s.church.toLowerCase().includes(tableFilters.church.toLowerCase()))
     if(tableFilters.speaker) data = data.filter(s=>s.speaker && s.speaker.toLowerCase().includes(tableFilters.speaker.toLowerCase()))
@@ -1171,6 +1190,17 @@ export default function App(){
                     <li><strong>Whole Word Only:</strong> When ON (default), only matches complete words. Turn OFF for partial matches — but be careful: searching "art" will also find "heart", "start", "party", etc.</li>
                   </ul>
                   
+                  <p className="font-semibold mt-3">🔎 Boolean Search Operators:</p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li><strong>AND</strong> — Both terms required: <code className="bg-blue-200 px-1 rounded text-[10px]">faith AND grace</code></li>
+                    <li><strong>OR</strong> — Either term matches: <code className="bg-blue-200 px-1 rounded text-[10px]">prophet OR messenger</code></li>
+                    <li><strong>NOT</strong> — Exclude a term: <code className="bg-blue-200 px-1 rounded text-[10px]">sex NOT adam</code></li>
+                    <li><strong>"quotes"</strong> — Exact phrase: <code className="bg-blue-200 px-1 rounded text-[10px]">"seven seals"</code></li>
+                    <li><strong>Wildcards</strong> — <code className="bg-blue-200 px-1 rounded text-[10px]">proph*</code> matches prophet, prophecy, prophetic</li>
+                    <li><strong>NEAR/n</strong> — Words within n words: <code className="bg-blue-200 px-1 rounded text-[10px]">seven NEAR/5 seals</code></li>
+                    <li><strong>SENTENCE</strong> — Both in same sentence: <code className="bg-blue-200 px-1 rounded text-[10px]">bride SENTENCE rapture</code></li>
+                  </ul>
+                  
                   <p className="mt-2"><strong>Why Regex?</strong> YouTube transcripts have many spelling variations. For "Brother Branham", we use:<br/>
                   <code className="bg-blue-200 px-1 rounded text-[10px] break-all">{'\\b(?:(?:brother\\s+william)|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m\\b'}</code><br/>
                   This single pattern matches 250+ variations like "brother branham", "william branam", "brother branum", "william brandham", etc. You can test and visualize patterns at <a href="https://regex101.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">regex101.com ↗</a></p>
@@ -1220,7 +1250,7 @@ export default function App(){
                 <div className="text-xs text-gray-500 mt-1">
                   Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • 
                   Speakers: <span className="font-medium text-gray-700">{selSpeakers.filter(s => filteredOptions.speakers.includes(s)).length.toLocaleString()} of {filteredOptions.speakers.length.toLocaleString()} available</span> • 
-                  Transcripts: <span className="font-medium text-gray-700">{filteredData.length.toLocaleString()} of {rawData.length.toLocaleString()}</span>
+                  Transcripts: <span className="font-medium text-gray-700">{filteredData.filter(s => s.hasTranscript !== false).length.toLocaleString()} of {transcriptStats.withTranscript.toLocaleString()}</span>
                   {isPending && <span className="ml-2 text-blue-500">⟳</span>}
                 </div>
               </div>
@@ -1267,7 +1297,7 @@ export default function App(){
                 <h3 className="font-bold text-gray-800 flex items-center gap-2 text-sm sm:text-base">
                   <Icon name="barChart" /> <span>Coverage by Church</span>
                 </h3>
-                <span className="text-xs text-gray-500 w-full sm:w-auto sm:ml-2">({churchCoverageData.length} churches • {rawData.length.toLocaleString()} total transcripts)</span>
+                <span className="text-xs text-gray-500 w-full sm:w-auto sm:ml-2">({churchCoverageData.length} churches • <span className="text-green-600">{transcriptStats.withTranscript.toLocaleString()} with transcripts</span> • <span className="text-red-500">{transcriptStats.withoutTranscript.toLocaleString()} without</span>)</span>
                 {!coverageExpanded && <span className="text-xs text-blue-500 font-medium hidden sm:inline">Click to expand</span>}
               </div>
               
@@ -1515,11 +1545,11 @@ export default function App(){
                     )
                   })}
                   <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap border-t border-gray-300">
-                    {rawData.length.toLocaleString()}
+                    {transcriptStats.withTranscript.toLocaleString()}
                   </div>
                 </div>
                 
-                {/* Scrollable container for many churches */}
+                {/* Scrollable container for many churches */}}
                 <div className="max-h-[600px] overflow-y-auto" style={{ display: 'none' }}></div>
               </div>
             )}
@@ -1531,7 +1561,7 @@ export default function App(){
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2 px-1">
                   <div className="text-xs sm:text-sm text-gray-600">
                     <span className="font-semibold text-green-600">{speakerYearHeatmap.speakers.length}</span> speakers · 
-                    <span className="font-semibold">{rawData.length.toLocaleString()}</span> total transcripts
+                    <span className="font-semibold">{transcriptStats.withTranscript.toLocaleString()}</span> total transcripts
                     {speakerYearHeatmap.speakers.length > speakerDisplayLimit && (
                       <span className="text-gray-400"> · Showing top {Math.min(speakerDisplayLimit, speakerYearHeatmap.speakers.length)}</span>
                     )}
@@ -1643,11 +1673,11 @@ export default function App(){
                     )
                   })}
                   <div className="bg-gray-100 px-1 py-0 sm:p-0.5 text-center font-bold text-gray-700 whitespace-nowrap border-t border-gray-300">
-                    {rawData.length.toLocaleString()}
+                    {transcriptStats.withTranscript.toLocaleString()}
                   </div>
                 </div>
                 
-                {/* Show more/less buttons */}
+                {/* Show more/less buttons */}}
                 {speakerYearHeatmap.speakers.length > 100 && (
                   <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
                     {speakerDisplayLimit < speakerYearHeatmap.speakers.length && (
@@ -1690,9 +1720,9 @@ export default function App(){
 
           {view === 'dashboard' && stats && (
             <>
-              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} totalTranscripts={rawData.length} />
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-                <StatCard title="Filtered Transcripts" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${rawData.length.toLocaleString()} total`} />
+              <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} totalTranscripts={transcriptStats.withTranscript} />
+              <div className="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-7 gap-1.5 sm:gap-2 mb-6">
+                <StatCard title="Filtered Transcripts" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${transcriptStats.withTranscript.toLocaleString()} total`} />
                 <StatCard title={`${activeTerm} Mentions`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" sub="in filtered results" />
                 {/* Only show hidden mentions card when filters are hiding results */}
                 {hasActiveFilters && unfilteredStats && (unfilteredStats.totalMentions - stats.totalMentions) > 0 && (
@@ -1706,38 +1736,46 @@ export default function App(){
                   />
                 )}
                 <StatCard title="Avg Mentions" value={stats.avg} icon="barChart" color="indigo" sub="per sermon (filtered)" />
-                <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" sub="single sermon max" />
-                <StatCard title="Total Transcripts" value={rawData.length.toLocaleString()} icon="download" color="gray" sub="entire database" />
+                <StatCard 
+                  title="Peak Count" 
+                  value={stats.maxMentions} 
+                  icon="activity" 
+                  color="purple" 
+                  sub={stats.peakSermon ? `Click to view transcript` : 'single sermon max'}
+                  onClick={stats.peakSermon ? () => { setSelectedSermon({ ...stats.peakSermon, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(0); } : undefined}
+                />
+                <StatCard title="Total Transcripts" value={transcriptStats.withTranscript.toLocaleString()} icon="download" color="gray" sub="searchable database" />
+                <StatCard title="Videos w/o Transcripts" value={transcriptStats.withoutTranscript.toLocaleString()} icon="alertCircle" color="red" sub="transcripts not available" />
               </div>
 
-              <div className="bg-white p-6 rounded-xl border shadow-sm h-[500px] mb-8 relative">
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
+              <div className="bg-white p-3 sm:p-6 rounded-xl border shadow-sm h-[350px] sm:h-[500px] mb-6 relative overflow-hidden">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-2 sm:mb-4">
                   <div>
-                    <h3 className="font-bold text-gray-800 flex items-center gap-2">
+                    <h3 className="font-bold text-gray-800 flex items-center gap-2 text-sm sm:text-base">
                       <Icon name="activity" /> 
                       {chartMode === 'mentions' ? `${activeTerm} Activity & Trend` : 'Transcript Volume Over Time'}
                     </h3>
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-[10px] sm:text-xs text-gray-500 mt-0.5 sm:mt-1 hidden sm:block">
                       {chartMode === 'mentions' 
                         ? `Based on filters + search. Line = ${aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} rolling avg. Click a datapoint to browse.`
                         : `Based on filters only (ignores search). Line = ${aggregateWindow < 5 ? '1 Mo' : aggregateWindow < 20 ? '3 Mo' : '6 Mo'} rolling avg. Click a datapoint to browse.`
                       }
                     </p>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <div className="flex bg-gray-100 rounded-lg p-1" title="Toggle between search mentions and total transcript volume">
-                      <button onClick={()=>setChartMode('mentions')} className={`px-2 py-1 text-xs font-medium rounded transition-colors ${chartMode==='mentions' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <div className="flex bg-gray-100 rounded-lg p-0.5 sm:p-1" title="Toggle between search mentions and total transcript volume">
+                      <button onClick={()=>setChartMode('mentions')} className={`px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium rounded transition-colors ${chartMode==='mentions' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}>
                         Mentions
                       </button>
-                      <button onClick={()=>setChartMode('volume')} className={`px-2 py-1 text-xs font-medium rounded transition-colors ${chartMode==='volume' ? 'bg-white shadow text-emerald-600' : 'text-gray-500 hover:text-gray-700'}`}>
+                      <button onClick={()=>setChartMode('volume')} className={`px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium rounded transition-colors ${chartMode==='volume' ? 'bg-white shadow text-emerald-600' : 'text-gray-500 hover:text-gray-700'}`}>
                         All Transcripts
                       </button>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <span className="text-xs text-gray-500 hidden sm:inline" title="Rolling average window for trend line smoothing">Avg Window:</span>
-                      <div className="flex bg-gray-100 rounded-lg p-1" title="Rolling average window: Shorter = more responsive trend line, Longer = smoother trend line">
+                      <span className="text-[10px] sm:text-xs text-gray-500 hidden sm:inline" title="Rolling average window for trend line smoothing">Avg Window:</span>
+                      <div className="flex bg-gray-100 rounded-lg p-0.5 sm:p-1" title="Rolling average window: Shorter = more responsive trend line, Longer = smoother trend line">
                         {[{w:4,l:'1 Mo',t:'1-month rolling average'},{w:12,l:'3 Mo',t:'3-month rolling average'},{w:26,l:'6 Mo',t:'6-month rolling average'}].map(({w,l,t})=> 
-                          <button key={w} onClick={()=>setAggregateWindow(w)} title={t} className={`px-2 py-1 text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
+                          <button key={w} onClick={()=>setAggregateWindow(w)} title={t} className={`px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-medium rounded ${aggregateWindow===w ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}>{l}</button>
                         )}
                       </div>
                     </div>
@@ -1790,7 +1828,7 @@ export default function App(){
                         )
                       }}
                     />
-                    <Legend wrapperStyle={{fontSize:'11px', paddingTop:'10px', marginBottom: '20px'}} />
+                    <Legend wrapperStyle={{fontSize:'11px', paddingTop:'8px'}} />
                     {chartMode === 'mentions' ? (
                       <>
                         <Area type="monotone" dataKey="mentionCount" name={`${activeTerm} Mentions`} stroke="#93c5fd" fill="#bfdbfe" fillOpacity={1} isAnimationActive={false} cursor="pointer" />
@@ -1868,7 +1906,7 @@ export default function App(){
                         {[...(mainChartPinnedBucket.sermons || [])].sort((a,b) => (b.mentionCount || 0) - (a.mentionCount || 0)).map((s,i)=> (
                           <button 
                             key={s.id || i}
-                            onClick={()=>{ setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
+                            onClick={()=>{ setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
                             className="w-full text-left p-3 bg-gray-50 rounded-lg border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all group"
                           >
                             <div className="font-medium text-gray-900 group-hover:text-blue-600 line-clamp-2">{s.title || 'Untitled'}</div>
@@ -1892,20 +1930,22 @@ export default function App(){
               <div className="bg-white rounded-xl border shadow-sm mb-8">
                 <button 
                   onClick={() => setChartsCollapsed(!chartsCollapsed)}
-                  className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors"
+                  className={`w-full flex items-center justify-between p-4 transition-colors ${chartsCollapsed ? 'bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100' : 'hover:bg-gray-50'}`}
                 >
                   <div className="flex items-center gap-2">
-                    <Icon name={chartsCollapsed ? 'chevronRight' : 'chevronDown'} size={18} className="text-gray-500" />
-                    <h3 className="font-bold text-gray-800">Individual Church Charts</h3>
+                    <Icon name={chartsCollapsed ? 'chevronRight' : 'chevronDown'} size={18} className={chartsCollapsed ? 'text-blue-600' : 'text-gray-500'} />
+                    <h3 className={`font-bold ${chartsCollapsed ? 'text-blue-800' : 'text-gray-800'}`}>Individual Church Charts</h3>
                     <span className="text-sm text-gray-500">({channelTrends.length} churches)</span>
                   </div>
-                  <span className="text-xs text-gray-400">{chartsCollapsed ? 'Click to expand' : 'Click to collapse'}</span>
+                  <span className={`text-sm font-medium ${chartsCollapsed ? 'text-blue-600 bg-blue-100 px-3 py-1 rounded-full' : 'text-xs text-gray-400'}`}>
+                    {chartsCollapsed ? '▶ Click to view charts' : 'Click to collapse'}
+                  </span>
                 </button>
                 {!chartsCollapsed && (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 pt-0">
                     {channelTrends.map((c, idx) => (
                       <div key={c.church || idx} className="bg-gray-50 p-4 rounded-xl border">
-                        <ChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
+                        <LazyChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
                       </div>
                     ))}
                   </div>
@@ -1938,7 +1978,7 @@ export default function App(){
                   onSort={(k)=>handleSort(k)}
                   filters={tableFilters}
                   onFilterChange={(k,v)=>updateFilter(k,v)}
-                  onRowClick={(row)=>{ setSelectedSermon({ ...row, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(0); }}
+                  onRowClick={(row)=>{ setSelectedSermon({ ...row, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(0); }}
                 />
               </div>
             </>
@@ -1949,19 +1989,19 @@ export default function App(){
               <div className="bg-white p-8 rounded-xl border shadow-sm">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
                 <div className="space-y-3">
-                  <button onClick={()=>handleCustomDownload(rawData)} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Full Archive (All Transcripts — {rawData.length.toLocaleString()} files)</span>}</button>
-                  <button onClick={()=>handleCustomDownload(filteredData)} disabled={isZipping} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Transcripts For Filtered View ({filteredData.length.toLocaleString()} files)</span>}</button>
+                  <button onClick={()=>handleCustomDownload(rawData.filter(s => s.hasTranscript !== false))} disabled={isZipping} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Full Archive (All Transcripts — {transcriptStats.withTranscript.toLocaleString()} files)</span>}</button>
+                  <button onClick={()=>handleCustomDownload(filteredData.filter(s => s.hasTranscript !== false))} disabled={isZipping} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Transcripts For Filtered View ({filteredData.filter(s => s.hasTranscript !== false).length.toLocaleString()} files)</span>}</button>
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-xl border shadow-sm">
-                <div className="flex justify-between items-start mb-4">
+              <div className="bg-white p-4 sm:p-8 rounded-xl border shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 whitespace-nowrap">Data Sources</h3>
                     <div className="text-sm text-gray-500 mt-1">{channels.length.toLocaleString()} Channels</div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <input value={channelSearch} onChange={(e)=>setChannelSearch(e.target.value)} placeholder="Search channels..." className="text-sm border rounded px-3 py-2" />
-                    <select value={channelSort} onChange={(e)=>setChannelSort(e.target.value)} className="text-sm border rounded px-2 py-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <input value={channelSearch} onChange={(e)=>setChannelSearch(e.target.value)} placeholder="Search channels..." className="text-sm border rounded px-3 py-2 w-full sm:w-auto" />
+                    <select value={channelSort} onChange={(e)=>setChannelSort(e.target.value)} className="text-sm border rounded px-2 py-2 flex-1 sm:flex-none">
                       <option value="name_asc">Name ↑</option>
                       <option value="name_desc">Name ↓</option>
                       <option value="count_desc">Transcripts ↓</option>
@@ -1978,7 +2018,7 @@ export default function App(){
                       const blob = new Blob([csvText], { type: 'text/csv;charset=utf-8;' })
                       const url = URL.createObjectURL(blob)
                       const a = document.createElement('a'); a.href = url; a.download = 'channels.csv'; a.click(); URL.revokeObjectURL(url)
-                    }} className="text-sm bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded">Export Channel List to CSV</button>
+                    }} className="hidden sm:inline-block text-sm bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded">Export CSV</button>
                     <button disabled={isExportingMaster} title="Export Master List with Transcript Metadata (Titles, Dates, Speakers, Youtube Links) to CSV" onClick={async ()=>{
                       setIsExportingMaster(true)
                       try{
@@ -2029,7 +2069,7 @@ export default function App(){
                         const url = URL.createObjectURL(blob)
                         const a = document.createElement('a'); a.href = url; a.download = 'master_sermons.csv'; a.click(); URL.revokeObjectURL(url)
                       }catch(e){ alert('Failed to build master CSV: ' + (e && e.message || e)) }finally{ setIsExportingMaster(false) }
-                    }} className="text-sm bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded">{isExportingMaster? 'Building CSV…' : 'Export Master List to CSV'}</button>
+                    }} className="hidden sm:inline-block text-sm bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded">{isExportingMaster? 'Building…' : 'Export Master'}</button>
                   </div>
                 </div>
                 <ul className="space-y-2 pr-2">
@@ -2081,13 +2121,13 @@ export default function App(){
                       return (
                         <li key={i}>
                           <div onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }} className="channel-link-row block text-sm bg-gray-50 p-3 rounded border transition hover:bg-gray-100 cursor-pointer">
-                            <div className="flex items-center justify-between gap-3">
+                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3">
                               <div className="min-w-0 flex-1">
-                                <div className="font-medium text-gray-700 truncate">{name}</div>
+                                <div className="font-medium text-gray-700">{name}</div>
                                 <div className="text-xs text-blue-600 truncate"><a href={href} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{href}</a></div>
                               </div>
-                              <div className="flex items-center gap-3 flex-shrink-0">
-                                <div className="text-right">
+                              <div className="flex items-center justify-between sm:justify-end gap-3 flex-shrink-0">
+                                <div className="sm:text-right">
                                   <div className={`text-sm font-semibold ${transcriptCount > 0 ? 'text-gray-700' : 'text-red-500'}`}>
                                     {transcriptCount > 0 ? `${transcriptCount.toLocaleString()} transcripts` : 'No data'}
                                   </div>
@@ -2186,7 +2226,7 @@ export default function App(){
             This is a non-commercial journalistic research project. All use of copyrighted material is claimed as fair use for purposes of analysis, reporting, and commentary.
           </div>
         </footer>
-        {selectedSermon && <SermonModal sermon={selectedSermon} focusMatchIndex={selectedSermonFocus} onClose={()=>{ setSelectedSermon(null); setSelectedSermonFocus(0); }} />}
+        {selectedSermon && <SermonModal sermon={selectedSermon} focusMatchIndex={selectedSermonFocus} wholeWords={selectedSermon.wholeWords !== false} onClose={()=>{ setSelectedSermon(null); setSelectedSermonFocus(0); }} />}
         {expandedChart && (()=>{
           // Re-resolve the chart from latest channelTrends so mention counts reflect current `customCounts`.
           // Normalize church names to avoid mismatch due to punctuation/casing/whitespace.
@@ -2194,7 +2234,7 @@ export default function App(){
           const target = normalize(expandedChart.church || expandedChart.name)
           const fresh = channelTrends && channelTrends.find(c => normalize(c.church) === target)
           const chartToShow = fresh ? { ...fresh, showRaw: expandedChart.showRaw || false } : expandedChart
-          return (<ChartModal chart={chartToShow} domain={dateDomain} searchTerm={activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || ''} onClose={()=>setExpandedChart(null)} onSelectSermon={(s, focusIndex)=>{ setExpandedChart(null); setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(focusIndex || 0); }} />)
+          return (<ChartModal chart={chartToShow} domain={dateDomain} searchTerm={activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || ''} onClose={()=>setExpandedChart(null)} onSelectSermon={(s, focusIndex)=>{ setExpandedChart(null); setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(focusIndex || 0); }} />)
         })()}
       </div>
     </ErrorBoundary>

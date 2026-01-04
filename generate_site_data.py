@@ -317,6 +317,9 @@ def main():
     current_year = datetime.datetime.now().year
     skipped_future = 0
     
+    # Track which videos have transcripts (by normalized title|date key)
+    transcripts_found = set()
+    
     # with zipfile.ZipFile(ZIP_FILENAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
     for church_folder in os.listdir(DATA_DIR):
         church_path = os.path.join(DATA_DIR, church_folder)
@@ -343,8 +346,13 @@ def main():
                         
                         # Override display name in metadata
                         data['meta']['church'] = church_display
+                        data['meta']['hasTranscript'] = True  # Mark as having transcript
                         all_meta.append(data['meta'])
                         all_texts.append(data['text'])  # Collect text for default regex matching
+                        
+                        # Track this video as having a transcript
+                        track_key = normalize_key(data['meta']['title']) + '|' + normalize_key(data['meta']['date'])
+                        transcripts_found.add(track_key)
                         
                         text_entry = {"id": data['meta']['id'], "text": data['text']}
                         text_size = len(data['text'].encode('utf-8'))
@@ -362,6 +370,88 @@ def main():
         with open(os.path.join(OUTPUT_DIR, f"{SEARCH_CHUNK_PREFIX}{chunk_index}.json"), 'w', encoding='utf-8') as f:
             json.dump(current_chunk, f)
         chunk_index += 1
+
+    # Now add entries for videos WITHOUT transcripts from CSV summaries
+    print("   Adding videos without transcripts from CSV summaries...")
+    no_transcript_count = 0
+    for fname in os.listdir(DATA_DIR):
+        if fname.endswith("_Summary.csv"):
+            path = os.path.join(DATA_DIR, fname)
+            church_name = fname.rsplit('_Summary.csv', 1)[0].replace('_', ' ')
+            try:
+                with open(path, 'r', encoding='utf-8') as csvfile:
+                    reader = csv.reader(csvfile)
+                    rows = list(reader)
+                    # Skip header
+                    start_row = 0
+                    if rows:
+                        first = [c.strip().lower() for c in rows[0]]
+                        if any(k in first for k in ('date','title','url','speaker','status')):
+                            start_row = 1
+                    for r in rows[start_row:]:
+                        if not r or all(not c.strip() for c in r):
+                            continue
+                        # Check if status column contains "No Transcript"
+                        status = r[1].strip() if len(r) > 1 else ''
+                        if status != "No Transcript":
+                            continue
+                        # Parse the row
+                        date_str = r[0].strip() if len(r) > 0 else ''
+                        speaker = r[2].strip() if len(r) > 2 else ''
+                        title = r[3].strip() if len(r) > 3 else ''
+                        video_url = ''
+                        for cell in r:
+                            if cell and ("youtube.com/watch" in cell or "youtu.be/" in cell):
+                                video_url = cell.strip()
+                                break
+                        lang = r[6].strip() if len(r) > 6 else ''
+                        vtype = r[7].strip() if len(r) > 7 else ''
+                        
+                        # Skip if we already have a transcript for this
+                        check_key = normalize_key(title) + '|' + normalize_key(date_str)
+                        if check_key in transcripts_found:
+                            continue
+                        
+                        # Parse date/year
+                        year = "Unknown"
+                        ts = 0
+                        if date_str:
+                            try:
+                                dt = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+                                year = str(dt.year)
+                                ts = dt.timestamp() * 1000
+                                # Skip future dates
+                                if int(year) > current_year:
+                                    continue
+                            except:
+                                pass
+                        
+                        # Heal speakers
+                        if speaker in SPEAKER_HEAL_LIST:
+                            speaker = "Unknown Speaker"
+                        
+                        entry_id = f"NO_TRANSCRIPT_{church_name}_{date_str}_{normalize_key(title)[:30]}"
+                        all_meta.append({
+                            "id": entry_id,
+                            "church": church_name,
+                            "date": date_str,
+                            "year": year,
+                            "timestamp": ts,
+                            "title": title,
+                            "speaker": speaker,
+                            "type": vtype or "Unknown",
+                            "language": lang or "Unknown",
+                            "mentionCount": 0,
+                            "wordCount": 0,
+                            "path": "",  # No transcript file
+                            "videoUrl": video_url,
+                            "hasTranscript": False
+                        })
+                        no_transcript_count += 1
+            except Exception as e:
+                print(f"   Warning: Failed to parse {path} for no-transcript entries: {e}")
+    
+    print(f"   Added {no_transcript_count} videos without transcripts")
 
     # Pre-compute default regex matches for instant page load
     print("   Pre-computing default regex matches...")

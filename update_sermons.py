@@ -1014,7 +1014,7 @@ def heal_archive(data_dir, force=False):
             summary_keys.add(key)
 
         # --- NEW LOGIC: Ensure every .txt transcript is represented in the summary CSV ---
-        txt_files = [f for f in os.listdir(church_path) if f.endswith('.txt')]
+        txt_files = [f for f in os.listdir(church_path) if f.endswith('.txt') and not f.endswith('.timestamped.txt')]
         print(f"   📄 Found {len(txt_files)} .txt files in {church_folder}")
         for txt_file in txt_files:
             base = os.path.splitext(txt_file)[0]
@@ -4273,7 +4273,7 @@ def deep_clean_speakers_list(speakers_set):
                 cleaned_set.add(name)
     return cleaned_set
 
-def process_channel(church_name, config, known_speakers, limit=None, recent_only=False, days_back=None):
+def process_channel(church_name, config, known_speakers, limit=None, recent_only=False, days_back=None, skip_existing=False, retry_no_transcript_only=False):
     """
     Process a YouTube channel for sermon transcripts.
     
@@ -4284,6 +4284,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         limit: Max number of videos to scan (None = no limit)
         recent_only: Legacy flag for 24-hour mode (deprecated, use days_back=1)
         days_back: Number of days to look back (None = full archive, 7 = last week)
+        skip_existing: If True, skip videos that already have transcripts (Success status)
+        retry_no_transcript_only: If True, only process videos with "No Transcript" status
     
     Returns:
         dict: Statistics about speaker detection for this channel
@@ -4301,9 +4303,13 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     channel_dir = os.path.join(DATA_DIR, clean_channel_name)
     os.makedirs(channel_dir, exist_ok=True)
 
-    print(f"\n--------------------------------------------------")
+    print(f"\\n--------------------------------------------------")
     print(f"Processing Channel: {church_name}")
-    if limit:
+    if retry_no_transcript_only:
+        print(f"   📊 Mode: RETRY NO TRANSCRIPT (only videos without transcripts)")
+    elif skip_existing:
+        print(f"   📊 Mode: NEW VIDEOS ONLY (skipping existing transcripts)")
+    elif limit:
         print(f"   📊 Scan Limit: Most recent {limit} videos.")
     elif days_back:
         print(f"   📊 Scan Limit: Videos from the last {days_back} days.")
@@ -4316,6 +4322,15 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
 
     history = load_summary_history_csv(church_name)
     history = clean_history_of_bad_speakers(history)
+
+    # For retry_no_transcript_only mode, filter history to only "No Transcript" entries
+    if retry_no_transcript_only:
+        no_transcript_urls = {url for url, entry in history.items() if entry.get('status') == 'No Transcript'}
+        no_transcript_count = len(no_transcript_urls)
+        print(f"   📋 Found {no_transcript_count} videos with 'No Transcript' status to retry")
+        if no_transcript_count == 0:
+            print(f"   ✅ No videos to retry - all have transcripts!")
+            return channel_stats
 
     base_channel_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0] if channel_url else None
     all_videos = []
@@ -4401,7 +4416,15 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     if unlisted_from_history > 0:
         print(f"   📋 Added {unlisted_from_history} unlisted videos from summary CSV.")
 
-    unique_videos = unique_videos_map.values()
+    unique_videos = list(unique_videos_map.values())
+    
+    # Filter videos based on mode
+    if retry_no_transcript_only:
+        # Only process videos that had "No Transcript" status
+        unique_videos = [v for v in unique_videos 
+                        if f"https://www.youtube.com/watch?v={v['videoId']}" in no_transcript_urls]
+        print(f"   🔄 Filtered to {len(unique_videos)} videos to retry for transcripts")
+    
     print(f"   Videos found: {len(unique_videos)}")
     
     if len(unique_videos) == 0:
@@ -4462,6 +4485,14 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
 
         history_entry = history.get(video_url)
         needs_download = True
+        
+        # Skip existing successful transcripts in "new only" mode
+        if skip_existing and history_entry and history_entry.get('status') == 'Success':
+            history_entry['title'] = title
+            history_entry['type'] = video_type
+            history_entry['speaker'] = speaker if speaker != "Unknown Speaker" else history_entry.get('speaker', 'Unknown Speaker')
+            current_summary_list.append(history_entry)
+            continue
         
         if history_entry:
             old_speaker = history_entry.get('speaker', 'Unknown Speaker')
@@ -4588,7 +4619,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     csv_path = get_summary_file_path(church_name, ".csv")
     # --- NEW LOGIC: Ensure every .txt transcript is represented in the summary CSV ---
     channel_dir = os.path.join(DATA_DIR, church_name.replace(' ', '_'))
-    txt_files = [f for f in os.listdir(channel_dir) if f.endswith('.txt')]
+    txt_files = [f for f in os.listdir(channel_dir) if f.endswith('.txt') and not f.endswith('.timestamped.txt')]
     
     # Build a set of URLs from current_summary_list for fast lookup
     processed_urls = set()
@@ -5015,6 +5046,10 @@ def main():
         parser.add_argument('--retry-metadata', action='store_true', help="Retry fetching transcripts for 'Metadata Only' videos.")
         parser.add_argument('--include-no-transcript', action='store_true', help="Include 'No Transcript' videos when listing or retrying.")
         parser.add_argument('--add-timestamps-video', type=str, metavar='URL', help="Add timestamps to a specific video by URL or video ID.")
+        # New scrape mode options
+        parser.add_argument('--full', action='store_true', help="Full scrape: Process ALL videos in all channels (re-checks everything).")
+        parser.add_argument('--new-only', action='store_true', help="New videos only: Skip videos we already have transcripts for.")
+        parser.add_argument('--retry-no-transcript', action='store_true', help="Retry No Transcript: Only retry videos previously marked 'No Transcript'.")
         args = parser.parse_args()
 
         if args.add_timestamps_video:
@@ -5072,6 +5107,97 @@ def main():
         raw_speakers = load_json_file(SPEAKERS_FILE)
         known_speakers = deep_clean_speakers_list(raw_speakers)
         save_json_file(SPEAKERS_FILE, known_speakers)
+
+        # Handle --full scrape mode (all videos, all channels)
+        if args.full:
+            print("\\n" + "="*60)
+            print("🔄 FULL SCRAPE: Processing ALL videos in ALL channels")
+            print("="*60)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            
+            # Filter by specific churches if provided
+            channels_to_process = channels
+            if args.church:
+                channels_to_process = {k: v for k, v in channels.items() if k in args.church}
+                print(f"   Filtering to {len(channels_to_process)} specified church(es)")
+            
+            for name, config in channels_to_process.items():
+                channel_stats = process_channel(name, config, known_speakers, limit=args.limit)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name="Full Scrape (All Videos)")
+            print("\\n✅ Full scrape complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
+            return
+
+        # Handle --new-only scrape mode (skip videos we already have)
+        if args.new_only:
+            print("\\n" + "="*60)
+            print("🆕 NEW VIDEOS ONLY: Skipping videos with existing transcripts")
+            print("="*60)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            
+            channels_to_process = channels
+            if args.church:
+                channels_to_process = {k: v for k, v in channels.items() if k in args.church}
+                print(f"   Filtering to {len(channels_to_process)} specified church(es)")
+            
+            for name, config in channels_to_process.items():
+                channel_stats = process_channel(name, config, known_speakers, limit=args.limit, skip_existing=True)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name="New Videos Only Scrape")
+            print("\\n✅ New videos scrape complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
+            return
+
+        # Handle --retry-no-transcript mode (only retry videos marked "No Transcript")
+        if args.retry_no_transcript:
+            print("\\n" + "="*60)
+            print("🔁 RETRY NO TRANSCRIPT: Re-checking videos without transcripts")
+            print("="*60)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            
+            channels_to_process = channels
+            if args.church:
+                channels_to_process = {k: v for k, v in channels.items() if k in args.church}
+                print(f"   Filtering to {len(channels_to_process)} specified church(es)")
+            
+            for name, config in channels_to_process.items():
+                channel_stats = process_channel(name, config, known_speakers, limit=args.limit, retry_no_transcript_only=True)
+                if channel_stats:
+                    all_stats['total_processed'] += channel_stats.get('total_processed', 0)
+                    all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
+                    all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
+                    all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    if channel_stats.get('total_processed', 0) > 0:
+                        all_stats['by_church'][name] = {
+                            'total': channel_stats.get('total_processed', 0),
+                            'detected': channel_stats.get('speakers_detected', 0),
+                            'unknown': channel_stats.get('unknown_speakers', 0)
+                        }
+            write_speaker_detection_log(all_stats, operation_name="Retry No Transcript")
+            print("\\n✅ Retry complete. Running Post-Scrape Self-Healing...")
+            heal_archive(DATA_DIR)
+            return
         
         # When running with --days, process all channels for that time period
         if args.days:

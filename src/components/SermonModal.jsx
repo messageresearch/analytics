@@ -238,7 +238,7 @@ const parseBooleanSearchTerms = (input) => {
 }
 
 // Build regex pattern from search term (handles boolean/proximity searches with wildcard support)
-const buildSearchRegex = (searchTerm) => {
+const buildSearchRegex = (searchTerm, wholeWords = true) => {
   if (!searchTerm) return new RegExp(DEFAULT_REGEX_STR, 'gi')
   
   // Check if searchTerm looks like a raw regex pattern (contains regex syntax like \b, \s, (?:, etc.)
@@ -268,11 +268,18 @@ const buildSearchRegex = (searchTerm) => {
     return new RegExp(`\\b(${pattern})\\b`, 'gi')
   }
   
-  // Regular search - try to use as-is, fallback to escaped
+  // Regular search - respect wholeWords setting
   try {
+    if (wholeWords) {
+      const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      return new RegExp(`\\b(${escaped})\\b`, 'gi')
+    }
     return new RegExp(`(${searchTerm})`, 'gi')
   } catch {
     const escaped = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    if (wholeWords) {
+      return new RegExp(`\\b(${escaped})\\b`, 'gi')
+    }
     return new RegExp(`(${escaped})`, 'gi')
   }
 }
@@ -291,7 +298,7 @@ const SnippetRow = ({ id, fullText, term, terms, matchIndex, index, highlightFn 
   )
 }
 
-export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
+export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true }){
   const [fullText, setFullText] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [viewMode, setViewMode] = useState('snippets')
@@ -329,8 +336,8 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
         // Use proximity-aware matches
         found = proximityMatches
       } else {
-        // Regular search
-        const regex = buildSearchRegex(sermon.searchTerm)
+        // Regular search - pass wholeWords setting
+        const regex = buildSearchRegex(sermon.searchTerm, wholeWords)
         found = []; let match; while((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }) }
       }
       
@@ -346,7 +353,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
         }
       }
     }).catch(()=>{ setFullText('Error loading transcript.'); setIsLoading(false) })
-  }, [sermon])
+  }, [sermon, wholeWords])
 
   const highlight = (text, term, terms) => {
     if(!text) return ''
@@ -371,10 +378,20 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0 }){
       } else {
         const t = term || DEFAULT_REGEX_STR
         try {
-          splitter = new RegExp(`(${t})`, 'gi')
+          // For regular terms, respect the wholeWords setting
+          if (wholeWords && !t.includes('\\b')) {
+            const escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            splitter = new RegExp(`\\b(${escaped})\\b`, 'gi')
+          } else {
+            splitter = new RegExp(`(${t})`, 'gi')
+          }
         } catch (e) {
           const escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-          splitter = new RegExp(`(${escaped})`, 'gi')
+          if (wholeWords) {
+            splitter = new RegExp(`\\b(${escaped})\\b`, 'gi')
+          } else {
+            splitter = new RegExp(`(${escaped})`, 'gi')
+          }
         }
       }
     }
