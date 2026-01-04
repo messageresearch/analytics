@@ -4,13 +4,14 @@ START OF FILE: 2025-07-21 - ESTAMOS AQUI PARA ADORAR - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-21
-Title:   ESTAMOS AQUI PARA ADORAR
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=KoipaQWkwrQ
+Date:     2025-07-21
+Title:    ESTAMOS AQUI PARA ADORAR
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Short Service
+Duration: 5m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=KoipaQWkwrQ
 ========================================
 
 Description:

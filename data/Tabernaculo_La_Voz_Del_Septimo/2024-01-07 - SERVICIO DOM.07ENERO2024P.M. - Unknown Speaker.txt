@@ -4,13 +4,14 @@ START OF FILE: 2024-01-07 - SERVICIO DOM.07ENERO2024P.M. - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-07
-Title:   SERVICIO DOM./07/ENERO/2024/P.M.
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=FldyCNo3IZo
+Date:     2024-01-07
+Title:    SERVICIO DOM./07/ENERO/2024/P.M.
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 1h 31m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=FldyCNo3IZo
 ========================================
 
 TRANSCRIPT

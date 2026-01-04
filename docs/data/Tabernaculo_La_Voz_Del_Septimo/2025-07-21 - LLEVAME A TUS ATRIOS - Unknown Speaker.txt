@@ -4,13 +4,14 @@ START OF FILE: 2025-07-21 - LLEVAME A TUS ATRIOS - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-21
-Title:   LLEVAME A TUS ATRIOS
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=9CS-EFu6eMs
+Date:     2025-07-21
+Title:    LLEVAME A TUS ATRIOS
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Short Service
+Duration: 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=9CS-EFu6eMs
 ========================================
 
 Description:

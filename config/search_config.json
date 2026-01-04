@@ -1,0 +1,14 @@
+{
+  "_comment": "Search configuration - shared between Python backend and JavaScript frontend",
+  "_version": "1.0.0",
+  
+  "default_term": "William Branham",
+  
+  "mention_regex": "(?:brother\\s+william|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m",
+  
+  "default_regex_with_boundaries": "\\b(?:(?:brother\\s+william)|william|brother)\\s+br[aeiou]n[dh]*[aeiou]m\\b",
+  
+  "chunk_size_limit_bytes": 5242880,
+  
+  "words_per_minute": 140
+}

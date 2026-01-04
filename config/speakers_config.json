@@ -1,0 +1,42 @@
+{
+  "_comment": "Centralized speaker configuration - used by both update_sermons.py and generate_site_data.py",
+  "_version": "1.0.0",
+  
+  "invalid_speakers": [
+    "Eduan Naude",
+    "Eduan Naudé", 
+    "Eduan Naud",
+    "Forest Farmer The Fruit",
+    "Forrest Farmer",
+    "Financial Jubilee",
+    "Finding Yourself",
+    "Fitly Joined Together",
+    "Five Comings"
+  ],
+  
+  "normalization_rules": {
+    "Dan Evans": "Daniel Evans",
+    "Williams Branham": "William M. Branham",
+    "William Branham": "William M. Branham",
+    "William Marrion Branham": "William M. Branham",
+    "William Marion Branham": "William M. Branham",
+    "Prophet William Branham": "William M. Branham",
+    "Prophet William M. Branham": "William M. Branham",
+    "Branham": "William M. Branham",
+    "Isiah Brooks": "Isiah Brooks",
+    "Isaiah Brooks": "Isiah Brooks"
+  },
+  
+  "canonical_speakers": {
+    "William M. Branham": {
+      "aliases": ["Brother Branham", "William Branham", "William Marrion Branham", "The Prophet"],
+      "type": "historical"
+    }
+  },
+  
+  "choir_mappings": {
+    "evening light": "Evening Light Choir",
+    "bethel": "Bethel Tabernacle Choir",
+    "default": "Church Choir"
+  }
+}

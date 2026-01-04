@@ -4,13 +4,14 @@ START OF FILE: 2024-01-17 - BAUTISMOS EN ACAPULCO MIER17ENERO2024. - Unknown Spe
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-17
-Title:   BAUTISMOS EN ACAPULCO MIER/17/ENERO/2024.
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=WhEfObW8XSs
+Date:     2024-01-17
+Title:    BAUTISMOS EN ACAPULCO MIER/17/ENERO/2024.
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Short Service
+Duration: 13m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=WhEfObW8XSs
 ========================================
 
 TRANSCRIPT

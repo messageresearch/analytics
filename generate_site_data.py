@@ -6,18 +6,37 @@ import datetime
 import zipfile
 from pathlib import Path
 
+# --- SHARED CONFIGURATION ---
+# Try to load from centralized config module (new approach)
+# Falls back to hardcoded values if config module is unavailable
+try:
+    from config import shared_config
+    _USE_SHARED_CONFIG = True
+except ImportError:
+    _USE_SHARED_CONFIG = False
+    print("⚠️  Config module not found, using local defaults")
+
 # --- CONFIGURATION ---
 DATA_DIR = "data"
 OUTPUT_DIR = "site_api"
 META_FILE = "metadata.json"
 SEARCH_CHUNK_PREFIX = "text_chunk_"
-CHUNK_SIZE_LIMIT = 5 * 1024 * 1024  # 5 MB
 ZIP_FILENAME = "all_sermons_archive.zip"
 
-# Regex Patterns
-MENTION_REGEX = r"(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m"
-# Default regex used by the frontend - must match exactly!
-DEFAULT_REGEX = r"\b(?:(?:brother\s+william)|william|brother)\s+br[aeiou]n[dh]*[aeiou]m\b"
+# Load from shared config if available, otherwise use hardcoded defaults
+if _USE_SHARED_CONFIG:
+    CHUNK_SIZE_LIMIT = shared_config.get_chunk_size_limit()
+    MENTION_REGEX = shared_config.get_mention_regex()
+    DEFAULT_REGEX = shared_config.get_default_search_regex()
+    SPEAKER_HEAL_LIST = shared_config.get_invalid_speakers()
+else:
+    CHUNK_SIZE_LIMIT = 5 * 1024 * 1024  # 5 MB
+    MENTION_REGEX = r"(?:brother\s+william|william|brother)\s+br[aeiou]n[dh]*[aeiou]m"
+    DEFAULT_REGEX = r"\b(?:(?:brother\s+william)|william|brother)\s+br[aeiou]n[dh]*[aeiou]m\b"
+    SPEAKER_HEAL_LIST = {
+        "Eduan Naude", "Eduan Naudé", "Eduan Naud", "Forest Farmer The Fruit", "Forrest Farmer",
+        "Financial Jubilee", "Finding Yourself", "Fitly Joined Together", "Five Comings"
+    }
 
 def ensure_dir(directory):
     if not os.path.exists(directory):
@@ -56,11 +75,7 @@ def parse_sermon(filepath, church, filename, summary_map=None):
         date_str = date_match.group(1).strip() if date_match else "Unknown Date"
         title = title_match.group(1).strip() if title_match else "Unknown Title"
         speaker = speaker_match.group(1).strip() if speaker_match else "Unknown Speaker"
-        # --- Speaker Healing Logic ---
-        SPEAKER_HEAL_LIST = set([
-            "Eduan Naude", "Eduan Naudé", "Eduan Naud", "Forest Farmer The Fruit", "Forrest Farmer",
-            "Financial Jubilee", "Finding Yourself", "Fitly Joined Together", "Five Comings"
-        ])
+        # --- Speaker Healing Logic (uses centralized config) ---
         if speaker in SPEAKER_HEAL_LIST:
             speaker = "Unknown Speaker"
         video_type = type_match.group(1).strip() if type_match else "Full Sermon"
@@ -247,11 +262,7 @@ def main():
                             if len(r) >= 4:
                                 date = r[0].strip()
                                 speaker = r[2].strip() if len(r) > 2 else ''
-                                # --- Speaker Healing Logic for summary/master CSVs ---
-                                SPEAKER_HEAL_LIST = set([
-                                    "Eduan Naude", "Eduan Naudé", "Eduan Naud", "Forest Farmer The Fruit", "Forrest Farmer",
-                                    "Financial Jubilee", "Finding Yourself", "Fitly Joined Together", "Five Comings"
-                                ])
+                                # --- Speaker Healing Logic (uses centralized config) ---
                                 if speaker in SPEAKER_HEAL_LIST:
                                     speaker = "Unknown Speaker"
                                 title = r[3].strip() if len(r) > 3 else ''

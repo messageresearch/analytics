@@ -4,13 +4,14 @@ START OF FILE: 2025-12-15 - ALABANZAS DOM.14 DIC. 2025 A.M. - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-15
-Title:   ALABANZAS DOM.14 DIC. 2025 A.M.
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=iY41MVUCnhQ
+Date:     2025-12-15
+Title:    ALABANZAS DOM.14 DIC. 2025 A.M.
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Short Service
+Duration: 25m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=iY41MVUCnhQ
 ========================================
 
 TRANSCRIPT

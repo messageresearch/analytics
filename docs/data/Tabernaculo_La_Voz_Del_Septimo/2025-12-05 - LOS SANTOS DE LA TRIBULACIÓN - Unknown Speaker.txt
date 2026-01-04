@@ -4,13 +4,14 @@ START OF FILE: 2025-12-05 - LOS SANTOS DE LA TRIBULACIÓN - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-05
-Title:   LOS SANTOS DE LA TRIBULACIÓN 
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=CAxj6NE0EZE
+Date:     2025-12-05
+Title:    LOS SANTOS DE LA TRIBULACIÓN 
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 1h 26m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=CAxj6NE0EZE
 ========================================
 
 Description:

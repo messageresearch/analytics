@@ -4,13 +4,14 @@ START OF FILE: 2025-11-17 - EL PARIENTE Y EL PARIENTE REDENTOR - Unknown Speaker
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-17
-Title:   EL PARIENTE Y EL PARIENTE REDENTOR 
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Th0aGWJ5y_s
+Date:     2025-11-17
+Title:    EL PARIENTE Y EL PARIENTE REDENTOR 
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 2h 5m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Th0aGWJ5y_s
 ========================================
 
 Description:

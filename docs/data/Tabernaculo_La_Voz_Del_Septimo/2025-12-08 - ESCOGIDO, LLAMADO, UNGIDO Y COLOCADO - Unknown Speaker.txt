@@ -4,13 +4,14 @@ START OF FILE: 2025-12-08 - ESCOGIDO, LLAMADO, UNGIDO Y COLOCADO - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-08
-Title:   ESCOGIDO, LLAMADO, UNGIDO Y COLOCADO
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=qj7cfOjIU5c
+Date:     2025-12-08
+Title:    ESCOGIDO, LLAMADO, UNGIDO Y COLOCADO
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 2h 10m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=qj7cfOjIU5c
 ========================================
 
 Description:

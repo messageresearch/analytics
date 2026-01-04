@@ -4,13 +4,14 @@ START OF FILE: 2025-12-05 - EL SEXTO SELLO - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-05
-Title:   EL SEXTO SELLO
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=VZ61u0V4U3o
+Date:     2025-12-05
+Title:    EL SEXTO SELLO
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 1h 23m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=VZ61u0V4U3o
 ========================================
 
 Description:

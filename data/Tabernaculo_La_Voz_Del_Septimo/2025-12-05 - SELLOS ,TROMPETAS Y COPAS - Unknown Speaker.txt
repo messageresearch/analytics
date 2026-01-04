@@ -4,13 +4,14 @@ START OF FILE: 2025-12-05 - SELLOS ,TROMPETAS Y COPAS - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-05
-Title:   SELLOS ,TROMPETAS Y COPAS
-Speaker: Unknown Speaker
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=71gmOYJZ0i8
+Date:     2025-12-05
+Title:    SELLOS ,TROMPETAS Y COPAS
+Speaker:  Unknown Speaker
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Full Sermon
+Duration: 1h 54m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=71gmOYJZ0i8
 ========================================
 
 Description:
