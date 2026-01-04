@@ -2094,6 +2094,14 @@ export default function App(){
                 <p className="text-gray-700 leading-relaxed">
                   All content remains the property of its respective owners.
                 </p>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Contact</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  For inquiries, corrections, or feedback, please contact us at{' '}
+                  <a href="mailto:messageanalytics@protonmail.com" className="text-blue-600 hover:text-blue-800 underline">
+                    messageanalytics@protonmail.com
+                  </a>
+                </p>
               </div>
             </div>
           )}
