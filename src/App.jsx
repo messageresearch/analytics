@@ -181,7 +181,7 @@ export default function App(){
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
-                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
+                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
               }
               if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed early', e) }
@@ -210,7 +210,7 @@ export default function App(){
             let cList = []
             if(Array.isArray(cData)) cList = cData
             else if(cData && typeof cData === 'object'){
-              cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
+              cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
             }
             if(cList.length > 0) setChannels(cList)
           } else {
@@ -222,7 +222,7 @@ export default function App(){
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
-                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href) || '', filename: meta && meta.filename }))
+                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
               }
               if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed', e) }
@@ -953,6 +953,24 @@ export default function App(){
 
   const stats = useMemo(()=>{ if(!filteredData.length) return null; const total = filteredData.length; const mentions = filteredData.reduce((acc,s)=>acc+s.mentionCount,0); const max = Math.max(...filteredData.map(s=>s.mentionCount)); return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) } }, [filteredData])
   
+  // Church scrape stats for Data tab - count transcripts and find latest date per church
+  const churchScrapeStats = useMemo(() => {
+    if (!rawData.length) return {}
+    const stats = {}
+    rawData.forEach(s => {
+      const church = s.church
+      if (!stats[church]) {
+        stats[church] = { count: 0, latestDate: null, latestTitle: '' }
+      }
+      stats[church].count++
+      if (!stats[church].latestDate || s.date > stats[church].latestDate) {
+        stats[church].latestDate = s.date
+        stats[church].latestTitle = s.title
+      }
+    })
+    return stats
+  }, [rawData])
+  
   // Unfiltered stats for comparison - uses enrichedData to get current search results across ALL sermons
   const unfilteredStats = useMemo(()=>{ if(!enrichedData.length) return null; const mentions = enrichedData.reduce((acc,s)=>acc+s.mentionCount,0); return { totalMentions: mentions } }, [enrichedData])
   
@@ -1674,7 +1692,7 @@ export default function App(){
             <>
               <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} totalTranscripts={rawData.length} />
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-                <StatCard title="Filtered Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${rawData.length.toLocaleString()} total`} />
+                <StatCard title="Filtered Transcripts" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${rawData.length.toLocaleString()} total`} />
                 <StatCard title={`${activeTerm} Mentions`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" sub="in filtered results" />
                 {/* Only show hidden mentions card when filters are hiding results */}
                 {hasActiveFilters && unfilteredStats && (unfilteredStats.totalMentions - stats.totalMentions) > 0 && (
@@ -1946,6 +1964,10 @@ export default function App(){
                     <select value={channelSort} onChange={(e)=>setChannelSort(e.target.value)} className="text-sm border rounded px-2 py-2">
                       <option value="name_asc">Name ↑</option>
                       <option value="name_desc">Name ↓</option>
+                      <option value="count_desc">Transcripts ↓</option>
+                      <option value="count_asc">Transcripts ↑</option>
+                      <option value="date_desc">Latest Date ↓</option>
+                      <option value="date_asc">Latest Date ↑</option>
                     </select>
                     <button onClick={()=>{
                       const rows = channels.map(c=>([c.name || '', c.url || '', c.filename || '']))
@@ -2017,19 +2039,70 @@ export default function App(){
                     let list = channels.slice()
                     if(q) list = list.filter(c => (c.name || '').toLowerCase().includes(q) || (c.url || '').toLowerCase().includes(q) || (c.filename || '').toLowerCase().includes(q))
                     if(channelSort === 'name_asc') list.sort((a,b)=>( (a.name||'').localeCompare(b.name||'') ))
-                    else list.sort((a,b)=>( (b.name||'').localeCompare(a.name||'') ))
+                    else if(channelSort === 'name_desc') list.sort((a,b)=>( (b.name||'').localeCompare(a.name||'') ))
+                    else if(channelSort === 'count_desc') list.sort((a,b)=>{ 
+                      const nameA = (a.name || '').replace(/\s+/g, '_')
+                      const nameB = (b.name || '').replace(/\s+/g, '_')
+                      const countA = churchScrapeStats[nameA]?.count || churchScrapeStats[a.name]?.count || 0
+                      const countB = churchScrapeStats[nameB]?.count || churchScrapeStats[b.name]?.count || 0
+                      return countB - countA
+                    })
+                    else if(channelSort === 'count_asc') list.sort((a,b)=>{ 
+                      const nameA = (a.name || '').replace(/\s+/g, '_')
+                      const nameB = (b.name || '').replace(/\s+/g, '_')
+                      const countA = churchScrapeStats[nameA]?.count || churchScrapeStats[a.name]?.count || 0
+                      const countB = churchScrapeStats[nameB]?.count || churchScrapeStats[b.name]?.count || 0
+                      return countA - countB
+                    })
+                    else if(channelSort === 'date_desc') list.sort((a,b)=>{ 
+                      const nameA = (a.name || '').replace(/\s+/g, '_')
+                      const nameB = (b.name || '').replace(/\s+/g, '_')
+                      const dateA = churchScrapeStats[nameA]?.latestDate || churchScrapeStats[a.name]?.latestDate || ''
+                      const dateB = churchScrapeStats[nameB]?.latestDate || churchScrapeStats[b.name]?.latestDate || ''
+                      return dateB.localeCompare(dateA)
+                    })
+                    else if(channelSort === 'date_asc') list.sort((a,b)=>{ 
+                      const nameA = (a.name || '').replace(/\s+/g, '_')
+                      const nameB = (b.name || '').replace(/\s+/g, '_')
+                      const dateA = churchScrapeStats[nameA]?.latestDate || churchScrapeStats[a.name]?.latestDate || ''
+                      const dateB = churchScrapeStats[nameB]?.latestDate || churchScrapeStats[b.name]?.latestDate || ''
+                      return dateA.localeCompare(dateB)
+                    })
                     return list.map((c,i)=>{
                       const name = c.name || c.channel || c.title || c.church || 'Unknown'
                       const href = c.url || c.link || c.href || '#'
+                      // Match church name to rawData (try with underscores and spaces)
+                      const normalizedName = name.replace(/\s+/g, '_')
+                      const scrapeInfo = churchScrapeStats[normalizedName] || churchScrapeStats[name] || null
+                      const transcriptCount = scrapeInfo?.count || 0
+                      const latestDate = scrapeInfo?.latestDate || null
+                      const isStale = latestDate && new Date(latestDate) < new Date(Date.now() - 90 * 24 * 60 * 60 * 1000) // >90 days old
+                      const isRecent = latestDate && new Date(latestDate) > new Date(Date.now() - 30 * 24 * 60 * 60 * 1000) // <30 days old
                       return (
                         <li key={i}>
                           <div onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }} className="channel-link-row block text-sm bg-gray-50 p-3 rounded border transition hover:bg-gray-100 cursor-pointer">
                             <div className="flex items-center justify-between gap-3">
-                              <div className="min-w-0">
+                              <div className="min-w-0 flex-1">
                                 <div className="font-medium text-gray-700 truncate">{name}</div>
-                                <div className="text-xs text-blue-600 truncate"><a href={href} target="_blank" rel="noopener noreferrer">{href}</a></div>
+                                <div className="text-xs text-blue-600 truncate"><a href={href} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{href}</a></div>
                               </div>
-                              <Icon name="link" size={18} className="text-blue-400" />
+                              <div className="flex items-center gap-3 flex-shrink-0">
+                                <div className="text-right">
+                                  <div className={`text-sm font-semibold ${transcriptCount > 0 ? 'text-gray-700' : 'text-red-500'}`}>
+                                    {transcriptCount > 0 ? `${transcriptCount.toLocaleString()} transcripts` : 'No data'}
+                                  </div>
+                                  {latestDate ? (
+                                    <div className={`text-xs ${isRecent ? 'text-green-600' : isStale ? 'text-orange-500' : 'text-gray-500'}`}>
+                                      Latest: {latestDate}
+                                      {isRecent && <span className="ml-1">✓</span>}
+                                      {isStale && <span className="ml-1">⚠</span>}
+                                    </div>
+                                  ) : (
+                                    <div className="text-xs text-red-400">Not scraped</div>
+                                  )}
+                                </div>
+                                <Icon name="link" size={18} className="text-blue-400" />
+                              </div>
                             </div>
                           </div>
                         </li>
