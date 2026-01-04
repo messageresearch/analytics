@@ -19,8 +19,15 @@ Before pushing any changes that include frontend (`src/`) modifications:
 - [ ] `npm run dev` - Test in dev server
 - [ ] User confirms changes work
 - [ ] `npm run build` - Build production bundle to `docs/`
+- [ ] `python3 validate_filenames.py` - Check for problematic filenames
 - [ ] `git add -A && git commit` - Stage and commit all changes
 - [ ] `git push` - Push to GitHub
+
+### Filename Validation
+The `validate_filenames.py` script checks for filenames that could cause GitHub Pages deployment failures:
+- Filenames exceeding 255 bytes (GitHub limit)
+- Unicode fancy characters (mathematical italic/bold letters) that inflate byte length
+- To auto-fix issues: `python3 validate_filenames.py --fix`
 
 **Note:** The `docs/` folder is served by GitHub Pages. If you only commit `src/` changes without running `npm run build`, the live site will NOT update!
 

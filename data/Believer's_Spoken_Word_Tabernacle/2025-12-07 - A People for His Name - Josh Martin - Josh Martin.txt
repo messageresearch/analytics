@@ -4,13 +4,14 @@ START OF FILE: 2025-12-07 - A People for His Name - Josh Martin - Josh Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-07
-Title:   A People for His Name - Josh Martin
-Speaker: Josh Martin
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NWCnQJRM0sw
+Date:     2025-12-07
+Title:    A People for His Name - Josh Martin
+Speaker:  Josh Martin
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=NWCnQJRM0sw
 ========================================
 
 TRANSCRIPT

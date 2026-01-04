@@ -4,13 +4,14 @@ START OF FILE: 2024-09-29 - Between Here and There - The Journey Part 2 - Samuel
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-29
-Title:   Between Here and There - "The Journey" Part 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VmQyP2Ih554
+Date:     2024-09-29
+Title:    Between Here and There - "The Journey" Part 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=VmQyP2Ih554
 ========================================
 
 Description:

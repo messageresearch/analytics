@@ -4,13 +4,14 @@ START OF FILE: 2025-09-28 - Your Name is Written in the Stars - Ronnie Long - Ro
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-28
-Title:   Your Name is Written in the Stars - Ronnie Long
-Speaker: Ronnie Long
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6_1F6UPitEM
+Date:     2025-09-28
+Title:    Your Name is Written in the Stars - Ronnie Long
+Speaker:  Ronnie Long
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=6_1F6UPitEM
 ========================================
 
 TRANSCRIPT

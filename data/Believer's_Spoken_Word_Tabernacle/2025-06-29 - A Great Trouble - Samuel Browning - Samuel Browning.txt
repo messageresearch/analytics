@@ -4,13 +4,14 @@ START OF FILE: 2025-06-29 - A Great Trouble - Samuel Browning - Samuel Browning.
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-29
-Title:   A Great Trouble - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4BJqyAK9tk0
+Date:     2025-06-29
+Title:    A Great Trouble - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=4BJqyAK9tk0
 ========================================
 
 TRANSCRIPT

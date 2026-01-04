@@ -4,13 +4,14 @@ START OF FILE: 2025-07-31 - Church Order 19 - A More Excellent Way 2 - Samuel Br
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-31
-Title:   Church Order 19 - A More Excellent Way 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZmwMygfsrXI
+Date:     2025-07-31
+Title:    Church Order 19 - A More Excellent Way 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZmwMygfsrXI
 ========================================
 
 Description:

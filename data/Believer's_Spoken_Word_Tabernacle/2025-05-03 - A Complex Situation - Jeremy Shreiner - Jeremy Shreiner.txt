@@ -4,13 +4,14 @@ START OF FILE: 2025-05-03 - A Complex Situation - Jeremy Shreiner - Jeremy Shrei
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-03
-Title:   A Complex Situation - Jeremy Shreiner
-Speaker: Jeremy Shreiner
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cIL_uZggOTI
+Date:     2025-05-03
+Title:    A Complex Situation - Jeremy Shreiner
+Speaker:  Jeremy Shreiner
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=cIL_uZggOTI
 ========================================
 
 Description:

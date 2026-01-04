@@ -4,13 +4,14 @@ START OF FILE: 2025-04-06 - True Communion - Samuel Browning - Samuel Browning.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-06
-Title:   True Communion - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bBR0zUTDbE8
+Date:     2025-04-06
+Title:    True Communion - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Communion Service
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=bBR0zUTDbE8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-10-10 - The Harvest of Mature Seed - Kidri Diggs - Kidri Dig
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-10
-Title:   The Harvest of Mature Seed - Kidri Diggs
-Speaker: Kidri Diggs
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xxeCC3G2H-s
+Date:     2024-10-10
+Title:    The Harvest of Mature Seed - Kidri Diggs
+Speaker:  Kidri Diggs
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=xxeCC3G2H-s
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-21 - Embracing Deity - Part 1 - Samuel Browning - Samuel 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-21
-Title:   Embracing Deity - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aa-4FgsM_O4
+Date:     2025-12-21
+Title:    Embracing Deity - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=aa-4FgsM_O4
 ========================================
 
 TRANSCRIPT

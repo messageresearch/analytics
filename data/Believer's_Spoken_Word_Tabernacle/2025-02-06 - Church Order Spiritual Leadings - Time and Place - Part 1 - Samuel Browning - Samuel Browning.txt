@@ -4,13 +4,14 @@ START OF FILE: 2025-02-06 - Church Order Spiritual Leadings - Time and Place - P
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-06
-Title:   Church Order: Spiritual Leadings - Time and Place - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J2rJQtU2RBY
+Date:     2025-02-06
+Title:    Church Order: Spiritual Leadings - Time and Place - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=J2rJQtU2RBY
 ========================================
 
 Description:

@@ -497,8 +497,92 @@ def parse_published_time(published_text, max_days=1):
     return False
 
 # --- TEXT CLEANING & NORMALIZATION ---
-def sanitize_filename(text):
-    return re.sub(r'[\\/*?:"<>|#]', "", text).strip()
+
+# Unicode fancy character mappings (mathematical italic, bold, etc. to ASCII)
+UNICODE_TO_ASCII = {
+    # Mathematical italic letters (U+1D44E - U+1D467)
+    '𝐴': 'A', '𝐵': 'B', '𝐶': 'C', '𝐷': 'D', '𝐸': 'E', '𝐹': 'F', '𝐺': 'G', '𝐻': 'H', '𝐼': 'I',
+    '𝐽': 'J', '𝐾': 'K', '𝐿': 'L', '𝑀': 'M', '𝑁': 'N', '𝑂': 'O', '𝑃': 'P', '𝑄': 'Q', '𝑅': 'R',
+    '𝑆': 'S', '𝑇': 'T', '𝑈': 'U', '𝑉': 'V', '𝑊': 'W', '𝑋': 'X', '𝑌': 'Y', '𝑍': 'Z',
+    '𝑎': 'a', '𝑏': 'b', '𝑐': 'c', '𝑑': 'd', '𝑒': 'e', '𝑓': 'f', '𝑔': 'g', '𝘩': 'h', '𝑖': 'i',
+    '𝑗': 'j', '𝑘': 'k', '𝑙': 'l', '𝑚': 'm', '𝑛': 'n', '𝑜': 'o', '𝑝': 'p', '𝑞': 'q', '𝑟': 'r',
+    '𝑠': 's', '𝑡': 't', '𝑢': 'u', '𝑣': 'v', '𝑤': 'w', '𝑥': 'x', '𝑦': 'y', '𝑧': 'z',
+    # Mathematical bold letters
+    '𝐀': 'A', '𝐁': 'B', '𝐂': 'C', '𝐃': 'D', '𝐄': 'E', '𝐅': 'F', '𝐆': 'G', '𝐇': 'H', '𝐈': 'I',
+    '𝐉': 'J', '𝐊': 'K', '𝐋': 'L', '𝐌': 'M', '𝐍': 'N', '𝐎': 'O', '𝐏': 'P', '𝐐': 'Q', '𝐑': 'R',
+    '𝐒': 'S', '𝐓': 'T', '𝐔': 'U', '𝐕': 'V', '𝐖': 'W', '𝐗': 'X', '𝐘': 'Y', '𝐙': 'Z',
+    '𝐚': 'a', '𝐛': 'b', '𝐜': 'c', '𝐝': 'd', '𝐞': 'e', '𝐟': 'f', '𝐠': 'g', '𝐡': 'h', '𝐢': 'i',
+    '𝐣': 'j', '𝐤': 'k', '𝐥': 'l', '𝐦': 'm', '𝐧': 'n', '𝐨': 'o', '𝐩': 'p', '𝐪': 'q', '𝐫': 'r',
+    '𝐬': 's', '𝐭': 't', '𝐮': 'u', '𝐯': 'v', '𝐰': 'w', '𝐱': 'x', '𝐲': 'y', '𝐳': 'z',
+    # Common decorative/fancy characters
+    'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ñ': 'n',
+    'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U', 'Ñ': 'N',
+    'ü': 'u', 'Ü': 'U', 'ö': 'o', 'Ö': 'O', 'ä': 'a', 'Ä': 'A',
+    '–': '-', '—': '-', ''': "'", ''': "'", '"': '"', '"': '"',
+    '…': '...', '•': '-', '·': '-',
+}
+
+# Maximum filename length in bytes (GitHub Pages limit)
+MAX_FILENAME_BYTES = 255
+
+def normalize_unicode_to_ascii(text):
+    """
+    Convert Unicode fancy characters (mathematical italic/bold, accents, etc.) to ASCII.
+    This prevents filenames from being too long in bytes due to multi-byte Unicode chars.
+    """
+    # First, apply explicit mappings
+    for unicode_char, ascii_char in UNICODE_TO_ASCII.items():
+        text = text.replace(unicode_char, ascii_char)
+    
+    # Then, use unicodedata to normalize remaining characters
+    import unicodedata
+    # NFKD decomposition converts fancy chars to base + combining marks
+    normalized = unicodedata.normalize('NFKD', text)
+    # Keep only ASCII characters (removes combining marks)
+    ascii_text = normalized.encode('ascii', 'ignore').decode('ascii')
+    
+    return ascii_text
+
+def sanitize_filename(text, max_bytes=MAX_FILENAME_BYTES):
+    """
+    Sanitize text for use as a filename:
+    1. Convert Unicode fancy characters to ASCII equivalents
+    2. Remove illegal filename characters
+    3. Collapse multiple spaces/dashes
+    4. Truncate to max byte length while preserving word boundaries
+    
+    Args:
+        text: The text to sanitize
+        max_bytes: Maximum length in bytes (default 180 for GitHub Pages safety)
+    
+    Returns:
+        A safe filename string
+    """
+    # Step 1: Convert Unicode fancy characters to ASCII
+    text = normalize_unicode_to_ascii(text)
+    
+    # Step 2: Remove illegal filename characters
+    text = re.sub(r'[\\/*?:"<>|#]', "", text)
+    
+    # Step 3: Collapse multiple spaces and dashes
+    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'-+', '-', text)
+    text = text.strip(' -')
+    
+    # Step 4: Truncate if too long (accounting for .txt extension = 4 bytes)
+    # Reserve space for date prefix "YYYY-MM-DD - " (13 bytes) and extension
+    available_bytes = max_bytes - 4  # Reserve for .txt
+    
+    if len(text.encode('utf-8')) > available_bytes:
+        # Truncate at word boundary
+        while len(text.encode('utf-8')) > available_bytes and ' ' in text:
+            text = text.rsplit(' ', 1)[0]
+        # Final truncation if still too long
+        while len(text.encode('utf-8')) > available_bytes:
+            text = text[:-1]
+        text = text.rstrip(' -')
+    
+    return text
 
 def update_transcript_speaker_header(filepath, new_speaker):
     """

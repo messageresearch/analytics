@@ -4,13 +4,14 @@ START OF FILE: 2025-10-16 - The Brotherhood - Samuel Browning - Samuel Browning.
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-16
-Title:   The Brotherhood - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wCNKpLs4Myc
+Date:     2025-10-16
+Title:    The Brotherhood - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=wCNKpLs4Myc
 ========================================
 
 TRANSCRIPT

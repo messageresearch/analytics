@@ -4,13 +4,14 @@ START OF FILE: 2024-11-01 - The God of the Ridiculous - Nathan Erickson - Nathan
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-01
-Title:   The God of the Ridiculous - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Jin6LleZse0
+Date:     2024-11-01
+Title:    The God of the Ridiculous - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=Jin6LleZse0
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-04 - Liberty to Serve 3 - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-04
-Title:   Liberty to Serve 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MNg_nZ1-4jY
+Date:     2025-12-04
+Title:    Liberty to Serve 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=MNg_nZ1-4jY
 ========================================
 
 TRANSCRIPT

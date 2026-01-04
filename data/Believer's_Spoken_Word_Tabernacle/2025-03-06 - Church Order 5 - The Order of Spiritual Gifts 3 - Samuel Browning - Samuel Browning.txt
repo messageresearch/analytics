@@ -4,13 +4,14 @@ START OF FILE: 2025-03-06 - Church Order 5 - The Order of Spiritual Gifts 3 - Sa
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-06
-Title:   Church Order 5 - The Order of Spiritual Gifts 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CMx86e7TXHc
+Date:     2025-03-06
+Title:    Church Order 5 - The Order of Spiritual Gifts 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=CMx86e7TXHc
 ========================================
 
 Description:

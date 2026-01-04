@@ -4,13 +4,14 @@ START OF FILE: 2024-10-06 - Boldness Access Confidence - Samuel Browning - Samue
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-06
-Title:   Boldness Access Confidence - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jFOX1PytYKk
+Date:     2024-10-06
+Title:    Boldness Access Confidence - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=jFOX1PytYKk
 ========================================
 
 Description:

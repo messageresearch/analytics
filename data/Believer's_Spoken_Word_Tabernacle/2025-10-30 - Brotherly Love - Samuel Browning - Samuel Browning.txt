@@ -4,13 +4,14 @@ START OF FILE: 2025-10-30 - Brotherly Love - Samuel Browning - Samuel Browning.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-30
-Title:   Brotherly Love - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=h7gIGaELHVw
+Date:     2025-10-30
+Title:    Brotherly Love - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=h7gIGaELHVw
 ========================================
 
 TRANSCRIPT

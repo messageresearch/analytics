@@ -4,13 +4,14 @@ START OF FILE: 2025-01-09 - The First Christmas, and This Christmas - Timothy As
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-09
-Title:   The First Christmas, and This Christmas - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Believer's Spoken Word Tabernacle
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=H5W2REen0lY
+Date:     2025-01-09
+Title:    The First Christmas, and This Christmas - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Believer's Spoken Word Tabernacle
+Type:     Christmas Program
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=H5W2REen0lY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-02-27 - Church Order 4 - The Order of Spiritual Gifts 2 - Sa
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-27
-Title:   Church Order 4 - The Order of Spiritual Gifts 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pNBjs5htr3A
+Date:     2025-02-27
+Title:    Church Order 4 - The Order of Spiritual Gifts 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=pNBjs5htr3A
 ========================================
 
 Description:

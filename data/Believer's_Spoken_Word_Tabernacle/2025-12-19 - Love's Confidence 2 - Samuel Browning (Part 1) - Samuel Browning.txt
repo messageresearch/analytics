@@ -4,13 +4,14 @@ START OF FILE: 2025-12-19 - Love's Confidence 2 - Samuel Browning (Part 1) - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-19
-Title:   Love's Confidence 2 - Samuel Browning (Part 1)
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NMPZxq4QDfo
+Date:     2025-12-19
+Title:    Love's Confidence 2 - Samuel Browning (Part 1)
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=NMPZxq4QDfo
 ========================================
 
 Description:

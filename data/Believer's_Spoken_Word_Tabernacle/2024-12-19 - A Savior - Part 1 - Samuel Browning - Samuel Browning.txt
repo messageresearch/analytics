@@ -4,13 +4,14 @@ START OF FILE: 2024-12-19 - A Savior - Part 1 - Samuel Browning - Samuel Brownin
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-19
-Title:   A Savior - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-yGEivKgz1g
+Date:     2024-12-19
+Title:    A Savior - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=-yGEivKgz1g
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-04-13 - A Time to Heal - Samuel Browning - Samuel Browning.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-13
-Title:   A Time to Heal - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v9ZXNzawXpc
+Date:     2025-04-13
+Title:    A Time to Heal - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=v9ZXNzawXpc
 ========================================
 
 Description:

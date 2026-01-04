@@ -4,13 +4,14 @@ START OF FILE: 2025-02-23 - The Book of Acts - Bro. George Smith - George Smith.
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-23
-Title:   The Book of Acts - Bro. George Smith
-Speaker: George Smith
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fJ0h5Ae_QYA
+Date:     2025-02-23
+Title:    The Book of Acts - Bro. George Smith
+Speaker:  George Smith
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=fJ0h5Ae_QYA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-11-10 - The Cry of One Soul - Homer Longoria - Homer Longori
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-10
-Title:   The Cry of One Soul - Homer Longoria
-Speaker: Homer Longoria
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9HUGZMiXboc
+Date:     2024-11-10
+Title:    The Cry of One Soul - Homer Longoria
+Speaker:  Homer Longoria
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=9HUGZMiXboc
 ========================================
 
 Description:

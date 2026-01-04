@@ -4,13 +4,14 @@ START OF FILE: 2025-11-23 - The Fellowship of The Mystery 2 - Samuel Browning - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-23
-Title:   The Fellowship of The Mystery 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=InEKMUIigj4
+Date:     2025-11-23
+Title:    The Fellowship of The Mystery 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=InEKMUIigj4
 ========================================
 
 TRANSCRIPT
