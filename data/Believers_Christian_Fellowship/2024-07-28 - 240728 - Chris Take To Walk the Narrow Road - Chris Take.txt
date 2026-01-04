@@ -4,13 +4,14 @@ START OF FILE: 2024-07-28 - 240728 - Chris Take To Walk the Narrow Road - Chris 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-28
-Title:   240728 - Chris Take: To Walk the Narrow Road
-Speaker: Chris Take
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qsrj8dh8pi0
+Date:     2024-07-28
+Title:    240728 - Chris Take: To Walk the Narrow Road
+Speaker:  Chris Take
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=qsrj8dh8pi0
 ========================================
 
 Description:

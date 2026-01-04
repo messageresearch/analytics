@@ -4,13 +4,14 @@ START OF FILE: 2022-01-01 - New Year's Eve Service 2021 - Jason Watkins - Jason 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-01
-Title:   New Year's Eve Service 2021 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MOGR_zbGeyk
+Date:     2022-01-01
+Title:    New Year's Eve Service 2021 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     New Year Service
+Duration: 3h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=MOGR_zbGeyk
 ========================================
 
 Description:

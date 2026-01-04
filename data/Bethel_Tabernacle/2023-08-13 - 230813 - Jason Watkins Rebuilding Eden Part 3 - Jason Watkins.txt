@@ -4,13 +4,14 @@ START OF FILE: 2023-08-13 - 230813 - Jason Watkins Rebuilding Eden Part 3 - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-13
-Title:   230813 - Jason Watkins: Rebuilding Eden Part 3
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bzRrB32wS5M
+Date:     2023-08-13
+Title:    230813 - Jason Watkins: Rebuilding Eden Part 3
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=bzRrB32wS5M
 ========================================
 
 Description:

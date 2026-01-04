@@ -4,13 +4,14 @@ START OF FILE: 2022-01-12 - Sermon Clip 220112 - Chad Lamb The Capping of Grace 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-12
-Title:   Sermon Clip: 220112 - Chad Lamb: The Capping of Grace
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=PGVS7TNHnFM
+Date:     2022-01-12
+Title:    Sermon Clip: 220112 - Chad Lamb: The Capping of Grace
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=PGVS7TNHnFM
 ========================================
 
 Description:

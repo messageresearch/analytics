@@ -4,13 +4,14 @@ START OF FILE: 2020-03-22 - The Unchangeable God - The Constant One - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-22
-Title:   The Unchangeable God - The Constant One
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=As0Q7xMLJiQ
+Date:     2020-03-22
+Title:    The Unchangeable God - The Constant One
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=As0Q7xMLJiQ
 ========================================
 
 TRANSCRIPT

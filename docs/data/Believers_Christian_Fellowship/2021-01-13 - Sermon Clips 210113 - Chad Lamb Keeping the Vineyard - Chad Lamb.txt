@@ -4,13 +4,14 @@ START OF FILE: 2021-01-13 - Sermon Clips 210113 - Chad Lamb Keeping the Vineyard
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-13
-Title:   Sermon Clips: 210113 - Chad Lamb: Keeping the Vineyard
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=CbaUJCFnmPk
+Date:     2021-01-13
+Title:    Sermon Clips: 210113 - Chad Lamb: Keeping the Vineyard
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=CbaUJCFnmPk
 ========================================
 
 Description:

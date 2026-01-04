@@ -4,13 +4,14 @@ START OF FILE: 2023-04-16 - Pastor H. Simmons God's Promises - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-16
-Title:   Pastor H. Simmons: "God's Promises"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rwbMLuuxgFk
+Date:     2023-04-16
+Title:    Pastor H. Simmons: "God's Promises"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=rwbMLuuxgFk
 ========================================
 
 Description:

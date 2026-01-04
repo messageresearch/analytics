@@ -4,13 +4,14 @@ START OF FILE: 2021-11-24 - Sermon Clip 211124 - Markus Becker Resurrected from 
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-24
-Title:   Sermon Clip: 211124 - Markus Becker: Resurrected from Protestantism
-Speaker: Markus Becker
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=wDgGNMPG684
+Date:     2021-11-24
+Title:    Sermon Clip: 211124 - Markus Becker: Resurrected from Protestantism
+Speaker:  Markus Becker
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=wDgGNMPG684
 ========================================
 
 Description:

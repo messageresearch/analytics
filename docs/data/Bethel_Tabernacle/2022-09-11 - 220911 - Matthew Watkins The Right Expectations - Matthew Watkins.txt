@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - 220911 - Matthew Watkins The Right Expectations - Ma
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   220911 - Matthew Watkins: The Right Expectations
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nBPTg_iEeRQ
+Date:     2022-09-11
+Title:    220911 - Matthew Watkins: The Right Expectations
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=nBPTg_iEeRQ
 ========================================
 
 Description:

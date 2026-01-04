@@ -4,13 +4,14 @@ START OF FILE: 2023-07-23 - Sermon Clip 230723 - Jean Kadima From Spiritual to F
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-23
-Title:   Sermon Clip: 230723 - Jean Kadima: From Spiritual to Full Manifestation
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=gZbp-vfOxPM
+Date:     2023-07-23
+Title:    Sermon Clip: 230723 - Jean Kadima: From Spiritual to Full Manifestation
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=gZbp-vfOxPM
 ========================================
 
 Description:

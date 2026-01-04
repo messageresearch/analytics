@@ -4,13 +4,14 @@ START OF FILE: 2024-02-07 - Sermon Clip 240207 - Chad Lamb Word Comes to Word - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-07
-Title:   Sermon Clip: 240207 - Chad Lamb: Word Comes to Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_p0uKf0zbOw
+Date:     2024-02-07
+Title:    Sermon Clip: 240207 - Chad Lamb: Word Comes to Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=_p0uKf0zbOw
 ========================================
 
 Description:

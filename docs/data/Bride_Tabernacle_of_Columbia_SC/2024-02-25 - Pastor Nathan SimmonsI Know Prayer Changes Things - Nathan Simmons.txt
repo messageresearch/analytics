@@ -4,13 +4,14 @@ START OF FILE: 2024-02-25 - Pastor Nathan SimmonsI Know Prayer Changes Things - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-25
-Title:   Pastor Nathan Simmons:"I Know Prayer Changes Things"
-Speaker: Nathan Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZGkhPt5J_is
+Date:     2024-02-25
+Title:    Pastor Nathan Simmons:"I Know Prayer Changes Things"
+Speaker:  Nathan Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZGkhPt5J_is
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-03 - Being Changed - Matt Watkins - Matt Watkins.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-03
-Title:   Being Changed - Matt Watkins
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5R6_LxHsifc
+Date:     2022-03-03
+Title:    Being Changed - Matt Watkins
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=5R6_LxHsifc
 ========================================
 
 Description:

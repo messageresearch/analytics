@@ -4,13 +4,14 @@ START OF FILE: 2021-09-25 - Minister Ernest Legette The Voice - Ernest Legette.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-25
-Title:   Minister Ernest Legette: "The Voice"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=w9TdJxjZPoY
+Date:     2021-09-25
+Title:    Minister Ernest Legette: "The Voice"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=w9TdJxjZPoY
 ========================================
 
 Description:

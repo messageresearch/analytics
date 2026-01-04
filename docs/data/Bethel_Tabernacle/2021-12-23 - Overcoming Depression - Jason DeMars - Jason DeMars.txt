@@ -4,13 +4,14 @@ START OF FILE: 2021-12-23 - Overcoming Depression - Jason DeMars - Jason DeMars.
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-23
-Title:   Overcoming Depression - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YeX5sNF1ZBs
+Date:     2021-12-23
+Title:    Overcoming Depression - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=YeX5sNF1ZBs
 ========================================
 
 Description:

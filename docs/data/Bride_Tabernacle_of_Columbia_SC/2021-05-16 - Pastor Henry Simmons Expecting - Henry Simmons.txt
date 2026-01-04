@@ -4,13 +4,14 @@ START OF FILE: 2021-05-16 - Pastor Henry Simmons Expecting - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-16
-Title:   Pastor Henry Simmons: "Expecting"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9vBjAMVxaiM
+Date:     2021-05-16
+Title:    Pastor Henry Simmons: "Expecting"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=9vBjAMVxaiM
 ========================================
 
 Description:

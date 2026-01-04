@@ -4,13 +4,14 @@ START OF FILE: 2021-08-22 - The Still Small Voice - Jason Watkins - Jason Watkin
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-22
-Title:   The Still Small Voice - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fJPJIjxUhso
+Date:     2021-08-22
+Title:    The Still Small Voice - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=fJPJIjxUhso
 ========================================
 
 TRANSCRIPT

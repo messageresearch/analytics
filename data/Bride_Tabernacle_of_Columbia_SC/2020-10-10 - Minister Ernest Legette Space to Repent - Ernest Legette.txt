@@ -4,13 +4,14 @@ START OF FILE: 2020-10-10 - Minister Ernest Legette Space to Repent - Ernest Leg
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-10
-Title:   Minister Ernest Legette: "Space to Repent"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5OwIPPp4fpI
+Date:     2020-10-10
+Title:    Minister Ernest Legette: "Space to Repent"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=5OwIPPp4fpI
 ========================================
 
 Description:

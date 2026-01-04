@@ -4,13 +4,14 @@ START OF FILE: 2021-09-01 - Sermon Clip 210901 - Chad Lamb Our Testimony, the Fa
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-01
-Title:   Sermon Clip: 210901 - Chad Lamb: Our Testimony, the Father's Business
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=WcdUQpsmEoY
+Date:     2021-09-01
+Title:    Sermon Clip: 210901 - Chad Lamb: Our Testimony, the Father's Business
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Testimony Service
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=WcdUQpsmEoY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-12-10 - Sermon Clip 231210 - Emmanuel Cibasu Positioned by t
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-10
-Title:   Sermon Clip: 231210 - Emmanuel Cibasu: Positioned by the Unveiled Identity
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=5FqW9_ntX0U
+Date:     2023-12-10
+Title:    Sermon Clip: 231210 - Emmanuel Cibasu: Positioned by the Unveiled Identity
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=5FqW9_ntX0U
 ========================================
 
 Description:

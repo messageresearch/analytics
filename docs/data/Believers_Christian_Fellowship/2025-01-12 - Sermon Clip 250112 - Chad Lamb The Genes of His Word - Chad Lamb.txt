@@ -4,13 +4,14 @@ START OF FILE: 2025-01-12 - Sermon Clip 250112 - Chad Lamb The Genes of His Word
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-12
-Title:   Sermon Clip: 250112 - Chad Lamb: The Genes of His Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=cV1mVgt42tA
+Date:     2025-01-12
+Title:    Sermon Clip: 250112 - Chad Lamb: The Genes of His Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=cV1mVgt42tA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-24 - Bro. Willie Smiley What God Uses, Who God Uses, How 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-24
-Title:   Bro. Willie Smiley: "What God Uses, Who God Uses, How God Uses"
-Speaker: Willie Smiley
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cQQp9gltEVc
+Date:     2023-03-24
+Title:    Bro. Willie Smiley: "What God Uses, Who God Uses, How God Uses"
+Speaker:  Willie Smiley
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=cQQp9gltEVc
 ========================================
 
 Description:

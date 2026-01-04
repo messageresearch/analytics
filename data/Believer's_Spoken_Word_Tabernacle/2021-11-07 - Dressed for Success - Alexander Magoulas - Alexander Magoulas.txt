@@ -4,13 +4,14 @@ START OF FILE: 2021-11-07 - Dressed for Success - Alexander Magoulas - Alexander
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-07
-Title:   Dressed for Success - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ns5MWeijYXE
+Date:     2021-11-07
+Title:    Dressed for Success - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=ns5MWeijYXE
 ========================================
 
 Description:

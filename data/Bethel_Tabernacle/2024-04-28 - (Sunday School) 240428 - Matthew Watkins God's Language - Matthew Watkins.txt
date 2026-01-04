@@ -4,13 +4,14 @@ START OF FILE: 2024-04-28 - (Sunday School) 240428 - Matthew Watkins God's Langu
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-28
-Title:   (Sunday School) 240428 - Matthew Watkins: God's Language
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7H_QWDWvoLg
+Date:     2024-04-28
+Title:    (Sunday School) 240428 - Matthew Watkins: God's Language
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=7H_QWDWvoLg
 ========================================
 
 Description:

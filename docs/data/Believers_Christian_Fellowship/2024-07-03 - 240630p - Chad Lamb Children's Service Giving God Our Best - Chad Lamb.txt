@@ -4,13 +4,14 @@ START OF FILE: 2024-07-03 - 240630p - Chad Lamb Children's Service Giving God Ou
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-03
-Title:   240630p - Chad Lamb: Children's Service: Giving God Our Best
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wT_OG07hoiQ
+Date:     2024-07-03
+Title:    240630p - Chad Lamb: Children's Service: Giving God Our Best
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sunday School
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=wT_OG07hoiQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-04-23 - Sermon Clip 250423 - Ron Garvin Your Position - Ron 
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-23
-Title:   Sermon Clip: 250423 - Ron Garvin: Your Position
-Speaker: Ron Garvin
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=6Da9QnZl4Ok
+Date:     2025-04-23
+Title:    Sermon Clip: 250423 - Ron Garvin: Your Position
+Speaker:  Ron Garvin
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=6Da9QnZl4Ok
 ========================================
 
 Description:

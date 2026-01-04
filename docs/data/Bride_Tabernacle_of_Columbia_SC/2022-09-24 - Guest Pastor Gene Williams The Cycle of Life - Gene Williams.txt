@@ -4,13 +4,14 @@ START OF FILE: 2022-09-24 - Guest Pastor Gene Williams The Cycle of Life - Gene 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-24
-Title:   Guest Pastor Gene Williams: "The Cycle of Life"
-Speaker: Gene Williams
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rC9lci8vFCc
+Date:     2022-09-24
+Title:    Guest Pastor Gene Williams: "The Cycle of Life"
+Speaker:  Gene Williams
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=rC9lci8vFCc
 ========================================
 
 Description:

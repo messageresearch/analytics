@@ -4,13 +4,14 @@ START OF FILE: 2023-12-27 - 231227 - Benjamin Seabolt Things That Were Part 2 - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-27
-Title:   231227 - Benjamin Seabolt: Things That Were: Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gzcpi28xGao
+Date:     2023-12-27
+Title:    231227 - Benjamin Seabolt: Things That Were: Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gzcpi28xGao
 ========================================
 
 Description:

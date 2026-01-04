@@ -4,13 +4,14 @@ START OF FILE: 2020-08-28 - The Time is at Hand - Bro. Wayne Lawson - Wayne Laws
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-28
-Title:   The Time is at Hand - Bro. Wayne Lawson
-Speaker: Wayne Lawson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ol8iRQEJh1c
+Date:     2020-08-28
+Title:    The Time is at Hand - Bro. Wayne Lawson
+Speaker:  Wayne Lawson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=ol8iRQEJh1c
 ========================================
 
 TRANSCRIPT

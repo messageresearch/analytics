@@ -4,13 +4,14 @@ START OF FILE: 2021-11-14 - Being an Addict - Brad Younce - Brad Younce.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-14
-Title:   Being an Addict - Brad Younce
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4MzyzAiKM8c
+Date:     2021-11-14
+Title:    Being an Addict - Brad Younce
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=4MzyzAiKM8c
 ========================================
 
 TRANSCRIPT

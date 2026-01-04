@@ -4,13 +4,14 @@ START OF FILE: 2023-03-12 - (Sunday School) 230312 - Matthew Smith Prophecy Agai
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-12
-Title:   (Sunday School) 230312 - Matthew Smith: Prophecy Again
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kOqVLuwBW8A
+Date:     2023-03-12
+Title:    (Sunday School) 230312 - Matthew Smith: Prophecy Again
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=kOqVLuwBW8A
 ========================================
 
 Description:

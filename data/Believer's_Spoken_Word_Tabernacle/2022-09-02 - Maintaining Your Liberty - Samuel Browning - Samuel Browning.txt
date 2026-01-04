@@ -4,13 +4,14 @@ START OF FILE: 2022-09-02 - Maintaining Your Liberty - Samuel Browning - Samuel 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-02
-Title:   Maintaining Your Liberty - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SNvHOwR2Sxs
+Date:     2022-09-02
+Title:    Maintaining Your Liberty - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=SNvHOwR2Sxs
 ========================================
 
 Description:

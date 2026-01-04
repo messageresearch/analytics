@@ -4,13 +4,14 @@ START OF FILE: 2022-02-10 - Prayer is... Time Well Spent - Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-10
-Title:   Prayer is... Time Well Spent - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VHEoCFB7XB0
+Date:     2022-02-10
+Title:    Prayer is... Time Well Spent - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=VHEoCFB7XB0
 ========================================
 
 Description:

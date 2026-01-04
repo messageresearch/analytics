@@ -4,13 +4,14 @@ START OF FILE: 2023-11-07 - Sermon Clip 231105a - Vernon Manahan Humbling Experi
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-07
-Title:   Sermon Clip: 231105a - Vernon Manahan: Humbling Experiences That God Allows In Our Life
-Speaker: Vernon Manahan
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=S8sMrDp89j8
+Date:     2023-11-07
+Title:    Sermon Clip: 231105a - Vernon Manahan: Humbling Experiences That God Allows In Our Life
+Speaker:  Vernon Manahan
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=S8sMrDp89j8
 ========================================
 
 Description:

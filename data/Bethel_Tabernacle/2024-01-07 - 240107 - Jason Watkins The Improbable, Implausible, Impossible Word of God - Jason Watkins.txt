@@ -4,13 +4,14 @@ START OF FILE: 2024-01-07 - 240107 - Jason Watkins The Improbable, Implausible, 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-07
-Title:   240107 - Jason Watkins: The Improbable, Implausible, Impossible Word of God
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pN_YGI7l6nQ
+Date:     2024-01-07
+Title:    240107 - Jason Watkins: The Improbable, Implausible, Impossible Word of God
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=pN_YGI7l6nQ
 ========================================
 
 Description:

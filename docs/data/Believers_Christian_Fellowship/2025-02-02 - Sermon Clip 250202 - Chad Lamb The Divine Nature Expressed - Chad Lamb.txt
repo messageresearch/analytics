@@ -4,13 +4,14 @@ START OF FILE: 2025-02-02 - Sermon Clip 250202 - Chad Lamb The Divine Nature Exp
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-02
-Title:   Sermon Clip: 250202 - Chad Lamb: The Divine Nature Expressed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=1GXjq6k1HYk
+Date:     2025-02-02
+Title:    Sermon Clip: 250202 - Chad Lamb: The Divine Nature Expressed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=1GXjq6k1HYk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-12-18 - Pastor H. Simmons Letting off the Pressure - H Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-18
-Title:   Pastor H. Simmons: "Letting off the Pressure"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=srxmuqnncQ8
+Date:     2022-12-18
+Title:    Pastor H. Simmons: "Letting off the Pressure"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=srxmuqnncQ8
 ========================================
 
 Description:

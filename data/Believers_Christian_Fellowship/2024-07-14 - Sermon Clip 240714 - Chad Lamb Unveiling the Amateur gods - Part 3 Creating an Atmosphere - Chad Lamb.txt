@@ -4,13 +4,14 @@ START OF FILE: 2024-07-14 - Sermon Clip 240714 - Chad Lamb Unveiling the Amateur
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-14
-Title:   Sermon Clip: 240714 - Chad Lamb: Unveiling the Amateur gods - Part 3: Creating an Atmosphere
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=v3HaeykzLc0
+Date:     2024-07-14
+Title:    Sermon Clip: 240714 - Chad Lamb: Unveiling the Amateur gods - Part 3: Creating an Atmosphere
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=v3HaeykzLc0
 ========================================
 
 Description:

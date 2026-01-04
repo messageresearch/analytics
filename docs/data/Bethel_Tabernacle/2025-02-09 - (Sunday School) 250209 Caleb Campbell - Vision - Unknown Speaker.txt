@@ -4,13 +4,14 @@ START OF FILE: 2025-02-09 - (Sunday School) 250209 Caleb Campbell - Vision - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-09
-Title:   (Sunday School) 250209: Caleb Campbell - Vision
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PcmLQ9C-KOc
+Date:     2025-02-09
+Title:    (Sunday School) 250209: Caleb Campbell - Vision
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=PcmLQ9C-KOc
 ========================================
 
 Description:

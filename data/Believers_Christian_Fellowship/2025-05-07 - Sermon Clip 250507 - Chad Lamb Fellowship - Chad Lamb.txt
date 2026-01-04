@@ -4,13 +4,14 @@ START OF FILE: 2025-05-07 - Sermon Clip 250507 - Chad Lamb Fellowship - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-07
-Title:   Sermon Clip: 250507 - Chad Lamb: Fellowship
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=LQ-8FwX1GUc
+Date:     2025-05-07
+Title:    Sermon Clip: 250507 - Chad Lamb: Fellowship
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=LQ-8FwX1GUc
 ========================================
 
 Description:

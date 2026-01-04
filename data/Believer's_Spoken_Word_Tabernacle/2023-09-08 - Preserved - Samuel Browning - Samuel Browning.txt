@@ -4,13 +4,14 @@ START OF FILE: 2023-09-08 - Preserved - Samuel Browning - Samuel Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-08
-Title:   Preserved - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f_kyQ6P8m5Y
+Date:     2023-09-08
+Title:    Preserved - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=f_kyQ6P8m5Y
 ========================================
 
 Description:

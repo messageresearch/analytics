@@ -4,13 +4,14 @@ START OF FILE: 2025-05-04 - 250504 - Bro. Mathew SmithFaith is a Choice Pt. 2 (S
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-04
-Title:   250504 - Bro. Mathew Smith:Faith is a Choice Pt. 2 (Sunday School)
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zaPA6ow3DEs
+Date:     2025-05-04
+Title:    250504 - Bro. Mathew Smith:Faith is a Choice Pt. 2 (Sunday School)
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=zaPA6ow3DEs
 ========================================
 
 Description:

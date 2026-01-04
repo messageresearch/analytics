@@ -4,13 +4,14 @@ START OF FILE: 2021-11-21 - Pastor Henry Simmons The Open Book - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-21
-Title:   Pastor Henry Simmons: "The Open Book"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=09XpN18OU4k
+Date:     2021-11-21
+Title:    Pastor Henry Simmons: "The Open Book"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=09XpN18OU4k
 ========================================
 
 Description:

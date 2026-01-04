@@ -4,13 +4,14 @@ START OF FILE: 2024-07-03 - 240703 - Chad Lamb Press On - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-03
-Title:   240703 - Chad Lamb: Press On
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kbvTgt22Mic
+Date:     2024-07-03
+Title:    240703 - Chad Lamb: Press On
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=kbvTgt22Mic
 ========================================
 
 Description:

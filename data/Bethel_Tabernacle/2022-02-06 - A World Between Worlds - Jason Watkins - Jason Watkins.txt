@@ -4,13 +4,14 @@ START OF FILE: 2022-02-06 - A World Between Worlds - Jason Watkins - Jason Watki
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-06
-Title:   A World Between Worlds - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CuNrxT4pNQw
+Date:     2022-02-06
+Title:    A World Between Worlds - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=CuNrxT4pNQw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-20 - Waiting + Suffering = Glory - Jason DeMars - Jason D
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-20
-Title:   Waiting + Suffering = Glory - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1XOjCtmS0Ms
+Date:     2022-03-20
+Title:    Waiting + Suffering = Glory - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=1XOjCtmS0Ms
 ========================================
 
 Description:

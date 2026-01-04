@@ -4,13 +4,14 @@ START OF FILE: 2021-11-23 - Sermon Clip 211120a - Stephen Shembo Mystery of the 
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-23
-Title:   Sermon Clip: 211120a - Stephen Shembo: Mystery of the Sea of Glass - Part 1
-Speaker: Stephen Shembo
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=mXLdcmyGk78
+Date:     2021-11-23
+Title:    Sermon Clip: 211120a - Stephen Shembo: Mystery of the Sea of Glass - Part 1
+Speaker:  Stephen Shembo
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=mXLdcmyGk78
 ========================================
 
 Description:

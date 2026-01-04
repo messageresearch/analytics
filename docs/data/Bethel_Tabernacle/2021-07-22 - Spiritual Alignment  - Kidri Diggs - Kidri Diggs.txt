@@ -4,13 +4,14 @@ START OF FILE: 2021-07-22 - Spiritual Alignment  - Kidri Diggs - Kidri Diggs.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-22
-Title:   Spiritual Alignment  - Kidri Diggs
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=B_P4qtoC4c0
+Date:     2021-07-22
+Title:    Spiritual Alignment  - Kidri Diggs
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=B_P4qtoC4c0
 ========================================
 
 TRANSCRIPT

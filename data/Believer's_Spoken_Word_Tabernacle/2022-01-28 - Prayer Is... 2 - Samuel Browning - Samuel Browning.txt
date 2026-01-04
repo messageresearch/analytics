@@ -4,13 +4,14 @@ START OF FILE: 2022-01-28 - Prayer Is... 2 - Samuel Browning - Samuel Browning.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-28
-Title:   Prayer Is... 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m3lTtRj881w
+Date:     2022-01-28
+Title:    Prayer Is... 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=m3lTtRj881w
 ========================================
 
 Description:

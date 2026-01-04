@@ -4,13 +4,14 @@ START OF FILE: 2022-11-09 - 221109 - Jean Kadima A Sonship Position - Jean Kadim
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-09
-Title:   221109 - Jean Kadima: A Sonship Position
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZM5YgmKRjvQ
+Date:     2022-11-09
+Title:    221109 - Jean Kadima: A Sonship Position
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZM5YgmKRjvQ
 ========================================
 
 Description:

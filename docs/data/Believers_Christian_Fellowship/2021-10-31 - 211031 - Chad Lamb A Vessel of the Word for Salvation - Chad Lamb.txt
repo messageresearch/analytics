@@ -4,13 +4,14 @@ START OF FILE: 2021-10-31 - 211031 - Chad Lamb A Vessel of the Word for Salvatio
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-31
-Title:   211031 - Chad Lamb: A Vessel of the Word for Salvation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2O_bE39poe4
+Date:     2021-10-31
+Title:    211031 - Chad Lamb: A Vessel of the Word for Salvation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=2O_bE39poe4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-09-26 - Another Eden - Nathan Erickson - Nathan Erickson.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-26
-Title:   Another Eden - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PMsYCIg9LA0
+Date:     2021-09-26
+Title:    Another Eden - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=PMsYCIg9LA0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-11-06 - Sermon Clips 221106 - Chad Lamb Life by the Word - C
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-06
-Title:   Sermon Clips: 221106 - Chad Lamb: Life by the Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=gZeSR3_lUic
+Date:     2022-11-06
+Title:    Sermon Clips: 221106 - Chad Lamb: Life by the Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=gZeSR3_lUic
 ========================================
 
 Description:

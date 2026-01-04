@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - Sermon Clip 220313 - Roshan Masih The Threefold Purp
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   Sermon Clip: 220313 - Roshan Masih: The Threefold Purpose of God's Eternal Will
-Speaker: Roshan Masih
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=uYJked-utvY
+Date:     2022-03-13
+Title:    Sermon Clip: 220313 - Roshan Masih: The Threefold Purpose of God's Eternal Will
+Speaker:  Roshan Masih
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=uYJked-utvY
 ========================================
 
 Description:

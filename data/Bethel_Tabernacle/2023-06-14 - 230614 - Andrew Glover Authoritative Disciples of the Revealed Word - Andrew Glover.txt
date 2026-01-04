@@ -4,13 +4,14 @@ START OF FILE: 2023-06-14 - 230614 - Andrew Glover Authoritative Disciples of th
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-14
-Title:   230614 - Andrew Glover: Authoritative Disciples of the Revealed Word
-Speaker: Andrew Glover
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=depdDv93tEM
+Date:     2023-06-14
+Title:    230614 - Andrew Glover: Authoritative Disciples of the Revealed Word
+Speaker:  Andrew Glover
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=depdDv93tEM
 ========================================
 
 Description:

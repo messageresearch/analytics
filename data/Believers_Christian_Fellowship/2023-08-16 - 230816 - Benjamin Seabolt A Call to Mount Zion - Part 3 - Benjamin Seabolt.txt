@@ -4,13 +4,14 @@ START OF FILE: 2023-08-16 - 230816 - Benjamin Seabolt A Call to Mount Zion - Par
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-16
-Title:   230816 - Benjamin Seabolt: A Call to Mount Zion - Part 3
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A7-x8kCgQJE
+Date:     2023-08-16
+Title:    230816 - Benjamin Seabolt: A Call to Mount Zion - Part 3
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=A7-x8kCgQJE
 ========================================
 
 Description:

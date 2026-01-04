@@ -4,13 +4,14 @@ START OF FILE: 2019-10-17 - Blessed is he That Believeth For There Shall be a Pe
 
 SERMON DETAILS
 ========================================
-Date:    2019-10-17
-Title:   Blessed is he That Believeth: For There Shall be a Performance
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xgsuHdTVbw4
+Date:     2019-10-17
+Title:    Blessed is he That Believeth: For There Shall be a Performance
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=xgsuHdTVbw4
 ========================================
 
 TRANSCRIPT

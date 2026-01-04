@@ -4,13 +4,14 @@ START OF FILE: 2025-01-25 - Pastor J. Palmer Making Your Calling and Election Su
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-25
-Title:   Pastor J. Palmer: "Making Your Calling and Election Sure"
-Speaker: J Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZuCqRIsG-yw
+Date:     2025-01-25
+Title:    Pastor J. Palmer: "Making Your Calling and Election Sure"
+Speaker:  J Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZuCqRIsG-yw
 ========================================
 
 Description:

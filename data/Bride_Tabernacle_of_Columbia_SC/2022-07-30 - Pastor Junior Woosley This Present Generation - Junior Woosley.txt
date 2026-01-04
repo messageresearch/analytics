@@ -4,13 +4,14 @@ START OF FILE: 2022-07-30 - Pastor Junior Woosley This Present Generation - Juni
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-30
-Title:   Pastor Junior Woosley: "This Present Generation"
-Speaker: Junior Woosley
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-F7wUhse6EE
+Date:     2022-07-30
+Title:    Pastor Junior Woosley: "This Present Generation"
+Speaker:  Junior Woosley
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=-F7wUhse6EE
 ========================================
 
 Description:

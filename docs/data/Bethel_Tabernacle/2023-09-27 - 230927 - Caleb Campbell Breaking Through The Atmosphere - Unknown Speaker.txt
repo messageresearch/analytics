@@ -4,13 +4,14 @@ START OF FILE: 2023-09-27 - 230927 - Caleb Campbell Breaking Through The Atmosph
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-27
-Title:   230927 - Caleb Campbell: Breaking Through The Atmosphere
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xeaC8qgXSs0
+Date:     2023-09-27
+Title:    230927 - Caleb Campbell: Breaking Through The Atmosphere
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=xeaC8qgXSs0
 ========================================
 
 Description:

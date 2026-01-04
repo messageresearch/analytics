@@ -4,13 +4,14 @@ START OF FILE: 2022-05-15 - Creating By Your Word - Daniel Ofari-Darko - Daniel 
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-15
-Title:   Creating By Your Word - Daniel Ofari-Darko
-Speaker: Daniel Ofari-Darko
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MNoLgPD-9S8
+Date:     2022-05-15
+Title:    Creating By Your Word - Daniel Ofari-Darko
+Speaker:  Daniel Ofari-Darko
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=MNoLgPD-9S8
 ========================================
 
 Description:

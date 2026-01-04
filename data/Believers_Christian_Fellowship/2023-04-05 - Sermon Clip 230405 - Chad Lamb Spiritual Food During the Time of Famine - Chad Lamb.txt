@@ -4,13 +4,14 @@ START OF FILE: 2023-04-05 - Sermon Clip 230405 - Chad Lamb Spiritual Food During
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-05
-Title:   Sermon Clip: 230405 - Chad Lamb: Spiritual Food During the Time of Famine
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=wL5UzVYk5t0
+Date:     2023-04-05
+Title:    Sermon Clip: 230405 - Chad Lamb: Spiritual Food During the Time of Famine
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=wL5UzVYk5t0
 ========================================
 
 Description:

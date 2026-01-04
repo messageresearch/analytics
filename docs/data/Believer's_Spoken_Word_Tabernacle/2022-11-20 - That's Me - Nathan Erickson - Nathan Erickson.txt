@@ -4,13 +4,14 @@ START OF FILE: 2022-11-20 - That's Me - Nathan Erickson - Nathan Erickson.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-20
-Title:   That's Me - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hLIiuAco868
+Date:     2022-11-20
+Title:    That's Me - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=hLIiuAco868
 ========================================
 
 Description:

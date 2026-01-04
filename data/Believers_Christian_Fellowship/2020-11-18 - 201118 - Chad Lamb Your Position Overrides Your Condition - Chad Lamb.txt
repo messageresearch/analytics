@@ -4,13 +4,14 @@ START OF FILE: 2020-11-18 - 201118 - Chad Lamb Your Position Overrides Your Cond
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-18
-Title:   201118 - Chad Lamb: Your Position Overrides Your Condition
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=u4W0VWk2dZY
+Date:     2020-11-18
+Title:    201118 - Chad Lamb: Your Position Overrides Your Condition
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=u4W0VWk2dZY
 ========================================
 
 Description:

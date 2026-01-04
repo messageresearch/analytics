@@ -4,13 +4,14 @@ START OF FILE: 2025-04-27 - 250427 - Burley Williams Living in Time, Preparing f
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-27
-Title:   250427 - Burley Williams: Living in Time, Preparing for Eternity
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eg-YaNusGEQ
+Date:     2025-04-27
+Title:    250427 - Burley Williams: Living in Time, Preparing for Eternity
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=eg-YaNusGEQ
 ========================================
 
 Description:

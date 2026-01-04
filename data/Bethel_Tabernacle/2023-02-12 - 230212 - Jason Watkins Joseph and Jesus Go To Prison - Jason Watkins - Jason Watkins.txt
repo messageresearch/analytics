@@ -4,13 +4,14 @@ START OF FILE: 2023-02-12 - 230212 - Jason Watkins Joseph and Jesus Go To Prison
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-12
-Title:   230212 - Jason Watkins: Joseph and Jesus Go To Prison - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EO7AIyy9KUM
+Date:     2023-02-12
+Title:    230212 - Jason Watkins: Joseph and Jesus Go To Prison - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=EO7AIyy9KUM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-03-28 - Redemption of Sons and Daughters - 10 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-28
-Title:   Redemption of Sons and Daughters - 10
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TAH1awD9JaA
+Date:     2021-03-28
+Title:    Redemption of Sons and Daughters - 10
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=TAH1awD9JaA
 ========================================
 
 TRANSCRIPT

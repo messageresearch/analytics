@@ -4,13 +4,14 @@ START OF FILE: 2022-12-07 - Sermon Clip 221207 - Chad Lamb Thy Name Shall Be Cal
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-07
-Title:   Sermon Clip: 221207 - Chad Lamb: Thy Name Shall Be Called No More Jacob
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=G5JohE9Bl-k
+Date:     2022-12-07
+Title:    Sermon Clip: 221207 - Chad Lamb: Thy Name Shall Be Called No More Jacob
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=G5JohE9Bl-k
 ========================================
 
 Description:

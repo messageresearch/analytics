@@ -4,13 +4,14 @@ START OF FILE: 2022-08-06 - Minister Ernest Legette Be Still - Ernest Legette.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-06
-Title:   Minister Ernest Legette: "Be Still"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BekOQbD8eXg
+Date:     2022-08-06
+Title:    Minister Ernest Legette: "Be Still"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=BekOQbD8eXg
 ========================================
 
 Description:

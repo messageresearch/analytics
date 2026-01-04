@@ -4,13 +4,14 @@ START OF FILE: 2022-11-22 - Sermon Clip221119p - Daniel White The Masterpiece Fa
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-22
-Title:   Sermon Clip:221119p - Daniel White: The Masterpiece Family in Full View
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=XJIYCOXf01U
+Date:     2022-11-22
+Title:    Sermon Clip:221119p - Daniel White: The Masterpiece Family in Full View
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=XJIYCOXf01U
 ========================================
 
 Description:

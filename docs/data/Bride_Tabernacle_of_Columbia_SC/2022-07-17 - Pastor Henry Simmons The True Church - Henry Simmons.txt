@@ -4,13 +4,14 @@ START OF FILE: 2022-07-17 - Pastor Henry Simmons The True Church - Henry Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-17
-Title:   Pastor Henry Simmons: "The True Church"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cmbJtqx6-hI
+Date:     2022-07-17
+Title:    Pastor Henry Simmons: "The True Church"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=cmbJtqx6-hI
 ========================================
 
 Description:

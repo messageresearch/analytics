@@ -4,13 +4,14 @@ START OF FILE: 2023-02-15 - 230215 - Menno Friesen It Is a Fact - Menno Friesen.
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-15
-Title:   230215 - Menno Friesen: It Is a Fact
-Speaker: Menno Friesen
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wkUhRUbCfrQ
+Date:     2023-02-15
+Title:    230215 - Menno Friesen: It Is a Fact
+Speaker:  Menno Friesen
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=wkUhRUbCfrQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-11-30 - 251130 - Gabriel Smith A Father's Approval - Gabriel
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-30
-Title:   251130 - Gabriel Smith: A Father's Approval
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xEC3wv6k-_8
+Date:     2025-11-30
+Title:    251130 - Gabriel Smith: A Father's Approval
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=xEC3wv6k-_8
 ========================================
 
 Description:

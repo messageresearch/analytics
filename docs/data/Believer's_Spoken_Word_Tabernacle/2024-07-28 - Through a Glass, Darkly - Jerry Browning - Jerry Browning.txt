@@ -4,13 +4,14 @@ START OF FILE: 2024-07-28 - Through a Glass, Darkly - Jerry Browning - Jerry Bro
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-28
-Title:   Through a Glass, Darkly - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LWf_HL6ZIU8
+Date:     2024-07-28
+Title:    Through a Glass, Darkly - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=LWf_HL6ZIU8
 ========================================
 
 Description:

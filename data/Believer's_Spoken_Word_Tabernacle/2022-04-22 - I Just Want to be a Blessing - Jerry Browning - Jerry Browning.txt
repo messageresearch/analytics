@@ -4,13 +4,14 @@ START OF FILE: 2022-04-22 - I Just Want to be a Blessing - Jerry Browning - Jerr
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-22
-Title:   I Just Want to be a Blessing - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m6_tW_bLNnY
+Date:     2022-04-22
+Title:    I Just Want to be a Blessing - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=m6_tW_bLNnY
 ========================================
 
 Description:

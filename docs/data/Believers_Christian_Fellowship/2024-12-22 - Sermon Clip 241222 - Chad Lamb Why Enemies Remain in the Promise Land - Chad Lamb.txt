@@ -4,13 +4,14 @@ START OF FILE: 2024-12-22 - Sermon Clip 241222 - Chad Lamb Why Enemies Remain in
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-22
-Title:   Sermon Clip: 241222 - Chad Lamb: Why Enemies Remain in the Promise Land
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ZD96iHW1BNU
+Date:     2024-12-22
+Title:    Sermon Clip: 241222 - Chad Lamb: Why Enemies Remain in the Promise Land
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZD96iHW1BNU
 ========================================
 
 Description:

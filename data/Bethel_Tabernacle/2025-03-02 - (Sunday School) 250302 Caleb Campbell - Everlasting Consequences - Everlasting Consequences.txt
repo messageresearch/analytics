@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - (Sunday School) 250302 Caleb Campbell - Everlasting 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   (Sunday School) 250302: Caleb Campbell - Everlasting Consequences
-Speaker: Everlasting Consequences
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=asXOkHF9V78
+Date:     2025-03-02
+Title:    (Sunday School) 250302: Caleb Campbell - Everlasting Consequences
+Speaker:  Everlasting Consequences
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=asXOkHF9V78
 ========================================
 
 Description:

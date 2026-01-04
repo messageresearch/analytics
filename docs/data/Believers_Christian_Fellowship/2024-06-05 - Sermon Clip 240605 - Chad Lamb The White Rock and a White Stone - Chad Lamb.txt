@@ -4,13 +4,14 @@ START OF FILE: 2024-06-05 - Sermon Clip 240605 - Chad Lamb The White Rock and a 
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-05
-Title:   Sermon Clip: 240605 - Chad Lamb: The White Rock and a White Stone
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=gjTcNfGRNlY
+Date:     2024-06-05
+Title:    Sermon Clip: 240605 - Chad Lamb: The White Rock and a White Stone
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=gjTcNfGRNlY
 ========================================
 
 Description:

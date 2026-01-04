@@ -4,13 +4,14 @@ START OF FILE: 2022-10-28 - Passing Through the Valley of Baca - Samuel Browning
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-28
-Title:   Passing Through the Valley of Baca - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vd7GVQyGn7w
+Date:     2022-10-28
+Title:    Passing Through the Valley of Baca - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vd7GVQyGn7w
 ========================================
 
 Description:

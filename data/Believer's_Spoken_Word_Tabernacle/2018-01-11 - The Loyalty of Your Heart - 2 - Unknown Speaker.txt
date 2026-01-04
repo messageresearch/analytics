@@ -4,13 +4,14 @@ START OF FILE: 2018-01-11 - The Loyalty of Your Heart - 2 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-01-11
-Title:   The Loyalty of Your Heart - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MMqMYLjCZ3Y
+Date:     2018-01-11
+Title:    The Loyalty of Your Heart - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=MMqMYLjCZ3Y
 ========================================
 
 TRANSCRIPT

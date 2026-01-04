@@ -4,13 +4,14 @@ START OF FILE: 2025-03-12 - 250312 - Matthew Smith At The Appointed Time - Matth
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-12
-Title:   250312 - Matthew Smith: At The Appointed Time
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GHqZqCeC3vo
+Date:     2025-03-12
+Title:    250312 - Matthew Smith: At The Appointed Time
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=GHqZqCeC3vo
 ========================================
 
 Description:

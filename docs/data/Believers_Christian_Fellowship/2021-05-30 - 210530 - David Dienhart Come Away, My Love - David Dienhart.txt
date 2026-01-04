@@ -4,13 +4,14 @@ START OF FILE: 2021-05-30 - 210530 - David Dienhart Come Away, My Love - David D
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-30
-Title:   210530 - David Dienhart: Come Away, My Love
-Speaker: David Dienhart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FOpxOUxiWAc
+Date:     2021-05-30
+Title:    210530 - David Dienhart: Come Away, My Love
+Speaker:  David Dienhart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=FOpxOUxiWAc
 ========================================
 
 Description:

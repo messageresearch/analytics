@@ -4,13 +4,14 @@ START OF FILE: 2021-12-15 - 211215 - Benjamin Seabolt Going Around Moab - Benjam
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-15
-Title:   211215 - Benjamin Seabolt: Going Around Moab
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YtRdWv1am6A
+Date:     2021-12-15
+Title:    211215 - Benjamin Seabolt: Going Around Moab
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=YtRdWv1am6A
 ========================================
 
 Description:

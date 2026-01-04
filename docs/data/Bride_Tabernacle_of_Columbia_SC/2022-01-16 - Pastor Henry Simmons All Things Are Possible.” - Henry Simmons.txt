@@ -4,13 +4,14 @@ START OF FILE: 2022-01-16 - Pastor Henry Simmons All Things Are Possible.” - H
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-16
-Title:   Pastor Henry Simmons: "All Things Are Possible.”
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zYqwEM-6DXw
+Date:     2022-01-16
+Title:    Pastor Henry Simmons: "All Things Are Possible.”
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=zYqwEM-6DXw
 ========================================
 
 Description:

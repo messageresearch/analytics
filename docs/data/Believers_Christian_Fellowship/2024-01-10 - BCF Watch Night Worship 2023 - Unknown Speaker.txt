@@ -4,13 +4,14 @@ START OF FILE: 2024-01-10 - BCF Watch Night Worship 2023 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-10
-Title:   BCF Watch Night Worship 2023
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=Ls8dWUVi3no
+Date:     2024-01-10
+Title:    BCF Watch Night Worship 2023
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Worship Service
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ls8dWUVi3no
 ========================================
 
 Description:

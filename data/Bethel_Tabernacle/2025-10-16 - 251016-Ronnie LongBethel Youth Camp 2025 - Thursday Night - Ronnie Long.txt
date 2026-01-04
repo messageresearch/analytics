@@ -4,13 +4,14 @@ START OF FILE: 2025-10-16 - 251016-Ronnie LongBethel Youth Camp 2025 - Thursday 
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-16
-Title:   251016-Ronnie Long:Bethel Youth Camp 2025 - Thursday Night
-Speaker: Ronnie Long
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=obGtTzoO278
+Date:     2025-10-16
+Title:    251016-Ronnie Long:Bethel Youth Camp 2025 - Thursday Night
+Speaker:  Ronnie Long
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=obGtTzoO278
 ========================================
 
 Description:

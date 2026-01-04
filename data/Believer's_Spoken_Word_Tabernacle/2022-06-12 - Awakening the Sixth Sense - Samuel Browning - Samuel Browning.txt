@@ -4,13 +4,14 @@ START OF FILE: 2022-06-12 - Awakening the Sixth Sense - Samuel Browning - Samuel
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-12
-Title:   Awakening the Sixth Sense - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vN6ZZsJohXA
+Date:     2022-06-12
+Title:    Awakening the Sixth Sense - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=vN6ZZsJohXA
 ========================================
 
 Description:

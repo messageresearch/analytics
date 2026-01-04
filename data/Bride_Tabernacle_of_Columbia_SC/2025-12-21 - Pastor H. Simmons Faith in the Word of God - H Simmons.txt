@@ -4,13 +4,14 @@ START OF FILE: 2025-12-21 - Pastor H. Simmons Faith in the Word of God - H Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-21
-Title:   Pastor H. Simmons: "Faith in the Word of God"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zO0PmZs6naw
+Date:     2025-12-21
+Title:    Pastor H. Simmons: "Faith in the Word of God"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=zO0PmZs6naw
 ========================================
 
 Description:

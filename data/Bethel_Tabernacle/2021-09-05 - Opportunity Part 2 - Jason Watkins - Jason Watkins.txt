@@ -4,13 +4,14 @@ START OF FILE: 2021-09-05 - Opportunity Part 2 - Jason Watkins - Jason Watkins.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-05
-Title:   Opportunity Part 2 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N67Snc0UH-g
+Date:     2021-09-05
+Title:    Opportunity Part 2 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=N67Snc0UH-g
 ========================================
 
 TRANSCRIPT

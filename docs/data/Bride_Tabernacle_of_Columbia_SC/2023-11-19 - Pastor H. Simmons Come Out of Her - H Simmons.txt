@@ -4,13 +4,14 @@ START OF FILE: 2023-11-19 - Pastor H. Simmons Come Out of Her - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-19
-Title:   Pastor H. Simmons: "Come Out of Her"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Q2gQaAjXuBs
+Date:     2023-11-19
+Title:    Pastor H. Simmons: "Come Out of Her"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q2gQaAjXuBs
 ========================================
 
 Description:

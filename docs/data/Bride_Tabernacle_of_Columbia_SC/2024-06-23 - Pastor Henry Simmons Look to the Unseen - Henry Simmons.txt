@@ -4,13 +4,14 @@ START OF FILE: 2024-06-23 - Pastor Henry Simmons Look to the Unseen - Henry Simm
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-23
-Title:   Pastor Henry Simmons: "Look to the Unseen"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dIliIk1swzo
+Date:     2024-06-23
+Title:    Pastor Henry Simmons: "Look to the Unseen"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=dIliIk1swzo
 ========================================
 
 Description:

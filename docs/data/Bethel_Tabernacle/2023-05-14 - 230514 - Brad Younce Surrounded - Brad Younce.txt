@@ -4,13 +4,14 @@ START OF FILE: 2023-05-14 - 230514 - Brad Younce Surrounded - Brad Younce.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-14
-Title:   230514 - Brad Younce: Surrounded
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lvYY1WHnNlw
+Date:     2023-05-14
+Title:    230514 - Brad Younce: Surrounded
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=lvYY1WHnNlw
 ========================================
 
 Description:

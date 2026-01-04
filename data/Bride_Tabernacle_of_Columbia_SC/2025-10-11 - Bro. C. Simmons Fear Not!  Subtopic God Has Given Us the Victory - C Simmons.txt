@@ -4,13 +4,14 @@ START OF FILE: 2025-10-11 - Bro. C. Simmons Fear Not!  Subtopic God Has Given Us
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-11
-Title:   Bro. C. Simmons: "Fear Not!"  Subtopic: "God Has Given Us the Victory"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2QtDHccg7Rw
+Date:     2025-10-11
+Title:    Bro. C. Simmons: "Fear Not!"  Subtopic: "God Has Given Us the Victory"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=2QtDHccg7Rw
 ========================================
 
 Description:

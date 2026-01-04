@@ -4,13 +4,14 @@ START OF FILE: 2021-12-26 - The Queen of Heaven - Nathan Erickson - Nathan Erick
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-26
-Title:   The Queen of Heaven - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Dxe48iYpk_E
+Date:     2021-12-26
+Title:    The Queen of Heaven - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Dxe48iYpk_E
 ========================================
 
 TRANSCRIPT

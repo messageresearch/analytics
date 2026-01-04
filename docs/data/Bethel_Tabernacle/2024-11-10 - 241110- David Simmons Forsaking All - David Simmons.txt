@@ -4,13 +4,14 @@ START OF FILE: 2024-11-10 - 241110- David Simmons Forsaking All - David Simmons.
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-10
-Title:   241110- David Simmons: Forsaking All
-Speaker: David Simmons
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=urBovi78wpA
+Date:     2024-11-10
+Title:    241110- David Simmons: Forsaking All
+Speaker:  David Simmons
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=urBovi78wpA
 ========================================
 
 Description:

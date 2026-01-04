@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - Tent Revival Minister Yad-el Thornhill Eyewitnesses 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   Tent Revival: Minister Yad-el Thornhill: "Eyewitnesses"
-Speaker: Yad-el Thornhill
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TQWVNrtyUIU
+Date:     2025-08-31
+Title:    Tent Revival: Minister Yad-el Thornhill: "Eyewitnesses"
+Speaker:  Yad-el Thornhill
+Church:   Bride Tabernacle of Columbia SC
+Type:     Youth Service
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=TQWVNrtyUIU
 ========================================
 
 Description:

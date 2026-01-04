@@ -4,13 +4,14 @@ START OF FILE: 2020-10-18 - Perfect Submission - 2 - Perfect Submission.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-18
-Title:   Perfect Submission - 2
-Speaker: Perfect Submission
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YySRe8CuUuE
+Date:     2020-10-18
+Title:    Perfect Submission - 2
+Speaker:  Perfect Submission
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=YySRe8CuUuE
 ========================================
 
 TRANSCRIPT

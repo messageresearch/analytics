@@ -4,13 +4,14 @@ START OF FILE: 2025-09-03 - 250903 - Chad Lamb The Former and Latter Rain - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-03
-Title:   250903 - Chad Lamb: The Former and Latter Rain
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2wauJenSN-4
+Date:     2025-09-03
+Title:    250903 - Chad Lamb: The Former and Latter Rain
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=2wauJenSN-4
 ========================================
 
 Description:

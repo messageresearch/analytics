@@ -4,13 +4,14 @@ START OF FILE: 2024-12-15 - Pastor P. Ojar The Pentecostal Blessings - P Ojar.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-15
-Title:   Pastor P. Ojar: "The Pentecostal Blessings"
-Speaker: P Ojar
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=psnYxqpLoN0
+Date:     2024-12-15
+Title:    Pastor P. Ojar: "The Pentecostal Blessings"
+Speaker:  P Ojar
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=psnYxqpLoN0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-26 - Sermon Clip 230726  - Kyle Wiechart Into the Silence
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-26
-Title:   Sermon Clip: 230726  - Kyle Wiechart: Into the Silence of Adoption
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=SKWuwO4DNn4
+Date:     2023-07-26
+Title:    Sermon Clip: 230726  - Kyle Wiechart: Into the Silence of Adoption
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=SKWuwO4DNn4
 ========================================
 
 Description:

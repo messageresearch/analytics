@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - The Word of Perfection - Samuel Browning - Samuel Br
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   The Word of Perfection - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qkWFAP89Ick
+Date:     2024-05-26
+Title:    The Word of Perfection - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=qkWFAP89Ick
 ========================================
 
 Description:

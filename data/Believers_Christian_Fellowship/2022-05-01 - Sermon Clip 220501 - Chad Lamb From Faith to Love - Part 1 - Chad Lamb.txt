@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - Sermon Clip 220501 - Chad Lamb From Faith to Love - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   Sermon Clip: 220501 - Chad Lamb: From Faith to Love - Part 1
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=vNz4Z2rihRk
+Date:     2022-05-01
+Title:    Sermon Clip: 220501 - Chad Lamb: From Faith to Love - Part 1
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=vNz4Z2rihRk
 ========================================
 
 Description:

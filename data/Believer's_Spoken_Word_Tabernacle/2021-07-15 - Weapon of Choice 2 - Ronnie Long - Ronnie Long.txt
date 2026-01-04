@@ -4,13 +4,14 @@ START OF FILE: 2021-07-15 - Weapon of Choice 2 - Ronnie Long - Ronnie Long.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-15
-Title:   Weapon of Choice 2 - Ronnie Long
-Speaker: Ronnie Long
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ql_5eonRb-o
+Date:     2021-07-15
+Title:    Weapon of Choice 2 - Ronnie Long
+Speaker:  Ronnie Long
+Church:   Believer's Spoken Word Tabernacle
+Type:     Worship Service
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=ql_5eonRb-o
 ========================================
 
 Description:

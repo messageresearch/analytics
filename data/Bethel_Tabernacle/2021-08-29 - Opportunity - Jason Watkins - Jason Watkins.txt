@@ -4,13 +4,14 @@ START OF FILE: 2021-08-29 - Opportunity - Jason Watkins - Jason Watkins.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-29
-Title:   Opportunity - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z-YyX9BQV0U
+Date:     2021-08-29
+Title:    Opportunity - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z-YyX9BQV0U
 ========================================
 
 TRANSCRIPT

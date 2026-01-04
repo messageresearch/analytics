@@ -4,13 +4,14 @@ START OF FILE: 2025-07-23 - Sermon Clip 250723 - Chad Lamb Grace & Works in Ephe
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-23
-Title:   Sermon Clip: 250723 - Chad Lamb: Grace & Works in Ephesians
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=5Eteaz42fao
+Date:     2025-07-23
+Title:    Sermon Clip: 250723 - Chad Lamb: Grace & Works in Ephesians
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=5Eteaz42fao
 ========================================
 
 Description:

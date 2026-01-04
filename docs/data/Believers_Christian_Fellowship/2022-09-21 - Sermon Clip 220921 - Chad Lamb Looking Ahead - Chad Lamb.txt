@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - Sermon Clip 220921 - Chad Lamb Looking Ahead - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   Sermon Clip: 220921 - Chad Lamb: Looking Ahead
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=JYvq4bSTMyo
+Date:     2022-09-21
+Title:    Sermon Clip: 220921 - Chad Lamb: Looking Ahead
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=JYvq4bSTMyo
 ========================================
 
 Description:

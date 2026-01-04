@@ -4,13 +4,14 @@ START OF FILE: 2025-11-09 - Pastor H. Simmons The Promised Word of the Hour - H 
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-09
-Title:   Pastor H. Simmons: "The Promised Word of the Hour"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LPbldJncpmM
+Date:     2025-11-09
+Title:    Pastor H. Simmons: "The Promised Word of the Hour"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=LPbldJncpmM
 ========================================
 
 Description:

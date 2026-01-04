@@ -4,13 +4,14 @@ START OF FILE: 2022-01-02 - The Book of James - Matthew Watkins - Matthew Watkin
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-02
-Title:   The Book of James - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aIwSeJwIYbA
+Date:     2022-01-02
+Title:    The Book of James - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=aIwSeJwIYbA
 ========================================
 
 Description:

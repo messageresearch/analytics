@@ -4,13 +4,14 @@ START OF FILE: 2021-10-22 - The Peace of God 2 - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-22
-Title:   The Peace of God 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=06HBU-DK6L0
+Date:     2021-10-22
+Title:    The Peace of God 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=06HBU-DK6L0
 ========================================
 
 Description:

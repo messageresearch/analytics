@@ -4,13 +4,14 @@ START OF FILE: 2022-06-18 - Minister Ernest Legette Value - Ernest Legette.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-18
-Title:   Minister Ernest Legette: "Value"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Zc5AM9xROxs
+Date:     2022-06-18
+Title:    Minister Ernest Legette: "Value"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=Zc5AM9xROxs
 ========================================
 
 Description:

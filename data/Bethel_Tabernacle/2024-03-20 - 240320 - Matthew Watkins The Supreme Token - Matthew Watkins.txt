@@ -4,13 +4,14 @@ START OF FILE: 2024-03-20 - 240320 - Matthew Watkins The Supreme Token - Matthew
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-20
-Title:   240320 - Matthew Watkins: The Supreme Token
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zUcypB3TSwg
+Date:     2024-03-20
+Title:    240320 - Matthew Watkins: The Supreme Token
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=zUcypB3TSwg
 ========================================
 
 Description:

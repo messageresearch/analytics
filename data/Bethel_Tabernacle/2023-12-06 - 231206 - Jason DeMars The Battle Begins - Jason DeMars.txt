@@ -4,13 +4,14 @@ START OF FILE: 2023-12-06 - 231206 - Jason DeMars The Battle Begins - Jason DeMa
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-06
-Title:   231206 - Jason DeMars: The Battle Begins
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bsGZGjEFRzI
+Date:     2023-12-06
+Title:    231206 - Jason DeMars: The Battle Begins
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=bsGZGjEFRzI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-06-26 - Sermon Clip 240626 - Chad Lamb The Faith of the Fath
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-26
-Title:   Sermon Clip: 240626 - Chad Lamb: The Faith of the Fathers
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=QU_IPsS-bJM
+Date:     2024-06-26
+Title:    Sermon Clip: 240626 - Chad Lamb: The Faith of the Fathers
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=QU_IPsS-bJM
 ========================================
 
 Description:

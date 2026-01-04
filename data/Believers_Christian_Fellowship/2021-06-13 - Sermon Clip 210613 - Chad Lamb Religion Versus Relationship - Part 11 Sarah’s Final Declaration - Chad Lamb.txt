@@ -4,13 +4,14 @@ START OF FILE: 2021-06-13 - Sermon Clip 210613 - Chad Lamb Religion Versus Relat
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-13
-Title:   Sermon Clip: 210613 - Chad Lamb: Religion Versus Relationship - Part 11: Sarah’s Final Declaration
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=jtuiUD_8SUI
+Date:     2021-06-13
+Title:    Sermon Clip: 210613 - Chad Lamb: Religion Versus Relationship - Part 11: Sarah’s Final Declaration
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=jtuiUD_8SUI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-16 - Pastor H. Simmons Abide in Me - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-16
-Title:   Pastor H. Simmons: "Abide in Me"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5RI8CbydaRY
+Date:     2025-08-16
+Title:    Pastor H. Simmons: "Abide in Me"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=5RI8CbydaRY
 ========================================
 
 Description:

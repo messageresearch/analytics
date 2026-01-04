@@ -4,13 +4,14 @@ START OF FILE: 2023-12-17 - Sermon Clip 231217 - Ron Garvin India Report Discern
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-17
-Title:   Sermon Clip: 231217 - Ron Garvin: India Report: Discerning the Body of Christ
-Speaker: Ron Garvin
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=kE-ZMb62vfU
+Date:     2023-12-17
+Title:    Sermon Clip: 231217 - Ron Garvin: India Report: Discerning the Body of Christ
+Speaker:  Ron Garvin
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=kE-ZMb62vfU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-07-31 - Gifts of The Mighty Conqueror 9 - Prophets 3 - Unkno
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-31
-Title:   Gifts of The Mighty Conqueror 9 - Prophets 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=K0g_-VIoTBA
+Date:     2020-07-31
+Title:    Gifts of The Mighty Conqueror 9 - Prophets 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=K0g_-VIoTBA
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-02 - Pastor H. Simmons “Saved by Grace” - H Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-02
-Title:   Pastor H. Simmons: “Saved by Grace”
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_gIHuX2B99o
+Date:     2023-09-02
+Title:    Pastor H. Simmons: “Saved by Grace”
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=_gIHuX2B99o
 ========================================
 
 Description:

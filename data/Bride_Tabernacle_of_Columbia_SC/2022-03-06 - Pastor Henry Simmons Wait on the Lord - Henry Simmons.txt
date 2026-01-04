@@ -4,13 +4,14 @@ START OF FILE: 2022-03-06 - Pastor Henry Simmons Wait on the Lord - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-06
-Title:   Pastor Henry Simmons: "Wait on the Lord"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1ByrY_9iZ5I
+Date:     2022-03-06
+Title:    Pastor Henry Simmons: "Wait on the Lord"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=1ByrY_9iZ5I
 ========================================
 
 Description:

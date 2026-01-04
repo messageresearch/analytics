@@ -4,13 +4,14 @@ START OF FILE: 2018-08-02 - The High Ground - 2 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-08-02
-Title:   The High Ground - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3F00-DqFs54
+Date:     2018-08-02
+Title:    The High Ground - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=3F00-DqFs54
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2022-02-09 - 220209 - Kyle Wiechart His Purpose Defines Mine - Ky
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-09
-Title:   220209 - Kyle Wiechart: His Purpose Defines Mine
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EM2U1WAkc0Q
+Date:     2022-02-09
+Title:    220209 - Kyle Wiechart: His Purpose Defines Mine
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=EM2U1WAkc0Q
 ========================================
 
 Description:

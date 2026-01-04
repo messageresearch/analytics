@@ -4,13 +4,14 @@ START OF FILE: 2022-07-15 - When Prayer Changes - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-15
-Title:   When Prayer Changes - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OiYH7OcuWIY
+Date:     2022-07-15
+Title:    When Prayer Changes - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=OiYH7OcuWIY
 ========================================
 
 Description:

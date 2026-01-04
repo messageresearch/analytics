@@ -4,13 +4,14 @@ START OF FILE: 2025-06-01 - Lamp Trimming Time - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-01
-Title:   Lamp Trimming Time - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pLAlXQgOcGU
+Date:     2025-06-01
+Title:    Lamp Trimming Time - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=pLAlXQgOcGU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-07-13 - Sermon Clip 250713 - Allistair Francis The Purposefu
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-13
-Title:   Sermon Clip: 250713 - Allistair Francis: The Purposeful Nature
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=1vUEyA3eP64
+Date:     2025-07-13
+Title:    Sermon Clip: 250713 - Allistair Francis: The Purposeful Nature
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=1vUEyA3eP64
 ========================================
 
 Description:

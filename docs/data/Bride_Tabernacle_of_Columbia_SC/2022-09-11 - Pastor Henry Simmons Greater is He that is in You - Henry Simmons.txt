@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - Pastor Henry Simmons Greater is He that is in You - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   Pastor Henry Simmons: "Greater is He that is in You"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Xe3YjxzzV_8
+Date:     2022-09-11
+Title:    Pastor Henry Simmons: "Greater is He that is in You"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=Xe3YjxzzV_8
 ========================================
 
 Description:

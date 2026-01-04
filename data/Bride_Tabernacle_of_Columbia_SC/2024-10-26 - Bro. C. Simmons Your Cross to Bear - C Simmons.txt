@@ -4,13 +4,14 @@ START OF FILE: 2024-10-26 - Bro. C. Simmons Your Cross to Bear - C Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-26
-Title:   Bro. C. Simmons: "Your Cross to Bear"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L6LnzauYhSE
+Date:     2024-10-26
+Title:    Bro. C. Simmons: "Your Cross to Bear"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=L6LnzauYhSE
 ========================================
 
 Description:

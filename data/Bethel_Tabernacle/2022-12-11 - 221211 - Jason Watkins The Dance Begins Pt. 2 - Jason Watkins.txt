@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - 221211 - Jason Watkins The Dance Begins Pt. 2 - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   221211 - Jason Watkins: The Dance Begins Pt. 2
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Llhojl_vgwc
+Date:     2022-12-11
+Title:    221211 - Jason Watkins: The Dance Begins Pt. 2
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=Llhojl_vgwc
 ========================================
 
 Description:

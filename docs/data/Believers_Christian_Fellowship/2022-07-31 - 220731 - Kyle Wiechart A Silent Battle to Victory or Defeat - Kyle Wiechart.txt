@@ -4,13 +4,14 @@ START OF FILE: 2022-07-31 - 220731 - Kyle Wiechart A Silent Battle to Victory or
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-31
-Title:   220731 - Kyle Wiechart: A Silent Battle to Victory or Defeat
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=V5e5D35t1Dc
+Date:     2022-07-31
+Title:    220731 - Kyle Wiechart: A Silent Battle to Victory or Defeat
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=V5e5D35t1Dc
 ========================================
 
 TRANSCRIPT

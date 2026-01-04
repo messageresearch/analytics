@@ -4,13 +4,14 @@ START OF FILE: 2021-05-30 - Pastor Henry Simmons  The Voice of the Blood - Henry
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-30
-Title:   Pastor Henry Simmons:  "The Voice of the Blood"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Yk8C9b4uZ6o
+Date:     2021-05-30
+Title:    Pastor Henry Simmons:  "The Voice of the Blood"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=Yk8C9b4uZ6o
 ========================================
 
 Description:

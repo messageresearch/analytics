@@ -4,13 +4,14 @@ START OF FILE: 2021-08-01 - A Work God Hath Wrought Despite the Utmost Parts - B
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-01
-Title:   A Work God Hath Wrought Despite the Utmost Parts - Brandyn Sinacola
-Speaker: Brandyn Sinacola
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YGlQSHUXuGw
+Date:     2021-08-01
+Title:    A Work God Hath Wrought Despite the Utmost Parts - Brandyn Sinacola
+Speaker:  Brandyn Sinacola
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=YGlQSHUXuGw
 ========================================
 
 Description:

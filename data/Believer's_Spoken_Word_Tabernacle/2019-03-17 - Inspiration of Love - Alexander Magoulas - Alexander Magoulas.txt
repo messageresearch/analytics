@@ -4,13 +4,14 @@ START OF FILE: 2019-03-17 - Inspiration of Love - Alexander Magoulas - Alexander
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-17
-Title:   Inspiration of Love - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=olIzLI-9TQk
+Date:     2019-03-17
+Title:    Inspiration of Love - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=olIzLI-9TQk
 ========================================
 
 TRANSCRIPT

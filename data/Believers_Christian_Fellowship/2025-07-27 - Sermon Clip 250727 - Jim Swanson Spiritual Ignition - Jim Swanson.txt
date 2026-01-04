@@ -4,13 +4,14 @@ START OF FILE: 2025-07-27 - Sermon Clip 250727 - Jim Swanson Spiritual Ignition 
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-27
-Title:   Sermon Clip: 250727 - Jim Swanson: Spiritual Ignition
-Speaker: Jim Swanson
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=xweDTUUoAHE
+Date:     2025-07-27
+Title:    Sermon Clip: 250727 - Jim Swanson: Spiritual Ignition
+Speaker:  Jim Swanson
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=xweDTUUoAHE
 ========================================
 
 Description:

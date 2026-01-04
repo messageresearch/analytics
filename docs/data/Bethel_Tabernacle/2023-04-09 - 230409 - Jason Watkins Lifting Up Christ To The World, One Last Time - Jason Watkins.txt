@@ -4,13 +4,14 @@ START OF FILE: 2023-04-09 - 230409 - Jason Watkins Lifting Up Christ To The Worl
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-09
-Title:   230409 - Jason Watkins: Lifting Up Christ To The World, One Last Time
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wztCjev_3pQ
+Date:     2023-04-09
+Title:    230409 - Jason Watkins: Lifting Up Christ To The World, One Last Time
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=wztCjev_3pQ
 ========================================
 
 Description:

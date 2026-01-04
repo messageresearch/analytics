@@ -4,13 +4,14 @@ START OF FILE: 2023-01-15 - Minister Ernest Legette Thy Faith Hath Saved Thee - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-15
-Title:   Minister Ernest Legette: "Thy Faith Hath Saved Thee"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x_J482D6Kzo
+Date:     2023-01-15
+Title:    Minister Ernest Legette: "Thy Faith Hath Saved Thee"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=x_J482D6Kzo
 ========================================
 
 Description:

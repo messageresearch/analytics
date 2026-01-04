@@ -4,13 +4,14 @@ START OF FILE: 2021-03-18 - Discerning the Love of God - 17 - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-18
-Title:   Discerning the Love of God - 17
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1WvR0AIJOGo
+Date:     2021-03-18
+Title:    Discerning the Love of God - 17
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=1WvR0AIJOGo
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2024-08-18 - Pastor H. Simmons The Battleground - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-18
-Title:   Pastor H. Simmons: "The Battleground"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ar9GcZQ492I
+Date:     2024-08-18
+Title:    Pastor H. Simmons: "The Battleground"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=ar9GcZQ492I
 ========================================
 
 Description:

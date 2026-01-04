@@ -4,13 +4,14 @@ START OF FILE: 2021-01-20 - Sermon Clips 210120 - Chad Lamb Building on a Strong
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-20
-Title:   Sermon Clips: 210120 - Chad Lamb: Building on a Strong Foundation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=LFMNPUzO4Oc
+Date:     2021-01-20
+Title:    Sermon Clips: 210120 - Chad Lamb: Building on a Strong Foundation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=LFMNPUzO4Oc
 ========================================
 
 Description:

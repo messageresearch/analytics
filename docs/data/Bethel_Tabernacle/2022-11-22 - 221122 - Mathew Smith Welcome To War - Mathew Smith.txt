@@ -4,13 +4,14 @@ START OF FILE: 2022-11-22 - 221122 - Mathew Smith Welcome To War - Mathew Smith.
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-22
-Title:   221122 - Mathew Smith: Welcome To War
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yfQkb-gxJig
+Date:     2022-11-22
+Title:    221122 - Mathew Smith: Welcome To War
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=yfQkb-gxJig
 ========================================
 
 Description:

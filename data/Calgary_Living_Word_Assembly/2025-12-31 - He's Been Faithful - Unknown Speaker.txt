@@ -4,13 +4,14 @@ START OF FILE: 2025-12-31 - He's Been Faithful - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-31
-Title:   He's Been Faithful
-Speaker: Unknown Speaker
-Church:  Calgary Living Word Assembly
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xzz7QpyuPK8
+Date:     2025-12-31
+Title:    He's Been Faithful
+Speaker:  Unknown Speaker
+Church:   Calgary Living Word Assembly
+Type:     Song Special
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=xzz7QpyuPK8
 ========================================
 
 Description:

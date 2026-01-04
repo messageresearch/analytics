@@ -4,13 +4,14 @@ START OF FILE: 2022-07-28 - Pastor Isiah Brooks Change - Isiah Brooks.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-28
-Title:   Pastor Isiah Brooks: "Change"
-Speaker: Isiah Brooks
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rsT9HhFwA8g
+Date:     2022-07-28
+Title:    Pastor Isiah Brooks: "Change"
+Speaker:  Isiah Brooks
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=rsT9HhFwA8g
 ========================================
 
 Description:

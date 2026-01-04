@@ -4,13 +4,14 @@ START OF FILE: 2023-04-21 - Character Approaching the Throne - Samuel Browning -
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-21
-Title:   Character Approaching the Throne - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MNEZjT3ByA0
+Date:     2023-04-21
+Title:    Character Approaching the Throne - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=MNEZjT3ByA0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-04 - Pastor H. Simmons Worthy is the Lamb - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-04
-Title:   Pastor H. Simmons: "Worthy is the Lamb"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yh2AOXCZ44o
+Date:     2023-03-04
+Title:    Pastor H. Simmons: "Worthy is the Lamb"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=yh2AOXCZ44o
 ========================================
 
 Description:

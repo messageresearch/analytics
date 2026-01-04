@@ -4,13 +4,14 @@ START OF FILE: 2024-04-06 - Minister Ernest Legette Paying the Price - Ernest Le
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-06
-Title:   Minister Ernest Legette: "Paying the Price"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gV03d-XGQxU
+Date:     2024-04-06
+Title:    Minister Ernest Legette: "Paying the Price"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=gV03d-XGQxU
 ========================================
 
 Description:

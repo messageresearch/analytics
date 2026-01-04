@@ -4,13 +4,14 @@ START OF FILE: 2021-09-26 - Sermon Clips 210926 - Benjamin Seabolt The Words of 
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-26
-Title:   Sermon Clips: 210926 - Benjamin Seabolt: The Words of the Book
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=TK9g6W-eZsc
+Date:     2021-09-26
+Title:    Sermon Clips: 210926 - Benjamin Seabolt: The Words of the Book
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=TK9g6W-eZsc
 ========================================
 
 Description:

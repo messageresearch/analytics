@@ -4,13 +4,14 @@ START OF FILE: 2025-01-26 - Pastor H. Simmons It's Time to Take a Stand - H Simm
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-26
-Title:   Pastor H. Simmons: "It's Time to Take a Stand"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Npil9RTFahk
+Date:     2025-01-26
+Title:    Pastor H. Simmons: "It's Time to Take a Stand"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=Npil9RTFahk
 ========================================
 
 Description:

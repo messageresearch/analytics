@@ -4,13 +4,14 @@ START OF FILE: 2022-07-24 - Sermon Clip 220724 - Chad Lamb The Conditions for Li
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-24
-Title:   Sermon Clip: 220724 - Chad Lamb: The Conditions for Life
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=BoA64xoYiSs
+Date:     2022-07-24
+Title:    Sermon Clip: 220724 - Chad Lamb: The Conditions for Life
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=BoA64xoYiSs
 ========================================
 
 Description:

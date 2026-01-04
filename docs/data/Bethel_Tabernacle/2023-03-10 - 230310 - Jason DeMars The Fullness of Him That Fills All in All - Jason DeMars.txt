@@ -4,13 +4,14 @@ START OF FILE: 2023-03-10 - 230310 - Jason DeMars The Fullness of Him That Fills
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-10
-Title:   230310 - Jason DeMars: The Fullness of Him That Fills All in All
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kGWJVfCkqxg
+Date:     2023-03-10
+Title:    230310 - Jason DeMars: The Fullness of Him That Fills All in All
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=kGWJVfCkqxg
 ========================================
 
 Description:

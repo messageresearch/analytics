@@ -4,13 +4,14 @@ START OF FILE: 2022-01-23 - Honest Reflections - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-23
-Title:   Honest Reflections - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DaBgAJ97Og8
+Date:     2022-01-23
+Title:    Honest Reflections - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=DaBgAJ97Og8
 ========================================
 
 Description:

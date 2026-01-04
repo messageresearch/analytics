@@ -4,13 +4,14 @@ START OF FILE: 2020-12-27 - Sermon Clips 201227 - Benjamin Seabolt These Sayings
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-27
-Title:   Sermon Clips: 201227 - Benjamin Seabolt: These Sayings - Part 1
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=PuAeVz2JPVE
+Date:     2020-12-27
+Title:    Sermon Clips: 201227 - Benjamin Seabolt: These Sayings - Part 1
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=PuAeVz2JPVE
 ========================================
 
 Description:

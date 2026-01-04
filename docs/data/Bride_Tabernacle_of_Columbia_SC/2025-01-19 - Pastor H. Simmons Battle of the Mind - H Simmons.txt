@@ -4,13 +4,14 @@ START OF FILE: 2025-01-19 - Pastor H. Simmons Battle of the Mind - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-19
-Title:   Pastor H. Simmons: "Battle of the Mind"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7h0nCzzi7w8
+Date:     2025-01-19
+Title:    Pastor H. Simmons: "Battle of the Mind"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=7h0nCzzi7w8
 ========================================
 
 Description:

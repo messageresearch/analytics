@@ -4,13 +4,14 @@ START OF FILE: 2024-06-03 - 240602a - Chad Lamb The Mystery of the Gospel - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-03
-Title:   240602a - Chad Lamb: The Mystery of the Gospel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6c_vi8n6q0o
+Date:     2024-06-03
+Title:    240602a - Chad Lamb: The Mystery of the Gospel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=6c_vi8n6q0o
 ========================================
 
 Description:

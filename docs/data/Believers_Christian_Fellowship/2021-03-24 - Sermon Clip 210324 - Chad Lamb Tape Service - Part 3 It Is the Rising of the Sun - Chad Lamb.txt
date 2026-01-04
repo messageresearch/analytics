@@ -4,13 +4,14 @@ START OF FILE: 2021-03-24 - Sermon Clip 210324 - Chad Lamb Tape Service - Part 3
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-24
-Title:   Sermon Clip: 210324 - Chad Lamb: Tape Service - Part 3: It Is the Rising of the Sun
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=wjsMEqvo53U
+Date:     2021-03-24
+Title:    Sermon Clip: 210324 - Chad Lamb: Tape Service - Part 3: It Is the Rising of the Sun
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=wjsMEqvo53U
 ========================================
 
 Description:

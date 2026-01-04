@@ -4,13 +4,14 @@ START OF FILE: 2023-09-21 - 230921 - Emmanuel Cibasu Mission Trip to the Democra
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-21
-Title:   230921 - Emmanuel Cibasu: Mission Trip to the Democratic Republic of the Congo
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PcINZRpYGmA
+Date:     2023-09-21
+Title:    230921 - Emmanuel Cibasu: Mission Trip to the Democratic Republic of the Congo
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=PcINZRpYGmA
 ========================================
 
 Description:

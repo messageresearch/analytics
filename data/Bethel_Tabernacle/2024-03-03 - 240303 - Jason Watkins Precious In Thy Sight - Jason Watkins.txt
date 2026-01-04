@@ -4,13 +4,14 @@ START OF FILE: 2024-03-03 - 240303 - Jason Watkins Precious In Thy Sight - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-03
-Title:   240303 - Jason Watkins: Precious In Thy Sight
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ARWyMvpl6ys
+Date:     2024-03-03
+Title:    240303 - Jason Watkins: Precious In Thy Sight
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=ARWyMvpl6ys
 ========================================
 
 Description:

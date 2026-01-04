@@ -4,13 +4,14 @@ START OF FILE: 2024-03-27 - Sermon Clip 240327 -  Emmanuel Cibasu The Eye of the
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-27
-Title:   Sermon Clip: 240327 -  Emmanuel Cibasu: The Eye of the Lord Is Upon His Righteous
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=uF59HdFhP40
+Date:     2024-03-27
+Title:    Sermon Clip: 240327 -  Emmanuel Cibasu: The Eye of the Lord Is Upon His Righteous
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=uF59HdFhP40
 ========================================
 
 Description:

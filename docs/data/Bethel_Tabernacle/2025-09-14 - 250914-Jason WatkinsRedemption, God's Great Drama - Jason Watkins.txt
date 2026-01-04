@@ -4,13 +4,14 @@ START OF FILE: 2025-09-14 - 250914-Jason WatkinsRedemption, God's Great Drama - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-14
-Title:   250914-Jason Watkins:Redemption, God's Great Drama
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=j1qssLEWJdE
+Date:     2025-09-14
+Title:    250914-Jason Watkins:Redemption, God's Great Drama
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=j1qssLEWJdE
 ========================================
 
 Description:

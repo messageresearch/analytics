@@ -4,13 +4,14 @@ START OF FILE: 2022-10-16 - Sermon Clip 221016 - Chad Lamb The Continuation of t
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-16
-Title:   Sermon Clip: 221016 - Chad Lamb: The Continuation of the Creation of God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=0TGmuf5wj0M
+Date:     2022-10-16
+Title:    Sermon Clip: 221016 - Chad Lamb: The Continuation of the Creation of God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=0TGmuf5wj0M
 ========================================
 
 Description:

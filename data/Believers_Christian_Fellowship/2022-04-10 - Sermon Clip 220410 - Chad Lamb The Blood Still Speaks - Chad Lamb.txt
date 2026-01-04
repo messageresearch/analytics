@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - Sermon Clip 220410 - Chad Lamb The Blood Still Speak
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   Sermon Clip: 220410 - Chad Lamb: The Blood Still Speaks
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=OISh5Sj3Uz8
+Date:     2022-04-10
+Title:    Sermon Clip: 220410 - Chad Lamb: The Blood Still Speaks
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=OISh5Sj3Uz8
 ========================================
 
 Description:

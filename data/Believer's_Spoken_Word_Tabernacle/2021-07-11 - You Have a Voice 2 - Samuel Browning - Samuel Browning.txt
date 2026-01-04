@@ -4,13 +4,14 @@ START OF FILE: 2021-07-11 - You Have a Voice 2 - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-11
-Title:   You Have a Voice 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=USXMaSple6g
+Date:     2021-07-11
+Title:    You Have a Voice 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Worship Service
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=USXMaSple6g
 ========================================
 
 Description:

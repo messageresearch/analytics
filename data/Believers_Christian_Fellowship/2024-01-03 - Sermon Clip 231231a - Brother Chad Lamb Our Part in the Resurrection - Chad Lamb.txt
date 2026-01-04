@@ -4,13 +4,14 @@ START OF FILE: 2024-01-03 - Sermon Clip 231231a - Brother Chad Lamb Our Part in 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-03
-Title:   Sermon Clip: 231231a - Brother Chad Lamb: Our Part in the Resurrection
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=S4BZzBY6l94
+Date:     2024-01-03
+Title:    Sermon Clip: 231231a - Brother Chad Lamb: Our Part in the Resurrection
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Easter Program
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=S4BZzBY6l94
 ========================================
 
 Description:

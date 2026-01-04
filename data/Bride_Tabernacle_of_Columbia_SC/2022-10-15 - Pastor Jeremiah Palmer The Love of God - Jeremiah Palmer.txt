@@ -4,13 +4,14 @@ START OF FILE: 2022-10-15 - Pastor Jeremiah Palmer The Love of God - Jeremiah Pa
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-15
-Title:   Pastor Jeremiah Palmer: "The Love of God"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GuRnF1sbyRw
+Date:     2022-10-15
+Title:    Pastor Jeremiah Palmer: "The Love of God"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=GuRnF1sbyRw
 ========================================
 
 Description:

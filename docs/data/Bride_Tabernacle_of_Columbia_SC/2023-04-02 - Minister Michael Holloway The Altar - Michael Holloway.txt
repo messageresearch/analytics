@@ -4,13 +4,14 @@ START OF FILE: 2023-04-02 - Minister Michael Holloway The Altar - Michael Hollow
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-02
-Title:   Minister Michael Holloway: "The Altar"
-Speaker: Michael Holloway
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SxU3xy3Zaf8
+Date:     2023-04-02
+Title:    Minister Michael Holloway: "The Altar"
+Speaker:  Michael Holloway
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=SxU3xy3Zaf8
 ========================================
 
 Description:

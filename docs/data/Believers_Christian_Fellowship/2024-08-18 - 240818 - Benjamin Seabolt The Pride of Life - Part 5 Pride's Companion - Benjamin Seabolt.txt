@@ -4,13 +4,14 @@ START OF FILE: 2024-08-18 - 240818 - Benjamin Seabolt The Pride of Life - Part 5
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-18
-Title:   240818 - Benjamin Seabolt: The Pride of Life - Part 5: Pride's Companion
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-rhSpBFmUk8
+Date:     2024-08-18
+Title:    240818 - Benjamin Seabolt: The Pride of Life - Part 5: Pride's Companion
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 3h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=-rhSpBFmUk8
 ========================================
 
 Description:

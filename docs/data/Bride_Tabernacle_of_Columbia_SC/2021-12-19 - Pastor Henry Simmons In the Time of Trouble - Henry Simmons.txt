@@ -4,13 +4,14 @@ START OF FILE: 2021-12-19 - Pastor Henry Simmons In the Time of Trouble - Henry 
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-19
-Title:   Pastor Henry Simmons: "In the Time of Trouble"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=STGeWRAbOLk
+Date:     2021-12-19
+Title:    Pastor Henry Simmons: "In the Time of Trouble"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=STGeWRAbOLk
 ========================================
 
 Description:

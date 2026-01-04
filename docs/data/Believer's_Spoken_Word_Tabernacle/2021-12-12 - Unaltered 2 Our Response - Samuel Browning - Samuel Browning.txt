@@ -4,13 +4,14 @@ START OF FILE: 2021-12-12 - Unaltered 2 Our Response - Samuel Browning - Samuel 
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-12
-Title:   Unaltered 2: Our Response - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Xl0xaO8pJyM
+Date:     2021-12-12
+Title:    Unaltered 2: Our Response - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Testimony Service
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=Xl0xaO8pJyM
 ========================================
 
 Description:

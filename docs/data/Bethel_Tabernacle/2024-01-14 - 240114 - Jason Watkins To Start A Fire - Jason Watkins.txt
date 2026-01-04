@@ -4,13 +4,14 @@ START OF FILE: 2024-01-14 - 240114 - Jason Watkins To Start A Fire - Jason Watki
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-14
-Title:   240114 - Jason Watkins: To Start A Fire
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wdCWo9pMksM
+Date:     2024-01-14
+Title:    240114 - Jason Watkins: To Start A Fire
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=wdCWo9pMksM
 ========================================
 
 Description:

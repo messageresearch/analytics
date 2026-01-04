@@ -4,13 +4,14 @@ START OF FILE: 2024-07-10 - Sermon Clip 240710-Chad Lamb Unveiling the Amateur g
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-10
-Title:   Sermon Clip: 240710-Chad Lamb: Unveiling the Amateur gods - Pt 2: Revelation, Relationship & Rapture
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ruN50WZH9v4
+Date:     2024-07-10
+Title:    Sermon Clip: 240710-Chad Lamb: Unveiling the Amateur gods - Pt 2: Revelation, Relationship & Rapture
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ruN50WZH9v4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-05-05 - The Voice in the East Wind Pt. 7 - Jason Watkins - J
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-05
-Title:   The Voice in the East Wind Pt. 7 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0fSAEotYJbo
+Date:     2024-05-05
+Title:    The Voice in the East Wind Pt. 7 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=0fSAEotYJbo
 ========================================
 
 Description:

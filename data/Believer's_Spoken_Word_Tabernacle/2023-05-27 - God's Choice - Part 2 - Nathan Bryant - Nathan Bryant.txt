@@ -4,13 +4,14 @@ START OF FILE: 2023-05-27 - God's Choice - Part 2 - Nathan Bryant - Nathan Bryan
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-27
-Title:   God's Choice - Part 2 - Nathan Bryant
-Speaker: Nathan Bryant
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pxwTDDAeU3c
+Date:     2023-05-27
+Title:    God's Choice - Part 2 - Nathan Bryant
+Speaker:  Nathan Bryant
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=pxwTDDAeU3c
 ========================================
 
 Description:

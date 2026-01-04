@@ -4,13 +4,14 @@ START OF FILE: 2025-04-13 - 250413 - Chad Lamb The Mysterious Book in an Earthen
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-13
-Title:   250413 - Chad Lamb: The Mysterious Book in an Earthen Vessel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z7RlWIWR7KY
+Date:     2025-04-13
+Title:    250413 - Chad Lamb: The Mysterious Book in an Earthen Vessel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=z7RlWIWR7KY
 ========================================
 
 Description:

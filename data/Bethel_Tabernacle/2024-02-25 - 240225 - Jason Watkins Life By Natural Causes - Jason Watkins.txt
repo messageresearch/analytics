@@ -4,13 +4,14 @@ START OF FILE: 2024-02-25 - 240225 - Jason Watkins Life By Natural Causes - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-25
-Title:   240225 - Jason Watkins: Life By Natural Causes
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BRuSK5wz8GQ
+Date:     2024-02-25
+Title:    240225 - Jason Watkins: Life By Natural Causes
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=BRuSK5wz8GQ
 ========================================
 
 Description:

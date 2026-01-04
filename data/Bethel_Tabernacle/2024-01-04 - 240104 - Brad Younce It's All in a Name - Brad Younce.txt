@@ -4,13 +4,14 @@ START OF FILE: 2024-01-04 - 240104 - Brad Younce It's All in a Name - Brad Younc
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-04
-Title:   240104 - Brad Younce: It's All in a Name
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=S4q7J8pek1Q
+Date:     2024-01-04
+Title:    240104 - Brad Younce: It's All in a Name
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=S4q7J8pek1Q
 ========================================
 
 Description:

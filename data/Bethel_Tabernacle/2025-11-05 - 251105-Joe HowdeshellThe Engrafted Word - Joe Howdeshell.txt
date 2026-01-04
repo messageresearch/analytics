@@ -4,13 +4,14 @@ START OF FILE: 2025-11-05 - 251105-Joe HowdeshellThe Engrafted Word - Joe Howdes
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-05
-Title:   251105-Joe Howdeshell:The Engrafted Word
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=S9XY8Kgz_sI
+Date:     2025-11-05
+Title:    251105-Joe Howdeshell:The Engrafted Word
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=S9XY8Kgz_sI
 ========================================
 
 Description:

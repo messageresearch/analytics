@@ -4,13 +4,14 @@ START OF FILE: 2021-06-27 - God's Word of Command - Jason Watkins - Jason Watkin
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-27
-Title:   God's Word of Command - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yjAnLITRsp4
+Date:     2021-06-27
+Title:    God's Word of Command - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=yjAnLITRsp4
 ========================================
 
 TRANSCRIPT

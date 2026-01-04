@@ -4,13 +4,14 @@ START OF FILE: 2024-07-25 - Annual Tent Revival Pastor I. Brooks The Gathering o
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-25
-Title:   Annual Tent Revival: Pastor I. Brooks: "The Gathering of the Darkness"
-Speaker: Annual Tent
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ta9c2tLi8IY
+Date:     2024-07-25
+Title:    Annual Tent Revival: Pastor I. Brooks: "The Gathering of the Darkness"
+Speaker:  Annual Tent
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ta9c2tLi8IY
 ========================================
 
 Description:

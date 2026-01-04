@@ -4,13 +4,14 @@ START OF FILE: 2021-12-12 - Receiving the Spirit Part 1 - Jason DeMars - Jason D
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-12
-Title:   Receiving the Spirit Part 1 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AgWK8h4ELLY
+Date:     2021-12-12
+Title:    Receiving the Spirit Part 1 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=AgWK8h4ELLY
 ========================================
 
 TRANSCRIPT

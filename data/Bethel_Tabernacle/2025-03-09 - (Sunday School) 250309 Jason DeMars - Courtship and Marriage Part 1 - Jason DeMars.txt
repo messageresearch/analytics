@@ -4,13 +4,14 @@ START OF FILE: 2025-03-09 - (Sunday School) 250309 Jason DeMars - Courtship and 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-09
-Title:   (Sunday School) 250309: Jason DeMars - Courtship and Marriage Part 1
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=arOM1RwCUi4
+Date:     2025-03-09
+Title:    (Sunday School) 250309: Jason DeMars - Courtship and Marriage Part 1
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=arOM1RwCUi4
 ========================================
 
 Description:

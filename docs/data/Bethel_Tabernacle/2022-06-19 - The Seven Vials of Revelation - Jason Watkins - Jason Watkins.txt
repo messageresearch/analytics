@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - The Seven Vials of Revelation - Jason Watkins - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   The Seven Vials of Revelation - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sN8TzraIQ0A
+Date:     2022-06-19
+Title:    The Seven Vials of Revelation - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=sN8TzraIQ0A
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-03-17 - 210317 - Chad Lamb Tape Service - Part 2 It Is the R
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-17
-Title:   210317 - Chad Lamb: Tape Service - Part 2: It Is the Rising of the Sun
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KXzNHJNS-bE
+Date:     2021-03-17
+Title:    210317 - Chad Lamb: Tape Service - Part 2: It Is the Rising of the Sun
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=KXzNHJNS-bE
 ========================================
 
 Description:

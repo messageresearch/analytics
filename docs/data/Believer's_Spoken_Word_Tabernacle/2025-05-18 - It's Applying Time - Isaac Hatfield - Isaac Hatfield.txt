@@ -4,13 +4,14 @@ START OF FILE: 2025-05-18 - It's Applying Time - Isaac Hatfield - Isaac Hatfield
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-18
-Title:   It's Applying Time - Isaac Hatfield
-Speaker: Isaac Hatfield
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HuSHP8v7VZY
+Date:     2025-05-18
+Title:    It's Applying Time - Isaac Hatfield
+Speaker:  Isaac Hatfield
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=HuSHP8v7VZY
 ========================================
 
 Description:

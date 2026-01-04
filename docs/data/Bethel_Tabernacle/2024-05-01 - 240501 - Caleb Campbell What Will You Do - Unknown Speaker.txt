@@ -4,13 +4,14 @@ START OF FILE: 2024-05-01 - 240501 - Caleb Campbell What Will You Do - Unknown S
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-01
-Title:   240501 - Caleb Campbell: What Will You Do?
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bBCXgcsjVgM
+Date:     2024-05-01
+Title:    240501 - Caleb Campbell: What Will You Do?
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=bBCXgcsjVgM
 ========================================
 
 Description:

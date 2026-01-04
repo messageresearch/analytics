@@ -4,13 +4,14 @@ START OF FILE: 2023-12-21 - A Highly Favored Woman - Brad Younce - Brad Younce.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-21
-Title:   A Highly Favored Woman - Brad Younce
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HTC_r6A2ByY
+Date:     2023-12-21
+Title:    A Highly Favored Woman - Brad Younce
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=HTC_r6A2ByY
 ========================================
 
 Description:

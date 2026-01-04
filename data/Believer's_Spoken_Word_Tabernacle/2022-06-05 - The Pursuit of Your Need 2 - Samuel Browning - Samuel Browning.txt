@@ -4,13 +4,14 @@ START OF FILE: 2022-06-05 - The Pursuit of Your Need 2 - Samuel Browning - Samue
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-05
-Title:   The Pursuit of Your Need 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X8ysf8ucV10
+Date:     2022-06-05
+Title:    The Pursuit of Your Need 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=X8ysf8ucV10
 ========================================
 
 Description:

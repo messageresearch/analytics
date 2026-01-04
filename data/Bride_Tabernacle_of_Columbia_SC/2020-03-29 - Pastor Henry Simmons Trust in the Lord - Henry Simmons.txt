@@ -4,13 +4,14 @@ START OF FILE: 2020-03-29 - Pastor Henry Simmons Trust in the Lord - Henry Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-29
-Title:   Pastor Henry Simmons: "Trust in the Lord"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=i6XWY-IaSwQ
+Date:     2020-03-29
+Title:    Pastor Henry Simmons: "Trust in the Lord"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=i6XWY-IaSwQ
 ========================================
 
 Description:

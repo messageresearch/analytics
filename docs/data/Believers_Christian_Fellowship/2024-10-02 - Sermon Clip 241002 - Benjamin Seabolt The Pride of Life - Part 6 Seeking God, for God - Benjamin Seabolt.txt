@@ -4,13 +4,14 @@ START OF FILE: 2024-10-02 - Sermon Clip 241002 - Benjamin Seabolt The Pride of L
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-02
-Title:   Sermon Clip: 241002 - Benjamin Seabolt: The Pride of Life - Part 6: Seeking God, for God
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=JQ-MYPBBIjs
+Date:     2024-10-02
+Title:    Sermon Clip: 241002 - Benjamin Seabolt: The Pride of Life - Part 6: Seeking God, for God
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=JQ-MYPBBIjs
 ========================================
 
 Description:

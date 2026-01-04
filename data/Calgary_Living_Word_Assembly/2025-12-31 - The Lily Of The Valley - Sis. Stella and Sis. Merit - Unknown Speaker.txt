@@ -4,13 +4,14 @@ START OF FILE: 2025-12-31 - The Lily Of The Valley - Sis. Stella and Sis. Merit 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-31
-Title:   The Lily Of The Valley - Sis. Stella and Sis. Merit
-Speaker: Unknown Speaker
-Church:  Calgary Living Word Assembly
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tLKwGkPWHpo
+Date:     2025-12-31
+Title:    The Lily Of The Valley - Sis. Stella and Sis. Merit
+Speaker:  Unknown Speaker
+Church:   Calgary Living Word Assembly
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=tLKwGkPWHpo
 ========================================
 
 Description:

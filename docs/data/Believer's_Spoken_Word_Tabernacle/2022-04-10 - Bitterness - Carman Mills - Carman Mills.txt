@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - Bitterness - Carman Mills - Carman Mills.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   Bitterness - Carman Mills
-Speaker: Carman Mills
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lpTT3tHsOnM
+Date:     2022-04-10
+Title:    Bitterness - Carman Mills
+Speaker:  Carman Mills
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=lpTT3tHsOnM
 ========================================
 
 Description:

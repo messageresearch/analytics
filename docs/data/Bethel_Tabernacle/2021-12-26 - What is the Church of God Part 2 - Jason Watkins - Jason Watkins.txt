@@ -4,13 +4,14 @@ START OF FILE: 2021-12-26 - What is the Church of God Part 2 - Jason Watkins - J
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-26
-Title:   What is the Church of God? Part 2 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MRgAy0FzEKY
+Date:     2021-12-26
+Title:    What is the Church of God? Part 2 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=MRgAy0FzEKY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-04-16 - 230416 - Andrew Glover Ordained To The Message By Th
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-16
-Title:   230416 - Andrew Glover: Ordained To The Message By The Spirit
-Speaker: Andrew Glover
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z7a6SK5LAMo
+Date:     2023-04-16
+Title:    230416 - Andrew Glover: Ordained To The Message By The Spirit
+Speaker:  Andrew Glover
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=z7a6SK5LAMo
 ========================================
 
 Description:

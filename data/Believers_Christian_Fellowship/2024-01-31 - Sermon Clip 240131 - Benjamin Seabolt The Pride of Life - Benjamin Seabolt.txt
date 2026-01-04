@@ -4,13 +4,14 @@ START OF FILE: 2024-01-31 - Sermon Clip 240131 - Benjamin Seabolt The Pride of L
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-31
-Title:   Sermon Clip: 240131 - Benjamin Seabolt: The Pride of Life
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Pm_PLK-WisI
+Date:     2024-01-31
+Title:    Sermon Clip: 240131 - Benjamin Seabolt: The Pride of Life
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Pm_PLK-WisI
 ========================================
 
 Description:

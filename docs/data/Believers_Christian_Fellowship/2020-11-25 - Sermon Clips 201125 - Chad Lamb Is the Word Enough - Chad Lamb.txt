@@ -4,13 +4,14 @@ START OF FILE: 2020-11-25 - Sermon Clips 201125 - Chad Lamb Is the Word Enough -
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-25
-Title:   Sermon Clips: 201125 - Chad Lamb: Is the Word Enough
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=IItYN_ue-10
+Date:     2020-11-25
+Title:    Sermon Clips: 201125 - Chad Lamb: Is the Word Enough
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=IItYN_ue-10
 ========================================
 
 Description:

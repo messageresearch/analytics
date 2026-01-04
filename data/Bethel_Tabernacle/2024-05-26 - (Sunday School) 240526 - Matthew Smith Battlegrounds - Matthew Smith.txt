@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - (Sunday School) 240526 - Matthew Smith Battlegrounds
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   (Sunday School) 240526 - Matthew Smith: Battlegrounds
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PJQMD7pE28g
+Date:     2024-05-26
+Title:    (Sunday School) 240526 - Matthew Smith: Battlegrounds
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=PJQMD7pE28g
 ========================================
 
 Description:

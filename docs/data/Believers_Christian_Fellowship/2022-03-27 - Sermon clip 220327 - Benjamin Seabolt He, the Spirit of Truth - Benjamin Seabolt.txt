@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - Sermon clip 220327 - Benjamin Seabolt He, the Spirit
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   Sermon clip: 220327 - Benjamin Seabolt: He, the Spirit of Truth
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=FGsQk78vdfU
+Date:     2022-03-27
+Title:    Sermon clip: 220327 - Benjamin Seabolt: He, the Spirit of Truth
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=FGsQk78vdfU
 ========================================
 
 Description:

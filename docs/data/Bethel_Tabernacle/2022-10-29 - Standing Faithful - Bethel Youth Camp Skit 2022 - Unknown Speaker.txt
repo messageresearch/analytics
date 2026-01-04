@@ -4,13 +4,14 @@ START OF FILE: 2022-10-29 - Standing Faithful - Bethel Youth Camp Skit 2022 - Un
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-29
-Title:   Standing Faithful - Bethel Youth Camp Skit 2022
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=8Ak27F67zMU
+Date:     2022-10-29
+Title:    Standing Faithful - Bethel Youth Camp Skit 2022
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=8Ak27F67zMU
 ========================================
 
 Description:

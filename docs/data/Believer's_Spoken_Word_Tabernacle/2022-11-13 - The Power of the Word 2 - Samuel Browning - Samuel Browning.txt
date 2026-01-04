@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - The Power of the Word 2 - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   The Power of the Word 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BvkDiIQYHHE
+Date:     2022-11-13
+Title:    The Power of the Word 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=BvkDiIQYHHE
 ========================================
 
 Description:

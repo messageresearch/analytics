@@ -4,13 +4,14 @@ START OF FILE: 2022-10-16 - 221016 - Jason Watkins The Dance Begins - Jason Watk
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-16
-Title:   221016 - Jason Watkins: The Dance Begins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PGNlP1iCdnA
+Date:     2022-10-16
+Title:    221016 - Jason Watkins: The Dance Begins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=PGNlP1iCdnA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - (Sunday School) 250302 Matthew Smith - Good People G
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   (Sunday School) 250302: Matthew Smith - Good People Go to Heaven
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=e7_-ni7vc68
+Date:     2025-03-02
+Title:    (Sunday School) 250302: Matthew Smith - Good People Go to Heaven
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=e7_-ni7vc68
 ========================================
 
 Description:

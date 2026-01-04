@@ -4,13 +4,14 @@ START OF FILE: 2022-02-10 - Inoculated Power - Brad Younce - Brad Younce.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-10
-Title:   Inoculated Power - Brad Younce
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vCzHuZJmnP0
+Date:     2022-02-10
+Title:    Inoculated Power - Brad Younce
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=vCzHuZJmnP0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-08-25 - (Sunday School) The Godly Family Reflections of Jeho
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-25
-Title:   (Sunday School) The Godly Family: Reflections of Jehovah - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Lbg9ABMeg0k
+Date:     2024-08-25
+Title:    (Sunday School) The Godly Family: Reflections of Jehovah - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=Lbg9ABMeg0k
 ========================================
 
 Description:

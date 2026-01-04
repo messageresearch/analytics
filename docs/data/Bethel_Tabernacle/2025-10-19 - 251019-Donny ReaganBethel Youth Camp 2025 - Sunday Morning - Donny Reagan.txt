@@ -4,13 +4,14 @@ START OF FILE: 2025-10-19 - 251019-Donny ReaganBethel Youth Camp 2025 - Sunday M
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-19
-Title:   251019-Donny Reagan:Bethel Youth Camp 2025 - Sunday Morning
-Speaker: Donny Reagan
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=ODn2vVj6c7Y
+Date:     2025-10-19
+Title:    251019-Donny Reagan:Bethel Youth Camp 2025 - Sunday Morning
+Speaker:  Donny Reagan
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 3h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=ODn2vVj6c7Y
 ========================================
 
 Description:

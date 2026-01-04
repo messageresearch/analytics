@@ -4,13 +4,14 @@ START OF FILE: 2020-07-05 - Pastor Henry Simmons The Crucified Word - Henry Simm
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-05
-Title:   Pastor Henry Simmons: The Crucified Word
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wdI0d0kkeVc
+Date:     2020-07-05
+Title:    Pastor Henry Simmons: The Crucified Word
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=wdI0d0kkeVc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-02-05 - Sermon Clip 230205 - Chad Lamb Two Trees in the Gard
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-05
-Title:   Sermon Clip: 230205 - Chad Lamb: Two Trees in the Garden
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=kKs-j-k-Uls
+Date:     2023-02-05
+Title:    Sermon Clip: 230205 - Chad Lamb: Two Trees in the Garden
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=kKs-j-k-Uls
 ========================================
 
 Description:

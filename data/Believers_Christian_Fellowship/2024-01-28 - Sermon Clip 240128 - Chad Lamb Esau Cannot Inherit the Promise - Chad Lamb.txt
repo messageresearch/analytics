@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - Sermon Clip 240128 - Chad Lamb Esau Cannot Inherit t
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   Sermon Clip: 240128 - Chad Lamb: Esau Cannot Inherit the Promise
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=bVAS7HtMspA
+Date:     2024-01-28
+Title:    Sermon Clip: 240128 - Chad Lamb: Esau Cannot Inherit the Promise
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=bVAS7HtMspA
 ========================================
 
 Description:

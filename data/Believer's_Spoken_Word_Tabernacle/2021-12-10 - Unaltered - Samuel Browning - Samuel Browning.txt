@@ -4,13 +4,14 @@ START OF FILE: 2021-12-10 - Unaltered - Samuel Browning - Samuel Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-10
-Title:   Unaltered - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TmEb1nW7FlA
+Date:     2021-12-10
+Title:    Unaltered - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=TmEb1nW7FlA
 ========================================
 
 Description:

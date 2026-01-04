@@ -4,13 +4,14 @@ START OF FILE: 2022-09-18 - Pastor Henry Simmons Denying Yourself - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-18
-Title:   Pastor Henry Simmons: "Denying Yourself"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AguxUYdLfog
+Date:     2022-09-18
+Title:    Pastor Henry Simmons: "Denying Yourself"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=AguxUYdLfog
 ========================================
 
 Description:

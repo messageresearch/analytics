@@ -4,13 +4,14 @@ START OF FILE: 2025-11-16 - Sermon Clip 251116 - Jason DeMars The Mystery of Hid
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-16
-Title:   Sermon Clip: 251116 - Jason DeMars: The Mystery of Hidden
-Speaker: Jason DeMars
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=sz2gGYL7QbQ
+Date:     2025-11-16
+Title:    Sermon Clip: 251116 - Jason DeMars: The Mystery of Hidden
+Speaker:  Jason DeMars
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=sz2gGYL7QbQ
 ========================================
 
 Description:

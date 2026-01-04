@@ -4,13 +4,14 @@ START OF FILE: 2022-02-13 - Sermon Clips 220213 - Chad Lamb To Have God on Our S
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-13
-Title:   Sermon Clips: 220213 - Chad Lamb: To Have God on Our Side, We Must Be on His
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=wfcsDDGjZt8
+Date:     2022-02-13
+Title:    Sermon Clips: 220213 - Chad Lamb: To Have God on Our Side, We Must Be on His
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=wfcsDDGjZt8
 ========================================
 
 Description:

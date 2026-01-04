@@ -4,13 +4,14 @@ START OF FILE: 2023-02-19 - Sermon Clip 230219 - Jacek Walach The 3 Main Feasts 
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-19
-Title:   Sermon Clip: 230219 - Jacek Walach: The 3 Main Feasts Are Shadows of the Threefold Mystery of God
-Speaker: Jacek Walach
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=iD0Y84jq7WY
+Date:     2023-02-19
+Title:    Sermon Clip: 230219 - Jacek Walach: The 3 Main Feasts Are Shadows of the Threefold Mystery of God
+Speaker:  Jacek Walach
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=iD0Y84jq7WY
 ========================================
 
 Description:

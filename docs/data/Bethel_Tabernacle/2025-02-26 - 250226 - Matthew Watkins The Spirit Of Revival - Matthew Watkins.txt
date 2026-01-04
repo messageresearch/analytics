@@ -4,13 +4,14 @@ START OF FILE: 2025-02-26 - 250226 - Matthew Watkins The Spirit Of Revival - Mat
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-26
-Title:   250226 - Matthew Watkins: The Spirit Of Revival
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pcgAO4aRCa4
+Date:     2025-02-26
+Title:    250226 - Matthew Watkins: The Spirit Of Revival
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=pcgAO4aRCa4
 ========================================
 
 Description:

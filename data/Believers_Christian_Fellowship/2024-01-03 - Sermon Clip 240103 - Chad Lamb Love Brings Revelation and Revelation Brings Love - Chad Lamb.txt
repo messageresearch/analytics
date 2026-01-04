@@ -4,13 +4,14 @@ START OF FILE: 2024-01-03 - Sermon Clip 240103 - Chad Lamb Love Brings Revelatio
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-03
-Title:   Sermon Clip: 240103 - Chad Lamb: Love Brings Revelation and Revelation Brings Love
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=UK171ibfo4E
+Date:     2024-01-03
+Title:    Sermon Clip: 240103 - Chad Lamb: Love Brings Revelation and Revelation Brings Love
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=UK171ibfo4E
 ========================================
 
 Description:

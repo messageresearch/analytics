@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - Sermon Clip 221030 - Chad Lamb India Trip Report & N
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   Sermon Clip: 221030 - Chad Lamb: India Trip Report & Not Servants, but Bride; Not a Law but Love
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3rm8__pVa7o
+Date:     2022-10-30
+Title:    Sermon Clip: 221030 - Chad Lamb: India Trip Report & Not Servants, but Bride; Not a Law but Love
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=3rm8__pVa7o
 ========================================
 
 Description:

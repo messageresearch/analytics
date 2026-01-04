@@ -4,13 +4,14 @@ START OF FILE: 2024-11-24 - 241124 - Jason Watkins Dark and Darker Still - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-24
-Title:   241124 - Jason Watkins: Dark and Darker Still
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=biKDb-qffk0
+Date:     2024-11-24
+Title:    241124 - Jason Watkins: Dark and Darker Still
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=biKDb-qffk0
 ========================================
 
 Description:

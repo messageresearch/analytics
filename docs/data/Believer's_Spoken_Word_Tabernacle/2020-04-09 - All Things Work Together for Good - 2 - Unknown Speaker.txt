@@ -4,13 +4,14 @@ START OF FILE: 2020-04-09 - All Things Work Together for Good - 2 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-09
-Title:   All Things Work Together for Good - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vD-2dpWDsBQ
+Date:     2020-04-09
+Title:    All Things Work Together for Good - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=vD-2dpWDsBQ
 ========================================
 
 TRANSCRIPT

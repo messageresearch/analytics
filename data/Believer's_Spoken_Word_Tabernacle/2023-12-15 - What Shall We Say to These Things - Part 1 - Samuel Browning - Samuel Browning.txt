@@ -4,13 +4,14 @@ START OF FILE: 2023-12-15 - What Shall We Say to These Things - Part 1 - Samuel 
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-15
-Title:   What Shall We Say to These Things? - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZNq8R2xHd3Q
+Date:     2023-12-15
+Title:    What Shall We Say to These Things? - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZNq8R2xHd3Q
 ========================================
 
 Description:

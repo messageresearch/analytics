@@ -4,13 +4,14 @@ START OF FILE: 2022-08-13 - Minister Ernest Legette Inquiring of God - Ernest Le
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-13
-Title:   Minister Ernest Legette: "Inquiring of God"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KQIdNGyo1E0
+Date:     2022-08-13
+Title:    Minister Ernest Legette: "Inquiring of God"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=KQIdNGyo1E0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-12-11 - 241211 Jason Watkins Abiding in Christ Pt. 2 - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-11
-Title:   241211 Jason Watkins: Abiding in Christ Pt. 2
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NJLCtxYQfqo
+Date:     2024-12-11
+Title:    241211 Jason Watkins: Abiding in Christ Pt. 2
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=NJLCtxYQfqo
 ========================================
 
 Description:

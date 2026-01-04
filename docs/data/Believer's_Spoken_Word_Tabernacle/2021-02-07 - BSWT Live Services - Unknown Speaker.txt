@@ -4,13 +4,14 @@ START OF FILE: 2021-02-07 - BSWT Live Services - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-07
-Title:   BSWT Live Services
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=PMF7G-4xQT4
+Date:     2021-02-07
+Title:    BSWT Live Services
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Song Special
+Duration: 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=PMF7G-4xQT4
 ========================================
 
 TRANSCRIPT

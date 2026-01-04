@@ -4,13 +4,14 @@ START OF FILE: 2024-01-15 - Loneliness - Trevor Emond - Trevor Emond.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-15
-Title:   Loneliness - Trevor Emond
-Speaker: Trevor Emond
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4iP1eqh0P9k
+Date:     2024-01-15
+Title:    Loneliness - Trevor Emond
+Speaker:  Trevor Emond
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=4iP1eqh0P9k
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-05-10 - 250510 - The Wedding of Alex & Amy Bartrom - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-10
-Title:   250510 - The Wedding of Alex & Amy Bartrom
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Wedding
-Language:English
-URL:     https://www.youtube.com/watch?v=nJkHgaKs4Vo
+Date:     2025-05-10
+Title:    250510 - The Wedding of Alex & Amy Bartrom
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Wedding
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=nJkHgaKs4Vo
 ========================================
 
 Description:

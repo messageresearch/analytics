@@ -4,13 +4,14 @@ START OF FILE: 2021-11-21 - Sermon Clip 211121 - Stephen Shembo - Thanksgiving M
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-21
-Title:   Sermon Clip: 211121 - Stephen Shembo - Thanksgiving Meetings: Mystery of the Sea of Glass - Part 2
-Speaker: Stephen Shembo
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Mr6deeEk6-c
+Date:     2021-11-21
+Title:    Sermon Clip: 211121 - Stephen Shembo - Thanksgiving Meetings: Mystery of the Sea of Glass - Part 2
+Speaker:  Stephen Shembo
+Church:   Believers Christian Fellowship
+Type:     Thanksgiving Service
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mr6deeEk6-c
 ========================================
 
 Description:

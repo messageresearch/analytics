@@ -4,13 +4,14 @@ START OF FILE: 2023-11-12 - Living in the Realms of Grace - 1 of 2 - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-12
-Title:   Living in the Realms of Grace - 1 of 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ezt-yvchFzw
+Date:     2023-11-12
+Title:    Living in the Realms of Grace - 1 of 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=ezt-yvchFzw
 ========================================
 
 Description:

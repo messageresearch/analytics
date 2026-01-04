@@ -4,13 +4,14 @@ START OF FILE: 2022-08-21 - Sermon Clip 220821 - Chad Lamb The Seven Golden Cand
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-21
-Title:   Sermon Clip: 220821 - Chad Lamb: The Seven Golden Candlesticks - Part 3
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_5u21I7f-lA
+Date:     2022-08-21
+Title:    Sermon Clip: 220821 - Chad Lamb: The Seven Golden Candlesticks - Part 3
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_5u21I7f-lA
 ========================================
 
 Description:

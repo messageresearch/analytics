@@ -4,13 +4,14 @@ START OF FILE: 2023-04-12 - 230412 - Jason Watkins Sufficiency Versus Excellency
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-12
-Title:   230412 - Jason Watkins: Sufficiency Versus Excellency - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ipGT5HF-rYw
+Date:     2023-04-12
+Title:    230412 - Jason Watkins: Sufficiency Versus Excellency - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=ipGT5HF-rYw
 ========================================
 
 Description:

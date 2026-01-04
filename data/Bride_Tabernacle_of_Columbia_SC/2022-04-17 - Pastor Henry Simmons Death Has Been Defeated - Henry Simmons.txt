@@ -4,13 +4,14 @@ START OF FILE: 2022-04-17 - Pastor Henry Simmons Death Has Been Defeated - Henry
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-17
-Title:   Pastor Henry Simmons: "Death Has Been Defeated"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7u-pXFkY5GU
+Date:     2022-04-17
+Title:    Pastor Henry Simmons: "Death Has Been Defeated"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=7u-pXFkY5GU
 ========================================
 
 Description:

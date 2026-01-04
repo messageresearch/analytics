@@ -4,13 +4,14 @@ START OF FILE: 2021-06-20 - A Book of Acts Church Part 1 - Jason DeMars - Jason 
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-20
-Title:   A Book of Acts Church Part 1 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fPasf640BRw
+Date:     2021-06-20
+Title:    A Book of Acts Church Part 1 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=fPasf640BRw
 ========================================
 
 TRANSCRIPT

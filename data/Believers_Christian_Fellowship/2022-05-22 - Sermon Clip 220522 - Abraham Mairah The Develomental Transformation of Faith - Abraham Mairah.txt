@@ -4,13 +4,14 @@ START OF FILE: 2022-05-22 - Sermon Clip 220522 - Abraham Mairah The Develomental
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-22
-Title:   Sermon Clip: 220522 - Abraham Mairah: The Develomental Transformation of Faith
-Speaker: Abraham Mairah
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=KfRH1sgcycY
+Date:     2022-05-22
+Title:    Sermon Clip: 220522 - Abraham Mairah: The Develomental Transformation of Faith
+Speaker:  Abraham Mairah
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=KfRH1sgcycY
 ========================================
 
 Description:

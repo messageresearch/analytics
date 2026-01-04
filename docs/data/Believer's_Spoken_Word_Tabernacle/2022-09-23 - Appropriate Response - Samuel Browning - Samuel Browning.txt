@@ -4,13 +4,14 @@ START OF FILE: 2022-09-23 - Appropriate Response - Samuel Browning - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-23
-Title:   Appropriate Response - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=boZCoXQIgto
+Date:     2022-09-23
+Title:    Appropriate Response - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=boZCoXQIgto
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-11-22 - 231122 - Chad Lamb Why Me - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-22
-Title:   231122 - Chad Lamb: Why Me?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=M36YEmM4zPM
+Date:     2023-11-22
+Title:    231122 - Chad Lamb: Why Me?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=M36YEmM4zPM
 ========================================
 
 Description:

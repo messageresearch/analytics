@@ -4,13 +4,14 @@ START OF FILE: 2024-11-17 - Sermon Clip 241117 - Chad Lamb He That Is True - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-17
-Title:   Sermon Clip: 241117 - Chad Lamb: He That Is True
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Q60aYl4-s14
+Date:     2024-11-17
+Title:    Sermon Clip: 241117 - Chad Lamb: He That Is True
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q60aYl4-s14
 ========================================
 
 Description:

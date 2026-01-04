@@ -4,13 +4,14 @@ START OF FILE: 2020-02-05 - 200205 - Chad Lamb One Body and One Purpose - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-05
-Title:   200205 - Chad Lamb: One Body and One Purpose
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_vaZaEJBRwY
+Date:     2020-02-05
+Title:    200205 - Chad Lamb: One Body and One Purpose
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=_vaZaEJBRwY
 ========================================
 
 Description:

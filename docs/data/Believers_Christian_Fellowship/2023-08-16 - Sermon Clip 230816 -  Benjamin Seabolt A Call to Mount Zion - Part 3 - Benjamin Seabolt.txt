@@ -4,13 +4,14 @@ START OF FILE: 2023-08-16 - Sermon Clip 230816 -  Benjamin Seabolt A Call to Mou
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-16
-Title:   Sermon Clip: 230816 -  Benjamin Seabolt: A Call to Mount Zion - Part 3
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Smox7HM0QW8
+Date:     2023-08-16
+Title:    Sermon Clip: 230816 -  Benjamin Seabolt: A Call to Mount Zion - Part 3
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Smox7HM0QW8
 ========================================
 
 Description:

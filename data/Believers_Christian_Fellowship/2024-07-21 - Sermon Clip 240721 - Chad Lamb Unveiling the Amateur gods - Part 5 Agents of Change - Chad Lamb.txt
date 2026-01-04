@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - Sermon Clip 240721 - Chad Lamb Unveiling the Amateur
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   Sermon Clip: 240721 - Chad Lamb: Unveiling the Amateur gods - Part 5: Agents of Change
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=6pzu4yR4beU
+Date:     2024-07-21
+Title:    Sermon Clip: 240721 - Chad Lamb: Unveiling the Amateur gods - Part 5: Agents of Change
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=6pzu4yR4beU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-08-06 - The Spirit of Grace - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-06
-Title:   The Spirit of Grace - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cCZh6VCIEZA
+Date:     2023-08-06
+Title:    The Spirit of Grace - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=cCZh6VCIEZA
 ========================================
 
 Description:

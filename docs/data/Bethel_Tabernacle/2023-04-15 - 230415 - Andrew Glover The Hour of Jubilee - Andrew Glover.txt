@@ -4,13 +4,14 @@ START OF FILE: 2023-04-15 - 230415 - Andrew Glover The Hour of Jubilee - Andrew 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-15
-Title:   230415 - Andrew Glover: The Hour of Jubilee
-Speaker: Andrew Glover
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4cfXyFysb-M
+Date:     2023-04-15
+Title:    230415 - Andrew Glover: The Hour of Jubilee
+Speaker:  Andrew Glover
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=4cfXyFysb-M
 ========================================
 
 Description:

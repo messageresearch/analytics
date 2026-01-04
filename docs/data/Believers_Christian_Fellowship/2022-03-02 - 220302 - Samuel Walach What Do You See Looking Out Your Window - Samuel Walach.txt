@@ -4,13 +4,14 @@ START OF FILE: 2022-03-02 - 220302 - Samuel Walach What Do You See Looking Out Y
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-02
-Title:   220302 - Samuel Walach: What Do You See Looking Out Your Window?
-Speaker: Samuel Walach
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=M9fvV_EJkfk
+Date:     2022-03-02
+Title:    220302 - Samuel Walach: What Do You See Looking Out Your Window?
+Speaker:  Samuel Walach
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=M9fvV_EJkfk
 ========================================
 
 Description:

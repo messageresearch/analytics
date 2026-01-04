@@ -4,13 +4,14 @@ START OF FILE: 2025-09-10 - Sermon Clip 250910 - Chad Lamb The Mount Zion Showdo
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-10
-Title:   Sermon Clip: 250910 - Chad Lamb: The Mount Zion Showdown
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=GuUKosA3gW8
+Date:     2025-09-10
+Title:    Sermon Clip: 250910 - Chad Lamb: The Mount Zion Showdown
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=GuUKosA3gW8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-11-29 - 201129 - Chad Lamb Wrestle with and Overcome - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-29
-Title:   201129 - Chad Lamb: Wrestle with and Overcome
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uG-08pzC0QI
+Date:     2020-11-29
+Title:    201129 - Chad Lamb: Wrestle with and Overcome
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=uG-08pzC0QI
 ========================================
 
 Description:

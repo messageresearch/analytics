@@ -4,13 +4,14 @@ START OF FILE: 2022-08-28 - Sermon Clip 220828  - Chad Lamb The Seven Golden Can
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-28
-Title:   Sermon Clip: 220828  - Chad Lamb: The Seven Golden Candlesticks - Part 5: The Voice of Many Waters
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=p9R9kjwFX1U
+Date:     2022-08-28
+Title:    Sermon Clip: 220828  - Chad Lamb: The Seven Golden Candlesticks - Part 5: The Voice of Many Waters
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=p9R9kjwFX1U
 ========================================
 
 Description:

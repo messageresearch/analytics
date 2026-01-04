@@ -4,13 +4,14 @@ START OF FILE: 2022-06-01 - 220601 - Chad Lamb All Things - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-01
-Title:   220601 - Chad Lamb: All Things
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4qApCT63Vpo
+Date:     2022-06-01
+Title:    220601 - Chad Lamb: All Things
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=4qApCT63Vpo
 ========================================
 
 Description:

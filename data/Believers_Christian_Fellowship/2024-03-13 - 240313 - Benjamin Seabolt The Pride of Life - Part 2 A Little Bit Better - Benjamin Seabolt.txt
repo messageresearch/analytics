@@ -4,13 +4,14 @@ START OF FILE: 2024-03-13 - 240313 - Benjamin Seabolt The Pride of Life - Part 2
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-13
-Title:   240313 - Benjamin Seabolt: The Pride of Life - Part 2: A Little Bit Better
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gV370BxQMxQ
+Date:     2024-03-13
+Title:    240313 - Benjamin Seabolt: The Pride of Life - Part 2: A Little Bit Better
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=gV370BxQMxQ
 ========================================
 
 Description:

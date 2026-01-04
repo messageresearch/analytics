@@ -4,13 +4,14 @@ START OF FILE: 2025-10-19 - Sermon Clip - 251019 - Chad Lamb Walking in a Deeper
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-19
-Title:   Sermon Clip - 251019 - Chad Lamb: Walking in a Deeper Relationship
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=gHijvlobYew
+Date:     2025-10-19
+Title:    Sermon Clip - 251019 - Chad Lamb: Walking in a Deeper Relationship
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=gHijvlobYew
 ========================================
 
 Description:

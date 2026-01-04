@@ -4,13 +4,14 @@ START OF FILE: 2024-06-02 - Brother C. Simmons It Wasn’t Easy, but It Was Nece
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-02
-Title:   Brother C. Simmons: "It Wasn’t Easy, but It Was Necessary"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9WP2BPkdr88
+Date:     2024-06-02
+Title:    Brother C. Simmons: "It Wasn’t Easy, but It Was Necessary"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=9WP2BPkdr88
 ========================================
 
 Description:

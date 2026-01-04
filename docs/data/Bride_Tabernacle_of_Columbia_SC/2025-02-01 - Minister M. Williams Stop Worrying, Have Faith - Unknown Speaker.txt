@@ -4,13 +4,14 @@ START OF FILE: 2025-02-01 - Minister M. Williams Stop Worrying, Have Faith - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-01
-Title:   Minister M. Williams: "Stop Worrying, Have Faith"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Hg_FhG2DLnU
+Date:     2025-02-01
+Title:    Minister M. Williams: "Stop Worrying, Have Faith"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=Hg_FhG2DLnU
 ========================================
 
 Description:

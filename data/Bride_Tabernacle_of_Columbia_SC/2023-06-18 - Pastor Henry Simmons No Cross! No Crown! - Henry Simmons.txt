@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - Pastor Henry Simmons No Cross! No Crown! - Henry Sim
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   Pastor Henry Simmons: "No Cross! No Crown!"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1m7ejywyTXg
+Date:     2023-06-18
+Title:    Pastor Henry Simmons: "No Cross! No Crown!"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=1m7ejywyTXg
 ========================================
 
 Description:

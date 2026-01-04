@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - Pastor Henry Simmons Are You Ready To Be Married - H
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   Pastor Henry Simmons: "Are You Ready To Be Married?
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qeV7LyK7fng
+Date:     2022-11-13
+Title:    Pastor Henry Simmons: "Are You Ready To Be Married?
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=qeV7LyK7fng
 ========================================
 
 Description:

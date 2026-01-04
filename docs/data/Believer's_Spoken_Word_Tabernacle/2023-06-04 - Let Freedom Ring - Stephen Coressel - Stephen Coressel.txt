@@ -4,13 +4,14 @@ START OF FILE: 2023-06-04 - Let Freedom Ring - Stephen Coressel - Stephen Coress
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-04
-Title:   Let Freedom Ring - Stephen Coressel
-Speaker: Stephen Coressel
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ip5JjArSE_4
+Date:     2023-06-04
+Title:    Let Freedom Ring - Stephen Coressel
+Speaker:  Stephen Coressel
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ip5JjArSE_4
 ========================================
 
 Description:

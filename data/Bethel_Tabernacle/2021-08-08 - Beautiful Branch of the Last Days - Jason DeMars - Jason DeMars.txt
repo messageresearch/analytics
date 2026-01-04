@@ -4,13 +4,14 @@ START OF FILE: 2021-08-08 - Beautiful Branch of the Last Days - Jason DeMars - J
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-08
-Title:   Beautiful Branch of the Last Days - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xED8Ftm5IU0
+Date:     2021-08-08
+Title:    Beautiful Branch of the Last Days - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=xED8Ftm5IU0
 ========================================
 
 TRANSCRIPT

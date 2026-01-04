@@ -4,13 +4,14 @@ START OF FILE: 2022-07-10 - Sermon Clip 220710 - Chad Lamb Life from Death - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-10
-Title:   Sermon Clip: 220710 - Chad Lamb: Life from Death
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=cCWft_Bt5OU
+Date:     2022-07-10
+Title:    Sermon Clip: 220710 - Chad Lamb: Life from Death
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=cCWft_Bt5OU
 ========================================
 
 Description:

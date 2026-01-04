@@ -4,13 +4,14 @@ START OF FILE: 2024-12-31 - (Communion) 241231 - Jason Watkins The Special Year 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-31
-Title:   (Communion) 241231 - Jason Watkins: The Special Year
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WyFgzVeBFwc
+Date:     2024-12-31
+Title:    (Communion) 241231 - Jason Watkins: The Special Year
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Communion Service
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=WyFgzVeBFwc
 ========================================
 
 Description:

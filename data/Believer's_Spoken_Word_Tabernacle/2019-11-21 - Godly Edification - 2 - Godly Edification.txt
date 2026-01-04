@@ -4,13 +4,14 @@ START OF FILE: 2019-11-21 - Godly Edification - 2 - Godly Edification.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-11-21
-Title:   Godly Edification - 2
-Speaker: Godly Edification
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kAYuP3hMipI
+Date:     2019-11-21
+Title:    Godly Edification - 2
+Speaker:  Godly Edification
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=kAYuP3hMipI
 ========================================
 
 TRANSCRIPT

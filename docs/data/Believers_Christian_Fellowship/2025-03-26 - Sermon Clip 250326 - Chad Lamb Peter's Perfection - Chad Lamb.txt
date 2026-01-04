@@ -4,13 +4,14 @@ START OF FILE: 2025-03-26 - Sermon Clip 250326 - Chad Lamb Peter's Perfection - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-26
-Title:   Sermon Clip: 250326 - Chad Lamb: Peter's Perfection
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DGjwFTTKroc
+Date:     2025-03-26
+Title:    Sermon Clip: 250326 - Chad Lamb: Peter's Perfection
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=DGjwFTTKroc
 ========================================
 
 Description:

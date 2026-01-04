@@ -4,13 +4,14 @@ START OF FILE: 2024-03-03 - 240303 - Simon Abbott Seeds Sown, Trees Grown, and F
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-03
-Title:   240303 - Simon Abbott: Seeds Sown, Trees Grown, and Fruit Shown: Roots & Fruits
-Speaker: Simon Abbott
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2YOIvcAscas
+Date:     2024-03-03
+Title:    240303 - Simon Abbott: Seeds Sown, Trees Grown, and Fruit Shown: Roots & Fruits
+Speaker:  Simon Abbott
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=2YOIvcAscas
 ========================================
 
 Description:

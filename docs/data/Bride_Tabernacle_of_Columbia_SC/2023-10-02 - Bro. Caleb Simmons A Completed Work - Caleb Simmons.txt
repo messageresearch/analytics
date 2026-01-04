@@ -4,13 +4,14 @@ START OF FILE: 2023-10-02 - Bro. Caleb Simmons A Completed Work - Caleb Simmons.
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-02
-Title:   Bro. Caleb Simmons: "A Completed Work"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1YqANHbCapU
+Date:     2023-10-02
+Title:    Bro. Caleb Simmons: "A Completed Work"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=1YqANHbCapU
 ========================================
 
 Description:

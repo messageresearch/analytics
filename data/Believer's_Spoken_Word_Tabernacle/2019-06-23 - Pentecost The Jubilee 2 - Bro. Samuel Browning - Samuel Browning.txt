@@ -4,13 +4,14 @@ START OF FILE: 2019-06-23 - Pentecost The Jubilee 2 - Bro. Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2019-06-23
-Title:   Pentecost: The Jubilee 2 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5HHCqPUrSq0
+Date:     2019-06-23
+Title:    Pentecost: The Jubilee 2 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=5HHCqPUrSq0
 ========================================
 
 TRANSCRIPT

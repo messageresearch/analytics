@@ -4,13 +4,14 @@ START OF FILE: 2021-04-04 - Changing the Narrative - Bro Nathan Erickson - Natha
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-04
-Title:   Changing the Narrative - Bro Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KgETRektl2U
+Date:     2021-04-04
+Title:    Changing the Narrative - Bro Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=KgETRektl2U
 ========================================
 
 TRANSCRIPT

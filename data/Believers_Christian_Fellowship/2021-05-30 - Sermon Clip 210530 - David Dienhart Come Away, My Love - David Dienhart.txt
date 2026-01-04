@@ -4,13 +4,14 @@ START OF FILE: 2021-05-30 - Sermon Clip 210530 - David Dienhart Come Away, My Lo
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-30
-Title:   Sermon Clip: 210530 - David Dienhart: Come Away, My Love
-Speaker: David Dienhart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=rbXzkVfC7m0
+Date:     2021-05-30
+Title:    Sermon Clip: 210530 - David Dienhart: Come Away, My Love
+Speaker:  David Dienhart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=rbXzkVfC7m0
 ========================================
 
 Description:

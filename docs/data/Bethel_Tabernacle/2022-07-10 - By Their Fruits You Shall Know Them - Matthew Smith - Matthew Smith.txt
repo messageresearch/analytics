@@ -4,13 +4,14 @@ START OF FILE: 2022-07-10 - By Their Fruits You Shall Know Them - Matthew Smith 
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-10
-Title:   By Their Fruits You Shall Know Them - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d-DCbWwCIBs
+Date:     2022-07-10
+Title:    By Their Fruits You Shall Know Them - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=d-DCbWwCIBs
 ========================================
 
 Description:

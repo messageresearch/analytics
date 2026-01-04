@@ -4,13 +4,14 @@ START OF FILE: 2024-02-11 - Sermon Clip 240211 - Kyle Wiechart Issues of the Hea
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-11
-Title:   Sermon Clip: 240211 - Kyle Wiechart: Issues of the Heart: Scars
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=OteSWFgXNF0
+Date:     2024-02-11
+Title:    Sermon Clip: 240211 - Kyle Wiechart: Issues of the Heart: Scars
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=OteSWFgXNF0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-10 - Communtion - Desire for Fellowship - Samuel Browning
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-10
-Title:   Communtion - Desire for Fellowship - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7p-VXkTLTzM
+Date:     2022-03-10
+Title:    Communtion - Desire for Fellowship - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=7p-VXkTLTzM
 ========================================
 
 Description:

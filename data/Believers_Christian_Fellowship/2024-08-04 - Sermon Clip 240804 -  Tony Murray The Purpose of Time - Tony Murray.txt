@@ -4,13 +4,14 @@ START OF FILE: 2024-08-04 - Sermon Clip 240804 -  Tony Murray The Purpose of Tim
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-04
-Title:   Sermon Clip: 240804 -  Tony Murray: The Purpose of Time
-Speaker: Tony Murray
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Oc7OgCmDEuM
+Date:     2024-08-04
+Title:    Sermon Clip: 240804 -  Tony Murray: The Purpose of Time
+Speaker:  Tony Murray
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Oc7OgCmDEuM
 ========================================
 
 Description:

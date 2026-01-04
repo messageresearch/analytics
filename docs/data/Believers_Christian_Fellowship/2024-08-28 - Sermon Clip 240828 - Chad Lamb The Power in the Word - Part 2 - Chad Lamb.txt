@@ -4,13 +4,14 @@ START OF FILE: 2024-08-28 - Sermon Clip 240828 - Chad Lamb The Power in the Word
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-28
-Title:   Sermon Clip: 240828 - Chad Lamb: The Power in the Word - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=f_1_w3aCOtM
+Date:     2024-08-28
+Title:    Sermon Clip: 240828 - Chad Lamb: The Power in the Word - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=f_1_w3aCOtM
 ========================================
 
 Description:

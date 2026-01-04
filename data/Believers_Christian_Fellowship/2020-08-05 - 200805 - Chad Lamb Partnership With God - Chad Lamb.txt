@@ -4,13 +4,14 @@ START OF FILE: 2020-08-05 - 200805 - Chad Lamb Partnership With God - Chad Lamb.
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-05
-Title:   200805 - Chad Lamb: Partnership With God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3JSd6PYxO6k
+Date:     2020-08-05
+Title:    200805 - Chad Lamb: Partnership With God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=3JSd6PYxO6k
 ========================================
 
 Description:

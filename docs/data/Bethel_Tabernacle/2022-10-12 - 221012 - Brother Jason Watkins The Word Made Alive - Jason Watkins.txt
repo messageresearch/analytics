@@ -4,13 +4,14 @@ START OF FILE: 2022-10-12 - 221012 - Brother Jason Watkins The Word Made Alive -
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-12
-Title:   221012 - Brother Jason Watkins: The Word Made Alive
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fWQaevbbWMw
+Date:     2022-10-12
+Title:    221012 - Brother Jason Watkins: The Word Made Alive
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=fWQaevbbWMw
 ========================================
 
 Description:

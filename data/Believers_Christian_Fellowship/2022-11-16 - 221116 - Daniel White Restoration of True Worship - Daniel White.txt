@@ -4,13 +4,14 @@ START OF FILE: 2022-11-16 - 221116 - Daniel White Restoration of True Worship - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-16
-Title:   221116 - Daniel White: Restoration of True Worship
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KQT-u1xOJ1I
+Date:     2022-11-16
+Title:    221116 - Daniel White: Restoration of True Worship
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=KQT-u1xOJ1I
 ========================================
 
 Description:

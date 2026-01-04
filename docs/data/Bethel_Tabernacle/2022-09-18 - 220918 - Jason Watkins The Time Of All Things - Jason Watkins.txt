@@ -4,13 +4,14 @@ START OF FILE: 2022-09-18 - 220918 - Jason Watkins The Time Of All Things - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-18
-Title:   220918 - Jason Watkins: The Time Of All Things
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kYX3ZJQ81Ww
+Date:     2022-09-18
+Title:    220918 - Jason Watkins: The Time Of All Things
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=kYX3ZJQ81Ww
 ========================================
 
 Description:

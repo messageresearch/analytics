@@ -4,13 +4,14 @@ START OF FILE: 2020-05-08 - A Prisoner of Jesus Christ - 4 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-08
-Title:   A Prisoner of Jesus Christ - 4
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Mx7LT0EvNTA
+Date:     2020-05-08
+Title:    A Prisoner of Jesus Christ - 4
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mx7LT0EvNTA
 ========================================
 
 TRANSCRIPT

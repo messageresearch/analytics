@@ -4,13 +4,14 @@ START OF FILE: 2022-07-29 - The Invitation - Jerry Browning - Jerry Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-29
-Title:   The Invitation - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9QEOAylJt-c
+Date:     2022-07-29
+Title:    The Invitation - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=9QEOAylJt-c
 ========================================
 
 Description:

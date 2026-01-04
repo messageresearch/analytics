@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - 241201 - Chad Lamb Saved, Healed, Rescued, Made Whol
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   241201 - Chad Lamb: Saved, Healed, Rescued, Made Whole
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FJ9rsY_FXk8
+Date:     2024-12-01
+Title:    241201 - Chad Lamb: Saved, Healed, Rescued, Made Whole
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=FJ9rsY_FXk8
 ========================================
 
 Description:

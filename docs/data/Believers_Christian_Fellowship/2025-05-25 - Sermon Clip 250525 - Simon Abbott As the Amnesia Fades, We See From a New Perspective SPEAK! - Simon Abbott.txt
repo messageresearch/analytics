@@ -4,13 +4,14 @@ START OF FILE: 2025-05-25 - Sermon Clip 250525 - Simon Abbott As the Amnesia Fad
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-25
-Title:   Sermon Clip: 250525 - Simon Abbott: As the Amnesia Fades, We See From a New Perspective: SPEAK!
-Speaker: Simon Abbott
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=yBIGmVISDiI
+Date:     2025-05-25
+Title:    Sermon Clip: 250525 - Simon Abbott: As the Amnesia Fades, We See From a New Perspective: SPEAK!
+Speaker:  Simon Abbott
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=yBIGmVISDiI
 ========================================
 
 Description:

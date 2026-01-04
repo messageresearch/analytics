@@ -4,13 +4,14 @@ START OF FILE: 2022-12-03 - Bro. Caleb Simmons Only Believe - Caleb Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-03
-Title:   Bro. Caleb Simmons: "Only Believe"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ihd83fjk35I
+Date:     2022-12-03
+Title:    Bro. Caleb Simmons: "Only Believe"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ihd83fjk35I
 ========================================
 
 Description:

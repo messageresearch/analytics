@@ -4,13 +4,14 @@ START OF FILE: 2022-01-16 - 220116 - Jean Kadima Puzzling Questions in Our Mind 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-16
-Title:   220116 - Jean Kadima: Puzzling Questions in Our Mind
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wEZBcczaLZE
+Date:     2022-01-16
+Title:    220116 - Jean Kadima: Puzzling Questions in Our Mind
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=wEZBcczaLZE
 ========================================
 
 Description:

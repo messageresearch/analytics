@@ -4,13 +4,14 @@ START OF FILE: 2024-01-21 - Pastor H. Simmons He is Faithful - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-21
-Title:   Pastor H. Simmons: "He is Faithful"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=O6-eGZ2wOiM
+Date:     2024-01-21
+Title:    Pastor H. Simmons: "He is Faithful"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=O6-eGZ2wOiM
 ========================================
 
 Description:

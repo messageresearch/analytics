@@ -4,13 +4,14 @@ START OF FILE: 2023-04-19 - Sermon Clip 230419 - Chad Lamb Light in the Darkness
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-19
-Title:   Sermon Clip: 230419 - Chad Lamb: Light in the Darkness - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=wz3EdKz7V9I
+Date:     2023-04-19
+Title:    Sermon Clip: 230419 - Chad Lamb: Light in the Darkness - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=wz3EdKz7V9I
 ========================================
 
 Description:

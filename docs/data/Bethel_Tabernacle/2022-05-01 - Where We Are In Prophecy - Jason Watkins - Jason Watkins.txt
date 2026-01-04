@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - Where We Are In Prophecy - Jason Watkins - Jason Wat
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   Where We Are In Prophecy - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ujvgdRUmmU8
+Date:     2022-05-01
+Title:    Where We Are In Prophecy - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=ujvgdRUmmU8
 ========================================
 
 Description:

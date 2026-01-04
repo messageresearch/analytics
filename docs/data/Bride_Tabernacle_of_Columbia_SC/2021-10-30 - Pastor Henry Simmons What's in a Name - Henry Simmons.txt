@@ -4,13 +4,14 @@ START OF FILE: 2021-10-30 - Pastor Henry Simmons What's in a Name - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-30
-Title:   Pastor Henry Simmons: "What's in a Name?"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AgXahF_o538
+Date:     2021-10-30
+Title:    Pastor Henry Simmons: "What's in a Name?"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=AgXahF_o538
 ========================================
 
 Description:

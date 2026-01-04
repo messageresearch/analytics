@@ -4,13 +4,14 @@ START OF FILE: 2021-08-06 - Honor in the Home 3 - Samuel Browning (Part 2) - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-06
-Title:   Honor in the Home 3 - Samuel Browning (Part 2)
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5NAEFUYa-OA
+Date:     2021-08-06
+Title:    Honor in the Home 3 - Samuel Browning (Part 2)
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Short Service
+Duration: 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=5NAEFUYa-OA
 ========================================
 
 Description:

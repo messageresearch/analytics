@@ -4,13 +4,14 @@ START OF FILE: 2020-05-31 - Pastor Henry Simmons The Greatest Battle Ever Fought
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-31
-Title:   Pastor Henry Simmons: "The Greatest Battle Ever Fought"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y4v-hKMBi6M
+Date:     2020-05-31
+Title:    Pastor Henry Simmons: "The Greatest Battle Ever Fought"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=y4v-hKMBi6M
 ========================================
 
 Description:

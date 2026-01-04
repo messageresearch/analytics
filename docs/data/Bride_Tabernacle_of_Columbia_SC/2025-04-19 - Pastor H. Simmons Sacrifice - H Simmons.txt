@@ -4,13 +4,14 @@ START OF FILE: 2025-04-19 - Pastor H. Simmons Sacrifice - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-19
-Title:   Pastor H. Simmons: "Sacrifice"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DDXjF9Ke0vs
+Date:     2025-04-19
+Title:    Pastor H. Simmons: "Sacrifice"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=DDXjF9Ke0vs
 ========================================
 
 Description:

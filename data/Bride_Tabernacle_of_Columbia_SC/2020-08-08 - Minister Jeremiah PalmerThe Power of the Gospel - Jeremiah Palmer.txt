@@ -4,13 +4,14 @@ START OF FILE: 2020-08-08 - Minister Jeremiah PalmerThe Power of the Gospel - Je
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-08
-Title:   Minister Jeremiah Palmer:"The Power of the Gospel"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OEX_UvXZ0LM
+Date:     2020-08-08
+Title:    Minister Jeremiah Palmer:"The Power of the Gospel"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=OEX_UvXZ0LM
 ========================================
 
 Description:

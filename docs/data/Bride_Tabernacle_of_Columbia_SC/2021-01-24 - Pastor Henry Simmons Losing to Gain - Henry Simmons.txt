@@ -4,13 +4,14 @@ START OF FILE: 2021-01-24 - Pastor Henry Simmons Losing to Gain - Henry Simmons.
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-24
-Title:   Pastor Henry Simmons: "Losing to Gain"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bn4S8UB0dT0
+Date:     2021-01-24
+Title:    Pastor Henry Simmons: "Losing to Gain"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bn4S8UB0dT0
 ========================================
 
 Description:

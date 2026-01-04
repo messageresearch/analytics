@@ -4,13 +4,14 @@ START OF FILE: 2021-05-12 - Sermon Clip 210512 - Chad Lamb Religion Versus Relat
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-12
-Title:   Sermon Clip: 210512 - Chad Lamb: Religion Versus Relationship - Part 4: Separation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Kj91yhFudNs
+Date:     2021-05-12
+Title:    Sermon Clip: 210512 - Chad Lamb: Religion Versus Relationship - Part 4: Separation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Kj91yhFudNs
 ========================================
 
 Description:

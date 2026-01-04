@@ -4,13 +4,14 @@ START OF FILE: 2020-04-15 - 200415 - Kyle Wiechart The Bride’s Time to Stand -
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-15
-Title:   200415 - Kyle Wiechart: The Bride’s Time to Stand
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=91Gar6Zxo7I
+Date:     2020-04-15
+Title:    200415 - Kyle Wiechart: The Bride’s Time to Stand
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=91Gar6Zxo7I
 ========================================
 
 Description:

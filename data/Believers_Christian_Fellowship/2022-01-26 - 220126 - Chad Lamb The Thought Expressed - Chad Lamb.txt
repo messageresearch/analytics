@@ -4,13 +4,14 @@ START OF FILE: 2022-01-26 - 220126 - Chad Lamb The Thought Expressed - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-26
-Title:   220126 - Chad Lamb: The Thought Expressed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uJaOuYVPtac
+Date:     2022-01-26
+Title:    220126 - Chad Lamb: The Thought Expressed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=uJaOuYVPtac
 ========================================
 
 Description:

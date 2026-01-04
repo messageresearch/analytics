@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - (Sunday School) 230924 - Jason DeMars The Truth Abou
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   (Sunday School) 230924 - Jason DeMars: The Truth About Our Future Home Part 1
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CYOGea7Djrw
+Date:     2023-09-24
+Title:    (Sunday School) 230924 - Jason DeMars: The Truth About Our Future Home Part 1
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=CYOGea7Djrw
 ========================================
 
 Description:

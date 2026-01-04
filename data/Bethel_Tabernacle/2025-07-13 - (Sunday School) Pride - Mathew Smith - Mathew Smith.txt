@@ -4,13 +4,14 @@ START OF FILE: 2025-07-13 - (Sunday School) Pride - Mathew Smith - Mathew Smith.
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-13
-Title:   (Sunday School) Pride - Mathew Smith
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0yof0W_MosQ
+Date:     2025-07-13
+Title:    (Sunday School) Pride - Mathew Smith
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=0yof0W_MosQ
 ========================================
 
 Description:

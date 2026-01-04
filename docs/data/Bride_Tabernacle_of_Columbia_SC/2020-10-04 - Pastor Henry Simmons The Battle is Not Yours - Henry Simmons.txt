@@ -4,13 +4,14 @@ START OF FILE: 2020-10-04 - Pastor Henry Simmons The Battle is Not Yours - Henry
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-04
-Title:   Pastor Henry Simmons: "The Battle is Not Yours"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gT02wZJO2KU
+Date:     2020-10-04
+Title:    Pastor Henry Simmons: "The Battle is Not Yours"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=gT02wZJO2KU
 ========================================
 
 Description:

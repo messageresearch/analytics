@@ -4,13 +4,14 @@ START OF FILE: 2023-03-12 - 230312 - Burley Williams Characteristics and Conditi
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-12
-Title:   230312 - Burley Williams: Characteristics and Conditions of the Third Exodus
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8BPxxpOJH8s
+Date:     2023-03-12
+Title:    230312 - Burley Williams: Characteristics and Conditions of the Third Exodus
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=8BPxxpOJH8s
 ========================================
 
 Description:

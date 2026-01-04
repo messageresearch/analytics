@@ -4,13 +4,14 @@ START OF FILE: 2021-08-22 - Pastor Henry Simmons Voice of God - Henry Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-22
-Title:   Pastor Henry Simmons: "Voice of God"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sid__0cCOLc
+Date:     2021-08-22
+Title:    Pastor Henry Simmons: "Voice of God"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=sid__0cCOLc
 ========================================
 
 Description:

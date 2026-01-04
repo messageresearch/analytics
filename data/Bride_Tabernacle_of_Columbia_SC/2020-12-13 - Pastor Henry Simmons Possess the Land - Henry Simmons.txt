@@ -4,13 +4,14 @@ START OF FILE: 2020-12-13 - Pastor Henry Simmons Possess the Land - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-13
-Title:   Pastor Henry Simmons: Possess the Land
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=W--GUGI8Yns
+Date:     2020-12-13
+Title:    Pastor Henry Simmons: Possess the Land
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=W--GUGI8Yns
 ========================================
 
 Description:

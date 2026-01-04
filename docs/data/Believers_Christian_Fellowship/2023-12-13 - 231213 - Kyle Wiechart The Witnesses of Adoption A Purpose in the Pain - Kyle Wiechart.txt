@@ -4,13 +4,14 @@ START OF FILE: 2023-12-13 - 231213 - Kyle Wiechart The Witnesses of Adoption A P
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-13
-Title:   231213 - Kyle Wiechart: The Witnesses of Adoption: A Purpose in the Pain
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HTjX606pjl8
+Date:     2023-12-13
+Title:    231213 - Kyle Wiechart: The Witnesses of Adoption: A Purpose in the Pain
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=HTjX606pjl8
 ========================================
 
 Description:

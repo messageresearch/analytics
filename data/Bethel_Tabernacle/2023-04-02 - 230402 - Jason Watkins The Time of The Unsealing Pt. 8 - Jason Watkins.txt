@@ -4,13 +4,14 @@ START OF FILE: 2023-04-02 - 230402 - Jason Watkins The Time of The Unsealing Pt.
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-02
-Title:   230402 - Jason Watkins: The Time of The Unsealing Pt. 8
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LdjPmO4Jlhk
+Date:     2023-04-02
+Title:    230402 - Jason Watkins: The Time of The Unsealing Pt. 8
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=LdjPmO4Jlhk
 ========================================
 
 Description:

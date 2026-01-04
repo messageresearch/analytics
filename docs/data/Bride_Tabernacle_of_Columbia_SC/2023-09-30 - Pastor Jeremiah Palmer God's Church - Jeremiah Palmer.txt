@@ -4,13 +4,14 @@ START OF FILE: 2023-09-30 - Pastor Jeremiah Palmer God's Church - Jeremiah Palme
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-30
-Title:   Pastor Jeremiah Palmer: "God's Church"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iNV8mq22Mao
+Date:     2023-09-30
+Title:    Pastor Jeremiah Palmer: "God's Church"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=iNV8mq22Mao
 ========================================
 
 Description:

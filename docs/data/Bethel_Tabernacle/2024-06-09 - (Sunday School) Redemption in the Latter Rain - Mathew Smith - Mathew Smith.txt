@@ -4,13 +4,14 @@ START OF FILE: 2024-06-09 - (Sunday School) Redemption in the Latter Rain - Math
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-09
-Title:   (Sunday School) Redemption in the Latter Rain - Mathew Smith
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xpIKwKpQgXs
+Date:     2024-06-09
+Title:    (Sunday School) Redemption in the Latter Rain - Mathew Smith
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=xpIKwKpQgXs
 ========================================
 
 Description:

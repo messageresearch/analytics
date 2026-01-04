@@ -4,13 +4,14 @@ START OF FILE: 2020-05-30 - Pastor Carl Dais Pardoned Approved - Carl Dais.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-30
-Title:   Pastor Carl Dais: Pardoned/ Approved
-Speaker: Carl Dais
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aZT1-fHsTyw
+Date:     2020-05-30
+Title:    Pastor Carl Dais: Pardoned/ Approved
+Speaker:  Carl Dais
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=aZT1-fHsTyw
 ========================================
 
 Description:

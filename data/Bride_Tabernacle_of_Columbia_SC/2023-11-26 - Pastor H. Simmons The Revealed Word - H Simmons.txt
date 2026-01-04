@@ -4,13 +4,14 @@ START OF FILE: 2023-11-26 - Pastor H. Simmons The Revealed Word - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-26
-Title:   Pastor H. Simmons: "The Revealed Word"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AjOq8o7aD5E
+Date:     2023-11-26
+Title:    Pastor H. Simmons: "The Revealed Word"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=AjOq8o7aD5E
 ========================================
 
 Description:

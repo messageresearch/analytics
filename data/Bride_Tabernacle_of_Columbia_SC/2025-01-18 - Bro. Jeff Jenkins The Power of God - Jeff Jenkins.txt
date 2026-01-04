@@ -4,13 +4,14 @@ START OF FILE: 2025-01-18 - Bro. Jeff Jenkins The Power of God - Jeff Jenkins.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-18
-Title:   Bro. Jeff Jenkins: "The Power of God"
-Speaker: Jeff Jenkins
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zweLdDW4h3Y
+Date:     2025-01-18
+Title:    Bro. Jeff Jenkins: "The Power of God"
+Speaker:  Jeff Jenkins
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=zweLdDW4h3Y
 ========================================
 
 Description:

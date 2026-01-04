@@ -4,13 +4,14 @@ START OF FILE: 2022-03-31 - Who Has Believed Our Message - Mathew Smith - Mathew
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-31
-Title:   Who Has Believed Our Message? - Mathew Smith
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OdhDdbUAoC8
+Date:     2022-03-31
+Title:    Who Has Believed Our Message? - Mathew Smith
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=OdhDdbUAoC8
 ========================================
 
 TRANSCRIPT

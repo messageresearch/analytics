@@ -4,13 +4,14 @@ START OF FILE: 2023-12-02 - 231202 (Winter Meetings) We Are Still Here-The Missi
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-02
-Title:   231202 (Winter Meetings) We Are Still Here-The Mission is Still On - Bro Timothy Pruitt
-Speaker: Timothy Pruitt
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=068CfAkoJco
+Date:     2023-12-02
+Title:    231202 (Winter Meetings) We Are Still Here-The Mission is Still On - Bro Timothy Pruitt
+Speaker:  Timothy Pruitt
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=068CfAkoJco
 ========================================
 
 Description:

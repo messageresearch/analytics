@@ -4,13 +4,14 @@ START OF FILE: 2025-04-27 - Sermon Clip 250427 - Burley Williams Living in Time,
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-27
-Title:   Sermon Clip: 250427 - Burley Williams: Living in Time, Preparing for Eternity
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=JEAZdtB3-Z0
+Date:     2025-04-27
+Title:    Sermon Clip: 250427 - Burley Williams: Living in Time, Preparing for Eternity
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=JEAZdtB3-Z0
 ========================================
 
 Description:

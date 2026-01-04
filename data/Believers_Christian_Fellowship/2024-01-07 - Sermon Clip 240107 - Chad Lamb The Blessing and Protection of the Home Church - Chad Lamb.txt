@@ -4,13 +4,14 @@ START OF FILE: 2024-01-07 - Sermon Clip 240107 - Chad Lamb The Blessing and Prot
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-07
-Title:   Sermon Clip: 240107 - Chad Lamb: The Blessing and Protection of the Home Church
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=PorhIyjHDzQ
+Date:     2024-01-07
+Title:    Sermon Clip: 240107 - Chad Lamb: The Blessing and Protection of the Home Church
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=PorhIyjHDzQ
 ========================================
 
 Description:

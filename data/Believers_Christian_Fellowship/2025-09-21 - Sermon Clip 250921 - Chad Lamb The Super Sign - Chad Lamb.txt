@@ -4,13 +4,14 @@ START OF FILE: 2025-09-21 - Sermon Clip 250921 - Chad Lamb The Super Sign - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-21
-Title:   Sermon Clip: 250921 - Chad Lamb: The Super Sign
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=4v4gh-8C-7o
+Date:     2025-09-21
+Title:    Sermon Clip: 250921 - Chad Lamb: The Super Sign
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=4v4gh-8C-7o
 ========================================
 
 Description:

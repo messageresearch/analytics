@@ -4,13 +4,14 @@ START OF FILE: 2025-02-09 - 250209 - Chad Lamb The Life Behind the Veil - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-09
-Title:   250209 - Chad Lamb: The Life Behind the Veil
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2v6pJt9n9Lo
+Date:     2025-02-09
+Title:    250209 - Chad Lamb: The Life Behind the Veil
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=2v6pJt9n9Lo
 ========================================
 
 Description:

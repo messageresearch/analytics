@@ -4,13 +4,14 @@ START OF FILE: 2022-05-29 - Being Born at the Right Time - Bennie Perry - Bennie
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-29
-Title:   Being Born at the Right Time - Bennie Perry
-Speaker: Bennie Perry
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SQDfqRUA43Q
+Date:     2022-05-29
+Title:    Being Born at the Right Time - Bennie Perry
+Speaker:  Bennie Perry
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=SQDfqRUA43Q
 ========================================
 
 Description:

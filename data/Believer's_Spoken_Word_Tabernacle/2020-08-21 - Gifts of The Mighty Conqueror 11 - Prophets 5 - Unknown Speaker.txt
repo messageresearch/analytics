@@ -4,13 +4,14 @@ START OF FILE: 2020-08-21 - Gifts of The Mighty Conqueror 11 - Prophets 5 - Unkn
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-21
-Title:   Gifts of The Mighty Conqueror 11 - Prophets 5
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=npj00iRvqfU
+Date:     2020-08-21
+Title:    Gifts of The Mighty Conqueror 11 - Prophets 5
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=npj00iRvqfU
 ========================================
 
 TRANSCRIPT

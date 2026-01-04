@@ -4,13 +4,14 @@ START OF FILE: 2025-03-23 - Sermon Clip 250323 - Chad Lamb Faith's Affect - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-23
-Title:   Sermon Clip: 250323 - Chad Lamb: Faith's Affect
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=pkCvJ225LZQ
+Date:     2025-03-23
+Title:    Sermon Clip: 250323 - Chad Lamb: Faith's Affect
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=pkCvJ225LZQ
 ========================================
 
 Description:

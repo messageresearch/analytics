@@ -4,13 +4,14 @@ START OF FILE: 2024-02-07 - 240207 - Chad Lamb Word Comes to Word - Chad Lamb.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-07
-Title:   240207 - Chad Lamb: Word Comes to Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DYDVX8NcV_k
+Date:     2024-02-07
+Title:    240207 - Chad Lamb: Word Comes to Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=DYDVX8NcV_k
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2017-10-22 - From Cocklebur to Wheat Life - 2 - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2017-10-22
-Title:   From Cocklebur to Wheat Life - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Nlvbvea_4AI
+Date:     2017-10-22
+Title:    From Cocklebur to Wheat Life - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=Nlvbvea_4AI
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-04-12 - Bro. Caleb Simmons Why Are You Lifted Up - Caleb Sim
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-12
-Title:   Bro. Caleb Simmons: "Why Are You Lifted Up?"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=G-BeV4x8jWw
+Date:     2025-04-12
+Title:    Bro. Caleb Simmons: "Why Are You Lifted Up?"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=G-BeV4x8jWw
 ========================================
 
 Description:

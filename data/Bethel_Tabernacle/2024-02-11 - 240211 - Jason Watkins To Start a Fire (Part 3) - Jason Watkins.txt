@@ -4,13 +4,14 @@ START OF FILE: 2024-02-11 - 240211 - Jason Watkins To Start a Fire (Part 3) - Ja
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-11
-Title:   240211 - Jason Watkins: To Start a Fire (Part 3)
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_V3hJ8tZzYY
+Date:     2024-02-11
+Title:    240211 - Jason Watkins: To Start a Fire (Part 3)
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=_V3hJ8tZzYY
 ========================================
 
 Description:

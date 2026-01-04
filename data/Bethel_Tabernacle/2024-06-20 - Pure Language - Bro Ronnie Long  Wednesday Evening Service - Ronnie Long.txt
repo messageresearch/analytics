@@ -4,13 +4,14 @@ START OF FILE: 2024-06-20 - Pure Language - Bro Ronnie Long  Wednesday Evening S
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-20
-Title:   " Pure Language" - Bro Ronnie Long / Wednesday Evening Service
-Speaker: Ronnie Long
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ecc8SbY7jWI
+Date:     2024-06-20
+Title:    " Pure Language" - Bro Ronnie Long / Wednesday Evening Service
+Speaker:  Ronnie Long
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=ecc8SbY7jWI
 ========================================
 
 Description:

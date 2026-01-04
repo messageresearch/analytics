@@ -4,13 +4,14 @@ START OF FILE: 2021-07-18 - Seven Thunders Part 2 - Jason DeMars - Jason DeMars.
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-18
-Title:   Seven Thunders Part 2 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zKHWozp7-Hs
+Date:     2021-07-18
+Title:    Seven Thunders Part 2 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=zKHWozp7-Hs
 ========================================
 
 TRANSCRIPT

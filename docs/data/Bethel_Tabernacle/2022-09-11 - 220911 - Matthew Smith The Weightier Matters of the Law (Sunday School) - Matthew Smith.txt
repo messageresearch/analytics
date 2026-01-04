@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - 220911 - Matthew Smith The Weightier Matters of the 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   220911 - Matthew Smith: The Weightier Matters of the Law (Sunday School)
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RKLNu2hbSg8
+Date:     2022-09-11
+Title:    220911 - Matthew Smith: The Weightier Matters of the Law (Sunday School)
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=RKLNu2hbSg8
 ========================================
 
 Description:

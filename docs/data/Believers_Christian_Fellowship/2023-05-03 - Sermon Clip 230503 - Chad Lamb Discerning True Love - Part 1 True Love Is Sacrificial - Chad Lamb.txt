@@ -4,13 +4,14 @@ START OF FILE: 2023-05-03 - Sermon Clip 230503 - Chad Lamb Discerning True Love 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-03
-Title:   Sermon Clip: 230503 - Chad Lamb: Discerning True Love - Part 1: True Love Is Sacrificial
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-4aSzbsQheA
+Date:     2023-05-03
+Title:    Sermon Clip: 230503 - Chad Lamb: Discerning True Love - Part 1: True Love Is Sacrificial
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-4aSzbsQheA
 ========================================
 
 Description:

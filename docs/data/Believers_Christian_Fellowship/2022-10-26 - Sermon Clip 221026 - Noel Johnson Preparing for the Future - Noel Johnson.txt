@@ -4,13 +4,14 @@ START OF FILE: 2022-10-26 - Sermon Clip 221026 - Noel Johnson Preparing for the 
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-26
-Title:   Sermon Clip: 221026 - Noel Johnson: Preparing for the Future
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=x_Y0gcmvY6Q
+Date:     2022-10-26
+Title:    Sermon Clip: 221026 - Noel Johnson: Preparing for the Future
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=x_Y0gcmvY6Q
 ========================================
 
 Description:

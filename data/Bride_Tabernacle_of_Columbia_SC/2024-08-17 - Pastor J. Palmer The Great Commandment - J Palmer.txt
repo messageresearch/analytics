@@ -4,13 +4,14 @@ START OF FILE: 2024-08-17 - Pastor J. Palmer The Great Commandment - J Palmer.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-17
-Title:   Pastor J. Palmer: "The Great Commandment"
-Speaker: J Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1-5h1O-rVbY
+Date:     2024-08-17
+Title:    Pastor J. Palmer: "The Great Commandment"
+Speaker:  J Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=1-5h1O-rVbY
 ========================================
 
 Description:

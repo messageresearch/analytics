@@ -4,13 +4,14 @@ START OF FILE: 2021-12-05 - Be Not Afraid - Timothy Ashong - Timothy Ashong.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-05
-Title:   Be Not Afraid - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4GwfCVLLqNY
+Date:     2021-12-05
+Title:    Be Not Afraid - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=4GwfCVLLqNY
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-22 - 230322 - Joe Howdeshell Gravity - Joe Howdeshell.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-22
-Title:   230322 - Joe Howdeshell: Gravity
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6NppAMchsug
+Date:     2023-03-22
+Title:    230322 - Joe Howdeshell: Gravity
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=6NppAMchsug
 ========================================
 
 Description:

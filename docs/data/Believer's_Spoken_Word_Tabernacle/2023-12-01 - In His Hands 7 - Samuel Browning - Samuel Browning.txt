@@ -4,13 +4,14 @@ START OF FILE: 2023-12-01 - In His Hands 7 - Samuel Browning - Samuel Browning.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-01
-Title:   In His Hands 7 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=F7RX-i1gwq0
+Date:     2023-12-01
+Title:    In His Hands 7 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=F7RX-i1gwq0
 ========================================
 
 Description:

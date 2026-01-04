@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - 220619 - Chad Lamb The Value of the Word - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   220619 - Chad Lamb: The Value of the Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hBtAuAlJaoQ
+Date:     2022-06-19
+Title:    220619 - Chad Lamb: The Value of the Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=hBtAuAlJaoQ
 ========================================
 
 Description:

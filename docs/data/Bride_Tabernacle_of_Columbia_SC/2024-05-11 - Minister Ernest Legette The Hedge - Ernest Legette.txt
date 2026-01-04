@@ -4,13 +4,14 @@ START OF FILE: 2024-05-11 - Minister Ernest Legette The Hedge - Ernest Legette.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-11
-Title:   Minister Ernest Legette: "The Hedge"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=osF5N4h_KLY
+Date:     2024-05-11
+Title:    Minister Ernest Legette: "The Hedge"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=osF5N4h_KLY
 ========================================
 
 Description:

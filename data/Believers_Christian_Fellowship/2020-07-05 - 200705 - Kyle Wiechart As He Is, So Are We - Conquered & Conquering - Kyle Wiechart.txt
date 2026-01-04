@@ -4,13 +4,14 @@ START OF FILE: 2020-07-05 - 200705 - Kyle Wiechart As He Is, So Are We - Conquer
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-05
-Title:   200705 - Kyle Wiechart: As He Is, So Are We - Conquered & Conquering
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aGI0ib_J84A
+Date:     2020-07-05
+Title:    200705 - Kyle Wiechart: As He Is, So Are We - Conquered & Conquering
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=aGI0ib_J84A
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-24 - Pastor L. Jackson Workmanship of God - L Jackson.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-24
-Title:   Pastor L. Jackson: "Workmanship of God"
-Speaker: L Jackson
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fj7-4-y0lck
+Date:     2025-08-24
+Title:    Pastor L. Jackson: "Workmanship of God"
+Speaker:  L Jackson
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=fj7-4-y0lck
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-10-30 - The Restoration of Asaph Bethel Youth Camp 10302021M
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-30
-Title:   The Restoration of Asaph Bethel Youth Camp 10/30/2021M
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=H-GQes3gzxw
+Date:     2021-10-30
+Title:    The Restoration of Asaph Bethel Youth Camp 10/30/2021M
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=H-GQes3gzxw
 ========================================
 
 TRANSCRIPT

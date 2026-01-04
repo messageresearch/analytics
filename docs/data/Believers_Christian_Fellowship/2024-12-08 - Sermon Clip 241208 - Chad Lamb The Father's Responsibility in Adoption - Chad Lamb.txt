@@ -4,13 +4,14 @@ START OF FILE: 2024-12-08 - Sermon Clip 241208 - Chad Lamb The Father's Responsi
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-08
-Title:   Sermon Clip: 241208 - Chad Lamb: The Father's Responsibility in Adoption
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=O6R4c_IyXz8
+Date:     2024-12-08
+Title:    Sermon Clip: 241208 - Chad Lamb: The Father's Responsibility in Adoption
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=O6R4c_IyXz8
 ========================================
 
 Description:

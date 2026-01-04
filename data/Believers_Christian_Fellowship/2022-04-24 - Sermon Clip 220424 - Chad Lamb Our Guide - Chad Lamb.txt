@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - Sermon Clip 220424 - Chad Lamb Our Guide - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   Sermon Clip: 220424 - Chad Lamb: Our Guide
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=2Ajl8cNVNaM
+Date:     2022-04-24
+Title:    Sermon Clip: 220424 - Chad Lamb: Our Guide
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=2Ajl8cNVNaM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-15 - Pastor Henry Simmons Your Absolute is the Word” - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-15
-Title:   Pastor Henry Simmons: "Your Absolute is the Word”
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9fEVh4NSmn8
+Date:     2022-01-15
+Title:    Pastor Henry Simmons: "Your Absolute is the Word”
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=9fEVh4NSmn8
 ========================================
 
 Description:

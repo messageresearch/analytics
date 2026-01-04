@@ -4,13 +4,14 @@ START OF FILE: 2022-04-17 - Sermon Clip 220417 - Noel Johnson Redeemed and Resto
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-17
-Title:   Sermon Clip: 220417 - Noel Johnson: Redeemed and Restored
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=eXUQbgz_-wU
+Date:     2022-04-17
+Title:    Sermon Clip: 220417 - Noel Johnson: Redeemed and Restored
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=eXUQbgz_-wU
 ========================================
 
 Description:

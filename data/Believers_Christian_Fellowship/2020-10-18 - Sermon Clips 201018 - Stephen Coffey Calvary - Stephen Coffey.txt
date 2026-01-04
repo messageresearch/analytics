@@ -4,13 +4,14 @@ START OF FILE: 2020-10-18 - Sermon Clips 201018 - Stephen Coffey Calvary - Steph
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-18
-Title:   Sermon Clips: 201018 - Stephen Coffey: Calvary
-Speaker: Stephen Coffey
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_Z54xiMRVhc
+Date:     2020-10-18
+Title:    Sermon Clips: 201018 - Stephen Coffey: Calvary
+Speaker:  Stephen Coffey
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_Z54xiMRVhc
 ========================================
 
 Description:

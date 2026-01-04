@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - Grace to the Humble - Part 1 - Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   Grace to the Humble - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YCCJHk8URgM
+Date:     2023-09-24
+Title:    Grace to the Humble - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=YCCJHk8URgM
 ========================================
 
 Description:

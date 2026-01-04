@@ -4,13 +4,14 @@ START OF FILE: 2022-09-25 - Sermon Clip 220925 - Chad Lamb He That Is True - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-25
-Title:   Sermon Clip: 220925 - Chad Lamb: He That Is True
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=CQE6I7pti4k
+Date:     2022-09-25
+Title:    Sermon Clip: 220925 - Chad Lamb: He That Is True
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=CQE6I7pti4k
 ========================================
 
 Description:

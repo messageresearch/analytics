@@ -4,13 +4,14 @@ START OF FILE: 2023-10-07 - Minister Ernest Legette I am the Way - Ernest Legett
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-07
-Title:   Minister Ernest Legette: "I am the Way"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RW-IaYwFHSk
+Date:     2023-10-07
+Title:    Minister Ernest Legette: "I am the Way"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=RW-IaYwFHSk
 ========================================
 
 Description:

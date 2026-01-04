@@ -4,13 +4,14 @@ START OF FILE: 2023-10-15 - Pastor H. Simmons Lean Not to Your Own Understanding
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-15
-Title:   Pastor H. Simmons: "Lean Not to Your Own Understanding"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DXs12Rfq1r4
+Date:     2023-10-15
+Title:    Pastor H. Simmons: "Lean Not to Your Own Understanding"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=DXs12Rfq1r4
 ========================================
 
 Description:

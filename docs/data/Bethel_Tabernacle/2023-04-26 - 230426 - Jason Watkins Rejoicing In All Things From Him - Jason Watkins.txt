@@ -4,13 +4,14 @@ START OF FILE: 2023-04-26 - 230426 - Jason Watkins Rejoicing In All Things From 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-26
-Title:   230426 - Jason Watkins: Rejoicing In All Things From Him
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5xJzlqjr1VY
+Date:     2023-04-26
+Title:    230426 - Jason Watkins: Rejoicing In All Things From Him
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=5xJzlqjr1VY
 ========================================
 
 Description:

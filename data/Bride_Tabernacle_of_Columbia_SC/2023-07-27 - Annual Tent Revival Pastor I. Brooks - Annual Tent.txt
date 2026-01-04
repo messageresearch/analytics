@@ -4,13 +4,14 @@ START OF FILE: 2023-07-27 - Annual Tent Revival Pastor I. Brooks - Annual Tent.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-27
-Title:   Annual Tent Revival: Pastor I. Brooks
-Speaker: Annual Tent
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L681WMC5SYs
+Date:     2023-07-27
+Title:    Annual Tent Revival: Pastor I. Brooks
+Speaker:  Annual Tent
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=L681WMC5SYs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-08-08 - Minister Ernest Legette Little by Little - Ernest Le
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-08
-Title:   Minister Ernest Legette: "Little by Little"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=u3oh89BuaCY
+Date:     2021-08-08
+Title:    Minister Ernest Legette: "Little by Little"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=u3oh89BuaCY
 ========================================
 
 Description:

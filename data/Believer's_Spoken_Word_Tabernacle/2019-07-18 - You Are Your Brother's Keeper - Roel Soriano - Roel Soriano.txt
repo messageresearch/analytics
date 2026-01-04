@@ -4,13 +4,14 @@ START OF FILE: 2019-07-18 - You Are Your Brother's Keeper - Roel Soriano - Roel 
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-18
-Title:   You Are Your Brother's Keeper - Roel Soriano
-Speaker: Roel Soriano
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cJbgJfXICN8
+Date:     2019-07-18
+Title:    You Are Your Brother's Keeper - Roel Soriano
+Speaker:  Roel Soriano
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=cJbgJfXICN8
 ========================================
 
 TRANSCRIPT

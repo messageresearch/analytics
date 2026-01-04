@@ -4,13 +4,14 @@ START OF FILE: 2023-04-19 - 230419 - Caleb Campbell Faith By Hearing - Unknown S
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-19
-Title:   230419 - Caleb Campbell: Faith By Hearing
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QMg7Uzx0HmU
+Date:     2023-04-19
+Title:    230419 - Caleb Campbell: Faith By Hearing
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=QMg7Uzx0HmU
 ========================================
 
 Description:

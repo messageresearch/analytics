@@ -4,13 +4,14 @@ START OF FILE: 2023-02-26 - 230226 - Chad Lamb Where Is He - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-26
-Title:   230226 - Chad Lamb: Where Is He?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QpWIlJMkF0s
+Date:     2023-02-26
+Title:    230226 - Chad Lamb: Where Is He?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=QpWIlJMkF0s
 ========================================
 
 Description:

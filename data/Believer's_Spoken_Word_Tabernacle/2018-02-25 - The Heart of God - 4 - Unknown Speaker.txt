@@ -4,13 +4,14 @@ START OF FILE: 2018-02-25 - The Heart of God - 4 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-02-25
-Title:   The Heart of God - 4
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0RzoKK1h7F4
+Date:     2018-02-25
+Title:    The Heart of God - 4
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=0RzoKK1h7F4
 ========================================
 
 TRANSCRIPT

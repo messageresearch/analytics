@@ -4,13 +4,14 @@ START OF FILE: 2023-05-07 - Sermon Clip 230507 - Abraham Mairah The Bride-Bodied
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-07
-Title:   Sermon Clip: 230507 - Abraham Mairah: The Bride-Bodied Christ Speaking to His Bride
-Speaker: Abraham Mairah
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=M6rZbhfIQ2U
+Date:     2023-05-07
+Title:    Sermon Clip: 230507 - Abraham Mairah: The Bride-Bodied Christ Speaking to His Bride
+Speaker:  Abraham Mairah
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=M6rZbhfIQ2U
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-11-09 - 251109 - Andreas Ringen Ready For Translation - Andr
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-09
-Title:   251109 - Andreas Ringen: Ready For Translation
-Speaker: Andreas Ringen
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z-rRY4kYV1I
+Date:     2025-11-09
+Title:    251109 - Andreas Ringen: Ready For Translation
+Speaker:  Andreas Ringen
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 3h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z-rRY4kYV1I
 ========================================
 
 Description:

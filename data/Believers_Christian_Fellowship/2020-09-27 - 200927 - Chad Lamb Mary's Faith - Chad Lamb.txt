@@ -4,13 +4,14 @@ START OF FILE: 2020-09-27 - 200927 - Chad Lamb Mary's Faith - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-27
-Title:   200927 - Chad Lamb: Mary's Faith
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=I2ryXAbYXCc
+Date:     2020-09-27
+Title:    200927 - Chad Lamb: Mary's Faith
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=I2ryXAbYXCc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-05-07 - Pastor H. Simmons The Uncertain Sound - H Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-07
-Title:   Pastor H. Simmons: "The Uncertain Sound"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UpG4thkxNhI
+Date:     2023-05-07
+Title:    Pastor H. Simmons: "The Uncertain Sound"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=UpG4thkxNhI
 ========================================
 
 Description:

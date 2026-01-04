@@ -4,13 +4,14 @@ START OF FILE: 2025-10-01 - 251001 - Chad Lamb Christ in You, Hidden and Reveale
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-01
-Title:   251001 - Chad Lamb: Christ in You, Hidden and Revealed in Simplicity
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5c8HdYS7hX0
+Date:     2025-10-01
+Title:    251001 - Chad Lamb: Christ in You, Hidden and Revealed in Simplicity
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=5c8HdYS7hX0
 ========================================
 
 Description:

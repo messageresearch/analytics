@@ -4,13 +4,14 @@ START OF FILE: 2024-05-18 - Sermon Clip 240518 - Allistair Francis Dimensions - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-18
-Title:   Sermon Clip: 240518 - Allistair Francis: Dimensions - Part 2: Self Existence to Translation
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DVCoQ2p_O7U
+Date:     2024-05-18
+Title:    Sermon Clip: 240518 - Allistair Francis: Dimensions - Part 2: Self Existence to Translation
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=DVCoQ2p_O7U
 ========================================
 
 Description:

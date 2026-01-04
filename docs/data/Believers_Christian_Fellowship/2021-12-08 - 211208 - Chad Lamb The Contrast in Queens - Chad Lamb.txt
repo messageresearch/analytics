@@ -4,13 +4,14 @@ START OF FILE: 2021-12-08 - 211208 - Chad Lamb The Contrast in Queens - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-08
-Title:   211208 - Chad Lamb: The Contrast in Queens
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MSLTANlM0y8
+Date:     2021-12-08
+Title:    211208 - Chad Lamb: The Contrast in Queens
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=MSLTANlM0y8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-19 - 230319 - Chad Lamb The Wave Sheaf Is Our Example - C
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-19
-Title:   230319 - Chad Lamb: The Wave Sheaf Is Our Example
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UpCg8SdB2Wk
+Date:     2023-03-19
+Title:    230319 - Chad Lamb: The Wave Sheaf Is Our Example
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=UpCg8SdB2Wk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-28 - Minister C. Simmons “The Unmovable Obstacle vs. Th
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-28
-Title:   Minister C. Simmons: “The Unmovable Obstacle vs. The Unstoppable Force”
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ui1wIL-ncQY
+Date:     2025-12-28
+Title:    Minister C. Simmons: “The Unmovable Obstacle vs. The Unstoppable Force”
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=ui1wIL-ncQY
 ========================================
 
 Description:

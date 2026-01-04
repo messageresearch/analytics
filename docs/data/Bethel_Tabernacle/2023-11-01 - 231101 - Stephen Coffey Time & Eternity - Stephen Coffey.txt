@@ -4,13 +4,14 @@ START OF FILE: 2023-11-01 - 231101 - Stephen Coffey Time & Eternity - Stephen Co
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-01
-Title:   231101 - Stephen Coffey: Time & Eternity
-Speaker: Stephen Coffey
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DKuFvuQLwD4
+Date:     2023-11-01
+Title:    231101 - Stephen Coffey: Time & Eternity
+Speaker:  Stephen Coffey
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=DKuFvuQLwD4
 ========================================
 
 Description:

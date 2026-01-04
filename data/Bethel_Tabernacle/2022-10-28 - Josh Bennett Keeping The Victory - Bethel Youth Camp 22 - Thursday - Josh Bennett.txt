@@ -4,13 +4,14 @@ START OF FILE: 2022-10-28 - Josh Bennett Keeping The Victory - Bethel Youth Camp
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-28
-Title:   Josh Bennett: Keeping The Victory - Bethel Youth Camp 22 - Thursday
-Speaker: Josh Bennett
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=MVKmjkhhiko
+Date:     2022-10-28
+Title:    Josh Bennett: Keeping The Victory - Bethel Youth Camp 22 - Thursday
+Speaker:  Josh Bennett
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=MVKmjkhhiko
 ========================================
 
 Description:

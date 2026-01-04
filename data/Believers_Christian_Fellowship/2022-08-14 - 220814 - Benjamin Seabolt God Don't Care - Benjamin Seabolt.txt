@@ -4,13 +4,14 @@ START OF FILE: 2022-08-14 - 220814 - Benjamin Seabolt God Don't Care - Benjamin 
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-14
-Title:   220814 - Benjamin Seabolt: God Don't Care
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vg2fKorkCcE
+Date:     2022-08-14
+Title:    220814 - Benjamin Seabolt: God Don't Care
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vg2fKorkCcE
 ========================================
 
 Description:

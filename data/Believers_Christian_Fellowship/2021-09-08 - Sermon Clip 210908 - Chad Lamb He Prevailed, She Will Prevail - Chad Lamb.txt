@@ -4,13 +4,14 @@ START OF FILE: 2021-09-08 - Sermon Clip 210908 - Chad Lamb He Prevailed, She Wil
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-08
-Title:   Sermon Clip: 210908 - Chad Lamb: He Prevailed, She Will Prevail
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-tpGWtZdCdo
+Date:     2021-09-08
+Title:    Sermon Clip: 210908 - Chad Lamb: He Prevailed, She Will Prevail
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-tpGWtZdCdo
 ========================================
 
 Description:

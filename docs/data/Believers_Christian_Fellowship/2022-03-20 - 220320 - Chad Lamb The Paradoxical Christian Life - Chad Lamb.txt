@@ -4,13 +4,14 @@ START OF FILE: 2022-03-20 - 220320 - Chad Lamb The Paradoxical Christian Life - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-20
-Title:   220320 - Chad Lamb: The Paradoxical Christian Life
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FjC_55CGG9U
+Date:     2022-03-20
+Title:    220320 - Chad Lamb: The Paradoxical Christian Life
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=FjC_55CGG9U
 ========================================
 
 Description:

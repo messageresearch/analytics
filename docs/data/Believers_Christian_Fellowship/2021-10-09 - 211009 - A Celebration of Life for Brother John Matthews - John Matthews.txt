@@ -4,13 +4,14 @@ START OF FILE: 2021-10-09 - 211009 - A Celebration of Life for Brother John Matt
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-09
-Title:   211009 - A Celebration of Life for Brother John Matthews
-Speaker: John Matthews
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=c0P0FlwWTLI
+Date:     2021-10-09
+Title:    211009 - A Celebration of Life for Brother John Matthews
+Speaker:  John Matthews
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=c0P0FlwWTLI
 ========================================
 
 Description:

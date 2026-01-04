@@ -4,13 +4,14 @@ START OF FILE: 2025-07-30 - Sermon Clip 250730 - Chad Lamb Ephesians Parallels J
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-30
-Title:   Sermon Clip: 250730 - Chad Lamb: Ephesians Parallels Joshua
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=c403oogXvEM
+Date:     2025-07-30
+Title:    Sermon Clip: 250730 - Chad Lamb: Ephesians Parallels Joshua
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=c403oogXvEM
 ========================================
 
 Description:

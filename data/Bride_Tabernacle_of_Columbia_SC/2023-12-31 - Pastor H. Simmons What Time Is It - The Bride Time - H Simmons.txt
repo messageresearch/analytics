@@ -4,13 +4,14 @@ START OF FILE: 2023-12-31 - Pastor H. Simmons What Time Is It - The Bride Time -
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-31
-Title:   Pastor H. Simmons: "What Time Is It? - The Bride Time"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z8pf7dxbVYc
+Date:     2023-12-31
+Title:    Pastor H. Simmons: "What Time Is It? - The Bride Time"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=z8pf7dxbVYc
 ========================================
 
 Description:

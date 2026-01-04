@@ -4,13 +4,14 @@ START OF FILE: 2024-05-25 - Minister Ernest Legette Blessings and Curses - Ernes
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-25
-Title:   Minister Ernest Legette: "Blessings and Curses"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=go5k-c95cYU
+Date:     2024-05-25
+Title:    Minister Ernest Legette: "Blessings and Curses"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=go5k-c95cYU
 ========================================
 
 Description:

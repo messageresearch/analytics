@@ -4,13 +4,14 @@ START OF FILE: 2025-12-06 - Pastor H. Simmons Possessing All Things - H Simmons.
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-06
-Title:   Pastor H. Simmons: "Possessing All Things"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sHrcNpDzXQ8
+Date:     2025-12-06
+Title:    Pastor H. Simmons: "Possessing All Things"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=sHrcNpDzXQ8
 ========================================
 
 Description:

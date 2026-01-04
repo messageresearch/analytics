@@ -4,13 +4,14 @@ START OF FILE: 2020-01-12 - 200112 - Jacek Walach The People of the Eighth Day -
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-12
-Title:   200112 - Jacek Walach: The People of the Eighth Day
-Speaker: Jacek Walach
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Zut2x1AKMfE
+Date:     2020-01-12
+Title:    200112 - Jacek Walach: The People of the Eighth Day
+Speaker:  Jacek Walach
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=Zut2x1AKMfE
 ========================================
 
 Description:

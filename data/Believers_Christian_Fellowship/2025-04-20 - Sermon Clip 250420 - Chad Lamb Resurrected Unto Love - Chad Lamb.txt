@@ -4,13 +4,14 @@ START OF FILE: 2025-04-20 - Sermon Clip 250420 - Chad Lamb Resurrected Unto Love
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-20
-Title:   Sermon Clip: 250420 - Chad Lamb: Resurrected Unto Love
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=c_yy-cK9h_o
+Date:     2025-04-20
+Title:    Sermon Clip: 250420 - Chad Lamb: Resurrected Unto Love
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=c_yy-cK9h_o
 ========================================
 
 Description:

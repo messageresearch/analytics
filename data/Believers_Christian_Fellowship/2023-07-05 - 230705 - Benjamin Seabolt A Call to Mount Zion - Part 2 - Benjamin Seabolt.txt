@@ -4,13 +4,14 @@ START OF FILE: 2023-07-05 - 230705 - Benjamin Seabolt A Call to Mount Zion - Par
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-05
-Title:   230705 - Benjamin Seabolt: A Call to Mount Zion - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X57FVhzAwcI
+Date:     2023-07-05
+Title:    230705 - Benjamin Seabolt: A Call to Mount Zion - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=X57FVhzAwcI
 ========================================
 
 Description:

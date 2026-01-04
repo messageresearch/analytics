@@ -4,13 +4,14 @@ START OF FILE: 2022-04-20 - Sermon Clip 220420 - Kyle Wiechart Resting in His Pr
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-20
-Title:   Sermon Clip: 220420 - Kyle Wiechart: Resting in His Presence
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DYiyE7mWQkY
+Date:     2022-04-20
+Title:    Sermon Clip: 220420 - Kyle Wiechart: Resting in His Presence
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DYiyE7mWQkY
 ========================================
 
 Description:

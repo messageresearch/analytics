@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - Pastor H. Simmons “Book of Acts Church” - H Simm
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   Pastor H. Simmons: “Book of Acts Church”
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vkcu4bNsqbQ
+Date:     2023-09-03
+Title:    Pastor H. Simmons: “Book of Acts Church”
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vkcu4bNsqbQ
 ========================================
 
 Description:

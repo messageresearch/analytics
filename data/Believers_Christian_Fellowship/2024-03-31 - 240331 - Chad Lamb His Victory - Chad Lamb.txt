@@ -4,13 +4,14 @@ START OF FILE: 2024-03-31 - 240331 - Chad Lamb His Victory - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-31
-Title:   240331 - Chad Lamb: His Victory
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OguiXJW32QI
+Date:     2024-03-31
+Title:    240331 - Chad Lamb: His Victory
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=OguiXJW32QI
 ========================================
 
 Description:

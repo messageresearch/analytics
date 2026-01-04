@@ -4,13 +4,14 @@ START OF FILE: 2025-08-13 - Pastor Gideon Oyekunle The Slaughter of the Kings - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-13
-Title:   Pastor Gideon Oyekunle: "The Slaughter of the Kings"
-Speaker: Gideon Oyekunle
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J-9tpGXUT0w
+Date:     2025-08-13
+Title:    Pastor Gideon Oyekunle: "The Slaughter of the Kings"
+Speaker:  Gideon Oyekunle
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=J-9tpGXUT0w
 ========================================
 
 Description:

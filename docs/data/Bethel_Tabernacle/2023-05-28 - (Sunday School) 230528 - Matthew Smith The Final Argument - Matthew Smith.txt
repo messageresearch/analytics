@@ -4,13 +4,14 @@ START OF FILE: 2023-05-28 - (Sunday School) 230528 - Matthew Smith The Final Arg
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-28
-Title:   (Sunday School) 230528 - Matthew Smith: The Final Argument
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m8hJsBjj7Yk
+Date:     2023-05-28
+Title:    (Sunday School) 230528 - Matthew Smith: The Final Argument
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=m8hJsBjj7Yk
 ========================================
 
 Description:

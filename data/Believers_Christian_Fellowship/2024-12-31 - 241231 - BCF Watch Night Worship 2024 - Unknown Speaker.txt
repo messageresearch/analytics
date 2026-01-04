@@ -4,13 +4,14 @@ START OF FILE: 2024-12-31 - 241231 - BCF Watch Night Worship 2024 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-31
-Title:   241231 - BCF Watch Night Worship 2024
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=6iB4oGgQiUc
+Date:     2024-12-31
+Title:    241231 - BCF Watch Night Worship 2024
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Worship Service
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=6iB4oGgQiUc
 ========================================
 
 Description:

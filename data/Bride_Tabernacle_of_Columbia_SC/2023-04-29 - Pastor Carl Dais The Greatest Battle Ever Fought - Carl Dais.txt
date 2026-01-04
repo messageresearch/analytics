@@ -4,13 +4,14 @@ START OF FILE: 2023-04-29 - Pastor Carl Dais The Greatest Battle Ever Fought - C
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-29
-Title:   Pastor Carl Dais: "The Greatest Battle Ever Fought"
-Speaker: Carl Dais
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rW_XX5lN-0w
+Date:     2023-04-29
+Title:    Pastor Carl Dais: "The Greatest Battle Ever Fought"
+Speaker:  Carl Dais
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=rW_XX5lN-0w
 ========================================
 
 Description:

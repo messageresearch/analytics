@@ -4,13 +4,14 @@ START OF FILE: 2021-10-17 - 211017 - Chad Lamb The Word Brings Order - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-17
-Title:   211017 - Chad Lamb: The Word Brings Order
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UHVC1__6GgY
+Date:     2021-10-17
+Title:    211017 - Chad Lamb: The Word Brings Order
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=UHVC1__6GgY
 ========================================
 
 Description:

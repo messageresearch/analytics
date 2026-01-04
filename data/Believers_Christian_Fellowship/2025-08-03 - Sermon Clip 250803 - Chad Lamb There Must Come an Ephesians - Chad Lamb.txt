@@ -4,13 +4,14 @@ START OF FILE: 2025-08-03 - Sermon Clip 250803 - Chad Lamb There Must Come an Ep
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-03
-Title:   Sermon Clip: 250803 - Chad Lamb: There Must Come an Ephesians
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=a6oTLwKUTLI
+Date:     2025-08-03
+Title:    Sermon Clip: 250803 - Chad Lamb: There Must Come an Ephesians
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=a6oTLwKUTLI
 ========================================
 
 Description:

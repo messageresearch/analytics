@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - (Sunday School) 221211 - Jason DeMars Knowing Him Is
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   (Sunday School) 221211 - Jason DeMars: Knowing Him Is Life
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yERxq0NM2s4
+Date:     2022-12-11
+Title:    (Sunday School) 221211 - Jason DeMars: Knowing Him Is Life
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=yERxq0NM2s4
 ========================================
 
 Description:

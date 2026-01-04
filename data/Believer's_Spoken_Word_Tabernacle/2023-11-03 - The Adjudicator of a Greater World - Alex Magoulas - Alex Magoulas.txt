@@ -4,13 +4,14 @@ START OF FILE: 2023-11-03 - The Adjudicator of a Greater World - Alex Magoulas -
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-03
-Title:   The Adjudicator of a Greater World - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=COLA1xe6CuY
+Date:     2023-11-03
+Title:    The Adjudicator of a Greater World - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=COLA1xe6CuY
 ========================================
 
 Description:

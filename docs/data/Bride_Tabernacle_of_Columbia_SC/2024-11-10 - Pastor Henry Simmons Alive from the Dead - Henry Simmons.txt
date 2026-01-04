@@ -4,13 +4,14 @@ START OF FILE: 2024-11-10 - Pastor Henry Simmons Alive from the Dead - Henry Sim
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-10
-Title:   Pastor Henry Simmons: "Alive from the Dead"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qCHTY9D9szo
+Date:     2024-11-10
+Title:    Pastor Henry Simmons: "Alive from the Dead"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=qCHTY9D9szo
 ========================================
 
 Description:

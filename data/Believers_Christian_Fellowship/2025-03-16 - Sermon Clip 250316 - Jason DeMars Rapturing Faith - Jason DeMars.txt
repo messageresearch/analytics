@@ -4,13 +4,14 @@ START OF FILE: 2025-03-16 - Sermon Clip 250316 - Jason DeMars Rapturing Faith - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-16
-Title:   Sermon Clip: 250316 - Jason DeMars: Rapturing Faith
-Speaker: Jason DeMars
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=0PZVh3hGtV4
+Date:     2025-03-16
+Title:    Sermon Clip: 250316 - Jason DeMars: Rapturing Faith
+Speaker:  Jason DeMars
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=0PZVh3hGtV4
 ========================================
 
 Description:

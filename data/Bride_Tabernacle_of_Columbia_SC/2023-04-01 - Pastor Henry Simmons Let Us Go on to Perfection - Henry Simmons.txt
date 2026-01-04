@@ -4,13 +4,14 @@ START OF FILE: 2023-04-01 - Pastor Henry Simmons Let Us Go on to Perfection - He
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-01
-Title:   Pastor Henry Simmons: "Let Us Go on to Perfection"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QLZTLW3qRlc
+Date:     2023-04-01
+Title:    Pastor Henry Simmons: "Let Us Go on to Perfection"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=QLZTLW3qRlc
 ========================================
 
 Description:

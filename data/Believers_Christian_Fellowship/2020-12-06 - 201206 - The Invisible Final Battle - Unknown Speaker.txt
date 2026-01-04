@@ -4,13 +4,14 @@ START OF FILE: 2020-12-06 - 201206 - The Invisible Final Battle - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-06
-Title:   201206 - The Invisible Final Battle
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N0_dSYtjl64
+Date:     2020-12-06
+Title:    201206 - The Invisible Final Battle
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=N0_dSYtjl64
 ========================================
 
 Description:

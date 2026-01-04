@@ -4,13 +4,14 @@ START OF FILE: 2023-05-06 - Sermon Clip 230506 - Abraham Mairah From the Invisib
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-06
-Title:   Sermon Clip: 230506 - Abraham Mairah: From the Invisible God to the Visible, Incarnate One
-Speaker: Abraham Mairah
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=oRsPzXOgePo
+Date:     2023-05-06
+Title:    Sermon Clip: 230506 - Abraham Mairah: From the Invisible God to the Visible, Incarnate One
+Speaker:  Abraham Mairah
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=oRsPzXOgePo
 ========================================
 
 Description:

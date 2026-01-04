@@ -4,13 +4,14 @@ START OF FILE: 2023-03-19 - (Sunday School) 230319 - Jason DeMars Music - The Sp
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-19
-Title:   (Sunday School) 230319 - Jason DeMars: Music - The Spirits That Inspire
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z0BUegnidJk
+Date:     2023-03-19
+Title:    (Sunday School) 230319 - Jason DeMars: Music - The Spirits That Inspire
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z0BUegnidJk
 ========================================
 
 Description:

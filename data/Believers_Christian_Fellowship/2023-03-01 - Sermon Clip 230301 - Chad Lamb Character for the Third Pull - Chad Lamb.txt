@@ -4,13 +4,14 @@ START OF FILE: 2023-03-01 - Sermon Clip 230301 - Chad Lamb Character for the Thi
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-01
-Title:   Sermon Clip: 230301 - Chad Lamb: Character for the Third Pull
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=jd_wuF7kjJw
+Date:     2023-03-01
+Title:    Sermon Clip: 230301 - Chad Lamb: Character for the Third Pull
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=jd_wuF7kjJw
 ========================================
 
 Description:

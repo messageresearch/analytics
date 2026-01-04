@@ -4,13 +4,14 @@ START OF FILE: 2025-08-27 - 250827-Matt WatkinsGet Rid of Your Rats - Matt Watki
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-27
-Title:   250827-Matt Watkins:Get Rid of Your Rats
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4gr-gTDLPa0
+Date:     2025-08-27
+Title:    250827-Matt Watkins:Get Rid of Your Rats
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=4gr-gTDLPa0
 ========================================
 
 Description:

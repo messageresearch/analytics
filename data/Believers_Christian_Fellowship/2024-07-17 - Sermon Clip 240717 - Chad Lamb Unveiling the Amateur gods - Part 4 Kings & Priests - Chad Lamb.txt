@@ -4,13 +4,14 @@ START OF FILE: 2024-07-17 - Sermon Clip 240717 - Chad Lamb Unveiling the Amateur
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-17
-Title:   Sermon Clip: 240717 - Chad Lamb: Unveiling the Amateur gods - Part 4: Kings & Priests
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=aD4kujLMON8
+Date:     2024-07-17
+Title:    Sermon Clip: 240717 - Chad Lamb: Unveiling the Amateur gods - Part 4: Kings & Priests
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=aD4kujLMON8
 ========================================
 
 Description:

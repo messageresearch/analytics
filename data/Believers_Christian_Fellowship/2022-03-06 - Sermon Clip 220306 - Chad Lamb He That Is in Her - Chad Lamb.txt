@@ -4,13 +4,14 @@ START OF FILE: 2022-03-06 - Sermon Clip 220306 - Chad Lamb He That Is in Her - C
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-06
-Title:   Sermon Clip: 220306 - Chad Lamb: He That Is in Her
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Nf9SR03Dptw
+Date:     2022-03-06
+Title:    Sermon Clip: 220306 - Chad Lamb: He That Is in Her
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Nf9SR03Dptw
 ========================================
 
 Description:

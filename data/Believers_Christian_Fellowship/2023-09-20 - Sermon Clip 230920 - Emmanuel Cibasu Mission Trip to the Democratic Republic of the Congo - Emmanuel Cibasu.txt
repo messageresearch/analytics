@@ -4,13 +4,14 @@ START OF FILE: 2023-09-20 - Sermon Clip 230920 - Emmanuel Cibasu Mission Trip to
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-20
-Title:   Sermon Clip: 230920 - Emmanuel Cibasu: Mission Trip to the Democratic Republic of the Congo
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=xtE31Ksruxo
+Date:     2023-09-20
+Title:    Sermon Clip: 230920 - Emmanuel Cibasu: Mission Trip to the Democratic Republic of the Congo
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=xtE31Ksruxo
 ========================================
 
 Description:

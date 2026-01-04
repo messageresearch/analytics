@@ -4,13 +4,14 @@ START OF FILE: 2023-07-12 - 230712 - Joe Howdeshell The Unchangeable God - Joe H
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-12
-Title:   230712 - Joe Howdeshell: The Unchangeable God
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=V14W9G5fKO8
+Date:     2023-07-12
+Title:    230712 - Joe Howdeshell: The Unchangeable God
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=V14W9G5fKO8
 ========================================
 
 Description:

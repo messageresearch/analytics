@@ -4,13 +4,14 @@ START OF FILE: 2017-11-12 - The Vision for Our Day - Bro. Wayne Lawson - Wayne L
 
 SERMON DETAILS
 ========================================
-Date:    2017-11-12
-Title:   The Vision for Our Day - Bro. Wayne Lawson
-Speaker: Wayne Lawson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=h5lYMi4alVY
+Date:     2017-11-12
+Title:    The Vision for Our Day - Bro. Wayne Lawson
+Speaker:  Wayne Lawson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=h5lYMi4alVY
 ========================================
 
 TRANSCRIPT

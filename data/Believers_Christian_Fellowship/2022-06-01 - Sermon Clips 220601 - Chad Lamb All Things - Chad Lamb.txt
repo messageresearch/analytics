@@ -4,13 +4,14 @@ START OF FILE: 2022-06-01 - Sermon Clips 220601 - Chad Lamb All Things - Chad La
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-01
-Title:   Sermon Clips: 220601 - Chad Lamb: All Things
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_GWvOqaGpiM
+Date:     2022-06-01
+Title:    Sermon Clips: 220601 - Chad Lamb: All Things
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_GWvOqaGpiM
 ========================================
 
 Description:

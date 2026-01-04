@@ -4,13 +4,14 @@ START OF FILE: 2022-06-26 - Bro. Caleb Simmons Step by Step - Caleb Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-26
-Title:   Bro. Caleb Simmons: "Step by Step"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cTLhC0Px0Bk
+Date:     2022-06-26
+Title:    Bro. Caleb Simmons: "Step by Step"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=cTLhC0Px0Bk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-07 - 240707 - Chad Lamb Unveiling the Amateur gods - Part
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-07
-Title:   240707 - Chad Lamb: Unveiling the Amateur gods - Part 1
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XIdwi6Bk1y4
+Date:     2024-07-07
+Title:    240707 - Chad Lamb: Unveiling the Amateur gods - Part 1
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=XIdwi6Bk1y4
 ========================================
 
 Description:

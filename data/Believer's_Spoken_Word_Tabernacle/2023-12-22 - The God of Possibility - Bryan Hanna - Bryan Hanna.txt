@@ -4,13 +4,14 @@ START OF FILE: 2023-12-22 - The God of Possibility - Bryan Hanna - Bryan Hanna.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-22
-Title:   The God of Possibility - Bryan Hanna
-Speaker: Bryan Hanna
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L9T59W9GwwY
+Date:     2023-12-22
+Title:    The God of Possibility - Bryan Hanna
+Speaker:  Bryan Hanna
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=L9T59W9GwwY
 ========================================
 
 Description:

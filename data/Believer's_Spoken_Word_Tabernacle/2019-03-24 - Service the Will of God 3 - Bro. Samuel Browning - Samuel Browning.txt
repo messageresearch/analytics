@@ -4,13 +4,14 @@ START OF FILE: 2019-03-24 - Service the Will of God 3 - Bro. Samuel Browning - S
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-24
-Title:   Service the Will of God 3 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lRlgM8j1FSA
+Date:     2019-03-24
+Title:    Service the Will of God 3 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=lRlgM8j1FSA
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2020-05-15 - A Prisoner of Jesus Christ - 5 - One Body - Unknown 
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-15
-Title:   A Prisoner of Jesus Christ - 5 - One Body
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RNHkO5xjqR8
+Date:     2020-05-15
+Title:    A Prisoner of Jesus Christ - 5 - One Body
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=RNHkO5xjqR8
 ========================================
 
 TRANSCRIPT

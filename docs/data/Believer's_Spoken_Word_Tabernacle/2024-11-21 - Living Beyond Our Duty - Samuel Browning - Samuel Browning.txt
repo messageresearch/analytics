@@ -4,13 +4,14 @@ START OF FILE: 2024-11-21 - Living Beyond Our Duty - Samuel Browning - Samuel Br
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-21
-Title:   Living Beyond Our Duty - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vFn8snDZc3M
+Date:     2024-11-21
+Title:    Living Beyond Our Duty - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=vFn8snDZc3M
 ========================================
 
 TRANSCRIPT

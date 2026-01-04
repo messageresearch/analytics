@@ -4,13 +4,14 @@ START OF FILE: 2025-06-18 - Sermon Clip 250618 - Chad Lamb Parenthood Originated
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-18
-Title:   Sermon Clip: 250618 - Chad Lamb: Parenthood Originated in God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=foJiwYWvzwI
+Date:     2025-06-18
+Title:    Sermon Clip: 250618 - Chad Lamb: Parenthood Originated in God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=foJiwYWvzwI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-11-30 - Sermon Clip 251130 - Gabriel Smith A Father's Approv
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-30
-Title:   Sermon Clip: 251130 - Gabriel Smith: A Father's Approval
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=SJao4m1y7uA
+Date:     2025-11-30
+Title:    Sermon Clip: 251130 - Gabriel Smith: A Father's Approval
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=SJao4m1y7uA
 ========================================
 
 Description:

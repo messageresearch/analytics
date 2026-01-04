@@ -4,13 +4,14 @@ START OF FILE: 2023-07-29 - Annual Tent Revival Pastor J. Hamid - J Hamid.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-29
-Title:   Annual Tent Revival: Pastor J. Hamid
-Speaker: J Hamid
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rvcEO4Of4l0
+Date:     2023-07-29
+Title:    Annual Tent Revival: Pastor J. Hamid
+Speaker:  J Hamid
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=rvcEO4Of4l0
 ========================================
 
 Description:

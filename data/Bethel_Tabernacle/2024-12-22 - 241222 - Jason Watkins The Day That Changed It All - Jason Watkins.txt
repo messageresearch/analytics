@@ -4,13 +4,14 @@ START OF FILE: 2024-12-22 - 241222 - Jason Watkins The Day That Changed It All -
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-22
-Title:   241222 - Jason Watkins: The Day That Changed It All
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4NC7z6rHtek
+Date:     2024-12-22
+Title:    241222 - Jason Watkins: The Day That Changed It All
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=4NC7z6rHtek
 ========================================
 
 Description:

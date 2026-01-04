@@ -4,13 +4,14 @@ START OF FILE: 2022-04-03 - God's Business Is Not Your Business - Samuel Brownin
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-03
-Title:   God's Business Is Not Your Business - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PmKEqclmYeM
+Date:     2022-04-03
+Title:    God's Business Is Not Your Business - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=PmKEqclmYeM
 ========================================
 
 Description:

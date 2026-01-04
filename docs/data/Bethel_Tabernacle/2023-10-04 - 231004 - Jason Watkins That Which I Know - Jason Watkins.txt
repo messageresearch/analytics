@@ -4,13 +4,14 @@ START OF FILE: 2023-10-04 - 231004 - Jason Watkins That Which I Know - Jason Wat
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-04
-Title:   231004 - Jason Watkins: That Which I Know
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_s4W6X4kawc
+Date:     2023-10-04
+Title:    231004 - Jason Watkins: That Which I Know
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=_s4W6X4kawc
 ========================================
 
 Description:

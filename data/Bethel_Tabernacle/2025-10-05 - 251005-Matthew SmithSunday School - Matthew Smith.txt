@@ -4,13 +4,14 @@ START OF FILE: 2025-10-05 - 251005-Matthew SmithSunday School - Matthew Smith.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-05
-Title:   251005-Matthew Smith:Sunday School
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Jhzl8gl49Mo
+Date:     2025-10-05
+Title:    251005-Matthew Smith:Sunday School
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=Jhzl8gl49Mo
 ========================================
 
 Description:

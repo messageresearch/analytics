@@ -4,13 +4,14 @@ START OF FILE: 2022-11-07 - It is a Spirit - Wayne Lawson - Wayne Lawson.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-07
-Title:   It is a Spirit - Wayne Lawson
-Speaker: Wayne Lawson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bVACnN91Phw
+Date:     2022-11-07
+Title:    It is a Spirit - Wayne Lawson
+Speaker:  Wayne Lawson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=bVACnN91Phw
 ========================================
 
 Description:

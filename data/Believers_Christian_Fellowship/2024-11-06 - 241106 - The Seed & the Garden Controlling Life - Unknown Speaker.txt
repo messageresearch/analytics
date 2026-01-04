@@ -4,13 +4,14 @@ START OF FILE: 2024-11-06 - 241106 - The Seed & the Garden Controlling Life - Un
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-06
-Title:   241106 - The Seed & the Garden: Controlling Life
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iMbqqlneCZE
+Date:     2024-11-06
+Title:    241106 - The Seed & the Garden: Controlling Life
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=iMbqqlneCZE
 ========================================
 
 Description:

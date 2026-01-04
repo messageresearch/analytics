@@ -4,13 +4,14 @@ START OF FILE: 2022-07-03 - Light in the Darkness - Missions Trip Update - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-03
-Title:   Light in the Darkness - Missions Trip Update - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=V_02D72haks
+Date:     2022-07-03
+Title:    Light in the Darkness - Missions Trip Update - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=V_02D72haks
 ========================================
 
 Description:

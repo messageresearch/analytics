@@ -4,13 +4,14 @@ START OF FILE: 2023-04-26 - Sermon Clip 230426 - Chad Lamb Secure in Him - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-26
-Title:   Sermon Clip: 230426 - Chad Lamb: Secure in Him
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=zVChpr4Z30M
+Date:     2023-04-26
+Title:    Sermon Clip: 230426 - Chad Lamb: Secure in Him
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=zVChpr4Z30M
 ========================================
 
 Description:

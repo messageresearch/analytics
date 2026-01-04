@@ -4,13 +4,14 @@ START OF FILE: 2024-08-21 - 240821 - Chad Lamb Clothed - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-21
-Title:   240821 - Chad Lamb: Clothed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ggw-Sz2cGbI
+Date:     2024-08-21
+Title:    240821 - Chad Lamb: Clothed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=ggw-Sz2cGbI
 ========================================
 
 Description:

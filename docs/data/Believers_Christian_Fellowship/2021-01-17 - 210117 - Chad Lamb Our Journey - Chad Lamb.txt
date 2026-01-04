@@ -4,13 +4,14 @@ START OF FILE: 2021-01-17 - 210117 - Chad Lamb Our Journey - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-17
-Title:   210117 - Chad Lamb: Our Journey
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=THefDfkpOuU
+Date:     2021-01-17
+Title:    210117 - Chad Lamb: Our Journey
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=THefDfkpOuU
 ========================================
 
 Description:

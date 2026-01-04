@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - 221113 - Jason Watkins If This Was Resurrection Morn
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   221113 - Jason Watkins: If This Was Resurrection Morning
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vQ2hrBeOqSc
+Date:     2022-11-13
+Title:    221113 - Jason Watkins: If This Was Resurrection Morning
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Easter Program
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=vQ2hrBeOqSc
 ========================================
 
 Description:

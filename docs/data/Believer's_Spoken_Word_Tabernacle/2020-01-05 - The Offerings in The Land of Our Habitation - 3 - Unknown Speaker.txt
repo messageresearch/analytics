@@ -4,13 +4,14 @@ START OF FILE: 2020-01-05 - The Offerings in The Land of Our Habitation - 3 - Un
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-05
-Title:   The Offerings in The Land of Our Habitation - 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Cym5Rsk1l1k
+Date:     2020-01-05
+Title:    The Offerings in The Land of Our Habitation - 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=Cym5Rsk1l1k
 ========================================
 
 TRANSCRIPT

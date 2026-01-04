@@ -4,13 +4,14 @@ START OF FILE: 2021-01-03 - Operating by the Faith of the Hour 5 - Bro. Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-03
-Title:   Operating by the Faith of the Hour 5 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uVoBQTT8Idw
+Date:     2021-01-03
+Title:    Operating by the Faith of the Hour 5 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=uVoBQTT8Idw
 ========================================
 
 TRANSCRIPT

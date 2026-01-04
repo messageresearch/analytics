@@ -4,13 +4,14 @@ START OF FILE: 2024-03-25 - Influences - Paul LaFontaine - Paul LaFontaine.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-25
-Title:   Influences - Paul LaFontaine
-Speaker: Paul LaFontaine
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1-Z-TagHXSo
+Date:     2024-03-25
+Title:    Influences - Paul LaFontaine
+Speaker:  Paul LaFontaine
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=1-Z-TagHXSo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-04-09 - Sermon Clip 250409 - Chad Lamb Never Stop - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-09
-Title:   Sermon Clip: 250409 - Chad Lamb: Never Stop
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=G_bqGCt0rTA
+Date:     2025-04-09
+Title:    Sermon Clip: 250409 - Chad Lamb: Never Stop
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=G_bqGCt0rTA
 ========================================
 
 Description:

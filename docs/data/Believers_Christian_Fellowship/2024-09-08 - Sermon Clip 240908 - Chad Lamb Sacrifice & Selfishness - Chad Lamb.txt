@@ -4,13 +4,14 @@ START OF FILE: 2024-09-08 - Sermon Clip 240908 - Chad Lamb Sacrifice & Selfishne
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-08
-Title:   Sermon Clip: 240908 - Chad Lamb: Sacrifice & Selfishness
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3A14f9Zu55Y
+Date:     2024-09-08
+Title:    Sermon Clip: 240908 - Chad Lamb: Sacrifice & Selfishness
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=3A14f9Zu55Y
 ========================================
 
 Description:

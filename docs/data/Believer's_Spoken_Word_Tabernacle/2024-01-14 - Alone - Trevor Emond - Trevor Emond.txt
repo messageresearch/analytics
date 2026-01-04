@@ -4,13 +4,14 @@ START OF FILE: 2024-01-14 - Alone - Trevor Emond - Trevor Emond.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-14
-Title:   Alone - Trevor Emond
-Speaker: Trevor Emond
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oXNwu93MLVI
+Date:     2024-01-14
+Title:    Alone - Trevor Emond
+Speaker:  Trevor Emond
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=oXNwu93MLVI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-06-11 - Minister Aaron Nengomazha A Golden Harp and a New So
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-11
-Title:   Minister Aaron Nengomazha: "A Golden Harp and a New Song"
-Speaker: Aaron Nengomazha
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4nqj1zwziOg
+Date:     2022-06-11
+Title:    Minister Aaron Nengomazha: "A Golden Harp and a New Song"
+Speaker:  Aaron Nengomazha
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=4nqj1zwziOg
 ========================================
 
 Description:

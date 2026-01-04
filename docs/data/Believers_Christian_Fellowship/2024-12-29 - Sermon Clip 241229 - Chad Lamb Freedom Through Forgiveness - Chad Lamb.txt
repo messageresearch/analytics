@@ -4,13 +4,14 @@ START OF FILE: 2024-12-29 - Sermon Clip 241229 - Chad Lamb Freedom Through Forgi
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-29
-Title:   Sermon Clip: 241229 - Chad Lamb: Freedom Through Forgiveness
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=fzzpwQL_KGM
+Date:     2024-12-29
+Title:    Sermon Clip: 241229 - Chad Lamb: Freedom Through Forgiveness
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=fzzpwQL_KGM
 ========================================
 
 Description:

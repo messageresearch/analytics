@@ -4,13 +4,14 @@ START OF FILE: 2022-04-29 - Pastor Nathaniel Simmons Born Blind - Nathaniel Simm
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-29
-Title:   Pastor Nathaniel Simmons: "Born Blind"
-Speaker: Nathaniel Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wNfNVWqB1kc
+Date:     2022-04-29
+Title:    Pastor Nathaniel Simmons: "Born Blind"
+Speaker:  Nathaniel Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=wNfNVWqB1kc
 ========================================
 
 Description:

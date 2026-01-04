@@ -4,13 +4,14 @@ START OF FILE: 2023-12-24 - The Unidentified Things - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-24
-Title:   The Unidentified Things - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=p6LSWcAUJ1E
+Date:     2023-12-24
+Title:    The Unidentified Things - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=p6LSWcAUJ1E
 ========================================
 
 Description:

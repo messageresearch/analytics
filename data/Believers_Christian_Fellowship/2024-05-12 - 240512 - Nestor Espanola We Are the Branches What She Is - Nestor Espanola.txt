@@ -4,13 +4,14 @@ START OF FILE: 2024-05-12 - 240512 - Nestor Espanola We Are the Branches What Sh
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-12
-Title:   240512 - Nestor Espanola: We Are the Branches: What She Is
-Speaker: Nestor Espanola
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=5yDmKS_rcL4
+Date:     2024-05-12
+Title:    240512 - Nestor Espanola: We Are the Branches: What She Is
+Speaker:  Nestor Espanola
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 51m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=5yDmKS_rcL4
 ========================================
 
 Description:

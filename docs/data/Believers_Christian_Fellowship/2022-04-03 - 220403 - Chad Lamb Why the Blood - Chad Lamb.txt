@@ -4,13 +4,14 @@ START OF FILE: 2022-04-03 - 220403 - Chad Lamb Why the Blood - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-03
-Title:   220403 - Chad Lamb: Why the Blood?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8moAbCCF3rk
+Date:     2022-04-03
+Title:    220403 - Chad Lamb: Why the Blood?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=8moAbCCF3rk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-14 - Pastor Jeremiah Palmer A Love Affair - Jeremiah Palm
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-14
-Title:   Pastor Jeremiah Palmer: "A Love Affair"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IHXsYMrm8a4
+Date:     2023-01-14
+Title:    Pastor Jeremiah Palmer: "A Love Affair"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=IHXsYMrm8a4
 ========================================
 
 Description:

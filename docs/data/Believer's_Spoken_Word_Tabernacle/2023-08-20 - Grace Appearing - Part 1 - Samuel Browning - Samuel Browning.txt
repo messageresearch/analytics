@@ -4,13 +4,14 @@ START OF FILE: 2023-08-20 - Grace Appearing - Part 1 - Samuel Browning - Samuel 
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-20
-Title:   Grace Appearing - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=000ctRAC7A8
+Date:     2023-08-20
+Title:    Grace Appearing - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=000ctRAC7A8
 ========================================
 
 Description:

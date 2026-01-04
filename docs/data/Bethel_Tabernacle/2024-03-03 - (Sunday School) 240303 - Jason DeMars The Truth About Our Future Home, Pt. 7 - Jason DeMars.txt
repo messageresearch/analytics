@@ -4,13 +4,14 @@ START OF FILE: 2024-03-03 - (Sunday School) 240303 - Jason DeMars The Truth Abou
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-03
-Title:   (Sunday School) 240303 - Jason DeMars: The Truth About Our Future Home, Pt. 7
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=i0TRJOY7Ukc
+Date:     2024-03-03
+Title:    (Sunday School) 240303 - Jason DeMars: The Truth About Our Future Home, Pt. 7
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=i0TRJOY7Ukc
 ========================================
 
 Description:

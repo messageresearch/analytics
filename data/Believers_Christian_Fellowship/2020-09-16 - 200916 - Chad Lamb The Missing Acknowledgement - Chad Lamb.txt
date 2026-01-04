@@ -4,13 +4,14 @@ START OF FILE: 2020-09-16 - 200916 - Chad Lamb The Missing Acknowledgement - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-16
-Title:   200916 - Chad Lamb: The Missing Acknowledgement
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BJENsAFfpLE
+Date:     2020-09-16
+Title:    200916 - Chad Lamb: The Missing Acknowledgement
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=BJENsAFfpLE
 ========================================
 
 Description:

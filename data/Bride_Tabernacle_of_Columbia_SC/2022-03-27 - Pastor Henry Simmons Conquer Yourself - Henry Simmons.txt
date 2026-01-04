@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - Pastor Henry Simmons Conquer Yourself - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   Pastor Henry Simmons: "Conquer Yourself"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gf8jdeI9WNQ
+Date:     2022-03-27
+Title:    Pastor Henry Simmons: "Conquer Yourself"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gf8jdeI9WNQ
 ========================================
 
 Description:

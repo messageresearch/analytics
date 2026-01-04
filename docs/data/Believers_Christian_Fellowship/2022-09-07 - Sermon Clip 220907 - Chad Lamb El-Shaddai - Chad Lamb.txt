@@ -4,13 +4,14 @@ START OF FILE: 2022-09-07 - Sermon Clip 220907 - Chad Lamb El-Shaddai - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-07
-Title:   Sermon Clip: 220907 - Chad Lamb: El-Shaddai
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=NucFWz-herU
+Date:     2022-09-07
+Title:    Sermon Clip: 220907 - Chad Lamb: El-Shaddai
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=NucFWz-herU
 ========================================
 
 Description:

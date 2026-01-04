@@ -4,13 +4,14 @@ START OF FILE: 2022-10-26 - 221026 - Noel Johnson Preparing for the Future - Noe
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-26
-Title:   221026 - Noel Johnson: Preparing for the Future
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q-iPGa85Ud4
+Date:     2022-10-26
+Title:    221026 - Noel Johnson: Preparing for the Future
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=q-iPGa85Ud4
 ========================================
 
 Description:

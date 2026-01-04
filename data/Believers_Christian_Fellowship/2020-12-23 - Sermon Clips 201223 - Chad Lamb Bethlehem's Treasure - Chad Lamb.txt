@@ -4,13 +4,14 @@ START OF FILE: 2020-12-23 - Sermon Clips 201223 - Chad Lamb Bethlehem's Treasure
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-23
-Title:   Sermon Clips: 201223 - Chad Lamb: Bethlehem's Treasure
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=iULetY5DQrM
+Date:     2020-12-23
+Title:    Sermon Clips: 201223 - Chad Lamb: Bethlehem's Treasure
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=iULetY5DQrM
 ========================================
 
 Description:

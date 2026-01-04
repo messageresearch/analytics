@@ -4,13 +4,14 @@ START OF FILE: 2024-09-11 - Sermon Clip 240911 - Emmanuel Cibasu The Seed Bride 
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-11
-Title:   Sermon Clip: 240911 - Emmanuel Cibasu: The Seed Bride Will Be Willing
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=94alwVkTb4s
+Date:     2024-09-11
+Title:    Sermon Clip: 240911 - Emmanuel Cibasu: The Seed Bride Will Be Willing
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=94alwVkTb4s
 ========================================
 
 Description:

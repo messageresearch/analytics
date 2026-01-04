@@ -4,13 +4,14 @@ START OF FILE: 2024-01-21 - 240121 - Joe Howdeshell My Refuge - Joe Howdeshell.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-21
-Title:   240121 - Joe Howdeshell: My Refuge
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WCL23VgJIlU
+Date:     2024-01-21
+Title:    240121 - Joe Howdeshell: My Refuge
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=WCL23VgJIlU
 ========================================
 
 Description:

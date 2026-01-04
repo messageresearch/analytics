@@ -4,13 +4,14 @@ START OF FILE: 2023-10-18 - Sermon Clip 231018 - Chad Lamb Members of the Body -
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-18
-Title:   Sermon Clip: 231018 - Chad Lamb: Members of the Body - Part 2: A Purpose for Each
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=sWIyHz2fkFM
+Date:     2023-10-18
+Title:    Sermon Clip: 231018 - Chad Lamb: Members of the Body - Part 2: A Purpose for Each
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=sWIyHz2fkFM
 ========================================
 
 Description:

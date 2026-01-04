@@ -4,13 +4,14 @@ START OF FILE: 2022-10-02 - (Sunday School) 221002 - Jason Watkins The Way Of Pr
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-02
-Title:   (Sunday School) 221002 - Jason Watkins: The Way Of Prayer
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wH_oTkOUrUc
+Date:     2022-10-02
+Title:    (Sunday School) 221002 - Jason Watkins: The Way Of Prayer
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=wH_oTkOUrUc
 ========================================
 
 Description:

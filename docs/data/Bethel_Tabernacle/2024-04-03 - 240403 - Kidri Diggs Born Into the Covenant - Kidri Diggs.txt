@@ -4,13 +4,14 @@ START OF FILE: 2024-04-03 - 240403 - Kidri Diggs Born Into the Covenant - Kidri 
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-03
-Title:   240403 - Kidri Diggs: Born Into the Covenant
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LlvC0IdVDCg
+Date:     2024-04-03
+Title:    240403 - Kidri Diggs: Born Into the Covenant
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=LlvC0IdVDCg
 ========================================
 
 Description:

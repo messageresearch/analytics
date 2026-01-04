@@ -4,13 +4,14 @@ START OF FILE: 2021-02-14 - Sermon Clips 210214 - Chad Lamb Fellowship Restored 
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-14
-Title:   Sermon Clips: 210214 - Chad Lamb: Fellowship Restored
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=0DIkSFSB0UM
+Date:     2021-02-14
+Title:    Sermon Clips: 210214 - Chad Lamb: Fellowship Restored
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=0DIkSFSB0UM
 ========================================
 
 Description:

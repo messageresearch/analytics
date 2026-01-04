@@ -4,13 +4,14 @@ START OF FILE: 2024-08-03 - Minister Ernest Legette A Testimony - Ernest Legette
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-03
-Title:   Minister Ernest Legette: "A Testimony"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5hylQgekMwo
+Date:     2024-08-03
+Title:    Minister Ernest Legette: "A Testimony"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=5hylQgekMwo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-04-10 - Minister Ernest Legette Trials We Go Through - Ernes
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-10
-Title:   Minister Ernest Legette: "Trials We Go Through"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WBju-YBgpWM
+Date:     2020-04-10
+Title:    Minister Ernest Legette: "Trials We Go Through"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=WBju-YBgpWM
 ========================================
 
 Description:

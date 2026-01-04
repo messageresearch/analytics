@@ -4,13 +4,14 @@ START OF FILE: 2024-12-14 - Brother Caleb Simmons The Right Response - Caleb Sim
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-14
-Title:   Brother Caleb Simmons: "The Right Response"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_yt3qKFGNao
+Date:     2024-12-14
+Title:    Brother Caleb Simmons: "The Right Response"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=_yt3qKFGNao
 ========================================
 
 Description:

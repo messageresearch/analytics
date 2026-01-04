@@ -4,13 +4,14 @@ START OF FILE: 2025-04-30 - 250430-Matthew WatkinsTaking Back Eden - Matthew Wat
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-30
-Title:   250430-Matthew Watkins:Taking Back Eden
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pO9Rjl-ujjA
+Date:     2025-04-30
+Title:    250430-Matthew Watkins:Taking Back Eden
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=pO9Rjl-ujjA
 ========================================
 
 Description:

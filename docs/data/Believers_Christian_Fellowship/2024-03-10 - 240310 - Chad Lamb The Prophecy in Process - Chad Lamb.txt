@@ -4,13 +4,14 @@ START OF FILE: 2024-03-10 - 240310 - Chad Lamb The Prophecy in Process - Chad La
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-10
-Title:   240310 - Chad Lamb: The Prophecy in Process
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5BLFVEIqrMo
+Date:     2024-03-10
+Title:    240310 - Chad Lamb: The Prophecy in Process
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=5BLFVEIqrMo
 ========================================
 
 Description:

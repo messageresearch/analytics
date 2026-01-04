@@ -4,13 +4,14 @@ START OF FILE: 2025-11-02 - 251102 - Chad Lamb The Real Gift - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-02
-Title:   251102 - Chad Lamb: The Real Gift
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YpBDJocu-vs
+Date:     2025-11-02
+Title:    251102 - Chad Lamb: The Real Gift
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=YpBDJocu-vs
 ========================================
 
 Description:

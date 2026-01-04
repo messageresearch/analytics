@@ -4,13 +4,14 @@ START OF FILE: 2021-05-16 - Sermon Clip 210516 - Chad Lamb Religion Versus Relat
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-16
-Title:   Sermon Clip: 210516 - Chad Lamb: Religion Versus Relationship - Part 5: Conquered or Drawn
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=aiyOWIlHqmw
+Date:     2021-05-16
+Title:    Sermon Clip: 210516 - Chad Lamb: Religion Versus Relationship - Part 5: Conquered or Drawn
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=aiyOWIlHqmw
 ========================================
 
 Description:

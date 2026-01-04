@@ -4,13 +4,14 @@ START OF FILE: 2023-04-30 - 230430 - Emmanuel Cibasu The Indwelling of Christ - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-30
-Title:   230430 - Emmanuel Cibasu: The Indwelling of Christ
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m8ejUnuMQco
+Date:     2023-04-30
+Title:    230430 - Emmanuel Cibasu: The Indwelling of Christ
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=m8ejUnuMQco
 ========================================
 
 Description:

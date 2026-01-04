@@ -4,13 +4,14 @@ START OF FILE: 2021-07-14 - 210714 - Noel Johnson Learning to Rest - Noel Johnso
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-14
-Title:   210714 - Noel Johnson: Learning to Rest
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A9KZdqVboEA
+Date:     2021-07-14
+Title:    210714 - Noel Johnson: Learning to Rest
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=A9KZdqVboEA
 ========================================
 
 Description:

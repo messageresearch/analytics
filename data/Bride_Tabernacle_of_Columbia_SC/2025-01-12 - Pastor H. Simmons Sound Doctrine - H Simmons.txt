@@ -4,13 +4,14 @@ START OF FILE: 2025-01-12 - Pastor H. Simmons Sound Doctrine - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-12
-Title:   Pastor H. Simmons: "Sound Doctrine"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PLfFUm7cMcg
+Date:     2025-01-12
+Title:    Pastor H. Simmons: "Sound Doctrine"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=PLfFUm7cMcg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - Guest Minister Robson “Listening to the Voice of E
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   Guest Minister Robson: “Listening to the Voice of Encouragement”
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vjc5eSk66Rc
+Date:     2024-07-21
+Title:    Guest Minister Robson: “Listening to the Voice of Encouragement”
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=vjc5eSk66Rc
 ========================================
 
 Description:

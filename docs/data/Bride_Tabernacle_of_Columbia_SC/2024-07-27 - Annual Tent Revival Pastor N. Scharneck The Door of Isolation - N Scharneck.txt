@@ -4,13 +4,14 @@ START OF FILE: 2024-07-27 - Annual Tent Revival Pastor N. Scharneck The Door of 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-27
-Title:   Annual Tent Revival: Pastor N. Scharneck: "The Door of Isolation"
-Speaker: N Scharneck
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=blsazbW31CA
+Date:     2024-07-27
+Title:    Annual Tent Revival: Pastor N. Scharneck: "The Door of Isolation"
+Speaker:  N Scharneck
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 3h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=blsazbW31CA
 ========================================
 
 Description:

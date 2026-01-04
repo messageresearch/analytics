@@ -4,13 +4,14 @@ START OF FILE: 2025-02-23 - Sermon Clip -250223 - Gabriel Smith The Release of F
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-23
-Title:   Sermon Clip -250223 - Gabriel Smith: The Release of Forgiveness - Part 2
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=i1MpRvZ_iq0
+Date:     2025-02-23
+Title:    Sermon Clip -250223 - Gabriel Smith: The Release of Forgiveness - Part 2
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=i1MpRvZ_iq0
 ========================================
 
 Description:

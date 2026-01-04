@@ -4,13 +4,14 @@ START OF FILE: 2023-01-11 - Sermon Clip 230111 - Chad Lamb Christ Is... - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-11
-Title:   Sermon Clip: 230111 - Chad Lamb: Christ Is...
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=4z7qmR9jyuE
+Date:     2023-01-11
+Title:    Sermon Clip: 230111 - Chad Lamb: Christ Is...
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=4z7qmR9jyuE
 ========================================
 
 Description:

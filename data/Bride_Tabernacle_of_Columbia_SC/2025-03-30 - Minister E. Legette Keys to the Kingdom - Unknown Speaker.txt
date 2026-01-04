@@ -4,13 +4,14 @@ START OF FILE: 2025-03-30 - Minister E. Legette Keys to the Kingdom - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-30
-Title:   Minister E. Legette: "Keys to the Kingdom"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eTZ2AcPmTSc
+Date:     2025-03-30
+Title:    Minister E. Legette: "Keys to the Kingdom"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=eTZ2AcPmTSc
 ========================================
 
 Description:

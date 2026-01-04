@@ -4,13 +4,14 @@ START OF FILE: 2023-06-14 - Sermon Clip 230614 - Chad Lamb Bearing His Name - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-14
-Title:   Sermon Clip: 230614 - Chad Lamb: Bearing His Name
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=y1SoDmZ2jyE
+Date:     2023-06-14
+Title:    Sermon Clip: 230614 - Chad Lamb: Bearing His Name
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=y1SoDmZ2jyE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-05-31 - Sermon Clip 230531 - Chad Lamb Love Is a Powerful Fo
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-31
-Title:   Sermon Clip: 230531 - Chad Lamb: Love Is a Powerful Force
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Q6fCTMdTM0w
+Date:     2023-05-31
+Title:    Sermon Clip: 230531 - Chad Lamb: Love Is a Powerful Force
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q6fCTMdTM0w
 ========================================
 
 Description:

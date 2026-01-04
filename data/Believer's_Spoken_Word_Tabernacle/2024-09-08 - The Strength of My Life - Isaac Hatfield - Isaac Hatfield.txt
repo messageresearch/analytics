@@ -4,13 +4,14 @@ START OF FILE: 2024-09-08 - The Strength of My Life - Isaac Hatfield - Isaac Hat
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-08
-Title:   The Strength of My Life - Isaac Hatfield
-Speaker: Isaac Hatfield
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NWBRajY20LU
+Date:     2024-09-08
+Title:    The Strength of My Life - Isaac Hatfield
+Speaker:  Isaac Hatfield
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=NWBRajY20LU
 ========================================
 
 Description:

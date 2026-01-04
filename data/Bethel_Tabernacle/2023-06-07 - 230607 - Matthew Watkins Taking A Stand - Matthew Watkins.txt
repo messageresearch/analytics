@@ -4,13 +4,14 @@ START OF FILE: 2023-06-07 - 230607 - Matthew Watkins Taking A Stand - Matthew Wa
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-07
-Title:   230607 - Matthew Watkins: Taking A Stand
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7anixuwcNu8
+Date:     2023-06-07
+Title:    230607 - Matthew Watkins: Taking A Stand
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=7anixuwcNu8
 ========================================
 
 Description:

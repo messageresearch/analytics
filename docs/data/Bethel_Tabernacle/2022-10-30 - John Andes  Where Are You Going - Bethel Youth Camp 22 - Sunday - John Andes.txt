@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - John Andes  Where Are You Going - Bethel Youth Camp 
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   John Andes:  Where Are You Going? - Bethel Youth Camp 22 - Sunday
-Speaker: John Andes
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=ANkbwpd_G5U
+Date:     2022-10-30
+Title:    John Andes:  Where Are You Going? - Bethel Youth Camp 22 - Sunday
+Speaker:  John Andes
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=ANkbwpd_G5U
 ========================================
 
 Description:

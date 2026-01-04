@@ -4,13 +4,14 @@ START OF FILE: 2020-03-29 - 200329 - Chad Lamb The Move of the Spirit - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-29
-Title:   200329 - Chad Lamb: The Move of the Spirit
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DQBJRevFjgA
+Date:     2020-03-29
+Title:    200329 - Chad Lamb: The Move of the Spirit
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=DQBJRevFjgA
 ========================================
 
 Description:

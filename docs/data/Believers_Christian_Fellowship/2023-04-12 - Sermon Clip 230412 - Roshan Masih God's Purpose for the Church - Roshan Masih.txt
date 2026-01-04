@@ -4,13 +4,14 @@ START OF FILE: 2023-04-12 - Sermon Clip 230412 - Roshan Masih God's Purpose for 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-12
-Title:   Sermon Clip: 230412 - Roshan Masih: God's Purpose for the Church
-Speaker: Roshan Masih
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=HL_tLxcARVQ
+Date:     2023-04-12
+Title:    Sermon Clip: 230412 - Roshan Masih: God's Purpose for the Church
+Speaker:  Roshan Masih
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=HL_tLxcARVQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-02-06 - I Am The LORD That Healeth Thee - 2 - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-06
-Title:   I Am The LORD That Healeth Thee - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Hb9BgXTi_pI
+Date:     2020-02-06
+Title:    I Am The LORD That Healeth Thee - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=Hb9BgXTi_pI
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-16 - 200816 - Chad Lamb Preparing for the Golden Age - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-16
-Title:   200816 - Chad Lamb: Preparing for the Golden Age
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RYsU7MdzGhA
+Date:     2020-08-16
+Title:    200816 - Chad Lamb: Preparing for the Golden Age
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=RYsU7MdzGhA
 ========================================
 
 Description:

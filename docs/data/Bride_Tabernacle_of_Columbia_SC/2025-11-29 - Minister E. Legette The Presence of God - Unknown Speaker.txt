@@ -4,13 +4,14 @@ START OF FILE: 2025-11-29 - Minister E. Legette The Presence of God - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-29
-Title:   Minister E. Legette: "The Presence of God"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VFQYf5EmsUE
+Date:     2025-11-29
+Title:    Minister E. Legette: "The Presence of God"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=VFQYf5EmsUE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-11-05 - 251105 - Chad Lamb A Love That Produces Works - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-05
-Title:   251105 - Chad Lamb: A Love That Produces Works
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cT13caJRRGQ
+Date:     2025-11-05
+Title:    251105 - Chad Lamb: A Love That Produces Works
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=cT13caJRRGQ
 ========================================
 
 Description:

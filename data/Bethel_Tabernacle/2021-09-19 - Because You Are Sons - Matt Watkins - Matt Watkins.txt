@@ -4,13 +4,14 @@ START OF FILE: 2021-09-19 - Because You Are Sons - Matt Watkins - Matt Watkins.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-19
-Title:   Because You Are Sons - Matt Watkins
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lpZrFxzWRAs
+Date:     2021-09-19
+Title:    Because You Are Sons - Matt Watkins
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=lpZrFxzWRAs
 ========================================
 
 TRANSCRIPT

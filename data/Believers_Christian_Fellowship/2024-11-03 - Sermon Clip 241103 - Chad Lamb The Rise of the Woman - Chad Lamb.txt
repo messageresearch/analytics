@@ -4,13 +4,14 @@ START OF FILE: 2024-11-03 - Sermon Clip 241103 - Chad Lamb The Rise of the Woman
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-03
-Title:   Sermon Clip: 241103 - Chad Lamb: The Rise of the Woman
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ODDk7yLAuQk
+Date:     2024-11-03
+Title:    Sermon Clip: 241103 - Chad Lamb: The Rise of the Woman
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=ODDk7yLAuQk
 ========================================
 
 Description:

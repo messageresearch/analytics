@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - Minister Michael Holloway Headship - Michael Hollowa
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   Minister Michael Holloway: "Headship"
-Speaker: Michael Holloway
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=THBgta8v-cA
+Date:     2022-03-13
+Title:    Minister Michael Holloway: "Headship"
+Speaker:  Michael Holloway
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=THBgta8v-cA
 ========================================
 
 Description:

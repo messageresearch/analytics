@@ -4,13 +4,14 @@ START OF FILE: 2025-06-15 - 250615-Brad YounceRenew the Mind (Sunday School) - B
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-15
-Title:   250615-Brad Younce:Renew the Mind (Sunday School)
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bzprswtzCIg
+Date:     2025-06-15
+Title:    250615-Brad Younce:Renew the Mind (Sunday School)
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=bzprswtzCIg
 ========================================
 
 Description:

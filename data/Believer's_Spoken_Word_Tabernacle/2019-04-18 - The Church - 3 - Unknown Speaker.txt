@@ -4,13 +4,14 @@ START OF FILE: 2019-04-18 - The Church - 3 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-18
-Title:   The Church - 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XpU-VgbszTo
+Date:     2019-04-18
+Title:    The Church - 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=XpU-VgbszTo
 ========================================
 
 TRANSCRIPT

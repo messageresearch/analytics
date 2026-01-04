@@ -4,13 +4,14 @@ START OF FILE: 2025-04-23 - 250423- Caleb Campbell Identification - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-23
-Title:   250423- Caleb Campbell :Identification
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cFxrp9TK3FA
+Date:     2025-04-23
+Title:    250423- Caleb Campbell :Identification
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=cFxrp9TK3FA
 ========================================
 
 Description:

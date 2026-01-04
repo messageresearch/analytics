@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - Minister Ernest Legette The Power of the Word - Erne
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   Minister Ernest Legette: "The Power of the Word"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nGJUAtpRqoE
+Date:     2024-01-28
+Title:    Minister Ernest Legette: "The Power of the Word"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=nGJUAtpRqoE
 ========================================
 
 Description:

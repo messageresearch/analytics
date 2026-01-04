@@ -4,13 +4,14 @@ START OF FILE: 2022-01-23 - Sermon Clip 220123 - Chad Lamb The Temptation of Chr
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-23
-Title:   Sermon Clip: 220123 - Chad Lamb: The Temptation of Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=E4n11b4wJGg
+Date:     2022-01-23
+Title:    Sermon Clip: 220123 - Chad Lamb: The Temptation of Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=E4n11b4wJGg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-12-19 - Sermon Clip 211219 - Nathaniel Sias A Change of Cont
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-19
-Title:   Sermon Clip: 211219 - Nathaniel Sias: A Change of Context
-Speaker: Nathaniel Sias
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=CVAhcqflojY
+Date:     2021-12-19
+Title:    Sermon Clip: 211219 - Nathaniel Sias: A Change of Context
+Speaker:  Nathaniel Sias
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=CVAhcqflojY
 ========================================
 
 Description:

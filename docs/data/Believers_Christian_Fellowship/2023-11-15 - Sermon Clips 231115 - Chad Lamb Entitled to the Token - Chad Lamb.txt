@@ -4,13 +4,14 @@ START OF FILE: 2023-11-15 - Sermon Clips 231115 - Chad Lamb Entitled to the Toke
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-15
-Title:   Sermon Clips: 231115 - Chad Lamb: Entitled to the Token
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=luoBfeXNUr4
+Date:     2023-11-15
+Title:    Sermon Clips: 231115 - Chad Lamb: Entitled to the Token
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=luoBfeXNUr4
 ========================================
 
 Description:

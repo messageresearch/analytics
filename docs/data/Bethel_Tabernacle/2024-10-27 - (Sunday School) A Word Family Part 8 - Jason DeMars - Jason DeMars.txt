@@ -4,13 +4,14 @@ START OF FILE: 2024-10-27 - (Sunday School) A Word Family Part 8 - Jason DeMars 
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-27
-Title:   (Sunday School) A Word Family Part 8 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FpkXUMOlp70
+Date:     2024-10-27
+Title:    (Sunday School) A Word Family Part 8 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=FpkXUMOlp70
 ========================================
 
 Description:

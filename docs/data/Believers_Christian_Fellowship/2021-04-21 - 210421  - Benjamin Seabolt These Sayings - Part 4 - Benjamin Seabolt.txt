@@ -4,13 +4,14 @@ START OF FILE: 2021-04-21 - 210421  - Benjamin Seabolt These Sayings - Part 4 - 
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-21
-Title:   210421  - Benjamin Seabolt: These Sayings - Part 4
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yn_CHaO0nkU
+Date:     2021-04-21
+Title:    210421  - Benjamin Seabolt: These Sayings - Part 4
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=yn_CHaO0nkU
 ========================================
 
 Description:

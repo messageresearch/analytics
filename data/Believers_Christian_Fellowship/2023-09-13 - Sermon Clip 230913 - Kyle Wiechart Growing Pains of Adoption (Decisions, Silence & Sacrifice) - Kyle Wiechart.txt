@@ -4,13 +4,14 @@ START OF FILE: 2023-09-13 - Sermon Clip 230913 - Kyle Wiechart Growing Pains of 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-13
-Title:   Sermon Clip: 230913 - Kyle Wiechart: Growing Pains of Adoption (Decisions, Silence & Sacrifice)
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=x0XE53l-bsg
+Date:     2023-09-13
+Title:    Sermon Clip: 230913 - Kyle Wiechart: Growing Pains of Adoption (Decisions, Silence & Sacrifice)
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=x0XE53l-bsg
 ========================================
 
 Description:

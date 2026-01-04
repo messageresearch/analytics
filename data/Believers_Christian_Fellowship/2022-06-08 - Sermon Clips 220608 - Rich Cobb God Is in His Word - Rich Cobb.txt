@@ -4,13 +4,14 @@ START OF FILE: 2022-06-08 - Sermon Clips 220608 - Rich Cobb God Is in His Word -
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-08
-Title:   Sermon Clips: 220608 - Rich Cobb: God Is in His Word
-Speaker: Rich Cobb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=An9cWJUpWNU
+Date:     2022-06-08
+Title:    Sermon Clips: 220608 - Rich Cobb: God Is in His Word
+Speaker:  Rich Cobb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=An9cWJUpWNU
 ========================================
 
 Description:

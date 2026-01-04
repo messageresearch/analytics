@@ -4,13 +4,14 @@ START OF FILE: 2023-01-15 - Sermon Clip 230115 - Chad Lamb Christ Is... Part 2 -
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-15
-Title:   Sermon Clip: 230115 - Chad Lamb: Christ Is... Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=iJ0zNJCr5kw
+Date:     2023-01-15
+Title:    Sermon Clip: 230115 - Chad Lamb: Christ Is... Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=iJ0zNJCr5kw
 ========================================
 
 Description:

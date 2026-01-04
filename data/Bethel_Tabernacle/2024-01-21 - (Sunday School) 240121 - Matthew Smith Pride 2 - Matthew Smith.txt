@@ -4,13 +4,14 @@ START OF FILE: 2024-01-21 - (Sunday School) 240121 - Matthew Smith Pride 2 - Mat
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-21
-Title:   (Sunday School) 240121 - Matthew Smith: Pride 2
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0_Q3hDLjjeI
+Date:     2024-01-21
+Title:    (Sunday School) 240121 - Matthew Smith: Pride 2
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=0_Q3hDLjjeI
 ========================================
 
 Description:

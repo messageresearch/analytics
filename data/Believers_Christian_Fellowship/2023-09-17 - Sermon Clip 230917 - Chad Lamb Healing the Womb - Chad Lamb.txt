@@ -4,13 +4,14 @@ START OF FILE: 2023-09-17 - Sermon Clip 230917 - Chad Lamb Healing the Womb - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-17
-Title:   Sermon Clip: 230917 - Chad Lamb: Healing the Womb
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=EvtgfV8a8l4
+Date:     2023-09-17
+Title:    Sermon Clip: 230917 - Chad Lamb: Healing the Womb
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=EvtgfV8a8l4
 ========================================
 
 Description:

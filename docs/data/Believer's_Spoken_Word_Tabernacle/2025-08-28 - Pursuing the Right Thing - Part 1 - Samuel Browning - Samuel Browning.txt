@@ -4,13 +4,14 @@ START OF FILE: 2025-08-28 - Pursuing the Right Thing - Part 1 - Samuel Browning 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-28
-Title:   Pursuing the Right Thing - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ToxKVlV-Fbw
+Date:     2025-08-28
+Title:    Pursuing the Right Thing - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=ToxKVlV-Fbw
 ========================================
 
 Description:

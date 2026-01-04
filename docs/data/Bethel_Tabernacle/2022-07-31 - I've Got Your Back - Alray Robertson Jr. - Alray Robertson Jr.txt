@@ -4,13 +4,14 @@ START OF FILE: 2022-07-31 - I've Got Your Back - Alray Robertson Jr. - Alray Rob
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-31
-Title:   I've Got Your Back - Alray Robertson Jr.
-Speaker: Alray Robertson Jr
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_sS--fNQ0pI
+Date:     2022-07-31
+Title:    I've Got Your Back - Alray Robertson Jr.
+Speaker:  Alray Robertson Jr
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=_sS--fNQ0pI
 ========================================
 
 Description:

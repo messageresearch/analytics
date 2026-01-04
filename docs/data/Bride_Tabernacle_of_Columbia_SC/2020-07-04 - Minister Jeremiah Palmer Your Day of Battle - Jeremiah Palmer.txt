@@ -4,13 +4,14 @@ START OF FILE: 2020-07-04 - Minister Jeremiah Palmer Your Day of Battle - Jeremi
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-04
-Title:   Minister Jeremiah Palmer: "Your Day of Battle"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HGKtCS2H69o
+Date:     2020-07-04
+Title:    Minister Jeremiah Palmer: "Your Day of Battle"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=HGKtCS2H69o
 ========================================
 
 Description:

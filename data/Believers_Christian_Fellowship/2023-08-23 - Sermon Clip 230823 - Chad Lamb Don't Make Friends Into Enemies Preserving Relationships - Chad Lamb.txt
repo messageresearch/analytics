@@ -4,13 +4,14 @@ START OF FILE: 2023-08-23 - Sermon Clip 230823 - Chad Lamb Don't Make Friends In
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-23
-Title:   Sermon Clip: 230823 - Chad Lamb: Don't Make Friends Into Enemies: Preserving Relationships
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ZtZXccHRN_A
+Date:     2023-08-23
+Title:    Sermon Clip: 230823 - Chad Lamb: Don't Make Friends Into Enemies: Preserving Relationships
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZtZXccHRN_A
 ========================================
 
 Description:

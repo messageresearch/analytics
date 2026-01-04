@@ -4,13 +4,14 @@ START OF FILE: 2024-01-02 - 231231a - Chad Lamb Our Part in the Resurrection - C
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-02
-Title:   231231a - Chad Lamb: Our Part in the Resurrection
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Q1epliNvY94
+Date:     2024-01-02
+Title:    231231a - Chad Lamb: Our Part in the Resurrection
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Easter Program
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q1epliNvY94
 ========================================
 
 Description:

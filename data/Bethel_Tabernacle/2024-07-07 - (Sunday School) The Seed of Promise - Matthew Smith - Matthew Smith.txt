@@ -4,13 +4,14 @@ START OF FILE: 2024-07-07 - (Sunday School) The Seed of Promise - Matthew Smith 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-07
-Title:   (Sunday School) The Seed of Promise - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=W3ThIP_-K_o
+Date:     2024-07-07
+Title:    (Sunday School) The Seed of Promise - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=W3ThIP_-K_o
 ========================================
 
 Description:

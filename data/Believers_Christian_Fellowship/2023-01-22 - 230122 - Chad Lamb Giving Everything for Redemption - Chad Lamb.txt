@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - 230122 - Chad Lamb Giving Everything for Redemption 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   230122 - Chad Lamb: Giving Everything for Redemption
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=koI_xG_uhvs
+Date:     2023-01-22
+Title:    230122 - Chad Lamb: Giving Everything for Redemption
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=koI_xG_uhvs
 ========================================
 
 Description:

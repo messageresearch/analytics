@@ -4,13 +4,14 @@ START OF FILE: 2021-08-01 - Onward and Upward Into Christ - Jason Watkins - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-01
-Title:   Onward and Upward Into Christ - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pOy18VVZLXE
+Date:     2021-08-01
+Title:    Onward and Upward Into Christ - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=pOy18VVZLXE
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2021-08-15 - Pastor Henry Simmons Giving - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-15
-Title:   Pastor Henry Simmons: "Giving"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Sn0XPuHkyUo
+Date:     2021-08-15
+Title:    Pastor Henry Simmons: "Giving"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=Sn0XPuHkyUo
 ========================================
 
 Description:

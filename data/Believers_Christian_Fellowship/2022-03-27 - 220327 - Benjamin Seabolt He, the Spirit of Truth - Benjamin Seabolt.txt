@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - 220327 - Benjamin Seabolt He, the Spirit of Truth - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   220327 - Benjamin Seabolt: He, the Spirit of Truth
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XK4aVi-xmmE
+Date:     2022-03-27
+Title:    220327 - Benjamin Seabolt: He, the Spirit of Truth
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=XK4aVi-xmmE
 ========================================
 
 Description:

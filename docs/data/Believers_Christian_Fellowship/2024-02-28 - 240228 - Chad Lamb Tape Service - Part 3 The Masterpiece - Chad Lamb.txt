@@ -4,13 +4,14 @@ START OF FILE: 2024-02-28 - 240228 - Chad Lamb Tape Service - Part 3 The Masterp
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-28
-Title:   240228 - Chad Lamb: Tape Service - Part 3: The Masterpiece
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WA4tEHwvAUQ
+Date:     2024-02-28
+Title:    240228 - Chad Lamb: Tape Service - Part 3: The Masterpiece
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=WA4tEHwvAUQ
 ========================================
 
 Description:

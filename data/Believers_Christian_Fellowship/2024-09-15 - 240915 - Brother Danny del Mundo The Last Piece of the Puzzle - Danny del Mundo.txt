@@ -4,13 +4,14 @@ START OF FILE: 2024-09-15 - 240915 - Brother Danny del Mundo The Last Piece of t
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-15
-Title:   240915 - Brother Danny del Mundo: The Last Piece of the Puzzle
-Speaker: Danny del Mundo
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7BlprT4vRlk
+Date:     2024-09-15
+Title:    240915 - Brother Danny del Mundo: The Last Piece of the Puzzle
+Speaker:  Danny del Mundo
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=7BlprT4vRlk
 ========================================
 
 Description:

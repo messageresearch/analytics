@@ -4,13 +4,14 @@ START OF FILE: 2024-02-18 - Strengthen The Feeble Knees - Jason DeMars - Jason D
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-18
-Title:   Strengthen The Feeble Knees - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0wIRMYSOTt8
+Date:     2024-02-18
+Title:    Strengthen The Feeble Knees - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=0wIRMYSOTt8
 ========================================
 
 Description:

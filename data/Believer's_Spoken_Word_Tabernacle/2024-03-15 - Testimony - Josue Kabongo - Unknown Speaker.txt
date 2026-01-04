@@ -4,13 +4,14 @@ START OF FILE: 2024-03-15 - Testimony - Josue Kabongo - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-15
-Title:   Testimony - Josue Kabongo
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=88Cg7ALkFrI
+Date:     2024-03-15
+Title:    Testimony - Josue Kabongo
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Testimony Service
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=88Cg7ALkFrI
 ========================================
 
 Description:

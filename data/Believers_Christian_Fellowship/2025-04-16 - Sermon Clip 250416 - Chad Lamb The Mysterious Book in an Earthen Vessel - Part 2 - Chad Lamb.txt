@@ -4,13 +4,14 @@ START OF FILE: 2025-04-16 - Sermon Clip 250416 - Chad Lamb The Mysterious Book i
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-16
-Title:   Sermon Clip: 250416 - Chad Lamb: The Mysterious Book in an Earthen Vessel - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=r_aRT0FSfmw
+Date:     2025-04-16
+Title:    Sermon Clip: 250416 - Chad Lamb: The Mysterious Book in an Earthen Vessel - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=r_aRT0FSfmw
 ========================================
 
 Description:

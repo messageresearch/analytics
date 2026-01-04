@@ -4,13 +4,14 @@ START OF FILE: 2023-02-26 - (Sunday School) 230226 - Joe Howdeshell Faith Is The
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-26
-Title:   (Sunday School) 230226 - Joe Howdeshell: Faith Is The Victory - Joe Howdeshell
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YIOYxub5BQc
+Date:     2023-02-26
+Title:    (Sunday School) 230226 - Joe Howdeshell: Faith Is The Victory - Joe Howdeshell
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=YIOYxub5BQc
 ========================================
 
 Description:

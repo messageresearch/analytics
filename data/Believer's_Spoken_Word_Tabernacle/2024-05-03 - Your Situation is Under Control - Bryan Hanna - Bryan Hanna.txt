@@ -4,13 +4,14 @@ START OF FILE: 2024-05-03 - Your Situation is Under Control - Bryan Hanna - Brya
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-03
-Title:   Your Situation is Under Control - Bryan Hanna
-Speaker: Bryan Hanna
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2eJ1TzPMnfQ
+Date:     2024-05-03
+Title:    Your Situation is Under Control - Bryan Hanna
+Speaker:  Bryan Hanna
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=2eJ1TzPMnfQ
 ========================================
 
 Description:

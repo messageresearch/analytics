@@ -4,13 +4,14 @@ START OF FILE: 2020-10-07 - 201007 - Kyle Wiechart In Step with Our Shepherd - K
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-07
-Title:   201007 - Kyle Wiechart: In Step with Our Shepherd
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2vwz5SbXoVQ
+Date:     2020-10-07
+Title:    201007 - Kyle Wiechart: In Step with Our Shepherd
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=2vwz5SbXoVQ
 ========================================
 
 Description:

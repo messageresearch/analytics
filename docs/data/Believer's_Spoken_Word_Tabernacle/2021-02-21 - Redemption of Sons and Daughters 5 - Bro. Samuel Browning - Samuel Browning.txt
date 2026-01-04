@@ -4,13 +4,14 @@ START OF FILE: 2021-02-21 - Redemption of Sons and Daughters 5 - Bro. Samuel Bro
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-21
-Title:   Redemption of Sons and Daughters 5 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HRZT7vv0ecY
+Date:     2021-02-21
+Title:    Redemption of Sons and Daughters 5 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=HRZT7vv0ecY
 ========================================
 
 TRANSCRIPT

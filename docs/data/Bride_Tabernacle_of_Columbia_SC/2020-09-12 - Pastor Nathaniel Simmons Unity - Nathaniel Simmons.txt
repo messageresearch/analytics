@@ -4,13 +4,14 @@ START OF FILE: 2020-09-12 - Pastor Nathaniel Simmons Unity - Nathaniel Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-12
-Title:   Pastor Nathaniel Simmons: "Unity"
-Speaker: Nathaniel Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nKShUibRLDk
+Date:     2020-09-12
+Title:    Pastor Nathaniel Simmons: "Unity"
+Speaker:  Nathaniel Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=nKShUibRLDk
 ========================================
 
 Description:

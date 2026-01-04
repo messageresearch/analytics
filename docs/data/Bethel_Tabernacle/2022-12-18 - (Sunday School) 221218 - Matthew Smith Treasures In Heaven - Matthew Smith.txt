@@ -4,13 +4,14 @@ START OF FILE: 2022-12-18 - (Sunday School) 221218 - Matthew Smith Treasures In 
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-18
-Title:   (Sunday School) 221218 - Matthew Smith: Treasures In Heaven
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aalHhs5vj7k
+Date:     2022-12-18
+Title:    (Sunday School) 221218 - Matthew Smith: Treasures In Heaven
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=aalHhs5vj7k
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-02-23 - 200223  - Ben Seabolt The Going of the Bride - Ben S
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-23
-Title:   200223  - Ben Seabolt: The Going of the Bride
-Speaker: Ben Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L9Fh8VnyC-s
+Date:     2020-02-23
+Title:    200223  - Ben Seabolt: The Going of the Bride
+Speaker:  Ben Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=L9Fh8VnyC-s
 ========================================
 
 Description:

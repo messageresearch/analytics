@@ -4,13 +4,14 @@ START OF FILE: 2025-06-04 - Sermon Clip 250604 - Benjamin Seabolt Applying the 6
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-04
-Title:   Sermon Clip: 250604 - Benjamin Seabolt: Applying the 6th Seal to the Gentile Individual-Pt 1: Shiloh
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=4JufrAgpJnE
+Date:     2025-06-04
+Title:    Sermon Clip: 250604 - Benjamin Seabolt: Applying the 6th Seal to the Gentile Individual-Pt 1: Shiloh
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=4JufrAgpJnE
 ========================================
 
 Description:

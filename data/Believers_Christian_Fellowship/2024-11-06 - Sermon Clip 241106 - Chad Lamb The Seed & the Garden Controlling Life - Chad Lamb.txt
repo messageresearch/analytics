@@ -4,13 +4,14 @@ START OF FILE: 2024-11-06 - Sermon Clip 241106 - Chad Lamb The Seed & the Garden
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-06
-Title:   Sermon Clip: 241106 - Chad Lamb: The Seed & the Garden: Controlling Life
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=8-IiQBIC74w
+Date:     2024-11-06
+Title:    Sermon Clip: 241106 - Chad Lamb: The Seed & the Garden: Controlling Life
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=8-IiQBIC74w
 ========================================
 
 Description:

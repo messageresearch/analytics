@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - 220911 - Chad Lamb The Cream of the Crop - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   220911 - Chad Lamb: The Cream of the Crop
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PfN1KS31NP4
+Date:     2022-09-11
+Title:    220911 - Chad Lamb: The Cream of the Crop
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=PfN1KS31NP4
 ========================================
 
 Description:

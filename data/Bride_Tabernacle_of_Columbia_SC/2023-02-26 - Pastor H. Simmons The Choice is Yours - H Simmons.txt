@@ -4,13 +4,14 @@ START OF FILE: 2023-02-26 - Pastor H. Simmons The Choice is Yours - H Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-26
-Title:   Pastor H. Simmons: "The Choice is Yours"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=U6uyk1RWYyM
+Date:     2023-02-26
+Title:    Pastor H. Simmons: "The Choice is Yours"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=U6uyk1RWYyM
 ========================================
 
 Description:

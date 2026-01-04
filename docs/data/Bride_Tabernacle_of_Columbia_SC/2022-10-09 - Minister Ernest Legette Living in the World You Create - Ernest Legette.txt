@@ -4,13 +4,14 @@ START OF FILE: 2022-10-09 - Minister Ernest Legette Living in the World You Crea
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-09
-Title:   Minister Ernest Legette: "Living in the World You Create"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=D4ZrXwZ6jTE
+Date:     2022-10-09
+Title:    Minister Ernest Legette: "Living in the World You Create"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=D4ZrXwZ6jTE
 ========================================
 
 Description:

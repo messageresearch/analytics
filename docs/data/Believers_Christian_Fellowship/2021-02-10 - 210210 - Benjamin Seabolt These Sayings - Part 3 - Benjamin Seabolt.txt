@@ -4,13 +4,14 @@ START OF FILE: 2021-02-10 - 210210 - Benjamin Seabolt These Sayings - Part 3 - B
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-10
-Title:   210210 - Benjamin Seabolt: These Sayings - Part 3
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3VigUk3xcxc
+Date:     2021-02-10
+Title:    210210 - Benjamin Seabolt: These Sayings - Part 3
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=3VigUk3xcxc
 ========================================
 
 Description:

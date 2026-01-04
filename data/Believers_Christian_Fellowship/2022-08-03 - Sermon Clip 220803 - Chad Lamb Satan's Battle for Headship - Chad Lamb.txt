@@ -4,13 +4,14 @@ START OF FILE: 2022-08-03 - Sermon Clip 220803 - Chad Lamb Satan's Battle for He
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-03
-Title:   Sermon Clip: 220803 - Chad Lamb: Satan's Battle for Headship
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=bUdLSXBNW_U
+Date:     2022-08-03
+Title:    Sermon Clip: 220803 - Chad Lamb: Satan's Battle for Headship
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=bUdLSXBNW_U
 ========================================
 
 Description:

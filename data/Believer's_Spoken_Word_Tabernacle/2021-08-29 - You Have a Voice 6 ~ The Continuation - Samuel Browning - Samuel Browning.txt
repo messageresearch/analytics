@@ -4,13 +4,14 @@ START OF FILE: 2021-08-29 - You Have a Voice 6 ~ The Continuation - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-29
-Title:   You Have a Voice 6 ~ The Continuation - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iTx5p1M6Z4A
+Date:     2021-08-29
+Title:    You Have a Voice 6 ~ The Continuation - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=iTx5p1M6Z4A
 ========================================
 
 Description:

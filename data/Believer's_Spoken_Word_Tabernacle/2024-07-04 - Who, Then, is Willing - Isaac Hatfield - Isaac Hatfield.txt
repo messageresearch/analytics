@@ -4,13 +4,14 @@ START OF FILE: 2024-07-04 - Who, Then, is Willing - Isaac Hatfield - Isaac Hatfi
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-04
-Title:   Who, Then, is Willing? - Isaac Hatfield
-Speaker: Isaac Hatfield
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NtIEdJEWo8Q
+Date:     2024-07-04
+Title:    Who, Then, is Willing? - Isaac Hatfield
+Speaker:  Isaac Hatfield
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=NtIEdJEWo8Q
 ========================================
 
 Description:

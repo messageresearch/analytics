@@ -4,13 +4,14 @@ START OF FILE: 2022-08-10 - Sermon Clip 220810  - Chad Lamb The Seven Golden Can
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-10
-Title:   Sermon Clip: 220810  - Chad Lamb: The Seven Golden Candlesticks - Part 2: Beaten Gold
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=8VcuqRdMkk8
+Date:     2022-08-10
+Title:    Sermon Clip: 220810  - Chad Lamb: The Seven Golden Candlesticks - Part 2: Beaten Gold
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=8VcuqRdMkk8
 ========================================
 
 Description:

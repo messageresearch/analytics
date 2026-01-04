@@ -4,13 +4,14 @@ START OF FILE: 2022-09-08 - 092207 - Kidri Diggs Growth By Pruning - Kidri Diggs
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-08
-Title:   092207 - Kidri Diggs: Growth By Pruning
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Q6rBmUZcBZg
+Date:     2022-09-08
+Title:    092207 - Kidri Diggs: Growth By Pruning
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q6rBmUZcBZg
 ========================================
 
 Description:

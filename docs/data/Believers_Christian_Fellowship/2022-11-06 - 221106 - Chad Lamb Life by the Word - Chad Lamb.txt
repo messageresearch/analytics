@@ -4,13 +4,14 @@ START OF FILE: 2022-11-06 - 221106 - Chad Lamb Life by the Word - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-06
-Title:   221106 - Chad Lamb: Life by the Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qsidd2c8EVI
+Date:     2022-11-06
+Title:    221106 - Chad Lamb: Life by the Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=qsidd2c8EVI
 ========================================
 
 Description:

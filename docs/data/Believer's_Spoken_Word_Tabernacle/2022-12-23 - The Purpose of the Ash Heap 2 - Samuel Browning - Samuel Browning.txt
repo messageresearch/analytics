@@ -4,13 +4,14 @@ START OF FILE: 2022-12-23 - The Purpose of the Ash Heap 2 - Samuel Browning - Sa
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-23
-Title:   The Purpose of the Ash Heap 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=25yEuhLHnns
+Date:     2022-12-23
+Title:    The Purpose of the Ash Heap 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=25yEuhLHnns
 ========================================
 
 Description:

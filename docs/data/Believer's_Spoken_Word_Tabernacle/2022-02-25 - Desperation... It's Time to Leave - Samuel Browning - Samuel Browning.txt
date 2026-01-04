@@ -4,13 +4,14 @@ START OF FILE: 2022-02-25 - Desperation... It's Time to Leave - Samuel Browning 
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-25
-Title:   Desperation... It's Time to Leave - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0w9CiIekUxU
+Date:     2022-02-25
+Title:    Desperation... It's Time to Leave - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=0w9CiIekUxU
 ========================================
 
 Description:

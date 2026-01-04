@@ -4,13 +4,14 @@ START OF FILE: 2025-07-06 - Sermon Clip 250706 - Noel Johnson The Mystery of God
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-06
-Title:   Sermon Clip: 250706 - Noel Johnson: The Mystery of God Explored
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-ey6hc_r8Xw
+Date:     2025-07-06
+Title:    Sermon Clip: 250706 - Noel Johnson: The Mystery of God Explored
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-ey6hc_r8Xw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-10-19 - Sermon Clip 221019 - Kyle Wiechart A Walk with Divin
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-19
-Title:   Sermon Clip: 221019 - Kyle Wiechart: A Walk with Divine Love
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DyDxVbBYkig
+Date:     2022-10-19
+Title:    Sermon Clip: 221019 - Kyle Wiechart: A Walk with Divine Love
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DyDxVbBYkig
 ========================================
 
 Description:

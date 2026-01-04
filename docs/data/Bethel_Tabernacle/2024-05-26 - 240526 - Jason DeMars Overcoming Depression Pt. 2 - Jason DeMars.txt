@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - 240526 - Jason DeMars Overcoming Depression Pt. 2 - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   240526 - Jason DeMars: Overcoming Depression Pt. 2
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CbxCzKgI0Hw
+Date:     2024-05-26
+Title:    240526 - Jason DeMars: Overcoming Depression Pt. 2
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=CbxCzKgI0Hw
 ========================================
 
 Description:

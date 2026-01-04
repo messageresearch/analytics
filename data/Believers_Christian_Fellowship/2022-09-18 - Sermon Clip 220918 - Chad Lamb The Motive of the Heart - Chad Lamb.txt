@@ -4,13 +4,14 @@ START OF FILE: 2022-09-18 - Sermon Clip 220918 - Chad Lamb The Motive of the Hea
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-18
-Title:   Sermon Clip: 220918 - Chad Lamb: The Motive of the Heart
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=98CfkwzIW4A
+Date:     2022-09-18
+Title:    Sermon Clip: 220918 - Chad Lamb: The Motive of the Heart
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=98CfkwzIW4A
 ========================================
 
 Description:

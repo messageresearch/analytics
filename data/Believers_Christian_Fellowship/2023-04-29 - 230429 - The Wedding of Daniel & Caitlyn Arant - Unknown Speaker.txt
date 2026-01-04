@@ -4,13 +4,14 @@ START OF FILE: 2023-04-29 - 230429 - The Wedding of Daniel & Caitlyn Arant - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-29
-Title:   230429 - The Wedding of Daniel & Caitlyn Arant
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Wedding
-Language:English
-URL:     https://www.youtube.com/watch?v=ZlMfLTf43K8
+Date:     2023-04-29
+Title:    230429 - The Wedding of Daniel & Caitlyn Arant
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Wedding
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZlMfLTf43K8
 ========================================
 
 Description:

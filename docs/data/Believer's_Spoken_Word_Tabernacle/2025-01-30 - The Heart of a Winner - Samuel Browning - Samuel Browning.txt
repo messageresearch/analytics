@@ -4,13 +4,14 @@ START OF FILE: 2025-01-30 - The Heart of a Winner - Samuel Browning - Samuel Bro
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-30
-Title:   The Heart of a Winner - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gj6IyGXsy-g
+Date:     2025-01-30
+Title:    The Heart of a Winner - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gj6IyGXsy-g
 ========================================
 
 Description:

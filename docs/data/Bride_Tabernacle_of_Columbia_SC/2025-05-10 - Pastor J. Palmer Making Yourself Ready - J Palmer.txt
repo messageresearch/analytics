@@ -4,13 +4,14 @@ START OF FILE: 2025-05-10 - Pastor J. Palmer Making Yourself Ready - J Palmer.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-10
-Title:   Pastor J. Palmer: "Making Yourself Ready"
-Speaker: J Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_sDZCnYxEmc
+Date:     2025-05-10
+Title:    Pastor J. Palmer: "Making Yourself Ready"
+Speaker:  J Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=_sDZCnYxEmc
 ========================================
 
 Description:

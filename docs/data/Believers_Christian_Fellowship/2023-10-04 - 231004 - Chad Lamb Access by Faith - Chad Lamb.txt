@@ -4,13 +4,14 @@ START OF FILE: 2023-10-04 - 231004 - Chad Lamb Access by Faith - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-04
-Title:   231004 - Chad Lamb: Access by Faith
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oc-YAgQQv4k
+Date:     2023-10-04
+Title:    231004 - Chad Lamb: Access by Faith
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=oc-YAgQQv4k
 ========================================
 
 Description:

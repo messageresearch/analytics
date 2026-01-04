@@ -4,13 +4,14 @@ START OF FILE: 2019-03-10 - Serving the Will of God 2 - Bro. Samuel Browning - S
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-10
-Title:   Serving the Will of God 2 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iiywtoU4dlM
+Date:     2019-03-10
+Title:    Serving the Will of God 2 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=iiywtoU4dlM
 ========================================
 
 TRANSCRIPT

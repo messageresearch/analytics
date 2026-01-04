@@ -4,13 +4,14 @@ START OF FILE: 2025-03-12 - Sermon Clip 250312 - Chad Lamb Tape Service - Part 3
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-12
-Title:   Sermon Clip: 250312 - Chad Lamb: Tape Service - Part 3: Is Your Life Worthy of the Gospel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-h7PDYe3Y_s
+Date:     2025-03-12
+Title:    Sermon Clip: 250312 - Chad Lamb: Tape Service - Part 3: Is Your Life Worthy of the Gospel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=-h7PDYe3Y_s
 ========================================
 
 Description:

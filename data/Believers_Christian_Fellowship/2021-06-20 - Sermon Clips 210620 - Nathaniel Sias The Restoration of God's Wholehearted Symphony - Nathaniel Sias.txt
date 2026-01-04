@@ -4,13 +4,14 @@ START OF FILE: 2021-06-20 - Sermon Clips 210620 - Nathaniel Sias The Restoration
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-20
-Title:   Sermon Clips: 210620 - Nathaniel Sias: The Restoration of God's Wholehearted Symphony
-Speaker: Nathaniel Sias
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=TiDTJo3rK2U
+Date:     2021-06-20
+Title:    Sermon Clips: 210620 - Nathaniel Sias: The Restoration of God's Wholehearted Symphony
+Speaker:  Nathaniel Sias
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=TiDTJo3rK2U
 ========================================
 
 Description:

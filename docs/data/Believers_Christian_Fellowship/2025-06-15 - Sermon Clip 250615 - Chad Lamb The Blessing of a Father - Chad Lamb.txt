@@ -4,13 +4,14 @@ START OF FILE: 2025-06-15 - Sermon Clip 250615 - Chad Lamb The Blessing of a Fat
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-15
-Title:   Sermon Clip: 250615 - Chad Lamb: The Blessing of a Father
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DpywJkIA6pY
+Date:     2025-06-15
+Title:    Sermon Clip: 250615 - Chad Lamb: The Blessing of a Father
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DpywJkIA6pY
 ========================================
 
 Description:

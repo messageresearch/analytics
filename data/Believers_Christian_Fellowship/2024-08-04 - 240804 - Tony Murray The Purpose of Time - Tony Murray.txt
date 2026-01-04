@@ -4,13 +4,14 @@ START OF FILE: 2024-08-04 - 240804 - Tony Murray The Purpose of Time - Tony Murr
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-04
-Title:   240804 - Tony Murray: The Purpose of Time
-Speaker: Tony Murray
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bIFQMih6Pm4
+Date:     2024-08-04
+Title:    240804 - Tony Murray: The Purpose of Time
+Speaker:  Tony Murray
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=bIFQMih6Pm4
 ========================================
 
 Description:

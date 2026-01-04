@@ -4,13 +4,14 @@ START OF FILE: 2020-04-26 - 200426 - Chad Lamb The Worst Sickness of All - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-26
-Title:   200426 - Chad Lamb: The Worst Sickness of All
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_OuxgHsy5W8
+Date:     2020-04-26
+Title:    200426 - Chad Lamb: The Worst Sickness of All
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=_OuxgHsy5W8
 ========================================
 
 Description:

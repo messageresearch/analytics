@@ -4,13 +4,14 @@ START OF FILE: 2023-03-22 - Sermon Clip 230322 - Chad Lamb The Battle Is the Lor
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-22
-Title:   Sermon Clip: 230322 - Chad Lamb: The Battle Is the Lord's and Yours
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Y46Rs8YmUwM
+Date:     2023-03-22
+Title:    Sermon Clip: 230322 - Chad Lamb: The Battle Is the Lord's and Yours
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y46Rs8YmUwM
 ========================================
 
 Description:

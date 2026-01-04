@@ -4,13 +4,14 @@ START OF FILE: 2023-10-14 - Pastor H. Simmons Conquering Yourself - H Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-14
-Title:   Pastor H. Simmons: "Conquering Yourself"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4pG6NGsnMF4
+Date:     2023-10-14
+Title:    Pastor H. Simmons: "Conquering Yourself"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=4pG6NGsnMF4
 ========================================
 
 Description:

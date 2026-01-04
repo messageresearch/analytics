@@ -4,13 +4,14 @@ START OF FILE: 2024-05-17 - Sermon Clip 240517 - Allistair Francis Dimensions - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-17
-Title:   Sermon Clip: 240517 - Allistair Francis: Dimensions - Part 1: The Truth About Planes of Existence
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=BY9k6vrLgHs
+Date:     2024-05-17
+Title:    Sermon Clip: 240517 - Allistair Francis: Dimensions - Part 1: The Truth About Planes of Existence
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=BY9k6vrLgHs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2018-05-26 - Get Wisdom - Bro. Jesse Smith - Jesse Smith.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-05-26
-Title:   Get Wisdom - Bro. Jesse Smith
-Speaker: Jesse Smith
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rRxPjQXtxQQ
+Date:     2018-05-26
+Title:    Get Wisdom - Bro. Jesse Smith
+Speaker:  Jesse Smith
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=rRxPjQXtxQQ
 ========================================
 
 TRANSCRIPT

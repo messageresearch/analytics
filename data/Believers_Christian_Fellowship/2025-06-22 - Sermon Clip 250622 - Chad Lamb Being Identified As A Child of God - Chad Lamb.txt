@@ -4,13 +4,14 @@ START OF FILE: 2025-06-22 - Sermon Clip 250622 - Chad Lamb Being Identified As A
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-22
-Title:   Sermon Clip: 250622 - Chad Lamb: Being Identified As A Child of God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=zm2jqilrkDs
+Date:     2025-06-22
+Title:    Sermon Clip: 250622 - Chad Lamb: Being Identified As A Child of God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=zm2jqilrkDs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-05-21 - Brother Caleb Simmons The Love of God - Caleb Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-21
-Title:   Brother Caleb Simmons: "The Love of God"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=k2HiE1v36E0
+Date:     2023-05-21
+Title:    Brother Caleb Simmons: "The Love of God"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=k2HiE1v36E0
 ========================================
 
 Description:

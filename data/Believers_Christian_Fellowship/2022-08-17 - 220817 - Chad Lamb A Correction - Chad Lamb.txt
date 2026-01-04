@@ -4,13 +4,14 @@ START OF FILE: 2022-08-17 - 220817 - Chad Lamb A Correction - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-17
-Title:   220817 - Chad Lamb: A Correction
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=M67aY4q79VE
+Date:     2022-08-17
+Title:    220817 - Chad Lamb: A Correction
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Short Service
+Duration: 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=M67aY4q79VE
 ========================================
 
 Description:

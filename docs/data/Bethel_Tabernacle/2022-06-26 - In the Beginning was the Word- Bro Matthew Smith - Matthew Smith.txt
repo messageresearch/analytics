@@ -4,13 +4,14 @@ START OF FILE: 2022-06-26 - In the Beginning was the Word- Bro Matthew Smith - M
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-26
-Title:   In the Beginning was the Word- Bro Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=89WhvFLUEjc
+Date:     2022-06-26
+Title:    In the Beginning was the Word- Bro Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=89WhvFLUEjc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-09-01 - Sermon Clip 240901 - Chad Lamb Faith Cometh by Heari
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-01
-Title:   Sermon Clip: 240901 - Chad Lamb: Faith Cometh by Hearing
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=6ZYgfLQy9jg
+Date:     2024-09-01
+Title:    Sermon Clip: 240901 - Chad Lamb: Faith Cometh by Hearing
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=6ZYgfLQy9jg
 ========================================
 
 Description:

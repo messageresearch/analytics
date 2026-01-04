@@ -4,13 +4,14 @@ START OF FILE: 2021-04-25 - Built on The Rock pt.1 - Bro. Ronnie Long - Ronnie L
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-25
-Title:   Built on The Rock pt.1 - Bro. Ronnie Long
-Speaker: Ronnie Long
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TpfJp1KniAc
+Date:     2021-04-25
+Title:    Built on The Rock pt.1 - Bro. Ronnie Long
+Speaker:  Ronnie Long
+Church:   Believer's Spoken Word Tabernacle
+Type:     Short Service
+Duration: 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=TpfJp1KniAc
 ========================================
 
 TRANSCRIPT

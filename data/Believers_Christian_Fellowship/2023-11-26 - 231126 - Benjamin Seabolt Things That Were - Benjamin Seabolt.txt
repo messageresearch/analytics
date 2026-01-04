@@ -4,13 +4,14 @@ START OF FILE: 2023-11-26 - 231126 - Benjamin Seabolt Things That Were - Benjami
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-26
-Title:   231126 - Benjamin Seabolt: Things That Were
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yITwV4BbuQA
+Date:     2023-11-26
+Title:    231126 - Benjamin Seabolt: Things That Were
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=yITwV4BbuQA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-29 - 250129 - Emmanuel Cibasu This Sickness Is But for th
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-29
-Title:   250129 - Emmanuel Cibasu: This Sickness Is But for the Glory of God
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=23BzGLdo4UE
+Date:     2025-01-29
+Title:    250129 - Emmanuel Cibasu: This Sickness Is But for the Glory of God
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=23BzGLdo4UE
 ========================================
 
 Description:

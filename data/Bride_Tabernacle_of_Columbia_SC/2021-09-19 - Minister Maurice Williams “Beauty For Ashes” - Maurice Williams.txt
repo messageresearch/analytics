@@ -4,13 +4,14 @@ START OF FILE: 2021-09-19 - Minister Maurice Williams “Beauty For Ashes” - M
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-19
-Title:   Minister Maurice Williams: “Beauty For Ashes”
-Speaker: Maurice Williams
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TwRIgGMRuIc
+Date:     2021-09-19
+Title:    Minister Maurice Williams: “Beauty For Ashes”
+Speaker:  Maurice Williams
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=TwRIgGMRuIc
 ========================================
 
 Description:

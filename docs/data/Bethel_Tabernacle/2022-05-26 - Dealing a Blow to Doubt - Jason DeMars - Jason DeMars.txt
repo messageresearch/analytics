@@ -4,13 +4,14 @@ START OF FILE: 2022-05-26 - Dealing a Blow to Doubt - Jason DeMars - Jason DeMar
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-26
-Title:   Dealing a Blow to Doubt - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lxrX_EIMeIA
+Date:     2022-05-26
+Title:    Dealing a Blow to Doubt - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=lxrX_EIMeIA
 ========================================
 
 Description:

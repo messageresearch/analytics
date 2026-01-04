@@ -4,13 +4,14 @@ START OF FILE: 2022-12-04 - Sermon Clip 221204 - Chad Lamb Peniel - Chad Lamb.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-04
-Title:   Sermon Clip: 221204 - Chad Lamb: Peniel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=t4sh00R8S1Y
+Date:     2022-12-04
+Title:    Sermon Clip: 221204 - Chad Lamb: Peniel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=t4sh00R8S1Y
 ========================================
 
 Description:

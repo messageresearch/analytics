@@ -4,13 +4,14 @@ START OF FILE: 2024-06-30 - Becoming a Witness - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-30
-Title:   Becoming a Witness - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mtTj2zj1BWA
+Date:     2024-06-30
+Title:    Becoming a Witness - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=mtTj2zj1BWA
 ========================================
 
 Description:

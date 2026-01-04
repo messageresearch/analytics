@@ -4,13 +4,14 @@ START OF FILE: 2023-12-20 - 231220 - Chad Lamb True Life and True Death - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-20
-Title:   231220 - Chad Lamb: True Life and True Death
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RkPQ11M15pI
+Date:     2023-12-20
+Title:    231220 - Chad Lamb: True Life and True Death
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=RkPQ11M15pI
 ========================================
 
 Description:

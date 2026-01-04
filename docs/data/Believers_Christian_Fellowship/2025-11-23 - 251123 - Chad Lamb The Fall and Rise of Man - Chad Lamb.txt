@@ -4,13 +4,14 @@ START OF FILE: 2025-11-23 - 251123 - Chad Lamb The Fall and Rise of Man - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-23
-Title:   251123 - Chad Lamb: The Fall and Rise of Man
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bRA_j13Au8s
+Date:     2025-11-23
+Title:    251123 - Chad Lamb: The Fall and Rise of Man
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 3h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=bRA_j13Au8s
 ========================================
 
 Description:

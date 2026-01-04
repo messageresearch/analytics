@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - (Sunday School)240128 - Brad Younce The Importance o
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   (Sunday School)240128 - Brad Younce: The Importance of Prayer
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Je_6tRQuqbs
+Date:     2024-01-28
+Title:    (Sunday School)240128 - Brad Younce: The Importance of Prayer
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=Je_6tRQuqbs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-06-19 - Abide in the Field - Ronnie Long - Ronnie Long.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-19
-Title:   Abide in the Field - Ronnie Long
-Speaker: Ronnie Long
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dAJ35HZ2Rv0
+Date:     2025-06-19
+Title:    Abide in the Field - Ronnie Long
+Speaker:  Ronnie Long
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=dAJ35HZ2Rv0
 ========================================
 
 Description:

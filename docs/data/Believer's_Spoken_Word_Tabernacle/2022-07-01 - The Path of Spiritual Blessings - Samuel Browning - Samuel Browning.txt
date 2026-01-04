@@ -4,13 +4,14 @@ START OF FILE: 2022-07-01 - The Path of Spiritual Blessings - Samuel Browning - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-01
-Title:   The Path of Spiritual Blessings - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6DhJnCVf4EI
+Date:     2022-07-01
+Title:    The Path of Spiritual Blessings - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=6DhJnCVf4EI
 ========================================
 
 Description:

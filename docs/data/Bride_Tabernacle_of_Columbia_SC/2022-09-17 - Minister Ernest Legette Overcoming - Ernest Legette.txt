@@ -4,13 +4,14 @@ START OF FILE: 2022-09-17 - Minister Ernest Legette Overcoming - Ernest Legette.
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-17
-Title:   Minister Ernest Legette: "Overcoming"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=H_ULqfVFXUs
+Date:     2022-09-17
+Title:    Minister Ernest Legette: "Overcoming"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=H_ULqfVFXUs
 ========================================
 
 Description:

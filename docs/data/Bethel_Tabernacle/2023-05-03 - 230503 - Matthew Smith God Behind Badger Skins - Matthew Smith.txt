@@ -4,13 +4,14 @@ START OF FILE: 2023-05-03 - 230503 - Matthew Smith God Behind Badger Skins - Mat
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-03
-Title:   230503 - Matthew Smith: God Behind Badger Skins
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PpVNaXk_mpw
+Date:     2023-05-03
+Title:    230503 - Matthew Smith: God Behind Badger Skins
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=PpVNaXk_mpw
 ========================================
 
 Description:

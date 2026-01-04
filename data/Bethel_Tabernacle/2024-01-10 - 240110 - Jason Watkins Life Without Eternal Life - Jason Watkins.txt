@@ -4,13 +4,14 @@ START OF FILE: 2024-01-10 - 240110 - Jason Watkins Life Without Eternal Life - J
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-10
-Title:   240110 - Jason Watkins: Life Without Eternal Life
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nVf0buZsvCc
+Date:     2024-01-10
+Title:    240110 - Jason Watkins: Life Without Eternal Life
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=nVf0buZsvCc
 ========================================
 
 Description:

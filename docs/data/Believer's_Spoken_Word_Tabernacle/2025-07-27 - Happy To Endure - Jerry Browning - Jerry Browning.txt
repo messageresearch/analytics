@@ -4,13 +4,14 @@ START OF FILE: 2025-07-27 - Happy To Endure - Jerry Browning - Jerry Browning.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-27
-Title:   Happy To Endure - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sGLlVTS53pM
+Date:     2025-07-27
+Title:    Happy To Endure - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=sGLlVTS53pM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-01 - 230101  - Chad Lamb The Changing of Times - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-01
-Title:   230101  - Chad Lamb: The Changing of Times
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6Ct9S6UeUl8
+Date:     2023-01-01
+Title:    230101  - Chad Lamb: The Changing of Times
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=6Ct9S6UeUl8
 ========================================
 
 Description:

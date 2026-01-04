@@ -4,13 +4,14 @@ START OF FILE: 2020-10-11 - Sermon Clips 201011 - Chad Lamb The Greatest Sense -
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-11
-Title:   Sermon Clips: 201011 - Chad Lamb: The Greatest Sense
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=pPi4lvB40hc
+Date:     2020-10-11
+Title:    Sermon Clips: 201011 - Chad Lamb: The Greatest Sense
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=pPi4lvB40hc
 ========================================
 
 Description:

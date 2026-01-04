@@ -4,13 +4,14 @@ START OF FILE: 2023-06-19 - Established - Part 2 - Samuel Browning - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-19
-Title:   Established - Part 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CNNMTj03Bxs
+Date:     2023-06-19
+Title:    Established - Part 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=CNNMTj03Bxs
 ========================================
 
 Description:

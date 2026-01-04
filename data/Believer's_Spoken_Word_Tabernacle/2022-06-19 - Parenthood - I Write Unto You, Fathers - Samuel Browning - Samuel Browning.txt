@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - Parenthood - I Write Unto You, Fathers - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   Parenthood - I Write Unto You, Fathers - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qtHaKE6f9Mc
+Date:     2022-06-19
+Title:    Parenthood - I Write Unto You, Fathers - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=qtHaKE6f9Mc
 ========================================
 
 Description:

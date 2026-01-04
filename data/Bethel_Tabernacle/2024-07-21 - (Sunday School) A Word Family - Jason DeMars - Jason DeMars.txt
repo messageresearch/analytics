@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - (Sunday School) A Word Family - Jason DeMars - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   (Sunday School) A Word Family - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EEyde817Hr4
+Date:     2024-07-21
+Title:    (Sunday School) A Word Family - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=EEyde817Hr4
 ========================================
 
 Description:

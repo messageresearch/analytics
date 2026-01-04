@@ -4,13 +4,14 @@ START OF FILE: 2024-08-04 - (Sunday School) The Sign and Her Voice - Mathew Smit
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-04
-Title:   (Sunday School) The Sign and Her Voice - Mathew Smith
-Speaker: Mathew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q1reHOiiWO4
+Date:     2024-08-04
+Title:    (Sunday School) The Sign and Her Voice - Mathew Smith
+Speaker:  Mathew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=q1reHOiiWO4
 ========================================
 
 Description:

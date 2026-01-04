@@ -4,13 +4,14 @@ START OF FILE: 2022-07-24 - 220724 - Chad Lamb The Conditions for Life - Chad La
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-24
-Title:   220724 - Chad Lamb: The Conditions for Life
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yovRxcPh7dg
+Date:     2022-07-24
+Title:    220724 - Chad Lamb: The Conditions for Life
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=yovRxcPh7dg
 ========================================
 
 Description:

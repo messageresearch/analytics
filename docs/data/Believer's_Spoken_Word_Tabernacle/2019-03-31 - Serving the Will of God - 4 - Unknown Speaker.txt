@@ -4,13 +4,14 @@ START OF FILE: 2019-03-31 - Serving the Will of God - 4 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-31
-Title:   Serving the Will of God - 4
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IJdsdlS5CLM
+Date:     2019-03-31
+Title:    Serving the Will of God - 4
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=IJdsdlS5CLM
 ========================================
 
 TRANSCRIPT

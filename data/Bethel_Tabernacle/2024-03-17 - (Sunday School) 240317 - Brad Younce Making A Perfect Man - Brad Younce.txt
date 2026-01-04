@@ -4,13 +4,14 @@ START OF FILE: 2024-03-17 - (Sunday School) 240317 - Brad Younce Making A Perfec
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-17
-Title:   (Sunday School) 240317 - Brad Younce: Making A Perfect Man
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=s4QdkrPizoA
+Date:     2024-03-17
+Title:    (Sunday School) 240317 - Brad Younce: Making A Perfect Man
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=s4QdkrPizoA
 ========================================
 
 Description:

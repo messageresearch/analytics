@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - 220508 - Chad Lamb Perfect Love - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   220508 - Chad Lamb: Perfect Love
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bL8vRpoqwgE
+Date:     2022-05-08
+Title:    220508 - Chad Lamb: Perfect Love
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=bL8vRpoqwgE
 ========================================
 
 Description:

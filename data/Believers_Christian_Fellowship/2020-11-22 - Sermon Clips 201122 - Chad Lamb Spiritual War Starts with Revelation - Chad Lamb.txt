@@ -4,13 +4,14 @@ START OF FILE: 2020-11-22 - Sermon Clips 201122 - Chad Lamb Spiritual War Starts
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-22
-Title:   Sermon Clips: 201122 - Chad Lamb: Spiritual War Starts with Revelation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=iXSMsJvpjAg
+Date:     2020-11-22
+Title:    Sermon Clips: 201122 - Chad Lamb: Spiritual War Starts with Revelation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=iXSMsJvpjAg
 ========================================
 
 Description:

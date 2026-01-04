@@ -4,13 +4,14 @@ START OF FILE: 2025-05-07 - 250507- Matthew WatkinsA Restored Eden Has Begun - M
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-07
-Title:   250507- Matthew Watkins:A Restored Eden Has Begun
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mZ9cZ1voKA8
+Date:     2025-05-07
+Title:    250507- Matthew Watkins:A Restored Eden Has Begun
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=mZ9cZ1voKA8
 ========================================
 
 Description:

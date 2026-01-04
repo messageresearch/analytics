@@ -4,13 +4,14 @@ START OF FILE: 2022-07-08 - A Man of Like Passions - Nathan Erickson - Nathan Er
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-08
-Title:   A Man of Like Passions - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5EAgjrSUHPE
+Date:     2022-07-08
+Title:    A Man of Like Passions - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=5EAgjrSUHPE
 ========================================
 
 Description:

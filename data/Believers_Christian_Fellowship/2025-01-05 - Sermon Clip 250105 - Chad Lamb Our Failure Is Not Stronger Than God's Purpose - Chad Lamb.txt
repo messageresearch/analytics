@@ -4,13 +4,14 @@ START OF FILE: 2025-01-05 - Sermon Clip 250105 - Chad Lamb Our Failure Is Not St
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-05
-Title:   Sermon Clip: 250105 - Chad Lamb: Our Failure Is Not Stronger Than God's Purpose
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=GVL05n_RcQs
+Date:     2025-01-05
+Title:    Sermon Clip: 250105 - Chad Lamb: Our Failure Is Not Stronger Than God's Purpose
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=GVL05n_RcQs
 ========================================
 
 Description:

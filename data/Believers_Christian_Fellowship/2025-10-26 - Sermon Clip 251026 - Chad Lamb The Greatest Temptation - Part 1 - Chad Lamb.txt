@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - Sermon Clip 251026 - Chad Lamb The Greatest Temptati
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   Sermon Clip: 251026 - Chad Lamb: The Greatest Temptation - Part 1
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=yCH_NuAW5XE
+Date:     2025-10-26
+Title:    Sermon Clip: 251026 - Chad Lamb: The Greatest Temptation - Part 1
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=yCH_NuAW5XE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-07-30 - 250730-Joe HowdeshellNarcissism - Joe Howdeshell.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-30
-Title:   250730-Joe Howdeshell:Narcissism
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QbmwIszzNmk
+Date:     2025-07-30
+Title:    250730-Joe Howdeshell:Narcissism
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=QbmwIszzNmk
 ========================================
 
 Description:

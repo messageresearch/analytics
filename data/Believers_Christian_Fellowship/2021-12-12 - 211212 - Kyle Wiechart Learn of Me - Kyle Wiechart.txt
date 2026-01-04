@@ -4,13 +4,14 @@ START OF FILE: 2021-12-12 - 211212 - Kyle Wiechart Learn of Me - Kyle Wiechart.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-12
-Title:   211212 - Kyle Wiechart: Learn of Me
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=upf1DZ21eUE
+Date:     2021-12-12
+Title:    211212 - Kyle Wiechart: Learn of Me
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=upf1DZ21eUE
 ========================================
 
 Description:

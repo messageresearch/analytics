@@ -4,13 +4,14 @@ START OF FILE: 2022-05-29 - Pastor Henry Simmons It's Your Inheritance - Henry S
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-29
-Title:   Pastor Henry Simmons: "It's Your Inheritance"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=E53fUdhjtv4
+Date:     2022-05-29
+Title:    Pastor Henry Simmons: "It's Your Inheritance"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=E53fUdhjtv4
 ========================================
 
 Description:

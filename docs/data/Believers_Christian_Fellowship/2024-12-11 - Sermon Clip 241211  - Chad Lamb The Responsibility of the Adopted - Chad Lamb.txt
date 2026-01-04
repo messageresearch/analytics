@@ -4,13 +4,14 @@ START OF FILE: 2024-12-11 - Sermon Clip 241211  - Chad Lamb The Responsibility o
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-11
-Title:   Sermon Clip: 241211  - Chad Lamb: The Responsibility of the Adopted
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=6ti2RG8fCIA
+Date:     2024-12-11
+Title:    Sermon Clip: 241211  - Chad Lamb: The Responsibility of the Adopted
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=6ti2RG8fCIA
 ========================================
 
 Description:

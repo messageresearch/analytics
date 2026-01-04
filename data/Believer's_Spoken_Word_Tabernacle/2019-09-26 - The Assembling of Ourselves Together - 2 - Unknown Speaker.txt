@@ -4,13 +4,14 @@ START OF FILE: 2019-09-26 - The Assembling of Ourselves Together - 2 - Unknown S
 
 SERMON DETAILS
 ========================================
-Date:    2019-09-26
-Title:   The Assembling of Ourselves Together - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=C6MJVSJulbU
+Date:     2019-09-26
+Title:    The Assembling of Ourselves Together - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=C6MJVSJulbU
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2020-01-08 - 200108 - Jacek Walach The Unwritten Song of Solomon 
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-08
-Title:   200108 - Jacek Walach: The Unwritten Song of Solomon
-Speaker: Jacek Walach
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jQDNiJe4KjI
+Date:     2020-01-08
+Title:    200108 - Jacek Walach: The Unwritten Song of Solomon
+Speaker:  Jacek Walach
+Church:   Believers Christian Fellowship
+Type:     Song Special
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=jQDNiJe4KjI
 ========================================
 
 Description:

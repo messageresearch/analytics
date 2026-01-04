@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - 230122 - Jason Watkins The Time Of The Unsealing - J
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   230122 - Jason Watkins: The Time Of The Unsealing
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=regEg5dUV5I
+Date:     2023-01-22
+Title:    230122 - Jason Watkins: The Time Of The Unsealing
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=regEg5dUV5I
 ========================================
 
 Description:

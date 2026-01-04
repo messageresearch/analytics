@@ -4,13 +4,14 @@ START OF FILE: 2020-12-20 - Pastor Henry Simmons The Purpose of the Storm - Henr
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-20
-Title:   Pastor Henry Simmons: The Purpose of the Storm
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PFmLOpeR_IY
+Date:     2020-12-20
+Title:    Pastor Henry Simmons: The Purpose of the Storm
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=PFmLOpeR_IY
 ========================================
 
 Description:

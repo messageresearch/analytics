@@ -4,13 +4,14 @@ START OF FILE: 2020-07-19 - 200719 - Chad Lamb Giving to Caesar to Please the Lo
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-19
-Title:   200719 - Chad Lamb: Giving to Caesar to Please the Lord
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VZVWThlONUk
+Date:     2020-07-19
+Title:    200719 - Chad Lamb: Giving to Caesar to Please the Lord
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=VZVWThlONUk
 ========================================
 
 Description:

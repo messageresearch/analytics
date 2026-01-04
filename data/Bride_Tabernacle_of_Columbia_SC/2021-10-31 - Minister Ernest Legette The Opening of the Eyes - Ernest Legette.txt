@@ -4,13 +4,14 @@ START OF FILE: 2021-10-31 - Minister Ernest Legette The Opening of the Eyes - Er
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-31
-Title:   Minister Ernest Legette: "The Opening of the Eyes"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RqTvl_BR1I4
+Date:     2021-10-31
+Title:    Minister Ernest Legette: "The Opening of the Eyes"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=RqTvl_BR1I4
 ========================================
 
 Description:

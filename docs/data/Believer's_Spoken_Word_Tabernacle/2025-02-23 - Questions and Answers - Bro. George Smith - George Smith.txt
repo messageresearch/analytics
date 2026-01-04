@@ -4,13 +4,14 @@ START OF FILE: 2025-02-23 - Questions and Answers - Bro. George Smith - George S
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-23
-Title:   Questions and Answers - Bro. George Smith
-Speaker: George Smith
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sMDgB8l3aAw
+Date:     2025-02-23
+Title:    Questions and Answers - Bro. George Smith
+Speaker:  George Smith
+Church:   Believer's Spoken Word Tabernacle
+Type:     Q&A Session
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=sMDgB8l3aAw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-08-14 - Sermon Clip 240814 - Kyle Wiechart Seasons to Life -
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-14
-Title:   Sermon Clip: 240814 - Kyle Wiechart: Seasons to Life
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=P99Fi9NI6PA
+Date:     2024-08-14
+Title:    Sermon Clip: 240814 - Kyle Wiechart: Seasons to Life
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=P99Fi9NI6PA
 ========================================
 
 Description:

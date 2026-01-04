@@ -4,13 +4,14 @@ START OF FILE: 2021-08-29 - Pastor Henry Simmons Unveiling of God - Henry Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-29
-Title:   Pastor Henry Simmons: "Unveiling of God"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3xOPKHfJUlI
+Date:     2021-08-29
+Title:    Pastor Henry Simmons: "Unveiling of God"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=3xOPKHfJUlI
 ========================================
 
 Description:

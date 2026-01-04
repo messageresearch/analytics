@@ -4,13 +4,14 @@ START OF FILE: 2023-07-23 - The Stories of Grace - Jerry Browning - Jerry Browni
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-23
-Title:   The Stories of Grace - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3adQ96Op-uc
+Date:     2023-07-23
+Title:    The Stories of Grace - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=3adQ96Op-uc
 ========================================
 
 Description:

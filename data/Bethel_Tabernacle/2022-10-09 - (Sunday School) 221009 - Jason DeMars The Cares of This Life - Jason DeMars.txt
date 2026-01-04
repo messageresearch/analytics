@@ -4,13 +4,14 @@ START OF FILE: 2022-10-09 - (Sunday School) 221009 - Jason DeMars The Cares of T
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-09
-Title:   (Sunday School) 221009 - Jason DeMars: The Cares of This Life
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kJRZ-kaXZo4
+Date:     2022-10-09
+Title:    (Sunday School) 221009 - Jason DeMars: The Cares of This Life
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=kJRZ-kaXZo4
 ========================================
 
 Description:

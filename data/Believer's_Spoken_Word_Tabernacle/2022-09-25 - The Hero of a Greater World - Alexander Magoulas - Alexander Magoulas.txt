@@ -4,13 +4,14 @@ START OF FILE: 2022-09-25 - The Hero of a Greater World - Alexander Magoulas - A
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-25
-Title:   The Hero of a Greater World - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=b8JejGWiwwU
+Date:     2022-09-25
+Title:    The Hero of a Greater World - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=b8JejGWiwwU
 ========================================
 
 Description:

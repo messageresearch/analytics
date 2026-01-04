@@ -4,13 +4,14 @@ START OF FILE: 2023-09-11 - Larger Than Life - David Hoover - David Hoover.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-11
-Title:   Larger Than Life - David Hoover
-Speaker: David Hoover
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=w7nKR_wF8vk
+Date:     2023-09-11
+Title:    Larger Than Life - David Hoover
+Speaker:  David Hoover
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=w7nKR_wF8vk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-07-21 - Being Changed Pt.4 - Matthew Watkins - Matthew Watki
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-21
-Title:   Being Changed Pt.4 - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-wvQmxWEx7U
+Date:     2022-07-21
+Title:    Being Changed Pt.4 - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=-wvQmxWEx7U
 ========================================
 
 Description:

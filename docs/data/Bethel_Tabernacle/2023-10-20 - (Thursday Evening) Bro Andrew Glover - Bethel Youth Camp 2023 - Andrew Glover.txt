@@ -4,13 +4,14 @@ START OF FILE: 2023-10-20 - (Thursday Evening) Bro Andrew Glover - Bethel Youth 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-20
-Title:   (Thursday Evening) Bro Andrew Glover - Bethel Youth Camp 2023
-Speaker: Andrew Glover
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=85xrhKPsmX8
+Date:     2023-10-20
+Title:    (Thursday Evening) Bro Andrew Glover - Bethel Youth Camp 2023
+Speaker:  Andrew Glover
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=85xrhKPsmX8
 ========================================
 
 Description:

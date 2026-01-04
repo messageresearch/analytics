@@ -4,13 +4,14 @@ START OF FILE: 2023-02-12 - Sermon Clip 230212 - Daniel Andes Things That Are To
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-12
-Title:   Sermon Clip: 230212 - Daniel Andes: Things That Are To Be
-Speaker: Daniel Andes
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=0iyQ3-5-as8
+Date:     2023-02-12
+Title:    Sermon Clip: 230212 - Daniel Andes: Things That Are To Be
+Speaker:  Daniel Andes
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=0iyQ3-5-as8
 ========================================
 
 Description:

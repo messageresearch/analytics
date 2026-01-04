@@ -4,13 +4,14 @@ START OF FILE: 2024-07-11 - Staying on Track - Samuel Browning - Samuel Browning
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-11
-Title:   Staying on Track - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qlLSR__P_FE
+Date:     2024-07-11
+Title:    Staying on Track - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=qlLSR__P_FE
 ========================================
 
 Description:

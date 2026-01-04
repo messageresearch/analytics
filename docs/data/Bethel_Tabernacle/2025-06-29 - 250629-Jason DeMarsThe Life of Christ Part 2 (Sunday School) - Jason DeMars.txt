@@ -4,13 +4,14 @@ START OF FILE: 2025-06-29 - 250629-Jason DeMarsThe Life of Christ Part 2 (Sunday
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-29
-Title:   250629-Jason DeMars:The Life of Christ Part 2 (Sunday School)
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Yue9xMCdCPQ
+Date:     2025-06-29
+Title:    250629-Jason DeMars:The Life of Christ Part 2 (Sunday School)
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=Yue9xMCdCPQ
 ========================================
 
 Description:

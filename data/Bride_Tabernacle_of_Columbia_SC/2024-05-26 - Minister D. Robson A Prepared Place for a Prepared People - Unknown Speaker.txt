@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - Minister D. Robson A Prepared Place for a Prepared P
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   Minister D. Robson: "A Prepared Place for a Prepared People"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r1o-1QJp2o0
+Date:     2024-05-26
+Title:    Minister D. Robson: "A Prepared Place for a Prepared People"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=r1o-1QJp2o0
 ========================================
 
 Description:

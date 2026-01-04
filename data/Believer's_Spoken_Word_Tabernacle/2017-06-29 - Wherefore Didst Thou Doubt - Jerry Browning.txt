@@ -4,13 +4,14 @@ START OF FILE: 2017-06-29 - Wherefore Didst Thou Doubt - Jerry Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2017-06-29
-Title:   Wherefore Didst Thou Doubt?
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Qjn3rHfaiG8
+Date:     2017-06-29
+Title:    Wherefore Didst Thou Doubt?
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=Qjn3rHfaiG8
 ========================================
 
 Description:

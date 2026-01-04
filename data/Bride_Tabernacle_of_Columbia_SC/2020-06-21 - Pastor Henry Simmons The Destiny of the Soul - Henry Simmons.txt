@@ -4,13 +4,14 @@ START OF FILE: 2020-06-21 - Pastor Henry Simmons The Destiny of the Soul - Henry
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-21
-Title:   Pastor Henry Simmons: The Destiny of the Soul
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gO1ncVle3Xg
+Date:     2020-06-21
+Title:    Pastor Henry Simmons: The Destiny of the Soul
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=gO1ncVle3Xg
 ========================================
 
 Description:

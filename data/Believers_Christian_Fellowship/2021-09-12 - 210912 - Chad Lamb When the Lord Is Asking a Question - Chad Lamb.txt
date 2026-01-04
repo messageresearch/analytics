@@ -4,13 +4,14 @@ START OF FILE: 2021-09-12 - 210912 - Chad Lamb When the Lord Is Asking a Questio
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-12
-Title:   210912 - Chad Lamb: When the Lord Is Asking a Question
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kyB-y8V5po0
+Date:     2021-09-12
+Title:    210912 - Chad Lamb: When the Lord Is Asking a Question
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=kyB-y8V5po0
 ========================================
 
 Description:

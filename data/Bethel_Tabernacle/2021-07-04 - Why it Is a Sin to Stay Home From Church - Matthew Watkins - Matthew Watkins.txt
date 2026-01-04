@@ -4,13 +4,14 @@ START OF FILE: 2021-07-04 - Why it Is a Sin to Stay Home From Church - Matthew W
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-04
-Title:   Why it Is a Sin to Stay Home From Church - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ekpSKXc02-E
+Date:     2021-07-04
+Title:    Why it Is a Sin to Stay Home From Church - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=ekpSKXc02-E
 ========================================
 
 TRANSCRIPT

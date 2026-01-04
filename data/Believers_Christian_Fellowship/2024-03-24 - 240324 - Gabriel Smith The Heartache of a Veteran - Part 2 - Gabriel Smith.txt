@@ -4,13 +4,14 @@ START OF FILE: 2024-03-24 - 240324 - Gabriel Smith The Heartache of a Veteran - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-24
-Title:   240324 - Gabriel Smith: The Heartache of a Veteran - Part 2
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UwUfqz_1NdQ
+Date:     2024-03-24
+Title:    240324 - Gabriel Smith: The Heartache of a Veteran - Part 2
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=UwUfqz_1NdQ
 ========================================
 
 Description:

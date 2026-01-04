@@ -4,13 +4,14 @@ START OF FILE: 2023-09-06 - 230906 - Chad Lamb The Visible Declaring the Invisib
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-06
-Title:   230906 - Chad Lamb: The Visible Declaring the Invisible
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aK9zh3Fgv6w
+Date:     2023-09-06
+Title:    230906 - Chad Lamb: The Visible Declaring the Invisible
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=aK9zh3Fgv6w
 ========================================
 
 Description:

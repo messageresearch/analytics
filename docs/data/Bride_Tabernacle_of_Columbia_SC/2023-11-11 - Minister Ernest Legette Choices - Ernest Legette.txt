@@ -4,13 +4,14 @@ START OF FILE: 2023-11-11 - Minister Ernest Legette Choices - Ernest Legette.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-11
-Title:   Minister Ernest Legette: "Choices"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ejpkEzE96mM
+Date:     2023-11-11
+Title:    Minister Ernest Legette: "Choices"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=ejpkEzE96mM
 ========================================
 
 Description:

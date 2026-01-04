@@ -4,13 +4,14 @@ START OF FILE: 2021-05-02 - 210502 - Religion Versus Relationship - Part 2 Misun
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-02
-Title:   210502 - Religion Versus Relationship - Part 2: Misunderstood Mercy
-Speaker: Religion Versus Relationship
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=W_B91_NN2rQ
+Date:     2021-05-02
+Title:    210502 - Religion Versus Relationship - Part 2: Misunderstood Mercy
+Speaker:  Religion Versus Relationship
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=W_B91_NN2rQ
 ========================================
 
 Description:

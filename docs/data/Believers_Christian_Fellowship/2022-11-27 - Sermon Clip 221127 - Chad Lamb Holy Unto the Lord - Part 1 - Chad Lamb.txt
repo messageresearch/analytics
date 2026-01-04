@@ -4,13 +4,14 @@ START OF FILE: 2022-11-27 - Sermon Clip 221127 - Chad Lamb Holy Unto the Lord - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-27
-Title:   Sermon Clip: 221127 - Chad Lamb: Holy Unto the Lord - Part 1
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=2IablfqwvpU
+Date:     2022-11-27
+Title:    Sermon Clip: 221127 - Chad Lamb: Holy Unto the Lord - Part 1
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=2IablfqwvpU
 ========================================
 
 Description:

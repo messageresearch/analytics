@@ -4,13 +4,14 @@ START OF FILE: 2022-11-20 - 221120 - Allistair Francis As I Think in My Heart, S
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-20
-Title:   221120 - Allistair Francis: As I Think in My Heart, So I Am
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8kUWlIKh0pc
+Date:     2022-11-20
+Title:    221120 - Allistair Francis: As I Think in My Heart, So I Am
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=8kUWlIKh0pc
 ========================================
 
 Description:

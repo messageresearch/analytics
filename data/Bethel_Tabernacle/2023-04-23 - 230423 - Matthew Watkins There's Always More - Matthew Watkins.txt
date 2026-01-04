@@ -4,13 +4,14 @@ START OF FILE: 2023-04-23 - 230423 - Matthew Watkins There's Always More - Matth
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-23
-Title:   230423 - Matthew Watkins: There's Always More
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tdrd93tJ5YE
+Date:     2023-04-23
+Title:    230423 - Matthew Watkins: There's Always More
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=tdrd93tJ5YE
 ========================================
 
 Description:

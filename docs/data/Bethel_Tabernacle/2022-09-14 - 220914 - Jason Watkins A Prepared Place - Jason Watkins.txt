@@ -4,13 +4,14 @@ START OF FILE: 2022-09-14 - 220914 - Jason Watkins A Prepared Place - Jason Watk
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-14
-Title:   220914 - Jason Watkins: A Prepared Place
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d8PKOiEE8fw
+Date:     2022-09-14
+Title:    220914 - Jason Watkins: A Prepared Place
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=d8PKOiEE8fw
 ========================================
 
 Description:

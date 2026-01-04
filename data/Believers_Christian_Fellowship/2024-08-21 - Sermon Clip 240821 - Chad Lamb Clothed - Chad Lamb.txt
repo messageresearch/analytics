@@ -4,13 +4,14 @@ START OF FILE: 2024-08-21 - Sermon Clip 240821 - Chad Lamb Clothed - Chad Lamb.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-21
-Title:   Sermon Clip: 240821 - Chad Lamb: Clothed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=hJKf8AHbgTA
+Date:     2024-08-21
+Title:    Sermon Clip: 240821 - Chad Lamb: Clothed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=hJKf8AHbgTA
 ========================================
 
 Description:

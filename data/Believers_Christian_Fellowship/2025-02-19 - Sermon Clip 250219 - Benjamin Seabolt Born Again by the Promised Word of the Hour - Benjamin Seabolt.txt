@@ -4,13 +4,14 @@ START OF FILE: 2025-02-19 - Sermon Clip 250219 - Benjamin Seabolt Born Again by 
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-19
-Title:   Sermon Clip: 250219 - Benjamin Seabolt: Born Again by the Promised Word of the Hour
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=nDtLDj8bTq4
+Date:     2025-02-19
+Title:    Sermon Clip: 250219 - Benjamin Seabolt: Born Again by the Promised Word of the Hour
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=nDtLDj8bTq4
 ========================================
 
 Description:

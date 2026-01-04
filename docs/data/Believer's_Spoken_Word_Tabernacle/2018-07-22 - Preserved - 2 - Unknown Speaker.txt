@@ -4,13 +4,14 @@ START OF FILE: 2018-07-22 - Preserved - 2 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-07-22
-Title:   Preserved - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gOYowbNMIzA
+Date:     2018-07-22
+Title:    Preserved - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=gOYowbNMIzA
 ========================================
 
 TRANSCRIPT

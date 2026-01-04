@@ -4,13 +4,14 @@ START OF FILE: 2022-11-16 - Sermon Clips 221116 - Daniel White Restoration of Tr
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-16
-Title:   Sermon Clips: 221116 - Daniel White: Restoration of True Worship
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_eeTFxWj2ag
+Date:     2022-11-16
+Title:    Sermon Clips: 221116 - Daniel White: Restoration of True Worship
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_eeTFxWj2ag
 ========================================
 
 Description:

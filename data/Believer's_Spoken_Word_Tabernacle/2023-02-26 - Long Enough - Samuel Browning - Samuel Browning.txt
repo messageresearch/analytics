@@ -4,13 +4,14 @@ START OF FILE: 2023-02-26 - Long Enough - Samuel Browning - Samuel Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-26
-Title:   Long Enough - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o2UX2r-GKiE
+Date:     2023-02-26
+Title:    Long Enough - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=o2UX2r-GKiE
 ========================================
 
 Description:

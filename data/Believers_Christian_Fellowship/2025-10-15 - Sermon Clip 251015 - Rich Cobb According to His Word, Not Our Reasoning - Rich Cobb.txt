@@ -4,13 +4,14 @@ START OF FILE: 2025-10-15 - Sermon Clip 251015 - Rich Cobb According to His Word
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-15
-Title:   Sermon Clip: 251015 - Rich Cobb: According to His Word, Not Our Reasoning
-Speaker: Rich Cobb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_aaS-EGdnyM
+Date:     2025-10-15
+Title:    Sermon Clip: 251015 - Rich Cobb: According to His Word, Not Our Reasoning
+Speaker:  Rich Cobb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=_aaS-EGdnyM
 ========================================
 
 Description:

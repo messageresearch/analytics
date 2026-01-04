@@ -4,13 +4,14 @@ START OF FILE: 2025-10-12 - 251012 - Gabriel Smith Loyalty - Gabriel Smith.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-12
-Title:   251012 - Gabriel Smith: Loyalty
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JTFE_Qb4GdI
+Date:     2025-10-12
+Title:    251012 - Gabriel Smith: Loyalty
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=JTFE_Qb4GdI
 ========================================
 
 Description:

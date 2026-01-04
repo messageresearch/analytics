@@ -4,13 +4,14 @@ START OF FILE: 2023-05-17 - Sermon Clip 230517 - Isiah Brooks Receiving the End 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-17
-Title:   Sermon Clip: 230517 - Isiah Brooks: Receiving the End of Your Faith
-Speaker: Isiah Brooks
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ELm3RXiHd0E
+Date:     2023-05-17
+Title:    Sermon Clip: 230517 - Isiah Brooks: Receiving the End of Your Faith
+Speaker:  Isiah Brooks
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=ELm3RXiHd0E
 ========================================
 
 Description:

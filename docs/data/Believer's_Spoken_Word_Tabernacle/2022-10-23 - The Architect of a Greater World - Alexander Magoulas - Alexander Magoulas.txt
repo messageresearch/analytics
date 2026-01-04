@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - The Architect of a Greater World - Alexander Magoula
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   The Architect of a Greater World - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9lSsvXfTNgI
+Date:     2022-10-23
+Title:    The Architect of a Greater World - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=9lSsvXfTNgI
 ========================================
 
 TRANSCRIPT

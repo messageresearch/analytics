@@ -4,13 +4,14 @@ START OF FILE: 2024-03-17 - Pastor H. Simmons The End of the World - H Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-17
-Title:   Pastor H. Simmons: "The End of the World"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ypayxaidTbQ
+Date:     2024-03-17
+Title:    Pastor H. Simmons: "The End of the World"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=ypayxaidTbQ
 ========================================
 
 Description:

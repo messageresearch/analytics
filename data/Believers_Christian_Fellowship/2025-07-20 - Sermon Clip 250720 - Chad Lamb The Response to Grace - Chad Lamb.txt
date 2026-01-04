@@ -4,13 +4,14 @@ START OF FILE: 2025-07-20 - Sermon Clip 250720 - Chad Lamb The Response to Grace
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-20
-Title:   Sermon Clip: 250720 - Chad Lamb: The Response to Grace
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=STaTyNBCxT4
+Date:     2025-07-20
+Title:    Sermon Clip: 250720 - Chad Lamb: The Response to Grace
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=STaTyNBCxT4
 ========================================
 
 Description:

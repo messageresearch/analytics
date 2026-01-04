@@ -4,13 +4,14 @@ START OF FILE: 2020-09-13 - An Angel to Keep Thee in The Way - Bro. Andrew Glove
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-13
-Title:   An Angel to Keep Thee in The Way - Bro. Andrew Glover
-Speaker: Andrew Glover
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mulEjVwDf3c
+Date:     2020-09-13
+Title:    An Angel to Keep Thee in The Way - Bro. Andrew Glover
+Speaker:  Andrew Glover
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=mulEjVwDf3c
 ========================================
 
 TRANSCRIPT

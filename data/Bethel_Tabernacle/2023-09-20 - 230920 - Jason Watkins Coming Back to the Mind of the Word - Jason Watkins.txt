@@ -4,13 +4,14 @@ START OF FILE: 2023-09-20 - 230920 - Jason Watkins Coming Back to the Mind of th
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-20
-Title:   230920 - Jason Watkins: Coming Back to the Mind of the Word
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6fP5pQUcWWY
+Date:     2023-09-20
+Title:    230920 - Jason Watkins: Coming Back to the Mind of the Word
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=6fP5pQUcWWY
 ========================================
 
 Description:

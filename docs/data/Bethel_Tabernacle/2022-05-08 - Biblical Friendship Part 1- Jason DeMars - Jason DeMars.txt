@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - Biblical Friendship Part 1- Jason DeMars - Jason DeM
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   Biblical Friendship Part 1- Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gz6g7-joDyM
+Date:     2022-05-08
+Title:    Biblical Friendship Part 1- Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gz6g7-joDyM
 ========================================
 
 Description:

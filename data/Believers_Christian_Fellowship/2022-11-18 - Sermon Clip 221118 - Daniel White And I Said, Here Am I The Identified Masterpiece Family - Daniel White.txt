@@ -4,13 +4,14 @@ START OF FILE: 2022-11-18 - Sermon Clip 221118 - Daniel White And I Said, Here A
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-18
-Title:   Sermon Clip: 221118 - Daniel White: And I Said, "Here Am I": The Identified Masterpiece Family
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=zlQcONN-6q0
+Date:     2022-11-18
+Title:    Sermon Clip: 221118 - Daniel White: And I Said, "Here Am I": The Identified Masterpiece Family
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=zlQcONN-6q0
 ========================================
 
 Description:

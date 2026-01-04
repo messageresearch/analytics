@@ -4,13 +4,14 @@ START OF FILE: 2025-12-17 - Sermon Clip 251217 - Chad Lamb Chosen To Carry the M
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-17
-Title:   Sermon Clip: 251217 - Chad Lamb: Chosen To Carry the Message
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=2RyzcG2zRL4
+Date:     2025-12-17
+Title:    Sermon Clip: 251217 - Chad Lamb: Chosen To Carry the Message
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=2RyzcG2zRL4
 ========================================
 
 Description:

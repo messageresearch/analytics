@@ -4,13 +4,14 @@ START OF FILE: 2024-08-07 - Sermon Clip 240807 - Emmanuel Cibasu We Desire to Se
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-07
-Title:   Sermon Clip: 240807 - Emmanuel Cibasu: We Desire to See Jesus (In the Way of Eternal Life)
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=kRm37m3tyy0
+Date:     2024-08-07
+Title:    Sermon Clip: 240807 - Emmanuel Cibasu: We Desire to See Jesus (In the Way of Eternal Life)
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=kRm37m3tyy0
 ========================================
 
 Description:

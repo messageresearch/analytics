@@ -4,13 +4,14 @@ START OF FILE: 2023-09-17 - 230917 - Chad Lamb Healing the Womb - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-17
-Title:   230917 - Chad Lamb: Healing the Womb
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JPoMe1cu1Ic
+Date:     2023-09-17
+Title:    230917 - Chad Lamb: Healing the Womb
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=JPoMe1cu1Ic
 ========================================
 
 Description:

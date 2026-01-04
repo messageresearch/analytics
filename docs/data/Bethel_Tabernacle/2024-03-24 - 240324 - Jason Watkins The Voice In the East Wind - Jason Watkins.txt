@@ -4,13 +4,14 @@ START OF FILE: 2024-03-24 - 240324 - Jason Watkins The Voice In the East Wind - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-24
-Title:   240324 - Jason Watkins: The Voice In the East Wind
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=a0dvuFcMQpk
+Date:     2024-03-24
+Title:    240324 - Jason Watkins: The Voice In the East Wind
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=a0dvuFcMQpk
 ========================================
 
 Description:

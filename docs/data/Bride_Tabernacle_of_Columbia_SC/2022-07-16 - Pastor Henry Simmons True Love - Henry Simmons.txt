@@ -4,13 +4,14 @@ START OF FILE: 2022-07-16 - Pastor Henry Simmons True Love - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-16
-Title:   Pastor Henry Simmons: "True Love"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zxZJgDFjBYE
+Date:     2022-07-16
+Title:    Pastor Henry Simmons: "True Love"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=zxZJgDFjBYE
 ========================================
 
 Description:

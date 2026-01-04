@@ -4,13 +4,14 @@ START OF FILE: 2023-03-12 - Look On the Bright Side - Nathan Erickson - Nathan E
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-12
-Title:   Look On the Bright Side - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QOLXz6OJ8b0
+Date:     2023-03-12
+Title:    Look On the Bright Side - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=QOLXz6OJ8b0
 ========================================
 
 Description:

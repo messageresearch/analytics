@@ -4,13 +4,14 @@ START OF FILE: 2022-07-20 - Sermon Clip 220720 - Burley Williams What the Devil 
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-20
-Title:   Sermon Clip: 220720 - Burley Williams: What the Devil Has On His Mind
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=66pkEp7sDPw
+Date:     2022-07-20
+Title:    Sermon Clip: 220720 - Burley Williams: What the Devil Has On His Mind
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=66pkEp7sDPw
 ========================================
 
 Description:

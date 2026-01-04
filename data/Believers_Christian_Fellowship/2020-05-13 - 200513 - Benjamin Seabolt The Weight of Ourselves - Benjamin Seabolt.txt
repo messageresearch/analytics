@@ -4,13 +4,14 @@ START OF FILE: 2020-05-13 - 200513 - Benjamin Seabolt The Weight of Ourselves - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-13
-Title:   200513 - Benjamin Seabolt: The Weight of Ourselves
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KEncYyMNl2I
+Date:     2020-05-13
+Title:    200513 - Benjamin Seabolt: The Weight of Ourselves
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=KEncYyMNl2I
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-11-18 - 221118 - Daniel White And I Said, Here Am I The Iden
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-18
-Title:   221118 - Daniel White: And I Said, "Here Am I": The Identified Masterpiece Family
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0UrCRQqI5es
+Date:     2022-11-18
+Title:    221118 - Daniel White: And I Said, "Here Am I": The Identified Masterpiece Family
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=0UrCRQqI5es
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-08-24 - Under His Guidance 3 - Samuel Browning - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-24
-Title:   Under His Guidance 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=s4ufWCXMEus
+Date:     2022-08-24
+Title:    Under His Guidance 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=s4ufWCXMEus
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-11-05 - (Sunday School) 231105 - Matthew Smith Conquering Th
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-05
-Title:   (Sunday School) 231105 - Matthew Smith: Conquering The Heart
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GtsC71qErCE
+Date:     2023-11-05
+Title:    (Sunday School) 231105 - Matthew Smith: Conquering The Heart
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=GtsC71qErCE
 ========================================
 
 Description:

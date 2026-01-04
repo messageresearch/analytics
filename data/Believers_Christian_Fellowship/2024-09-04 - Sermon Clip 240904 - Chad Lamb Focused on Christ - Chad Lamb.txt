@@ -4,13 +4,14 @@ START OF FILE: 2024-09-04 - Sermon Clip 240904 - Chad Lamb Focused on Christ - C
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-04
-Title:   Sermon Clip: 240904 - Chad Lamb: Focused on Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=YXk58Db8Uwk
+Date:     2024-09-04
+Title:    Sermon Clip: 240904 - Chad Lamb: Focused on Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=YXk58Db8Uwk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-07 - Thou Art Loosed - Timothy Ashong - Timothy Ashong.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-07
-Title:   Thou Art Loosed - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ccf7mmbBheQ
+Date:     2025-08-07
+Title:    Thou Art Loosed - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ccf7mmbBheQ
 ========================================
 
 Description:

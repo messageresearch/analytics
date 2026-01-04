@@ -4,13 +4,14 @@ START OF FILE: 2022-12-25 - Guided to the Word Made Flesh - Samuel Browning - Sa
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-25
-Title:   Guided to the Word Made Flesh - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X2M7Oq3Iq44
+Date:     2022-12-25
+Title:    Guided to the Word Made Flesh - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=X2M7Oq3Iq44
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-04-29 - For I Know the Plans I Have for You 2 - Jerry Browni
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-29
-Title:   For I Know the Plans I Have for You 2 - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CyqarVqDnGE
+Date:     2022-04-29
+Title:    For I Know the Plans I Have for You 2 - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=CyqarVqDnGE
 ========================================
 
 Description:

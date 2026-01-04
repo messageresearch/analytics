@@ -4,13 +4,14 @@ START OF FILE: 2024-05-12 - Leadership Through Feeding - Samuel Browning - Samue
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-12
-Title:   Leadership Through Feeding - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qm2TGsOPN4U
+Date:     2024-05-12
+Title:    Leadership Through Feeding - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=qm2TGsOPN4U
 ========================================
 
 Description:

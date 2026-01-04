@@ -4,13 +4,14 @@ START OF FILE: 2022-01-16 - Middle East Missions - Jason DeMars - Jason DeMars.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-16
-Title:   Middle East Missions - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rWF4QceanOg
+Date:     2022-01-16
+Title:    Middle East Missions - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=rWF4QceanOg
 ========================================
 
 Description:

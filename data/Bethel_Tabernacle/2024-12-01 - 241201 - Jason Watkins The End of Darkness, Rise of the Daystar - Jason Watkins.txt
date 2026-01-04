@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - 241201 - Jason Watkins The End of Darkness, Rise of 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   241201 - Jason Watkins: The End of Darkness, Rise of the Daystar
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Oh7aMkr0bUk
+Date:     2024-12-01
+Title:    241201 - Jason Watkins: The End of Darkness, Rise of the Daystar
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=Oh7aMkr0bUk
 ========================================
 
 Description:

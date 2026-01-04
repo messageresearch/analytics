@@ -4,13 +4,14 @@ START OF FILE: 2021-01-27 - Sermon Clips 210127 - Kyle Wiechart After This I Saw
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-27
-Title:   Sermon Clips: 210127 - Kyle Wiechart: After This I Saw
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DsnmcrKPu10
+Date:     2021-01-27
+Title:    Sermon Clips: 210127 - Kyle Wiechart: After This I Saw
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=DsnmcrKPu10
 ========================================
 
 Description:

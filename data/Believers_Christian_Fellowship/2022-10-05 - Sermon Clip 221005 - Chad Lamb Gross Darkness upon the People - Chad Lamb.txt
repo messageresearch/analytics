@@ -4,13 +4,14 @@ START OF FILE: 2022-10-05 - Sermon Clip 221005 - Chad Lamb Gross Darkness upon t
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-05
-Title:   Sermon Clip: 221005 - Chad Lamb: Gross Darkness upon the People
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=cHc8mG0seCI
+Date:     2022-10-05
+Title:    Sermon Clip: 221005 - Chad Lamb: Gross Darkness upon the People
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=cHc8mG0seCI
 ========================================
 
 Description:

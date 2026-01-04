@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - (Sunday School) 221113 - Brad Younce You Are What Yo
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   (Sunday School) 221113 - Brad Younce: You Are What You Eat
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pUqKdcOA7AQ
+Date:     2022-11-13
+Title:    (Sunday School) 221113 - Brad Younce: You Are What You Eat
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=pUqKdcOA7AQ
 ========================================
 
 Description:

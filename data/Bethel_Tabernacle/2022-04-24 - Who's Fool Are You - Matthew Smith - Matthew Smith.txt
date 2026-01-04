@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - Who's Fool Are You - Matthew Smith - Matthew Smith.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   Who's Fool Are You? - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZQ1YpTZBgpA
+Date:     2022-04-24
+Title:    Who's Fool Are You? - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZQ1YpTZBgpA
 ========================================
 
 Description:

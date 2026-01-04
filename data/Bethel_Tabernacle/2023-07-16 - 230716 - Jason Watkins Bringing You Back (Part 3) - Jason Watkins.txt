@@ -4,13 +4,14 @@ START OF FILE: 2023-07-16 - 230716 - Jason Watkins Bringing You Back (Part 3) - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-16
-Title:   230716 - Jason Watkins: Bringing You Back (Part 3)
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MqC-V3zOL4s
+Date:     2023-07-16
+Title:    230716 - Jason Watkins: Bringing You Back (Part 3)
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=MqC-V3zOL4s
 ========================================
 
 Description:

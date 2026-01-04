@@ -4,13 +4,14 @@ START OF FILE: 2023-05-07 - (Sunday School) 230507 - Jason DeMars The Gene of Go
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-07
-Title:   (Sunday School) 230507 - Jason DeMars: The Gene of God Part 6
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=93lUWB7P258
+Date:     2023-05-07
+Title:    (Sunday School) 230507 - Jason DeMars: The Gene of God Part 6
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=93lUWB7P258
 ========================================
 
 Description:

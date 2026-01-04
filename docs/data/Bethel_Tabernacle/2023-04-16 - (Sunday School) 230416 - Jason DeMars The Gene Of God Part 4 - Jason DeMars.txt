@@ -4,13 +4,14 @@ START OF FILE: 2023-04-16 - (Sunday School) 230416 - Jason DeMars The Gene Of Go
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-16
-Title:   (Sunday School) 230416 - Jason DeMars: The Gene Of God Part 4
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zqiMFRUqGBU
+Date:     2023-04-16
+Title:    (Sunday School) 230416 - Jason DeMars: The Gene Of God Part 4
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=zqiMFRUqGBU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-03-21 - The Church - Bro. Samuel Browning - Samuel Browning.
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-21
-Title:   The Church - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KOO7z4NWBMo
+Date:     2019-03-21
+Title:    The Church - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=KOO7z4NWBMo
 ========================================
 
 TRANSCRIPT

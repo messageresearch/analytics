@@ -4,13 +4,14 @@ START OF FILE: 2024-10-26 - Sermon Clip 241026 - Allistair Francis The Bond Shal
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-26
-Title:   Sermon Clip: 241026 - Allistair Francis: The Bond Shall Not Be Heir With the Free
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=WJcRT3yZAbY
+Date:     2024-10-26
+Title:    Sermon Clip: 241026 - Allistair Francis: The Bond Shall Not Be Heir With the Free
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=WJcRT3yZAbY
 ========================================
 
 Description:

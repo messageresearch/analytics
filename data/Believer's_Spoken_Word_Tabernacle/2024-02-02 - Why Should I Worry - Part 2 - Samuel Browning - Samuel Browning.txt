@@ -4,13 +4,14 @@ START OF FILE: 2024-02-02 - Why Should I Worry - Part 2 - Samuel Browning - Samu
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-02
-Title:   Why Should I Worry? - Part 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QxQFZX6bMmI
+Date:     2024-02-02
+Title:    Why Should I Worry? - Part 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=QxQFZX6bMmI
 ========================================
 
 Description:

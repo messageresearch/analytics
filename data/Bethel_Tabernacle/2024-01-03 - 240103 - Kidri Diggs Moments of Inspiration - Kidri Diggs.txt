@@ -4,13 +4,14 @@ START OF FILE: 2024-01-03 - 240103 - Kidri Diggs Moments of Inspiration - Kidri 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-03
-Title:   240103 - Kidri Diggs: Moments of Inspiration
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3ZvIlXvqeVo
+Date:     2024-01-03
+Title:    240103 - Kidri Diggs: Moments of Inspiration
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=3ZvIlXvqeVo
 ========================================
 
 Description:

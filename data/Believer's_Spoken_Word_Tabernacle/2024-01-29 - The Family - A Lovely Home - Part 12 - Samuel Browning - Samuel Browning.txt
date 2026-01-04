@@ -4,13 +4,14 @@ START OF FILE: 2024-01-29 - The Family - A Lovely Home - Part 12 - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-29
-Title:   The Family - A Lovely Home - Part 1/2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=K4CyLyNu94E
+Date:     2024-01-29
+Title:    The Family - A Lovely Home - Part 1/2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=K4CyLyNu94E
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-11-15 - Pastor J. Palmer God's Established Church - J Palmer
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-15
-Title:   Pastor J. Palmer: "God's Established Church"
-Speaker: J Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NSWjAxIbeEo
+Date:     2025-11-15
+Title:    Pastor J. Palmer: "God's Established Church"
+Speaker:  J Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=NSWjAxIbeEo
 ========================================
 
 Description:

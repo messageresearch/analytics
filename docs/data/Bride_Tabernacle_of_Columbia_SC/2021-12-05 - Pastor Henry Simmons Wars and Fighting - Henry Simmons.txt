@@ -4,13 +4,14 @@ START OF FILE: 2021-12-05 - Pastor Henry Simmons Wars and Fighting - Henry Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-05
-Title:   Pastor Henry Simmons: "Wars and Fighting"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=64rSy8jhUh0
+Date:     2021-12-05
+Title:    Pastor Henry Simmons: "Wars and Fighting"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=64rSy8jhUh0
 ========================================
 
 Description:

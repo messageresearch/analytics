@@ -4,13 +4,14 @@ START OF FILE: 2022-02-20 - Put On Your Strength - Matt Watkins - Matt Watkins.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-20
-Title:   Put On Your Strength - Matt Watkins
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RU70-XWPQZ8
+Date:     2022-02-20
+Title:    Put On Your Strength - Matt Watkins
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=RU70-XWPQZ8
 ========================================
 
 Description:

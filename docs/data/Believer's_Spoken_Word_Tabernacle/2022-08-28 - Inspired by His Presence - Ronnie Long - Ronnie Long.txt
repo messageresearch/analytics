@@ -4,13 +4,14 @@ START OF FILE: 2022-08-28 - Inspired by His Presence - Ronnie Long - Ronnie Long
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-28
-Title:   Inspired by His Presence - Ronnie Long
-Speaker: Ronnie Long
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=k-lvmGh4d4g
+Date:     2022-08-28
+Title:    Inspired by His Presence - Ronnie Long
+Speaker:  Ronnie Long
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=k-lvmGh4d4g
 ========================================
 
 Description:

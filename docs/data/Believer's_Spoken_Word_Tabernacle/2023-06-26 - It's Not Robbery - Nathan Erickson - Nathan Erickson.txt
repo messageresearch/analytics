@@ -4,13 +4,14 @@ START OF FILE: 2023-06-26 - It's Not Robbery - Nathan Erickson - Nathan Erickson
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-26
-Title:   It's Not Robbery - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bFqeF9L4RCw
+Date:     2023-06-26
+Title:    It's Not Robbery - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=bFqeF9L4RCw
 ========================================
 
 Description:

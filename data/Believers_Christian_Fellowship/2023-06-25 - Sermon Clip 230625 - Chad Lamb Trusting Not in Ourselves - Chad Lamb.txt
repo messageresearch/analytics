@@ -4,13 +4,14 @@ START OF FILE: 2023-06-25 - Sermon Clip 230625 - Chad Lamb Trusting Not in Ourse
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-25
-Title:   Sermon Clip: 230625 - Chad Lamb: Trusting Not in Ourselves
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=7jOtc-QxkEc
+Date:     2023-06-25
+Title:    Sermon Clip: 230625 - Chad Lamb: Trusting Not in Ourselves
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=7jOtc-QxkEc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-21 - 200821 - The Wedding of Joseph and Rebecca Kadima - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-21
-Title:   200821 - The Wedding of Joseph and Rebecca Kadima
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Wedding
-Language:English
-URL:     https://www.youtube.com/watch?v=HeFpgN2C2xY
+Date:     2020-08-21
+Title:    200821 - The Wedding of Joseph and Rebecca Kadima
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Wedding
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=HeFpgN2C2xY
 ========================================
 
 TRANSCRIPT

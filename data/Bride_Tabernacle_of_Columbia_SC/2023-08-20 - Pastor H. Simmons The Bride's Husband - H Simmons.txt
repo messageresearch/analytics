@@ -4,13 +4,14 @@ START OF FILE: 2023-08-20 - Pastor H. Simmons The Bride's Husband - H Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-20
-Title:   Pastor H. Simmons: "The Bride's Husband"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aBD7KcloWwM
+Date:     2023-08-20
+Title:    Pastor H. Simmons: "The Bride's Husband"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=aBD7KcloWwM
 ========================================
 
 Description:

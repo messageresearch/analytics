@@ -4,13 +4,14 @@ START OF FILE: 2024-09-07 - Pastor Henry Simmons War in the Mind - Henry Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-07
-Title:   Pastor Henry Simmons: "War in the Mind"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wg9TxwvOGmM
+Date:     2024-09-07
+Title:    Pastor Henry Simmons: "War in the Mind"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=wg9TxwvOGmM
 ========================================
 
 Description:

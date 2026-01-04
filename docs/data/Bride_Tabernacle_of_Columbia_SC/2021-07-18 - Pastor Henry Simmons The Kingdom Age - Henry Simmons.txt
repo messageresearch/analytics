@@ -4,13 +4,14 @@ START OF FILE: 2021-07-18 - Pastor Henry Simmons The Kingdom Age - Henry Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-18
-Title:   Pastor Henry Simmons: "The Kingdom Age"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LSKIGogaGEc
+Date:     2021-07-18
+Title:    Pastor Henry Simmons: "The Kingdom Age"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=LSKIGogaGEc
 ========================================
 
 Description:

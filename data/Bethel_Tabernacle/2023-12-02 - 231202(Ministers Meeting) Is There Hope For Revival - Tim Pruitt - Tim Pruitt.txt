@@ -4,13 +4,14 @@ START OF FILE: 2023-12-02 - 231202(Ministers Meeting) Is There Hope For Revival 
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-02
-Title:   231202(Ministers Meeting) Is There Hope For Revival? - Tim Pruitt
-Speaker: Tim Pruitt
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HJJVHkSxV7U
+Date:     2023-12-02
+Title:    231202(Ministers Meeting) Is There Hope For Revival? - Tim Pruitt
+Speaker:  Tim Pruitt
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=HJJVHkSxV7U
 ========================================
 
 Description:

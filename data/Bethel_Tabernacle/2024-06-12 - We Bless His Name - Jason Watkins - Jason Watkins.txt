@@ -4,13 +4,14 @@ START OF FILE: 2024-06-12 - We Bless His Name - Jason Watkins - Jason Watkins.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-12
-Title:   We Bless His Name - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FY7zw-6HNtA
+Date:     2024-06-12
+Title:    We Bless His Name - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=FY7zw-6HNtA
 ========================================
 
 Description:

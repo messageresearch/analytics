@@ -4,13 +4,14 @@ START OF FILE: 2025-09-21 - 250921 - Chad Lamb The Super Sign - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-21
-Title:   250921 - Chad Lamb: The Super Sign
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LDSBNbiK3z8
+Date:     2025-09-21
+Title:    250921 - Chad Lamb: The Super Sign
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=LDSBNbiK3z8
 ========================================
 
 Description:

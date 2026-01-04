@@ -4,13 +4,14 @@ START OF FILE: 2022-03-02 - Sermon Clip 220302 - Samuel Walach What Do You See L
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-02
-Title:   Sermon Clip: 220302 - Samuel Walach: What Do You See Looking Out Your Window?
-Speaker: Samuel Walach
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=2j2oNW9qD3Y
+Date:     2022-03-02
+Title:    Sermon Clip: 220302 - Samuel Walach: What Do You See Looking Out Your Window?
+Speaker:  Samuel Walach
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=2j2oNW9qD3Y
 ========================================
 
 Description:

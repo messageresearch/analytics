@@ -4,13 +4,14 @@ START OF FILE: 2024-02-18 - Sermon Clip 240218 - Jean Kadima Holistic Approach t
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-18
-Title:   Sermon Clip: 240218 - Jean Kadima: Holistic Approach to the Message
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Nk_LJJSiQTY
+Date:     2024-02-18
+Title:    Sermon Clip: 240218 - Jean Kadima: Holistic Approach to the Message
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Nk_LJJSiQTY
 ========================================
 
 Description:

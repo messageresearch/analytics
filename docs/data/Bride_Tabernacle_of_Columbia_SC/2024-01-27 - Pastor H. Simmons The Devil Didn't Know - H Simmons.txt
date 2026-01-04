@@ -4,13 +4,14 @@ START OF FILE: 2024-01-27 - Pastor H. Simmons The Devil Didn't Know - H Simmons.
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-27
-Title:   Pastor H. Simmons: "The Devil Didn't Know"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8frR7DyUpF0
+Date:     2024-01-27
+Title:    Pastor H. Simmons: "The Devil Didn't Know"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=8frR7DyUpF0
 ========================================
 
 Description:

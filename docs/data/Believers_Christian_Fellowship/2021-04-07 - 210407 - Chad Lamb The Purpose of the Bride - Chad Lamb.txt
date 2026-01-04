@@ -4,13 +4,14 @@ START OF FILE: 2021-04-07 - 210407 - Chad Lamb The Purpose of the Bride - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-07
-Title:   210407 - Chad Lamb: The Purpose of the Bride
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=g-0AeQOGS4I
+Date:     2021-04-07
+Title:    210407 - Chad Lamb: The Purpose of the Bride
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=g-0AeQOGS4I
 ========================================
 
 Description:

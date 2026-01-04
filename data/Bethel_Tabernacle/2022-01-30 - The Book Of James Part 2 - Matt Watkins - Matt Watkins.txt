@@ -4,13 +4,14 @@ START OF FILE: 2022-01-30 - The Book Of James Part 2 - Matt Watkins - Matt Watki
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-30
-Title:   The Book Of James Part 2 - Matt Watkins
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OthcKMFsmc0
+Date:     2022-01-30
+Title:    The Book Of James Part 2 - Matt Watkins
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=OthcKMFsmc0
 ========================================
 
 Description:

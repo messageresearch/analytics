@@ -4,13 +4,14 @@ START OF FILE: 2022-03-11 - Minister Michael Holloway Leadership - Michael Hollo
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-11
-Title:   Minister Michael Holloway: "Leadership"
-Speaker: Michael Holloway
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WoPMb6gtS5M
+Date:     2022-03-11
+Title:    Minister Michael Holloway: "Leadership"
+Speaker:  Michael Holloway
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=WoPMb6gtS5M
 ========================================
 
 Description:

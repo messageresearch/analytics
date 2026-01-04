@@ -4,13 +4,14 @@ START OF FILE: 2025-12-18 - Elijah's Garment - Bro. Caleb Campbell - Elijahs Gar
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-18
-Title:   Elijah's Garment - Bro. Caleb Campbell
-Speaker: Elijahs Garment
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=atwWMBd3t7s
+Date:     2025-12-18
+Title:    Elijah's Garment - Bro. Caleb Campbell
+Speaker:  Elijahs Garment
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=atwWMBd3t7s
 ========================================
 
 Description:

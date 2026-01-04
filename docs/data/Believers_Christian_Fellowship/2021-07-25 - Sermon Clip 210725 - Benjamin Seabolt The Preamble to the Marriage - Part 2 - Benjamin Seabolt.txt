@@ -4,13 +4,14 @@ START OF FILE: 2021-07-25 - Sermon Clip 210725 - Benjamin Seabolt The Preamble t
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-25
-Title:   Sermon Clip: 210725 - Benjamin Seabolt: The Preamble to the Marriage - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=0uLsiVeT9Uo
+Date:     2021-07-25
+Title:    Sermon Clip: 210725 - Benjamin Seabolt: The Preamble to the Marriage - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=0uLsiVeT9Uo
 ========================================
 
 Description:

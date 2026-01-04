@@ -4,13 +4,14 @@ START OF FILE: 2021-10-06 - Sermon Clip 211006 - Chad Lamb The Unexpected Fulfil
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-06
-Title:   Sermon Clip: 211006 - Chad Lamb: The Unexpected Fulfillment - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Kb30mcF4A9g
+Date:     2021-10-06
+Title:    Sermon Clip: 211006 - Chad Lamb: The Unexpected Fulfillment - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Kb30mcF4A9g
 ========================================
 
 Description:

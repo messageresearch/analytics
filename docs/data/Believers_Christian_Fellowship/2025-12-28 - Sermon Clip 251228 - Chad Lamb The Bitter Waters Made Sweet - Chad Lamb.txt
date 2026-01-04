@@ -4,13 +4,14 @@ START OF FILE: 2025-12-28 - Sermon Clip 251228 - Chad Lamb The Bitter Waters Mad
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-28
-Title:   Sermon Clip: 251228 - Chad Lamb: The Bitter Waters Made Sweet
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=RQCHu18vqqk
+Date:     2025-12-28
+Title:    Sermon Clip: 251228 - Chad Lamb: The Bitter Waters Made Sweet
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=RQCHu18vqqk
 ========================================
 
 Description:

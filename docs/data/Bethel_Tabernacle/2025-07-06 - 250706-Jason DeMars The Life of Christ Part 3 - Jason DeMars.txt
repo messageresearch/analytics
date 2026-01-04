@@ -4,13 +4,14 @@ START OF FILE: 2025-07-06 - 250706-Jason DeMars The Life of Christ Part 3 - Jaso
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-06
-Title:   250706-Jason DeMars: The Life of Christ Part 3
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0GXOsyXmYwI
+Date:     2025-07-06
+Title:    250706-Jason DeMars: The Life of Christ Part 3
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=0GXOsyXmYwI
 ========================================
 
 Description:

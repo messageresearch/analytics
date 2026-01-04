@@ -4,13 +4,14 @@ START OF FILE: 2024-05-17 - Positioned to Reign - Wendell Martin - Wendell Marti
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-17
-Title:   Positioned to Reign - Wendell Martin
-Speaker: Wendell Martin
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QeYM_gfGelk
+Date:     2024-05-17
+Title:    Positioned to Reign - Wendell Martin
+Speaker:  Wendell Martin
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=QeYM_gfGelk
 ========================================
 
 Description:

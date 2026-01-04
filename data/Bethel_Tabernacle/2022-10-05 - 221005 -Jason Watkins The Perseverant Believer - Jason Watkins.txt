@@ -4,13 +4,14 @@ START OF FILE: 2022-10-05 - 221005 -Jason Watkins The Perseverant Believer - Jas
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-05
-Title:   221005 -Jason Watkins: The Perseverant Believer
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fTglLzIzwPE
+Date:     2022-10-05
+Title:    221005 -Jason Watkins: The Perseverant Believer
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=fTglLzIzwPE
 ========================================
 
 Description:

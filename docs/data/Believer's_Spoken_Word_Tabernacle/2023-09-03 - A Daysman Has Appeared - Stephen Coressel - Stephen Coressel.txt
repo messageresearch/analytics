@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - A Daysman Has Appeared - Stephen Coressel - Stephen 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   A Daysman Has Appeared - Stephen Coressel
-Speaker: Stephen Coressel
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qrIGfi_oBCI
+Date:     2023-09-03
+Title:    A Daysman Has Appeared - Stephen Coressel
+Speaker:  Stephen Coressel
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=qrIGfi_oBCI
 ========================================
 
 Description:

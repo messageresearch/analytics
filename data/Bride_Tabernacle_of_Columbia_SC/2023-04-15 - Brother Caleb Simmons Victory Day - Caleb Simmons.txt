@@ -4,13 +4,14 @@ START OF FILE: 2023-04-15 - Brother Caleb Simmons Victory Day - Caleb Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-15
-Title:   Brother Caleb Simmons: "Victory Day"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6NMzLhH7mV0
+Date:     2023-04-15
+Title:    Brother Caleb Simmons: "Victory Day"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=6NMzLhH7mV0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-04-21 - Hiding Behind Excuses - Jason Watkins - Jason Watkin
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-21
-Title:   Hiding Behind Excuses - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZrCvzuWSo7M
+Date:     2022-04-21
+Title:    Hiding Behind Excuses - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZrCvzuWSo7M
 ========================================
 
 Description:

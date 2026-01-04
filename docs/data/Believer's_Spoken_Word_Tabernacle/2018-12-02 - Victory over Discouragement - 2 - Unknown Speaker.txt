@@ -4,13 +4,14 @@ START OF FILE: 2018-12-02 - Victory over Discouragement - 2 - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2018-12-02
-Title:   Victory over Discouragement - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=e4fcuHp7c7Q
+Date:     2018-12-02
+Title:    Victory over Discouragement - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=e4fcuHp7c7Q
 ========================================
 
 TRANSCRIPT

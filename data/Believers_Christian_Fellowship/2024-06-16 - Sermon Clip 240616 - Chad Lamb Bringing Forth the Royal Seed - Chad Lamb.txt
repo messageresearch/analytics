@@ -4,13 +4,14 @@ START OF FILE: 2024-06-16 - Sermon Clip 240616 - Chad Lamb Bringing Forth the Ro
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-16
-Title:   Sermon Clip: 240616 - Chad Lamb: Bringing Forth the Royal Seed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ryb1oK-G2f4
+Date:     2024-06-16
+Title:    Sermon Clip: 240616 - Chad Lamb: Bringing Forth the Royal Seed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ryb1oK-G2f4
 ========================================
 
 Description:

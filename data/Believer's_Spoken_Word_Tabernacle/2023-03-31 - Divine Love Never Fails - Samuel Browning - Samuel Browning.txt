@@ -4,13 +4,14 @@ START OF FILE: 2023-03-31 - Divine Love Never Fails - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-31
-Title:   Divine Love Never Fails - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TzQPSoyLGLU
+Date:     2023-03-31
+Title:    Divine Love Never Fails - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=TzQPSoyLGLU
 ========================================
 
 Description:

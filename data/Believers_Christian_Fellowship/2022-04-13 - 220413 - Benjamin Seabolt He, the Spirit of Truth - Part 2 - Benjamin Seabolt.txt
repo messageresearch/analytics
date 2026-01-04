@@ -4,13 +4,14 @@ START OF FILE: 2022-04-13 - 220413 - Benjamin Seabolt He, the Spirit of Truth - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-13
-Title:   220413 - Benjamin Seabolt: He, the Spirit of Truth - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rOzc1w0t6MI
+Date:     2022-04-13
+Title:    220413 - Benjamin Seabolt: He, the Spirit of Truth - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=rOzc1w0t6MI
 ========================================
 
 Description:

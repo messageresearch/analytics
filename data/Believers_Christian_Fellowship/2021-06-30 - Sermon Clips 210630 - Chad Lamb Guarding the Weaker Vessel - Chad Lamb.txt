@@ -4,13 +4,14 @@ START OF FILE: 2021-06-30 - Sermon Clips 210630 - Chad Lamb Guarding the Weaker 
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-30
-Title:   Sermon Clips: 210630 - Chad Lamb: Guarding the Weaker Vessel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=E71qbAbsX2Q
+Date:     2021-06-30
+Title:    Sermon Clips: 210630 - Chad Lamb: Guarding the Weaker Vessel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=E71qbAbsX2Q
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-26 - (Sunday School) A Word Family Pt. 12- Jason DeMars -
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-26
-Title:   (Sunday School) A Word Family Pt. 12- Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GU3xG9BxCvI
+Date:     2025-01-26
+Title:    (Sunday School) A Word Family Pt. 12- Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=GU3xG9BxCvI
 ========================================
 
 Description:

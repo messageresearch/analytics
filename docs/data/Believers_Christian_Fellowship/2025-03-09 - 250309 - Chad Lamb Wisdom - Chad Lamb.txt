@@ -4,13 +4,14 @@ START OF FILE: 2025-03-09 - 250309 - Chad Lamb Wisdom - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-09
-Title:   250309 - Chad Lamb: Wisdom
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NMPZq7_ZVS4
+Date:     2025-03-09
+Title:    250309 - Chad Lamb: Wisdom
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=NMPZq7_ZVS4
 ========================================
 
 Description:

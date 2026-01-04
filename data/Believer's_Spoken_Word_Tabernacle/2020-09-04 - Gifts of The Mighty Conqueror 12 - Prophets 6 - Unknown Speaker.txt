@@ -4,13 +4,14 @@ START OF FILE: 2020-09-04 - Gifts of The Mighty Conqueror 12 - Prophets 6 - Unkn
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-04
-Title:   Gifts of The Mighty Conqueror 12 - Prophets 6
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kTluA51ggdQ
+Date:     2020-09-04
+Title:    Gifts of The Mighty Conqueror 12 - Prophets 6
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=kTluA51ggdQ
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - Sunday School- Bro Matthew Smith - Matthew Smith.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   Sunday School- Bro Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Pe95XhXiEQA
+Date:     2022-06-19
+Title:    Sunday School- Bro Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=Pe95XhXiEQA
 ========================================
 
 Description:

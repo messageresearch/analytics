@@ -4,13 +4,14 @@ START OF FILE: 2020-05-24 - 200524 - Jean Kadima The Three Elements That You Fol
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-24
-Title:   200524 - Jean Kadima: The Three Elements That You Follow
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VCDl10AcBy4
+Date:     2020-05-24
+Title:    200524 - Jean Kadima: The Three Elements That You Follow
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=VCDl10AcBy4
 ========================================
 
 Description:

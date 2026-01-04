@@ -4,13 +4,14 @@ START OF FILE: 2025-02-02 - Minister E. Legette In His Hands - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-02
-Title:   Minister E. Legette: "In His Hands"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sNJlSw1gmc8
+Date:     2025-02-02
+Title:    Minister E. Legette: "In His Hands"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=sNJlSw1gmc8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-11-20 - Switching Yokes - Jonathan Sanger - Jonathan Sanger.
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-20
-Title:   Switching Yokes - Jonathan Sanger
-Speaker: Jonathan Sanger
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=04bli_Z2dLk
+Date:     2023-11-20
+Title:    Switching Yokes - Jonathan Sanger
+Speaker:  Jonathan Sanger
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=04bli_Z2dLk
 ========================================
 
 Description:

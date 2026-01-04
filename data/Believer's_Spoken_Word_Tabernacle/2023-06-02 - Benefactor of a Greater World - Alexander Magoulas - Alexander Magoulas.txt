@@ -4,13 +4,14 @@ START OF FILE: 2023-06-02 - Benefactor of a Greater World - Alexander Magoulas -
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-02
-Title:   Benefactor of a Greater World - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bqEa85Nef0w
+Date:     2023-06-02
+Title:    Benefactor of a Greater World - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=bqEa85Nef0w
 ========================================
 
 Description:

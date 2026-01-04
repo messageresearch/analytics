@@ -4,13 +4,14 @@ START OF FILE: 2023-03-05 - Sermon Clip 230305 - David Dienhart Our Positive Pos
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-05
-Title:   Sermon Clip: 230305 - David Dienhart: Our Positive Position, Our Victory
-Speaker: David Dienhart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DBQjIF6wvrE
+Date:     2023-03-05
+Title:    Sermon Clip: 230305 - David Dienhart: Our Positive Position, Our Victory
+Speaker:  David Dienhart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DBQjIF6wvrE
 ========================================
 
 Description:

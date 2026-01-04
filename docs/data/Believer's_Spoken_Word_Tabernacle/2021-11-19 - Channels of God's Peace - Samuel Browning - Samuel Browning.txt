@@ -4,13 +4,14 @@ START OF FILE: 2021-11-19 - Channels of God's Peace - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-19
-Title:   Channels of God's Peace - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5l61E6H1i24
+Date:     2021-11-19
+Title:    Channels of God's Peace - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=5l61E6H1i24
 ========================================
 
 Description:

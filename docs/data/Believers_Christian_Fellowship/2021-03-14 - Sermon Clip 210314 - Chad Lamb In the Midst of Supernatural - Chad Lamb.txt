@@ -4,13 +4,14 @@ START OF FILE: 2021-03-14 - Sermon Clip 210314 - Chad Lamb In the Midst of Super
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-14
-Title:   Sermon Clip: 210314 - Chad Lamb: In the Midst of Supernatural
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=w8OF9S1kQno
+Date:     2021-03-14
+Title:    Sermon Clip: 210314 - Chad Lamb: In the Midst of Supernatural
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=w8OF9S1kQno
 ========================================
 
 Description:

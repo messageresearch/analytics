@@ -4,13 +4,14 @@ START OF FILE: 2020-08-16 - Pastor Henry Simmons The Godhead - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-16
-Title:   Pastor Henry Simmons: "The Godhead"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YHMODRkgPMA
+Date:     2020-08-16
+Title:    Pastor Henry Simmons: "The Godhead"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=YHMODRkgPMA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-01 - Minister Ernest Legette What Grieves God - Ernest Le
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-01
-Title:   Minister Ernest Legette: "What Grieves God?"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CwH_UgRl_d4
+Date:     2020-08-01
+Title:    Minister Ernest Legette: "What Grieves God?"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=CwH_UgRl_d4
 ========================================
 
 Description:

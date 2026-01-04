@@ -4,13 +4,14 @@ START OF FILE: 2024-07-07 - It's Your Turn To Play Your Part - Brad Younce - Bra
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-07
-Title:   It's Your Turn To Play Your Part - Brad Younce
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=G3DPGR44vhQ
+Date:     2024-07-07
+Title:    It's Your Turn To Play Your Part - Brad Younce
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=G3DPGR44vhQ
 ========================================
 
 Description:

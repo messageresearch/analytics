@@ -4,13 +4,14 @@ START OF FILE: 2022-12-28 - 221228 - Chad Lamb What Do We Give God - Chad Lamb.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-28
-Title:   221228 - Chad Lamb: What Do We Give God?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vxwzmJ5iJ0Q
+Date:     2022-12-28
+Title:    221228 - Chad Lamb: What Do We Give God?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=vxwzmJ5iJ0Q
 ========================================
 
 Description:

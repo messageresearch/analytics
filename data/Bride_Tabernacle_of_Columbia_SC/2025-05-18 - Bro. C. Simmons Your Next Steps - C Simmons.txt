@@ -4,13 +4,14 @@ START OF FILE: 2025-05-18 - Bro. C. Simmons Your Next Steps - C Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-18
-Title:   Bro. C. Simmons: "Your Next Steps"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x5IX1nSurgo
+Date:     2025-05-18
+Title:    Bro. C. Simmons: "Your Next Steps"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=x5IX1nSurgo
 ========================================
 
 Description:

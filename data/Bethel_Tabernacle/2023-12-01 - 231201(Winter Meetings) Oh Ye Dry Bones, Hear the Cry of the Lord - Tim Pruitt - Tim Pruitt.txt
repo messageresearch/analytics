@@ -4,13 +4,14 @@ START OF FILE: 2023-12-01 - 231201(Winter Meetings) Oh Ye Dry Bones, Hear the Cr
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-01
-Title:   231201(Winter Meetings) Oh Ye Dry Bones, Hear the Cry of the Lord - Tim Pruitt
-Speaker: Tim Pruitt
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8mqs3kXIyOo
+Date:     2023-12-01
+Title:    231201(Winter Meetings) Oh Ye Dry Bones, Hear the Cry of the Lord - Tim Pruitt
+Speaker:  Tim Pruitt
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 3h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=8mqs3kXIyOo
 ========================================
 
 Description:

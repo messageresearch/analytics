@@ -4,13 +4,14 @@ START OF FILE: 2021-06-13 - Revival In The New Generation - John Andes - John An
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-13
-Title:   Revival In The New Generation - John Andes
-Speaker: John Andes
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=C_oRN1qzTUs
+Date:     2021-06-13
+Title:    Revival In The New Generation - John Andes
+Speaker:  John Andes
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 4h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=C_oRN1qzTUs
 ========================================
 
 TRANSCRIPT

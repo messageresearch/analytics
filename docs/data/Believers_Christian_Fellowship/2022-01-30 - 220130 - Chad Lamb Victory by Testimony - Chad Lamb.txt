@@ -4,13 +4,14 @@ START OF FILE: 2022-01-30 - 220130 - Chad Lamb Victory by Testimony - Chad Lamb.
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-30
-Title:   220130 - Chad Lamb: Victory by Testimony
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YVpv4IyRdo0
+Date:     2022-01-30
+Title:    220130 - Chad Lamb: Victory by Testimony
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Testimony Service
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=YVpv4IyRdo0
 ========================================
 
 Description:

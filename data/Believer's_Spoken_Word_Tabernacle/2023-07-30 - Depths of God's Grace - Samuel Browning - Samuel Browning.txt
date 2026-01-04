@@ -4,13 +4,14 @@ START OF FILE: 2023-07-30 - Depths of God's Grace - Samuel Browning - Samuel Bro
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-30
-Title:   Depths of God's Grace - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A271N1dZ94M
+Date:     2023-07-30
+Title:    Depths of God's Grace - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=A271N1dZ94M
 ========================================
 
 Description:

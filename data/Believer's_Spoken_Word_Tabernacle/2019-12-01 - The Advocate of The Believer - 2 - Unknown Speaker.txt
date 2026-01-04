@@ -4,13 +4,14 @@ START OF FILE: 2019-12-01 - The Advocate of The Believer - 2 - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2019-12-01
-Title:   The Advocate of The Believer - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9lc9dS4T-Vg
+Date:     2019-12-01
+Title:    The Advocate of The Believer - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=9lc9dS4T-Vg
 ========================================
 
 TRANSCRIPT

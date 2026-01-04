@@ -4,13 +4,14 @@ START OF FILE: 2024-10-13 - 241013 - Nathaniel Sias The Hammer and the Heart - N
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-13
-Title:   241013 - Nathaniel Sias: The Hammer and the Heart
-Speaker: Nathaniel Sias
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vw_imHIzH9Q
+Date:     2024-10-13
+Title:    241013 - Nathaniel Sias: The Hammer and the Heart
+Speaker:  Nathaniel Sias
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vw_imHIzH9Q
 ========================================
 
 Description:

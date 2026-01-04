@@ -4,13 +4,14 @@ START OF FILE: 2021-06-23 - Sermon Clip 210623 - Kyle Wiechart Until the Chosen 
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-23
-Title:   Sermon Clip: 210623 - Kyle Wiechart: Until the Chosen Make Him Their Choice
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=SgILE98wXAI
+Date:     2021-06-23
+Title:    Sermon Clip: 210623 - Kyle Wiechart: Until the Chosen Make Him Their Choice
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=SgILE98wXAI
 ========================================
 
 Description:

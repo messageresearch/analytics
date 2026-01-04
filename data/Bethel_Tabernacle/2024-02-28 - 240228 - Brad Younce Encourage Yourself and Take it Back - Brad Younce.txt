@@ -4,13 +4,14 @@ START OF FILE: 2024-02-28 - 240228 - Brad Younce Encourage Yourself and Take it 
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-28
-Title:   240228 - Brad Younce: Encourage Yourself and Take it Back
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lTUWO8gGshE
+Date:     2024-02-28
+Title:    240228 - Brad Younce: Encourage Yourself and Take it Back
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=lTUWO8gGshE
 ========================================
 
 Description:

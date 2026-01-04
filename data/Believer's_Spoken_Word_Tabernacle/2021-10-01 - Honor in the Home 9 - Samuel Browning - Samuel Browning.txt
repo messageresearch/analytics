@@ -4,13 +4,14 @@ START OF FILE: 2021-10-01 - Honor in the Home 9 - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-01
-Title:   Honor in the Home 9 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iWH51o53wq0
+Date:     2021-10-01
+Title:    Honor in the Home 9 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=iWH51o53wq0
 ========================================
 
 Description:

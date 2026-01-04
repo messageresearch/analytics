@@ -4,13 +4,14 @@ START OF FILE: 2021-06-06 - Sermon Clips 210606 - Chad Lamb Religion Versus Rela
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-06
-Title:   Sermon Clips: 210606 - Chad Lamb: Religion Versus Relationship - Part 9: Another Attraction
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=8pi5Xf2yzaQ
+Date:     2021-06-06
+Title:    Sermon Clips: 210606 - Chad Lamb: Religion Versus Relationship - Part 9: Another Attraction
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=8pi5Xf2yzaQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-08-29 - Fear - Jerry Browning - Jerry Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-08-29
-Title:   Fear - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_59TKxnOWGA
+Date:     2019-08-29
+Title:    Fear - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=_59TKxnOWGA
 ========================================
 
 TRANSCRIPT

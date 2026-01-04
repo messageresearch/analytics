@@ -4,13 +4,14 @@ START OF FILE: 2023-12-27 - Sermon Clip 231227 - Benjamin Seabolt Things That We
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-27
-Title:   Sermon Clip: 231227 - Benjamin Seabolt: Things That Were - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=xSbo9xsLsuM
+Date:     2023-12-27
+Title:    Sermon Clip: 231227 - Benjamin Seabolt: Things That Were - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=xSbo9xsLsuM
 ========================================
 
 Description:

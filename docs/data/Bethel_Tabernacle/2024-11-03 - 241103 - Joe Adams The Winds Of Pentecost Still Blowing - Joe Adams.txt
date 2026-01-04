@@ -4,13 +4,14 @@ START OF FILE: 2024-11-03 - 241103 - Joe Adams The Winds Of Pentecost Still Blow
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-03
-Title:   241103 - Joe Adams: The Winds Of Pentecost Still Blowing
-Speaker: Joe Adams
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8yV2CT3n_BA
+Date:     2024-11-03
+Title:    241103 - Joe Adams: The Winds Of Pentecost Still Blowing
+Speaker:  Joe Adams
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 3h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=8yV2CT3n_BA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-07 - 230907 - Matthew Watkins The Second Adams Children -
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-07
-Title:   230907 - Matthew Watkins: The Second Adams Children
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fXocZ2u4wYA
+Date:     2023-09-07
+Title:    230907 - Matthew Watkins: The Second Adams Children
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=fXocZ2u4wYA
 ========================================
 
 Description:

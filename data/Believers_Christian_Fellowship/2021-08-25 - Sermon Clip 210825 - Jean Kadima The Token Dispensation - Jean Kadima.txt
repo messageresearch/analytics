@@ -4,13 +4,14 @@ START OF FILE: 2021-08-25 - Sermon Clip 210825 - Jean Kadima The Token Dispensat
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-25
-Title:   Sermon Clip: 210825 - Jean Kadima: The Token Dispensation
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ft060C_enkY
+Date:     2021-08-25
+Title:    Sermon Clip: 210825 - Jean Kadima: The Token Dispensation
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ft060C_enkY
 ========================================
 
 Description:

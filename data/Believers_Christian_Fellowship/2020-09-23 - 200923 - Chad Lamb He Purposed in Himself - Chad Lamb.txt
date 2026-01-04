@@ -4,13 +4,14 @@ START OF FILE: 2020-09-23 - 200923 - Chad Lamb He Purposed in Himself - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-23
-Title:   200923 - Chad Lamb: He Purposed in Himself
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=k_Fn6Y9MWek
+Date:     2020-09-23
+Title:    200923 - Chad Lamb: He Purposed in Himself
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=k_Fn6Y9MWek
 ========================================
 
 Description:

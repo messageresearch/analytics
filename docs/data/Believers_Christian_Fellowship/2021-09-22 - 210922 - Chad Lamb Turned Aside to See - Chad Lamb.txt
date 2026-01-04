@@ -4,13 +4,14 @@ START OF FILE: 2021-09-22 - 210922 - Chad Lamb Turned Aside to See - Chad Lamb.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-22
-Title:   210922 - Chad Lamb: Turned Aside to See
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bk_RnxUMlmQ
+Date:     2021-09-22
+Title:    210922 - Chad Lamb: Turned Aside to See
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bk_RnxUMlmQ
 ========================================
 
 Description:

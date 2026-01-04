@@ -4,13 +4,14 @@ START OF FILE: 2021-07-04 - Sermon Clips 210704 - Chad Lamb Every Masterpiece Ha
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-04
-Title:   Sermon Clips: 210704 - Chad Lamb: Every Masterpiece Has a Scar
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=m3Ypq2hcO60
+Date:     2021-07-04
+Title:    Sermon Clips: 210704 - Chad Lamb: Every Masterpiece Has a Scar
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=m3Ypq2hcO60
 ========================================
 
 Description:

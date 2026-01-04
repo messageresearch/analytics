@@ -4,13 +4,14 @@ START OF FILE: 2022-09-04 - 220904 - Jean Kadima Give Her Food - Jean Kadima.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-04
-Title:   220904 - Jean Kadima: Give Her Food
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v14MHeWJ95k
+Date:     2022-09-04
+Title:    220904 - Jean Kadima: Give Her Food
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=v14MHeWJ95k
 ========================================
 
 Description:

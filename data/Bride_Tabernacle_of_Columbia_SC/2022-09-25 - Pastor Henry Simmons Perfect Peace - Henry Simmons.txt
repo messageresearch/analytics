@@ -4,13 +4,14 @@ START OF FILE: 2022-09-25 - Pastor Henry Simmons Perfect Peace - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-25
-Title:   Pastor Henry Simmons: "Perfect Peace"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1B6f_3VTIPo
+Date:     2022-09-25
+Title:    Pastor Henry Simmons: "Perfect Peace"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=1B6f_3VTIPo
 ========================================
 
 Description:

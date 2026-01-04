@@ -4,13 +4,14 @@ START OF FILE: 2025-06-22 - The Testimony of Job - Rapp Crook - Rapp Crook.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-22
-Title:   The Testimony of Job - Rapp Crook
-Speaker: Rapp Crook
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=84CZEa7UajA
+Date:     2025-06-22
+Title:    The Testimony of Job - Rapp Crook
+Speaker:  Rapp Crook
+Church:   Believer's Spoken Word Tabernacle
+Type:     Testimony Service
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=84CZEa7UajA
 ========================================
 
 Description:

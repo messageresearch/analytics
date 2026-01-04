@@ -4,13 +4,14 @@ START OF FILE: 2024-03-17 - Sermon Clip 240317 - Simon Abbott Fishing on the RIG
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-17
-Title:   Sermon Clip: 240317 - Simon Abbott: Fishing on the RIGHT Side
-Speaker: Simon Abbott
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=jP1yD0rsz6E
+Date:     2024-03-17
+Title:    Sermon Clip: 240317 - Simon Abbott: Fishing on the RIGHT Side
+Speaker:  Simon Abbott
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=jP1yD0rsz6E
 ========================================
 
 Description:

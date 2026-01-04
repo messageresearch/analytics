@@ -4,13 +4,14 @@ START OF FILE: 2020-07-19 - Knowing Who You Are - Bro. Jerry Browning - Jerry Br
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-19
-Title:   Knowing Who You Are - Bro. Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lyvW_-h3t3M
+Date:     2020-07-19
+Title:    Knowing Who You Are - Bro. Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=lyvW_-h3t3M
 ========================================
 
 TRANSCRIPT

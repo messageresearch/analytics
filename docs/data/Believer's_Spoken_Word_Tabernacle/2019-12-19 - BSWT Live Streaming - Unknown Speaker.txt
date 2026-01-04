@@ -4,13 +4,14 @@ START OF FILE: 2019-12-19 - BSWT Live Streaming - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-12-19
-Title:   BSWT Live Streaming
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LvdPKntjqRM
+Date:     2019-12-19
+Title:    BSWT Live Streaming
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=LvdPKntjqRM
 ========================================
 
 TRANSCRIPT

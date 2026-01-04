@@ -4,13 +4,14 @@ START OF FILE: 2023-06-11 - 230611 - Matthew Watkins Give Me The Word (Part 3) -
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-11
-Title:   230611 - Matthew Watkins: Give Me The Word (Part 3)
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dTHcNyfOetU
+Date:     2023-06-11
+Title:    230611 - Matthew Watkins: Give Me The Word (Part 3)
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=dTHcNyfOetU
 ========================================
 
 Description:

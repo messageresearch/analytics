@@ -4,13 +4,14 @@ START OF FILE: 2021-09-05 - Sermon Clips 210905 - Chad Lamb Power with God - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-05
-Title:   Sermon Clips: 210905 - Chad Lamb: Power with God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=aDiJoLvqnXI
+Date:     2021-09-05
+Title:    Sermon Clips: 210905 - Chad Lamb: Power with God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=aDiJoLvqnXI
 ========================================
 
 Description:

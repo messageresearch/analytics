@@ -4,13 +4,14 @@ START OF FILE: 2022-07-17 - Sermon Clip 220717 - Chad Lamb How to Overcome - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-17
-Title:   Sermon Clip: 220717 - Chad Lamb: How to Overcome
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-1VAhOE6akM
+Date:     2022-07-17
+Title:    Sermon Clip: 220717 - Chad Lamb: How to Overcome
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-1VAhOE6akM
 ========================================
 
 Description:

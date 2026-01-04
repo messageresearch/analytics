@@ -4,13 +4,14 @@ START OF FILE: 2024-03-01 - Don't Miss Your Visitation - Bryan Hanna - Bryan Han
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-01
-Title:   Don't Miss Your Visitation - Bryan Hanna
-Speaker: Bryan Hanna
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HiMUMwyAZvI
+Date:     2024-03-01
+Title:    Don't Miss Your Visitation - Bryan Hanna
+Speaker:  Bryan Hanna
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=HiMUMwyAZvI
 ========================================
 
 Description:

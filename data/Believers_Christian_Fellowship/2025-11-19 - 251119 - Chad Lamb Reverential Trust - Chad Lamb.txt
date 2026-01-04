@@ -4,13 +4,14 @@ START OF FILE: 2025-11-19 - 251119 - Chad Lamb Reverential Trust - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-19
-Title:   251119 - Chad Lamb: Reverential Trust
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=H6NWT2FwrPc
+Date:     2025-11-19
+Title:    251119 - Chad Lamb: Reverential Trust
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=H6NWT2FwrPc
 ========================================
 
 Description:

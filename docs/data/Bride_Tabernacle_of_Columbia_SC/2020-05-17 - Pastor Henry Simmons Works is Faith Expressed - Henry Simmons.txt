@@ -4,13 +4,14 @@ START OF FILE: 2020-05-17 - Pastor Henry Simmons Works is Faith Expressed - Henr
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-17
-Title:   Pastor Henry Simmons: "Works is Faith Expressed"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XjsukcDOrNc
+Date:     2020-05-17
+Title:    Pastor Henry Simmons: "Works is Faith Expressed"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=XjsukcDOrNc
 ========================================
 
 Description:

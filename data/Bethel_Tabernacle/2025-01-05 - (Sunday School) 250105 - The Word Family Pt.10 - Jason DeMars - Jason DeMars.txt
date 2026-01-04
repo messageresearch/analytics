@@ -4,13 +4,14 @@ START OF FILE: 2025-01-05 - (Sunday School) 250105 - The Word Family Pt.10 - Jas
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-05
-Title:   (Sunday School) 250105 - The Word Family Pt.10 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UudwnI-lxfo
+Date:     2025-01-05
+Title:    (Sunday School) 250105 - The Word Family Pt.10 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=UudwnI-lxfo
 ========================================
 
 Description:

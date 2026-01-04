@@ -4,13 +4,14 @@ START OF FILE: 2022-05-28 - We Have a Kingdom that Cannot be Moved - Bennie Perr
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-28
-Title:   We Have a Kingdom that Cannot be Moved - Bennie Perry
-Speaker: Bennie Perry
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f4NY7iGkKx0
+Date:     2022-05-28
+Title:    We Have a Kingdom that Cannot be Moved - Bennie Perry
+Speaker:  Bennie Perry
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=f4NY7iGkKx0
 ========================================
 
 Description:

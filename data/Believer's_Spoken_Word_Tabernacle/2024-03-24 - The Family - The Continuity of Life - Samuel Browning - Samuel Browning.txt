@@ -4,13 +4,14 @@ START OF FILE: 2024-03-24 - The Family - The Continuity of Life - Samuel Brownin
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-24
-Title:   The Family - The Continuity of Life - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Xpdq5iWqDWk
+Date:     2024-03-24
+Title:    The Family - The Continuity of Life - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=Xpdq5iWqDWk
 ========================================
 
 Description:

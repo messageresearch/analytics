@@ -4,13 +4,14 @@ START OF FILE: 2023-11-12 - Sermon Clip 231112 - Chad Lamb Life From Judgment - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-12
-Title:   Sermon Clip: 231112 - Chad Lamb: Life From Judgment
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=csZeA1uINWA
+Date:     2023-11-12
+Title:    Sermon Clip: 231112 - Chad Lamb: Life From Judgment
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=csZeA1uINWA
 ========================================
 
 Description:

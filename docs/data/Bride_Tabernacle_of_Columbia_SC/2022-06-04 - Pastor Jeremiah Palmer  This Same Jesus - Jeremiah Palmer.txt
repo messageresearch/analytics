@@ -4,13 +4,14 @@ START OF FILE: 2022-06-04 - Pastor Jeremiah Palmer  This Same Jesus - Jeremiah P
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-04
-Title:   Pastor Jeremiah Palmer: " This Same Jesus"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EjoIZeocxZk
+Date:     2022-06-04
+Title:    Pastor Jeremiah Palmer: " This Same Jesus"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=EjoIZeocxZk
 ========================================
 
 Description:

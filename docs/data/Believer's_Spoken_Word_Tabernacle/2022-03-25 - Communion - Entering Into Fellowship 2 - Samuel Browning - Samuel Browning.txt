@@ -4,13 +4,14 @@ START OF FILE: 2022-03-25 - Communion - Entering Into Fellowship 2 - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-25
-Title:   Communion - Entering Into Fellowship 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5pJeC65usCE
+Date:     2022-03-25
+Title:    Communion - Entering Into Fellowship 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Communion Service
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=5pJeC65usCE
 ========================================
 
 Description:

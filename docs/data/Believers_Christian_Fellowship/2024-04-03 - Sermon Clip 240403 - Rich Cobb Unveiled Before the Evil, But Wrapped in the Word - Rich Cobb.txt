@@ -4,13 +4,14 @@ START OF FILE: 2024-04-03 - Sermon Clip 240403 - Rich Cobb Unveiled Before the E
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-03
-Title:   Sermon Clip: 240403 - Rich Cobb: Unveiled Before the Evil, But Wrapped in the Word
-Speaker: Rich Cobb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=VSDFzoNqD00
+Date:     2024-04-03
+Title:    Sermon Clip: 240403 - Rich Cobb: Unveiled Before the Evil, But Wrapped in the Word
+Speaker:  Rich Cobb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=VSDFzoNqD00
 ========================================
 
 Description:

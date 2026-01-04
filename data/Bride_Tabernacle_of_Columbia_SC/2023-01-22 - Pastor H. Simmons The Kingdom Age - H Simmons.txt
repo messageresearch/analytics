@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - Pastor H. Simmons The Kingdom Age - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   Pastor H. Simmons: "The Kingdom Age"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ueQXpwS4Kd4
+Date:     2023-01-22
+Title:    Pastor H. Simmons: "The Kingdom Age"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=ueQXpwS4Kd4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-09-07 - 200907-Brad YounceThe Path To Honor - Brad Younce.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-07
-Title:   200907-Brad Younce:The Path To Honor
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x9inYY6Zojo
+Date:     2020-09-07
+Title:    200907-Brad Younce:The Path To Honor
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=x9inYY6Zojo
 ========================================
 
 Description:

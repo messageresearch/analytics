@@ -4,13 +4,14 @@ START OF FILE: 2022-03-24 - Under YOUR Feet - Brad Younce - Brad Younce.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-24
-Title:   Under YOUR Feet - Brad Younce
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=esZqy75Dg_0
+Date:     2022-03-24
+Title:    Under YOUR Feet - Brad Younce
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=esZqy75Dg_0
 ========================================
 
 Description:

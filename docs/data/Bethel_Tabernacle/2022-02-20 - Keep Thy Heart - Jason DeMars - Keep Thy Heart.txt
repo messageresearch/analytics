@@ -4,13 +4,14 @@ START OF FILE: 2022-02-20 - Keep Thy Heart - Jason DeMars - Keep Thy Heart.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-20
-Title:   Keep Thy Heart - Jason DeMars
-Speaker: Keep Thy Heart
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ry8OMOItdhw
+Date:     2022-02-20
+Title:    Keep Thy Heart - Jason DeMars
+Speaker:  Keep Thy Heart
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ry8OMOItdhw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-06-06 - Present Darkness Part 2 - Matthew Watkins - Matthew 
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-06
-Title:   Present Darkness Part 2 - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_ULsiHVrkrc
+Date:     2021-06-06
+Title:    Present Darkness Part 2 - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=_ULsiHVrkrc
 ========================================
 
 TRANSCRIPT

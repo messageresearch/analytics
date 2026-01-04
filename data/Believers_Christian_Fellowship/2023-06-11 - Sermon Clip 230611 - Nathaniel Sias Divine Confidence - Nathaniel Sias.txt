@@ -4,13 +4,14 @@ START OF FILE: 2023-06-11 - Sermon Clip 230611 - Nathaniel Sias Divine Confidenc
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-11
-Title:   Sermon Clip: 230611 - Nathaniel Sias: Divine Confidence
-Speaker: Nathaniel Sias
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=B-wemuxeZSA
+Date:     2023-06-11
+Title:    Sermon Clip: 230611 - Nathaniel Sias: Divine Confidence
+Speaker:  Nathaniel Sias
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=B-wemuxeZSA
 ========================================
 
 Description:

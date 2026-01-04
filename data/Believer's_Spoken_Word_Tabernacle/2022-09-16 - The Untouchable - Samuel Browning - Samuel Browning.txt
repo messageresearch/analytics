@@ -4,13 +4,14 @@ START OF FILE: 2022-09-16 - The Untouchable - Samuel Browning - Samuel Browning.
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-16
-Title:   The Untouchable - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9p2WkRlDDqg
+Date:     2022-09-16
+Title:    The Untouchable - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=9p2WkRlDDqg
 ========================================
 
 Description:

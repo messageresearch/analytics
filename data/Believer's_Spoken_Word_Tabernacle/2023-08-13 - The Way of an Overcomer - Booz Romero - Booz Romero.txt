@@ -4,13 +4,14 @@ START OF FILE: 2023-08-13 - The Way of an Overcomer - Booz Romero - Booz Romero.
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-13
-Title:   The Way of an Overcomer - Booz Romero
-Speaker: Booz Romero
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r-IFnjKNfo4
+Date:     2023-08-13
+Title:    The Way of an Overcomer - Booz Romero
+Speaker:  Booz Romero
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=r-IFnjKNfo4
 ========================================
 
 Description:

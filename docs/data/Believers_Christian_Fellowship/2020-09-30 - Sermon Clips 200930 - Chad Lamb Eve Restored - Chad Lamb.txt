@@ -4,13 +4,14 @@ START OF FILE: 2020-09-30 - Sermon Clips 200930 - Chad Lamb Eve Restored - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-30
-Title:   Sermon Clips: 200930 - Chad Lamb: Eve Restored
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=q2ZS5Y9mglk
+Date:     2020-09-30
+Title:    Sermon Clips: 200930 - Chad Lamb: Eve Restored
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=q2ZS5Y9mglk
 ========================================
 
 Description:

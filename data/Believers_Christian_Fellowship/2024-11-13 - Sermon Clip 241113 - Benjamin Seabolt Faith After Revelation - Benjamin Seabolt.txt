@@ -4,13 +4,14 @@ START OF FILE: 2024-11-13 - Sermon Clip 241113 - Benjamin Seabolt Faith After Re
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-13
-Title:   Sermon Clip: 241113 - Benjamin Seabolt: Faith After Revelation
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Idl1VFggUqc
+Date:     2024-11-13
+Title:    Sermon Clip: 241113 - Benjamin Seabolt: Faith After Revelation
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Idl1VFggUqc
 ========================================
 
 Description:

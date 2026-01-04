@@ -4,13 +4,14 @@ START OF FILE: 2021-08-08 - Sermon Clip 210808 - Chad Lamb Grace Opening Mercy -
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-08
-Title:   Sermon Clip: 210808 - Chad Lamb: Grace Opening Mercy
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=TI2X-qhl-E0
+Date:     2021-08-08
+Title:    Sermon Clip: 210808 - Chad Lamb: Grace Opening Mercy
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=TI2X-qhl-E0
 ========================================
 
 Description:

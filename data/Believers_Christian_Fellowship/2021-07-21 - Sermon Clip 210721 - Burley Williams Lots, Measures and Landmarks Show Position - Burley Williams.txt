@@ -4,13 +4,14 @@ START OF FILE: 2021-07-21 - Sermon Clip 210721 - Burley Williams Lots, Measures 
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-21
-Title:   Sermon Clip: 210721 - Burley Williams: Lots, Measures and Landmarks Show Position
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=idgW3vKZ8cA
+Date:     2021-07-21
+Title:    Sermon Clip: 210721 - Burley Williams: Lots, Measures and Landmarks Show Position
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=idgW3vKZ8cA
 ========================================
 
 Description:

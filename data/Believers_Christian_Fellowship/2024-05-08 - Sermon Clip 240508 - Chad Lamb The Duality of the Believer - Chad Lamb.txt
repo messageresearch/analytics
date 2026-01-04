@@ -4,13 +4,14 @@ START OF FILE: 2024-05-08 - Sermon Clip 240508 - Chad Lamb The Duality of the Be
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-08
-Title:   Sermon Clip: 240508 - Chad Lamb: The Duality of the Believer
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Tf0HHu6X4Bo
+Date:     2024-05-08
+Title:    Sermon Clip: 240508 - Chad Lamb: The Duality of the Believer
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Tf0HHu6X4Bo
 ========================================
 
 Description:

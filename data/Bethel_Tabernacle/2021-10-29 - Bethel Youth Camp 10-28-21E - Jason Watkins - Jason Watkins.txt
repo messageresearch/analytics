@@ -4,13 +4,14 @@ START OF FILE: 2021-10-29 - Bethel Youth Camp 10-28-21E - Jason Watkins - Jason 
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-29
-Title:   Bethel Youth Camp 10-28-21E - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=I3UlWc4zJ80
+Date:     2021-10-29
+Title:    Bethel Youth Camp 10-28-21E - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 3h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=I3UlWc4zJ80
 ========================================
 
 TRANSCRIPT

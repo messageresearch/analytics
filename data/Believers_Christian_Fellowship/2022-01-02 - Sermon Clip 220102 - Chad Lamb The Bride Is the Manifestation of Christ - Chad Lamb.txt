@@ -4,13 +4,14 @@ START OF FILE: 2022-01-02 - Sermon Clip 220102 - Chad Lamb The Bride Is the Mani
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-02
-Title:   Sermon Clip: 220102 - Chad Lamb: The Bride Is the Manifestation of Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=BnIqWsFgpC0
+Date:     2022-01-02
+Title:    Sermon Clip: 220102 - Chad Lamb: The Bride Is the Manifestation of Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=BnIqWsFgpC0
 ========================================
 
 Description:

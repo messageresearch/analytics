@@ -4,13 +4,14 @@ START OF FILE: 2020-10-14 - 201014 - Emmanuel Cibasu Thou Art a Blessing - I Am 
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-14
-Title:   201014 - Emmanuel Cibasu: Thou Art a Blessing - I Am Thy Shield
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kC1OGscMCzU
+Date:     2020-10-14
+Title:    201014 - Emmanuel Cibasu: Thou Art a Blessing - I Am Thy Shield
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=kC1OGscMCzU
 ========================================
 
 Description:

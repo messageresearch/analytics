@@ -4,13 +4,14 @@ START OF FILE: 2022-07-13 - Sermon Clip 220713 - Chad Lamb Finishing a Commissio
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-13
-Title:   Sermon Clip: 220713 - Chad Lamb: Finishing a Commission Through Humility and Submission
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=7BLdqkTMRAo
+Date:     2022-07-13
+Title:    Sermon Clip: 220713 - Chad Lamb: Finishing a Commission Through Humility and Submission
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=7BLdqkTMRAo
 ========================================
 
 Description:

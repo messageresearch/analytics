@@ -4,13 +4,14 @@ START OF FILE: 2023-06-04 - 230604 - Chad Lamb The Seventh Seal Brings Him to Ea
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-04
-Title:   230604 - Chad Lamb: The Seventh Seal Brings Him to Earth
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UnYPLHMRdjA
+Date:     2023-06-04
+Title:    230604 - Chad Lamb: The Seventh Seal Brings Him to Earth
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=UnYPLHMRdjA
 ========================================
 
 Description:

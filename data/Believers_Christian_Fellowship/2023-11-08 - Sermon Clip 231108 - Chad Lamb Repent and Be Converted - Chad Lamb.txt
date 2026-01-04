@@ -4,13 +4,14 @@ START OF FILE: 2023-11-08 - Sermon Clip 231108 - Chad Lamb Repent and Be Convert
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-08
-Title:   Sermon Clip: 231108 - Chad Lamb: Repent and Be Converted
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=bFyIslC3x5s
+Date:     2023-11-08
+Title:    Sermon Clip: 231108 - Chad Lamb: Repent and Be Converted
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=bFyIslC3x5s
 ========================================
 
 Description:

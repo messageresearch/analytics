@@ -4,13 +4,14 @@ START OF FILE: 2023-03-17 - The Eleventh Hour Workers - Stephen Ibale - Stephen 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-17
-Title:   The Eleventh Hour Workers - Stephen Ibale
-Speaker: Stephen Ibale
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=awjGVTGsHx0
+Date:     2023-03-17
+Title:    The Eleventh Hour Workers - Stephen Ibale
+Speaker:  Stephen Ibale
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=awjGVTGsHx0
 ========================================
 
 Description:

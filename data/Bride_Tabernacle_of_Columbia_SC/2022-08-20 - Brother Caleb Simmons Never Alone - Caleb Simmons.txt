@@ -4,13 +4,14 @@ START OF FILE: 2022-08-20 - Brother Caleb Simmons Never Alone - Caleb Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-20
-Title:   Brother Caleb Simmons: "Never Alone"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xsJqmYtOaSk
+Date:     2022-08-20
+Title:    Brother Caleb Simmons: "Never Alone"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=xsJqmYtOaSk
 ========================================
 
 Description:

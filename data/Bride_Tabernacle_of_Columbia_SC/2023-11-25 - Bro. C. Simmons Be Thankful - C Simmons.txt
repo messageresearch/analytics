@@ -4,13 +4,14 @@ START OF FILE: 2023-11-25 - Bro. C. Simmons Be Thankful - C Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-25
-Title:   Bro. C. Simmons: "Be Thankful"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iDnhuf56-GY
+Date:     2023-11-25
+Title:    Bro. C. Simmons: "Be Thankful"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=iDnhuf56-GY
 ========================================
 
 Description:

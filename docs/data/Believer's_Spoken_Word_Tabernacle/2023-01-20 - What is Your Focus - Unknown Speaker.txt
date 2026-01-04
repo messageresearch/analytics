@@ -4,13 +4,14 @@ START OF FILE: 2023-01-20 - What is Your Focus - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-20
-Title:   What is Your Focus?
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gLEkdCI4zsA
+Date:     2023-01-20
+Title:    What is Your Focus?
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Worship Service
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=gLEkdCI4zsA
 ========================================
 
 Description:

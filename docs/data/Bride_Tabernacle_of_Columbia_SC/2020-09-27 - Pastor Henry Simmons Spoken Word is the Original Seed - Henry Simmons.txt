@@ -4,13 +4,14 @@ START OF FILE: 2020-09-27 - Pastor Henry Simmons Spoken Word is the Original See
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-27
-Title:   Pastor Henry Simmons: "Spoken Word is the Original Seed"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qJxvyCWbTbc
+Date:     2020-09-27
+Title:    Pastor Henry Simmons: "Spoken Word is the Original Seed"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=qJxvyCWbTbc
 ========================================
 
 Description:

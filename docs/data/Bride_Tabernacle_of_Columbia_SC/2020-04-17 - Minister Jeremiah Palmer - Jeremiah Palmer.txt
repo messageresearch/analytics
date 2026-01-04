@@ -4,13 +4,14 @@ START OF FILE: 2020-04-17 - Minister Jeremiah Palmer - Jeremiah Palmer.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-17
-Title:   Minister Jeremiah Palmer:
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t8eXHBrFalc
+Date:     2020-04-17
+Title:    Minister Jeremiah Palmer:
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=t8eXHBrFalc
 ========================================
 
 Description:

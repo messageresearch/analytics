@@ -4,13 +4,14 @@ START OF FILE: 2024-10-20 - Sermon Clip 241020 - Chad Lamb The Revelation That O
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-20
-Title:   Sermon Clip: 241020 - Chad Lamb: The Revelation That Overcomes
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=q4Hp1x44g90
+Date:     2024-10-20
+Title:    Sermon Clip: 241020 - Chad Lamb: The Revelation That Overcomes
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=q4Hp1x44g90
 ========================================
 
 Description:

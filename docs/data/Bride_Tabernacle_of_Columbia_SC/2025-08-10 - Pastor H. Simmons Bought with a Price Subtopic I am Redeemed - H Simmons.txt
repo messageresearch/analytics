@@ -4,13 +4,14 @@ START OF FILE: 2025-08-10 - Pastor H. Simmons Bought with a Price Subtopic I am 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-10
-Title:   Pastor H. Simmons: "Bought with a Price" Subtopic: "I am Redeemed"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8gE8EWM1CMs
+Date:     2025-08-10
+Title:    Pastor H. Simmons: "Bought with a Price" Subtopic: "I am Redeemed"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=8gE8EWM1CMs
 ========================================
 
 Description:

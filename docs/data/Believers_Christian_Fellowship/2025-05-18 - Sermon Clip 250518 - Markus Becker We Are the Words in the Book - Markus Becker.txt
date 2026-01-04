@@ -4,13 +4,14 @@ START OF FILE: 2025-05-18 - Sermon Clip 250518 - Markus Becker We Are the Words 
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-18
-Title:   Sermon Clip: 250518 - Markus Becker: We Are the Words in the Book
-Speaker: Markus Becker
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=jiQFomoKVwc
+Date:     2025-05-18
+Title:    Sermon Clip: 250518 - Markus Becker: We Are the Words in the Book
+Speaker:  Markus Becker
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=jiQFomoKVwc
 ========================================
 
 Description:

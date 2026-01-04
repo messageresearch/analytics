@@ -4,13 +4,14 @@ START OF FILE: 2020-11-01 - 201101 - Chad Lamb The Purpose of a Seal - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-01
-Title:   201101 - Chad Lamb: The Purpose of a Seal
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FWHXatSCd3s
+Date:     2020-11-01
+Title:    201101 - Chad Lamb: The Purpose of a Seal
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=FWHXatSCd3s
 ========================================
 
 Description:

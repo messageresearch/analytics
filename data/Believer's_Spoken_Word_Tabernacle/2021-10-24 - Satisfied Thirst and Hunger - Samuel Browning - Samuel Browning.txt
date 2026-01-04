@@ -4,13 +4,14 @@ START OF FILE: 2021-10-24 - Satisfied Thirst and Hunger - Samuel Browning - Samu
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-24
-Title:   Satisfied Thirst and Hunger - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rwwU8h0QXEc
+Date:     2021-10-24
+Title:    Satisfied Thirst and Hunger - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=rwwU8h0QXEc
 ========================================
 
 Description:

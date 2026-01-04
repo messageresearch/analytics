@@ -4,13 +4,14 @@ START OF FILE: 2020-07-15 - 200715 - Chad Lamb The Full Potential is in the Seed
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-15
-Title:   200715 - Chad Lamb: The Full Potential is in the Seed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iKLPbMXgwOs
+Date:     2020-07-15
+Title:    200715 - Chad Lamb: The Full Potential is in the Seed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=iKLPbMXgwOs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-04-14 - 240414 - Chad Lamb Our Security - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-14
-Title:   240414 - Chad Lamb: Our Security
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OmlX3v6Lsqw
+Date:     2024-04-14
+Title:    240414 - Chad Lamb: Our Security
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=OmlX3v6Lsqw
 ========================================
 
 Description:

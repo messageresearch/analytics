@@ -4,13 +4,14 @@ START OF FILE: 2022-07-30 - Pastor Keith Reid My Change - Keith Reid.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-30
-Title:   Pastor Keith Reid: "My Change"
-Speaker: Keith Reid
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cYM-FSvMZ2A
+Date:     2022-07-30
+Title:    Pastor Keith Reid: "My Change"
+Speaker:  Keith Reid
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 3h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=cYM-FSvMZ2A
 ========================================
 
 Description:

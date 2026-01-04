@@ -4,13 +4,14 @@ START OF FILE: 2021-09-12 - Sermon Clip 210912 - Chad Lamb When the Lord Is Aski
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-12
-Title:   Sermon Clip: 210912 - Chad Lamb: When the Lord Is Asking a Question
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3zXciWhOQtM
+Date:     2021-09-12
+Title:    Sermon Clip: 210912 - Chad Lamb: When the Lord Is Asking a Question
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=3zXciWhOQtM
 ========================================
 
 Description:

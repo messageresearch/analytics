@@ -4,13 +4,14 @@ START OF FILE: 2022-02-06 - Pastor Henry Simmons; I Will; God Will - Henry Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-06
-Title:   Pastor Henry Simmons; "I Will; God Will"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VI7_3N13_5w
+Date:     2022-02-06
+Title:    Pastor Henry Simmons; "I Will; God Will"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=VI7_3N13_5w
 ========================================
 
 Description:

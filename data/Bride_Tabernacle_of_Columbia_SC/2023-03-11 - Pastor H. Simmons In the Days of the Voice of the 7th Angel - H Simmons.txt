@@ -4,13 +4,14 @@ START OF FILE: 2023-03-11 - Pastor H. Simmons In the Days of the Voice of the 7t
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-11
-Title:   Pastor H. Simmons: "In the Days of the Voice of the 7th Angel"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dQBdfEtzGu0
+Date:     2023-03-11
+Title:    Pastor H. Simmons: "In the Days of the Voice of the 7th Angel"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=dQBdfEtzGu0
 ========================================
 
 Description:

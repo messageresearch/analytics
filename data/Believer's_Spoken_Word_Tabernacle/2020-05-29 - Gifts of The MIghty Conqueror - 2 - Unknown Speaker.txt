@@ -4,13 +4,14 @@ START OF FILE: 2020-05-29 - Gifts of The MIghty Conqueror - 2 - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-29
-Title:   Gifts of The MIghty Conqueror - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5s7TO89BxjI
+Date:     2020-05-29
+Title:    Gifts of The MIghty Conqueror - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=5s7TO89BxjI
 ========================================
 
 TRANSCRIPT

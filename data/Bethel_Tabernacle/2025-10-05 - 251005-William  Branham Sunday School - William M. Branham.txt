@@ -4,13 +4,14 @@ START OF FILE: 2025-10-05 - 251005-William  Branham Sunday School - William M. B
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-05
-Title:   251005-William  Branham: Sunday School
-Speaker: William M. Branham
-Church:  Bethel Tabernacle
-Type:    Tape Service
-Language:English
-URL:     https://www.youtube.com/watch?v=16LdQfnjWnw
+Date:     2025-10-05
+Title:    251005-William  Branham: Sunday School
+Speaker:  William M. Branham
+Church:   Bethel Tabernacle
+Type:     Tape Service
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=16LdQfnjWnw
 ========================================
 
 Description:

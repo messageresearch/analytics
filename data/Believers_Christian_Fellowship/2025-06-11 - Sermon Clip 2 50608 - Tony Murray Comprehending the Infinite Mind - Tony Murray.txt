@@ -4,13 +4,14 @@ START OF FILE: 2025-06-11 - Sermon Clip 2 50608 - Tony Murray Comprehending the 
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-11
-Title:   Sermon Clip 2: 50608 - Tony Murray: Comprehending the Infinite Mind
-Speaker: Tony Murray
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=qAOgk08P1xA
+Date:     2025-06-11
+Title:    Sermon Clip 2: 50608 - Tony Murray: Comprehending the Infinite Mind
+Speaker:  Tony Murray
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=qAOgk08P1xA
 ========================================
 
 Description:

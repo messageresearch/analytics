@@ -4,13 +4,14 @@ START OF FILE: 2024-01-19 - 240119 - Kidri Diggs How Do You Measure Up - Kidri D
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-19
-Title:   240119 - Kidri Diggs: How Do You Measure Up?
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rcTArsgMRDU
+Date:     2024-01-19
+Title:    240119 - Kidri Diggs: How Do You Measure Up?
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=rcTArsgMRDU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-04-17 - Sermon Clip 240417 - Chad Lamb The Lamb's Wife - Par
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-17
-Title:   Sermon Clip: 240417 - Chad Lamb: The Lamb's Wife - Part 1
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=dzzg8bTQ3Zk
+Date:     2024-04-17
+Title:    Sermon Clip: 240417 - Chad Lamb: The Lamb's Wife - Part 1
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=dzzg8bTQ3Zk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-07-23 - 250723-Matthew WatkinsSo Simple Yet So Wonderful Pt.
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-23
-Title:   250723-Matthew Watkins:So Simple Yet So Wonderful Pt. 2
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LIcEfdy1nTI
+Date:     2025-07-23
+Title:    250723-Matthew Watkins:So Simple Yet So Wonderful Pt. 2
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=LIcEfdy1nTI
 ========================================
 
 Description:

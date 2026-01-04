@@ -4,13 +4,14 @@ START OF FILE: 2022-08-10 - 220810 - Chad Lamb The Seven Golden Candlesticks - P
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-10
-Title:   220810 - Chad Lamb: The Seven Golden Candlesticks - Part 2: Beaten Gold
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eJHh7AnikkU
+Date:     2022-08-10
+Title:    220810 - Chad Lamb: The Seven Golden Candlesticks - Part 2: Beaten Gold
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=eJHh7AnikkU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-04-05 - 230405 - Brad Younce Speak and It Will Come to Pass 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-05
-Title:   230405 - Brad Younce: Speak and It Will Come to Pass
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d6JH2s5Fr5o
+Date:     2023-04-05
+Title:    230405 - Brad Younce: Speak and It Will Come to Pass
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=d6JH2s5Fr5o
 ========================================
 
 Description:

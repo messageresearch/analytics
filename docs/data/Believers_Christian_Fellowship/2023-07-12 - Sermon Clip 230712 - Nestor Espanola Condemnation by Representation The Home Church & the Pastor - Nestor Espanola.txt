@@ -4,13 +4,14 @@ START OF FILE: 2023-07-12 - Sermon Clip 230712 - Nestor Espanola Condemnation by
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-12
-Title:   Sermon Clip: 230712 - Nestor Espanola: Condemnation by Representation: The Home Church & the Pastor
-Speaker: Nestor Espanola
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=drwAUFskDAc
+Date:     2023-07-12
+Title:    Sermon Clip: 230712 - Nestor Espanola: Condemnation by Representation: The Home Church & the Pastor
+Speaker:  Nestor Espanola
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=drwAUFskDAc
 ========================================
 
 Description:

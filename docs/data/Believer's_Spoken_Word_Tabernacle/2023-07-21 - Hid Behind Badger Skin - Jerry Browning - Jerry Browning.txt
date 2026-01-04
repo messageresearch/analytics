@@ -4,13 +4,14 @@ START OF FILE: 2023-07-21 - Hid Behind Badger Skin - Jerry Browning - Jerry Brow
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-21
-Title:   Hid Behind Badger Skin - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q5-mZmiRD3w
+Date:     2023-07-21
+Title:    Hid Behind Badger Skin - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=q5-mZmiRD3w
 ========================================
 
 Description:

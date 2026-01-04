@@ -4,13 +4,14 @@ START OF FILE: 2025-05-04 - Sermon clip 250504 - Emmanuel Cibasu Christ Ought To
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-04
-Title:   Sermon clip: 250504 - Emmanuel Cibasu: Christ Ought To Enter Into His Glory
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=64xeOizL9Cw
+Date:     2025-05-04
+Title:    Sermon clip: 250504 - Emmanuel Cibasu: Christ Ought To Enter Into His Glory
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=64xeOizL9Cw
 ========================================
 
 Description:

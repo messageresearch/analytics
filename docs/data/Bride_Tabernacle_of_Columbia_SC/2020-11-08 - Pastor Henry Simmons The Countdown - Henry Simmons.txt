@@ -4,13 +4,14 @@ START OF FILE: 2020-11-08 - Pastor Henry Simmons The Countdown - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-08
-Title:   Pastor Henry Simmons: "The Countdown"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gVUvq99uSYs
+Date:     2020-11-08
+Title:    Pastor Henry Simmons: "The Countdown"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=gVUvq99uSYs
 ========================================
 
 Description:

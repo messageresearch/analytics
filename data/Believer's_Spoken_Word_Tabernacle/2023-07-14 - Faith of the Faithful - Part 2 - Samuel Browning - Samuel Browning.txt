@@ -4,13 +4,14 @@ START OF FILE: 2023-07-14 - Faith of the Faithful - Part 2 - Samuel Browning - S
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-14
-Title:   Faith of the Faithful - Part 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z4OwVkp-dYA
+Date:     2023-07-14
+Title:    Faith of the Faithful - Part 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z4OwVkp-dYA
 ========================================
 
 Description:

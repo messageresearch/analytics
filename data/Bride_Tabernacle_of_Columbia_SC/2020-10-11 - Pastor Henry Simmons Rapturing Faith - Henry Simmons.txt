@@ -4,13 +4,14 @@ START OF FILE: 2020-10-11 - Pastor Henry Simmons Rapturing Faith - Henry Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-11
-Title:   Pastor Henry Simmons: "Rapturing Faith"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1bX0zH0Xf_E
+Date:     2020-10-11
+Title:    Pastor Henry Simmons: "Rapturing Faith"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=1bX0zH0Xf_E
 ========================================
 
 Description:

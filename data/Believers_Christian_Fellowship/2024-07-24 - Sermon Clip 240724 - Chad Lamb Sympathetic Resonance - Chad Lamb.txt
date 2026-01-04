@@ -4,13 +4,14 @@ START OF FILE: 2024-07-24 - Sermon Clip 240724 - Chad Lamb Sympathetic Resonance
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-24
-Title:   Sermon Clip: 240724 - Chad Lamb: Sympathetic Resonance
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-dFKZ4V501Q
+Date:     2024-07-24
+Title:    Sermon Clip: 240724 - Chad Lamb: Sympathetic Resonance
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-dFKZ4V501Q
 ========================================
 
 Description:

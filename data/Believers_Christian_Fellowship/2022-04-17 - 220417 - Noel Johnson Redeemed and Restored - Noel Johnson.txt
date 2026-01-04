@@ -4,13 +4,14 @@ START OF FILE: 2022-04-17 - 220417 - Noel Johnson Redeemed and Restored - Noel J
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-17
-Title:   220417 - Noel Johnson: Redeemed and Restored
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FcCt4U75lyE
+Date:     2022-04-17
+Title:    220417 - Noel Johnson: Redeemed and Restored
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=FcCt4U75lyE
 ========================================
 
 Description:

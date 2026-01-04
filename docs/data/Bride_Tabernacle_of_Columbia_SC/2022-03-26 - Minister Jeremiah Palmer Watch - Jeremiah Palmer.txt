@@ -4,13 +4,14 @@ START OF FILE: 2022-03-26 - Minister Jeremiah Palmer Watch - Jeremiah Palmer.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-26
-Title:   Minister Jeremiah Palmer: "Watch"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4mtSK7ehlYQ
+Date:     2022-03-26
+Title:    Minister Jeremiah Palmer: "Watch"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=4mtSK7ehlYQ
 ========================================
 
 Description:

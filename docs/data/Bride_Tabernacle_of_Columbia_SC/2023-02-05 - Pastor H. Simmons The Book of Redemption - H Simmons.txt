@@ -4,13 +4,14 @@ START OF FILE: 2023-02-05 - Pastor H. Simmons The Book of Redemption - H Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-05
-Title:   Pastor H. Simmons: "The Book of Redemption"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RDZ6hLeD9EE
+Date:     2023-02-05
+Title:    Pastor H. Simmons: "The Book of Redemption"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=RDZ6hLeD9EE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-12-05 - Gospel of This Evil Age pt.2 - Matthew Smith - Matth
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-05
-Title:   Gospel of This Evil Age pt.2 - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BEpQQULrXiw
+Date:     2021-12-05
+Title:    Gospel of This Evil Age pt.2 - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=BEpQQULrXiw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-09 - What is The Church of God Pt.4 - Jason Watkins - Jas
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-09
-Title:   What is The Church of God Pt.4 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HUowXE1m3Qg
+Date:     2022-01-09
+Title:    What is The Church of God Pt.4 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=HUowXE1m3Qg
 ========================================
 
 Description:

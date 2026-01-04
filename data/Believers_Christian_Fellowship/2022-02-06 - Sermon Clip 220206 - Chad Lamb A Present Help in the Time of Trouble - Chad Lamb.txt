@@ -4,13 +4,14 @@ START OF FILE: 2022-02-06 - Sermon Clip 220206 - Chad Lamb A Present Help in the
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-06
-Title:   Sermon Clip: 220206 - Chad Lamb: A Present Help in the Time of Trouble
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=xdAJPy3yfQY
+Date:     2022-02-06
+Title:    Sermon Clip: 220206 - Chad Lamb: A Present Help in the Time of Trouble
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=xdAJPy3yfQY
 ========================================
 
 Description:

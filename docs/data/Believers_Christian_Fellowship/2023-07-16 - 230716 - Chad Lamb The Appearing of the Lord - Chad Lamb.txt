@@ -4,13 +4,14 @@ START OF FILE: 2023-07-16 - 230716 - Chad Lamb The Appearing of the Lord - Chad 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-16
-Title:   230716 - Chad Lamb: The Appearing of the Lord
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kAVr-lKphwk
+Date:     2023-07-16
+Title:    230716 - Chad Lamb: The Appearing of the Lord
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=kAVr-lKphwk
 ========================================
 
 Description:

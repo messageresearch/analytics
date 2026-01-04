@@ -4,13 +4,14 @@ START OF FILE: 2023-07-22 - Minister Ernest Legette Before the Foundation - Erne
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-22
-Title:   Minister Ernest Legette: "Before the Foundation"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2SW08vFfXuo
+Date:     2023-07-22
+Title:    Minister Ernest Legette: "Before the Foundation"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=2SW08vFfXuo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-06-02 - Fellowship - Samuel Browning - Samuel Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-02
-Title:   Fellowship - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LYyPGb9oThA
+Date:     2024-06-02
+Title:    Fellowship - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=LYyPGb9oThA
 ========================================
 
 Description:

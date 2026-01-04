@@ -4,13 +4,14 @@ START OF FILE: 2023-05-24 - 230524 - Joe Howdeshell Restoration - Joe Howdeshell
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-24
-Title:   230524 - Joe Howdeshell: Restoration
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1I44FNPnl-8
+Date:     2023-05-24
+Title:    230524 - Joe Howdeshell: Restoration
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=1I44FNPnl-8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-05-12 - Pastor Henry Simmons Holy Women - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-12
-Title:   Pastor Henry Simmons: "Holy Women"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_7uf632BZwk
+Date:     2024-05-12
+Title:    Pastor Henry Simmons: "Holy Women"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=_7uf632BZwk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-07-06 - Sermon Clip 220706 - Chad Lamb Unlocking the Power o
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-06
-Title:   Sermon Clip: 220706 - Chad Lamb: Unlocking the Power of the Prophecy by Submission
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=NEIQ99-_1mw
+Date:     2022-07-06
+Title:    Sermon Clip: 220706 - Chad Lamb: Unlocking the Power of the Prophecy by Submission
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=NEIQ99-_1mw
 ========================================
 
 Description:

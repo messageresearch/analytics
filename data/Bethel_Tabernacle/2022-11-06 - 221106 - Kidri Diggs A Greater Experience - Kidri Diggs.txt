@@ -4,13 +4,14 @@ START OF FILE: 2022-11-06 - 221106 - Kidri Diggs A Greater Experience - Kidri Di
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-06
-Title:   221106 - Kidri Diggs: A Greater Experience
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=feyyo9cH4bU
+Date:     2022-11-06
+Title:    221106 - Kidri Diggs: A Greater Experience
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=feyyo9cH4bU
 ========================================
 
 Description:

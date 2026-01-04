@@ -4,13 +4,14 @@ START OF FILE: 2020-08-30 - Pastor Henry Simmons My Redeemer Lives - Henry Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-30
-Title:   Pastor Henry Simmons: "My Redeemer Lives"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z1o4_7Z4cB0
+Date:     2020-08-30
+Title:    Pastor Henry Simmons: "My Redeemer Lives"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z1o4_7Z4cB0
 ========================================
 
 Description:

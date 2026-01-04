@@ -4,13 +4,14 @@ START OF FILE: 2023-10-08 - Pastor H. Simmons  “Create in Me a Clean Heart” 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-08
-Title:   Pastor H. Simmons:  “Create in Me a Clean Heart”
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=40gJ_ClFXTM
+Date:     2023-10-08
+Title:    Pastor H. Simmons:  “Create in Me a Clean Heart”
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=40gJ_ClFXTM
 ========================================
 
 Description:

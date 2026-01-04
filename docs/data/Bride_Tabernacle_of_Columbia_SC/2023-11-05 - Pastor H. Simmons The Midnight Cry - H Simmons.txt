@@ -4,13 +4,14 @@ START OF FILE: 2023-11-05 - Pastor H. Simmons The Midnight Cry - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-05
-Title:   Pastor H. Simmons: "The Midnight Cry"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iBD-OTNud2I
+Date:     2023-11-05
+Title:    Pastor H. Simmons: "The Midnight Cry"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=iBD-OTNud2I
 ========================================
 
 Description:

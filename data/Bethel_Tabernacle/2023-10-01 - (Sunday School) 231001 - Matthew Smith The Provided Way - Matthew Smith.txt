@@ -4,13 +4,14 @@ START OF FILE: 2023-10-01 - (Sunday School) 231001 - Matthew Smith The Provided 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-01
-Title:   (Sunday School) 231001 - Matthew Smith: The Provided Way
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pZn8tl_RkPc
+Date:     2023-10-01
+Title:    (Sunday School) 231001 - Matthew Smith: The Provided Way
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=pZn8tl_RkPc
 ========================================
 
 Description:

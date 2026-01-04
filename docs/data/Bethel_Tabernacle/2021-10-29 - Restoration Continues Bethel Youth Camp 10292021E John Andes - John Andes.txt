@@ -4,13 +4,14 @@ START OF FILE: 2021-10-29 - Restoration Continues Bethel Youth Camp 10292021E Jo
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-29
-Title:   Restoration Continues Bethel Youth Camp 10/29/2021E John Andes
-Speaker: John Andes
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=_FV93J6_Qrs
+Date:     2021-10-29
+Title:    Restoration Continues Bethel Youth Camp 10/29/2021E John Andes
+Speaker:  John Andes
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=_FV93J6_Qrs
 ========================================
 
 TRANSCRIPT

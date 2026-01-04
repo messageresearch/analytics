@@ -4,13 +4,14 @@ START OF FILE: 2023-03-26 - (Sunday School) 230326 - Brad Younce Worship From Lo
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-26
-Title:   (Sunday School) 230326 - Brad Younce: Worship From Love
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ujP4ePG67IA
+Date:     2023-03-26
+Title:    (Sunday School) 230326 - Brad Younce: Worship From Love
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=ujP4ePG67IA
 ========================================
 
 Description:

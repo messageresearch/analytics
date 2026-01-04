@@ -4,13 +4,14 @@ START OF FILE: 2024-06-04 - Sermon Clip 240602a - Chad Lamb The Mystery of the G
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-04
-Title:   Sermon Clip: 240602a - Chad Lamb: The Mystery of the Gospel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Lhi7cukIC-U
+Date:     2024-06-04
+Title:    Sermon Clip: 240602a - Chad Lamb: The Mystery of the Gospel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Lhi7cukIC-U
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-04-24 - Sermon Clip 240424 - Menno Friesen Our Peace - Menno
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-24
-Title:   Sermon Clip: 240424 - Menno Friesen: Our Peace
-Speaker: Menno Friesen
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=7BWGK-1Jkl8
+Date:     2024-04-24
+Title:    Sermon Clip: 240424 - Menno Friesen: Our Peace
+Speaker:  Menno Friesen
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=7BWGK-1Jkl8
 ========================================
 
 Description:

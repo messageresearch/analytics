@@ -4,13 +4,14 @@ START OF FILE: 2025-03-19 - Sermon Clip 250319 - Ron Garvin Asian Mission Report
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-19
-Title:   Sermon Clip: 250319 - Ron Garvin: Asian Mission Report and Position & Relationship
-Speaker: Ron Garvin
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=JCVeNQ-GSzE
+Date:     2025-03-19
+Title:    Sermon Clip: 250319 - Ron Garvin: Asian Mission Report and Position & Relationship
+Speaker:  Ron Garvin
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=JCVeNQ-GSzE
 ========================================
 
 Description:

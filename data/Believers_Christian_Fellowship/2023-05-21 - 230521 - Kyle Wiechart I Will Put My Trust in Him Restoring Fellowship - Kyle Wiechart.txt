@@ -4,13 +4,14 @@ START OF FILE: 2023-05-21 - 230521 - Kyle Wiechart I Will Put My Trust in Him Re
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-21
-Title:   230521 - Kyle Wiechart: I Will Put My Trust in Him: Restoring Fellowship
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Rntx1bVpJrM
+Date:     2023-05-21
+Title:    230521 - Kyle Wiechart: I Will Put My Trust in Him: Restoring Fellowship
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=Rntx1bVpJrM
 ========================================
 
 Description:

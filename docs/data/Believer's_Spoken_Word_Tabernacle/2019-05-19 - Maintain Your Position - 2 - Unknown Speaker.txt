@@ -4,13 +4,14 @@ START OF FILE: 2019-05-19 - Maintain Your Position - 2 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-19
-Title:   Maintain Your Position - 2
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JT69PZTUj_w
+Date:     2019-05-19
+Title:    Maintain Your Position - 2
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=JT69PZTUj_w
 ========================================
 
 TRANSCRIPT

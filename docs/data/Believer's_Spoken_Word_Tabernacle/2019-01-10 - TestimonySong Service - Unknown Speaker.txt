@@ -4,13 +4,14 @@ START OF FILE: 2019-01-10 - TestimonySong Service - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-10
-Title:   Testimony/Song Service
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=G3aYO6e0V9w
+Date:     2019-01-10
+Title:    Testimony/Song Service
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Testimony Service
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=G3aYO6e0V9w
 ========================================
 
 TRANSCRIPT

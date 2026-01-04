@@ -4,13 +4,14 @@ START OF FILE: 2020-10-04 - 201004 - Chad Lamb The Necessity of the Bride - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-04
-Title:   201004 - Chad Lamb: The Necessity of the Bride
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IjLa8EEPq7E
+Date:     2020-10-04
+Title:    201004 - Chad Lamb: The Necessity of the Bride
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=IjLa8EEPq7E
 ========================================
 
 Description:

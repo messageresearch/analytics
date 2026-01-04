@@ -4,13 +4,14 @@ START OF FILE: 2024-05-22 - Sermon Clip 240522 - Chad Lamb The Mystery of His Wi
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-22
-Title:   Sermon Clip: 240522 - Chad Lamb: The Mystery of His Will
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=zDtS7Aomkew
+Date:     2024-05-22
+Title:    Sermon Clip: 240522 - Chad Lamb: The Mystery of His Will
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=zDtS7Aomkew
 ========================================
 
 Description:

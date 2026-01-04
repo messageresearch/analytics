@@ -4,13 +4,14 @@ START OF FILE: 2023-10-08 - 231008 - Gabriel Smith A Wounded Spirit - Gabriel Sm
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-08
-Title:   231008 - Gabriel Smith: A Wounded Spirit
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dbKJ8_QVru0
+Date:     2023-10-08
+Title:    231008 - Gabriel Smith: A Wounded Spirit
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=dbKJ8_QVru0
 ========================================
 
 Description:

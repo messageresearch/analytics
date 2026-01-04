@@ -4,13 +4,14 @@ START OF FILE: 2023-06-28 - 230628 - Noel Johnson The Bride Coming of Christ - N
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-28
-Title:   230628 - Noel Johnson: The Bride Coming of Christ
-Speaker: Noel Johnson
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0RT9WrO0MY4
+Date:     2023-06-28
+Title:    230628 - Noel Johnson: The Bride Coming of Christ
+Speaker:  Noel Johnson
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=0RT9WrO0MY4
 ========================================
 
 Description:

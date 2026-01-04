@@ -4,13 +4,14 @@ START OF FILE: 2025-09-28 - Pastor H. Simmons Amateur Gods - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-28
-Title:   Pastor H. Simmons: "Amateur Gods"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JZjreobKKQM
+Date:     2025-09-28
+Title:    Pastor H. Simmons: "Amateur Gods"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=JZjreobKKQM
 ========================================
 
 Description:

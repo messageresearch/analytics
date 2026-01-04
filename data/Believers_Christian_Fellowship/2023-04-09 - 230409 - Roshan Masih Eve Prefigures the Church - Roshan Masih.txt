@@ -4,13 +4,14 @@ START OF FILE: 2023-04-09 - 230409 - Roshan Masih Eve Prefigures the Church - Ro
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-09
-Title:   230409 - Roshan Masih: Eve Prefigures the Church
-Speaker: Roshan Masih
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DVoDnnyet38
+Date:     2023-04-09
+Title:    230409 - Roshan Masih: Eve Prefigures the Church
+Speaker:  Roshan Masih
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=DVoDnnyet38
 ========================================
 
 Description:

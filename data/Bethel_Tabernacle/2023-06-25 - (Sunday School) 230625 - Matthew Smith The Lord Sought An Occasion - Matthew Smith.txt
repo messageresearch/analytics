@@ -4,13 +4,14 @@ START OF FILE: 2023-06-25 - (Sunday School) 230625 - Matthew Smith The Lord Soug
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-25
-Title:   (Sunday School) 230625 - Matthew Smith: The Lord Sought An Occasion
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qqcyRDHy9Q4
+Date:     2023-06-25
+Title:    (Sunday School) 230625 - Matthew Smith: The Lord Sought An Occasion
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=qqcyRDHy9Q4
 ========================================
 
 Description:

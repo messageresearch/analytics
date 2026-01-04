@@ -4,13 +4,14 @@ START OF FILE: 2020-11-15 - Sermon Clips 201115 - Chad Lamb The Kingdom of God -
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-15
-Title:   Sermon Clips: 201115 - Chad Lamb: The Kingdom of God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=sK49OqgxskM
+Date:     2020-11-15
+Title:    Sermon Clips: 201115 - Chad Lamb: The Kingdom of God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=sK49OqgxskM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-05-30 - Bro. Matthew Watkins - Present Darkness - Matthew Wa
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-30
-Title:   Bro. Matthew Watkins - Present Darkness
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=p6YB4DAZPOc
+Date:     2021-05-30
+Title:    Bro. Matthew Watkins - Present Darkness
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=p6YB4DAZPOc
 ========================================
 
 TRANSCRIPT

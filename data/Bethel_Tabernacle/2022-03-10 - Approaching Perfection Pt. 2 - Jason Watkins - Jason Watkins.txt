@@ -4,13 +4,14 @@ START OF FILE: 2022-03-10 - Approaching Perfection Pt. 2 - Jason Watkins - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-10
-Title:   Approaching Perfection Pt. 2 - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5g6fhVid8ZI
+Date:     2022-03-10
+Title:    Approaching Perfection Pt. 2 - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=5g6fhVid8ZI
 ========================================
 
 Description:

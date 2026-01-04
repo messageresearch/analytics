@@ -4,13 +4,14 @@ START OF FILE: 2024-02-14 - 240214 - Jason Watkins I Don't Want To Be That Guy -
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-14
-Title:   240214 - Jason Watkins: I Don't Want To Be That Guy
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9rgBD9orzxI
+Date:     2024-02-14
+Title:    240214 - Jason Watkins: I Don't Want To Be That Guy
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=9rgBD9orzxI
 ========================================
 
 Description:

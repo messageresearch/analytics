@@ -4,13 +4,14 @@ START OF FILE: 2020-10-18 - Pastor Henry Simmons For the Elect Sake - Henry Simm
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-18
-Title:   Pastor Henry Simmons: "For the Elect Sake"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NTmjyaSR8kA
+Date:     2020-10-18
+Title:    Pastor Henry Simmons: "For the Elect Sake"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=NTmjyaSR8kA
 ========================================
 
 Description:

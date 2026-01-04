@@ -4,13 +4,14 @@ START OF FILE: 2022-05-21 - Pastor Henry Simmons Restoring All Things - Henry Si
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-21
-Title:   Pastor Henry Simmons: "Restoring All Things"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cHOzdq6x7mQ
+Date:     2022-05-21
+Title:    Pastor Henry Simmons: "Restoring All Things"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=cHOzdq6x7mQ
 ========================================
 
 Description:

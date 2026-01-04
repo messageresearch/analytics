@@ -4,13 +4,14 @@ START OF FILE: 2021-05-15 - Bro. Carl Singley What Is Your Issue - Carl Singley.
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-15
-Title:   Bro. Carl Singley: "What Is Your Issue?"
-Speaker: Carl Singley
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oU4rp0EDQMU
+Date:     2021-05-15
+Title:    Bro. Carl Singley: "What Is Your Issue?"
+Speaker:  Carl Singley
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=oU4rp0EDQMU
 ========================================
 
 Description:

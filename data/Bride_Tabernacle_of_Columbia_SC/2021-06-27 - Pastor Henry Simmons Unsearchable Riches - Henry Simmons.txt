@@ -4,13 +4,14 @@ START OF FILE: 2021-06-27 - Pastor Henry Simmons Unsearchable Riches - Henry Sim
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-27
-Title:   Pastor Henry Simmons: "Unsearchable Riches"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eQr8I0Jvd4w
+Date:     2021-06-27
+Title:    Pastor Henry Simmons: "Unsearchable Riches"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=eQr8I0Jvd4w
 ========================================
 
 Description:

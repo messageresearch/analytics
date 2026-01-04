@@ -4,13 +4,14 @@ START OF FILE: 2023-03-05 - Minister Ernest Legette Grace After the Fall - Ernes
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-05
-Title:   Minister Ernest Legette: "Grace After the Fall"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CGvN7SDiFrQ
+Date:     2023-03-05
+Title:    Minister Ernest Legette: "Grace After the Fall"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=CGvN7SDiFrQ
 ========================================
 
 Description:

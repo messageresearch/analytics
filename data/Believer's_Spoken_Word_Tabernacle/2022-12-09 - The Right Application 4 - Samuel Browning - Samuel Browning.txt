@@ -4,13 +4,14 @@ START OF FILE: 2022-12-09 - The Right Application 4 - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-09
-Title:   The Right Application 4 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=68p5HQTCpbE
+Date:     2022-12-09
+Title:    The Right Application 4 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=68p5HQTCpbE
 ========================================
 
 Description:

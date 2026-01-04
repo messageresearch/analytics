@@ -4,13 +4,14 @@ START OF FILE: 2019-07-21 - Stewards of God's Grace - Roel Soriano - Roel Sorian
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-21
-Title:   Stewards of God's Grace - Roel Soriano
-Speaker: Roel Soriano
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WApCPgPkOuM
+Date:     2019-07-21
+Title:    Stewards of God's Grace - Roel Soriano
+Speaker:  Roel Soriano
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=WApCPgPkOuM
 ========================================
 
 TRANSCRIPT

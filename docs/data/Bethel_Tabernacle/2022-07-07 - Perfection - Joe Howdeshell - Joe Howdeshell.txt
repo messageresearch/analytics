@@ -4,13 +4,14 @@ START OF FILE: 2022-07-07 - Perfection - Joe Howdeshell - Joe Howdeshell.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-07
-Title:   Perfection - Joe Howdeshell
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=u3LtBcA7cck
+Date:     2022-07-07
+Title:    Perfection - Joe Howdeshell
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=u3LtBcA7cck
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-09 - Life in the Bypass - Samuel Browning - Samuel Browni
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-09
-Title:   Life in the Bypass - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OOqBw2ODSPw
+Date:     2023-07-09
+Title:    Life in the Bypass - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=OOqBw2ODSPw
 ========================================
 
 Description:

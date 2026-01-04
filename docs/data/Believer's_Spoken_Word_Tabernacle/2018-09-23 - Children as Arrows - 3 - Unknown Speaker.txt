@@ -4,13 +4,14 @@ START OF FILE: 2018-09-23 - Children as Arrows - 3 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-09-23
-Title:   Children as Arrows - 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=b6v5TLiK4fo
+Date:     2018-09-23
+Title:    Children as Arrows - 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=b6v5TLiK4fo
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-08 - Sermon Clip 250108 - Chad Lamb The Seed Is Not To Ab
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-08
-Title:   Sermon Clip: 250108 - Chad Lamb: The Seed Is Not To Abide Alone
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Guux_6auIYc
+Date:     2025-01-08
+Title:    Sermon Clip: 250108 - Chad Lamb: The Seed Is Not To Abide Alone
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Guux_6auIYc
 ========================================
 
 Description:

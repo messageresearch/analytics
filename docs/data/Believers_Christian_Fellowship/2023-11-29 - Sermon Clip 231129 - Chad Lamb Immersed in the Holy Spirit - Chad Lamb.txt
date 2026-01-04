@@ -4,13 +4,14 @@ START OF FILE: 2023-11-29 - Sermon Clip 231129 - Chad Lamb Immersed in the Holy 
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-29
-Title:   Sermon Clip: 231129 - Chad Lamb: Immersed in the Holy Spirit
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=9nEIPFGNsD4
+Date:     2023-11-29
+Title:    Sermon Clip: 231129 - Chad Lamb: Immersed in the Holy Spirit
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=9nEIPFGNsD4
 ========================================
 
 Description:

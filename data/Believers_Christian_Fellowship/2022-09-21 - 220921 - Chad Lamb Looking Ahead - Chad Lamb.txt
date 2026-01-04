@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - 220921 - Chad Lamb Looking Ahead - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   220921 - Chad Lamb: Looking Ahead
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HGGu0OM-8hE
+Date:     2022-09-21
+Title:    220921 - Chad Lamb: Looking Ahead
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=HGGu0OM-8hE
 ========================================
 
 Description:

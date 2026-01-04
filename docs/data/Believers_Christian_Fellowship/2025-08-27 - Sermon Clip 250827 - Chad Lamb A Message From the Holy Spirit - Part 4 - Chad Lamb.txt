@@ -4,13 +4,14 @@ START OF FILE: 2025-08-27 - Sermon Clip 250827 - Chad Lamb A Message From the Ho
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-27
-Title:   Sermon Clip: 250827 - Chad Lamb: A Message From the Holy Spirit - Part 4
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DIg1qyORoGI
+Date:     2025-08-27
+Title:    Sermon Clip: 250827 - Chad Lamb: A Message From the Holy Spirit - Part 4
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=DIg1qyORoGI
 ========================================
 
 Description:

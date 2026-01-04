@@ -4,13 +4,14 @@ START OF FILE: 2024-05-22 - 240522 - Don Hoffman The Mystery of Words - Don Hoff
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-22
-Title:   240522 - Don Hoffman: The Mystery of Words
-Speaker: Don Hoffman
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nX9FKfDUOXo
+Date:     2024-05-22
+Title:    240522 - Don Hoffman: The Mystery of Words
+Speaker:  Don Hoffman
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=nX9FKfDUOXo
 ========================================
 
 Description:

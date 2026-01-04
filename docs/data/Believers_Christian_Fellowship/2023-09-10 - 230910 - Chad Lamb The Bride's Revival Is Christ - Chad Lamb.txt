@@ -4,13 +4,14 @@ START OF FILE: 2023-09-10 - 230910 - Chad Lamb The Bride's Revival Is Christ - C
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-10
-Title:   230910 - Chad Lamb: The Bride's Revival Is Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=e6zNvOLpfIk
+Date:     2023-09-10
+Title:    230910 - Chad Lamb: The Bride's Revival Is Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=e6zNvOLpfIk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-05-14 - The Final Example To The Final Age - Jason Watkins -
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-14
-Title:   The Final Example To The Final Age - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zz14Sp4QG7U
+Date:     2023-05-14
+Title:    The Final Example To The Final Age - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=zz14Sp4QG7U
 ========================================
 
 Description:

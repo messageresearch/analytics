@@ -4,13 +4,14 @@ START OF FILE: 2022-11-23 - 221123 - Daniel White The Token Life - Daniel White.
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-23
-Title:   221123 - Daniel White: The Token Life
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uQG0MIMAyRA
+Date:     2022-11-23
+Title:    221123 - Daniel White: The Token Life
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=uQG0MIMAyRA
 ========================================
 
 Description:

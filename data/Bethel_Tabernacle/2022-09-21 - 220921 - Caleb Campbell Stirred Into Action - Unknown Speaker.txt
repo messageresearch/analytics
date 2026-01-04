@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - 220921 - Caleb Campbell Stirred Into Action - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   220921 - Caleb Campbell: Stirred Into Action
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7-cOGtwf_ks
+Date:     2022-09-21
+Title:    220921 - Caleb Campbell: Stirred Into Action
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Worship Service
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=7-cOGtwf_ks
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-06-26 - Gifts of The Mighty Conqueror 6 - Apostles - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-26
-Title:   Gifts of The Mighty Conqueror 6 - Apostles
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Lx-vvkAnDRQ
+Date:     2020-06-26
+Title:    Gifts of The Mighty Conqueror 6 - Apostles
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=Lx-vvkAnDRQ
 ========================================
 
 TRANSCRIPT

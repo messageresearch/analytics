@@ -4,13 +4,14 @@ START OF FILE: 2025-12-03 - Sermon Clip 251203 - Chad Lamb Receiving the Book of
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-03
-Title:   Sermon Clip: 251203 - Chad Lamb: Receiving the Book of Redemption
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=N229AgtGcgo
+Date:     2025-12-03
+Title:    Sermon Clip: 251203 - Chad Lamb: Receiving the Book of Redemption
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=N229AgtGcgo
 ========================================
 
 Description:

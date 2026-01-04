@@ -4,13 +4,14 @@ START OF FILE: 2019-10-24 - An Inclination for Inspiration - Alexander Magoulas 
 
 SERMON DETAILS
 ========================================
-Date:    2019-10-24
-Title:   An Inclination for Inspiration - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ryXnzdsxfmc
+Date:     2019-10-24
+Title:    An Inclination for Inspiration - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=ryXnzdsxfmc
 ========================================
 
 TRANSCRIPT

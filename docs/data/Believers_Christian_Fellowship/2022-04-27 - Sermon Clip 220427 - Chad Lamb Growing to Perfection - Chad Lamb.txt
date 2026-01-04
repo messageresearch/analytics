@@ -4,13 +4,14 @@ START OF FILE: 2022-04-27 - Sermon Clip 220427 - Chad Lamb Growing to Perfection
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-27
-Title:   Sermon Clip: 220427 - Chad Lamb: Growing to Perfection
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=kYTbhdIGiN8
+Date:     2022-04-27
+Title:    Sermon Clip: 220427 - Chad Lamb: Growing to Perfection
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=kYTbhdIGiN8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-11-06 - Pastor Henry Simmons War in Heaven - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-06
-Title:   Pastor Henry Simmons: "War in Heaven"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QmrgAVXb6Bw
+Date:     2022-11-06
+Title:    Pastor Henry Simmons: "War in Heaven"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=QmrgAVXb6Bw
 ========================================
 
 Description:

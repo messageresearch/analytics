@@ -4,13 +4,14 @@ START OF FILE: 2024-09-15 - (Sunday School) 240915 - Matthew Smith The Byproduct
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-15
-Title:   (Sunday School) 240915 - Matthew Smith: The Byproduct Is Redemption
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KzeFj5_2S4U
+Date:     2024-09-15
+Title:    (Sunday School) 240915 - Matthew Smith: The Byproduct Is Redemption
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=KzeFj5_2S4U
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - 250831-Matthew Smith Why Are We Here Pt. 2 - Matthew
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   250831-Matthew Smith: Why Are We Here Pt. 2
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7_fRW8PxS9g
+Date:     2025-08-31
+Title:    250831-Matthew Smith: Why Are We Here Pt. 2
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=7_fRW8PxS9g
 ========================================
 
 Description:

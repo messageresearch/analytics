@@ -4,13 +4,14 @@ START OF FILE: 2024-09-25 - 240925 - Kyle Wiechart The Battle Rages ALL in Silen
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-25
-Title:   240925 - Kyle Wiechart: The Battle Rages ALL in Silence
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NUSzncU4Rnk
+Date:     2024-09-25
+Title:    240925 - Kyle Wiechart: The Battle Rages ALL in Silence
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=NUSzncU4Rnk
 ========================================
 
 Description:

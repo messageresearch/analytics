@@ -4,13 +4,14 @@ START OF FILE: 2023-06-07 - Sermon Clip 230607 - Chad Lamb Faith Is a Mystery - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-07
-Title:   Sermon Clip: 230607 - Chad Lamb: Faith Is a Mystery
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ER8AgfLzJd0
+Date:     2023-06-07
+Title:    Sermon Clip: 230607 - Chad Lamb: Faith Is a Mystery
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ER8AgfLzJd0
 ========================================
 
 Description:

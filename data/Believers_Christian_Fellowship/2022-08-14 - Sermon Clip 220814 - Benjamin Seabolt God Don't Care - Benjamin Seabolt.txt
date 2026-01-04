@@ -4,13 +4,14 @@ START OF FILE: 2022-08-14 - Sermon Clip 220814 - Benjamin Seabolt God Don't Care
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-14
-Title:   Sermon Clip: 220814 - Benjamin Seabolt: God Don't Care
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=49TyQY7TOC4
+Date:     2022-08-14
+Title:    Sermon Clip: 220814 - Benjamin Seabolt: God Don't Care
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=49TyQY7TOC4
 ========================================
 
 Description:

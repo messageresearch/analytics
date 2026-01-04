@@ -4,13 +4,14 @@ START OF FILE: 2025-06-15 - Bro. Caleb Simmons The Test Before the Blessing - Ca
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-15
-Title:   Bro. Caleb Simmons: "The Test Before the Blessing"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZiuxM9zSv3M
+Date:     2025-06-15
+Title:    Bro. Caleb Simmons: "The Test Before the Blessing"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZiuxM9zSv3M
 ========================================
 
 Description:

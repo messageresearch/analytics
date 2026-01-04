@@ -4,13 +4,14 @@ START OF FILE: 2024-01-31 - 240131 - Benjamin Seabolt The Pride of Life - Benjam
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-31
-Title:   240131 - Benjamin Seabolt: The Pride of Life
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZHguzF-2dhs
+Date:     2024-01-31
+Title:    240131 - Benjamin Seabolt: The Pride of Life
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 3h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZHguzF-2dhs
 ========================================
 
 Description:

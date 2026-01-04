@@ -4,13 +4,14 @@ START OF FILE: 2024-07-14 - Handfuls of Purpose - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-14
-Title:   Handfuls of Purpose - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aowBcATzBNg
+Date:     2024-07-14
+Title:    Handfuls of Purpose - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=aowBcATzBNg
 ========================================
 
 Description:

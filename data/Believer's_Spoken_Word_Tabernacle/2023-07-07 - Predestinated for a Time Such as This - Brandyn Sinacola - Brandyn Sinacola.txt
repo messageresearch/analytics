@@ -4,13 +4,14 @@ START OF FILE: 2023-07-07 - Predestinated for a Time Such as This - Brandyn Sina
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-07
-Title:   Predestinated for a Time Such as This - Brandyn Sinacola
-Speaker: Brandyn Sinacola
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=I0wNF8scXZI
+Date:     2023-07-07
+Title:    Predestinated for a Time Such as This - Brandyn Sinacola
+Speaker:  Brandyn Sinacola
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=I0wNF8scXZI
 ========================================
 
 Description:

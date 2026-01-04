@@ -4,13 +4,14 @@ START OF FILE: 2023-10-21 - (Saturday Evening) Bro Josh Bennett - Bethel Youth C
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-21
-Title:   (Saturday Evening) Bro Josh Bennett - Bethel Youth Camp 2023
-Speaker: Josh Bennett
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=DbE716UNKOY
+Date:     2023-10-21
+Title:    (Saturday Evening) Bro Josh Bennett - Bethel Youth Camp 2023
+Speaker:  Josh Bennett
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 4h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=DbE716UNKOY
 ========================================
 
 Description:

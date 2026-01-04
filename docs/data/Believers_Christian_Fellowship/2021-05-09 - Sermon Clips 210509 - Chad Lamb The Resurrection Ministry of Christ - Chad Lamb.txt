@@ -4,13 +4,14 @@ START OF FILE: 2021-05-09 - Sermon Clips 210509 - Chad Lamb The Resurrection Min
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-09
-Title:   Sermon Clips: 210509 - Chad Lamb: The Resurrection Ministry of Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3qKhyp5yftM
+Date:     2021-05-09
+Title:    Sermon Clips: 210509 - Chad Lamb: The Resurrection Ministry of Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Easter Program
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=3qKhyp5yftM
 ========================================
 
 Description:

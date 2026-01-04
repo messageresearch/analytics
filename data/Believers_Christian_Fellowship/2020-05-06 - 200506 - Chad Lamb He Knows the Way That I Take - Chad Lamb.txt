@@ -4,13 +4,14 @@ START OF FILE: 2020-05-06 - 200506 - Chad Lamb He Knows the Way That I Take - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-06
-Title:   200506 - Chad Lamb: He Knows the Way That I Take
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d8s97X0fUBQ
+Date:     2020-05-06
+Title:    200506 - Chad Lamb: He Knows the Way That I Take
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=d8s97X0fUBQ
 ========================================
 
 Description:

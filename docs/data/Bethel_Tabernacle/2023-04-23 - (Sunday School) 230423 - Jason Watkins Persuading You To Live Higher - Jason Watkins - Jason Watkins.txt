@@ -4,13 +4,14 @@ START OF FILE: 2023-04-23 - (Sunday School) 230423 - Jason Watkins Persuading Yo
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-23
-Title:   (Sunday School) 230423 - Jason Watkins: Persuading You To Live Higher - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=a1SkG6UdLXU
+Date:     2023-04-23
+Title:    (Sunday School) 230423 - Jason Watkins: Persuading You To Live Higher - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=a1SkG6UdLXU
 ========================================
 
 Description:

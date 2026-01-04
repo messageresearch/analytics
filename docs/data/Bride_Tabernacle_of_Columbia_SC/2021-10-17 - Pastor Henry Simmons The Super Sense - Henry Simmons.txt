@@ -4,13 +4,14 @@ START OF FILE: 2021-10-17 - Pastor Henry Simmons The Super Sense - Henry Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-17
-Title:   Pastor Henry Simmons: "The Super Sense"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PIucKlvnkzM
+Date:     2021-10-17
+Title:    Pastor Henry Simmons: "The Super Sense"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=PIucKlvnkzM
 ========================================
 
 Description:

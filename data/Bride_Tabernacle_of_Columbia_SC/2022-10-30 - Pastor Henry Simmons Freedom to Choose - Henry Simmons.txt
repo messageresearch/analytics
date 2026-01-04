@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - Pastor Henry Simmons Freedom to Choose - Henry Simmo
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   Pastor Henry Simmons: "Freedom to Choose"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Zj-lXBd5TMQ
+Date:     2022-10-30
+Title:    Pastor Henry Simmons: "Freedom to Choose"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=Zj-lXBd5TMQ
 ========================================
 
 Description:

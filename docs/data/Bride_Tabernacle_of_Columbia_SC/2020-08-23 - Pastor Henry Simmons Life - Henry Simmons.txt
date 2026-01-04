@@ -4,13 +4,14 @@ START OF FILE: 2020-08-23 - Pastor Henry Simmons Life - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-23
-Title:   Pastor Henry Simmons: "Life"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=u02QsTD1Hq4
+Date:     2020-08-23
+Title:    Pastor Henry Simmons: "Life"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=u02QsTD1Hq4
 ========================================
 
 Description:

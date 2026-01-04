@@ -4,13 +4,14 @@ START OF FILE: 2024-06-15 - Pastor H. Simmons Beyond the Curtain of Time - H Sim
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-15
-Title:   Pastor H. Simmons: "Beyond the Curtain of Time"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LJkNJysA-ng
+Date:     2024-06-15
+Title:    Pastor H. Simmons: "Beyond the Curtain of Time"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=LJkNJysA-ng
 ========================================
 
 Description:

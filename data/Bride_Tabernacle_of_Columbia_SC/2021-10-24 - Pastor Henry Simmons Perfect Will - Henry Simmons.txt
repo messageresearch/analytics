@@ -4,13 +4,14 @@ START OF FILE: 2021-10-24 - Pastor Henry Simmons Perfect Will - Henry Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-24
-Title:   Pastor Henry Simmons: "Perfect Will"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sI20cVfsTCA
+Date:     2021-10-24
+Title:    Pastor Henry Simmons: "Perfect Will"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=sI20cVfsTCA
 ========================================
 
 Description:

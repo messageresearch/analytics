@@ -4,13 +4,14 @@ START OF FILE: 2025-03-23 - 250323 - Chad Lamb Faith's Affect - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-23
-Title:   250323 - Chad Lamb: Faith's Affect
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zHDZvnQbp9c
+Date:     2025-03-23
+Title:    250323 - Chad Lamb: Faith's Affect
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=zHDZvnQbp9c
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - The Diligence of a Faithful Servant - Caleb Campbell
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   The Diligence of a Faithful Servant - Caleb Campbell
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IXY-leAJhYw
+Date:     2022-03-13
+Title:    The Diligence of a Faithful Servant - Caleb Campbell
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=IXY-leAJhYw
 ========================================
 
 Description:

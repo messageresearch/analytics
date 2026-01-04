@@ -4,13 +4,14 @@ START OF FILE: 2022-07-03 - I Write Unto You, Fathers 2 - Samuel Browning - Samu
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-03
-Title:   I Write Unto You, Fathers 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ST9m_LLlq4I
+Date:     2022-07-03
+Title:    I Write Unto You, Fathers 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=ST9m_LLlq4I
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-02-25 - Sermon Clip 240225 - Chad Lamb The Heart of the Matt
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-25
-Title:   Sermon Clip: 240225 - Chad Lamb: The Heart of the Matter
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=dd_MSiNEZfU
+Date:     2024-02-25
+Title:    Sermon Clip: 240225 - Chad Lamb: The Heart of the Matter
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=dd_MSiNEZfU
 ========================================
 
 Description:

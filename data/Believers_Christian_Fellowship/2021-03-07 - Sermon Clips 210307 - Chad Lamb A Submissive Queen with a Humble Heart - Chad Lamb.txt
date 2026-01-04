@@ -4,13 +4,14 @@ START OF FILE: 2021-03-07 - Sermon Clips 210307 - Chad Lamb A Submissive Queen w
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-07
-Title:   Sermon Clips: 210307 - Chad Lamb: A Submissive Queen with a Humble Heart
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=C5-pEsKyZd4
+Date:     2021-03-07
+Title:    Sermon Clips: 210307 - Chad Lamb: A Submissive Queen with a Humble Heart
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=C5-pEsKyZd4
 ========================================
 
 Description:

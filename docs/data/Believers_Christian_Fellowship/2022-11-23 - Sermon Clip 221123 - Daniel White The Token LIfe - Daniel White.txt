@@ -4,13 +4,14 @@ START OF FILE: 2022-11-23 - Sermon Clip 221123 - Daniel White The Token LIfe - D
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-23
-Title:   Sermon Clip: 221123 - Daniel White: The Token LIfe
-Speaker: Daniel White
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=t2KaqsiUYdM
+Date:     2022-11-23
+Title:    Sermon Clip: 221123 - Daniel White: The Token LIfe
+Speaker:  Daniel White
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=t2KaqsiUYdM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-01-26 - 200126 - Chad Lamb Positioned by Revelation - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-26
-Title:   200126 - Chad Lamb: Positioned by Revelation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ltlVNKU10-M
+Date:     2020-01-26
+Title:    200126 - Chad Lamb: Positioned by Revelation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=ltlVNKU10-M
 ========================================
 
 Description:

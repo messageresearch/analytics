@@ -4,13 +4,14 @@ START OF FILE: 2022-11-02 - 221102 - Jason Watkins Haunted House of Hell - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-02
-Title:   221102 - Jason Watkins: Haunted House of Hell
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Jy7TRe0MsMY
+Date:     2022-11-02
+Title:    221102 - Jason Watkins: Haunted House of Hell
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=Jy7TRe0MsMY
 ========================================
 
 Description:

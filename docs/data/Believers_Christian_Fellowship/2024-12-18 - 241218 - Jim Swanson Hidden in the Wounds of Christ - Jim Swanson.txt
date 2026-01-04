@@ -4,13 +4,14 @@ START OF FILE: 2024-12-18 - 241218 - Jim Swanson Hidden in the Wounds of Christ 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-18
-Title:   241218 - Jim Swanson: Hidden in the Wounds of Christ
-Speaker: Jim Swanson
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xjp8D0NE5hs
+Date:     2024-12-18
+Title:    241218 - Jim Swanson: Hidden in the Wounds of Christ
+Speaker:  Jim Swanson
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=xjp8D0NE5hs
 ========================================
 
 Description:

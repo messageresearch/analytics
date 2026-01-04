@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - Sermon Clip 230903 - Chad Lamb The Invisible Is the 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   Sermon Clip: 230903 - Chad Lamb: The Invisible Is the Real
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=-VLApyVBAuA
+Date:     2023-09-03
+Title:    Sermon Clip: 230903 - Chad Lamb: The Invisible Is the Real
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=-VLApyVBAuA
 ========================================
 
 Description:

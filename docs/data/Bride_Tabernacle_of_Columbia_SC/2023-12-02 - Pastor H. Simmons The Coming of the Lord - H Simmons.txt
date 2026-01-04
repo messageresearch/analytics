@@ -4,13 +4,14 @@ START OF FILE: 2023-12-02 - Pastor H. Simmons The Coming of the Lord - H Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-02
-Title:   Pastor H. Simmons: "The Coming of the Lord"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IijFrLqSZZE
+Date:     2023-12-02
+Title:    Pastor H. Simmons: "The Coming of the Lord"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=IijFrLqSZZE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-05-29 - Unclogging the Channels - Andrew Glover - Andrew Glo
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-29
-Title:   Unclogging the Channels - Andrew Glover
-Speaker: Andrew Glover
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FIWMArVG2ZM
+Date:     2021-05-29
+Title:    Unclogging the Channels - Andrew Glover
+Speaker:  Andrew Glover
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=FIWMArVG2ZM
 ========================================
 
 TRANSCRIPT

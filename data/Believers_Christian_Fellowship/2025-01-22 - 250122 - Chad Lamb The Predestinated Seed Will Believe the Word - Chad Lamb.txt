@@ -4,13 +4,14 @@ START OF FILE: 2025-01-22 - 250122 - Chad Lamb The Predestinated Seed Will Belie
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-22
-Title:   250122 - Chad Lamb: The Predestinated Seed Will Believe the Word
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nnO0kQJDRro
+Date:     2025-01-22
+Title:    250122 - Chad Lamb: The Predestinated Seed Will Believe the Word
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=nnO0kQJDRro
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-27 - Feeling All Alone - Barry Coffey - Barry Coffey.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-27
-Title:   Feeling All Alone - Barry Coffey
-Speaker: Barry Coffey
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T-N36p-mgmI
+Date:     2023-03-27
+Title:    Feeling All Alone - Barry Coffey
+Speaker:  Barry Coffey
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=T-N36p-mgmI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-12-18 - The Mystery of Our Change - Wayne Lawson - Wayne Law
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-18
-Title:   The Mystery of Our Change - Wayne Lawson
-Speaker: Wayne Lawson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eUGd8s1qT7I
+Date:     2022-12-18
+Title:    The Mystery of Our Change - Wayne Lawson
+Speaker:  Wayne Lawson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=eUGd8s1qT7I
 ========================================
 
 Description:

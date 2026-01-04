@@ -4,13 +4,14 @@ START OF FILE: 2024-04-10 - Sermon Clip 240410 - Chad Lamb I Shall Not Want - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-10
-Title:   Sermon Clip: 240410 - Chad Lamb: I Shall Not Want
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ms9iGn_j2Vk
+Date:     2024-04-10
+Title:    Sermon Clip: 240410 - Chad Lamb: I Shall Not Want
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ms9iGn_j2Vk
 ========================================
 
 Description:

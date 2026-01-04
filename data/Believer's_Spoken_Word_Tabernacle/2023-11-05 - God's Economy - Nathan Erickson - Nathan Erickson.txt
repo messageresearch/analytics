@@ -4,13 +4,14 @@ START OF FILE: 2023-11-05 - God's Economy - Nathan Erickson - Nathan Erickson.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-05
-Title:   God's Economy - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hDJfuKTF00s
+Date:     2023-11-05
+Title:    God's Economy - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=hDJfuKTF00s
 ========================================
 
 Description:

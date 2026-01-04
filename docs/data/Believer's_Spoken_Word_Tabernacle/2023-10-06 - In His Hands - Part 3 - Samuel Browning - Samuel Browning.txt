@@ -4,13 +4,14 @@ START OF FILE: 2023-10-06 - In His Hands - Part 3 - Samuel Browning - Samuel Bro
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-06
-Title:   In His Hands - Part 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T9jZk8NOvaI
+Date:     2023-10-06
+Title:    In His Hands - Part 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=T9jZk8NOvaI
 ========================================
 
 Description:

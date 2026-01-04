@@ -4,13 +4,14 @@ START OF FILE: 2022-01-02 - Pastor Henry Simmons The Future - Henry Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-02
-Title:   Pastor Henry Simmons: "The Future"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WCRFz_65h0s
+Date:     2022-01-02
+Title:    Pastor Henry Simmons: "The Future"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=WCRFz_65h0s
 ========================================
 
 Description:

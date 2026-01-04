@@ -4,13 +4,14 @@ START OF FILE: 2022-12-18 - Sermon Clip 221218 - Burley Williams Balm in Gilead 
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-18
-Title:   Sermon Clip: 221218 - Burley Williams: Balm in Gilead
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DBTOAEIB9LA
+Date:     2022-12-18
+Title:    Sermon Clip: 221218 - Burley Williams: Balm in Gilead
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DBTOAEIB9LA
 ========================================
 
 Description:

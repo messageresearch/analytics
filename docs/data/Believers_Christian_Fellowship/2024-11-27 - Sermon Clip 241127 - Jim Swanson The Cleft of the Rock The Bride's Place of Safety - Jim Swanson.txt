@@ -4,13 +4,14 @@ START OF FILE: 2024-11-27 - Sermon Clip 241127 - Jim Swanson The Cleft of the Ro
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-27
-Title:   Sermon Clip: 241127 - Jim Swanson: The Cleft of the Rock: The Bride's Place of Safety
-Speaker: Jim Swanson
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=1-BIlW-8GZQ
+Date:     2024-11-27
+Title:    Sermon Clip: 241127 - Jim Swanson: The Cleft of the Rock: The Bride's Place of Safety
+Speaker:  Jim Swanson
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=1-BIlW-8GZQ
 ========================================
 
 Description:

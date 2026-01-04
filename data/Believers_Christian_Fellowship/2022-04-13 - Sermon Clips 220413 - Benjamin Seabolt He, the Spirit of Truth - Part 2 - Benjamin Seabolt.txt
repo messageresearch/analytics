@@ -4,13 +4,14 @@ START OF FILE: 2022-04-13 - Sermon Clips 220413 - Benjamin Seabolt He, the Spiri
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-13
-Title:   Sermon Clips: 220413 - Benjamin Seabolt: He, the Spirit of Truth - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=vm5WVthNN1Q
+Date:     2022-04-13
+Title:    Sermon Clips: 220413 - Benjamin Seabolt: He, the Spirit of Truth - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=vm5WVthNN1Q
 ========================================
 
 Description:

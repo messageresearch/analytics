@@ -4,13 +4,14 @@ START OF FILE: 2025-03-30 - 250330 - Chad Lamb The Church in Trouble - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-30
-Title:   250330 - Chad Lamb: The Church in Trouble
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cpyvupHfNS8
+Date:     2025-03-30
+Title:    250330 - Chad Lamb: The Church in Trouble
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=cpyvupHfNS8
 ========================================
 
 Description:

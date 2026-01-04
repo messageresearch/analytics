@@ -4,13 +4,14 @@ START OF FILE: 2021-07-04 - Bro. Ben Norrod Blessed are They - Ben Norrod.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-04
-Title:   Bro. Ben Norrod: "Blessed are They"
-Speaker: Ben Norrod
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qcirBI5-NGs
+Date:     2021-07-04
+Title:    Bro. Ben Norrod: "Blessed are They"
+Speaker:  Ben Norrod
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=qcirBI5-NGs
 ========================================
 
 Description:

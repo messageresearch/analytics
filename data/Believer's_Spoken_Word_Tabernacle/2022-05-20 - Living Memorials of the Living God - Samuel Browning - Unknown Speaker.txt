@@ -4,13 +4,14 @@ START OF FILE: 2022-05-20 - Living Memorials of the Living God - Samuel Browning
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-20
-Title:   Living Memorials of the Living God - Samuel Browning
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=B09Kn_MXrRM
+Date:     2022-05-20
+Title:    Living Memorials of the Living God - Samuel Browning
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Memorial Service
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=B09Kn_MXrRM
 ========================================
 
 Description:

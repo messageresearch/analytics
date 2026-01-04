@@ -4,13 +4,14 @@ START OF FILE: 2021-11-10 - Sermon Clip 211110 - Chad Lamb The Seed of Promise -
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-10
-Title:   Sermon Clip: 211110 - Chad Lamb: The Seed of Promise - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=9VH-vIZ54q8
+Date:     2021-11-10
+Title:    Sermon Clip: 211110 - Chad Lamb: The Seed of Promise - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9VH-vIZ54q8
 ========================================
 
 Description:

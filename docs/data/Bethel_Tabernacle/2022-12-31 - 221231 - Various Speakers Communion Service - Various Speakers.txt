@@ -4,13 +4,14 @@ START OF FILE: 2022-12-31 - 221231 - Various Speakers Communion Service - Variou
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-31
-Title:   221231 - Various Speakers: Communion Service
-Speaker: Various Speakers
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YShcHlAP_Ug
+Date:     2022-12-31
+Title:    221231 - Various Speakers: Communion Service
+Speaker:  Various Speakers
+Church:   Bethel Tabernacle
+Type:     Communion Service
+Duration: 3h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=YShcHlAP_Ug
 ========================================
 
 Description:

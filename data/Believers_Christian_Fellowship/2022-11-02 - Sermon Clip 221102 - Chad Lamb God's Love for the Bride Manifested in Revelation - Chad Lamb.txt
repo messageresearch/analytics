@@ -4,13 +4,14 @@ START OF FILE: 2022-11-02 - Sermon Clip 221102 - Chad Lamb God's Love for the Br
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-02
-Title:   Sermon Clip: 221102 - Chad Lamb: God's Love for the Bride Manifested in Revelation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3zK5AL2fcJU
+Date:     2022-11-02
+Title:    Sermon Clip: 221102 - Chad Lamb: God's Love for the Bride Manifested in Revelation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=3zK5AL2fcJU
 ========================================
 
 Description:

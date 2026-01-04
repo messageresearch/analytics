@@ -4,13 +4,14 @@ START OF FILE: 2021-04-14 - Sermon Clip 210414 - Chad Lamb The Manifestation of 
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-14
-Title:   Sermon Clip: 210414 - Chad Lamb: The Manifestation of Unbelief
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=WwDJabI8xtY
+Date:     2021-04-14
+Title:    Sermon Clip: 210414 - Chad Lamb: The Manifestation of Unbelief
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=WwDJabI8xtY
 ========================================
 
 Description:

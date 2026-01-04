@@ -4,13 +4,14 @@ START OF FILE: 2022-12-04 - (Sunday School) 221204 - Brad Younce Equipped for th
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-04
-Title:   (Sunday School) 221204 - Brad Younce: Equipped for this time
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1zuWBLmiggw
+Date:     2022-12-04
+Title:    (Sunday School) 221204 - Brad Younce: Equipped for this time
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=1zuWBLmiggw
 ========================================
 
 Description:

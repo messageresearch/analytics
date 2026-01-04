@@ -4,13 +4,14 @@ START OF FILE: 2024-09-29 - Sermon Clip 240929 - Gabriel Smith The Crimson Worm 
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-29
-Title:   Sermon Clip: 240929 - Gabriel Smith: The Crimson Worm
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_4GwWrRzebc
+Date:     2024-09-29
+Title:    Sermon Clip: 240929 - Gabriel Smith: The Crimson Worm
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_4GwWrRzebc
 ========================================
 
 Description:

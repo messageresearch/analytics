@@ -4,13 +4,14 @@ START OF FILE: 2025-11-26 - Sermon Clip 251126 - Chad Lamb Carriers of the Book 
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-26
-Title:   Sermon Clip: 251126 - Chad Lamb: Carriers of the Book
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Jl5f27qAIY0
+Date:     2025-11-26
+Title:    Sermon Clip: 251126 - Chad Lamb: Carriers of the Book
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Jl5f27qAIY0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-12-31 - 211231 - Watch Night Worship 2021 - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-31
-Title:   211231 - Watch Night Worship: 2021
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=AQ4IDQmeTQE
+Date:     2021-12-31
+Title:    211231 - Watch Night Worship: 2021
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Worship Service
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=AQ4IDQmeTQE
 ========================================
 
 Description:

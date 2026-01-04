@@ -4,13 +4,14 @@ START OF FILE: 2022-04-03 - Sermon Clip 220403  - Chad Lamb Why the Blood - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-03
-Title:   Sermon Clip: 220403  - Chad Lamb: Why the Blood?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=fj9tWPVz-68
+Date:     2022-04-03
+Title:    Sermon Clip: 220403  - Chad Lamb: Why the Blood?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=fj9tWPVz-68
 ========================================
 
 Description:

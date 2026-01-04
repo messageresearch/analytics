@@ -4,13 +4,14 @@ START OF FILE: 2022-11-21 - Sermon Clip 221119a - Allistair Francis The Mysterio
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-21
-Title:   Sermon Clip: 221119a - Allistair Francis: The Mysterious Element: The Burning Heart
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=KD3MJJ8N5Z8
+Date:     2022-11-21
+Title:    Sermon Clip: 221119a - Allistair Francis: The Mysterious Element: The Burning Heart
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=KD3MJJ8N5Z8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-08 - (Sunday School) 230108 - Jason DeMars Seeking a Life
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-08
-Title:   (Sunday School) 230108 - Jason DeMars: Seeking a Life of Holiness - Jason Demars
-Speaker: Jason Demars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RT8cgGPHM1o
+Date:     2023-01-08
+Title:    (Sunday School) 230108 - Jason DeMars: Seeking a Life of Holiness - Jason Demars
+Speaker:  Jason Demars
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=RT8cgGPHM1o
 ========================================
 
 Description:

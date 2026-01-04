@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - Minister J. Brown “The Woman in the Midst” - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   Minister J. Brown: “The Woman in the Midst”
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Y0C0KZ7yLwY
+Date:     2025-10-26
+Title:    Minister J. Brown: “The Woman in the Midst”
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y0C0KZ7yLwY
 ========================================
 
 Description:

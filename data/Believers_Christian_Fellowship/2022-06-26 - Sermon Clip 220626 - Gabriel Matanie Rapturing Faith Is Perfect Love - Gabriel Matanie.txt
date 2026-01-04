@@ -4,13 +4,14 @@ START OF FILE: 2022-06-26 - Sermon Clip 220626 - Gabriel Matanie Rapturing Faith
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-26
-Title:   Sermon Clip: 220626 - Gabriel Matanie: Rapturing Faith Is Perfect Love
-Speaker: Gabriel Matanie
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=IUSTslgiogI
+Date:     2022-06-26
+Title:    Sermon Clip: 220626 - Gabriel Matanie: Rapturing Faith Is Perfect Love
+Speaker:  Gabriel Matanie
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=IUSTslgiogI
 ========================================
 
 Description:

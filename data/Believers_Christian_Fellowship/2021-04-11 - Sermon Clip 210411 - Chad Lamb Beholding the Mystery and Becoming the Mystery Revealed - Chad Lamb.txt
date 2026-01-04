@@ -4,13 +4,14 @@ START OF FILE: 2021-04-11 - Sermon Clip 210411 - Chad Lamb Beholding the Mystery
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-11
-Title:   Sermon Clip: 210411 - Chad Lamb: Beholding the Mystery and Becoming the Mystery Revealed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=hQbbPTDKJT4
+Date:     2021-04-11
+Title:    Sermon Clip: 210411 - Chad Lamb: Beholding the Mystery and Becoming the Mystery Revealed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=hQbbPTDKJT4
 ========================================
 
 Description:

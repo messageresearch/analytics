@@ -4,13 +4,14 @@ START OF FILE: 2020-12-20 - Operating by The Faith of the Hour - 3 - Unknown Spe
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-20
-Title:   Operating by The Faith of the Hour - 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rJrIRF9NdfA
+Date:     2020-12-20
+Title:    Operating by The Faith of the Hour - 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=rJrIRF9NdfA
 ========================================
 
 TRANSCRIPT

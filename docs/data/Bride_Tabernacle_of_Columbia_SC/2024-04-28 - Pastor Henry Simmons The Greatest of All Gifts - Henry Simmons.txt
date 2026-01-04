@@ -4,13 +4,14 @@ START OF FILE: 2024-04-28 - Pastor Henry Simmons The Greatest of All Gifts - Hen
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-28
-Title:   Pastor Henry Simmons: "The Greatest of All Gifts"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DdSgBAt-miE
+Date:     2024-04-28
+Title:    Pastor Henry Simmons: "The Greatest of All Gifts"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=DdSgBAt-miE
 ========================================
 
 Description:

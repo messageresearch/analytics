@@ -4,13 +4,14 @@ START OF FILE: 2025-12-31 - Run to Jesus - The Livesy Family - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-31
-Title:   Run to Jesus - The Livesy Family
-Speaker: Unknown Speaker
-Church:  Calgary Living Word Assembly
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hK98vCeEFnk
+Date:     2025-12-31
+Title:    Run to Jesus - The Livesy Family
+Speaker:  Unknown Speaker
+Church:   Calgary Living Word Assembly
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=hK98vCeEFnk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-12-14 - 221214 - Jason Watkins A Sure Foundation - Jason Wat
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-14
-Title:   221214 - Jason Watkins: A Sure Foundation
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zh09-aUtmLA
+Date:     2022-12-14
+Title:    221214 - Jason Watkins: A Sure Foundation
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=zh09-aUtmLA
 ========================================
 
 Description:

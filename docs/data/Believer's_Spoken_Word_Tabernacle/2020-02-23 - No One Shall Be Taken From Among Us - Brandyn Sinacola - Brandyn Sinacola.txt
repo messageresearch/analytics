@@ -4,13 +4,14 @@ START OF FILE: 2020-02-23 - No One Shall Be Taken From Among Us - Brandyn Sinaco
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-23
-Title:   No One Shall Be Taken From Among Us - Brandyn Sinacola
-Speaker: Brandyn Sinacola
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=C5-8bsL57lM
+Date:     2020-02-23
+Title:    No One Shall Be Taken From Among Us - Brandyn Sinacola
+Speaker:  Brandyn Sinacola
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=C5-8bsL57lM
 ========================================
 
 TRANSCRIPT

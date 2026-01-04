@@ -4,13 +4,14 @@ START OF FILE: 2021-12-05 - 211205 - Chad Lamb The Mystery in Plain Sight - Chad
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-05
-Title:   211205 - Chad Lamb: The Mystery in Plain Sight
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0JNf96F8a94
+Date:     2021-12-05
+Title:    211205 - Chad Lamb: The Mystery in Plain Sight
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=0JNf96F8a94
 ========================================
 
 Description:

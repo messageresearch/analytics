@@ -4,13 +4,14 @@ START OF FILE: 2022-06-10 - Circumcised to Every Promise - Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-10
-Title:   Circumcised to Every Promise - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lMH-olpP0oQ
+Date:     2022-06-10
+Title:    Circumcised to Every Promise - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=lMH-olpP0oQ
 ========================================
 
 Description:

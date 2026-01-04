@@ -4,13 +4,14 @@ START OF FILE: 2024-10-06 - Sermon Clip 241006 - Chad Lamb The Effect of Believi
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-06
-Title:   Sermon Clip: 241006 - Chad Lamb: The Effect of Believing a Lie Rather Than the Truth
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=bF7qB1VKG20
+Date:     2024-10-06
+Title:    Sermon Clip: 241006 - Chad Lamb: The Effect of Believing a Lie Rather Than the Truth
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=bF7qB1VKG20
 ========================================
 
 Description:

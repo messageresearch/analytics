@@ -4,13 +4,14 @@ START OF FILE: 2020-09-05 - Minister Jeremiah Palmer  A Written Epistle - Jeremi
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-05
-Title:   Minister Jeremiah Palmer: " A Written Epistle"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yXwaxTS1wJQ
+Date:     2020-09-05
+Title:    Minister Jeremiah Palmer: " A Written Epistle"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=yXwaxTS1wJQ
 ========================================
 
 Description:

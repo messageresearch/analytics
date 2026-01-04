@@ -4,13 +4,14 @@ START OF FILE: 2021-03-07 - Redemption of Sons and Daughters - 7 - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-07
-Title:   Redemption of Sons and Daughters - 7
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d-4u10ogaI4
+Date:     2021-03-07
+Title:    Redemption of Sons and Daughters - 7
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=d-4u10ogaI4
 ========================================
 
 TRANSCRIPT

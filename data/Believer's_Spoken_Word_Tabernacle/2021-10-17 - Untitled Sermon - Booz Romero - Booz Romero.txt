@@ -4,13 +4,14 @@ START OF FILE: 2021-10-17 - Untitled Sermon - Booz Romero - Booz Romero.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-17
-Title:   Untitled Sermon - Booz Romero
-Speaker: Booz Romero
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8mo4AsBwQ44
+Date:     2021-10-17
+Title:    Untitled Sermon - Booz Romero
+Speaker:  Booz Romero
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=8mo4AsBwQ44
 ========================================
 
 Description:

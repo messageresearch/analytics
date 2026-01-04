@@ -4,13 +4,14 @@ START OF FILE: 2020-02-19 - 200219 - Chad Lamb Tape Service - Part 1 Shalom - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-19
-Title:   200219 - Chad Lamb: Tape Service - Part 1: Shalom
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jAA3zM5V43U
+Date:     2020-02-19
+Title:    200219 - Chad Lamb: Tape Service - Part 1: Shalom
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=jAA3zM5V43U
 ========================================
 
 Description:

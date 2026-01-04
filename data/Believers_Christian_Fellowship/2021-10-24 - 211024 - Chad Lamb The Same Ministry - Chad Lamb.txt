@@ -4,13 +4,14 @@ START OF FILE: 2021-10-24 - 211024 - Chad Lamb The Same Ministry - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-24
-Title:   211024 - Chad Lamb: The Same Ministry
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GBGGt2njYsc
+Date:     2021-10-24
+Title:    211024 - Chad Lamb: The Same Ministry
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=GBGGt2njYsc
 ========================================
 
 Description:

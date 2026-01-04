@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - The Power of the Word (Part 1) - Samuel Browning - S
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   The Power of the Word (Part 1) - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TThEkRRSWt4
+Date:     2022-10-30
+Title:    The Power of the Word (Part 1) - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Short Service
+Duration: 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=TThEkRRSWt4
 ========================================
 
 Description:

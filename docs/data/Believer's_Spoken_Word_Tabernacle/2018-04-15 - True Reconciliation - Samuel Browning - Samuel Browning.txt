@@ -4,13 +4,14 @@ START OF FILE: 2018-04-15 - True Reconciliation - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2018-04-15
-Title:   True Reconciliation - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uZHmbs1W9tw
+Date:     2018-04-15
+Title:    True Reconciliation - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=uZHmbs1W9tw
 ========================================
 
 TRANSCRIPT

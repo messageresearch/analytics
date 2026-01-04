@@ -4,13 +4,14 @@ START OF FILE: 2023-07-30 - 230730 - Emmanuel Cibasu Abide in Me, and I in You -
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-30
-Title:   230730 - Emmanuel Cibasu: Abide in Me, and I in You
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MaHeLU5Z6HI
+Date:     2023-07-30
+Title:    230730 - Emmanuel Cibasu: Abide in Me, and I in You
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=MaHeLU5Z6HI
 ========================================
 
 Description:

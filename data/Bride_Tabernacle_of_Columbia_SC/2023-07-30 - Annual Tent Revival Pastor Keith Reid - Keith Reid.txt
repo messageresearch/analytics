@@ -4,13 +4,14 @@ START OF FILE: 2023-07-30 - Annual Tent Revival Pastor Keith Reid - Keith Reid.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-30
-Title:   Annual Tent Revival: Pastor Keith Reid
-Speaker: Keith Reid
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Jblvy-H3qcs
+Date:     2023-07-30
+Title:    Annual Tent Revival: Pastor Keith Reid
+Speaker:  Keith Reid
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=Jblvy-H3qcs
 ========================================
 
 Description:

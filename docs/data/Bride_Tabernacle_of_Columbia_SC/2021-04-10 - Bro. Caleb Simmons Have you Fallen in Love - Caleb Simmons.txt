@@ -4,13 +4,14 @@ START OF FILE: 2021-04-10 - Bro. Caleb Simmons Have you Fallen in Love - Caleb S
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-10
-Title:   Bro. Caleb Simmons: "Have you Fallen in Love?"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d57mKCOqbzI
+Date:     2021-04-10
+Title:    Bro. Caleb Simmons: "Have you Fallen in Love?"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=d57mKCOqbzI
 ========================================
 
 Description:

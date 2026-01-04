@@ -4,13 +4,14 @@ START OF FILE: 2025-06-01 - 250601-Matthew Smith The Glorious Covenant-(Sunday S
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-01
-Title:   250601-Matthew Smith: The Glorious Covenant-(Sunday School)
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XmrSArZ-UD4
+Date:     2025-06-01
+Title:    250601-Matthew Smith: The Glorious Covenant-(Sunday School)
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=XmrSArZ-UD4
 ========================================
 
 Description:

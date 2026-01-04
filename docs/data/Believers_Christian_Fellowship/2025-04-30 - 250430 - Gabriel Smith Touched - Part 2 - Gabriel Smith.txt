@@ -4,13 +4,14 @@ START OF FILE: 2025-04-30 - 250430 - Gabriel Smith Touched - Part 2 - Gabriel Sm
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-30
-Title:   250430 - Gabriel Smith: Touched - Part 2
-Speaker: Gabriel Smith
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BBsgbwx5ETI
+Date:     2025-04-30
+Title:    250430 - Gabriel Smith: Touched - Part 2
+Speaker:  Gabriel Smith
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=BBsgbwx5ETI
 ========================================
 
 Description:

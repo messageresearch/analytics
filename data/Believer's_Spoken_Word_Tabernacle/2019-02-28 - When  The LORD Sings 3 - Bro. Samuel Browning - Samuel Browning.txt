@@ -4,13 +4,14 @@ START OF FILE: 2019-02-28 - When  The LORD Sings 3 - Bro. Samuel Browning - Samu
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-28
-Title:   When  The LORD Sings 3 - Bro. Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=F3T7BvoU4Y0
+Date:     2019-02-28
+Title:    When  The LORD Sings 3 - Bro. Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=F3T7BvoU4Y0
 ========================================
 
 TRANSCRIPT

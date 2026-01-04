@@ -4,13 +4,14 @@ START OF FILE: 2024-01-06 - Minister Ernest Legette Gross Darkness - Ernest Lege
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-06
-Title:   Minister Ernest Legette: "Gross Darkness"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8saAZreRbLM
+Date:     2024-01-06
+Title:    Minister Ernest Legette: "Gross Darkness"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=8saAZreRbLM
 ========================================
 
 Description:

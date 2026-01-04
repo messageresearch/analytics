@@ -4,13 +4,14 @@ START OF FILE: 2023-07-23 - (Sunday School) 230723- Matthew Smith The Burden Of 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-23
-Title:   (Sunday School) 230723- Matthew Smith: The Burden Of Truth
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=b7UGCaW13MQ
+Date:     2023-07-23
+Title:    (Sunday School) 230723- Matthew Smith: The Burden Of Truth
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=b7UGCaW13MQ
 ========================================
 
 Description:

@@ -4,13 +4,16 @@ START OF FILE: 2021-05-02 - Bro Jason Watkins- The Final Season - Jason Watkins.
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-02
-Title:   Bro Jason Watkins- The Final Season
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hBVqpwJod2Y
+Date:     2021-05-02
+Title:    Bro Jason Watkins- The Final Season
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=hBVqpwJod2Y
 ========================================
 
+TRANSCRIPT
+========================================
 again the captivity of zion we were like them that dream then was our mouth filled with laughter and our tongue was singing then said they among the heathen the lord hath done great things for them the law

@@ -4,13 +4,14 @@ START OF FILE: 2022-08-14 - The Light of the World - Matthew Smith - Matthew Smi
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-14
-Title:   The Light of the World - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=to9ziUHSciY
+Date:     2022-08-14
+Title:    The Light of the World - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=to9ziUHSciY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-03-21 - Pastor Henry Simmons Perfect Faith - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-21
-Title:   Pastor Henry Simmons: "Perfect Faith"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=czChn3cresQ
+Date:     2021-03-21
+Title:    Pastor Henry Simmons: "Perfect Faith"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=czChn3cresQ
 ========================================
 
 Description:

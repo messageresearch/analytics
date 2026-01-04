@@ -4,13 +4,14 @@ START OF FILE: 2024-04-19 - The Point of Contact - Kidri Diggs - Kidri Diggs.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-19
-Title:   The Point of Contact - Kidri Diggs
-Speaker: Kidri Diggs
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9U46dpqFlLs
+Date:     2024-04-19
+Title:    The Point of Contact - Kidri Diggs
+Speaker:  Kidri Diggs
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=9U46dpqFlLs
 ========================================
 
 Description:

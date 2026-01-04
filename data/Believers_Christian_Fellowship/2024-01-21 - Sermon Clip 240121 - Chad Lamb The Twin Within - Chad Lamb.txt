@@ -4,13 +4,14 @@ START OF FILE: 2024-01-21 - Sermon Clip 240121 - Chad Lamb The Twin Within - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-21
-Title:   Sermon Clip: 240121 - Chad Lamb: The Twin Within
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=lOa7e838dQg
+Date:     2024-01-21
+Title:    Sermon Clip: 240121 - Chad Lamb: The Twin Within
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=lOa7e838dQg
 ========================================
 
 Description:

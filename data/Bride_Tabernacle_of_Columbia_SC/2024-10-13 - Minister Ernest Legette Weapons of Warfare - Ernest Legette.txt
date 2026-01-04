@@ -4,13 +4,14 @@ START OF FILE: 2024-10-13 - Minister Ernest Legette Weapons of Warfare - Ernest 
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-13
-Title:   Minister Ernest Legette: "Weapons of Warfare"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zI3iiUveuYU
+Date:     2024-10-13
+Title:    Minister Ernest Legette: "Weapons of Warfare"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=zI3iiUveuYU
 ========================================
 
 Description:

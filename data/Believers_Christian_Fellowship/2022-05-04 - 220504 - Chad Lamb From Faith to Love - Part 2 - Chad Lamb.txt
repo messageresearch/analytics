@@ -4,13 +4,14 @@ START OF FILE: 2022-05-04 - 220504 - Chad Lamb From Faith to Love - Part 2 - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-04
-Title:   220504 - Chad Lamb: From Faith to Love - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EmmcntkWJDc
+Date:     2022-05-04
+Title:    220504 - Chad Lamb: From Faith to Love - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=EmmcntkWJDc
 ========================================
 
 Description:

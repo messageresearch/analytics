@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - We Are Redeemed 2 - Samuel Browning - Samuel Brownin
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   We Are Redeemed 2 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t599FmkTTn0
+Date:     2025-08-31
+Title:    We Are Redeemed 2 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=t599FmkTTn0
 ========================================
 
 Description:

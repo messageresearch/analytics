@@ -4,13 +4,14 @@ START OF FILE: 2023-12-30 - Pastor H. Simmons The Trial of Your Faith - H Simmon
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-30
-Title:   Pastor H. Simmons: "The Trial of Your Faith"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-g2rpaF7EIg
+Date:     2023-12-30
+Title:    Pastor H. Simmons: "The Trial of Your Faith"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=-g2rpaF7EIg
 ========================================
 
 Description:

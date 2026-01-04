@@ -4,13 +4,14 @@ START OF FILE: 2018-10-14 - Children as Arrows - 4 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-10-14
-Title:   Children as Arrows - 4
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=53_kw0NL9_g
+Date:     2018-10-14
+Title:    Children as Arrows - 4
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=53_kw0NL9_g
 ========================================
 
 TRANSCRIPT

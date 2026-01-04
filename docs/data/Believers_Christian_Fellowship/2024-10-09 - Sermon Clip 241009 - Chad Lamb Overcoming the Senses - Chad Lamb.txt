@@ -4,13 +4,14 @@ START OF FILE: 2024-10-09 - Sermon Clip 241009 - Chad Lamb Overcoming the Senses
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-09
-Title:   Sermon Clip: 241009 - Chad Lamb: Overcoming the Senses
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=jNTtSsZugtM
+Date:     2024-10-09
+Title:    Sermon Clip: 241009 - Chad Lamb: Overcoming the Senses
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=jNTtSsZugtM
 ========================================
 
 Description:

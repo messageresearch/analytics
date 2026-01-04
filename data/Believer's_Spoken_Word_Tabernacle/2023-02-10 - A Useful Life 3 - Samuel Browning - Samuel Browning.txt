@@ -4,13 +4,14 @@ START OF FILE: 2023-02-10 - A Useful Life 3 - Samuel Browning - Samuel Browning.
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-10
-Title:   A Useful Life 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=a-boTjmslpE
+Date:     2023-02-10
+Title:    A Useful Life 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=a-boTjmslpE
 ========================================
 
 Description:

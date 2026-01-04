@@ -4,13 +4,14 @@ START OF FILE: 2021-11-04 - Bethel Youth Camp Testimony Service - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-04
-Title:   Bethel Youth Camp Testimony Service
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=IXhCJytE5Nw
+Date:     2021-11-04
+Title:    Bethel Youth Camp Testimony Service
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=IXhCJytE5Nw
 ========================================
 
 TRANSCRIPT

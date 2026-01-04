@@ -4,13 +4,14 @@ START OF FILE: 2023-09-10 - Sermon Clip 230910 - Chad Lamb The Bride's Revival I
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-10
-Title:   Sermon Clip: 230910 - Chad Lamb: The Bride's Revival Is Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=HFiCW7DaQE8
+Date:     2023-09-10
+Title:    Sermon Clip: 230910 - Chad Lamb: The Bride's Revival Is Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=HFiCW7DaQE8
 ========================================
 
 Description:

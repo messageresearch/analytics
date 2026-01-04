@@ -4,13 +4,14 @@ START OF FILE: 2022-04-14 - Valley Of Trouble - Caleb Campbell - Unknown Speaker
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-14
-Title:   Valley Of Trouble - Caleb Campbell
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AU8brsczXWc
+Date:     2022-04-14
+Title:    Valley Of Trouble - Caleb Campbell
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=AU8brsczXWc
 ========================================
 
 Description:

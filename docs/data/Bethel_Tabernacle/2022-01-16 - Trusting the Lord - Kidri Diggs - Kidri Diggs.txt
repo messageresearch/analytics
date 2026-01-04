@@ -4,13 +4,14 @@ START OF FILE: 2022-01-16 - Trusting the Lord - Kidri Diggs - Kidri Diggs.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-16
-Title:   Trusting the Lord - Kidri Diggs
-Speaker: Kidri Diggs
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=71Ssre0Vmzo
+Date:     2022-01-16
+Title:    Trusting the Lord - Kidri Diggs
+Speaker:  Kidri Diggs
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=71Ssre0Vmzo
 ========================================
 
 Description:

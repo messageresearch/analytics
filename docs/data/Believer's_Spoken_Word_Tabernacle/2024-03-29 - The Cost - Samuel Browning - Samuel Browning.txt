@@ -4,13 +4,14 @@ START OF FILE: 2024-03-29 - The Cost - Samuel Browning - Samuel Browning.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-29
-Title:   The Cost - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=c0C1twLlcZU
+Date:     2024-03-29
+Title:    The Cost - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=c0C1twLlcZU
 ========================================
 
 Description:

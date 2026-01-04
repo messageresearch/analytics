@@ -4,13 +4,14 @@ START OF FILE: 2021-06-11 - Restored Youth - John Andes - John Andes.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-11
-Title:   Restored Youth - John Andes
-Speaker: John Andes
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v4zEircCpVg
+Date:     2021-06-11
+Title:    Restored Youth - John Andes
+Speaker:  John Andes
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 4h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=v4zEircCpVg
 ========================================
 
 TRANSCRIPT

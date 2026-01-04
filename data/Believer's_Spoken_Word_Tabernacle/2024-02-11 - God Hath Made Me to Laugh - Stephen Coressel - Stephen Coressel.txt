@@ -4,13 +4,14 @@ START OF FILE: 2024-02-11 - God Hath Made Me to Laugh - Stephen Coressel - Steph
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-11
-Title:   God Hath Made Me to Laugh - Stephen Coressel
-Speaker: Stephen Coressel
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IBGR-NYRTvY
+Date:     2024-02-11
+Title:    God Hath Made Me to Laugh - Stephen Coressel
+Speaker:  Stephen Coressel
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=IBGR-NYRTvY
 ========================================
 
 TRANSCRIPT

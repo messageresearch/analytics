@@ -4,13 +4,14 @@ START OF FILE: 2024-12-12 - The Flowing of Virtue - Samuel Browning - Samuel Bro
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-12
-Title:   The Flowing of Virtue - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=D3iOssShp2U
+Date:     2024-12-12
+Title:    The Flowing of Virtue - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=D3iOssShp2U
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-04-14 - Sermon clip 240414 - Chad Lamb Our Security - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-14
-Title:   Sermon clip: 240414 - Chad Lamb: Our Security
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=5oRzkxVqSoM
+Date:     2024-04-14
+Title:    Sermon clip: 240414 - Chad Lamb: Our Security
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=5oRzkxVqSoM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-09 - Receiving the Spirit Part 2 - Jason DeMars - Jason D
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-09
-Title:   Receiving the Spirit Part 2 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HkmCodtNaMY
+Date:     2022-01-09
+Title:    Receiving the Spirit Part 2 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=HkmCodtNaMY
 ========================================
 
 Description:

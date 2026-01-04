@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - 220410 - Chad Lamb The Blood Still Speaks - Chad Lam
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   220410 - Chad Lamb: The Blood Still Speaks
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IDvjZFk7Mk0
+Date:     2022-04-10
+Title:    220410 - Chad Lamb: The Blood Still Speaks
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=IDvjZFk7Mk0
 ========================================
 
 Description:

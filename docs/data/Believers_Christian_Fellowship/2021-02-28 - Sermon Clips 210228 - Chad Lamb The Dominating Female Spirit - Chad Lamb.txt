@@ -4,13 +4,14 @@ START OF FILE: 2021-02-28 - Sermon Clips 210228 - Chad Lamb The Dominating Femal
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-28
-Title:   Sermon Clips: 210228 - Chad Lamb: The Dominating Female Spirit
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=h-iCKs96Vj4
+Date:     2021-02-28
+Title:    Sermon Clips: 210228 - Chad Lamb: The Dominating Female Spirit
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=h-iCKs96Vj4
 ========================================
 
 Description:

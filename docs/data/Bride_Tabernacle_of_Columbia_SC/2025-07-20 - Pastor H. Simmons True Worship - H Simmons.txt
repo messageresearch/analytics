@@ -4,13 +4,14 @@ START OF FILE: 2025-07-20 - Pastor H. Simmons True Worship - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-20
-Title:   Pastor H. Simmons: "True Worship"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KMjKBfm-d_E
+Date:     2025-07-20
+Title:    Pastor H. Simmons: "True Worship"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=KMjKBfm-d_E
 ========================================
 
 Description:

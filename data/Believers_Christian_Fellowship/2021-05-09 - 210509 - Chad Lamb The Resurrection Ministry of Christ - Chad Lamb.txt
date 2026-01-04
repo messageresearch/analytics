@@ -4,13 +4,14 @@ START OF FILE: 2021-05-09 - 210509 - Chad Lamb The Resurrection Ministry of Chri
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-09
-Title:   210509 - Chad Lamb: The Resurrection Ministry of Christ
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8nQlVB67Ehg
+Date:     2021-05-09
+Title:    210509 - Chad Lamb: The Resurrection Ministry of Christ
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Easter Program
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=8nQlVB67Ehg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-20 - Pastor H. Simmons The Power of Faith - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-20
-Title:   Pastor H. Simmons: "The Power of Faith"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XZmTVdq0ww0
+Date:     2025-12-20
+Title:    Pastor H. Simmons: "The Power of Faith"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=XZmTVdq0ww0
 ========================================
 
 Description:

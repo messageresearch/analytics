@@ -4,13 +4,14 @@ START OF FILE: 2023-11-19 - Trapped - Bro. Jonathan Sanger - Jonathan Sanger.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-19
-Title:   Trapped - Bro. Jonathan Sanger
-Speaker: Jonathan Sanger
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PUWtHozoCVE
+Date:     2023-11-19
+Title:    Trapped - Bro. Jonathan Sanger
+Speaker:  Jonathan Sanger
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=PUWtHozoCVE
 ========================================
 
 Description:

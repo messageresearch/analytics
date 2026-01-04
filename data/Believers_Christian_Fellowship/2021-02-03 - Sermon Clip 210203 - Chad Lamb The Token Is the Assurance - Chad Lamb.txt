@@ -4,13 +4,14 @@ START OF FILE: 2021-02-03 - Sermon Clip 210203 - Chad Lamb The Token Is the Assu
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-03
-Title:   Sermon Clip: 210203 - Chad Lamb: The Token Is the Assurance
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=uZhqARvgJ_M
+Date:     2021-02-03
+Title:    Sermon Clip: 210203 - Chad Lamb: The Token Is the Assurance
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=uZhqARvgJ_M
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-01-10 - Sermon Clip 240110 - Chad Lamb The Deliverance Is Fi
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-10
-Title:   Sermon Clip: 240110 - Chad Lamb: The Deliverance Is First Found in the Commandment
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=HI91yZj4kPc
+Date:     2024-01-10
+Title:    Sermon Clip: 240110 - Chad Lamb: The Deliverance Is First Found in the Commandment
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=HI91yZj4kPc
 ========================================
 
 Description:

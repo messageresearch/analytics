@@ -4,13 +4,14 @@ START OF FILE: 2024-02-21 - Sermon Clip 240221 - Chad Lamb Tape Service - Part 2
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-21
-Title:   Sermon Clip: 240221 - Chad Lamb: Tape Service - Part 2: The Masterpiece
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=96Nh-3o1vqE
+Date:     2024-02-21
+Title:    Sermon Clip: 240221 - Chad Lamb: Tape Service - Part 2: The Masterpiece
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=96Nh-3o1vqE
 ========================================
 
 Description:

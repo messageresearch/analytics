@@ -4,13 +4,14 @@ START OF FILE: 2023-01-28 - Pastor Jeremiah Palmer Don't Be Weary In Well Doing 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-28
-Title:   Pastor Jeremiah Palmer: "Don't Be Weary In Well Doing"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TlKf97ApQEk
+Date:     2023-01-28
+Title:    Pastor Jeremiah Palmer: "Don't Be Weary In Well Doing"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=TlKf97ApQEk
 ========================================
 
 Description:

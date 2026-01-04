@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - Pastor Henry Simmons After You’ve Suffered A While
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   Pastor Henry Simmons: "After You’ve Suffered A While"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pCS0jQNr76g
+Date:     2022-10-23
+Title:    Pastor Henry Simmons: "After You’ve Suffered A While"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=pCS0jQNr76g
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-08 - Sermon Clip 230308 - David Dienhart Christ in You, P
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-08
-Title:   Sermon Clip: 230308 - David Dienhart: Christ in You, Perfect Contentment
-Speaker: David Dienhart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=9Ppn2Wg-Lh4
+Date:     2023-03-08
+Title:    Sermon Clip: 230308 - David Dienhart: Christ in You, Perfect Contentment
+Speaker:  David Dienhart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9Ppn2Wg-Lh4
 ========================================
 
 Description:

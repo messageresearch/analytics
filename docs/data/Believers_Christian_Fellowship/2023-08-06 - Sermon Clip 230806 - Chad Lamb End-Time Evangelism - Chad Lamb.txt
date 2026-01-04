@@ -4,13 +4,14 @@ START OF FILE: 2023-08-06 - Sermon Clip 230806 - Chad Lamb End-Time Evangelism -
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-06
-Title:   Sermon Clip: 230806 - Chad Lamb: End-Time Evangelism
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=cvQNpZVgoAo
+Date:     2023-08-06
+Title:    Sermon Clip: 230806 - Chad Lamb: End-Time Evangelism
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=cvQNpZVgoAo
 ========================================
 
 Description:

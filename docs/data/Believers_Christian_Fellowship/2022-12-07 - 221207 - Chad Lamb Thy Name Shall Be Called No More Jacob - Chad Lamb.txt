@@ -4,13 +4,14 @@ START OF FILE: 2022-12-07 - 221207 - Chad Lamb Thy Name Shall Be Called No More 
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-07
-Title:   221207 - Chad Lamb: Thy Name Shall Be Called No More Jacob
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=D7Ue5Yx0Qj8
+Date:     2022-12-07
+Title:    221207 - Chad Lamb: Thy Name Shall Be Called No More Jacob
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=D7Ue5Yx0Qj8
 ========================================
 
 Description:

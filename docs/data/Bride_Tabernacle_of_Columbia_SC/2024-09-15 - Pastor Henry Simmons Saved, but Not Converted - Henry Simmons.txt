@@ -4,13 +4,14 @@ START OF FILE: 2024-09-15 - Pastor Henry Simmons Saved, but Not Converted - Henr
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-15
-Title:   Pastor Henry Simmons: "Saved, but Not Converted"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eO2tQ--DSLc
+Date:     2024-09-15
+Title:    Pastor Henry Simmons: "Saved, but Not Converted"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=eO2tQ--DSLc
 ========================================
 
 Description:

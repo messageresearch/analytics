@@ -4,13 +4,14 @@ START OF FILE: 2020-12-02 - Sermon Clips 201202 - Jean Kadima This Barrier Calle
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-02
-Title:   Sermon Clips: 201202 - Jean Kadima: This Barrier Called Human Spirit
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=mMFct3iWyqM
+Date:     2020-12-02
+Title:    Sermon Clips: 201202 - Jean Kadima: This Barrier Called Human Spirit
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=mMFct3iWyqM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-07-03 - Sermon Clip 220703 - Chad Lamb Mercy and Judgment at
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-03
-Title:   Sermon Clip: 220703 - Chad Lamb: Mercy and Judgment at the Threshing Floor
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_d3exJCytLY
+Date:     2022-07-03
+Title:    Sermon Clip: 220703 - Chad Lamb: Mercy and Judgment at the Threshing Floor
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=_d3exJCytLY
 ========================================
 
 Description:

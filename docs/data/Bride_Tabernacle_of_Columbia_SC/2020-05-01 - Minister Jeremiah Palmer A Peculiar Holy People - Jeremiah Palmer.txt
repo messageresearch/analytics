@@ -4,13 +4,14 @@ START OF FILE: 2020-05-01 - Minister Jeremiah Palmer A Peculiar Holy People - Je
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-01
-Title:   Minister Jeremiah Palmer: "A Peculiar Holy People"
-Speaker: Jeremiah Palmer
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J_INAR2Wfl4
+Date:     2020-05-01
+Title:    Minister Jeremiah Palmer: "A Peculiar Holy People"
+Speaker:  Jeremiah Palmer
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=J_INAR2Wfl4
 ========================================
 
 Description:

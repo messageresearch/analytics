@@ -4,13 +4,14 @@ START OF FILE: 2023-05-28 - Sermon Clip 230528 - Chad Lamb Discerning True Love 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-28
-Title:   Sermon Clip: 230528 - Chad Lamb: Discerning True Love - Part 4: When Human Love Leads Wrong
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Yiz69H_nFmI
+Date:     2023-05-28
+Title:    Sermon Clip: 230528 - Chad Lamb: Discerning True Love - Part 4: When Human Love Leads Wrong
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Yiz69H_nFmI
 ========================================
 
 Description:

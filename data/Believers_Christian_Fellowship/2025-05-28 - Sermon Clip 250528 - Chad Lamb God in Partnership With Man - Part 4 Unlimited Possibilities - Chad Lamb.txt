@@ -4,13 +4,14 @@ START OF FILE: 2025-05-28 - Sermon Clip 250528 - Chad Lamb God in Partnership Wi
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-28
-Title:   Sermon Clip: 250528 - Chad Lamb: God in Partnership With Man - Part 4: Unlimited Possibilities
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=M5EUJamF95o
+Date:     2025-05-28
+Title:    Sermon Clip: 250528 - Chad Lamb: God in Partnership With Man - Part 4: Unlimited Possibilities
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=M5EUJamF95o
 ========================================
 
 Description:

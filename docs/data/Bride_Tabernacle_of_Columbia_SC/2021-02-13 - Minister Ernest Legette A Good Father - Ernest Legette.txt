@@ -4,13 +4,14 @@ START OF FILE: 2021-02-13 - Minister Ernest Legette A Good Father - Ernest Leget
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-13
-Title:   Minister Ernest Legette: "A Good Father"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L4kFL0VRQD0
+Date:     2021-02-13
+Title:    Minister Ernest Legette: "A Good Father"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=L4kFL0VRQD0
 ========================================
 
 Description:

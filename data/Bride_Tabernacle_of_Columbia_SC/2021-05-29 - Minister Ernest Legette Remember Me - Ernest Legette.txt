@@ -4,13 +4,14 @@ START OF FILE: 2021-05-29 - Minister Ernest Legette Remember Me - Ernest Legette
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-29
-Title:   Minister Ernest Legette: "Remember Me"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZYtUwO1OR6w
+Date:     2021-05-29
+Title:    Minister Ernest Legette: "Remember Me"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZYtUwO1OR6w
 ========================================
 
 Description:

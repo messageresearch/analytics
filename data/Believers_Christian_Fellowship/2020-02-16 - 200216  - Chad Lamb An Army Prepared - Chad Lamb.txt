@@ -4,13 +4,14 @@ START OF FILE: 2020-02-16 - 200216  - Chad Lamb An Army Prepared - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-16
-Title:   200216  - Chad Lamb: An Army Prepared
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AsCKl1NvkWQ
+Date:     2020-02-16
+Title:    200216  - Chad Lamb: An Army Prepared
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 3h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=AsCKl1NvkWQ
 ========================================
 
 Description:

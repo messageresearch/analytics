@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - Being Changed Part 2 - Matt Watkins - Matt Watkins.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   Being Changed Part 2 - Matt Watkins
-Speaker: Matt Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kRH5vP50QUQ
+Date:     2022-03-13
+Title:    Being Changed Part 2 - Matt Watkins
+Speaker:  Matt Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=kRH5vP50QUQ
 ========================================
 
 Description:

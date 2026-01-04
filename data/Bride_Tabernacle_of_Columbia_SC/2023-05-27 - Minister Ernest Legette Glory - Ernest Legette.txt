@@ -4,13 +4,14 @@ START OF FILE: 2023-05-27 - Minister Ernest Legette Glory - Ernest Legette.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-27
-Title:   Minister Ernest Legette: "Glory"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Y-utm7Hz0BI
+Date:     2023-05-27
+Title:    Minister Ernest Legette: "Glory"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y-utm7Hz0BI
 ========================================
 
 Description:

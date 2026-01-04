@@ -4,13 +4,14 @@ START OF FILE: 2022-04-01 - Communion - Wait on the Lord - Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-01
-Title:   Communion - Wait on the Lord - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DQfSbFUG-WM
+Date:     2022-04-01
+Title:    Communion - Wait on the Lord - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Communion Service
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=DQfSbFUG-WM
 ========================================
 
 Description:

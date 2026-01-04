@@ -4,13 +4,14 @@ START OF FILE: 2024-11-10 - 241110 - Samuel Walach Pick Up Your Pen and Write - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-10
-Title:   241110 - Samuel Walach: Pick Up Your Pen and Write
-Speaker: Samuel Walach
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jjUlRn2SJmY
+Date:     2024-11-10
+Title:    241110 - Samuel Walach: Pick Up Your Pen and Write
+Speaker:  Samuel Walach
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=jjUlRn2SJmY
 ========================================
 
 Description:

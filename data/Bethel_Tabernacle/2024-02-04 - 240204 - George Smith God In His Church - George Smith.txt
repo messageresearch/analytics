@@ -4,13 +4,14 @@ START OF FILE: 2024-02-04 - 240204 - George Smith God In His Church - George Smi
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-04
-Title:   240204 - George Smith: God In His Church
-Speaker: George Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gl4XGvMnG_A
+Date:     2024-02-04
+Title:    240204 - George Smith: God In His Church
+Speaker:  George Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=gl4XGvMnG_A
 ========================================
 
 Description:

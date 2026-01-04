@@ -4,13 +4,14 @@ START OF FILE: 2022-01-27 - Courage Conference - Caleb Campbell - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-27
-Title:   Courage Conference - Caleb Campbell
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o3X_YoULZFY
+Date:     2022-01-27
+Title:    Courage Conference - Caleb Campbell
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=o3X_YoULZFY
 ========================================
 
 Description:

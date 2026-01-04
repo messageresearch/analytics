@@ -4,13 +4,14 @@ START OF FILE: 2020-12-06 - Pastor Henry Simmons Resurrection - Henry Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-06
-Title:   Pastor Henry Simmons: "Resurrection"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yw8Ss0A8Eg8
+Date:     2020-12-06
+Title:    Pastor Henry Simmons: "Resurrection"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Easter Program
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=yw8Ss0A8Eg8
 ========================================
 
 Description:

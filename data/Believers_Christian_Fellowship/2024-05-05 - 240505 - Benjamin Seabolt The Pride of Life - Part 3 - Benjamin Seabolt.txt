@@ -4,13 +4,14 @@ START OF FILE: 2024-05-05 - 240505 - Benjamin Seabolt The Pride of Life - Part 3
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-05
-Title:   240505 - Benjamin Seabolt: The Pride of Life - Part 3
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4Vs0IEIRxJw
+Date:     2024-05-05
+Title:    240505 - Benjamin Seabolt: The Pride of Life - Part 3
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=4Vs0IEIRxJw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-11-08 - Sermon Clips 201108 - Chad Lamb The Unscientific Sal
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-08
-Title:   Sermon Clips: 201108 - Chad Lamb: The Unscientific Salvation of the Righteous Seed
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DV0TvZ158gU
+Date:     2020-11-08
+Title:    Sermon Clips: 201108 - Chad Lamb: The Unscientific Salvation of the Righteous Seed
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DV0TvZ158gU
 ========================================
 
 Description:

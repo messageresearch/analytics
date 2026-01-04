@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - Pastor H. Simmons Your Inheritance - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   Pastor H. Simmons: "Your Inheritance"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P3tI1DFq0AA
+Date:     2022-12-11
+Title:    Pastor H. Simmons: "Your Inheritance"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=P3tI1DFq0AA
 ========================================
 
 Description:

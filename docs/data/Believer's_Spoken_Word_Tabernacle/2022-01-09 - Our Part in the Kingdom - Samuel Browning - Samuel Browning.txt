@@ -4,13 +4,14 @@ START OF FILE: 2022-01-09 - Our Part in the Kingdom - Samuel Browning - Samuel B
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-09
-Title:   Our Part in the Kingdom - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uv3GQ7AHENw
+Date:     2022-01-09
+Title:    Our Part in the Kingdom - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=uv3GQ7AHENw
 ========================================
 
 Description:

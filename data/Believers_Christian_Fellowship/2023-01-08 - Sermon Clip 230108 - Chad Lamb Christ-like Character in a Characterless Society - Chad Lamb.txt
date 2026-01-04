@@ -4,13 +4,14 @@ START OF FILE: 2023-01-08 - Sermon Clip 230108 - Chad Lamb Christ-like Character
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-08
-Title:   Sermon Clip: 230108 - Chad Lamb: Christ-like Character in a Characterless Society
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=1mO3V_1Cmis
+Date:     2023-01-08
+Title:    Sermon Clip: 230108 - Chad Lamb: Christ-like Character in a Characterless Society
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=1mO3V_1Cmis
 ========================================
 
 Description:

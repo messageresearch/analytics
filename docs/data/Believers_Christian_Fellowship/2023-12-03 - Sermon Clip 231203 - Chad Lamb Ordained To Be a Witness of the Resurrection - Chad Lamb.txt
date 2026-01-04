@@ -4,13 +4,14 @@ START OF FILE: 2023-12-03 - Sermon Clip 231203 - Chad Lamb Ordained To Be a Witn
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-03
-Title:   Sermon Clip: 231203 - Chad Lamb: Ordained To Be a Witness of the Resurrection
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=g0DO-oNnehw
+Date:     2023-12-03
+Title:    Sermon Clip: 231203 - Chad Lamb: Ordained To Be a Witness of the Resurrection
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Easter Program
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=g0DO-oNnehw
 ========================================
 
 Description:

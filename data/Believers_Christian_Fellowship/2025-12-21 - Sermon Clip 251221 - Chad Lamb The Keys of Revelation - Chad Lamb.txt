@@ -4,13 +4,14 @@ START OF FILE: 2025-12-21 - Sermon Clip 251221 - Chad Lamb The Keys of Revelatio
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-21
-Title:   Sermon Clip: 251221 - Chad Lamb: The Keys of Revelation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=7h7Vq55o1hg
+Date:     2025-12-21
+Title:    Sermon Clip: 251221 - Chad Lamb: The Keys of Revelation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=7h7Vq55o1hg
 ========================================
 
 Description:

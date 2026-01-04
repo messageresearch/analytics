@@ -4,13 +4,14 @@ START OF FILE: 2024-09-18 - Sermon Clip 240918 - Chad Lamb Watering the Camels -
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-18
-Title:   Sermon Clip: 240918 - Chad Lamb: Watering the Camels
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=r5E33H4mOds
+Date:     2024-09-18
+Title:    Sermon Clip: 240918 - Chad Lamb: Watering the Camels
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=r5E33H4mOds
 ========================================
 
 Description:

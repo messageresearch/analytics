@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - Remembering the Lord - Samuel Browning - Samuel Brow
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   Remembering the Lord - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_R_6fNgoFDY
+Date:     2025-10-26
+Title:    Remembering the Lord - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=_R_6fNgoFDY
 ========================================
 
 TRANSCRIPT

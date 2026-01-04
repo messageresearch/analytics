@@ -4,13 +4,14 @@ START OF FILE: 2025-03-05 - 250305 - Matthew Watkins The Autopsy Of A Dead Reviv
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-05
-Title:   250305 - Matthew Watkins: The Autopsy Of A Dead Revival Part 2
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fgKo-hxF2ls
+Date:     2025-03-05
+Title:    250305 - Matthew Watkins: The Autopsy Of A Dead Revival Part 2
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=fgKo-hxF2ls
 ========================================
 
 Description:

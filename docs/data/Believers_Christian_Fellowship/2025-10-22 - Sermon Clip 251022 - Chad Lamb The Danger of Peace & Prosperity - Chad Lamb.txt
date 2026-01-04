@@ -4,13 +4,14 @@ START OF FILE: 2025-10-22 - Sermon Clip 251022 - Chad Lamb The Danger of Peace &
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-22
-Title:   Sermon Clip: 251022 - Chad Lamb: The Danger of Peace & Prosperity
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=IaurUoLEISs
+Date:     2025-10-22
+Title:    Sermon Clip: 251022 - Chad Lamb: The Danger of Peace & Prosperity
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=IaurUoLEISs
 ========================================
 
 Description:

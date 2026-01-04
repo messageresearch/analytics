@@ -4,13 +4,14 @@ START OF FILE: 2023-06-21 - 230621 - Chad Lamb Faith for Every Occasion - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-21
-Title:   230621 - Chad Lamb: Faith for Every Occasion
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vopUIGjikIs
+Date:     2023-06-21
+Title:    230621 - Chad Lamb: Faith for Every Occasion
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=vopUIGjikIs
 ========================================
 
 Description:

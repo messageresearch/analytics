@@ -4,13 +4,14 @@ START OF FILE: 2024-06-16 - Door of Grace - Ronnie Long - Ronnie Long.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-16
-Title:   Door of Grace - Ronnie Long
-Speaker: Ronnie Long
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_eAr0X7VGhE
+Date:     2024-06-16
+Title:    Door of Grace - Ronnie Long
+Speaker:  Ronnie Long
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=_eAr0X7VGhE
 ========================================
 
 Description:

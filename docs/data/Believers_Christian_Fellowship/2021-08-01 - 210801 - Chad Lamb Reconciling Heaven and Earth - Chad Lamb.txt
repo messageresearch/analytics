@@ -4,13 +4,14 @@ START OF FILE: 2021-08-01 - 210801 - Chad Lamb Reconciling Heaven and Earth - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-01
-Title:   210801 - Chad Lamb: Reconciling Heaven and Earth
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ne2Of3xWNhI
+Date:     2021-08-01
+Title:    210801 - Chad Lamb: Reconciling Heaven and Earth
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=ne2Of3xWNhI
 ========================================
 
 Description:

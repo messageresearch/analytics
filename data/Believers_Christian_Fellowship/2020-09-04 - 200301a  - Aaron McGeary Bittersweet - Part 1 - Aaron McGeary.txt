@@ -4,13 +4,14 @@ START OF FILE: 2020-09-04 - 200301a  - Aaron McGeary Bittersweet - Part 1 - Aaro
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-04
-Title:   200301a  - Aaron McGeary: Bittersweet - Part 1
-Speaker: Aaron McGeary
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WGdP9DzXWf8
+Date:     2020-09-04
+Title:    200301a  - Aaron McGeary: Bittersweet - Part 1
+Speaker:  Aaron McGeary
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=WGdP9DzXWf8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2017-07-15 - Shall He Find Faith - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2017-07-15
-Title:   Shall He Find Faith?
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pd3NDlh9hzc
+Date:     2017-07-15
+Title:    Shall He Find Faith?
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=pd3NDlh9hzc
 ========================================
 
 TRANSCRIPT

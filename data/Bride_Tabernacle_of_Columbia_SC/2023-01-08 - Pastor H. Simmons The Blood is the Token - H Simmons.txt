@@ -4,13 +4,14 @@ START OF FILE: 2023-01-08 - Pastor H. Simmons The Blood is the Token - H Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-08
-Title:   Pastor H. Simmons: "The Blood is the Token"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=p2myM2KOPKs
+Date:     2023-01-08
+Title:    Pastor H. Simmons: "The Blood is the Token"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=p2myM2KOPKs
 ========================================
 
 Description:

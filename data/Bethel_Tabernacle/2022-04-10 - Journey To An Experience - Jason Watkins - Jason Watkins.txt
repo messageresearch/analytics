@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - Journey To An Experience - Jason Watkins - Jason Wat
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   Journey To An Experience - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A5II6nZZcMc
+Date:     2022-04-10
+Title:    Journey To An Experience - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=A5II6nZZcMc
 ========================================
 
 Description:

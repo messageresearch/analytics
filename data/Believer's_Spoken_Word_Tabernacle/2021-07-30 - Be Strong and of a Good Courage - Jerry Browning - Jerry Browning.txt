@@ -4,13 +4,14 @@ START OF FILE: 2021-07-30 - Be Strong and of a Good Courage - Jerry Browning - J
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-30
-Title:   Be Strong and of a Good Courage - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=va-b59HAQCU
+Date:     2021-07-30
+Title:    Be Strong and of a Good Courage - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=va-b59HAQCU
 ========================================
 
 TRANSCRIPT

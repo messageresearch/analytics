@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - Pastor H. Simmons The Key to the Door - H Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   Pastor H. Simmons: "The Key to the Door"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yTQttach1EE
+Date:     2023-09-24
+Title:    Pastor H. Simmons: "The Key to the Door"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=yTQttach1EE
 ========================================
 
 Description:

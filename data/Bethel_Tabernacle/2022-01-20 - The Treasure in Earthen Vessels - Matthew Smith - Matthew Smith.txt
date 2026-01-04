@@ -4,13 +4,14 @@ START OF FILE: 2022-01-20 - The Treasure in Earthen Vessels - Matthew Smith - Ma
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-20
-Title:   The Treasure in Earthen Vessels - Matthew Smith
-Speaker: Matthew Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4R05SzJg8ic
+Date:     2022-01-20
+Title:    The Treasure in Earthen Vessels - Matthew Smith
+Speaker:  Matthew Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=4R05SzJg8ic
 ========================================
 
 Description:

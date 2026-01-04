@@ -4,13 +4,14 @@ START OF FILE: 2021-12-26 - Spirit of the Last Days - Matthew Watkins - Matthew 
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-26
-Title:   Spirit of the Last Days - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EcTqZV2UB3M
+Date:     2021-12-26
+Title:    Spirit of the Last Days - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=EcTqZV2UB3M
 ========================================
 
 Description:

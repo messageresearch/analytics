@@ -4,13 +4,14 @@ START OF FILE: 2025-10-01 - Sermon Clip 251001 - Chad Lamb Christ in You, Hidden
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-01
-Title:   Sermon Clip: 251001 - Chad Lamb: Christ in You, Hidden and Revealed in Simplicity
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=lYPr_2EUA7w
+Date:     2025-10-01
+Title:    Sermon Clip: 251001 - Chad Lamb: Christ in You, Hidden and Revealed in Simplicity
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=lYPr_2EUA7w
 ========================================
 
 Description:

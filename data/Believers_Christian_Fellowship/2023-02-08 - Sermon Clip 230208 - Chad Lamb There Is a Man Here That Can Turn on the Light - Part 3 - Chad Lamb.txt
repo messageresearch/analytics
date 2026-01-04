@@ -4,13 +4,14 @@ START OF FILE: 2023-02-08 - Sermon Clip 230208 - Chad Lamb There Is a Man Here T
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-08
-Title:   Sermon Clip: 230208 - Chad Lamb: There Is a Man Here That Can Turn on the Light - Part 3
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=57ruPnU5UIg
+Date:     2023-02-08
+Title:    Sermon Clip: 230208 - Chad Lamb: There Is a Man Here That Can Turn on the Light - Part 3
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=57ruPnU5UIg
 ========================================
 
 Description:

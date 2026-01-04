@@ -4,13 +4,14 @@ START OF FILE: 2022-09-07 - 220907 - Chad Lamb El-Shaddai - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-07
-Title:   220907 - Chad Lamb: El-Shaddai
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZH4huUFUzqQ
+Date:     2022-09-07
+Title:    220907 - Chad Lamb: El-Shaddai
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZH4huUFUzqQ
 ========================================
 
 Description:

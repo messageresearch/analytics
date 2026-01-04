@@ -4,13 +4,14 @@ START OF FILE: 2021-04-01 - Sermon Clips 2103231 - Brother Chad Lamb Discernment
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-01
-Title:   Sermon Clips: 2103231 - Brother Chad Lamb: Discernment - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=M_sKyrsm1Zw
+Date:     2021-04-01
+Title:    Sermon Clips: 2103231 - Brother Chad Lamb: Discernment - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=M_sKyrsm1Zw
 ========================================
 
 Description:

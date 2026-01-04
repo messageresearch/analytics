@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - Sermon Clip 230618 - Chad Lamb The Great Need for th
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   Sermon Clip: 230618 - Chad Lamb: The Great Need for the Masculine Spirit
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=YeFcPYlhwhU
+Date:     2023-06-18
+Title:    Sermon Clip: 230618 - Chad Lamb: The Great Need for the Masculine Spirit
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=YeFcPYlhwhU
 ========================================
 
 Description:

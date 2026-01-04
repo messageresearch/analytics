@@ -4,13 +4,14 @@ START OF FILE: 2021-07-11 - A Book or Acts Church Pt. 2 - Jason DeMars - Jason D
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-11
-Title:   A Book or Acts Church Pt. 2 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uQvY8bo0OgQ
+Date:     2021-07-11
+Title:    A Book or Acts Church Pt. 2 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=uQvY8bo0OgQ
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-11-18 - Pastor H. Simmons House Not Made With Hands - H Simm
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-18
-Title:   Pastor H. Simmons: "House Not Made With Hands"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tZG25RLjiyE
+Date:     2023-11-18
+Title:    Pastor H. Simmons: "House Not Made With Hands"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=tZG25RLjiyE
 ========================================
 
 Description:

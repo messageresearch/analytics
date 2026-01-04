@@ -4,13 +4,14 @@ START OF FILE: 2022-01-29 - 220129 - A Celebration of Life Brother John Morrow -
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-29
-Title:   220129 - A Celebration of Life: Brother John Morrow
-Speaker: John Morrow
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6v1yW42qALA
+Date:     2022-01-29
+Title:    220129 - A Celebration of Life: Brother John Morrow
+Speaker:  John Morrow
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=6v1yW42qALA
 ========================================
 
 Description:

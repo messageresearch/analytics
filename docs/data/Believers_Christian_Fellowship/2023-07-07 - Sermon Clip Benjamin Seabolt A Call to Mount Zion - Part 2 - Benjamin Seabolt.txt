@@ -4,13 +4,14 @@ START OF FILE: 2023-07-07 - Sermon Clip Benjamin Seabolt A Call to Mount Zion - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-07
-Title:   Sermon Clip: Benjamin Seabolt: A Call to Mount Zion - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=TX6KSp9c5r0
+Date:     2023-07-07
+Title:    Sermon Clip: Benjamin Seabolt: A Call to Mount Zion - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=TX6KSp9c5r0
 ========================================
 
 Description:

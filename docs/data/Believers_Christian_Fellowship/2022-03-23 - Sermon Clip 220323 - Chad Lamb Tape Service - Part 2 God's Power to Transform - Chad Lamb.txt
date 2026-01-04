@@ -4,13 +4,14 @@ START OF FILE: 2022-03-23 - Sermon Clip 220323 - Chad Lamb Tape Service - Part 2
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-23
-Title:   Sermon Clip: 220323 - Chad Lamb: Tape Service - Part 2: God's Power to Transform
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=9FTOmGoz_HA
+Date:     2022-03-23
+Title:    Sermon Clip: 220323 - Chad Lamb: Tape Service - Part 2: God's Power to Transform
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9FTOmGoz_HA
 ========================================
 
 Description:

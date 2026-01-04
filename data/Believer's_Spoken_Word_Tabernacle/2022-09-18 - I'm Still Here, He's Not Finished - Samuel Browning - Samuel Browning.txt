@@ -4,13 +4,14 @@ START OF FILE: 2022-09-18 - I'm Still Here, He's Not Finished - Samuel Browning 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-18
-Title:   I'm Still Here, He's Not Finished - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9DdDp8XFgzE
+Date:     2022-09-18
+Title:    I'm Still Here, He's Not Finished - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Testimony Service
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=9DdDp8XFgzE
 ========================================
 
 Description:

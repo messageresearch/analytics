@@ -4,13 +4,14 @@ START OF FILE: 2021-06-27 - Sermon Clips 210627 - Chad Lamb The Purpose & Plan f
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-27
-Title:   Sermon Clips: 210627 - Chad Lamb: The Purpose & Plan for a Weaker Vessel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=QtbpUD-co0Q
+Date:     2021-06-27
+Title:    Sermon Clips: 210627 - Chad Lamb: The Purpose & Plan for a Weaker Vessel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=QtbpUD-co0Q
 ========================================
 
 Description:

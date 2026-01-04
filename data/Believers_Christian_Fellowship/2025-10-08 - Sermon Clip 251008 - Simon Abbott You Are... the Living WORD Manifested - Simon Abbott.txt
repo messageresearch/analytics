@@ -4,13 +4,14 @@ START OF FILE: 2025-10-08 - Sermon Clip 251008 - Simon Abbott You Are... the Liv
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-08
-Title:   Sermon Clip: 251008 - Simon Abbott: You Are... the Living WORD Manifested
-Speaker: Simon Abbott
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=TJgVlpAIvsU
+Date:     2025-10-08
+Title:    Sermon Clip: 251008 - Simon Abbott: You Are... the Living WORD Manifested
+Speaker:  Simon Abbott
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=TJgVlpAIvsU
 ========================================
 
 Description:

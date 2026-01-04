@@ -4,13 +4,14 @@ START OF FILE: 2024-10-27 - Sermon Clip 241027 - Allistair Francis The Seven-Sea
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-27
-Title:   Sermon Clip: 241027 - Allistair Francis: The Seven-Sealed Book
-Speaker: Allistair Francis
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=n4sGkh-mXUQ
+Date:     2024-10-27
+Title:    Sermon Clip: 241027 - Allistair Francis: The Seven-Sealed Book
+Speaker:  Allistair Francis
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=n4sGkh-mXUQ
 ========================================
 
 Description:

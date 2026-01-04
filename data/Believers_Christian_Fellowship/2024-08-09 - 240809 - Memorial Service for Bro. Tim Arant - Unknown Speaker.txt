@@ -4,13 +4,14 @@ START OF FILE: 2024-08-09 - 240809 - Memorial Service for Bro. Tim Arant - Unkno
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-09
-Title:   240809 - Memorial Service for Bro. Tim Arant
-Speaker: Unknown Speaker
-Church:  Believers Christian Fellowship
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=rCyunlo2pBg
+Date:     2024-08-09
+Title:    240809 - Memorial Service for Bro. Tim Arant
+Speaker:  Unknown Speaker
+Church:   Believers Christian Fellowship
+Type:     Memorial Service
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=rCyunlo2pBg
 ========================================
 
 Description:

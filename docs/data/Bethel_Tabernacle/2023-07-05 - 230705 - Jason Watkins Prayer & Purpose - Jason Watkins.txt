@@ -4,13 +4,14 @@ START OF FILE: 2023-07-05 - 230705 - Jason Watkins Prayer & Purpose - Jason Watk
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-05
-Title:   230705 - Jason Watkins: Prayer & Purpose
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gCvrEEaMZLo
+Date:     2023-07-05
+Title:    230705 - Jason Watkins: Prayer & Purpose
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=gCvrEEaMZLo
 ========================================
 
 Description:

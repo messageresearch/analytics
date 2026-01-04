@@ -4,13 +4,14 @@ START OF FILE: 2020-02-02 - 200202 - Chad Lamb A Chosen Vessel for an Ordained P
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-02
-Title:   200202 - Chad Lamb: A Chosen Vessel for an Ordained Purpose
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=H5QP179ATa0
+Date:     2020-02-02
+Title:    200202 - Chad Lamb: A Chosen Vessel for an Ordained Purpose
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=H5QP179ATa0
 ========================================
 
 Description:

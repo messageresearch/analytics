@@ -4,13 +4,14 @@ START OF FILE: 2024-10-02 - 241002 - Dale Smith Titus, a Christian - Dale Smith.
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-02
-Title:   241002 - Dale Smith: Titus, a Christian
-Speaker: Dale Smith
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=s8kfig-sh6o
+Date:     2024-10-02
+Title:    241002 - Dale Smith: Titus, a Christian
+Speaker:  Dale Smith
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=s8kfig-sh6o
 ========================================
 
 Description:

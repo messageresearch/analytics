@@ -4,13 +4,14 @@ START OF FILE: 2024-06-30 - Pastor H. Simmons Treasures in Heaven” - H Simmons
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-30
-Title:   Pastor H. Simmons: "Treasures in Heaven”
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=veo_nyTZaqU
+Date:     2024-06-30
+Title:    Pastor H. Simmons: "Treasures in Heaven”
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=veo_nyTZaqU
 ========================================
 
 Description:

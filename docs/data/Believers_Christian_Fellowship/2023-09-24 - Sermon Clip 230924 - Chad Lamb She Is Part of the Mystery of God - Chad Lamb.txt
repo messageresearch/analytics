@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - Sermon Clip 230924 - Chad Lamb She Is Part of the My
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   Sermon Clip: 230924 - Chad Lamb: She Is Part of the Mystery of God
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Q0-SoEZDY94
+Date:     2023-09-24
+Title:    Sermon Clip: 230924 - Chad Lamb: She Is Part of the Mystery of God
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q0-SoEZDY94
 ========================================
 
 Description:

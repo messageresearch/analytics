@@ -4,13 +4,14 @@ START OF FILE: 2022-11-09 - Sermon Clip 221109 - Jean Kadima A Sonship Position 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-09
-Title:   Sermon Clip: 221109 - Jean Kadima: A Sonship Position
-Speaker: Jean Kadima
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=V2wvHA78JMA
+Date:     2022-11-09
+Title:    Sermon Clip: 221109 - Jean Kadima: A Sonship Position
+Speaker:  Jean Kadima
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=V2wvHA78JMA
 ========================================
 
 Description:

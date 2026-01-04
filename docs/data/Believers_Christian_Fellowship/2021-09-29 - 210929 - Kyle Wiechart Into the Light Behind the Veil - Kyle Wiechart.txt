@@ -4,13 +4,14 @@ START OF FILE: 2021-09-29 - 210929 - Kyle Wiechart Into the Light Behind the Vei
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-29
-Title:   210929 - Kyle Wiechart: Into the Light Behind the Veil
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=duPjejERz28
+Date:     2021-09-29
+Title:    210929 - Kyle Wiechart: Into the Light Behind the Veil
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=duPjejERz28
 ========================================
 
 Description:

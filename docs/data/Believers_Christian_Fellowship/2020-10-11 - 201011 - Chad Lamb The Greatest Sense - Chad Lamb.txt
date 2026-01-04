@@ -4,13 +4,14 @@ START OF FILE: 2020-10-11 - 201011 - Chad Lamb The Greatest Sense - Chad Lamb.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-11
-Title:   201011 - Chad Lamb: The Greatest Sense
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=olBTeMrNx18
+Date:     2020-10-11
+Title:    201011 - Chad Lamb: The Greatest Sense
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=olBTeMrNx18
 ========================================
 
 Description:

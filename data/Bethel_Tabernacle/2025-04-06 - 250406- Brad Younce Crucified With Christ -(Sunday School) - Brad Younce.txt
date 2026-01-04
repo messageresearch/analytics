@@ -4,13 +4,14 @@ START OF FILE: 2025-04-06 - 250406- Brad Younce Crucified With Christ -(Sunday S
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-06
-Title:   250406- Brad Younce: Crucified With Christ -(Sunday School)
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aN1-y_hnJRs
+Date:     2025-04-06
+Title:    250406- Brad Younce: Crucified With Christ -(Sunday School)
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=aN1-y_hnJRs
 ========================================
 
 Description:

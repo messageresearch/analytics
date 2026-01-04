@@ -4,13 +4,14 @@ START OF FILE: 2023-12-24 - Sermon Clip 231224 - Chad Lamb Born for a Purpose Pr
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-24
-Title:   Sermon Clip: 231224 - Chad Lamb: Born for a Purpose: Preventing the Manifestation
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=ASur-KbJBlw
+Date:     2023-12-24
+Title:    Sermon Clip: 231224 - Chad Lamb: Born for a Purpose: Preventing the Manifestation
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ASur-KbJBlw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-13 - The One Who is Looked For - Trevor Emond - Trevor Em
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-13
-Title:   The One Who is Looked For - Trevor Emond
-Speaker: Trevor Emond
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yP8nHAUSfDQ
+Date:     2022-01-13
+Title:    The One Who is Looked For - Trevor Emond
+Speaker:  Trevor Emond
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=yP8nHAUSfDQ
 ========================================
 
 Description:

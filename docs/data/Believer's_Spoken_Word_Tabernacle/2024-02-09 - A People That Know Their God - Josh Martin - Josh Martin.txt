@@ -4,13 +4,14 @@ START OF FILE: 2024-02-09 - A People That Know Their God - Josh Martin - Josh Ma
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-09
-Title:   A People That Know Their God - Josh Martin
-Speaker: Josh Martin
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DcA58ftk0Ac
+Date:     2024-02-09
+Title:    A People That Know Their God - Josh Martin
+Speaker:  Josh Martin
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=DcA58ftk0Ac
 ========================================
 
 TRANSCRIPT

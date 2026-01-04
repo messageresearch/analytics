@@ -4,13 +4,14 @@ START OF FILE: 2024-07-02 - Sermon Clip 240630a - Chad Lamb The Truth Shall Make
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-02
-Title:   Sermon Clip: 240630a - Chad Lamb: The Truth Shall Make You Free
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=QIt5ovuKo_M
+Date:     2024-07-02
+Title:    Sermon Clip: 240630a - Chad Lamb: The Truth Shall Make You Free
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=QIt5ovuKo_M
 ========================================
 
 Description:

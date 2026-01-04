@@ -4,13 +4,14 @@ START OF FILE: 2023-02-22 - 230222 - Chad Lamb - A Private Meeting with Only Two
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-22
-Title:   230222 - Chad Lamb - A Private Meeting with Only Two Witnesses
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AtS3aRsqVl8
+Date:     2023-02-22
+Title:    230222 - Chad Lamb - A Private Meeting with Only Two Witnesses
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=AtS3aRsqVl8
 ========================================
 
 Description:

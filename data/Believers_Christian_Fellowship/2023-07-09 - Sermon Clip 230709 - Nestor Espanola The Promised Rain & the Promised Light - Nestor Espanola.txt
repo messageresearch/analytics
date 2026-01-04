@@ -4,13 +4,14 @@ START OF FILE: 2023-07-09 - Sermon Clip 230709 - Nestor Espanola The Promised Ra
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-09
-Title:   Sermon Clip: 230709 - Nestor Espanola: The Promised Rain & the Promised Light
-Speaker: Nestor Espanola
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=LO-7T5Dx64A
+Date:     2023-07-09
+Title:    Sermon Clip: 230709 - Nestor Espanola: The Promised Rain & the Promised Light
+Speaker:  Nestor Espanola
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=LO-7T5Dx64A
 ========================================
 
 Description:

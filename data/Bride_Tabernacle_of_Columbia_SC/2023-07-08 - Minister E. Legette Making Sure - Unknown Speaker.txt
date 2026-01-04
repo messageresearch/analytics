@@ -4,13 +4,14 @@ START OF FILE: 2023-07-08 - Minister E. Legette Making Sure - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-08
-Title:   Minister E. Legette: "Making Sure"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bJKrmLxVlMM
+Date:     2023-07-08
+Title:    Minister E. Legette: "Making Sure"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=bJKrmLxVlMM
 ========================================
 
 Description:

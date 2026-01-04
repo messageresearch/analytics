@@ -4,13 +4,14 @@ START OF FILE: 2024-02-04 - 240204 - Chad Lamb It Was Just So Easy for Jacob - C
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-04
-Title:   240204 - Chad Lamb: It Was Just So Easy for Jacob
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Pwd1pTdd2YQ
+Date:     2024-02-04
+Title:    240204 - Chad Lamb: It Was Just So Easy for Jacob
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=Pwd1pTdd2YQ
 ========================================
 
 Description:

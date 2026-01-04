@@ -4,13 +4,14 @@ START OF FILE: 2024-04-27 - Pastor Nathan Simmons Jesus is a Waymaker - Nathan S
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-27
-Title:   Pastor Nathan Simmons: "Jesus is a Waymaker"
-Speaker: Nathan Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Pgx4xHjonxI
+Date:     2024-04-27
+Title:    Pastor Nathan Simmons: "Jesus is a Waymaker"
+Speaker:  Nathan Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=Pgx4xHjonxI
 ========================================
 
 Description:

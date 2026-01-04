@@ -4,13 +4,14 @@ START OF FILE: 2022-04-03 - Pride and His Prisoners Pt. 2 - Jason DeMars - Jason
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-03
-Title:   Pride and His Prisoners Pt. 2 - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sS-4CL-JRSY
+Date:     2022-04-03
+Title:    Pride and His Prisoners Pt. 2 - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=sS-4CL-JRSY
 ========================================
 
 Description:

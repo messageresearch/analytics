@@ -4,13 +4,14 @@ START OF FILE: 2023-12-31 - 231231 - Matthew Watkins New Years Eve Communion Ser
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-31
-Title:   231231 - Matthew Watkins: New Years Eve Communion Service
-Speaker: Matthew Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-7UuXuXi6ek
+Date:     2023-12-31
+Title:    231231 - Matthew Watkins: New Years Eve Communion Service
+Speaker:  Matthew Watkins
+Church:   Bethel Tabernacle
+Type:     Communion Service
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=-7UuXuXi6ek
 ========================================
 
 Description:

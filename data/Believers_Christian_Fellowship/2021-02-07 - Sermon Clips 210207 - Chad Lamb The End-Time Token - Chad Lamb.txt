@@ -4,13 +4,14 @@ START OF FILE: 2021-02-07 - Sermon Clips 210207 - Chad Lamb The End-Time Token -
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-07
-Title:   Sermon Clips: 210207 - Chad Lamb: The End-Time Token
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=GnAIHa2FEeA
+Date:     2021-02-07
+Title:    Sermon Clips: 210207 - Chad Lamb: The End-Time Token
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=GnAIHa2FEeA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-02-24 - Freedom - Jason DeMars - Jason DeMars.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-24
-Title:   Freedom - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=F1yyKh6gxaI
+Date:     2022-02-24
+Title:    Freedom - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=F1yyKh6gxaI
 ========================================
 
 Description:

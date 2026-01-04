@@ -4,13 +4,14 @@ START OF FILE: 2022-02-27 - Minister Ernest Legette What Went Ye Out to See - Er
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-27
-Title:   Minister Ernest Legette: "What Went Ye Out to See?"
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-4-v6xA8sMg
+Date:     2022-02-27
+Title:    Minister Ernest Legette: "What Went Ye Out to See?"
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=-4-v6xA8sMg
 ========================================
 
 Description:

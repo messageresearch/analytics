@@ -4,13 +4,14 @@ START OF FILE: 2022-02-13 - Honest Reflection 4 - Samuel Browning - Samuel Brown
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-13
-Title:   Honest Reflection 4 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VjT7f8GYVAw
+Date:     2022-02-13
+Title:    Honest Reflection 4 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=VjT7f8GYVAw
 ========================================
 
 Description:

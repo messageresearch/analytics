@@ -4,13 +4,14 @@ START OF FILE: 2023-03-15 - Sermon Clip 230315 - Kyle Wiechart Fellowship Throug
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-15
-Title:   Sermon Clip: 230315 - Kyle Wiechart: Fellowship Through Suffering & Philippines Trip Report
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=KADSXBI9eXM
+Date:     2023-03-15
+Title:    Sermon Clip: 230315 - Kyle Wiechart: Fellowship Through Suffering & Philippines Trip Report
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=KADSXBI9eXM
 ========================================
 
 Description:

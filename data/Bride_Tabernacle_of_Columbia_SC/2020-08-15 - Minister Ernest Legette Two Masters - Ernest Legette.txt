@@ -4,13 +4,14 @@ START OF FILE: 2020-08-15 - Minister Ernest Legette Two Masters - Ernest Legette
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-15
-Title:   Minister Ernest Legette: Two Masters
-Speaker: Ernest Legette
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wz-ue4p6DLQ
+Date:     2020-08-15
+Title:    Minister Ernest Legette: Two Masters
+Speaker:  Ernest Legette
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=wz-ue4p6DLQ
 ========================================
 
 Description:

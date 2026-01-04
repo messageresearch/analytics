@@ -4,13 +4,14 @@ START OF FILE: 2025-01-04 - Pastor H. Simmons Eve and Adam; The Bride is in Chri
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-04
-Title:   Pastor H. Simmons: "Eve and Adam; The Bride is in Christ"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ttgP8311Z6c
+Date:     2025-01-04
+Title:    Pastor H. Simmons: "Eve and Adam; The Bride is in Christ"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=ttgP8311Z6c
 ========================================
 
 Description:

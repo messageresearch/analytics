@@ -4,13 +4,14 @@ START OF FILE: 2023-12-31 - 231231 - Jason Watkins The Last Sermon Of Jesus Chri
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-31
-Title:   231231 - Jason Watkins: The Last Sermon Of Jesus Christ
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=unK2pzsJ994
+Date:     2023-12-31
+Title:    231231 - Jason Watkins: The Last Sermon Of Jesus Christ
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=unK2pzsJ994
 ========================================
 
 Description:

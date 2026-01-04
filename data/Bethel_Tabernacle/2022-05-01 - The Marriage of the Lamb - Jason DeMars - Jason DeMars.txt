@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - The Marriage of the Lamb - Jason DeMars - Jason DeMa
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   The Marriage of the Lamb - Jason DeMars
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SynAf95qROM
+Date:     2022-05-01
+Title:    The Marriage of the Lamb - Jason DeMars
+Speaker:  Jason DeMars
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=SynAf95qROM
 ========================================
 
 Description:

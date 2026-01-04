@@ -4,13 +4,14 @@ START OF FILE: 2023-07-16 - And When the People Complained - Jerry Browning - Je
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-16
-Title:   And When the People Complained - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iBn8z-K3m3c
+Date:     2023-07-16
+Title:    And When the People Complained - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=iBn8z-K3m3c
 ========================================
 
 Description:

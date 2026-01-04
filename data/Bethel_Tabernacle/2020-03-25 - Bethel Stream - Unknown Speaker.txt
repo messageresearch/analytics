@@ -4,13 +4,16 @@ START OF FILE: 2020-03-25 - Bethel Stream - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-25
-Title:   Bethel Stream
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=SaslvhqYYCU
+Date:     2020-03-25
+Title:    Bethel Stream
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Song Special
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=SaslvhqYYCU
 ========================================
 
+TRANSCRIPT
+========================================
 [Music] [Music] [Music] [Music] [Music] [Music]

@@ -4,13 +4,14 @@ START OF FILE: 2021-05-05 - Sermon Clip 210505 - Chad Lamb Religion Versus Relat
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-05
-Title:   Sermon Clip: 210505 - Chad Lamb: Religion Versus Relationship - Part 3: Lack of Trust
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=cUuiwD5stKQ
+Date:     2021-05-05
+Title:    Sermon Clip: 210505 - Chad Lamb: Religion Versus Relationship - Part 3: Lack of Trust
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=cUuiwD5stKQ
 ========================================
 
 Description:

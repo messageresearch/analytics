@@ -4,13 +4,14 @@ START OF FILE: 2025-09-07 - Sermon Clip 250907 - Danny del Mundo The Daughters o
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-07
-Title:   Sermon Clip: 250907 - Danny del Mundo: The Daughters of the Firstborn
-Speaker: Danny del Mundo
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=V7Qx_OtMlL8
+Date:     2025-09-07
+Title:    Sermon Clip: 250907 - Danny del Mundo: The Daughters of the Firstborn
+Speaker:  Danny del Mundo
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=V7Qx_OtMlL8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - Sermon Clip 221113 - Chad Lamb The Knowledge of the 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   Sermon Clip: 221113 - Chad Lamb: The Knowledge of the Lord
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=vYouD7biwME
+Date:     2022-11-13
+Title:    Sermon Clip: 221113 - Chad Lamb: The Knowledge of the Lord
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=vYouD7biwME
 ========================================
 
 Description:

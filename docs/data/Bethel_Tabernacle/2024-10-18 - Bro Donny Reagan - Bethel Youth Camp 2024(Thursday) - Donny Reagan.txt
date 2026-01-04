@@ -4,13 +4,14 @@ START OF FILE: 2024-10-18 - Bro Donny Reagan - Bethel Youth Camp 2024(Thursday) 
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-18
-Title:   Bro Donny Reagan - Bethel Youth Camp 2024(Thursday)
-Speaker: Donny Reagan
-Church:  Bethel Tabernacle
-Type:    Youth Camp
-Language:English
-URL:     https://www.youtube.com/watch?v=cLVZUYdAXmo
+Date:     2024-10-18
+Title:    Bro Donny Reagan - Bethel Youth Camp 2024(Thursday)
+Speaker:  Donny Reagan
+Church:   Bethel Tabernacle
+Type:     Youth Service
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=cLVZUYdAXmo
 ========================================
 
 Description:

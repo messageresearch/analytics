@@ -4,13 +4,14 @@ START OF FILE: 2025-07-16 - Sermon Clip 250716 - Chad Lamb The Strength of Grace
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-16
-Title:   Sermon Clip: 250716 - Chad Lamb: The Strength of Grace
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=mNC5z6eKt1c
+Date:     2025-07-16
+Title:    Sermon Clip: 250716 - Chad Lamb: The Strength of Grace
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=mNC5z6eKt1c
 ========================================
 
 Description:

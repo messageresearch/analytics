@@ -4,13 +4,14 @@ START OF FILE: 2021-09-12 - No Turning Back - Darrell Ward - No Turning Back.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-12
-Title:   No Turning Back - Darrell Ward
-Speaker: No Turning Back
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SEe6JfyDECs
+Date:     2021-09-12
+Title:    No Turning Back - Darrell Ward
+Speaker:  No Turning Back
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=SEe6JfyDECs
 ========================================
 
 Description:

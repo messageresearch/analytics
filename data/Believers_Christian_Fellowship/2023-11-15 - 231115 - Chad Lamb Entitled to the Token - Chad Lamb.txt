@@ -4,13 +4,14 @@ START OF FILE: 2023-11-15 - 231115 - Chad Lamb Entitled to the Token - Chad Lamb
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-15
-Title:   231115 - Chad Lamb: Entitled to the Token
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ChT9GLShnNk
+Date:     2023-11-15
+Title:    231115 - Chad Lamb: Entitled to the Token
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=ChT9GLShnNk
 ========================================
 
 Description:

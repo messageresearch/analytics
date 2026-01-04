@@ -4,13 +4,14 @@ START OF FILE: 2023-07-28 - Faithful - Part 1 - Samuel Browning - Samuel Brownin
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-28
-Title:   Faithful - Part 1 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VPLZ1YXwjLk
+Date:     2023-07-28
+Title:    Faithful - Part 1 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=VPLZ1YXwjLk
 ========================================
 
 Description:

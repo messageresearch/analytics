@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - A Brand New Book  - Jason Watkins - Jason Watkins.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   A Brand New Book  - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Upzuq5xnInM
+Date:     2024-07-21
+Title:    A Brand New Book  - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=Upzuq5xnInM
 ========================================
 
 Description:

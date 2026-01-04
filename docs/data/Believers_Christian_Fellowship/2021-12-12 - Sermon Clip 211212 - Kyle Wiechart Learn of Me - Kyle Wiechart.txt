@@ -4,13 +4,14 @@ START OF FILE: 2021-12-12 - Sermon Clip 211212 - Kyle Wiechart Learn of Me - Kyl
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-12
-Title:   Sermon Clip: 211212 - Kyle Wiechart: Learn of Me
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=DmP7gZt9HWs
+Date:     2021-12-12
+Title:    Sermon Clip: 211212 - Kyle Wiechart: Learn of Me
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=DmP7gZt9HWs
 ========================================
 
 Description:

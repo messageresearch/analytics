@@ -4,13 +4,14 @@ START OF FILE: 2021-05-23 - Sermon Clip 210523 - Chad Lamb Religion Versus Relat
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-23
-Title:   Sermon Clip: 210523 - Chad Lamb: Religion Versus Relationship - Part 6: The Idolatry of Church
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=JXXGFYXMDl4
+Date:     2021-05-23
+Title:    Sermon Clip: 210523 - Chad Lamb: Religion Versus Relationship - Part 6: The Idolatry of Church
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=JXXGFYXMDl4
 ========================================
 
 Description:

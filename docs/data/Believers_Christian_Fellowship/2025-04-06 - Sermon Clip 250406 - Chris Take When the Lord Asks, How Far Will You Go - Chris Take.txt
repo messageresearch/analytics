@@ -4,13 +4,14 @@ START OF FILE: 2025-04-06 - Sermon Clip 250406 - Chris Take When the Lord Asks, 
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-06
-Title:   Sermon Clip: 250406 - Chris Take: When the Lord Asks, How Far Will You Go
-Speaker: Chris Take
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=3HS_ojmj4hI
+Date:     2025-04-06
+Title:    Sermon Clip: 250406 - Chris Take: When the Lord Asks, How Far Will You Go
+Speaker:  Chris Take
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=3HS_ojmj4hI
 ========================================
 
 Description:

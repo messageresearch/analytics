@@ -4,13 +4,14 @@ START OF FILE: 2025-05-11 - Sermon Clip 250511 - Chad Lamb God in Partnership Wi
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-11
-Title:   Sermon Clip: 250511 - Chad Lamb: God in Partnership With Man
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=PXGcUBpEM6k
+Date:     2025-05-11
+Title:    Sermon Clip: 250511 - Chad Lamb: God in Partnership With Man
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=PXGcUBpEM6k
 ========================================
 
 Description:

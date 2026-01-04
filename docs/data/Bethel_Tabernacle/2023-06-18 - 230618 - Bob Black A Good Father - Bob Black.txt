@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - 230618 - Bob Black A Good Father - Bob Black.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   230618 - Bob Black: A Good Father
-Speaker: Bob Black
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2zk6ZTGq8vY
+Date:     2023-06-18
+Title:    230618 - Bob Black: A Good Father
+Speaker:  Bob Black
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=2zk6ZTGq8vY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - Times of Renewal 4 Complexes - Samuel Browning - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   Times of Renewal 4: Complexes - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oz-3iAT90QA
+Date:     2025-03-02
+Title:    Times of Renewal 4: Complexes - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=oz-3iAT90QA
 ========================================
 
 Description:

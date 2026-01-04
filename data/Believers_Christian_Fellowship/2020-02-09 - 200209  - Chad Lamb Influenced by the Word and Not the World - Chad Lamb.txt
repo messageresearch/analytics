@@ -4,13 +4,14 @@ START OF FILE: 2020-02-09 - 200209  - Chad Lamb Influenced by the Word and Not t
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-09
-Title:   200209  - Chad Lamb: Influenced by the Word and Not the World
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r0r-8S_iWZs
+Date:     2020-02-09
+Title:    200209  - Chad Lamb: Influenced by the Word and Not the World
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=r0r-8S_iWZs
 ========================================
 
 Description:

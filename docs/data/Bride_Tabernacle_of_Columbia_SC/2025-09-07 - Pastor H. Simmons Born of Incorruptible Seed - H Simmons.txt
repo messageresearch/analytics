@@ -4,13 +4,14 @@ START OF FILE: 2025-09-07 - Pastor H. Simmons Born of Incorruptible Seed - H Sim
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-07
-Title:   Pastor H. Simmons: "Born of Incorruptible Seed"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-IUIxW03YeE
+Date:     2025-09-07
+Title:    Pastor H. Simmons: "Born of Incorruptible Seed"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=-IUIxW03YeE
 ========================================
 
 Description:

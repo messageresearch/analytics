@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - Sermon Clip 221211 - Chad Lamb The Power of the Thir
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   Sermon Clip: 221211 - Chad Lamb: The Power of the Third Pull
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Nia2atr355Y
+Date:     2022-12-11
+Title:    Sermon Clip: 221211 - Chad Lamb: The Power of the Third Pull
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Nia2atr355Y
 ========================================
 
 Description:

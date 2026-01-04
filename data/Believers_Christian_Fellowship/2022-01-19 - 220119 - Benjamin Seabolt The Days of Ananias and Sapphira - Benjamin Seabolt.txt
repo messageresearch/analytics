@@ -4,13 +4,14 @@ START OF FILE: 2022-01-19 - 220119 - Benjamin Seabolt The Days of Ananias and Sa
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-19
-Title:   220119 - Benjamin Seabolt: The Days of Ananias and Sapphira
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=a9AOnonxdlA
+Date:     2022-01-19
+Title:    220119 - Benjamin Seabolt: The Days of Ananias and Sapphira
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=a9AOnonxdlA
 ========================================
 
 Description:

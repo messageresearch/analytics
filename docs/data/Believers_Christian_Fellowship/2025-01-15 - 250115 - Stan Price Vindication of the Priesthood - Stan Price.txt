@@ -4,13 +4,14 @@ START OF FILE: 2025-01-15 - 250115 - Stan Price Vindication of the Priesthood - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-15
-Title:   250115 - Stan Price: Vindication of the Priesthood
-Speaker: Stan Price
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0TKQI2YptdM
+Date:     2025-01-15
+Title:    250115 - Stan Price: Vindication of the Priesthood
+Speaker:  Stan Price
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=0TKQI2YptdM
 ========================================
 
 Description:

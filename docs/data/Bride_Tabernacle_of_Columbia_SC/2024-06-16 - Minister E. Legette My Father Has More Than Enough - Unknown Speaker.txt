@@ -4,13 +4,14 @@ START OF FILE: 2024-06-16 - Minister E. Legette My Father Has More Than Enough -
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-16
-Title:   Minister E. Legette: "My Father Has More Than Enough"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5GYVToMhTOM
+Date:     2024-06-16
+Title:    Minister E. Legette: "My Father Has More Than Enough"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=5GYVToMhTOM
 ========================================
 
 Description:

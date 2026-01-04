@@ -4,13 +4,14 @@ START OF FILE: 2025-07-09 - Sermon Clip 250709 - Chad Lamb We Must Will To Do Hi
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-09
-Title:   Sermon Clip: 250709 - Chad Lamb: We Must Will To Do His Will: Listening for His Voice
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=idEGcu-Du9k
+Date:     2025-07-09
+Title:    Sermon Clip: 250709 - Chad Lamb: We Must Will To Do His Will: Listening for His Voice
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=idEGcu-Du9k
 ========================================
 
 Description:

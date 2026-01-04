@@ -4,13 +4,14 @@ START OF FILE: 2025-03-09 - 250309 - Jason Watkins Our Part in the Inheritance -
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-09
-Title:   250309 - Jason Watkins: Our Part in the Inheritance
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=krbuSepgoJQ
+Date:     2025-03-09
+Title:    250309 - Jason Watkins: Our Part in the Inheritance
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=krbuSepgoJQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-31 - In Christ Alone - Bro. Mario - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-31
-Title:   In Christ Alone - Bro. Mario
-Speaker: Unknown Speaker
-Church:  Calgary Living Word Assembly
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Mlbvddyg0Zw
+Date:     2025-12-31
+Title:    In Christ Alone - Bro. Mario
+Speaker:  Unknown Speaker
+Church:   Calgary Living Word Assembly
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mlbvddyg0Zw
 ========================================
 
 Description:

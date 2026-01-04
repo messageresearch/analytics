@@ -4,13 +4,14 @@ START OF FILE: 2023-09-06 - Sermon Clip 230906 - Chad Lamb The Visible Declaring
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-06
-Title:   Sermon Clip: 230906 - Chad Lamb: The Visible Declaring the Invisible
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=IxxR4dwl1d4
+Date:     2023-09-06
+Title:    Sermon Clip: 230906 - Chad Lamb: The Visible Declaring the Invisible
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=IxxR4dwl1d4
 ========================================
 
 Description:

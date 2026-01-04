@@ -4,13 +4,14 @@ START OF FILE: 2023-09-17 - Pastor H. Simmons If God Be For Us - H Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-17
-Title:   Pastor H. Simmons: "If God Be For Us"
-Speaker: H Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rJt56v3nIq4
+Date:     2023-09-17
+Title:    Pastor H. Simmons: "If God Be For Us"
+Speaker:  H Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=rJt56v3nIq4
 ========================================
 
 Description:

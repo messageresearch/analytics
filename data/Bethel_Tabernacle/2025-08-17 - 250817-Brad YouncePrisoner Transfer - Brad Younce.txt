@@ -4,13 +4,14 @@ START OF FILE: 2025-08-17 - 250817-Brad YouncePrisoner Transfer - Brad Younce.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-17
-Title:   250817-Brad Younce:Prisoner Transfer
-Speaker: Brad Younce
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UtsbZRT2utc
+Date:     2025-08-17
+Title:    250817-Brad Younce:Prisoner Transfer
+Speaker:  Brad Younce
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=UtsbZRT2utc
 ========================================
 
 Description:

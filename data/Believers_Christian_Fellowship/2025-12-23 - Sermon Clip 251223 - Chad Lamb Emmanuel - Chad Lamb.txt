@@ -4,13 +4,14 @@ START OF FILE: 2025-12-23 - Sermon Clip 251223 - Chad Lamb Emmanuel - Chad Lamb.
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-23
-Title:   Sermon Clip: 251223 - Chad Lamb: Emmanuel
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=FQRqhyZOp-s
+Date:     2025-12-23
+Title:    Sermon Clip: 251223 - Chad Lamb: Emmanuel
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=FQRqhyZOp-s
 ========================================
 
 Description:

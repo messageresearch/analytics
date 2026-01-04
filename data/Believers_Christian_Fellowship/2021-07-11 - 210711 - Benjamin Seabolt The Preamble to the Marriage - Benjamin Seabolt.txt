@@ -4,13 +4,14 @@ START OF FILE: 2021-07-11 - 210711 - Benjamin Seabolt The Preamble to the Marria
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-11
-Title:   210711 - Benjamin Seabolt: The Preamble to the Marriage
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WzGcCwgkdlk
+Date:     2021-07-11
+Title:    210711 - Benjamin Seabolt: The Preamble to the Marriage
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=WzGcCwgkdlk
 ========================================
 
 Description:

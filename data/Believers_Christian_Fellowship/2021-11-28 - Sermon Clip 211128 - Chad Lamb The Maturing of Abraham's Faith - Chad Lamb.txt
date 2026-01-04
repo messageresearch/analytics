@@ -4,13 +4,14 @@ START OF FILE: 2021-11-28 - Sermon Clip 211128 - Chad Lamb The Maturing of Abrah
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-28
-Title:   Sermon Clip: 211128 - Chad Lamb: The Maturing of Abraham's Faith
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=kA_GW0WMss8
+Date:     2021-11-28
+Title:    Sermon Clip: 211128 - Chad Lamb: The Maturing of Abraham's Faith
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=kA_GW0WMss8
 ========================================
 
 Description:

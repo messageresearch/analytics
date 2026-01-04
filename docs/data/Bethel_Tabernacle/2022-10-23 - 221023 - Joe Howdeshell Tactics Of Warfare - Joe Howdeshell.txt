@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - 221023 - Joe Howdeshell Tactics Of Warfare - Joe How
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   221023 - Joe Howdeshell: Tactics Of Warfare
-Speaker: Joe Howdeshell
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QXaRWtOxa58
+Date:     2022-10-23
+Title:    221023 - Joe Howdeshell: Tactics Of Warfare
+Speaker:  Joe Howdeshell
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=QXaRWtOxa58
 ========================================
 
 Description:

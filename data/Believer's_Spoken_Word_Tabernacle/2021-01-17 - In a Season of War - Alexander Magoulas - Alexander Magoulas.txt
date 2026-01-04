@@ -4,13 +4,14 @@ START OF FILE: 2021-01-17 - In a Season of War - Alexander Magoulas - Alexander 
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-17
-Title:   In a Season of War - Alexander Magoulas
-Speaker: Alexander Magoulas
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=joSw5TOxuzQ
+Date:     2021-01-17
+Title:    In a Season of War - Alexander Magoulas
+Speaker:  Alexander Magoulas
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=joSw5TOxuzQ
 ========================================
 
 TRANSCRIPT

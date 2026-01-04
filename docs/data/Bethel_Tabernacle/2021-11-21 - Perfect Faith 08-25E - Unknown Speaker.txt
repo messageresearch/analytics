@@ -4,13 +4,14 @@ START OF FILE: 2021-11-21 - Perfect Faith 08-25E - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-21
-Title:   Perfect Faith 08-25E
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tXotpalyPWQ
+Date:     2021-11-21
+Title:    Perfect Faith 08-25E
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Short Service
+Duration: 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=tXotpalyPWQ
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-25 - 230125 - Chad Lamb Tape Service - Part 1 There Is a 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-25
-Title:   230125 - Chad Lamb: Tape Service - Part 1: There Is a Man Here That Can Turn on the Light
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f0pdUxDjdgc
+Date:     2023-01-25
+Title:    230125 - Chad Lamb: Tape Service - Part 1: There Is a Man Here That Can Turn on the Light
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=f0pdUxDjdgc
 ========================================
 
 Description:

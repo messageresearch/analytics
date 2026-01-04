@@ -4,13 +4,14 @@ START OF FILE: 2024-11-24 - Sermon Clip 241124 - Chad Lamb She Will Believe Him 
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-24
-Title:   Sermon Clip: 241124 - Chad Lamb: She Will Believe Him
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=NRYvBV31IQ0
+Date:     2024-11-24
+Title:    Sermon Clip: 241124 - Chad Lamb: She Will Believe Him
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=NRYvBV31IQ0
 ========================================
 
 Description:

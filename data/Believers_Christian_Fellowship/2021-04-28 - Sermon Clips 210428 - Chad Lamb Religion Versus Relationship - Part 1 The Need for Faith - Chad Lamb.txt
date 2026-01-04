@@ -4,13 +4,14 @@ START OF FILE: 2021-04-28 - Sermon Clips 210428 - Chad Lamb Religion Versus Rela
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-28
-Title:   Sermon Clips: 210428 - Chad Lamb: Religion Versus Relationship - Part 1: The Need for Faith
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=8yOYlABjwwU
+Date:     2021-04-28
+Title:    Sermon Clips: 210428 - Chad Lamb: Religion Versus Relationship - Part 1: The Need for Faith
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=8yOYlABjwwU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - Pastor Henry Simmons Forsaking All - Henry Simmons.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   Pastor Henry Simmons: "Forsaking All"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=42yQnizdUXk
+Date:     2024-12-01
+Title:    Pastor Henry Simmons: "Forsaking All"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=42yQnizdUXk
 ========================================
 
 Description:

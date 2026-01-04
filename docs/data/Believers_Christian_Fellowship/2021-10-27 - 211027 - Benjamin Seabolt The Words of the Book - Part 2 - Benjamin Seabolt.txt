@@ -4,13 +4,14 @@ START OF FILE: 2021-10-27 - 211027 - Benjamin Seabolt The Words of the Book - Pa
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-27
-Title:   211027 - Benjamin Seabolt: The Words of the Book - Part 2
-Speaker: Benjamin Seabolt
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JiYwgyYIfJ0
+Date:     2021-10-27
+Title:    211027 - Benjamin Seabolt: The Words of the Book - Part 2
+Speaker:  Benjamin Seabolt
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=JiYwgyYIfJ0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-07-18 - Having Found Grace - Jerry Browning - Jerry Browning
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-18
-Title:   Having Found Grace - Jerry Browning
-Speaker: Jerry Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CVaWHc35UXM
+Date:     2021-07-18
+Title:    Having Found Grace - Jerry Browning
+Speaker:  Jerry Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Worship Service
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=CVaWHc35UXM
 ========================================
 
 Description:

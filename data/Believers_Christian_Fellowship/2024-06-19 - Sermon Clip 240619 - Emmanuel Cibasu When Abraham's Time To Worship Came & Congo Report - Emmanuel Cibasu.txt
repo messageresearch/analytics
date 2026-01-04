@@ -4,13 +4,14 @@ START OF FILE: 2024-06-19 - Sermon Clip 240619 - Emmanuel Cibasu When Abraham's 
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-19
-Title:   Sermon Clip: 240619 - Emmanuel Cibasu: When Abraham's Time To Worship Came & Congo Report
-Speaker: Emmanuel Cibasu
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=vWFmBMIm2bs
+Date:     2024-06-19
+Title:    Sermon Clip: 240619 - Emmanuel Cibasu: When Abraham's Time To Worship Came & Congo Report
+Speaker:  Emmanuel Cibasu
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=vWFmBMIm2bs
 ========================================
 
 Description:

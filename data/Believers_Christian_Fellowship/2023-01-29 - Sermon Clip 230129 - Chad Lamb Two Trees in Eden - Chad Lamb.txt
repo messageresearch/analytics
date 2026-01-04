@@ -4,13 +4,14 @@ START OF FILE: 2023-01-29 - Sermon Clip 230129 - Chad Lamb Two Trees in Eden - C
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-29
-Title:   Sermon Clip: 230129 - Chad Lamb: Two Trees in Eden
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=CIR9mh3yedo
+Date:     2023-01-29
+Title:    Sermon Clip: 230129 - Chad Lamb: Two Trees in Eden
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=CIR9mh3yedo
 ========================================
 
 Description:

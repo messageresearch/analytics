@@ -4,13 +4,14 @@ START OF FILE: 2022-02-27 - Sermon Clip 220227 - Chad Lamb The Seven Seals Opene
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-27
-Title:   Sermon Clip: 220227 - Chad Lamb: The Seven Seals Opened the Entire Bible - Part 3
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_Vs_igSAS7s
+Date:     2022-02-27
+Title:    Sermon Clip: 220227 - Chad Lamb: The Seven Seals Opened the Entire Bible - Part 3
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_Vs_igSAS7s
 ========================================
 
 Description:

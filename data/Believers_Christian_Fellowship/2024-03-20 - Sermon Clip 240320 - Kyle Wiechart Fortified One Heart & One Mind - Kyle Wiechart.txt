@@ -4,13 +4,14 @@ START OF FILE: 2024-03-20 - Sermon Clip 240320 - Kyle Wiechart Fortified One Hea
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-20
-Title:   Sermon Clip: 240320 - Kyle Wiechart: Fortified: One Heart & One Mind
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=YhG-uqr4_lc
+Date:     2024-03-20
+Title:    Sermon Clip: 240320 - Kyle Wiechart: Fortified: One Heart & One Mind
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=YhG-uqr4_lc
 ========================================
 
 Description:

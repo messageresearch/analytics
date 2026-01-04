@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - 220424 - Chad Lamb Our Guide - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   220424 - Chad Lamb: Our Guide
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RYWIQDm-rYk
+Date:     2022-04-24
+Title:    220424 - Chad Lamb: Our Guide
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=RYWIQDm-rYk
 ========================================
 
 Description:

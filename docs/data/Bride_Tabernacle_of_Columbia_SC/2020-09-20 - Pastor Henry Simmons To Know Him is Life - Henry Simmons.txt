@@ -4,13 +4,14 @@ START OF FILE: 2020-09-20 - Pastor Henry Simmons To Know Him is Life - Henry Sim
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-20
-Title:   Pastor Henry Simmons: "To Know Him is Life"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-3LIlSYoOF4
+Date:     2020-09-20
+Title:    Pastor Henry Simmons: "To Know Him is Life"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=-3LIlSYoOF4
 ========================================
 
 Description:

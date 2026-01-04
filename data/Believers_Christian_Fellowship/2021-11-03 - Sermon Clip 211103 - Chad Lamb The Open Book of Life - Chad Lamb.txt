@@ -4,13 +4,14 @@ START OF FILE: 2021-11-03 - Sermon Clip 211103 - Chad Lamb The Open Book of Life
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-03
-Title:   Sermon Clip: 211103 - Chad Lamb: The Open Book of Life
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=Yo1udAUQh4g
+Date:     2021-11-03
+Title:    Sermon Clip: 211103 - Chad Lamb: The Open Book of Life
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Yo1udAUQh4g
 ========================================
 
 Description:

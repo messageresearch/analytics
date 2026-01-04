@@ -4,13 +4,14 @@ START OF FILE: 2024-04-21 - Sermon Clip 240421 - Burley Williams The Power of Ju
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-21
-Title:   Sermon Clip: 240421 - Burley Williams: The Power of Jubilee
-Speaker: Burley Williams
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=D4nANcoo0L8
+Date:     2024-04-21
+Title:    Sermon Clip: 240421 - Burley Williams: The Power of Jubilee
+Speaker:  Burley Williams
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=D4nANcoo0L8
 ========================================
 
 Description:

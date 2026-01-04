@@ -4,13 +4,14 @@ START OF FILE: 2022-08-15 - The LORD is My Shepherd 3 - Samuel Browning - Samuel
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-15
-Title:   The LORD is My Shepherd 3 - Samuel Browning
-Speaker: Samuel Browning
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AVP5PKUJFX4
+Date:     2022-08-15
+Title:    The LORD is My Shepherd 3 - Samuel Browning
+Speaker:  Samuel Browning
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 3h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=AVP5PKUJFX4
 ========================================
 
 Description:

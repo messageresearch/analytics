@@ -4,13 +4,14 @@ START OF FILE: 2024-03-06 - Sermon Clip 240306 - Chad Lamb The Resolve to Suffer
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-06
-Title:   Sermon Clip: 240306 - Chad Lamb: The Resolve to Suffer
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=mR8VPbFYG_o
+Date:     2024-03-06
+Title:    Sermon Clip: 240306 - Chad Lamb: The Resolve to Suffer
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=mR8VPbFYG_o
 ========================================
 
 Description:

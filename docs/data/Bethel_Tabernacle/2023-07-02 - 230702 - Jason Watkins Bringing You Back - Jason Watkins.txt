@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - 230702 - Jason Watkins Bringing You Back - Jason Wat
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   230702 - Jason Watkins: Bringing You Back
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q8ntdvI8Xq0
+Date:     2023-07-02
+Title:    230702 - Jason Watkins: Bringing You Back
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=q8ntdvI8Xq0
 ========================================
 
 Description:

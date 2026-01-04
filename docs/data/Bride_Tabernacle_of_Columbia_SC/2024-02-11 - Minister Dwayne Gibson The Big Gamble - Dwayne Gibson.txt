@@ -4,13 +4,14 @@ START OF FILE: 2024-02-11 - Minister Dwayne Gibson The Big Gamble - Dwayne Gibso
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-11
-Title:   Minister Dwayne Gibson: "The Big Gamble"
-Speaker: Dwayne Gibson
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Aa4GZ1QGF4I
+Date:     2024-02-11
+Title:    Minister Dwayne Gibson: "The Big Gamble"
+Speaker:  Dwayne Gibson
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=Aa4GZ1QGF4I
 ========================================
 
 Description:

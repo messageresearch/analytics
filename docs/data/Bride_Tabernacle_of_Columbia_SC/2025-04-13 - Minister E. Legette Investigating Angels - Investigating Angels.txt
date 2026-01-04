@@ -4,13 +4,14 @@ START OF FILE: 2025-04-13 - Minister E. Legette Investigating Angels - Investiga
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-13
-Title:   Minister E. Legette: "Investigating Angels"
-Speaker: Investigating Angels
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uJVqCN54xNE
+Date:     2025-04-13
+Title:    Minister E. Legette: "Investigating Angels"
+Speaker:  Investigating Angels
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=uJVqCN54xNE
 ========================================
 
 Description:

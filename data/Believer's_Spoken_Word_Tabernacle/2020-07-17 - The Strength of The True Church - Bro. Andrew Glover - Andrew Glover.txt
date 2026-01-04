@@ -4,13 +4,14 @@ START OF FILE: 2020-07-17 - The Strength of The True Church - Bro. Andrew Glover
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-17
-Title:   The Strength of The True Church - Bro. Andrew Glover
-Speaker: Andrew Glover
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oXXYmrihJpU
+Date:     2020-07-17
+Title:    The Strength of The True Church - Bro. Andrew Glover
+Speaker:  Andrew Glover
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=oXXYmrihJpU
 ========================================
 
 TRANSCRIPT

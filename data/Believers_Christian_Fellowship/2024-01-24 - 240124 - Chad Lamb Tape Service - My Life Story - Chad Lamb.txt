@@ -4,13 +4,14 @@ START OF FILE: 2024-01-24 - 240124 - Chad Lamb Tape Service - My Life Story - Ch
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-24
-Title:   240124 - Chad Lamb: Tape Service - My Life Story
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=POtqNME165g
+Date:     2024-01-24
+Title:    240124 - Chad Lamb: Tape Service - My Life Story
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=POtqNME165g
 ========================================
 
 Description:

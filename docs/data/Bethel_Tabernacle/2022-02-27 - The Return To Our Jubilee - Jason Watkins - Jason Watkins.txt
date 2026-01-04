@@ -4,13 +4,14 @@ START OF FILE: 2022-02-27 - The Return To Our Jubilee - Jason Watkins - Jason Wa
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-27
-Title:   The Return To Our Jubilee - Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J1Gbgso7uBE
+Date:     2022-02-27
+Title:    The Return To Our Jubilee - Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=J1Gbgso7uBE
 ========================================
 
 Description:

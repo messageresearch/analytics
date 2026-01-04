@@ -4,13 +4,14 @@ START OF FILE: 2021-03-07 - Pastor Henry Simmons Perseverance - Henry Simmons.tx
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-07
-Title:   Pastor Henry Simmons: "Perseverance"
-Speaker: Henry Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xcWeXltCsJw
+Date:     2021-03-07
+Title:    Pastor Henry Simmons: "Perseverance"
+Speaker:  Henry Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=xcWeXltCsJw
 ========================================
 
 Description:

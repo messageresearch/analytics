@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - Sunday School - 032722 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   Sunday School - 03/27/22
-Speaker: Unknown Speaker
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5CsOK96axls
+Date:     2022-03-27
+Title:    Sunday School - 03/27/22
+Speaker:  Unknown Speaker
+Church:   Bethel Tabernacle
+Type:     Sunday School
+Duration: 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=5CsOK96axls
 ========================================
 
 Description:

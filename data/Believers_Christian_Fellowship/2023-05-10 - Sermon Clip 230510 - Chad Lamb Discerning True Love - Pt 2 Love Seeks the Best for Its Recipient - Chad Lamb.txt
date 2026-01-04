@@ -4,13 +4,14 @@ START OF FILE: 2023-05-10 - Sermon Clip 230510 - Chad Lamb Discerning True Love 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-10
-Title:   Sermon Clip: 230510 - Chad Lamb: Discerning True Love - Pt 2: Love Seeks the Best for Its Recipient
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=PAcomf2EhtQ
+Date:     2023-05-10
+Title:    Sermon Clip: 230510 - Chad Lamb: Discerning True Love - Pt 2: Love Seeks the Best for Its Recipient
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=PAcomf2EhtQ
 ========================================
 
 Description:

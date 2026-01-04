@@ -4,13 +4,14 @@ START OF FILE: 2024-08-01 - Hiding In Plain Sight – Jason Watkins - Jason Watk
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-01
-Title:   Hiding In Plain Sight – Jason Watkins
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LRvyeMogVOk
+Date:     2024-08-01
+Title:    Hiding In Plain Sight – Jason Watkins
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=LRvyeMogVOk
 ========================================
 
 Description:

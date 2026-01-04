@@ -4,13 +4,14 @@ START OF FILE: 2025-06-21 - Minister E. Legette Go and Learn - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-21
-Title:   Minister E. Legette: "Go and Learn"
-Speaker: Unknown Speaker
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bCSHJZdbPeM
+Date:     2025-06-21
+Title:    Minister E. Legette: "Go and Learn"
+Speaker:  Unknown Speaker
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=bCSHJZdbPeM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-08-31 - Sermon Clip 220831 - Kyle Wiechart But I Will Rememb
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-31
-Title:   Sermon Clip: 220831 - Kyle Wiechart: But I Will Remember
-Speaker: Kyle Wiechart
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=MLC15i-3vqI
+Date:     2022-08-31
+Title:    Sermon Clip: 220831 - Kyle Wiechart: But I Will Remember
+Speaker:  Kyle Wiechart
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=MLC15i-3vqI
 ========================================
 
 Description:

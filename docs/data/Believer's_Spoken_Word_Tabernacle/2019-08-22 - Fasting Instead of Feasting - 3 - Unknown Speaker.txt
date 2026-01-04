@@ -4,13 +4,14 @@ START OF FILE: 2019-08-22 - Fasting Instead of Feasting - 3 - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2019-08-22
-Title:   Fasting Instead of Feasting - 3
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UufxgjbmgqI
+Date:     2019-08-22
+Title:    Fasting Instead of Feasting - 3
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=UufxgjbmgqI
 ========================================
 
 TRANSCRIPT

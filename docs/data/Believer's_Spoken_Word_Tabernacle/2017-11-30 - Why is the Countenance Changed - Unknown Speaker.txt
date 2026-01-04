@@ -4,13 +4,14 @@ START OF FILE: 2017-11-30 - Why is the Countenance Changed - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2017-11-30
-Title:   Why is the Countenance Changed?
-Speaker: Unknown Speaker
-Church:  Believer's Spoken Word Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3XQJYTtAlGg
+Date:     2017-11-30
+Title:    Why is the Countenance Changed?
+Speaker:  Unknown Speaker
+Church:   Believer's Spoken Word Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=3XQJYTtAlGg
 ========================================
 
 TRANSCRIPT

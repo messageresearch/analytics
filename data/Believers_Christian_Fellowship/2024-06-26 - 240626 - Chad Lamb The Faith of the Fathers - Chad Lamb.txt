@@ -4,13 +4,14 @@ START OF FILE: 2024-06-26 - 240626 - Chad Lamb The Faith of the Fathers - Chad L
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-26
-Title:   240626 - Chad Lamb: The Faith of the Fathers
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dBLtHNfx8DM
+Date:     2024-06-26
+Title:    240626 - Chad Lamb: The Faith of the Fathers
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=dBLtHNfx8DM
 ========================================
 
 Description:

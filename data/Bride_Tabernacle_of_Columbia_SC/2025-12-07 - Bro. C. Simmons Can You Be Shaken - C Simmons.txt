@@ -4,13 +4,14 @@ START OF FILE: 2025-12-07 - Bro. C. Simmons Can You Be Shaken - C Simmons.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-07
-Title:   Bro. C. Simmons: "Can You Be Shaken?"
-Speaker: C Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8VOBo7D5Kto
+Date:     2025-12-07
+Title:    Bro. C. Simmons: "Can You Be Shaken?"
+Speaker:  C Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Sunday School
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=8VOBo7D5Kto
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-05-18 - 220518 - Chad Lamb What Do You See in the Word - Cha
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-18
-Title:   220518 - Chad Lamb: What Do You See in the Word?
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=syZX_trf4u4
+Date:     2022-05-18
+Title:    220518 - Chad Lamb: What Do You See in the Word?
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=syZX_trf4u4
 ========================================
 
 Description:

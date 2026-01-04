@@ -4,13 +4,14 @@ START OF FILE: 2021-05-30 - Bro. Jason Watkins - The Final Season pt. 6 - Jason 
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-30
-Title:   Bro. Jason Watkins - The Final Season pt. 6
-Speaker: Jason Watkins
-Church:  Bethel Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AbYxpkPjd2g
+Date:     2021-05-30
+Title:    Bro. Jason Watkins - The Final Season pt. 6
+Speaker:  Jason Watkins
+Church:   Bethel Tabernacle
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=AbYxpkPjd2g
 ========================================
 
 TRANSCRIPT

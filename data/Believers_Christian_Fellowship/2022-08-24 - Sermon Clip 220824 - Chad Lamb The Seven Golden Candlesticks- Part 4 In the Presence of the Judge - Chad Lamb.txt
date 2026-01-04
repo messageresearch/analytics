@@ -4,13 +4,14 @@ START OF FILE: 2022-08-24 - Sermon Clip 220824 - Chad Lamb The Seven Golden Cand
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-24
-Title:   Sermon Clip: 220824 - Chad Lamb: The Seven Golden Candlesticks- Part 4: In the Presence of the Judge
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=_XYdRfwXUwo
+Date:     2022-08-24
+Title:    Sermon Clip: 220824 - Chad Lamb: The Seven Golden Candlesticks- Part 4: In the Presence of the Judge
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=_XYdRfwXUwo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-10-05 - Sermon Clip 251005 - Chad Lamb The Value of Christ t
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-05
-Title:   Sermon Clip: 251005 - Chad Lamb: The Value of Christ to Me
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=sxeVD4oqBxg
+Date:     2025-10-05
+Title:    Sermon Clip: 251005 - Chad Lamb: The Value of Christ to Me
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Sermon Clip
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=sxeVD4oqBxg
 ========================================
 
 Description:

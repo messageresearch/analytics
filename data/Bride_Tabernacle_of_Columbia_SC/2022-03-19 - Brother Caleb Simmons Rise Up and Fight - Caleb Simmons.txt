@@ -4,13 +4,14 @@ START OF FILE: 2022-03-19 - Brother Caleb Simmons Rise Up and Fight - Caleb Simm
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-19
-Title:   Brother Caleb Simmons: "Rise Up and Fight"
-Speaker: Caleb Simmons
-Church:  Bride Tabernacle of Columbia SC
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7-b5TY6tx9k
+Date:     2022-03-19
+Title:    Brother Caleb Simmons: "Rise Up and Fight"
+Speaker:  Caleb Simmons
+Church:   Bride Tabernacle of Columbia SC
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=7-b5TY6tx9k
 ========================================
 
 Description:

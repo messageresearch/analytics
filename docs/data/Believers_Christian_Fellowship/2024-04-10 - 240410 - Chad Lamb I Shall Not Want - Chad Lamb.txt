@@ -4,13 +4,14 @@ START OF FILE: 2024-04-10 - 240410 - Chad Lamb I Shall Not Want - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-10
-Title:   240410 - Chad Lamb: I Shall Not Want
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T0wnl9xPkJo
+Date:     2024-04-10
+Title:    240410 - Chad Lamb: I Shall Not Want
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=T0wnl9xPkJo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-09-02 - 200902 - Chad Lamb Placed Sons - Part 2 - Chad Lamb.
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-02
-Title:   200902 - Chad Lamb: Placed Sons - Part 2
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N08xRR_yF_M
+Date:     2020-09-02
+Title:    200902 - Chad Lamb: Placed Sons - Part 2
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=N08xRR_yF_M
 ========================================
 
 Description:

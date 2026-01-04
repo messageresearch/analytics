@@ -4,13 +4,14 @@ START OF FILE: 2024-05-01 - 240501 - Chad Lamb Worthy of Him - Chad Lamb.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-01
-Title:   240501 - Chad Lamb: Worthy of Him
-Speaker: Chad Lamb
-Church:  Believers Christian Fellowship
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tIpKJRohfGo
+Date:     2024-05-01
+Title:    240501 - Chad Lamb: Worthy of Him
+Speaker:  Chad Lamb
+Church:   Believers Christian Fellowship
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=tIpKJRohfGo
 ========================================
 
 Description:
