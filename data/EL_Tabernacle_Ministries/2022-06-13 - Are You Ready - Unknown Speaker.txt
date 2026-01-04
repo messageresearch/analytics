@@ -4,13 +4,14 @@ START OF FILE: 2022-06-13 - Are You Ready - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-13
-Title:   Are You Ready?
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=2ecJKuLmMGA
+Date:     2022-06-13
+Title:    Are You Ready?
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=2ecJKuLmMGA
 ========================================
 
 Description:

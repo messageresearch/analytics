@@ -4,13 +4,14 @@ START OF FILE: 2022-10-11 - Who is Job  Apostle Edgar H. Roscoe - Edgar Roscoe.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-11
-Title:   Who is Job? | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6FapulRcjO4
+Date:     2022-10-11
+Title:    Who is Job? | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=6FapulRcjO4
 ========================================
 
 Description:

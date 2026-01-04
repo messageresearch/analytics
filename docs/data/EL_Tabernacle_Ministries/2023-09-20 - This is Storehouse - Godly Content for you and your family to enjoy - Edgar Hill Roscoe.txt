@@ -4,13 +4,14 @@ START OF FILE: 2023-09-20 - This is Storehouse - Godly Content for you and your 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-20
-Title:   This is Storehouse - Godly Content for you and your family to enjoy
-Speaker: Edgar Hill Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6aBMPT36V8s
+Date:     2023-09-20
+Title:    This is Storehouse - Godly Content for you and your family to enjoy
+Speaker:  Edgar Hill Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=6aBMPT36V8s
 ========================================
 
 Description:

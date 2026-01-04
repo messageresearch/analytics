@@ -4,13 +4,14 @@ START OF FILE: 2022-10-08 - Climate Change  Apostle Edgar H. Roscoe - Edgar Rosc
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-08
-Title:   Climate Change | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wJIRhsw7mHQ
+Date:     2022-10-08
+Title:    Climate Change | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=wJIRhsw7mHQ
 ========================================
 
 Description:

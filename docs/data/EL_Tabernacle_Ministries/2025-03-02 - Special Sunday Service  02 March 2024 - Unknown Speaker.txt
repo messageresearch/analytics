@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - Special Sunday Service  02 March 2024 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   Special Sunday Service || 02 March 2024
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NLLbet5kvpo
+Date:     2025-03-02
+Title:    Special Sunday Service || 02 March 2024
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=NLLbet5kvpo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-10-10 - Special Friday Evening Service  10 October 2025 - Un
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-10
-Title:   Special Friday Evening Service | 10 October 2025
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9NWP6gu7ebI
+Date:     2025-10-10
+Title:    Special Friday Evening Service | 10 October 2025
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 3h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=9NWP6gu7ebI
 ========================================
 
 Description:

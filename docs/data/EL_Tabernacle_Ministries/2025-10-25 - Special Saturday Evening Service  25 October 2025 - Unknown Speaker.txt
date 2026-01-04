@@ -4,13 +4,14 @@ START OF FILE: 2025-10-25 - Special Saturday Evening Service  25 October 2025 - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-25
-Title:   Special Saturday Evening Service | 25 October 2025
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z-5IA4pqVII
+Date:     2025-10-25
+Title:    Special Saturday Evening Service | 25 October 2025
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z-5IA4pqVII
 ========================================
 
 Description:

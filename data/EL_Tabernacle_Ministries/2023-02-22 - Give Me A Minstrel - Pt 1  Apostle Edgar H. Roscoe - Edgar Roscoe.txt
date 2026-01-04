@@ -4,13 +4,14 @@ START OF FILE: 2023-02-22 - Give Me A Minstrel - Pt 1  Apostle Edgar H. Roscoe -
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-22
-Title:   Give Me A Minstrel - Pt 1 | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=49UBqkGDojE
+Date:     2023-02-22
+Title:    Give Me A Minstrel - Pt 1 | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=49UBqkGDojE
 ========================================
 
 Description:

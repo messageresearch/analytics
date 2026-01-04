@@ -4,13 +4,14 @@ START OF FILE: 2020-05-02 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-02
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fcJrj3zmeaA
+Date:     2020-05-02
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Short Service
+Duration: 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=fcJrj3zmeaA
 ========================================
 
 Description:

@@ -98,6 +98,10 @@ export default function App(){
   const [selectedSermonFocus, setSelectedSermonFocus] = useState(0)
   const [channelSearch, setChannelSearch] = useState('')
   const [channelSort, setChannelSort] = useState('name_asc')
+  const [expandedChannels, setExpandedChannels] = useState(new Set()) // Track which channels are expanded
+  const [channelVideoSearch, setChannelVideoSearch] = useState({}) // Track search term per channel
+  const [channelVideoSort, setChannelVideoSort] = useState({}) // Track sort config per channel { key, direction }
+  const [channelTranscriptPreview, setChannelTranscriptPreview] = useState(null) // { video, content } for popup
   // Pinned popup for main chart - click to freeze the tooltip
   const [mainChartPinnedBucket, setMainChartPinnedBucket] = useState(null)
   const [mainChartPinnedPosition, setMainChartPinnedPosition] = useState({ x: 0, y: 0 })
@@ -989,6 +993,14 @@ export default function App(){
     })
     return stats
   }, [rawData])
+
+  // Get all videos for a specific church (used in expandable channel rows)
+  const getChannelVideos = useCallback((churchName) => {
+    const normalizedName = churchName.replace(/\s+/g, '_')
+    return rawData
+      .filter(s => s.church === normalizedName || s.church === churchName)
+      .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+  }, [rawData])
   
   // Unfiltered stats for comparison - uses enrichedData to get current search results across ALL sermons
   const unfilteredStats = useMemo(()=>{ if(!enrichedData.length) return null; const mentions = enrichedData.reduce((acc,s)=>acc+s.mentionCount,0); return { totalMentions: mentions } }, [enrichedData])
@@ -1549,7 +1561,7 @@ export default function App(){
                   </div>
                 </div>
                 
-                {/* Scrollable container for many churches */}}
+                {/* Scrollable container for many churches */}
                 <div className="max-h-[600px] overflow-y-auto" style={{ display: 'none' }}></div>
               </div>
             )}
@@ -1677,7 +1689,7 @@ export default function App(){
                   </div>
                 </div>
                 
-                {/* Show more/less buttons */}}
+                {/* Show more/less buttons */}
                 {speakerYearHeatmap.speakers.length > 100 && (
                   <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
                     {speakerDisplayLimit < speakerYearHeatmap.speakers.length && (
@@ -2118,11 +2130,56 @@ export default function App(){
                       const latestDate = scrapeInfo?.latestDate || null
                       const isStale = latestDate && new Date(latestDate) < new Date(Date.now() - 90 * 24 * 60 * 60 * 1000) // >90 days old
                       const isRecent = latestDate && new Date(latestDate) > new Date(Date.now() - 30 * 24 * 60 * 60 * 1000) // <30 days old
+                      const isExpanded = expandedChannels.has(normalizedName)
+                      const channelVideos = isExpanded ? getChannelVideos(name) : []
+                      const searchTerm = channelVideoSearch[normalizedName] || ''
+                      const sortCfg = channelVideoSort[normalizedName] || { key: 'date', direction: 'desc' }
+                      
+                      // Filter and sort videos
+                      const filteredVideos = channelVideos.filter(v => {
+                        if (!searchTerm) return true
+                        const term = searchTerm.toLowerCase()
+                        return (v.title || '').toLowerCase().includes(term) ||
+                               (v.speaker || '').toLowerCase().includes(term) ||
+                               (v.date || '').toLowerCase().includes(term)
+                      }).sort((a, b) => {
+                        const dir = sortCfg.direction === 'asc' ? 1 : -1
+                        if (sortCfg.key === 'date') return dir * ((a.date || '').localeCompare(b.date || ''))
+                        if (sortCfg.key === 'title') return dir * ((a.title || '').localeCompare(b.title || ''))
+                        if (sortCfg.key === 'speaker') return dir * ((a.speaker || '').localeCompare(b.speaker || ''))
+                        if (sortCfg.key === 'status') {
+                          const aHas = a.hasTranscript !== false ? 1 : 0
+                          const bHas = b.hasTranscript !== false ? 1 : 0
+                          return dir * (aHas - bHas)
+                        }
+                        return 0
+                      })
+                      
+                      const videosWithTranscripts = channelVideos.filter(v => v.hasTranscript !== false)
+                      
                       return (
                         <li key={i}>
-                          <div onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }} className="channel-link-row block text-sm bg-gray-50 p-3 rounded border transition hover:bg-gray-100 cursor-pointer">
-                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3">
-                              <div className="min-w-0 flex-1">
+                          <div className="block text-sm bg-gray-50 rounded border transition">
+                            {/* Channel header row */}
+                            <div className="p-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3">
+                              {/* Expand button with clear expand icon */}
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  setExpandedChannels(prev => {
+                                    const next = new Set(prev)
+                                    if (next.has(normalizedName)) next.delete(normalizedName)
+                                    else next.add(normalizedName)
+                                    return next
+                                  })
+                                }}
+                                className={`flex-shrink-0 flex items-center gap-1.5 px-2 py-1 rounded transition text-xs font-medium ${isExpanded ? 'bg-blue-100 text-blue-700' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'}`}
+                                title={isExpanded ? 'Click to collapse' : 'Click to expand and see all videos'}
+                              >
+                                <Icon name={isExpanded ? 'chevron-down' : 'plus'} size={14} />
+                                <span className="hidden sm:inline">{isExpanded ? 'Collapse' : 'Expand'}</span>
+                              </button>
+                              <div className="min-w-0 flex-1 cursor-pointer hover:bg-gray-100 rounded px-2 -mx-2" onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }}>
                                 <div className="font-medium text-gray-700">{name}</div>
                                 <div className="text-xs text-blue-600 truncate"><a href={href} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{href}</a></div>
                               </div>
@@ -2132,7 +2189,7 @@ export default function App(){
                                     {transcriptCount > 0 ? `${transcriptCount.toLocaleString()} transcripts` : 'No data'}
                                   </div>
                                   {latestDate ? (
-                                    <div className={`text-xs ${isRecent ? 'text-green-600' : isStale ? 'text-orange-500' : 'text-gray-500'}`}>
+                                    <div className={`text-xs ${isRecent ? 'text-green-600' : isStale ? 'text-orange-500' : 'text-blue-500'}`}>
                                       Latest: {latestDate}
                                       {isRecent && <span className="ml-1">✓</span>}
                                       {isStale && <span className="ml-1">⚠</span>}
@@ -2141,9 +2198,234 @@ export default function App(){
                                     <div className="text-xs text-red-400">Not scraped</div>
                                   )}
                                 </div>
-                                <Icon name="link" size={18} className="text-blue-400" />
+                                <a 
+                                  href={c.url || c.link || c.href || '#'} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  onClick={(e) => { e.stopPropagation(); if(!(c.url || c.link || c.href)) { e.preventDefault(); alert('No channel URL available'); } }}
+                                  className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded transition"
+                                  title="Open YouTube channel"
+                                >
+                                  <Icon name="externalLink" size={18} />
+                                </a>
                               </div>
                             </div>
+                            {/* Expanded video list */}
+                            {isExpanded && (
+                              <div className="border-t bg-white px-3 py-3">
+                                {channelVideos.length === 0 ? (
+                                  <div className="text-sm text-gray-500 py-2">No videos found for this channel.</div>
+                                ) : (
+                                  <div>
+                                    {/* Search bar and download button */}
+                                    <div className="flex flex-col sm:flex-row gap-2 mb-3">
+                                      <div className="relative flex-1">
+                                        <Icon name="search" size={14} className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" />
+                                        <input
+                                          type="text"
+                                          placeholder="Search videos by title, speaker, or date..."
+                                          value={searchTerm}
+                                          onChange={(e) => setChannelVideoSearch(prev => ({ ...prev, [normalizedName]: e.target.value }))}
+                                          className="w-full pl-7 pr-3 py-1.5 text-xs border rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                        />
+                                        {searchTerm && (
+                                          <button 
+                                            onClick={() => setChannelVideoSearch(prev => ({ ...prev, [normalizedName]: '' }))}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                                          >
+                                            <Icon name="x" size={12} />
+                                          </button>
+                                        )}
+                                      </div>
+                                      <button
+                                        onClick={(e) => {
+                                          e.stopPropagation()
+                                          handleCustomDownload(videosWithTranscripts)
+                                        }}
+                                        disabled={isZipping || videosWithTranscripts.length === 0}
+                                        className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition whitespace-nowrap"
+                                        title={`Download all ${videosWithTranscripts.length} transcripts for ${name}`}
+                                      >
+                                        <Icon name="download" size={14} />
+                                        <span>{isZipping ? 'Downloading...' : `Download All (${videosWithTranscripts.length})`}</span>
+                                      </button>
+                                    </div>
+                                    
+                                    {/* Video table */}
+                                    <div className="max-h-72 overflow-y-auto border rounded">
+                                      <table className="w-full text-xs">
+                                        <thead className="sticky top-0 bg-gray-50 border-b">
+                                          <tr className="text-gray-600 text-left">
+                                            <th 
+                                              className="py-2 px-2 font-medium w-24 cursor-pointer hover:bg-gray-100 select-none"
+                                              onClick={() => setChannelVideoSort(prev => ({
+                                                ...prev,
+                                                [normalizedName]: { 
+                                                  key: 'date', 
+                                                  direction: sortCfg.key === 'date' && sortCfg.direction === 'desc' ? 'asc' : 'desc' 
+                                                }
+                                              }))}
+                                            >
+                                              Date {sortCfg.key === 'date' && <span className="ml-1">{sortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                            </th>
+                                            <th 
+                                              className="py-2 px-2 font-medium cursor-pointer hover:bg-gray-100 select-none"
+                                              onClick={() => setChannelVideoSort(prev => ({
+                                                ...prev,
+                                                [normalizedName]: { 
+                                                  key: 'title', 
+                                                  direction: sortCfg.key === 'title' && sortCfg.direction === 'asc' ? 'desc' : 'asc' 
+                                                }
+                                              }))}
+                                            >
+                                              Title {sortCfg.key === 'title' && <span className="ml-1">{sortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                            </th>
+                                            <th 
+                                              className="py-2 px-2 font-medium w-28 hidden sm:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                              onClick={() => setChannelVideoSort(prev => ({
+                                                ...prev,
+                                                [normalizedName]: { 
+                                                  key: 'speaker', 
+                                                  direction: sortCfg.key === 'speaker' && sortCfg.direction === 'asc' ? 'desc' : 'asc' 
+                                                }
+                                              }))}
+                                            >
+                                              Speaker {sortCfg.key === 'speaker' && <span className="ml-1">{sortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                            </th>
+                                            <th 
+                                              className="py-2 px-2 font-medium w-20 text-center cursor-pointer hover:bg-gray-100 select-none"
+                                              onClick={() => setChannelVideoSort(prev => ({
+                                                ...prev,
+                                                [normalizedName]: { 
+                                                  key: 'status', 
+                                                  direction: sortCfg.key === 'status' && sortCfg.direction === 'desc' ? 'asc' : 'desc' 
+                                                }
+                                              }))}
+                                              title="Transcript availability status"
+                                            >
+                                              Transcript {sortCfg.key === 'status' && <span className="ml-1">{sortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                            </th>
+                                            <th className="py-2 px-2 font-medium w-24 text-center">Actions</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-gray-100">
+                                          {filteredVideos.length === 0 ? (
+                                            <tr>
+                                              <td colSpan="5" className="py-4 text-center text-gray-500">
+                                                No videos match your search.
+                                              </td>
+                                            </tr>
+                                          ) : filteredVideos.map((video, vi) => (
+                                            <tr key={vi} className="hover:bg-gray-50">
+                                              <td className="py-2 px-2 text-gray-600 whitespace-nowrap">{video.date || 'Unknown'}</td>
+                                              <td className="py-2 px-2 text-gray-800 truncate max-w-[150px] sm:max-w-[250px]" title={video.title}>{video.title || 'Untitled'}</td>
+                                              <td className="py-2 px-2 text-gray-600 truncate hidden sm:table-cell">{video.speaker || '—'}</td>
+                                              <td className="py-2 px-2 text-center">
+                                                {video.hasTranscript !== false ? (
+                                                  <span className="inline-flex items-center gap-1 text-green-600" title="Transcript available">
+                                                    <Icon name="check" size={12} /> <span className="hidden sm:inline text-[10px]">Yes</span>
+                                                  </span>
+                                                ) : (
+                                                  <span className="inline-flex items-center gap-1 text-red-400" title="No transcript available">
+                                                    <Icon name="x" size={12} /> <span className="hidden sm:inline text-[10px]">No</span>
+                                                  </span>
+                                                )}
+                                              </td>
+                                              <td className="py-2 px-2">
+                                                <div className="flex items-center justify-center gap-1">
+                                                  {/* View transcript popup */}
+                                                  {video.hasTranscript !== false && video.path && (
+                                                    <button
+                                                      onClick={async (e) => {
+                                                        e.stopPropagation()
+                                                        try {
+                                                          const apiPrefix = import.meta.env.BASE_URL || '/'
+                                                          const res = await fetch(apiPrefix + video.path)
+                                                          if (res.ok) {
+                                                            const content = await res.text()
+                                                            setChannelTranscriptPreview({ video, content })
+                                                          } else {
+                                                            alert('Could not load transcript')
+                                                          }
+                                                        } catch (err) {
+                                                          alert('Error loading transcript: ' + err.message)
+                                                        }
+                                                      }}
+                                                      className="p-1 text-blue-500 hover:text-blue-700 hover:bg-blue-50 rounded"
+                                                      title="View transcript"
+                                                    >
+                                                      <Icon name="eye" size={14} />
+                                                    </button>
+                                                  )}
+                                                  {/* YouTube video link */}
+                                                  {(video.url || video.videoUrl) && (
+                                                    <a
+                                                      href={video.url || video.videoUrl}
+                                                      target="_blank"
+                                                      rel="noopener noreferrer"
+                                                      onClick={(e) => e.stopPropagation()}
+                                                      className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded inline-flex"
+                                                      title="Open YouTube video"
+                                                    >
+                                                      <Icon name="externalLink" size={14} />
+                                                    </a>
+                                                  )}
+                                                  {/* Download individual transcript */}
+                                                  {video.hasTranscript !== false && video.path && (
+                                                    <button
+                                                      onClick={async (e) => {
+                                                        e.stopPropagation()
+                                                        try {
+                                                          const apiPrefix = import.meta.env.BASE_URL || '/'
+                                                          const res = await fetch(apiPrefix + video.path)
+                                                          if (res.ok) {
+                                                            const content = await res.text()
+                                                            const filename = video.path.split('/').pop() || 'transcript.txt'
+                                                            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
+                                                            const url = URL.createObjectURL(blob)
+                                                            const a = document.createElement('a')
+                                                            a.href = url
+                                                            a.download = filename
+                                                            a.click()
+                                                            URL.revokeObjectURL(url)
+                                                          } else {
+                                                            alert('Could not download transcript')
+                                                          }
+                                                        } catch (err) {
+                                                          alert('Error downloading: ' + err.message)
+                                                        }
+                                                      }}
+                                                      className="p-1 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded"
+                                                      title="Download transcript"
+                                                    >
+                                                      <Icon name="download" size={14} />
+                                                    </button>
+                                                  )}
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          ))}
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    
+                                    {/* Summary footer */}
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-gray-500 mt-2 pt-2 border-t">
+                                      <div>
+                                        {searchTerm ? (
+                                          <span>Showing {filteredVideos.length.toLocaleString()} of {channelVideos.length.toLocaleString()} videos</span>
+                                        ) : (
+                                          <span>{channelVideos.length.toLocaleString()} total videos • {videosWithTranscripts.length.toLocaleString()} with transcripts</span>
+                                        )}
+                                      </div>
+                                      <div className="text-gray-400">
+                                        Click column headers to sort • Use search to filter
+                                      </div>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            )}
                           </div>
                         </li>
                       )
@@ -2151,6 +2433,71 @@ export default function App(){
                   })()}
                 </ul>
                 {/* channel preview modal removed — clicking opens channel URL in a new tab */}
+                
+                {/* Transcript preview popup for expanded channel videos */}
+                {channelTranscriptPreview && (
+                  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setChannelTranscriptPreview(null)}>
+                    <div 
+                      className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[85vh] flex flex-col"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {/* Header */}
+                      <div className="flex items-start justify-between p-4 border-b bg-gray-50 rounded-t-lg">
+                        <div className="min-w-0 flex-1 pr-4">
+                          <h3 className="font-bold text-gray-800 truncate">{channelTranscriptPreview.video.title || 'Transcript'}</h3>
+                          <div className="flex flex-wrap gap-2 mt-1 text-xs text-gray-500">
+                            {channelTranscriptPreview.video.date && <span>{channelTranscriptPreview.video.date}</span>}
+                            {channelTranscriptPreview.video.speaker && <span>• {channelTranscriptPreview.video.speaker}</span>}
+                            {channelTranscriptPreview.video.church && <span>• {channelTranscriptPreview.video.church.replace(/_/g, ' ')}</span>}
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {/* Download button */}
+                          <button
+                            onClick={() => {
+                              const filename = channelTranscriptPreview.video.path?.split('/').pop() || 'transcript.txt'
+                              const blob = new Blob([channelTranscriptPreview.content], { type: 'text/plain;charset=utf-8' })
+                              const url = URL.createObjectURL(blob)
+                              const a = document.createElement('a')
+                              a.href = url
+                              a.download = filename
+                              a.click()
+                              URL.revokeObjectURL(url)
+                            }}
+                            className="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-200 rounded transition"
+                            title="Download transcript"
+                          >
+                            <Icon name="download" size={18} />
+                          </button>
+                          {/* YouTube link */}
+                          {(channelTranscriptPreview.video.url || channelTranscriptPreview.video.videoUrl) && (
+                            <button
+                              onClick={() => window.open(channelTranscriptPreview.video.url || channelTranscriptPreview.video.videoUrl, '_blank', 'noopener')}
+                              className="p-2 text-red-500 hover:text-red-700 hover:bg-red-50 rounded transition"
+                              title="Watch on YouTube"
+                            >
+                              <Icon name="video" size={18} />
+                            </button>
+                          )}
+                          {/* Close button */}
+                          <button
+                            onClick={() => setChannelTranscriptPreview(null)}
+                            className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded transition"
+                            title="Close"
+                          >
+                            <Icon name="x" size={18} />
+                          </button>
+                        </div>
+                      </div>
+                      {/* Content */}
+                      <div className="flex-1 overflow-y-auto p-4">
+                        <pre className="whitespace-pre-wrap text-sm text-gray-700 font-sans leading-relaxed">
+                          {channelTranscriptPreview.content}
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}

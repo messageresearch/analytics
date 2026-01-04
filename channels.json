@@ -39,6 +39,17 @@
         "id": "PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq",
         "name": "Cloverdale Bibleway"
       }
+    ],
+    "additional_channels": [
+      {
+        "url": "https://www.youtube.com/@ChristWitnessGuss",
+        "name": "Christ Witness Guss Archive",
+        "filter": {
+          "require_any": ["Ed Byskal", "Cloverdale Bibleway"],
+          "match_in": ["title", "description"]
+        },
+        "date_format": "YY MMDD"
+      }
     ]
   },
   "Christian Life Tabernacle": {
@@ -157,6 +168,10 @@
     "url": "https://www.youtube.com/@newlifeoutreachchurchpawnee",
     "filename": "NewLifeOutreachChurchOfPawnee.txt"
   },
+  "New Hope Revival Ministries": {
+    "url": "https://www.youtube.com/@StevenLShelley",
+    "filename": "NewHopeRevivalMinistries.txt"
+  },
   "Phoenix Lighthouse Tabernacle": {
     "url": "https://www.youtube.com/@PhoenixLighthouseTabernacle",
     "filename": "PhoenixLighthouseTabernacle.txt"
@@ -224,6 +239,10 @@
   "Tucson Tabernacle": {
     "url": "https://www.youtube.com/@TucsonTabernacle",
     "filename": "TucsonTabernacle.txt"
+  },
+  "Voice of Truth Tabernacle": {
+    "url": "https://www.youtube.com/@comehigher",
+    "filename": "VoiceOfTruthTabernacle.txt"
   },
   "Word Of Life Church": {
     "url": "https://www.youtube.com/@woljclivestream7237",

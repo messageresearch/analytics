@@ -4,13 +4,14 @@ START OF FILE: 2022-05-25 -  - Timothy Pruitt.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-25
-Title:   
-Speaker: Timothy Pruitt
-Church:  Cloverdale Bibleway
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=tKAFfizOwe0
+Date:     2022-05-25
+Title:    
+Speaker:  Timothy Pruitt
+Church:   Cloverdale Bibleway
+Type:     Song Special
+Duration: 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=tKAFfizOwe0
 ========================================
 
 Description:

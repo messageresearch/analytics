@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - Special Sunday Morning Service  31 August 2025 - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   Special Sunday Morning Service | 31 August 2025
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t7jWkvwiMec
+Date:     2025-08-31
+Title:    Special Sunday Morning Service | 31 August 2025
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=t7jWkvwiMec
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-10-17 - When is the 70th JUBILEE - Edgar Roscoe.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-17
-Title:   When is the 70th JUBILEE?
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=mnsfBfFHJyE
+Date:     2023-10-17
+Title:    When is the 70th JUBILEE?
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=mnsfBfFHJyE
 ========================================
 
 Description:

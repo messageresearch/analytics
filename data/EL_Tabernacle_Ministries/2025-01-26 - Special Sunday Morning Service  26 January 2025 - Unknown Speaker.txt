@@ -4,13 +4,14 @@ START OF FILE: 2025-01-26 - Special Sunday Morning Service  26 January 2025 - Un
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-26
-Title:   Special Sunday Morning Service | 26 January 2025
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8L6L61kTxfY
+Date:     2025-01-26
+Title:    Special Sunday Morning Service | 26 January 2025
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=8L6L61kTxfY
 ========================================
 
 Description:

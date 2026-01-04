@@ -4,13 +4,14 @@ START OF FILE: 2023-02-02 - Is There A God - Pt 1  Apostle Edgar H. Roscoe - Edg
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-02
-Title:   Is There A God? - Pt 1 | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7hIynu-0Niw
+Date:     2023-02-02
+Title:    Is There A God? - Pt 1 | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=7hIynu-0Niw
 ========================================
 
 Description:

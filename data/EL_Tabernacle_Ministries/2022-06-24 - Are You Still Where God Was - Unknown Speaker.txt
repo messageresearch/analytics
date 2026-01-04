@@ -4,13 +4,14 @@ START OF FILE: 2022-06-24 - Are You Still Where God Was - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-24
-Title:   Are You Still Where God Was?
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=WDqmwEDCKLM
+Date:     2022-06-24
+Title:    Are You Still Where God Was?
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=WDqmwEDCKLM
 ========================================
 
 Description:

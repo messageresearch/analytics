@@ -446,6 +446,125 @@ def fetch_playlist_videos(playlist_id, limit=None):
     return videos
 
 
+def video_matches_filter(video, filter_config, yt_object=None):
+    """
+    Check if a video matches the filter criteria.
+    
+    Args:
+        video: Video dictionary with 'videoId' and optionally 'title', 'descriptionSnippet'
+        filter_config: Dictionary with 'require_any' (list of strings) and 'match_in' (list: 'title', 'description')
+        yt_object: Optional YouTube object for fetching full description
+    
+    Returns:
+        True if the video matches any of the required terms, False otherwise
+    """
+    if not filter_config:
+        return True  # No filter = include all
+    
+    require_any = filter_config.get('require_any', [])
+    match_in = filter_config.get('match_in', ['title'])
+    
+    if not require_any:
+        return True  # No required terms = include all
+    
+    # Get title
+    try:
+        title = video.get('title', {}).get('runs', [{}])[0].get('text', '') or video.get('title', '')
+        if isinstance(video.get('title'), str):
+            title = video.get('title')
+    except:
+        title = ''
+    
+    # Get description snippet from scrapetube data
+    description = ''
+    if 'description' in match_in:
+        try:
+            # Try to get description from various sources
+            desc_snippet = video.get('descriptionSnippet', {})
+            if isinstance(desc_snippet, dict):
+                runs = desc_snippet.get('runs', [])
+                description = ' '.join([r.get('text', '') for r in runs]) if runs else ''
+            elif isinstance(desc_snippet, str):
+                description = desc_snippet
+            
+            # If no description snippet and we have a YouTube object, fetch the full description
+            if not description and yt_object:
+                try:
+                    description = yt_object.description or ''
+                except:
+                    pass
+        except:
+            pass
+    
+    # Check each required term
+    for term in require_any:
+        term_lower = term.lower()
+        if 'title' in match_in and term_lower in title.lower():
+            return True
+        if 'description' in match_in and term_lower in description.lower():
+            return True
+    
+    return False
+
+
+def fetch_additional_channel_videos(channel_config, limit=None):
+    """
+    Fetch videos from an additional channel with filtering support.
+    
+    Args:
+        channel_config: Dictionary with 'url', 'name', 'filter', and optionally 'date_format'
+        limit: Maximum number of videos to fetch (None for all)
+    
+    Returns:
+        Tuple of (matching_videos, total_scanned, filtered_out)
+    """
+    channel_url = channel_config.get('url')
+    channel_name = channel_config.get('name', 'Unknown')
+    filter_config = channel_config.get('filter')
+    
+    if not channel_url:
+        return [], 0, 0
+    
+    all_videos = []
+    matching_videos = []
+    
+    try:
+        # Get base channel URL
+        base_url = channel_url.split('/streams')[0].split('/videos')[0].split('/featured')[0]
+        
+        # Fetch videos using scrapetube
+        print(f"      🌐 Scanning channel: {channel_name}...")
+        videos = list(scrapetube.get_channel(channel_url=base_url, content_type='videos', limit=limit))
+        streams = list(scrapetube.get_channel(channel_url=base_url, content_type='streams', limit=limit))
+        all_videos = videos + streams
+        
+        print(f"      📊 Found {len(all_videos)} videos total")
+        
+        if not filter_config:
+            return all_videos, len(all_videos), 0
+        
+        # Apply filter
+        require_terms = filter_config.get('require_any', [])
+        print(f"      🔍 Filtering for: {', '.join(require_terms)}")
+        
+        for video in all_videos:
+            if video_matches_filter(video, filter_config):
+                # Mark the video with the source channel info
+                video['_from_additional_channel'] = True
+                video['_additional_channel_name'] = channel_name
+                video['_date_format'] = channel_config.get('date_format')
+                matching_videos.append(video)
+        
+        filtered_out = len(all_videos) - len(matching_videos)
+        print(f"      ✅ {len(matching_videos)} videos matched filter ({filtered_out} filtered out)")
+        
+        return matching_videos, len(all_videos), filtered_out
+        
+    except Exception as e:
+        print(f"      ⚠️ Error fetching additional channel: {e}")
+        return [], 0, 0
+
+
 def load_config():
     for config_file in CONFIG_FILES:
         if os.path.exists(config_file):
@@ -2158,6 +2277,134 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
     return total_updated, total_skipped, total_errors
 
 
+def heal_unknown_dates(data_dir, dry_run=False, churches=None, limit=None):
+    """
+    Fix 'Unknown Date' entries in Summary CSV files by fetching YouTube publish dates.
+    Uses pytubefix to get the publish_date from each video URL.
+    """
+    print("\n" + "="*60)
+    print("📅 HEALING UNKNOWN DATES")
+    if dry_run:
+        print("   🔍 DRY RUN MODE - No changes will be made")
+    if churches:
+        print(f"   📌 Limited to churches: {churches}")
+    if limit:
+        print(f"   📊 Limit: {limit} entries")
+    print("="*60)
+    
+    # Parse churches filter
+    church_filter = None
+    if churches:
+        church_filter = [c.strip().replace(' ', '_') for c in churches.split(',')]
+    
+    total_found = 0
+    total_fixed = 0
+    total_failed = 0
+    processed = 0
+    
+    # Find all Summary CSV files
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+    
+    for csv_file in sorted(csv_files):
+        if limit and processed >= limit:
+            break
+            
+        church_name = csv_file.rsplit('_Summary.csv', 1)[0]
+        
+        # Apply church filter
+        if church_filter and church_name not in church_filter:
+            continue
+        
+        csv_path = os.path.join(data_dir, csv_file)
+        
+        try:
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                headers = reader.fieldnames
+                rows = list(reader)
+        except Exception as e:
+            print(f"   ⚠️ Error reading {csv_file}: {e}")
+            continue
+        
+        # Find entries with Unknown Date that have a video URL
+        unknown_entries = []
+        for i, row in enumerate(rows):
+            if row.get('date', '').strip() in ['Unknown Date', 'Unknown', '']:
+                url = row.get('url', '').strip()
+                if url and ('youtube.com/watch' in url or 'youtu.be/' in url):
+                    unknown_entries.append((i, row))
+        
+        if not unknown_entries:
+            continue
+        
+        print(f"\n   🏥 {church_name.replace('_', ' ')}: {len(unknown_entries)} Unknown Date entries")
+        total_found += len(unknown_entries)
+        
+        modified = False
+        for idx, (row_idx, row) in enumerate(unknown_entries):
+            if limit and processed >= limit:
+                break
+            processed += 1
+            
+            title = row.get('title', 'Unknown')[:50]
+            url = row.get('url', '')
+            
+            print(f"      [{idx+1}/{len(unknown_entries)}] {title}...")
+            
+            if dry_run:
+                print(f"         Would fetch date from: {url}")
+                continue
+            
+            try:
+                time.sleep(1)  # Rate limiting
+                yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
+                
+                # Try to get date from title/description first
+                description = yt_obj.description or ""
+                new_date = determine_sermon_date(title, description, yt_obj)
+                
+                if new_date and new_date != "Unknown Date":
+                    rows[row_idx]['date'] = new_date
+                    modified = True
+                    total_fixed += 1
+                    print(f"         ✅ Fixed: {new_date}")
+                else:
+                    # Last resort: use publish_date directly
+                    if yt_obj.publish_date:
+                        new_date = yt_obj.publish_date.strftime("%Y-%m-%d")
+                        rows[row_idx]['date'] = new_date
+                        modified = True
+                        total_fixed += 1
+                        print(f"         ✅ Fixed (publish date): {new_date}")
+                    else:
+                        total_failed += 1
+                        print(f"         ❌ Could not determine date")
+                        
+            except Exception as e:
+                total_failed += 1
+                print(f"         ❌ Error: {str(e)[:50]}")
+        
+        # Write back the CSV if modified
+        if modified and not dry_run:
+            try:
+                with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=headers)
+                    writer.writeheader()
+                    writer.writerows(rows)
+                print(f"      💾 Saved {csv_file}")
+            except Exception as e:
+                print(f"      ❌ Error saving {csv_file}: {e}")
+    
+    print("\n" + "="*60)
+    print("📅 UNKNOWN DATES HEALING COMPLETE")
+    print(f"   📊 Found: {total_found} entries with Unknown Date")
+    print(f"   ✅ Fixed: {total_fixed}")
+    print(f"   ❌ Failed: {total_failed}")
+    print("="*60)
+    
+    return total_fixed, total_failed
+
+
 def heal_video_categories(data_dir, dry_run=False, churches=None):
     """
     Post-scrape healing function to re-evaluate and fix video type categories.
@@ -3597,10 +3844,52 @@ def extract_spoken_word_date(text):
         pass
     return None
 
+
+def extract_guss_archive_date(text):
+    """
+    Extract date from Christ Witness Guss archive format: YY MMDD or vYY MMDD
+    Examples: 
+      - "89 0115 Ed Byskal" -> 1989-01-15
+      - "v89 0115M Ed Byskal" -> 1989-01-15 (M suffix for morning)
+      - "08 0511 Bro Ed Byskal" -> 2008-05-11
+    
+    Returns: date string in YYYY-MM-DD format, or None if not matched
+    """
+    # Match optional 'v' prefix, then YY followed by space, then MMDD with optional M suffix
+    match = re.match(r'^v?(\d{2})\s+(\d{2})(\d{2})M?\s', text.strip(), re.IGNORECASE)
+    if not match:
+        return None
+    
+    year_2digit = int(match.group(1))
+    month = match.group(2)
+    day = match.group(3)
+    
+    # Convert 2-digit year:
+    # 80-99 = 1980-1999 (most Cloverdale archives are from 80s/90s)
+    # 00-29 = 2000-2029
+    if year_2digit >= 80:
+        year_4digit = 1900 + year_2digit
+    else:
+        year_4digit = 2000 + year_2digit
+    
+    try:
+        month_int, day_int = int(month), int(day)
+        if 1 <= month_int <= 12 and 1 <= day_int <= 31:
+            dt = datetime.datetime(year_4digit, month_int, day_int)
+            return dt.strftime("%Y-%m-%d")
+    except (ValueError, OverflowError):
+        pass
+    return None
+
+
 def extract_date_from_text(text):
     # First try Spoken Word Church YY-MMDD format (must be at start of title)
     spoken_word_date = extract_spoken_word_date(text)
     if spoken_word_date: return spoken_word_date
+    
+    # Try Christ Witness Guss archive format: YY MMDD or vYY MMDD
+    guss_date = extract_guss_archive_date(text)
+    if guss_date: return guss_date
     
     # Standard YYYY-MM-DD or YYYY/MM/DD format
     match = re.search(r'(\d{4})[-./](\d{2})[-./](\d{2})', text)
@@ -4029,6 +4318,15 @@ def metadata_only_scan(church_name, config, known_speakers):
             print(f"      Found {len(playlist_videos)} videos in playlist.")
             all_videos.extend(playlist_videos)
     
+    # Fetch videos from additional channels (with filtering)
+    additional_channels = config.get('additional_channels', [])
+    for add_channel in additional_channels:
+        add_channel_name = add_channel.get('name', 'Additional Channel')
+        print(f"   📺 Processing additional channel: {add_channel_name}...")
+        matching_videos, total_scanned, filtered_out = fetch_additional_channel_videos(add_channel, limit=None)
+        if matching_videos:
+            all_videos.extend(matching_videos)
+    
     # Deduplicate channel videos
     unique_videos_map = {v['videoId']: v for v in all_videos}
     
@@ -4389,6 +4687,15 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 playlist_videos = fetch_playlist_videos(playlist_id, limit=limit)
                 print(f"      Found {len(playlist_videos)} videos in playlist.")
                 all_videos.extend(playlist_videos)
+        
+        # Fetch videos from additional channels (with filtering)
+        additional_channels = config.get('additional_channels', [])
+        for add_channel in additional_channels:
+            add_channel_name = add_channel.get('name', 'Additional Channel')
+            print(f"   📺 Processing additional channel: {add_channel_name}...")
+            matching_videos, total_scanned, filtered_out = fetch_additional_channel_videos(add_channel, limit=limit)
+            if matching_videos:
+                all_videos.extend(matching_videos)
 
     unique_videos_map = {}
     for v in all_videos:
@@ -5038,6 +5345,7 @@ def main():
         parser.add_argument('--backfill-duration', action='store_true', help="Backfill video duration metadata for entries missing it.")
         parser.add_argument('--migrate-church-names', action='store_true', help="Add church name column to all existing CSV summary files.")
         parser.add_argument('--heal-categories', action='store_true', help="Re-evaluate and fix video type categories based on title, description, and duration.")
+        parser.add_argument('--heal-dates', action='store_true', help="Fix 'Unknown Date' entries by fetching YouTube publish dates.")
         parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill operations).")
         parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times).")
         parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process.")
@@ -5071,6 +5379,12 @@ def main():
             print("Healing video categories...")
             churches_str = ','.join(args.church) if args.church else None
             heal_video_categories(DATA_DIR, dry_run=args.dry_run, churches=churches_str)
+            return
+
+        if args.heal_dates:
+            print("Healing Unknown Date entries...")
+            churches_str = ','.join(args.church) if args.church else None
+            heal_unknown_dates(DATA_DIR, dry_run=args.dry_run, churches=churches_str, limit=args.limit)
             return
 
         if args.list_pending:

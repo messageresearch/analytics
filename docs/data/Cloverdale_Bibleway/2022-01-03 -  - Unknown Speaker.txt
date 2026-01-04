@@ -4,13 +4,14 @@ START OF FILE: 2022-01-03 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-03
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SveKk-ROygM
+Date:     2022-01-03
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=SveKk-ROygM
 ========================================
 
 Description:

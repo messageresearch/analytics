@@ -4,13 +4,14 @@ START OF FILE: 2023-05-17 - SPECIAL ANNOUNCEMENT  18 MAY 2023 - Jonathan Roscoe.
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-17
-Title:   SPECIAL ANNOUNCEMENT | 18 MAY 2023
-Speaker: Jonathan Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bHzUFb7kfjU
+Date:     2023-05-17
+Title:    SPECIAL ANNOUNCEMENT | 18 MAY 2023
+Speaker:  Jonathan Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=bHzUFb7kfjU
 ========================================
 
 Description:

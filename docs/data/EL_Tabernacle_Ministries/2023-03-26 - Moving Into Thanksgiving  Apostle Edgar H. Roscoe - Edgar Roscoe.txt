@@ -4,13 +4,14 @@ START OF FILE: 2023-03-26 - Moving Into Thanksgiving  Apostle Edgar H. Roscoe - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-26
-Title:   Moving Into Thanksgiving | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=NXqrE1d3DWY
+Date:     2023-03-26
+Title:    Moving Into Thanksgiving | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Thanksgiving Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=NXqrE1d3DWY
 ========================================
 
 Description:

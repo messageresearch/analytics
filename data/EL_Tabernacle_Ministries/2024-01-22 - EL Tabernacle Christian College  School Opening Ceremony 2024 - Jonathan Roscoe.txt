@@ -4,13 +4,14 @@ START OF FILE: 2024-01-22 - EL Tabernacle Christian College  School Opening Cere
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-22
-Title:   EL Tabernacle Christian College | School Opening Ceremony 2024
-Speaker: Jonathan Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xqwuwS4ArdI
+Date:     2024-01-22
+Title:    EL Tabernacle Christian College | School Opening Ceremony 2024
+Speaker:  Jonathan Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 3h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=xqwuwS4ArdI
 ========================================
 
 Description:

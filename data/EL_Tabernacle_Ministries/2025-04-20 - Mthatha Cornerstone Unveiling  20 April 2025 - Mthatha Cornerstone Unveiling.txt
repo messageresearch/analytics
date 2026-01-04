@@ -4,13 +4,14 @@ START OF FILE: 2025-04-20 - Mthatha Cornerstone Unveiling  20 April 2025 - Mthat
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-20
-Title:   Mthatha Cornerstone Unveiling | 20 April 2025
-Speaker: Mthatha Cornerstone Unveiling
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yjlcomP4TRY
+Date:     2025-04-20
+Title:    Mthatha Cornerstone Unveiling | 20 April 2025
+Speaker:  Mthatha Cornerstone Unveiling
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=yjlcomP4TRY
 ========================================
 
 TRANSCRIPT

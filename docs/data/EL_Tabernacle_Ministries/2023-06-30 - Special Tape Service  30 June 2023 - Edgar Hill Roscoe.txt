@@ -4,13 +4,14 @@ START OF FILE: 2023-06-30 - Special Tape Service  30 June 2023 - Edgar Hill Rosc
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-30
-Title:   Special Tape Service | 30 June 2023
-Speaker: Edgar Hill Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vl5EVG7fYPc
+Date:     2023-06-30
+Title:    Special Tape Service | 30 June 2023
+Speaker:  Edgar Hill Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vl5EVG7fYPc
 ========================================
 
 Description:

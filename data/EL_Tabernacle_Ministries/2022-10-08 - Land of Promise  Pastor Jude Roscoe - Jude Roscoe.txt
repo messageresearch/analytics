@@ -4,13 +4,14 @@ START OF FILE: 2022-10-08 - Land of Promise  Pastor Jude Roscoe - Jude Roscoe.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-08
-Title:   Land of Promise | Pastor Jude Roscoe
-Speaker: Jude Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=5JbSW-xmaZw
+Date:     2022-10-08
+Title:    Land of Promise | Pastor Jude Roscoe
+Speaker:  Jude Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=5JbSW-xmaZw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-27 - Climate Change  Apostle Edgar Hill Roscoe - Edgar Hi
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-27
-Title:   Climate Change | Apostle Edgar Hill Roscoe
-Speaker: Edgar Hill Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=3CBb5sja8xA
+Date:     2023-09-27
+Title:    Climate Change | Apostle Edgar Hill Roscoe
+Speaker:  Edgar Hill Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=3CBb5sja8xA
 ========================================
 
 Description:

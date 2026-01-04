@@ -4,13 +4,14 @@ START OF FILE: 2024-10-27 - Sunday Prayer Service  27 October 2024 - Unknown Spe
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-27
-Title:   Sunday Prayer Service | 27 October 2024
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fPIYyauKlYw
+Date:     2024-10-27
+Title:    Sunday Prayer Service | 27 October 2024
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Prayer Meeting
+Duration: 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=fPIYyauKlYw
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-18 - Men's Conference 2023  16-17 June 2023 - Edgar Rosco
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-18
-Title:   Men's Conference 2023 | 16-17 June 2023
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IUgHgb2C9Ik
+Date:     2023-07-18
+Title:    Men's Conference 2023 | 16-17 June 2023
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=IUgHgb2C9Ik
 ========================================
 
 Description:

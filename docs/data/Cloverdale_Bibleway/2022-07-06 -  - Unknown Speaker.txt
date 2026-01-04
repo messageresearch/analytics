@@ -4,13 +4,14 @@ START OF FILE: 2022-07-06 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-06
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=jbzpMiqVt7c
+Date:     2022-07-06
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=jbzpMiqVt7c
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2022-10-11 - The Annals of Biblical History Pentecost  Apostle Ed
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-11
-Title:   The Annals of Biblical History: Pentecost | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=druSu-Zy8Do
+Date:     2022-10-11
+Title:    The Annals of Biblical History: Pentecost | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=druSu-Zy8Do
 ========================================
 
 Description:

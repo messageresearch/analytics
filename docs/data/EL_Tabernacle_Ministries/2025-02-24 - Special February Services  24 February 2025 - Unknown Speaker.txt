@@ -4,13 +4,14 @@ START OF FILE: 2025-02-24 - Special February Services  24 February 2025 - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-24
-Title:   Special February Services || 24 February 2025
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=w9_yE-JCn7o
+Date:     2025-02-24
+Title:    Special February Services || 24 February 2025
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Worship Service
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=w9_yE-JCn7o
 ========================================
 
 Description:

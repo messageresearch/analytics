@@ -4,13 +4,14 @@ START OF FILE: 2024-09-23 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-23
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=GtksbeohbkE
+Date:     2024-09-23
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=GtksbeohbkE
 ========================================
 
 TRANSCRIPT

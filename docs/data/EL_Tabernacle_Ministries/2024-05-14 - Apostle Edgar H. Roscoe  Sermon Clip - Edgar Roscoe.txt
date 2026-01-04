@@ -4,13 +4,14 @@ START OF FILE: 2024-05-14 - Apostle Edgar H. Roscoe  Sermon Clip - Edgar Roscoe.
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-14
-Title:   Apostle Edgar H. Roscoe | Sermon Clip
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Sermon Clip
-Language:English
-URL:     https://www.youtube.com/watch?v=NzMegH3kpqo
+Date:     2024-05-14
+Title:    Apostle Edgar H. Roscoe | Sermon Clip
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Sermon Clip
+Duration: 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=NzMegH3kpqo
 ========================================
 
 Description:

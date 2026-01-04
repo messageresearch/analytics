@@ -4,13 +4,14 @@ START OF FILE: 2024-07-04 - Durban Church Construction Progress  04 July 2024 - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-04
-Title:   Durban Church Construction Progress | 04 July 2024
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nQkW53pi_mU
+Date:     2024-07-04
+Title:    Durban Church Construction Progress | 04 July 2024
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=nQkW53pi_mU
 ========================================
 
 Description:

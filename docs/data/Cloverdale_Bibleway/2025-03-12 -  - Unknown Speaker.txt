@@ -4,13 +4,14 @@ START OF FILE: 2025-03-12 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-12
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ca_jQCSkl04
+Date:     2025-03-12
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Short Service
+Duration: 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ca_jQCSkl04
 ========================================
 
 TRANSCRIPT

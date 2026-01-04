@@ -4,13 +4,14 @@ START OF FILE: 2022-10-11 - Prison Ministry Testimonies - Pt 1&2 - Edgar Hill.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-11
-Title:   Prison Ministry Testimonies - Pt 1&2
-Speaker: Edgar Hill
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tKXQe3-vxCc
+Date:     2022-10-11
+Title:    Prison Ministry Testimonies - Pt 1&2
+Speaker:  Edgar Hill
+Church:   EL Tabernacle Ministries
+Type:     Testimony Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=tKXQe3-vxCc
 ========================================
 
 Description:

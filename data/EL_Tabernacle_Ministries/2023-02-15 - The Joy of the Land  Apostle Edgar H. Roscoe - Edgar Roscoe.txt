@@ -4,13 +4,14 @@ START OF FILE: 2023-02-15 - The Joy of the Land  Apostle Edgar H. Roscoe - Edgar
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-15
-Title:   The Joy of the Land | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=znqCYmPZsxM
+Date:     2023-02-15
+Title:    The Joy of the Land | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=znqCYmPZsxM
 ========================================
 
 Description:

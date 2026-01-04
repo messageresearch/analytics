@@ -4,13 +4,14 @@ START OF FILE: 2020-01-05 - A Lived Voice - Presentation 1520 - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-05
-Title:   "A Lived Voice" - Presentation 1/5/20
-Speaker: Unknown Speaker
-Church:  Coleman Family Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BXf7fPkRTgw
+Date:     2020-01-05
+Title:    "A Lived Voice" - Presentation 1/5/20
+Speaker:  Unknown Speaker
+Church:   Coleman Family Ministries
+Type:     Short Service
+Duration: 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=BXf7fPkRTgw
 ========================================
 
 TRANSCRIPT

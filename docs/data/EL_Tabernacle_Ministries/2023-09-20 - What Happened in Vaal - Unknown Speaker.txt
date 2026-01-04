@@ -4,13 +4,14 @@ START OF FILE: 2023-09-20 - What Happened in Vaal - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-20
-Title:   What Happened in Vaal?
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=iTf_Q1P2fj0
+Date:     2023-09-20
+Title:    What Happened in Vaal?
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=iTf_Q1P2fj0
 ========================================
 
 Description:

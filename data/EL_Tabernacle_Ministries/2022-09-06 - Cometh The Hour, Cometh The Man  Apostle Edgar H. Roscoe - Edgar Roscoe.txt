@@ -4,13 +4,14 @@ START OF FILE: 2022-09-06 - Cometh The Hour, Cometh The Man  Apostle Edgar H. Ro
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-06
-Title:   Cometh The Hour, Cometh The Man | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Q9Pru1g-wG4
+Date:     2022-09-06
+Title:    Cometh The Hour, Cometh The Man | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q9Pru1g-wG4
 ========================================
 
 Description:

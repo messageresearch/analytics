@@ -4,13 +4,14 @@ START OF FILE: 2022-10-11 - Redeem Thee From Death  Apostle Edgar H. Roscoe & Pa
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-11
-Title:   Redeem Thee From Death | Apostle Edgar H. Roscoe & Pastor Jude Roscoe
-Speaker: Jude Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=WceS5wW0FwY
+Date:     2022-10-11
+Title:    Redeem Thee From Death | Apostle Edgar H. Roscoe & Pastor Jude Roscoe
+Speaker:  Jude Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=WceS5wW0FwY
 ========================================
 
 Description:

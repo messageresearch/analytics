@@ -4,13 +4,14 @@ START OF FILE: 2016-04-12 - What is the Shout Excerpt (Español) - Coleman April
 
 SERMON DETAILS
 ========================================
-Date:    2016-04-12
-Title:   What is the Shout? Excerpt (Español)
-Speaker: Coleman April
-Church:  Coleman Family Ministries
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=kU57Lk37Wos
+Date:     2016-04-12
+Title:    What is the Shout? Excerpt (Español)
+Speaker:  Coleman April
+Church:   Coleman Family Ministries
+Type:     Sermon Clip
+Duration: 2m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=kU57Lk37Wos
 ========================================
 
 Description:

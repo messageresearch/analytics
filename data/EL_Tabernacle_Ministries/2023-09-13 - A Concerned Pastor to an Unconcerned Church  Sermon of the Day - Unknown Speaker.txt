@@ -4,13 +4,14 @@ START OF FILE: 2023-09-13 - A Concerned Pastor to an Unconcerned Church  Sermon 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-13
-Title:   A Concerned Pastor to an Unconcerned Church | Sermon of the Day
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=m4xXPeShfMo
+Date:     2023-09-13
+Title:    A Concerned Pastor to an Unconcerned Church | Sermon of the Day
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=m4xXPeShfMo
 ========================================
 
 Description:

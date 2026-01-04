@@ -4,13 +4,14 @@ START OF FILE: 2022-10-08 - Cut-Off Time  Apostle Edgar H. Roscoe - Edgar Roscoe
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-08
-Title:   Cut-Off Time | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=7Jx2cje5OB8
+Date:     2022-10-08
+Title:    Cut-Off Time | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Short Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=7Jx2cje5OB8
 ========================================
 
 Description:

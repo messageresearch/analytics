@@ -4,13 +4,14 @@ START OF FILE: 2022-10-14 - I Magnify My Office - The Word Is Not Enough  Apostl
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-14
-Title:   I Magnify My Office - The Word Is Not Enough | Apostle Edgar H. Roscoe
-Speaker: Edgar Roscoe
-Church:  EL Tabernacle Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zGu-Yl8nD0Q
+Date:     2022-10-14
+Title:    I Magnify My Office - The Word Is Not Enough | Apostle Edgar H. Roscoe
+Speaker:  Edgar Roscoe
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=zGu-Yl8nD0Q
 ========================================
 
 Description:

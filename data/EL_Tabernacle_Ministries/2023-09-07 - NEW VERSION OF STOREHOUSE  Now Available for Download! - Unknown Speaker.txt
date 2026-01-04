@@ -4,13 +4,14 @@ START OF FILE: 2023-09-07 - NEW VERSION OF STOREHOUSE  Now Available for Downloa
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-07
-Title:   NEW VERSION OF STOREHOUSE | Now Available for Download!
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=S0CXcS8MSyg
+Date:     2023-09-07
+Title:    NEW VERSION OF STOREHOUSE | Now Available for Download!
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Song Special
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=S0CXcS8MSyg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-03-31 - Easter Friday Services  29 March 2024 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-31
-Title:   Easter Friday Services | 29 March 2024
-Speaker: Unknown Speaker
-Church:  EL Tabernacle Ministries
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=ScNzGkzCnvw
+Date:     2024-03-31
+Title:    Easter Friday Services | 29 March 2024
+Speaker:  Unknown Speaker
+Church:   EL Tabernacle Ministries
+Type:     Easter Program
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=ScNzGkzCnvw
 ========================================
 
 Description:

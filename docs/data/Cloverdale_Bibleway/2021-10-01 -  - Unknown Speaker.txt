@@ -4,13 +4,14 @@ START OF FILE: 2021-10-01 -  - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-01
-Title:   
-Speaker: Unknown Speaker
-Church:  Cloverdale Bibleway
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zJ0gTBdwQFs
+Date:     2021-10-01
+Title:    
+Speaker:  Unknown Speaker
+Church:   Cloverdale Bibleway
+Type:     Short Service
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=zJ0gTBdwQFs
 ========================================
 
 Description:
