@@ -786,7 +786,7 @@ export default function App(){
             </div>
             <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4 w-full md:w-auto">
               {dataDate && <div className="text-xs text-gray-400 text-center md:text-right">Updated: {dataDate}</div>}
-              <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{['dashboard','data'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div>
+              <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{['dashboard','data','about'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div>
             </div>
           </div>
         </div>
@@ -855,6 +855,7 @@ export default function App(){
         </div>
 
         <main className="max-w-7xl mx-auto px-4 mt-8">
+          {view !== 'about' && (
           <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
             <div className="flex justify-between items-center mb-4">
               <div>
@@ -892,8 +893,10 @@ export default function App(){
               <MultiSelect label="Languages" options={filteredOptions.langs} selected={selLangs} onChange={setSelLangs} allOptions={options.langs} />
             </div>
           </div>
+          )}
 
-          {/* Transcript Coverage by Church - shows ENTIRE database, ignores filters */}
+          {view !== 'about' && (
+          /* Transcript Coverage by Church - shows ENTIRE database, ignores filters */
           <div className={`bg-white p-4 sm:p-6 rounded-xl border shadow-sm mb-8 ${!coverageExpanded ? 'hover:border-blue-300 transition-colors' : ''}`}>
             <div className="flex flex-col gap-3">
               {/* Title row - always visible */}
@@ -1326,6 +1329,7 @@ export default function App(){
               <p className="text-xs text-gray-500 mt-2">Click any cell or speaker name to filter. Darker green = more transcripts. '·' = no data for that year.</p>
             )}
           </div>
+          )}
 
           {view === 'dashboard' && stats && (
             <>
@@ -1672,7 +1676,70 @@ export default function App(){
               </div>
             </div>
           )}
+
+          {view === 'about' && (
+            <div className="bg-white p-8 rounded-xl border shadow-sm max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <Icon name="info" size={28} />
+                About This Project
+              </h2>
+              
+              <div className="prose prose-blue max-w-none space-y-6">
+                <p className="text-gray-700 leading-relaxed">
+                  This site is part of an independent, non-commercial journalistic and research project that analyzes publicly available sermon content published on Message Church YouTube channels.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The purpose of the project is to support research, reporting, and public understanding by identifying patterns, recurring references, and trends in religious messaging over time.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The project transforms publicly available speech into analytical datasets that help readers understand what is being said, how often, and across which organizations.
+                </p>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Source Attribution</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  This project emphasizes transparency and verification. Analytical outputs link directly to the original YouTube videos so that readers can review the full source material in context.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The project does not aim to substitute for original content and encourages readers to consult primary sources when evaluating findings or claims.
+                </p>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Fair Use & Purpose</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  This project asserts fair use under U.S. copyright law (17 U.S.C. § 107).
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Any copyrighted material referenced or analyzed is used solely for purposes of news reporting, criticism, commentary, research, and scholarship. The use is transformative, focusing on analysis and aggregation rather than reproduction of original works.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The project is non-commercial and does not monetize content. It does not provide full transcripts or video playback as a substitute for original videos.
+                </p>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Methodology</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>Analysis is based on publicly available video metadata and transcripts</li>
+                  <li>Content is categorized by church, speaker, topic, date, language, and type</li>
+                  <li>Outputs emphasize aggregated statistics and timelines</li>
+                  <li>The project is independent and unaffiliated with any church or platform</li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Transparency & Good-Faith Compliance</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Requests for review, correction, or removal of specific material will be evaluated promptly and in good faith.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  All content remains the property of its respective owners.
+                </p>
+              </div>
+            </div>
+          )}
         </main>
+
+        {/* Footer */}
+        <footer className="bg-gray-100 border-t border-gray-200 mt-12 py-4">
+          <div className="max-w-7xl mx-auto px-4 text-center text-xs text-gray-500">
+            This is a non-commercial journalistic research project. All use of copyrighted material is claimed as fair use for purposes of analysis, reporting, and commentary.
+          </div>
+        </footer>
         {selectedSermon && <SermonModal sermon={selectedSermon} focusMatchIndex={selectedSermonFocus} onClose={()=>{ setSelectedSermon(null); setSelectedSermonFocus(0); }} />}
         {expandedChart && (()=>{
           // Re-resolve the chart from latest channelTrends so mention counts reflect current `customCounts`.
