@@ -3,5 +3,6 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}/.venv/lib/python3.13/site-packages"
     ],
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "git.ignoreLimitWarning": true
 }

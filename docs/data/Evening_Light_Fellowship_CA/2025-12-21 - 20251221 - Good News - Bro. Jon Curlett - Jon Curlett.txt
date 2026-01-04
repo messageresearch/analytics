@@ -4,13 +4,14 @@ START OF FILE: 2025-12-21 - 20251221 - Good News - Bro. Jon Curlett - Jon Curlet
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-21
-Title:   20251221 - Good News - Bro. Jon Curlett
-Speaker: Jon Curlett
-Church:  Evening Light Fellowship CA
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Mqw6jpO5aQs
+Date:     2025-12-21
+Title:    20251221 - Good News - Bro. Jon Curlett
+Speaker:  Jon Curlett
+Church:   Evening Light Fellowship CA
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mqw6jpO5aQs
 ========================================
 
 Description:

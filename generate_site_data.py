@@ -90,7 +90,9 @@ def parse_sermon(filepath, church, filename, summary_map=None):
         branham_mentions = len(re.findall(MENTION_REGEX, content, re.IGNORECASE))
         word_count = len(content.split())
         
-        rel_path = f"data/{church}/{filename}".replace(" ", "%20")
+        # URL-encode special characters that break GitHub Pages URLs
+        # Note: # must be encoded as %23 or it gets treated as URL fragment
+        rel_path = f"data/{church}/{filename}".replace(" ", "%20").replace("#", "%23")
 
         # Try to find a YouTube URL inside the transcript first
         video_url = extract_first_youtube(content)
@@ -313,7 +315,7 @@ def main():
             print(f"   Processing: {church_display}...")
             
             for filename in os.listdir(church_path):
-                if filename.endswith(".txt"):
+                if filename.endswith(".txt") and not filename.endswith(".timestamped.txt"):
                     file_full_path = os.path.join(church_path, filename)
                     # zipf.write(file_full_path, arcname=f"{church_folder}/{filename}")
                     

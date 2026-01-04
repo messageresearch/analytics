@@ -7,62 +7,94 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   const [term, setTerm] = useState(initialTerm || '')
   const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
   const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
-  const [showRegex, setShowRegex] = useState(isRegexLike(initialVariations))
   const [rawRegex, setRawRegex] = useState(isRegexLike(initialVariations) ? initialVariations : '')
   const [regexError, setRegexError] = useState(null)
-  const [wholeWords, setWholeWords] = useState(true) // Default to exact word matching
+  const [wholeWords, setWholeWords] = useState(true)
   const [showPreview, setShowPreview] = useState(false)
   const [previewData, setPreviewData] = useState({ matches: [], truncated: false, error: null })
   const [showAllTerms, setShowAllTerms] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
+  const [showRegexHelp, setShowRegexHelp] = useState(false)
   
-  // Format transcript count (e.g., 25910 -> "25,900+")
+  // Format transcript count
   const formattedCount = totalTranscripts > 0 
     ? `${(Math.floor(totalTranscripts / 100) * 100).toLocaleString()}+` 
     : '25,000+'
 
   const prevTermRef = useRef(term)
+  const prevRegexRef = useRef(rawRegex)
+  
+  // Clear regex when term changes from default
   useEffect(() => {
-    // If the user modifies the primary term (enters a new search or clears it),
-    // and the previous value was the default, clear the raw regex and hide the
-    // advanced regex box to prevent accidentally using the default William Branham regex.
     const prevTerm = prevTermRef.current || ''
     const currentTerm = (term || '').trim()
     if (prevTerm === DEFAULT_TERM && currentTerm !== DEFAULT_TERM) {
       setRawRegex('')
-      setShowRegex(false)
     }
     prevTermRef.current = term
   }, [term])
+  
+  // Clear term when default regex is deleted
+  useEffect(() => {
+    const prevRegex = prevRegexRef.current || ''
+    const currentRegex = (rawRegex || '').trim()
+    // If previous regex was the default and now it's empty, clear the default term
+    if (prevRegex === DEFAULT_REGEX_STR && currentRegex === '' && term === DEFAULT_TERM) {
+      setTerm('')
+    }
+    prevRegexRef.current = rawRegex
+  }, [rawRegex, term])
 
   const validateRegex = (r) => {
     if (!r) return null
     try { new RegExp(r); return null } catch (e) { return (e && e.message) ? e.message : 'Invalid regex' }
   }
+  
+  // Check if input looks like a boolean search (not just a regex)
+  const isBooleanSearch = (s) => {
+    if (!s) return false
+    return /\s(AND|OR|NOT|NEAR\/\d+|AROUND\(\d+\)|ONEAR\/\d+|SENTENCE|PARAGRAPH|\/[sp])\s/i.test(s) || 
+           /^"[^"]+"$/.test(s) || 
+           /\s*[&|]\s*/.test(s) ||
+           /[-!]\w+/.test(s) ||
+           /~\d+/.test(s) ||
+           /[*?]/.test(s)  // Wildcards
+  }
 
   const handleRun = () => {
     const t = (term || '').trim()
-    // Allow running when either a term exists or a raw regex is provided
-    if (!t && !(showRegex && rawRegex && rawRegex.trim())) return
-    if (showRegex && rawRegex && rawRegex.trim()) {
-      const err = validateRegex(rawRegex)
-      if (err) { setRegexError(err); return }
+    const hasRawRegex = rawRegex && rawRegex.trim()
+    
+    if (!t && !hasRawRegex) return
+    
+    // If raw regex is provided, use it
+    if (hasRawRegex) {
+      // Check if it's a boolean search (don't validate as regex)
+      if (!isBooleanSearch(rawRegex)) {
+        const err = validateRegex(rawRegex)
+        if (err) { setRegexError(err); return }
+      }
       setRegexError(null)
-      onAnalyze(t, [], rawRegex, { wholeWords: false }) // Raw regex ignores wholeWords
+      onAnalyze(t, [], rawRegex, { wholeWords: isBooleanSearch(rawRegex) ? wholeWords : false })
       return
     }
+    
+    // Check if primary term is a boolean search
+    if (isBooleanSearch(t)) {
+      onAnalyze(t, [], t, { wholeWords })
+      return
+    }
+    
     const vars = (variations || '').split(',').map(v => v.trim()).filter(Boolean)
     onAnalyze(t, vars, null, { wholeWords })
   }
 
   const handleResetDefaults = () => {
     setTerm(DEFAULT_TERM)
-    // DEFAULT_REGEX_STR is regex-like so show advanced box
-    setShowRegex(true)
     setRawRegex(DEFAULT_REGEX_STR)
     setVariations('')
     setRegexError(null)
     setWholeWords(true)
-    // trigger analysis with default regex
     onAnalyze(DEFAULT_TERM, [], DEFAULT_REGEX_STR, { wholeWords: false })
   }
 
@@ -74,58 +106,121 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
           <p className="text-blue-100 text-xs mb-2">Search across all {formattedCount} sermon transcripts for any topic or phrase.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
-              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Primary Term</label>
-              <input type="text" value={term} onChange={e => setTerm(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagle" className="w-full text-gray-900 px-3 py-1.5 rounded-lg outline-none focus:ring-2 focus:ring-blue-400 text-sm" />
+              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Primary Search Term</label>
+              <input type="text" value={term} onChange={e => setTerm(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagle, catholic AND gold" className="w-full text-gray-900 px-3 py-1.5 rounded-lg outline-none focus:ring-2 focus:ring-blue-400 text-sm" />
             </div>
             <div>
-              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Variations (Comma Separated)</label>
+              <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Search Variations (comma separated)</label>
               <input type="text" value={variations} onChange={e => setVariations(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleRun() }} placeholder="e.g. Eagles, Prophet, Bird" className="w-full text-gray-900 px-3 py-1.5 rounded-lg outline-none focus:ring-2 focus:ring-blue-400 text-sm" />
             </div>
           </div>
           <div className="mt-1.5 flex items-center gap-4 flex-wrap">
             <label className="flex items-center gap-1.5 cursor-pointer">
-              <input type="checkbox" checked={wholeWords} onChange={e => setWholeWords(e.target.checked)} className="rounded text-blue-600 focus:ring-blue-400 w-3.5 h-3.5" disabled={showRegex} />
+              <input type="checkbox" checked={wholeWords} onChange={e => setWholeWords(e.target.checked)} className="rounded text-blue-600 focus:ring-blue-400 w-3.5 h-3.5" />
               <span className="text-xs text-blue-100">Whole words only</span>
             </label>
-            <button type="button" onClick={() => { setShowRegex(prev => !prev); setRegexError(null); if (!showRegex) setRawRegex('') }} className="text-xs text-blue-200 hover:text-white transition">
-              Advanced: <span className="underline">{showRegex ? 'Hide Regex' : 'Show Regex'}</span>
+            <button type="button" onClick={() => { setShowHelp(!showHelp); setShowRegexHelp(false); }} className="text-xs text-blue-200 hover:text-white transition flex items-center gap-1">
+              <Icon name="helpCircle" size={12} /> <span className="underline">Boolean Search Help</span>
+            </button>
+            <button type="button" onClick={() => { setShowRegexHelp(!showRegexHelp); setShowHelp(false); }} className="text-xs text-blue-200 hover:text-white transition flex items-center gap-1">
+              <Icon name="helpCircle" size={12} /> <span className="underline">Regex Help</span>
             </button>
           </div>
-          {showRegex && <div className="mt-2 flex items-start gap-2">
-            <textarea 
-              value={rawRegex} 
-              onChange={e => { 
-                setRawRegex(e.target.value); 
-                setRegexError(validateRegex(e.target.value));
-                // Auto-resize on desktop, keep 4 rows min on mobile
-                if (window.innerWidth >= 640) {
-                  e.target.style.height = 'auto';
-                  e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px';
-                }
-              }} 
-              placeholder="Enter raw regex pattern" 
-              className="flex-1 text-xs px-2 py-1.5 rounded border text-gray-900 font-mono resize-y overflow-hidden"
-              style={{ minHeight: typeof window !== 'undefined' && window.innerWidth < 640 ? '80px' : '32px', maxHeight: '120px' }}
-              rows={typeof window !== 'undefined' && window.innerWidth < 640 ? 4 : 1}
-            />
-            {rawRegex && !regexError && (
-              <button 
-                type="button" 
-                onClick={() => {
-                  const result = expandRegex(rawRegex)
-                  setPreviewData(result)
-                  setShowPreview(true)
-                }}
-                className="text-xs bg-blue-500/50 hover:bg-blue-500/70 text-white px-2 py-1.5 rounded transition flex items-center gap-1 whitespace-nowrap"
-              >
-                <Icon name="eye" size={12} /> Preview
-              </button>
-            )}
-            {regexError && <span className="text-xs text-red-200 py-1.5">Invalid</span>}
-          </div>}
+          
+          {/* Boolean search help */}
+          {showHelp && (
+            <div className="mt-2 bg-blue-900/50 rounded-lg p-3 text-xs">
+              <p className="font-bold text-blue-100 mb-1.5">Boolean & Proximity Search Operators:</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-blue-200">
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 AND term2</code> - both terms required</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 OR term2</code> - either term</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 NOT term2</code> - exclude term2</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 -term2</code> - exclude term2</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">"exact phrase"</code> - match exact phrase</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">develop*</code> - wildcard (developer, developing...)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">wom?n</code> - single char wildcard (woman, women)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 NEAR/5 term2</code> - within 5 words</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 AROUND(5) term2</code> - within 5 words</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 ONEAR/5 term2</code> - within 5 words (ordered)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 /s term2</code> - same sentence</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">term1 /p term2</code> - same paragraph</span>
+              </div>
+              <p className="text-blue-300 mt-1.5 text-[10px]">Tip: Boolean searches work in Primary Term, Variations, or Advanced Regex fields!</p>
+            </div>
+          )}
+          
+          {/* Regex help */}
+          {showRegexHelp && (
+            <div className="mt-2 bg-blue-900/50 rounded-lg p-3 text-xs">
+              <p className="font-bold text-blue-100 mb-1.5">Regular Expression (Regex) Reference:</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-blue-200">
+                <span><code className="bg-blue-800/50 px-1 rounded">.</code> - any single character</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">.*</code> - any characters (0 or more)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">.+</code> - any characters (1 or more)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">\d</code> - any digit (0-9)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">\w</code> - word character (letter/digit/_)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">\s</code> - whitespace (space, tab, newline)</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">\b</code> - word boundary</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">^</code> - start of line</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">$</code> - end of line</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">[abc]</code> - any of a, b, or c</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">[^abc]</code> - not a, b, or c</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">[a-z]</code> - any lowercase letter</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">a|b</code> - a OR b</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">(group)</code> - capture group</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">a?</code> - 0 or 1 of a</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">a*</code> - 0 or more of a</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">a+</code> - 1 or more of a</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">{`a{3}`}</code> - exactly 3 of a</span>
+                <span><code className="bg-blue-800/50 px-1 rounded">{`a{2,5}`}</code> - 2 to 5 of a</span>
+              </div>
+              <p className="text-blue-300 mt-1.5 text-[10px]">Example: <code className="bg-blue-800/50 px-1 rounded">\bprophet\w*\b</code> matches "prophet", "prophets", "prophetic", etc.</p>
+            </div>
+          )}
+          
+          {/* Always show regex field */}
+          <div className="mt-2">
+            <label className="text-xs font-semibold uppercase tracking-wide text-blue-200 mb-0.5 block">Advanced: Regex / Boolean Pattern</label>
+            <div className="flex items-start gap-2">
+              <textarea 
+                value={rawRegex} 
+                onChange={e => { 
+                  setRawRegex(e.target.value); 
+                  // Only validate as regex if it doesn't look like boolean search
+                  if (!isBooleanSearch(e.target.value)) {
+                    setRegexError(validateRegex(e.target.value));
+                  } else {
+                    setRegexError(null);
+                  }
+                  if (window.innerWidth >= 640) {
+                    e.target.style.height = 'auto';
+                    e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px';
+                  }
+                }} 
+                placeholder="e.g. catholic AND gold NOT silver, or regex pattern"
+                className="flex-1 text-xs px-2 py-1.5 rounded border text-gray-900 font-mono resize-y overflow-hidden"
+                style={{ minHeight: typeof window !== 'undefined' && window.innerWidth < 640 ? '60px' : '32px', maxHeight: '120px' }}
+                rows={typeof window !== 'undefined' && window.innerWidth < 640 ? 3 : 1}
+              />
+              {rawRegex && !regexError && !isBooleanSearch(rawRegex) && (
+                <button 
+                  type="button" 
+                  onClick={() => {
+                    const result = expandRegex(rawRegex)
+                    setPreviewData(result)
+                    setShowPreview(true)
+                  }}
+                  className="text-xs bg-blue-500/50 hover:bg-blue-500/70 text-white px-2 py-1.5 rounded transition flex items-center gap-1 whitespace-nowrap"
+                >
+                  <Icon name="eye" size={12} /> Preview
+                </button>
+              )}
+              {regexError && <span className="text-xs text-red-200 py-1.5">Invalid regex</span>}
+            </div>
+          </div>
         </div>
         <div className="flex flex-row lg:flex-col items-center lg:items-stretch justify-center gap-2 lg:w-[130px]">
-          <button type="button" onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(showRegex && rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm w-full">
+          <button type="button" onClick={handleRun} disabled={isAnalyzing || (!(term && term.trim().length) && !(rawRegex && rawRegex.trim()))} className="bg-white text-blue-700 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm w-full">
             {isAnalyzing ? <><Icon name="refresh" className="animate-spin" size={16} /> Scanning...</> : <><Icon name="search" size={16} /> Search</>}
           </button>
           <button type="button" onClick={handleResetDefaults} disabled={isAnalyzing} className="bg-white/90 text-gray-700 font-medium py-0.5 px-4 rounded shadow-sm hover:bg-white transition text-xs w-full">Reset Defaults</button>

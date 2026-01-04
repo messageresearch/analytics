@@ -112,6 +112,7 @@ export default function App(){
   const [isZipping, setIsZipping] = useState(false)
   const [zipProgress, setZipProgress] = useState('')
   const [isExportingMaster, setIsExportingMaster] = useState(false)
+  const [chartsCollapsed, setChartsCollapsed] = useState(false)
 
   // Close main chart pinned popup when clicking outside
   useEffect(() => {
@@ -488,21 +489,334 @@ export default function App(){
     try{
       const BATCH = 50
       let regex
-      // Skip detailed term counting on mobile to save memory
+      let requiredRegexes = null
+      let excludedRegexes = null
+      let searchType = null
+      let proximityParams = null // For NEAR, SENTENCE, PARAGRAPH
       const termCounts = isMobile ? null : Object.create(null)
-      if(rawRegex && (''+rawRegex).trim()){
+      
+      // Helper: Parse boolean/proximity search syntax
+      const parseBooleanSearch = (input) => {
+        if (!input || typeof input !== 'string') return null
+        const trimmed = input.trim()
+        
+        // ONEAR/n pattern (ordered): "term1 ONEAR/5 term2"
+        const onearMatch = trimmed.match(/^(.+?)\s+ONEAR\/(\d+)\s+(.+)$/i)
+        if (onearMatch) {
+          return { type: 'onear', terms: [onearMatch[1].trim(), onearMatch[3].trim()], distance: parseInt(onearMatch[2], 10), ordered: true, excluded: [] }
+        }
+        
+        // NEAR/n or AROUND(n) pattern: "term1 NEAR/5 term2" or "term1 ~5 term2" or "term1 AROUND(5) term2"
+        const nearMatch = trimmed.match(/^(.+?)\s+(?:NEAR\/(\d+)|~(\d+)|AROUND\((\d+)\))\s+(.+)$/i)
+        if (nearMatch) {
+          return { type: 'near', terms: [nearMatch[1].trim(), nearMatch[5].trim()], distance: parseInt(nearMatch[2] || nearMatch[3] || nearMatch[4], 10), excluded: [] }
+        }
+        
+        // SENTENCE pattern: "term1 /s term2"
+        const sentenceMatch = trimmed.match(/^(.+?)\s+(?:\/s|SENTENCE)\s+(.+)$/i)
+        if (sentenceMatch) {
+          return { type: 'sentence', terms: [sentenceMatch[1].trim(), sentenceMatch[2].trim()], excluded: [] }
+        }
+        
+        // PARAGRAPH pattern: "term1 /p term2"
+        const paragraphMatch = trimmed.match(/^(.+?)\s+(?:\/p|PARAGRAPH)\s+(.+)$/i)
+        if (paragraphMatch) {
+          return { type: 'paragraph', terms: [paragraphMatch[1].trim(), paragraphMatch[2].trim()], excluded: [] }
+        }
+        
+        // Exact phrase in quotes
+        const phraseMatch = trimmed.match(/^"([^"]+)"$/)
+        if (phraseMatch) {
+          return { type: 'phrase', phrase: phraseMatch[1], excluded: [] }
+        }
+        
+        // Lookahead patterns like (?=.*\bterm1\b)(?=.*\bterm2\b).*
+        if (trimmed.includes('(?=') && trimmed.includes('.*')) {
+          const termMatches = [...trimmed.matchAll(/\(\?=\.\*(?:\\b)?(\w+)(?:\\b)?\)/g)]
+          const terms = termMatches.map(m => m[1]).filter(Boolean)
+          if (terms.length >= 2) return { type: 'and', required: terms, excluded: [] }
+        }
+        
+        // Extract NOT terms first
+        let excluded = []
+        let remaining = trimmed
+        
+        if (/\sNOT\s/i.test(remaining)) {
+          const parts = remaining.split(/\s+NOT\s+/i)
+          remaining = parts[0].trim()
+          excluded = parts.slice(1).map(t => t.trim()).filter(Boolean)
+        }
+        
+        // Extract -term or !term
+        const negativeTerms = [...remaining.matchAll(/(?:^|\s)[-!](\w+)/g)]
+        if (negativeTerms.length > 0) {
+          excluded = [...excluded, ...negativeTerms.map(m => m[1])]
+          remaining = remaining.replace(/(?:^|\s)[-!]\w+/g, ' ').trim()
+        }
+        
+        // Check for OR patterns
+        if (/\sOR\s/i.test(remaining)) {
+          const terms = remaining.split(/\s+OR\s+/i).map(t => t.trim()).filter(Boolean)
+          if (terms.length >= 2 || excluded.length > 0) return { type: 'or', required: terms, excluded }
+        }
+        if (/\s*\|\s*/.test(remaining)) {
+          const terms = remaining.split(/\s*\|\s*/).map(t => t.trim()).filter(Boolean)
+          if (terms.length >= 2 || excluded.length > 0) return { type: 'or', required: terms, excluded }
+        }
+        
+        // Check for AND patterns
+        if (/\sAND\s/i.test(remaining)) {
+          const terms = remaining.split(/\s+AND\s+/i).map(t => t.trim()).filter(Boolean)
+          if (terms.length >= 2 || excluded.length > 0) return { type: 'and', required: terms, excluded }
+        }
+        if (/^\+\S/.test(remaining) && remaining.includes(' +')) {
+          const terms = remaining.split(/\s+/).filter(t => t.startsWith('+')).map(t => t.slice(1).trim()).filter(Boolean)
+          if (terms.length >= 2 || excluded.length > 0) return { type: 'and', required: terms, excluded }
+        }
+        if (/\s*&\s*/.test(remaining) && !remaining.includes('|')) {
+          const terms = remaining.split(/\s*&\s*/).map(t => t.trim()).filter(Boolean)
+          if (terms.length >= 2 || excluded.length > 0) return { type: 'and', required: terms, excluded }
+        }
+        
+        // Single term with exclusions
+        if (excluded.length > 0 && remaining.trim()) {
+          return { type: 'and', required: [remaining.trim()], excluded }
+        }
+        
+        return null
+      }
+      
+      // Helper: Build regex for a single term (with wildcard support)
+      const hasWildcard = (t) => /[*?]/.test(t)
+      const wildcardToRegex = (pattern) => {
+        let escaped = pattern.replace(/[.+^${}()|[\]\\]/g, '\\$&')
+        escaped = escaped.replace(/\*/g, '\\S*').replace(/\?/g, '.')
+        return escaped
+      }
+      const buildTermRegex = (t, whole = true) => {
+        if (hasWildcard(t)) {
+          const pattern = wildcardToRegex(t)
+          return whole ? new RegExp(`\\b(${pattern})\\b`, 'gi') : new RegExp(`(${pattern})`, 'gi')
+        }
+        const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
+        const pattern = isRegexLike(t) ? t : escapeRe(t)
+        return whole ? new RegExp(`\\b(${pattern})\\b`, 'gi') : new RegExp(`(${pattern})`, 'gi')
+      }
+      
+      // Helper: Build pattern for a term (with wildcard support)
+      const buildPattern = (t, whole = true) => {
+        if (hasWildcard(t)) {
+          const pattern = wildcardToRegex(t)
+          return whole ? `\\b${pattern}\\b` : pattern
+        }
+        const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        return whole ? `\\b${escapeRe(t)}\\b` : escapeRe(t)
+      }
+      
+      // Helper: Find proximity matches (supports ordered for ONEAR)
+      const findProximityMatches = (text, terms, type, distance = 5, ordered = false) => {
+        const pattern1 = buildPattern(terms[0], wholeWords)
+        const pattern2 = buildPattern(terms[1], wholeWords)
+        const regex1 = new RegExp(pattern1, 'gi')
+        const regex2 = new RegExp(pattern2, 'gi')
+        
+        if (type === 'near' || type === 'onear') {
+          // Find positions of both terms
+          const pos1 = [], pos2 = []
+          let m
+          while ((m = regex1.exec(text)) !== null) pos1.push({ index: m.index, term: m[0] })
+          while ((m = regex2.exec(text)) !== null) pos2.push({ index: m.index, term: m[0] })
+          if (pos1.length === 0 || pos2.length === 0) return []
+          
+          // Count words between positions
+          const wordPattern = /\S+/g
+          const words = []
+          while ((m = wordPattern.exec(text)) !== null) words.push({ start: m.index, end: m.index + m[0].length })
+          
+          const matches = []
+          for (const p1 of pos1) {
+            for (const p2 of pos2) {
+              // For ordered search (ONEAR), term1 must come before term2
+              if (ordered && p1.index >= p2.index) continue
+              
+              const start = Math.min(p1.index, p2.index)
+              const end = Math.max(p1.index, p2.index)
+              const wordsBetween = words.filter(w => w.start > start && w.end < end).length
+              if (wordsBetween <= distance) {
+                matches.push({ index: start, term: p1.term })
+              }
+            }
+          }
+          return matches
+        } else if (type === 'sentence') {
+          const sentences = text.split(/[.!?]+\s+/)
+          const matches = []
+          let offset = 0
+          for (const sentence of sentences) {
+            regex1.lastIndex = 0; regex2.lastIndex = 0
+            if (regex1.test(sentence) && (regex2.lastIndex = 0, regex2.test(sentence))) {
+              regex1.lastIndex = 0
+              const m = regex1.exec(sentence)
+              if (m) matches.push({ index: offset + m.index, term: m[0] })
+            }
+            offset += sentence.length + 2
+          }
+          return matches
+        } else if (type === 'paragraph') {
+          const paragraphs = text.split(/\n\s*\n|\r\n\s*\r\n/)
+          const matches = []
+          let offset = 0
+          for (const para of paragraphs) {
+            regex1.lastIndex = 0; regex2.lastIndex = 0
+            if (regex1.test(para) && (regex2.lastIndex = 0, regex2.test(para))) {
+              regex1.lastIndex = 0
+              const m = regex1.exec(para)
+              if (m) matches.push({ index: offset + m.index, term: m[0] })
+            }
+            offset += para.length + 2
+          }
+          return matches
+        }
+        return []
+      }
+      
+      // Check for boolean search - check term first, then rawRegex
+      const searchInput = (term && parseBooleanSearch(term)) ? term : (rawRegex || '')
+      const booleanSearch = parseBooleanSearch(searchInput)
+      
+      if (booleanSearch) {
+        searchType = booleanSearch.type
+        try {
+          // Handle proximity searches
+          if (searchType === 'near' || searchType === 'onear' || searchType === 'sentence' || searchType === 'paragraph') {
+            proximityParams = booleanSearch
+            const terms = booleanSearch.terms || []
+            const patterns = terms.map(t => {
+              if (hasWildcard(t)) return wildcardToRegex(t)
+              return (''+t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            })
+            const combinedPattern = patterns.join('|')
+            regex = wholeWords 
+              ? new RegExp(`\\b(${combinedPattern})\\b`, 'gi')
+              : new RegExp(`(${combinedPattern})`, 'gi')
+            
+            let msg = ''
+            if (searchType === 'near') msg = `NEAR/${booleanSearch.distance} search: "${terms[0]}" within ${booleanSearch.distance} words of "${terms[1]}"`
+            else if (searchType === 'onear') msg = `ONEAR/${booleanSearch.distance} search: "${terms[0]}" within ${booleanSearch.distance} words BEFORE "${terms[1]}" (ordered)`
+            else if (searchType === 'sentence') msg = `SENTENCE search: "${terms[0]}" and "${terms[1]}" in same sentence`
+            else if (searchType === 'paragraph') msg = `PARAGRAPH search: "${terms[0]}" and "${terms[1]}" in same paragraph`
+            setAnalysisProgress({ status: msg + '...', percent: 5 })
+          }
+          // Handle phrase search
+          else if (searchType === 'phrase') {
+            const phrase = booleanSearch.phrase
+            const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            regex = new RegExp(`(${escapeRe(phrase)})`, 'gi')
+            setAnalysisProgress({ status: `Exact phrase: "${phrase}"...`, percent: 5 })
+          }
+          // Handle AND/OR/NOT
+          else {
+            const requiredTerms = booleanSearch.required || []
+            if (requiredTerms.length > 0) {
+              requiredRegexes = requiredTerms.map(t => buildTermRegex(t, wholeWords))
+            }
+            if (booleanSearch.excluded && booleanSearch.excluded.length > 0) {
+              excludedRegexes = booleanSearch.excluded.map(t => buildTermRegex(t, wholeWords))
+            }
+            
+            if (requiredTerms.length > 0) {
+              const combinedPattern = requiredTerms.map(t => {
+                const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
+                const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                return isRegexLike(t) ? t : escapeRe(t)
+              }).join('|')
+              
+              regex = wholeWords 
+                ? new RegExp(`\\b(${combinedPattern})\\b`, 'gi')
+                : new RegExp(`(${combinedPattern})`, 'gi')
+            }
+            
+            let msg = searchType === 'and' 
+              ? `AND search: finding texts with ALL ${requiredTerms.length} terms`
+              : `OR search: finding texts with ANY of ${requiredTerms.length} terms`
+            if (booleanSearch.excluded && booleanSearch.excluded.length > 0) msg += ` (excluding ${booleanSearch.excluded.length})`
+            setAnalysisProgress({ status: msg + '...', percent: 5 })
+          }
+        } catch(e) {
+          setAnalysisProgress({ status: 'Invalid boolean search terms', percent: 0, error: true })
+          setIsAnalyzing(false)
+          return
+        }
+      } else if(rawRegex && (''+rawRegex).trim()){
         try{ regex = new RegExp(rawRegex, 'gi') }catch(e){ setAnalysisProgress({ status: 'Invalid regex pattern', percent: 0, error: true }); setIsAnalyzing(false); return }
       } else {
         const vars = Array.isArray(variations) ? variations.map(v=>(''+v).trim()).filter(Boolean) : (''+(variations||'')).split(',').map(v=>v.trim()).filter(Boolean)
         const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
         const escapeRe = (s) => (''+s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-        const patterns = [term, ...vars].map(t => isRegexLike(t) ? t : escapeRe(t))
-        if(wholeWords){
-          regex = new RegExp(`\\b(${patterns.join('|')})\\b`, 'gi')
-        } else {
-          regex = new RegExp(`(${patterns.join('|')})`, 'gi')
+        const patterns = [term, ...vars].filter(Boolean).map(t => isRegexLike(t) ? t : escapeRe(t))
+        if (patterns.length > 0) {
+          if(wholeWords){
+            regex = new RegExp(`\\b(${patterns.join('|')})\\b`, 'gi')
+          } else {
+            regex = new RegExp(`(${patterns.join('|')})`, 'gi')
+          }
         }
       }
+      
+      // Helper to process each item with boolean search support
+      const processItem = (item) => {
+        if (!item.text) return
+        
+        // Check excluded terms first (NOT)
+        if (excludedRegexes) {
+          const hasExcluded = excludedRegexes.some(r => { r.lastIndex = 0; return r.test(item.text) })
+          if (hasExcluded) return
+        }
+        
+        // Handle proximity searches
+        if (proximityParams) {
+          const terms = proximityParams.terms || []
+          const ordered = proximityParams.ordered || false
+          const matches = findProximityMatches(item.text, terms, searchType, proximityParams.distance, ordered)
+          if (matches.length > 0) {
+            counts[item.id] = (counts[item.id]||0) + matches.length
+            if (termCounts) {
+              for (const m of matches) {
+                const key = m.term.toLowerCase()
+                termCounts[key] = (termCounts[key] || 0) + 1
+              }
+            }
+          }
+          return
+        }
+        
+        // Check required terms based on search type
+        if (requiredRegexes && requiredRegexes.length > 0) {
+          if (searchType === 'and') {
+            const allPresent = requiredRegexes.every(r => { r.lastIndex = 0; return r.test(item.text) })
+            if (!allPresent) return
+          } else if (searchType === 'or') {
+            const anyPresent = requiredRegexes.some(r => { r.lastIndex = 0; return r.test(item.text) })
+            if (!anyPresent) return
+          }
+        }
+        
+        if (!regex) return
+        try {
+          const matchList = item.text.match(regex)
+          if (matchList && matchList.length > 0) {
+            counts[item.id] = (counts[item.id]||0) + matchList.length
+            if (termCounts) {
+              for(const m of matchList){
+                const key = m.toLowerCase()
+                termCounts[key] = (termCounts[key] || 0) + 1
+              }
+            }
+          }
+        } catch(e){}
+      }
+      
       const counts = Object.create(null)
       const total = totalChunks || 0
       if(!total || total === 0){ setAnalysisProgress({ status: 'No data available', percent: 0, error: true }); setIsAnalyzing(false); return }
@@ -513,11 +827,18 @@ export default function App(){
       
       if (!isMobile) {
         setAnalysisProgress({ status: 'Checking saved data...', percent: 5 })
+        await new Promise(r => setTimeout(r, 100)) // Show checking message
         const allIndices = Array.from({ length: total }, (_, i) => i)
         cachedData = await getCachedChunks(allIndices)
         uncachedIndices = allIndices.filter(i => !cachedData.has(i))
-        setAnalysisProgress({ status: cachedData.size === total ? 'All data cached! ⚡' : `${cachedData.size} of ${total} chunks ready`, percent: 10 })
-        await new Promise(r => setTimeout(r, 50))
+        if (cachedData.size === total) {
+          setAnalysisProgress({ status: 'All data cached! ⚡', percent: 10, detail: 'Fast search mode' })
+        } else if (cachedData.size > 0) {
+          setAnalysisProgress({ status: `Found ${cachedData.size.toLocaleString()} cached chunks`, percent: 10, detail: `${uncachedIndices.length.toLocaleString()} need downloading` })
+        } else {
+          setAnalysisProgress({ status: 'No cached data found', percent: 10, detail: 'Downloading chunks...' })
+        }
+        await new Promise(r => setTimeout(r, 150)) // Show cache status message
       }
       
       const cachedCount = cachedData.size
@@ -525,26 +846,33 @@ export default function App(){
       
       // Process cached chunks first (desktop only)
       if (cachedData.size > 0) {
-        for (const [idx, chunk] of cachedData.entries()) {
-          for(const item of chunk){
-            try{
-              const matchList = item.text ? item.text.match(regex) : null
-              if(matchList && matchList.length > 0){
-                counts[item.id] = (counts[item.id]||0) + matchList.length
-                if (termCounts) {
-                  for(const m of matchList){
-                    const key = m.toLowerCase()
-                    termCounts[key] = (termCounts[key] || 0) + 1
-                  }
-                }
-              }
-            }catch(e){}
+        setAnalysisProgress({ status: 'Searching cached transcripts...', percent: 15, detail: `0 of ${cachedData.size.toLocaleString()} chunks` })
+        await new Promise(r => setTimeout(r, 30)) // Let UI update
+        
+        const cachedEntries = Array.from(cachedData.entries())
+        const CACHE_BATCH = 25 // Process in batches to show progress
+        
+        for (let i = 0; i < cachedEntries.length; i += CACHE_BATCH) {
+          const batch = cachedEntries.slice(i, i + CACHE_BATCH)
+          for (const [idx, chunk] of batch) {
+            for(const item of chunk){
+              processItem(item)
+            }
+            processedChunks++
           }
-          processedChunks++
-          if (processedChunks % 20 === 0) {
-            const pct = Math.round((processedChunks/total)*100)
-            setAnalysisProgress({ status: `Searching cached transcripts...`, percent: 10 + Math.round(pct * 0.4), detail: `${processedChunks.toLocaleString()} of ${total.toLocaleString()}` })
-          }
+          
+          // Update progress after each batch
+          const basePercent = uncachedIndices.length > 0 ? 15 : 15
+          const maxPercent = uncachedIndices.length > 0 ? 50 : 95
+          const progressPercent = basePercent + Math.round((processedChunks/cachedData.size) * (maxPercent - basePercent))
+          setAnalysisProgress({ 
+            status: 'Searching cached transcripts...', 
+            percent: progressPercent, 
+            detail: `${processedChunks.toLocaleString()} of ${cachedData.size.toLocaleString()} chunks` 
+          })
+          
+          // Yield to let React render the progress update
+          await new Promise(r => setTimeout(r, 10))
         }
       }
       
@@ -570,23 +898,12 @@ export default function App(){
               newlyCached.set(idx, data)
             }
             for(const item of data){
-              try{
-                const matchList = item.text ? item.text.match(regex) : null
-                if(matchList && matchList.length > 0){
-                  counts[item.id] = (counts[item.id]||0) + matchList.length
-                  if (termCounts) {
-                    for(const m of matchList){
-                      const key = m.toLowerCase()
-                      termCounts[key] = (termCounts[key] || 0) + 1
-                    }
-                  }
-                }
-              }catch(e){}
+              processItem(item)
             }
             processedChunks++
           }
           const pct = Math.round((processedChunks/total)*100)
-          setAnalysisProgress({ status: 'Searching transcripts...', percent: 50 + Math.round(pct * 0.45), detail: `${processedChunks.toLocaleString()} of ${total.toLocaleString()}` })
+          setAnalysisProgress({ status: 'Searching chunks...', percent: 50 + Math.round(pct * 0.45), detail: `${processedChunks.toLocaleString()} of ${total.toLocaleString()} chunks` })
           await new Promise(r => setTimeout(r, 5))
         }
         
@@ -635,6 +952,28 @@ export default function App(){
   }
 
   const stats = useMemo(()=>{ if(!filteredData.length) return null; const total = filteredData.length; const mentions = filteredData.reduce((acc,s)=>acc+s.mentionCount,0); const max = Math.max(...filteredData.map(s=>s.mentionCount)); return { totalSermons: total, totalMentions: mentions, maxMentions: max, avg: (mentions / total).toFixed(1) } }, [filteredData])
+  
+  // Unfiltered stats for comparison - uses enrichedData to get current search results across ALL sermons
+  const unfilteredStats = useMemo(()=>{ if(!enrichedData.length) return null; const mentions = enrichedData.reduce((acc,s)=>acc+s.mentionCount,0); return { totalMentions: mentions } }, [enrichedData])
+  
+  // Check if any filters are active
+  const hasActiveFilters = useMemo(() => {
+    return selChurches.length < options.churches.length ||
+           selSpeakers.length < options.speakers.length ||
+           selYears.length < options.years.length ||
+           selTypes.length < options.types.length ||
+           selLangs.length < options.langs.length
+  }, [selChurches, selSpeakers, selYears, selTypes, selLangs, options])
+  
+  // Clear all filters function
+  const clearAllFilters = useCallback(() => {
+    setSelChurchesRaw(options.churches)
+    setSelSpeakersRaw(options.speakers)
+    setSelTitlesRaw(options.titles)
+    setSelYearsRaw(options.years)
+    setSelTypesRaw(options.types)
+    setSelLangsRaw(options.langs)
+  }, [options])
 
   const aggregatedChartData = useMemo(()=>{
     if(!filteredData.length) return []
@@ -1337,6 +1676,17 @@ export default function App(){
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
                 <StatCard title="Filtered Sermons" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${rawData.length.toLocaleString()} total`} />
                 <StatCard title={`${activeTerm} Mentions`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" sub="in filtered results" />
+                {/* Only show hidden mentions card when filters are hiding results */}
+                {hasActiveFilters && unfilteredStats && (unfilteredStats.totalMentions - stats.totalMentions) > 0 && (
+                  <StatCard 
+                    title="Hidden by Filters" 
+                    value={`+${(unfilteredStats.totalMentions - stats.totalMentions).toLocaleString()}`} 
+                    icon="eyeOff" 
+                    color="amber" 
+                    sub="Click to clear filters and reveal all results"
+                    onClick={clearAllFilters}
+                  />
+                )}
                 <StatCard title="Avg Mentions" value={stats.avg} icon="barChart" color="indigo" sub="per sermon (filtered)" />
                 <StatCard title="Peak Count" value={stats.maxMentions} icon="activity" color="purple" sub="single sermon max" />
                 <StatCard title="Total Transcripts" value={rawData.length.toLocaleString()} icon="download" color="gray" sub="entire database" />
@@ -1521,12 +1871,27 @@ export default function App(){
               </div>
 
               {/* Channel breakdown */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                {channelTrends.map((c, idx) => (
-                  <div key={c.church || idx} className="bg-white p-4 rounded-xl border shadow-sm">
-                    <ChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
+              <div className="bg-white rounded-xl border shadow-sm mb-8">
+                <button 
+                  onClick={() => setChartsCollapsed(!chartsCollapsed)}
+                  className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors"
+                >
+                  <div className="flex items-center gap-2">
+                    <Icon name={chartsCollapsed ? 'chevronRight' : 'chevronDown'} size={18} className="text-gray-500" />
+                    <h3 className="font-bold text-gray-800">Individual Church Charts</h3>
+                    <span className="text-sm text-gray-500">({channelTrends.length} churches)</span>
                   </div>
-                ))}
+                  <span className="text-xs text-gray-400">{chartsCollapsed ? 'Click to expand' : 'Click to collapse'}</span>
+                </button>
+                {!chartsCollapsed && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 pt-0">
+                    {channelTrends.map((c, idx) => (
+                      <div key={c.church || idx} className="bg-gray-50 p-4 rounded-xl border">
+                        <ChannelChart church={c.church} data={c.data} raw={c.raw} color={c.color} domain={dateDomain} transcriptCounts={c.transcriptCounts} onExpand={(payload)=>setExpandedChart(payload)} />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className="bg-white rounded-xl border shadow-sm overflow-hidden mb-8 p-6">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">

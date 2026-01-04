@@ -498,7 +498,7 @@ def parse_published_time(published_text, max_days=1):
 
 # --- TEXT CLEANING & NORMALIZATION ---
 def sanitize_filename(text):
-    return re.sub(r'[\\/*?:"<>|]', "", text).strip()
+    return re.sub(r'[\\/*?:"<>|#]', "", text).strip()
 
 def update_transcript_speaker_header(filepath, new_speaker):
     """
@@ -1126,12 +1126,18 @@ def heal_archive(data_dir, force=False):
             heal_stats['by_church'][church_folder.replace('_', ' ')] = church_stats
             
         # Write back updated Summary CSV (with deduplication)
+        # ARCHIVAL RULE: Use URL as primary key when available to avoid losing distinct videos
         try:
-            # Deduplicate by (date, title) before writing
             seen_keys = set()
             deduped_rows = []
             for row in new_rows:
-                key = (row.get('date', '').strip(), row.get('title', '').strip())
+                url = row.get('url', '').strip()
+                if url:
+                    # Use URL as unique key (most reliable)
+                    key = url
+                else:
+                    # Fallback to (date, title, speaker) for entries without URL
+                    key = (row.get('date', '').strip(), row.get('title', '').strip(), row.get('speaker', '').strip())
                 if key not in seen_keys:
                     seen_keys.add(key)
                     deduped_rows.append(row)
@@ -3961,7 +3967,10 @@ def metadata_only_scan(church_name, config, known_speakers):
     print(f"   📊 Found {len(unique_videos) - unlisted_count} videos on channel + {unlisted_count} unlisted from summary.")
     
     if len(unique_videos) == 0:
-        print("   ❌ No videos found.")
+        print("   ⚠️ No videos found from YouTube scan.")
+        # ARCHIVAL RULE: Never delete historical entries just because we couldn't find videos.
+        if existing_history:
+            print(f"   📦 PRESERVING {len(existing_history)} historical entries (archival mode).")
         return
     
     today_str = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -4123,20 +4132,30 @@ def update_file_header_and_name(channel_dir, old_entry, new_speaker, new_date, t
     return False
 
 def clean_history_of_bad_speakers(history):
+    """
+    Clean up bad speaker names in history entries.
+    
+    ARCHIVAL RULE: We NEVER delete entries from history. If a speaker name is
+    invalid, we reset it to "Unknown Speaker" but preserve all other data.
+    This ensures we never lose scraped transcripts or metadata.
+    """
     cleaned_history = {}
-    bad_count = 0
+    fixed_count = 0
     for url, entry in history.items():
         speaker = entry.get('speaker', '')
-        # Basic check
+        # Basic check - "Brother X" or "Sister X" patterns are kept as-is
         if "Brother " in speaker or "Sister " in speaker:
-            bad_count += 1
             cleaned_history[url] = entry
         elif not is_valid_person_name(speaker):
-            bad_count += 1
+            # ARCHIVAL: Don't delete! Just reset the speaker to Unknown
+            fixed_entry = entry.copy()
+            fixed_entry['speaker'] = 'Unknown Speaker'
+            cleaned_history[url] = fixed_entry
+            fixed_count += 1
         else:
             cleaned_history[url] = entry
-    if bad_count > 0:
-        print(f"   🧹 Removed/Flagged {bad_count} corrupt entries from history.")
+    if fixed_count > 0:
+        print(f"   🧹 Reset {fixed_count} invalid speaker names to 'Unknown Speaker' (entries preserved).")
     return cleaned_history
 
 def consolidate_names(found_speakers):
@@ -4302,8 +4321,13 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     print(f"   Videos found: {len(unique_videos)}")
     
     if len(unique_videos) == 0:
-        print("   ❌ SKIPPING: No videos found.")
-        return channel_stats  # Return empty stats
+        print("   ⚠️ No videos found from YouTube scan.")
+        # ARCHIVAL RULE: Never delete historical entries just because we couldn't find videos.
+        # The channel may be temporarily unavailable, or videos may have been removed.
+        # We preserve all existing data for archival purposes.
+        if history:
+            print(f"   📦 PRESERVING {len(history)} historical entries (archival mode).")
+        return channel_stats  # Return empty stats but don't touch the existing CSV
 
     current_summary_list = [] 
     count = 0
@@ -4488,13 +4512,24 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         if entry.get('url'):
             processed_urls.add(entry.get('url'))
     
-    # IMPORTANT: Preserve entries from existing history that weren't in this scan
-    # (e.g., unlisted videos from supplemental scrapers like Shalom Tabernacle website)
+    # =========================================================================
+    # ARCHIVAL RULE: NEVER DELETE HISTORICAL ENTRIES
+    # =========================================================================
+    # Even if a video URL is no longer found on the channel (deleted, unlisted,
+    # or made private), we ALWAYS preserve existing entries from our history.
+    # This ensures we maintain our scraped transcripts and metadata for archival
+    # purposes. A video disappearing from YouTube doesn't mean we lose our data.
+    # =========================================================================
+    preserved_count = 0
     for url, hist_entry in history.items():
         if url not in processed_urls:
-            # This entry exists in history but wasn't processed in this run - PRESERVE IT
+            # This entry exists in history but wasn't found in this scan - PRESERVE IT
             current_summary_list.append(hist_entry)
             processed_urls.add(url)
+            preserved_count += 1
+    
+    if preserved_count > 0:
+        print(f"   📦 Preserved {preserved_count} historical entries not found in current scan.")
     
     # Build a set of (date, title, speaker) from current_summary_list for fast lookup
     summary_keys = set()
