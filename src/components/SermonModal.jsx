@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Icon from './Icon'
-import { DEFAULT_REGEX_STR } from '../constants'
+import { DEFAULT_REGEX_STR } from '../constants_local'
 
 // Helper: Convert wildcard pattern to regex for highlighting
 const wildcardToRegex = (pattern) => {
@@ -240,6 +240,17 @@ const parseBooleanSearchTerms = (input) => {
 // Build regex pattern from search term (handles boolean/proximity searches with wildcard support)
 const buildSearchRegex = (searchTerm) => {
   if (!searchTerm) return new RegExp(DEFAULT_REGEX_STR, 'gi')
+  
+  // Check if searchTerm looks like a raw regex pattern (contains regex syntax like \b, \s, (?:, etc.)
+  // If so, use it directly without parsing as boolean search
+  const looksLikeRegex = /\\[bsdwBSDW]|\\s\+|\(\?[=!:]|\[\^?[^\]]+\]/.test(searchTerm)
+  if (looksLikeRegex) {
+    try {
+      return new RegExp(`(${searchTerm})`, 'gi')
+    } catch {
+      // Fall through to other parsing methods if regex is invalid
+    }
+  }
   
   const booleanTerms = parseBooleanSearchTerms(searchTerm)
   if (booleanTerms) {

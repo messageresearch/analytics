@@ -1850,7 +1850,7 @@ export default function App(){
                         {[...(mainChartPinnedBucket.sermons || [])].sort((a,b) => (b.mentionCount || 0) - (a.mentionCount || 0)).map((s,i)=> (
                           <button 
                             key={s.id || i}
-                            onClick={()=>{ setSelectedSermon(s); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
+                            onClick={()=>{ setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null }); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
                             className="w-full text-left p-3 bg-gray-50 rounded-lg border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all group"
                           >
                             <div className="font-medium text-gray-900 group-hover:text-blue-600 line-clamp-2">{s.title || 'Untitled'}</div>
