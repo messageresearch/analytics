@@ -2522,10 +2522,10 @@ export default function App(){
 
                 <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Source Attribution</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  This project emphasizes transparency and verification. Analytical outputs link directly to the original YouTube videos so that readers can review the full source material in context.
+                  This project emphasizes transparency and verification. Analytical outputs include direct links to the original YouTube videos so that readers can review the full source material in its original context.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  The project does not aim to substitute for original content and encourages readers to consult primary sources when evaluating findings or claims.
+                  The project is not intended to replace original content and encourages readers to consult primary sources when evaluating findings or claims.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Fair Use & Purpose</h3>
@@ -2533,10 +2533,10 @@ export default function App(){
                   This project asserts fair use under U.S. copyright law (17 U.S.C. § 107).
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Any copyrighted material referenced or analyzed is used solely for purposes of news reporting, criticism, commentary, research, and scholarship. The use is transformative, focusing on analysis and aggregation rather than reproduction of original works.
+                  Any copyrighted material referenced or analyzed is used solely for purposes of news reporting, criticism, commentary, research, and scholarship. The use is transformative, focusing on analysis and aggregation rather than simple reproduction of original works.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  The project is non-commercial and does not monetize content. It does not provide full transcripts or video playback as a substitute for original videos.
+                  The project is non-commercial and does not monetize content. Full transcripts are provided for research and verification purposes, but the project does not host or stream original videos and is not intended to serve as a substitute for viewing content at the original source.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Methodology</h3>
@@ -2557,7 +2557,7 @@ export default function App(){
 
                 <h3 className="text-xl font-bold text-gray-800 mt-8 mb-3">Contact</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  For inquiries, corrections, or feedback, please contact us at{' '}
+                  For inquiries, corrections, or feedback, please contact:<br />
                   <a href="mailto:messageanalyticsproject@gmail.com" className="text-blue-600 hover:text-blue-800 underline">
                     messageanalyticsproject@gmail.com
                   </a>
