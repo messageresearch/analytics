@@ -4,13 +4,14 @@ START OF FILE: 2024-05-12 - A Mother's Love - Minister John Simon - John Simon.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-12
-Title:   A Mother's Love - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ds8DFL_nkn8
+Date:     2024-05-12
+Title:    A Mother's Love - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=ds8DFL_nkn8
 ========================================
 
 Description:

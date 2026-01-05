@@ -4,13 +4,14 @@ START OF FILE: 2023-09-02 - Hakuna Matata - Bro. Miguel Santana - GNM Youth Meet
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-02
-Title:   Hakuna Matata - Bro. Miguel Santana - GNM Youth Meetings
-Speaker: Miguel Santana
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tuRnX4-O3Go
+Date:     2023-09-02
+Title:    Hakuna Matata - Bro. Miguel Santana - GNM Youth Meetings
+Speaker:  Miguel Santana
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=tuRnX4-O3Go
 ========================================
 
 Description:

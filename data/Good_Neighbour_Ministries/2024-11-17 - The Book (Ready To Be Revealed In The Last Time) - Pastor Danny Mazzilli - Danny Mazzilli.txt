@@ -4,13 +4,14 @@ START OF FILE: 2024-11-17 - The Book (Ready To Be Revealed In The Last Time) - P
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-17
-Title:   The Book (Ready To Be Revealed In The Last Time) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lefks8aLdk8
+Date:     2024-11-17
+Title:    The Book (Ready To Be Revealed In The Last Time) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=lefks8aLdk8
 ========================================
 
 Description:

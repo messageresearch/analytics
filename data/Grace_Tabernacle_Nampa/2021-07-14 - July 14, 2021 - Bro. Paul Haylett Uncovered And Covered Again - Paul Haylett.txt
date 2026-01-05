@@ -4,13 +4,14 @@ START OF FILE: 2021-07-14 - July 14, 2021 - Bro. Paul Haylett Uncovered And Cove
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-14
-Title:   July 14, 2021 - Bro. Paul Haylett "Uncovered And Covered Again"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=O8cUdMEpBIg
+Date:     2021-07-14
+Title:    July 14, 2021 - Bro. Paul Haylett "Uncovered And Covered Again"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=O8cUdMEpBIg
 ========================================
 
 Description:

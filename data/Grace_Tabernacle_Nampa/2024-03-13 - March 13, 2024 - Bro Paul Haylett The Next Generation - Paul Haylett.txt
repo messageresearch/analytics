@@ -4,13 +4,14 @@ START OF FILE: 2024-03-13 - March 13, 2024 - Bro Paul Haylett The Next Generatio
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-13
-Title:   March 13, 2024 - Bro Paul Haylett "The Next Generation"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oGj7Ksz85Y0
+Date:     2024-03-13
+Title:    March 13, 2024 - Bro Paul Haylett "The Next Generation"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=oGj7Ksz85Y0
 ========================================
 
 Description:

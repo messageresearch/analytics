@@ -4,13 +4,14 @@ START OF FILE: 2025-04-23 - April 23, 2025 - Bro David Dienhart At Thy Word - Da
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-23
-Title:   April 23, 2025 - Bro David Dienhart "At Thy Word"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KgYnSYtAL_M
+Date:     2025-04-23
+Title:    April 23, 2025 - Bro David Dienhart "At Thy Word"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=KgYnSYtAL_M
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - June 19, 2022 - Bro Andrew Glover Changing Our Focus
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   June 19, 2022 - Bro Andrew Glover "Changing Our Focus"
-Speaker: Andrew Glover
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Mi60s9bMqTs
+Date:     2022-06-19
+Title:    June 19, 2022 - Bro Andrew Glover "Changing Our Focus"
+Speaker:  Andrew Glover
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mi60s9bMqTs
 ========================================
 
 Description:

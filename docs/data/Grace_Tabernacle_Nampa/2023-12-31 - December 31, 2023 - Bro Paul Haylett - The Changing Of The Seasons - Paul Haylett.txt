@@ -4,13 +4,14 @@ START OF FILE: 2023-12-31 - December 31, 2023 - Bro Paul Haylett - The Changing 
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-31
-Title:   December 31, 2023 - Bro Paul Haylett - "The Changing Of The Seasons"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ux26De6_8rY
+Date:     2023-12-31
+Title:    December 31, 2023 - Bro Paul Haylett - "The Changing Of The Seasons"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=ux26De6_8rY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - November 13, 2022 - Bro Paul Haylett Prepared for a 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   November 13, 2022 - Bro Paul Haylett "Prepared for a Purpose"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9zyh4STTw7E
+Date:     2022-11-13
+Title:    November 13, 2022 - Bro Paul Haylett "Prepared for a Purpose"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=9zyh4STTw7E
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-01-06 - January 6 2019 Overcoming - Pastor John Simon 001890
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-06
-Title:   January 6 2019 Overcoming - Pastor John Simon 0018900190
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5hmZfEXvRTw
+Date:     2019-01-06
+Title:    January 6 2019 Overcoming - Pastor John Simon 0018900190
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=5hmZfEXvRTw
 ========================================
 
 Description:

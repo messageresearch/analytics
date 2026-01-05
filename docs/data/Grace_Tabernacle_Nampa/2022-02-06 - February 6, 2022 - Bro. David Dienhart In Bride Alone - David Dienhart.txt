@@ -4,13 +4,14 @@ START OF FILE: 2022-02-06 - February 6, 2022 - Bro. David Dienhart In Bride Alon
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-06
-Title:   February 6, 2022 - Bro. David Dienhart "In Bride Alone"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pFmQxUVV2v8
+Date:     2022-02-06
+Title:    February 6, 2022 - Bro. David Dienhart "In Bride Alone"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=pFmQxUVV2v8
 ========================================
 
 Description:

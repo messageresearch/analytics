@@ -4,13 +4,14 @@ START OF FILE: 2023-09-10 - What Is Your Experience - Minister Christopher Furlo
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-10
-Title:   What Is Your Experience? - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7nay7Bt5Wng
+Date:     2023-09-10
+Title:    What Is Your Experience? - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=7nay7Bt5Wng
 ========================================
 
 Description:

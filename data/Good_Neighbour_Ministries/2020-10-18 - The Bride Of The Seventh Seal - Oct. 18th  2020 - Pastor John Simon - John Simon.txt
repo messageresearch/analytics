@@ -4,13 +4,14 @@ START OF FILE: 2020-10-18 - The Bride Of The Seventh Seal - Oct. 18th  2020 - Pa
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-18
-Title:   The Bride Of The Seventh Seal - Oct. 18th  2020 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=B6h_lginIlE
+Date:     2020-10-18
+Title:    The Bride Of The Seventh Seal - Oct. 18th  2020 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=B6h_lginIlE
 ========================================
 
 Description:

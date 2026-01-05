@@ -4,13 +4,14 @@ START OF FILE: 2024-02-18 - The Choice Between Life And Death - Minister Christo
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-18
-Title:   The Choice Between Life And Death - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bx7VnjAC7qk
+Date:     2024-02-18
+Title:    The Choice Between Life And Death - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=bx7VnjAC7qk
 ========================================
 
 Description:

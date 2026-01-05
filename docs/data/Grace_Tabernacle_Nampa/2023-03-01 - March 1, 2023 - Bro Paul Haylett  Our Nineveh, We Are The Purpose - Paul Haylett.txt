@@ -4,13 +4,14 @@ START OF FILE: 2023-03-01 - March 1, 2023 - Bro Paul Haylett  Our Nineveh, We Ar
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-01
-Title:   March 1, 2023 - Bro Paul Haylett  "Our Nineveh, We Are The Purpose"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kshy_5mcrjs
+Date:     2023-03-01
+Title:    March 1, 2023 - Bro Paul Haylett  "Our Nineveh, We Are The Purpose"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=kshy_5mcrjs
 ========================================
 
 Description:

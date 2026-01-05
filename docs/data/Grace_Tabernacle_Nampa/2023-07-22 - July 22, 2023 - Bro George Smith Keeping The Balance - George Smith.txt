@@ -4,13 +4,14 @@ START OF FILE: 2023-07-22 - July 22, 2023 - Bro George Smith Keeping The Balance
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-22
-Title:   July 22, 2023 - Bro George Smith "Keeping The Balance"
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1nDQWQwSspg
+Date:     2023-07-22
+Title:    July 22, 2023 - Bro George Smith "Keeping The Balance"
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=1nDQWQwSspg
 ========================================
 
 Description:

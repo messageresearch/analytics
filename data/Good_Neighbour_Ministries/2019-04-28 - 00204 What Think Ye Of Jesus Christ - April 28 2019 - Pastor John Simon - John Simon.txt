@@ -4,13 +4,14 @@ START OF FILE: 2019-04-28 - 00204 What Think Ye Of Jesus Christ - April 28 2019 
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-28
-Title:   00204 What Think Ye Of Jesus Christ - April 28 2019 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LoISVep0ygY
+Date:     2019-04-28
+Title:    00204 What Think Ye Of Jesus Christ - April 28 2019 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=LoISVep0ygY
 ========================================
 
 TRANSCRIPT

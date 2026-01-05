@@ -4,13 +4,14 @@ START OF FILE: 2025-05-14 - May 14, 2025 - Bro Paul Haylett Be Careful For Nothi
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-14
-Title:   May 14, 2025 - Bro Paul Haylett "Be Careful For Nothing"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=c0_wJDCWrco
+Date:     2025-05-14
+Title:    May 14, 2025 - Bro Paul Haylett "Be Careful For Nothing"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=c0_wJDCWrco
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-10-31 - Who Do You Think You Are Talking To -Minister Tim Be
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-31
-Title:   Who Do You Think You Are Talking To? -Minister Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z3vx-vnDhFc
+Date:     2021-10-31
+Title:    Who Do You Think You Are Talking To? -Minister Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=z3vx-vnDhFc
 ========================================
 
 Description:

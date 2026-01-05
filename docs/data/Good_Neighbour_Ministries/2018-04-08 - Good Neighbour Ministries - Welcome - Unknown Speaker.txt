@@ -4,13 +4,14 @@ START OF FILE: 2018-04-08 - Good Neighbour Ministries - Welcome - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2018-04-08
-Title:   Good Neighbour Ministries - Welcome
-Speaker: Unknown Speaker
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QWIVuYVmIeY
+Date:     2018-04-08
+Title:    Good Neighbour Ministries - Welcome
+Speaker:  Unknown Speaker
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=QWIVuYVmIeY
 ========================================
 
 Description:

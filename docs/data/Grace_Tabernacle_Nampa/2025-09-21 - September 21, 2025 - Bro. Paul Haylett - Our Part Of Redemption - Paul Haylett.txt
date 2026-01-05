@@ -4,13 +4,14 @@ START OF FILE: 2025-09-21 - September 21, 2025 - Bro. Paul Haylett - Our Part Of
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-21
-Title:   September 21, 2025 - Bro. Paul Haylett - "Our Part Of Redemption"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YmYEwIltrxs
+Date:     2025-09-21
+Title:    September 21, 2025 - Bro. Paul Haylett - "Our Part Of Redemption"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=YmYEwIltrxs
 ========================================
 
 Description:

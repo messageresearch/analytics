@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - The Shuck Will Not Inherit With The Seed - Minister 
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   The Shuck Will Not Inherit With The Seed - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T0ikXi0-kxg
+Date:     2024-05-26
+Title:    The Shuck Will Not Inherit With The Seed - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=T0ikXi0-kxg
 ========================================
 
 Description:

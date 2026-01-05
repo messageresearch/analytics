@@ -4,13 +4,14 @@ START OF FILE: 2024-12-29 - This Christmas part 2 - Pastor Danny Mazzilli - Dann
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-29
-Title:   This Christmas part 2 - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=Z6va0xZG0pE
+Date:     2024-12-29
+Title:    This Christmas part 2 - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Christmas Program
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z6va0xZG0pE
 ========================================
 
 Description:

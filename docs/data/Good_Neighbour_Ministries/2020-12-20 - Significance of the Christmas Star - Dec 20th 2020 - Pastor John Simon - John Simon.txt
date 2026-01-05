@@ -4,13 +4,14 @@ START OF FILE: 2020-12-20 - Significance of the Christmas Star - Dec 20th 2020 -
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-20
-Title:   Significance of the Christmas Star - Dec 20th 2020 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=MR26OQl-w0o
+Date:     2020-12-20
+Title:    Significance of the Christmas Star - Dec 20th 2020 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Christmas Program
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=MR26OQl-w0o
 ========================================
 
 Description:

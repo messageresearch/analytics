@@ -4,13 +4,14 @@ START OF FILE: 2025-08-30 - Who Told You That - Bro. Miguel Santana - GNM Youth 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-30
-Title:   Who Told You That? - Bro. Miguel Santana - GNM Youth Meetings 2025
-Speaker: Miguel Santana
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2AQuU2Q64fk
+Date:     2025-08-30
+Title:    Who Told You That? - Bro. Miguel Santana - GNM Youth Meetings 2025
+Speaker:  Miguel Santana
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=2AQuU2Q64fk
 ========================================
 
 Description:

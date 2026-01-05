@@ -4,13 +4,14 @@ START OF FILE: 2020-05-13 - May 13, 2020 - Bro. Chris Take - Mercy Built A Bridg
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-13
-Title:   May 13, 2020 - Bro. Chris Take - "Mercy Built A Bridge"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oqLy8krSPXg
+Date:     2020-05-13
+Title:    May 13, 2020 - Bro. Chris Take - "Mercy Built A Bridge"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=oqLy8krSPXg
 ========================================
 
 Description:

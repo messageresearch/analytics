@@ -4,13 +4,14 @@ START OF FILE: 2023-01-18 - January 18, 2023 - Bro Paul Haylett What Is The Worl
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-18
-Title:   January 18, 2023 - Bro Paul Haylett "What Is The World Seeing"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0ndq9gfzfjI
+Date:     2023-01-18
+Title:    January 18, 2023 - Bro Paul Haylett "What Is The World Seeing"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=0ndq9gfzfjI
 ========================================
 
 Description:

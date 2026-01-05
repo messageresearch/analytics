@@ -4,13 +4,14 @@ START OF FILE: 2024-04-21 - April 21, 2024 - Bro Steven Mcneilly - Steven Mcneil
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-21
-Title:   April 21, 2024 - Bro Steven Mcneilly ""
-Speaker: Steven Mcneilly
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A7UeE206m6Y
+Date:     2024-04-21
+Title:    April 21, 2024 - Bro Steven Mcneilly ""
+Speaker:  Steven Mcneilly
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=A7UeE206m6Y
 ========================================
 
 Description:

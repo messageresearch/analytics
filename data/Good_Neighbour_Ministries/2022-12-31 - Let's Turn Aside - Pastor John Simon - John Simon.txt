@@ -4,13 +4,14 @@ START OF FILE: 2022-12-31 - Let's Turn Aside - Pastor John Simon - John Simon.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-31
-Title:   Let's Turn Aside - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cMk9yAxAfCI
+Date:     2022-12-31
+Title:    Let's Turn Aside - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 3h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=cMk9yAxAfCI
 ========================================
 
 Description:

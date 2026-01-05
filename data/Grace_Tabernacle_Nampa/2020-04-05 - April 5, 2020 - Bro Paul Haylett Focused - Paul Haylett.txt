@@ -4,13 +4,14 @@ START OF FILE: 2020-04-05 - April 5, 2020 - Bro Paul Haylett Focused - Paul Hayl
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-05
-Title:   April 5, 2020 - Bro Paul Haylett "Focused"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=byKk9zecqIQ
+Date:     2020-04-05
+Title:    April 5, 2020 - Bro Paul Haylett "Focused"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=byKk9zecqIQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-08-28 - The Son Is Shining - Pastor John Simon - John Simon.
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-28
-Title:   The Son Is Shining - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jI8useG9nMo
+Date:     2022-08-28
+Title:    The Son Is Shining - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=jI8useG9nMo
 ========================================
 
 Description:

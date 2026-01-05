@@ -4,13 +4,14 @@ START OF FILE: 2021-10-13 - The Book Of Life - Part 2 - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-13
-Title:   The Book Of Life - Part 2
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rierEi8-o3k
+Date:     2021-10-13
+Title:    The Book Of Life - Part 2
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=rierEi8-o3k
 ========================================
 
 Description:

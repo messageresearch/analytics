@@ -4,13 +4,14 @@ START OF FILE: 2020-03-11 - March 11, 2020 - Bro Paul Haylett - The Inner Man - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-11
-Title:   March 11, 2020 - Bro Paul Haylett - "The Inner Man"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=is36eviFsCs
+Date:     2020-03-11
+Title:    March 11, 2020 - Bro Paul Haylett - "The Inner Man"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=is36eviFsCs
 ========================================
 
 Description:

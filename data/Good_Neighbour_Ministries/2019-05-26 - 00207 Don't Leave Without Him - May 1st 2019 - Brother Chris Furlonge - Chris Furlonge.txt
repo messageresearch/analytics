@@ -4,13 +4,14 @@ START OF FILE: 2019-05-26 - 00207 Don't Leave Without Him - May 1st 2019 - Broth
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-26
-Title:   00207 Don't Leave Without Him - May 1st 2019 - Brother Chris Furlonge
-Speaker: Chris Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Rzqw0eeExwo
+Date:     2019-05-26
+Title:    00207 Don't Leave Without Him - May 1st 2019 - Brother Chris Furlonge
+Speaker:  Chris Furlonge
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=Rzqw0eeExwo
 ========================================
 
 TRANSCRIPT

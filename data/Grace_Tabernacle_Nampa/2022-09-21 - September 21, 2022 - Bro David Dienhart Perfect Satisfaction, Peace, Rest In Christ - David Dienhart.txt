@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - September 21, 2022 - Bro David Dienhart Perfect Sati
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   September 21, 2022 - Bro David Dienhart "Perfect Satisfaction, Peace, Rest In Christ"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=e0qvMOXK_-M
+Date:     2022-09-21
+Title:    September 21, 2022 - Bro David Dienhart "Perfect Satisfaction, Peace, Rest In Christ"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=e0qvMOXK_-M
 ========================================
 
 Description:

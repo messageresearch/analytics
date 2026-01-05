@@ -4,13 +4,14 @@ START OF FILE: 2022-07-13 - July 13, 2022 - Bro Paul Haylett The Ability To With
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-13
-Title:   July 13, 2022 - Bro Paul Haylett "The Ability To Withstand"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Na4eiBaqHVs
+Date:     2022-07-13
+Title:    July 13, 2022 - Bro Paul Haylett "The Ability To Withstand"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=Na4eiBaqHVs
 ========================================
 
 Description:

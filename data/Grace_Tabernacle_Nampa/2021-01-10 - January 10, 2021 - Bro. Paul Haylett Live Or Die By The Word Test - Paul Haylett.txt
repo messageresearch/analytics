@@ -4,13 +4,14 @@ START OF FILE: 2021-01-10 - January 10, 2021 - Bro. Paul Haylett Live Or Die By 
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-10
-Title:   January 10, 2021 - Bro. Paul Haylett "Live Or Die By The Word Test"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=S8JE5kHTZtI
+Date:     2021-01-10
+Title:    January 10, 2021 - Bro. Paul Haylett "Live Or Die By The Word Test"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=S8JE5kHTZtI
 ========================================
 
 Description:

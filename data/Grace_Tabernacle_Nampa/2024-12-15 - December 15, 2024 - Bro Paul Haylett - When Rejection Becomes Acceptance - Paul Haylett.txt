@@ -4,13 +4,14 @@ START OF FILE: 2024-12-15 - December 15, 2024 - Bro Paul Haylett - When Rejectio
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-15
-Title:   December 15, 2024 - Bro Paul Haylett - "When Rejection Becomes Acceptance"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tEeY5wXmZjs
+Date:     2024-12-15
+Title:    December 15, 2024 - Bro Paul Haylett - "When Rejection Becomes Acceptance"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=tEeY5wXmZjs
 ========================================
 
 Description:

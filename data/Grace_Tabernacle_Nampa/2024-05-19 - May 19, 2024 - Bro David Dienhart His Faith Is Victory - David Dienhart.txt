@@ -4,13 +4,14 @@ START OF FILE: 2024-05-19 - May 19, 2024 - Bro David Dienhart His Faith Is Victo
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-19
-Title:   May 19, 2024 - Bro David Dienhart "His Faith Is Victory"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2tzbycUyohs
+Date:     2024-05-19
+Title:    May 19, 2024 - Bro David Dienhart "His Faith Is Victory"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=2tzbycUyohs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-21 - July 21, 2024 - Bro Paul Haylett Beyond The Veil - P
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-21
-Title:   July 21, 2024 - Bro Paul Haylett "Beyond The Veil"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z-F5uwZuZh4
+Date:     2024-07-21
+Title:    July 21, 2024 - Bro Paul Haylett "Beyond The Veil"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z-F5uwZuZh4
 ========================================
 
 Description:

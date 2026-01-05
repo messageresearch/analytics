@@ -4,13 +4,14 @@ START OF FILE: 2023-08-03 - August, 2023 - Bro Paul Haylett Rejoice, For Your Na
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-03
-Title:   August, 2023 - Bro Paul Haylett "Rejoice, For Your Name Is In The Book"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BCnO2Cu_56Y
+Date:     2023-08-03
+Title:    August, 2023 - Bro Paul Haylett "Rejoice, For Your Name Is In The Book"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=BCnO2Cu_56Y
 ========================================
 
 Description:

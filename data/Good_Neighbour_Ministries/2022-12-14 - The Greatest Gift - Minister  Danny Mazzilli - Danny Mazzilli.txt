@@ -4,13 +4,14 @@ START OF FILE: 2022-12-14 - The Greatest Gift - Minister  Danny Mazzilli - Danny
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-14
-Title:   The Greatest Gift - Minister  Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P9KXei-urSs
+Date:     2022-12-14
+Title:    The Greatest Gift - Minister  Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=P9KXei-urSs
 ========================================
 
 Description:

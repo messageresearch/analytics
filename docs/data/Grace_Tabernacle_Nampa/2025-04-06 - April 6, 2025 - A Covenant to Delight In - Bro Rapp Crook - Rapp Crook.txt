@@ -4,13 +4,14 @@ START OF FILE: 2025-04-06 - April 6, 2025 - A Covenant to Delight In - Bro Rapp 
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-06
-Title:   April 6, 2025 - "A Covenant to Delight In" - Bro Rapp Crook
-Speaker: Rapp Crook
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4wcHyIWsnrs
+Date:     2025-04-06
+Title:    April 6, 2025 - "A Covenant to Delight In" - Bro Rapp Crook
+Speaker:  Rapp Crook
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=4wcHyIWsnrs
 ========================================
 
 Description:

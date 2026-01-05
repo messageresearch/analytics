@@ -4,13 +4,14 @@ START OF FILE: 2025-08-10 - August 10, 2025 - Bro. Paul Haylett - Keeping Our Ey
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-10
-Title:   August 10, 2025 - Bro. Paul Haylett - "Keeping Our Eye On The Goal"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xD8CNDFDqqI
+Date:     2025-08-10
+Title:    August 10, 2025 - Bro. Paul Haylett - "Keeping Our Eye On The Goal"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=xD8CNDFDqqI
 ========================================
 
 Description:

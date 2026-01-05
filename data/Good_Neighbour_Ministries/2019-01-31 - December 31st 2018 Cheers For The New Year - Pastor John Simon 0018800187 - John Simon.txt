@@ -4,13 +4,14 @@ START OF FILE: 2019-01-31 - December 31st 2018 Cheers For The New Year - Pastor 
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-31
-Title:   December 31st 2018 Cheers For The New Year - Pastor John Simon 0018800187
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rQWMibTXPMU
+Date:     2019-01-31
+Title:    December 31st 2018 Cheers For The New Year - Pastor John Simon 0018800187
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     New Year Service
+Duration: 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=rQWMibTXPMU
 ========================================
 
 Description:

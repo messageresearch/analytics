@@ -4,13 +4,14 @@ START OF FILE: 2023-12-20 - December 20, 2023 - Bro Paul Haylett - Finding Favor
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-20
-Title:   December 20, 2023 - Bro Paul Haylett - "Finding Favor With The Father"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ab8AZrRpz6w
+Date:     2023-12-20
+Title:    December 20, 2023 - Bro Paul Haylett - "Finding Favor With The Father"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=ab8AZrRpz6w
 ========================================
 
 Description:

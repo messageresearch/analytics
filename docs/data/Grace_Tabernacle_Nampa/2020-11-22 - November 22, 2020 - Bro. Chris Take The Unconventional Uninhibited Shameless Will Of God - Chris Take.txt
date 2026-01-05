@@ -4,13 +4,14 @@ START OF FILE: 2020-11-22 - November 22, 2020 - Bro. Chris Take The Unconvention
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-22
-Title:   November 22, 2020 - Bro. Chris Take "The Unconventional Uninhibited Shameless Will Of God"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tt6LQGqIjrQ
+Date:     2020-11-22
+Title:    November 22, 2020 - Bro. Chris Take "The Unconventional Uninhibited Shameless Will Of God"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Convention
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=tt6LQGqIjrQ
 ========================================
 
 Description:

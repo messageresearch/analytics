@@ -4,13 +4,14 @@ START OF FILE: 2019-03-30 - 00189 The Power Of The Seed To Change  - March 30 20
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-30
-Title:   00189 The Power Of The Seed To Change  - March 30 2019 - Br Bob Roark
-Speaker: Bob Roark
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hT3RFp3oGsA
+Date:     2019-03-30
+Title:    00189 The Power Of The Seed To Change  - March 30 2019 - Br Bob Roark
+Speaker:  Bob Roark
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=hT3RFp3oGsA
 ========================================
 
 TRANSCRIPT

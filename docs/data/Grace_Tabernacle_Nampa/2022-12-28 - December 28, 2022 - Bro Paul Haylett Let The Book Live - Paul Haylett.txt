@@ -4,13 +4,14 @@ START OF FILE: 2022-12-28 - December 28, 2022 - Bro Paul Haylett Let The Book Li
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-28
-Title:   December 28, 2022 - Bro Paul Haylett "Let The Book Live"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6IZoOTqNA1c
+Date:     2022-12-28
+Title:    December 28, 2022 - Bro Paul Haylett "Let The Book Live"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=6IZoOTqNA1c
 ========================================
 
 Description:

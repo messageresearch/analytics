@@ -4,13 +4,14 @@ START OF FILE: 2021-05-05 - May 5, 2021 - Bro. David Dienhart She Is Also The Re
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-05
-Title:   May 5, 2021 - Bro. David Dienhart "She Is Also The Resurrection And The Life"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cboa9FqsA54
+Date:     2021-05-05
+Title:    May 5, 2021 - Bro. David Dienhart "She Is Also The Resurrection And The Life"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Easter Program
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=cboa9FqsA54
 ========================================
 
 Description:

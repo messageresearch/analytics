@@ -4,13 +4,14 @@ START OF FILE: 2023-10-11 - October 11, 2023 - Bro Chris Take The Church Under R
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-11
-Title:   October 11, 2023 - Bro Chris Take "The Church Under Religious Deception"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7tQ_kq5PuLc
+Date:     2023-10-11
+Title:    October 11, 2023 - Bro Chris Take "The Church Under Religious Deception"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=7tQ_kq5PuLc
 ========================================
 
 Description:

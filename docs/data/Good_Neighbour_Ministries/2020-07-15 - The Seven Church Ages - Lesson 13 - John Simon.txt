@@ -4,13 +4,14 @@ START OF FILE: 2020-07-15 - The Seven Church Ages - Lesson 13 - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-15
-Title:   The Seven Church Ages - Lesson 13
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Vp42SNngC6Q
+Date:     2020-07-15
+Title:    The Seven Church Ages - Lesson 13
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=Vp42SNngC6Q
 ========================================
 
 Description:

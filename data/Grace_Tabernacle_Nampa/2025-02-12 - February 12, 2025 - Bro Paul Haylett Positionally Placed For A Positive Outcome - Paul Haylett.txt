@@ -4,13 +4,14 @@ START OF FILE: 2025-02-12 - February 12, 2025 - Bro Paul Haylett Positionally Pl
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-12
-Title:   February 12, 2025 - Bro Paul Haylett "Positionally Placed For A Positive Outcome"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ll-BX80vF2s
+Date:     2025-02-12
+Title:    February 12, 2025 - Bro Paul Haylett "Positionally Placed For A Positive Outcome"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ll-BX80vF2s
 ========================================
 
 Description:

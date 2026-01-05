@@ -4,13 +4,14 @@ START OF FILE: 2025-06-11 - June 11, 2025 - Bro David Dienhart - David Dienhart.
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-11
-Title:   June 11, 2025 - Bro David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9WDsZnmyb6g
+Date:     2025-06-11
+Title:    June 11, 2025 - Bro David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9WDsZnmyb6g
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-15 - January 15, 2023 - Bro David Dienhart The Spirit And
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-15
-Title:   January 15, 2023 - Bro David Dienhart "The Spirit And The Bride Say Come"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5PXjtT8c4YE
+Date:     2023-01-15
+Title:    January 15, 2023 - Bro David Dienhart "The Spirit And The Bride Say Come"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=5PXjtT8c4YE
 ========================================
 
 Description:

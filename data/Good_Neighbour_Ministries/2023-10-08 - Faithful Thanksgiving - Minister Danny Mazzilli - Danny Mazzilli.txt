@@ -4,13 +4,14 @@ START OF FILE: 2023-10-08 - Faithful Thanksgiving - Minister Danny Mazzilli - Da
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-08
-Title:   Faithful Thanksgiving - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RGEh58L-cYE
+Date:     2023-10-08
+Title:    Faithful Thanksgiving - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Thanksgiving Service
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=RGEh58L-cYE
 ========================================
 
 Description:

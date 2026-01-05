@@ -4,13 +4,14 @@ START OF FILE: 2022-10-02 - October 2, 2022 - Bro Paul Haylett Absolute Faith In
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-02
-Title:   October 2, 2022 - Bro Paul Haylett "Absolute Faith In The Word"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oRQO4w6uL9w
+Date:     2022-10-02
+Title:    October 2, 2022 - Bro Paul Haylett "Absolute Faith In The Word"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=oRQO4w6uL9w
 ========================================
 
 Description:

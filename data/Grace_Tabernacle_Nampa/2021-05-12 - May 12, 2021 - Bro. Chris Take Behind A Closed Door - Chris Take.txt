@@ -4,13 +4,14 @@ START OF FILE: 2021-05-12 - May 12, 2021 - Bro. Chris Take Behind A Closed Door 
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-12
-Title:   May 12, 2021 - Bro. Chris Take "Behind A Closed Door"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FD3u-IEP5ms
+Date:     2021-05-12
+Title:    May 12, 2021 - Bro. Chris Take "Behind A Closed Door"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=FD3u-IEP5ms
 ========================================
 
 Description:

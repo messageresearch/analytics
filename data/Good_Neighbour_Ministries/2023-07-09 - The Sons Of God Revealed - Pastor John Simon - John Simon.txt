@@ -4,13 +4,14 @@ START OF FILE: 2023-07-09 - The Sons Of God Revealed - Pastor John Simon - John 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-09
-Title:   The Sons Of God Revealed - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v5tEN-SVhb4
+Date:     2023-07-09
+Title:    The Sons Of God Revealed - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=v5tEN-SVhb4
 ========================================
 
 Description:

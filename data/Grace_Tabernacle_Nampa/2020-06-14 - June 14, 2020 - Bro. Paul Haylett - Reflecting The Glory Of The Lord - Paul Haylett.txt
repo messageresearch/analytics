@@ -4,13 +4,14 @@ START OF FILE: 2020-06-14 - June 14, 2020 - Bro. Paul Haylett - Reflecting The G
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-14
-Title:   June 14, 2020 - Bro. Paul Haylett - "Reflecting The Glory Of The Lord"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dogQ8v4ECJM
+Date:     2020-06-14
+Title:    June 14, 2020 - Bro. Paul Haylett - "Reflecting The Glory Of The Lord"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=dogQ8v4ECJM
 ========================================
 
 Description:

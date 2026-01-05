@@ -4,13 +4,14 @@ START OF FILE: 2022-12-21 - If There Was No Christmas - Pastor John Simon - John
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-21
-Title:   If There Was No Christmas - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=7xd5U601bZs
+Date:     2022-12-21
+Title:    If There Was No Christmas - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Christmas Program
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=7xd5U601bZs
 ========================================
 
 Description:

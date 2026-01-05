@@ -4,13 +4,14 @@ START OF FILE: 2021-10-06 - October 6, 2021 - Bro. Chris Take That Different Sou
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-06
-Title:   October 6, 2021 - Bro. Chris Take "That Different Sound"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2lIU0cMyo-M
+Date:     2021-10-06
+Title:    October 6, 2021 - Bro. Chris Take "That Different Sound"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=2lIU0cMyo-M
 ========================================
 
 Description:

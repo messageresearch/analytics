@@ -4,13 +4,14 @@ START OF FILE: 2024-09-26 - Only One True God - Pastor Danny Mazzilli - Danny Ma
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-26
-Title:   Only One True God - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YWqatnRxOns
+Date:     2024-09-26
+Title:    Only One True God - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=YWqatnRxOns
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-06-29 - June 29, 2022 - Bro Paul Haylett God Hath Chosen - P
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-29
-Title:   June 29, 2022 - Bro Paul Haylett "God Hath Chosen"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BmvW6KQBwxI
+Date:     2022-06-29
+Title:    June 29, 2022 - Bro Paul Haylett "God Hath Chosen"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=BmvW6KQBwxI
 ========================================
 
 Description:

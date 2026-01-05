@@ -4,13 +4,14 @@ START OF FILE: 2024-10-06 - October 6, 2024 - Bro Paul Haylett Leadership - Paul
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-06
-Title:   October 6, 2024 - Bro Paul Haylett "Leadership"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Wjn0ykUTKnY
+Date:     2024-10-06
+Title:    October 6, 2024 - Bro Paul Haylett "Leadership"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=Wjn0ykUTKnY
 ========================================
 
 Description:

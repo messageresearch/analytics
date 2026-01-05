@@ -4,13 +4,14 @@ START OF FILE: 2025-12-03 - December 3, 2025 - Bro Paul Haylett - Navigating In 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-03
-Title:   December 3, 2025 - Bro Paul Haylett - Navigating In Troubled Times
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bYlEvySYNm0
+Date:     2025-12-03
+Title:    December 3, 2025 - Bro Paul Haylett - Navigating In Troubled Times
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=bYlEvySYNm0
 ========================================
 
 Description:

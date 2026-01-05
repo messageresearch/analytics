@@ -4,13 +4,14 @@ START OF FILE: 2024-04-24 - April 24, 2024 - Bro Chris Take The Book Of Matthew 
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-24
-Title:   April 24, 2024 - Bro Chris Take "The Book Of Matthew"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ysuA8qp4jRI
+Date:     2024-04-24
+Title:    April 24, 2024 - Bro Chris Take "The Book Of Matthew"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=ysuA8qp4jRI
 ========================================
 
 Description:

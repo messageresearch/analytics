@@ -4,13 +4,14 @@ START OF FILE: 2022-08-14 - Fruits On The Tree Of Life - Pastor John Simon - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-14
-Title:   Fruits On The Tree Of Life - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6AGVc5NF1Zc
+Date:     2022-08-14
+Title:    Fruits On The Tree Of Life - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=6AGVc5NF1Zc
 ========================================
 
 Description:

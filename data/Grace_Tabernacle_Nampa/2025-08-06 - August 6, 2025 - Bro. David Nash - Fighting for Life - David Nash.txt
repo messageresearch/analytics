@@ -4,13 +4,14 @@ START OF FILE: 2025-08-06 - August 6, 2025 - Bro. David Nash - Fighting for Life
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-06
-Title:   August 6, 2025 - Bro. David Nash - "Fighting for Life"
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IMqPLU1co-k
+Date:     2025-08-06
+Title:    August 6, 2025 - Bro. David Nash - "Fighting for Life"
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=IMqPLU1co-k
 ========================================
 
 Description:

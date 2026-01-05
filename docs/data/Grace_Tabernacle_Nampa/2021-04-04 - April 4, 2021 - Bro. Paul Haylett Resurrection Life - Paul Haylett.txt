@@ -4,13 +4,14 @@ START OF FILE: 2021-04-04 - April 4, 2021 - Bro. Paul Haylett Resurrection Life 
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-04
-Title:   April 4, 2021 - Bro. Paul Haylett "Resurrection Life"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_Y7MVOaGuv4
+Date:     2021-04-04
+Title:    April 4, 2021 - Bro. Paul Haylett "Resurrection Life"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Easter Program
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=_Y7MVOaGuv4
 ========================================
 
 Description:

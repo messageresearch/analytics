@@ -4,13 +4,14 @@ START OF FILE: 2024-03-17 - Ordination Celebration - Pastor Danny Mazzilli. - Da
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-17
-Title:   Ordination Celebration - Pastor Danny Mazzilli.
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hWXI6e3MCo0
+Date:     2024-03-17
+Title:    Ordination Celebration - Pastor Danny Mazzilli.
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=hWXI6e3MCo0
 ========================================
 
 Description:

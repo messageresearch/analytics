@@ -4,13 +4,14 @@ START OF FILE: 2022-08-21 - Maturity - Minister Kofi Antwi - Kofi Antwi.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-21
-Title:   Maturity - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YbBDu6dF8Zo
+Date:     2022-08-21
+Title:    Maturity - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=YbBDu6dF8Zo
 ========================================
 
 Description:

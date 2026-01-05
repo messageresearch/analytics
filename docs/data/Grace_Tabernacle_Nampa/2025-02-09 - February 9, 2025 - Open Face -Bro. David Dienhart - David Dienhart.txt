@@ -4,13 +4,14 @@ START OF FILE: 2025-02-09 - February 9, 2025 - Open Face -Bro. David Dienhart - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-09
-Title:   February 9, 2025 - "Open Face" -Bro. David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P_b_KG_X6zw
+Date:     2025-02-09
+Title:    February 9, 2025 - "Open Face" -Bro. David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=P_b_KG_X6zw
 ========================================
 
 Description:

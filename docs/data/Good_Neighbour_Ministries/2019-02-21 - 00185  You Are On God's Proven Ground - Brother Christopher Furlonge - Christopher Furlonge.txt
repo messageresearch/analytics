@@ -4,13 +4,14 @@ START OF FILE: 2019-02-21 - 00185  You Are On God's Proven Ground - Brother Chri
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-21
-Title:   00185  You Are On God's Proven Ground - Brother Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nSPBeOSqcyo
+Date:     2019-02-21
+Title:    00185  You Are On God's Proven Ground - Brother Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Song Special
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=nSPBeOSqcyo
 ========================================
 
 Description:

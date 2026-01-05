@@ -4,13 +4,14 @@ START OF FILE: 2023-02-15 - February 15, 2023 - Bro Paul Haylett  Our Journey 3 
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-15
-Title:   February 15, 2023 - Bro Paul Haylett  Our Journey 3 "Our Road to Nineveh"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=euKVTrMGu2M
+Date:     2023-02-15
+Title:    February 15, 2023 - Bro Paul Haylett  Our Journey 3 "Our Road to Nineveh"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=euKVTrMGu2M
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-12-03 - December 3, 2023 - Bro Paul Haylett The Power Of  Pr
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-03
-Title:   December 3, 2023 - Bro Paul Haylett "The Power Of  Prophecy "
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OYUdyVslQKc
+Date:     2023-12-03
+Title:    December 3, 2023 - Bro Paul Haylett "The Power Of  Prophecy "
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=OYUdyVslQKc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-07-28 - July 28, 2021 - Bro. David Dienhart The High Calling
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-28
-Title:   July 28, 2021 - Bro. David Dienhart "The High Calling"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BrOLFcgMhhY
+Date:     2021-07-28
+Title:    July 28, 2021 - Bro. David Dienhart "The High Calling"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=BrOLFcgMhhY
 ========================================
 
 Description:

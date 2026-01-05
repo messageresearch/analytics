@@ -4,13 +4,14 @@ START OF FILE: 2023-02-08 - The Seed Awakening to Perfect Faith - Minister Tim B
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-08
-Title:   The Seed Awakening to Perfect Faith - Minister Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xo8YkTNwmiU
+Date:     2023-02-08
+Title:    The Seed Awakening to Perfect Faith - Minister Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=xo8YkTNwmiU
 ========================================
 
 Description:

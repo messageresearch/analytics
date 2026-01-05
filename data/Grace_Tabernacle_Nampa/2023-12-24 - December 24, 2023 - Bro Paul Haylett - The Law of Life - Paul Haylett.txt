@@ -4,13 +4,14 @@ START OF FILE: 2023-12-24 - December 24, 2023 - Bro Paul Haylett - The Law of Li
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-24
-Title:   December 24, 2023 - Bro Paul Haylett - "The Law of Life"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=izNu6IBKpDs
+Date:     2023-12-24
+Title:    December 24, 2023 - Bro Paul Haylett - "The Law of Life"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=izNu6IBKpDs
 ========================================
 
 Description:

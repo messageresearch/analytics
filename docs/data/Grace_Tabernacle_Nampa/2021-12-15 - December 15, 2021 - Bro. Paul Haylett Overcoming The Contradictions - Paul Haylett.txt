@@ -4,13 +4,14 @@ START OF FILE: 2021-12-15 - December 15, 2021 - Bro. Paul Haylett Overcoming The
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-15
-Title:   December 15, 2021 - Bro. Paul Haylett "Overcoming The Contradictions"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XRSZVqGSJ48
+Date:     2021-12-15
+Title:    December 15, 2021 - Bro. Paul Haylett "Overcoming The Contradictions"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=XRSZVqGSJ48
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-11-01 - November 1, 2020 - Bro. Paul Haylett  True Revelatio
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-01
-Title:   November 1, 2020 - Bro. Paul Haylett " True Revelation Brings IMPLEMENTATION"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xQPxzdUqltM
+Date:     2020-11-01
+Title:    November 1, 2020 - Bro. Paul Haylett " True Revelation Brings IMPLEMENTATION"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=xQPxzdUqltM
 ========================================
 
 Description:

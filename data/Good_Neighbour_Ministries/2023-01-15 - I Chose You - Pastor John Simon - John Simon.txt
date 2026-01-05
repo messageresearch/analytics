@@ -4,13 +4,14 @@ START OF FILE: 2023-01-15 - I Chose You - Pastor John Simon - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-15
-Title:   I Chose You - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4pWbvkAPw4s
+Date:     2023-01-15
+Title:    I Chose You - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=4pWbvkAPw4s
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-02-12 - Come On In Behind The Veil - Pastor John Simon - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-12
-Title:   Come On In Behind The Veil - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gECPy6NySTg
+Date:     2023-02-12
+Title:    Come On In Behind The Veil - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=gECPy6NySTg
 ========================================
 
 Description:

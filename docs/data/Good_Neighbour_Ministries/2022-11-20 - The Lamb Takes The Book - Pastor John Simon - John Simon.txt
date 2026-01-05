@@ -4,13 +4,14 @@ START OF FILE: 2022-11-20 - The Lamb Takes The Book - Pastor John Simon - John S
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-20
-Title:   The Lamb Takes The Book - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RfCuxCJOki4
+Date:     2022-11-20
+Title:    The Lamb Takes The Book - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=RfCuxCJOki4
 ========================================
 
 Description:

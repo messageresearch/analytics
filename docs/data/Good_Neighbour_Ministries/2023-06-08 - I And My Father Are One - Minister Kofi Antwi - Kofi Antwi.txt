@@ -4,13 +4,14 @@ START OF FILE: 2023-06-08 - I And My Father Are One - Minister Kofi Antwi - Kofi
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-08
-Title:   I And My Father Are One - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mFIPqqsiR1M
+Date:     2023-06-08
+Title:    I And My Father Are One - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=mFIPqqsiR1M
 ========================================
 
 Description:

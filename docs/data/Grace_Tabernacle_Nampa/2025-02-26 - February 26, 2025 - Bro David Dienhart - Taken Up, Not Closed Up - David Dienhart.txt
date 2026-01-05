@@ -4,13 +4,14 @@ START OF FILE: 2025-02-26 - February 26, 2025 - Bro David Dienhart - Taken Up, N
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-26
-Title:   February 26, 2025 - Bro David Dienhart - "Taken Up, Not Closed Up"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=35deJGrCMIg
+Date:     2025-02-26
+Title:    February 26, 2025 - Bro David Dienhart - "Taken Up, Not Closed Up"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=35deJGrCMIg
 ========================================
 
 Description:

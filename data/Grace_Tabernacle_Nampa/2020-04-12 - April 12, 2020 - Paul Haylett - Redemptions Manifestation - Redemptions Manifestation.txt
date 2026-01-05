@@ -4,13 +4,14 @@ START OF FILE: 2020-04-12 - April 12, 2020 - Paul Haylett - Redemptions Manifest
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-12
-Title:   April 12, 2020 - Paul Haylett - Redemptions Manifestation
-Speaker: Redemptions Manifestation
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aiscOhrxsRg
+Date:     2020-04-12
+Title:    April 12, 2020 - Paul Haylett - Redemptions Manifestation
+Speaker:  Redemptions Manifestation
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=aiscOhrxsRg
 ========================================
 
 Description:

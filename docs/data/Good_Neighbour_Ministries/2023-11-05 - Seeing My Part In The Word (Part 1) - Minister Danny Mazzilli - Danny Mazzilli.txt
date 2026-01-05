@@ -4,13 +4,14 @@ START OF FILE: 2023-11-05 - Seeing My Part In The Word (Part 1) - Minister Danny
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-05
-Title:   Seeing My Part In The Word (Part 1) - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EBX01i7XLi4
+Date:     2023-11-05
+Title:    Seeing My Part In The Word (Part 1) - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=EBX01i7XLi4
 ========================================
 
 Description:

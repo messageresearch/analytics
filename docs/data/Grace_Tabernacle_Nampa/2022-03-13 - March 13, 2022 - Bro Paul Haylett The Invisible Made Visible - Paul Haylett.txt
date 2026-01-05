@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - March 13, 2022 - Bro Paul Haylett The Invisible Made
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   March 13, 2022 - Bro Paul Haylett "The Invisible Made Visible"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PUXa05Xj_qA
+Date:     2022-03-13
+Title:    March 13, 2022 - Bro Paul Haylett "The Invisible Made Visible"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=PUXa05Xj_qA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-02-01 - God Will Never Fail His Wife - Minister Kofi Antwi -
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-01
-Title:   God Will Never Fail His Wife - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fvl5xlg8D_g
+Date:     2023-02-01
+Title:    God Will Never Fail His Wife - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=fvl5xlg8D_g
 ========================================
 
 Description:

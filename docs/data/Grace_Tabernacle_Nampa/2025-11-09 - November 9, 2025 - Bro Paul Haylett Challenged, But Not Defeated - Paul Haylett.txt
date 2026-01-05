@@ -4,13 +4,14 @@ START OF FILE: 2025-11-09 - November 9, 2025 - Bro Paul Haylett Challenged, But 
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-09
-Title:   November 9, 2025 - Bro Paul Haylett "Challenged, But Not Defeated"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=13v1tZir6Po
+Date:     2025-11-09
+Title:    November 9, 2025 - Bro Paul Haylett "Challenged, But Not Defeated"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=13v1tZir6Po
 ========================================
 
 Description:

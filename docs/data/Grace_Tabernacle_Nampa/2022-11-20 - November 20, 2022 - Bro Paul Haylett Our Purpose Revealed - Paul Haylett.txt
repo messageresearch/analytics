@@ -4,13 +4,14 @@ START OF FILE: 2022-11-20 - November 20, 2022 - Bro Paul Haylett Our Purpose Rev
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-20
-Title:   November 20, 2022 - Bro Paul Haylett "Our Purpose Revealed"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2Dck0aLFR0I
+Date:     2022-11-20
+Title:    November 20, 2022 - Bro Paul Haylett "Our Purpose Revealed"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=2Dck0aLFR0I
 ========================================
 
 Description:

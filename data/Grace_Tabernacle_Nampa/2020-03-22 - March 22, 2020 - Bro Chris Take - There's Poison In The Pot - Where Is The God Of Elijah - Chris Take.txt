@@ -4,13 +4,14 @@ START OF FILE: 2020-03-22 - March 22, 2020 - Bro Chris Take - There's Poison In 
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-22
-Title:   March 22, 2020 - Bro Chris Take - There's Poison In The Pot - "Where Is The God Of Elijah?"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vx9VqEFOjn8
+Date:     2020-03-22
+Title:    March 22, 2020 - Bro Chris Take - There's Poison In The Pot - "Where Is The God Of Elijah?"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=vx9VqEFOjn8
 ========================================
 
 Description:

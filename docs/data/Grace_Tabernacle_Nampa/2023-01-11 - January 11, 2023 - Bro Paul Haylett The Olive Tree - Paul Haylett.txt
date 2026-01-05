@@ -4,13 +4,14 @@ START OF FILE: 2023-01-11 - January 11, 2023 - Bro Paul Haylett The Olive Tree -
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-11
-Title:   January 11, 2023 - Bro Paul Haylett "The Olive Tree"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o02vDlonev0
+Date:     2023-01-11
+Title:    January 11, 2023 - Bro Paul Haylett "The Olive Tree"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=o02vDlonev0
 ========================================
 
 Description:

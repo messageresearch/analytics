@@ -4,13 +4,14 @@ START OF FILE: 2023-04-12 - April 12, 2023 - Bro Paul Haylett Our Road To The Sp
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-12
-Title:   April 12, 2023 - Bro Paul Haylett "Our Road To The Spoken Word"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yP6X2K7cAlY
+Date:     2023-04-12
+Title:    April 12, 2023 - Bro Paul Haylett "Our Road To The Spoken Word"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=yP6X2K7cAlY
 ========================================
 
 Description:

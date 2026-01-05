@@ -4,13 +4,14 @@ START OF FILE: 2023-03-26 - March 26, 2023 - Bro. David Dienhart You Are The Com
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-26
-Title:   March 26, 2023 - Bro. David Dienhart "You Are The Complete Revelation Of The Whole Thing"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cohidbCzFrE
+Date:     2023-03-26
+Title:    March 26, 2023 - Bro. David Dienhart "You Are The Complete Revelation Of The Whole Thing"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=cohidbCzFrE
 ========================================
 
 Description:

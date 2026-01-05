@@ -4,13 +4,14 @@ START OF FILE: 2023-04-22 - April 22, 2023 - Bro George Smith The Book of Acts -
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-22
-Title:   April 22, 2023 - Bro George Smith "The Book of Acts"
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XZtlAM4BJMY
+Date:     2023-04-22
+Title:    April 22, 2023 - Bro George Smith "The Book of Acts"
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=XZtlAM4BJMY
 ========================================
 
 Description:

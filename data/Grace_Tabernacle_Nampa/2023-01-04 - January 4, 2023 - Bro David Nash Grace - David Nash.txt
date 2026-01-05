@@ -4,13 +4,14 @@ START OF FILE: 2023-01-04 - January 4, 2023 - Bro David Nash Grace - David Nash.
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-04
-Title:   January 4, 2023 - Bro David Nash "Grace"
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JrKltRZzkD8
+Date:     2023-01-04
+Title:    January 4, 2023 - Bro David Nash "Grace"
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=JrKltRZzkD8
 ========================================
 
 Description:

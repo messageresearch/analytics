@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - October 26, 2025 - Bro David Dienhart My Heart Is Fi
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   October 26, 2025 - Bro David Dienhart "My Heart Is Fixed"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bGzC0cTlP3U
+Date:     2025-10-26
+Title:    October 26, 2025 - Bro David Dienhart "My Heart Is Fixed"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=bGzC0cTlP3U
 ========================================
 
 Description:

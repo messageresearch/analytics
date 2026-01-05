@@ -4,13 +4,14 @@ START OF FILE: 2023-07-30 - Coming Into His Presence - Pastor John Simon - John 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-30
-Title:   Coming Into His Presence - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XbIBYKIKHjI
+Date:     2023-07-30
+Title:    Coming Into His Presence - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=XbIBYKIKHjI
 ========================================
 
 Description:

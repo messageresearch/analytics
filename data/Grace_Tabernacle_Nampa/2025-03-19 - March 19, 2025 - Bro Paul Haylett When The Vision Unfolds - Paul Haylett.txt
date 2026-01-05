@@ -4,13 +4,14 @@ START OF FILE: 2025-03-19 - March 19, 2025 - Bro Paul Haylett When The Vision Un
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-19
-Title:   March 19, 2025 - Bro Paul Haylett "When The Vision Unfolds"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JdwGAtXqMVY
+Date:     2025-03-19
+Title:    March 19, 2025 - Bro Paul Haylett "When The Vision Unfolds"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=JdwGAtXqMVY
 ========================================
 
 Description:

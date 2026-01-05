@@ -4,13 +4,14 @@ START OF FILE: 2023-03-22 - The Awakening Identity In The Seed - Minister Tim Be
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-22
-Title:   The Awakening Identity In The Seed - Minister Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cyKTQnqIkhw
+Date:     2023-03-22
+Title:    The Awakening Identity In The Seed - Minister Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=cyKTQnqIkhw
 ========================================
 
 Description:

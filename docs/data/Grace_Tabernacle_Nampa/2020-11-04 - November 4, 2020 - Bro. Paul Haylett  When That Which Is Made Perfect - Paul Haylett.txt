@@ -4,13 +4,14 @@ START OF FILE: 2020-11-04 - November 4, 2020 - Bro. Paul Haylett  When That Whic
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-04
-Title:   November 4, 2020 - Bro. Paul Haylett " When That Which Is Made Perfect" "
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BQcEFhGK3Nc
+Date:     2020-11-04
+Title:    November 4, 2020 - Bro. Paul Haylett " When That Which Is Made Perfect" "
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=BQcEFhGK3Nc
 ========================================
 
 Description:

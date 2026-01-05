@@ -4,13 +4,14 @@ START OF FILE: 2022-10-05 - October 5, 2022 - Bro David Dienhart The Faith,  The
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-05
-Title:   October 5, 2022 - Bro David Dienhart "The Faith,  The Substance Of God, The True Believer"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X7JrkVKpQ2s
+Date:     2022-10-05
+Title:    October 5, 2022 - Bro David Dienhart "The Faith,  The Substance Of God, The True Believer"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=X7JrkVKpQ2s
 ========================================
 
 Description:

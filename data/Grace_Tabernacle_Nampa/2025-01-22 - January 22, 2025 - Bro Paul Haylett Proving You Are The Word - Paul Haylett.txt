@@ -4,13 +4,14 @@ START OF FILE: 2025-01-22 - January 22, 2025 - Bro Paul Haylett Proving You Are 
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-22
-Title:   January 22, 2025 - Bro Paul Haylett "Proving You Are The Word"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=V-D5DW8HIEs
+Date:     2025-01-22
+Title:    January 22, 2025 - Bro Paul Haylett "Proving You Are The Word"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=V-D5DW8HIEs
 ========================================
 
 Description:

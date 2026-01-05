@@ -4,13 +4,14 @@ START OF FILE: 2024-02-11 - All Things Good With God Part 3 (I'm Doing A New Thi
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-11
-Title:   All Things Good With God Part 3 (I'm Doing A New Thing Part 5) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=W5Go5_VPcrc
+Date:     2024-02-11
+Title:    All Things Good With God Part 3 (I'm Doing A New Thing Part 5) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=W5Go5_VPcrc
 ========================================
 
 Description:

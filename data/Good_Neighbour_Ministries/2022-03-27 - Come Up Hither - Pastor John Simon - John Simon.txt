@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - Come Up Hither - Pastor John Simon - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   Come Up Hither - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5V1ZbIbmlTE
+Date:     2022-03-27
+Title:    Come Up Hither - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=5V1ZbIbmlTE
 ========================================
 
 Description:

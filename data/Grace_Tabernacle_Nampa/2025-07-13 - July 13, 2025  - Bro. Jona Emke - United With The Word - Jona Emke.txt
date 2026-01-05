@@ -4,13 +4,14 @@ START OF FILE: 2025-07-13 - July 13, 2025  - Bro. Jona Emke - United With The Wo
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-13
-Title:   July 13, 2025  - Bro. Jona Emke - "United With The Word"
-Speaker: Jona Emke
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AglCZPIdgnw
+Date:     2025-07-13
+Title:    July 13, 2025  - Bro. Jona Emke - "United With The Word"
+Speaker:  Jona Emke
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=AglCZPIdgnw
 ========================================
 
 Description:

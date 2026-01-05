@@ -4,13 +4,14 @@ START OF FILE: 2020-07-26 - July 26, 2020 - Bro. Paul Haylett Making Our Claim, 
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-26
-Title:   July 26, 2020 - Bro. Paul Haylett "Making Our Claim, Not A Portion, But The Whole"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P9sxUQIoW5I
+Date:     2020-07-26
+Title:    July 26, 2020 - Bro. Paul Haylett "Making Our Claim, Not A Portion, But The Whole"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=P9sxUQIoW5I
 ========================================
 
 Description:

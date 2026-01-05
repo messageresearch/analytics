@@ -4,13 +4,14 @@ START OF FILE: 2023-12-06 - December 6, 2023 - Bro Paul Haylett Looking To The U
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-06
-Title:   December 6, 2023 - Bro Paul Haylett "Looking To The Unseen"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AfPLMhWMEzo
+Date:     2023-12-06
+Title:    December 6, 2023 - Bro Paul Haylett "Looking To The Unseen"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=AfPLMhWMEzo
 ========================================
 
 Description:

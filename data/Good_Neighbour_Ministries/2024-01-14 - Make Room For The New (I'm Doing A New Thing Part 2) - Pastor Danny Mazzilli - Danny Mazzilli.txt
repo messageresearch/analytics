@@ -4,13 +4,14 @@ START OF FILE: 2024-01-14 - Make Room For The New (I'm Doing A New Thing Part 2)
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-14
-Title:   Make Room For The New (I'm Doing A New Thing Part 2) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qFEHr2INin8
+Date:     2024-01-14
+Title:    Make Room For The New (I'm Doing A New Thing Part 2) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=qFEHr2INin8
 ========================================
 
 Description:

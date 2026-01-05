@@ -4,13 +4,14 @@ START OF FILE: 2024-07-04 - Living A Victorious Life In Christ - Pastor Danny Ma
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-04
-Title:   Living A Victorious Life In Christ - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DABogiWUOKI
+Date:     2024-07-04
+Title:    Living A Victorious Life In Christ - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=DABogiWUOKI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-12-11 - December 11, 2024 - Bro Paul Haylett - No More Sense
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-11
-Title:   December 11, 2024 - Bro Paul Haylett - "No More Sense Than To Believe"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wMcDKM9uSSY
+Date:     2024-12-11
+Title:    December 11, 2024 - Bro Paul Haylett - "No More Sense Than To Believe"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Short Service
+Duration: 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=wMcDKM9uSSY
 ========================================
 
 Description:

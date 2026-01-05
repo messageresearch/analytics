@@ -4,13 +4,14 @@ START OF FILE: 2022-09-28 - September 28, 2022 - Bro Chris Take Power of True Re
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-28
-Title:   September 28, 2022 - Bro Chris Take "Power of True Religion"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=36tqExzJIP4
+Date:     2022-09-28
+Title:    September 28, 2022 - Bro Chris Take "Power of True Religion"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=36tqExzJIP4
 ========================================
 
 Description:

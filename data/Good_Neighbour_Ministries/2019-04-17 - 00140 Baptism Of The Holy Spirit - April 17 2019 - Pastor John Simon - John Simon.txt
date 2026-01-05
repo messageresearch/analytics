@@ -4,13 +4,14 @@ START OF FILE: 2019-04-17 - 00140 Baptism Of The Holy Spirit - April 17 2019 - P
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-17
-Title:   00140 Baptism Of The Holy Spirit - April 17 2019 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0qgKSSJ5zlY
+Date:     2019-04-17
+Title:    00140 Baptism Of The Holy Spirit - April 17 2019 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Baptism Service
+Duration: 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=0qgKSSJ5zlY
 ========================================
 
 TRANSCRIPT

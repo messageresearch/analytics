@@ -4,13 +4,14 @@ START OF FILE: 2024-12-15 - We’re Going Home, A Different Way - Minister John 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-15
-Title:   We’re Going Home, A Different Way - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m_844HsN67g
+Date:     2024-12-15
+Title:    We’re Going Home, A Different Way - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=m_844HsN67g
 ========================================
 
 Description:

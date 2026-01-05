@@ -4,13 +4,14 @@ START OF FILE: 2021-02-07 - February 7, 2021 - Bro. George Smith Book Of Acts - 
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-07
-Title:   February 7, 2021 - Bro. George Smith "Book Of Acts"
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t6S4wyWSEkg
+Date:     2021-02-07
+Title:    February 7, 2021 - Bro. George Smith "Book Of Acts"
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=t6S4wyWSEkg
 ========================================
 
 Description:

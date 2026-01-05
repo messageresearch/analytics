@@ -4,13 +4,14 @@ START OF FILE: 2023-11-23 - The Thought of God - Minister Philip Bobie-Frimpong 
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-23
-Title:   The Thought of God - Minister Philip Bobie-Frimpong
-Speaker: Philip Bobie-Frimpong
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BsVl4p-ZCd0
+Date:     2023-11-23
+Title:    The Thought of God - Minister Philip Bobie-Frimpong
+Speaker:  Philip Bobie-Frimpong
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=BsVl4p-ZCd0
 ========================================
 
 Description:

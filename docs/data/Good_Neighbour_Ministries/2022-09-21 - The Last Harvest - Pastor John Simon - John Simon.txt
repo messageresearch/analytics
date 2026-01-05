@@ -4,13 +4,14 @@ START OF FILE: 2022-09-21 - The Last Harvest - Pastor John Simon - John Simon.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-21
-Title:   The Last Harvest - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TRW5PZhAnT4
+Date:     2022-09-21
+Title:    The Last Harvest - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=TRW5PZhAnT4
 ========================================
 
 Description:

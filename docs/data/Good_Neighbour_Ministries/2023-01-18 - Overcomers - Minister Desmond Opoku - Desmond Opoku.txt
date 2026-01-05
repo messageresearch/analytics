@@ -4,13 +4,14 @@ START OF FILE: 2023-01-18 - Overcomers - Minister Desmond Opoku - Desmond Opoku.
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-18
-Title:   Overcomers - Minister Desmond Opoku
-Speaker: Desmond Opoku
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OZljJXoAvw8
+Date:     2023-01-18
+Title:    Overcomers - Minister Desmond Opoku
+Speaker:  Desmond Opoku
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=OZljJXoAvw8
 ========================================
 
 Description:

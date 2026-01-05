@@ -4,13 +4,14 @@ START OF FILE: 2022-08-28 - August 28, 2022 - Bro Paul Haylett Anchored - Paul H
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-28
-Title:   August 28, 2022 - Bro Paul Haylett "Anchored"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qDv9SuU4hfw
+Date:     2022-08-28
+Title:    August 28, 2022 - Bro Paul Haylett "Anchored"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 3h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=qDv9SuU4hfw
 ========================================
 
 Description:

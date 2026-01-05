@@ -4,13 +4,14 @@ START OF FILE: 2024-06-09 - Give Me A Man - Bro Bob Roark, Retirement Celebratio
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-09
-Title:   Give Me A Man - Bro Bob Roark, Retirement Celebration 2024
-Speaker: Bob Roark
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wj457acGpuY
+Date:     2024-06-09
+Title:    Give Me A Man - Bro Bob Roark, Retirement Celebration 2024
+Speaker:  Bob Roark
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 3h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=wj457acGpuY
 ========================================
 
 Description:

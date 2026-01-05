@@ -4,13 +4,14 @@ START OF FILE: 2021-10-10 - October 10, 2021 - Bro. David Dienhart Positionally 
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-10
-Title:   October 10, 2021 - Bro. David Dienhart "Positionally Placed In God"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2fWLM8ToGrM
+Date:     2021-10-10
+Title:    October 10, 2021 - Bro. David Dienhart "Positionally Placed In God"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=2fWLM8ToGrM
 ========================================
 
 Description:

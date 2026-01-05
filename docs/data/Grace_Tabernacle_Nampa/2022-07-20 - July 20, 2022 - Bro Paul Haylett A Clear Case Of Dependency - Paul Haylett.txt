@@ -4,13 +4,14 @@ START OF FILE: 2022-07-20 - July 20, 2022 - Bro Paul Haylett A Clear Case Of Dep
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-20
-Title:   July 20, 2022 - Bro Paul Haylett "A Clear Case Of Dependency"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IiS2YKhBUF0
+Date:     2022-07-20
+Title:    July 20, 2022 - Bro Paul Haylett "A Clear Case Of Dependency"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Short Service
+Duration: 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=IiS2YKhBUF0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-01-25 - January 25, 2023 - Bro Paul Haylett Everything In It
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-25
-Title:   January 25, 2023 - Bro Paul Haylett "Everything In It's Correct Place"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_dT1BJ2Hj2g
+Date:     2023-01-25
+Title:    January 25, 2023 - Bro Paul Haylett "Everything In It's Correct Place"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=_dT1BJ2Hj2g
 ========================================
 
 Description:

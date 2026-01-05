@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - The Open Book (Ready To Be Revealed In The Last Time
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   The Open Book (Ready To Be Revealed In The Last Time - Part 3) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ggu95YEaPlI
+Date:     2024-12-01
+Title:    The Open Book (Ready To Be Revealed In The Last Time - Part 3) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ggu95YEaPlI
 ========================================
 
 Description:

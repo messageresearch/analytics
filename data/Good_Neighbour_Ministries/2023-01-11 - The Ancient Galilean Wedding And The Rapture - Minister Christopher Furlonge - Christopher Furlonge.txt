@@ -4,13 +4,14 @@ START OF FILE: 2023-01-11 - The Ancient Galilean Wedding And The Rapture - Minis
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-11
-Title:   The Ancient Galilean Wedding And The Rapture - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Wedding
-Language:English
-URL:     https://www.youtube.com/watch?v=tlHoLNHj4s4
+Date:     2023-01-11
+Title:    The Ancient Galilean Wedding And The Rapture - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Wedding
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=tlHoLNHj4s4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-03-24 - 00188 00186 Are You Converted March 24 2019 - Bro Le
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-24
-Title:   00188 00186 Are You Converted? March 24 2019 - Bro Lewis Nelson
-Speaker: Lewis Nelson
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x_9lV0dqQ9o
+Date:     2019-03-24
+Title:    00188 00186 Are You Converted? March 24 2019 - Bro Lewis Nelson
+Speaker:  Lewis Nelson
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=x_9lV0dqQ9o
 ========================================
 
 TRANSCRIPT

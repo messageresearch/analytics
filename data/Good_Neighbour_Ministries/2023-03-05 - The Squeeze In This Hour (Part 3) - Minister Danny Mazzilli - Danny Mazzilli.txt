@@ -4,13 +4,14 @@ START OF FILE: 2023-03-05 - The Squeeze In This Hour (Part 3) - Minister Danny M
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-05
-Title:   The Squeeze In This Hour (Part 3) - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kd5fwmZlzcc
+Date:     2023-03-05
+Title:    The Squeeze In This Hour (Part 3) - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=kd5fwmZlzcc
 ========================================
 
 Description:

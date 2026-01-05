@@ -4,13 +4,14 @@ START OF FILE: 2025-04-27 - The Book of Redemption in Manifestation  - Minister 
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-27
-Title:   The Book of Redemption in Manifestation  - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dILHzaMy8R4
+Date:     2025-04-27
+Title:    The Book of Redemption in Manifestation  - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=dILHzaMy8R4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-06-30 - June 30, 2021 - Bro. Paul Haylett I Am What I Was Pr
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-30
-Title:   June 30, 2021 - Bro. Paul Haylett "I Am What I Was Prophesied To Be"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YNdWgtukpRs
+Date:     2021-06-30
+Title:    June 30, 2021 - Bro. Paul Haylett "I Am What I Was Prophesied To Be"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=YNdWgtukpRs
 ========================================
 
 Description:

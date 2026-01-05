@@ -4,13 +4,14 @@ START OF FILE: 2021-02-06 - February 6, 2021 - Bro. George Smith - Questions And
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-06
-Title:   February 6, 2021 - Bro. George Smith - Questions And Answers
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BEQTA8I_kR0
+Date:     2021-02-06
+Title:    February 6, 2021 - Bro. George Smith - Questions And Answers
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Q&A Session
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=BEQTA8I_kR0
 ========================================
 
 Description:

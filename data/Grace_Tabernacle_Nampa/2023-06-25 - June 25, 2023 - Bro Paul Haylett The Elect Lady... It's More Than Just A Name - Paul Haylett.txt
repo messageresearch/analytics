@@ -4,13 +4,14 @@ START OF FILE: 2023-06-25 - June 25, 2023 - Bro Paul Haylett The Elect Lady... I
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-25
-Title:   June 25, 2023 - Bro Paul Haylett "The Elect Lady... It's More Than Just A Name"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jNX2BUxeTbE
+Date:     2023-06-25
+Title:    June 25, 2023 - Bro Paul Haylett "The Elect Lady... It's More Than Just A Name"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=jNX2BUxeTbE
 ========================================
 
 Description:

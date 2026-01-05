@@ -1,0 +1,2743 @@
+################################################################################
+TIMESTAMPED TRANSCRIPT
+################################################################################
+Source: 2023-10-01 - October 1, 2023 - Bro Paul Haylett The Measure Of Trust - Paul Haylett.txt
+Video ID: HUSUiVaY_cE
+Segments: 2731
+URL: https://www.youtube.com/watch?v=HUSUiVaY_cE
+================================================================================
+Click any timestamp to jump to that point in the video.
+Format: [M:SS] or [H:MM:SS] followed by transcript text.
+================================================================================
+
+[0:00] [Music]
+[0:01] foreign
+[0:03] [Music]
+[0:40] foreign
+[1:15] foreign
+[1:31] [Music]
+[1:43] thank you
+[1:46] [Music]
+[2:24] foreign
+[2:27] foreign
+[2:30] [Music]
+[2:58] foreign
+[3:05] [Music]
+[3:37] thank you
+[3:47] thank you
+[3:53] [Music]
+[4:11] foreign
+[4:16] [Music]
+[4:40] foreign
+[4:50] foreign
+[4:52] [Music]
+[5:25] thank you
+[5:29] any new power to run in this race
+[5:37] oh I long to be shot in with
+[5:43] god let's stand brother sister and sing
+[5:46] it again
+[5:48] shut it
+[5:49] [Music]
+[5:52] in a
+[5:54] a secret place Hallelujah
+[6:03] be holding his faith
+[6:07] I'm gaining new power
+[6:12] to run in this race oh I long to be shot
+[6:21] in with God hallelujah don't you love
+[6:26] him this morning I'd like to welcome
+[6:28] everyone that's came
+[6:31] came out this morning and those on the
+[6:33] internet
+[6:35] got a visitor back there in the back
+[6:37] welcome brother sister glad to have you
+[6:40] back
+[6:42] brother Chris and sister Kristen
+[6:44] been gone so long they seem like it
+[6:46] praise God
+[6:48] you love him this morning
+[6:51] what have you come for
+[6:53] we've come for one thing
+[6:56] that's not to be seen of one another but
+[6:58] to be seen to see him
+[7:01] [Music]
+[7:02] thank you Lord thank you Lord
+[7:05] Hallelujah
+[7:08] sing that chorus one more time with me
+[7:10] and I want to open in prayer
+[7:11] [Music]
+[7:16] oh shut in
+[7:19] with
+[7:21] God in a sea
+[7:24] secret
+[7:26] place
+[7:28] there in your spirit
+[7:32] be holding his face I'm gaining new
+[7:40] power
+[7:42] to run in this race I long to be shot in
+[7:52] with God Heavenly Father
+[7:56] as we come now Lord in your presence
+[7:59] we ask father that you just move upon
+[8:01] this congregation upon every heart and
+[8:04] soul that's sitting here today
+[8:05] [Music]
+[8:06] may you just move on each one and may we
+[8:08] not leave here the same Lord but may we
+[8:10] go like those coming from Emmaus did not
+[8:13] our hearts burn within us Lord
+[8:15] as you speak with us along the way
+[8:20] thank you Lord
+[8:22] thank you Lord we give you the praise
+[8:25] As we sing and Worship You Lord may you
+[8:28] be glorified may you be lifted up we
+[8:31] pray
+[8:32] Hallelujah Hallelujah in Jesus name Amen
+[8:36] brother sister you may be said it seated
+[8:38] sorry
+[8:41] 9.95 brother
+[8:43] Shout to the Lord
+[8:45] all the Earth Proclaim
+[8:47] [Music]
+[8:53] my Jesus
+[8:56] my Savior Lord there is none like you
+[9:03] all of my days
+[9:06] all of my
+[9:08] no wonders of your
+[9:11] Mighty love
+[9:16] oh my comfort
+[9:19] my shelter the power of refuge and
+[9:24] strength let every breath all that I am
+[9:30] never cease to worship
+[9:35] you oh Shout to the Lord all the Earth
+[9:40] let us sing
+[9:42] power and Majesty praise to the king
+[9:47] mountains bow down and seas will Roar at
+[9:53] the sound
+[9:54] up your name I'll sing for Joy at the
+[10:00] work of your hands forever I love you
+[10:04] forever I stand nothing compares to the
+[10:10] promise I have in you
+[10:18] my Jesus
+[10:20] my Savior Lord there is none like you
+[10:26] all of my takes I want to praise the
+[10:31] wonders of your Mighty love
+[10:35] [Music]
+[10:38] my comfort oh my shelter my tower of
+[10:43] refuge and strength let every breath oh
+[10:48] all that I am never cease to worship you
+[10:56] Shout to the Lord all the Earth let us
+[11:00] sing
+[11:03] praise to the king mountains bowed down
+[11:08] and the Seas will Roar at the sound of
+[11:13] your name
+[11:14] oh I'll sing for Joy at the work of your
+[11:19] hands forever I love you forever I stand
+[11:25] nothing compares to the promise I have
+[11:29] in you oh Shout to the Lord
+[11:36] shout to him
+[11:37] Hallelujah
+[11:41] mountains bow down and the Seas will
+[11:45] Roar at the sound of your name
+[11:50] I'll sing for Joy at the work of your
+[11:54] hands forever I love you forever I'll
+[11:59] Stand nothing compares to the promise I
+[12:04] have in you
+[12:07] Hallelujah
+[12:09] oh wherever I go number 64 Brothers
+[12:17] oh wherever I go I'll praise Him
+[12:23] wherever I can all praise him for his
+[12:29] love oh it surrounds me like a sea
+[12:37] I'll praise the name of Jesus lift up
+[12:43] the name
+[12:45] of Jesus for the name
+[12:50] of Jesus lifted
+[12:53] me
+[12:55] oh wherever I go I'll praise him
+[13:01] whenever I can
+[13:04] I'll praise him for his love oh it
+[13:09] surrounds me like the sea
+[13:15] I'll praise the name oh of Jesus and
+[13:20] lift up the name
+[13:23] of Jesus for the name
+[13:28] of Jesus lifted me that's who the bride
+[13:32] is brother sister
+[13:34] it's Jesus Christ on Earth
+[13:37] walking in shoe leather on Earth today
+[13:41] praise be to God what manner of person
+[13:43] are we to be
+[13:44] [Music]
+[13:46] oh the move is on 66.
+[13:54] the move is on my Lord the move is on
+[13:59] the move is on my Lord the move is on
+[14:06] hear the Russell in the mulberry trees
+[14:10] and I know I know I know the move is on
+[14:14] oh so move on brother move on sister
+[14:20] this is the moving day oh just move a
+[14:26] little closer to where the streams are
+[14:29] flowing move on brother move on move is
+[14:36] on oh my Lord the move is on the move is
+[14:41] on my Lord the move is on
+[14:45] I can hear the Russell in the mulberry
+[14:49] trees and I know I know I know the move
+[14:52] is on so move on my brother and move on
+[14:58] sister
+[15:05] move a little closer to where the
+[15:08] streams are flowing move on brother move
+[15:12] on hallelujah hallelujah
+[15:17] praise God
+[15:21] number 53
+[15:24] oh I love him better every day
+[15:30] oh I love him better every day all close
+[15:36] by his side
+[15:38] I will abide I love him better every d a
+[15:45] y o I love him better every dick hey why
+[15:51] I love him better everyday
+[15:55] [Music]
+[16:04] why you young children I want you to
+[16:07] sing it like that
+[16:09] older adults too that's okay
+[16:13] how many you older ones remember that
+[16:15] one at Sunday school
+[16:16] [Music]
+[16:20] it's the way they taught it to us I love
+[16:21] him better every day
+[16:24] I remember that saying it young children
+[16:27] I want to see your lips moving I love
+[16:29] him better every d a y I love them
+[16:35] better every day
+[16:39] close by his side yes I love Idol I love
+[16:45] him better every day why yes I love him
+[16:51] better every day
+[16:54] I love him better every day oh close by
+[17:00] his side I will abide I love him better
+[17:06] every day
+[17:09] wait you know just simplicity
+[17:13] God is simple
+[17:17] the more we realize that
+[17:19] [Music]
+[17:21] the more you'll become like him
+[17:25] he's not something far off brother says
+[17:27] he's just right here
+[17:29] [Music]
+[17:34] Hallelujah
+[17:37] oh I can say so much
+[17:40] thank you Lord
+[17:43] number 406 Brothers
+[17:47] when the redeemed are gathering in we're
+[17:50] going to sing this and we're going to
+[17:51] sing another one that we're going to
+[17:52] take the prayer request
+[17:54] oh
+[17:59] you know these are just simple little
+[18:01] choruses brother sister but
+[18:08] they're old choruses but they mean a lot
+[18:13] Hallelujah
+[18:16] oh I'm thinking of the Rapture in our
+[18:20] blessed home on high Winery
+[18:24] our gathering in oh how will praise
+[18:31] City in the sky when the redeem our
+[18:36] gathering in
+[18:38] oh and the
+[18:40] redeemed our gathering in it all washed
+[18:45] like snow
+[18:48] [Music]
+[18:50] shout and how we'll sing oh when the
+[18:56] redeemed our gathering in there will be
+[19:01] a grateful session over on the streets
+[19:04] of gold in the redeem
+[19:08] [Music]
+[19:24] oh what a day that'll be Lord
+[19:30] oh how will shout and how we'll sing Oh
+[19:36] and redeem our gathering in
+[19:41] Saints will sing Redemption story with
+[19:44] their voices clear and strong when to
+[19:47] redeemed
+[19:48] our gathering and do it right now
+[19:52] angels all will listen for they cannot
+[19:56] join that song when redeemed or
+[20:00] gathering in no that's for you and I
+[20:02] when reading themed our gathering in
+[20:07] oh wash like snow
+[20:10] every from all
+[20:12] [Music]
+[20:15] we'll sing Oh and
+[20:19] redeemed our gathering in and the Savior
+[20:24] will give orders to prepare the banquet
+[20:27] board win the redeem
+[20:30] our gathering in and we'll hear his
+[20:35] invitation come you blessed of the Lord
+[20:38] when
+[20:40] redeemed our gathering in oh when the
+[20:45] redeemed Hallelujah gathering in oh wash
+[20:50] like snow and free from all sin I will
+[20:55] shout
+[20:57] and how we'll sing a winery Dean our
+[21:03] gathering in oh when redeemed yes our
+[21:08] gathering in
+[21:15] I will shout
+[21:17] and I will sing oh when the
+[21:22] redeemed our gathering in praise God
+[21:27] praise God
+[21:29] [Music]
+[21:32] amen get me number 360 brother
+[21:38] oh in Jesus name sang the course we
+[21:44] Press On
+[21:46] [Music]
+[21:49] press into it
+[21:51] in Jesus name
+[21:55] we Press On
+[21:59] and On oh dear lord
+[22:03] with the
+[22:06] prize
+[22:08] clear before our eyes
+[22:14] we find the strength
+[22:18] to press on get in this word then you
+[22:22] find the strength to press on
+[22:25] bring up the
+[22:29] foreign
+[22:32] you know the court you know the verses
+[22:35] Sister Sarah no
+[22:38] I do but go back to him I think I do
+[22:42] when the valley is deep
+[22:47] when the mountains are steep
+[22:51] when the body is
+[22:55] weary
+[22:57] when we stumble and fall
+[23:02] when the choices are hard
+[23:07] when we're battered and scarred
+[23:12] when we've spent our
+[23:15] resources
+[23:17] when we've given our own oh then here it
+[23:22] is
+[23:23] in Jesus
+[23:26] name we Press On
+[23:30] [Music]
+[23:34] oh in Jesus name
+[23:39] we Press On
+[23:42] and On oh dear lord
+[23:47] with the prize
+[23:51] clear before our eyes
+[23:58] we find the strength
+[24:01] to press on
+[24:05] thank you
+[24:07] we have heard from our Lord
+[24:13] the call of Malachi for
+[24:18] our hearts are
+[24:21] rejoicing
+[24:23] for what we have in store hallelujah
+[24:28] what have we been given
+[24:30] we are lonesome for home
+[24:36] and the Saints who've gone on
+[24:41] to be changed in a moment
+[24:46] and walk through Heaven's Door
+[24:51] more
+[24:52] oh and Jesus
+[24:55] name we Press On
+[25:02] oh in Jesus name we Press On
+[25:10] and On oh dear lord with the prize
+[25:19] oh here before
+[25:22] our eyes
+[25:26] we find the strength
+[25:30] to press on am I singing it too high am
+[25:34] I singing it too high Maybe
+[25:37] oh in
+[25:39] words Jesus name we Press On
+[25:49] in Jesus name
+[25:53] we Press On
+[25:59] oh dear Lord with the prize
+[26:05] clear before our eyes
+[26:10] eyes we find his strength
+[26:15] to press on we're going to take the
+[26:18] prayer requests
+[26:20] in Jesus name
+[26:23] the name above all names
+[26:28] always
+[26:30] [Music]
+[26:32] Jesus name keep pressing Little Lily
+[26:36] it's
+[26:37] on and on
+[26:41] dear Lord with the prize
+[26:45] oh that's clear before our eyes
+[26:53] we find the strength
+[26:56] to press on
+[27:00] praise God
+[27:03] let's remember the three sisters that
+[27:05] are in need of prayer for cancer issues
+[27:10] remember Sister April
+[27:13] she's away
+[27:15] another country keep her in prayer
+[27:18] [Music]
+[27:21] and remember the Saints in North Idaho
+[27:24] foreign
+[27:26] also
+[27:27] [Music]
+[27:30] of course the ones that on the internet
+[27:33] for science is their conscience my
+[27:36] cousin Montana
+[27:39] and his wife
+[27:41] any unspoken prayer requests
+[27:44] by uplifted hands
+[27:48] God knows the needs brother sister
+[27:50] [Music]
+[27:53] he just said it pleases them that we ask
+[27:56] Why Don't We Stand today
+[27:59] brother Chris you want to come up
+[28:01] [Music]
+[28:04] hallelujah hallelujah
+[28:10] man's good to be home it's better hits
+[28:13] Heavenly Father Lord Jesus we thank you
+[28:15] Lord that we have you to reach out to
+[28:18] Lord Jesus and father we thank you that
+[28:20] we have the desire to reach out Lord
+[28:22] something inside of us connected with
+[28:25] Glory when you came down to us Lord
+[28:27] Jesus we thank you for that that is the
+[28:30] biggest thing we are thankful for every
+[28:31] day
+[28:33] Lord a heart that desires to serve you I
+[28:36] prayed for these needs Lord that have
+[28:38] been brought this morning Lord Jesus you
+[28:40] know the our sisters who are fighting
+[28:42] cancer still Lord we're just claiming
+[28:45] that Victory Lord Jesus
+[28:47] father every day they give you glory is
+[28:49] Another Day of Victory though Lord
+[28:51] so I pray you continue to give them the
+[28:53] strength Lord Jesus May abuse
+[28:55] the Saints up in Sandpoint Lord this
+[28:57] morning may you bless them
+[28:59] brother Prashant sister comes from me
+[29:01] continue to be their support Lord each
+[29:03] and every one
+[29:05] we ask that you just bless all these
+[29:07] things Lord may you speak to our hearts
+[29:09] this morning may you speak to the
+[29:10] speaker Lord and we just ask it you
+[29:12] would just bless your word this morning
+[29:15] Lord we thank you Father we love you we
+[29:17] appreciate you in Jesus Christ's name we
+[29:20] pray amen
+[29:25] we just like to welcome brother Adrian
+[29:27] too and his family with us this morning
+[29:28] brother glad to have you with us
+[29:31] Hallelujah
+[29:34] [Music]
+[29:40] number 99 Brothers
+[29:45] [Music]
+[29:52] oh this is the evening time
+[29:58] oh it's later than you think
+[30:04] and the brightest
+[30:07] preparing now
+[30:09] for her Lord to me
+[30:16] oh and all things are ready now
+[30:22] and the bride grew my head thank you
+[30:26] Lord
+[30:28] he that hath an ear to hear the evening
+[30:33] time is here
+[30:39] all this is the evening time
+[30:44] and it's later than you think
+[30:49] for the brightest
+[30:52] preparing now
+[30:54] for her Lord to me
+[31:01] and all things are ready now
+[31:06] for the bridegroom I hear that's the
+[31:10] word
+[31:11] for he that hath an ear to hear the
+[31:17] evening
+[31:18] time is here
+[31:23] we didn't have any specials today did we
+[31:30] sing that one more time this is the
+[31:34] evening time four it's later than you
+[31:39] think
+[31:42] and the brightest
+[31:45] preparing now for her Lord to me
+[31:53] and all things are ready now
+[31:58] the bride grew my hair
+[32:04] than he that had been here to hear
+[32:08] evening time is here
+[32:13] here
+[32:14] Hallelujah
+[32:16] let's just all stand as well
+[32:19] the Paul you go ahead and prepare to
+[32:20] come
+[32:26] number 285 brother
+[32:28] [Music]
+[32:32] oh Lord
+[32:35] prepare me
+[32:38] to be a sanctuary
+[32:42] [Music]
+[32:45] here and
+[32:47] holy
+[32:49] oh tried and true
+[32:56] with
+[32:58] Thanksgiving
+[33:01] I'll be a living
+[33:06] sanctuary
+[33:11] All For You
+[33:16] oh Lord I'm
+[33:20] willing
+[33:21] to be a sanctuary
+[33:26] hurry
+[33:28] here and
+[33:31] holy
+[33:33] and I'm tried and true
+[33:39] with Thanksgiving
+[33:44] I'll be a living
+[33:50] thank you Mary
+[33:53] [Music]
+[33:56] for you so Lord
+[34:00] oh Lord
+[34:03] prepare me thank you Lord
+[34:07] truth
+[34:22] with
+[34:24] Thanksgiving
+[34:27] I'll be your living
+[34:32] sanctuary
+[34:34] [Music]
+[34:35] every
+[34:38] four
+[34:44] what a privilege
+[34:46] amen what a blessing God has given us
+[34:48] that we can today stand
+[34:51] with the acknowledgment and God wants us
+[34:54] to actually be confident enough to
+[34:56] acknowledge and say I am his Sanctuary
+[34:59] amen not just say well if I was worthy
+[35:03] if I could this if I could that stand
+[35:05] with confidence to say and say God chose
+[35:08] me to fill this position and if he chose
+[35:11] me to fill this position then I will be
+[35:14] able to amen I don't have to go through
+[35:17] life it's almost like a complex Saints
+[35:20] but it's like Satan has has kind of
+[35:23] fooled us that we could go through life
+[35:24] going well I would do something for the
+[35:27] Lord if I was worthy if I could if I had
+[35:31] anything to offer
+[35:33] but the word says he's given us a voice
+[35:36] amen we can offer our voice to him
+[35:39] the word says that he's given us hands
+[35:42] to be lifted to praise him we can just
+[35:45] lift our hands and fulfill the word of
+[35:47] God and his feet
+[35:50] amen have come into our feet
+[35:53] and he says if we could just walk in the
+[35:56] way of righteousness that he would be
+[35:58] with us so let's just walk and you'll
+[36:01] find the word says that he would lead us
+[36:04] and guide us into all truth amen so it's
+[36:08] not like I've got to search this out
+[36:10] I've got to find this I've got to just
+[36:13] let him have his way I've got to just
+[36:15] give myself and let God's will be done
+[36:18] in me I say God bless you to each and
+[36:21] every one amen so good to see each and
+[36:24] every one of you today amen
+[36:29] it's so good to have brother Adrian and
+[36:31] his family
+[36:32] it's uh it's a straighter God bless you
+[36:35] your lovely children's you know it's
+[36:38] just uh it's just a real privilege God
+[36:40] lets us be a part of this great family
+[36:44] um
+[36:45] just bring greetings to you from Brother
+[36:47] Abel masonga I don't know I think I
+[36:51] posted it my week's been a whirlwind
+[36:53] Saints amen I it's on WhatsApp okay I
+[36:58] just haven't been feeling well and I
+[37:00] thank you all for your prayers I think
+[37:02] they called it delirium
+[37:04] and you just get up in the morning and
+[37:06] you just say I would call in I told
+[37:08] sister Jerry if I had anybody to call I
+[37:12] would call in sick today
+[37:14] but there's no one to call so we just
+[37:16] got up and and I believe it was the
+[37:18] prayer of the Saints you've just held me
+[37:20] in the presence of God and given us
+[37:22] strength and we're feeling much better
+[37:24] so I
+[37:26] services on Saturday and Sunday with
+[37:29] brother Abel we might have a Saturday
+[37:31] night service so November 4 and 5 is
+[37:35] what we'll tentatively announce right
+[37:36] now and
+[37:38] um just visiting with brother Andrew
+[37:40] Glover this morning uh just for a few
+[37:43] minutes and uh uh just bring greetings
+[37:46] to you from Brother Andrew I've been
+[37:49] thinking about him a lot lately and just
+[37:52] this morning he he sent me a message and
+[37:55] we message back and forth and bring
+[37:57] greetings to you from Brother Andrew
+[37:59] amen I want to speak to you this morning
+[38:02] on the measure of trust we've been
+[38:05] looking at all these different measures
+[38:07] that God has given to us yes thank you
+[38:10] musicians a lovely song service today
+[38:13] amen God's given us many many majors my
+[38:16] brother and sister and the beauty of it
+[38:18] is is God knows exactly how much we
+[38:24] now we can sit here and say if I just
+[38:27] had and I know this sometimes sounds
+[38:29] redundant but I believe God lays it on
+[38:31] her heart because it's still necessary
+[38:33] to be heard we say if I had more faith
+[38:36] I'm sorry God has given you the measure
+[38:38] of faith oh you know I I seem to fall
+[38:42] down and make mistakes God's given you a
+[38:45] measure of Grace
+[38:46] and when we totally bomb it
+[38:49] he's given us a measure of Mercy
+[38:52] that is sufficient
+[38:55] my brother and sister we wouldn't call
+[38:57] ourselves Christians if we didn't think
+[38:59] that the blood of Jesus Christ is
+[39:01] sufficient
+[39:02] amen that should in itself give us
+[39:05] enough confidence
+[39:07] to just press forward and to take the
+[39:10] promises of God I have an interesting
+[39:13] way I want to preach to you today very
+[39:15] very lengthy 22 verses Isaac 36 1-22 and
+[39:20] we're only drawing a principle out of
+[39:22] this story it's not really so much about
+[39:26] this story as it is that we recognize
+[39:29] the Satan has always used the same
+[39:32] tactics he modifies it the age but he is
+[39:37] not coming up with a whole new story
+[39:39] because you see what worked in the first
+[39:41] church age for the devil worked in the
+[39:44] second and worked in the third the
+[39:45] fourth the fifth the sixth and now we're
+[39:48] coming to a showdown
+[39:49] you ever really thought about what a
+[39:51] showdown is
+[39:52] it is the grand finale
+[39:55] there will not be a showdown Beyond this
+[39:59] my brother and sister the grand finale
+[40:01] now we realize when we go in the
+[40:04] Millennium and then Satan is loosed
+[40:07] again
+[40:08] that there's going to be chaos
+[40:11] pardon me for speaking this way but it
+[40:13] will be hell on Earth
+[40:14] a great chaos will come upon the Earth
+[40:17] at that time and my brother and sister
+[40:19] my heart aches for everyone who has been
+[40:22] uh lackadaisical has been uh calloused
+[40:26] has been uh non-committed to be in that
+[40:30] day to have to face that chaos
+[40:35] you know I I read a lovely little bit of
+[40:38] history of a family that did tremendous
+[40:41] amount of work they went as spies and
+[40:43] Couriers to to help in World War II a
+[40:46] family of Jewish descent
+[40:48] and um they were living in Austria
+[40:52] and one day the grandfather says we
+[40:54] should leave
+[40:56] and they said why life is still good
+[40:58] it's not us they're after
+[41:04] and the Grandfather said we should leave
+[41:08] and it's a story about how this family
+[41:10] and the persecution they suffered and to
+[41:13] his dying breath the Grandfather said we
+[41:15] should have listened to God's voice and
+[41:18] left I'm I'm leaving
+[41:22] Hallelujah I'm leaving
+[41:24] he's called us to leave he's asked us to
+[41:27] get ready to leave he's asked us to
+[41:29] unpack and then repack amen and I want
+[41:32] to listen to that voice because I don't
+[41:34] want to be as it were living in the
+[41:36] ghetto of laodicea saying I wished I
+[41:39] would have listened
+[41:41] hmm Isaiah 36 and 1 we'll read a few
+[41:45] portions of scripture and then we'll be
+[41:46] seated
+[41:48] now it came to pass in the 14th year of
+[41:51] King Hezekiah
+[41:53] and somebody who has good English and
+[41:56] Annunciation can go ahead and just speak
+[41:58] out if you please
+[42:00] uh I I don't even I honestly I don't
+[42:03] even know if I attempt to read these
+[42:05] because you know when we went to Israel
+[42:07] there were certain things that I thought
+[42:09] oh this is this is the name of this and
+[42:12] then somebody local or the guide would
+[42:14] say now we're in the blah blah and I'm
+[42:16] like that's not what that says but he's
+[42:18] local
+[42:21] you take it like
+[42:23] Colorado
+[42:27] Salida the town of Salida south of
+[42:30] Denver
+[42:31] is it Salida
+[42:34] Salida
+[42:36] if you're from Idaho it's Salida
+[42:42] so Lord help us
+[42:45] Lord help us so I'm going to totally
+[42:47] mispronounce these but I've asked for
+[42:49] grace and mercy already okay
+[42:52] now came to pass in the 14th year of
+[42:55] King Hezekiah The Sinner here of king of
+[42:58] Assyria came up against all the defense
+[43:01] cities of Judah and took them in other
+[43:05] words their defense was not sufficient
+[43:08] my
+[43:09] I'm defending myself praise God I'm
+[43:13] sorry
+[43:13] our defenses are not sufficient
+[43:19] and the king of Assyria sent RAB shika
+[43:23] to lock ish to Jerusalem and to King
+[43:27] Hezekiah with a great Army and he stood
+[43:30] by the conduit of the upper pool in the
+[43:33] highway of the Fuller's field
+[43:35] then came forth unto him elikum he'll
+[43:39] tie his son which is over the house and
+[43:42] shebna the Scribe and joa asked for his
+[43:46] son the recorder and Reb Sheikh if I
+[43:49] don't pronounce them the same each time
+[43:51] you'll understand how I'm struggling
+[43:53] said unto them say ye now to Hezekiah
+[43:56] thus saith the great king the king of
+[43:59] Assyria what confidence is this wherein
+[44:03] thou trust us and I'm telling you my
+[44:05] brother and sister the devil today is
+[44:07] going to come to you and say
+[44:11] you are trusting in what is this that
+[44:15] you are putting your confidence in you
+[44:18] are facing the same trial today that you
+[44:20] faced last week last month last year
+[44:22] what do you have your confidence in
+[44:26] well I'll tell you my brother and sister
+[44:28] the time comes that God says you know
+[44:30] what you've stood you believed you stood
+[44:32] solid you didn't turn and run you didn't
+[44:34] doubt
+[44:36] and today is the day
+[44:38] I want to be standing there on the day
+[44:41] that God says and today is the day
+[44:44] amen I don't want to have quit yesterday
+[44:46] I don't want to have quit this morning
+[44:49] I'm going to be standing there even if
+[44:52] this flesh is still
+[44:56] and it will be
+[44:57] our greatest in
+[45:06] I say us now
+[45:08] but they are but vain words I have
+[45:10] counsel and strength for war now on whom
+[45:14] Dost thou trust that thou rebellist
+[45:17] against me Heavenly Father we ask for
+[45:20] your blessings Lord lead us and guide us
+[45:22] I pray in your precious name amen
+[45:26] you may be seated Saints you know how
+[45:28] isn't The Devil
+[45:30] and the devil said that to you you know
+[45:32] why do you try
+[45:34] why do you keep pushing back why do you
+[45:37] think that you can stand in this day and
+[45:40] you can be an overcoming Christian in
+[45:43] this day when you have failed so many
+[45:46] times my brother and sister we stand
+[45:49] today and believe that we are the
+[45:51] Overcomers and declare that not because
+[45:53] we are self-set it but Christ in US made
+[45:56] the Declaration that we're the Overcomer
+[45:58] of the age and so as we stand here the
+[46:01] devil certainly is going to come and ask
+[46:03] you why why do you even try why don't
+[46:05] you just give in why don't you just be
+[46:07] like everyone else because I am not you
+[46:10] are not like everyone else amen and we
+[46:13] recognize that what God has done and
+[46:16] given to you and I while our flesh fails
+[46:19] us but it's the promise of God that we
+[46:22] live in and live for amen it is not
+[46:25] going to be that we'll stand on the
+[46:27] streets of glory and be able to say you
+[46:30] know I was a really special guy I did
+[46:32] this and I did that the only thing we'll
+[46:34] be able to say is I just surrendered I
+[46:38] just went and gave myself to the Lord
+[46:39] and said whatever Lord you desire to use
+[46:42] me for if I am as the prophet showed us
+[46:45] if I'm going to be the janitor I want to
+[46:48] be a good janitor if I'm going to be he
+[46:51] said if you're going to be a bum never
+[46:53] work a day in your life amen I'm telling
+[46:57] you my brother and sister most of us we
+[46:59] broke that way when we were children
+[47:01] amen God don't want bums amen God
+[47:04] doesn't want a bunch of people that are
+[47:05] just lazy it's there that we realize
+[47:08] that God has come and we have something
+[47:11] in us that clearly identifies us as
+[47:15] different
+[47:17] as children as young people we strive
+[47:19] and try so hard to fit in
+[47:24] and God says I don't want you to fit in
+[47:27] I want you to stand out amen because
+[47:30] when you stand out then the light is
+[47:32] shining when you stand out the gospel is
+[47:35] alive in your community
+[47:37] amen
+[47:39] Hallelujah
+[47:43] Lo thou trust us in the staff of this
+[47:46] broken Reed on Egypt
+[47:49] whereon if a man lean it will go into
+[47:52] his hand and Pierce it so is Pharaoh
+[47:55] king of Egypt to all that trust in him
+[47:58] that's one portion I can say Amen you
+[48:00] start trusting Pharaoh my brother and
+[48:02] sister and he's going to pierce you and
+[48:05] he's going to bring grief to you he's
+[48:07] going to do all of these things but God
+[48:09] used Pharaoh amen and if there's a
+[48:12] pharaoh in your world today don't sit
+[48:15] there and curse that but you sit back
+[48:17] and say God did you place this Pharaoh
+[48:21] in my life for a purpose and God does
+[48:24] knew nothing my brother and sister for
+[48:26] vanity does nothing in vain he is there
+[48:30] whatever it is you say but man this guy
+[48:32] my boss persecutes me well fulfill the
+[48:35] scripture and say thank you sir you're
+[48:37] fulfilling the word of God Amen he might
+[48:41] persecute you worse for it but I'll tell
+[48:43] you somebody's going to fulfill that
+[48:45] word and we can't have everybody
+[48:47] pampering us amen not everybody can just
+[48:50] make us the star employee or the star
+[48:52] personality someone's going to persecute
+[48:55] you and I'll tell you what God will do
+[48:57] he will use the common every day to
+[49:00] cause you and I to get desperate to get
+[49:03] out of here but not to get out of here
+[49:05] for getting out of here's sake but to
+[49:07] get out of their presence into his
+[49:10] presence amen that's what it's all about
+[49:12] not just a oh Lord give me a better life
+[49:15] amen oh I'll tell you I want a better
+[49:17] life because I have eternal life I know
+[49:19] I have better life and I want to go
+[49:21] right back to the source of eternal life
+[49:23] because that's where we came from amen
+[49:26] and so it's there oh my brother and
+[49:29] sister I tell you God is good to us but
+[49:32] if thou say to me we trust in the Lord
+[49:35] our God
+[49:36] is it not he whose high places and whose
+[49:40] altar Hezekiah has taken away now let me
+[49:43] just throw a little history in here
+[49:45] remember before God comes and shows
+[49:47] great Mercy on Hezekiah that Hezekiah
+[49:50] had got lifting up he he had come to a
+[49:53] place as a king that he'd made so many
+[49:55] good Investments he had made so many
+[49:58] good decisions he had he had fulfilled
+[50:02] you might say in the natural many many
+[50:04] good things and had come to a place that
+[50:07] he himself in the mirror had looked and
+[50:10] thought you know what I'm a great king
+[50:12] and God said you know what I know your
+[50:14] heart deep down Hezekiah even more so
+[50:17] which is an interesting thing of the
+[50:19] world we live in today my brother and
+[50:21] sister that people are saying well we
+[50:23] believe God meant this people who don't
+[50:25] know their own mind are saying this is
+[50:28] what God meant no my brother and sister
+[50:30] what we do is sit back and say Lord let
+[50:33] us have your mind so I can understand
+[50:35] Lord not explain you not not counsel you
+[50:39] but I could understand what it is that
+[50:42] you want from me Lord because I will be
+[50:44] what you want me to be Lord because I
+[50:46] will surrender to that
+[50:53] we trust in the Lord our God is it not
+[50:56] he
+[50:57] now my brother and sister
+[50:59] they're almost being mocked here
+[51:03] but if thou say to me we trust in the
+[51:06] Lord our God is it not he whose high
+[51:10] places whose altars Hezekiah has taken
+[51:12] away and said to Judah and to Jerusalem
+[51:15] ye shall worship before this worship
+[51:17] before this altar
+[51:19] now some of this my brother and sister
+[51:21] we have to remember that Through the
+[51:23] Ages God has always brought a judgment
+[51:24] back into Israel when they would start
+[51:26] to allow the the worship in the Groves
+[51:30] and start to have the things taken as it
+[51:34] were now my brother and sister anytime
+[51:37] leadership starts to remove all the
+[51:40] vessels now catch this it's more of a a
+[51:42] parable in a sense but anytime
+[51:44] leadership started to remove the vessels
+[51:47] from the house of God and put them in
+[51:50] storage
+[51:52] we got a little storage room right here
+[51:53] you know we're going to just start
+[51:55] taking the things of God we're going to
+[51:57] start taking the hard line of the
+[51:59] message and we're gonna not get We're
+[52:02] Not Gonna Get rid of it nobody's going
+[52:03] to be able to come into Grace and say
+[52:05] you guys have got rid of the hard line
+[52:07] of the message but what we're storing it
+[52:10] here out of sight out of mind
+[52:17] God said no I want the vessels of the
+[52:19] temple to be in the temple and I want
+[52:21] the vessels of the temple to be used as
+[52:23] I ordain them to be used I want the word
+[52:26] to do the words work I don't need man to
+[52:30] replace the words work with their work I
+[52:34] want my word to do the work
+[52:37] amen and when we allow the word of God
+[52:39] to come into the temple and do its work
+[52:42] then the temple is Holy
+[52:45] the temple is a dwelling place to
+[52:47] Almighty
+[52:49] and so you know people didn't like that
+[52:51] but while Hezekiah being lifted up
+[52:54] didn't mean he was a complete departure
+[52:56] from the things of God and and that's
+[52:58] one of the things that we find confusing
+[53:00] and I don't want to get into all kinds
+[53:03] of political direction today but my
+[53:05] brother and sister you look around the
+[53:07] message and you'll say oh this brother
+[53:09] quit and that brother quit they in many
+[53:12] cases for years still fulfilled the work
+[53:16] of God and their own heart was not in it
+[53:20] you see God doesn't want us just to
+[53:23] fulfill it as a wrote as a letter to do
+[53:26] it and check it off but God wants a
+[53:28] heart amen he wants a heart that says
+[53:31] Lord if you want worship Lord I Will
+[53:34] Worship You from the hearts not just uh
+[53:37] when the song leader says let's worship
+[53:39] god oh yes we're supposed to do that but
+[53:42] let it be from My Heart Lord
+[53:45] Hallelujah and that's why I just go back
+[53:48] and like I said I don't want to delve
+[53:49] into that I'm going to go back my
+[53:51] brother and sister that's how you see
+[53:53] churches that were on fire cooling off
+[53:58] tapering away until they're able to tell
+[54:02] you their long tradition of being
+[54:04] message Believers I don't care about
+[54:07] yesterday
+[54:08] I don't care about what God did
+[54:10] yesterday you're going to say what
+[54:11] brother Paul well just follow me I don't
+[54:14] care what he did my God's present here
+[54:17] today he's alive today he's a Healer
+[54:19] today he's a deliverer today he's the
+[54:22] word today
+[54:25] we don't have to look backwards
+[54:27] he's present
+[54:31] Hallelujah
+[54:34] I hope you don't mind me being excited
+[54:36] today
+[54:40] whose altars hezekiah's taken away and
+[54:42] said to Jude in Jerusalem he shall
+[54:44] worship before this altar now therefore
+[54:47] give pledges I pray thee to my master
+[54:50] the king of Assyria and I will give thee
+[54:52] 2 000 horses if thou be able on thine
+[54:55] part to set Riders upon them well I'll
+[54:58] tell you what my brother and sister if
+[54:59] the devil's going to give you a gift
+[55:01] he'll give you someone to drive that
+[55:02] gift
+[55:03] yeah I'm telling you what when the devil
+[55:06] decides he's going to give you a lot of
+[55:08] money he'll give you a lot of money if
+[55:10] he's going to give you Authority he'll
+[55:12] give you a lot of authority all the
+[55:14] little features you can do that the
+[55:16] devil's generous
+[55:18] because he don't care whether you
+[55:19] deserve it or not
+[55:22] because he's never done it for your
+[55:24] benefit he's done it for his own
+[55:30] my
+[55:32] right right
+[55:36] you know there's a
+[55:39] man that
+[55:41] was in Mexico and now in glory
+[55:47] worked for the cartels
+[55:50] probably made them billions of dollars
+[55:56] but what we would seemingly think is
+[55:58] impossible that a man in that condition
+[56:01] it's maybe a tad bit of speculation to
+[56:04] say that he's even responsible for
+[56:05] people losing their lives
+[56:08] certainly responsible for people losing
+[56:10] their lives from overdose and their
+[56:12] lives wasted from drugs
+[56:15] comes in contact
+[56:18] with the Sun
+[56:26] and it's there influencing him day after
+[56:28] day words that he can't get out of his
+[56:31] mind
+[56:34] and even as they baptized him
+[56:39] his cry was
+[56:41] Lord fill me with the Holy Ghost
+[56:43] my days
+[56:45] are not long
+[56:47] less than a week he's dead
+[56:50] all the years of faithful service to the
+[56:54] king of Assyria
+[56:56] didn't earn him one drop of Grace
+[57:01] but here are you with me
+[57:03] but here's a thief on the cross
+[57:06] who just gives acknowledgment to our
+[57:08] Lord Jesus Christ
+[57:10] and he says this day you know we can
+[57:13] theologically argue well Jesus didn't go
+[57:16] to paragraph Paradise so how could he be
+[57:18] that day with Paradise my brother and
+[57:20] sister our Lord Jesus Christ God however
+[57:22] you want to turn it is all-encompassing
+[57:25] he's everything he's Heaven he's Earth
+[57:27] he's everything and he says this day
+[57:30] you'll be with me in Paradise with
+[57:32] speaking to the soul of a man who had
+[57:35] nothing
+[57:36] to claim
+[57:38] and yet was given Grace
+[57:40] see the nature of man
+[57:43] and the nature of God
+[57:46] one says if you're not sold out to me
+[57:49] I'll kill you another one says if you're
+[57:52] not sold out to me
+[57:54] I'll give you Grace
+[57:56] till you realize how desperately you
+[57:59] need me amen
+[58:03] as we look at this
+[58:09] how then will thou turn away
+[58:12] the face of one captain of the least of
+[58:14] my master servants and put thy Trust on
+[58:17] Egypt for chariots and for Horsemen and
+[58:20] am I now come up without the Lord
+[58:22] against this land to destroy it the Lord
+[58:25] said unto me now look at this my brother
+[58:27] and sister this is how clever the devil
+[58:29] is that we'd often times look at this
+[58:32] and say you know what
+[58:34] um you know they got no Authority you
+[58:37] realize that God gave the devil
+[58:39] permission right
+[58:44] right and that would discourage some
+[58:45] people and say why would God do that
+[58:47] well God knew what was in you
+[58:49] right
+[58:50] I'll tell you what aren't you glad
+[58:52] you're a chip off the old block
+[58:54] aren't you glad that the very nature of
+[58:56] God has been deposited in you you say
+[58:59] but if I have the nature of God where's
+[59:01] it at well let it out let it out you
+[59:03] know if you got the door nailed shut
+[59:05] it's not going to come out but if you'll
+[59:07] ever have courage enough enough trust in
+[59:10] God to start pulling the nails out of
+[59:12] the door you will see God do great
+[59:14] things in your life and those around you
+[59:17] but you know we're kind of afraid I
+[59:19] think I think some of the brothers are
+[59:21] right we're actually afraid to really
+[59:23] see God move in an upper room type
+[59:26] experience we're afraid to actually lose
+[59:29] control of our self and our emotion
+[59:32] because well we don't want to be
+[59:34] embarrassed or it might not be the right
+[59:36] thing we'll take it through the word
+[59:38] first and it will be the right thing
+[59:40] amen because if it don't go through the
+[59:42] filter it won't reach you and so
+[59:44] therefore you can live all that God
+[59:46] allows through the filter to reach you
+[59:48] you can live that will you live that do
+[59:52] you want to live that I say Lord I Want
+[59:55] To Live every bit of your word that has
+[59:57] come to me I want to live that
+[1:00:00] amen I don't want to be over here
+[1:00:02] filtering what God's already filtered
+[1:00:04] well I don't know about this and I don't
+[1:00:06] know about that run it through the
+[1:00:08] filter let the filter do its work let
+[1:00:12] the Life of Christ in you do its work
+[1:00:16] then you don't have to be a skeptic to
+[1:00:18] everyone that shares anything to you
+[1:00:22] you know it either is the word or it
+[1:00:25] isn't but I'll tell you you know I'll
+[1:00:28] take you back to a little practical
+[1:00:29] natural thing you know oh hey this motor
+[1:00:33] has quit why did it quit it's starved
+[1:00:35] for fuel the fuel filter's plugged
+[1:00:39] let's just eliminate the filter
+[1:00:41] and that eliminates the problem
+[1:00:45] said no mechanic ever
+[1:00:51] because whatever plugged the filter
+[1:00:53] is going to plug the carburetor or the
+[1:00:56] injection pump
+[1:00:58] so we've got some that said you know
+[1:01:00] what the preacher he's clogging up my
+[1:01:03] filter I'm going to eliminate them
+[1:01:05] and then they wonder my brother and
+[1:01:07] sister how it is they went from a
+[1:01:09] fervent burning desire to a fanatic
+[1:01:14] oh I'm sorry that was a little straight
+[1:01:16] isn't it because that's what's happening
+[1:01:19] they're moving from being on fire
+[1:01:20] turning into fanatics
+[1:01:22] amen and it's entirely different a
+[1:01:25] fanatic doesn't have to be on fire a
+[1:01:27] fanatic is just simply a fanatic
+[1:01:29] amen has to have no uh or a rhyme no
+[1:01:33] reason no Foundation it is as they
+[1:01:37] declare it to be
+[1:01:39] so we want to be on fire but we don't
+[1:01:41] want to be fanatics
+[1:01:45] Hallelujah this rate will be here
+[1:01:47] tomorrow
+[1:01:49] so let me go right on down through here
+[1:01:52] and bounce a few of these instead of
+[1:01:54] reading every bit of it so he says you
+[1:01:56] know what it's the Lord that said to me
+[1:01:58] go up against this land destroy it and
+[1:02:00] like I said God gives permission amen he
+[1:02:02] he opened the Hedge he let the devil in
+[1:02:05] to job but he wasn't the least bit you
+[1:02:07] didn't see God creeping around the edge
+[1:02:09] of the head job you could do it
+[1:02:11] job you can do it in fact God almost
+[1:02:15] looked to callous
+[1:02:19] look at old job down there
+[1:02:21] scraping them boils with a pot shard
+[1:02:26] that's my son
+[1:02:30] you're not treating him like a son
+[1:02:32] yes I am because the word says that
+[1:02:35] Jesus learned
+[1:02:37] by the adversity the trials the tests
+[1:02:42] anybody got your exemption card today
+[1:02:47] Hallelujah you can print almost anything
+[1:02:49] off the internet maybe you can find an
+[1:02:51] exemption card but you won't find it in
+[1:02:52] the word
+[1:02:54] amen we're going to be tested the word's
+[1:02:57] going to prove Who We Are
+[1:02:59] so just because it looks like God's
+[1:03:01] allowing this to happen in your life is
+[1:03:03] not God forsaking you it's God proving
+[1:03:06] you it's God saying I'm going to take
+[1:03:08] the layer of your personality I'm going
+[1:03:10] to take the layers of your understanding
+[1:03:13] I'm going to take the layers of your
+[1:03:15] stubborn spirit and I'm going to scrape
+[1:03:17] them away with the pot Shard of the word
+[1:03:20] until we get down to living flesh
+[1:03:24] and I want to be living flesh for God I
+[1:03:27] don't want to be Scar Tissue I don't
+[1:03:29] want to be some callous my brother and
+[1:03:31] sister I want to be living flesh
+[1:03:34] Hallelujah
+[1:03:36] and so it's there what happened we
+[1:03:38] jumped down in the scripture a little
+[1:03:39] bit he said you know hey uh let me speak
+[1:03:42] to them in another language and not the
+[1:03:45] language of the Jews in other words we
+[1:03:47] want another language and let me tell
+[1:03:49] you my brother and sister there's
+[1:03:50] another language has invaded our world
+[1:03:53] and is speaking to people and they're
+[1:03:55] hearing another language it's not God's
+[1:03:58] voice they're hearing it's another voice
+[1:04:00] another language that is being there
+[1:04:03] speaking to them wooing them in a
+[1:04:06] language of laodicea and laodicea has
+[1:04:09] invaded the church laodicea has its
+[1:04:12] voice in the church my brother and
+[1:04:14] sister I'm telling you God help us go
+[1:04:16] back to the original voice go back to
+[1:04:19] the original word we don't need an
+[1:04:21] interpretation of what God meant we need
+[1:04:23] to hear that voice
+[1:04:25] and when we hear that voice we'll know
+[1:04:27] it's his voice because something inside
+[1:04:29] of us says that's my father speaking
+[1:04:34] and I want to be I'll tell you my
+[1:04:36] brother and sister I want to be one God
+[1:04:39] help me I want to become one that when
+[1:04:42] God speaks I stop and say Lord if you
+[1:04:46] said stop I stop and if you say left I'm
+[1:04:49] left you say right I'm right but well
+[1:04:52] what do we do we're kind of like a truck
+[1:04:54] with bad breaks we just roll on and on
+[1:04:57] and on until we come to a stop
+[1:05:04] now what was you saying to me
+[1:05:12] I don't want to get caught up but I got
+[1:05:14] I got so many little real life things
+[1:05:16] that go with this
+[1:05:18] Hallelujah
+[1:05:22] verse 13 he tells them
+[1:05:24] cries with a loud voice the Jewish
+[1:05:26] language it says
+[1:05:29] hear ye the words of the great king
+[1:05:32] of Assyria
+[1:05:35] thus saith the king oh my we got the
+[1:05:38] saith here
+[1:05:40] thus saith the king let not Hezekiah
+[1:05:44] deceive you
+[1:05:46] for he shall not be able to deliver you
+[1:05:49] and I'll read that verse right there and
+[1:05:51] I'm saying praise the Lord that's right
+[1:05:53] there is no way on hezekiah's part he
+[1:05:57] can deliver these people Hezekiah is not
+[1:06:01] able to deliver them but I want you to
+[1:06:04] understand this and I'm not defending
+[1:06:06] the preacher it's God who put that in
+[1:06:08] place not me there's times I think Lord
+[1:06:10] why did you put me there I'm not
+[1:06:13] comfortable here I can't do this Lord
+[1:06:15] but I'm telling you what happens is the
+[1:06:17] devil starts with removing certain
+[1:06:20] voices from our life
+[1:06:24] young people please listen to me for a
+[1:06:27] moment
+[1:06:28] when voices come that tell you
+[1:06:31] everything that is around you everything
+[1:06:34] that God has nurtured in you is a lie
+[1:06:37] it's not the truth come with us you can
+[1:06:39] live free you need to stop because
+[1:06:42] there's never a time you're drawn to
+[1:06:44] hear unless they can cut you off from
+[1:06:47] there and so as they cut you off they
+[1:06:50] can move you into their world and here
+[1:06:52] is a voice saying don't trust Hezekiah
+[1:06:55] he can't deliver you there should have
+[1:06:57] been someone with enough courage in the
+[1:06:59] church to have said that's the truth
+[1:07:01] preacher you can't deliver me oh but
+[1:07:05] neither let Hezekiah make you trust in
+[1:07:08] the Lord
+[1:07:09] see where they were heading it wasn't
+[1:07:11] about whether you could trust Hezekiah
+[1:07:13] or not when they got past Hezekiah they
+[1:07:16] went right to the Lord and said you
+[1:07:18] can't trust him either
+[1:07:24] wow
+[1:07:28] saying the Lord will certainly Deliver
+[1:07:31] Us
+[1:07:32] no my brother and sister the devil don't
+[1:07:34] want you to believe you can be delivered
+[1:07:36] the devil wants you to think that this
+[1:07:38] bondage he's got you wind is permanent
+[1:07:41] it's what you deserve and we're right
+[1:07:43] here under anointings we're right here
+[1:07:46] under influence saying that's the truth
+[1:07:48] that's what I deserve
+[1:07:50] if we're here about deserve let's go
+[1:07:52] home my brother and sister let's just go
+[1:07:55] home because there's not one thing we
+[1:07:57] deserve
+[1:07:59] if we got what we deserve the prophet of
+[1:08:01] God even said that if I got what I
+[1:08:03] deserve he'd send me to hell but I would
+[1:08:05] serve him anyhow
+[1:08:07] amen it's not going to be about what I
+[1:08:10] deserve it's about what God has decided
+[1:08:12] of who you are and what we are and why
+[1:08:15] he has called us is God who said I
+[1:08:18] didn't ask if you were capable I didn't
+[1:08:20] ask if you deserved it I gave it to you
+[1:08:23] as a gift
+[1:08:25] a gift of life
+[1:08:28] amen something he poured out upon us
+[1:08:32] oh my
+[1:08:34] so here he is now he starts to bring up
+[1:08:37] some of these gods that they've allowed
+[1:08:39] you know Israel was just horrible you
+[1:08:42] see evidence when you go tour Israel you
+[1:08:44] see evidence here a guide if he knows
+[1:08:46] his history will point out well this
+[1:08:48] used to be this kind of pagan thing in
+[1:08:50] the woods and that pile of stones over
+[1:08:52] there was this over here and my brother
+[1:08:55] and sister it wasn't like you know uh
+[1:08:58] I'm telling you what you know you go
+[1:09:02] down to Georgia
+[1:09:05] Bible Belt
+[1:09:07] and the devil's just as thick in Georgia
+[1:09:10] as he is anywhere else on the face of
+[1:09:13] the Earth it's the Bible Belt well maybe
+[1:09:17] the devil went to church
+[1:09:20] did you guys see that little statement
+[1:09:22] thing uh you know
+[1:09:26] the devil's a believer
+[1:09:28] but he's not a Christian
+[1:09:34] come on
+[1:09:37] beliefs
+[1:09:38] when God speaks he believes
+[1:09:40] just go study through the scripture I
+[1:09:42] went through the Old Testament just
+[1:09:44] looking at some things and you'll see my
+[1:09:46] brother and sister that the being cast
+[1:09:48] out many times they started to say hey
+[1:09:51] don't don't do this let us we'll leave
+[1:09:53] voluntarily and what did Jesus say to
+[1:09:56] them coming out of the Old Testament the
+[1:09:58] principles coming into the New Testament
+[1:10:00] in the Old Testament they got away with
+[1:10:02] these things in a sense you would say
+[1:10:03] comes to the New Testament now and Jesus
+[1:10:06] says be silent
+[1:10:10] you don't even get a voice what's
+[1:10:12] happening to you demon you are cast out
+[1:10:15] you are bound
+[1:10:17] oh come on I'm sorry but my brother and
+[1:10:19] sister it's about time we quit coming to
+[1:10:23] the point we're gonna have a truce with
+[1:10:25] the devil we're going to try and build
+[1:10:26] our own wall around the devil's wall
+[1:10:29] it's about time we just simply kick him
+[1:10:31] out
+[1:10:32] tell him to shut up and leave
+[1:10:34] amen
+[1:10:36] amen and so what happens they start to
+[1:10:39] kind of through their words mocking and
+[1:10:41] then you know they held their peace they
+[1:10:43] didn't even answer going into verse 21
+[1:10:45] because the Commandment given to them
+[1:10:47] was answer him not
+[1:10:50] you know sometimes my brother and sister
+[1:10:52] we've been given the answer to the
+[1:10:53] devil's question
+[1:10:55] but we don't even have to speak it
+[1:10:57] how about we just live it
+[1:10:59] how about we just get up and let our
+[1:11:01] answer be our life
+[1:11:04] instead of trying to explain to each and
+[1:11:05] every one
+[1:11:06] oh my brother and sister
+[1:11:09] now I've went so long to get to this
+[1:11:12] point have my sermon I I've taken the
+[1:11:14] time more than half oh my I'm shocked
+[1:11:17] but I want you to just draw out of this
+[1:11:21] and look at this we're besieged in this
+[1:11:22] land that we call America United States
+[1:11:26] there is evil on every hand
+[1:11:28] a lot of drama taking place
+[1:11:30] we got men in high places my brother and
+[1:11:33] sister can't even balance a budget can't
+[1:11:35] even run a country and you recognize
+[1:11:37] that some of these men many of these men
+[1:11:40] were successful and still are successful
+[1:11:43] businessmen that can run multi-million
+[1:11:46] or billion dollar companies can't manage
+[1:11:48] our government why in their business
+[1:11:50] they were just maybe Blessed from their
+[1:11:52] business ability but now they've stepped
+[1:11:54] into a role that God said I've cursed
+[1:11:58] and they can't get it right they can't
+[1:12:00] make the right decision because now
+[1:12:01] they're pushing against the will of God
+[1:12:03] and they will never overcome the will of
+[1:12:06] God and we look and say what's wrong
+[1:12:09] with these people my brother and sister
+[1:12:11] it's really not what's wrong with them
+[1:12:12] they are nothing but Tools in God's hand
+[1:12:16] amen and so God moves him and uses them
+[1:12:20] in a fashion that he desires
+[1:12:23] I had a conversation with a brother here
+[1:12:25] recently and he was going on will the
+[1:12:27] government plan this thing brother Paul
+[1:12:28] and they're doing this this way and
+[1:12:30] they're doing them bringing this around
+[1:12:31] here and I I'm sorry you know we're on
+[1:12:34] the telephone I'm glad he couldn't see
+[1:12:35] me because I was kind of like yeah okay
+[1:12:40] but let me tell you something I'm
+[1:12:41] excited about
+[1:12:42] the word is opening
+[1:12:44] life is coming down the sun is rising
+[1:12:48] and shining on the wheat and bringing
+[1:12:51] her to maturity and she is changing in
+[1:12:54] the presence of the sun that's what I
+[1:12:57] get excited about what some lion
+[1:12:59] cheating heathens doing now I don't care
+[1:13:02] about that he's doing what God called
+[1:13:04] him to do but I know what God called you
+[1:13:07] and I to do and that is to soak up the
+[1:13:09] sun amen draw in the presence of
+[1:13:12] almighty God pull it in and let it bring
+[1:13:15] life to you
+[1:13:17] oh hallelujah amen a lot of drama taking
+[1:13:21] place but I want to ask you is that
+[1:13:23] drama part of your story
+[1:13:26] known sir
+[1:13:28] no sir it's in the start part of a big
+[1:13:30] picture
+[1:13:31] but in your story
+[1:13:34] standing in the presence of almighty God
+[1:13:39] in my wedding gown
+[1:13:41] wrapped in the word
+[1:13:44] moved by the word
+[1:13:46] wooed by the word
+[1:13:50] that's my story that should be your
+[1:13:52] story
+[1:13:53] amen because I'll tell you what your
+[1:13:56] story is God's story
+[1:13:58] as the bride of Christ Our Story my
+[1:14:00] brother and sister is God's story we
+[1:14:02] don't have a separate story I need an
+[1:14:04] identity I want my identity to be in
+[1:14:06] Christ amen I'll tell you it's certainly
+[1:14:09] not a laodicean story
+[1:14:11] I'm just going to be lukewarm and
+[1:14:13] fulfill that part of the story sorry I
+[1:14:15] don't want to belong in that story I
+[1:14:17] want to belong in a story where somebody
+[1:14:19] says wow I got to do something I'm on
+[1:14:22] fire
+[1:14:23] Hallelujah you know what happens when
+[1:14:25] people get on fire everybody else runs
+[1:14:27] gets a bucket of water
+[1:14:29] throws it on him we can't have you on
+[1:14:31] fire
+[1:14:32] somehow that might hurt you
+[1:14:34] well maybe what we ought to do
+[1:14:36] now I'll save this with
+[1:14:38] proper etiquette whatever
+[1:14:40] uh maybe we should just be
+[1:14:43] hugging each other so to speak
+[1:14:44] spiritually let's put it that way until
+[1:14:46] we're all on fire
+[1:14:49] instead of running around with a fire
+[1:14:50] hose in the church you know putting out
+[1:14:53] the fire maybe we should let God's fire
+[1:14:55] now I'm not talking about crazy
+[1:14:57] theatrics my brother and sister watch
+[1:14:59] the video sometime back that somebody
+[1:15:01] you know ended the wonder of the world
+[1:15:03] we live in nobody could have filmed this
+[1:15:04] years ago but now everybody's got a
+[1:15:06] phone there's probably ten thousand
+[1:15:07] versions out there some guy running down
+[1:15:09] the backs of the pews I wonder if they
+[1:15:11] were bolted down
+[1:15:13] or maybe he's truly anointed he'd become
+[1:15:15] weightless
+[1:15:19] well he had to have had the Holy Ghost
+[1:15:21] to done that
+[1:15:23] or worked in the circus for a season
+[1:15:27] my brother and sister I had a
+[1:15:28] conversation with a man yesterday
+[1:15:31] called me up
+[1:15:33] started off strange I won't give all the
+[1:15:35] details
+[1:15:36] Anyway said he had a need your church I
+[1:15:40] need money
+[1:15:41] okay that's straightforward enough
+[1:15:43] what's your situation I got injured I've
+[1:15:46] lost my job well he lost his job a long
+[1:15:48] time ago I said well you know there's
+[1:15:50] workman's comp
+[1:15:52] uh there's unemployment there's all this
+[1:15:55] stuff oh but the Lord led me and now I
+[1:15:57] get goosebumps every time the Holy
+[1:15:59] Spirit meets it I meet somebody and I
+[1:16:00] get goosebumps I know that's God and I
+[1:16:03] says well how do you know that a priest
+[1:16:05] told me so
+[1:16:09] now I'm not mocking this man I he was
+[1:16:12] absolute sincere
+[1:16:14] a priest told me that's what the
+[1:16:15] evidence of the Holy Spirit was when I
+[1:16:18] get these Goosebumps and I've been
+[1:16:19] getting more and more and more of them
+[1:16:24] I said have you ever run that through
+[1:16:25] the word huh
+[1:16:28] said no that's how you know if that's
+[1:16:30] true
+[1:16:31] you run it through the word
+[1:16:33] have you taken it back to the word what
+[1:16:36] does the word say Amen well let me tell
+[1:16:38] you about this guy I met at a gas
+[1:16:39] station
+[1:16:41] no no no here draw you back
+[1:16:45] that guy at the gas station got nothing
+[1:16:46] to do with our conversation
+[1:16:49] I said now our church is willing to help
+[1:16:51] you you come to church today
+[1:16:54] I don't think it's wrong to put a caveat
+[1:16:56] on it is it Saints
+[1:16:58] you come to church today and if you can
+[1:17:00] endure preaching today and still be here
+[1:17:02] when it's over we'll help you
+[1:17:05] but he wasn't interested
+[1:17:07] he was looking for a handout
+[1:17:10] so he could drive around and share his
+[1:17:12] version
+[1:17:14] of what the evidence of the Holy Ghost
+[1:17:15] was
+[1:17:17] my brother and sister
+[1:17:19] it's interesting world we live in
+[1:17:22] now look at this I've got to hurry along
+[1:17:23] here somebody say brother Paul hurry
+[1:17:26] amen
+[1:17:28] see now look we you know this is
+[1:17:32] depending on the verbiage how you do it
+[1:17:34] but uh we all look in the word of God in
+[1:17:36] the Haven of Rest right do you realize
+[1:17:38] my brother and sister we have a natural
+[1:17:40] Haven of Rest amen and God called it for
+[1:17:43] our homes right you just go back and and
+[1:17:45] look what how brother Branham lays this
+[1:17:47] out he lays the groundwork that with a
+[1:17:49] token applied on her home that it
+[1:17:51] becomes our Haven of Rest in the natural
+[1:17:54] our security that we can move into and
+[1:17:57] with the blood on our home on our lives
+[1:18:00] then Satan cannot get under the blood
+[1:18:03] right he can't come into the blood our
+[1:18:06] home natural becomes a Haven of Rest to
+[1:18:08] us but that's not sufficient we have to
+[1:18:11] have a spiritual Haven that we can
+[1:18:14] Retreat into as it were in the time of
+[1:18:17] great trial we can come and as it was
+[1:18:19] the scriptures talking about the eagle
+[1:18:21] in the wilderness we have a refuge in
+[1:18:24] the wilderness of laodicea that we can
+[1:18:27] go into and that becomes a Haven of Rest
+[1:18:29] for you and I and the onslaught as the
+[1:18:32] prophet of God taught us it's uh this
+[1:18:34] age you know the greatest mind battle my
+[1:18:37] brother and sister if you don't have a
+[1:18:39] Haven to retreat to in the onslaught of
+[1:18:43] the devil in this day it will cause you
+[1:18:46] to go crazy
+[1:18:47] and I'm sorry to put it that blunt but
+[1:18:50] it's the truth if we're gonna go into
+[1:18:51] the Haven of laodicea then it will take
+[1:18:54] us to the alleys and highways and byways
+[1:18:57] and it will turn us into junk but God
+[1:19:00] has a refuge for us amen now this is
+[1:19:03] going to be another part of another
+[1:19:04] sermon but I felt led to include this my
+[1:19:07] brother and sister Satan knows you're in
+[1:19:09] the land he can read the word of God
+[1:19:11] just as well as anyone can read the word
+[1:19:14] of God just as it was in the days of
+[1:19:16] Herod and they knew that there was a
+[1:19:19] Christ child in the land and herod's
+[1:19:22] solution was to go and just start
+[1:19:25] killing the children that's what we're
+[1:19:27] going to do we're gonna kill the
+[1:19:29] children and surely we'll get this
+[1:19:31] Christ child if we can kill enough
+[1:19:33] children and I'm telling you this world
+[1:19:36] you look out here I'm going to be bold
+[1:19:38] this morning we have a flaunting of
+[1:19:41] young women as prostitutes do they
+[1:19:44] arrest them and prosecute the people
+[1:19:45] doing that no they have whole fashion
+[1:19:49] line for them
+[1:19:50] they have a whole out that for them what
+[1:19:53] is that the devil says if I can kill the
+[1:19:57] children maybe I could kill the last
+[1:20:00] anointed ordained seed of God if I can
+[1:20:04] catch him I could kill that and bind the
+[1:20:07] whole program of God but what he doesn't
+[1:20:10] know is there is a refuge there is a
+[1:20:14] refuge and in the time of adversity he
+[1:20:18] raises up a wall and protects you and I
+[1:20:22] it's not a refuge of the mountain it's
+[1:20:24] not Refuge of the desert it's a refuge
+[1:20:27] of the Holy Ghost In You and I and
+[1:20:31] people say I'm concerned about whether
+[1:20:33] we can be deceived get the Holy Ghost
+[1:20:35] you can't be deceived
+[1:20:38] oh my brothers and sister
+[1:20:41] you see what it is
+[1:20:43] he knows on one side a direct assault
+[1:20:46] against you and he's doing his best to
+[1:20:49] come and antagonistic and send Spirits
+[1:20:52] against you but it's there my brother
+[1:20:54] and sister a direct assault of the word
+[1:20:58] that's in you
+[1:21:00] prophet of God when they said Oh Brother
+[1:21:02] Brahma these thoughts he says just don't
+[1:21:05] let the bird build the nest
+[1:21:08] right right I don't even feel like I
+[1:21:10] have the Holy Ghost brother Brown I have
+[1:21:11] these
+[1:21:12] knock the nest off
+[1:21:15] knock the nest off replace it replace it
+[1:21:18] with something else
+[1:21:21] the word
+[1:21:23] what a lovely replacement
+[1:21:25] it's free it's everywhere
+[1:21:27] yeah my you can't exhaust it you can't
+[1:21:30] run out
+[1:21:31] wow
+[1:21:34] you see Satan knows there's a bride in
+[1:21:36] the land you say well that's obvious
+[1:21:37] that's obvious brother Paul no it's
+[1:21:40] really not
+[1:21:41] because you realize
+[1:21:43] what we sometimes get callous enough
+[1:21:46] that we don't even acknowledge the fact
+[1:21:49] that some things we say and do
+[1:21:51] aren't pleasing to God right
+[1:21:53] if I could put it this simple it just
+[1:21:56] that's right right over our head
+[1:22:00] now I say that not condemning
+[1:22:04] but when the devil sees
+[1:22:07] that
+[1:22:10] knowing how holy God is how pure God is
+[1:22:16] and they just did this and said that and
+[1:22:19] thought that
+[1:22:21] they might not be the bride
+[1:22:24] you see it's not so cut and dried to the
+[1:22:26] devil either
+[1:22:28] he's looking and saying they're making
+[1:22:30] mistakes
+[1:22:31] a righteous God of judgment
+[1:22:34] you see the devil doesn't know what
+[1:22:36] Grace is
+[1:22:39] because he never repented
+[1:22:42] and to know Grace
+[1:22:45] you have to repent
+[1:22:49] repentance is the key that unlocks Grace
+[1:22:52] in our life
+[1:22:55] Satan does not know Grace
+[1:22:59] and so he's just decided I'll just kill
+[1:23:02] a whole society
+[1:23:03] around the whole world every nation
+[1:23:05] every Kindred tongue because he read the
+[1:23:06] book and said God's going to pull him
+[1:23:08] out of every nation Kindred tongue I'll
+[1:23:10] just kill him slaughter them wholesale
+[1:23:12] but spirits of lust and pride and envy
+[1:23:15] and alcohol and drugs and all the minor
+[1:23:17] things that go with all of that and I'll
+[1:23:19] just kill him wholesale because I've got
+[1:23:22] to get the last one
+[1:23:24] I've got to get the anointed one
+[1:23:27] my brother and sister you realize if
+[1:23:29] you're in Christ you're the anointed one
+[1:23:30] right amen anointed to receive the word
+[1:23:33] anointed to live the word you say oh
+[1:23:35] you're replacing him no I'm not we're
+[1:23:37] taking that anointing we're anointed to
+[1:23:39] fulfill that position so we're the
+[1:23:41] anointed one for the position that God
+[1:23:43] called us to and my brother and sister
+[1:23:45] the devil wants to kill you so you can't
+[1:23:47] fulfill that position
+[1:23:49] amen
+[1:23:53] I think you guys did agree with me this
+[1:23:54] morning
+[1:23:55] the undermining of man's confidence in
+[1:23:57] God
+[1:23:58] is incredible
+[1:24:03] talking to an individual here just very
+[1:24:05] recently
+[1:24:06] I just kind of put it out not flippantly
+[1:24:08] but I just kind of put it out
+[1:24:10] he said well you know this and this
+[1:24:12] happened Paul and and uh I said wow
+[1:24:16] and I made a comment to him and he says
+[1:24:18] well
+[1:24:19] you know
+[1:24:22] I used to go to church and pray
+[1:24:25] maybe it's good getting old
+[1:24:28] and bold
+[1:24:30] or I don't care
+[1:24:32] you know I'm going to tell on you young
+[1:24:34] people now the young adults I'm like now
+[1:24:36] if I get boring and stuff you guys have
+[1:24:38] to tell me and they all just
+[1:24:41] and I thought I think they're telling me
+[1:24:43] something
+[1:24:46] but you get to a point it's like
+[1:24:49] I just told her I said
+[1:24:52] why'd you stop
+[1:24:54] oh well
+[1:24:55] there was this it don't matter what they
+[1:24:58] did
+[1:24:59] sorry Saints I know you guys probably
+[1:25:01] think I'm a nice cultured guy but out
+[1:25:03] there
+[1:25:04] work boots dirt grease mud
+[1:25:08] cow stuff
+[1:25:12] I said you're gonna go to hell with them
+[1:25:14] because that's what they did
+[1:25:17] you want to go to hell with them
+[1:25:19] well no really
+[1:25:22] wow
+[1:25:26] the priest told me the poop Goosebumps
+[1:25:29] worth a sign
+[1:25:30] I'll tell you what just a few years ago
+[1:25:33] we were doing some stuff I was out in
+[1:25:35] the middle I'll tell you I was out in
+[1:25:36] the middle of a Hayfield about 2 A.M
+[1:25:40] and I'm standing out there working on a
+[1:25:42] deal that got messed up
+[1:25:45] I got goosebumps
+[1:25:49] turned out it was a big old Badger
+[1:25:51] coming over to see who is in his house
+[1:25:55] yeah
+[1:25:58] what sign are we looking for
+[1:26:01] I'm looking for a word sign
+[1:26:03] I'm looking for the word sign I'm not
+[1:26:05] even going to look at it and you I'm
+[1:26:07] going to look in the mirror and say Lord
+[1:26:08] I need to see the word sign I need to
+[1:26:11] see this sign here I need to wrap this
+[1:26:13] up amen
+[1:26:15] oh Hallelujah
+[1:26:16] look
+[1:26:18] in the midst of Leo to see there's this
+[1:26:20] great voice coming forth and it's
+[1:26:22] powerful my brother and sister you you
+[1:26:23] will see this great voice coming and and
+[1:26:26] do you guys remember here and his name
+[1:26:28] is now I knew I should have wrote it
+[1:26:30] down his name slipped my mind but there
+[1:26:32] was a man who come to uh Kenneth
+[1:26:34] Copeland and all the Pentecostals from
+[1:26:36] the pope carrying a message to him I I
+[1:26:40] can see his face but I cannot remember
+[1:26:42] his name and he made some really bold
+[1:26:45] statements that this this is God this is
+[1:26:49] the voice of Elijah to this day and he
+[1:26:53] dies in an accident on a motorcycle in
+[1:26:55] England
+[1:26:56] and then behind that rise is another
+[1:26:59] great man not nearly as published or
+[1:27:01] whatever as he was that was going around
+[1:27:04] telling everybody that if you don't
+[1:27:06] believe this you've been anointed by the
+[1:27:08] spirit of the Holy Ghost and he dies in
+[1:27:10] a car wreck Our God will not be mocked
+[1:27:15] amen their voice my brother and sister
+[1:27:17] is a great voice the World Hears that
+[1:27:20] voice while they're over here demeaning
+[1:27:23] One Voice they're promoting another
+[1:27:25] voice and it's a great voice and they
+[1:27:28] speak so well of that voice and it's
+[1:27:31] there this God of this evil age is how
+[1:27:33] the prophet said he said I'm the you
+[1:27:36] know they're presentating I'm the voice
+[1:27:38] I'm the authority if you want to be safe
+[1:27:41] make your pledge to me
+[1:27:47] you know where the pledge is
+[1:27:53] it goes back
+[1:27:55] to presentation
+[1:28:00] make your pledge
+[1:28:04] present
+[1:28:06] to me
+[1:28:09] bring your gift
+[1:28:13] see verse 16 hearken not to Hezekiah for
+[1:28:16] thus saith the king of Assyria make an
+[1:28:19] agreement with me by a present
+[1:28:24] and come out
+[1:28:26] to me
+[1:28:28] well I'll tell you what the devil's
+[1:28:29] doing my brother and sister in Romans 12
+[1:28:31] 1-2 it says I beseech you therefore
+[1:28:33] Brethren by the mercies of God that ye
+[1:28:36] present your bodies a Living Sacrifice
+[1:28:39] holy acceptable unto God which is your
+[1:28:43] reasonable service and be not conformed
+[1:28:46] to this world but be you transformed by
+[1:28:49] the renewing of your mind that ye may
+[1:28:51] prove what is not good and acceptable
+[1:28:54] and perfect will of God I'm here to tell
+[1:28:57] you there's only one thing on this Earth
+[1:28:58] that's of value God's blessed sister
+[1:29:01] Jerry and I with a little land amen
+[1:29:03] we've worked hard we we're we're we're
+[1:29:05] working towards that I guess it's just
+[1:29:08] you know the farmer mentality you need
+[1:29:10] dirt you're going to be a farmer you
+[1:29:12] need dirt and that's well but I'm
+[1:29:14] telling you my brother and sister
+[1:29:15] there's nothing on this Earth that has
+[1:29:17] the value of your soul that's right
+[1:29:19] nothing no amount of land no amount of
+[1:29:22] gold no amount of anything Fine Jewelry
+[1:29:25] art whatever nothing matters the devil
+[1:29:28] knows what is the intrinsic value and he
+[1:29:31] says if I can get you to just come
+[1:29:33] present yourself to me yeah I'll come I
+[1:29:37] will accept you have you noticed the
+[1:29:39] devil never rejects anyone
+[1:29:43] my if the devil had a baseball team
+[1:29:48] so what is it he's not looking at the
+[1:29:50] flesh
+[1:29:52] no looking at the flesh my brother and
+[1:29:54] sister he's looking at this Soul he
+[1:29:56] wants that soul I want that soul
+[1:30:00] but God said come
+[1:30:01] you present yourselves a Living
+[1:30:03] Sacrifice I don't even want to kill you
+[1:30:04] I want you living
+[1:30:06] hallelujah amen but looks subtility
+[1:30:10] Satan just comes I'm trying to jump over
+[1:30:13] stuff sorry uh what's he doing
+[1:30:16] he undermines our trust
+[1:30:19] when you look at someone and you God
+[1:30:21] allows you to bring conversation around
+[1:30:23] in a certain fashion
+[1:30:25] and finally you know you just realize
+[1:30:27] what's happening and and you make a
+[1:30:29] statement that can be just left alone
+[1:30:31] taken either way whatever and then the
+[1:30:34] person just opens up and says yeah
+[1:30:37] you're right now I didn't say they had
+[1:30:39] been angry at God
+[1:30:40] but God discerned that and God opened
+[1:30:43] that little deal now you're right I've
+[1:30:46] been angry at God since I was a young
+[1:30:48] woman
+[1:30:50] why
+[1:30:52] well when they tell you why
+[1:30:55] you feel a little bit uh
+[1:30:58] I think I almost need to sit down
+[1:31:01] this is horrific
+[1:31:05] and if God was a loving God why do you
+[1:31:07] allow that to happen to me
+[1:31:11] well I'll tell you there'll be a young
+[1:31:12] lady sorry to be this bold there'll be a
+[1:31:15] young lady in glory
+[1:31:16] will have the exact same thing happen to
+[1:31:19] her
+[1:31:20] that will be standing at their pure and
+[1:31:22] white Washed by the blood of the Lamb
+[1:31:26] my brother and sister you see
+[1:31:28] we
+[1:31:30] have to recognize how special the gift
+[1:31:33] God has given us
+[1:31:36] this is not just I grew up in church or
+[1:31:38] I I got saved my brother and sister this
+[1:31:41] is an outpouring of the spirit of the
+[1:31:44] very life of God out poured into you and
+[1:31:48] I that nothing Satan can do can rob the
+[1:31:51] life if so Satan would go over and shut
+[1:31:53] the switch of eternal life off
+[1:31:56] but he can't
+[1:31:58] he can't amen oh outright anger you know
+[1:32:02] thinking about this outright anger of
+[1:32:04] unanswered prayers
+[1:32:06] why did we lose this child why did this
+[1:32:09] happen over here what was that
+[1:32:11] unanswered prayers and outright anger to
+[1:32:14] God
+[1:32:16] not
+[1:32:17] God's in control
+[1:32:19] God's perfect will
+[1:32:21] it is I wanted what I wanted and God
+[1:32:25] didn't give it to me
+[1:32:35] let me skip over some more
+[1:32:44] I'm just going to go ahead and say this
+[1:32:46] I almost skipped over
+[1:32:49] sometime back in a conversation
+[1:32:53] individual made a statement
+[1:32:58] if the Lord does not come quickly
+[1:33:00] no one will be saved
+[1:33:07] in one context it the scriptural
+[1:33:12] but they want
+[1:33:13] in a scriptural context
+[1:33:17] they're looking at their own life
+[1:33:19] they're looking at the lives of those
+[1:33:21] around them
+[1:33:22] and they're seeing
+[1:33:24] the cooling down
+[1:33:26] they're seeing the falling away
+[1:33:29] and my brother and sister I really
+[1:33:31] didn't make much comment to this
+[1:33:32] individual because I I didn't want to
+[1:33:34] hurt any feelings and I just was a
+[1:33:36] little stunned amen but you know what
+[1:33:39] comes to me is what does the word say
+[1:33:41] let that become something can we can we
+[1:33:44] do that in our life can we just start
+[1:33:46] making sure that we when we are angry or
+[1:33:49] we disagree or I don't see it that way
+[1:33:51] that we go to the word and let the word
+[1:33:53] speak first and then if we feel like
+[1:33:56] it's wrong come civilly and say I
+[1:33:58] disagree with you and this is why but
+[1:34:01] see people don't even go to the word
+[1:34:03] they just don't like it
+[1:34:06] I don't like that
+[1:34:11] Philippians 1 6.
+[1:34:13] being confident
+[1:34:15] of this very thing
+[1:34:18] do we have any confidence today
+[1:34:20] be confident this very thing that he
+[1:34:23] which hath begun a good work in you will
+[1:34:27] perform it when till next week until you
+[1:34:31] get too tired to press on until the
+[1:34:33] devil gets too strong no sir until the
+[1:34:36] day of Jesus Christ
+[1:34:39] my brother and sister I'm not worried
+[1:34:41] about what's going on out here the
+[1:34:43] world's getting Wicked and people are
+[1:34:45] getting worldly but that's not my story
+[1:34:48] my story is gonna be Lord I'm gonna be
+[1:34:52] here and I'm gonna serve you by your
+[1:34:55] grace and mercy I'm going to press into
+[1:34:57] this battle
+[1:34:59] Lord I might not be able to do it myself
+[1:35:01] but you promised that you and me I can
+[1:35:04] do it and I believe this now my brother
+[1:35:07] and sister I'm going to go into a little
+[1:35:09] different avenue here but if we my
+[1:35:12] brother and sister don't believe what
+[1:35:13] God Said
+[1:35:15] it can only be because we didn't trust
+[1:35:19] him
+[1:35:19] because you have to trust him
+[1:35:22] to believe him
+[1:35:25] I'm reminded the little story where the
+[1:35:27] dad tells his son they're out mowing the
+[1:35:30] lawn and he's going along there and he
+[1:35:32] tells his son he says you know when we
+[1:35:34] get all done with his son I'll buy you
+[1:35:35] an ice cream
+[1:35:37] it takes a little longer you know big
+[1:35:39] yard trim and everything and
+[1:35:42] they've eaten supper and
+[1:35:44] the dad appears in his
+[1:35:46] sweats or gemmas or whatever you want to
+[1:35:49] call them and his son comes over to him
+[1:35:50] goes dad
+[1:35:52] I need to talk to you and he says what
+[1:35:54] is it son
+[1:35:56] the promise
+[1:35:59] dad being I think a real honest dad
+[1:36:03] he wasn't lying to his son
+[1:36:06] but what happened he's tired
+[1:36:08] it's like promise
+[1:36:10] yeah Dad ah
+[1:36:12] son
+[1:36:13] when we're done with this
+[1:36:15] we'll go get ice cream
+[1:36:20] and the dad gets up out of his chair
+[1:36:22] gets dressed
+[1:36:24] puts his son in the pickup
+[1:36:27] drives into town
+[1:36:28] buys him an ice cream because he had a
+[1:36:31] revelation
+[1:36:32] if he can't trust me now he won't trust
+[1:36:36] me later
+[1:36:40] come on
+[1:36:42] my brother and sister if we can't trust
+[1:36:43] God on the little things what's going to
+[1:36:45] happen when we need to trust him for the
+[1:36:46] big things
+[1:36:48] amen God help us
+[1:36:50] amen and God's Worthy
+[1:36:53] amen he hasn't failed us now and he's
+[1:36:55] not going to start amen now look at this
+[1:36:58] Hallelujah
+[1:37:00] amen Matthew 24 22 to 28 and uh
+[1:37:05] uh you can just reference that amen but
+[1:37:09] I want to draw from the last of that
+[1:37:10] right there is he's talking about as it
+[1:37:12] is you know if they're there if they're
+[1:37:14] here you know don't do that don't run
+[1:37:16] out here don't run out there you know
+[1:37:18] except those days be shortened it says
+[1:37:21] verse 22 there should uh be no flesh
+[1:37:24] saved but for the elect's sake that's
+[1:37:26] you hey can somebody lift a hand and say
+[1:37:28] that's me Hallelujah I am the elect for
+[1:37:32] my sake God is going to change it all
+[1:37:34] for my sake
+[1:37:37] oh you say I don't know if I matter to
+[1:37:39] God he's changing time amen the very
+[1:37:42] measure of time he's changing for your
+[1:37:45] sake
+[1:37:47] Hallelujah
+[1:37:48] Hallelujah sorry I'm preaching so
+[1:37:50] vigorous and so long here but I tell you
+[1:37:52] I stored it up all week
+[1:37:54] sick or not my brother and sister God
+[1:37:56] doesn't just leave you sitting around
+[1:37:58] amen now look at this for it says here
+[1:38:01] in verse 28 for wheresoever the carcass
+[1:38:04] says there will the Eagles be gathered
+[1:38:06] together amen look this is the opening
+[1:38:09] of the seals my brother and sister the
+[1:38:11] revealing the putting on display to take
+[1:38:13] you where the carcass is and people I've
+[1:38:17] had this throat at me at before I'm
+[1:38:19] sorry to say I had no answer for it they
+[1:38:21] said are you trying to tell me that God
+[1:38:24] there's more God here today than there
+[1:38:26] was when my parents uh you know were
+[1:38:29] that you know this person was older like
+[1:38:31] probably
+[1:38:32] 70ish I would say sorry brother David
+[1:38:36] um
+[1:38:37] so their parents were back aways right
+[1:38:39] and they said you're saying we got more
+[1:38:41] now this profit and whatever got more
+[1:38:44] now than my parents had and I really
+[1:38:46] didn't know how to answer that but I'm
+[1:38:48] telling you my brother and sister I got
+[1:38:50] a very simplistic answer for you now the
+[1:38:52] seal is open it's off the book the page
+[1:38:55] is revealed and only add another time in
+[1:38:59] history has God given rapturing faith
+[1:39:02] and now he's given it to a whole body
+[1:39:05] it's not just an isolated case it's two
+[1:39:08] in a whole body I say we got more now
+[1:39:11] than they've ever had Through the Ages
+[1:39:14] got more now of God Amen on display and
+[1:39:18] reveal than has ever been placed on the
+[1:39:21] Earth
+[1:39:22] oh Hallelujah because now he's took a
+[1:39:26] bride right into a Wilderness to the
+[1:39:28] carcass and lets her feed freely on the
+[1:39:31] carcass and rapturing Faith coming out
+[1:39:33] of that word is coming and building up
+[1:39:36] in her
+[1:39:38] Hallelujah
+[1:39:45] Christ himself
+[1:39:47] said I want to be on display I think
+[1:39:49] I'll come and walk in the streets of
+[1:39:50] Nampa Meridian Boise
+[1:39:53] Caldwell
+[1:39:54] and I'm going to do it
+[1:39:56] so openly
+[1:39:58] they can't see me that's
+[1:40:02] wow
+[1:40:03] there it is
+[1:40:08] oh my
+[1:40:10] God
+[1:40:12] look
+[1:40:16] this is the fullness
+[1:40:19] of the manifestation of rapturing faith
+[1:40:22] the line upon line
+[1:40:24] of constant building up
+[1:40:27] amen now you young people you don't
+[1:40:29] probably take vitamins
+[1:40:31] but I've always been resistant to
+[1:40:34] vitamins
+[1:40:35] I don't like vitamins my wife
+[1:40:37] has to always tell me did you take your
+[1:40:39] vitamins
+[1:40:41] and
+[1:40:42] I open up my sacked lunch during the day
+[1:40:44] and there's vitamins
+[1:40:49] but you know when I take vitamins
+[1:40:51] my body says
+[1:40:53] good
+[1:40:55] good
+[1:40:57] I'm just wondering why can't I just take
+[1:40:59] a giant syringe full of vitamin D
+[1:41:04] and just get all the vitamin D I need
+[1:41:08] because I can't handle it
+[1:41:12] has nothing to do with the vitamin D
+[1:41:15] it has to do with me that's right I'm
+[1:41:18] God is giving us a little bit more every
+[1:41:24] single let me open this seal for you
+[1:41:29] let me let you see just who you are
+[1:41:39] and I start to look at that and the
+[1:41:42] little neurons in my brain starts
+[1:41:44] popping and I come to the realization I
+[1:41:47] have no clue who Christ is in me
+[1:41:51] oh can you follow that no clue my
+[1:41:54] brother and sister he in me is so much
+[1:41:58] greater than I can even comprehend I
+[1:42:02] look at this and see a feeble man and
+[1:42:05] God looks and says I see myself and I'm
+[1:42:08] still struggling with myself to see
+[1:42:12] myself and God says look just look at a
+[1:42:16] little glimpse of me right here in you a
+[1:42:18] little glimpse of me right here in you
+[1:42:20] now take another bite
+[1:42:23] brother I'm talking about the apple tree
+[1:42:25] he says that little tree don't need to
+[1:42:27] do nothing but drink and push out drink
+[1:42:30] and push out but if it isn't drinking
+[1:42:34] if it isn't drinking it's not pushing
+[1:42:37] Hallelujah
+[1:42:41] for homework Proverbs 3 1-6 amen tells
+[1:42:46] us Deltas take verse five and we'll move
+[1:42:48] on trust in the Lord with all thy heart
+[1:42:51] and lean not unto thy own understanding
+[1:42:54] you see my brother and sister if we
+[1:42:56] can't trust him we won't believe him
+[1:42:58] that's it it's not cut and dried if we
+[1:43:00] don't believe God's our healer and we
+[1:43:03] don't trust him to heal us we'll never
+[1:43:05] fully act upon that
+[1:43:07] amen Deliverance got an issue in your
+[1:43:10] life you need deliverance from if you
+[1:43:12] don't actually believe God will can and
+[1:43:14] will deliver you from that and trust him
+[1:43:16] for that never happen that's
+[1:43:20] it and I'll back that up with a quote
+[1:43:21] right here
+[1:43:23] right here Brothers if you put that up
+[1:43:24] on the screen we'll we'll be done here
+[1:43:27] it's only a lengthy quote shouldn't be
+[1:43:29] more than 30 minutes
+[1:43:36] okay now so you'll understand
+[1:43:39] we're talking about this as I have heard
+[1:43:41] but now I see 1965 11 27 65. my brother
+[1:43:45] and sister this is at the end of brother
+[1:43:46] Brown's Ministry
+[1:43:48] brother Brian's laying foundational
+[1:43:50] things for us to come and dig up now
+[1:43:54] yeah
+[1:43:54] to dig up now
+[1:43:58] not to sit and wait for him to be
+[1:43:59] delivered for us
+[1:44:01] but Lord give me a spiritual pick and
+[1:44:03] shovel
+[1:44:04] to dig into the word and see what it is
+[1:44:07] now look at this brother Brown was
+[1:44:08] talking about these brothers
+[1:44:10] that uh the the oil wells you guys know
+[1:44:13] the story about the whole Wells
+[1:44:15] so well they wouldn't listen to it then
+[1:44:18] first before we left that night the
+[1:44:20] place where we were having lunch the
+[1:44:21] Holy Spirit showed me a great crack in
+[1:44:24] the earth that and in that was full of
+[1:44:26] oil and these overflows in kentuckies
+[1:44:29] was just little beds of oil they were
+[1:44:31] pumping from but this come from the
+[1:44:33] mainstream and I said brother Demas it's
+[1:44:36] there so they went searching for said go
+[1:44:39] down and tell us where the oil well is I
+[1:44:41] want you to catch this right here oh no
+[1:44:44] no no no no we don't use the gift of God
+[1:44:47] for commercial
+[1:44:49] amen oh let me throw another deal we're
+[1:44:52] not going to use the gift of God to
+[1:44:54] build a big church we're not going to
+[1:44:56] use the gift of God to have hundreds or
+[1:44:59] thou members my brother and sister will
+[1:45:01] use the gift of God to get a body that
+[1:45:04] is on the carcass eating ready for the
+[1:45:07] Rapture that's what the word is for get
+[1:45:10] you and not ready for a rapture
+[1:45:20] no no he he could tell me where it was
+[1:45:24] at but I I don't have any need of it
+[1:45:26] he's talking about the Lord he could
+[1:45:28] tell me where it was at but I don't have
+[1:45:29] any need of it I wouldn't even have
+[1:45:31] faith enough to ask him
+[1:45:33] this is a prophet of God
+[1:45:35] I wouldn't even have enough Faith to ask
+[1:45:38] him where's the oil he saw the vision of
+[1:45:40] it though
+[1:45:41] he had enough confidence in God
+[1:45:43] revealing a vision to him to recognize
+[1:45:45] there's a spot down there that has oil
+[1:45:48] beyond measure
+[1:45:49] the prophet of God wasn't doubting it
+[1:45:53] but he says he didn't have enough Faith
+[1:45:54] to ask for it
+[1:45:57] see if I had need of it
+[1:46:00] I believe if I'd ask him he'd tell me
+[1:46:02] but first you see your motives and
+[1:46:03] objective has to be right you have to
+[1:46:06] have reasons for this God don't give you
+[1:46:09] those things just because you ask and
+[1:46:12] you cannot ask in faith unless there's a
+[1:46:15] real objective to that to be in the will
+[1:46:19] of God now I hope some of you don't
+[1:46:21] stumble over this or maybe you've read a
+[1:46:24] little bit ahead here naughty naughty
+[1:46:26] amen
+[1:46:29] see if you want to be well do you what
+[1:46:31] do you want to be well for if you want
+[1:46:33] to be healed what's the reason you want
+[1:46:35] to be healed what are you telling God
+[1:46:38] what do you want to do with your life
+[1:46:41] when you get healed see there's got to
+[1:46:44] be
+[1:46:47] hmm
+[1:46:49] you've got to have a motive and
+[1:46:51] objective they have to be right
+[1:46:52] according to the will of God and that's
+[1:46:54] when the faith is revealed to you and by
+[1:46:57] God his Sovereign Grace places that
+[1:46:59] faith in there then it's over see now
+[1:47:02] see amen now to make that word true when
+[1:47:07] the Brethren got down there they got one
+[1:47:09] fellow went over and bought a bunch of
+[1:47:10] stuff so Lisa's cheated the other one
+[1:47:12] this way and I said see it won't work
+[1:47:14] now just to make the prophecy sure
+[1:47:17] within a hundred yards of where these
+[1:47:21] men were digging their will some man
+[1:47:23] struck the big gusher and it's there
+[1:47:25] 1100 barrels of oil in a half a day or
+[1:47:28] something or other like that still
+[1:47:30] putting it out right in the mainstream
+[1:47:32] but just make the prophecy the word had
+[1:47:35] been said it was there it was there the
+[1:47:38] rest of them nearly is all dried out
+[1:47:40] everywhere through Kentucky little ponds
+[1:47:43] they pumped them a little while they go
+[1:47:44] it's only the Overflow from this see but
+[1:47:47] because of selfishness other God among
+[1:47:50] it the objectives were wrong
+[1:47:52] signing up a bunch of stuff it would be
+[1:47:54] this way and when they promised they
+[1:47:56] would do it for the kingdom
+[1:47:58] of God
+[1:48:00] now can I just draw this back
+[1:48:04] Lord I want you to heal me
+[1:48:07] so I can go work harder
+[1:48:09] make more money
+[1:48:12] do this do that
+[1:48:19] but if you had a real need
+[1:48:22] and you were going to do something for
+[1:48:23] God
+[1:48:25] the prophet's telling us
+[1:48:28] God's Gonna recognize that
+[1:48:33] right I won't even acknowledge that I
+[1:48:34] have a problem that has to do with my
+[1:48:36] blood and my sugar
+[1:48:38] amen
+[1:48:39] I asked the Lord to heal me
+[1:48:41] but I'll tell you Saints
+[1:48:44] between cauliflower beet juice
+[1:48:48] you guys ever take beet juice
+[1:48:50] amen I would rather eat dirt in a field
+[1:48:53] than take breaches
+[1:48:58] but I feel better
+[1:49:00] I actually have half of mine now
+[1:49:05] I want God to heal me
+[1:49:07] why do I want God to heal me
+[1:49:11] it's been my prayer
+[1:49:14] Lord I want to preach this gospel to my
+[1:49:17] dying breath that's right
+[1:49:19] amen does that mean God's obligated to
+[1:49:21] heal me
+[1:49:22] no
+[1:49:24] but I'll still claim it amen I still
+[1:49:27] believe it
+[1:49:28] amen
+[1:49:30] Hallelujah I don't want it to be selfish
+[1:49:33] see selfish and what's gone amongst it
+[1:49:35] and the objectives were wrong they were
+[1:49:37] doing all this stuff no selfish thing
+[1:49:39] will work your motives and objectives
+[1:49:41] has to be exactly perfectly right then
+[1:49:43] you have faith to ask if your hearts
+[1:49:45] condemn us not then we have confidence
+[1:49:47] see we got to have confidence I want
+[1:49:50] this to be honor and glory of God then
+[1:49:53] faith has a channel to move into and if
+[1:49:57] it doesn't then you've got mental
+[1:49:59] intellectual faith not genuine faith
+[1:50:01] amen my brother and sister Lord help us
+[1:50:04] amen help us my brother and sister that
+[1:50:07] we could come amen let's go to the next
+[1:50:10] is that wasn't all of it was it yeah
+[1:50:13] okay that intellectual faith will get
+[1:50:15] you nowhere
+[1:50:16] might get you emotional but it won't get
+[1:50:19] you the healing you're looking for so
+[1:50:21] job checking himself with the genuine
+[1:50:23] faith that God had given to him that he
+[1:50:26] was just see I love how God led the
+[1:50:29] prophet to bring this through of these
+[1:50:31] men whose motive and objective and they
+[1:50:33] didn't get this now
+[1:50:35] real cut and dried
+[1:50:37] if they had actually believed what the
+[1:50:40] prophet of God spoke to them
+[1:50:42] and trusted him
+[1:50:45] see there's a lot more to the story I I
+[1:50:47] had to just grab that piece
+[1:50:50] if they'd actually believed what the
+[1:50:53] prophet spoke to them
+[1:50:57] they'd have went
+[1:50:58] and following the leadership of the Holy
+[1:51:00] Ghost
+[1:51:02] walked out there
+[1:51:03] so to speak
+[1:51:09] but intellectual Revelation right
+[1:51:13] right of the will of God
+[1:51:17] well I have no problem if God blesses
+[1:51:19] brother Chris and brother David's
+[1:51:21] Ministry I just want mine to be better
+[1:51:26] really what's your motive yeah
+[1:51:30] the word says one plants
+[1:51:33] another Waters
+[1:51:34] and another dose the Harvest
+[1:51:37] reminds me of a man once he repented of
+[1:51:40] these words
+[1:51:41] but he said I was so just Minister said
+[1:51:43] I was so disappointed
+[1:51:45] my child went to Louisiana
+[1:51:48] I've been working with my child for so
+[1:51:51] long went to Louisiana to camp meeting
+[1:51:53] got baptized down there as our own
+[1:51:56] father or Minister I didn't even get a
+[1:51:58] baptize my own daughter
+[1:52:02] really
+[1:52:07] you planted
+[1:52:09] you cultivated you did all of this
+[1:52:13] and in the moment the spirits struck
+[1:52:16] she responds should have been on the
+[1:52:19] other end hallelujah praise God praise
+[1:52:22] God hallelujah It produced a seed
+[1:52:27] we have wrong motives
+[1:52:35] oh my
+[1:52:37] God yeah
+[1:52:39] I gotta hurry
+[1:52:41] Sister Sarah you'll help come on
+[1:52:44] hey man I'll start looking over there
+[1:52:46] with you playing and I'll feel guilty
+[1:52:48] and I'll stop
+[1:52:50] what's the reason reason you want to be
+[1:52:53] healed that's the reason you can't get
+[1:52:54] Faith in a sea because you haven't made
+[1:52:56] this thing to God sincerely from your
+[1:52:57] heart like Hezekiah did God give God the
+[1:53:02] reason he wanted his King said his
+[1:53:04] kingdom in order and that's part of the
+[1:53:06] reason I brought this quote or how it
+[1:53:07] tied in you see my brother and sister in
+[1:53:10] all the things that what Hezekiah faced
+[1:53:13] all the king of Assyria and all these
+[1:53:15] negative people and all these come give
+[1:53:17] yourself to us we'll bless you do all of
+[1:53:20] these things it all comes back and God
+[1:53:22] honored and made this come to pass
+[1:53:24] because Hezekiah himself a king who had
+[1:53:27] lost his way
+[1:53:29] had something in his heart a sword
+[1:53:32] please
+[1:53:33] I see my error
+[1:53:35] I need to set my kingdom in order
+[1:53:41] oh God help us
+[1:53:43] I want to set my kingdom in order
+[1:53:45] want everything in my life I want
+[1:53:47] everything in my family I want to set it
+[1:53:49] in order
+[1:53:51] my brother and sister God's a gracious
+[1:53:53] God
+[1:53:55] don't look
+[1:53:56] I preached to you on the measure of time
+[1:53:58] the other day this in a way is an
+[1:54:00] extension of that don't look at it I've
+[1:54:01] got time
+[1:54:03] look at your heart's desire it's your
+[1:54:05] desire just to have Time and Time and
+[1:54:07] Time and Time God give me way more time
+[1:54:09] I do whatever I want at the last moment
+[1:54:11] I'll get my life right know my brother
+[1:54:13] and sister take the time God has given
+[1:54:15] us
+[1:54:16] and in this time
+[1:54:18] let God do the work he desires let God
+[1:54:21] move upon us and change our lives and
+[1:54:24] change the situations around us amen but
+[1:54:28] he tells him right there God sent his
+[1:54:30] Prophet back and told him he'd be healed
+[1:54:32] see but you have to have those things
+[1:54:34] made right first so then as soon as you
+[1:54:37] get those places and know it's been
+[1:54:39] revealed to you by the word of God by
+[1:54:41] Revelation by the word that God what God
+[1:54:43] requires you to do then you have faith
+[1:54:46] genuine Faith oh my brother and sister I
+[1:54:50] don't know what's in your life I don't
+[1:54:51] know why God lays things on our lives in
+[1:54:53] this maybe he's just preaching to me and
+[1:54:55] I tell you
+[1:54:57] let's get our Kingdoms in order
+[1:54:59] amen let's take this measure that God
+[1:55:04] has given to us and apply it today don't
+[1:55:08] leave the balm of Gilead on this shelf
+[1:55:10] and say well someday take that balm and
+[1:55:13] Rob yourself in that balm of Gilead and
+[1:55:17] say Lord give me the grace and the
+[1:55:19] courage to make Kingdom in order today
+[1:55:23] oh sometimes it's facing hard things
+[1:55:28] sometimes it's facing hard things
+[1:55:31] my brother and sister I don't mean to
+[1:55:33] put my own family in the spotlight but
+[1:55:36] years ago a little bit of estranged
+[1:55:38] things that attitude a spirit between me
+[1:55:41] and my children
+[1:55:42] and as the minister as a pastor and and
+[1:55:46] things of life I was just like why can't
+[1:55:48] my children just love me
+[1:55:51] and I started praying and it's like Lord
+[1:55:53] I've done my best why not Lord
+[1:55:56] I'm not saying they didn't love me and I
+[1:55:58] don't want to sound like that they were
+[1:55:59] callous
+[1:56:00] [Music]
+[1:56:01] and the Lord revealed to me one day and
+[1:56:03] said you
+[1:56:05] need to go to them and ask forgiveness
+[1:56:11] and you know I was like Lord what do I
+[1:56:12] need to ask forgiveness for
+[1:56:15] well I'll tell you what if you ask God a
+[1:56:17] question like that
+[1:56:19] you know it's all under the blood and I
+[1:56:22] believe it's under the blood but but God
+[1:56:24] has a book
+[1:56:26] God's got a memory and he started just
+[1:56:28] like there was this and there was this
+[1:56:31] and there was this and there's this and
+[1:56:32] this
+[1:56:33] and by God's grace church I hope you
+[1:56:37] catch what I'm saying
+[1:56:38] it was so hard for me
+[1:56:42] to approach my children individually
+[1:56:46] say I've done you wrong
+[1:56:48] forgive me
+[1:56:51] it was so hard
+[1:56:54] and when it was finished
+[1:56:56] there was such Liberty
+[1:57:00] you see God's Not Gonna God's Not Gonna
+[1:57:03] just gloss over it and move on
+[1:57:07] he wants you and I
+[1:57:09] to take the prophet's words
+[1:57:12] and press into this
+[1:57:14] Hallelujah we love the Lord today
+[1:57:17] I've kept you a little long
+[1:57:20] amen
+[1:57:21] Hallelujah
+[1:57:26] you see Trust
+[1:57:28] and faith
+[1:57:30] are interconnected
+[1:57:34] and I'll say this once again if they had
+[1:57:36] believed the prophet
+[1:57:38] if they had to rest trusted the prophet
+[1:57:40] they would have believed the prophet
+[1:57:43] amen I think it's the same today
+[1:57:47] only there it's not really about
+[1:57:50] brother William Branham
+[1:57:53] these people don't actually believe God
+[1:57:56] they don't trust God
+[1:57:58] Lord help us to trust you
+[1:58:01] let's just stand sing a song or two
+[1:58:03] before we would go today
+[1:58:05] amen please pray for us sister Jerry and
+[1:58:08] I have to go
+[1:58:09] [Music]
+[1:58:12] to Mountain Home will be gone
+[1:58:14] probably the entirety of this next week
+[1:58:17] [Music]
+[1:58:18] I'm starting to pray Saints if you
+[1:58:21] wonder about Paul and a farm I'm
+[1:58:22] starting to pray for deliverance
+[1:58:28] Lord I need Deliverance
+[1:58:30] amen Learning to Lean number 71.
+[1:58:34] Hallelujah
+[1:58:35] [Music]
+[1:58:41] I'm learning
+[1:58:44] to leave
+[1:58:46] [Music]
+[1:59:00] Jesus
+[1:59:02] [Music]
+[1:59:07] name more power can you say Amen to that
+[1:59:10] then I ever dream
+[1:59:15] s
+[1:59:16] [Music]
+[1:59:28] sad and Brokenhearted
+[1:59:32] [Music]
+[1:59:49] and all that is
+[1:59:53] [Music]
+[1:59:55] a child
+[1:59:57] like the rust
+[2:00:00] and a heart that is
+[2:00:09] [Music]
+[2:00:22] [Music]
+[2:00:26] to
+[2:00:27] lean on Jesus
+[2:00:31] [Music]
+[2:00:42] ever see
+[2:00:45] I'm learning
+[2:00:47] to live Lord Jesus
+[2:00:53] [Music]
+[2:00:56] Hallelujah the Way Up Is Down Saints
+[2:00:59] Hallelujah the same God 809
+[2:01:02] Hallelujah aren't you glad you serve the
+[2:01:04] same God hallelujah hallelujah you know
+[2:01:07] you get to thinking about it my brother
+[2:01:09] and sister and you'll see
+[2:01:10] how God moves
+[2:01:13] my you talk about predictable
+[2:01:16] if you could predict the financial
+[2:01:18] market like the word predicts to you and
+[2:01:21] I I use the word predict please forgive
+[2:01:23] me it's not exactly the way
+[2:01:25] but the word tells us this if we knew
+[2:01:28] the financial markets like that well
+[2:01:30] it'd be no big deal
+[2:01:32] but you want to know go dig in your
+[2:01:34] Bible you'll see what God told David
+[2:01:37] works today what God told every one of
+[2:01:40] those great men through the age works
+[2:01:43] today and you got a problem go find it
+[2:01:46] in the Bible and see what God's solution
+[2:01:48] was and apply the solution it'll work
+[2:01:51] today
+[2:01:52] Hallelujah want your children to be
+[2:01:54] saved go back to the Bible it gives us a
+[2:01:57] clear story
+[2:01:59] hallelujah it's not if they can sit
+[2:02:01] under the right Ministry or they can
+[2:02:03] this or that it's in the word hallelujah
+[2:02:08] Hallelujah
+[2:02:10] [Music]
+[2:02:39] on the past
+[2:02:43] memories
+[2:02:45] [Music]
+[2:02:51] [Applause]
+[2:02:52] [Music]
+[2:02:57] all the same God who spoke to
+[2:03:02] oh
+[2:03:04] [Music]
+[2:03:07] the same God this wonders
+[2:03:12] too many to tell oh he's the same God
+[2:03:23] [Music]
+[2:03:27] oh and here's the same God who's living
+[2:03:33] in me
+[2:03:38] all the same God who created
+[2:03:42] all evidence
+[2:03:45] [Music]
+[2:03:57] but now we're in these last days
+[2:04:01] [Music]
+[2:04:08] [Applause]
+[2:04:11] [Music]
+[2:04:17] oh he's the same God who spoke to
+[2:04:22] the woman had the well
+[2:04:27] all the same God whose wonders
+[2:04:31] too many
+[2:04:34] men who tell all the same God who parted
+[2:04:40] the Raging
+[2:04:46] oh and he's the same God who's living
+[2:04:53] in me
+[2:04:56] all the same gods
+[2:04:59] [Music]
+[2:05:05] all the same God whose wonders
+[2:05:09] [Music]
+[2:05:17] who parted
+[2:05:19] the Raging Red Sea
+[2:05:25] and he's the same God who's living in
+[2:05:32] can we give an amen with our hands
+[2:05:34] Hallelujah
+[2:05:36] oh thank you Lord same God
+[2:05:39] same word same results
+[2:05:43] hallelujah
+[2:05:45] hallelujah these are the days of Elijah
+[2:05:48] halleluias were dismissed on this song
+[2:05:50] 751
+[2:05:52] Hallelujah God bless you Saints we love
+[2:05:55] you in the Lord amen I pray that he
+[2:05:57] opens up his word to you like he has
+[2:06:00] never opened it before it's time for us
+[2:06:04] to quit being self-limiting
+[2:06:07] amen will if only no forget thee if only
+[2:06:10] is Lord open your word I'm here to say I
+[2:06:15] receive it I say Amen to the word Lord I
+[2:06:18] receive it today in the name of Jesus
+[2:06:20] Christ you offered I receive Hallelujah
+[2:06:26] [Music]
+[2:06:29] praise the Lord declaring the word of
+[2:06:34] the Lord
+[2:06:36] and these are the days of your servant
+[2:06:40] Moses righteousness being restored
+[2:06:45] and though these are days of great trial
+[2:06:50] oh a famine and darkness and sword still
+[2:06:56] are the boys in the desert
+[2:07:00] crying the way of the Lord oh behold he
+[2:07:06] comes he's riding on the clouds shining
+[2:07:11] like the sun
+[2:07:15] [Applause]
+[2:07:17] it's the ear of Jubilee and out of
+[2:07:21] Science Hill salvation
+[2:07:24] comes and these are the days of Ezekiel
+[2:07:30] all the dry bones becoming as flesh
+[2:07:35] and these are the days of your servant
+[2:07:40] David rebuilding the Temple of Praise
+[2:07:44] Hallelujah all these are the days of the
+[2:07:49] Harvest
+[2:07:50] for the fields are as white in your
+[2:07:54] world and we are the laborers in your
+[2:08:00] opinion
+[2:08:01] declaring the word of the Lord all
+[2:08:05] behold he counts riding on the cloud
+[2:08:09] shining like the Sun at the tropical
+[2:08:14] lift your voice it's the ear up to
+[2:08:18] believe and out of Zion's he'll
+[2:08:22] salvation
+[2:08:24] comes for there's no God like Jehovah
+[2:08:28] there's no God like Jehovah no God like
+[2:08:32] Jehovah no God like Jehovah there's no
+[2:08:36] God like Jehovah no God like Jehovah
+[2:08:40] there's no God like
+[2:08:42] Jehovah oh behold he comes they're
+[2:08:47] riding on the clouds shining like the
+[2:08:51] Sun at the trumpet call lift your voice
+[2:08:56] it's the Year of Jubilee and out of
+[2:09:00] Science Hill salvation comes
+[2:09:06] [Applause]
+[2:09:08] hallelujah hallelujah hallelujah
+[2:09:15] Saints
+[2:09:18] do we believe in homework
+[2:09:22] I just asked you to do a little homework
+[2:09:24] assignment
+[2:09:27] in a quiet time
+[2:09:28] not when the family not in the kids
+[2:09:30] tearing up the toys and the families all
+[2:09:32] noise
+[2:09:36] let's stop and ask the Lord from the
+[2:09:39] depths of our heart
+[2:09:41] Lord reveal to me what it is is
+[2:09:43] hindering me
+[2:09:45] it doesn't have to be sin
+[2:09:48] it doesn't have to be something wrong in
+[2:09:50] your life
+[2:09:53] just a little something
+[2:09:57] you know sometimes now I don't mean to
+[2:10:00] go into a whole deal here
+[2:10:02] sometimes a piece of Machinery won't
+[2:10:04] work quite right
+[2:10:05] [Music]
+[2:10:07] just because a part of it has a little
+[2:10:09] too much friction
+[2:10:11] God wants Liberty in this church
+[2:10:14] God wants Liberty in these lives
+[2:10:17] would you do that with me
+[2:10:19] would we just take time and say Lord
+[2:10:21] whatever it is that's slowing me down
+[2:10:24] hindering holding back a little complex
+[2:10:27] a little something maybe reminds me I'm
+[2:10:30] sorry to go into this but just shares
+[2:10:32] reminds me of a situation that I was
+[2:10:34] part of God using
+[2:10:38] something a father
+[2:10:39] [Music]
+[2:10:44] said to a daughter
+[2:10:47] when she was about 10 going on 11 years
+[2:10:50] old
+[2:10:52] and it cut that little girl so deep
+[2:10:54] at 40 years old
+[2:10:59] she said brother Paul this is in South
+[2:11:02] America it's not here
+[2:11:04] why can't I find joy in my selfish
+[2:11:10] and God was kind enough
+[2:11:13] in her prayer and her cry
+[2:11:16] Lord why
+[2:11:18] good
+[2:11:20] her father was passed
+[2:11:24] and she said Lord forgive me
+[2:11:27] for I've held that against my father to
+[2:11:29] say
+[2:11:32] little girl
+[2:11:34] you're so ugly I don't know if anyone
+[2:11:37] will ever want to marry you
+[2:11:41] maybe the dad was in humor
+[2:11:43] but it cut to the heart of this child
+[2:11:48] and laughter is something missing and
+[2:11:53] there she was a wife and a mother
+[2:11:56] and Satan's still binding that to her
+[2:11:59] spirit
+[2:12:03] don't have to dig you don't have to get
+[2:12:05] a jackhammer and pound on yourself to
+[2:12:07] find the sound
+[2:12:08] just a simple Lord
+[2:12:12] what's hindering
+[2:12:15] what's Hendrick
+[2:12:16] [Music]
+[2:12:19] man I love you Saints
+[2:12:21] I shoot till we come together on
+[2:12:23] Wednesday night
+[2:12:24] may God bless you
+[2:12:26] everything you lay hands for
+[2:12:29] every prayer you pray for your family
+[2:12:31] for the families of the church for the
+[2:12:34] bride of Christ
+[2:12:35] pray with Liberty
+[2:12:37] or you can be under burdened Saints you
+[2:12:40] can be under burdened for a need and
+[2:12:42] have Liberty
+[2:12:43] I know my God's gonna answer this prayer
+[2:12:46] for this family for this need for this
+[2:12:48] situation for these people here for
+[2:12:49] what's going on over here my God's going
+[2:12:52] to answer that thank you Lord I got a
+[2:12:54] burn for them but my God's going to
+[2:12:55] answer
+[2:12:56] amen God bless you Hallelujah
+[2:13:00] greet one another the precious name of
+[2:13:02] Jesus Christ
+[2:13:04] [Music]
+[2:13:23] thank you
+[2:13:29] [Music]
+[2:13:50] thank you
+[2:13:55] foreign
+[2:13:59] [Music]
+[2:14:33] foreign
+[2:14:45] [Music]
+[2:15:01] Mommy
+[2:15:13] foreign
+[2:15:26] [Music]
+[2:15:45] foreign
+[2:15:48] [Music]
+[2:16:25] thank you
+[2:16:26] foreign
+[2:16:40] [Music]
+[2:16:59] foreign
+[2:17:03] [Music]
+[2:17:38] foreign
+[2:17:40] [Music]
+[2:18:12] yes
+[2:18:15] [Music]
+[2:18:51] foreign
+[2:18:53] [Music]
+[2:19:25] foreign
+[2:19:44] [Music]
+[2:19:52] foreign
+[2:20:03] Lord Jesus
+[2:20:13] [Music]
+[2:20:32] for everything
+[2:20:35] [Music]
+[2:21:06] thank you
+[2:21:13] [Music]
+[2:21:15] foreign
+[2:21:16] [Music]
+[2:21:47] foreign
+[2:21:49] [Music]
+[2:22:17] foreign
+[2:22:25] foreign
+[2:22:27] [Music]
+[2:22:58] foreign
+[2:23:08] [Music]
+[2:23:47] foreign
+[2:23:47] [Music]
+[2:24:36] thank you
+[2:24:39] [Music]
+[2:24:57] foreign
+[2:25:09] thank you
+[2:25:29] foreign
+[2:25:37] [Music]
+[2:25:41] thank you

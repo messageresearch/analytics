@@ -4,13 +4,14 @@ START OF FILE: 2025-08-30 - It's A Season For Change - Bro. Kidri Diggs - GNM Yo
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-30
-Title:   It's A Season For Change - Bro. Kidri Diggs - GNM Youth Meetings 2025
-Speaker: Kidri Diggs
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N33WayBvil8
+Date:     2025-08-30
+Title:    It's A Season For Change - Bro. Kidri Diggs - GNM Youth Meetings 2025
+Speaker:  Kidri Diggs
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 3h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=N33WayBvil8
 ========================================
 
 Description:

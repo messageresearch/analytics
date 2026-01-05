@@ -4,13 +4,14 @@ START OF FILE: 2021-03-07 - March 7, 2021 - Bro. Paul Haylett Steadfast In The F
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-07
-Title:   March 7, 2021 - Bro. Paul Haylett "Steadfast In The Faith"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NLuV6icSKxs
+Date:     2021-03-07
+Title:    March 7, 2021 - Bro. Paul Haylett "Steadfast In The Faith"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=NLuV6icSKxs
 ========================================
 
 Description:

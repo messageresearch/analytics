@@ -4,13 +4,14 @@ START OF FILE: 2024-03-03 - The Spirit Of The Witch Of Endor Today - Minister Jo
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-03
-Title:   The Spirit Of The Witch Of Endor Today - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NwieUTqPtdo
+Date:     2024-03-03
+Title:    The Spirit Of The Witch Of Endor Today - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=NwieUTqPtdo
 ========================================
 
 Description:

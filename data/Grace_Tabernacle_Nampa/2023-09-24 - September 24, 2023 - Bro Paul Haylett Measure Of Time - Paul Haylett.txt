@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - September 24, 2023 - Bro Paul Haylett Measure Of Tim
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   September 24, 2023 - Bro Paul Haylett "Measure Of Time"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vBCOxKOAPGQ
+Date:     2023-09-24
+Title:    September 24, 2023 - Bro Paul Haylett "Measure Of Time"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=vBCOxKOAPGQ
 ========================================
 
 Description:

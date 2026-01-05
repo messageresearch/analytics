@@ -4,13 +4,14 @@ START OF FILE: 2020-12-09 - December 9, 2020 - Bro. Paul Haylett Something Good 
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-09
-Title:   December 9, 2020 - Bro. Paul Haylett "Something Good is Happening"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6BTmtCwYdUo
+Date:     2020-12-09
+Title:    December 9, 2020 - Bro. Paul Haylett "Something Good is Happening"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=6BTmtCwYdUo
 ========================================
 
 Description:

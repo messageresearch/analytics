@@ -4,13 +4,14 @@ START OF FILE: 2023-07-12 - July 12, 2023 - Bro Paul Haylett A Natural Change, F
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-12
-Title:   July 12, 2023 - Bro Paul Haylett "A Natural Change, From Hungry To Satisfied"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zp8Qvd2uf94
+Date:     2023-07-12
+Title:    July 12, 2023 - Bro Paul Haylett "A Natural Change, From Hungry To Satisfied"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=zp8Qvd2uf94
 ========================================
 
 Description:

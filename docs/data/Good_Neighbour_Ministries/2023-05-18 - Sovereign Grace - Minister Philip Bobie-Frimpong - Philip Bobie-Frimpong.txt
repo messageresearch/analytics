@@ -4,13 +4,14 @@ START OF FILE: 2023-05-18 - Sovereign Grace - Minister Philip Bobie-Frimpong - P
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-18
-Title:   Sovereign Grace - Minister Philip Bobie-Frimpong
-Speaker: Philip Bobie-Frimpong
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zKgm0eMOZ0s
+Date:     2023-05-18
+Title:    Sovereign Grace - Minister Philip Bobie-Frimpong
+Speaker:  Philip Bobie-Frimpong
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=zKgm0eMOZ0s
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-06-18 - June 18, 2022 - Bro Andrew Glover - Andrew Glover.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-18
-Title:   June 18, 2022 - Bro Andrew Glover
-Speaker: Andrew Glover
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4mqfAp0t_L8
+Date:     2022-06-18
+Title:    June 18, 2022 - Bro Andrew Glover
+Speaker:  Andrew Glover
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=4mqfAp0t_L8
 ========================================
 
 Description:

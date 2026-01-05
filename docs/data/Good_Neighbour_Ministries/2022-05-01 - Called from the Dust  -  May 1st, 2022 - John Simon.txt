@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - Called from the Dust  -  May 1st, 2022 - John Simon.
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   Called from the Dust  -  May 1st, 2022
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PhgIWvkL1VM
+Date:     2022-05-01
+Title:    Called from the Dust  -  May 1st, 2022
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=PhgIWvkL1VM
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-04-16 - April 16, 2023 - Bro David Dienhart The Finished Mys
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-16
-Title:   April 16, 2023 - Bro David Dienhart "The Finished Mystery of God Revealed"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cibyWGxnh9A
+Date:     2023-04-16
+Title:    April 16, 2023 - Bro David Dienhart "The Finished Mystery of God Revealed"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=cibyWGxnh9A
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-12-04 - December 4, 2022 - Bro Chris Take Faith Opened The P
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-04
-Title:   December 4, 2022 - Bro Chris Take "Faith Opened The Promise"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lAKZd9ueY-A
+Date:     2022-12-04
+Title:    December 4, 2022 - Bro Chris Take "Faith Opened The Promise"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=lAKZd9ueY-A
 ========================================
 
 Description:

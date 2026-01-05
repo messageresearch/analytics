@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - The Heart Of A Father - Minister Danny Mazzilli - Da
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   The Heart Of A Father - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YFippeaA14g
+Date:     2023-06-18
+Title:    The Heart Of A Father - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=YFippeaA14g
 ========================================
 
 Description:

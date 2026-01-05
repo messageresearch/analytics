@@ -4,13 +4,14 @@ START OF FILE: 2024-08-25 - August 25, 2024 - Bro Paul Haylett A Personal Messag
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-25
-Title:   August 25, 2024 - Bro Paul Haylett "A Personal Message"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nCk5up_-pHM
+Date:     2024-08-25
+Title:    August 25, 2024 - Bro Paul Haylett "A Personal Message"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=nCk5up_-pHM
 ========================================
 
 Description:

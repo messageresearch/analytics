@@ -4,13 +4,14 @@ START OF FILE: 2022-05-15 - May 15, 2022 - Bro Dwayne Fehr Fountains of Living W
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-15
-Title:   May 15, 2022 - Bro Dwayne Fehr "Fountains of Living Water"
-Speaker: Dwayne Fehr
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7fYyFQVfb0c
+Date:     2022-05-15
+Title:    May 15, 2022 - Bro Dwayne Fehr "Fountains of Living Water"
+Speaker:  Dwayne Fehr
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=7fYyFQVfb0c
 ========================================
 
 Description:

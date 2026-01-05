@@ -4,13 +4,14 @@ START OF FILE: 2021-08-01 - August 1, 2021 - Bro. Paul Haylett All Things, Comin
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-01
-Title:   August 1, 2021 - Bro. Paul Haylett "All Things, Coming Into Plain View"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IDRtzajIyRs
+Date:     2021-08-01
+Title:    August 1, 2021 - Bro. Paul Haylett "All Things, Coming Into Plain View"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=IDRtzajIyRs
 ========================================
 
 Description:

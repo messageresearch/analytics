@@ -4,13 +4,14 @@ START OF FILE: 2023-02-05 - The Revelation of the Mystery - Pastor John Simon - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-05
-Title:   The Revelation of the Mystery - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CVNWHly2MNM
+Date:     2023-02-05
+Title:    The Revelation of the Mystery - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=CVNWHly2MNM
 ========================================
 
 Description:

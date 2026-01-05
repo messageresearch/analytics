@@ -4,13 +4,14 @@ START OF FILE: 2021-01-03 - January 3, 2021 - Bro. Paul Haylett Influences - Pau
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-03
-Title:   January 3, 2021 - Bro. Paul Haylett "Influences"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=i410eN01u_M
+Date:     2021-01-03
+Title:    January 3, 2021 - Bro. Paul Haylett "Influences"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=i410eN01u_M
 ========================================
 
 Description:

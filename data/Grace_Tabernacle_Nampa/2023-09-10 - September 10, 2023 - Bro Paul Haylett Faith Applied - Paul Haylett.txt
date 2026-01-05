@@ -4,13 +4,14 @@ START OF FILE: 2023-09-10 - September 10, 2023 - Bro Paul Haylett Faith Applied 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-10
-Title:   September 10, 2023 - Bro Paul Haylett "Faith Applied"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=skKQ8JVEmTo
+Date:     2023-09-10
+Title:    September 10, 2023 - Bro Paul Haylett "Faith Applied"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=skKQ8JVEmTo
 ========================================
 
 Description:

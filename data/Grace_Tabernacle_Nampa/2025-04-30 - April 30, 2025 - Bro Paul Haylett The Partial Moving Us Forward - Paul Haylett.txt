@@ -4,13 +4,14 @@ START OF FILE: 2025-04-30 - April 30, 2025 - Bro Paul Haylett The Partial Moving
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-30
-Title:   April 30, 2025 - Bro Paul Haylett "The Partial Moving Us Forward"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IyZs8O9y3UE
+Date:     2025-04-30
+Title:    April 30, 2025 - Bro Paul Haylett "The Partial Moving Us Forward"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=IyZs8O9y3UE
 ========================================
 
 Description:

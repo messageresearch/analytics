@@ -4,13 +4,14 @@ START OF FILE: 2023-03-05 - March 5, 2023 - Bro Paul Haylett  Blessed Is The Man
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-05
-Title:   March 5, 2023 - Bro Paul Haylett  "Blessed Is The Man"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nONtVl8NlTo
+Date:     2023-03-05
+Title:    March 5, 2023 - Bro Paul Haylett  "Blessed Is The Man"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=nONtVl8NlTo
 ========================================
 
 Description:

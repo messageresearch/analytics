@@ -4,13 +4,14 @@ START OF FILE: 2022-10-09 - Walking On The Razor's Edge - Pastor John Simon - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-09
-Title:   Walking On The Razor's Edge - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KBNH5_5oX7w
+Date:     2022-10-09
+Title:    Walking On The Razor's Edge - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=KBNH5_5oX7w
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-12-17 - December 17, 2023 - Bro Paul Haylett The Power Of Th
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-17
-Title:   December 17, 2023 - Bro Paul Haylett "The Power Of The Prophecy"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1ZhnlcRfYQE
+Date:     2023-12-17
+Title:    December 17, 2023 - Bro Paul Haylett "The Power Of The Prophecy"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=1ZhnlcRfYQE
 ========================================
 
 Description:

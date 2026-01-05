@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - May 8, 2022 - Bro Paul Haylett The Greatest Thing In
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   May 8, 2022 - Bro Paul Haylett "The Greatest Thing In Life"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zL_cFE4FiIQ
+Date:     2022-05-08
+Title:    May 8, 2022 - Bro Paul Haylett "The Greatest Thing In Life"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=zL_cFE4FiIQ
 ========================================
 
 Description:

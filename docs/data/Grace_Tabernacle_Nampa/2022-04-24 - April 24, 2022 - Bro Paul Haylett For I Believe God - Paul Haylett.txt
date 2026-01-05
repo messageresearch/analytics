@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - April 24, 2022 - Bro Paul Haylett For I Believe God 
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   April 24, 2022 - Bro Paul Haylett "For I Believe God"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L9-mkeAWfBM
+Date:     2022-04-24
+Title:    April 24, 2022 - Bro Paul Haylett "For I Believe God"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=L9-mkeAWfBM
 ========================================
 
 Description:

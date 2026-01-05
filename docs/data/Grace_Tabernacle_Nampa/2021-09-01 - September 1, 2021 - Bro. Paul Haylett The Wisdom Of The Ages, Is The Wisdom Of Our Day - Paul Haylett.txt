@@ -4,13 +4,14 @@ START OF FILE: 2021-09-01 - September 1, 2021 - Bro. Paul Haylett The Wisdom Of 
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-01
-Title:   September 1, 2021 - Bro. Paul Haylett "The Wisdom Of The Ages, Is The Wisdom Of Our Day"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5mNIBRfKmus
+Date:     2021-09-01
+Title:    September 1, 2021 - Bro. Paul Haylett "The Wisdom Of The Ages, Is The Wisdom Of Our Day"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=5mNIBRfKmus
 ========================================
 
 Description:

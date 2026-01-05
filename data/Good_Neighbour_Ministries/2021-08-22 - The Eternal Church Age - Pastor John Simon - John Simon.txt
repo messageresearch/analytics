@@ -4,13 +4,14 @@ START OF FILE: 2021-08-22 - The Eternal Church Age - Pastor John Simon - John Si
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-22
-Title:   The Eternal Church Age - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bf_cbj1K-RU
+Date:     2021-08-22
+Title:    The Eternal Church Age - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bf_cbj1K-RU
 ========================================
 
 Description:

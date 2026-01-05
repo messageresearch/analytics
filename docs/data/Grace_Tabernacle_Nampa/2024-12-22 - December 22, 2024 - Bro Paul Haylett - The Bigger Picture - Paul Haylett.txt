@@ -4,13 +4,14 @@ START OF FILE: 2024-12-22 - December 22, 2024 - Bro Paul Haylett - The Bigger Pi
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-22
-Title:   December 22, 2024 - Bro Paul Haylett - "The Bigger Picture"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=D1hXItgm7ug
+Date:     2024-12-22
+Title:    December 22, 2024 - Bro Paul Haylett - "The Bigger Picture"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=D1hXItgm7ug
 ========================================
 
 Description:

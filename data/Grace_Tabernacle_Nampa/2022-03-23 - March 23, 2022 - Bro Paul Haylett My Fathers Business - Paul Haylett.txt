@@ -4,13 +4,14 @@ START OF FILE: 2022-03-23 - March 23, 2022 - Bro Paul Haylett My Fathers Busines
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-23
-Title:   March 23, 2022 - Bro Paul Haylett "My Fathers Business"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tzuWDJInkno
+Date:     2022-03-23
+Title:    March 23, 2022 - Bro Paul Haylett "My Fathers Business"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=tzuWDJInkno
 ========================================
 
 Description:

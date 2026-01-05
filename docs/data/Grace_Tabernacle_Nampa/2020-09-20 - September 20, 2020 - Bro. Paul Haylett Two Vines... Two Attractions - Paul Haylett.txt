@@ -4,13 +4,14 @@ START OF FILE: 2020-09-20 - September 20, 2020 - Bro. Paul Haylett Two Vines... 
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-20
-Title:   September 20, 2020 - Bro. Paul Haylett "Two Vines... Two Attractions"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=B1SeWIVhNyc
+Date:     2020-09-20
+Title:    September 20, 2020 - Bro. Paul Haylett "Two Vines... Two Attractions"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=B1SeWIVhNyc
 ========================================
 
 Description:

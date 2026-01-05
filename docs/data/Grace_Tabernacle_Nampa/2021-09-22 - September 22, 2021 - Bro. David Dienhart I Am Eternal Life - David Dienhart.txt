@@ -4,13 +4,14 @@ START OF FILE: 2021-09-22 - September 22, 2021 - Bro. David Dienhart I Am Eterna
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-22
-Title:   September 22, 2021 - Bro. David Dienhart "I Am Eternal Life"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5f_kOFt6ALE
+Date:     2021-09-22
+Title:    September 22, 2021 - Bro. David Dienhart "I Am Eternal Life"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=5f_kOFt6ALE
 ========================================
 
 Description:

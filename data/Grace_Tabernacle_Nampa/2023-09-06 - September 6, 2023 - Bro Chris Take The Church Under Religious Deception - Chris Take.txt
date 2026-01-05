@@ -4,13 +4,14 @@ START OF FILE: 2023-09-06 - September 6, 2023 - Bro Chris Take The Church Under 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-06
-Title:   September 6, 2023 - Bro Chris Take "The Church Under Religious Deception"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DTtBwuq7Xfg
+Date:     2023-09-06
+Title:    September 6, 2023 - Bro Chris Take "The Church Under Religious Deception"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=DTtBwuq7Xfg
 ========================================
 
 Description:

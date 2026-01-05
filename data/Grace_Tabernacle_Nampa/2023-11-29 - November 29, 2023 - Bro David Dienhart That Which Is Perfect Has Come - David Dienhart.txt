@@ -4,13 +4,14 @@ START OF FILE: 2023-11-29 - November 29, 2023 - Bro David Dienhart That Which Is
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-29
-Title:   November 29, 2023 - Bro David Dienhart "That Which Is Perfect Has Come"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Y87smaNpoaE
+Date:     2023-11-29
+Title:    November 29, 2023 - Bro David Dienhart "That Which Is Perfect Has Come"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y87smaNpoaE
 ========================================
 
 Description:

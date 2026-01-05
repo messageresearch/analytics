@@ -4,13 +4,14 @@ START OF FILE: 2023-06-29 - I Have Put My Words In Thy Mouth - Minister Philip B
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-29
-Title:   I Have Put My Words In Thy Mouth - Minister Philip Bobie-Frimpong
-Speaker: Philip Bobie-Frimpong
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uvaHX3ubZeA
+Date:     2023-06-29
+Title:    I Have Put My Words In Thy Mouth - Minister Philip Bobie-Frimpong
+Speaker:  Philip Bobie-Frimpong
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=uvaHX3ubZeA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-23 - January 23, 2022 - David Nash - The Scepter of Judah
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-23
-Title:   January 23, 2022 - David Nash - "The Scepter of Judah"
-Speaker: Unknown Speaker
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hSX2mojxe4s
+Date:     2022-01-23
+Title:    January 23, 2022 - David Nash - "The Scepter of Judah"
+Speaker:  Unknown Speaker
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=hSX2mojxe4s
 ========================================
 
 Description:

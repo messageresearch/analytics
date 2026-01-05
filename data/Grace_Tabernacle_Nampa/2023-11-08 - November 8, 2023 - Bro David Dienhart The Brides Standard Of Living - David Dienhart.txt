@@ -4,13 +4,14 @@ START OF FILE: 2023-11-08 - November 8, 2023 - Bro David Dienhart The Brides Sta
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-08
-Title:   November 8, 2023 - Bro David Dienhart "The Brides Standard Of Living"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WCVj80oLB2g
+Date:     2023-11-08
+Title:    November 8, 2023 - Bro David Dienhart "The Brides Standard Of Living"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=WCVj80oLB2g
 ========================================
 
 Description:

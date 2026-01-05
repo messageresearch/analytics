@@ -4,13 +4,14 @@ START OF FILE: 2025-12-10 - December 10, 2025 - Bro Paul Haylett Our Junction - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-10
-Title:   December 10, 2025 - Bro Paul Haylett "Our Junction"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GFWA3Mz-TWE
+Date:     2025-12-10
+Title:    December 10, 2025 - Bro Paul Haylett "Our Junction"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Short Service
+Duration: 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=GFWA3Mz-TWE
 ========================================
 
 Description:

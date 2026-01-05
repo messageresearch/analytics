@@ -4,13 +4,14 @@ START OF FILE: 2024-02-25 - Choice Revealing Character - Minister John Simon - J
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-25
-Title:   Choice Revealing Character - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zW9EMKFqm08
+Date:     2024-02-25
+Title:    Choice Revealing Character - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=zW9EMKFqm08
 ========================================
 
 Description:

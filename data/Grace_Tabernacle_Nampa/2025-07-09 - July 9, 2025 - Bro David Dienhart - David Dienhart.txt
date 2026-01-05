@@ -4,13 +4,14 @@ START OF FILE: 2025-07-09 - July 9, 2025 - Bro David Dienhart - David Dienhart.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-09
-Title:   July 9, 2025 - Bro David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=opAI1LNtM_4
+Date:     2025-07-09
+Title:    July 9, 2025 - Bro David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=opAI1LNtM_4
 ========================================
 
 Description:

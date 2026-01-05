@@ -4,13 +4,14 @@ START OF FILE: 2019-07-07 - 00153 A Symbiotic Relationship - July 7 2019 - Br An
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-07
-Title:   00153 A Symbiotic Relationship - July 7 2019 - Br Andrew Furlonge
-Speaker: Andrew Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DO64oHAO_Fk
+Date:     2019-07-07
+Title:    00153 A Symbiotic Relationship - July 7 2019 - Br Andrew Furlonge
+Speaker:  Andrew Furlonge
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=DO64oHAO_Fk
 ========================================
 
 TRANSCRIPT

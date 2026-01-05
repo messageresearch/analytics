@@ -4,13 +4,14 @@ START OF FILE: 2023-04-09 - April 9, 2023 - Bro Paul Haylett A Supernatural Expr
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-09
-Title:   April 9, 2023 - Bro Paul Haylett "A Supernatural Expression"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sjJ7F8ClJ7E
+Date:     2023-04-09
+Title:    April 9, 2023 - Bro Paul Haylett "A Supernatural Expression"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=sjJ7F8ClJ7E
 ========================================
 
 Description:

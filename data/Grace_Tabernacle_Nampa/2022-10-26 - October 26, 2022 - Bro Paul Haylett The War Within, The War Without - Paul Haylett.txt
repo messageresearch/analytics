@@ -4,13 +4,14 @@ START OF FILE: 2022-10-26 - October 26, 2022 - Bro Paul Haylett The War Within, 
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-26
-Title:   October 26, 2022 - Bro Paul Haylett "The War Within, The War Without"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KsNJ-EZYcJI
+Date:     2022-10-26
+Title:    October 26, 2022 - Bro Paul Haylett "The War Within, The War Without"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=KsNJ-EZYcJI
 ========================================
 
 Description:

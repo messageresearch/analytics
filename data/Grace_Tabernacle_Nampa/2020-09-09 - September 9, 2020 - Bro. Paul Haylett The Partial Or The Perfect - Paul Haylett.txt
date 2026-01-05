@@ -4,13 +4,14 @@ START OF FILE: 2020-09-09 - September 9, 2020 - Bro. Paul Haylett The Partial Or
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-09
-Title:   September 9, 2020 - Bro. Paul Haylett "The Partial Or The Perfect "
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EQrs0w1aVjo
+Date:     2020-09-09
+Title:    September 9, 2020 - Bro. Paul Haylett "The Partial Or The Perfect "
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=EQrs0w1aVjo
 ========================================
 
 Description:

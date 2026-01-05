@@ -4,13 +4,14 @@ START OF FILE: 2022-11-27 - November 27, 2022 - Bro David Dienhart All The Books
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-27
-Title:   November 27, 2022 - Bro David Dienhart "All The Books Are Open"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=S2jgaHPNLMc
+Date:     2022-11-27
+Title:    November 27, 2022 - Bro David Dienhart "All The Books Are Open"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=S2jgaHPNLMc
 ========================================
 
 Description:

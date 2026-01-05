@@ -4,13 +4,14 @@ START OF FILE: 2023-12-17 - The Greatest Christmas Gift is Faith - Minister Dann
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-17
-Title:   The Greatest Christmas Gift is Faith - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=sIwyzGEJ5FQ
+Date:     2023-12-17
+Title:    The Greatest Christmas Gift is Faith - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Christmas Program
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=sIwyzGEJ5FQ
 ========================================
 
 Description:

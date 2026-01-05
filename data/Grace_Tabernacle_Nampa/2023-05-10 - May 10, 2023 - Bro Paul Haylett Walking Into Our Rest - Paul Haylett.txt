@@ -4,13 +4,14 @@ START OF FILE: 2023-05-10 - May 10, 2023 - Bro Paul Haylett Walking Into Our Res
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-10
-Title:   May 10, 2023 - Bro Paul Haylett "Walking Into Our Rest"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oPqsXmECJxU
+Date:     2023-05-10
+Title:    May 10, 2023 - Bro Paul Haylett "Walking Into Our Rest"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=oPqsXmECJxU
 ========================================
 
 Description:

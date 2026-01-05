@@ -4,13 +4,14 @@ START OF FILE: 2025-01-08 - January 8, 2025 - Bro David Nash -Where have ye laid
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-08
-Title:   January 8, 2025 - Bro David Nash -"Where have ye laid him? "
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=haQUv-N1WxE
+Date:     2025-01-08
+Title:    January 8, 2025 - Bro David Nash -"Where have ye laid him? "
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=haQUv-N1WxE
 ========================================
 
 Description:

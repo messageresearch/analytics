@@ -4,13 +4,14 @@ START OF FILE: 2022-08-10 - Time Of The Foolish Virgin - Pastor John Simon - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-10
-Title:   Time Of The Foolish Virgin - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1dcTD8bp6qI
+Date:     2022-08-10
+Title:    Time Of The Foolish Virgin - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=1dcTD8bp6qI
 ========================================
 
 Description:

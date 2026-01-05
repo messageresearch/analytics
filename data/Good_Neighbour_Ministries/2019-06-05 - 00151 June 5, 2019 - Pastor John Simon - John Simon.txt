@@ -4,13 +4,14 @@ START OF FILE: 2019-06-05 - 00151 June 5, 2019 - Pastor John Simon - John Simon.
 
 SERMON DETAILS
 ========================================
-Date:    2019-06-05
-Title:   00151 June 5, 2019 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ASEBWDCJrJM
+Date:     2019-06-05
+Title:    00151 June 5, 2019 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=ASEBWDCJrJM
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-03-22 - March 22, 2023 - Bro Paul Haylett Our Road Home - Pa
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-22
-Title:   March 22, 2023 - Bro Paul Haylett "Our Road Home"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qLpu1xEZ7XE
+Date:     2023-03-22
+Title:    March 22, 2023 - Bro Paul Haylett "Our Road Home"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=qLpu1xEZ7XE
 ========================================
 
 Description:

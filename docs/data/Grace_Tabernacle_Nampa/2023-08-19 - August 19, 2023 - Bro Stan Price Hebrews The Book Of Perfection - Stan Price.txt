@@ -4,13 +4,14 @@ START OF FILE: 2023-08-19 - August 19, 2023 - Bro Stan Price Hebrews The Book Of
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-19
-Title:   August 19, 2023 - Bro Stan Price" Hebrews The Book Of Perfection"
-Speaker: Stan Price
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VMJrWv3rbY0
+Date:     2023-08-19
+Title:    August 19, 2023 - Bro Stan Price" Hebrews The Book Of Perfection"
+Speaker:  Stan Price
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=VMJrWv3rbY0
 ========================================
 
 Description:

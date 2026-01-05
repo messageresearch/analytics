@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - If Not Me, Then Who - Bro. Kidri Diggs - GNM Youth M
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   If Not Me, Then Who? - Bro. Kidri Diggs - GNM Youth Meetings 2025
-Speaker: Kidri Diggs
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=C1Q_fapBW68
+Date:     2025-08-31
+Title:    If Not Me, Then Who? - Bro. Kidri Diggs - GNM Youth Meetings 2025
+Speaker:  Kidri Diggs
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 3h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=C1Q_fapBW68
 ========================================
 
 Description:

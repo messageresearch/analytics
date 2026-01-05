@@ -4,13 +4,14 @@ START OF FILE: 2022-07-03 - July 3, 2022 - Bro Paul Haylett It Is Written - Paul
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-03
-Title:   July 3, 2022 - Bro Paul Haylett "It Is Written"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wa6nHlnytqY
+Date:     2022-07-03
+Title:    July 3, 2022 - Bro Paul Haylett "It Is Written"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=wa6nHlnytqY
 ========================================
 
 Description:

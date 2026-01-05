@@ -4,13 +4,14 @@ START OF FILE: 2024-04-07 - The Voice Of The Sign (Signs In The Heavens) - Pasto
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-07
-Title:   The Voice Of The Sign (Signs In The Heavens) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=F_uSrCaY-ao
+Date:     2024-04-07
+Title:    The Voice Of The Sign (Signs In The Heavens) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=F_uSrCaY-ao
 ========================================
 
 Description:

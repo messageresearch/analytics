@@ -4,13 +4,14 @@ START OF FILE: 2024-09-08 - September 8, 2024 - Bro Craig Booher - Craig Booher.
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-08
-Title:   September 8, 2024 - Bro Craig Booher
-Speaker: Craig Booher
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HfWN7Ks3JjU
+Date:     2024-09-08
+Title:    September 8, 2024 - Bro Craig Booher
+Speaker:  Craig Booher
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=HfWN7Ks3JjU
 ========================================
 
 Description:

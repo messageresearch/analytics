@@ -4,13 +4,14 @@ START OF FILE: 2024-11-17 - November 17, 2024 - Bro David Dienhart - David Dienh
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-17
-Title:   November 17, 2024 - Bro David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nbaK9BRjGC0
+Date:     2024-11-17
+Title:    November 17, 2024 - Bro David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=nbaK9BRjGC0
 ========================================
 
 Description:

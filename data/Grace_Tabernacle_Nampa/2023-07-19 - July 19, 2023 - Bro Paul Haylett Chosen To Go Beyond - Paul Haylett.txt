@@ -4,13 +4,14 @@ START OF FILE: 2023-07-19 - July 19, 2023 - Bro Paul Haylett Chosen To Go Beyond
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-19
-Title:   July 19, 2023 - Bro Paul Haylett "Chosen To Go Beyond"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WFg70XcpgKk
+Date:     2023-07-19
+Title:    July 19, 2023 - Bro Paul Haylett "Chosen To Go Beyond"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=WFg70XcpgKk
 ========================================
 
 Description:

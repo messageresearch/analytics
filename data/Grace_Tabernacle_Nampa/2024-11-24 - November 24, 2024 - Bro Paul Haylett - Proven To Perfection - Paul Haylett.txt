@@ -4,13 +4,14 @@ START OF FILE: 2024-11-24 - November 24, 2024 - Bro Paul Haylett - Proven To Per
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-24
-Title:   November 24, 2024 - Bro Paul Haylett - "Proven To Perfection"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kSRTLjIUuhs
+Date:     2024-11-24
+Title:    November 24, 2024 - Bro Paul Haylett - "Proven To Perfection"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=kSRTLjIUuhs
 ========================================
 
 Description:

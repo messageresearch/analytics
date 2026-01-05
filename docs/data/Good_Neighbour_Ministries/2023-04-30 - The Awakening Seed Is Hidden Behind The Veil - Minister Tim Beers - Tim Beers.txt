@@ -4,13 +4,14 @@ START OF FILE: 2023-04-30 - The Awakening Seed Is Hidden Behind The Veil - Minis
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-30
-Title:   The Awakening Seed Is Hidden Behind The Veil - Minister Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pdQlGhzJfhA
+Date:     2023-04-30
+Title:    The Awakening Seed Is Hidden Behind The Veil - Minister Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=pdQlGhzJfhA
 ========================================
 
 Description:

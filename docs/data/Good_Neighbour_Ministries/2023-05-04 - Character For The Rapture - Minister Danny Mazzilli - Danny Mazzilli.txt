@@ -4,13 +4,14 @@ START OF FILE: 2023-05-04 - Character For The Rapture - Minister Danny Mazzilli 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-04
-Title:   Character For The Rapture - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f_xDvl4f1HY
+Date:     2023-05-04
+Title:    Character For The Rapture - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=f_xDvl4f1HY
 ========================================
 
 Description:

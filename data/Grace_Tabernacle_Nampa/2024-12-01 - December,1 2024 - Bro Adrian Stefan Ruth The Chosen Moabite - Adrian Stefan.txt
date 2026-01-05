@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - December,1 2024 - Bro Adrian Stefan Ruth The Chosen 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   December,1 2024 - Bro Adrian Stefan "Ruth The Chosen Moabite"
-Speaker: Adrian Stefan
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=B7zmeHxJj_0
+Date:     2024-12-01
+Title:    December,1 2024 - Bro Adrian Stefan "Ruth The Chosen Moabite"
+Speaker:  Adrian Stefan
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=B7zmeHxJj_0
 ========================================
 
 Description:

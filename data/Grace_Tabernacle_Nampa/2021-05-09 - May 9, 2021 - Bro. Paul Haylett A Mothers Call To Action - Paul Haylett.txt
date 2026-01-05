@@ -4,13 +4,14 @@ START OF FILE: 2021-05-09 - May 9, 2021 - Bro. Paul Haylett A Mothers Call To Ac
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-09
-Title:   May 9, 2021 - Bro. Paul Haylett "A Mothers Call To Action"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZzWPpY_uBvk
+Date:     2021-05-09
+Title:    May 9, 2021 - Bro. Paul Haylett "A Mothers Call To Action"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZzWPpY_uBvk
 ========================================
 
 Description:

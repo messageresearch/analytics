@@ -4,13 +4,14 @@ START OF FILE: 2025-08-31 - August 31, 2025 - Bro David Dienhart Our Glory, Our 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-31
-Title:   August 31, 2025 - Bro David Dienhart "Our Glory, Our Revelation"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fmVPDKQoeiU
+Date:     2025-08-31
+Title:    August 31, 2025 - Bro David Dienhart "Our Glory, Our Revelation"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=fmVPDKQoeiU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - Faith By Experience- Bro. Kidri Diggs - GNM Youth Me
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   Faith By Experience- Bro. Kidri Diggs - GNM Youth Meetings 2023
-Speaker: Kidri Diggs
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kOHUJnVVyhE
+Date:     2023-09-03
+Title:    Faith By Experience- Bro. Kidri Diggs - GNM Youth Meetings 2023
+Speaker:  Kidri Diggs
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 3h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=kOHUJnVVyhE
 ========================================
 
 Description:

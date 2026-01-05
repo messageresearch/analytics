@@ -4,13 +4,14 @@ START OF FILE: 2025-11-05 - November 5, 2025 - Bro Paul Haylett Perfectly Uncons
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-05
-Title:   November 5, 2025 - Bro Paul Haylett "Perfectly Unconscious Faith"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Lq-z8Ssv62Y
+Date:     2025-11-05
+Title:    November 5, 2025 - Bro Paul Haylett "Perfectly Unconscious Faith"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=Lq-z8Ssv62Y
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - September 11, 2022 - Bro Paul Haylett Lead By A Heav
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   September 11, 2022 - Bro Paul Haylett "Lead By A Heavenly Vision"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=M0dgS5Vfg4U
+Date:     2022-09-11
+Title:    September 11, 2022 - Bro Paul Haylett "Lead By A Heavenly Vision"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=M0dgS5Vfg4U
 ========================================
 
 Description:

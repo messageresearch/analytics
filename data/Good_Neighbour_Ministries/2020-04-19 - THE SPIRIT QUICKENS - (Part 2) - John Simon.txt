@@ -4,13 +4,14 @@ START OF FILE: 2020-04-19 - THE SPIRIT QUICKENS - (Part 2) - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-19
-Title:   THE SPIRIT QUICKENS - (Part 2)
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4ZZvqWm9KHM
+Date:     2020-04-19
+Title:    THE SPIRIT QUICKENS - (Part 2)
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=4ZZvqWm9KHM
 ========================================
 
 Description:

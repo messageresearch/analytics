@@ -4,13 +4,14 @@ START OF FILE: 2020-10-28 - October 28, 2020 - Bro. David Dienhart No Plague Sha
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-28
-Title:   October 28, 2020 - Bro. David Dienhart "No Plague Shall Come Nigh Thy Dwelling"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AiTA2hyOEbo
+Date:     2020-10-28
+Title:    October 28, 2020 - Bro. David Dienhart "No Plague Shall Come Nigh Thy Dwelling"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=AiTA2hyOEbo
 ========================================
 
 Description:

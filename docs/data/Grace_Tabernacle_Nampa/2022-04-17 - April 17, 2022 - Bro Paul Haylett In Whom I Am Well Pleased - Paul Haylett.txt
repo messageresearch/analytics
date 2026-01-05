@@ -4,13 +4,14 @@ START OF FILE: 2022-04-17 - April 17, 2022 - Bro Paul Haylett In Whom I Am Well 
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-17
-Title:   April 17, 2022 - Bro Paul Haylett "In Whom I Am Well Pleased"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cZTI_qobj70
+Date:     2022-04-17
+Title:    April 17, 2022 - Bro Paul Haylett "In Whom I Am Well Pleased"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=cZTI_qobj70
 ========================================
 
 Description:

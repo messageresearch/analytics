@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - Chosen To Manifest The Promise Of Your Age - Pastor 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   Chosen To Manifest The Promise Of Your Age - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4CWosrhU8Sk
+Date:     2023-01-22
+Title:    Chosen To Manifest The Promise Of Your Age - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=4CWosrhU8Sk
 ========================================
 
 Description:

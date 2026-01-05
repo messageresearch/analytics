@@ -4,13 +4,14 @@ START OF FILE: 2025-10-05 - A Friend in Life - Bro. Markus Becker - Markus Becke
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-05
-Title:   A Friend in Life - Bro. Markus Becker
-Speaker: Markus Becker
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ekh7FcXgc1Y
+Date:     2025-10-05
+Title:    A Friend in Life - Bro. Markus Becker
+Speaker:  Markus Becker
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=ekh7FcXgc1Y
 ========================================
 
 Description:

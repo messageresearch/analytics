@@ -4,13 +4,14 @@ START OF FILE: 2021-03-21 - March 21, 2021 - Bro. Paul Haylett Taking Sides - Pa
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-21
-Title:   March 21, 2021 - Bro. Paul Haylett "Taking Sides"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Va5X7e1phVk
+Date:     2021-03-21
+Title:    March 21, 2021 - Bro. Paul Haylett "Taking Sides"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=Va5X7e1phVk
 ========================================
 
 Description:

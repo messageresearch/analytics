@@ -4,13 +4,14 @@ START OF FILE: 2023-08-31 - Follow Me - Minister Kofi Antwi - Kofi Antwi.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-31
-Title:   Follow Me - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OWyu5LW92gI
+Date:     2023-08-31
+Title:    Follow Me - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=OWyu5LW92gI
 ========================================
 
 Description:

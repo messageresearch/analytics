@@ -4,13 +4,14 @@ START OF FILE: 2024-07-28 - Come & See (Part 2) - Pastor Danny Mazzilli - Danny 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-28
-Title:   Come & See (Part 2) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=O__A_WQ4Lgk
+Date:     2024-07-28
+Title:    Come & See (Part 2) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=O__A_WQ4Lgk
 ========================================
 
 Description:

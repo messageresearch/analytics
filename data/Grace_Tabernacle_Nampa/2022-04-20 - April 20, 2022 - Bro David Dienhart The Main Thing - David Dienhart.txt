@@ -4,13 +4,14 @@ START OF FILE: 2022-04-20 - April 20, 2022 - Bro David Dienhart The Main Thing -
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-20
-Title:   April 20, 2022 - Bro David Dienhart "The Main Thing"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZZeBFrqGIiI
+Date:     2022-04-20
+Title:    April 20, 2022 - Bro David Dienhart "The Main Thing"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZZeBFrqGIiI
 ========================================
 
 Description:

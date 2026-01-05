@@ -4,13 +4,14 @@ START OF FILE: 2023-04-27 - Many Are Called, But Few Are Chosen - Minister Kofi 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-27
-Title:   Many Are Called, But Few Are Chosen - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SfM2qVWDcG4
+Date:     2023-04-27
+Title:    Many Are Called, But Few Are Chosen - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=SfM2qVWDcG4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-26 - January 26, 2022 - Bro Paul Haylett - What My House 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-26
-Title:   January 26, 2022 - Bro Paul Haylett - What My House Says About Me
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gsnX5KvQOhk
+Date:     2022-01-26
+Title:    January 26, 2022 - Bro Paul Haylett - What My House Says About Me
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=gsnX5KvQOhk
 ========================================
 
 Description:

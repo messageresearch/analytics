@@ -4,13 +4,14 @@ START OF FILE: 2020-04-10 - COMMUNION (THE LORD'S SUPPER) - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-10
-Title:   COMMUNION (THE LORD'S SUPPER)
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SrmAxhLetTo
+Date:     2020-04-10
+Title:    COMMUNION (THE LORD'S SUPPER)
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Communion Service
+Duration: 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=SrmAxhLetTo
 ========================================
 
 Description:

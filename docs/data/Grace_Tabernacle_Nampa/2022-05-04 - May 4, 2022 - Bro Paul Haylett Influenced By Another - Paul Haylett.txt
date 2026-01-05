@@ -4,13 +4,14 @@ START OF FILE: 2022-05-04 - May 4, 2022 - Bro Paul Haylett Influenced By Another
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-04
-Title:   May 4, 2022 - Bro Paul Haylett "Influenced By Another"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cz_h0-Pe06w
+Date:     2022-05-04
+Title:    May 4, 2022 - Bro Paul Haylett "Influenced By Another"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=cz_h0-Pe06w
 ========================================
 
 Description:

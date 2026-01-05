@@ -4,13 +4,14 @@ START OF FILE: 2023-10-29 - Seeing Yourself In The Word (Part 2) I - Minister Da
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-29
-Title:   Seeing Yourself In The Word (Part 2) I - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9z5j4RKeyR4
+Date:     2023-10-29
+Title:    Seeing Yourself In The Word (Part 2) I - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=9z5j4RKeyR4
 ========================================
 
 Description:

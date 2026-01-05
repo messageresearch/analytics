@@ -4,13 +4,14 @@ START OF FILE: 2023-08-27 - August 27, 2023 - Bro Paul Haylett Whose Image We Ba
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-27
-Title:   August 27, 2023 - Bro Paul Haylett "Whose Image We Bare?"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d4X9l87rj1o
+Date:     2023-08-27
+Title:    August 27, 2023 - Bro Paul Haylett "Whose Image We Bare?"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=d4X9l87rj1o
 ========================================
 
 Description:

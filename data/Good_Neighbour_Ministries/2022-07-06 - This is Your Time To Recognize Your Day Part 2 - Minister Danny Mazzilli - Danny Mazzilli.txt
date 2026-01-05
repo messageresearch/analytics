@@ -4,13 +4,14 @@ START OF FILE: 2022-07-06 - This is Your Time To Recognize Your Day Part 2 - Min
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-06
-Title:   This is Your Time To Recognize Your Day Part 2 - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X33iJSJYVks
+Date:     2022-07-06
+Title:    This is Your Time To Recognize Your Day Part 2 - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=X33iJSJYVks
 ========================================
 
 Description:

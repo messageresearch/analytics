@@ -4,13 +4,14 @@ START OF FILE: 2024-01-10 - January 10, 2024 - Bro Chris Take - Chris Take.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-10
-Title:   January 10, 2024 - Bro Chris Take
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9K2pJJAxioc
+Date:     2024-01-10
+Title:    January 10, 2024 - Bro Chris Take
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=9K2pJJAxioc
 ========================================
 
 Description:

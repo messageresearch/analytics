@@ -4,13 +4,14 @@ START OF FILE: 2023-03-29 - Rapturing Faith (Part 1) - Minister Danny Mazzilli -
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-29
-Title:   Rapturing Faith (Part 1) - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=l79K7d4Tmu0
+Date:     2023-03-29
+Title:    Rapturing Faith (Part 1) - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=l79K7d4Tmu0
 ========================================
 
 Description:

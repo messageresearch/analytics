@@ -4,13 +4,14 @@ START OF FILE: 2022-07-24 - July 24, 2022 - Bro Paul Haylett Preserved - Paul Ha
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-24
-Title:   July 24, 2022 - Bro Paul Haylett "Preserved"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IDc9b1AXWxg
+Date:     2022-07-24
+Title:    July 24, 2022 - Bro Paul Haylett "Preserved"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=IDc9b1AXWxg
 ========================================
 
 Description:

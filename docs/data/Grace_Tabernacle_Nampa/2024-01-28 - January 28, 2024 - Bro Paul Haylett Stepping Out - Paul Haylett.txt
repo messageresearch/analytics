@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - January 28, 2024 - Bro Paul Haylett Stepping Out - P
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   January 28, 2024 - Bro Paul Haylett "Stepping Out"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GuZICDXGDeM
+Date:     2024-01-28
+Title:    January 28, 2024 - Bro Paul Haylett "Stepping Out"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=GuZICDXGDeM
 ========================================
 
 Description:

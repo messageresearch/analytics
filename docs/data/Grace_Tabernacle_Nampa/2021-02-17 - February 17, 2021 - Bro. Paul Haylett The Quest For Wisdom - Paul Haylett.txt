@@ -4,13 +4,14 @@ START OF FILE: 2021-02-17 - February 17, 2021 - Bro. Paul Haylett The Quest For 
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-17
-Title:   February 17, 2021 - Bro. Paul Haylett "The Quest For Wisdom"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r55E4pT08Xg
+Date:     2021-02-17
+Title:    February 17, 2021 - Bro. Paul Haylett "The Quest For Wisdom"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=r55E4pT08Xg
 ========================================
 
 Description:

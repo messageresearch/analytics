@@ -4,13 +4,14 @@ START OF FILE: 2023-09-27 - September 27, 2023 - Bro David Dienhart  The Word Li
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-27
-Title:   September 27, 2023 - Bro David Dienhart " The Word Living And In Action "
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0uBut00SIag
+Date:     2023-09-27
+Title:    September 27, 2023 - Bro David Dienhart " The Word Living And In Action "
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=0uBut00SIag
 ========================================
 
 Description:

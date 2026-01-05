@@ -4,13 +4,14 @@ START OF FILE: 2020-11-18 - November 18, 2020 - Bro. Paul Haylett Perfect Light 
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-18
-Title:   November 18, 2020 - Bro. Paul Haylett "Perfect Light Brings Forth A Perfect Image"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VacYpEsdaMc
+Date:     2020-11-18
+Title:    November 18, 2020 - Bro. Paul Haylett "Perfect Light Brings Forth A Perfect Image"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=VacYpEsdaMc
 ========================================
 
 Description:

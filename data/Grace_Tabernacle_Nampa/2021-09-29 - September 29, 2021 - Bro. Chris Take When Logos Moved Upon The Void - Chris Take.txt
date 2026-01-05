@@ -4,13 +4,14 @@ START OF FILE: 2021-09-29 - September 29, 2021 - Bro. Chris Take When Logos Move
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-29
-Title:   September 29, 2021 - Bro. Chris Take "When Logos Moved Upon The Void"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=j9dOjtiTbTg
+Date:     2021-09-29
+Title:    September 29, 2021 - Bro. Chris Take "When Logos Moved Upon The Void"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=j9dOjtiTbTg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-12-18 - December 18, 2022 - Bro Chris Take Rise, Reign and F
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-18
-Title:   December 18, 2022 - Bro Chris Take "Rise, Reign and Fall: Ephraim"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9GyuAumPKd0
+Date:     2022-12-18
+Title:    December 18, 2022 - Bro Chris Take "Rise, Reign and Fall: Ephraim"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=9GyuAumPKd0
 ========================================
 
 Description:

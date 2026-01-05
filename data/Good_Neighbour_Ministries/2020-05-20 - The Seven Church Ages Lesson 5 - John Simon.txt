@@ -4,13 +4,14 @@ START OF FILE: 2020-05-20 - The Seven Church Ages Lesson 5 - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-20
-Title:   The Seven Church Ages Lesson 5
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xCNN8C3lCLw
+Date:     2020-05-20
+Title:    The Seven Church Ages Lesson 5
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=xCNN8C3lCLw
 ========================================
 
 Description:

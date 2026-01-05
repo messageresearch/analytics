@@ -4,13 +4,14 @@ START OF FILE: 2023-02-19 - February 19, 2023 - Bro Paul Haylett  Doing Our Part
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-19
-Title:   February 19, 2023 - Bro Paul Haylett  "Doing Our Part"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AxrJwI_sluU
+Date:     2023-02-19
+Title:    February 19, 2023 - Bro Paul Haylett  "Doing Our Part"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=AxrJwI_sluU
 ========================================
 
 Description:

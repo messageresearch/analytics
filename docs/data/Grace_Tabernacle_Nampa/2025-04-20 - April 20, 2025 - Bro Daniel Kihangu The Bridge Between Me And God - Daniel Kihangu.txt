@@ -4,13 +4,14 @@ START OF FILE: 2025-04-20 - April 20, 2025 - Bro Daniel Kihangu The Bridge Betwe
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-20
-Title:   April 20, 2025 - Bro Daniel Kihangu "The Bridge Between Me And God"
-Speaker: Daniel Kihangu
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Y-PkrkLoCXU
+Date:     2025-04-20
+Title:    April 20, 2025 - Bro Daniel Kihangu "The Bridge Between Me And God"
+Speaker:  Daniel Kihangu
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y-PkrkLoCXU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-06 - March 6, 2022 - Bro. David Dienhart The Message Of T
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-06
-Title:   March 6, 2022 - Bro. David Dienhart "The Message Of The Little Book, The Opened Book"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fKOaMjZ3leA
+Date:     2022-03-06
+Title:    March 6, 2022 - Bro. David Dienhart "The Message Of The Little Book, The Opened Book"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 3h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=fKOaMjZ3leA
 ========================================
 
 Description:

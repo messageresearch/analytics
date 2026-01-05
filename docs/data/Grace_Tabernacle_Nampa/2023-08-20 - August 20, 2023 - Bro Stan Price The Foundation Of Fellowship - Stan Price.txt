@@ -4,13 +4,14 @@ START OF FILE: 2023-08-20 - August 20, 2023 - Bro Stan Price The Foundation Of F
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-20
-Title:   August 20, 2023 - Bro Stan Price "The Foundation Of Fellowship"
-Speaker: Stan Price
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OGhdPdEJc7g
+Date:     2023-08-20
+Title:    August 20, 2023 - Bro Stan Price "The Foundation Of Fellowship"
+Speaker:  Stan Price
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=OGhdPdEJc7g
 ========================================
 
 Description:

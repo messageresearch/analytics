@@ -4,13 +4,14 @@ START OF FILE: 2023-02-01 - February 1, 2023 - Bro Paul Haylett Our Road To Emma
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-01
-Title:   February 1, 2023 - Bro Paul Haylett "Our Road To Emmaus"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ck3dlAws27A
+Date:     2023-02-01
+Title:    February 1, 2023 - Bro Paul Haylett "Our Road To Emmaus"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=ck3dlAws27A
 ========================================
 
 Description:

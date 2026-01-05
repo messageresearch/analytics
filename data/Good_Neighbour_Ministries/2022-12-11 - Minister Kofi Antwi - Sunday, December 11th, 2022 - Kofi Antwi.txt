@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - Minister Kofi Antwi - Sunday, December 11th, 2022 - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   Minister Kofi Antwi - Sunday, December 11th, 2022
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FKu9tqayMy8
+Date:     2022-12-11
+Title:    Minister Kofi Antwi - Sunday, December 11th, 2022
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=FKu9tqayMy8
 ========================================
 
 Description:

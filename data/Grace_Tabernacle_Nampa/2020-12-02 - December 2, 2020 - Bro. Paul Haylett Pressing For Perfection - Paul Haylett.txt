@@ -4,13 +4,14 @@ START OF FILE: 2020-12-02 - December 2, 2020 - Bro. Paul Haylett Pressing For Pe
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-02
-Title:   December 2, 2020 - Bro. Paul Haylett "Pressing For Perfection"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Da0_PuIBFjk
+Date:     2020-12-02
+Title:    December 2, 2020 - Bro. Paul Haylett "Pressing For Perfection"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=Da0_PuIBFjk
 ========================================
 
 Description:

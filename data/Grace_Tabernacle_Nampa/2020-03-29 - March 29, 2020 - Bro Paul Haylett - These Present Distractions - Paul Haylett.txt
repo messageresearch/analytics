@@ -4,13 +4,14 @@ START OF FILE: 2020-03-29 - March 29, 2020 - Bro Paul Haylett - These Present Di
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-29
-Title:   March 29, 2020 - Bro Paul Haylett - "These Present Distractions"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8MvipkwJeIk
+Date:     2020-03-29
+Title:    March 29, 2020 - Bro Paul Haylett - "These Present Distractions"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=8MvipkwJeIk
 ========================================
 
 Description:

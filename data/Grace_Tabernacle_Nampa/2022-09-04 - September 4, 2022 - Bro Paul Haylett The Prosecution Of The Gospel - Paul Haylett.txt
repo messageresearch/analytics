@@ -4,13 +4,14 @@ START OF FILE: 2022-09-04 - September 4, 2022 - Bro Paul Haylett The Prosecution
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-04
-Title:   September 4, 2022 - Bro Paul Haylett "The Prosecution Of The Gospel"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mjTOUe62sX8
+Date:     2022-09-04
+Title:    September 4, 2022 - Bro Paul Haylett "The Prosecution Of The Gospel"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=mjTOUe62sX8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2016-03-07 - The End Is Come Part 2  Pastor John Simon March 6th,
 
 SERMON DETAILS
 ========================================
-Date:    2016-03-07
-Title:   "The End Is Come Part 2"  Pastor John Simon March 6th, 2016
-Speaker: John Simon March
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hDIz_LvP8eI
+Date:     2016-03-07
+Title:    "The End Is Come Part 2"  Pastor John Simon March 6th, 2016
+Speaker:  John Simon March
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=hDIz_LvP8eI
 ========================================
 
 TRANSCRIPT

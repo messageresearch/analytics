@@ -4,13 +4,14 @@ START OF FILE: 2023-10-18 - October 18, 2023 - Bro David Nash Every Scripture - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-18
-Title:   October 18, 2023 - Bro David Nash "Every Scripture"
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-IoFc3yokSc
+Date:     2023-10-18
+Title:    October 18, 2023 - Bro David Nash "Every Scripture"
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=-IoFc3yokSc
 ========================================
 
 Description:

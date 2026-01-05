@@ -4,13 +4,14 @@ START OF FILE: 2023-12-27 - December 27, 2023 - Bro Paul Haylett The Great Escap
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-27
-Title:   December 27, 2023 - Bro Paul Haylett "The Great Escape"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8PgeAc-WWUg
+Date:     2023-12-27
+Title:    December 27, 2023 - Bro Paul Haylett "The Great Escape"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=8PgeAc-WWUg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-05 - August 5, 2020 - Bro. Chris Take Kadeshbarnea Contro
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-05
-Title:   August 5, 2020 - Bro. Chris Take "Kadeshbarnea Controversy"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_PlmbvAO6yQ
+Date:     2020-08-05
+Title:    August 5, 2020 - Bro. Chris Take "Kadeshbarnea Controversy"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=_PlmbvAO6yQ
 ========================================
 
 TRANSCRIPT

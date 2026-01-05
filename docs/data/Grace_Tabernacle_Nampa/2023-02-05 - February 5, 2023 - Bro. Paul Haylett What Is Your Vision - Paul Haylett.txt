@@ -4,13 +4,14 @@ START OF FILE: 2023-02-05 - February 5, 2023 - Bro. Paul Haylett What Is Your Vi
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-05
-Title:   February 5, 2023 - Bro. Paul Haylett "What Is Your Vision"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1LpxiQ78HYA
+Date:     2023-02-05
+Title:    February 5, 2023 - Bro. Paul Haylett "What Is Your Vision"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=1LpxiQ78HYA
 ========================================
 
 TRANSCRIPT

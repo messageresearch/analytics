@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - Because Thou Has Chosen - Minister Danny Mazzilli - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   Because Thou Has Chosen - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X250RxlcJw4
+Date:     2023-07-02
+Title:    Because Thou Has Chosen - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=X250RxlcJw4
 ========================================
 
 Description:

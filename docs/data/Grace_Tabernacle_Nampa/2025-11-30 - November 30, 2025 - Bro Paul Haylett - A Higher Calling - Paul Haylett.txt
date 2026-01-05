@@ -4,13 +4,14 @@ START OF FILE: 2025-11-30 - November 30, 2025 - Bro Paul Haylett - A Higher Call
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-30
-Title:   November 30, 2025 - Bro Paul Haylett - A Higher Calling
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vfqZoo6Plds
+Date:     2025-11-30
+Title:    November 30, 2025 - Bro Paul Haylett - A Higher Calling
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=vfqZoo6Plds
 ========================================
 
 Description:

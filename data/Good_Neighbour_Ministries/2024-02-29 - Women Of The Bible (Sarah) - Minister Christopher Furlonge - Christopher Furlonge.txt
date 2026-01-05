@@ -4,13 +4,14 @@ START OF FILE: 2024-02-29 - Women Of The Bible (Sarah) - Minister Christopher Fu
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-29
-Title:   Women Of The Bible (Sarah) - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3_WPkpim-T4
+Date:     2024-02-29
+Title:    Women Of The Bible (Sarah) - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=3_WPkpim-T4
 ========================================
 
 Description:

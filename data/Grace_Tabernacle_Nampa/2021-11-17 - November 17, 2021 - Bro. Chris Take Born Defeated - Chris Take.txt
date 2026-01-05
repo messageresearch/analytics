@@ -4,13 +4,14 @@ START OF FILE: 2021-11-17 - November 17, 2021 - Bro. Chris Take Born Defeated - 
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-17
-Title:   November 17, 2021 - Bro. Chris Take "Born Defeated"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HPSk6QFF7iE
+Date:     2021-11-17
+Title:    November 17, 2021 - Bro. Chris Take "Born Defeated"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=HPSk6QFF7iE
 ========================================
 
 Description:

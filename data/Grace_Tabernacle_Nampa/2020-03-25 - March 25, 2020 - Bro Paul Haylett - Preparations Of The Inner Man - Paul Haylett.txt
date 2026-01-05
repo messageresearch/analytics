@@ -4,13 +4,14 @@ START OF FILE: 2020-03-25 - March 25, 2020 - Bro Paul Haylett - Preparations Of 
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-25
-Title:   March 25, 2020 - Bro Paul Haylett - "Preparations Of The Inner Man"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6RuidSoWVBI
+Date:     2020-03-25
+Title:    March 25, 2020 - Bro Paul Haylett - "Preparations Of The Inner Man"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=6RuidSoWVBI
 ========================================
 
 Description:

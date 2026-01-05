@@ -4,13 +4,14 @@ START OF FILE: 2023-04-07 - Good Friday Communion Service - Pastor John Simon - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-07
-Title:   Good Friday Communion Service - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xO6uoZlwaHM
+Date:     2023-04-07
+Title:    Good Friday Communion Service - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Communion Service
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=xO6uoZlwaHM
 ========================================
 
 Description:

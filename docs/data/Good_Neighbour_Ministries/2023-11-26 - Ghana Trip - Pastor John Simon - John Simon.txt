@@ -4,13 +4,14 @@ START OF FILE: 2023-11-26 - Ghana Trip - Pastor John Simon - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-26
-Title:   Ghana Trip - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qwu3t_Tk-_A
+Date:     2023-11-26
+Title:    Ghana Trip - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=qwu3t_Tk-_A
 ========================================
 
 Description:

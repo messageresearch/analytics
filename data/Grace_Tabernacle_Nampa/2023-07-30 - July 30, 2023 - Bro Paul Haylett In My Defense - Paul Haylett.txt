@@ -4,13 +4,14 @@ START OF FILE: 2023-07-30 - July 30, 2023 - Bro Paul Haylett In My Defense - Pau
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-30
-Title:   July 30, 2023 - Bro Paul Haylett "In My Defense"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rVq0rhXl4uo
+Date:     2023-07-30
+Title:    July 30, 2023 - Bro Paul Haylett "In My Defense"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=rVq0rhXl4uo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - Called or Chosen - Pastor John Simon - John Simon.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   Called or Chosen - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MKyePHxmyVQ
+Date:     2023-09-24
+Title:    Called or Chosen - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=MKyePHxmyVQ
 ========================================
 
 Description:

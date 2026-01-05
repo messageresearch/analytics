@@ -4,13 +4,14 @@ START OF FILE: 2023-05-07 - Living Images Of God - Pastor John Simon - John Simo
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-07
-Title:   Living Images Of God - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=c4PiJW3zC-I
+Date:     2023-05-07
+Title:    Living Images Of God - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=c4PiJW3zC-I
 ========================================
 
 Description:

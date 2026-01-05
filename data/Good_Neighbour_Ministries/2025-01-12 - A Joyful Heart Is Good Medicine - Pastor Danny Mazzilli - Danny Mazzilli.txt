@@ -4,13 +4,14 @@ START OF FILE: 2025-01-12 - A Joyful Heart Is Good Medicine - Pastor Danny Mazzi
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-12
-Title:   A Joyful Heart Is Good Medicine - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=R-_Eu2vFguI
+Date:     2025-01-12
+Title:    A Joyful Heart Is Good Medicine - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=R-_Eu2vFguI
 ========================================
 
 Description:

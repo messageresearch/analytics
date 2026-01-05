@@ -4,13 +4,14 @@ START OF FILE: 2025-03-12 - March 12, 2025 - Bro Paul Haylett - “Our Victory I
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-12
-Title:   March 12, 2025 - Bro Paul Haylett - “Our Victory Is Within The Vision”
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gt9oZV5b6p0
+Date:     2025-03-12
+Title:    March 12, 2025 - Bro Paul Haylett - “Our Victory Is Within The Vision”
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gt9oZV5b6p0
 ========================================
 
 Description:

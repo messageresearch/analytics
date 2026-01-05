@@ -4,13 +4,14 @@ START OF FILE: 2023-05-31 - May 31, 2023 - Bro David Nash - David Nash.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-31
-Title:   May 31, 2023 - Bro David Nash
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xW9BD4eMIDA
+Date:     2023-05-31
+Title:    May 31, 2023 - Bro David Nash
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=xW9BD4eMIDA
 ========================================
 
 Description:

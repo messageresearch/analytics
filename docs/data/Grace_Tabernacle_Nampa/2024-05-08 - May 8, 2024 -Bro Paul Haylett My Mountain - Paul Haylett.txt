@@ -4,13 +4,14 @@ START OF FILE: 2024-05-08 - May 8, 2024 -Bro Paul Haylett My Mountain - Paul Hay
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-08
-Title:   May 8, 2024 -Bro Paul Haylett "My Mountain"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ztRjXTDuAqI
+Date:     2024-05-08
+Title:    May 8, 2024 -Bro Paul Haylett "My Mountain"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=ztRjXTDuAqI
 ========================================
 
 Description:

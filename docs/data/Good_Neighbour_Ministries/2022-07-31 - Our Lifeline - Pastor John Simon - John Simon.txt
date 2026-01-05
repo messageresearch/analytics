@@ -4,13 +4,14 @@ START OF FILE: 2022-07-31 - Our Lifeline - Pastor John Simon - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-31
-Title:   Our Lifeline - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dqgNQvChHKc
+Date:     2022-07-31
+Title:    Our Lifeline - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=dqgNQvChHKc
 ========================================
 
 Description:

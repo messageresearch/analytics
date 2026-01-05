@@ -4,13 +4,14 @@ START OF FILE: 2019-05-26 - 00146  Authority Of The Spoken Word Seed Bride - May
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-26
-Title:   00146  Authority Of The Spoken Word Seed Bride - May 26 2019 - Br Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=md657NBqFig
+Date:     2019-05-26
+Title:    00146  Authority Of The Spoken Word Seed Bride - May 26 2019 - Br Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Song Special
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=md657NBqFig
 ========================================
 
 TRANSCRIPT

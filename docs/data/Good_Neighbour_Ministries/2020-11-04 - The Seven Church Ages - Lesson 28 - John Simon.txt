@@ -4,13 +4,14 @@ START OF FILE: 2020-11-04 - The Seven Church Ages - Lesson 28 - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-04
-Title:   The Seven Church Ages - Lesson 28
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jzpiOA_T-f0
+Date:     2020-11-04
+Title:    The Seven Church Ages - Lesson 28
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=jzpiOA_T-f0
 ========================================
 
 Description:

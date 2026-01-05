@@ -4,13 +4,14 @@ START OF FILE: 2022-07-27 - Predestinated Seed of Abraham - Pastor John Simon - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-27
-Title:   Predestinated Seed of Abraham - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=R2V8Mki0QyU
+Date:     2022-07-27
+Title:    Predestinated Seed of Abraham - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=R2V8Mki0QyU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-26 - Give Me Your Heart (Part 2) - Pastor Danny Mazzilli 
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-26
-Title:   Give Me Your Heart (Part 2) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wbhHyVayxoQ
+Date:     2025-01-26
+Title:    Give Me Your Heart (Part 2) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=wbhHyVayxoQ
 ========================================
 
 Description:

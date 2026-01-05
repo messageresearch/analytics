@@ -4,13 +4,14 @@ START OF FILE: 2025-08-27 - August 27, 2025 - Bro. Paul Haylett - The Gift of Sp
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-27
-Title:   August 27, 2025 - Bro. Paul Haylett - "The Gift of Spiritual Insight"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=w-rh2Em75Jo
+Date:     2025-08-27
+Title:    August 27, 2025 - Bro. Paul Haylett - "The Gift of Spiritual Insight"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=w-rh2Em75Jo
 ========================================
 
 Description:

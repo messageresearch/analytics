@@ -4,13 +4,14 @@ START OF FILE: 2024-02-07 - February 7, 2024 -  Bro Chris Take Battle of the Twi
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-07
-Title:   February 7, 2024 -  Bro Chris Take "Battle of the Twins II"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DEMEd_3DNsk
+Date:     2024-02-07
+Title:    February 7, 2024 -  Bro Chris Take "Battle of the Twins II"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=DEMEd_3DNsk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-01-20 - January 20, 2021 - Bro. Paul Haylett Age Old Proverb
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-20
-Title:   January 20, 2021 - Bro. Paul Haylett "Age Old Proverbs"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Wg50TPv0pqo
+Date:     2021-01-20
+Title:    January 20, 2021 - Bro. Paul Haylett "Age Old Proverbs"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=Wg50TPv0pqo
 ========================================
 
 Description:

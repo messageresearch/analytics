@@ -4,13 +4,14 @@ START OF FILE: 2022-05-21 - May 21, 2022 - Bro George Smith The Book of Acts - G
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-21
-Title:   May 21, 2022 - Bro George Smith "The Book of Acts"
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eJlpzy25bG8
+Date:     2022-05-21
+Title:    May 21, 2022 - Bro George Smith "The Book of Acts"
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=eJlpzy25bG8
 ========================================
 
 Description:

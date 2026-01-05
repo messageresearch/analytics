@@ -4,13 +4,14 @@ START OF FILE: 2025-03-09 - March 9, 2025 - Bro Paul Haylett Blessed Assurance -
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-09
-Title:   March 9, 2025 - Bro Paul Haylett "Blessed Assurance"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZypfNIQk3L8
+Date:     2025-03-09
+Title:    March 9, 2025 - Bro Paul Haylett "Blessed Assurance"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZypfNIQk3L8
 ========================================
 
 Description:

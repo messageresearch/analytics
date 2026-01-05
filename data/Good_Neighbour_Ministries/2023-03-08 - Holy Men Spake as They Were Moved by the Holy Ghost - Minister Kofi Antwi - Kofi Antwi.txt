@@ -4,13 +4,14 @@ START OF FILE: 2023-03-08 - Holy Men Spake as They Were Moved by the Holy Ghost 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-08
-Title:   Holy Men Spake as They Were Moved by the Holy Ghost - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3UcEVPPu_vo
+Date:     2023-03-08
+Title:    Holy Men Spake as They Were Moved by the Holy Ghost - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=3UcEVPPu_vo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-09-01 - Take Courage - Brother Maxwell Boateng - GNM Youth M
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-01
-Title:   Take Courage - Brother Maxwell Boateng - GNM Youth Meetings 2024
-Speaker: Maxwell Boateng
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JQUtAUDcehw
+Date:     2024-09-01
+Title:    Take Courage - Brother Maxwell Boateng - GNM Youth Meetings 2024
+Speaker:  Maxwell Boateng
+Church:   Good Neighbour Ministries
+Type:     Youth Service
+Duration: 2h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=JQUtAUDcehw
 ========================================
 
 Description:

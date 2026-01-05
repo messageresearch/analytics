@@ -4,13 +4,14 @@ START OF FILE: 2022-08-21 - August 21, 2022 - Bro Paul Haylett The Theme Of The 
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-21
-Title:   August 21, 2022 - Bro Paul Haylett "The Theme Of The Ages, Is The Theme Of Our Day"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BAESoXr_vEU
+Date:     2022-08-21
+Title:    August 21, 2022 - Bro Paul Haylett "The Theme Of The Ages, Is The Theme Of Our Day"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=BAESoXr_vEU
 ========================================
 
 Description:

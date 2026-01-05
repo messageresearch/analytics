@@ -4,13 +4,14 @@ START OF FILE: 2021-02-24 - February 24, 2021 - Bro. Paul Haylett My Hope Is Ste
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-24
-Title:   February 24, 2021 - Bro. Paul Haylett "My Hope Is Steadfast In The Lord"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9hYQAtZVjlc
+Date:     2021-02-24
+Title:    February 24, 2021 - Bro. Paul Haylett "My Hope Is Steadfast In The Lord"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=9hYQAtZVjlc
 ========================================
 
 Description:

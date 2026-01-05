@@ -4,13 +4,14 @@ START OF FILE: 2021-06-20 - June 20, 2021 - Bro. Paul Haylett A Fathers Call To 
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-20
-Title:   June 20, 2021 - Bro. Paul Haylett "A Fathers Call To Action"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m09I6FuFukI
+Date:     2021-06-20
+Title:    June 20, 2021 - Bro. Paul Haylett "A Fathers Call To Action"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=m09I6FuFukI
 ========================================
 
 Description:

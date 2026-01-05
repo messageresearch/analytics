@@ -4,13 +4,14 @@ START OF FILE: 2024-05-09 - Faith - Minister Kofi Antwi - Kofi Antwi.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-09
-Title:   Faith - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UepqqAmDa-o
+Date:     2024-05-09
+Title:    Faith - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=UepqqAmDa-o
 ========================================
 
 Description:

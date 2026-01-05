@@ -4,13 +4,14 @@ START OF FILE: 2022-06-29 - This Is Your Time To Recognize Your Day! - Minister 
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-29
-Title:   This Is Your Time To Recognize Your Day! - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dmxZdBUymdM
+Date:     2022-06-29
+Title:    This Is Your Time To Recognize Your Day! - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=dmxZdBUymdM
 ========================================
 
 Description:

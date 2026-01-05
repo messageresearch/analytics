@@ -4,13 +4,14 @@ START OF FILE: 2022-03-09 - March 9, 2022 - Bro. David Dienhart His Chosen Gener
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-09
-Title:   March 9, 2022 - Bro. David Dienhart "His Chosen Generation"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vKv0qqQBqu8
+Date:     2022-03-09
+Title:    March 9, 2022 - Bro. David Dienhart "His Chosen Generation"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=vKv0qqQBqu8
 ========================================
 
 Description:

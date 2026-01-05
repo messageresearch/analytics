@@ -4,13 +4,14 @@ START OF FILE: 2025-08-17 - August 17, 2025 - Bro. Paul Haylett - Gaining Focus 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-17
-Title:   August 17, 2025 - Bro. Paul Haylett - "Gaining Focus In An Age Of Uncertainty"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pCV02XXqH-Y
+Date:     2025-08-17
+Title:    August 17, 2025 - Bro. Paul Haylett - "Gaining Focus In An Age Of Uncertainty"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 4h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=pCV02XXqH-Y
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-05 - January 5, 2025 - Bro Paul Haylett Possessing The Po
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-05
-Title:   January 5, 2025 - Bro Paul Haylett "Possessing The Power To Become"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8yEVnUewlgs
+Date:     2025-01-05
+Title:    January 5, 2025 - Bro Paul Haylett "Possessing The Power To Become"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=8yEVnUewlgs
 ========================================
 
 Description:

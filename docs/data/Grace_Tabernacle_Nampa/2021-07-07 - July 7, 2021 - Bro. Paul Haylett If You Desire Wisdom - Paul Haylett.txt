@@ -4,13 +4,14 @@ START OF FILE: 2021-07-07 - July 7, 2021 - Bro. Paul Haylett If You Desire Wisdo
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-07
-Title:   July 7, 2021 - Bro. Paul Haylett "If You Desire Wisdom"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-Zx3d42Kzi8
+Date:     2021-07-07
+Title:    July 7, 2021 - Bro. Paul Haylett "If You Desire Wisdom"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=-Zx3d42Kzi8
 ========================================
 
 Description:

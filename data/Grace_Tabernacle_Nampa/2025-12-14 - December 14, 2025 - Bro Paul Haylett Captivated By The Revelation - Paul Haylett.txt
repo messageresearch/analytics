@@ -4,13 +4,14 @@ START OF FILE: 2025-12-14 - December 14, 2025 - Bro Paul Haylett Captivated By T
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-14
-Title:   December 14, 2025 - Bro Paul Haylett "Captivated By The Revelation"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mUJYLBo8gPY
+Date:     2025-12-14
+Title:    December 14, 2025 - Bro Paul Haylett "Captivated By The Revelation"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=mUJYLBo8gPY
 ========================================
 
 Description:

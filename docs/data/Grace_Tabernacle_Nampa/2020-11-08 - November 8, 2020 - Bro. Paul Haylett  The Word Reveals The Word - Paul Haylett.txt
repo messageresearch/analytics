@@ -4,13 +4,14 @@ START OF FILE: 2020-11-08 - November 8, 2020 - Bro. Paul Haylett  The Word Revea
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-08
-Title:   November 8, 2020 - Bro. Paul Haylett " The Word Reveals The Word"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KbCO8j4nbDY
+Date:     2020-11-08
+Title:    November 8, 2020 - Bro. Paul Haylett " The Word Reveals The Word"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=KbCO8j4nbDY
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2021-10-24 - October 24, 2021 - Bro. Paul Haylett This Present Li
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-24
-Title:   October 24, 2021 - Bro. Paul Haylett "This Present Light"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hGKNaF_vRGk
+Date:     2021-10-24
+Title:    October 24, 2021 - Bro. Paul Haylett "This Present Light"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=hGKNaF_vRGk
 ========================================
 
 Description:

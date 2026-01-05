@@ -4,13 +4,14 @@ START OF FILE: 2020-10-21 - October 21, 2020 - Bro. Chris Take Expressions of Et
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-21
-Title:   October 21, 2020 - Bro. Chris Take "Expressions of Eternity Pt. 8"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iyXp7tu9GJ8
+Date:     2020-10-21
+Title:    October 21, 2020 - Bro. Chris Take "Expressions of Eternity Pt. 8"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=iyXp7tu9GJ8
 ========================================
 
 Description:

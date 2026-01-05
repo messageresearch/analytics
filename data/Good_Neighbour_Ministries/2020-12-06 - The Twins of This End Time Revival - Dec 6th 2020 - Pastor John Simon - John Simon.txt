@@ -4,13 +4,14 @@ START OF FILE: 2020-12-06 - The Twins of This End Time Revival - Dec 6th 2020 - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-06
-Title:   The Twins of This End Time Revival - Dec 6th 2020 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=915M2-Jne6g
+Date:     2020-12-06
+Title:    The Twins of This End Time Revival - Dec 6th 2020 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=915M2-Jne6g
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-04-19 - April 19, 2023 - Bro Chris Take So We Wrestle - Chri
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-19
-Title:   April 19, 2023 - Bro Chris Take "So We Wrestle"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4F7VEI-eIVw
+Date:     2023-04-19
+Title:    April 19, 2023 - Bro Chris Take "So We Wrestle"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=4F7VEI-eIVw
 ========================================
 
 Description:

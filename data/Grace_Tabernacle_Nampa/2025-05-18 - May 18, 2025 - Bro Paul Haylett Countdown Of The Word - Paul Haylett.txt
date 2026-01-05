@@ -4,13 +4,14 @@ START OF FILE: 2025-05-18 - May 18, 2025 - Bro Paul Haylett Countdown Of The Wor
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-18
-Title:   May 18, 2025 - Bro Paul Haylett "Countdown Of The Word"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=M6Yuqr4NsTE
+Date:     2025-05-18
+Title:    May 18, 2025 - Bro Paul Haylett "Countdown Of The Word"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=M6Yuqr4NsTE
 ========================================
 
 Description:

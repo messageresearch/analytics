@@ -4,13 +4,14 @@ START OF FILE: 2020-03-18 - March 18, 2020 - Bro Rich Cobb - The Inner Man - Ric
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-18
-Title:   March 18, 2020 - Bro Rich Cobb - "The Inner Man"
-Speaker: Rich Cobb
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IGg_e-01joE
+Date:     2020-03-18
+Title:    March 18, 2020 - Bro Rich Cobb - "The Inner Man"
+Speaker:  Rich Cobb
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=IGg_e-01joE
 ========================================
 
 Description:

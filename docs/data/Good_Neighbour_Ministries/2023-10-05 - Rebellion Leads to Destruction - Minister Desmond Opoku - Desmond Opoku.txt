@@ -4,13 +4,14 @@ START OF FILE: 2023-10-05 - Rebellion Leads to Destruction - Minister Desmond Op
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-05
-Title:   Rebellion Leads to Destruction - Minister Desmond Opoku
-Speaker: Desmond Opoku
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o0G1kQEuGMI
+Date:     2023-10-05
+Title:    Rebellion Leads to Destruction - Minister Desmond Opoku
+Speaker:  Desmond Opoku
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=o0G1kQEuGMI
 ========================================
 
 Description:

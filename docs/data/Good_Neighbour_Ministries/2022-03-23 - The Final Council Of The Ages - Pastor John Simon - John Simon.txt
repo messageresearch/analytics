@@ -4,13 +4,14 @@ START OF FILE: 2022-03-23 - The Final Council Of The Ages - Pastor John Simon - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-23
-Title:   The Final Council Of The Ages - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=m8XkTTGajhk
+Date:     2022-03-23
+Title:    The Final Council Of The Ages - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=m8XkTTGajhk
 ========================================
 
 Description:

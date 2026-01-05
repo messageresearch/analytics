@@ -4,13 +4,14 @@ START OF FILE: 2020-03-22 - Your Redemption Is Here - March 22nd 2020 - Pastor J
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-22
-Title:   Your Redemption Is Here - March 22nd 2020 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lviQD5TJwtA
+Date:     2020-03-22
+Title:    Your Redemption Is Here - March 22nd 2020 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=lviQD5TJwtA
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2021-05-02 - May 2, 2021 - Bro. Paul Haylett Room For Growth - Pa
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-02
-Title:   May 2, 2021 - Bro. Paul Haylett "Room For Growth"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IHZW7pApbms
+Date:     2021-05-02
+Title:    May 2, 2021 - Bro. Paul Haylett "Room For Growth"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=IHZW7pApbms
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-03-30 - Paid In Full - Pastor Danny Mazzilli - Danny Mazzill
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-30
-Title:   Paid In Full - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=va_yMrrPtIk
+Date:     2024-03-30
+Title:    Paid In Full - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=va_yMrrPtIk
 ========================================
 
 Description:

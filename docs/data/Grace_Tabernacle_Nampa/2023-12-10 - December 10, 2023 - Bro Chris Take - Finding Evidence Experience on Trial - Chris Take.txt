@@ -4,13 +4,14 @@ START OF FILE: 2023-12-10 - December 10, 2023 - Bro Chris Take - Finding Evidenc
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-10
-Title:   December 10, 2023 - Bro Chris Take - Finding Evidence "Experience on Trial"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eDD22uA7xnU
+Date:     2023-12-10
+Title:    December 10, 2023 - Bro Chris Take - Finding Evidence "Experience on Trial"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=eDD22uA7xnU
 ========================================
 
 Description:

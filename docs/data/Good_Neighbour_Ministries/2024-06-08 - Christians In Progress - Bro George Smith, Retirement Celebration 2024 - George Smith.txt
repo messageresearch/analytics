@@ -4,13 +4,14 @@ START OF FILE: 2024-06-08 - Christians In Progress - Bro George Smith, Retiremen
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-08
-Title:   Christians In Progress - Bro George Smith, Retirement Celebration 2024
-Speaker: George Smith
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JbKAiJLTnLo
+Date:     2024-06-08
+Title:    Christians In Progress - Bro George Smith, Retirement Celebration 2024
+Speaker:  George Smith
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=JbKAiJLTnLo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-05-04 - May 4, 2025 - Bro Paul Haylett Christ, Lifted Up In 
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-04
-Title:   May 4, 2025 - Bro Paul Haylett "Christ, Lifted Up In Our Day"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P7BWvgjHUl0
+Date:     2025-05-04
+Title:    May 4, 2025 - Bro Paul Haylett "Christ, Lifted Up In Our Day"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=P7BWvgjHUl0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - October 30, 2022 - Bro Paul Haylett The Power Of Rec
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   October 30, 2022 - Bro Paul Haylett "The Power Of Recognition"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kmgTWV33qKc
+Date:     2022-10-30
+Title:    October 30, 2022 - Bro Paul Haylett "The Power Of Recognition"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=kmgTWV33qKc
 ========================================
 
 Description:

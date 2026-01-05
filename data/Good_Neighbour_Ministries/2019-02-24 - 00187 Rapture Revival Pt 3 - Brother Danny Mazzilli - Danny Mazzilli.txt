@@ -4,13 +4,14 @@ START OF FILE: 2019-02-24 - 00187 Rapture Revival Pt 3 - Brother Danny Mazzilli 
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-24
-Title:   00187 Rapture Revival Pt 3 - Brother Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Cbi8MHIUNJc
+Date:     2019-02-24
+Title:    00187 Rapture Revival Pt 3 - Brother Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=Cbi8MHIUNJc
 ========================================
 
 Description:

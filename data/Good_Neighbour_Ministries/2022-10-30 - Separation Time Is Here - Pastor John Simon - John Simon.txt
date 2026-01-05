@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - Separation Time Is Here - Pastor John Simon - John S
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   Separation Time Is Here - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YlxGrOzJQNo
+Date:     2022-10-30
+Title:    Separation Time Is Here - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=YlxGrOzJQNo
 ========================================
 
 Description:

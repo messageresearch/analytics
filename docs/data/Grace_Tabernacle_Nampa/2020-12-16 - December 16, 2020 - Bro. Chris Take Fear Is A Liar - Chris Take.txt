@@ -4,13 +4,14 @@ START OF FILE: 2020-12-16 - December 16, 2020 - Bro. Chris Take Fear Is A Liar -
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-16
-Title:   December 16, 2020 - Bro. Chris Take "Fear Is A Liar"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bLn6WAtRaXs
+Date:     2020-12-16
+Title:    December 16, 2020 - Bro. Chris Take "Fear Is A Liar"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=bLn6WAtRaXs
 ========================================
 
 Description:

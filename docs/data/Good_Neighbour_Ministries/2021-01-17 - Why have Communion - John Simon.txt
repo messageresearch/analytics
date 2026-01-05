@@ -4,13 +4,14 @@ START OF FILE: 2021-01-17 - Why have Communion - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-17
-Title:   Why have Communion?
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=deE9_VMu0ZY
+Date:     2021-01-17
+Title:    Why have Communion?
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Communion Service
+Duration: 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=deE9_VMu0ZY
 ========================================
 
 Description:

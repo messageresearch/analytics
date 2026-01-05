@@ -4,13 +4,14 @@ START OF FILE: 2023-09-17 - Jesus Is The Light Of The World - Pastor John Simon 
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-17
-Title:   Jesus Is The Light Of The World - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AzogaAVDfnM
+Date:     2023-09-17
+Title:    Jesus Is The Light Of The World - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=AzogaAVDfnM
 ========================================
 
 Description:

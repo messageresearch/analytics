@@ -4,13 +4,14 @@ START OF FILE: 2023-05-14 - Awaken To Recognize The Mystery - Minister Tim Beers
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-14
-Title:   Awaken To Recognize The Mystery - Minister Tim Beers
-Speaker: Tim Beers
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P-z5QqJoqlI
+Date:     2023-05-14
+Title:    Awaken To Recognize The Mystery - Minister Tim Beers
+Speaker:  Tim Beers
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=P-z5QqJoqlI
 ========================================
 
 Description:

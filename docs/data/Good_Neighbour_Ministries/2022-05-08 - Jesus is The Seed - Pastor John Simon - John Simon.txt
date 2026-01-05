@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - Jesus is The Seed - Pastor John Simon - John Simon.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   Jesus is The Seed - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KQ4ralg9T-M
+Date:     2022-05-08
+Title:    Jesus is The Seed - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=KQ4ralg9T-M
 ========================================
 
 Description:

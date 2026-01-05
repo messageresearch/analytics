@@ -4,13 +4,14 @@ START OF FILE: 2023-05-28 - May 28, 2023 - Bro Paul Haylett The Courtship Of The
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-28
-Title:   May 28, 2023 - Bro Paul Haylett "The Courtship Of The Elect Lady"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=c7TlDBUF0KY
+Date:     2023-05-28
+Title:    May 28, 2023 - Bro Paul Haylett "The Courtship Of The Elect Lady"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=c7TlDBUF0KY
 ========================================
 
 Description:

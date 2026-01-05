@@ -4,13 +4,14 @@ START OF FILE: 2024-12-31 - New Year's Watch Service (Burn The Ships) - Pastor D
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-31
-Title:   New Year's Watch Service (Burn The Ships) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=47HoxVTIl0c
+Date:     2024-12-31
+Title:    New Year's Watch Service (Burn The Ships) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     New Year Service
+Duration: 3h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=47HoxVTIl0c
 ========================================
 
 Description:

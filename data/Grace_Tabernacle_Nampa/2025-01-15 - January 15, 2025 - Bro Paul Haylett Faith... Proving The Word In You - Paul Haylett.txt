@@ -4,13 +4,14 @@ START OF FILE: 2025-01-15 - January 15, 2025 - Bro Paul Haylett Faith... Proving
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-15
-Title:   January 15, 2025 - Bro Paul Haylett "Faith... Proving The Word In You"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VsE1t8PIs58
+Date:     2025-01-15
+Title:    January 15, 2025 - Bro Paul Haylett "Faith... Proving The Word In You"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=VsE1t8PIs58
 ========================================
 
 Description:

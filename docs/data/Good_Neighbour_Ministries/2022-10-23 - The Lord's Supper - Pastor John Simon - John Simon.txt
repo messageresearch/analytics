@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - The Lord's Supper - Pastor John Simon - John Simon.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   The Lord's Supper - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FiBtdFNzM1g
+Date:     2022-10-23
+Title:    The Lord's Supper - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Communion Service
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=FiBtdFNzM1g
 ========================================
 
 Description:

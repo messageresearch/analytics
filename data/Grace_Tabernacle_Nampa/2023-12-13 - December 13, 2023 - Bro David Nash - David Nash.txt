@@ -4,13 +4,14 @@ START OF FILE: 2023-12-13 - December 13, 2023 - Bro David Nash - David Nash.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-13
-Title:   December 13, 2023 - Bro David Nash
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=b2yYcT3mVuM
+Date:     2023-12-13
+Title:    December 13, 2023 - Bro David Nash
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=b2yYcT3mVuM
 ========================================
 
 Description:

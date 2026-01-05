@@ -4,13 +4,14 @@ START OF FILE: 2022-01-02 - January 2, 2022 - Bro Paul Haylett - Mary's Kind of 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-02
-Title:   January 2, 2022 - Bro Paul Haylett - Mary's Kind of Faith
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=E2Nbtd82rPw
+Date:     2022-01-02
+Title:    January 2, 2022 - Bro Paul Haylett - Mary's Kind of Faith
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=E2Nbtd82rPw
 ========================================
 
 Description:

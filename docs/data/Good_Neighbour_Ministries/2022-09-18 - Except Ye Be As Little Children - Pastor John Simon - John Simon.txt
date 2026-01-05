@@ -4,13 +4,14 @@ START OF FILE: 2022-09-18 - Except Ye Be As Little Children - Pastor John Simon 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-18
-Title:   Except Ye Be As Little Children - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PEiBqex-xCc
+Date:     2022-09-18
+Title:    Except Ye Be As Little Children - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=PEiBqex-xCc
 ========================================
 
 Description:

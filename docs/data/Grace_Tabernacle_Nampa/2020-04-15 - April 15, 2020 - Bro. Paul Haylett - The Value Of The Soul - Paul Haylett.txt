@@ -4,13 +4,14 @@ START OF FILE: 2020-04-15 - April 15, 2020 - Bro. Paul Haylett - The Value Of Th
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-15
-Title:   April 15, 2020 - Bro. Paul Haylett - The Value Of The Soul
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DGtKGNZTcos
+Date:     2020-04-15
+Title:    April 15, 2020 - Bro. Paul Haylett - The Value Of The Soul
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=DGtKGNZTcos
 ========================================
 
 Description:

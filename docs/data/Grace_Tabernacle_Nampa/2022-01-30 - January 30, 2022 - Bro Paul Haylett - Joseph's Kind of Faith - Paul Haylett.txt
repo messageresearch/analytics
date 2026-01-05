@@ -4,13 +4,14 @@ START OF FILE: 2022-01-30 - January 30, 2022 - Bro Paul Haylett - Joseph's Kind 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-30
-Title:   January 30, 2022 - Bro Paul Haylett - Joseph's Kind of Faith
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hD880Vl2bv4
+Date:     2022-01-30
+Title:    January 30, 2022 - Bro Paul Haylett - Joseph's Kind of Faith
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=hD880Vl2bv4
 ========================================
 
 Description:

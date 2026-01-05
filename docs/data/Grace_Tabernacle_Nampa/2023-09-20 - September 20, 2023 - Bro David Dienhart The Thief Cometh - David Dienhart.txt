@@ -4,13 +4,14 @@ START OF FILE: 2023-09-20 - September 20, 2023 - Bro David Dienhart The Thief Co
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-20
-Title:   September 20, 2023 - Bro David Dienhart "The Thief Cometh"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Po23YpxsMKI
+Date:     2023-09-20
+Title:    September 20, 2023 - Bro David Dienhart "The Thief Cometh"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=Po23YpxsMKI
 ========================================
 
 Description:

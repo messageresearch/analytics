@@ -4,13 +4,14 @@ START OF FILE: 2023-03-15 - Behold, I Make All Things New - Pastor John Simon - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-15
-Title:   Behold, I Make All Things New - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bm9goNTAzzk
+Date:     2023-03-15
+Title:    Behold, I Make All Things New - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=bm9goNTAzzk
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-14 - The Oncoming Storm - Minister Christopher Furlonge -
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-14
-Title:   The Oncoming Storm - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AM9zT9FHHuo
+Date:     2024-07-14
+Title:    The Oncoming Storm - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=AM9zT9FHHuo
 ========================================
 
 Description:

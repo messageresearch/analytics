@@ -4,13 +4,14 @@ START OF FILE: 2020-11-29 - November 29, 2020 - Bro. Paul Haylett I Am Persuaded
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-29
-Title:   November 29, 2020 - Bro. Paul Haylett "I Am Persuaded"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=av4lxSzOwjs
+Date:     2020-11-29
+Title:    November 29, 2020 - Bro. Paul Haylett "I Am Persuaded"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=av4lxSzOwjs
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-05-19 - 00142  Deity Is In You - May 19, 2019 - Pastor John 
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-19
-Title:   00142  Deity Is In You - May 19, 2019 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=K1n-BtAtblI
+Date:     2019-05-19
+Title:    00142  Deity Is In You - May 19, 2019 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=K1n-BtAtblI
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-04-10 - Thy Sins Be Forgiven Thee - Minister Kofi Antwi - Ko
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-10
-Title:   Thy Sins Be Forgiven Thee - Minister Kofi Antwi
-Speaker: Kofi Antwi
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=foGhn3u3rsQ
+Date:     2025-04-10
+Title:    Thy Sins Be Forgiven Thee - Minister Kofi Antwi
+Speaker:  Kofi Antwi
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=foGhn3u3rsQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-14 - The Three Creations - Bro. Elvester Acuin - Elvester
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-14
-Title:   The Three Creations - Bro. Elvester Acuin
-Speaker: Elvester Acuin
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FwwtoncmK_8
+Date:     2023-09-14
+Title:    The Three Creations - Bro. Elvester Acuin
+Speaker:  Elvester Acuin
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=FwwtoncmK_8
 ========================================
 
 Description:

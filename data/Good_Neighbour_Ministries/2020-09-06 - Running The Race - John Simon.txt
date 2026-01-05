@@ -4,13 +4,14 @@ START OF FILE: 2020-09-06 - Running The Race - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-06
-Title:   Running The Race
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hJ4bpGriqkg
+Date:     2020-09-06
+Title:    Running The Race
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=hJ4bpGriqkg
 ========================================
 
 Description:

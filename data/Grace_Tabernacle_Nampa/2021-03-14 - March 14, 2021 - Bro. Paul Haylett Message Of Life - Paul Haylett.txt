@@ -4,13 +4,14 @@ START OF FILE: 2021-03-14 - March 14, 2021 - Bro. Paul Haylett Message Of Life -
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-14
-Title:   March 14, 2021 - Bro. Paul Haylett "Message Of Life"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mhtE1158u-Q
+Date:     2021-03-14
+Title:    March 14, 2021 - Bro. Paul Haylett "Message Of Life"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=mhtE1158u-Q
 ========================================
 
 Description:

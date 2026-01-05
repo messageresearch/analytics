@@ -4,13 +4,14 @@ START OF FILE: 2023-10-01 - October 1, 2023 - Bro Paul Haylett The Measure Of Tr
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-01
-Title:   October 1, 2023 - Bro Paul Haylett "The Measure Of Trust"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HUSUiVaY_cE
+Date:     2023-10-01
+Title:    October 1, 2023 - Bro Paul Haylett "The Measure Of Trust"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=HUSUiVaY_cE
 ========================================
 
 Description:

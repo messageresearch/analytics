@@ -4,13 +4,14 @@ START OF FILE: 2022-11-02 - A Christmas Parable - Pastor John Simon - John Simon
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-02
-Title:   A Christmas Parable - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=Ovdvl571DK8
+Date:     2022-11-02
+Title:    A Christmas Parable - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Christmas Program
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ovdvl571DK8
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-10-08 - October 8, 2025 - Bro Paul Haylett - Paul Haylett.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-08
-Title:   October 8, 2025 - Bro Paul Haylett
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MpPpNkujIxc
+Date:     2025-10-08
+Title:    October 8, 2025 - Bro Paul Haylett
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=MpPpNkujIxc
 ========================================
 
 Description:

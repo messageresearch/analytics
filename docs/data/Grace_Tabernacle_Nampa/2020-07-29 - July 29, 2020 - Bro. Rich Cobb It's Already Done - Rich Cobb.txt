@@ -4,13 +4,14 @@ START OF FILE: 2020-07-29 - July 29, 2020 - Bro. Rich Cobb It's Already Done - R
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-29
-Title:   July 29, 2020 - Bro. Rich Cobb "It's Already Done"
-Speaker: Rich Cobb
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7WJ6rMZ8HS8
+Date:     2020-07-29
+Title:    July 29, 2020 - Bro. Rich Cobb "It's Already Done"
+Speaker:  Rich Cobb
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=7WJ6rMZ8HS8
 ========================================
 
 TRANSCRIPT

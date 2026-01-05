@@ -4,13 +4,14 @@ START OF FILE: 2019-05-25 - 00200  Redeeming Love - April 21 -  2019 Pastor John
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-25
-Title:   00200  Redeeming Love - April 21 -  2019 Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9cmPrm0pvhU
+Date:     2019-05-25
+Title:    00200  Redeeming Love - April 21 -  2019 Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=9cmPrm0pvhU
 ========================================
 
 TRANSCRIPT

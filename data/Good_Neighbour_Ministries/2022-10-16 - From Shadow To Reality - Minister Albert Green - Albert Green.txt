@@ -4,13 +4,14 @@ START OF FILE: 2022-10-16 - From Shadow To Reality - Minister Albert Green - Alb
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-16
-Title:   From Shadow To Reality - Minister Albert Green
-Speaker: Albert Green
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r0cEzmxX7o0
+Date:     2022-10-16
+Title:    From Shadow To Reality - Minister Albert Green
+Speaker:  Albert Green
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=r0cEzmxX7o0
 ========================================
 
 Description:

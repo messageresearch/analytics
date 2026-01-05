@@ -4,13 +4,14 @@ START OF FILE: 2022-08-24 - August 24, 2022 - Bro Chris Take Appointment With De
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-24
-Title:   August 24, 2022 - Bro Chris Take "Appointment With Destiny"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oMmwHIcI7S0
+Date:     2022-08-24
+Title:    August 24, 2022 - Bro Chris Take "Appointment With Destiny"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=oMmwHIcI7S0
 ========================================
 
 Description:

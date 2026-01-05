@@ -4,13 +4,14 @@ START OF FILE: 2021-08-18 - August 18, 2021 - Bro. Paul Haylett The Key To The D
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-18
-Title:   August 18, 2021 - Bro. Paul Haylett "The Key To The Door"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P4uHY5M3OYg
+Date:     2021-08-18
+Title:    August 18, 2021 - Bro. Paul Haylett "The Key To The Door"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=P4uHY5M3OYg
 ========================================
 
 Description:

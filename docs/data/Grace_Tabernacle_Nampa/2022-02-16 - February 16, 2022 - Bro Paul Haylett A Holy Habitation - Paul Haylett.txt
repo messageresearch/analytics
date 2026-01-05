@@ -4,13 +4,14 @@ START OF FILE: 2022-02-16 - February 16, 2022 - Bro Paul Haylett A Holy Habitati
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-16
-Title:   February 16, 2022 - Bro Paul Haylett "A Holy Habitation"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RmQxl5L3D14
+Date:     2022-02-16
+Title:    February 16, 2022 - Bro Paul Haylett "A Holy Habitation"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=RmQxl5L3D14
 ========================================
 
 Description:

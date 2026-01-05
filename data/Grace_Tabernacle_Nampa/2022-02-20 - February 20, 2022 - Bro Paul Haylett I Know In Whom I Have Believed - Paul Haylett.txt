@@ -4,13 +4,14 @@ START OF FILE: 2022-02-20 - February 20, 2022 - Bro Paul Haylett I Know In Whom 
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-20
-Title:   February 20, 2022 - Bro Paul Haylett "I Know In Whom I Have Believed"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=brI_LQvKSMM
+Date:     2022-02-20
+Title:    February 20, 2022 - Bro Paul Haylett "I Know In Whom I Have Believed"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=brI_LQvKSMM
 ========================================
 
 Description:

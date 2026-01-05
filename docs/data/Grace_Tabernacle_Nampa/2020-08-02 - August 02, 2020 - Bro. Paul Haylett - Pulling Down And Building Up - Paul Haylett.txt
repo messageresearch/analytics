@@ -4,13 +4,14 @@ START OF FILE: 2020-08-02 - August 02, 2020 - Bro. Paul Haylett - Pulling Down A
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-02
-Title:   August 02, 2020 - Bro. Paul Haylett - "Pulling Down And Building Up"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cM4ZMqmquTc
+Date:     2020-08-02
+Title:    August 02, 2020 - Bro. Paul Haylett - "Pulling Down And Building Up"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=cM4ZMqmquTc
 ========================================
 
 Description:

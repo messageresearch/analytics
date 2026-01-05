@@ -4,13 +4,14 @@ START OF FILE: 2023-08-17 - The Fallen Bride - Minister Christopher Furlonge - C
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-17
-Title:   The Fallen Bride - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=b_ReoZxkQ_o
+Date:     2023-08-17
+Title:    The Fallen Bride - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=b_ReoZxkQ_o
 ========================================
 
 Description:

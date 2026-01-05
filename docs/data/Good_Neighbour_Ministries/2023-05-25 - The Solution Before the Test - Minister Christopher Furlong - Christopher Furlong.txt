@@ -4,13 +4,14 @@ START OF FILE: 2023-05-25 - The Solution Before the Test - Minister Christopher 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-25
-Title:   The Solution Before the Test - Minister Christopher Furlong
-Speaker: Christopher Furlong
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8wg3dP6ZWTs
+Date:     2023-05-25
+Title:    The Solution Before the Test - Minister Christopher Furlong
+Speaker:  Christopher Furlong
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=8wg3dP6ZWTs
 ========================================
 
 Description:

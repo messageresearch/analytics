@@ -4,13 +4,14 @@ START OF FILE: 2022-11-30 - November 30, 2022 - Bro David Dienhart - David Dienh
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-30
-Title:   November 30, 2022 - Bro David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z17UYtjWfyE
+Date:     2022-11-30
+Title:    November 30, 2022 - Bro David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=z17UYtjWfyE
 ========================================
 
 Description:

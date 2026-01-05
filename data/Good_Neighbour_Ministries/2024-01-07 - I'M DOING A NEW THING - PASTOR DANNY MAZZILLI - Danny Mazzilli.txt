@@ -4,13 +4,14 @@ START OF FILE: 2024-01-07 - I'M DOING A NEW THING - PASTOR DANNY MAZZILLI - Dann
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-07
-Title:   I'M DOING A NEW THING - PASTOR DANNY MAZZILLI
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eYdFIBNt4Hk
+Date:     2024-01-07
+Title:    I'M DOING A NEW THING - PASTOR DANNY MAZZILLI
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=eYdFIBNt4Hk
 ========================================
 
 Description:

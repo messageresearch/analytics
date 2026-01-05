@@ -4,13 +4,14 @@ START OF FILE: 2024-09-01 - September 1, 2024 - Bro Paul Haylett A Personal Mess
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-01
-Title:   September 1, 2024 - Bro Paul Haylett "A Personal Message Part 2"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-VL6NxZ-yms
+Date:     2024-09-01
+Title:    September 1, 2024 - Bro Paul Haylett "A Personal Message Part 2"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=-VL6NxZ-yms
 ========================================
 
 Description:

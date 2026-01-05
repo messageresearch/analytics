@@ -4,13 +4,14 @@ START OF FILE: 2022-07-31 - July 31, 2022 - Bro David Dienhart Perfect Headship,
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-31
-Title:   July 31, 2022 - Bro David Dienhart "Perfect Headship, Perfect Leadership"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IiwEY6Kijvo
+Date:     2022-07-31
+Title:    July 31, 2022 - Bro David Dienhart "Perfect Headship, Perfect Leadership"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 3h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=IiwEY6Kijvo
 ========================================
 
 Description:

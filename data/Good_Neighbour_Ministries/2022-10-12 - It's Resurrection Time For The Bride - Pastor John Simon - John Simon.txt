@@ -4,13 +4,14 @@ START OF FILE: 2022-10-12 - It's Resurrection Time For The Bride - Pastor John S
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-12
-Title:   It's Resurrection Time For The Bride - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eee25sGYVqw
+Date:     2022-10-12
+Title:    It's Resurrection Time For The Bride - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Easter Program
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=eee25sGYVqw
 ========================================
 
 Description:

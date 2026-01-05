@@ -4,13 +4,14 @@ START OF FILE: 2022-10-26 - The Gift of God - Pastor John Simon - John Simon.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-26
-Title:   The Gift of God - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uP8utPDWRbQ
+Date:     2022-10-26
+Title:    The Gift of God - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=uP8utPDWRbQ
 ========================================
 
 Description:

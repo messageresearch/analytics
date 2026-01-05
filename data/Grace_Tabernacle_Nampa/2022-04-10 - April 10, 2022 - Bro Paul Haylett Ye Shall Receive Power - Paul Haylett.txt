@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - April 10, 2022 - Bro Paul Haylett Ye Shall Receive P
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   April 10, 2022 - Bro Paul Haylett "Ye Shall Receive Power"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=09hEMkQPrjo
+Date:     2022-04-10
+Title:    April 10, 2022 - Bro Paul Haylett "Ye Shall Receive Power"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=09hEMkQPrjo
 ========================================
 
 Description:

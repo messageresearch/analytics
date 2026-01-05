@@ -4,13 +4,14 @@ START OF FILE: 2025-05-11 - May 11, 2025 - Bro Paul Haylett Persuaded - Paul Hay
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-11
-Title:   May 11, 2025 - Bro Paul Haylett "Persuaded"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=93I30iBZbuI
+Date:     2025-05-11
+Title:    May 11, 2025 - Bro Paul Haylett "Persuaded"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=93I30iBZbuI
 ========================================
 
 Description:

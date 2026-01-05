@@ -4,13 +4,14 @@ START OF FILE: 2024-12-29 - December 29, 2024 - Bro David Dienhart The Perfect O
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-29
-Title:   December 29, 2024 - Bro David Dienhart "The Perfect One"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=11ZLLGO5Dzc
+Date:     2024-12-29
+Title:    December 29, 2024 - Bro David Dienhart "The Perfect One"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=11ZLLGO5Dzc
 ========================================
 
 Description:

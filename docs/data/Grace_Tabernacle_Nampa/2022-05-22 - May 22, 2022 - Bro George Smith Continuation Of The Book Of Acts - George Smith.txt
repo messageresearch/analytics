@@ -4,13 +4,14 @@ START OF FILE: 2022-05-22 - May 22, 2022 - Bro George Smith Continuation Of The 
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-22
-Title:   May 22, 2022 - Bro George Smith "Continuation Of The Book Of Acts"
-Speaker: George Smith
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sUOQs-z65Ic
+Date:     2022-05-22
+Title:    May 22, 2022 - Bro George Smith "Continuation Of The Book Of Acts"
+Speaker:  George Smith
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=sUOQs-z65Ic
 ========================================
 
 Description:

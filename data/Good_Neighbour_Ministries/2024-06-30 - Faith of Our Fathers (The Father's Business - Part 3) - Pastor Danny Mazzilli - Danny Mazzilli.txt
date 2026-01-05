@@ -4,13 +4,14 @@ START OF FILE: 2024-06-30 - Faith of Our Fathers (The Father's Business - Part 3
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-30
-Title:   Faith of Our Fathers (The Father's Business - Part 3) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vGGWHAZuDa8
+Date:     2024-06-30
+Title:    Faith of Our Fathers (The Father's Business - Part 3) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=vGGWHAZuDa8
 ========================================
 
 Description:

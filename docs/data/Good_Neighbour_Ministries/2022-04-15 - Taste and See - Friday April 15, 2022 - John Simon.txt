@@ -4,13 +4,14 @@ START OF FILE: 2022-04-15 - Taste and See - Friday April 15, 2022 - John Simon.t
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-15
-Title:   Taste and See - Friday April 15, 2022
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aDUK9CW2rNE
+Date:     2022-04-15
+Title:    Taste and See - Friday April 15, 2022
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=aDUK9CW2rNE
 ========================================
 
 Description:

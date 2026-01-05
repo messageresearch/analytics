@@ -4,13 +4,14 @@ START OF FILE: 2022-08-03 - August 3, 2022 - Bro Paul Haylett Being Yoked - Paul
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-03
-Title:   August 3, 2022 - Bro Paul Haylett "Being Yoked"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MWk1Tr1x_W4
+Date:     2022-08-03
+Title:    August 3, 2022 - Bro Paul Haylett "Being Yoked"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=MWk1Tr1x_W4
 ========================================
 
 Description:

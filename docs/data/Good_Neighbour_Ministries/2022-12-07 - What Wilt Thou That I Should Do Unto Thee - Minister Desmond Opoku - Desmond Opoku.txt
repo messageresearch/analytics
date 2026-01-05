@@ -4,13 +4,14 @@ START OF FILE: 2022-12-07 - What Wilt Thou That I Should Do Unto Thee - Minister
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-07
-Title:   What Wilt Thou That I Should Do Unto Thee? - Minister Desmond Opoku
-Speaker: Desmond Opoku
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BXDBfyJbHWc
+Date:     2022-12-07
+Title:    What Wilt Thou That I Should Do Unto Thee? - Minister Desmond Opoku
+Speaker:  Desmond Opoku
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=BXDBfyJbHWc
 ========================================
 
 Description:

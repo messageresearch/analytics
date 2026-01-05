@@ -4,13 +4,14 @@ START OF FILE: 2025-02-23 - Separation Time - Minister John Simon - John Simon.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-23
-Title:   Separation Time - Minister John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ANWGEOLpPis
+Date:     2025-02-23
+Title:    Separation Time - Minister John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=ANWGEOLpPis
 ========================================
 
 Description:

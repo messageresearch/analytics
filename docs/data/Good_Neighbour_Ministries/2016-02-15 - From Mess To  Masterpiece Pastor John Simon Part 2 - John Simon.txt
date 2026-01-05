@@ -4,13 +4,14 @@ START OF FILE: 2016-02-15 - From Mess To  Masterpiece Pastor John Simon Part 2 -
 
 SERMON DETAILS
 ========================================
-Date:    2016-02-15
-Title:   "From Mess To  Masterpiece" Pastor John Simon Part 2
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Z9tLpCNgGJo
+Date:     2016-02-15
+Title:    "From Mess To  Masterpiece" Pastor John Simon Part 2
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=Z9tLpCNgGJo
 ========================================
 
 Description:

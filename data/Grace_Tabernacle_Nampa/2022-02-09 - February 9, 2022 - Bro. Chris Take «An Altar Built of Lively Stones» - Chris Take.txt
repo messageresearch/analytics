@@ -4,13 +4,14 @@ START OF FILE: 2022-02-09 - February 9, 2022 - Bro. Chris Take «An Altar Built 
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-09
-Title:   February 9, 2022 - Bro. Chris Take «An Altar Built of Lively Stones»
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LI1QqLKyA14
+Date:     2022-02-09
+Title:    February 9, 2022 - Bro. Chris Take «An Altar Built of Lively Stones»
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=LI1QqLKyA14
 ========================================
 
 Description:

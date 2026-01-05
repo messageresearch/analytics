@@ -4,13 +4,14 @@ START OF FILE: 2020-10-18 - October 18, 2020 - Bro. Paul Haylett This Is The Sea
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-18
-Title:   October 18, 2020 - Bro. Paul Haylett "This Is The Season Our Potential Is Expressed"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2HTmfri-VWI
+Date:     2020-10-18
+Title:    October 18, 2020 - Bro. Paul Haylett "This Is The Season Our Potential Is Expressed"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=2HTmfri-VWI
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-12-13 - December 13, 2020 - Bro. Paul Haylett What We Say Re
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-13
-Title:   December 13, 2020 - Bro. Paul Haylett "What We Say Really Does Matter"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8jd8SlQZMhc
+Date:     2020-12-13
+Title:    December 13, 2020 - Bro. Paul Haylett "What We Say Really Does Matter"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=8jd8SlQZMhc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2019-07-21 - 00159 But There Is A God In Heaven - July 21 2019 - 
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-21
-Title:   00159 But There Is A God In Heaven - July 21 2019 - Pastor John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NMvfI5i2EOk
+Date:     2019-07-21
+Title:    00159 But There Is A God In Heaven - July 21 2019 - Pastor John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=NMvfI5i2EOk
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2021-01-27 - January 27, 2021 - Bro. David Dienhart We Are His Vi
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-27
-Title:   January 27, 2021 - Bro. David Dienhart "We Are His Victory"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=S6wuEMPrDTs
+Date:     2021-01-27
+Title:    January 27, 2021 - Bro. David Dienhart "We Are His Victory"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=S6wuEMPrDTs
 ========================================
 
 Description:

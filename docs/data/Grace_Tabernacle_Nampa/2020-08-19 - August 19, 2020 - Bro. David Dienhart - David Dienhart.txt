@@ -4,13 +4,14 @@ START OF FILE: 2020-08-19 - August 19, 2020 - Bro. David Dienhart - David Dienha
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-19
-Title:   August 19, 2020 - Bro. David Dienhart
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SlJV5JLd3qc
+Date:     2020-08-19
+Title:    August 19, 2020 - Bro. David Dienhart
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=SlJV5JLd3qc
 ========================================
 
 TRANSCRIPT

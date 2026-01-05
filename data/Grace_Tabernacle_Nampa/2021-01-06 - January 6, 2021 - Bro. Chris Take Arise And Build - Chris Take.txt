@@ -4,13 +4,14 @@ START OF FILE: 2021-01-06 - January 6, 2021 - Bro. Chris Take Arise And Build - 
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-06
-Title:   January 6, 2021 - Bro. Chris Take "Arise And Build"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wXLxHZhjEdQ
+Date:     2021-01-06
+Title:    January 6, 2021 - Bro. Chris Take "Arise And Build"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=wXLxHZhjEdQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-07-03 - July 3, 2024 - Bro David Dienhart The Word Of Life -
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-03
-Title:   July 3, 2024 - Bro David Dienhart "The Word Of Life"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=banqk-5Li84
+Date:     2024-07-03
+Title:    July 3, 2024 - Bro David Dienhart "The Word Of Life"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=banqk-5Li84
 ========================================
 
 Description:

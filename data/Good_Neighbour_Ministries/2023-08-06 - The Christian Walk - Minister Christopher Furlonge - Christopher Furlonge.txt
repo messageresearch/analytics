@@ -4,13 +4,14 @@ START OF FILE: 2023-08-06 - The Christian Walk - Minister Christopher Furlonge -
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-06
-Title:   The Christian Walk - Minister Christopher Furlonge
-Speaker: Christopher Furlonge
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NQWMYCOO-r8
+Date:     2023-08-06
+Title:    The Christian Walk - Minister Christopher Furlonge
+Speaker:  Christopher Furlonge
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=NQWMYCOO-r8
 ========================================
 
 Description:

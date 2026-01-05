@@ -4,13 +4,14 @@ START OF FILE: 2023-03-19 - March 19, 2023 - Bro Chris Take The Spirit Within Th
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-19
-Title:   March 19, 2023 - Bro Chris Take "The Spirit Within The Birth"
-Speaker: Chris Take
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_RbvO_BoPpc
+Date:     2023-03-19
+Title:    March 19, 2023 - Bro Chris Take "The Spirit Within The Birth"
+Speaker:  Chris Take
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=_RbvO_BoPpc
 ========================================
 
 Description:

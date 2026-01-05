@@ -4,13 +4,14 @@ START OF FILE: 2022-04-13 - A Call To Take Your Position Part 2 - Minister Danny
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-13
-Title:   A Call To Take Your Position Part 2 - Minister Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=akGvPCNka1g
+Date:     2022-04-13
+Title:    A Call To Take Your Position Part 2 - Minister Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=akGvPCNka1g
 ========================================
 
 Description:

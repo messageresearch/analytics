@@ -4,13 +4,14 @@ START OF FILE: 2022-03-16 - March 16, 2022 - Bro Paul Haylett The Temple Of The 
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-16
-Title:   March 16, 2022 - Bro Paul Haylett "The Temple Of The Holy Ghost"
-Speaker: Paul Haylett
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=svWAf2tyBHA
+Date:     2022-03-16
+Title:    March 16, 2022 - Bro Paul Haylett "The Temple Of The Holy Ghost"
+Speaker:  Paul Haylett
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=svWAf2tyBHA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - March 2, 2025 - Bro David Dienhart - The Revelation 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   March 2, 2025 - Bro David Dienhart - "The Revelation of the Rapture"
-Speaker: David Dienhart
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UA_SS_XqB88
+Date:     2025-03-02
+Title:    March 2, 2025 - Bro David Dienhart - "The Revelation of the Rapture"
+Speaker:  David Dienhart
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=UA_SS_XqB88
 ========================================
 
 Description:

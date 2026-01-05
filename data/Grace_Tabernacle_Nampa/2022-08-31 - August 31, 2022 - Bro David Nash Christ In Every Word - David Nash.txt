@@ -4,13 +4,14 @@ START OF FILE: 2022-08-31 - August 31, 2022 - Bro David Nash Christ In Every Wor
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-31
-Title:   August 31, 2022 - Bro David Nash "Christ In Every Word"
-Speaker: David Nash
-Church:  Grace Tabernacle Nampa
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zdVLarY0aWE
+Date:     2022-08-31
+Title:    August 31, 2022 - Bro David Nash "Christ In Every Word"
+Speaker:  David Nash
+Church:   Grace Tabernacle Nampa
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=zdVLarY0aWE
 ========================================
 
 Description:
