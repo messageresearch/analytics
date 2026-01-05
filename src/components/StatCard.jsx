@@ -3,6 +3,11 @@ import Icon from './Icon'
 
 export default function StatCard({ title, value, sub, icon, color='blue', fullWidth=false, onClick=null }){
   const clickable = !!onClick
+  // Truncate very long titles to prevent excessive wrapping
+  const maxTitleLength = 40
+  const displayTitle = title.length > maxTitleLength ? title.slice(0, maxTitleLength) + '…' : title
+  const needsTooltip = title.length > maxTitleLength
+  
   return (
     <div 
       className={`bg-white p-2 sm:p-3 rounded-lg sm:rounded-xl border border-${color}-100 shadow-sm stat-card flex justify-between items-start ${fullWidth ? 'col-span-2' : ''} ${clickable ? 'cursor-pointer hover:bg-gray-50 hover:border-'+color+'-300 transition-colors' : ''}`}
@@ -11,8 +16,13 @@ export default function StatCard({ title, value, sub, icon, color='blue', fullWi
       tabIndex={clickable ? 0 : undefined}
       onKeyDown={clickable ? (e) => { if (e.key === 'Enter' || e.key === ' ') onClick() } : undefined}
     >
-      <div className="min-w-0 flex-1">
-        <p className="text-gray-500 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider leading-tight">{title}</p>
+      <div className="min-w-0 flex-1 overflow-hidden">
+        <p 
+          className="text-gray-500 text-[8px] sm:text-[10px] font-bold uppercase tracking-wider leading-tight break-words"
+          title={needsTooltip ? title : undefined}
+        >
+          {displayTitle}
+        </p>
         <h3 className={`text-base sm:text-xl font-bold text-gray-900 mt-0.5`}>{value}</h3>
         {sub && <p className={`text-[8px] sm:text-[10px] text-${color}-600 mt-0.5 font-medium leading-tight`}>{sub}</p>}
       </div>
