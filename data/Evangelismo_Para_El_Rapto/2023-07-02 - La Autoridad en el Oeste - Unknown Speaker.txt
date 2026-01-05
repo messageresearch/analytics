@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - La Autoridad en el Oeste - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   "La Autoridad en el Oeste"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Z6H0tnyyBu4
+Date:     2023-07-02
+Title:    "La Autoridad en el Oeste"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 2h 23m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Z6H0tnyyBu4
 ========================================
 
 Description:

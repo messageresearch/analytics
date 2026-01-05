@@ -1,0 +1,2136 @@
+################################################################################
+TIMESTAMPED TRANSCRIPT
+################################################################################
+Source: 2025-09-25 - Bro Phil Bontrager • Wed. • 92425 • A Simple Evidence - Phil Bontrager.txt
+Video ID: y8OZsayuWSo
+Segments: 2124
+URL: https://www.youtube.com/watch?v=y8OZsayuWSo
+================================================================================
+Click any timestamp to jump to that point in the video.
+Format: [M:SS] or [H:MM:SS] followed by transcript text.
+================================================================================
+
+[0:01] [Music]
+[7:32] [Music]
+[7:52] [Music]
+[11:41] [Music]
+[17:41] [Music]
+[18:12] Heat. Heat.
+[18:19] Heat. Heat.
+[18:20] [Music]
+[18:40] Heat. Heat.
+[18:44] [Music]
+[19:02] Heat. Heat.
+[19:04] [Music]
+[19:23] Heat. Heat.
+[19:24] [Music]
+[19:59] Yeah.
+[20:01] [Music]
+[20:05] Yeah.
+[20:09] [Music]
+[20:39] the world.
+[20:42] [Music]
+[20:58] Ding.
+[21:02] [Music]
+[21:26] 3. Do you
+[21:32] [Music]
+[21:56] Heat.
+[22:03] [Music]
+[22:14] Heat.
+[22:17] [Music]
+[22:48] Heat. Heat.
+[22:51] [Music]
+[23:27] Ooh.
+[23:29] Ooh.
+[23:31] [Music]
+[23:48] I stay.
+[23:52] Amen. Hallelujah.
+[23:55] Everybody glad to be at church tonight.
+[23:57] &gt;&gt; I don't know why, but I'm just
+[23:58] especially glad to be here tonight.
+[24:00] Amen. So, looking forward to what the
+[24:02] Lord has for us. Amen. Brother Phil
+[24:04] Bontreger ministering for us this
+[24:06] evening. We do want to announce Amen.
+[24:08] And brother Brad reminded me, Brother
+[24:09] Biscll's funeral will be this coming
+[24:12] Sunday. Amen. At September 28th at 11:00
+[24:15] a.m. Amen. And so I think this Sunday
+[24:18] we'll probably have a moment of silence
+[24:19] for him. Amen. As our great warrior,
+[24:22] great man went to be with the Lord.
+[24:24] Ain't that right?
+[24:26] &gt;&gt; Amen. And so, Amen. God bless him and
+[24:30] bless his family. Amen. Let's stand this
+[24:33] evening. We'll just open up in service.
+[24:35] Good to have uh Amen. our travelers
+[24:37] black. Amen. Danny and Julie, we missed
+[24:39] you. Amen. Missed everybody that was
+[24:42] gone over the weekend. And so I think
+[24:44] there's still a few of them missing. So,
+[24:46] but anyway, we're just anytime any of us
+[24:48] is not here, we usually notice. And we
+[24:51] Amen. miss everybody. So, we're glad to
+[24:53] be here tonight. Amen. And looking
+[24:55] forward the Lord has for us. Amen.
+[24:58] Anybody got any special spo special
+[25:00] unspoken? Just raise your hand. Lord
+[25:02] Jesus, as we bow our heads, Father,
+[25:04] coming before your throne of grace this
+[25:06] evening once again, Lord, having the
+[25:09] privilege and the honor, Father, of
+[25:10] being able to assemble ourselves
+[25:12] together, Lord, knowing God, that we
+[25:15] came to America to be able to have
+[25:16] freedom of worship, to be able to
+[25:18] worship you according to the dictates of
+[25:20] our heart and our soul and our mind,
+[25:22] Lord. And Father, we just appreciate
+[25:24] that opportunity tonight, Lord. And we
+[25:27] just ask God that you would just have be
+[25:29] the preeminent one, Lord, and you would
+[25:31] have your preeminence, Lord, and do what
+[25:33] you want done. Say what you want said.
+[25:36] And we'll be sure to have our ears open
+[25:38] to listen to what you've got to say,
+[25:40] Father, this evening, Lord. Those hands
+[25:42] that were raised, Lord, you see what
+[25:43] each one has, what those needs are. And
+[25:46] we ask God you'd bless him in a special
+[25:47] way, Lord. And we just commit this
+[25:49] service now to you in Jesus name. Amen.
+[25:52] And amen. Let's give the Lord a hand
+[25:54] tonight. Let's just loosen up and give
+[25:55] the Lord a hand. Amen. Praise the Lord.
+[25:59] [Applause]
+[26:02] God bless you. You love the Lord with
+[26:03] all your heart.
+[26:06] &gt;&gt; Amen.
+[26:07] Let's sing that little chorus that she
+[26:09] played earlier. All my hope is in Jesus
+[26:12] tonight as we get ready. Well, all
+[26:17] my hope is in Jesus.
+[26:24] Oh, thank God
+[26:26] my yesterday's
+[26:29] gone.
+[26:32] [Music]
+[26:33] And all
+[26:35] my sins are forgiven.
+[26:40] [Music]
+[26:42] And I've
+[26:44] been washed by the blood. Once again, if
+[26:49] we could.
+[26:51] And all
+[26:53] my hope is in Jesus.
+[27:00] Well, thank God
+[27:02] my yesterday's
+[27:05] gone.
+[27:09] And all
+[27:11] my sins are forgiven.
+[27:17] [Music]
+[27:18] and I
+[27:21] will wash
+[27:23] the blood. Could we sing it to him one
+[27:25] more time? And all
+[27:29] my hope is in Jesus.
+[27:36] Well, thank God
+[27:38] my yesterday's
+[27:41] gone
+[27:45] and all
+[27:47] my sins are forgi.
+[27:54] Oh, and I
+[27:56] been washed by the blood.
+[28:01] Amen. and you thankful that you've been
+[28:04] washed by the blood tonight. Amen. It's
+[28:06] good to be in the house of the Lord. And
+[28:08] Amen. Let's just sing a little course. I
+[28:11] was glad when they said unto me, let us
+[28:13] go to the house of the Lord. Amen. Well,
+[28:17] I was glad when they said unto me, Oh
+[28:22] yes. Well, I was glad when they said
+[28:27] unto me.
+[28:30] Well, I was glad when they said unto me.
+[28:36] Oh, let us go to the house of the Lord.
+[28:41] They'll be singing. Well, they'll be
+[28:44] singing in the house of the Lord.
+[28:50] Oh, there they'll be singing in the
+[28:53] house of the Lord.
+[28:56] Oh, there'll be sing in the house of the
+[29:01] Lord.
+[29:03] Oh, let us go to the house of They'll be
+[29:08] preaching tonight. Well, they'll be
+[29:11] preaching in the house of the Lord.
+[29:16] Oh, they'll be preaching in the house of
+[29:20] the Lord.
+[29:23] They'll be preaching in the house of the
+[29:27] Lord.
+[29:29] Oh, let us go to the house of I was
+[29:34] glad.
+[29:36] Well, I was glad when they said unto me,
+[29:43] I was glad when they said unto me,
+[29:49] oh, I was glad when they said unto me,
+[29:56] oh, let us go to the house of the Lord.
+[30:02] Amen. God bless you. You may be seated
+[30:05] tonight. I won't keep you standing a
+[30:07] long time. And Amen. And so, but it's
+[30:10] good to be in the house, Lord. It's good
+[30:12] to be home. And we just had an awesome
+[30:14] weekend. But we're just looking forward
+[30:16] to what God has for us tonight. Amen.
+[30:18] Amen. What a fellowship. What a joy
+[30:20] divine leaning on the everlasting arms.
+[30:24] Amen. Well, what a fellowship. And what
+[30:30] a joy divine leaning
+[30:34] on the everlasting
+[30:37] arms. And what a blessedness. And what a
+[30:44] peace is my leaning
+[30:47] on the everlasting
+[30:51] arm. Oh yes, I'm leaning.
+[30:55] Yes, I'm leading.
+[30:58] Oh, I'm safe and secure from all alarm.
+[31:05] Oh, I'm leading.
+[31:08] [Music]
+[31:09] Leading.
+[31:12] Yes, I'm leading
+[31:14] on the everlasting
+[31:18] arms. And oh, how sweet to walk in this
+[31:25] pilgrim way, leading
+[31:28] on the everlasting
+[31:31] arms. And oh, how bright the path grows
+[31:37] from day to day. Leading
+[31:41] on the everlasting
+[31:43] [Music]
+[31:44] ar. Oh yes, I'm leading.
+[31:49] Yes, I'm leading
+[31:54] and secure from all alarm. Oh, I'm
+[32:00] leading.
+[32:02] Yes, I'm leaning.
+[32:06] Oh, I'm leaning
+[32:08] on the everlasting
+[32:12] arms. Now what have I to dread? What
+[32:18] have I to fear? Leaning
+[32:22] on the everlasting
+[32:25] on. Oh, and I have blessed peace with my
+[32:32] Lord so near. Leading
+[32:35] on the everlasting
+[32:39] arm. Oh yes, I'm leaning.
+[32:43] Yes, I'm leaning.
+[32:47] Safe and secure from all alarm. Oh, I'm
+[32:54] leaning.
+[32:56] [Music]
+[32:57] Leaning.
+[33:00] Oh, I'm leaning
+[33:03] on the everlasting.
+[33:05] Sing that last verse. Now what have I to
+[33:10] dread and what have I to fear? Leading
+[33:16] on the everlasting
+[33:18] [Music]
+[33:19] arms,
+[33:21] I have blessed peace with my Lord so
+[33:27] near. Leaning
+[33:30] on the everlasting
+[33:33] arm. Oh yes, I'm leading.
+[33:37] Yes, I'm leading.
+[33:41] Oh, I'm safe and secure from all alarm.
+[33:47] Oh, I'm leaning.
+[33:51] Yes, I'm leaning
+[33:54] [Music]
+[33:57] on the everlasting
+[34:00] arm.
+[34:02] Amen. Man, are you glad you're leaning
+[34:04] up on him tonight? Amen. And you know, I
+[34:07] I was praying and this song come on my
+[34:09] heart and well, where could I go?
+[34:15] Oh, where could I go?
+[34:20] Oh, see, king of refuge for my soul.
+[34:29] Oh, I was needing
+[34:32] a friend
+[34:35] to help me indeed.
+[34:38] Oh, tell me where could I go but to the
+[34:45] Lord
+[34:47] [Music]
+[34:49] and living
+[34:51] below
+[34:54] in this so sinful world.
+[34:59] and hardly
+[35:01] a comfort can afford
+[35:08] and strive
+[35:10] alone
+[35:13] to face temptation.
+[35:16] So tell me where could I go but to the
+[35:23] Lord.
+[35:26] Oh, tell me where could I go? Oh yes,
+[35:32] where could I go
+[35:37] and see king of refuge for my soul?
+[35:45] Oh, I was needing
+[35:48] a friend
+[35:50] or to help me in the end.
+[35:55] Tell me where could I go but to the
+[36:01] Lord.
+[36:05] And neighbors
+[36:07] are kind.
+[36:10] I love them everyone.
+[36:14] Will we get alone in sweet corn?
+[36:24] But when my soul
+[36:28] needs mana from above, oh tell me where
+[36:35] could I go but unto the Lord.
+[36:41] Oh, tell me where could I go?
+[36:47] Oh, where could I go?
+[36:51] [Music]
+[36:52] See, king of refuge for my soul.
+[37:00] Oh, I was needing
+[37:03] a friend
+[37:06] to help me indeed.
+[37:09] Oh, tell me where could I go but to the
+[37:16] Lord.
+[37:20] And life here is grand
+[37:24] with friends I love so dear.
+[37:29] And comfort
+[37:31] I get from God's own word.
+[37:39] Yeah. When I face all that chilling hand
+[37:45] of death. Oh, tell me where could I go
+[37:51] but to the Lord.
+[37:56] Oh, tell me where could I go? Oh yes,
+[38:02] where could I go?
+[38:06] Oh, I was seeking
+[38:08] a reuge for my soul.
+[38:14] Well, I was needing
+[38:17] a friend
+[38:20] to help me in the end. Oh, tell me where
+[38:26] could I go but to the Lord.
+[38:31] Amen.
+[38:33] Amen. And we have a lot of prayer
+[38:35] requests tonight. And brother Daniel and
+[38:37] brother Michael John and
+[38:40] brother Gideon, you can come help them
+[38:41] tonight.
+[38:47] Uh want them to remember our shut in
+[38:50] sister Parish and Sister Peggy tonight.
+[38:52] And also remember Janet. She's home. Her
+[38:55] her knee is really bothering her
+[38:56] tonight. She just said she couldn't make
+[38:58] it. Also uh brother Shawn has a migraine
+[39:02] and he's not feeling well tonight. might
+[39:03] want to remember him in prayer. And also
+[39:06] uh brother Brad mentioned a lady by the
+[39:08] name of Lori that needs a touch from the
+[39:10] Lord tonight. Just pray that God will
+[39:12] touch her body. And also uh brother
+[39:14] Micah Ber is home with a migraine
+[39:17] tonight, brother Thomas said. So we're
+[39:19] going to continue to remember him in
+[39:20] prayer. God will touch his body. And
+[39:22] also brother Glenn asked that we would
+[39:24] remember them for the prison ministry
+[39:27] Saturday. And then they're going to do a
+[39:29] little outreach I think in Elton. So, we
+[39:31] just want to remember that in prayer. If
+[39:33] you have need on your heart, you might
+[39:34] let it be known with uplifted hands. And
+[39:36] we're going to ask Brother Brad if he'd
+[39:37] come and and take these needs to the
+[39:40] Lord in prayer.
+[39:42] [Music]
+[39:53] &gt;&gt; We're thankful for a time that we've
+[39:55] been able to come and gather tonight,
+[39:56] Lord, and just to fellowship around your
+[39:58] word once again. And Lord, we just call
+[40:01] upon your name that you would just come
+[40:02] and minister to each heart that's here
+[40:04] tonight. Bless those that couldn't be
+[40:06] here, the ones that that would have a
+[40:08] desire to be here but can't because of
+[40:10] physical needs. And Lord, we just ask
+[40:12] that you would touch those needs tonight
+[40:13] in a special way. Lord, you heard the
+[40:16] different requests, Lord, and for our
+[40:18] friend Lori who's had a blood clot in
+[40:20] her lungs, Lord, and just uh just in a
+[40:23] serious situation and the hospital and
+[40:26] at the hospital and doctors are working
+[40:27] and medicating her, Lord. But we know
+[40:29] that you you hold the healing touch,
+[40:31] Lord. And she's a she's a Christian.
+[40:33] She's a believer, and she she believes
+[40:35] in the power of prayer, and she asked us
+[40:37] and and had a desire for us to pray. So,
+[40:39] we're praying tonight and lifting her up
+[40:41] before you, Lord Jesus, that you would
+[40:43] move on the scene there. And you know,
+[40:45] brother Micah is at home with a migraine
+[40:47] and hates to miss and but Lord, we just
+[40:49] ask that you would just come and just
+[40:51] give him comfort in his in his in his uh
+[40:53] in his mind, Lord Jesus, and the head
+[40:56] that it's hurting. There's nothing more
+[40:57] painful than a Maya grain where you
+[40:59] can't open your eyes, you can't see, and
+[41:01] you can't move. But Lord, we just ask
+[41:03] Lord that you would touch his body
+[41:04] tonight in a special way. And Lord, you
+[41:06] know each and every need, Brother Shawn
+[41:08] that couldn't be here. I just ask Lord
+[41:10] that you continue to to minister to him.
+[41:13] And Lord, we just want to tell you we
+[41:14] love you. We thank you. We appreciate
+[41:16] you and all that you do for us. I ask
+[41:18] that you minister to us tonight in a
+[41:20] special way. Bless Brother Phil. Bless
+[41:21] this offering that we take up. And we
+[41:23] lift it up for you, Lord. That every
+[41:25] dollar be put in just to be able to
+[41:27] bring glory to you, Lord. And that it
+[41:29] would be pleasing to you how we spend
+[41:31] and use this money. We just want to tell
+[41:33] you we love you. Bless those who can
+[41:34] give and those who cannot. In Jesus name
+[41:37] we pray. Amen.
+[41:41] &gt;&gt; Amen. Love him with all of your heart.
+[41:44] Amen. Let's sing that song if we could.
+[41:46] Let's just a little talk with Jesus
+[41:49] makes it right. Amen. You believe that
+[41:52] with all of your heart. And Amen.
+[41:55] I love this song. And you know, I I
+[41:59] always think of the church when I hear
+[42:02] other people sing it and I think, "Boy,
+[42:04] y'all really mess it up. You need to
+[42:06] come to the church."
+[42:08] They're, of course, they're gospel
+[42:09] singers. I'm not talking about other
+[42:11] churches. as I'm talking about the the
+[42:13] people that do it for a living. But I
+[42:15] think I just love this song and it come
+[42:17] on my heart today. Amen. How many once
+[42:20] was lost in sin? Amen. Well, that's
+[42:24] that's behind us now. Well, I once was
+[42:27] lost in sin, but Jesus took me in.
+[42:33] And then a little from heaven filled my
+[42:37] soul.
+[42:40] Well, it bathed my heart in love and it
+[42:45] wrote my name above
+[42:48] and just a little talk with Jesus.
+[42:53] Amen. Now let us
+[42:59] let us
+[43:00] [Music]
+[43:03] He will
+[43:06] and he and survive.
+[43:10] Now when you feel a little prayer with
+[43:13] burning and you know that the fire is
+[43:16] burning, you will find a little talk
+[43:20] with Jesus makes it right.
+[43:25] Sometimes my past seems true
+[43:29] without a ray of cheer
+[43:33] and
+[43:35] they hide the light of day.
+[43:40] For the midst of sin may rise
+[43:44] and hide the starry skies,
+[43:48] but just a little talk with Jesus.
+[43:52] [Music]
+[43:54] Now let us
+[43:58] oh let us
+[44:02] he will hear our faintest cry and he'll
+[44:07] answer by and by. Now when you feeling
+[44:11] prayer will burn and you know a little
+[44:15] fire is burning. You will find a little
+[44:19] talk with Jesus makes it right.
+[44:25] Well, I may have doubts and fears and my
+[44:29] eyes be filled with tears,
+[44:33] but Jesus is a friend who watches day
+[44:36] and night.
+[44:39] Will I go to him in prayer? For he knows
+[44:45] my every care.
+[44:47] And just a little talk with Jesus makes
+[44:51] it right.
+[44:54] Now let us
+[44:58] oh let us
+[45:02] he will hear our faintest cry and he'll
+[45:07] answer by and by. Now when you feel them
+[45:11] prayer will turning and you know little
+[45:15] fire is burning. You will find a little
+[45:19] talk with Jesus makes it right. Sing the
+[45:22] chorus again. Oh, let us
+[45:28] Oh, let us
+[45:32] He will hear our cry and he'll answer by
+[45:38] and by. Now when you feel a little
+[45:41] prayer will turn and you know a little
+[45:45] fire is burning. You will find a little
+[45:48] talk with Jesus makes it right.
+[45:53] Amen. You believe that with all your
+[45:56] heart. Amen. And brother Thomas, could I
+[45:59] have just another minute? I want to give
+[46:01] a little short testimony. When I was 5
+[46:04] years old, my dad had a terrific nose
+[46:09] bleed and he almost they called our
+[46:11] family in and we went to the meetings
+[46:13] the other day and brother Gary Hair, a
+[46:15] lot of you know him and and if you ever
+[46:18] watch any of DV any of the messages from
+[46:20] Brother Donny's church, he's the
+[46:22] gray-haired gentleman that plays the
+[46:24] steel guitar. I've known Brother Gary my
+[46:26] whole life and they lived upstairs from
+[46:28] us. And I as I was brother Gary was
+[46:31] talking to me about my dad and he said I
+[46:33] want to tell you something about your
+[46:34] dad and I said what he said we was at
+[46:39] church that night and brother Smith was
+[46:40] our pastor and he said
+[46:43] brother Smith come out of the pastor
+[46:45] study because back then we had phones we
+[46:47] didn't even know what a cell phone was
+[46:49] then but and brother Smith come in front
+[46:52] of the church and he said church he said
+[46:55] brother Wade is fixing to go unless God
+[46:58] moves on the scene. He said, "They've
+[47:00] called the family in, they'd give him
+[47:02] five minutes to live."
+[47:04] And my dad was bleeding so bad out his
+[47:07] nose, all the blood they'd put in, it
+[47:08] would just gush out. They and he was in
+[47:11] the best hospital in Chicago there was.
+[47:14] And so he said, "Brother David, we all
+[47:16] got down up front." And he said, "We
+[47:19] prayed."
+[47:21] &gt;&gt; And he said, you know,
+[47:24] he said, "Brother Smith went back after
+[47:26] we got done praying." And he said a few
+[47:27] minutes later he come back out. He said,
+[47:29] "I just want to tell you."
+[47:32] He said, "His blood has changed pink and
+[47:35] he's quit bleeding."
+[47:38] And he said, "Brother David, that was
+[47:39] the first miracle I had ever seen in a
+[47:42] time like that." And I said, "God is
+[47:46] good." He said, "Oh, yeah. He's very
+[47:47] good." And and my dad was always a real
+[47:50] prayer warrior. And you know, I said,
+[47:54] and I know no matter what we go through,
+[47:56] God's a healer tonight
+[47:58] &gt;&gt; and he's a savior. And somebody, of
+[48:02] course, I said a seen a lot of those
+[48:03] people that I knew and they all said the
+[48:05] same thing. They never a lot of them
+[48:07] didn't have much hope that I'd ever make
+[48:09] it, but there was a God that had
+[48:10] different ideas. Aren't you glad for
+[48:12] that God tonight? Amen. Sister
+[48:14] Annabelle, do you have a special
+[48:16] tonight? Come ahead.
+[48:28] [Music]
+[48:45] Sometimes I fall
+[48:48] [Music]
+[48:49] to my knees and pray,
+[48:53] "Come Jesus, come."
+[48:57] Let today be the day.
+[49:02] Sometimes I feel
+[49:07] like I'm going to break,
+[49:11] but I'm holding on
+[49:16] to a hope that won't fade.
+[49:21] Come Jesus, come.
+[49:26] We've been waiting so long
+[49:30] for the day you return to heal every
+[49:35] hurt and brought every wrong.
+[49:41] We need you right now.
+[49:46] Come and turn this around.
+[49:51] Dear down I know this world isn't home.
+[49:57] Come Jesus come.
+[50:01] Come Jesus come.
+[50:05] There will be no war
+[50:09] and there won't be no chains.
+[50:14] When Jesus comes.
+[50:18] Let today be the day
+[50:22] you'll come for the weak
+[50:27] and the strong just the same.
+[50:31] And all will believe
+[50:34] [Music]
+[50:35] in the power of his name.
+[50:40] Come Jesus come.
+[50:44] We've been waiting so long
+[50:48] for the day you return to heal every
+[50:53] hurt and rot every wrong.
+[50:59] We need you right now.
+[51:03] Come and turn this around.
+[51:07] [Music]
+[51:08] Do you not know this world isn't home?
+[51:13] Come Jesus, come.
+[51:16] [Music]
+[51:18] Come Jesus, come.
+[51:22] One day he'll come
+[51:26] and we'll stand face to face.
+[51:30] Come and lay it all down
+[51:34] cuz
+[51:36] today
+[51:37] the time is right now.
+[51:41] There's no one made to wait.
+[51:45] Your paths will be washed by rivers of
+[51:50] grace.
+[51:52] Come Jesus, come.
+[51:56] We've been waiting so long
+[52:01] for the day you return. to heal every
+[52:05] hurt and rot every wrong.
+[52:12] We need you right now.
+[52:16] Come and turn this around.
+[52:21] Do you don't not know this world isn't
+[52:25] home. Come Jesus come.
+[52:31] Come Jesus come.
+[52:36] Come Jesus come
+[52:43] [Applause]
+[52:52] tonight.
+[52:56] Amen. How many is under expectation?
+[53:00] How many will pull from the gift? Amen.
+[53:02] Hang on to every word. Right. Sit at the
+[53:05] edge of your seat. Hold your cup of pie.
+[53:08] Amen. Let's welcome Brother Phil to come
+[53:10] out as we sing. Here's my cup, Lord.
+[53:12] Fill it up, Lord. Here's my cup,
+[53:17] Lord.
+[53:20] I lift it up,
+[53:24] Lord.
+[53:25] [Music]
+[53:27] Come and quench
+[53:30] the thirsting
+[53:33] of my soul.
+[53:38] Bread of heaven,
+[53:42] feed me till I want. God bless you,
+[53:47] baby. God bless you.
+[53:51] Come
+[53:53] fill it up.
+[53:56] Make me whole. Let's sing that again.
+[54:01] Oh, here's my cup,
+[54:05] Lord.
+[54:07] I lift it up,
+[54:11] Lord.
+[54:14] Come and quench,
+[54:18] thirsty
+[54:20] up my soul.
+[54:26] Bread of heaven,
+[54:30] feed me till I want
+[54:34] [Music]
+[54:36] more.
+[54:38] Here's my cup.
+[54:41] Fill it up.
+[54:44] make me whole.
+[54:48] Amen. It's the only thing that's going
+[54:50] to make us whole. You, friend, is a Holy
+[54:53] Spirit in our lives. It gives us a
+[54:55] purpose. It gives a reason. It's why we
+[54:57] come here tonight. It's It's all Jesus.
+[54:59] It's all It's all that we need.
+[55:02] Everything else taken care of. Let's
+[55:04] pray. Lord Jesus, we're so thankful we
+[55:06] can come gather tonight with believers.
+[55:09] And father, it's just such a such a
+[55:11] privilege that we can we can have things
+[55:14] in common. And not just we can gather a
+[55:16] lot of people have things in common, but
+[55:18] when it's you, Father, when it's Christ
+[55:20] that we have in common, that's that's
+[55:22] the difference maker. And we we see you
+[55:24] in different people's lives. And it just
+[55:26] gives us courage. We see that the word
+[55:28] is having the effect it's supposed to
+[55:29] have. We see it in our our lives. We see
+[55:32] it around us. And then we look out at
+[55:34] the world and see how dark it is. is.
+[55:35] And no matter how dark it is, the light
+[55:37] shines just as bright as it is dark. And
+[55:40] so, Father, tonight we want to get a
+[55:42] closer look at the light. We want to see
+[55:44] what you are doing. We want to
+[55:45] recognize, Father, the word having the
+[55:47] effect in each life, Father, and we want
+[55:50] to accept it more and believe it. And,
+[55:51] Father, just to lay aside all our doubt
+[55:53] and unbelief and just receive what you
+[55:56] have for us tonight. Won't you speak to
+[55:57] each heart, Lord? Let each person know
+[55:59] that they heard your voice tonight.
+[56:01] Lord, I ask this, Lord, in your name.
+[56:03] Amen.
+[56:05] I'm going to read out of Revelations 13
+[56:08] verse 11-14 just to get started here.
+[56:12] It's sure good to be back here in Elton.
+[56:14] I just you guys are just a wonderful
+[56:16] group here. It's always such a great
+[56:18] atmosphere and I just appreciate that so
+[56:20] much.
+[56:22] Just good people.
+[56:30] Something happened to my pad and it's
+[56:32] got the wrong thing written down. I
+[56:34] better read out of a Bible. I guess
+[56:36] that's okay to still do the oldfashioned
+[56:38] way, huh?
+[56:41] &gt;&gt; Verse 11, chapter 13-11. I beheld
+[56:44] another beast coming up out of the
+[56:45] earth. He had two horns like a lamb. He
+[56:47] spake as a dragon.
+[56:50] He exercisth all the power of the first
+[56:52] beast before him, and causes the earth,
+[56:54] and them which dwell therein to worship
+[56:56] the first beast, whose deadly wound was
+[56:58] healed. And this is what I want to get
+[57:00] to. He doeth great wonders so that he
+[57:03] maketh fire come down from heaven on the
+[57:05] earth in the sight of men. He deceiveth
+[57:08] them that dwell on the earth by the
+[57:09] means of those miracles which he had
+[57:11] power to do in the sight of the beast.
+[57:14] Let me repeat that. He deceiveth them
+[57:16] that dwell on the earth by the means of
+[57:19] those miracles
+[57:20] which he had power to do in the sight of
+[57:22] the beast. saying to them that dwell on
+[57:24] the earth that they should make an image
+[57:26] to the beast which had the wound by a
+[57:28] sword and did live. You may be seated
+[57:30] this evening.
+[57:35] Tonight I want to speak on the thought
+[57:36] of a simple evidence and I want to ask
+[57:39] the question can you allow God to be
+[57:42] simple in your life. We know brother
+[57:44] Brandon preached on that. He preached
+[57:45] some a great message. God hides himself
+[57:47] in simplicity. He reveals himself in
+[57:50] simplicity. And if God does this, then
+[57:53] we know Satan's doing all he can to make
+[57:56] God anything but simple.
+[57:58] &gt;&gt; That's right.
+[57:59] &gt;&gt; He anything. And there's so many ways he
+[58:01] goes about it. This is how he got Eve to
+[58:03] fall. This is how he gets every one of
+[58:05] us to make mistakes, to do the things.
+[58:07] He's got every church to to go off on
+[58:10] their tangents the way they have by
+[58:11] making God anything but simple because
+[58:14] simple is not pleasing to our old
+[58:16] nature. We want to have something we can
+[58:18] do in it. We want to have something we
+[58:19] can brag about. We want to have
+[58:21] something like to to be beautiful. You
+[58:23] know what what what what what the church
+[58:24] did is she wanted to be more beautiful.
+[58:26] She wanted to be more pre more more
+[58:28] prestige. She wanted more whatever it is
+[58:30] that that get that attracts people to
+[58:33] her. And that's why say that's what
+[58:35] Satan does because the simple gospel is
+[58:38] just plain and simple and that's just
+[58:40] all there is. And it doesn't give us any
+[58:42] any room to to exalt ourselves and like
+[58:45] well look at me. Look how holy I'm
+[58:47] living. Look what's going on in my life.
+[58:49] Look at all this. And that's what Satan
+[58:50] wants to do is get us f focusing on an
+[58:53] evidence that is not based on the simple
+[58:56] fulfilling of the word.
+[58:59] &gt;&gt; There's always got to be something else.
+[59:01] He wants to add something else so that
+[59:02] well I know God did this because this
+[59:05] but was it just the simple word that you
+[59:07] were basing your evidence on or do you
+[59:09] need some kind of fantastic something
+[59:10] else to base your evidence? What is your
+[59:13] evidence? And that not I'm not just
+[59:15] talking evidence of being born again,
+[59:16] but anything that you base your faith
+[59:18] on, there's got to be an evidence that
+[59:19] you base your faith on. And if it's not
+[59:21] simple, you're missing out on God.
+[59:23] &gt;&gt; Yeah.
+[59:24] &gt;&gt; So, I'm going to read out of I want to
+[59:26] read out of First Kings 19. I'm going to
+[59:29] read 11 through13. And you all know this
+[59:31] is where Elijah was called up on the
+[59:32] mountain.
+[59:34] And God said and God said, he said, "Go
+[59:37] forth and stand up on the mount before
+[59:39] the Lord." So, right away we're going to
+[59:40] look. He said, "Go stand before me." He
+[59:43] is there where God called him be. In
+[59:44] other words, he said, "Go to that
+[59:46] church.
+[59:48] This is the church I want you to go to.
+[59:50] This is where you're supposed to be, and
+[59:52] I'm going to deal with you there."
+[59:55] &gt;&gt; And behold, the Lord passed by. Now,
+[59:58] listen. The Lord passed by. He told him
+[1:00:00] to go there, and the Lord came by where
+[1:00:02] he was.
+[1:00:05] &gt;&gt; And a great and strong wind the
+[1:00:08] mountains and break in pieces the rocks
+[1:00:10] before the Lord. Now, if you went to
+[1:00:13] church and you saw something like that
+[1:00:15] happen, what would your what would your
+[1:00:17] result be? What would your uh
+[1:00:20] &gt;&gt; what would your evidence be?
+[1:00:24] &gt;&gt; How would you respond to that? I'd have
+[1:00:27] a shouting, running hissy fit.
+[1:00:29] &gt;&gt; Look what God is doing.
+[1:00:32] &gt;&gt; He called me to this church. He put me
+[1:00:34] here and he passed by. The very presence
+[1:00:37] of the Lord passed by and look what he
+[1:00:39] did. And that's what happens. And the
+[1:00:41] the anointing comes. It's the presence
+[1:00:43] of the Lord.
+[1:00:46] &gt;&gt; But wait, you know what this says?
+[1:00:50] &gt;&gt; The Lord was not in the wind.
+[1:00:54] &gt;&gt; What?
+[1:00:57] &gt;&gt; You told me to come here. Okay, let's
+[1:00:59] look. Here's Elijah. He's standing
+[1:01:01] there. I I know. Imagine this. He's
+[1:01:03] standing there on this mountain and God
+[1:01:06] said, "Come here." And a mighty wind
+[1:01:07] comes by so strong it breaks rocks. Have
+[1:01:10] you ever seen a wind that strong?
+[1:01:12] &gt;&gt; I haven't.
+[1:01:14] Wow. What a supernatural thing is
+[1:01:17] happen. What a phen. This is amazing. I
+[1:01:19] got to tell somebody.
+[1:01:22] &gt;&gt; Yeah.
+[1:01:24] &gt;&gt; But the Lord wasn't in the wind.
+[1:01:27] &gt;&gt; That's right.
+[1:01:28] &gt;&gt; And after the wind and earthquake.
+[1:01:31] So the first of all the wind comes and
+[1:01:32] blows and knocks rocks over and breaking
+[1:01:34] them. And the Lord, so Elijah, he just
+[1:01:36] standing there.
+[1:01:38] Nope, that ain't it.
+[1:01:41] God brought me here, but that wasn't it.
+[1:01:44] &gt;&gt; Yeah.
+[1:01:44] &gt;&gt; So what is it? Oh, earthquake. Shaking
+[1:01:47] everything. Probably fell down and he
+[1:01:48] was like grabbing rocks and he's looking
+[1:01:50] around. He stands back up. He said,
+[1:01:53] "Nope.
+[1:01:54] God wasn't into earthquake."
+[1:01:58] &gt;&gt; After the earthquake of fire, that would
+[1:02:00] have got me. I mean, if with that
+[1:02:03] because I mean, here's a fire. The fire
+[1:02:05] of God comes down and just scorches
+[1:02:07] everything around.
+[1:02:09] You know, Elijah's standing in the midst
+[1:02:10] of that fire. He's looking around. He
+[1:02:12] says, "No,
+[1:02:15] this ain't it. God's not in the fire.
+[1:02:20] &gt;&gt; Look at the phenomena going on.
+[1:02:24] Look how we would have responded to that
+[1:02:26] kind of of supernatural activity.
+[1:02:30] After
+[1:02:33] the fire, after the fire, a still small
+[1:02:38] voice.
+[1:02:41] &gt;&gt; And it was so when Elijah heard it that
+[1:02:43] he wrapped his face in his mantle and
+[1:02:46] went out and stood in the entry of the
+[1:02:49] cave. And behold, there came a voice
+[1:02:51] into him and said, "What you doing,
+[1:02:53] Elijah?
+[1:02:55] Wait a minute. All this mighty stuff
+[1:02:58] going on." And then all God says very
+[1:03:00] very quietly said, "What are you doing
+[1:03:02] here? Why are you in church?
+[1:03:05] Why did you come here tonight? Did you
+[1:03:08] want to see some fantastics?"
+[1:03:11] &gt;&gt; I love fantastics.
+[1:03:13] &gt;&gt; I love the the move of the spirit. We
+[1:03:15] have to have it.
+[1:03:17] &gt;&gt; But you can have all this stuff that
+[1:03:19] Elijah saw and God wasn't in it.
+[1:03:22] &gt;&gt; That's right.
+[1:03:23] &gt;&gt; What was he doing? He's testing the
+[1:03:24] prophet. Are you going to run? Are you
+[1:03:26] going to run with these phenomena? Are
+[1:03:27] you going to run with all these
+[1:03:28] supernatural things? Are you going to
+[1:03:29] run with all the gifts? Are you going to
+[1:03:31] run with all this stuff that that's this
+[1:03:32] great that that that humans would call
+[1:03:35] wonderful and great? Or are you going to
+[1:03:37] wait for the voice?
+[1:03:39] &gt;&gt; Yeah, that's right.
+[1:03:42] &gt;&gt; Because the reality is, friends,
+[1:03:46] God is the word and the word always has
+[1:03:49] a voice.
+[1:03:50] &gt;&gt; And that's where your evidence is.
+[1:03:52] That's because you heard the voice of
+[1:03:54] God. He told you who he you were. He
+[1:03:56] told you who he is and you believe that
+[1:03:58] and that's all God ever wanted from you.
+[1:04:01] It just simply believe the voice when it
+[1:04:03] talks to you.
+[1:04:05] &gt;&gt; That's the simplicity he hides it in.
+[1:04:07] But look what he he does all this other
+[1:04:09] stuff. Say are you going to chase after
+[1:04:10] that? Brother Brandon preached on this.
+[1:04:12] He said people go the churches are
+[1:04:14] going. He said they're running. They're
+[1:04:16] doing all they can but they don't have a
+[1:04:18] message and you can run without a
+[1:04:20] message. And oh how many people would
+[1:04:22] have taken those things? I got to go
+[1:04:24] tell somebody. And they were running.
+[1:04:26] Look, God knocked the rocks over. He had
+[1:04:28] an earthquake. He had a fire.
+[1:04:31] &gt;&gt; But what did he say?
+[1:04:34] Well, what do you mean? Don't you
+[1:04:37] understand? That wind was so great it
+[1:04:39] was breaking rocks.
+[1:04:42] &gt;&gt; There was fire. The fire of God fell
+[1:04:43] down. But what did he say?
+[1:04:46] &gt;&gt; You can have all these supernatural
+[1:04:48] wonderful phenomena and all this. You
+[1:04:50] can have healings and deliverance and
+[1:04:52] raise the dead and do all those things
+[1:04:54] and God not even in it
+[1:04:59] &gt;&gt; because God has a voice.
+[1:05:01] &gt;&gt; Amen.
+[1:05:02] &gt;&gt; If you don't hear the voice, what good
+[1:05:04] is it going to do your soul?
+[1:05:08] &gt;&gt; Because we just saw Satan can do those
+[1:05:10] miracles, too. Satan can produce all
+[1:05:13] that kind of stuff.
+[1:05:18] His
+[1:05:20] evidence was God spoke to me and then he
+[1:05:25] did what did he do? He he said, "What
+[1:05:26] are you doing here?" And and Elijah
+[1:05:28] said, "Well, I'm doing this. I'm do
+[1:05:29] this." And God corrected him. He said,
+[1:05:31] "No, you're wrong. Your your idea is
+[1:05:33] wrong about this. You think you're the
+[1:05:34] only one left. You're not."
+[1:05:37] And he set him on the path and he gave
+[1:05:39] him a message. Now go do this. Go do
+[1:05:41] that. And that's all he wants you to do.
+[1:05:43] He says, "I want you to run. Everyone,
+[1:05:44] this ain't just for preachers. This is
+[1:05:46] everyone who's born again. Every one of
+[1:05:48] you have a ministry and every one of you
+[1:05:49] have the voice of God to speak through
+[1:05:51] your life. And that might not come from
+[1:05:52] your mouth, but it's going to come from
+[1:05:54] your life. And it's the voice of God and
+[1:05:55] it's your ministry and God, take this
+[1:05:57] and run, but don't run until you go with
+[1:05:59] what I give you to go with.
+[1:06:01] &gt;&gt; Amen.
+[1:06:03] &gt;&gt; How many people go out and try to
+[1:06:04] accomplish something and they don't have
+[1:06:06] a message to go with? You say, "I'm a
+[1:06:08] message believer. I automatically have a
+[1:06:09] message." No. No. And no.
+[1:06:12] Just because someone says I'm a message
+[1:06:14] preacher don't know doesn't mean they
+[1:06:16] have a message at all because they can
+[1:06:17] be preaching that's their theology that
+[1:06:19] can be predicting their their theories
+[1:06:23] or something like that without the voice
+[1:06:25] ever speaking to them and revealing to
+[1:06:26] them this is the truth of it
+[1:06:30] &gt;&gt; and you have you can see it I'm sure
+[1:06:32] you've seen it you have you have a
+[1:06:34] minister gets up he is so focused on the
+[1:06:36] theology of the message and the
+[1:06:38] mysteries and all this but there's no
+[1:06:39] life to back it up and you have someone
+[1:06:41] else and They preach and they just focus
+[1:06:43] on the miracles and the signs and the
+[1:06:45] supernatural, but there's no voice in
+[1:06:47] what they're saying. And what are they
+[1:06:49] doing? They're taking away from the
+[1:06:51] simplicity that God requires of his
+[1:06:53] bride.
+[1:06:55] &gt;&gt; Quit focusing on that. Quit focusing on
+[1:06:57] that. We got to have it all. But in the
+[1:06:59] middle, your foundation, your evidence
+[1:07:00] is that God has spoke to you.
+[1:07:04] &gt;&gt; There is the evidence. That's the
+[1:07:06] revelation on which he builds his
+[1:07:08] church. It's the voice of God to you
+[1:07:10] personally. And you know what he said
+[1:07:12] cuz you were there to hear it.
+[1:07:16] &gt;&gt; Thank you, Lord.
+[1:07:19] &gt;&gt; And the the more mature you get in
+[1:07:21] Christ, the closer you going to have
+[1:07:24] that it it's like I hate saying this. If
+[1:07:28] you're immature in Christ, you might
+[1:07:30] still need the thunder and lightning for
+[1:07:31] something to believe
+[1:07:36] &gt;&gt; because you don't have confidence in
+[1:07:38] that still small voice yet. Oh,
+[1:07:41] &gt;&gt; I know what I'm talking about. I've been
+[1:07:43] there
+[1:07:45] &gt;&gt; and God could speak to me, but I said, I
+[1:07:46] need to get prayed for now. I need
+[1:07:48] something. I need to feel the move of
+[1:07:50] the spirit in order for me to believe
+[1:07:51] that was God speaking to me.
+[1:07:55] I couldn't get simple enough. I couldn't
+[1:07:57] let God be simple enough in my life just
+[1:08:00] to be that voice. You know, Brother Bram
+[1:08:01] said he he he likes he like it's like he
+[1:08:04] takes a a man who take his wife up and
+[1:08:06] whisper his love secrets to her and
+[1:08:08] that's all God wants to do. He don't
+[1:08:09] always want to have to sit there and
+[1:08:10] holler and scream and hit you with
+[1:08:12] lightnings and and whatever else. He
+[1:08:14] said, "Won't you just come away with me
+[1:08:15] a little bit? Let's spend time just you
+[1:08:17] and me together."
+[1:08:20] &gt;&gt; And he wants to whisper to you. He don't
+[1:08:23] have to shake and hit you on the head.
+[1:08:24] Hey, I'm talking to you. What a kind of
+[1:08:27] relationship is that?
+[1:08:30] Come up to me. Let me talk to you. And
+[1:08:32] you hear that voice and you walk out of
+[1:08:34] there and your faith is grounded in that
+[1:08:36] he told you that.
+[1:08:40] &gt;&gt; Do you feel anything?
+[1:08:42] I felt a lot of love.
+[1:08:46] &gt;&gt; That's what it that's what it that's
+[1:08:47] what it produces, friends. And and
+[1:08:49] here's here's what I just let Let me say
+[1:08:51] this real quick. When you see a ministry
+[1:08:54] that produces Christ,
+[1:08:58] it don't care. I don't care if it
+[1:08:59] produces miracles or not, signs will
+[1:09:01] follow. Well, that's fine, but that's
+[1:09:03] not what you're looking for anyways
+[1:09:04] because you can get signs. You could
+[1:09:05] have gone to Arizona a couple days ago
+[1:09:07] and saw all kinds of signs and wonders
+[1:09:09] out in that stadium. And you talk about
+[1:09:11] anointing, there's an anointing going
+[1:09:12] out there. And brothers and sister, they
+[1:09:14] were saying a lot of really cool things
+[1:09:16] and really nice things, but recognize
+[1:09:18] that that is still the beast system
+[1:09:20] coming into power.
+[1:09:22] [Applause]
+[1:09:23] &gt;&gt; That's exactly right.
+[1:09:25] &gt;&gt; Don't be fooled by that, friends.
+[1:09:29] &gt;&gt; They were I'm off my side here. Let me
+[1:09:31] just real quick look. They were out
+[1:09:33] there. They the the Catholics and the
+[1:09:36] prot they didn't care who was Catholic,
+[1:09:38] who was Protestant. We had our most
+[1:09:40] powerful politicians in the world, the
+[1:09:42] most powerful nation ever been, and out
+[1:09:45] there preaching Jesus Christ. Can you
+[1:09:47] imagine that happening?
+[1:09:52] What's going on? She's taking control.
+[1:09:55] &gt;&gt; That's right.
+[1:09:56] &gt;&gt; And they didn't care who was speaking,
+[1:09:57] if they're Catholic or Protestant. They
+[1:09:59] were together. They say they're still
+[1:10:01] preaching Christ. We're going to accept
+[1:10:03] it. You tell me that the the the
+[1:10:05] daughters haven't gone back to mama
+[1:10:08] &gt;&gt; They don't care anymore. And it looks so
+[1:10:10] good.
+[1:10:12] &gt;&gt; And it comes in with flatteries. And it
+[1:10:14] comes in making people think this is
+[1:10:16] wonderful. And I wish it was. And
+[1:10:18] there's so much that we so what? But we
+[1:10:20] know it's too late. America has crossed
+[1:10:22] the line. There's no more mercy. There's
+[1:10:24] no coming back for America. All that's
+[1:10:26] going to come back is that beast system
+[1:10:28] that that the the that that Roman spirit
+[1:10:31] of of of that dominating iron
+[1:10:33] disposition is going to show itself and
+[1:10:36] it's going to dominate the world and
+[1:10:37] there's only one thing standing be
+[1:10:39] between it and the domination of the
+[1:10:41] world and that's you.
+[1:10:44] &gt;&gt; You're staying square in the middle of
+[1:10:46] them taking over and you think they're
+[1:10:48] going to let us go without trying to
+[1:10:50] shut us down. The prophet told you
+[1:10:51] they're going to shut us down. Yeah.
+[1:10:53] &gt;&gt; He said, "When they try to shut us up,
+[1:10:55] God's going to take us up."
+[1:10:58] &gt;&gt; Oh, we're watching scripture being
+[1:11:00] fulfilled all around us. We're
+[1:11:02] absolutely watching what's right here,
+[1:11:04] written how long ago, and we're watching
+[1:11:06] it happen. But where would we be without
+[1:11:08] the message of the hour to tell us this
+[1:11:10] stuff? I tell you what, we'd be right in
+[1:11:12] the middle of that.
+[1:11:14] &gt;&gt; Oh, we should be so h We are happy. We
+[1:11:17] are grateful. Look what God has done.
+[1:11:19] has opened our eyes so we're not being
+[1:11:22] deceived by that beast system.
+[1:11:26] [Applause]
+[1:11:29] &gt;&gt; Thank you, Lord.
+[1:11:32] &gt;&gt; You know, they crucified our savior and
+[1:11:35] those Roman soldiers, this is just some
+[1:11:37] kind of another one of these crazy Jews,
+[1:11:41] put him up on the cross, very humble.
+[1:11:44] What happened?
+[1:11:46] There's earthquake. Darkness covered the
+[1:11:49] earth. And what did they say? Oh, this
+[1:11:52] was the son of God. They recognized it
+[1:11:56] after it's too late. The spiritual
+[1:11:58] phenomena opened their eyes. Oh my
+[1:11:59] goodness, look what we've done. After it
+[1:12:02] was too late.
+[1:12:05] &gt;&gt; After it was too late.
+[1:12:08] Let me move on here. So you say, well,
+[1:12:10] well, how do we how do we allow God to
+[1:12:12] be simple
+[1:12:15] in our lives? So we're going to read out
+[1:12:18] of Mark 10 and verse 13. We must become
+[1:12:22] simple ourselves.
+[1:12:25] We have to also become simple.
+[1:12:28] Verse 13, 10:13. And they brought young
+[1:12:31] children to him that he should touch
+[1:12:32] them. His disciples rebuked those that
+[1:12:34] brought them. And when Jesus saw it, he
+[1:12:37] was much displeased.
+[1:12:39] He said, "Don't don't stop those young
+[1:12:42] people, those kids from come unto me,"
+[1:12:45] and said unto them, "Suffer the little
+[1:12:46] children to come unto me, and forbid
+[1:12:48] them not, for such is the kingdom of
+[1:12:51] God. Verily I send to you, whosoever
+[1:12:54] shall not receive the kingdom of God as
+[1:12:55] a little child, he shall not enter
+[1:12:57] therein." He took them up in his arms,
+[1:12:59] put his arms around them, and blessed
+[1:13:00] them. How does a child receive it? You
+[1:13:02] say, "Well, how how would a child
+[1:13:04] receive anything when we're supposed to
+[1:13:05] receive the kingdom of God like a child?
+[1:13:07] How does a child receive something?"
+[1:13:10] Mommy, I'm hungry.
+[1:13:13] Oh, that's too simple. You know what she
+[1:13:16] responds? Well, honey, I know you're
+[1:13:18] three years old, but you got to earn
+[1:13:19] dinner.
+[1:13:21] Have you done good enough to be fed?
+[1:13:24] Have you lived a good life? Are you good
+[1:13:27] enough? Do you think you earn Have you
+[1:13:29] really earned dinner?
+[1:13:32] Have you impressed me enough to get to
+[1:13:34] feed you?
+[1:13:36] &gt;&gt; How many how many people look at God
+[1:13:38] that way?
+[1:13:40] &gt;&gt; How many people see the the rules of the
+[1:13:43] message and say, "Oh, I got to earn his
+[1:13:45] blessing."
+[1:13:48] &gt;&gt; You see how Satan corrupts us from the
+[1:13:50] simplicity?
+[1:13:54] &gt;&gt; You know what a real three-year-old?
+[1:13:55] Mommy, I'm hungry. Well, wait for
+[1:13:57] dinner. Oh, mommy, I'm hungry. No.
+[1:14:02] You cry out until you get what you want.
+[1:14:07] &gt;&gt; Don't ever quit. I don't have a hissy
+[1:14:09] fit. I'm not talking about that.
+[1:14:16] Well, why do you believe, you know,
+[1:14:18] another three-year-old comes up and
+[1:14:19] says, and he says, you know, my my daddy
+[1:14:21] said the the the moon is made of green
+[1:14:23] cheese.
+[1:14:25] Well, my daddy said it's made of yellow
+[1:14:27] cheese.
+[1:14:29] Well, why do you believe that? Daddy
+[1:14:31] said so.
+[1:14:33] It's that simple. Why do you believe the
+[1:14:35] crazy things that people could do? How
+[1:14:37] can you believe the things you believe?
+[1:14:39] Daddy said so.
+[1:14:42] &gt;&gt; Let it be that simple.
+[1:14:44] &gt;&gt; God said so. It's enough.
+[1:14:48] &gt;&gt; It's enough. But it has to be a
+[1:14:50] revelation, friends. It's got to be God
+[1:14:52] spoke to you. And then you say, "Well,
+[1:14:54] what if he don't speak to you?" Then
+[1:14:55] you're in a bad place.
+[1:14:59] Have you made yourself available? And
+[1:15:01] here's here's I think the biggest thing.
+[1:15:03] Do you recognize his voice?
+[1:15:06] &gt;&gt; Do you sit in church and your mind is
+[1:15:08] wondering and then all of a sudden some
+[1:15:09] little something just kind of just kind
+[1:15:11] of registers a little bit and just
+[1:15:13] dismiss it?
+[1:15:16] Wait until after this service that we're
+[1:15:18] going to worship and praise and we're
+[1:15:20] going to have a wonderful foot stomping
+[1:15:22] shouting time here in the service. But
+[1:15:25] when God was speaking to you, you
+[1:15:27] ignored it. You didn't recognize that
+[1:15:29] was the main thing.
+[1:15:32] &gt;&gt; That was the main thing. You couldn't
+[1:15:33] walk out of here with your faith
+[1:15:35] renewed. You walked out of here with
+[1:15:36] your confidence, your evidence because
+[1:15:38] you shouted and felt the anointing. And
+[1:15:40] that'll go away by the time you hit the
+[1:15:42] parking lot.
+[1:15:46] &gt;&gt; That's right.
+[1:15:48] &gt;&gt; You've heard it. How many How many times
+[1:15:51] people said, "We had such a great
+[1:15:53] service. I I am not belitting that at
+[1:15:56] all. We need to shout and stump and
+[1:15:58] praise and show God and make love to him
+[1:16:00] all we can. But if that's all you have,
+[1:16:02] you ain't got anything
+[1:16:05] &gt;&gt; because a sinner comes in and does the
+[1:16:07] same thing. And the demons come in and
+[1:16:09] do the same thing. They love worshiping
+[1:16:11] in the spirit.
+[1:16:17] &gt;&gt; Just trust him.
+[1:16:19] &gt;&gt; Let me keep going here. I'm going to run
+[1:16:21] out of time. Matthew 11:25.
+[1:16:25] Look at Jesus his his attitude towards
+[1:16:28] simplicity.
+[1:16:31] 11:25. At that time Jesus answered and
+[1:16:33] said, "I thank thee, oh Father, Lord of
+[1:16:35] heaven and earth, because thou hast hid
+[1:16:38] these things from the wise and prudent,
+[1:16:39] has revealed them unto babes. Even so,
+[1:16:42] Father, for so it seemed good in thy
+[1:16:44] sight."
+[1:16:46] What's he saying? Thank you for being
+[1:16:48] simple and hiding yourself in
+[1:16:50] simplicity. Oh, this is going to get to
+[1:16:53] me.
+[1:16:55] &gt;&gt; He was He was thanking, Father, thank
+[1:16:58] you that these wise and these prudent
+[1:17:00] and these theologians and all these
+[1:17:02] people with all these degrees and they
+[1:17:04] know so much, but you hid it from them,
+[1:17:06] but you revealed it to little children,
+[1:17:08] spiritual children, babes.
+[1:17:16] Think about what he was doing.
+[1:17:20] What was the father hiding?
+[1:17:24] Ever think of that? He was hiding the
+[1:17:26] reality the of who Christ was. He was
+[1:17:30] hiding that he was the Messiah. How did
+[1:17:31] he do it? By the simplicity. He was too
+[1:17:34] simple. They said, "We're not going to
+[1:17:36] accept a Messiah like that. He's too
+[1:17:38] simple.
+[1:17:42] And what's the result?
+[1:17:45] By the father hiding his reality, his
+[1:17:48] position, who he was, it resulted in a
+[1:17:50] crucifixion.
+[1:17:54] They killed him because of it.
+[1:17:57] &gt;&gt; And he thanked the father.
+[1:18:02] That gets to me.
+[1:18:05] &gt;&gt; What kind of a love? What? Why would you
+[1:18:07] do that? because the word had to be
+[1:18:09] fulfilled.
+[1:18:10] If the father would have opened their
+[1:18:12] eyes, he blinded their eyes through the
+[1:18:13] simplicity. If he would have said, he
+[1:18:15] gone to the the the Pharisees and the
+[1:18:17] the priests and all, he said, "This is
+[1:18:18] the Messiah." And he took the scales out
+[1:18:20] their eyes and say, "Oh my goodness, the
+[1:18:22] Jesus is the Messiah." They would have
+[1:18:25] accepted him
+[1:18:28] &gt;&gt; and there would have been no
+[1:18:29] crucifixion.
+[1:18:33] And you and I would be as lost as loss
+[1:18:35] could be.
+[1:18:40] talk. Look, look at the attitude. Look
+[1:18:42] at the character of Jesus to say, "Go
+[1:18:44] ahead. Thank you for I know it's going
+[1:18:47] to cost me, but thank you for doing that
+[1:18:50] so that I can be fulfill my purpose."
+[1:18:52] Now, do you have that same attitude? Can
+[1:18:55] you be that simple? Can you allow God to
+[1:18:56] be that simple? If you have to blind
+[1:18:58] their eyes, blind their eyes. But I
+[1:19:00] thank you that you're fulfilling the
+[1:19:01] word.
+[1:19:04] &gt;&gt; What if it's your family? He's blinded.
+[1:19:13] &gt;&gt; That's what the love of God does,
+[1:19:15] friend. Human love don't don't get
+[1:19:17] there.
+[1:19:19] &gt;&gt; But God's love will get there and say,
+[1:19:21] "Not my will, but thine be done."
+[1:19:24] &gt;&gt; And if you had to blind my family's eyes
+[1:19:26] or whoever it is, I thank you for
+[1:19:29] fulfilling your word.
+[1:19:33] &gt;&gt; God don't play. He's not playing church.
+[1:19:36] He said, "I sacrificed my own son. I
+[1:19:38] sent him to Calvary for you." And then
+[1:19:40] we want to come and go and and and have
+[1:19:41] our evidence because oh, I shouted or
+[1:19:43] jumped or I something or or I had this
+[1:19:46] all going all this stuff that don't mean
+[1:19:47] a thing.
+[1:19:51] Well, I went to church. I'm I'm holy. I
+[1:19:53] go to church. I'm a believer.
+[1:19:56] Where's your evidence?
+[1:19:58] Well, I down at the altar 20 years ago,
+[1:20:01] I just felt a great baptism of the Holy
+[1:20:03] Spirit. That's wonderful. I love that.
+[1:20:05] Y'all love that. You had that. Amazing.
+[1:20:08] What did he say?
+[1:20:12] Because he might have spoke through
+[1:20:13] that. That a new birth,
+[1:20:16] but not if he didn't speak.
+[1:20:19] If there's no revelation to it, it
+[1:20:21] wasn't a birth. Because this is a word
+[1:20:24] birth. That means
+[1:20:26] that means he has to give you a word to
+[1:20:29] believe. Yeah.
+[1:20:31] &gt;&gt; And how many times pee especially people
+[1:20:34] they're seeking the Holy Ghost and they
+[1:20:35] run the altar and they have these great
+[1:20:37] sensations and the great there's this
+[1:20:39] great outpouring of the spirit and
+[1:20:40] baptisms and they have such an awesome
+[1:20:42] awesome time and they're just in that
+[1:20:44] spirit and it's so wonderful and they
+[1:20:46] they think I finally got it. I finally
+[1:20:49] got it.
+[1:20:53] And six weeks later
+[1:20:56] they know nothing changed.
+[1:20:59] Wow.
+[1:21:00] &gt;&gt; Because their evidence was in some
+[1:21:01] fantastic something. I am not belitting
+[1:21:04] that. That is wonderful. And we need
+[1:21:06] those things. But you got to have it
+[1:21:08] based. Your evidence has to be based on
+[1:21:10] the revealed word that God spoke to you
+[1:21:12] personally.
+[1:21:15] &gt;&gt; Nothing else is changing your soul.
+[1:21:18] Nothing. And and look at this friends.
+[1:21:20] What greater thing can you have than
+[1:21:22] take this old nasty nature, this old
+[1:21:25] nasty human being, and put a life in
+[1:21:27] there, which is God's life, it's eternal
+[1:21:30] life. There is no greater miracle than
+[1:21:32] that.
+[1:21:35] &gt;&gt; There is nothing greater than that new
+[1:21:38] nature coming alive and expressing
+[1:21:40] itself. What more do you want?
+[1:21:44] &gt;&gt; What will you settle for? Why will you
+[1:21:46] be satisfied without that?
+[1:21:50] &gt;&gt; That seed inside of you won't be
+[1:21:52] satisfied.
+[1:21:54] &gt;&gt; No, it won't.
+[1:21:56] Jesus wasn't wasn't thanking God that
+[1:21:58] all these people going to be lost. It
+[1:22:00] killed him.
+[1:22:03] He wept over Jerusalem. He said, "Oh,
+[1:22:05] Jerusalem,
+[1:22:07] I would have hovered you. I would have
+[1:22:08] taken you all but you would not
+[1:22:13] &gt;&gt; because they were blinded
+[1:22:16] for you and I's sake so God could come
+[1:22:18] and get us.
+[1:22:22] &gt;&gt; That's the love of God.
+[1:22:24] &gt;&gt; I don't play well with human love. Human
+[1:22:27] love doesn't like that.
+[1:22:30] Because if God's willing to do that
+[1:22:31] there, what's he willing to do with us?
+[1:22:35] Oh friends, if God has shown you that
+[1:22:37] you are elect, you are there's it's
+[1:22:40] impossible to describe how amazing that
+[1:22:44] is.
+[1:22:45] &gt;&gt; Impossible. Let me quote the prophet. He
+[1:22:47] said, "God is so great he can make
+[1:22:49] himself simple.
+[1:22:51] That's what makes that's what makes him
+[1:22:53] so great. So many miss him in the
+[1:22:55] simplicity because in simple ways he
+[1:22:57] hides himself." Now we know that man
+[1:22:59] cannot do this. Man cannot make himself
+[1:23:02] great enough to be simple.
+[1:23:04] So right away you said, "Well, then what
+[1:23:06] am I supposed to do?" You're supposed to
+[1:23:07] adopt the attitude of a little kid and
+[1:23:10] just trust God and let him come and
+[1:23:12] change you the way he wants you to be.
+[1:23:14] And that nature inside of you will be
+[1:23:16] that and simple. It will be so great,
+[1:23:18] but it looks so simple because you can
+[1:23:20] look at different people say, "Well, I I
+[1:23:22] see this brother and I see him being a
+[1:23:25] Christian and I I I see but it's so
+[1:23:27] simple. Where are your mighty miracles?
+[1:23:30] Have you walked on water, brother?
+[1:23:32] What's wrong with you?
+[1:23:37] Have you raised the dead?
+[1:23:40] Oh, well, I have no confidence in you.
+[1:23:45] That's ridiculous, isn't it?
+[1:23:46] &gt;&gt; But how many times do you look at
+[1:23:48] yourself and say, "Oh, if I would just
+[1:23:50] see more Christ."
+[1:23:52] &gt;&gt; What are you looking for?
+[1:23:56] &gt;&gt; Yeah, we want to see more Christ. But
+[1:23:57] what of Christ is that we want to see? I
+[1:24:01] want some kind of physical evidence. I
+[1:24:03] say, "I I smoked that tree and it died
+[1:24:05] and and I stopped the storm from coming
+[1:24:07] and I Oh, shut up.
+[1:24:14] Sing to people with those kind of and
+[1:24:16] those are necessary. Please don't get me
+[1:24:18] wrong. We got to have that. These signs
+[1:24:20] must follow them that believe. But don't
+[1:24:22] let your evidence be the sign. They
+[1:24:25] follow you.
+[1:24:27] Your evidence is that God and you have
+[1:24:29] become one. You and God are united. You
+[1:24:33] are him and his character and his love
+[1:24:36] and his his his everything about him. He
+[1:24:39] just lives out through you. And yet it's
+[1:24:41] so simple. You sometimes stumble it
+[1:24:43] over. You look at you say, "I made
+[1:24:45] another m I make so many mistakes."
+[1:24:48] Praise the Lord that you're not taking
+[1:24:50] any credit for it.
+[1:24:52] that character that's in you, you can't
+[1:24:54] take credit for it.
+[1:24:57] &gt;&gt; I was thinking about this just a minute
+[1:24:59] ago before I come out. I was studying on
+[1:25:01] this thought the last couple days and it
+[1:25:02] was just falling in place. Anointing was
+[1:25:04] there and everything. I said, "This goes
+[1:25:06] here and this goes here and I said, I'm
+[1:25:08] ready to go." Right before I come out, I
+[1:25:10] open it up just to go through it again
+[1:25:12] and nothing made sense. I said, "What?
+[1:25:16] What am I supposed to do?"
+[1:25:20] You know what God's saying? You better
+[1:25:22] trust me, huh?
+[1:25:24] &gt;&gt; Yeah. You want to go out and be a big
+[1:25:25] preacher, you're going to fall over your
+[1:25:27] face. You're going to stumble and you're
+[1:25:28] going to totally lose it. But if you
+[1:25:30] would just trust me, I got something to
+[1:25:32] say to these people. Get out of my way
+[1:25:34] and let me speak.
+[1:25:37] &gt;&gt; Lord,
+[1:25:38] [Applause]
+[1:25:45] brother Bram goes on. He says, "John
+[1:25:47] would have never known him." No, sir.
+[1:25:49] Had the Holy Ghost not pointed it out.
+[1:25:52] &gt;&gt; Ain't that amazing?
+[1:25:54] &gt;&gt; The prophet knowing that he was called
+[1:25:57] to identify the Messiah. And one day
+[1:25:59] he's going to be there. And he would not
+[1:26:01] have known him except the Holy Ghost
+[1:26:03] pointed it out, the prophet himself.
+[1:26:07] And that same prophet, he testified. He
+[1:26:10] said, "This is him." He said, "He's
+[1:26:12] going to come. His his fire is with him.
+[1:26:14] you know, he's going to he's going to do
+[1:26:16] all the things, the mighty things that
+[1:26:18] he said he was going to do.
+[1:26:21] And then it didn't happen
+[1:26:23] the way John thought it was supposed to
+[1:26:26] happen.
+[1:26:27] &gt;&gt; And what did he do? He started
+[1:26:29] questioning. He started doubting.
+[1:26:34] The greatest prophet,
+[1:26:41] are you him?
+[1:26:43] Why? His ministry was too simple.
+[1:26:48] It was too simple. It couldn't be that
+[1:26:52] simple. You're supposed to be kicking
+[1:26:54] the Romans out of here. I believe this
+[1:26:56] is the way I believe the scripture is
+[1:26:58] supposed to be fulfilled. The prophet
+[1:27:00] himself had it wrong.
+[1:27:02] &gt;&gt; That's right.
+[1:27:04] &gt;&gt; It wasn't time for him to see it.
+[1:27:11] Let me let me go and look at some. Let's
+[1:27:13] I'm gonna skip. Let's go to John 14.
+[1:27:18] Excuse me.
+[1:27:25] Verse one.
+[1:27:27] This is when Judas is left. It's at the
+[1:27:29] last supper. And though, you know, John
+[1:27:30] 14 through17, some of the most amazing
+[1:27:32] words ever written down. and and John
+[1:27:36] and Jesus is taking his disciples and
+[1:27:37] kind of telling them what's going to be
+[1:27:38] happening and all this kind of stuff
+[1:27:40] give them so much that is g we're going
+[1:27:42] to use up to this day just just amazing
+[1:27:44] the words of Christ he says let not your
+[1:27:46] heart be troubled you believe in God
+[1:27:47] believe also in me in my father's house
+[1:27:48] are many mansions for not so I would
+[1:27:50] have told you I go to prepare a place
+[1:27:52] for you and if I go and prepare a place
+[1:27:53] for you I will come again and receive
+[1:27:55] you unto myself that where I am there
+[1:27:57] you may be also and whether I go ye know
+[1:27:59] and the way you know
+[1:28:03] and Thomas said unto him Lord
+[1:28:05] We know not whether thou goest, and how
+[1:28:08] can we know the way?
+[1:28:11] And what's he starting to say? We're
+[1:28:12] going to see these disciples here where
+[1:28:14] they were spiritually and how they were
+[1:28:16] just totally missing out what was going
+[1:28:17] on.
+[1:28:19] Those 12 the the 11 those apostles. Why?
+[1:28:24] Because they didn't they were not born
+[1:28:26] again and they did not see the mysteries
+[1:28:27] of God yet.
+[1:28:30] Jesus said unto him, "I am the way.
+[1:28:33] You've been following me the whole time.
+[1:28:35] Keep following me. I am the way, the
+[1:28:37] truth, and the life. No man cometh unto
+[1:28:39] him to the father but by me.
+[1:28:42] People really don't like him saying
+[1:28:44] that.
+[1:28:45] They want to have other access to the
+[1:28:48] father but by him.
+[1:28:49] &gt;&gt; He said, "If you had known me,
+[1:28:53] you should have known my father also."
+[1:28:56] So he's saying, "You don't even know me.
+[1:29:01] Henceforth you know him and have seen
+[1:29:03] him. Philip said unto him, Lord, show us
+[1:29:06] the father and it sufficeth us.
+[1:29:10] In other words, they were not satisfied
+[1:29:12] with what was going on.
+[1:29:15] Jesus Jesus had just said, "If you had
+[1:29:18] known me, you didn't know my father
+[1:29:19] also." And henceforth, as you know him
+[1:29:20] seen, he said, "Lord, just show us the
+[1:29:22] father. We'll be satisfied."
+[1:29:24] Why were they not satisfied about?
+[1:29:29] because it was he was not fulfilling
+[1:29:31] what they wanted him to be.
+[1:29:34] He had walked in water, raised the dead,
+[1:29:36] multiplied the fishes, and done all
+[1:29:38] these mighty things, but he wasn't
+[1:29:40] fulfilling what their idea had, what the
+[1:29:42] Messiah was supposed to do, what they've
+[1:29:44] been taught their whole life, because he
+[1:29:46] had not even killed a single Roman yet.
+[1:29:50] &gt;&gt; He hadn't done anything except purge the
+[1:29:53] temple and and just kind of ruined their
+[1:29:55] whole their whole uh uh religion there.
+[1:29:57] and his eyes were getting the Pharisees
+[1:29:59] mad, getting the priests mad and getting
+[1:30:00] everybody mad. He said, "Just just," in
+[1:30:03] other words, why don't you show us the
+[1:30:04] father? He'll take care of business.
+[1:30:10] They didn't like that this could be the
+[1:30:13] point, that this was the Messiah. They
+[1:30:15] they could not accept it. They did not
+[1:30:17] make sense to them. They're looking for
+[1:30:20] something more.
+[1:30:24] Jesus said, "Have I been so long with
+[1:30:25] you? You have not known me, Philillip.
+[1:30:28] He that hast seen me hath seen the
+[1:30:30] father. And how sayeth thou, show us the
+[1:30:32] father?
+[1:30:34] &gt;&gt; Yeah.
+[1:30:35] &gt;&gt; Why didn't they recognize it? Why didn't
+[1:30:37] they recognize that him that was the
+[1:30:39] father? That's the Holy Spirit dwelling
+[1:30:41] in that man. Why didn't they recognize
+[1:30:43] they they they confess it? You're the
+[1:30:45] son of God. You're this. But they yet he
+[1:30:47] wasn't fulfilling the scripture the way
+[1:30:49] they thought it was supposed to be done.
+[1:30:51] And how many times do we stumble over
+[1:30:53] that same thing? Yeah,
+[1:30:55] &gt;&gt; we're the bride of Christ. We're the
+[1:30:57] final voice of the final age. We have
+[1:30:59] thus sayith the Lord. We keep still.
+[1:31:02] &gt;&gt; Where are the mighty works to go with
+[1:31:04] that? There and there and there. And
+[1:31:07] it's right there among you.
+[1:31:09] &gt;&gt; Amen.
+[1:31:11] &gt;&gt; It's right among us. But what are we
+[1:31:13] looking for? Some fantastic something.
+[1:31:17] Do you recognize that you are the f I'm
+[1:31:19] not a preacher. You are the final voice
+[1:31:21] to the final age.
+[1:31:23] I'm a sister. I raise my kids. You're
+[1:31:26] the final voice to the final age. How
+[1:31:28] many sisters, how many women can do what
+[1:31:31] you do?
+[1:31:36] &gt;&gt; Raise kids and the ammonition of the
+[1:31:38] Lord. Raising kids to to to respect God.
+[1:31:43] Raising kids to respect you and their
+[1:31:45] daddy. How many people going to do that?
+[1:31:47] How many people, how many mothers in
+[1:31:50] this world today, in this country, this
+[1:31:52] Christian country, spend the time in
+[1:31:54] prayer for your family like you do?
+[1:32:03] &gt;&gt; And of those, how many actually know
+[1:32:05] Jesus Christ?
+[1:32:07] &gt;&gt; How many are actually praying to a God
+[1:32:09] of their imagination?
+[1:32:14] &gt;&gt; You're a special person. Amen.
+[1:32:19] &gt;&gt; And if that makes you puffed up, you
+[1:32:21] have no clue what I'm talking about. So
+[1:32:22] I ain't worried about it.
+[1:32:26] &gt;&gt; What more evidence?
+[1:32:28] He said, he said, "He that has seen me
+[1:32:31] has seen the father."
+[1:32:36] Are you simple enough to confess the
+[1:32:39] same thing?
+[1:32:42] Can you dare say that?
+[1:32:46] If you've seen me, you've seen the
+[1:32:49] father.
+[1:32:51] Phil, you are arrogant.
+[1:32:54] If I'm saying that in my head, yes, I
+[1:32:56] am.
+[1:32:58] If that's coming from my heart because
+[1:33:00] the Holy Spirit dwells there, I'm just
+[1:33:03] confessing the truth. And for me to say
+[1:33:05] something else would be unbelief.
+[1:33:09] Can you allow him to be that simple? The
+[1:33:12] Holy Spirit in you which is the father
+[1:33:17] &gt;&gt; is confirming the word living through
+[1:33:19] you manifesting Christ and people look
+[1:33:21] at you and they see the father. Do they
+[1:33:24] recognize it? Probably not. Most people
+[1:33:26] don't.
+[1:33:27] &gt;&gt; They see you as some weird cultish kind
+[1:33:29] of group of people dress funny and act
+[1:33:31] funny, believe some strange doctrines.
+[1:33:35] Welcome to the body of Christ.
+[1:33:39] &gt;&gt; That's all it is.
+[1:33:46] All right, let me let me go to one more
+[1:33:48] scripture here. I said one, it'll
+[1:33:50] probably be more, but second Corinthians
+[1:33:54] 11,
+[1:33:59] Satan blinded Eve from the simplicity
+[1:34:02] that is in Christ, right? by twisting
+[1:34:05] the word projecting a different God
+[1:34:08] &gt;&gt; than who he was.
+[1:34:11] Verse one, would to God you would bear
+[1:34:13] with me a little in my folly. This is
+[1:34:14] 11:1 Corinthians. And indeed bear with
+[1:34:17] me, Paul's talking. He said, I am
+[1:34:18] jealous over you with godly jealousy,
+[1:34:20] for I have espoused you to one husband
+[1:34:23] that I may present you as a chasteed
+[1:34:25] virgin to Christ. But
+[1:34:29] I fear lest by any means as a serpent
+[1:34:32] begiled Eve through his subtlety. That
+[1:34:35] word means through his cunning
+[1:34:37] craftiness, his false wisdom.
+[1:34:42] Begiled Eve through his subtlety. So
+[1:34:44] your mind should be corrupted from the
+[1:34:45] simplicity that is in Christ. That word
+[1:34:47] corrupted means defiled, destroyed when
+[1:34:50] even the slightest degree damaged. You
+[1:34:52] hear what he said? One word off and it
+[1:34:54] destroys it.
+[1:34:56] &gt;&gt; Yeah. just takes one word and that's all
+[1:34:58] he had to do was project a different god
+[1:35:00] to Eve than who God was
+[1:35:03] to get her to seek after knowledge and
+[1:35:07] that simplicity that mean that word
+[1:35:08] means singleness sincerity mental
+[1:35:11] honesty free from pretense and hypocrisy
+[1:35:14] not self-seeking and so Satan was coming
+[1:35:16] to Eve he said now has God said she said
+[1:35:19] yes God says this he said but now here's
+[1:35:21] the reality
+[1:35:23] God tells you that because he wants to
+[1:35:25] keep you under his thumb cuz he knows if
+[1:35:29] you had this wisdom you'd be like him
+[1:35:33] and that got her that's what got Lucifer
+[1:35:36] well he wanted I just want to be like
+[1:35:38] God I want to have the same power God I
+[1:35:40] want to be worshiped like God and he's
+[1:35:41] saying now you can be like God if you
+[1:35:43] have this wisdom
+[1:35:45] and God don't want you to have it
+[1:35:49] he's portraying a a different character
+[1:35:52] of God than what is reality Yeah.
+[1:35:55] &gt;&gt; And that God he he was saying God is not
+[1:35:58] sincere. He does not have mental
+[1:36:00] honesty. He's not free from pretense and
+[1:36:02] hypocrisy. He's self-seeking
+[1:36:04] and he he's portraying this kind of a
+[1:36:06] God to Eve. And because Eve lusted for
+[1:36:09] knowledge and because she wanted to be
+[1:36:10] special and she didn't she wasn't
+[1:36:12] satisfied with the simplicity of God
+[1:36:14] says so, I'm going to believe it. I'm
+[1:36:16] going to stand on that. Why? Because she
+[1:36:18] could be deceived.
+[1:36:20] And God made it that way
+[1:36:23] &gt;&gt; to fulfill his plan.
+[1:36:26] &gt;&gt; And so he's it says he beguiled her from
+[1:36:29] the simplicity
+[1:36:32] &gt;&gt; that is in Christ.
+[1:36:35] He's just not a simple papa. He has some
+[1:36:38] ulterior motives.
+[1:36:43] Lean on your own understanding. He wants
+[1:36:46] to keep you ignorant.
+[1:36:50] Friends, when you lean on your own
+[1:36:52] understanding, you are taking the word
+[1:36:54] of God and hybriding it. And you are be
+[1:36:56] you're committing spiritual adultery.
+[1:36:57] &gt;&gt; That's right.
+[1:36:58] &gt;&gt; When you when you have anything as
+[1:37:00] evidence besides the simplicity of God,
+[1:37:02] you are committing spiritual adultery.
+[1:37:08] God don't play.
+[1:37:11] He don't play.
+[1:37:14] So that's what Satan does with us. He he
+[1:37:16] uses subtlety to confuse us to keep us
+[1:37:20] He offers a religion of knowledge. He
+[1:37:22] offers us something that that that
+[1:37:24] appeals to our human nature.
+[1:37:27] Anything to keep us from simply
+[1:37:29] believing God.
+[1:37:31] Verse four, for he that cometh preaches
+[1:37:33] another Jesus whom we have not preached.
+[1:37:35] Or if you receive another spirit we have
+[1:37:37] not received, or another gospel which
+[1:37:38] you have not accepted, you might well
+[1:37:40] bear with them.
+[1:37:44] Why?
+[1:37:46] Because it's what we want. Our old
+[1:37:49] nature wants that. He's saying, "Well,
+[1:37:50] not my old nature." Yes, it does. I
+[1:37:52] don't care how born again you are, your
+[1:37:53] old nature is still your nasty old
+[1:37:55] nature.
+[1:37:56] &gt;&gt; And that's why Satan still has a market.
+[1:37:58] He still can get us to to to stumble.
+[1:38:00] That's why Paul said, "When I do good,
+[1:38:02] then evil is with me." Why? Because even
+[1:38:04] Paul still had that old nature.
+[1:38:09] &gt;&gt; That's why we stay simple, humble before
+[1:38:11] God. said, "God, either you do this work
+[1:38:12] or it's not going to get done. I'm not
+[1:38:14] going to help you save me. I'm not going
+[1:38:16] to help you by living good enough. I'm
+[1:38:17] not going to try to impress you. I'm not
+[1:38:18] going to try to earn it. I'm simply
+[1:38:20] going to take you at your word." And I
+[1:38:22] said, "That's all I ever wanted from
+[1:38:24] you. That's all I ever wanted."
+[1:38:28] All right. I got this one scripture
+[1:38:30] we're going to be we're going to finish
+[1:38:31] up here.
+[1:38:33] Second Thessal Thessalonians. That's a
+[1:38:35] hard word for me. Uh, chapter 2.
+[1:38:39] Verse
+[1:38:44] seven. And if there's ever a scripture
+[1:38:47] that is being fulfilled in our day, this
+[1:38:49] is it, friends.
+[1:38:52] For the mystery of iniquity doth already
+[1:38:54] work. Only he that now let us will let
+[1:38:57] until he be taken out of the way. Then
+[1:38:58] shall that wicked be revealed, whom the
+[1:39:00] Lord shall consume with the spirit of
+[1:39:02] his mouth, and so shall destroy with the
+[1:39:03] brightness of his coming.
+[1:39:06] that wicked shall be revealed has been
+[1:39:09] revealed. We know who this is. Why?
+[1:39:11] Because a message came and exposed him.
+[1:39:16] &gt;&gt; Verse nine, even him who's coming is
+[1:39:19] after the working of Satan with all
+[1:39:21] power and signs and lying wonders.
+[1:39:25] And I spoke a minute ago about about the
+[1:39:27] beast system and what you know the the
+[1:39:29] the funeral out there in Arizona and all
+[1:39:31] that.
+[1:39:33] That's not deceiving for you and I.
+[1:39:36] these signs and power power and signs
+[1:39:38] and lie and wonders is in our midst.
+[1:39:40] This is within the message ranks. This
+[1:39:42] is where Satan's attacking us. And he's
+[1:39:44] not attacking us physically yet, but
+[1:39:46] spiritually, he's been on our case for a
+[1:39:48] long time. And we need to make sure we
+[1:39:50] recognize and look around and say just
+[1:39:52] because this minister is anointed, just
+[1:39:54] because this f uh uh supernatural
+[1:39:57] phenomena has happened, whatever, keep
+[1:39:59] our eyes focused on Christ.
+[1:40:03] Cuz he deceiving people by the signs and
+[1:40:05] wonders he's performing in message
+[1:40:08] groups and churches and families. Just
+[1:40:10] because you can do signs and wonders
+[1:40:12] does not mean you're right at all.
+[1:40:16] It doesn't mean it friends. You can have
+[1:40:18] all that stuff and be a devil.
+[1:40:20] &gt;&gt; Amen.
+[1:40:28] &gt;&gt; Let me read a quote from the prophet. He
+[1:40:30] said, "Stay right with the word. Stay
+[1:40:31] with that. Watch what happens. Say, oh
+[1:40:33] Lord, I believe it. Send the Holy
+[1:40:35] Spirit." Then watch.
+[1:40:38] If he goes to bearing record, then you
+[1:40:41] know you got it. There's your evidence.
+[1:40:43] He goes to bearing record. Then you know
+[1:40:46] you got it. There's your evidence.
+[1:40:48] &gt;&gt; Yeah.
+[1:40:51] &gt;&gt; Not by some sensation.
+[1:40:55] The devils do that.
+[1:40:58] &gt;&gt; Not by some miracle. The devils do that.
+[1:41:02] That's what our prophet said. He said,
+[1:41:04] "Don't be deceived by these things."
+[1:41:08] &gt;&gt; He said he goes to bearing record. Then
+[1:41:10] you know he got What is the record? It's
+[1:41:13] Christ in you, the hope of glory. It's
+[1:41:16] his character living out through you.
+[1:41:18] It's you surrendering to him and growing
+[1:41:20] closer and closer. And it's you the the
+[1:41:23] the very love of God expressing himself
+[1:41:26] through you in ways that you can't even
+[1:41:28] touch. And you look at that and say,
+[1:41:30] "How in the world is this happening?"
+[1:41:32] It's because God is in you expressing
+[1:41:35] himself through you.
+[1:41:40] You're clapping because you know what
+[1:41:42] I'm talking about. You're clapping
+[1:41:44] because you see that and yet it's so
+[1:41:46] simple. It's so simple and you want to
+[1:41:49] believe it. And Satan says, "Don't you
+[1:41:51] believe that. Don't you accept that.
+[1:41:53] That ain't you. It's not you. That's too
+[1:41:56] simple. You should have more than that."
+[1:41:58] And you say, "I believe it anyways."
+[1:42:00] Why? Because it's the word speaking
+[1:42:02] through you and to you. And you are just
+[1:42:04] you just have enough faith to just
+[1:42:06] confess what God's doing in your life.
+[1:42:12] &gt;&gt; It's happening. It's in you. It's
+[1:42:14] expressing yourself, but it's doing it
+[1:42:16] such a way. It's not a show
+[1:42:19] &gt;&gt; out there that the world is making a
+[1:42:21] show of Christianity. They're doing all
+[1:42:23] these things of Christianity, but in
+[1:42:25] you, it's a secret place. It's just you
+[1:42:28] and him in a secret place where it's
+[1:42:30] just you having that communion. And you
+[1:42:32] say, "I just long for more of you." And
+[1:42:34] he says, "I long for more of you."
+[1:42:38] &gt;&gt; Oh, the bride and the spirit saying the
+[1:42:40] same thing, longing for each other. And
+[1:42:42] set everything aside and set all our my
+[1:42:44] religion aside. I just want to see
+[1:42:46] Christ. He said, "There you are." And
+[1:42:48] you say, "But but it was so simple.
+[1:42:52] It was so small. How can you do
+[1:42:54] something a little more?" He said, "I
+[1:42:55] thought you were more mature than that.
+[1:43:00] Can you allow him to be simple? Can you
+[1:43:03] allow your your evidence to be just the
+[1:43:06] manifestation
+[1:43:07] of the word?
+[1:43:10] &gt;&gt; Let me finish verse nine. Even him who's
+[1:43:12] coming is after the working of saint
+[1:43:14] with all power and signs and lying
+[1:43:15] wonders and with the deceivleness of
+[1:43:18] unrighteousness in them that perish.
+[1:43:20] Why? They receive not the love of the
+[1:43:23] truth that they might be saved.
+[1:43:27] They're Christians. They're message
+[1:43:29] believers. They receive the love of the
+[1:43:32] miracles. They love the signs. They love
+[1:43:35] the supernatural. But they don't love
+[1:43:37] the truth. They love the miracles more
+[1:43:39] than they love the truth.
+[1:43:46] &gt;&gt; That's why that's why sometime when the
+[1:43:50] spirit doesn't move very much in a
+[1:43:52] service and it's kind of like a downer.
+[1:43:56] Well, I drove all the way to church and
+[1:43:58] nothing happened.
+[1:43:59] Guess I'll just go home. Hopefully
+[1:44:01] something more happens on Sunday.
+[1:44:05] You poor miserable
+[1:44:07] sign seeker.
+[1:44:10] &gt;&gt; This evil generation seeks after a sign.
+[1:44:14] Did God speak? Well, he didn't speak to
+[1:44:18] me. Oh, so it's all about you.
+[1:44:22] Did he speak to someone else? Were you
+[1:44:23] praying that he speak to what? What if
+[1:44:25] this person got blessed? What if that
+[1:44:26] person got blessed and you it wasn't
+[1:44:28] your time?
+[1:44:30] You going to pout?
+[1:44:35] &gt;&gt; Oh, that got me. I
+[1:44:39] &gt;&gt; want I I I want I I want I I I
+[1:44:46] &gt;&gt; I'm way off my nose here, so forgive me.
+[1:44:52] What makes a great service?
+[1:44:58] I like that. It got real quiet.
+[1:45:02] That's what makes a great service. I
+[1:45:05] don't care how much you shout amen or
+[1:45:06] anything else. If God is speaking to you
+[1:45:08] and you're sitting there receiving it,
+[1:45:10] that's what makes a great service.
+[1:45:13] &gt;&gt; Don't matter if anyone shouted or said
+[1:45:14] amen the whole time.
+[1:45:17] &gt;&gt; Oh, praise the Lord.
+[1:45:20] H
+[1:45:22] we left. Satan's trying to get us leave
+[1:45:24] off the main thing. Leave off the main
+[1:45:26] thing. The main thing. Go. Let's Let's
+[1:45:28] seek for supernatural signs. Let's seek
+[1:45:30] for this. Let's seek for that. Leave off
+[1:45:31] the main thing. What's the main thing?
+[1:45:33] The word spoken to you personally.
+[1:45:37] &gt;&gt; That is a revelation that hell can't
+[1:45:40] destroy. Nothing can stand against you.
+[1:45:42] The gates of hell cannot prevail against
+[1:45:44] you if you have that. You say, "Well, I
+[1:45:46] shout it." The gates of hell can prevail
+[1:45:48] against shouting. Well, I dance the the
+[1:45:50] gates of hell can dance right with you.
+[1:45:52] Well, I had this great supernatural
+[1:45:54] phenomena happen to me. And you know
+[1:45:56] what? There's probably demons around you
+[1:45:57] dancing with you at the same time.
+[1:46:00] &gt;&gt; But you know what they can't do? They
+[1:46:02] can't enter into that secret place with
+[1:46:04] you in Christ where he gives you his
+[1:46:06] seed. He gives you his word and you take
+[1:46:08] it and it brings forth.
+[1:46:10] &gt;&gt; He can't touch you there.
+[1:46:14] &gt;&gt; Hallelujah. That's a good place. That's
+[1:46:16] the part that soul, that part of God
+[1:46:18] that doesn't have a single fingerprint
+[1:46:20] of Satan on it. That's the part the rest
+[1:46:22] of you has Satan's fingerprints all over
+[1:46:24] it. But that part of you that's that new
+[1:46:26] birth, that new life, there's nothing of
+[1:46:28] Satan. He has no part in that. And all
+[1:46:30] he can do is stand there and scream
+[1:46:33] because he's powerless against that.
+[1:46:38] That's a precious place to be, friends.
+[1:46:43] And for this cause God shall send them
+[1:46:45] strong delusions that they should
+[1:46:47] believe a lie
+[1:46:49] that they might all be damned who
+[1:46:51] believe not the truth but had pleasure
+[1:46:55] and their gifts
+[1:46:59] and their signs and wonders. You say,
+[1:47:00] "What about the gifts?" You know what?
+[1:47:02] Back 1906 Pentecost, that's what they
+[1:47:05] had. That was the word for the day.
+[1:47:06] That's not the word for this day. We
+[1:47:07] still have the gifts. We don't do away
+[1:47:09] with them. But if that's where you're
+[1:47:10] still at, you're eating on yesterday's
+[1:47:12] mana. And it's rotten. It's warm eaten.
+[1:47:16] It stinks.
+[1:47:18] The word for the day is Christ and the
+[1:47:20] bride. Married becoming one manifest in
+[1:47:23] Christ through you.
+[1:47:30] &gt;&gt; He said, he said, "Believe the lie and
+[1:47:33] be damned by it." What is that lie?
+[1:47:37] You're born again.
+[1:47:44] How many people sitting in message pews
+[1:47:47] are believing the lie that they're born
+[1:47:50] again because they have some evidence
+[1:47:53] besides
+[1:47:55] the revelation of God telling you you
+[1:47:57] are.
+[1:48:00] What's your evidence tonight, friends?
+[1:48:03] Well, I had a great experience. The Holy
+[1:48:05] Spirit fell. I know I had the baptism of
+[1:48:07] the Holy Ghost. I would not doubt that.
+[1:48:09] I would not argue. And that's amazing
+[1:48:11] thing.
+[1:48:13] But was the voice within that baptism?
+[1:48:16] Did you hear God speak the still small
+[1:48:18] voice through that?
+[1:48:22] Or was that all you had?
+[1:48:25] &gt;&gt; It cuts down close, friends.
+[1:48:28] It cuts down close.
+[1:48:30] But he's not saying this to taunt you.
+[1:48:32] He's not saying this to say, "Well,
+[1:48:33] you're all not born. I believe you're
+[1:48:35] all born again. Don't don't get me
+[1:48:36] wrong, but I'm saying you must make sure
+[1:48:38] that you're sure because not because of
+[1:48:41] any evidence except the revelation of
+[1:48:43] Jesus Christ to you personally because
+[1:48:44] brother Brandham said the new birth is a
+[1:48:47] revelation of Jesus Christ personally to
+[1:48:50] you.
+[1:48:51] &gt;&gt; He revealed himself to you personally.
+[1:48:53] He doesn't do that through screaming and
+[1:48:54] shouting and dancing. He does that
+[1:48:56] through his word. It's a word birth. He
+[1:48:58] gives you the word. He says, "Believe
+[1:49:00] this and watch it take effect." Let's
+[1:49:03] stand tonight.
+[1:49:19] All that can be shaken will be shaken.
+[1:49:22] &gt;&gt; Yeah, that's right.
+[1:49:24] &gt;&gt; If the word shakes you and causes you to
+[1:49:28] wonder, oh my goodness, man. Well, let
+[1:49:30] me check up. What about this? What about
+[1:49:32] friends? you. It's such a blessing. You
+[1:49:35] thank God for that because if we would
+[1:49:38] be shaken now when you still have time
+[1:49:39] to get it right, there's going to be a a
+[1:49:41] time coming where you're going to be
+[1:49:42] shaken without a time to get it right.
+[1:49:46] This is a great This is the greatest
+[1:49:47] time. This is the best thing that can
+[1:49:49] happen. It's be shaken by this to make
+[1:49:51] sure you are standing on a solid rock.
+[1:49:54] Make sure your evidence is the
+[1:49:55] revelation to Jesus Christ. He said, "I
+[1:49:57] built my church on the revelation of who
+[1:49:58] I am." That's what it must be built on.
+[1:50:04] What an opportunity. He's saying, "I'm
+[1:50:06] calling you. I want you to be right. I
+[1:50:07] want you to get rid of all this other
+[1:50:09] stuff." A and even if you're born again,
+[1:50:11] sometime we still in our minds, we have
+[1:50:13] some junk in there, some false doctrines
+[1:50:15] and and some some stuff that we still
+[1:50:17] kind of mess with. And he's saying, "Get
+[1:50:19] rid of it all. Don't do just there's no
+[1:50:21] it means nothing. Get rid of it. Just
+[1:50:24] let me be your everything. Let the word
+[1:50:26] be your everything."
+[1:50:28] &gt;&gt; That's all he's asking for. And I
+[1:50:30] guarantee you that's all you want.
+[1:50:33] That's all you want. Because all we want
+[1:50:35] is Christ. Is that right?
+[1:50:37] &gt;&gt; Ain't it wonderful when you see Christ
+[1:50:38] in yourself, but also when you see him
+[1:50:40] in your brothers and sisters, you can
+[1:50:41] come to church and look around and say,
+[1:50:43] "I see Christ and I see him. I see
+[1:50:45] Christ. I see Christ." It's so amazing.
+[1:50:47] &gt;&gt; Thank you, Lord.
+[1:50:48] &gt;&gt; What a privilege we have. Let's pray.
+[1:50:50] Lord Jesus, we're so grateful, Father,
+[1:50:52] that you would come and speak to us
+[1:50:54] tonight, Lord. And and it in some ways
+[1:50:56] it was a cutting message but in other
+[1:50:58] ways it was such a it's such a peaceful
+[1:51:01] marriage to recognize that we are
+[1:51:03] standing where we are. We are resting in
+[1:51:05] this place uh beside the cool waters and
+[1:51:08] the green pastures. Why? Because our
+[1:51:10] confidence our evidence is the revealed
+[1:51:13] word that you have spoken to us and
+[1:51:14] you've gotten rid of all the other
+[1:51:16] stuff, all the periphery stuff and all
+[1:51:18] we want to do is just focus on you. And
+[1:51:20] father, we got we find such peace
+[1:51:22] tonight knowing that that's where you
+[1:51:23] brought us to. And you got such peace
+[1:51:25] tonight and knowing that nothing can get
+[1:51:27] us out of there. We know that Satan
+[1:51:29] would want to get us moved. Want want us
+[1:51:31] to get us to get up and walk away? Get
+[1:51:33] get us tore up about things. And what do
+[1:51:35] you really have it? Do you really not?
+[1:51:37] And all you want to do is say just
+[1:51:38] believe what I told you. Father, that's
+[1:51:41] all you're asking tonight. Will we
+[1:51:43] believe? Will we take you at your word
+[1:51:44] or will we be will we be corrupted
+[1:51:47] through the subtlety of Satan a and
+[1:51:49] getting its way for the simplicity of
+[1:51:51] simply God speaking to us? Father,
+[1:51:54] tonight I believe that you've given this
+[1:51:55] word and I believe this word will have
+[1:51:57] the effect you wanted to have. And I'm
+[1:51:59] asking that it would go to each heart,
+[1:52:00] Lord, and just anchor there. And Father,
+[1:52:02] if there's something they need, if they
+[1:52:04] need more of you, Father, a a new
+[1:52:07] revelation, reveal that to each one,
+[1:52:09] Father. If they are standing on that
+[1:52:11] solid rock, then Lord, just quicken that
+[1:52:13] and just just comfort them knowing that
+[1:52:15] that's where each person is standing.
+[1:52:17] Father, we need to have that comfort. We
+[1:52:19] need to have that relationship. We need
+[1:52:21] to have your presence. Father, we need
+[1:52:22] to know that we know where we're
+[1:52:24] standing. And tonight, Lord Jesus, won't
+[1:52:26] you come and just quicken that? Speak to
+[1:52:28] each heart, Lord, and let them know
+[1:52:30] exactly where they are. We ask this,
+[1:52:32] Lord Jesus, in your name. God bless you,
+[1:52:34] brother and sister. I sure appreciate
+[1:52:35] the opportunity to come and speak to
+[1:52:37] you. You're great people to speak to and
+[1:52:39] I just pray for you all the time and
+[1:52:41] pray for me and pray for each other and
+[1:52:43] we're going to go into rapture someday.
+[1:52:45] It's it's guaranteed, friends. It's
+[1:52:47] guaranteed. God bless you.
+[1:52:50] [Applause]
+[1:52:51] [Music]
+[1:52:54] &gt;&gt; He is my everything. He is my He is my
+[1:52:59] everything.
+[1:53:02] He is my all.
+[1:53:08] He is my everything
+[1:53:13] [Music]
+[1:53:14] both great and small.
+[1:53:20] He gave his life for me.
+[1:53:25] He made everything new.
+[1:53:31] He is my everything.
+[1:53:37] Oh, how about you? Once again, if we
+[1:53:41] could.
+[1:53:43] Oh, he is my everything.
+[1:53:49] He is my all.
+[1:53:55] He is my everything,
+[1:54:00] both great and small.
+[1:54:06] He gave his life for me.
+[1:54:12] He made everything new.
+[1:54:18] He is my everything.
+[1:54:23] Oh, how about you?
+[1:54:29] And all is well.
+[1:54:36] Oh, all is well.
+[1:54:42] We have heard the message, shalom,
+[1:54:48] and all is well.
+[1:54:55] Oh, there is a place of perfect rest
+[1:55:02] behind the inner veil.
+[1:55:07] So rest little bride
+[1:55:12] rest for all is well. Can we sing it one
+[1:55:16] more time tonight?
+[1:55:18] All
+[1:55:20] is well.
+[1:55:25] All
+[1:55:26] is well.
+[1:55:28] [Music]
+[1:55:31] We have heard the message shalom
+[1:55:37] and all is well.
+[1:55:44] Will there is a place of perfect
+[1:55:50] rest behind the inner veil.
+[1:55:56] So rest little bride
+[1:56:01] rest for all is well.
+[1:56:06] Amen. Aren't you glad all is well
+[1:56:09] tonight? Amen. pray you enjoyed the word
+[1:56:12] tonight. Just just nothing like being in
+[1:56:15] the presence of the Lord. And and also,
+[1:56:17] you know, Brother Thomas was speaking
+[1:56:19] about Brother Biscll and I was thinking
+[1:56:21] as brother Biscll's passing and I I
+[1:56:24] failed to mention it, but uh I talked to
+[1:56:27] Brother Charlie Cox's son and brother
+[1:56:29] Charlie Cox really needs your prayer and
+[1:56:31] he's wanting to go home. He has stage
+[1:56:33] four cancer. He's not doing very well.
+[1:56:36] And I I thought, you know, all the most
+[1:56:39] about all the brothers that was with the
+[1:56:41] prophet, about all of them's gone, you
+[1:56:43] know, and ones that stood steady, you
+[1:56:47] know, brother Cox and and you know,
+[1:56:50] Brother Bisll, but you know, we're all
+[1:56:52] going to be going home one of these
+[1:56:53] days. Thankful for the message that
+[1:56:56] God's given us. God bless you tonight,
+[1:56:57] church, and pray that you'll go and pray
+[1:57:00] the Lord will go with you tonight. Let's
+[1:57:02] sing that little chorus as we go. If
+[1:57:03] Jesus goes with me, I'll go anywhere.
+[1:57:06] God bless you till 10:30 Sunday morning.
+[1:57:08] Well, if Jesus goes with me, I'll go.
+[1:57:14] Oh, anywhere.
+[1:57:19] Oh, it's heaven to me.

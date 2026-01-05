@@ -4,13 +4,14 @@ START OF FILE: 2020-02-04 - 02042020 alabanzas y meditación en la Palabra - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2020-02-04
-Title:   02/04/2020 alabanzas y meditación en la Palabra
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=ILhiGUt9cMU
+Date:     2020-02-04
+Title:    02/04/2020 alabanzas y meditación en la Palabra
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 51m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=ILhiGUt9cMU
 ========================================
 
 Description:

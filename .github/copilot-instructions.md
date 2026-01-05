@@ -14,6 +14,15 @@ This is a production website. Untested commits have caused outages. Always:
 3. **Run `npm run build`** to compile frontend changes into `docs/`
 4. Only then, ASK FOR PERMISSION before committing/deploying
 
+## ⚠️ Dev Server Rules
+
+**DO NOT run `npm run dev` or start the dev server.** The user will run the dev server themselves. You can:
+- Make code changes
+- Run `npm run build` when requested
+- Run Python scripts for data processing
+
+But leave dev server management to the user.
+
 ### Deployment Checklist
 Before pushing any changes that include frontend (`src/`) modifications:
 - [ ] `npm run dev` - Test in dev server

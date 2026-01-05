@@ -4,13 +4,14 @@ START OF FILE: 2023-08-04 - El Rey te mandó  a llamar Marrion Espinoza,  Buenos
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-04
-Title:   "El Rey te mandó  a llamar" Marrion Espinoza,  Buenos Aires Argentina,  2023
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=tIriHvEaIYk
+Date:     2023-08-04
+Title:    "El Rey te mandó  a llamar" Marrion Espinoza,  Buenos Aires Argentina,  2023
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 1m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=tIriHvEaIYk
 ========================================
 
 TRANSCRIPT

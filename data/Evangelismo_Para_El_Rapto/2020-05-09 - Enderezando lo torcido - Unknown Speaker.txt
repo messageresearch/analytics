@@ -4,13 +4,14 @@ START OF FILE: 2020-05-09 - Enderezando lo torcido - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-09
-Title:   "Enderezando lo torcido "
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=ZCuM2eawQ9k
+Date:     2020-05-09
+Title:    "Enderezando lo torcido "
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 54m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=ZCuM2eawQ9k
 ========================================
 
 TRANSCRIPT

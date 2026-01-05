@@ -53,7 +53,7 @@ class ErrorBoundary extends Component {
 // ChartModal, SnippetRow, and SermonModal) were moved to `src/components/*` and are
 // imported at the top of this file. Inline duplicates removed to avoid redeclaration.
 
-export default function App(){
+export default function App({ onSwitchToBranham }){
   const [rawData, setRawData] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -1177,6 +1177,16 @@ export default function App(){
             <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4 w-full md:w-auto">
               {dataDate && <div className="text-xs text-gray-400 text-center md:text-right">Updated: {dataDate}</div>}
               <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{['dashboard','data','about'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div>
+              {onSwitchToBranham && (
+                <button 
+                  onClick={onSwitchToBranham} 
+                  className="px-3 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-lg text-xs md:text-sm font-medium shadow-sm transition-all hover:shadow-md flex items-center justify-center gap-1.5"
+                  title="Browse William Branham's sermon archive"
+                >
+                  <Icon name="book" size={14} />
+                  <span>Branham Archive</span>
+                </button>
+              )}
             </div>
           </div>
         </div>

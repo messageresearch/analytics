@@ -4,13 +4,14 @@ START OF FILE: 2021-01-31 - ¿A donde estamos nosotros en la profecía - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-31
-Title:   ¿A donde estamos nosotros en la profecía?
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=4S17zXkd540
+Date:     2021-01-31
+Title:    ¿A donde estamos nosotros en la profecía?
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 45m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=4S17zXkd540
 ========================================
 
 Description:

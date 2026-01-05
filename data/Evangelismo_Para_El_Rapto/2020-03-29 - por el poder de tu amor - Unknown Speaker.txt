@@ -4,13 +4,14 @@ START OF FILE: 2020-03-29 - por el poder de tu amor - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-29
-Title:   "por el poder de tu amor"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=6HQrn0svbiA
+Date:     2020-03-29
+Title:    "por el poder de tu amor"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=6HQrn0svbiA
 ========================================
 
 Description:

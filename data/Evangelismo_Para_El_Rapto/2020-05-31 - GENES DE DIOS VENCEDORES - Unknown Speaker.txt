@@ -4,13 +4,14 @@ START OF FILE: 2020-05-31 - GENES DE DIOS VENCEDORES - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-31
-Title:   "GENES DE DIOS VENCEDORES "
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=V_8L2lpXkxU
+Date:     2020-05-31
+Title:    "GENES DE DIOS VENCEDORES "
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 35m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=V_8L2lpXkxU
 ========================================
 
 Description:

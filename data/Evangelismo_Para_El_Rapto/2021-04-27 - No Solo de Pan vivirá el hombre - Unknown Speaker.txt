@@ -4,13 +4,14 @@ START OF FILE: 2021-04-27 - No Solo de Pan vivirá el hombre - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-04-27
-Title:   "No Solo de Pan vivirá el hombre"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Z1zLlogTPhc
+Date:     2021-04-27
+Title:    "No Solo de Pan vivirá el hombre"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Song Special
+Duration: 1h 19m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Z1zLlogTPhc
 ========================================
 
 Description:

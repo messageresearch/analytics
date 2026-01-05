@@ -162,13 +162,22 @@ const findProximityMatches = (text, searchTerm) => {
 }
 
 // Helper: Parse boolean/proximity search syntax to extract terms for highlighting
+// Helper to strip surrounding quotes from terms
+const stripQuotes = (t) => {
+  const trimmed = t.trim()
+  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
+    return trimmed.slice(1, -1)
+  }
+  return trimmed
+}
+
 const parseBooleanSearchTerms = (input) => {
   if (!input || typeof input !== 'string') return null
   const trimmed = input.trim()
   
   // Check proximity searches first - return terms for highlighting purposes
   const proximity = parseProximitySearch(trimmed)
-  if (proximity) return proximity.terms
+  if (proximity) return proximity.terms.map(stripQuotes)
   
   // Exact phrase in quotes - return as single term
   const phraseMatch = trimmed.match(/^"([^"]+)"$/)
@@ -176,7 +185,7 @@ const parseBooleanSearchTerms = (input) => {
   
   // Single wildcard term (not part of boolean) - return as single term
   if (hasWildcard(trimmed) && !/\s(AND|OR|NOT|NEAR|ONEAR|AROUND|SENTENCE|PARAGRAPH)\s/i.test(trimmed)) {
-    return [trimmed]
+    return [stripQuotes(trimmed)]
   }
   
   // Lookahead patterns like (?=.*\bterm1\b)(?=.*\bterm2\b).*
@@ -201,37 +210,37 @@ const parseBooleanSearchTerms = (input) => {
   
   // "term1 OR term2"
   if (/\sOR\s/i.test(remaining)) {
-    const terms = remaining.split(/\s+OR\s+/i).map(t => t.trim()).filter(Boolean)
+    const terms = remaining.split(/\s+OR\s+/i).map(t => stripQuotes(t.trim())).filter(Boolean)
     if (terms.length >= 1) return terms
   }
   
   // "term1 | term2"
   if (/\s*\|\s*/.test(remaining)) {
-    const terms = remaining.split(/\s*\|\s*/).map(t => t.trim()).filter(Boolean)
+    const terms = remaining.split(/\s*\|\s*/).map(t => stripQuotes(t.trim())).filter(Boolean)
     if (terms.length >= 1) return terms
   }
   
   // "term1 AND term2"
   if (/\sAND\s/i.test(remaining)) {
-    const terms = remaining.split(/\s+AND\s+/i).map(t => t.trim()).filter(Boolean)
+    const terms = remaining.split(/\s+AND\s+/i).map(t => stripQuotes(t.trim())).filter(Boolean)
     if (terms.length >= 1) return terms
   }
   
   // "+term1 +term2"
   if (/^\+\S/.test(remaining) && remaining.includes(' +')) {
-    const terms = remaining.split(/\s+/).filter(t => t.startsWith('+')).map(t => t.slice(1).trim()).filter(Boolean)
+    const terms = remaining.split(/\s+/).filter(t => t.startsWith('+')).map(t => stripQuotes(t.slice(1).trim())).filter(Boolean)
     if (terms.length >= 1) return terms
   }
   
   // "term1 & term2"
   if (/\s*&\s*/.test(remaining) && !remaining.includes('|')) {
-    const terms = remaining.split(/\s*&\s*/).map(t => t.trim()).filter(Boolean)
+    const terms = remaining.split(/\s*&\s*/).map(t => stripQuotes(t.trim())).filter(Boolean)
     if (terms.length >= 1) return terms
   }
   
   // If we had a NOT operator and have a remaining term, return it for highlighting
   if (hadNotOperator && remaining) {
-    return [remaining]
+    return [stripQuotes(remaining)]
   }
   
   return null
@@ -257,7 +266,12 @@ const buildSearchRegex = (searchTerm, wholeWords = true) => {
     // For boolean/proximity search, create a regex that matches any of the terms
     const patterns = booleanTerms.map(t => {
       if (hasWildcard(t)) return wildcardToRegex(t)
-      return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      let escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      // Handle apostrophes - match various apostrophe types or no apostrophe
+      escaped = escaped.replace(/'/g, "['''']?")
+      // Handle multi-word phrases with flexible whitespace
+      escaped = escaped.replace(/\s+/g, '\\s+')
+      return escaped
     })
     return new RegExp(`\\b(${patterns.join('|')})\\b`, 'gi')
   }
@@ -292,22 +306,69 @@ const SnippetRow = ({ id, fullText, term, terms, matchIndex, index, highlightFn 
   const snippetText = (start>0? '...' : '') + fullText.substring(start,end) + (end<fullText.length ? '...' : '')
   return (
     <div id={id} onClick={()=>setExpanded(!expanded)} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group">
-      <div className="flex justify-between items-start mb-2"><p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p><button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">{expanded ? 'Collapse' : <><Icon name="maximize" size={12} /> Expand Context</>}</button></div>
+      <div className="flex justify-between items-start mb-2"><p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p><button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">{expanded ? <><Icon name="chevronUp" size={12} /> Collapse</> : <><Icon name="chevronDown" size={12} /> Expand</>}</button></div>
       <p className="text-gray-800 leading-relaxed font-serif text-sm">{highlightFn(snippetText, term, terms)}</p>
     </div>
   )
 }
 
-export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true }){
+export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true, onSaveProgress, resumePosition, relatedSermons = [], onSelectRelated }){
   const [fullText, setFullText] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [viewMode, setViewMode] = useState('snippets')
   const [mentions, setMentions] = useState([])
   const [videoUrl, setVideoUrl] = useState('')
+  const contentRef = React.useRef(null)
+
+  // Track scroll position for reading progress
+  useEffect(() => {
+    const el = contentRef.current
+    if (!el || !onSaveProgress) return
+    
+    let timeout
+    const handleScroll = () => {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => {
+        const position = el.scrollTop / (el.scrollHeight - el.clientHeight)
+        if (position > 0.01 && position < 0.99) {
+          onSaveProgress(sermon.id, position)
+        }
+      }, 500)
+    }
+    el.addEventListener('scroll', handleScroll)
+    return () => el.removeEventListener('scroll', handleScroll)
+  }, [sermon.id, onSaveProgress])
+
+  // Resume scroll position on mount
+  useEffect(() => {
+    if (resumePosition && contentRef.current && !isLoading) {
+      setTimeout(() => {
+        const el = contentRef.current
+        if (el) {
+          el.scrollTop = resumePosition * (el.scrollHeight - el.clientHeight)
+        }
+      }, 100)
+    }
+  }, [resumePosition, isLoading])
 
   useEffect(()=>{
     setIsLoading(true)
-    fetch(sermon.path).then(res => {
+    
+    // Handle missing path
+    if (!sermon.path) {
+      setFullText('Transcript not available. (No path configured)')
+      setIsLoading(false)
+      setViewMode('full')
+      return
+    }
+    
+    const basePath = import.meta.env.BASE_URL || '/'
+    // Encode path components for special characters (spaces, #, etc.)
+    const encodedPath = sermon.path.split('/').map(part => encodeURIComponent(part)).join('/')
+    const fetchPath = encodedPath.startsWith('/') ? `${basePath}${encodedPath.slice(1)}` : `${basePath}${encodedPath}`
+    console.log('[SermonModal] Fetching transcript:', fetchPath) // Debug log
+    fetch(fetchPath).then(res => {
+      console.log('[SermonModal] Response:', res.status, res.headers.get('content-type')) // Debug log
       if (!res.ok) return 'Transcript not available.'
       // Check content-type to avoid HTML fallback pages
       const contentType = res.headers.get('content-type') || ''
@@ -407,8 +468,19 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e=>e.stopPropagation()}>
         <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
           <div className="flex-1 pr-4">
-            <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
-            <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600"><span className="bg-white border px-2 py-0.5 rounded">{sermon.church}</span><span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span><span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span></div>
+            <div className="flex items-center gap-2">
+              <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
+              <span className="bg-white border px-2 py-0.5 rounded">{sermon.church || sermon.venue}</span>
+              <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
+              {sermon.wordCount && (
+                <span className="bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded">
+                  ~{Math.round(sermon.wordCount / 200)} min read
+                </span>
+              )}
+              <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
+            </div>
             {videoUrl && (
               <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="inline-block mt-3 px-3 py-1 bg-red-600 text-white text-sm hover:bg-red-700 rounded font-medium">
                 ▶ Watch on YouTube
@@ -420,9 +492,42 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
           <button onClick={()=>setViewMode('snippets')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length===0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
           <button onClick={()=>setViewMode('full')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+          {relatedSermons.length > 0 && (
+            <button onClick={()=>setViewMode('related')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='related' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="share" size={16} /> Related ({relatedSermons.length})</button>
+          )}
         </div>
-        <div className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
-          {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : viewMode==='snippets' ? (<div className="max-w-3xl mx-auto space-y-4">{mentions.map((m,i)=><SnippetRow key={i} id={`match-${i}`} fullText={fullText} term={m.term} terms={m.terms} matchIndex={m.index} index={i} highlightFn={highlight} />)}</div>) : <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>}
+        <div ref={contentRef} className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
+          {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : 
+            viewMode==='snippets' ? (<div className="max-w-3xl mx-auto space-y-4">{mentions.map((m,i)=><SnippetRow key={i} id={`match-${i}`} fullText={fullText} term={m.term} terms={m.terms} matchIndex={m.index} index={i} highlightFn={highlight} />)}</div>) : 
+            viewMode==='related' && relatedSermons.length > 0 ? (
+              <div className="max-w-3xl mx-auto">
+                <h3 className="text-lg font-bold text-gray-800 mb-4">Related Sermons</h3>
+                <p className="text-sm text-gray-500 mb-4">Based on similar topics, same venue, or date proximity</p>
+                <div className="space-y-2">
+                  {relatedSermons.map(s => (
+                    <button
+                      key={s.id}
+                      onClick={() => onSelectRelated && onSelectRelated(s)}
+                      className="w-full text-left p-4 bg-gray-50 hover:bg-blue-50 rounded-lg border transition flex justify-between items-center group"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <div className="font-bold text-gray-800 truncate">{s.title}</div>
+                        <div className="text-sm text-gray-500 flex flex-wrap gap-2 mt-1">
+                          <span>{s.date}</span>
+                          {s.venue && <span>• {s.venue}</span>}
+                          {s.topics && s.topics.length > 0 && (
+                            <span className="text-blue-600">• {s.topics.slice(0, 2).join(', ')}</span>
+                          )}
+                        </div>
+                      </div>
+                      <Icon name="chevronRight" size={16} className="text-gray-400 group-hover:text-blue-600 flex-shrink-0 ml-4" />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) :
+            <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>
+          }
         </div>
       </div>
     </div>

@@ -4,13 +4,14 @@ START OF FILE: 2020-05-15 - Predestinados con el propósito de  vencer - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-15
-Title:   "Predestinados con el propósito de  vencer "
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Hb3iwYlGQtI
+Date:     2020-05-15
+Title:    "Predestinados con el propósito de  vencer "
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 47m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Hb3iwYlGQtI
 ========================================
 
 Description:

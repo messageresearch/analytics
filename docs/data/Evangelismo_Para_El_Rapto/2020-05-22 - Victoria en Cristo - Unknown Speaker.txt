@@ -4,13 +4,14 @@ START OF FILE: 2020-05-22 - Victoria en Cristo - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-22
-Title:   "Victoria en Cristo"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=fVfq-ATBc1k
+Date:     2020-05-22
+Title:    "Victoria en Cristo"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 3m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=fVfq-ATBc1k
 ========================================
 
 Description:

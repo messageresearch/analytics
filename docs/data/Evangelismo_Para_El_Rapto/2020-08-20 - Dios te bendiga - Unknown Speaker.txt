@@ -4,13 +4,14 @@ START OF FILE: 2020-08-20 - Dios te bendiga - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-20
-Title:   "Dios te bendiga"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=MkhY0feD6LA
+Date:     2020-08-20
+Title:    "Dios te bendiga"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 2m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=MkhY0feD6LA
 ========================================
 
 Description:

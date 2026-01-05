@@ -4,13 +4,14 @@ START OF FILE: 2023-10-22 - La Dispensación de Cumplimiento de los  Tiempos. - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-22
-Title:   "La Dispensación de Cumplimiento de los  Tiempos".
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Fh9ReAj8Ceo
+Date:     2023-10-22
+Title:    "La Dispensación de Cumplimiento de los  Tiempos".
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 29m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Fh9ReAj8Ceo
 ========================================
 
 Description:

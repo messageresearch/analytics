@@ -4,13 +4,14 @@ START OF FILE: 2020-05-01 - Un mismo sentir filipenses  21-5 - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-01
-Title:   "Un mismo sentir" filipenses  2:1-5
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=wiSretfb7Pw
+Date:     2020-05-01
+Title:    "Un mismo sentir" filipenses  2:1-5
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 1m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=wiSretfb7Pw
 ========================================
 
 Description:

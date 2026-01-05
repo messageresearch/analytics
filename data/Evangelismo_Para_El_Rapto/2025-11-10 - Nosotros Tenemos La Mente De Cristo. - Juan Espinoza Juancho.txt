@@ -4,13 +4,14 @@ START OF FILE: 2025-11-10 - Nosotros Tenemos La Mente De Cristo. - Juan Espinoza
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-10
-Title:   "Nosotros Tenemos La Mente De Cristo".
-Speaker: Juan Espinoza Juancho
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Wvkm_zXjpHA
+Date:     2025-11-10
+Title:    "Nosotros Tenemos La Mente De Cristo".
+Speaker:  Juan Espinoza Juancho
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 21m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Wvkm_zXjpHA
 ========================================
 
 Description:

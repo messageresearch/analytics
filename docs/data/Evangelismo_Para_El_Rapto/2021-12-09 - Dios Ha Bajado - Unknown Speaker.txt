@@ -4,13 +4,14 @@ START OF FILE: 2021-12-09 - Dios Ha Bajado - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-09
-Title:   "Dios Ha Bajado"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Ytg0Dewkobg
+Date:     2021-12-09
+Title:    "Dios Ha Bajado"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 1m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Ytg0Dewkobg
 ========================================
 
 Description:

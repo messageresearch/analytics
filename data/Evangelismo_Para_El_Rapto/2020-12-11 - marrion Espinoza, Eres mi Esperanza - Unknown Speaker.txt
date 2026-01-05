@@ -4,13 +4,14 @@ START OF FILE: 2020-12-11 - marrion Espinoza, Eres mi Esperanza - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-11
-Title:   marrion Espinoza, "Eres mi Esperanza "
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=d-3nES52MNM
+Date:     2020-12-11
+Title:    marrion Espinoza, "Eres mi Esperanza "
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=d-3nES52MNM
 ========================================
 
 Description:

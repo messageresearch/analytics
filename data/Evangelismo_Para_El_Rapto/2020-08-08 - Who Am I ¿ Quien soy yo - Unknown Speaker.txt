@@ -4,13 +4,14 @@ START OF FILE: 2020-08-08 - Who Am I ¿ Quien soy yo - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-08
-Title:   Who Am I? ¿ Quien soy yo?
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=zyifw2oOmPw
+Date:     2020-08-08
+Title:    Who Am I? ¿ Quien soy yo?
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=zyifw2oOmPw
 ========================================
 
 Description:

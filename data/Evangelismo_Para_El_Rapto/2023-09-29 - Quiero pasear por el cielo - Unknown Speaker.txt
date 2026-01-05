@@ -4,13 +4,14 @@ START OF FILE: 2023-09-29 - Quiero pasear por el cielo - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-29
-Title:   Quiero pasear por el cielo"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=7fd8jvd5i1g
+Date:     2023-09-29
+Title:    Quiero pasear por el cielo"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=7fd8jvd5i1g
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - Revelacion Espiritual - Revelacion Espiritual.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   "Revelacion Espiritual"
-Speaker: Revelacion Espiritual
-Church:  Evangelismo Para El Rapto
-Type:    Service
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=twn0zC8t7fA
+Date:     2023-07-02
+Title:    "Revelacion Espiritual"
+Speaker:  Revelacion Espiritual
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 3h 29m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=twn0zC8t7fA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-11-17 - Salmo 121 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-17
-Title:   "Salmo 121"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=BEt1BWi1El0
+Date:     2020-11-17
+Title:    "Salmo 121"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 5m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=BEt1BWi1El0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-19 - Entrevista a hermano Kennedy Madray pastor del  Time
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-19
-Title:   Entrevista a hermano Kennedy Madray pastor del " Time of Life Assembly Cunupia Trinidad &Tobago
-Speaker: Kennedy Madray
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=soULmCqZnfk
+Date:     2020-08-19
+Title:    Entrevista a hermano Kennedy Madray pastor del " Time of Life Assembly Cunupia Trinidad &Tobago
+Speaker:  Kennedy Madray
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 40m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=soULmCqZnfk
 ========================================
 
 Description:

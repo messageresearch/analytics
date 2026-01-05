@@ -4,13 +4,14 @@ START OF FILE: 2021-05-13 - Una Carrera por Perfección - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-13
-Title:   "Una Carrera por Perfección "
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=WGauHNs0Or4
+Date:     2021-05-13
+Title:    "Una Carrera por Perfección "
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 46m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=WGauHNs0Or4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-04-29 - En toda fuerza juan espinoza jr - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-29
-Title:   "En toda fuerza" juan espinoza jr
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=vVzXAyD_KIU
+Date:     2020-04-29
+Title:    "En toda fuerza" juan espinoza jr
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 3m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=vVzXAyD_KIU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-06-12 - Guiados por el Espíritu de Dios 10 de junio 2020 - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-12
-Title:   "Guiados por el Espíritu de Dios" 10 de junio 2020
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=4jJqNyPCpxE
+Date:     2020-06-12
+Title:    "Guiados por el Espíritu de Dios" 10 de junio 2020
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 59m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=4jJqNyPCpxE
 ========================================
 
 TRANSCRIPT

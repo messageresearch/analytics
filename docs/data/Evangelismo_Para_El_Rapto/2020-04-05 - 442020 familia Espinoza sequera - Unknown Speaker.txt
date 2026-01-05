@@ -4,13 +4,14 @@ START OF FILE: 2020-04-05 - 442020 familia Espinoza sequera - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-05
-Title:   4/4/2020 familia Espinoza sequera
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=8noDxbjUbr0
+Date:     2020-04-05
+Title:    4/4/2020 familia Espinoza sequera
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 12m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=8noDxbjUbr0
 ========================================
 
 Description:

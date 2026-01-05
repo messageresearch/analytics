@@ -4,13 +4,14 @@ START OF FILE: 2020-09-28 - Cuando llegue mi hora de salir de aquí parte 2 - Cr
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-28
-Title:   "Cuando llegue mi hora de salir de aquí parte 2
-Speaker: Cristian Contreras
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=jsR-1IlyziM
+Date:     2020-09-28
+Title:    "Cuando llegue mi hora de salir de aquí parte 2
+Speaker:  Cristian Contreras
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 26m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=jsR-1IlyziM
 ========================================
 
 Description:

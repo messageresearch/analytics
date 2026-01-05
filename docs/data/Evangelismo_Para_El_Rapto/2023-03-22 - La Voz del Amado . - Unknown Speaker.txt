@@ -4,13 +4,14 @@ START OF FILE: 2023-03-22 - La Voz del Amado . - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-22
-Title:   "La Voz del Amado" .
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=u6QOLd3Ryk4
+Date:     2023-03-22
+Title:    "La Voz del Amado" .
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 53m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=u6QOLd3Ryk4
 ========================================
 
 Description:

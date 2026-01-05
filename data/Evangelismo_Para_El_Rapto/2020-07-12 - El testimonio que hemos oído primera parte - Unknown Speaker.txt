@@ -4,13 +4,14 @@ START OF FILE: 2020-07-12 - El testimonio que hemos oído primera parte - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-12
-Title:   "El testimonio que hemos oído" primera parte
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=BwWSKNwrLXQ
+Date:     2020-07-12
+Title:    "El testimonio que hemos oído" primera parte
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 0m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=BwWSKNwrLXQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-05-15 - El poder prevaleciente - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-15
-Title:   "El poder prevaleciente"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=N1ZUFXQrgEo
+Date:     2020-05-15
+Title:    "El poder prevaleciente"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 51m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=N1ZUFXQrgEo
 ========================================
 
 Description:

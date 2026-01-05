@@ -4,13 +4,14 @@ START OF FILE: 2020-04-12 - No está aquí pues ha Resucitado - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-12
-Title:   "No está aquí pues ha Resucitado"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=QkAV11d1ILE
+Date:     2020-04-12
+Title:    "No está aquí pues ha Resucitado"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 6m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=QkAV11d1ILE
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-04-26 - Reflejandolo   parte I 26420 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-26
-Title:   "Reflejandolo "  parte I 26/4/20
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=TRKpjC3iBPk
+Date:     2020-04-26
+Title:    "Reflejandolo "  parte I 26/4/20
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 8m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=TRKpjC3iBPk
 ========================================
 
 TRANSCRIPT

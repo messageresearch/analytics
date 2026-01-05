@@ -4,13 +4,14 @@ START OF FILE: 2020-09-20 - Mis Ovejas oyen Mi Voz - Juan Espinoza.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-20
-Title:   "Mis Ovejas oyen Mi Voz"
-Speaker: Juan Espinoza
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=liJL-FV5mns
+Date:     2020-09-20
+Title:    "Mis Ovejas oyen Mi Voz"
+Speaker:  Juan Espinoza
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 16m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=liJL-FV5mns
 ========================================
 
 Description:

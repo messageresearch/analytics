@@ -4,13 +4,14 @@ START OF FILE: 2020-08-20 - El Milagro Marrion Espinoza - Marcos Vidal.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-20
-Title:   "El Milagro" Marrion Espinoza
-Speaker: Marcos Vidal
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=ePJqoXQ-u4w
+Date:     2020-08-20
+Title:    "El Milagro" Marrion Espinoza
+Speaker:  Marcos Vidal
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 5m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=ePJqoXQ-u4w
 ========================================
 
 Description:

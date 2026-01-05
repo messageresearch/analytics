@@ -4,13 +4,14 @@ START OF FILE: 2020-04-19 - Señor¿ A quien iremos II parte - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-19
-Title:   Señor¿ A quien iremos? II parte
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=re8iKB8xnj0
+Date:     2020-04-19
+Title:    Señor¿ A quien iremos? II parte
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 16m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=re8iKB8xnj0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2020-04-28 - Bienaventurados los pobres en espíritu  27 de abril
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-28
-Title:   "Bienaventurados los pobres en espíritu " 27 de abril 2020
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=DmJtHP56B-c
+Date:     2020-04-28
+Title:    "Bienaventurados los pobres en espíritu " 27 de abril 2020
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 18m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=DmJtHP56B-c
 ========================================
 
 Description:

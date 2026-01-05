@@ -4,13 +4,14 @@ START OF FILE: 2020-04-26 - Reflejandolo  Parte II Juan Espinoza  jr. 26420 - Un
 
 SERMON DETAILS
 ========================================
-Date:    2020-04-26
-Title:   Reflejandolo  Parte II Juan Espinoza  jr. 26/4/20
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=HB-DjXsnFu4
+Date:     2020-04-26
+Title:    Reflejandolo  Parte II Juan Espinoza  jr. 26/4/20
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Short Service
+Duration: 34m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=HB-DjXsnFu4
 ========================================
 
 TRANSCRIPT

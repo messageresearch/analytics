@@ -4,13 +4,14 @@ START OF FILE: 2020-08-10 - Hallados por El sin mancha parte I - Unknown Speaker
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-10
-Title:   "Hallados por El sin mancha" parte I
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=0DhCPsujk_c
+Date:     2020-08-10
+Title:    "Hallados por El sin mancha" parte I
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 13m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=0DhCPsujk_c
 ========================================
 
 Description:

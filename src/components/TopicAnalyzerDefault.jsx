@@ -3,7 +3,11 @@ import { DEFAULT_TERM, DEFAULT_REGEX_STR } from '../constants_local'
 import Icon from './Icon'
 import { expandRegex } from '../utils/regexExpander'
 
-export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [], cacheStatus = null, totalTranscripts = 0 }) {
+export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress, initialTerm = '', initialVariations = '', matchedTerms = [], cacheStatus = null, totalTranscripts = 0, defaultTerm = null, defaultRegex = null, externalTerm = null }) {
+  // Use passed defaults or fall back to imported constants
+  const effectiveDefaultTerm = defaultTerm !== null ? defaultTerm : DEFAULT_TERM
+  const effectiveDefaultRegex = defaultRegex !== null ? defaultRegex : DEFAULT_REGEX_STR
+  
   const [term, setTerm] = useState(initialTerm || '')
   const isRegexLike = (s) => /[\\\(\)\[\]\|\^\$\.\*\+\?]/.test(s)
   const [variations, setVariations] = useState(!isRegexLike(initialVariations) ? initialVariations : '')
@@ -15,6 +19,22 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   const [showAllTerms, setShowAllTerms] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
   const [showRegexHelp, setShowRegexHelp] = useState(false)
+  const [lastExternalTerm, setLastExternalTerm] = useState(null)
+  
+  // Sync with external term when it changes (for hot topic buttons, scripture refs, etc.)
+  useEffect(() => {
+    // If external term is cleared, reset tracking so same term can be set again
+    if (externalTerm === '' || externalTerm === null) {
+      setLastExternalTerm(null)
+      return
+    }
+    // Update term when external term changes
+    if (externalTerm !== lastExternalTerm) {
+      setTerm(externalTerm)
+      setRawRegex('')  // Clear regex when external term is set
+      setLastExternalTerm(externalTerm)
+    }
+  }, [externalTerm, lastExternalTerm])
   
   // Format transcript count
   const formattedCount = totalTranscripts > 0 
@@ -28,22 +48,22 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   useEffect(() => {
     const prevTerm = prevTermRef.current || ''
     const currentTerm = (term || '').trim()
-    if (prevTerm === DEFAULT_TERM && currentTerm !== DEFAULT_TERM) {
+    if (prevTerm === effectiveDefaultTerm && currentTerm !== effectiveDefaultTerm) {
       setRawRegex('')
     }
     prevTermRef.current = term
-  }, [term])
+  }, [term, effectiveDefaultTerm])
   
   // Clear term when default regex is deleted
   useEffect(() => {
     const prevRegex = prevRegexRef.current || ''
     const currentRegex = (rawRegex || '').trim()
     // If previous regex was the default and now it's empty, clear the default term
-    if (prevRegex === DEFAULT_REGEX_STR && currentRegex === '' && term === DEFAULT_TERM) {
+    if (prevRegex === effectiveDefaultRegex && currentRegex === '' && term === effectiveDefaultTerm) {
       setTerm('')
     }
     prevRegexRef.current = rawRegex
-  }, [rawRegex, term])
+  }, [rawRegex, term, effectiveDefaultTerm, effectiveDefaultRegex])
 
   const validateRegex = (r) => {
     if (!r) return null
@@ -90,12 +110,14 @@ export default function TopicAnalyzerDefault({ onAnalyze, isAnalyzing, progress,
   }
 
   const handleResetDefaults = () => {
-    setTerm(DEFAULT_TERM)
-    setRawRegex(DEFAULT_REGEX_STR)
+    setTerm(effectiveDefaultTerm)
+    setRawRegex(effectiveDefaultRegex)
     setVariations('')
     setRegexError(null)
     setWholeWords(true)
-    onAnalyze(DEFAULT_TERM, [], DEFAULT_REGEX_STR, { wholeWords: false })
+    // Always call onAnalyze - if defaults are empty, this clears the search
+    // If defaults have values, this runs the default search
+    onAnalyze(effectiveDefaultTerm, [], effectiveDefaultRegex, { wholeWords: false })
   }
 
   return (

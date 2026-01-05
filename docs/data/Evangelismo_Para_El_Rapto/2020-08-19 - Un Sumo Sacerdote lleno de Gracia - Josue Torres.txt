@@ -4,13 +4,14 @@ START OF FILE: 2020-08-19 - Un Sumo Sacerdote lleno de Gracia - Josue Torres.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-19
-Title:   "Un Sumo Sacerdote lleno de Gracia"
-Speaker: Josue Torres
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=SO1JKTLdM8A
+Date:     2020-08-19
+Title:    "Un Sumo Sacerdote lleno de Gracia"
+Speaker:  Josue Torres
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 1h 2m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=SO1JKTLdM8A
 ========================================
 
 Description:

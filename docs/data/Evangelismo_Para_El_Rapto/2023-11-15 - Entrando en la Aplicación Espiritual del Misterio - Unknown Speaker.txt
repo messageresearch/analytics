@@ -4,13 +4,14 @@ START OF FILE: 2023-11-15 - Entrando en la Aplicación Espiritual del Misterio -
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-15
-Title:   "Entrando en la Aplicación Espiritual del Misterio"
-Speaker: Unknown Speaker
-Church:  Evangelismo Para El Rapto
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Kp_FkzKEvwg
+Date:     2023-11-15
+Title:    "Entrando en la Aplicación Espiritual del Misterio"
+Speaker:  Unknown Speaker
+Church:   Evangelismo Para El Rapto
+Type:     Full Sermon
+Duration: 2h 18m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Kp_FkzKEvwg
 ========================================
 
 TRANSCRIPT
