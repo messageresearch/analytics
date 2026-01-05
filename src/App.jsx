@@ -1190,7 +1190,7 @@ export default function App({ onSwitchToBranham }){
             </div>
           </div>
         </div>
-        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available YouTube automated transcripts and may not represent all sermons preached during this timeframe.</div>
+        <div className="bg-yellow-50 border-b border-yellow-100 text-yellow-800 text-xs text-center py-2 px-4"><span className="font-bold">Disclaimer:</span> This data is based solely on available transcripts and may not represent all sermons preached during this timeframe.</div>
 
         {/* How It Works Overview */}
         <div className="bg-blue-50 border-b border-blue-100">

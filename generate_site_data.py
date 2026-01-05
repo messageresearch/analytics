@@ -322,6 +322,9 @@ def main():
     
     # with zipfile.ZipFile(ZIP_FILENAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
     for church_folder in os.listdir(DATA_DIR):
+        # Skip William Branham Sermons - that's a separate archive handled by generate_wmb_site_data.py
+        if church_folder == "William_Branham_Sermons":
+            continue
         church_path = os.path.join(DATA_DIR, church_folder)
         if os.path.isdir(church_path):
             # Handle underscores in folder names for display

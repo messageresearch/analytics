@@ -4,13 +4,14 @@ START OF FILE: 2025-11-16 - Anticipating Heaven - Brother John Simon - John Simo
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-16
-Title:   Anticipating Heaven - Brother John Simon
-Speaker: John Simon
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qRwavpyCX84
+Date:     2025-11-16
+Title:    Anticipating Heaven - Brother John Simon
+Speaker:  John Simon
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=qRwavpyCX84
 ========================================
 
 Description:

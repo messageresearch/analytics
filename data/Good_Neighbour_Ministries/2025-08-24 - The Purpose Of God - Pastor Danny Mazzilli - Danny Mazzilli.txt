@@ -4,13 +4,14 @@ START OF FILE: 2025-08-24 - The Purpose Of God - Pastor Danny Mazzilli - Danny M
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-24
-Title:   The Purpose Of God - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nskU3uPOPoY
+Date:     2025-08-24
+Title:    The Purpose Of God - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=nskU3uPOPoY
 ========================================
 
 Description:

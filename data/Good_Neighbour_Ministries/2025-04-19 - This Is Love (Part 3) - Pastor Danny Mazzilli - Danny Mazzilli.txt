@@ -4,13 +4,14 @@ START OF FILE: 2025-04-19 - This Is Love (Part 3) - Pastor Danny Mazzilli - Dann
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-19
-Title:   This Is Love (Part 3) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8O_qhS1QuN8
+Date:     2025-04-19
+Title:    This Is Love (Part 3) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=8O_qhS1QuN8
 ========================================
 
 Description:

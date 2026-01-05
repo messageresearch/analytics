@@ -4,13 +4,14 @@ START OF FILE: 2025-12-21 - The Power To Become (II) - Pastor Danny Mazzilli - D
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-21
-Title:   The Power To Become (II) - Pastor Danny Mazzilli
-Speaker: Danny Mazzilli
-Church:  Good Neighbour Ministries
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=It_8WmjDA64
+Date:     2025-12-21
+Title:    The Power To Become (II) - Pastor Danny Mazzilli
+Speaker:  Danny Mazzilli
+Church:   Good Neighbour Ministries
+Type:     Short Service
+Duration: 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=It_8WmjDA64
 ========================================
 
 Description:
