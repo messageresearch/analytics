@@ -336,8 +336,10 @@ export default function App(){
   , [rawData])
 
   // Optimize: only create new objects for items that have custom counts (reduces memory pressure on mobile)
+  // NOTE: We only check `customCounts !== null` (not size) because an empty Map means
+  // a search was performed but found no results - we need to show 0 counts in that case
   const enrichedData = useMemo(()=>{ 
-    if(!customCounts || customCounts.size === 0) return rawData
+    if(customCounts === null) return rawData
     return rawData.map(s => { 
       const newCount = customCounts.get(s.id) || 0
       return { ...s, mentionCount: newCount, mentionsPerHour: s.durationHrs > 0 ? parseFloat((newCount / s.durationHrs).toFixed(1)) : 0, searchTerm: activeRegex } 
@@ -1733,9 +1735,28 @@ export default function App(){
           {view === 'dashboard' && stats && (
             <>
               <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} totalTranscripts={transcriptStats.withTranscript} />
+              
+              {/* No Results Found banner - shows when custom search returns 0 matches */}
+              {customCounts && unfilteredStats && unfilteredStats.totalMentions === 0 && !isAnalyzing && (
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 flex items-start gap-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                    <Icon name="alertCircle" size={20} className="text-amber-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-amber-800 text-sm">No Results Found</h3>
+                    <p className="text-amber-700 text-xs mt-1">
+                      Your search for "<span className="font-semibold">{activeTerm}</span>" did not match any transcripts in the database.
+                    </p>
+                    <p className="text-amber-600 text-xs mt-2">
+                      Try different search terms, check spelling, or use the "Reset Defaults" button to return to the default search.
+                    </p>
+                  </div>
+                </div>
+              )}
+              
               <div className="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-7 gap-1.5 sm:gap-2 mb-6">
                 <StatCard title="Filtered Transcripts" value={stats.totalSermons.toLocaleString()} icon="fileText" color="blue" sub={`of ${transcriptStats.withTranscript.toLocaleString()} total`} />
-                <StatCard title={`${activeTerm} Mentions`} value={stats.totalMentions.toLocaleString()} icon="users" color="green" sub="in filtered results" />
+                <StatCard title={`${activeTerm} Mentions`} value={stats.totalMentions.toLocaleString()} icon="users" color={customCounts && unfilteredStats && unfilteredStats.totalMentions === 0 ? "amber" : "green"} sub={customCounts && unfilteredStats && unfilteredStats.totalMentions === 0 ? "no matches found" : "in filtered results"} />
                 {/* Only show hidden mentions card when filters are hiding results */}
                 {hasActiveFilters && unfilteredStats && (unfilteredStats.totalMentions - stats.totalMentions) > 0 && (
                   <StatCard 
