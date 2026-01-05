@@ -46,7 +46,14 @@ const DEFAULT_REGEX_STR = ''
 const DEFAULT_VARIATIONS = ''
 
 // Helper to encode file paths for URLs (handles spaces, #, etc.)
-const encodeFilePath = (path) => path.split('/').map(part => encodeURIComponent(part)).join('/')
+// First decode (in case already encoded) then selectively encode only problematic chars
+// Don't use encodeURIComponent - it encodes commas to %2C but files have literal commas
+const encodeFilePath = (path) => {
+  const decoded = decodeURIComponent(path)
+  return decoded.split('/').map(part => 
+    part.replace(/ /g, '%20').replace(/#/g, '%23')
+  ).join('/')
+}
 
 // Helper: Parse boolean/proximity search syntax
 const parseBooleanSearch = (input) => {

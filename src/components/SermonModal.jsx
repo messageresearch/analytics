@@ -363,10 +363,18 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     }
     
     const basePath = import.meta.env.BASE_URL || '/'
-    // Encode path components for special characters (spaces, #, etc.)
-    const encodedPath = sermon.path.split('/').map(part => encodeURIComponent(part)).join('/')
+    // First decode path (in case it's already URL-encoded from metadata), then re-encode
+    // Only encode characters that actually break URLs (spaces, #, etc.) but NOT safe chars like commas
+    // encodeURIComponent encodes too aggressively - commas become %2C but files have literal commas
+    const decodedPath = decodeURIComponent(sermon.path)
+    const encodedPath = decodedPath.split('/').map(part => 
+      part.replace(/ /g, '%20').replace(/#/g, '%23')
+    ).join('/')
     const fetchPath = encodedPath.startsWith('/') ? `${basePath}${encodedPath.slice(1)}` : `${basePath}${encodedPath}`
-    console.log('[SermonModal] Fetching transcript:', fetchPath) // Debug log
+    console.log('[SermonModal] DEBUG: sermon.path =', sermon.path)
+    console.log('[SermonModal] DEBUG: decodedPath =', decodedPath)
+    console.log('[SermonModal] DEBUG: encodedPath =', encodedPath)
+    console.log('[SermonModal] DEBUG: fetchPath =', fetchPath)
     fetch(fetchPath).then(res => {
       console.log('[SermonModal] Response:', res.status, res.headers.get('content-type')) // Debug log
       if (!res.ok) return 'Transcript not available.'
@@ -461,7 +469,17 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     return parts.map((part, i) => i % 2 === 1 ? <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{part}</span> : part)
   }
 
-  const downloadText = () => { const a = document.createElement('a'); a.href = sermon.path; a.download = `${sermon.date} - ${sermon.title}.txt`; a.click(); }
+  const downloadText = () => { 
+    const a = document.createElement('a')
+    // Decode then selectively encode only problematic chars (spaces, #)
+    const decodedPath = decodeURIComponent(sermon.path)
+    const encodedPath = decodedPath.split('/').map(part => 
+      part.replace(/ /g, '%20').replace(/#/g, '%23')
+    ).join('/')
+    a.href = encodedPath
+    a.download = `${sermon.date} - ${sermon.title}.txt`
+    a.click()
+  }
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>

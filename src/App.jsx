@@ -2012,7 +2012,21 @@ export default function App({ onSwitchToBranham }){
                     { key: 'type', label: 'Type', width: '100px', filterKey: 'category', hideOnMobile: true, render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '90px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '70px', filterKey: 'rate', filterType: 'number', centered: true, hideOnMobile: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'action', label: 'Download', width: '80px', centered: true, noTruncate: true, render: (r) => (<button onClick={(e)=>{ e.stopPropagation(); const a = document.createElement('a'); a.href = r.path; a.download = `${r.date} - ${r.title}.txt`; a.click(); }} className="text-gray-400 hover:text-blue-600 flex items-center justify-center w-full"><Icon name="download" size={18} /></button>) }
+                    { key: 'download', label: 'Download', width: '90px', hideOnMobile: true, render: (r) => r.path ? (() => {
+                      const baseUrl = import.meta.env.BASE_URL || '/'
+                      const decodedPath = decodeURIComponent(r.path)
+                      const encodedPath = decodedPath.split('/').map(part => part.replace(/ /g, '%20').replace(/#/g, '%23')).join('/')
+                      return (
+                        <a 
+                          href={`${baseUrl}${encodedPath}`}
+                          download
+                          onClick={(e) => e.stopPropagation()}
+                          className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                        >
+                          <Icon name="download" size={12} /> TXT
+                        </a>
+                      )
+                    })() : '—' }
                   ]}
                   data={processedTableData}
                   rowHeight={64}

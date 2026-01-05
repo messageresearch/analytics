@@ -181,11 +181,11 @@ export default function VirtualizedTable({
     const row = data[index]
     return (
       <div
-        style={{ ...style, minWidth: totalWidth }}
+        style={{ ...style, width: '100%' }}
         className={`hover:bg-gray-50 border-b cursor-pointer ${isMobile ? 'text-xs' : ''}`}
         onClick={() => onRowClick && onRowClick(row)}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', padding: '8px 12px', minWidth: totalWidth }}>
+        <div style={{ display: 'grid', gridTemplateColumns: gridTemplate, gap: isMobile ? '8px' : '12px', alignItems: 'center', padding: '8px 12px', width: '100%' }}>
           {columns.map(col => {
             const content = col.render ? col.render(row) : row[col.key]
             const title = typeof content === 'string' ? content : (typeof row[col.key] === 'string' ? row[col.key] : '')
@@ -225,14 +225,14 @@ export default function VirtualizedTable({
         }}
         onScroll={handleContainerScroll}
       >
-        <div style={{ minWidth: totalWidth, width: 'max-content' }}>
+        <div style={{ minWidth: totalWidth, width: '100%' }}>
           {/* Fixed header that stays in place during vertical scroll */}
           <div
             ref={headerRef}
             className={`sticky top-0 z-20 bg-gray-50 border-b ${isMobile ? 'text-xs' : ''}`}
             style={{
               minWidth: totalWidth,
-              width: totalWidth,
+              width: '100%',
               display: 'grid',
               gridTemplateColumns: gridTemplate,
               gap: isMobile ? '8px' : '12px',
@@ -268,7 +268,7 @@ export default function VirtualizedTable({
             height={effectiveHeight}
             itemCount={data.length}
             itemSize={isMobile ? 48 : rowHeight}
-            width={totalWidth}
+            width="100%"
             style={{ overflowX: 'hidden', overflowY: 'auto' }}
             innerElementType={InnerElement}
           >
