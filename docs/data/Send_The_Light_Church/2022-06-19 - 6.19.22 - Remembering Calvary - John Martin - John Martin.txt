@@ -4,13 +4,14 @@ START OF FILE: 2022-06-19 - 6.19.22 - Remembering Calvary - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-19
-Title:   6.19.22 - Remembering Calvary - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=U2AOY9eyamo
+Date:     2022-06-19
+Title:    6.19.22 - Remembering Calvary - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=U2AOY9eyamo
 ========================================
 
 TRANSCRIPT

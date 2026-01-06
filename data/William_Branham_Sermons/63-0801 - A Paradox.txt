@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Marigold Center
-Location: Chicago
-Duration: IL, 80 min
+Location: Chicago, IL
+Duration: 80 min
 Source: livingwordbroadcast.org
 DateCode: 63-0801
 

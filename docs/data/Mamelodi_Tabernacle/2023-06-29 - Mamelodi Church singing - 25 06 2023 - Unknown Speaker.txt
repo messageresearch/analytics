@@ -4,13 +4,14 @@ START OF FILE: 2023-06-29 - Mamelodi Church singing - 25 06 2023 - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-29
-Title:   Mamelodi Church singing - 25 06 2023
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lS-zZcBWD4A
+Date:     2023-06-29
+Title:    Mamelodi Church singing - 25 06 2023
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Worship Service
+Duration: 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=lS-zZcBWD4A
 ========================================
 
 TRANSCRIPT

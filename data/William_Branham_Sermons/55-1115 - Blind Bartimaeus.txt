@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tent Meeting
-Location: San Fernando
-Duration: CA, 97 min
+Location: San Fernando, CA
+Duration: 97 min
 Source: livingwordbroadcast.org
 DateCode: 55-1115
 

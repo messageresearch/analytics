@@ -4,13 +4,14 @@ START OF FILE: 2025-02-28 - Mamelodi Church Singing - Even so come Lord Jesus (i
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-28
-Title:   Mamelodi Church Singing - Even so come Lord Jesus (instrumental)
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ik1XJUx_3G8
+Date:     2025-02-28
+Title:    Mamelodi Church Singing - Even so come Lord Jesus (instrumental)
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=ik1XJUx_3G8
 ========================================
 
 TRANSCRIPT

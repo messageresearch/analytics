@@ -4,13 +4,14 @@ START OF FILE: 2023-05-14 - 5.14.23 - Amazed - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-14
-Title:   5.14.23 - Amazed - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PqEgBfGEoZE
+Date:     2023-05-14
+Title:    5.14.23 - Amazed - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=PqEgBfGEoZE
 ========================================
 
 TRANSCRIPT

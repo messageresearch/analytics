@@ -4,13 +4,14 @@ START OF FILE: 2022-11-06 - Bro. Esai Boa Sunday Nov. 11062022 HGT - Esai Boa.tx
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-06
-Title:   | Bro. Esai Boa| Sunday Nov. 11/06/2022 HGT
-Speaker: Esai Boa
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7tUbGYPvegQ
+Date:     2022-11-06
+Title:    | Bro. Esai Boa| Sunday Nov. 11/06/2022 HGT
+Speaker:  Esai Boa
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=7tUbGYPvegQ
 ========================================
 
 TRANSCRIPT

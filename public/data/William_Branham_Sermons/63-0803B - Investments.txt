@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Edgewater Beach Hotel
-Location: Chicago
-Duration: IL, 108 min
+Location: Chicago, IL
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 63-0803B
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: The Hippodrome
-Location: Waterloo
-Duration: IA, 100 min
+Location: Waterloo, IA
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 58-0126
 

@@ -4,13 +4,14 @@ START OF FILE: 2020-05-13 - 5.13.20 - Being Ready - John Martin - John Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-13
-Title:   5.13.20 - Being Ready - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8b_dghYpTYk
+Date:     2020-05-13
+Title:    5.13.20 - Being Ready - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=8b_dghYpTYk
 ========================================
 
 TRANSCRIPT

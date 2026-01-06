@@ -4,13 +4,14 @@ START OF FILE: 2021-07-08 - 7.7.21 - God's Voice - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-08
-Title:   7.7.21 - God's Voice - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jNy_HUgimOg
+Date:     2021-07-08
+Title:    7.7.21 - God's Voice - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=jNy_HUgimOg
 ========================================
 
 Description:

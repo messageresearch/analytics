@@ -4,13 +4,14 @@ START OF FILE: 2024-12-15 - 12.15.24 - Take Your Next Step - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-15
-Title:   12.15.24 - Take Your Next Step - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OHkm6SC-o8k
+Date:     2024-12-15
+Title:    12.15.24 - Take Your Next Step - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=OHkm6SC-o8k
 ========================================
 
 TRANSCRIPT

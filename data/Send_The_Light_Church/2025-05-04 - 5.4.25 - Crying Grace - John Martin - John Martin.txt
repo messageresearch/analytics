@@ -4,13 +4,14 @@ START OF FILE: 2025-05-04 - 5.4.25 - Crying Grace - John Martin - John Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-04
-Title:   5.4.25 - Crying Grace - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kCx-FDjuQWM
+Date:     2025-05-04
+Title:    5.4.25 - Crying Grace - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=kCx-FDjuQWM
 ========================================
 
 TRANSCRIPT

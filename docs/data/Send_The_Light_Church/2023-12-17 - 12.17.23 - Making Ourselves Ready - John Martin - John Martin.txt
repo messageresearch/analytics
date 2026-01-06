@@ -4,13 +4,14 @@ START OF FILE: 2023-12-17 - 12.17.23 - Making Ourselves Ready - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-17
-Title:   12.17.23 - Making Ourselves Ready - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=78UzWXv0_8w
+Date:     2023-12-17
+Title:    12.17.23 - Making Ourselves Ready - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=78UzWXv0_8w
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2021-10-07 - Pastor Isiah Brooks  Wednesday Oct 6 2021 - Isiah Br
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-07
-Title:   || Pastor Isiah Brooks || Wednesday Oct 6 2021
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8mRooJ8Tp20
+Date:     2021-10-07
+Title:    || Pastor Isiah Brooks || Wednesday Oct 6 2021
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=8mRooJ8Tp20
 ========================================
 
 Description:

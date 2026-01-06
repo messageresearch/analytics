@@ -4,13 +4,14 @@ START OF FILE: 2024-08-25 - 8.25.24 -  A Positive Token - Josh Martin - Josh Mar
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-25
-Title:   8.25.24 -  A Positive Token - Josh Martin
-Speaker: Josh Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y5Up9bkeDm0
+Date:     2024-08-25
+Title:    8.25.24 -  A Positive Token - Josh Martin
+Speaker:  Josh Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=y5Up9bkeDm0
 ========================================
 
 TRANSCRIPT

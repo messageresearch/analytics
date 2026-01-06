@@ -4,13 +4,14 @@ START OF FILE: 2024-05-02 - 5.1.24 - Our Help Comes From God - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-02
-Title:   5.1.24 - Our Help Comes From God - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RLYD7_vmRhM
+Date:     2024-05-02
+Title:    5.1.24 - Our Help Comes From God - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=RLYD7_vmRhM
 ========================================
 
 TRANSCRIPT

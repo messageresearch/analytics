@@ -4,13 +4,14 @@ START OF FILE: 2023-09-17 - 9.17.23 - The God of Moses - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-17
-Title:   9.17.23 - The God of Moses - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QV7kgwLX8TI
+Date:     2023-09-17
+Title:    9.17.23 - The God of Moses - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=QV7kgwLX8TI
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Municipal Auditorium
-Location: Beaumont
-Duration: TX, 77 min
+Location: Beaumont, TX
+Duration: 77 min
 Source: livingwordbroadcast.org
 DateCode: 64-0311
 

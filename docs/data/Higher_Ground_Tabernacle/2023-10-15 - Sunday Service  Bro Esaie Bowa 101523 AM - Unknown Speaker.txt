@@ -4,13 +4,14 @@ START OF FILE: 2023-10-15 - Sunday Service  Bro Esaie Bowa 101523 AM - Unknown S
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-15
-Title:   Sunday Service | Bro Esaie Bowa| 10/15/23 AM
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=td8_Ln20JMI
+Date:     2023-10-15
+Title:    Sunday Service | Bro Esaie Bowa| 10/15/23 AM
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=td8_Ln20JMI
 ========================================
 
 TRANSCRIPT

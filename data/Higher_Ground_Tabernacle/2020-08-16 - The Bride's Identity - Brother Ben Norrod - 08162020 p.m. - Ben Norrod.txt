@@ -4,13 +4,14 @@ START OF FILE: 2020-08-16 - The Bride's Identity - Brother Ben Norrod - 08162020
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-16
-Title:   The Bride's Identity - Brother Ben Norrod - 08/16/2020 p.m.
-Speaker: Ben Norrod
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=606b-dRJCgA
+Date:     2020-08-16
+Title:    The Bride's Identity - Brother Ben Norrod - 08/16/2020 p.m.
+Speaker:  Ben Norrod
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=606b-dRJCgA
 ========================================
 
 Description:

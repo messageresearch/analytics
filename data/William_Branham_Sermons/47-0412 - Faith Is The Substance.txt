@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Oakland Municipal Auditorium
-Location: Oakland
-Duration: CA, 79 min
+Location: Oakland, CA
+Duration: 79 min
 Source: livingwordbroadcast.org
 DateCode: 47-0412
 

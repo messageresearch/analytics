@@ -4,13 +4,14 @@ START OF FILE: 2021-11-14 - 11.14.21 - Standing Up For Jesus - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-14
-Title:   11.14.21 - Standing Up For Jesus - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ey4T8DAdlTc
+Date:     2021-11-14
+Title:    11.14.21 - Standing Up For Jesus - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=ey4T8DAdlTc
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2022-07-10 - The Atmosphere of Joshua  Pastor Isiah Brooks Sunday
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-10
-Title:   The Atmosphere of Joshua | Pastor Isiah Brooks| Sunday  07/10/2022 HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9qbgmLrPG-A
+Date:     2022-07-10
+Title:    The Atmosphere of Joshua | Pastor Isiah Brooks| Sunday  07/10/2022 HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=9qbgmLrPG-A
 ========================================
 
 TRANSCRIPT

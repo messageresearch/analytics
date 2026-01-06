@@ -4,13 +4,14 @@ START OF FILE: 2022-07-25 - 7.24.22 - Family Working Together - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-25
-Title:   7.24.22 - Family Working Together - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZsF76nVZ2E8
+Date:     2022-07-25
+Title:    7.24.22 - Family Working Together - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZsF76nVZ2E8
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Curling Arena
-Location: Victoria
-Duration: BC, 98 min
+Location: Victoria, BC
+Duration: 98 min
 Source: livingwordbroadcast.org
 DateCode: 62-0727
 

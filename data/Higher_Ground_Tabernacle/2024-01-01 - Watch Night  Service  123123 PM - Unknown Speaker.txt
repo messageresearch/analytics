@@ -4,13 +4,14 @@ START OF FILE: 2024-01-01 - Watch Night  Service  123123 PM - Unknown Speaker.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-01
-Title:   Watch Night  Service | 12/31/23 PM
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oVGJKtlOiGg
+Date:     2024-01-01
+Title:    Watch Night  Service | 12/31/23 PM
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 4h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=oVGJKtlOiGg
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2019-02-03 - The Supergiant Star (L'Etoile Supergeante) - Bro Mer
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-03
-Title:   The Supergiant Star (L'Etoile Supergeante) - Bro Merryl Kinkonda (Higher Ground Tabernacle)
-Speaker: Merryl Kinkonda
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gzPq2-xQ3A8
+Date:     2019-02-03
+Title:    The Supergiant Star (L'Etoile Supergeante) - Bro Merryl Kinkonda (Higher Ground Tabernacle)
+Speaker:  Merryl Kinkonda
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=gzPq2-xQ3A8
 ========================================
 
 TRANSCRIPT

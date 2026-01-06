@@ -4,13 +4,14 @@ START OF FILE: 2024-06-24 - Mamelodi Church Singing - 23 06 2024 - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-24
-Title:   Mamelodi Church Singing - 23 06 2024
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KzbF7dA6qhk
+Date:     2024-06-24
+Title:    Mamelodi Church Singing - 23 06 2024
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Worship Service
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=KzbF7dA6qhk
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2014-04-13 - Think On These Things - 2014 04 06e - Doug Baker - D
 
 SERMON DETAILS
 ========================================
-Date:    2014-04-13
-Title:   Think On These Things - 2014 04 06e - Doug Baker
-Speaker: Doug Baker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=be_D-U094rk
+Date:     2014-04-13
+Title:    Think On These Things - 2014 04 06e - Doug Baker
+Speaker:  Doug Baker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=be_D-U094rk
 ========================================
 
 Description:

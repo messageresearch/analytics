@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Illinois Wesleyan University
-Location: Bloomington
-Duration: IL, 100 min
+Location: Bloomington, IL
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 61-0410
 

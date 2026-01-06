@@ -4,13 +4,14 @@ START OF FILE: 2022-04-03 - 4.3.22 - The Great Calm For Your Storm - Chris Cathe
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-03
-Title:   4.3.22 - The Great Calm For Your Storm - Chris Cathey
-Speaker: Chris Cathey
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v1dJnGHwCPE
+Date:     2022-04-03
+Title:    4.3.22 - The Great Calm For Your Storm - Chris Cathey
+Speaker:  Chris Cathey
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=v1dJnGHwCPE
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Foursquare Church
-Location: Phoenix
-Duration: AZ, 100 min
+Location: Phoenix, AZ
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 63-0113E
 

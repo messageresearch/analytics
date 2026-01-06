@@ -4,13 +4,14 @@ START OF FILE: 2025-07-20 - The Mount Carmel Experience  Pstr Timothy Matthew  S
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-20
-Title:   The Mount Carmel Experience // Pstr Timothy Matthew // Sun 20/07/25
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wZT5JGncTk8
+Date:     2025-07-20
+Title:    The Mount Carmel Experience // Pstr Timothy Matthew // Sun 20/07/25
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Song Special
+Duration: 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=wZT5JGncTk8
 ========================================
 
 TRANSCRIPT

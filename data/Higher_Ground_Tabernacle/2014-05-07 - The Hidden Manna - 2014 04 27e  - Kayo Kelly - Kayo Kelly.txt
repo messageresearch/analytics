@@ -4,13 +4,14 @@ START OF FILE: 2014-05-07 - The Hidden Manna - 2014 04 27e  - Kayo Kelly - Kayo 
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-07
-Title:   The Hidden Manna - 2014 04 27e  - Kayo Kelly
-Speaker: Kayo Kelly
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bj25FTMwOac
+Date:     2014-05-07
+Title:    The Hidden Manna - 2014 04 27e  - Kayo Kelly
+Speaker:  Kayo Kelly
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bj25FTMwOac
 ========================================
 
 Description:

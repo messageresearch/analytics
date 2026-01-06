@@ -4,13 +4,14 @@ START OF FILE: 2024-12-01 - I've Been Set Free Indeed - Sam Chesa - Sam Chesa.tx
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-01
-Title:   I've Been Set Free Indeed - Sam Chesa
-Speaker: Sam Chesa
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xCpsTfodJNM
+Date:     2024-12-01
+Title:    I've Been Set Free Indeed - Sam Chesa
+Speaker:  Sam Chesa
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=xCpsTfodJNM
 ========================================
 
 Description:

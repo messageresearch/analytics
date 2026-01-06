@@ -4,13 +4,14 @@ START OF FILE: 2025-01-09 - 1.8.25 - Little Is Sufficient If God Is In It - John
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-09
-Title:   1.8.25 - Little Is Sufficient If God Is In It - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=e58vjpMxeEc
+Date:     2025-01-09
+Title:    1.8.25 - Little Is Sufficient If God Is In It - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=e58vjpMxeEc
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Lake County Fairgrounds
-Location: Lakeport
-Duration: CA, 115 min
+Location: Lakeport, CA
+Duration: 115 min
 Source: livingwordbroadcast.org
 DateCode: 60-0724
 

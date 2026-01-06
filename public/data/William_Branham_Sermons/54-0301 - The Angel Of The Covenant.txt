@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Assembly Of God
-Location: Phoenix
-Duration: AZ, 85 min
+Location: Phoenix, AZ
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 54-0301
 

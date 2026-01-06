@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: St. Nicholas Arena
-Location: New York
-Duration: NY, 89 min
+Location: New York, NY
+Duration: 89 min
 Source: livingwordbroadcast.org
 DateCode: 51-0930
 

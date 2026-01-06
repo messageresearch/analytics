@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Kellogg Auditorium
-Location: Battle Creek
-Duration: MI, 56 min
+Location: Battle Creek, MI
+Duration: 56 min
 Source: livingwordbroadcast.org
 DateCode: 52-0817A
 

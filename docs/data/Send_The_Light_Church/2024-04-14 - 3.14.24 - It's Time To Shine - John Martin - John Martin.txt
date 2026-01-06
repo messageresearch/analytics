@@ -4,13 +4,14 @@ START OF FILE: 2024-04-14 - 3.14.24 - It's Time To Shine - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-14
-Title:   3.14.24 - It's Time To Shine - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=umz1pY4bScU
+Date:     2024-04-14
+Title:    3.14.24 - It's Time To Shine - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=umz1pY4bScU
 ========================================
 
 TRANSCRIPT

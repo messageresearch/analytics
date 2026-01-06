@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - United With Him Part 2 - 2014 07 06e - Pastor Isiah 
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   United With Him Part 2 - 2014 07 06e - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JizlBpU-KVc
+Date:     2014-08-02
+Title:    United With Him Part 2 - 2014 07 06e - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=JizlBpU-KVc
 ========================================
 
 Description:

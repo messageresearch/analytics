@@ -4,13 +4,14 @@ START OF FILE: 2019-07-17 - Bro Isiah Brooks  in an Intense Moment  07172019 eve
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-17
-Title:   Bro Isiah Brooks | in an Intense Moment | 07/17/2019 evening | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Gus2lJqyilE
+Date:     2019-07-17
+Title:    Bro Isiah Brooks | in an Intense Moment | 07/17/2019 evening | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=Gus2lJqyilE
 ========================================
 
 Description:

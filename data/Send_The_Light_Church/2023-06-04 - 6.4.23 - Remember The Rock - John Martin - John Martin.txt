@@ -4,13 +4,14 @@ START OF FILE: 2023-06-04 - 6.4.23 - Remember The Rock - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-04
-Title:   6.4.23 - Remember The Rock - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=obD0FpTD2gE
+Date:     2023-06-04
+Title:    6.4.23 - Remember The Rock - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=obD0FpTD2gE
 ========================================
 
 TRANSCRIPT

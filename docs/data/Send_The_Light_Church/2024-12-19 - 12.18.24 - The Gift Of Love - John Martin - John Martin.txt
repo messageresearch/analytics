@@ -4,13 +4,14 @@ START OF FILE: 2024-12-19 - 12.18.24 - The Gift Of Love - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-19
-Title:   12.18.24 - The Gift Of Love - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NOAwn0eJq1I
+Date:     2024-12-19
+Title:    12.18.24 - The Gift Of Love - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=NOAwn0eJq1I
 ========================================
 
 TRANSCRIPT

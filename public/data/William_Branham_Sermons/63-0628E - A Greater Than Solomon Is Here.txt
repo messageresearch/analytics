@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Associated Brotherhood Of Christians Campground
-Location: Hot Springs
-Duration: AR, 133 min
+Location: Hot Springs, AR
+Duration: 133 min
 Source: livingwordbroadcast.org
 DateCode: 63-0628E
 

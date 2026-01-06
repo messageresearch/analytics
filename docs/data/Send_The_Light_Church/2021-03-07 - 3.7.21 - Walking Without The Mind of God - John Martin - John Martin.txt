@@ -4,13 +4,14 @@ START OF FILE: 2021-03-07 - 3.7.21 - Walking Without The Mind of God - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-07
-Title:   3.7.21 - Walking Without The Mind of God - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9K14efBEzqU
+Date:     2021-03-07
+Title:    3.7.21 - Walking Without The Mind of God - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=9K14efBEzqU
 ========================================
 
 Description:

@@ -3,9 +3,9 @@ Title: Behold
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: I Stand At The Door And Knock
-Location: Textile Hall
-Duration: Greenville, SC, 70 min
+Venue: Textile Hall
+Location: Greenville, SC
+Duration: 70 min
 Source: livingwordbroadcast.org
 DateCode: 58-0617
 

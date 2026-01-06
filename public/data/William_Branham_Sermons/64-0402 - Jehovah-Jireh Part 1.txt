@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: 4-H Club Barn
-Location: Louisville
-Duration: MS, 76 min
+Location: Louisville, MS
+Duration: 76 min
 Source: livingwordbroadcast.org
 DateCode: 64-0402
 

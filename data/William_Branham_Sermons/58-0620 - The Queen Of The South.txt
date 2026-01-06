@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Textile Hall
-Location: Greenville
-Duration: SC, 104 min
+Location: Greenville, SC
+Duration: 104 min
 Source: livingwordbroadcast.org
 DateCode: 58-0620
 

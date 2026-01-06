@@ -4,13 +4,14 @@ START OF FILE: 2020-10-28 - Bro. Joseph Garcia - 10282020 - Joseph Garcia.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-28
-Title:   Bro. Joseph Garcia - 10/28/2020
-Speaker: Joseph Garcia
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dncFWnqco0o
+Date:     2020-10-28
+Title:    Bro. Joseph Garcia - 10/28/2020
+Speaker:  Joseph Garcia
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=dncFWnqco0o
 ========================================
 
 Description:

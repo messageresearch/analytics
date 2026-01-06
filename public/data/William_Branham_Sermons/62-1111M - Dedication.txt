@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Full Gospel Apostolic Church
-Location: Elizabethtown
-Duration: KY, 65 min
+Location: Elizabethtown, KY
+Duration: 65 min
 Source: livingwordbroadcast.org
 DateCode: 62-1111M
 

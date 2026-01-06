@@ -4,13 +4,14 @@ START OF FILE: 2024-07-04 - 7.3.24 - Job's Question - Bruce Jackowski - Bruce Ja
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-04
-Title:   7.3.24 - Job's Question - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RfdasW7wnS4
+Date:     2024-07-04
+Title:    7.3.24 - Job's Question - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=RfdasW7wnS4
 ========================================
 
 TRANSCRIPT

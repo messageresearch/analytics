@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - 1.28.24 - One Thing Desired - Aaron McGeary - Aaron 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   1.28.24 - One Thing Desired - Aaron McGeary
-Speaker: Aaron McGeary
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AfLrjyvuftM
+Date:     2024-01-28
+Title:    1.28.24 - One Thing Desired - Aaron McGeary
+Speaker:  Aaron McGeary
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=AfLrjyvuftM
 ========================================
 
 TRANSCRIPT

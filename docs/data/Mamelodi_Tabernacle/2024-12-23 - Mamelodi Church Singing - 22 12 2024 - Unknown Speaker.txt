@@ -4,13 +4,14 @@ START OF FILE: 2024-12-23 - Mamelodi Church Singing - 22 12 2024 - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-23
-Title:   Mamelodi Church Singing - 22 12 2024
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Tox9BSv5Tb0
+Date:     2024-12-23
+Title:    Mamelodi Church Singing - 22 12 2024
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Worship Service
+Duration: 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=Tox9BSv5Tb0
 ========================================
 
 TRANSCRIPT

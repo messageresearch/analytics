@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Spindale House Recreation Center
-Location: Spindale
-Duration: NC, 88 min
+Location: Spindale, NC
+Duration: 88 min
 Source: livingwordbroadcast.org
 DateCode: 56-0420
 

@@ -4,13 +4,14 @@ START OF FILE: 2021-01-03 - 1.03.21 - Creator of Our Future - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-03
-Title:   1.03.21 - Creator of Our Future - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RWiPJt6-PYY
+Date:     2021-01-03
+Title:    1.03.21 - Creator of Our Future - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=RWiPJt6-PYY
 ========================================
 
 Description:

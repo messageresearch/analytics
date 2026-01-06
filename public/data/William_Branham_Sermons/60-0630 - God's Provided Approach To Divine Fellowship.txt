@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Abundant Life Building
-Location: Tulsa
-Duration: OK, 57 min
+Location: Tulsa, OK
+Duration: 57 min
 Source: livingwordbroadcast.org
 DateCode: 60-0630
 

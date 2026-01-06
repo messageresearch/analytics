@@ -4,13 +4,14 @@ START OF FILE: 2024-01-11 - 1.10.24 - Love That Covers - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-11
-Title:   1.10.24 - Love That Covers - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tn4oNUVb3WM
+Date:     2024-01-11
+Title:    1.10.24 - Love That Covers - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=tn4oNUVb3WM
 ========================================
 
 TRANSCRIPT

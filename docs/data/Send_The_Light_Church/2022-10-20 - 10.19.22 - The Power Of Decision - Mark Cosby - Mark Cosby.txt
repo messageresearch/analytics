@@ -4,13 +4,14 @@ START OF FILE: 2022-10-20 - 10.19.22 - The Power Of Decision - Mark Cosby - Mark
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-20
-Title:   10.19.22 - The Power Of Decision - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hq-ut1Eh_9Y
+Date:     2022-10-20
+Title:    10.19.22 - The Power Of Decision - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=hq-ut1Eh_9Y
 ========================================
 
 TRANSCRIPT

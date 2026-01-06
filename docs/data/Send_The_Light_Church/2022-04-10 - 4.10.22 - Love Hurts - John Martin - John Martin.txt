@@ -4,13 +4,14 @@ START OF FILE: 2022-04-10 - 4.10.22 - Love Hurts - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-10
-Title:   4.10.22 - Love Hurts - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hszPWJh18SY
+Date:     2022-04-10
+Title:    4.10.22 - Love Hurts - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=hszPWJh18SY
 ========================================
 
 TRANSCRIPT

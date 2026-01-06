@@ -3,9 +3,9 @@ Title: Come
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Follow Me
-Location: House Meeting
-Duration: Tucson, AZ, 43 min
+Venue: House Meeting
+Location: Tucson, AZ
+Duration: 43 min
 Source: livingwordbroadcast.org
 DateCode: 63-0601
 

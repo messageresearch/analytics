@@ -3,9 +3,9 @@ Title: Go
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Wake Jesus
-Location: Grant Way Assembly Of God
-Duration: Tucson, AZ, 123 min
+Venue: Grant Way Assembly Of God
+Location: Tucson, AZ
+Duration: 123 min
 Source: livingwordbroadcast.org
 DateCode: 63-1103
 

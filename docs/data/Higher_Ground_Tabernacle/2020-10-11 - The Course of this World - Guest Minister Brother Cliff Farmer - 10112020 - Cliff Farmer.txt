@@ -4,13 +4,14 @@ START OF FILE: 2020-10-11 - The Course of this World - Guest Minister Brother Cl
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-11
-Title:   The Course of this World - Guest Minister Brother Cliff Farmer - 10/11/2020
-Speaker: Cliff Farmer
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SzFwdru7kLc
+Date:     2020-10-11
+Title:    The Course of this World - Guest Minister Brother Cliff Farmer - 10/11/2020
+Speaker:  Cliff Farmer
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=SzFwdru7kLc
 ========================================
 
 Description:

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Arnold Memorial School
-Location: Cleveland
-Duration: TN, 109 min
+Location: Cleveland, TN
+Duration: 109 min
 Source: livingwordbroadcast.org
 DateCode: 57-0106
 

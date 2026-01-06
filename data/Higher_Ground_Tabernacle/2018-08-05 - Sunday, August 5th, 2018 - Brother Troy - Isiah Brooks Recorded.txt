@@ -4,13 +4,14 @@ START OF FILE: 2018-08-05 - Sunday, August 5th, 2018 - Brother Troy - Isiah Broo
 
 SERMON DETAILS
 ========================================
-Date:    2018-08-05
-Title:   Sunday, August 5th, 2018 - Brother Troy
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XoTuL7RJDZw
+Date:     2018-08-05
+Title:    Sunday, August 5th, 2018 - Brother Troy
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=XoTuL7RJDZw
 ========================================
 
 Description:

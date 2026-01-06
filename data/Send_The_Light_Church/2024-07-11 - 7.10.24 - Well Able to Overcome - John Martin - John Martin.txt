@@ -4,13 +4,14 @@ START OF FILE: 2024-07-11 - 7.10.24 - Well Able to Overcome - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-11
-Title:   7.10.24 - Well Able to Overcome - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DOmpUVIWoQY
+Date:     2024-07-11
+Title:    7.10.24 - Well Able to Overcome - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=DOmpUVIWoQY
 ========================================
 
 TRANSCRIPT

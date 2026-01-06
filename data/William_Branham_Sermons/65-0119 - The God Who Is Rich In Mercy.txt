@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Westward Ho Hotel
-Location: Phoenix
-Duration: AZ, 89 min
+Location: Phoenix, AZ
+Duration: 89 min
 Source: livingwordbroadcast.org
 DateCode: 65-0119
 

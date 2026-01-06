@@ -4,13 +4,14 @@ START OF FILE: 2025-11-02 - 2025.11.02 - Comfort One Another - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-02
-Title:   2025.11.02 - Comfort One Another
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kepiZMDdbzE
+Date:     2025-11-02
+Title:    2025.11.02 - Comfort One Another
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=kepiZMDdbzE
 ========================================
 
 TRANSCRIPT

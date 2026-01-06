@@ -4,13 +4,14 @@ START OF FILE: 2025-04-17 - 4.16.25 - Exercising Trust- John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-17
-Title:   4.16.25 - Exercising Trust- John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HV7GJYNv6kY
+Date:     2025-04-17
+Title:    4.16.25 - Exercising Trust- John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=HV7GJYNv6kY
 ========================================
 
 TRANSCRIPT

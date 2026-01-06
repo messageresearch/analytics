@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tifton Junior High School
-Location: Tifton
-Duration: GA, 85 min
+Location: Tifton, GA
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 62-0319
 

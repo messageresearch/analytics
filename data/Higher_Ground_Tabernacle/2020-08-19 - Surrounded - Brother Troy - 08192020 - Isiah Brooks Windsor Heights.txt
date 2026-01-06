@@ -4,13 +4,14 @@ START OF FILE: 2020-08-19 - Surrounded - Brother Troy - 08192020 - Isiah Brooks 
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-19
-Title:   Surrounded - Brother Troy - 08/19/2020
-Speaker: Isiah Brooks Windsor Heights
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UkXHNR8-a58
+Date:     2020-08-19
+Title:    Surrounded - Brother Troy - 08/19/2020
+Speaker:  Isiah Brooks Windsor Heights
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=UkXHNR8-a58
 ========================================
 
 Description:

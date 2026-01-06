@@ -4,13 +4,14 @@ START OF FILE: 2022-11-12 - 11-12-2022- The Two Beginnings - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-12
-Title:   11-12-2022- The Two Beginnings
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3FInDf3gQrc
+Date:     2022-11-12
+Title:    11-12-2022- The Two Beginnings
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=3FInDf3gQrc
 ========================================
 
 Description:

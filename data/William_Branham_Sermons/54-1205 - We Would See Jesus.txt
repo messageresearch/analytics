@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Faith Tabernacle
-Location: Binghamton
-Duration: NY, 90 min
+Location: Binghamton, NY
+Duration: 90 min
 Source: livingwordbroadcast.org
 DateCode: 54-1205
 

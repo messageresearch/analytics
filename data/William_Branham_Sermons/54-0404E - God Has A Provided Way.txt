@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Memorial Auditorium
-Location: Louisville
-Duration: KY, 113 min
+Location: Louisville, KY
+Duration: 113 min
 Source: livingwordbroadcast.org
 DateCode: 54-0404E
 

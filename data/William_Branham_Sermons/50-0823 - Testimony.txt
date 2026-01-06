@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tent Meeting
-Location: Cleveland
-Duration: OH, 78 min
+Location: Cleveland, OH
+Duration: 78 min
 Source: livingwordbroadcast.org
 DateCode: 50-0823
 

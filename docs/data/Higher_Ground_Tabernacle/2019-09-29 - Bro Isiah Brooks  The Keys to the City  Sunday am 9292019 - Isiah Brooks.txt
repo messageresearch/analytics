@@ -4,13 +4,14 @@ START OF FILE: 2019-09-29 - Bro Isiah Brooks  The Keys to the City  Sunday am 92
 
 SERMON DETAILS
 ========================================
-Date:    2019-09-29
-Title:   Bro Isiah Brooks | The Keys to the City | Sunday am 9/29/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bbj9BS4kAas
+Date:     2019-09-29
+Title:    Bro Isiah Brooks | The Keys to the City | Sunday am 9/29/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bbj9BS4kAas
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-03 - 8.3.25 - The Power Of Encouragement - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-03
-Title:   8.3.25 - The Power Of Encouragement - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lJC1Oc9yIww
+Date:     2025-08-03
+Title:    8.3.25 - The Power Of Encouragement - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=lJC1Oc9yIww
 ========================================
 
 TRANSCRIPT

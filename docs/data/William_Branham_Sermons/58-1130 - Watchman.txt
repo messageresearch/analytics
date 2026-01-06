@@ -3,9 +3,9 @@ Title: Watchman
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: What Of The Night?
-Location: Branham Tabernacle
-Duration: Jeffersonville, IN, 100 min
+Venue: Branham Tabernacle
+Location: Jeffersonville, IN
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 58-1130
 

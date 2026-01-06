@@ -4,13 +4,14 @@ START OF FILE: 2020-06-28 - 6.28.20 - Watch For Weeds In Your Garden - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-28
-Title:   6.28.20 - Watch For Weeds In Your Garden - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ne-YjVTcbKY
+Date:     2020-06-28
+Title:    6.28.20 - Watch For Weeds In Your Garden - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=ne-YjVTcbKY
 ========================================
 
 TRANSCRIPT

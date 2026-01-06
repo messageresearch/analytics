@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: American Legion Hall
-Location: Beaumont
-Duration: TX, 20 min
+Location: Beaumont, TX
+Duration: 20 min
 Source: livingwordbroadcast.org
 DateCode: 61-0120
 

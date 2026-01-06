@@ -4,13 +4,14 @@ START OF FILE: 2019-05-05 - Fear not, Only Believe (Part 2)-  Bro Matthew McGear
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-05
-Title:   Fear not, Only Believe (Part 2)-  Bro Matthew McGeary - Youth Meeting (Higher Ground Tabernacle)
-Speaker: Matthew McGeary
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T4C9O3JPktw
+Date:     2019-05-05
+Title:    Fear not, Only Believe (Part 2)-  Bro Matthew McGeary - Youth Meeting (Higher Ground Tabernacle)
+Speaker:  Matthew McGeary
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Youth Service
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=T4C9O3JPktw
 ========================================
 
 TRANSCRIPT

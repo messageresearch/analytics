@@ -3,9 +3,9 @@ Title: Sirs
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: Edmonton Arena
-Duration: Edmonton, AB, 97 min
+Venue: Edmonton Arena
+Location: Edmonton, AB
+Duration: 97 min
 Source: livingwordbroadcast.org
 DateCode: 57-0804E
 

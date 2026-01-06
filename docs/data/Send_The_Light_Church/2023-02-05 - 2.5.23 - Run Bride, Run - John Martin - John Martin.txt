@@ -4,13 +4,14 @@ START OF FILE: 2023-02-05 - 2.5.23 - Run Bride, Run - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-05
-Title:   2.5.23 - Run Bride, Run - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CeG3WpJOo-U
+Date:     2023-02-05
+Title:    2.5.23 - Run Bride, Run - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=CeG3WpJOo-U
 ========================================
 
 TRANSCRIPT

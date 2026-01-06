@@ -4,13 +4,14 @@ START OF FILE: 2025-08-14 - 8.13.25. - Higher God - John Martin - John Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-14
-Title:   8.13.25. - Higher God - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6LOEHuAN_DQ
+Date:     2025-08-14
+Title:    8.13.25. - Higher God - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=6LOEHuAN_DQ
 ========================================
 
 TRANSCRIPT

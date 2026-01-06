@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Park View Junior High School
-Location: Jeffersonville
-Duration: IN, 109 min
+Location: Jeffersonville, IN
+Duration: 109 min
 Source: livingwordbroadcast.org
 DateCode: 65-0221E
 

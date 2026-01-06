@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Unknown
-Location: Des Moines
-Duration: IA, 48 min
+Location: Des Moines, IA
+Duration: 48 min
 Source: livingwordbroadcast.org
 DateCode: 54-0619
 

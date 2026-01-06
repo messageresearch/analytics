@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Civic Center
-Location: Hammond
-Duration: IN, 146 min
+Location: Hammond, IN
+Duration: 146 min
 Source: livingwordbroadcast.org
 DateCode: 52-0720A
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Abundant Life Center
-Location: Charlotte
-Duration: NC, 115 min
+Location: Charlotte, NC
+Duration: 115 min
 Source: livingwordbroadcast.org
 DateCode: 56-0427
 

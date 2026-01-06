@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - 9.23.23 - The Terry Tidwell Family Concert - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   9.23.23 - The Terry Tidwell Family Concert
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EXSpcdrsjoc
+Date:     2023-09-24
+Title:    9.23.23 - The Terry Tidwell Family Concert
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=EXSpcdrsjoc
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Memorial Field House
-Location: Tacoma
-Duration: WA, 110 min
+Location: Tacoma, WA
+Duration: 110 min
 Source: livingwordbroadcast.org
 DateCode: 57-0728
 

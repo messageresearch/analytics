@@ -4,13 +4,14 @@ START OF FILE: 2019-10-06 - Bro Isiah Brooks    Sunday evening 10062019 - Isiah 
 
 SERMON DETAILS
 ========================================
-Date:    2019-10-06
-Title:   Bro Isiah Brooks |  | Sunday evening 10/06/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t3WNYlJYbyY
+Date:     2019-10-06
+Title:    Bro Isiah Brooks |  | Sunday evening 10/06/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=t3WNYlJYbyY
 ========================================
 
 Description:

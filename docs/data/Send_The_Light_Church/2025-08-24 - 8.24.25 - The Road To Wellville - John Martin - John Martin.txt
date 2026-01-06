@@ -4,13 +4,14 @@ START OF FILE: 2025-08-24 - 8.24.25 - The Road To Wellville - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-24
-Title:   8.24.25 - The Road To Wellville - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CCRmqfsdV_Q
+Date:     2025-08-24
+Title:    8.24.25 - The Road To Wellville - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=CCRmqfsdV_Q
 ========================================
 
 TRANSCRIPT

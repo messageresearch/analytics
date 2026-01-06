@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: The Supper Club
-Location: Baton Rouge
-Duration: LA, 51 min
+Location: Baton Rouge, LA
+Duration: 51 min
 Source: livingwordbroadcast.org
 DateCode: 64-0321B
 

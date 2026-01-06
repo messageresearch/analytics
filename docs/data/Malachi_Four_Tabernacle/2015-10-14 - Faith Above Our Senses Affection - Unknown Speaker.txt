@@ -4,13 +4,14 @@ START OF FILE: 2015-10-14 - Faith Above Our Senses Affection - Unknown Speaker.t
 
 SERMON DETAILS
 ========================================
-Date:    2015-10-14
-Title:   Faith Above Our Senses: Affection
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BWu4E1rpi8A
+Date:     2015-10-14
+Title:    Faith Above Our Senses: Affection
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=BWu4E1rpi8A
 ========================================
 
 TRANSCRIPT

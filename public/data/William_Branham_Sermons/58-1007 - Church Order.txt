@@ -3,8 +3,8 @@ Title: Church Order
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Jeffersonville
-Location: IN
+Venue: Unknown
+Location: Jeffersonville, IN
 Duration: 30 min
 Source: livingwordbroadcast.org
 DateCode: 58-1007

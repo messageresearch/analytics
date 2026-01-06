@@ -4,13 +4,14 @@ START OF FILE: 2019-12-22 - Bro Isaih Brooks     Sunday pm 12222019 - Isaih Broo
 
 SERMON DETAILS
 ========================================
-Date:    2019-12-22
-Title:   Bro Isaih Brooks |   | Sunday pm 12/22/2019
-Speaker: Isaih Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=joDvYQFn2ZU
+Date:     2019-12-22
+Title:    Bro Isaih Brooks |   | Sunday pm 12/22/2019
+Speaker:  Isaih Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=joDvYQFn2ZU
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - The Vision - 2014 03 16m - David Belton - David Belt
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   The Vision - 2014 03 16m - David Belton
-Speaker: David Belton
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=axG-e-fqiG0
+Date:     2014-03-17
+Title:    The Vision - 2014 03 16m - David Belton
+Speaker:  David Belton
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=axG-e-fqiG0
 ========================================
 
 Description:

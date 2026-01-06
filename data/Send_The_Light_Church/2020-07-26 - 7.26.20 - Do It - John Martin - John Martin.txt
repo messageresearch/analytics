@@ -4,13 +4,14 @@ START OF FILE: 2020-07-26 - 7.26.20 - Do It - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-26
-Title:   7.26.20 - Do It - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=K2iqUdGRP8Q
+Date:     2020-07-26
+Title:    7.26.20 - Do It - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=K2iqUdGRP8Q
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Faith Tabernacle
-Location: Phoenix
-Duration: AZ, 99 min
+Location: Phoenix, AZ
+Duration: 99 min
 Source: livingwordbroadcast.org
 DateCode: 62-0121M
 

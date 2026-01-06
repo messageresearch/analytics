@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Clifton's Cafeteria
-Location: Los Angeles
-Duration: CA, 49 min
+Location: Los Angeles, CA
+Duration: 49 min
 Source: livingwordbroadcast.org
 DateCode: 65-0424
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Old Pisgah Mission
-Location: Los Angeles
-Duration: CA, 82 min
+Location: Los Angeles, CA
+Duration: 82 min
 Source: livingwordbroadcast.org
 DateCode: 59-0415A
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Life Tabernacle
-Location: Shreveport
-Duration: LA, 66 min
+Location: Shreveport, LA
+Duration: 66 min
 Source: livingwordbroadcast.org
 DateCode: 63-1128M
 

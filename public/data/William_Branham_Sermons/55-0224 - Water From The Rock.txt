@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Shriner Temple
-Location: Phoenix
-Duration: AZ, 65 min
+Location: Phoenix, AZ
+Duration: 65 min
 Source: livingwordbroadcast.org
 DateCode: 55-0224
 

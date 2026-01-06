@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - 10.30.22 - My Closest Walk - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   10.30.22 - My Closest Walk - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Kt5IKpsBWTE
+Date:     2022-10-30
+Title:    10.30.22 - My Closest Walk - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Kt5IKpsBWTE
 ========================================
 
 TRANSCRIPT

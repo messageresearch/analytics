@@ -4,13 +4,14 @@ START OF FILE: 2020-06-01 - 5.31.20P - Go Meet Jesus - Darrell Ward - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-01
-Title:   5.31.20P - Go Meet Jesus - Darrell Ward
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bA_9HIaQ48Q
+Date:     2020-06-01
+Title:    5.31.20P - Go Meet Jesus - Darrell Ward
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=bA_9HIaQ48Q
 ========================================
 
 TRANSCRIPT

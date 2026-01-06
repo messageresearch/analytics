@@ -4,13 +4,14 @@ START OF FILE: 2025-02-03 - Mamelodi Church Singing - 02 Feb 2025 - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-03
-Title:   Mamelodi Church Singing - 02 Feb 2025
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qqUrnybmkis
+Date:     2025-02-03
+Title:    Mamelodi Church Singing - 02 Feb 2025
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Worship Service
+Duration: 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=qqUrnybmkis
 ========================================
 
 TRANSCRIPT

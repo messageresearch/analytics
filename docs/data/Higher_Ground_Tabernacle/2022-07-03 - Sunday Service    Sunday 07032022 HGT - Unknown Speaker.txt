@@ -4,13 +4,14 @@ START OF FILE: 2022-07-03 - Sunday Service    Sunday 07032022 HGT - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-03
-Title:   Sunday Service |  | Sunday 07/03/2022 HGT
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IFBHz-Aokns
+Date:     2022-07-03
+Title:    Sunday Service |  | Sunday 07/03/2022 HGT
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=IFBHz-Aokns
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2024-08-04 - 8.4.24 - Our Guide - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-04
-Title:   8.4.24 - Our Guide - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vmPePEN4z1I
+Date:     2024-08-04
+Title:    8.4.24 - Our Guide - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=vmPePEN4z1I
 ========================================
 
 TRANSCRIPT

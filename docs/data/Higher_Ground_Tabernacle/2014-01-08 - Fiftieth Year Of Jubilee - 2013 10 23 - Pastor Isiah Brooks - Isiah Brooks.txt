@@ -4,13 +4,14 @@ START OF FILE: 2014-01-08 - Fiftieth Year Of Jubilee - 2013 10 23 - Pastor Isiah
 
 SERMON DETAILS
 ========================================
-Date:    2014-01-08
-Title:   Fiftieth Year Of Jubilee - 2013 10 23 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=g3ec8RsZM8M
+Date:     2014-01-08
+Title:    Fiftieth Year Of Jubilee - 2013 10 23 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=g3ec8RsZM8M
 ========================================
 
 Description:

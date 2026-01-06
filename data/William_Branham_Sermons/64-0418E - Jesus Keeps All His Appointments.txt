@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Mckay Auditorium
-Location: Tampa
-Duration: FL, 107 min
+Location: Tampa, FL
+Duration: 107 min
 Source: livingwordbroadcast.org
 DateCode: 64-0418E
 

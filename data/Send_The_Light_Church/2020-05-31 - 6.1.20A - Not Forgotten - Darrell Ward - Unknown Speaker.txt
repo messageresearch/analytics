@@ -4,13 +4,14 @@ START OF FILE: 2020-05-31 - 6.1.20A - Not Forgotten - Darrell Ward - Unknown Spe
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-31
-Title:   6.1.20A - Not Forgotten - Darrell Ward
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lIc6NU8j4Ks
+Date:     2020-05-31
+Title:    6.1.20A - Not Forgotten - Darrell Ward
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=lIc6NU8j4Ks
 ========================================
 
 TRANSCRIPT

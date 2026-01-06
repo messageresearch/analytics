@@ -4,13 +4,14 @@ START OF FILE: 2025-04-21 - Easter Service - Sunday 42025 - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-21
-Title:   Easter Service - Sunday 4/20/25
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZdT2wviaG1A
+Date:     2025-04-21
+Title:    Easter Service - Sunday 4/20/25
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Easter Program
+Duration: 3h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZdT2wviaG1A
 ========================================
 
 TRANSCRIPT

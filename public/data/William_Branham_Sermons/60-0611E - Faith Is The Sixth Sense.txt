@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Miami Valley Chautauqua Campgrounds
-Location: Chautauqua
-Duration: OH, 72 min
+Location: Chautauqua, OH
+Duration: 72 min
 Source: livingwordbroadcast.org
 DateCode: 60-0611E
 

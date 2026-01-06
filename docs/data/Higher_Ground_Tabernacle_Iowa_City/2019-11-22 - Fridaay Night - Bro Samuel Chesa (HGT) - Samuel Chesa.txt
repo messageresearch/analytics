@@ -4,13 +4,14 @@ START OF FILE: 2019-11-22 - Fridaay Night - Bro Samuel Chesa (HGT) - Samuel Ches
 
 SERMON DETAILS
 ========================================
-Date:    2019-11-22
-Title:   Fridaay Night - Bro Samuel Chesa (HGT)
-Speaker: Samuel Chesa
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=MOj9Dt1pKAM
+Date:     2019-11-22
+Title:    Fridaay Night - Bro Samuel Chesa (HGT)
+Speaker:  Samuel Chesa
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Short Service
+Duration: 22m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=MOj9Dt1pKAM
 ========================================
 
 TRANSCRIPT

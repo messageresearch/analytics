@@ -4,13 +4,14 @@ START OF FILE: 2019-10-06 - The Germ of Life (Le Germe de Vie) - Bro Williams Ka
 
 SERMON DETAILS
 ========================================
-Date:    2019-10-06
-Title:   The Germ of Life (Le Germe de Vie) - Bro Williams Kaniki (Visiting Minister) (HGT)
-Speaker: Williams Kaniki
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UTA4syiUXAg
+Date:     2019-10-06
+Title:    The Germ of Life (Le Germe de Vie) - Bro Williams Kaniki (Visiting Minister) (HGT)
+Speaker:  Williams Kaniki
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 3h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=UTA4syiUXAg
 ========================================
 
 TRANSCRIPT

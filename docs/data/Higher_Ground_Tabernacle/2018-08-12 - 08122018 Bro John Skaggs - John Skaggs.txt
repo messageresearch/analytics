@@ -4,13 +4,14 @@ START OF FILE: 2018-08-12 - 08122018 Bro John Skaggs - John Skaggs.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-08-12
-Title:   08/12/2018 Bro John Skaggs
-Speaker: John Skaggs
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2WKAwVvEvAw
+Date:     2018-08-12
+Title:    08/12/2018 Bro John Skaggs
+Speaker:  John Skaggs
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=2WKAwVvEvAw
 ========================================
 
 Description:

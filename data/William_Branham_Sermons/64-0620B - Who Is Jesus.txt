@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Holiday Inn
-Location: Topeka
-Duration: KS, 66 min
+Location: Topeka, KS
+Duration: 66 min
 Source: livingwordbroadcast.org
 DateCode: 64-0620B
 

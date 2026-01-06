@@ -3,9 +3,9 @@ Title: Sirs
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: Soul's Harbor Temple
-Duration: Dallas, TX, 69 min
+Venue: Soul's Harbor Temple
+Location: Dallas, TX
+Duration: 69 min
 Source: livingwordbroadcast.org
 DateCode: 64-0304
 

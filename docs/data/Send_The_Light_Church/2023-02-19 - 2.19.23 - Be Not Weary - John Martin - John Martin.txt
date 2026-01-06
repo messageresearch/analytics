@@ -4,13 +4,14 @@ START OF FILE: 2023-02-19 - 2.19.23 - Be Not Weary - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-19
-Title:   2.19.23 - Be Not Weary - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zDxdNdtFgic
+Date:     2023-02-19
+Title:    2.19.23 - Be Not Weary - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=zDxdNdtFgic
 ========================================
 
 TRANSCRIPT

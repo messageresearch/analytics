@@ -4,13 +4,14 @@ START OF FILE: 2025-08-03 - 2025.08.03  - Where Are We The Bride. - Unknown Spea
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-03
-Title:   2025.08.03  - Where Are We The Bride.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bFJ0yvWNlwA
+Date:     2025-08-03
+Title:    2025.08.03  - Where Are We The Bride.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=bFJ0yvWNlwA
 ========================================
 
 Description:

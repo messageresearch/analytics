@@ -4,13 +4,14 @@ START OF FILE: 2020-09-06 - Sunday Morning Service. - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-06
-Title:   Sunday Morning Service.
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=rUgfhRyNFhY
+Date:     2020-09-06
+Title:    Sunday Morning Service.
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Song Special
+Duration: 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=rUgfhRyNFhY
 ========================================
 
 TRANSCRIPT

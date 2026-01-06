@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - Emotions Of Christ - 2014 01 12e - Gabe Smith - Gabe
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   Emotions Of Christ - 2014 01 12e - Gabe Smith
-Speaker: Gabe Smith
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=071enLx1z7s
+Date:     2014-03-17
+Title:    Emotions Of Christ - 2014 01 12e - Gabe Smith
+Speaker:  Gabe Smith
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=071enLx1z7s
 ========================================
 
 Description:

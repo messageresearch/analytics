@@ -4,13 +4,14 @@ START OF FILE: 2019-03-24 - Bro Troy  The Return to Righteousness  032419 Servic
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-24
-Title:   Bro Troy | The Return to Righteousness | 03/24/19 Service | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f0o5K0auezI
+Date:     2019-03-24
+Title:    Bro Troy | The Return to Righteousness | 03/24/19 Service | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=f0o5K0auezI
 ========================================
 
 Description:

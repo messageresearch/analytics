@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Erie
-Duration: PA, 111 min
+Location: Erie, PA
+Duration: 111 min
 Source: livingwordbroadcast.org
 DateCode: 51-0729E
 

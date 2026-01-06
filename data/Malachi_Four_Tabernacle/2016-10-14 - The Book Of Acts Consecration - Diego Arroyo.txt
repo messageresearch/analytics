@@ -4,13 +4,14 @@ START OF FILE: 2016-10-14 - The Book Of Acts Consecration - Diego Arroyo.txt
 
 SERMON DETAILS
 ========================================
-Date:    2016-10-14
-Title:   The Book Of Acts: Consecration
-Speaker: Diego Arroyo
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wc_0Neo5KQM
+Date:     2016-10-14
+Title:    The Book Of Acts: Consecration
+Speaker:  Diego Arroyo
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=wc_0Neo5KQM
 ========================================
 
 Description:

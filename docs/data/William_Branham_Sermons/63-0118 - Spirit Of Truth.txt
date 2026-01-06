@@ -4,7 +4,7 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Church Of All Nations
-Location: Phoenix AZ
+Location: Phoenix, AZ
 Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 63-0118

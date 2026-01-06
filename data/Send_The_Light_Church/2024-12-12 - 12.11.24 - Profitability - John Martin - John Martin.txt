@@ -4,13 +4,14 @@ START OF FILE: 2024-12-12 - 12.11.24 - Profitability - John Martin - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-12
-Title:   12.11.24 - Profitability - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dVow5k7jMO0
+Date:     2024-12-12
+Title:    12.11.24 - Profitability - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=dVow5k7jMO0
 ========================================
 
 TRANSCRIPT

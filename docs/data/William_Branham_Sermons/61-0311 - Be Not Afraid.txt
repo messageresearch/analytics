@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Lyric Building
-Location: Richmond
-Duration: VA, 115 min
+Location: Richmond, VA
+Duration: 115 min
 Source: livingwordbroadcast.org
 DateCode: 61-0311
 

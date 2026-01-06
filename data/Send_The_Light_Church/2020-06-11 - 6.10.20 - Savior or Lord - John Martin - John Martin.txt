@@ -4,13 +4,14 @@ START OF FILE: 2020-06-11 - 6.10.20 - Savior or Lord - John Martin - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-11
-Title:   6.10.20 - Savior or Lord? - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uMNZYxK7eJw
+Date:     2020-06-11
+Title:    6.10.20 - Savior or Lord? - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=uMNZYxK7eJw
 ========================================
 
 TRANSCRIPT

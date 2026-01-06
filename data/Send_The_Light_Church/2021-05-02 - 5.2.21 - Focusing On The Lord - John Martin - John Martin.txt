@@ -4,13 +4,14 @@ START OF FILE: 2021-05-02 - 5.2.21 - Focusing On The Lord - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-02
-Title:   5.2.21 - Focusing On The Lord - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZaQiKH-WwOY
+Date:     2021-05-02
+Title:    5.2.21 - Focusing On The Lord - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZaQiKH-WwOY
 ========================================
 
 Description:

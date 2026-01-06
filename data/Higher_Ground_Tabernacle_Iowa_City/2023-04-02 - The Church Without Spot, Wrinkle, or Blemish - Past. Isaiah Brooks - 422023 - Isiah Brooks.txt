@@ -4,13 +4,14 @@ START OF FILE: 2023-04-02 - The Church Without Spot, Wrinkle, or Blemish - Past.
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-02
-Title:   The Church Without Spot, Wrinkle, or Blemish - Past. Isaiah Brooks - 4/2/2023
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=86zT8V8W5uk
+Date:     2023-04-02
+Title:    The Church Without Spot, Wrinkle, or Blemish - Past. Isaiah Brooks - 4/2/2023
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=86zT8V8W5uk
 ========================================
 
 Description:

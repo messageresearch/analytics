@@ -4,13 +4,14 @@ START OF FILE: 2021-12-23 - 12.22.21 - Baptisms - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-23
-Title:   12.22.21 - Baptisms
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3ENd5Ipf34E
+Date:     2021-12-23
+Title:    12.22.21 - Baptisms
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Baptism Service
+Duration: 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=3ENd5Ipf34E
 ========================================
 
 TRANSCRIPT

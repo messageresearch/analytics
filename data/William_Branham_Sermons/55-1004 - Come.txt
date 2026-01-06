@@ -3,9 +3,9 @@ Title: Come
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Let Us Reason Together
-Location: Lane Tech High School
-Duration: Chicago, IL, 89 min
+Venue: Lane Tech High School
+Location: Chicago, IL
+Duration: 89 min
 Source: livingwordbroadcast.org
 DateCode: 55-1004
 

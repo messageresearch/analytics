@@ -4,13 +4,14 @@ START OF FILE: 2025-04-18 - 2025.04.18 - Let us look apast the curtain of time. 
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-18
-Title:   2025.04.18 - Let us look apast the curtain of time.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TSVYZ0i_LMA
+Date:     2025-04-18
+Title:    2025.04.18 - Let us look apast the curtain of time.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 4h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=TSVYZ0i_LMA
 ========================================
 
 TRANSCRIPT

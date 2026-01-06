@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Philadelphia Church
-Location: Chicago
-Duration: IL, 104 min
+Location: Chicago, IL
+Duration: 104 min
 Source: livingwordbroadcast.org
 DateCode: 59-0612
 

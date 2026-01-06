@@ -3,9 +3,9 @@ Title: Go
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Tell
-Location: Branham Tabernacle
-Duration: Jeffersonville, IN, 129 min
+Venue: Branham Tabernacle
+Location: Jeffersonville, IN
+Duration: 129 min
 Source: livingwordbroadcast.org
 DateCode: 60-0417M
 

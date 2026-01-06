@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tent Meeting
-Location: Dallas
-Duration: TX, 56 min
+Location: Dallas, TX
+Duration: 56 min
 Source: livingwordbroadcast.org
 DateCode: 58-0610
 

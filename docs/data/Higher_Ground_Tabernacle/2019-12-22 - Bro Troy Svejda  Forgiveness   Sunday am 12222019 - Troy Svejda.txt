@@ -4,13 +4,14 @@ START OF FILE: 2019-12-22 - Bro Troy Svejda  Forgiveness   Sunday am 12222019 - 
 
 SERMON DETAILS
 ========================================
-Date:    2019-12-22
-Title:   Bro Troy Svejda | Forgiveness  | Sunday am 12/22/2019
-Speaker: Troy Svejda
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=msiGpu8TDtg
+Date:     2019-12-22
+Title:    Bro Troy Svejda | Forgiveness  | Sunday am 12/22/2019
+Speaker:  Troy Svejda
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=msiGpu8TDtg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - Supreme Faith  Minister SamBlessing Chesa  Higher Gr
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   Supreme Faith | Minister SamBlessing Chesa | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wMcmmHek5ig
+Date:     2022-04-24
+Title:    Supreme Faith | Minister SamBlessing Chesa | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=wMcmmHek5ig
 ========================================
 
 TRANSCRIPT

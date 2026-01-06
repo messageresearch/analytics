@@ -4,13 +4,14 @@ START OF FILE: 2023-08-03 - 8.2.23 - Christ In You - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-03
-Title:   8.2.23 - Christ In You - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Oh1mk7Lro78
+Date:     2023-08-03
+Title:    8.2.23 - Christ In You - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=Oh1mk7Lro78
 ========================================
 
 TRANSCRIPT

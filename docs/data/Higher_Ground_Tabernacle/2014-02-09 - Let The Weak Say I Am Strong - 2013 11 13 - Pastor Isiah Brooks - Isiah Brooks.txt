@@ -4,13 +4,14 @@ START OF FILE: 2014-02-09 - Let The Weak Say I Am Strong - 2013 11 13 - Pastor I
 
 SERMON DETAILS
 ========================================
-Date:    2014-02-09
-Title:   Let The Weak Say I Am Strong - 2013 11 13 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=A8r--u8H2Lw
+Date:     2014-02-09
+Title:    Let The Weak Say I Am Strong - 2013 11 13 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=A8r--u8H2Lw
 ========================================
 
 Description:

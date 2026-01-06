@@ -3,9 +3,9 @@ Title: Go
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Tell My Disciples
-Location: Branham Tabernacle
-Duration: Jeffersonville, IN, 86 min
+Venue: Branham Tabernacle
+Location: Jeffersonville, IN
+Duration: 86 min
 Source: livingwordbroadcast.org
 DateCode: 53-0405S
 

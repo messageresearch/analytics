@@ -4,13 +4,14 @@ START OF FILE: 2025-05-23 - 2025.05.23 - Memorial Service of Sister Sharon  Setl
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-23
-Title:   2025.05.23 - Memorial Service of Sister Sharon  Setlau
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=yqSwsThvzWU
+Date:     2025-05-23
+Title:    2025.05.23 - Memorial Service of Sister Sharon  Setlau
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 2h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=yqSwsThvzWU
 ========================================
 
 TRANSCRIPT

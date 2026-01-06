@@ -4,13 +4,14 @@ START OF FILE: 2014-01-08 - Contending For The Faith - 2013 10 30 - Pastor Isiah
 
 SERMON DETAILS
 ========================================
-Date:    2014-01-08
-Title:   Contending For The Faith - 2013 10 30 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4xvsboNBRA0
+Date:     2014-01-08
+Title:    Contending For The Faith - 2013 10 30 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=4xvsboNBRA0
 ========================================
 
 Description:

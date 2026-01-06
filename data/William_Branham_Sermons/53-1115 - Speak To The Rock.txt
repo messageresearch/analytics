@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Owensboro
-Duration: KY, 85 min
+Location: Owensboro, KY
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 53-1115
 

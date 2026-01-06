@@ -4,13 +4,14 @@ START OF FILE: 2021-01-17 - 1.17.21 - Behaving in God's House - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-17
-Title:   1.17.21 - Behaving in God's House - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-H4JvoOQG3U
+Date:     2021-01-17
+Title:    1.17.21 - Behaving in God's House - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=-H4JvoOQG3U
 ========================================
 
 Description:

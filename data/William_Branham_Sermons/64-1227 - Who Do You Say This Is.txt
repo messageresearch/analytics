@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Jesus Name Church
-Location: Phoenix
-Duration: AZ, 57 min
+Location: Phoenix, AZ
+Duration: 57 min
 Source: livingwordbroadcast.org
 DateCode: 64-1227
 

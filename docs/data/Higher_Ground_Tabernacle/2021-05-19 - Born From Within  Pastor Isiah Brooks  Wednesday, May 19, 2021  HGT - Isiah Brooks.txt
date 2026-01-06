@@ -4,13 +4,14 @@ START OF FILE: 2021-05-19 - Born From Within  Pastor Isiah Brooks  Wednesday, Ma
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-19
-Title:   Born From Within | Pastor Isiah Brooks | Wednesday, May 19, 2021 | HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LjbB0ElIGWM
+Date:     2021-05-19
+Title:    Born From Within | Pastor Isiah Brooks | Wednesday, May 19, 2021 | HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=LjbB0ElIGWM
 ========================================
 
 Description:

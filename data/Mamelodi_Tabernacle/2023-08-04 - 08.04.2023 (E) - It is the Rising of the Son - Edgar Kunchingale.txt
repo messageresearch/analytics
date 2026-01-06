@@ -4,13 +4,14 @@ START OF FILE: 2023-08-04 - 08.04.2023 (E) - It is the Rising of the Son - Edgar
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-04
-Title:   08.04.2023 (E) - It is the Rising of the Son
-Speaker: Edgar Kunchingale
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FyyL5WiEJ3o
+Date:     2023-08-04
+Title:    08.04.2023 (E) - It is the Rising of the Son
+Speaker:  Edgar Kunchingale
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=FyyL5WiEJ3o
 ========================================
 
 Description:

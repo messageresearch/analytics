@@ -4,13 +4,14 @@ START OF FILE: 2015-08-10 - Joseph In Perfection The Masterpiece - Diego Arroyo.
 
 SERMON DETAILS
 ========================================
-Date:    2015-08-10
-Title:   Joseph In Perfection: The Masterpiece
-Speaker: Diego Arroyo
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4wt-FRxGkdg
+Date:     2015-08-10
+Title:    Joseph In Perfection: The Masterpiece
+Speaker:  Diego Arroyo
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=4wt-FRxGkdg
 ========================================
 
 Description:

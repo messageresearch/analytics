@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Stephen Mather High School
-Location: Chicago
-Duration: IL, 78 min
+Location: Chicago, IL
+Duration: 78 min
 Source: livingwordbroadcast.org
 DateCode: 62-0521
 

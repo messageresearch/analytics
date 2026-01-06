@@ -4,13 +4,14 @@ START OF FILE: 2019-02-27 - Bro Isiah Brooks  Escape To The City  22719  Higher 
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-27
-Title:   Bro Isiah Brooks | Escape To The City | 2/27/19 | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AF98UcU8u54
+Date:     2019-02-27
+Title:    Bro Isiah Brooks | Escape To The City | 2/27/19 | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=AF98UcU8u54
 ========================================
 
 Description:

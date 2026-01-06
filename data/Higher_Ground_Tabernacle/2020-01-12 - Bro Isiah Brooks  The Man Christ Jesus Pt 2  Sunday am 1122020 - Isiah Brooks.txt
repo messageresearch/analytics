@@ -4,13 +4,14 @@ START OF FILE: 2020-01-12 - Bro Isiah Brooks  The Man Christ Jesus Pt 2  Sunday 
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-12
-Title:   Bro Isiah Brooks | The Man Christ Jesus Pt 2 | Sunday am 1/12/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cgpOg0ArjFs
+Date:     2020-01-12
+Title:    Bro Isiah Brooks | The Man Christ Jesus Pt 2 | Sunday am 1/12/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=cgpOg0ArjFs
 ========================================
 
 Description:

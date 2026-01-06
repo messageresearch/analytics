@@ -4,13 +4,14 @@ START OF FILE: 2024-11-24 - 11.24.24 - Where Did Thanksgiving Go - John Martin -
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-24
-Title:   11.24.24 - Where Did Thanksgiving Go? - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PPgThd0gNng
+Date:     2024-11-24
+Title:    11.24.24 - Where Did Thanksgiving Go? - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Thanksgiving Service
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=PPgThd0gNng
 ========================================
 
 TRANSCRIPT

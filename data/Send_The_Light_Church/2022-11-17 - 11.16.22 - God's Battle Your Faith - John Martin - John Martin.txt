@@ -4,13 +4,14 @@ START OF FILE: 2022-11-17 - 11.16.22 - God's Battle Your Faith - John Martin - J
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-17
-Title:   11.16.22 - God's Battle: Your Faith - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=z6ciA8tdLmU
+Date:     2022-11-17
+Title:    11.16.22 - God's Battle: Your Faith - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=z6ciA8tdLmU
 ========================================
 
 TRANSCRIPT

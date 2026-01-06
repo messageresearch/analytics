@@ -4,13 +4,14 @@ START OF FILE: 2024-02-25 - 2.25.24 - Journey Into God's Thoughts - John Martin 
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-25
-Title:   2.25.24 - Journey Into God's Thoughts - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eeVd8ZkEj24
+Date:     2024-02-25
+Title:    2.25.24 - Journey Into God's Thoughts - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=eeVd8ZkEj24
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Salem
-Duration: OR, 113 min
+Location: Salem, OR
+Duration: 113 min
 Source: livingwordbroadcast.org
 DateCode: 62-0719E
 

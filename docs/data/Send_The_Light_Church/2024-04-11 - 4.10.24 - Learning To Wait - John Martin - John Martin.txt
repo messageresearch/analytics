@@ -4,13 +4,14 @@ START OF FILE: 2024-04-11 - 4.10.24 - Learning To Wait - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-11
-Title:   4.10.24 - Learning To Wait - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Kx4Xfya11dY
+Date:     2024-04-11
+Title:    4.10.24 - Learning To Wait - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=Kx4Xfya11dY
 ========================================
 
 TRANSCRIPT

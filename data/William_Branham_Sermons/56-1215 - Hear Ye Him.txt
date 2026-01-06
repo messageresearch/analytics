@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Apostolic Hour Of Faith Tabernacle
-Location: Parkersburg
-Duration: WV, 113 min
+Location: Parkersburg, WV
+Duration: 113 min
 Source: livingwordbroadcast.org
 DateCode: 56-1215
 

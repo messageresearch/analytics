@@ -4,13 +4,14 @@ START OF FILE: 2019-07-31 - Bro Troy  The Builders Wisdom  Wednesday 07312019 - 
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-31
-Title:   Bro Troy | The Builders Wisdom | Wednesday 07/31/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RxPYgitFxxQ
+Date:     2019-07-31
+Title:    Bro Troy | The Builders Wisdom | Wednesday 07/31/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=RxPYgitFxxQ
 ========================================
 
 Description:

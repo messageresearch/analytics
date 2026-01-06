@@ -4,13 +4,14 @@ START OF FILE: 2021-01-28 - 1.27.21 - Prayer Meeting - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-28
-Title:   1.27.21 - Prayer Meeting
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CoWXIbPlELo
+Date:     2021-01-28
+Title:    1.27.21 - Prayer Meeting
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Prayer Meeting
+Duration: 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=CoWXIbPlELo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-05-05 - 5.5.24 - Perfect Walk - Boaz Kotha - Boaz Kotha.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-05
-Title:   5.5.24 - Perfect Walk - Boaz Kotha
-Speaker: Boaz Kotha
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EDROX3pt-cI
+Date:     2024-05-05
+Title:    5.5.24 - Perfect Walk - Boaz Kotha
+Speaker:  Boaz Kotha
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=EDROX3pt-cI
 ========================================
 
 TRANSCRIPT

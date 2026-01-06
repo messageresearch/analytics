@@ -4,13 +4,14 @@ START OF FILE: 2020-11-15 - 11.15.20 - Fear To Believe - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-15
-Title:   11.15.20 - Fear To Believe - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4wu0HOUBL_I
+Date:     2020-11-15
+Title:    11.15.20 - Fear To Believe - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=4wu0HOUBL_I
 ========================================
 
 Description:

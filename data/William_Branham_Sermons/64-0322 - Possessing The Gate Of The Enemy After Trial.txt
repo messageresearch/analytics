@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Denham Springs High School
-Location: Denham Springs
-Duration: LA, 69 min
+Location: Denham Springs, LA
+Duration: 69 min
 Source: livingwordbroadcast.org
 DateCode: 64-0322
 

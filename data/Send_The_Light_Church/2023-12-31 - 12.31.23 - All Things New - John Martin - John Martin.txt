@@ -4,13 +4,14 @@ START OF FILE: 2023-12-31 - 12.31.23 - All Things New - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-31
-Title:   12.31.23 - All Things New - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ps0nPzCbk5Y
+Date:     2023-12-31
+Title:    12.31.23 - All Things New - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=ps0nPzCbk5Y
 ========================================
 
 TRANSCRIPT

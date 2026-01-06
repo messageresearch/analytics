@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Methodist Campgrounds
-Location: Campbellsville
-Duration: KY, 101 min
+Location: Campbellsville, KY
+Duration: 101 min
 Source: livingwordbroadcast.org
 DateCode: 55-0807A
 

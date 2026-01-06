@@ -4,13 +4,14 @@ START OF FILE: 2023-10-26 - 10.25.23 - The Importance Of Prayer - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-26
-Title:   10.25.23 - The Importance Of Prayer - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sRAM5MyCHvY
+Date:     2023-10-26
+Title:    10.25.23 - The Importance Of Prayer - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=sRAM5MyCHvY
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - 3.13.22 - The Keys To The Kingdom - Andrew Glover - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   3.13.22 - The Keys To The Kingdom - Andrew Glover
-Speaker: Andrew Glover
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mlDnm6dYlj8
+Date:     2022-03-13
+Title:    3.13.22 - The Keys To The Kingdom - Andrew Glover
+Speaker:  Andrew Glover
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=mlDnm6dYlj8
 ========================================
 
 TRANSCRIPT

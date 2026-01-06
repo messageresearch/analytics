@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Memorial Auditorium
-Location: Chattanooga
-Duration: TN, 53 min
+Location: Chattanooga, TN
+Duration: 53 min
 Source: livingwordbroadcast.org
 DateCode: 58-0225
 

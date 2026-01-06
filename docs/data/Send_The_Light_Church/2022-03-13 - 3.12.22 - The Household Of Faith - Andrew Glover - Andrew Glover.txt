@@ -4,13 +4,14 @@ START OF FILE: 2022-03-13 - 3.12.22 - The Household Of Faith - Andrew Glover - A
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-13
-Title:   3.12.22 - The Household Of Faith - Andrew Glover
-Speaker: Andrew Glover
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-3ahlqyoFu4
+Date:     2022-03-13
+Title:    3.12.22 - The Household Of Faith - Andrew Glover
+Speaker:  Andrew Glover
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=-3ahlqyoFu4
 ========================================
 
 TRANSCRIPT

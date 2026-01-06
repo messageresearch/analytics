@@ -4,13 +4,14 @@ START OF FILE: 2023-04-16 - 4.16.23 - Under The Influence - Josiah Cornett - Jos
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-16
-Title:   4.16.23 - Under The Influence - Josiah Cornett
-Speaker: Josiah Cornett
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9PgP9gpZ8CE
+Date:     2023-04-16
+Title:    4.16.23 - Under The Influence - Josiah Cornett
+Speaker:  Josiah Cornett
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9PgP9gpZ8CE
 ========================================
 
 TRANSCRIPT

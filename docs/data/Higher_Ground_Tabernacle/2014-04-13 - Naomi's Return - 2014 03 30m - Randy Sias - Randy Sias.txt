@@ -4,13 +4,14 @@ START OF FILE: 2014-04-13 - Naomi's Return - 2014 03 30m - Randy Sias - Randy Si
 
 SERMON DETAILS
 ========================================
-Date:    2014-04-13
-Title:   Naomi's Return - 2014 03 30m - Randy Sias
-Speaker: Randy Sias
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=viM6TADysrw
+Date:     2014-04-13
+Title:    Naomi's Return - 2014 03 30m - Randy Sias
+Speaker:  Randy Sias
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=viM6TADysrw
 ========================================
 
 Description:

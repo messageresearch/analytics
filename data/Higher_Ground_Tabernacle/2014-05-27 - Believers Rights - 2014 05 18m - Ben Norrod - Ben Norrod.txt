@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - Believers Rights - 2014 05 18m - Ben Norrod - Ben No
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   Believers Rights - 2014 05 18m - Ben Norrod
-Speaker: Ben Norrod
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=kB1YS5xqEnk
+Date:     2014-05-27
+Title:    Believers Rights - 2014 05 18m - Ben Norrod
+Speaker:  Ben Norrod
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=kB1YS5xqEnk
 ========================================
 
 Description:

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: We Would See Jesus
-Location: Unknown
-Duration: Lausanne, Switzerland, 87 min
+Location: Lausanne, Switzerland
+Duration: 87 min
 Source: livingwordbroadcast.org
 DateCode: 55-0828E
 

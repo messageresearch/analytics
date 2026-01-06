@@ -4,13 +4,14 @@ START OF FILE: 2023-05-11 - 5.10.23 - The Brides Humility - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-11
-Title:   5.10.23 - The Brides Humility - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yKmxfEjgxTk
+Date:     2023-05-11
+Title:    5.10.23 - The Brides Humility - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=yKmxfEjgxTk
 ========================================
 
 TRANSCRIPT

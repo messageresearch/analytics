@@ -4,13 +4,14 @@ START OF FILE: 2016-10-23 - Book Of Acts Conference With God - Diego Arroyo.txt
 
 SERMON DETAILS
 ========================================
-Date:    2016-10-23
-Title:   Book Of Acts: Conference With God
-Speaker: Diego Arroyo
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Ehk8RXzJi7c
+Date:     2016-10-23
+Title:    Book Of Acts: Conference With God
+Speaker:  Diego Arroyo
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Ehk8RXzJi7c
 ========================================
 
 Description:

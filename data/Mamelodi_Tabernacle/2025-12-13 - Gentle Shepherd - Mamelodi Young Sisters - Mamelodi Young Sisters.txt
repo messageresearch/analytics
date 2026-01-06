@@ -4,13 +4,14 @@ START OF FILE: 2025-12-13 - Gentle Shepherd - Mamelodi Young Sisters - Mamelodi 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-13
-Title:   Gentle Shepherd - Mamelodi Young Sisters
-Speaker: Mamelodi Young Sisters
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=axuFfw6V4Vk
+Date:     2025-12-13
+Title:    Gentle Shepherd - Mamelodi Young Sisters
+Speaker:  Mamelodi Young Sisters
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=axuFfw6V4Vk
 ========================================
 
 Description:

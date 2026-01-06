@@ -4,13 +4,14 @@ START OF FILE: 2018-12-12 - Don't Fear the Battle  Pastor Isiah Brooks  12122018
 
 SERMON DETAILS
 ========================================
-Date:    2018-12-12
-Title:   Don't Fear the Battle | Pastor Isiah Brooks | 12/12/2018
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZXPfyUIHp6A
+Date:     2018-12-12
+Title:    Don't Fear the Battle | Pastor Isiah Brooks | 12/12/2018
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZXPfyUIHp6A
 ========================================
 
 Description:

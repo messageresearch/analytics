@@ -4,13 +4,14 @@ START OF FILE: 2024-02-15 - A Place Called There  Bro Wendall Martin  Wed  21424
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-15
-Title:   A Place Called There | Bro Wendall Martin | Wed  2/14/24 PM
-Speaker: Wendall Martin
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HyWvd_pSQfc
+Date:     2024-02-15
+Title:    A Place Called There | Bro Wendall Martin | Wed  2/14/24 PM
+Speaker:  Wendall Martin
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=HyWvd_pSQfc
 ========================================
 
 TRANSCRIPT

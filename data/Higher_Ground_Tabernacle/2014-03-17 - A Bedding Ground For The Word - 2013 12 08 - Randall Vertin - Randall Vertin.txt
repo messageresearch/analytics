@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - A Bedding Ground For The Word - 2013 12 08 - Randall
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   A Bedding Ground For The Word - 2013 12 08 - Randall Vertin
-Speaker: Randall Vertin
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=89SpqjePJ-Q
+Date:     2014-03-17
+Title:    A Bedding Ground For The Word - 2013 12 08 - Randall Vertin
+Speaker:  Randall Vertin
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=89SpqjePJ-Q
 ========================================
 
 Description:

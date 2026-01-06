@@ -4,13 +4,14 @@ START OF FILE: 2020-05-06 - 5.6.20 - Correctly Overcoming - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-06
-Title:   5.6.20 - Correctly Overcoming - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8WTc1OEnUWo
+Date:     2020-05-06
+Title:    5.6.20 - Correctly Overcoming - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=8WTc1OEnUWo
 ========================================
 
 TRANSCRIPT

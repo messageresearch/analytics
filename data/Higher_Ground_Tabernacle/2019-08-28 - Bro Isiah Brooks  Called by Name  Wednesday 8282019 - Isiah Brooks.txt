@@ -4,13 +4,14 @@ START OF FILE: 2019-08-28 - Bro Isiah Brooks  Called by Name  Wednesday 8282019 
 
 SERMON DETAILS
 ========================================
-Date:    2019-08-28
-Title:   Bro Isiah Brooks | Called by Name | Wednesday 8/28/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=97OfcQceLJs
+Date:     2019-08-28
+Title:    Bro Isiah Brooks | Called by Name | Wednesday 8/28/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=97OfcQceLJs
 ========================================
 
 Description:

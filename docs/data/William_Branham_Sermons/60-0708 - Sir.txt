@@ -3,9 +3,9 @@ Title: Sir
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: City High School
-Duration: Klamath Falls, OR, 105 min
+Venue: City High School
+Location: Klamath Falls, OR
+Duration: 105 min
 Source: livingwordbroadcast.org
 DateCode: 60-0708
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: City Auditorium
-Location: Concord
-Duration: NH, 75 min
+Location: Concord, NH
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 58-0523
 

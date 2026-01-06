@@ -4,13 +4,14 @@ START OF FILE: 2022-10-09 - 10.9.22 - Speak & Go Forward In Faith - Timothy Asho
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-09
-Title:   10.9.22 - Speak & Go Forward In Faith - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GWY_-A4Yfdg
+Date:     2022-10-09
+Title:    10.9.22 - Speak & Go Forward In Faith - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=GWY_-A4Yfdg
 ========================================
 
 TRANSCRIPT

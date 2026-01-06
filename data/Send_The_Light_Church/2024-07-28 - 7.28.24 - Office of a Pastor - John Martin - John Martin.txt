@@ -4,13 +4,14 @@ START OF FILE: 2024-07-28 - 7.28.24 - Office of a Pastor - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-28
-Title:   7.28.24 - Office of a Pastor - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bN_bS_mJ0zs
+Date:     2024-07-28
+Title:    7.28.24 - Office of a Pastor - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=bN_bS_mJ0zs
 ========================================
 
 TRANSCRIPT

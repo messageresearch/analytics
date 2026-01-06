@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: We Would See Jesus
-Location: Marc Ballroom
-Duration: New York, NY, 103 min
+Location: New York, NY
+Duration: 103 min
 Source: livingwordbroadcast.org
 DateCode: 63-1112
 

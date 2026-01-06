@@ -4,13 +4,14 @@ START OF FILE: 2020-09-03 - A Higher Order - Brother Isiah Brooks - 0922020 - Is
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-03
-Title:   A Higher Order - Brother Isiah Brooks - 09/2/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=n7tY_TW8Z9s
+Date:     2020-09-03
+Title:    A Higher Order - Brother Isiah Brooks - 09/2/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=n7tY_TW8Z9s
 ========================================
 
 Description:

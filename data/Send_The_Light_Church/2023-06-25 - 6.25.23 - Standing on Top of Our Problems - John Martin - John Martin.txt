@@ -4,13 +4,14 @@ START OF FILE: 2023-06-25 - 6.25.23 - Standing on Top of Our Problems - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-25
-Title:   6.25.23 - Standing on Top of Our Problems - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WdjEw6C5g6E
+Date:     2023-06-25
+Title:    6.25.23 - Standing on Top of Our Problems - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=WdjEw6C5g6E
 ========================================
 
 TRANSCRIPT

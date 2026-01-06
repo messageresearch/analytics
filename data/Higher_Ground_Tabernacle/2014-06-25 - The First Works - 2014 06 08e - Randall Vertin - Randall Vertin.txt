@@ -4,13 +4,14 @@ START OF FILE: 2014-06-25 - The First Works - 2014 06 08e - Randall Vertin - Ran
 
 SERMON DETAILS
 ========================================
-Date:    2014-06-25
-Title:   The First Works - 2014 06 08e - Randall Vertin
-Speaker: Randall Vertin
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mdpY_QAf7tM
+Date:     2014-06-25
+Title:    The First Works - 2014 06 08e - Randall Vertin
+Speaker:  Randall Vertin
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=mdpY_QAf7tM
 ========================================
 
 Description:

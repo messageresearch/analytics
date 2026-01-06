@@ -4,13 +4,14 @@ START OF FILE: 2023-04-13 - 4.12.23 - Investments - Mark Cosby - Mark Cosby.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-13
-Title:   4.12.23 - Investments - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qCFDjeszDms
+Date:     2023-04-13
+Title:    4.12.23 - Investments - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=qCFDjeszDms
 ========================================
 
 TRANSCRIPT

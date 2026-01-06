@@ -4,13 +4,14 @@ START OF FILE: 2024-04-04 - 4.3.24 - In His Presence - William Saywon - William 
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-04
-Title:   4.3.24 - In His Presence - William Saywon
-Speaker: William Saywon
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=55rDHoSKhTc
+Date:     2024-04-04
+Title:    4.3.24 - In His Presence - William Saywon
+Speaker:  William Saywon
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=55rDHoSKhTc
 ========================================
 
 TRANSCRIPT

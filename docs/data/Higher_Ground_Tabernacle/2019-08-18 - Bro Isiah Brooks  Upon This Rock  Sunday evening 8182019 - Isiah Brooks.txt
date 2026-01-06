@@ -4,13 +4,14 @@ START OF FILE: 2019-08-18 - Bro Isiah Brooks  Upon This Rock  Sunday evening 818
 
 SERMON DETAILS
 ========================================
-Date:    2019-08-18
-Title:   Bro Isiah Brooks | Upon This Rock | Sunday evening 8/18/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hfmqS5zbit8
+Date:     2019-08-18
+Title:    Bro Isiah Brooks | Upon This Rock | Sunday evening 8/18/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=hfmqS5zbit8
 ========================================
 
 Description:

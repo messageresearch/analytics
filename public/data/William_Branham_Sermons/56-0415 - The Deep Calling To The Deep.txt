@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Revival Assembly Church
-Location: Columbia
-Duration: SC, 112 min
+Location: Columbia, SC
+Duration: 112 min
 Source: livingwordbroadcast.org
 DateCode: 56-0415
 

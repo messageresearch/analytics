@@ -4,13 +4,14 @@ START OF FILE: 2022-03-17 - One Day  Minister  Isaac Adude  Sunday March 13th 20
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-17
-Title:   One Day || Minister  Isaac Adude || Sunday March 13th 2022
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Leb1ddY5Erc
+Date:     2022-03-17
+Title:    One Day || Minister  Isaac Adude || Sunday March 13th 2022
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 3h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=Leb1ddY5Erc
 ========================================
 
 Description:

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Shawano High School
-Location: Shawano
-Duration: WI, 125 min
+Location: Shawano, WI
+Duration: 125 min
 Source: livingwordbroadcast.org
 DateCode: 55-1001
 

@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - The Uncontested Title - 2014 06 22e - John Ilunga - 
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   The Uncontested Title - 2014 06 22e - John Ilunga
-Speaker: John Ilunga
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LYF7zsAL1_4
+Date:     2014-08-02
+Title:    The Uncontested Title - 2014 06 22e - John Ilunga
+Speaker:  John Ilunga
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=LYF7zsAL1_4
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2022-01-09 - 1.9.22 - Steps Of Faith - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-09
-Title:   1.9.22 - Steps Of Faith - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wXTgzCHVLzQ
+Date:     2022-01-09
+Title:    1.9.22 - Steps Of Faith - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=wXTgzCHVLzQ
 ========================================
 
 TRANSCRIPT

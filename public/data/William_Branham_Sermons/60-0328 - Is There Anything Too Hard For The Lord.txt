@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Municipal Auditorium
-Location: Tulsa
-Duration: OK, 53 min
+Location: Tulsa, OK
+Duration: 53 min
 Source: livingwordbroadcast.org
 DateCode: 60-0328
 

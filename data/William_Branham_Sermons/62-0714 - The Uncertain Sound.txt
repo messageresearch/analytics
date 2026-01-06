@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Open Bible Standard Church
-Location: Spokane
-Duration: WA, 122 min
+Location: Spokane, WA
+Duration: 122 min
 Source: livingwordbroadcast.org
 DateCode: 62-0714
 

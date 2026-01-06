@@ -3,9 +3,9 @@ Title: Sir
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: Denham Springs High School
-Duration: Denham Springs, LA, 76 min
+Venue: Denham Springs High School
+Location: Denham Springs, LA
+Duration: 76 min
 Source: livingwordbroadcast.org
 DateCode: 64-0318
 

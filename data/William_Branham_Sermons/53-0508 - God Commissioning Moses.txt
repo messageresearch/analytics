@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Bible Hour Tabernacle
-Location: Jonesboro
-Duration: AR, 101 min
+Location: Jonesboro, AR
+Duration: 101 min
 Source: livingwordbroadcast.org
 DateCode: 53-0508
 

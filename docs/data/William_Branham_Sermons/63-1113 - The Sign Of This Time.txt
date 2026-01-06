@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Marc Ballroom
-Location: New York
-Duration: NY, 108 min
+Location: New York, NY
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 63-1113
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Lane Tech High School
-Location: Chicago
-Duration: IL, 81 min
+Location: Chicago, IL
+Duration: 81 min
 Source: livingwordbroadcast.org
 DateCode: 58-0112E
 

@@ -4,13 +4,14 @@ START OF FILE: 2023-09-14 - Engulf Me - 9.13.23 - Mark Cosby - Mark Cosby.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-14
-Title:   Engulf Me - 9.13.23 - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IAWYnW4R9V8
+Date:     2023-09-14
+Title:    Engulf Me - 9.13.23 - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=IAWYnW4R9V8
 ========================================
 
 TRANSCRIPT

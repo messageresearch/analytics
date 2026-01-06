@@ -4,13 +4,14 @@ START OF FILE: 2025-06-05 - 6.4.25 - SAME - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-05
-Title:   6.4.25 - SAME - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4XzGULWV33U
+Date:     2025-06-05
+Title:    6.4.25 - SAME - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=4XzGULWV33U
 ========================================
 
 TRANSCRIPT

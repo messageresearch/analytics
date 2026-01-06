@@ -4,13 +4,14 @@ START OF FILE: 2025-06-15 - 6.15.25 - Honoring Your Heavenly Father - John  Mart
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-15
-Title:   6.15.25 - Honoring Your Heavenly Father - John  Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9xQE0FiCjv0
+Date:     2025-06-15
+Title:    6.15.25 - Honoring Your Heavenly Father - John  Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=9xQE0FiCjv0
 ========================================
 
 TRANSCRIPT

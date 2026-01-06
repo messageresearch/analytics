@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Middletown
-Duration: OH, 102 min
+Location: Middletown, OH
+Duration: 102 min
 Source: livingwordbroadcast.org
 DateCode: 61-0316
 

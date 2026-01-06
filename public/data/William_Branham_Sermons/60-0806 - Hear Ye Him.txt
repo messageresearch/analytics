@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Eisenhower High School
-Location: Yakima
-Duration: WA, 77 min
+Location: Yakima, WA
+Duration: 77 min
 Source: livingwordbroadcast.org
 DateCode: 60-0806
 

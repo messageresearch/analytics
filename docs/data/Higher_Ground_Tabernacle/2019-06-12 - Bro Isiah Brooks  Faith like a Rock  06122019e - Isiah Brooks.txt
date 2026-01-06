@@ -4,13 +4,14 @@ START OF FILE: 2019-06-12 - Bro Isiah Brooks  Faith like a Rock  06122019e - Isi
 
 SERMON DETAILS
 ========================================
-Date:    2019-06-12
-Title:   Bro Isiah Brooks | Faith like a Rock | 06/12/2019e |
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nqGvQclG0Bo
+Date:     2019-06-12
+Title:    Bro Isiah Brooks | Faith like a Rock | 06/12/2019e |
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=nqGvQclG0Bo
 ========================================
 
 Description:

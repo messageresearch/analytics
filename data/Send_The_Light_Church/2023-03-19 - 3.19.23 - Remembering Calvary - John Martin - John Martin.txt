@@ -4,13 +4,14 @@ START OF FILE: 2023-03-19 - 3.19.23 - Remembering Calvary - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-19
-Title:   3.19.23 - Remembering Calvary - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EbWEsZ5MW9w
+Date:     2023-03-19
+Title:    3.19.23 - Remembering Calvary - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=EbWEsZ5MW9w
 ========================================
 
 TRANSCRIPT

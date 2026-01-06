@@ -4,7 +4,7 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: American Legion Hall
-Location: West Palm Beach
+Location: West Palm Beach, FL
 Duration: FL, no audio
 Source: livingwordbroadcast.org
 DateCode: 53-1206A

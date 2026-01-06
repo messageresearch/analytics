@@ -4,13 +4,14 @@ START OF FILE: 2022-10-16 - 10.16.22 - Hold On - Darrell Ward - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-16
-Title:   10.16.22 - Hold On - Darrell Ward
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=fRaVShAitNA
+Date:     2022-10-16
+Title:    10.16.22 - Hold On - Darrell Ward
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=fRaVShAitNA
 ========================================
 
 TRANSCRIPT

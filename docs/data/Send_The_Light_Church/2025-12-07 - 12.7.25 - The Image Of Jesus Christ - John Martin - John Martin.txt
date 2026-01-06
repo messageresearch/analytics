@@ -4,13 +4,14 @@ START OF FILE: 2025-12-07 - 12.7.25 - The Image Of Jesus Christ - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-07
-Title:   12.7.25 - The Image Of Jesus Christ - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y2T9nTZ-12c
+Date:     2025-12-07
+Title:    12.7.25 - The Image Of Jesus Christ - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=y2T9nTZ-12c
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2015-03-16 - Eden The Garden of God - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2015-03-16
-Title:   Eden: The Garden of God
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FrQw26MYSmE
+Date:     2015-03-16
+Title:    Eden: The Garden of God
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=FrQw26MYSmE
 ========================================
 
 Description:

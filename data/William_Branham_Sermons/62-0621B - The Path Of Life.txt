@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: First Hebrew Christian Synagogue
-Location: South Gate
-Duration: CA, 74 min
+Location: South Gate, CA
+Duration: 74 min
 Source: livingwordbroadcast.org
 DateCode: 62-0621B
 

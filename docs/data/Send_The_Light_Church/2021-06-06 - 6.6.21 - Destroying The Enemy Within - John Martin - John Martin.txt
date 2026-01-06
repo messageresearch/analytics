@@ -4,13 +4,14 @@ START OF FILE: 2021-06-06 - 6.6.21 - Destroying The Enemy Within - John Martin -
 
 SERMON DETAILS
 ========================================
-Date:    2021-06-06
-Title:   6.6.21 - Destroying The Enemy Within - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mtbq2E5xcyg
+Date:     2021-06-06
+Title:    6.6.21 - Destroying The Enemy Within - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=mtbq2E5xcyg
 ========================================
 
 Description:

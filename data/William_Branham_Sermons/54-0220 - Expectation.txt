@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: East Alton -Wood River Community High School
-Location: Wood River
-Duration: IL, 89 min
+Location: Wood River, IL
+Duration: 89 min
 Source: livingwordbroadcast.org
 DateCode: 54-0220
 

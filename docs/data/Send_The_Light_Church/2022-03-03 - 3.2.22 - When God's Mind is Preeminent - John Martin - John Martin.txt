@@ -4,13 +4,14 @@ START OF FILE: 2022-03-03 - 3.2.22 - When God's Mind is Preeminent - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-03
-Title:   3.2.22 - When God's Mind is Preeminent - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LJKbfKj4AWc
+Date:     2022-03-03
+Title:    3.2.22 - When God's Mind is Preeminent - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=LJKbfKj4AWc
 ========================================
 
 TRANSCRIPT

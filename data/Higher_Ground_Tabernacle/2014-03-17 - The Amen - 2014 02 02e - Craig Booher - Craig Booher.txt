@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - The Amen - 2014 02 02e - Craig Booher - Craig Booher
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   The Amen - 2014 02 02e - Craig Booher
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=f1UUfiFcFF4
+Date:     2014-03-17
+Title:    The Amen - 2014 02 02e - Craig Booher
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=f1UUfiFcFF4
 ========================================
 
 Description:

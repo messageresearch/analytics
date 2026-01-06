@@ -4,13 +4,14 @@ START OF FILE: 2022-07-13 - Prove It, The Evidence is Proof  Pastor Isiah Brooks
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-13
-Title:   Prove It, The Evidence is Proof | Pastor Isiah Brooks| Wednesday 07/13/2022 HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CCr4ZdF_YrM
+Date:     2022-07-13
+Title:    Prove It, The Evidence is Proof | Pastor Isiah Brooks| Wednesday 07/13/2022 HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=CCr4ZdF_YrM
 ========================================
 
 TRANSCRIPT

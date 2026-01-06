@@ -3,9 +3,9 @@ Title: Sir
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: Legion Auditorium
-Duration: Port Alberni, BC, 111 min
+Venue: Legion Auditorium
+Location: Port Alberni, BC
+Duration: 111 min
 Source: livingwordbroadcast.org
 DateCode: 62-0724
 

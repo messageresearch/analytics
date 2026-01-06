@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Manhattan Center
-Location: New York
-Duration: NY, 84 min
+Location: New York, NY
+Duration: 84 min
 Source: livingwordbroadcast.org
 DateCode: 58-0501
 

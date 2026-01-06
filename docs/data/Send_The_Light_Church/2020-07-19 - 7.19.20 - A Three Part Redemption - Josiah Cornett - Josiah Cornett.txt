@@ -4,13 +4,14 @@ START OF FILE: 2020-07-19 - 7.19.20 - A Three Part Redemption - Josiah Cornett -
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-19
-Title:   7.19.20 - A Three Part Redemption - Josiah Cornett
-Speaker: Josiah Cornett
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ga1mAk0vQLQ
+Date:     2020-07-19
+Title:    7.19.20 - A Three Part Redemption - Josiah Cornett
+Speaker:  Josiah Cornett
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=ga1mAk0vQLQ
 ========================================
 
 TRANSCRIPT

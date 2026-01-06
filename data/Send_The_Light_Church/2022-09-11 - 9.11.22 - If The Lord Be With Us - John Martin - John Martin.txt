@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - 9.11.22 - If The Lord Be With Us - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   9.11.22 - If The Lord Be With Us - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ydnJC5If5Zc
+Date:     2022-09-11
+Title:    9.11.22 - If The Lord Be With Us - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=ydnJC5If5Zc
 ========================================
 
 TRANSCRIPT

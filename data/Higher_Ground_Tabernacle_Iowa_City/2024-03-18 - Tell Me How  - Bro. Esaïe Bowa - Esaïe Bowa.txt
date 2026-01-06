@@ -4,13 +4,14 @@ START OF FILE: 2024-03-18 - Tell Me How  - Bro. Esaïe Bowa - Esaïe Bowa.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-18
-Title:   Tell Me How?  - Bro. Esaïe Bowa
-Speaker: Esaïe Bowa
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LDTlFEyeZ-w
+Date:     2024-03-18
+Title:    Tell Me How?  - Bro. Esaïe Bowa
+Speaker:  Esaïe Bowa
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=LDTlFEyeZ-w
 ========================================
 
 Description:

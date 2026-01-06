@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Santa Maria
-Duration: CA, 103 min
+Location: Santa Maria, CA
+Duration: 103 min
 Source: livingwordbroadcast.org
 DateCode: 62-0627
 

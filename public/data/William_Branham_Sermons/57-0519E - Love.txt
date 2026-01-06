@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Saskatoon Arena
-Location: Saskatoon
-Duration: SK, 126 min
+Location: Saskatoon, SK
+Duration: 126 min
 Source: livingwordbroadcast.org
 DateCode: 57-0519E
 

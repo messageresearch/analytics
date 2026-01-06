@@ -4,13 +4,14 @@ START OF FILE: 2025-02-16 - 2.16.25 - Consider Your Thoughts - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-16
-Title:   2.16.25 - Consider Your Thoughts - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x8i507U0d8M
+Date:     2025-02-16
+Title:    2.16.25 - Consider Your Thoughts - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=x8i507U0d8M
 ========================================
 
 TRANSCRIPT

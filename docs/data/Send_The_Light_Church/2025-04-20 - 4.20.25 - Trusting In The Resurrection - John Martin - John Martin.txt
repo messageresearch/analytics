@@ -4,13 +4,14 @@ START OF FILE: 2025-04-20 - 4.20.25 - Trusting In The Resurrection - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-20
-Title:   4.20.25 - Trusting In The Resurrection - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PnnD7qPZdoo
+Date:     2025-04-20
+Title:    4.20.25 - Trusting In The Resurrection - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Easter Program
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=PnnD7qPZdoo
 ========================================
 
 TRANSCRIPT

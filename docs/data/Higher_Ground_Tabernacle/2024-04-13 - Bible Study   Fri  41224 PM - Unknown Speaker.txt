@@ -4,13 +4,14 @@ START OF FILE: 2024-04-13 - Bible Study   Fri  41224 PM - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-13
-Title:   Bible Study | | Fri  4/12/24 PM
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Y9NWUzuvTrk
+Date:     2024-04-13
+Title:    Bible Study | | Fri  4/12/24 PM
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Bible Study
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=Y9NWUzuvTrk
 ========================================
 
 TRANSCRIPT

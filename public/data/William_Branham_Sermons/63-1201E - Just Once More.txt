@@ -3,9 +3,9 @@ Title: Just Once More
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Lord
-Location: Life Tabernacle
-Duration: Shreveport, LA, 79 min
+Venue: Life Tabernacle
+Location: Shreveport, LA
+Duration: 79 min
 Source: livingwordbroadcast.org
 DateCode: 63-1201E
 

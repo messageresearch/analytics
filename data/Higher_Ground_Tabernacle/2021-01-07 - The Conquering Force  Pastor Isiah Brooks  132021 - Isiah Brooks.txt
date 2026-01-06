@@ -4,13 +4,14 @@ START OF FILE: 2021-01-07 - The Conquering Force  Pastor Isiah Brooks  132021 - 
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-07
-Title:   The Conquering Force | Pastor Isiah Brooks | 1/3/2021
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RFRs8-vPv54
+Date:     2021-01-07
+Title:    The Conquering Force | Pastor Isiah Brooks | 1/3/2021
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=RFRs8-vPv54
 ========================================
 
 Description:

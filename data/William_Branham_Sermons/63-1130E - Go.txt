@@ -3,9 +3,9 @@ Title: Go
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Awake Jesus
-Location: Life Tabernacle
-Duration: Shreveport, LA, 108 min
+Venue: Life Tabernacle
+Location: Shreveport, LA
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 63-1130E
 

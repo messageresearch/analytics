@@ -4,13 +4,14 @@ START OF FILE: 2022-11-13 - 11.13.22- Abounding With Thanksgiving - John Martin 
 
 SERMON DETAILS
 ========================================
-Date:    2022-11-13
-Title:   11.13.22- Abounding With Thanksgiving - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=X2f9qa2QCbQ
+Date:     2022-11-13
+Title:    11.13.22- Abounding With Thanksgiving - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Thanksgiving Service
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=X2f9qa2QCbQ
 ========================================
 
 TRANSCRIPT

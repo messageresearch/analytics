@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: South Bend Gospel Tabernacle
-Location: South Bend
-Duration: IN, 80 min
+Location: South Bend, IN
+Duration: 80 min
 Source: livingwordbroadcast.org
 DateCode: 58-0209A
 

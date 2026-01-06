@@ -4,7 +4,7 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Private Home
-Location: Tucson
+Location: Tucson, AZ
 Duration: AZ, no audio
 Source: livingwordbroadcast.org
 DateCode: 65-0116w

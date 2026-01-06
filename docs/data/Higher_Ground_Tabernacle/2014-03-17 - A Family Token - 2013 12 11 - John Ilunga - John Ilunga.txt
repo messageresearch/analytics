@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - A Family Token - 2013 12 11 - John Ilunga - John Ilu
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   A Family Token - 2013 12 11 - John Ilunga
-Speaker: John Ilunga
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hW1ZsJwOuBM
+Date:     2014-03-17
+Title:    A Family Token - 2013 12 11 - John Ilunga
+Speaker:  John Ilunga
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=hW1ZsJwOuBM
 ========================================
 
 Description:

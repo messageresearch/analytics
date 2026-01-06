@@ -4,13 +4,14 @@ START OF FILE: 2022-10-06 - 10.5.22 - Growing Together - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-06
-Title:   10.5.22 - Growing Together - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=EAP3n1U7yNw
+Date:     2022-10-06
+Title:    10.5.22 - Growing Together - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=EAP3n1U7yNw
 ========================================
 
 TRANSCRIPT

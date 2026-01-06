@@ -4,13 +4,14 @@ START OF FILE: 2023-09-24 - 9.24.23 - The Terry Tidwell Family - Unknown Speaker
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-24
-Title:   9.24.23 - The Terry Tidwell Family
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6Q1g9_Otnu4
+Date:     2023-09-24
+Title:    9.24.23 - The Terry Tidwell Family
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=6Q1g9_Otnu4
 ========================================
 
 TRANSCRIPT

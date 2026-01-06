@@ -4,13 +4,14 @@ START OF FILE: 2022-03-24 - 3.23.22 - Remaining Vigilant - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-24
-Title:   3.23.22 - Remaining Vigilant - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=49Dun0uvszI
+Date:     2022-03-24
+Title:    3.23.22 - Remaining Vigilant - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=49Dun0uvszI
 ========================================
 
 TRANSCRIPT

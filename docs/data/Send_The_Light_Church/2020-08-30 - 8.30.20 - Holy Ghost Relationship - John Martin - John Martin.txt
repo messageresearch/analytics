@@ -4,13 +4,14 @@ START OF FILE: 2020-08-30 - 8.30.20 - Holy Ghost Relationship - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-30
-Title:   8.30.20 - Holy Ghost Relationship - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WfG_4aUJLP8
+Date:     2020-08-30
+Title:    8.30.20 - Holy Ghost Relationship - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=WfG_4aUJLP8
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Pine Lawn Trailer Park
-Location: Prescott
-Duration: AZ, 56 min
+Location: Prescott, AZ
+Duration: 56 min
 Source: livingwordbroadcast.org
 DateCode: 65-1031A
 

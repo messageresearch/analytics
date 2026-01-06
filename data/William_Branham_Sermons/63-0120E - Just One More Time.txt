@@ -3,9 +3,9 @@ Title: Just One More Time
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Lord
-Location: Jesus Name Church
-Duration: Phoenix, AZ, 107 min
+Venue: Jesus Name Church
+Location: Phoenix, AZ
+Duration: 107 min
 Source: livingwordbroadcast.org
 DateCode: 63-0120E
 

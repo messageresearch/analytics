@@ -4,13 +4,14 @@ START OF FILE: 2023-03-12 - 3.11.23 - We Are Heavenlies In Our Souls - Andrew Gl
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-12
-Title:   3.11.23 - We Are Heavenlies In Our Souls - Andrew Glover
-Speaker: Andrew Glover
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-dRYukV8o-g
+Date:     2023-03-12
+Title:    3.11.23 - We Are Heavenlies In Our Souls - Andrew Glover
+Speaker:  Andrew Glover
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=-dRYukV8o-g
 ========================================
 
 TRANSCRIPT

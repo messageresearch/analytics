@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - Security - No Hiding Place - 2014 06 25 - Pastor Isi
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   Security - No Hiding Place - 2014 06 25 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=71hp4QgQFqQ
+Date:     2014-08-02
+Title:    Security - No Hiding Place - 2014 06 25 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=71hp4QgQFqQ
 ========================================
 
 Description:

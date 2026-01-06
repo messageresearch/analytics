@@ -4,13 +4,14 @@ START OF FILE: 2020-11-08 - 11.08.20 -  The Comforter - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-08
-Title:   11.08.20 -  The Comforter - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LUI-LL13XUU
+Date:     2020-11-08
+Title:    11.08.20 -  The Comforter - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=LUI-LL13XUU
 ========================================
 
 Description:

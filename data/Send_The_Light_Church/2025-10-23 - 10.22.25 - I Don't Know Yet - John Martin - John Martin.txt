@@ -4,13 +4,14 @@ START OF FILE: 2025-10-23 - 10.22.25 - I Don't Know Yet - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-23
-Title:   10.22.25 - I Don't Know Yet - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=x6sqmWH6Hz0
+Date:     2025-10-23
+Title:    10.22.25 - I Don't Know Yet - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=x6sqmWH6Hz0
 ========================================
 
 TRANSCRIPT

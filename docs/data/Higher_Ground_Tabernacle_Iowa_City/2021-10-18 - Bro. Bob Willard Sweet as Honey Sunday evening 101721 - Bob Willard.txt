@@ -4,13 +4,14 @@ START OF FILE: 2021-10-18 - Bro. Bob Willard Sweet as Honey Sunday evening 10172
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-18
-Title:   Bro. Bob Willard| Sweet as Honey| Sunday evening 10/17/21
-Speaker: Bob Willard
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oK4aOlHnPFo
+Date:     2021-10-18
+Title:    Bro. Bob Willard| Sweet as Honey| Sunday evening 10/17/21
+Speaker:  Bob Willard
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=oK4aOlHnPFo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-10 - 2025.08.10  - Women Of  Valour - Strong & Mighty. - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-10
-Title:   2025.08.10  - Women Of  Valour - Strong & Mighty.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JJCbx6aJt8s
+Date:     2025-08-10
+Title:    2025.08.10  - Women Of  Valour - Strong & Mighty.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=JJCbx6aJt8s
 ========================================
 
 Description:

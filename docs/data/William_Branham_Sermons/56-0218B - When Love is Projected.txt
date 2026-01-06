@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Becky's Restaurant
-Location: Minneapolis
-Duration: MN, 48 min
+Location: Minneapolis, MN
+Duration: 48 min
 Source: livingwordbroadcast.org
 DateCode: 56-0218B
 

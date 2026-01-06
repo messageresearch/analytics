@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Lyon's Funeral Home
-Location: Campbellsville
-Duration: KY, 49 min
+Location: Campbellsville, KY
+Duration: 49 min
 Source: livingwordbroadcast.org
 DateCode: 63-1118
 

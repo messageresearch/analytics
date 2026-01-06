@@ -4,13 +4,14 @@ START OF FILE: 2020-11-22 - 11.22.20 - God Is Hunting - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-22
-Title:   11.22.20 - God Is Hunting - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=trYfEc3aoQw
+Date:     2020-11-22
+Title:    11.22.20 - God Is Hunting - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=trYfEc3aoQw
 ========================================
 
 Description:

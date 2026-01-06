@@ -4,13 +4,14 @@ START OF FILE: 2022-05-19 - 5.18.22 - Look On Jesus - Daniel Darko - Daniel Dark
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-19
-Title:   5.18.22 - Look On Jesus - Daniel Darko
-Speaker: Daniel Darko
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NvVLZHzs1kc
+Date:     2022-05-19
+Title:    5.18.22 - Look On Jesus - Daniel Darko
+Speaker:  Daniel Darko
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=NvVLZHzs1kc
 ========================================
 
 TRANSCRIPT

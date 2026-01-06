@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Macon City Auditorium
-Location: Macon
-Duration: GA, 71 min
+Location: Macon, GA
+Duration: 71 min
 Source: livingwordbroadcast.org
 DateCode: 55-0605
 

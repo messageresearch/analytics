@@ -4,13 +4,14 @@ START OF FILE: 2024-05-15 - Watch and Pray  Pastor Isiah Brooks  Wednesday 51524
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-15
-Title:   Watch and Pray | Pastor Isiah Brooks | Wednesday 5/15/24 PM
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sO5GYv_NfXI
+Date:     2024-05-15
+Title:    Watch and Pray | Pastor Isiah Brooks | Wednesday 5/15/24 PM
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=sO5GYv_NfXI
 ========================================
 
 TRANSCRIPT

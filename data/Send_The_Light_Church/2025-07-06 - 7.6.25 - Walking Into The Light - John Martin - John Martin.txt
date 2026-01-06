@@ -4,13 +4,14 @@ START OF FILE: 2025-07-06 - 7.6.25 - Walking Into The Light - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-06
-Title:   7.6.25 - Walking Into The Light - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aRCo-hjUNEk
+Date:     2025-07-06
+Title:    7.6.25 - Walking Into The Light - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=aRCo-hjUNEk
 ========================================
 
 TRANSCRIPT

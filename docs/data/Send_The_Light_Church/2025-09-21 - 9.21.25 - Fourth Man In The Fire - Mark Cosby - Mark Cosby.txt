@@ -4,13 +4,14 @@ START OF FILE: 2025-09-21 - 9.21.25 - Fourth Man In The Fire - Mark Cosby - Mark
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-21
-Title:   9.21.25 - Fourth Man In The Fire - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y9djcLRvnWo
+Date:     2025-09-21
+Title:    9.21.25 - Fourth Man In The Fire - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=y9djcLRvnWo
 ========================================
 
 TRANSCRIPT

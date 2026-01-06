@@ -4,13 +4,14 @@ START OF FILE: 2020-05-28 - My Sheep Hears My Voice - Bro Isiah Brooks - Isiah B
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-28
-Title:   My Sheep Hears My Voice - Bro Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Pag5y5VUkKc
+Date:     2020-05-28
+Title:    My Sheep Hears My Voice - Bro Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 26m
+Language: English
+URL:      https://www.youtube.com/watch?v=Pag5y5VUkKc
 ========================================
 
 Description:

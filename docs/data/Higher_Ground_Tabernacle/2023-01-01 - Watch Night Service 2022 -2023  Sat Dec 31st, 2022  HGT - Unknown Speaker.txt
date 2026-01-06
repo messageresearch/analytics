@@ -4,13 +4,14 @@ START OF FILE: 2023-01-01 - Watch Night Service 2022 -2023  Sat Dec 31st, 2022  
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-01
-Title:   Watch Night Service 2022 -2023 | Sat Dec 31st, 2022 | HGT
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nD_1NotQl-w
+Date:     2023-01-01
+Title:    Watch Night Service 2022 -2023 | Sat Dec 31st, 2022 | HGT
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=nD_1NotQl-w
 ========================================
 
 TRANSCRIPT

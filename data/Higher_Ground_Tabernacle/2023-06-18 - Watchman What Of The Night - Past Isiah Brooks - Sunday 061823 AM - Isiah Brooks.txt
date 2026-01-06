@@ -4,13 +4,14 @@ START OF FILE: 2023-06-18 - Watchman What Of The Night - Past Isiah Brooks - Sun
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-18
-Title:   Watchman What Of The Night - Past Isiah Brooks - Sunday 06/18/23 AM
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=akSNxguNb34
+Date:     2023-06-18
+Title:    Watchman What Of The Night - Past Isiah Brooks - Sunday 06/18/23 AM
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=akSNxguNb34
 ========================================
 
 TRANSCRIPT

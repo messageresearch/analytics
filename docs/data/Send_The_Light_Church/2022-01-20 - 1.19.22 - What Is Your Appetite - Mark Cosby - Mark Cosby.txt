@@ -4,13 +4,14 @@ START OF FILE: 2022-01-20 - 1.19.22 - What Is Your Appetite - Mark Cosby - Mark 
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-20
-Title:   1.19.22 - What Is Your Appetite - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wbxq053eAsc
+Date:     2022-01-20
+Title:    1.19.22 - What Is Your Appetite - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=wbxq053eAsc
 ========================================
 
 TRANSCRIPT

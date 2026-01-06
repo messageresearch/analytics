@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: We Would See Jesus
-Location: Madison Square Garden
-Duration: Phoenix, AZ, 110 min
+Location: Madison Square Garden, Phoenix, AZ
+Duration: 110 min
 Source: livingwordbroadcast.org
 DateCode: 57-0226
 

@@ -4,13 +4,14 @@ START OF FILE: 2025-10-09 - 10.8.25 - Leaning On Jesus - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-09
-Title:   10.8.25 - Leaning On Jesus - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r_jCUq0L-b0
+Date:     2025-10-09
+Title:    10.8.25 - Leaning On Jesus - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=r_jCUq0L-b0
 ========================================
 
 TRANSCRIPT

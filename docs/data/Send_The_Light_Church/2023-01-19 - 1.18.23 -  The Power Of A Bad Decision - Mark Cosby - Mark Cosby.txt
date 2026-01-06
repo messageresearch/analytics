@@ -4,13 +4,14 @@ START OF FILE: 2023-01-19 - 1.18.23 -  The Power Of A Bad Decision - Mark Cosby 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-19
-Title:   1.18.23 -  The Power Of A Bad Decision - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bua5bashkco
+Date:     2023-01-19
+Title:    1.18.23 -  The Power Of A Bad Decision - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bua5bashkco
 ========================================
 
 TRANSCRIPT

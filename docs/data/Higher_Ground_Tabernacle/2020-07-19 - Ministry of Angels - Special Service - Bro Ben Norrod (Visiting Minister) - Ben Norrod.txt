@@ -4,13 +4,14 @@ START OF FILE: 2020-07-19 - Ministry of Angels - Special Service - Bro Ben Norro
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-19
-Title:   Ministry of Angels - Special Service - Bro Ben Norrod (Visiting Minister)
-Speaker: Ben Norrod
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SJBabgUUwYM
+Date:     2020-07-19
+Title:    Ministry of Angels - Special Service - Bro Ben Norrod (Visiting Minister)
+Speaker:  Ben Norrod
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 3h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=SJBabgUUwYM
 ========================================
 
 Description:

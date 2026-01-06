@@ -4,13 +4,14 @@ START OF FILE: 2013-11-03 - God Wants To Live In You - 2013 09 26 - Samuel Field
 
 SERMON DETAILS
 ========================================
-Date:    2013-11-03
-Title:   God Wants To Live In You - 2013 09 26 - Samuel Fields
-Speaker: Samuel Fields
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lpF0hthUx_8
+Date:     2013-11-03
+Title:    God Wants To Live In You - 2013 09 26 - Samuel Fields
+Speaker:  Samuel Fields
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=lpF0hthUx_8
 ========================================
 
 Description:

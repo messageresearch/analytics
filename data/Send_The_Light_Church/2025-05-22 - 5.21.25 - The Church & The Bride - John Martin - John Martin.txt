@@ -4,13 +4,14 @@ START OF FILE: 2025-05-22 - 5.21.25 - The Church & The Bride - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-22
-Title:   5.21.25 - The Church & The Bride - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RrQf6Y4xevo
+Date:     2025-05-22
+Title:    5.21.25 - The Church & The Bride - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=RrQf6Y4xevo
 ========================================
 
 TRANSCRIPT

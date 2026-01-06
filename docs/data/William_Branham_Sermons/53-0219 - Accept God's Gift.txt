@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Pentecostal Holiness Church
-Location: Tallahassee
-Duration: FL, 23 min
+Location: Tallahassee, FL
+Duration: 23 min
 Source: livingwordbroadcast.org
 DateCode: 53-0219
 

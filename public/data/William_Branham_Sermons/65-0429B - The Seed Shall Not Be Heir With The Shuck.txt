@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Biltmore Hotel
-Location: Los Angeles
-Duration: CA, 62 min
+Location: Los Angeles, CA
+Duration: 62 min
 Source: livingwordbroadcast.org
 DateCode: 65-0429B
 

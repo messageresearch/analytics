@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Shriner Temple
-Location: Los Angeles
-Duration: CA, 58 min
+Location: Los Angeles, CA
+Duration: 58 min
 Source: livingwordbroadcast.org
 DateCode: 54-0811
 

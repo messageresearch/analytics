@@ -4,13 +4,14 @@ START OF FILE: 2019-07-14 - Bro Craig Booher  The Ancient Landmark  07142019 eve
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-14
-Title:   Bro Craig Booher | The Ancient Landmark | 07/14/2019 evening | Higher Ground Tabernacle
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MZlmms0Dr74
+Date:     2019-07-14
+Title:    Bro Craig Booher | The Ancient Landmark | 07/14/2019 evening | Higher Ground Tabernacle
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=MZlmms0Dr74
 ========================================
 
 Description:

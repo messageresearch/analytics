@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - 9.3.23 - Mundus Novus - Alex Magoulas - Alex Magoula
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   9.3.23 - Mundus Novus - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Bgz4w50mdZA
+Date:     2023-09-03
+Title:    9.3.23 - Mundus Novus - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=Bgz4w50mdZA
 ========================================
 
 TRANSCRIPT

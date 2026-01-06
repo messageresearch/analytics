@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Central Assembly Of God
-Location: Tucson
-Duration: AZ, 73 min
+Location: Tucson, AZ
+Duration: 73 min
 Source: livingwordbroadcast.org
 DateCode: 61-0205M
 

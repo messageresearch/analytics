@@ -4,13 +4,14 @@ START OF FILE: 2025-08-17 - 8.17.25 - The Believers Appetite - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-17
-Title:   8.17.25 - The Believers Appetite - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=eCGh8bJm_p0
+Date:     2025-08-17
+Title:    8.17.25 - The Believers Appetite - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=eCGh8bJm_p0
 ========================================
 
 TRANSCRIPT

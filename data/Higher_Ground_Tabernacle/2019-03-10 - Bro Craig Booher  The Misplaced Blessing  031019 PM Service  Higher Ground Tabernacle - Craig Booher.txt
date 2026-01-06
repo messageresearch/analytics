@@ -4,13 +4,14 @@ START OF FILE: 2019-03-10 - Bro Craig Booher  The Misplaced Blessing  031019 PM 
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-10
-Title:   Bro Craig Booher | The Misplaced Blessing | 03/10/19 PM Service | Higher Ground Tabernacle
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VR70uLAgvn8
+Date:     2019-03-10
+Title:    Bro Craig Booher | The Misplaced Blessing | 03/10/19 PM Service | Higher Ground Tabernacle
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=VR70uLAgvn8
 ========================================
 
 Description:

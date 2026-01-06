@@ -4,13 +4,14 @@ START OF FILE: 2024-01-11 - I've Tried It All  Min. SamBlessing Chesa  11024 PM 
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-11
-Title:   I've Tried It All | Min. SamBlessing Chesa | 1/10/24 PM
-Speaker: Ive Tried
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1iJ9vjIBV2o
+Date:     2024-01-11
+Title:    I've Tried It All | Min. SamBlessing Chesa | 1/10/24 PM
+Speaker:  Ive Tried
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=1iJ9vjIBV2o
 ========================================
 
 TRANSCRIPT

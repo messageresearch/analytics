@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Unknown
-Location: Lausanne
-Duration: Switzerland, 75 min
+Location: Lausanne, Switzerland
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 55-0826
 

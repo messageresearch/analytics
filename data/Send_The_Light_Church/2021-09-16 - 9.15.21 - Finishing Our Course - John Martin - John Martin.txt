@@ -4,13 +4,14 @@ START OF FILE: 2021-09-16 - 9.15.21 - Finishing Our Course - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-16
-Title:   9.15.21 - Finishing Our Course - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=E5cuukOslCY
+Date:     2021-09-16
+Title:    9.15.21 - Finishing Our Course - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=E5cuukOslCY
 ========================================
 
 Description:

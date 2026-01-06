@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Glad Tidings Tabernacle
-Location: New York
-Duration: NY, 99 min
+Location: New York, NY
+Duration: 99 min
 Source: livingwordbroadcast.org
 DateCode: 50-0405
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Southern Pines High School
-Location: Southern Pines
-Duration: NC, 114 min
+Location: Southern Pines, NC
+Duration: 114 min
 Source: livingwordbroadcast.org
 DateCode: 58-0625
 

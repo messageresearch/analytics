@@ -4,13 +4,14 @@ START OF FILE: 2023-05-20 - Mamelodi Church singing - Until Then - Until Then.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-20
-Title:   Mamelodi Church singing - Until Then
-Speaker: Until Then
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YW7xfpfBny0
+Date:     2023-05-20
+Title:    Mamelodi Church singing - Until Then
+Speaker:  Until Then
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=YW7xfpfBny0
 ========================================
 
 TRANSCRIPT

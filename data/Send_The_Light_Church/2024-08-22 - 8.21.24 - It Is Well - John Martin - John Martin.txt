@@ -4,13 +4,14 @@ START OF FILE: 2024-08-22 - 8.21.24 - It Is Well - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-22
-Title:   8.21.24 - It Is Well - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=foYWTXZ9fMw
+Date:     2024-08-22
+Title:    8.21.24 - It Is Well - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=foYWTXZ9fMw
 ========================================
 
 TRANSCRIPT

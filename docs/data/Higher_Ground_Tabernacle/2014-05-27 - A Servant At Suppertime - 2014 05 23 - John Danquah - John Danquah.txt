@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - A Servant At Suppertime - 2014 05 23 - John Danquah 
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   A Servant At Suppertime - 2014 05 23 - John Danquah
-Speaker: John Danquah
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XFbhE-K9Ocs
+Date:     2014-05-27
+Title:    A Servant At Suppertime - 2014 05 23 - John Danquah
+Speaker:  John Danquah
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=XFbhE-K9Ocs
 ========================================
 
 Description:

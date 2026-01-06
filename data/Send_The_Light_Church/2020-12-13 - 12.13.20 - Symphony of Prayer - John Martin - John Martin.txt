@@ -4,13 +4,14 @@ START OF FILE: 2020-12-13 - 12.13.20 - Symphony of Prayer - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-13
-Title:   12.13.20 - Symphony of Prayer - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t2GJEFDT5mE
+Date:     2020-12-13
+Title:    12.13.20 - Symphony of Prayer - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=t2GJEFDT5mE
 ========================================
 
 Description:

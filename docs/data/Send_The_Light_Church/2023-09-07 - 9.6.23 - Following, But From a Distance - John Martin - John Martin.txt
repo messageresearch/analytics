@@ -4,13 +4,14 @@ START OF FILE: 2023-09-07 - 9.6.23 - Following, But From a Distance - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-07
-Title:   9.6.23 - Following, But From a Distance - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yzDmygD8SVM
+Date:     2023-09-07
+Title:    9.6.23 - Following, But From a Distance - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=yzDmygD8SVM
 ========================================
 
 TRANSCRIPT

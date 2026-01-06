@@ -4,13 +4,14 @@ START OF FILE: 2018-03-25 - Sunday, March 25th, 2018 - Brother Troy - Isiah Broo
 
 SERMON DETAILS
 ========================================
-Date:    2018-03-25
-Title:   Sunday, March 25th, 2018 - Brother Troy
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xl84Xab2hZg
+Date:     2018-03-25
+Title:    Sunday, March 25th, 2018 - Brother Troy
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=xl84Xab2hZg
 ========================================
 
 Description:

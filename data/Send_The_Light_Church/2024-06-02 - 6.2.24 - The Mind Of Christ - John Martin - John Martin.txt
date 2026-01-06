@@ -4,13 +4,14 @@ START OF FILE: 2024-06-02 - 6.2.24 - The Mind Of Christ - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-02
-Title:   6.2.24 - The Mind Of Christ - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dRCD7P-SP88
+Date:     2024-06-02
+Title:    6.2.24 - The Mind Of Christ - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=dRCD7P-SP88
 ========================================
 
 TRANSCRIPT

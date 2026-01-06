@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Robinson Memorial Coliseum
-Location: Little Rock
-Duration: AR, 42 min
+Location: Little Rock, AR
+Duration: 42 min
 Source: livingwordbroadcast.org
 DateCode: 50-0227
 

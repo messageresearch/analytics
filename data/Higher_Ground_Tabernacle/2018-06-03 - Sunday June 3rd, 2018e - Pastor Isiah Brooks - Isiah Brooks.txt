@@ -4,13 +4,14 @@ START OF FILE: 2018-06-03 - Sunday June 3rd, 2018e - Pastor Isiah Brooks - Isiah
 
 SERMON DETAILS
 ========================================
-Date:    2018-06-03
-Title:   Sunday June 3rd, 2018e - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5u1RNeu-gug
+Date:     2018-06-03
+Title:    Sunday June 3rd, 2018e - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=5u1RNeu-gug
 ========================================
 
 Description:

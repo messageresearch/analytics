@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: K.R.N.T. Theater
-Location: Des Moines
-Duration: IA, 102 min
+Location: Des Moines, IA
+Duration: 102 min
 Source: livingwordbroadcast.org
 DateCode: 54-0620E
 

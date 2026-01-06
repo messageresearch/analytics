@@ -4,13 +4,14 @@ START OF FILE: 2025-02-09 - 2025.02.09 - Wedding ceremony  of Brother Nelson Mai
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-09
-Title:   2025.02.09 - Wedding ceremony  of Brother Nelson Mailula and Sister Shadi Laka.
-Speaker: Nelson Mailula
-Church:  Mamelodi Tabernacle
-Type:    Wedding
-Language:English
-URL:     https://www.youtube.com/watch?v=lHoa7bWwFbM
+Date:     2025-02-09
+Title:    2025.02.09 - Wedding ceremony  of Brother Nelson Mailula and Sister Shadi Laka.
+Speaker:  Nelson Mailula
+Church:   Mamelodi Tabernacle
+Type:     Wedding
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=lHoa7bWwFbM
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2024-04-21 - 4.21.24 - Take Our Burdens To The Lord - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-21
-Title:   4.21.24 - Take Our Burdens To The Lord - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hbhadehhXCo
+Date:     2024-04-21
+Title:    4.21.24 - Take Our Burdens To The Lord - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=hbhadehhXCo
 ========================================
 
 TRANSCRIPT

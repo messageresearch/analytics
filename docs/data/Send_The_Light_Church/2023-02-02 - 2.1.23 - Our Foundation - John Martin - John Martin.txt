@@ -4,13 +4,14 @@ START OF FILE: 2023-02-02 - 2.1.23 - Our Foundation - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-02
-Title:   2.1.23 - Our Foundation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RoQUjVUSd9w
+Date:     2023-02-02
+Title:    2.1.23 - Our Foundation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=RoQUjVUSd9w
 ========================================
 
 TRANSCRIPT

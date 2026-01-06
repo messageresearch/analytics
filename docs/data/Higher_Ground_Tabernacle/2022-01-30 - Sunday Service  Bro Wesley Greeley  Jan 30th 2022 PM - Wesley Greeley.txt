@@ -4,13 +4,14 @@ START OF FILE: 2022-01-30 - Sunday Service  Bro Wesley Greeley  Jan 30th 2022 PM
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-30
-Title:   Sunday Service || Bro Wesley Greeley || Jan 30th 2022 PM
-Speaker: Wesley Greeley
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L7Ra4LRphcs
+Date:     2022-01-30
+Title:    Sunday Service || Bro Wesley Greeley || Jan 30th 2022 PM
+Speaker:  Wesley Greeley
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 3h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=L7Ra4LRphcs
 ========================================
 
 Description:

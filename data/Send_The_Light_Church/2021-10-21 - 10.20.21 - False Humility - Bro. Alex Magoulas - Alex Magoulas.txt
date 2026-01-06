@@ -4,13 +4,14 @@ START OF FILE: 2021-10-21 - 10.20.21 - False Humility - Bro. Alex Magoulas - Ale
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-21
-Title:   10.20.21 - False Humility - Bro. Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cOxQO-FKZ30
+Date:     2021-10-21
+Title:    10.20.21 - False Humility - Bro. Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=cOxQO-FKZ30
 ========================================
 
 TRANSCRIPT

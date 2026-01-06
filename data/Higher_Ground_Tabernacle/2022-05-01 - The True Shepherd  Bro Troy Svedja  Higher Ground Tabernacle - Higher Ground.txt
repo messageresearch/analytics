@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - The True Shepherd  Bro Troy Svedja  Higher Ground Ta
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   The True Shepherd | Bro Troy Svedja | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OE6as5U3dCs
+Date:     2022-05-01
+Title:    The True Shepherd | Bro Troy Svedja | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=OE6as5U3dCs
 ========================================
 
 TRANSCRIPT

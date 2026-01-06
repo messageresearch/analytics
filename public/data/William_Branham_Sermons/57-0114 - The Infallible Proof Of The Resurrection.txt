@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: People's Tabernacle
-Location: Sturgis
-Duration: MI, 126 min
+Location: Sturgis, MI
+Duration: 126 min
 Source: livingwordbroadcast.org
 DateCode: 57-0114
 

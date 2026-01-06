@@ -4,13 +4,14 @@ START OF FILE: 2022-01-13 - 1.12.22 - Living The Vision - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-13
-Title:   1.12.22 - Living The Vision - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pgiaClp8834
+Date:     2022-01-13
+Title:    1.12.22 - Living The Vision - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=pgiaClp8834
 ========================================
 
 TRANSCRIPT

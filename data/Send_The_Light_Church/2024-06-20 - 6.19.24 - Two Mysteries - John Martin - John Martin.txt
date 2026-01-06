@@ -4,13 +4,14 @@ START OF FILE: 2024-06-20 - 6.19.24 - Two Mysteries - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-20
-Title:   6.19.24 - Two Mysteries - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9x5SnY9clIA
+Date:     2024-06-20
+Title:    6.19.24 - Two Mysteries - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=9x5SnY9clIA
 ========================================
 
 TRANSCRIPT

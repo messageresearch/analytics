@@ -4,13 +4,14 @@ START OF FILE: 2014-03-10 - Holy Ghost Worship Went to the enemies camp - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-10
-Title:   Holy Ghost Worship "Went to the enemies camp"
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Worship Service
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=WAvpbL3wTGQ
+Date:     2014-03-10
+Title:    Holy Ghost Worship "Went to the enemies camp"
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Worship Service
+Duration: 1m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=WAvpbL3wTGQ
 ========================================
 
 Description:

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Kern County Fairgrounds
-Location: Bakersfield
-Duration: CA, 54 min
+Location: Bakersfield, CA
+Duration: 54 min
 Source: livingwordbroadcast.org
 DateCode: 64-0206E
 

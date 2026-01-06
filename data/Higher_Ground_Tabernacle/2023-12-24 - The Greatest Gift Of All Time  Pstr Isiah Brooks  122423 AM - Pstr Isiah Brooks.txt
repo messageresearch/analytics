@@ -4,13 +4,14 @@ START OF FILE: 2023-12-24 - The Greatest Gift Of All Time  Pstr Isiah Brooks  12
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-24
-Title:   The Greatest Gift Of All Time | Pstr Isiah Brooks | 12/24/23 AM
-Speaker: Pstr Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nnMPyJtiWfk
+Date:     2023-12-24
+Title:    The Greatest Gift Of All Time | Pstr Isiah Brooks | 12/24/23 AM
+Speaker:  Pstr Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=nnMPyJtiWfk
 ========================================
 
 TRANSCRIPT

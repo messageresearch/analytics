@@ -4,13 +4,14 @@ START OF FILE: 2025-08-23 - 2025.08.23  - Funeral Service Of Sister Angeline Rib
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-23
-Title:   2025.08.23  - Funeral Service Of Sister Angeline Riba .
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=C-XICGvv17Q
+Date:     2025-08-23
+Title:    2025.08.23  - Funeral Service Of Sister Angeline Riba .
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=C-XICGvv17Q
 ========================================
 
 Description:

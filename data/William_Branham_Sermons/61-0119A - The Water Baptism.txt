@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Golden Arrow Restaurant
-Location: Beaumont
-Duration: TX, 85 min
+Location: Beaumont, TX
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 61-0119A
 

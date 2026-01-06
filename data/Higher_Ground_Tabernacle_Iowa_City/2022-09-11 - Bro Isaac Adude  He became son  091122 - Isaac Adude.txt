@@ -4,13 +4,14 @@ START OF FILE: 2022-09-11 - Bro Isaac Adude  He became son  091122 - Isaac Adude
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-11
-Title:   Bro Isaac Adude  He became son  09/11/22
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rsHpGK2ENLI
+Date:     2022-09-11
+Title:    Bro Isaac Adude  He became son  09/11/22
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=rsHpGK2ENLI
 ========================================
 
 Description:

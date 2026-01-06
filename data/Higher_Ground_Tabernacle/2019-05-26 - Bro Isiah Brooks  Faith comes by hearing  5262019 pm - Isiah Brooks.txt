@@ -4,13 +4,14 @@ START OF FILE: 2019-05-26 - Bro Isiah Brooks  Faith comes by hearing  5262019 pm
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-26
-Title:   Bro Isiah Brooks | Faith comes by hearing | 5/26/2019 pm
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iHOMo30WlU8
+Date:     2019-05-26
+Title:    Bro Isiah Brooks | Faith comes by hearing | 5/26/2019 pm
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=iHOMo30WlU8
 ========================================
 
 Description:

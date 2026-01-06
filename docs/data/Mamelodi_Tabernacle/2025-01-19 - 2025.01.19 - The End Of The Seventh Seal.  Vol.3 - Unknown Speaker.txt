@@ -4,13 +4,14 @@ START OF FILE: 2025-01-19 - 2025.01.19 - The End Of The Seventh Seal.  Vol.3 - U
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-19
-Title:   2025.01.19 - The End Of The Seventh Seal.  Vol.3
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=R1tMXCclfmU
+Date:     2025-01-19
+Title:    2025.01.19 - The End Of The Seventh Seal.  Vol.3
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 4h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=R1tMXCclfmU
 ========================================
 
 Description:

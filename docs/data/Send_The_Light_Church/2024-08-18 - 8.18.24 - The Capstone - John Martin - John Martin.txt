@@ -4,13 +4,14 @@ START OF FILE: 2024-08-18 - 8.18.24 - The Capstone - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-18
-Title:   8.18.24 - The Capstone - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tEqFGTDweOY
+Date:     2024-08-18
+Title:    8.18.24 - The Capstone - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=tEqFGTDweOY
 ========================================
 
 TRANSCRIPT

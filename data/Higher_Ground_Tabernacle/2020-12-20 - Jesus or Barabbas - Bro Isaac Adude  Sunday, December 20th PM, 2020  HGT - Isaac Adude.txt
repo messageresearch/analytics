@@ -4,13 +4,14 @@ START OF FILE: 2020-12-20 - Jesus or Barabbas - Bro Isaac Adude  Sunday, Decembe
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-20
-Title:   Jesus or Barabbas - Bro Isaac Adude | Sunday, December 20th PM, 2020 | HGT
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=s_xzV4q5swc
+Date:     2020-12-20
+Title:    Jesus or Barabbas - Bro Isaac Adude | Sunday, December 20th PM, 2020 | HGT
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=s_xzV4q5swc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-13 - 7.12.23 - The Masterpiece - Part 3 - Bruce Jackowski
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-13
-Title:   7.12.23 - The Masterpiece - Part 3 - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wzb313Jm_S8
+Date:     2023-07-13
+Title:    7.12.23 - The Masterpiece - Part 3 - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=wzb313Jm_S8
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2024-06-09 - 6.9.24 - Esther - Roger Rodriguez - Roger Rodriguez.
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-09
-Title:   6.9.24 - Esther - Roger Rodriguez
-Speaker: Roger Rodriguez
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=REdt_lpbvaw
+Date:     2024-06-09
+Title:    6.9.24 - Esther - Roger Rodriguez
+Speaker:  Roger Rodriguez
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=REdt_lpbvaw
 ========================================
 
 TRANSCRIPT

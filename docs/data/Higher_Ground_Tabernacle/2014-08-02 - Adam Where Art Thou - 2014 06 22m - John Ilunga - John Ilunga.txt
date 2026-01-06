@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - Adam Where Art Thou - 2014 06 22m - John Ilunga - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   Adam Where Art Thou - 2014 06 22m - John Ilunga
-Speaker: John Ilunga
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=iM22iEmNdjY
+Date:     2014-08-02
+Title:    Adam Where Art Thou - 2014 06 22m - John Ilunga
+Speaker:  John Ilunga
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=iM22iEmNdjY
 ========================================
 
 Description:

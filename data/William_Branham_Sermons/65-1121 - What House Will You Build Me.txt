@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tucson Tabernacle
-Location: Tucson
-Duration: AZ, 27 min
+Location: Tucson, AZ
+Duration: 27 min
 Source: livingwordbroadcast.org
 DateCode: 65-1121
 

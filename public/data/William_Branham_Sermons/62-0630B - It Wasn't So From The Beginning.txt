@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Villa Motel
-Location: Santa Maria
-Duration: CA, 56 min
+Location: Santa Maria, CA
+Duration: 56 min
 Source: livingwordbroadcast.org
 DateCode: 62-0630B
 

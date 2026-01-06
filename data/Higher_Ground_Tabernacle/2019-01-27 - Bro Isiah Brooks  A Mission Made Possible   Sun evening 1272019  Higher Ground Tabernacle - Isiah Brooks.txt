@@ -4,13 +4,14 @@ START OF FILE: 2019-01-27 - Bro Isiah Brooks  A Mission Made Possible   Sun even
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-27
-Title:   Bro Isiah Brooks | A Mission Made Possible  | Sun evening 1/27/2019 | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bfP2aV_2yCA
+Date:     2019-01-27
+Title:    Bro Isiah Brooks | A Mission Made Possible  | Sun evening 1/27/2019 | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=bfP2aV_2yCA
 ========================================
 
 Description:

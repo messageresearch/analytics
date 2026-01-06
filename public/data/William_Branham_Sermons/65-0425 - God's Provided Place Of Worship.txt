@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Embassy Hotel
-Location: Los Angeles
-Duration: CA, 99 min
+Location: Los Angeles, CA
+Duration: 99 min
 Source: livingwordbroadcast.org
 DateCode: 65-0425
 

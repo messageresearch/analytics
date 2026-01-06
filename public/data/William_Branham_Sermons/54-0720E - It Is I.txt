@@ -3,9 +3,9 @@ Title: It Is I
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Be Not Afraid
-Location: Lane Tech High School
-Duration: Chicago, IL, 64 min
+Venue: Lane Tech High School
+Location: Chicago, IL
+Duration: 64 min
 Source: livingwordbroadcast.org
 DateCode: 54-0720E
 

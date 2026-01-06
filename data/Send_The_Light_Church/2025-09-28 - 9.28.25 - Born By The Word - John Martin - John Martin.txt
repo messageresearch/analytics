@@ -4,13 +4,14 @@ START OF FILE: 2025-09-28 - 9.28.25 - Born By The Word - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-28
-Title:   9.28.25 - Born By The Word - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P-ZKv_xjBYA
+Date:     2025-09-28
+Title:    9.28.25 - Born By The Word - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=P-ZKv_xjBYA
 ========================================
 
 TRANSCRIPT

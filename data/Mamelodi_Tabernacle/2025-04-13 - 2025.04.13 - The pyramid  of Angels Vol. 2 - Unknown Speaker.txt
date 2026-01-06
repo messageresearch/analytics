@@ -4,13 +4,14 @@ START OF FILE: 2025-04-13 - 2025.04.13 - The pyramid  of Angels Vol. 2 - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-13
-Title:   2025.04.13 - The pyramid  of Angels Vol. 2
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AaCEGpU0-BY
+Date:     2025-04-13
+Title:    2025.04.13 - The pyramid  of Angels Vol. 2
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 5h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=AaCEGpU0-BY
 ========================================
 
 TRANSCRIPT

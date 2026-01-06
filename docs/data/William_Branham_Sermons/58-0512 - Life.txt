@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Capitol Theater
-Location: Everett
-Duration: MA, 102 min
+Location: Everett, MA
+Duration: 102 min
 Source: livingwordbroadcast.org
 DateCode: 58-0512
 

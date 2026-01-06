@@ -4,13 +4,14 @@ START OF FILE: 2022-05-05 - 5.4.22 - Rain, Revival And Restoration - Josiah Corn
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-05
-Title:   5.4.22 - Rain, Revival And Restoration - Josiah Cornett
-Speaker: Josiah Cornett
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4zfzy94f3-o
+Date:     2022-05-05
+Title:    5.4.22 - Rain, Revival And Restoration - Josiah Cornett
+Speaker:  Josiah Cornett
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=4zfzy94f3-o
 ========================================
 
 TRANSCRIPT

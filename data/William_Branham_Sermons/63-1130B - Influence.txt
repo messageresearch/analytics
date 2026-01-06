@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Captain Shreve Hotel
-Location: Shreveport
-Duration: LA, 88 min
+Location: Shreveport, LA
+Duration: 88 min
 Source: livingwordbroadcast.org
 DateCode: 63-1130B
 

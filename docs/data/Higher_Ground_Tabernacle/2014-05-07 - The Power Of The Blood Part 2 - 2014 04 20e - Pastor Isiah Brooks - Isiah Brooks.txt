@@ -4,13 +4,14 @@ START OF FILE: 2014-05-07 - The Power Of The Blood Part 2 - 2014 04 20e - Pastor
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-07
-Title:   The Power Of The Blood Part 2 - 2014 04 20e - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=s2xwLQHwlg4
+Date:     2014-05-07
+Title:    The Power Of The Blood Part 2 - 2014 04 20e - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=s2xwLQHwlg4
 ========================================
 
 Description:

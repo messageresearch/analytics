@@ -4,13 +4,14 @@ START OF FILE: 2023-07-09 - 7.9.23 - Our Ministry - John Martin - John Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-09
-Title:   7.9.23 - Our Ministry - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=oDQ8w6orrOg
+Date:     2023-07-09
+Title:    7.9.23 - Our Ministry - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=oDQ8w6orrOg
 ========================================
 
 TRANSCRIPT

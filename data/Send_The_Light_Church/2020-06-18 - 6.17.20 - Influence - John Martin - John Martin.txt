@@ -4,13 +4,14 @@ START OF FILE: 2020-06-18 - 6.17.20 - Influence - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-18
-Title:   6.17.20 - Influence - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RS-BKK8P8z0
+Date:     2020-06-18
+Title:    6.17.20 - Influence - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=RS-BKK8P8z0
 ========================================
 
 TRANSCRIPT

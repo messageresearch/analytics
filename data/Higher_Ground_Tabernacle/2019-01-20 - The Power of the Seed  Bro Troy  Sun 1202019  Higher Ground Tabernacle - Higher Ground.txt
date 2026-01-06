@@ -4,13 +4,14 @@ START OF FILE: 2019-01-20 - The Power of the Seed  Bro Troy  Sun 1202019  Higher
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-20
-Title:   The Power of the Seed | Bro Troy | Sun 1/20/2019 | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t1cz6190pQs
+Date:     2019-01-20
+Title:    The Power of the Seed | Bro Troy | Sun 1/20/2019 | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=t1cz6190pQs
 ========================================
 
 Description:

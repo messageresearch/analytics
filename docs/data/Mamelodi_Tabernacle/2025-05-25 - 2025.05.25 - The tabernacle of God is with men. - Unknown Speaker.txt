@@ -4,13 +4,14 @@ START OF FILE: 2025-05-25 - 2025.05.25 - The tabernacle of God is with men. - Un
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-25
-Title:   2025.05.25 - The tabernacle of God is with men.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QLwi5-3xOj0
+Date:     2025-05-25
+Title:    2025.05.25 - The tabernacle of God is with men.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=QLwi5-3xOj0
 ========================================
 
 Description:

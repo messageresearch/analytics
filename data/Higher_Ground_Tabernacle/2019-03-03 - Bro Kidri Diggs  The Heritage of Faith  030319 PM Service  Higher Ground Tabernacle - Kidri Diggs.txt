@@ -4,13 +4,14 @@ START OF FILE: 2019-03-03 - Bro Kidri Diggs  The Heritage of Faith  030319 PM Se
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-03
-Title:   Bro Kidri Diggs | The Heritage of Faith | 03/03/19 PM Service | Higher Ground Tabernacle
-Speaker: Kidri Diggs
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=HnoAvtXiIq4
+Date:     2019-03-03
+Title:    Bro Kidri Diggs | The Heritage of Faith | 03/03/19 PM Service | Higher Ground Tabernacle
+Speaker:  Kidri Diggs
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=HnoAvtXiIq4
 ========================================
 
 Description:

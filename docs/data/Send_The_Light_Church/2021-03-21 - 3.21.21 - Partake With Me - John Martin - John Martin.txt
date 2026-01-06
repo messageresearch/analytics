@@ -4,13 +4,14 @@ START OF FILE: 2021-03-21 - 3.21.21 - Partake With Me - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2021-03-21
-Title:   3.21.21 - Partake With Me - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jT9-tLti-jg
+Date:     2021-03-21
+Title:    3.21.21 - Partake With Me - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=jT9-tLti-jg
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-08-07 - 8.6.25 - Oneness - Bruce Jackowski - Bruce Jackowski
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-07
-Title:   8.6.25 - Oneness - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GLIEyjGPZgY
+Date:     2025-08-07
+Title:    8.6.25 - Oneness - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 32m
+Language: English
+URL:      https://www.youtube.com/watch?v=GLIEyjGPZgY
 ========================================
 
 TRANSCRIPT

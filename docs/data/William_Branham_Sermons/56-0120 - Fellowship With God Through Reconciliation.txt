@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Sturgis High School
-Location: Sturgis
-Duration: MI, 79 min
+Location: Sturgis, MI
+Duration: 79 min
 Source: livingwordbroadcast.org
 DateCode: 56-0120
 

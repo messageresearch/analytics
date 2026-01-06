@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Beulah Temple
-Location: Chicago
-Duration: IL, 64 min
+Location: Chicago, IL
+Duration: 64 min
 Source: livingwordbroadcast.org
 DateCode: 59-0613
 

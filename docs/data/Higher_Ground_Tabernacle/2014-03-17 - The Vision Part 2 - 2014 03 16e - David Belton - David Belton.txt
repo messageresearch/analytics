@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - The Vision Part 2 - 2014 03 16e - David Belton - Dav
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   The Vision Part 2 - 2014 03 16e - David Belton
-Speaker: David Belton
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RbM24uhD6tY
+Date:     2014-03-17
+Title:    The Vision Part 2 - 2014 03 16e - David Belton
+Speaker:  David Belton
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=RbM24uhD6tY
 ========================================
 
 Description:

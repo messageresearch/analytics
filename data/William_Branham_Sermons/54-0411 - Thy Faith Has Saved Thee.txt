@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Municipal Auditorium
-Location: Shreveport
-Duration: LA, 40 min
+Location: Shreveport, LA
+Duration: 40 min
 Source: livingwordbroadcast.org
 DateCode: 54-0411
 

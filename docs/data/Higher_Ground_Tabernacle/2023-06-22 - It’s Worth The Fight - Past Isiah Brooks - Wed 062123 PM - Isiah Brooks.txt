@@ -4,13 +4,14 @@ START OF FILE: 2023-06-22 - It’s Worth The Fight - Past Isiah Brooks - Wed 062
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-22
-Title:   It’s Worth The Fight - Past Isiah Brooks - Wed 06/21/23 PM
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nFVCgN2ED08
+Date:     2023-06-22
+Title:    It’s Worth The Fight - Past Isiah Brooks - Wed 06/21/23 PM
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=nFVCgN2ED08
 ========================================
 
 TRANSCRIPT

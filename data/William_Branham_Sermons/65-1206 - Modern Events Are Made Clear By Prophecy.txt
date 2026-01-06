@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Orange Bowl
-Location: San Bernardino
-Duration: CA, 113 min
+Location: San Bernardino, CA
+Duration: 113 min
 Source: livingwordbroadcast.org
 DateCode: 65-1206
 

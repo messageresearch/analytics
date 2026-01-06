@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Angelus Temple
-Location: Los Angeles
-Duration: CA, 85 min
+Location: Los Angeles, CA
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 59-0416
 

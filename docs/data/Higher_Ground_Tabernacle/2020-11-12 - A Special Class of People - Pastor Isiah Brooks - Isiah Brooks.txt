@@ -4,13 +4,14 @@ START OF FILE: 2020-11-12 - A Special Class of People - Pastor Isiah Brooks - Is
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-12
-Title:   A Special Class of People - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SN4mU0StfEI
+Date:     2020-11-12
+Title:    A Special Class of People - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=SN4mU0StfEI
 ========================================
 
 Description:

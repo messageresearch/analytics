@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Unknown
-Location: Zurich
-Duration: Switzerland, 98 min
+Location: Zurich, Switzerland
+Duration: 98 min
 Source: livingwordbroadcast.org
 DateCode: 55-0625
 

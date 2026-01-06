@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Prince Albert Arena
-Location: Prince Albert
-Duration: SK, 125 min
+Location: Prince Albert, SK
+Duration: 125 min
 Source: livingwordbroadcast.org
 DateCode: 56-0814
 

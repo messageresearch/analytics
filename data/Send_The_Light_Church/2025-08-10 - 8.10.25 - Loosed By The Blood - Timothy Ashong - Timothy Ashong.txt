@@ -4,13 +4,14 @@ START OF FILE: 2025-08-10 - 8.10.25 - Loosed By The Blood - Timothy Ashong - Tim
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-10
-Title:   8.10.25 - Loosed By The Blood - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mL-A_au0JCU
+Date:     2025-08-10
+Title:    8.10.25 - Loosed By The Blood - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=mL-A_au0JCU
 ========================================
 
 TRANSCRIPT

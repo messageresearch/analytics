@@ -4,13 +4,14 @@ START OF FILE: 2015-10-04 - Brother Diego Arroyo It's The Holy Ghost & Fire & Jo
 
 SERMON DETAILS
 ========================================
-Date:    2015-10-04
-Title:   Brother Diego Arroyo: It's The Holy Ghost & Fire & Joy Unspeakable
-Speaker: Diego Arroyo
-Church:  Malachi Four Tabernacle
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=c_4HN2zeJ_o
+Date:     2015-10-04
+Title:    Brother Diego Arroyo: It's The Holy Ghost & Fire & Joy Unspeakable
+Speaker:  Diego Arroyo
+Church:   Malachi Four Tabernacle
+Type:     Song Special
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=c_4HN2zeJ_o
 ========================================
 
 TRANSCRIPT

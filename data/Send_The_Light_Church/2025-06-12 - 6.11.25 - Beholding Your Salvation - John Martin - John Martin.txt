@@ -4,13 +4,14 @@ START OF FILE: 2025-06-12 - 6.11.25 - Beholding Your Salvation - John Martin - J
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-12
-Title:   6.11.25 - Beholding Your Salvation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=suf91xH-rvA
+Date:     2025-06-12
+Title:    6.11.25 - Beholding Your Salvation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=suf91xH-rvA
 ========================================
 
 TRANSCRIPT

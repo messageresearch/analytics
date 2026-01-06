@@ -4,13 +4,14 @@ START OF FILE: 2022-05-15 - 5.15.22 - Forgetting And Stirring - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-15
-Title:   5.15.22 - Forgetting And Stirring - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dN1gGlHeLvs
+Date:     2022-05-15
+Title:    5.15.22 - Forgetting And Stirring - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=dN1gGlHeLvs
 ========================================
 
 TRANSCRIPT

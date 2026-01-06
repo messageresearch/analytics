@@ -4,13 +4,14 @@ START OF FILE: 2022-08-24 - In Training  Past Isiah Brooks  Wednesday 08242022 H
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-24
-Title:   In Training | Past Isiah Brooks | Wednesday 08/24/2022 HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CjtraLFTrGU
+Date:     2022-08-24
+Title:    In Training | Past Isiah Brooks | Wednesday 08/24/2022 HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=CjtraLFTrGU
 ========================================
 
 TRANSCRIPT

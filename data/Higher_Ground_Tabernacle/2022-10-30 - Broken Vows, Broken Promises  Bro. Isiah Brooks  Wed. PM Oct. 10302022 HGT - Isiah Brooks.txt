@@ -4,13 +4,14 @@ START OF FILE: 2022-10-30 - Broken Vows, Broken Promises  Bro. Isiah Brooks  Wed
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-30
-Title:   Broken Vows, Broken Promises | Bro. Isiah Brooks | Wed. PM Oct. 10/30/2022 HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=j28DgSOdCbM
+Date:     2022-10-30
+Title:    Broken Vows, Broken Promises | Bro. Isiah Brooks | Wed. PM Oct. 10/30/2022 HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=j28DgSOdCbM
 ========================================
 
 TRANSCRIPT

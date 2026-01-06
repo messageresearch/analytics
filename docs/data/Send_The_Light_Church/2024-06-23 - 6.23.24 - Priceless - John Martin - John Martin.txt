@@ -4,13 +4,14 @@ START OF FILE: 2024-06-23 - 6.23.24 - Priceless - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-23
-Title:   6.23.24 - Priceless - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GbwgsJSVnV8
+Date:     2024-06-23
+Title:    6.23.24 - Priceless - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=GbwgsJSVnV8
 ========================================
 
 TRANSCRIPT

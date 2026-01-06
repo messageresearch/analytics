@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Soul's Harbor Temple
-Location: Dallas
-Duration: TX, 88 min
+Location: Dallas, TX
+Duration: 88 min
 Source: livingwordbroadcast.org
 DateCode: 64-0305
 

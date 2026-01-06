@@ -4,13 +4,14 @@ START OF FILE: 2024-01-04 - The Authority of The Believer  10324 PM - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-04
-Title:   The Authority of The Believer | 1/03/24 PM
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wd3w_gi_BPs
+Date:     2024-01-04
+Title:    The Authority of The Believer | 1/03/24 PM
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=wd3w_gi_BPs
 ========================================
 
 TRANSCRIPT

@@ -4,7 +4,7 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Full Gospel Church
-Location: Tempe AZ
+Location: Tempe, AZ
 Duration: 111 min
 Source: livingwordbroadcast.org
 DateCode: 63-0117

@@ -4,13 +4,14 @@ START OF FILE: 2022-07-31 - 7.31.22 - Making Man In God's Image - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-31
-Title:   7.31.22 - Making Man In God's Image - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7NbXnGmhwOo
+Date:     2022-07-31
+Title:    7.31.22 - Making Man In God's Image - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=7NbXnGmhwOo
 ========================================
 
 TRANSCRIPT

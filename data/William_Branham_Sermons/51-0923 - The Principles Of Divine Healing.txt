@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Jeffersonville High School
-Location: Jeffersonville
-Duration: IN, 123 min
+Location: Jeffersonville, IN
+Duration: 123 min
 Source: livingwordbroadcast.org
 DateCode: 51-0923
 

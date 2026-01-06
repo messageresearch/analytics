@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Manchester Hotel
-Location: Middletown
-Duration: OH, 67 min
+Location: Middletown, OH
+Duration: 67 min
 Source: livingwordbroadcast.org
 DateCode: 60-0611B
 

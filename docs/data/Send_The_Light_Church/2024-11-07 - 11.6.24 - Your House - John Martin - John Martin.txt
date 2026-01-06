@@ -4,13 +4,14 @@ START OF FILE: 2024-11-07 - 11.6.24 - Your House - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-07
-Title:   11.6.24 - Your House - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CQSMa9zTPRM
+Date:     2024-11-07
+Title:    11.6.24 - Your House - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=CQSMa9zTPRM
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-12-12 - Parable Of Talent - Fr. Jean Lumbala - Fr. Jean Lumb
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-12
-Title:   Parable Of Talent - Fr. Jean Lumbala
-Speaker: Fr. Jean Lumbala
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7SuQvPzSTgI
+Date:     2025-12-12
+Title:    Parable Of Talent - Fr. Jean Lumbala
+Speaker:  Fr. Jean Lumbala
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Short Service
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=7SuQvPzSTgI
 ========================================
 
 Description:

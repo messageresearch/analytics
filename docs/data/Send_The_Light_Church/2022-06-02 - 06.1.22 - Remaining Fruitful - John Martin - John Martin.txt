@@ -4,13 +4,14 @@ START OF FILE: 2022-06-02 - 06.1.22 - Remaining Fruitful - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-02
-Title:   06.1.22 - Remaining Fruitful - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9wuiss2dOQc
+Date:     2022-06-02
+Title:    06.1.22 - Remaining Fruitful - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=9wuiss2dOQc
 ========================================
 
 TRANSCRIPT

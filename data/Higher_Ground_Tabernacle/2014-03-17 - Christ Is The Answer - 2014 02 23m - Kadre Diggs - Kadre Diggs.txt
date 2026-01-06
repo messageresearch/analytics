@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - Christ Is The Answer - 2014 02 23m - Kadre Diggs - K
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   Christ Is The Answer - 2014 02 23m - Kadre Diggs
-Speaker: Kadre Diggs
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=18DBJsAkM-Q
+Date:     2014-03-17
+Title:    Christ Is The Answer - 2014 02 23m - Kadre Diggs
+Speaker:  Kadre Diggs
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=18DBJsAkM-Q
 ========================================
 
 Description:

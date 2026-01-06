@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Sports Center
-Location: Owensboro
-Duration: KY, 100 min
+Location: Owensboro, KY
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 53-1111
 

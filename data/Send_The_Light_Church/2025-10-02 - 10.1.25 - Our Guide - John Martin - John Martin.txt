@@ -4,13 +4,14 @@ START OF FILE: 2025-10-02 - 10.1.25 - Our Guide - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-02
-Title:   10.1.25 - Our Guide - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=P5xHZOttr98
+Date:     2025-10-02
+Title:    10.1.25 - Our Guide - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=P5xHZOttr98
 ========================================
 
 TRANSCRIPT

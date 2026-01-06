@@ -4,13 +4,14 @@ START OF FILE: 2013-10-15 - When Tried In The Fire - 2013 09 08m - Pastor Isiah 
 
 SERMON DETAILS
 ========================================
-Date:    2013-10-15
-Title:   When Tried In The Fire - 2013 09 08m - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NUCEx5CWQOk
+Date:     2013-10-15
+Title:    When Tried In The Fire - 2013 09 08m - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=NUCEx5CWQOk
 ========================================
 
 Description:

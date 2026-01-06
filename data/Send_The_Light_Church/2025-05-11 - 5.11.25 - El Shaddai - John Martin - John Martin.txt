@@ -4,13 +4,14 @@ START OF FILE: 2025-05-11 - 5.11.25 - El Shaddai - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-11
-Title:   5.11.25 - El Shaddai - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nsWqsIMnjsA
+Date:     2025-05-11
+Title:    5.11.25 - El Shaddai - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=nsWqsIMnjsA
 ========================================
 
 TRANSCRIPT

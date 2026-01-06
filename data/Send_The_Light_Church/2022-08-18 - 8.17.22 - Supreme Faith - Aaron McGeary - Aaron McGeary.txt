@@ -4,13 +4,14 @@ START OF FILE: 2022-08-18 - 8.17.22 - Supreme Faith - Aaron McGeary - Aaron McGe
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-18
-Title:   8.17.22 - Supreme Faith - Aaron McGeary
-Speaker: Aaron McGeary
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PnXV_OnyuWI
+Date:     2022-08-18
+Title:    8.17.22 - Supreme Faith - Aaron McGeary
+Speaker:  Aaron McGeary
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=PnXV_OnyuWI
 ========================================
 
 TRANSCRIPT

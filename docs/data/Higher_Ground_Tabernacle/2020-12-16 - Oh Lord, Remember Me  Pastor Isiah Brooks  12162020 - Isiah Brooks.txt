@@ -4,13 +4,14 @@ START OF FILE: 2020-12-16 - Oh Lord, Remember Me  Pastor Isiah Brooks  12162020 
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-16
-Title:   Oh Lord, Remember Me | Pastor Isiah Brooks | 12/16/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ywcLFr5SYs4
+Date:     2020-12-16
+Title:    Oh Lord, Remember Me | Pastor Isiah Brooks | 12/16/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=ywcLFr5SYs4
 ========================================
 
 Description:

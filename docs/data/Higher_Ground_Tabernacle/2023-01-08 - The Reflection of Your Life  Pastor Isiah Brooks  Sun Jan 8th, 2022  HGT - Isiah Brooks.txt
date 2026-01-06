@@ -4,13 +4,14 @@ START OF FILE: 2023-01-08 - The Reflection of Your Life  Pastor Isiah Brooks  Su
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-08
-Title:   The Reflection of Your Life | Pastor Isiah Brooks | Sun Jan 8th, 2022 | HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8Rtks9txPm0
+Date:     2023-01-08
+Title:    The Reflection of Your Life | Pastor Isiah Brooks | Sun Jan 8th, 2022 | HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=8Rtks9txPm0
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2021-09-19 - 9.19.21 - Walking in The 22nd Century - John Martin 
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-19
-Title:   9.19.21 - Walking in The 22nd Century - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-4gkdnah1M0
+Date:     2021-09-19
+Title:    9.19.21 - Walking in The 22nd Century - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=-4gkdnah1M0
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-06 - 7.5.23 - Yielded & Resting - Mark Cosby - Mark Cosby
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-06
-Title:   7.5.23 - Yielded & Resting - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sSTSqXQ4jdk
+Date:     2023-07-06
+Title:    7.5.23 - Yielded & Resting - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=sSTSqXQ4jdk
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Morrison's Cafeteria
-Location: Tampa
-Duration: FL, 104 min
+Location: Tampa, FL
+Duration: 104 min
 Source: livingwordbroadcast.org
 DateCode: 64-0418B
 

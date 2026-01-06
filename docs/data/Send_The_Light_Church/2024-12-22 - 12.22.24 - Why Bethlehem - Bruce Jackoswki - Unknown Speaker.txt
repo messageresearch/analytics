@@ -4,13 +4,14 @@ START OF FILE: 2024-12-22 - 12.22.24 - Why Bethlehem - Bruce Jackoswki - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-22
-Title:   12.22.24 - Why Bethlehem? - Bruce Jackoswki
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Tn-QtWwxsJ0
+Date:     2024-12-22
+Title:    12.22.24 - Why Bethlehem? - Bruce Jackoswki
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=Tn-QtWwxsJ0
 ========================================
 
 TRANSCRIPT

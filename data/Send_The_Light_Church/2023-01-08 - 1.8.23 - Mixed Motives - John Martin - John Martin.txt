@@ -4,13 +4,14 @@ START OF FILE: 2023-01-08 - 1.8.23 - Mixed Motives - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-08
-Title:   1.8.23 - Mixed Motives - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wgMPVyr7pF8
+Date:     2023-01-08
+Title:    1.8.23 - Mixed Motives - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=wgMPVyr7pF8
 ========================================
 
 TRANSCRIPT

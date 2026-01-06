@@ -4,13 +4,14 @@ START OF FILE: 2020-01-26 - Bro Isiah Brooks    Sunday pm 1262020 - Isiah Brooks
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-26
-Title:   Bro Isiah Brooks |  | Sunday pm 1/26/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RTs8vJW7oXI
+Date:     2020-01-26
+Title:    Bro Isiah Brooks |  | Sunday pm 1/26/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=RTs8vJW7oXI
 ========================================
 
 Description:

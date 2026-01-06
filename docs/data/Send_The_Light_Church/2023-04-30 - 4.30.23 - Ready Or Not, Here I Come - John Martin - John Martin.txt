@@ -4,13 +4,14 @@ START OF FILE: 2023-04-30 - 4.30.23 - Ready Or Not, Here I Come - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-30
-Title:   4.30.23 - Ready Or Not, Here I Come - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yAUNBSJOAgQ
+Date:     2023-04-30
+Title:    4.30.23 - Ready Or Not, Here I Come - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=yAUNBSJOAgQ
 ========================================
 
 TRANSCRIPT

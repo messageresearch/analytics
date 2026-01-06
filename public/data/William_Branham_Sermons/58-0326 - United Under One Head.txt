@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Middletown High School
-Location: Middletown
-Duration: OH, 86 min
+Location: Middletown, OH
+Duration: 86 min
 Source: livingwordbroadcast.org
 DateCode: 58-0326
 

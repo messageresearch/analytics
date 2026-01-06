@@ -4,13 +4,14 @@ START OF FILE: 2024-09-22 - 9.22.24 - The Well Of Grace - Bruce Jackowski - Bruc
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-22
-Title:   9.22.24 - The Well Of Grace - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0vmOZXLEmoQ
+Date:     2024-09-22
+Title:    9.22.24 - The Well Of Grace - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=0vmOZXLEmoQ
 ========================================
 
 TRANSCRIPT

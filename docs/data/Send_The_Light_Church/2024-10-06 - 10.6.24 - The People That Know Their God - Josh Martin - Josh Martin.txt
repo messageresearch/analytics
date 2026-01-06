@@ -4,13 +4,14 @@ START OF FILE: 2024-10-06 - 10.6.24 - The People That Know Their God - Josh Mart
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-06
-Title:   10.6.24 - The People That Know Their God - Josh Martin
-Speaker: Josh Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Dng77Ub0r6Y
+Date:     2024-10-06
+Title:    10.6.24 - The People That Know Their God - Josh Martin
+Speaker:  Josh Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=Dng77Ub0r6Y
 ========================================
 
 TRANSCRIPT

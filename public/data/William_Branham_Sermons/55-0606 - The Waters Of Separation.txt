@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Porter Stadium
-Location: Macon
-Duration: GA, 76 min
+Location: Macon, GA
+Duration: 76 min
 Source: livingwordbroadcast.org
 DateCode: 55-0606
 

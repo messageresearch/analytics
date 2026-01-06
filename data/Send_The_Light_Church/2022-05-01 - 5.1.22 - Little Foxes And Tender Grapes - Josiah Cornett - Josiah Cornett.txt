@@ -4,13 +4,14 @@ START OF FILE: 2022-05-01 - 5.1.22 - Little Foxes And Tender Grapes - Josiah Cor
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-01
-Title:   5.1.22 - Little Foxes And Tender Grapes - Josiah Cornett
-Speaker: Josiah Cornett
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Fusl59QcxVo
+Date:     2022-05-01
+Title:    5.1.22 - Little Foxes And Tender Grapes - Josiah Cornett
+Speaker:  Josiah Cornett
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=Fusl59QcxVo
 ========================================
 
 TRANSCRIPT

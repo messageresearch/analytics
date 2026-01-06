@@ -4,13 +4,14 @@ START OF FILE: 2019-11-03 - Bro Isaac Adude    Sunday 1132019 - Isaac Adude.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-11-03
-Title:   Bro Isaac Adude |  | Sunday 11/3/2019
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9kNY_bcY99Q
+Date:     2019-11-03
+Title:    Bro Isaac Adude |  | Sunday 11/3/2019
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=9kNY_bcY99Q
 ========================================
 
 Description:

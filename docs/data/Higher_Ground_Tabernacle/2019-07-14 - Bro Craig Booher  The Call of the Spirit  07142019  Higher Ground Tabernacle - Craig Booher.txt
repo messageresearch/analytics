@@ -4,13 +4,14 @@ START OF FILE: 2019-07-14 - Bro Craig Booher  The Call of the Spirit  07142019  
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-14
-Title:   Bro Craig Booher | The Call of the Spirit | 07/14/2019 | Higher Ground Tabernacle
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hIJ-dhoBf5U
+Date:     2019-07-14
+Title:    Bro Craig Booher | The Call of the Spirit | 07/14/2019 | Higher Ground Tabernacle
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=hIJ-dhoBf5U
 ========================================
 
 Description:

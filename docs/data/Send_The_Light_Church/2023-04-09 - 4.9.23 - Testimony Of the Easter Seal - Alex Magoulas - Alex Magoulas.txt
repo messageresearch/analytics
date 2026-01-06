@@ -4,13 +4,14 @@ START OF FILE: 2023-04-09 - 4.9.23 - Testimony Of the Easter Seal - Alex Magoula
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-09
-Title:   4.9.23 - Testimony Of the Easter Seal - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ELuvTRsP_EU
+Date:     2023-04-09
+Title:    4.9.23 - Testimony Of the Easter Seal - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Easter Program
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=ELuvTRsP_EU
 ========================================
 
 TRANSCRIPT

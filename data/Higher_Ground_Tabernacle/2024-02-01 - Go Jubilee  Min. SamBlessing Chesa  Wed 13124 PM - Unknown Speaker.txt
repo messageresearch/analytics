@@ -4,13 +4,14 @@ START OF FILE: 2024-02-01 - Go Jubilee  Min. SamBlessing Chesa  Wed 13124 PM - U
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-01
-Title:   Go Jubilee | Min. SamBlessing Chesa | Wed 1/31/24 PM
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=d5AizS12MNk
+Date:     2024-02-01
+Title:    Go Jubilee | Min. SamBlessing Chesa | Wed 1/31/24 PM
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=d5AizS12MNk
 ========================================
 
 TRANSCRIPT

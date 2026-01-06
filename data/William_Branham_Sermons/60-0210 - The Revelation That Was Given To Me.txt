@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Escambron Beach Club
-Location: San Juan
-Duration: PR, 98 min
+Location: San Juan, PR
+Duration: 98 min
 Source: livingwordbroadcast.org
 DateCode: 60-0210
 

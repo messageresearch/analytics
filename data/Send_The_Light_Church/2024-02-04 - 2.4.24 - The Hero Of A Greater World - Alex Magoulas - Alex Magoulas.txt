@@ -4,13 +4,14 @@ START OF FILE: 2024-02-04 - 2.4.24 - The Hero Of A Greater World - Alex Magoulas
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-04
-Title:   2.4.24 - The Hero Of A Greater World - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ocG4kbKDEO4
+Date:     2024-02-04
+Title:    2.4.24 - The Hero Of A Greater World - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=ocG4kbKDEO4
 ========================================
 
 TRANSCRIPT

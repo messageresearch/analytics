@@ -4,13 +4,14 @@ START OF FILE: 2023-05-23 - Mamelodi Church Singing - Shall never loose Its powe
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-23
-Title:   Mamelodi Church Singing - Shall never loose Its power
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_XX7vOmhQsw
+Date:     2023-05-23
+Title:    Mamelodi Church Singing - Shall never loose Its power
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=_XX7vOmhQsw
 ========================================
 
 TRANSCRIPT

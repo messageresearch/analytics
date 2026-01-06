@@ -4,13 +4,14 @@ START OF FILE: 2025-10-04 - The Respect - Bro. Jean Lumbala - Jean Lumbala.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-04
-Title:   The Respect - Bro. Jean Lumbala
-Speaker: Jean Lumbala
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FPHYIEso0fM
+Date:     2025-10-04
+Title:    The Respect - Bro. Jean Lumbala
+Speaker:  Jean Lumbala
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=FPHYIEso0fM
 ========================================
 
 Description:

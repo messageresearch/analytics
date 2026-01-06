@@ -3,8 +3,8 @@ Title: Fellowship
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Phoenix
-Location: AZ
+Venue: Unknown
+Location: Phoenix, AZ
 Duration: 4 mins
 Source: livingwordbroadcast.org
 DateCode: 47-1100x

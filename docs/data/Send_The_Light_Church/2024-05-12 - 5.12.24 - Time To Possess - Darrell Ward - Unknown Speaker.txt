@@ -4,13 +4,14 @@ START OF FILE: 2024-05-12 - 5.12.24 - Time To Possess - Darrell Ward - Unknown S
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-12
-Title:   5.12.24 - Time To Possess - Darrell Ward
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QN_jvUOQrPM
+Date:     2024-05-12
+Title:    5.12.24 - Time To Possess - Darrell Ward
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=QN_jvUOQrPM
 ========================================
 
 TRANSCRIPT

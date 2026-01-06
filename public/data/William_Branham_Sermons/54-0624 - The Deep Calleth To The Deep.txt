@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Constitution Hall
-Location: Washington
-Duration: DC, 61 min
+Location: Washington, DC
+Duration: 61 min
 Source: livingwordbroadcast.org
 DateCode: 54-0624
 

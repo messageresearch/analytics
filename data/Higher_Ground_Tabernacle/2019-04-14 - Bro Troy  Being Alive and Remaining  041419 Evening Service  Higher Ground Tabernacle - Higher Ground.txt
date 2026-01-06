@@ -4,13 +4,14 @@ START OF FILE: 2019-04-14 - Bro Troy  Being Alive and Remaining  041419 Evening 
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-14
-Title:   Bro Troy | Being Alive and Remaining | 04/14/19 Evening Service | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6EBJ0h89thM
+Date:     2019-04-14
+Title:    Bro Troy | Being Alive and Remaining | 04/14/19 Evening Service | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=6EBJ0h89thM
 ========================================
 
 Description:

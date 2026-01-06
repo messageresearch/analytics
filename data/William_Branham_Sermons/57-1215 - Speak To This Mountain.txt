@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Maranatha Temple
-Location: Brooklyn
-Duration: NY, 69 min
+Location: Brooklyn, NY
+Duration: 69 min
 Source: livingwordbroadcast.org
 DateCode: 57-1215
 

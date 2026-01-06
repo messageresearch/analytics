@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Harrisonburg
-Duration: VA, 86 min
+Location: Harrisonburg, VA
+Duration: 86 min
 Source: livingwordbroadcast.org
 DateCode: 58-0313
 

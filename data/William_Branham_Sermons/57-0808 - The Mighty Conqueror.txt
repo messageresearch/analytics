@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Edmonton Arena
-Location: Edmonton
-Duration: AB, 105 min
+Location: Edmonton, AB
+Duration: 105 min
 Source: livingwordbroadcast.org
 DateCode: 57-0808
 

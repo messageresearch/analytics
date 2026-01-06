@@ -4,13 +4,14 @@ START OF FILE: 2021-05-09 - 5.9.21 - Spiritual Mothers - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-09
-Title:   5.9.21 - Spiritual Mothers - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J7PY7QyPso4
+Date:     2021-05-09
+Title:    5.9.21 - Spiritual Mothers - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=J7PY7QyPso4
 ========================================
 
 Description:

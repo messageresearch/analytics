@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Memorial Hall
-Location: Lima
-Duration: OH, 112 min
+Location: Lima, OH
+Duration: 112 min
 Source: livingwordbroadcast.org
 DateCode: 57-0127E
 

@@ -4,13 +4,14 @@ START OF FILE: 2018-01-03 - Wednesday, January 3 - Service - Isiah Brooks Record
 
 SERMON DETAILS
 ========================================
-Date:    2018-01-03
-Title:   Wednesday, January 3 - Service
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cS-Gxopc_uc
+Date:     2018-01-03
+Title:    Wednesday, January 3 - Service
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=cS-Gxopc_uc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2023-10-27 - 27.10.2023  Memorial Service of  Sister Selina Motso
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-27
-Title:   27.10.2023  Memorial Service of  Sister Selina Motsoane. - Alexandra
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=z43Ijpn2Ot0
+Date:     2023-10-27
+Title:    27.10.2023  Memorial Service of  Sister Selina Motsoane. - Alexandra
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 1h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=z43Ijpn2Ot0
 ========================================
 
 TRANSCRIPT

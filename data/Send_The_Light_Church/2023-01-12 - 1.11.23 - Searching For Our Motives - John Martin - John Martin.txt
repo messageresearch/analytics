@@ -4,13 +4,14 @@ START OF FILE: 2023-01-12 - 1.11.23 - Searching For Our Motives - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-12
-Title:   1.11.23 - Searching For Our Motives - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MCNE9aT3Lgw
+Date:     2023-01-12
+Title:    1.11.23 - Searching For Our Motives - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=MCNE9aT3Lgw
 ========================================
 
 TRANSCRIPT

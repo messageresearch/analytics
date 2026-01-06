@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Calvary Temple Soul's Harbor
-Location: Minneapolis
-Duration: MN, 69 min
+Location: Minneapolis, MN
+Duration: 69 min
 Source: livingwordbroadcast.org
 DateCode: 56-0212
 

@@ -4,13 +4,14 @@ START OF FILE: 2024-09-05 - 9.4.24 - God is Not a Granpa - Aaron McGeary - Aaron
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-05
-Title:   9.4.24 - God is Not a Granpa - Aaron McGeary
-Speaker: Aaron McGeary
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jIIAZ1aNk-w
+Date:     2024-09-05
+Title:    9.4.24 - God is Not a Granpa - Aaron McGeary
+Speaker:  Aaron McGeary
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=jIIAZ1aNk-w
 ========================================
 
 TRANSCRIPT

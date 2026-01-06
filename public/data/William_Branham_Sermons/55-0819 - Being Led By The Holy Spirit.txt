@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Unknown
-Location: Karlsruhe
-Duration: Germany, 93 min
+Location: Karlsruhe, Germany
+Duration: 93 min
 Source: livingwordbroadcast.org
 DateCode: 55-0819
 

@@ -4,13 +4,14 @@ START OF FILE: 2022-10-12 - Bound By His Name  Bro Isiah Brooks  Wed PM Oct. 101
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-12
-Title:   Bound By His Name | Bro Isiah Brooks | Wed PM Oct. 10/12/2022 HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OvvD2M6eQIg
+Date:     2022-10-12
+Title:    Bound By His Name | Bro Isiah Brooks | Wed PM Oct. 10/12/2022 HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=OvvD2M6eQIg
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2019-07-13 - Empty Vessels - Bro Craig Booher  (HGT) - Craig Booh
 
 SERMON DETAILS
 ========================================
-Date:    2019-07-13
-Title:   Empty Vessels - Bro Craig Booher  (HGT)
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_NVICwrQ5zY
+Date:     2019-07-13
+Title:    Empty Vessels - Bro Craig Booher  (HGT)
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=_NVICwrQ5zY
 ========================================
 
 TRANSCRIPT

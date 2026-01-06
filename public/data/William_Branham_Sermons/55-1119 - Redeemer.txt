@@ -3,9 +3,9 @@ Title: Redeemer
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Redemption
-Location: Tent Meeting
-Duration: San Fernando, CA, 114 min
+Venue: Tent Meeting
+Location: San Fernando, CA
+Duration: 114 min
 Source: livingwordbroadcast.org
 DateCode: 55-1119
 

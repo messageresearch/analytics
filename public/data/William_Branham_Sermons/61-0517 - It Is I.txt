@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Zion Gospel Tabernacle
-Location: Grand Prairie
-Duration: AB, 112 min
+Location: Grand Prairie, AB
+Duration: 112 min
 Source: livingwordbroadcast.org
 DateCode: 61-0517
 

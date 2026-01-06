@@ -4,13 +4,14 @@ START OF FILE: 2020-05-24 - 5.24.20 - God Knows The Situation - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-24
-Title:   5.24.20 - God Knows The Situation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nWxrz9vISaw
+Date:     2020-05-24
+Title:    5.24.20 - God Knows The Situation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=nWxrz9vISaw
 ========================================
 
 TRANSCRIPT

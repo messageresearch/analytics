@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Mayfield Elementary School
-Location: Cleveland
-Duration: TN, 108 min
+Location: Cleveland, TN
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 59-0708E
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: We Would See Jesus
-Location: Tift County Courthouse
-Duration: Tifton, GA, 114 min
+Location: Tifton, GA
+Duration: 114 min
 Source: livingwordbroadcast.org
 DateCode: 60-0109
 

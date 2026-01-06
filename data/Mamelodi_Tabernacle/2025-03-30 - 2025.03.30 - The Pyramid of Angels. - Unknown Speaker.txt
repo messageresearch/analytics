@@ -4,13 +4,14 @@ START OF FILE: 2025-03-30 - 2025.03.30 - The Pyramid of Angels. - Unknown Speake
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-30
-Title:   2025.03.30 - The Pyramid of Angels.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=uOE-5n34vyI
+Date:     2025-03-30
+Title:    2025.03.30 - The Pyramid of Angels.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 4h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=uOE-5n34vyI
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Campaign Office
-Location: Jeffersonville
-Duration: IN, 121 min
+Location: Jeffersonville, IN
+Duration: 121 min
 Source: livingwordbroadcast.org
 DateCode: 60-0930
 

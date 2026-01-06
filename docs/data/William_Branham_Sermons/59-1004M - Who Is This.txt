@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Faith Assembly
-Location: Clarksville
-Duration: IN, 106 min
+Location: Clarksville, IN
+Duration: 106 min
 Source: livingwordbroadcast.org
 DateCode: 59-1004M
 

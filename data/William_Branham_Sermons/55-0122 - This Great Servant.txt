@@ -3,9 +3,9 @@ Title: This Great Servant
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Moses
-Location: Philadelphia Church
-Duration: Chicago, IL, 47 min
+Venue: Philadelphia Church
+Location: Chicago, IL
+Duration: 47 min
 Source: livingwordbroadcast.org
 DateCode: 55-0122
 

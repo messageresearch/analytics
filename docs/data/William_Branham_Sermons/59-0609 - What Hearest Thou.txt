@@ -3,9 +3,9 @@ Title: What Hearest Thou
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Elijah?
-Location: Philadelphia Church
-Duration: Chicago, IL, 82 min
+Venue: Philadelphia Church
+Location: Chicago, IL
+Duration: 82 min
 Source: livingwordbroadcast.org
 DateCode: 59-0609
 

@@ -4,13 +4,14 @@ START OF FILE: 2020-11-01 - 11.01.20 - Experiencing God's Love Pt. 1 - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-01
-Title:   11.01.20 - Experiencing God's Love Pt. 1 - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=rMmNz0WlV1o
+Date:     2020-11-01
+Title:    11.01.20 - Experiencing God's Love Pt. 1 - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=rMmNz0WlV1o
 ========================================
 
 Description:

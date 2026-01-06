@@ -4,13 +4,14 @@ START OF FILE: 2023-06-22 - 6.21.23 - Masterpiece - Part 2 - Bruce Jackowski - B
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-22
-Title:   6.21.23 - Masterpiece - Part 2 - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CZkFSC4WHX8
+Date:     2023-06-22
+Title:    6.21.23 - Masterpiece - Part 2 - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=CZkFSC4WHX8
 ========================================
 
 TRANSCRIPT

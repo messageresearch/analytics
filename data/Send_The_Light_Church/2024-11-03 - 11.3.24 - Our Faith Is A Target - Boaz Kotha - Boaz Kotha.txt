@@ -4,13 +4,14 @@ START OF FILE: 2024-11-03 - 11.3.24 - Our Faith Is A Target - Boaz Kotha - Boaz 
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-03
-Title:   11.3.24 - Our Faith Is A Target - Boaz Kotha
-Speaker: Boaz Kotha
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zxur_DRPles
+Date:     2024-11-03
+Title:    11.3.24 - Our Faith Is A Target - Boaz Kotha
+Speaker:  Boaz Kotha
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=zxur_DRPles
 ========================================
 
 TRANSCRIPT

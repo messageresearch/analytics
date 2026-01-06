@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Assembly Of God
-Location: Owensboro
-Duration: KY, 80 min
+Location: Owensboro, KY
+Duration: 80 min
 Source: livingwordbroadcast.org
 DateCode: 53-1110
 

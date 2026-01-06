@@ -4,13 +4,14 @@ START OF FILE: 2020-07-26 - This is the Inspiration of the Hour - Brother Isiah 
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-26
-Title:   This is the Inspiration of the Hour - Brother Isiah Brooks - 07/26/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1afG7TL0MoY
+Date:     2020-07-26
+Title:    This is the Inspiration of the Hour - Brother Isiah Brooks - 07/26/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=1afG7TL0MoY
 ========================================
 
 Description:

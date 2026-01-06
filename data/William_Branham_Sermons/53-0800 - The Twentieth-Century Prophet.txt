@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Branham Home & Unknown
-Location: Jeffersonville
-Duration: IN & Chicago, IL, 18 min
+Location: Jeffersonville, IN & Chicago, IL
+Duration: 18 min
 Source: livingwordbroadcast.org
 DateCode: 53-0800
 

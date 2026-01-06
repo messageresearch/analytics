@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: IMA Auditorium
-Location: Flint
-Duration: MI, 66 min
+Location: Flint, MI
+Duration: 66 min
 Source: livingwordbroadcast.org
 DateCode: 51-0714
 

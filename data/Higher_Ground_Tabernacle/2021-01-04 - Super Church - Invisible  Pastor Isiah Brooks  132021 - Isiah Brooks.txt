@@ -4,13 +4,14 @@ START OF FILE: 2021-01-04 - Super Church - Invisible  Pastor Isiah Brooks  13202
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-04
-Title:   Super Church - Invisible | Pastor Isiah Brooks | 1/3/2021
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ls5yPef6Ph0
+Date:     2021-01-04
+Title:    Super Church - Invisible | Pastor Isiah Brooks | 1/3/2021
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ls5yPef6Ph0
 ========================================
 
 Description:

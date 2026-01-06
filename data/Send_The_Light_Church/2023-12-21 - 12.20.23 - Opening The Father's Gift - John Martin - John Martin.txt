@@ -4,13 +4,14 @@ START OF FILE: 2023-12-21 - 12.20.23 - Opening The Father's Gift - John Martin -
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-21
-Title:   12.20.23 - Opening The Father's Gift - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ukPDgfKTiF8
+Date:     2023-12-21
+Title:    12.20.23 - Opening The Father's Gift - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=ukPDgfKTiF8
 ========================================
 
 TRANSCRIPT

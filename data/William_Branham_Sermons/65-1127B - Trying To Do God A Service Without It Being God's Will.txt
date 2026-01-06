@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Washington Youree Hotel
-Location: Shreveport
-Duration: LA, 37 min
+Location: Shreveport, LA
+Duration: 37 min
 Source: livingwordbroadcast.org
 DateCode: 65-1127B
 

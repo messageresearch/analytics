@@ -4,13 +4,14 @@ START OF FILE: 2019-02-13 - Bro Isiah Brooks  The Authority of the Church  Wed  
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-13
-Title:   Bro Isiah Brooks | The Authority of the Church | Wed  2/13/2019 | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Cpro_YF4H2c
+Date:     2019-02-13
+Title:    Bro Isiah Brooks | The Authority of the Church | Wed  2/13/2019 | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=Cpro_YF4H2c
 ========================================
 
 Description:

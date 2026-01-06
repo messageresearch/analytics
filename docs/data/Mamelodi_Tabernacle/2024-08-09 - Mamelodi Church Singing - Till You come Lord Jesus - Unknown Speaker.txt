@@ -4,13 +4,14 @@ START OF FILE: 2024-08-09 - Mamelodi Church Singing - Till You come Lord Jesus -
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-09
-Title:   Mamelodi Church Singing - Till You come Lord Jesus
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Mk1kw0GK1Sw
+Date:     2024-08-09
+Title:    Mamelodi Church Singing - Till You come Lord Jesus
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=Mk1kw0GK1Sw
 ========================================
 
 TRANSCRIPT

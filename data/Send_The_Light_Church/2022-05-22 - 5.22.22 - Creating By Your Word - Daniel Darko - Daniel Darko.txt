@@ -4,13 +4,14 @@ START OF FILE: 2022-05-22 - 5.22.22 - Creating By Your Word - Daniel Darko - Dan
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-22
-Title:   5.22.22 - Creating By Your Word - Daniel Darko
-Speaker: Daniel Darko
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q2Hd6-9f9mg
+Date:     2022-05-22
+Title:    5.22.22 - Creating By Your Word - Daniel Darko
+Speaker:  Daniel Darko
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=q2Hd6-9f9mg
 ========================================
 
 TRANSCRIPT

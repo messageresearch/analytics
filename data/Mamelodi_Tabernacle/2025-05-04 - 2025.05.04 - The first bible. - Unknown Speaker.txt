@@ -4,13 +4,14 @@ START OF FILE: 2025-05-04 - 2025.05.04 - The first bible. - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-04
-Title:   2025.05.04 - The first bible.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tO_70KEh_34
+Date:     2025-05-04
+Title:    2025.05.04 - The first bible.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 5h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=tO_70KEh_34
 ========================================
 
 Description:

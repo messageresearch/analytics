@@ -4,13 +4,14 @@ START OF FILE: 2022-12-11 - 12.10.22 - Gifts For Jesus - Send The Light Christma
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-11
-Title:   12.10.22 - Gifts For Jesus - Send The Light Christmas Night
-Speaker: Send The Light Christmas
-Church:  Send The Light Church
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=NL1q29bN4_c
+Date:     2022-12-11
+Title:    12.10.22 - Gifts For Jesus - Send The Light Christmas Night
+Speaker:  Send The Light Christmas
+Church:   Send The Light Church
+Type:     Christmas Program
+Duration: 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=NL1q29bN4_c
 ========================================
 
 TRANSCRIPT

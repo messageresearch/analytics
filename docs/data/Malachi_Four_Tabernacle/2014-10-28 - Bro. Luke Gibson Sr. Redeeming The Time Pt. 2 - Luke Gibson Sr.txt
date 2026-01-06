@@ -4,13 +4,14 @@ START OF FILE: 2014-10-28 - Bro. Luke Gibson Sr. Redeeming The Time Pt. 2 - Luke
 
 SERMON DETAILS
 ========================================
-Date:    2014-10-28
-Title:   Bro. Luke Gibson Sr.: Redeeming The Time Pt. 2
-Speaker: Luke Gibson Sr
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=FUazT2j7Dm8
+Date:     2014-10-28
+Title:    Bro. Luke Gibson Sr.: Redeeming The Time Pt. 2
+Speaker:  Luke Gibson Sr
+Church:   Malachi Four Tabernacle
+Type:     Short Service
+Duration: 3m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=FUazT2j7Dm8
 ========================================
 
 TRANSCRIPT

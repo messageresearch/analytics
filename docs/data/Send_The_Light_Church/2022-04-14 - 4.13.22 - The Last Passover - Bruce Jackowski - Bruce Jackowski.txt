@@ -4,13 +4,14 @@ START OF FILE: 2022-04-14 - 4.13.22 - The Last Passover - Bruce Jackowski - Bruc
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-14
-Title:   4.13.22 - The Last Passover - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UfU0breW1wM
+Date:     2022-04-14
+Title:    4.13.22 - The Last Passover - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=UfU0breW1wM
 ========================================
 
 TRANSCRIPT

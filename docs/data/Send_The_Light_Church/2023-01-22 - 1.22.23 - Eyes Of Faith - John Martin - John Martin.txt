@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - 1.22.23 - Eyes Of Faith - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   1.22.23 - Eyes Of Faith - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mSIEF-z697k
+Date:     2023-01-22
+Title:    1.22.23 - Eyes Of Faith - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=mSIEF-z697k
 ========================================
 
 TRANSCRIPT

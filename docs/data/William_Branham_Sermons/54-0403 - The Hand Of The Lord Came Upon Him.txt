@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: The Church Of The Open Door
-Location: Louisville
-Duration: KY, 94 min
+Location: Louisville, KY
+Duration: 94 min
 Source: livingwordbroadcast.org
 DateCode: 54-0403
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Roberts Park Amphitheater
-Location: Connersville
-Duration: IN, 58 min
+Location: Connersville, IN
+Duration: 58 min
 Source: livingwordbroadcast.org
 DateCode: 53-0614E
 

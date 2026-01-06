@@ -4,13 +4,14 @@ START OF FILE: 2020-08-02 - 8.2.20 - Bill Bailey - Bill Bailey.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-02
-Title:   8.2.20 - Bill Bailey
-Speaker: Bill Bailey
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=NQDnMCZx3TE
+Date:     2020-08-02
+Title:    8.2.20 - Bill Bailey
+Speaker:  Bill Bailey
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=NQDnMCZx3TE
 ========================================
 
 TRANSCRIPT

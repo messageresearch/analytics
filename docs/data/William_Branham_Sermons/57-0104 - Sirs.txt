@@ -3,9 +3,9 @@ Title: Sirs
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: We Would See Jesus
-Location: Arnold Memorial School
-Duration: Cleveland, TN, 96 min
+Venue: Arnold Memorial School
+Location: Cleveland, TN
+Duration: 96 min
 Source: livingwordbroadcast.org
 DateCode: 57-0104
 

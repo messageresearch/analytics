@@ -4,13 +4,14 @@ START OF FILE: 2021-02-04 - 2.3.21 - Entering The Door of God's Holiness - John 
 
 SERMON DETAILS
 ========================================
-Date:    2021-02-04
-Title:   2.3.21 - Entering The Door of God's Holiness - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qco-24dcN9Y
+Date:     2021-02-04
+Title:    2.3.21 - Entering The Door of God's Holiness - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=qco-24dcN9Y
 ========================================
 
 Description:

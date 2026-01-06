@@ -4,13 +4,14 @@ START OF FILE: 2023-12-14 - 12.13.23 - Signed Sealed & Delivered - Unknown Speak
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-14
-Title:   12.13.23 - Signed Sealed & Delivered
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=YTSa07sXM9A
+Date:     2023-12-14
+Title:    12.13.23 - Signed Sealed & Delivered
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=YTSa07sXM9A
 ========================================
 
 TRANSCRIPT

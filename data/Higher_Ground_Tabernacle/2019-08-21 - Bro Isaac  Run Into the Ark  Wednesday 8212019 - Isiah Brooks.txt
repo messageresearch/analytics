@@ -4,13 +4,14 @@ START OF FILE: 2019-08-21 - Bro Isaac  Run Into the Ark  Wednesday 8212019 - Isi
 
 SERMON DETAILS
 ========================================
-Date:    2019-08-21
-Title:   Bro Isaac | Run Into the Ark | Wednesday 8/21/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SYisXIACcv8
+Date:     2019-08-21
+Title:    Bro Isaac | Run Into the Ark | Wednesday 8/21/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=SYisXIACcv8
 ========================================
 
 Description:

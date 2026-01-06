@@ -4,13 +4,14 @@ START OF FILE: 2023-08-19 - Mamelodi Church Singing - I can hear my Father calli
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-19
-Title:   Mamelodi Church Singing - I can hear my Father calling
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KlOmsOLr_-E
+Date:     2023-08-19
+Title:    Mamelodi Church Singing - I can hear my Father calling
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=KlOmsOLr_-E
 ========================================
 
 TRANSCRIPT

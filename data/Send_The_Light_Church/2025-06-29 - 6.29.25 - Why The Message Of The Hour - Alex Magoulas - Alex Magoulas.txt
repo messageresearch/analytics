@@ -4,13 +4,14 @@ START OF FILE: 2025-06-29 - 6.29.25 - Why The Message Of The Hour - Alex Magoula
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-29
-Title:   6.29.25 - Why The Message Of The Hour? - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=aV_34VEK-K0
+Date:     2025-06-29
+Title:    6.29.25 - Why The Message Of The Hour? - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=aV_34VEK-K0
 ========================================
 
 TRANSCRIPT

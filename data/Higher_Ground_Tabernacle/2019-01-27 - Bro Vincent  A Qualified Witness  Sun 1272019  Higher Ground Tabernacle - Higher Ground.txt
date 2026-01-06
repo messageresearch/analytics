@@ -4,13 +4,14 @@ START OF FILE: 2019-01-27 - Bro Vincent  A Qualified Witness  Sun 1272019  Highe
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-27
-Title:   Bro Vincent | A Qualified Witness | Sun 1/27/2019 | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LSEIZtG95SA
+Date:     2019-01-27
+Title:    Bro Vincent | A Qualified Witness | Sun 1/27/2019 | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=LSEIZtG95SA
 ========================================
 
 Description:

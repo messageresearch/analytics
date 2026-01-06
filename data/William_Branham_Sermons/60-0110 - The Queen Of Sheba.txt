@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tift County Courthouse
-Location: Tifton
-Duration: GA, 124 min
+Location: Tifton, GA
+Duration: 124 min
 Source: livingwordbroadcast.org
 DateCode: 60-0110
 

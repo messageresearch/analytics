@@ -4,13 +4,14 @@ START OF FILE: 2025-07-13 - 7.13.25. Light Other Up - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-13
-Title:   7.13.25. Light Other Up - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=E7Axnysfni0
+Date:     2025-07-13
+Title:    7.13.25. Light Other Up - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=E7Axnysfni0
 ========================================
 
 TRANSCRIPT

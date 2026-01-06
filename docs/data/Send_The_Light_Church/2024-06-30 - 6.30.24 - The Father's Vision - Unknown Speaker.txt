@@ -4,13 +4,14 @@ START OF FILE: 2024-06-30 - 6.30.24 - The Father's Vision - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-30
-Title:   6.30.24 - The Father's Vision
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5nB4GXIegZc
+Date:     2024-06-30
+Title:    6.30.24 - The Father's Vision
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=5nB4GXIegZc
 ========================================
 
 TRANSCRIPT

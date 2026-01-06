@@ -4,13 +4,14 @@ START OF FILE: 2021-07-25 - Character Chooses Character  Brother Chad Lamb  0725
 
 SERMON DETAILS
 ========================================
-Date:    2021-07-25
-Title:   Character Chooses Character || Brother Chad Lamb || 07/25/2021 AM
-Speaker: Chad Lamb
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tfpCQJS88as
+Date:     2021-07-25
+Title:    Character Chooses Character || Brother Chad Lamb || 07/25/2021 AM
+Speaker:  Chad Lamb
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 3h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=tfpCQJS88as
 ========================================
 
 Description:

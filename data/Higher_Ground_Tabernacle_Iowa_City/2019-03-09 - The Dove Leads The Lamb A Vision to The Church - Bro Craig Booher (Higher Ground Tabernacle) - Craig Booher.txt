@@ -4,13 +4,14 @@ START OF FILE: 2019-03-09 - The Dove Leads The Lamb A Vision to The Church - Bro
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-09
-Title:   The Dove Leads The Lamb: A Vision to The Church - Bro Craig Booher (Higher Ground Tabernacle)
-Speaker: Craig Booher
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gOk3qJfXuls
+Date:     2019-03-09
+Title:    The Dove Leads The Lamb: A Vision to The Church - Bro Craig Booher (Higher Ground Tabernacle)
+Speaker:  Craig Booher
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=gOk3qJfXuls
 ========================================
 
 TRANSCRIPT

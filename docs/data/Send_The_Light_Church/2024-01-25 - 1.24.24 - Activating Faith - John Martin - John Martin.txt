@@ -4,13 +4,14 @@ START OF FILE: 2024-01-25 - 1.24.24 - Activating Faith - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-25
-Title:   1.24.24 - Activating Faith - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4LhxtF0mIkM
+Date:     2024-01-25
+Title:    1.24.24 - Activating Faith - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=4LhxtF0mIkM
 ========================================
 
 TRANSCRIPT

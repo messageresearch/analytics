@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Gospel Tabernacle
-Location: Sioux Falls
-Duration: SD, 79 min
+Location: Sioux Falls, SD
+Duration: 79 min
 Source: livingwordbroadcast.org
 DateCode: 56-0223
 

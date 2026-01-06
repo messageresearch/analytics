@@ -4,13 +4,14 @@ START OF FILE: 2014-01-08 - Second Touch - 2013 10 20m - Kayo Kelly - Kayo Kelly
 
 SERMON DETAILS
 ========================================
-Date:    2014-01-08
-Title:   Second Touch - 2013 10 20m - Kayo Kelly
-Speaker: Kayo Kelly
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6-30waUSrRI
+Date:     2014-01-08
+Title:    Second Touch - 2013 10 20m - Kayo Kelly
+Speaker:  Kayo Kelly
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=6-30waUSrRI
 ========================================
 
 Description:

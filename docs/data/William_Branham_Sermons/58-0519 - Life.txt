@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: City Hall
-Location: Bangor
-Duration: ME, 92 min
+Location: Bangor, ME
+Duration: 92 min
 Source: livingwordbroadcast.org
 DateCode: 58-0519
 

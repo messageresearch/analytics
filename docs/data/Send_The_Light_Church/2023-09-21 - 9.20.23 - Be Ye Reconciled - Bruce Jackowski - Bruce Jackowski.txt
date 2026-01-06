@@ -4,13 +4,14 @@ START OF FILE: 2023-09-21 - 9.20.23 - Be Ye Reconciled - Bruce Jackowski - Bruce
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-21
-Title:   9.20.23 - Be Ye Reconciled - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BYnVth_qTAQ
+Date:     2023-09-21
+Title:    9.20.23 - Be Ye Reconciled - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=BYnVth_qTAQ
 ========================================
 
 TRANSCRIPT

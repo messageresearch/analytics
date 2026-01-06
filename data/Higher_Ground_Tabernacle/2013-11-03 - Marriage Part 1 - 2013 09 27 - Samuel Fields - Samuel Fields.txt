@@ -4,13 +4,14 @@ START OF FILE: 2013-11-03 - Marriage Part 1 - 2013 09 27 - Samuel Fields - Samue
 
 SERMON DETAILS
 ========================================
-Date:    2013-11-03
-Title:   Marriage Part 1 - 2013 09 27 - Samuel Fields
-Speaker: Samuel Fields
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=GUFh6EwqlcQ
+Date:     2013-11-03
+Title:    Marriage Part 1 - 2013 09 27 - Samuel Fields
+Speaker:  Samuel Fields
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=GUFh6EwqlcQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-11-22 - 2024.11.22.  Memorial Service of Sister Esther Mokgo
 
 SERMON DETAILS
 ========================================
-Date:    2024-11-22
-Title:   2024.11.22.  Memorial Service of Sister Esther Mokgonyana - Observing all things
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=W8f3vukxkHc
+Date:     2024-11-22
+Title:    2024.11.22.  Memorial Service of Sister Esther Mokgonyana - Observing all things
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=W8f3vukxkHc
 ========================================
 
 Description:

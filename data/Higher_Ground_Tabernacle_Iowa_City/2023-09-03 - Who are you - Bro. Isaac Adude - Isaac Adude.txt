@@ -4,13 +4,14 @@ START OF FILE: 2023-09-03 - Who are you - Bro. Isaac Adude - Isaac Adude.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-03
-Title:   Who are you? - Bro. Isaac Adude
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xbCHcS9i4aQ
+Date:     2023-09-03
+Title:    Who are you? - Bro. Isaac Adude
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=xbCHcS9i4aQ
 ========================================
 
 Description:

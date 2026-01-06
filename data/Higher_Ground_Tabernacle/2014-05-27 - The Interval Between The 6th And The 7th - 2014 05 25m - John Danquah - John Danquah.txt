@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - The Interval Between The 6th And The 7th - 2014 05 2
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   The Interval Between The 6th And The 7th - 2014 05 25m - John Danquah
-Speaker: John Danquah
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=cpqXta4tsek
+Date:     2014-05-27
+Title:    The Interval Between The 6th And The 7th - 2014 05 25m - John Danquah
+Speaker:  John Danquah
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=cpqXta4tsek
 ========================================
 
 Description:

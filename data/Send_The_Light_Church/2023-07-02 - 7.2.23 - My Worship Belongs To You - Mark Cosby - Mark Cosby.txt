@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - 7.2.23 - My Worship Belongs To You - Mark Cosby - Ma
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   7.2.23 - My Worship Belongs To You - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=McHtykAP_LI
+Date:     2023-07-02
+Title:    7.2.23 - My Worship Belongs To You - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=McHtykAP_LI
 ========================================
 
 TRANSCRIPT

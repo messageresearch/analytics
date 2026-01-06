@@ -4,13 +4,14 @@ START OF FILE: 2019-10-16 - Bro Esequiel Uribes  Faith in God  Wednesday pm 1016
 
 SERMON DETAILS
 ========================================
-Date:    2019-10-16
-Title:   Bro Esequiel Uribes | Faith in God | Wednesday pm 10/16/2019
-Speaker: Esequiel Uribes
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=hZUPesy1zNs
+Date:     2019-10-16
+Title:    Bro Esequiel Uribes | Faith in God | Wednesday pm 10/16/2019
+Speaker:  Esequiel Uribes
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=hZUPesy1zNs
 ========================================
 
 Description:

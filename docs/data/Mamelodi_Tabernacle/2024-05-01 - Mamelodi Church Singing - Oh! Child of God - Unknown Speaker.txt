@@ -4,13 +4,14 @@ START OF FILE: 2024-05-01 - Mamelodi Church Singing - Oh! Child of God - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-01
-Title:   Mamelodi Church Singing - Oh! Child of God
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JwHRLmh7bNg
+Date:     2024-05-01
+Title:    Mamelodi Church Singing - Oh! Child of God
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=JwHRLmh7bNg
 ========================================
 
 TRANSCRIPT

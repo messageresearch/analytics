@@ -4,13 +4,14 @@ START OF FILE: 2022-01-05 - 01-05-2022 - Re Entry (English-Zulu Channel) - Re En
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-05
-Title:   01-05-2022 - Re Entry (English-Zulu Channel)
-Speaker: Re Entry
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BcF70r7UPhM
+Date:     2022-01-05
+Title:    01-05-2022 - Re Entry (English-Zulu Channel)
+Speaker:  Re Entry
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 2h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=BcF70r7UPhM
 ========================================
 
 Description:

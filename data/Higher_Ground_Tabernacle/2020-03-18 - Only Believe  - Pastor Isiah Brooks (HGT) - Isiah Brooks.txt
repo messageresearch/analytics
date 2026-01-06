@@ -4,13 +4,14 @@ START OF FILE: 2020-03-18 - Only Believe  - Pastor Isiah Brooks (HGT) - Isiah Br
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-18
-Title:   Only Believe  - Pastor Isiah Brooks (HGT)
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bjvEHWzaezs
+Date:     2020-03-18
+Title:    Only Believe  - Pastor Isiah Brooks (HGT)
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=bjvEHWzaezs
 ========================================
 
 Description:

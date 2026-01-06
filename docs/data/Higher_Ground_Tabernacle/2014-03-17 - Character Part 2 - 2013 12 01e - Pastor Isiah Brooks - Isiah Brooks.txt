@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - Character Part 2 - 2013 12 01e - Pastor Isiah Brooks
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   Character Part 2 - 2013 12 01e - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lGVEJd-hOR0
+Date:     2014-03-17
+Title:    Character Part 2 - 2013 12 01e - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=lGVEJd-hOR0
 ========================================
 
 Description:

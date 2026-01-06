@@ -274,6 +274,11 @@ export default function BranhamApp({ onSwitchToMain }) {
   const [expandedTopics, setExpandedTopics] = useState(new Set(['Seven Church Ages', 'Seven Seals']))
   const [downloadProgress, setDownloadProgress] = useState(null) // { current, total, year? }
   const [topicSearches, setTopicSearches] = useState({}) // Search within expanded topics/venues
+  
+  // Global searchable video database
+  const [showGlobalSermonTable, setShowGlobalSermonTable] = useState(false)
+  const [globalSermonSearch, setGlobalSermonSearch] = useState('')
+  const [globalSermonSort, setGlobalSermonSort] = useState({ key: 'date', direction: 'desc' })
 
   // NEW FEATURES
   // 1. Search History (localStorage)
@@ -553,10 +558,14 @@ export default function BranhamApp({ onSwitchToMain }) {
         
         // Process sermon list
         const list = (json.sermons || []).map(s => {
-          const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60
+          // Use actual duration (in minutes) if available, otherwise estimate from word count
+          const actualDurationMinutes = s.duration && s.duration > 0 ? s.duration : null
+          const estimatedDurationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60
+          const durationHrs = actualDurationMinutes ? actualDurationMinutes / 60 : (estimatedDurationHrs > 0 ? estimatedDurationHrs : 0.5)
           return { 
             ...s, 
-            durationHrs: durationHrs > 0 ? durationHrs : 0.5,
+            durationHrs,
+            durationMinutes: actualDurationMinutes, // Actual duration in minutes when available
             mentionCount: 0, // Will be set by search
             mentionsPerHour: 0
           }
@@ -753,6 +762,37 @@ export default function BranhamApp({ onSwitchToMain }) {
     }
     
     return { venues, years, data: heatmapMap, maxCount, venueTotals: venueCounts }
+  }, [rawData])
+
+  // Location × Year heatmap data
+  const locationYearHeatmap = useMemo(() => {
+    if (!rawData.length) return { locations: [], years: [], data: new Map(), maxCount: 0 }
+    
+    const heatmapMap = new Map() // "location|year" -> count
+    const yearsSet = new Set()
+    const locationCounts = new Map()
+    
+    for (const s of rawData) {
+      const location = s.location || 'Unknown'
+      const year = s.year || 'Unknown'
+      yearsSet.add(year)
+      const key = `${location}|${year}`
+      heatmapMap.set(key, (heatmapMap.get(key) || 0) + 1)
+      locationCounts.set(location, (locationCounts.get(location) || 0) + 1)
+    }
+    
+    // Sort locations by total count (descending), years ascending
+    const locations = Array.from(locationCounts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([location]) => location)
+    const years = Array.from(yearsSet).filter(y => y !== 'Unknown').sort()
+    
+    let maxCount = 0
+    for (const count of heatmapMap.values()) {
+      if (count > maxCount) maxCount = count
+    }
+    
+    return { locations, years, data: heatmapMap, maxCount, locationTotals: locationCounts }
   }, [rawData])
 
   // Sermons grouped by year for Data tab
@@ -1129,8 +1169,8 @@ export default function BranhamApp({ onSwitchToMain }) {
             <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4 w-full md:w-auto">
               {dataDate && <div className="text-xs text-amber-200 text-center md:text-right">Data: {dataDate}</div>}
               <div className="flex bg-white/10 backdrop-blur p-1 rounded-lg w-full md:w-auto">
-                {['dashboard', 'data', 'about'].map(tab => (
-                  <button key={tab} onClick={() => setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view === tab ? 'bg-white text-amber-700 shadow-sm' : 'text-amber-100 hover:text-white hover:bg-white/10'}`}>{tab}</button>
+                {[{key:'dashboard',label:'Search & Stats'},{key:'data',label:'Sources'},{key:'about',label:'About'}].map(tab => (
+                  <button key={tab.key} onClick={() => setView(tab.key)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition flex-1 md:flex-none ${view === tab.key ? 'bg-white text-amber-700 shadow-sm' : 'text-amber-100 hover:text-white hover:bg-white/10'}`}>{tab.label}</button>
                 ))}
               </div>
               {onSwitchToMain && (
@@ -1238,6 +1278,12 @@ export default function BranhamApp({ onSwitchToMain }) {
                       >
                         🗓️ Venue × Year
                       </button>
+                      <button
+                        onClick={() => setVenueTab('location')}
+                        className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${venueTab === 'location' ? 'bg-amber-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                      >
+                        📍 Location × Year
+                      </button>
                     </div>
                     
                     {/* Bar Chart View */}
@@ -1266,8 +1312,8 @@ export default function BranhamApp({ onSwitchToMain }) {
                             <YAxis 
                               type="category" 
                               dataKey="venue" 
-                              width={typeof window !== 'undefined' && window.innerWidth < 640 ? 120 : 200} 
-                              tick={{ fontSize: typeof window !== 'undefined' && window.innerWidth < 640 ? 8 : 10 }} 
+                              width={typeof window !== 'undefined' && window.innerWidth < 640 ? 160 : 280} 
+                              tick={{ fontSize: typeof window !== 'undefined' && window.innerWidth < 640 ? 9 : 11 }} 
                               interval={0}
                             />
                             <Tooltip 
@@ -1320,27 +1366,30 @@ export default function BranhamApp({ onSwitchToMain }) {
                       <div className="overflow-x-auto">
                         <p className="text-xs text-gray-500 mb-3">Sermon distribution by venue and year. Darker = more sermons. Click to filter.</p>
                         <div 
-                          className="grid gap-px bg-gray-200" 
+                          className="grid border border-gray-300 rounded overflow-hidden" 
                           style={{ 
-                            gridTemplateColumns: `200px repeat(${venueYearHeatmap.years.length}, minmax(32px, 1fr))`,
-                            minWidth: `${200 + venueYearHeatmap.years.length * 36}px`
+                            gridTemplateColumns: `280px repeat(${venueYearHeatmap.years.length}, minmax(32px, 1fr)) 50px`,
+                            minWidth: `${280 + venueYearHeatmap.years.length * 36 + 50}px`
                           }}
                         >
                           {/* Header row */}
-                          <div className="bg-gray-50 p-1.5 text-xs font-bold text-gray-700 sticky left-0 z-10">
+                          <div className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 sticky left-0 z-10 border-b border-r border-gray-300">
                             Venue
                           </div>
                           {venueYearHeatmap.years.map(year => (
-                            <div key={year} className="bg-gray-50 p-1.5 text-xs font-bold text-gray-700 text-center">
+                            <div key={year} className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 text-center border-b border-r border-gray-300">
                               {year.toString().slice(-2)}
                             </div>
                           ))}
+                          <div className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 text-center border-b border-gray-300">
+                            Total
+                          </div>
                           
                           {/* Data rows */}
                           {venueYearHeatmap.venues.map((venue, vi) => (
                             <React.Fragment key={venue}>
                               <div 
-                                className={`bg-white p-1.5 text-xs truncate sticky left-0 z-10 cursor-pointer hover:bg-amber-50 ${selVenues.includes(venue) ? 'bg-amber-100 font-semibold' : ''}`}
+                                className={`bg-white p-1.5 text-xs truncate sticky left-0 z-10 cursor-pointer hover:bg-amber-50 border-b border-r border-gray-200 ${selVenues.includes(venue) ? 'bg-amber-100 font-semibold' : ''}`}
                                 title={`${venue} (${venueYearHeatmap.venueTotals.get(venue) || 0} sermons)`}
                                 onClick={() => {
                                   if (selVenues.includes(venue)) {
@@ -1358,7 +1407,7 @@ export default function BranhamApp({ onSwitchToMain }) {
                                 return (
                                   <div 
                                     key={`${venue}-${year}`}
-                                    className="p-1.5 text-center text-xs cursor-pointer transition-colors hover:ring-1 hover:ring-amber-400"
+                                    className="p-1.5 text-center text-xs cursor-pointer transition-colors hover:ring-1 hover:ring-amber-400 border-b border-r border-gray-200"
                                     style={{ 
                                       backgroundColor: count > 0 ? `rgba(217, 119, 6, ${intensity})` : 'white',
                                       color: intensity > 0.5 ? 'white' : (count > 0 ? '#92400e' : '#9ca3af')
@@ -1374,6 +1423,13 @@ export default function BranhamApp({ onSwitchToMain }) {
                                   </div>
                                 )
                               })}
+                              {/* Total column */}
+                              <div 
+                                className="p-1.5 text-center text-xs font-semibold bg-gray-50 border-b border-gray-200 text-gray-700"
+                                title={`${venue}: ${venueYearHeatmap.venueTotals.get(venue) || 0} total sermons`}
+                              >
+                                {venueYearHeatmap.venueTotals.get(venue) || 0}
+                              </div>
                             </React.Fragment>
                           ))}
                         </div>
@@ -1387,6 +1443,93 @@ export default function BranhamApp({ onSwitchToMain }) {
                                 key={i} 
                                 className="w-5 h-4" 
                                 style={{ backgroundColor: `rgba(217, 119, 6, ${intensity})` }}
+                              />
+                            ))}
+                          </div>
+                          <span>More sermons</span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Location Heatmap View */}
+                    {venueTab === 'location' && locationYearHeatmap && (
+                      <div className="overflow-x-auto">
+                        <p className="text-xs text-gray-500 mb-3">Sermon distribution by location (city) and year. Darker = more sermons. Click to filter.</p>
+                        <div 
+                          className="grid border border-gray-300 rounded overflow-hidden" 
+                          style={{ 
+                            gridTemplateColumns: `200px repeat(${locationYearHeatmap.years.length}, minmax(32px, 1fr)) 50px`,
+                            minWidth: `${200 + locationYearHeatmap.years.length * 36 + 50}px`
+                          }}
+                        >
+                          {/* Header row */}
+                          <div className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 sticky left-0 z-10 border-b border-r border-gray-300">
+                            Location
+                          </div>
+                          {locationYearHeatmap.years.map(year => (
+                            <div key={year} className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 text-center border-b border-r border-gray-300">
+                              {year.toString().slice(-2)}
+                            </div>
+                          ))}
+                          <div className="bg-gray-100 p-1.5 text-xs font-bold text-gray-700 text-center border-b border-gray-300">
+                            Total
+                          </div>
+                          
+                          {/* Data rows */}
+                          {locationYearHeatmap.locations.map((location, li) => (
+                            <React.Fragment key={location}>
+                              <div 
+                                className={`bg-white p-1.5 text-xs truncate sticky left-0 z-10 cursor-pointer hover:bg-amber-50 border-b border-r border-gray-200`}
+                                title={`${location} (${locationYearHeatmap.locationTotals.get(location) || 0} sermons)`}
+                                onClick={() => {
+                                  // Filter sermons by this location
+                                  setTableFilters(prev => ({ ...prev, search: location }))
+                                }}
+                              >
+                                {location}
+                              </div>
+                              {locationYearHeatmap.years.map(year => {
+                                const count = locationYearHeatmap.data.get(`${location}|${year}`) || 0
+                                const intensity = count > 0 ? Math.min(0.15 + (count / locationYearHeatmap.maxCount) * 0.85, 1) : 0
+                                return (
+                                  <div 
+                                    key={`${location}-${year}`}
+                                    className="p-1.5 text-center text-xs cursor-pointer transition-colors hover:ring-1 hover:ring-amber-400 border-b border-r border-gray-200"
+                                    style={{ 
+                                      backgroundColor: count > 0 ? `rgba(16, 185, 129, ${intensity})` : 'white',
+                                      color: intensity > 0.5 ? 'white' : (count > 0 ? '#065f46' : '#9ca3af')
+                                    }}
+                                    title={`${location} (${year}): ${count} sermon${count !== 1 ? 's' : ''}`}
+                                    onClick={() => {
+                                      // Filter to this location and year
+                                      setTableFilters(prev => ({ ...prev, search: location }))
+                                      setSelYears([year.toString()])
+                                    }}
+                                  >
+                                    {count > 0 ? count : '·'}
+                                  </div>
+                                )
+                              })}
+                              {/* Total column */}
+                              <div 
+                                className="p-1.5 text-center text-xs font-semibold bg-gray-50 border-b border-gray-200 text-gray-700"
+                                title={`${location}: ${locationYearHeatmap.locationTotals.get(location) || 0} total sermons`}
+                              >
+                                {locationYearHeatmap.locationTotals.get(location) || 0}
+                              </div>
+                            </React.Fragment>
+                          ))}
+                        </div>
+                        
+                        {/* Legend */}
+                        <div className="flex items-center justify-end gap-2 mt-3 text-xs text-gray-500">
+                          <span>Fewer</span>
+                          <div className="flex">
+                            {[0.15, 0.35, 0.55, 0.75, 0.95].map((intensity, i) => (
+                              <div 
+                                key={i} 
+                                className="w-5 h-4" 
+                                style={{ backgroundColor: `rgba(16, 185, 129, ${intensity})` }}
                               />
                             ))}
                           </div>
@@ -1613,20 +1756,23 @@ export default function BranhamApp({ onSwitchToMain }) {
               )}
 
               {/* Stats cards */}
-              <div className="grid grid-cols-3 md:grid-cols-5 gap-1.5 sm:gap-2 mb-6">
+              <div className="grid grid-cols-3 md:grid-cols-6 gap-1.5 sm:gap-2 mb-6">
                 <StatCard title="Sermons" value={stats.totalSermons.toLocaleString()} icon="book" color="amber" sub={`of ${totalSermons.toLocaleString()} total`} />
                 {activeTerm && (
                   <StatCard title={`"${activeTerm}" Matches`} value={stats.totalMentions.toLocaleString()} icon="search" color={stats.totalMentions === 0 ? "red" : "green"} sub="in filtered results" />
                 )}
                 <StatCard title="Total Words" value={`${(stats.totalWords / 1000000).toFixed(1)}M`} icon="fileText" color="blue" sub="in filtered sermons" />
                 <StatCard title="Total Hours" value={Math.round(stats.totalDuration / 60).toLocaleString()} icon="clock" color="purple" sub="of preaching" />
+                {activeTerm && (
+                  <StatCard title="Avg Mentions" value={stats.avg} icon="barChart" color="indigo" sub="per sermon (filtered)" />
+                )}
                 {stats.peakSermon && activeTerm && (
                   <StatCard 
-                    title="Peak Mentions" 
+                    title="Peak Count" 
                     value={stats.maxMentions} 
                     icon="activity" 
                     color="orange" 
-                    sub="Click to view"
+                    sub="Click to view transcript mentions"
                     onClick={() => { setSelectedSermon({ ...stats.peakSermon, searchTerm: activeRegex || activeTerm }); setSelectedSermonFocus(0); }}
                   />
                 )}
@@ -1668,12 +1814,14 @@ export default function BranhamApp({ onSwitchToMain }) {
                 <ResponsiveContainer width="100%" height="85%">
                   <ComposedChart
                     data={aggregatedChartData}
-                    onClick={(e) => {
+                    onClick={(e, _, event) => {
                       if (e && e.activePayload && e.activePayload[0]) {
                         const bucket = aggregatedChartData.find(d => d.timestamp === e.activePayload[0].payload.timestamp)
                         if (bucket) {
+                          const mouseX = event?.clientX || (e.chartX + 100)
+                          const mouseY = event?.clientY || (e.chartY + 200)
                           setMainChartPinnedBucket(bucket)
-                          setMainChartPinnedPosition({ x: e.chartX || 200, y: e.chartY || 100 })
+                          setMainChartPinnedPosition({ x: mouseX, y: mouseY })
                         }
                       }
                     }}
@@ -1717,10 +1865,10 @@ export default function BranhamApp({ onSwitchToMain }) {
                 {mainChartPinnedBucket && (
                   <div
                     ref={mainChartPinnedRef}
-                    className="fixed sm:absolute inset-x-2 sm:inset-x-auto bottom-2 sm:bottom-auto bg-white rounded-xl shadow-2xl border border-gray-200 sm:w-96 max-h-[60vh] sm:max-h-[400px] flex flex-col z-50"
+                    className="fixed bg-white rounded-xl shadow-2xl border border-gray-200 w-[calc(100%-16px)] sm:w-96 max-h-[60vh] sm:max-h-[400px] flex flex-col z-50"
                     style={{
-                      left: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.min(Math.max(16, mainChartPinnedPosition.x - 150), window.innerWidth - 450) : undefined,
-                      top: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.max(60, mainChartPinnedPosition.y + 20) : undefined
+                      left: typeof window !== 'undefined' ? Math.min(Math.max(20, mainChartPinnedPosition.x + 15), window.innerWidth - 420) : 20,
+                      top: typeof window !== 'undefined' ? Math.min(Math.max(20, mainChartPinnedPosition.y - 50), window.innerHeight - 450) : 100
                     }}
                   >
                     <div className="p-4 border-b border-gray-100">
@@ -1734,23 +1882,23 @@ export default function BranhamApp({ onSwitchToMain }) {
                         <button onClick={() => setMainChartPinnedBucket(null)} className="p-1 hover:bg-gray-100 rounded-full"><Icon name="x" /></button>
                       </div>
                     </div>
-                    <div className="text-xs font-medium text-gray-600 px-4 pt-3 pb-2">Click a sermon to view transcript:</div>
-                    <div className="flex-1 overflow-auto px-3 pb-3">
-                      <div className="space-y-2">
+                    <div className="text-xs font-medium text-gray-600 px-3 pt-2 pb-1">Click a sermon to view transcript:</div>
+                    <div className="flex-1 overflow-auto px-2 pb-2">
+                      <div className="space-y-1">
                         {[...(mainChartPinnedBucket.sermons || [])].sort((a, b) => (b.mentionCount || 0) - (a.mentionCount || 0)).map((s, i) => (
                           <button
                             key={s.id || i}
                             onClick={() => { setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm }); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }}
-                            className="w-full text-left p-3 bg-amber-50 rounded-lg border border-amber-200 hover:bg-amber-100 hover:border-amber-300 transition-all group"
+                            className="w-full text-left px-2 py-1.5 bg-amber-50 rounded border border-amber-200 hover:bg-amber-100 hover:border-amber-300 transition-all group"
                           >
-                            <div className="font-medium text-gray-900 group-hover:text-amber-700 line-clamp-2">{s.title || 'Untitled'}</div>
-                            <div className="flex justify-between items-center mt-2 text-xs">
-                              <span className="text-gray-500">{s.venue || 'Unknown venue'}</span>
-                              <span className="text-gray-400">{new Date(s.timestamp).toLocaleDateString()}</span>
+                            <div className="text-sm font-medium text-gray-900 group-hover:text-amber-700 line-clamp-1">{s.title || 'Untitled'}</div>
+                            <div className="flex justify-between items-center text-xs text-gray-500">
+                              <span className="truncate max-w-[140px]">{s.venue || 'Unknown'}</span>
+                              <div className="flex items-center gap-2 shrink-0">
+                                {activeTerm && s.mentionCount > 0 && <span className="text-amber-600 font-medium">{s.mentionCount}</span>}
+                                <span className="text-gray-400">{new Date(s.timestamp).toLocaleDateString()}</span>
+                              </div>
                             </div>
-                            {activeTerm && s.mentionCount > 0 && (
-                              <div className="mt-1 text-xs text-amber-600 font-medium">{s.mentionCount} mentions</div>
-                            )}
                           </button>
                         ))}
                       </div>
@@ -1763,7 +1911,7 @@ export default function BranhamApp({ onSwitchToMain }) {
               <div className="bg-white rounded-xl border shadow-sm mb-8 p-4 sm:p-6 overflow-x-auto w-full">
                 <div className="flex flex-col gap-3 mb-4">
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-                    <h3 className="font-bold text-gray-800">Sermon List ({processedTableData.length.toLocaleString()})</h3>
+                    <h3 className="font-bold text-gray-800">Sermon Search Results ({processedTableData.length.toLocaleString()})</h3>
                     <div className="flex items-center gap-2 flex-wrap">
                       {activeTerm && (
                         <div className="text-sm bg-amber-50 text-amber-700 px-3 py-1 rounded font-medium">
@@ -2364,6 +2512,198 @@ export default function BranhamApp({ onSwitchToMain }) {
                     </div>
                   </div>
                 )}
+
+                {/* Global Searchable Sermon Database */}
+                <div className="mb-6">
+                  <button
+                    onClick={() => setShowGlobalSermonTable(!showGlobalSermonTable)}
+                    className="flex items-center gap-2 text-sm font-medium text-amber-600 hover:text-amber-800 mb-3"
+                  >
+                    <Icon name={showGlobalSermonTable ? 'chevronDown' : 'chevronRight'} size={16} />
+                    <Icon name="search" size={14} />
+                    {showGlobalSermonTable ? 'Hide' : 'Open'} Searchable Sermon Database ({rawData.length.toLocaleString()} sermons)
+                  </button>
+                  
+                  {showGlobalSermonTable && (
+                    <div className="border rounded-lg p-4 bg-amber-50">
+                      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+                        <div className="relative flex-1">
+                          <Icon name="search" size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                          <input
+                            type="text"
+                            placeholder="Filter by title, venue, location, date..."
+                            value={globalSermonSearch}
+                            onChange={(e) => setGlobalSermonSearch(e.target.value)}
+                            className="w-full pl-9 pr-8 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                          />
+                          {globalSermonSearch && (
+                            <button
+                              onClick={() => setGlobalSermonSearch('')}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                            >
+                              <Icon name="x" size={14} />
+                            </button>
+                          )}
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          Filters metadata only. Use the search engine on the Search & Stats tab to search sermon content.
+                        </div>
+                      </div>
+
+                      {(() => {
+                        const searchQ = globalSermonSearch.trim().toLowerCase()
+                        let globalFilteredSermons = rawData.slice()
+                        
+                        // Filter by search query
+                        if (searchQ) {
+                          globalFilteredSermons = globalFilteredSermons.filter(s => 
+                            (s.title || '').toLowerCase().includes(searchQ) ||
+                            (s.venue || '').toLowerCase().includes(searchQ) ||
+                            (s.location || '').toLowerCase().includes(searchQ) ||
+                            (s.date || '').toLowerCase().includes(searchQ)
+                          )
+                        }
+                        
+                        // Sort
+                        const gSortCfg = globalSermonSort
+                        globalFilteredSermons.sort((a, b) => {
+                          let aVal = a[gSortCfg.key] || ''
+                          let bVal = b[gSortCfg.key] || ''
+                          if (gSortCfg.key === 'date') {
+                            if (!aVal) aVal = '0000-00-00'
+                            if (!bVal) bVal = '0000-00-00'
+                          }
+                          if (gSortCfg.key === 'wordCount') {
+                            aVal = a.wordCount || 0
+                            bVal = b.wordCount || 0
+                            const cmp = aVal - bVal
+                            return gSortCfg.direction === 'desc' ? -cmp : cmp
+                          }
+                          const cmp = String(aVal).localeCompare(String(bVal))
+                          return gSortCfg.direction === 'desc' ? -cmp : cmp
+                        })
+                        
+                        // Limit to 100 results for performance
+                        const displayLimit = 100
+                        const hasMore = globalFilteredSermons.length > displayLimit
+                        const displaySermons = globalFilteredSermons.slice(0, displayLimit)
+                        
+                        return (
+                          <>
+                            <div className="text-xs text-gray-500 mb-2">
+                              {searchQ ? (
+                                <>Showing {displaySermons.length.toLocaleString()}{hasMore ? '+' : ''} of {globalFilteredSermons.length.toLocaleString()} matching sermons</>
+                              ) : (
+                                <>Showing {displaySermons.length.toLocaleString()} of {rawData.length.toLocaleString()} sermons (use search to filter)</>
+                              )}
+                            </div>
+                            <div className="max-h-96 overflow-y-auto border rounded bg-white overflow-x-auto">
+                              <table className="w-full text-sm min-w-[800px]">
+                                <thead className="sticky top-0 bg-gray-50 border-b z-10">
+                                  <tr className="text-gray-600 text-left">
+                                    <th 
+                                      className="p-2 font-medium w-24 cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalSermonSort(prev => ({ 
+                                        key: 'date', 
+                                        direction: prev.key === 'date' && prev.direction === 'desc' ? 'asc' : 'desc' 
+                                      }))}
+                                    >
+                                      Date {gSortCfg.key === 'date' && <span className="ml-1">{gSortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                    </th>
+                                    <th 
+                                      className="p-2 font-medium cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalSermonSort(prev => ({ 
+                                        key: 'title', 
+                                        direction: prev.key === 'title' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Title {gSortCfg.key === 'title' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="p-2 font-medium hidden sm:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalSermonSort(prev => ({ 
+                                        key: 'venue', 
+                                        direction: prev.key === 'venue' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Venue {gSortCfg.key === 'venue' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="p-2 font-medium hidden md:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalSermonSort(prev => ({ 
+                                        key: 'location', 
+                                        direction: prev.key === 'location' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Location {gSortCfg.key === 'location' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="p-2 font-medium text-right hidden md:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalSermonSort(prev => ({ 
+                                        key: 'wordCount', 
+                                        direction: prev.key === 'wordCount' && prev.direction === 'desc' ? 'asc' : 'desc' 
+                                      }))}
+                                    >
+                                      Words {gSortCfg.key === 'wordCount' && <span className="ml-1">{gSortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                    </th>
+                                    <th className="p-2 font-medium text-center">Source</th>
+                                    <th className="p-2 font-medium text-center">Download</th>
+                                  </tr>
+                                </thead>
+                                <tbody className="divide-y divide-gray-100">
+                                  {displaySermons.length === 0 ? (
+                                    <tr>
+                                      <td colSpan="7" className="py-8 text-center text-gray-500">
+                                        No sermons match your search.
+                                      </td>
+                                    </tr>
+                                  ) : displaySermons.map((sermon, si) => (
+                                    <tr key={si} className="hover:bg-amber-50 cursor-pointer" onClick={() => setSelectedSermon(sermon)}>
+                                      <td className="p-2 text-gray-600 whitespace-nowrap">{sermon.date || 'Unknown'}</td>
+                                      <td className="p-2 font-medium text-gray-800">{sermon.title || 'Untitled'}</td>
+                                      <td className="p-2 text-gray-600 hidden sm:table-cell">{sermon.venue || '—'}</td>
+                                      <td className="p-2 text-gray-600 hidden md:table-cell">{sermon.location || '—'}</td>
+                                      <td className="p-2 text-right text-gray-500 hidden md:table-cell">{sermon.wordCount?.toLocaleString() || '—'}</td>
+                                      <td className="p-2 text-center">
+                                        <a 
+                                          href="https://www.livingwordbroadcast.org/wbtextindex" 
+                                          target="_blank" 
+                                          rel="noopener noreferrer"
+                                          onClick={(e) => e.stopPropagation()}
+                                          className="text-xs text-amber-600 hover:text-amber-800 font-medium"
+                                        >
+                                          LWB ↗
+                                        </a>
+                                      </td>
+                                      <td className="p-2 text-center">
+                                        {sermon.path && (
+                                          <a
+                                            href={`${import.meta.env.BASE_URL || '/'}${encodeFilePath(sermon.path)}`}
+                                            download
+                                            onClick={(e) => e.stopPropagation()}
+                                            className="text-xs text-blue-600 hover:text-blue-800 font-medium inline-flex items-center gap-1"
+                                            title="Download transcript"
+                                          >
+                                            <Icon name="download" size={12} /> TXT
+                                          </a>
+                                        )}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                            {hasMore && (
+                              <div className="text-xs text-gray-500 mt-2 text-center">
+                                Showing first {displayLimit} results. Use search to narrow down.
+                              </div>
+                            )}
+                          </>
+                        )
+                      })()}
+                    </div>
+                  )}
+                </div>
                 
                 <div className="space-y-2">
                   {sermonsByYear.map(({ year, sermons, count, totalWords: yearWords }) => {
@@ -2497,12 +2837,13 @@ export default function BranhamApp({ onSwitchToMain }) {
                             
                             {/* Sermon list */}
                             <div className="max-h-96 overflow-y-auto overflow-x-auto">
-                              <table className="w-full text-sm min-w-[700px]">
+                              <table className="w-full text-sm min-w-[800px]">
                                 <thead className="bg-gray-50 sticky top-0">
                                   <tr>
                                     <th className="text-left p-2 font-medium text-gray-600">Date</th>
                                     <th className="text-left p-2 font-medium text-gray-600">Title</th>
                                     <th className="text-left p-2 font-medium text-gray-600 hidden sm:table-cell">Venue</th>
+                                    <th className="text-left p-2 font-medium text-gray-600 hidden md:table-cell">Location</th>
                                     <th className="text-right p-2 font-medium text-gray-600 hidden md:table-cell">Words</th>
                                     <th className="text-center p-2 font-medium text-gray-600">Source</th>
                                     <th className="text-center p-2 font-medium text-gray-600">Download</th>
@@ -2518,6 +2859,7 @@ export default function BranhamApp({ onSwitchToMain }) {
                                       <td className="p-2 text-gray-600 whitespace-nowrap">{sermon.date}</td>
                                       <td className="p-2 font-medium text-gray-800">{sermon.title}</td>
                                       <td className="p-2 text-gray-600 hidden sm:table-cell">{sermon.venue}</td>
+                                      <td className="p-2 text-gray-600 hidden md:table-cell">{sermon.location || '—'}</td>
                                       <td className="p-2 text-gray-500 text-right hidden md:table-cell">{sermon.wordCount?.toLocaleString()}</td>
                                       <td className="p-2 text-center">
                                         <a 

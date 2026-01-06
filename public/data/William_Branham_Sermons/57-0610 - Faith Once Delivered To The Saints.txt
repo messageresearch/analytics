@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Cadle Tabernacle
-Location: Indianapolis
-Duration: IN, 112 min
+Location: Indianapolis, IN
+Duration: 112 min
 Source: livingwordbroadcast.org
 DateCode: 57-0610
 

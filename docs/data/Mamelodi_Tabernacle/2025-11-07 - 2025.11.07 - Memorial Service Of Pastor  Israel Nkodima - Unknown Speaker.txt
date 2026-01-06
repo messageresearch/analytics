@@ -4,13 +4,14 @@ START OF FILE: 2025-11-07 - 2025.11.07 - Memorial Service Of Pastor  Israel Nkod
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-07
-Title:   2025.11.07 - Memorial Service Of Pastor  Israel Nkodima
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=9a3eC8GbztA
+Date:     2025-11-07
+Title:    2025.11.07 - Memorial Service Of Pastor  Israel Nkodima
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 5h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=9a3eC8GbztA
 ========================================
 
 Description:

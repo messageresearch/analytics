@@ -4,13 +4,14 @@ START OF FILE: 2021-01-28 - The New Man  Pastor Isiah Brooks  1272021 - Isiah Br
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-28
-Title:   The New Man | Pastor Isiah Brooks | 1/27/2021
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3RFLAxb6dtM
+Date:     2021-01-28
+Title:    The New Man | Pastor Isiah Brooks | 1/27/2021
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=3RFLAxb6dtM
 ========================================
 
 Description:

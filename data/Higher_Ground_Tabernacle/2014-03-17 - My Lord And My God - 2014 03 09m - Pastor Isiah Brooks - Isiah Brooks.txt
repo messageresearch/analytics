@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - My Lord And My God - 2014 03 09m - Pastor Isiah Broo
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   My Lord And My God - 2014 03 09m - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dVl3UWFQ8eo
+Date:     2014-03-17
+Title:    My Lord And My God - 2014 03 09m - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=dVl3UWFQ8eo
 ========================================
 
 Description:

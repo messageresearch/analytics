@@ -4,13 +4,14 @@ START OF FILE: 2018-04-08 - 20180408 Sunday Morning service - Isiah Brooks Recor
 
 SERMON DETAILS
 ========================================
-Date:    2018-04-08
-Title:   2018/04/08 Sunday Morning service
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1SzTlUglZ1c
+Date:     2018-04-08
+Title:    2018/04/08 Sunday Morning service
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=1SzTlUglZ1c
 ========================================
 
 Description:

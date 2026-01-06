@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Civic Auditorium
-Location: Toledo
-Duration: OH, 67 min
+Location: Toledo, OH
+Duration: 67 min
 Source: livingwordbroadcast.org
 DateCode: 51-0720
 

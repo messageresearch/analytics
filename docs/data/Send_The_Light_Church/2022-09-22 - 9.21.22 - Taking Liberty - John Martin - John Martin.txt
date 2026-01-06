@@ -4,13 +4,14 @@ START OF FILE: 2022-09-22 - 9.21.22 - Taking Liberty - John Martin - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-22
-Title:   9.21.22 - Taking Liberty - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=J-ozUeT9_iY
+Date:     2022-09-22
+Title:    9.21.22 - Taking Liberty - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=J-ozUeT9_iY
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2019-01-13 - Une Religion de facade (A facade religion) - Bro Mer
 
 SERMON DETAILS
 ========================================
-Date:    2019-01-13
-Title:   Une Religion de facade (A facade religion) - Bro Merryl Kinkonda (Higher Ground Tabernacle)
-Speaker: Merryl Kinkonda
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JhgLT12woc0
+Date:     2019-01-13
+Title:    Une Religion de facade (A facade religion) - Bro Merryl Kinkonda (Higher Ground Tabernacle)
+Speaker:  Merryl Kinkonda
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=JhgLT12woc0
 ========================================
 
 TRANSCRIPT

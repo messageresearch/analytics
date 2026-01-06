@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Essex Theater
-Location: Newark
-Duration: NJ, 109 min
+Location: Newark, NJ
+Duration: 109 min
 Source: livingwordbroadcast.org
 DateCode: 57-1213
 

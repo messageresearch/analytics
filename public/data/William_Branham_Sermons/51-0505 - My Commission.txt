@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Calvary Temple
-Location: Los Angeles
-Duration: CA, 96 min
+Location: Los Angeles, CA
+Duration: 96 min
 Source: livingwordbroadcast.org
 DateCode: 51-0505
 

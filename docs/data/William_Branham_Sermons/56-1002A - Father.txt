@@ -3,9 +3,9 @@ Title: Father
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: The Hour Has Come
-Location: Lane Tech High School
-Duration: Chicago, IL, 78 min
+Venue: Lane Tech High School
+Location: Chicago, IL
+Duration: 78 min
 Source: livingwordbroadcast.org
 DateCode: 56-1002A
 

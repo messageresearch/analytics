@@ -4,13 +4,14 @@ START OF FILE: 2023-02-12 - 2.12.23 - Following The Word - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-12
-Title:   2.12.23 - Following The Word - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IGO8OyStU5s
+Date:     2023-02-12
+Title:    2.12.23 - Following The Word - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 53m
+Language: English
+URL:      https://www.youtube.com/watch?v=IGO8OyStU5s
 ========================================
 
 TRANSCRIPT

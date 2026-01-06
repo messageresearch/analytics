@@ -4,13 +4,14 @@ START OF FILE: 2024-03-14 - 3.13.24 - Chosen For A Purpose - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2024-03-14
-Title:   3.13.24 - Chosen For A Purpose - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WHLqmegKBCM
+Date:     2024-03-14
+Title:    3.13.24 - Chosen For A Purpose - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=WHLqmegKBCM
 ========================================
 
 TRANSCRIPT

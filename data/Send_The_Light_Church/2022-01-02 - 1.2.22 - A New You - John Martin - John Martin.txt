@@ -4,13 +4,14 @@ START OF FILE: 2022-01-02 - 1.2.22 - A New You - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-02
-Title:   1.2.22 - A New You - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2EdvzJThvLs
+Date:     2022-01-02
+Title:    1.2.22 - A New You - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=2EdvzJThvLs
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: First Assembly Of God Of Long Beach
-Location: Long Beach
-Duration: CA, 82 min
+Location: Long Beach, CA
+Duration: 82 min
 Source: livingwordbroadcast.org
 DateCode: 61-0214
 

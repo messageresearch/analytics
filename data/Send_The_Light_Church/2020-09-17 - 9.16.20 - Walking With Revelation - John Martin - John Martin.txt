@@ -4,13 +4,14 @@ START OF FILE: 2020-09-17 - 9.16.20 - Walking With Revelation - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-17
-Title:   9.16.20 - Walking With Revelation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T8sYAnyPWN4
+Date:     2020-09-17
+Title:    9.16.20 - Walking With Revelation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=T8sYAnyPWN4
 ========================================
 
 TRANSCRIPT

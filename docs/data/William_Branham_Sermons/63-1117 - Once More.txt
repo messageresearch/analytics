@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: The Rock Church
-Location: New York
-Duration: NY, 112 min
+Location: New York, NY
+Duration: 112 min
 Source: livingwordbroadcast.org
 DateCode: 63-1117
 

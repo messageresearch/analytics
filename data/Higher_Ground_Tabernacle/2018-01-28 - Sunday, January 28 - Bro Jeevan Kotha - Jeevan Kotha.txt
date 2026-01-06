@@ -4,13 +4,14 @@ START OF FILE: 2018-01-28 - Sunday, January 28 - Bro Jeevan Kotha - Jeevan Kotha
 
 SERMON DETAILS
 ========================================
-Date:    2018-01-28
-Title:   Sunday, January 28 - Bro Jeevan Kotha
-Speaker: Jeevan Kotha
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bH536Dl1Cgw
+Date:     2018-01-28
+Title:    Sunday, January 28 - Bro Jeevan Kotha
+Speaker:  Jeevan Kotha
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=bH536Dl1Cgw
 ========================================
 
 Description:

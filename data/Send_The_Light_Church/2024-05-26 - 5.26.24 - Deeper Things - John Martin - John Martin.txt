@@ -4,13 +4,14 @@ START OF FILE: 2024-05-26 - 5.26.24 - Deeper Things - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-26
-Title:   5.26.24 - Deeper Things - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DVFFQjrizf0
+Date:     2024-05-26
+Title:    5.26.24 - Deeper Things - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=DVFFQjrizf0
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-07-23 - 7.23.23 - The Ministry Of Helps - Part 2 - Isaac LaF
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-23
-Title:   7.23.23 - The Ministry Of Helps - Part 2 - Isaac LaFontaine
-Speaker: Isaac LaFontaine
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=trjsVb-a2dE
+Date:     2023-07-23
+Title:    7.23.23 - The Ministry Of Helps - Part 2 - Isaac LaFontaine
+Speaker:  Isaac LaFontaine
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=trjsVb-a2dE
 ========================================
 
 TRANSCRIPT

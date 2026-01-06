@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Pentecostal Church Of God
-Location: Mesa
-Duration: AZ, 134 min
+Location: Mesa, AZ
+Duration: 134 min
 Source: livingwordbroadcast.org
 DateCode: 63-0116
 

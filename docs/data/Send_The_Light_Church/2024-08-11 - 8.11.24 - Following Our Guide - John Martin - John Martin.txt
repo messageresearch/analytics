@@ -4,13 +4,14 @@ START OF FILE: 2024-08-11 - 8.11.24 - Following Our Guide - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-11
-Title:   8.11.24 - Following Our Guide - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pGm5sWp-Mwo
+Date:     2024-08-11
+Title:    8.11.24 - Following Our Guide - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 48m
+Language: English
+URL:      https://www.youtube.com/watch?v=pGm5sWp-Mwo
 ========================================
 
 TRANSCRIPT

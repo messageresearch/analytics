@@ -4,13 +4,14 @@ START OF FILE: 2025-07-24 - 7.23.25 - Seduced To Sin - Aaron McGeary - Aaron McG
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-24
-Title:   7.23.25 - Seduced To Sin - Aaron McGeary
-Speaker: Aaron McGeary
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8nhXuz0BM2U
+Date:     2025-07-24
+Title:    7.23.25 - Seduced To Sin - Aaron McGeary
+Speaker:  Aaron McGeary
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=8nhXuz0BM2U
 ========================================
 
 TRANSCRIPT

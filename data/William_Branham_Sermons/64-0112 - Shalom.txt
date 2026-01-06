@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: House Meeting
-Location: Sierra Vista
-Duration: AZ, 137 min
+Location: Sierra Vista, AZ
+Duration: 137 min
 Source: livingwordbroadcast.org
 DateCode: 64-0112
 

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: American Baptist Assembly
-Location: Green Lake
-Duration: WI, 73 min
+Location: Green Lake, WI
+Duration: 73 min
 Source: livingwordbroadcast.org
 DateCode: 62-0519
 

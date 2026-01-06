@@ -4,13 +4,14 @@ START OF FILE: 2023-12-10 - 12.9.23 - When Faith Was Met - Darrell Ward - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-10
-Title:   12.9.23 - When Faith Was Met - Darrell Ward
-Speaker: Unknown Speaker
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ww2XywrUpx4
+Date:     2023-12-10
+Title:    12.9.23 - When Faith Was Met - Darrell Ward
+Speaker:  Unknown Speaker
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ww2XywrUpx4
 ========================================
 
 TRANSCRIPT

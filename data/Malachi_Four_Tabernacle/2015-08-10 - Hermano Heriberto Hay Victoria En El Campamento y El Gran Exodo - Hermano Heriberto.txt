@@ -4,13 +4,14 @@ START OF FILE: 2015-08-10 - Hermano Heriberto Hay Victoria En El Campamento y El
 
 SERMON DETAILS
 ========================================
-Date:    2015-08-10
-Title:   Hermano Heriberto: Hay Victoria En El Campamento y El Gran Exodo
-Speaker: Hermano Heriberto
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=hi9ZM_-WXNE
+Date:     2015-08-10
+Title:    Hermano Heriberto: Hay Victoria En El Campamento y El Gran Exodo
+Speaker:  Hermano Heriberto
+Church:   Malachi Four Tabernacle
+Type:     Short Service
+Duration: 10m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=hi9ZM_-WXNE
 ========================================
 
 TRANSCRIPT

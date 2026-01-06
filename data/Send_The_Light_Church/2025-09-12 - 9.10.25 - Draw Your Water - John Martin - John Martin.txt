@@ -4,13 +4,14 @@ START OF FILE: 2025-09-12 - 9.10.25 - Draw Your Water - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-12
-Title:   9.10.25 - Draw Your Water - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xTiq6ORYtOc
+Date:     2025-09-12
+Title:    9.10.25 - Draw Your Water - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=xTiq6ORYtOc
 ========================================
 
 TRANSCRIPT

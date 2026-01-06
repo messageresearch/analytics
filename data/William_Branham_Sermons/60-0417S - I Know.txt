@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Branham Tabernacle
-Location: Jeffersonville
-Duration: IN, 53 min
+Location: Jeffersonville, IN
+Duration: 53 min
 Source: livingwordbroadcast.org
 DateCode: 60-0417S
 

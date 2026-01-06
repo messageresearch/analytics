@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: San Jose Park
-Location: San Juan
-Duration: PR, 53 min
+Location: San Juan, PR
+Duration: 53 min
 Source: livingwordbroadcast.org
 DateCode: 59-0211
 

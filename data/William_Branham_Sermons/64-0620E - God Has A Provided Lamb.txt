@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Municipal Auditorium
-Location: Topeka
-Duration: KS, 75 min
+Location: Topeka, KS
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 64-0620E
 

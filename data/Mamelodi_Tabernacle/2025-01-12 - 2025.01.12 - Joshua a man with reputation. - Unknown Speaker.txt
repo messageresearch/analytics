@@ -4,13 +4,14 @@ START OF FILE: 2025-01-12 - 2025.01.12 - Joshua a man with reputation. - Unknown
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-12
-Title:   2025.01.12 - Joshua a man with reputation.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Lw1OfECU04A
+Date:     2025-01-12
+Title:    2025.01.12 - Joshua a man with reputation.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=Lw1OfECU04A
 ========================================
 
 TRANSCRIPT

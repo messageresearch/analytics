@@ -4,13 +4,14 @@ START OF FILE: 2019-12-01 - Brother Isiah Brooks  The Message of Freedom  Sunday
 
 SERMON DETAILS
 ========================================
-Date:    2019-12-01
-Title:   Brother Isiah Brooks | The Message of Freedom | Sunday 12/1/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VBpwd9bvIP8
+Date:     2019-12-01
+Title:    Brother Isiah Brooks | The Message of Freedom | Sunday 12/1/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=VBpwd9bvIP8
 ========================================
 
 Description:

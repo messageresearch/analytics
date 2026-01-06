@@ -4,13 +4,14 @@ START OF FILE: 2020-09-07 - 09.06.20P - Get Up - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-09-07
-Title:   09.06.20P - Get Up - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1zKA6x4zrZg
+Date:     2020-09-07
+Title:    09.06.20P - Get Up - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Short Service
+Duration: 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=1zKA6x4zrZg
 ========================================
 
 TRANSCRIPT

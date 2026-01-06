@@ -3,9 +3,9 @@ Title: Behold
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: A Greater Than Solomon Is Here
-Location: National Guard Armory
-Duration: Salem, OR, 95 min
+Venue: National Guard Armory
+Location: Salem, OR
+Duration: 95 min
 Source: livingwordbroadcast.org
 DateCode: 62-0721
 

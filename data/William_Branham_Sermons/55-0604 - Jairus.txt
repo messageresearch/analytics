@@ -3,9 +3,9 @@ Title: Jairus
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: A Secret Believer
-Location: Porter Stadium
-Duration: Macon, GA, 89 min
+Venue: Porter Stadium
+Location: Macon, GA
+Duration: 89 min
 Source: livingwordbroadcast.org
 DateCode: 55-0604
 

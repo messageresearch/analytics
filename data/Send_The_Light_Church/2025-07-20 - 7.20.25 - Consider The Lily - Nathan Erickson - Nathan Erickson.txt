@@ -4,13 +4,14 @@ START OF FILE: 2025-07-20 - 7.20.25 - Consider The Lily - Nathan Erickson - Nath
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-20
-Title:   7.20.25 - Consider The Lily - Nathan Erickson
-Speaker: Nathan Erickson
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nyMcljdqD6k
+Date:     2025-07-20
+Title:    7.20.25 - Consider The Lily - Nathan Erickson
+Speaker:  Nathan Erickson
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 56m
+Language: English
+URL:      https://www.youtube.com/watch?v=nyMcljdqD6k
 ========================================
 
 TRANSCRIPT

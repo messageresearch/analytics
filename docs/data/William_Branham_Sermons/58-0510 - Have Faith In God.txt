@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Pittsfield High School
-Location: Pittsfield
-Duration: MA, 97 min
+Location: Pittsfield, MA
+Duration: 97 min
 Source: livingwordbroadcast.org
 DateCode: 58-0510
 

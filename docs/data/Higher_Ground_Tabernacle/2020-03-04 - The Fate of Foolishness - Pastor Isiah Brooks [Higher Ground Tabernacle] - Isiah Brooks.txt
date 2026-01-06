@@ -4,13 +4,14 @@ START OF FILE: 2020-03-04 - The Fate of Foolishness - Pastor Isiah Brooks [Highe
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-04
-Title:   The Fate of Foolishness - Pastor Isiah Brooks [Higher Ground Tabernacle]
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TgOiw3L1YQo
+Date:     2020-03-04
+Title:    The Fate of Foolishness - Pastor Isiah Brooks [Higher Ground Tabernacle]
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=TgOiw3L1YQo
 ========================================
 
 Description:

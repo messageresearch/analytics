@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: House Meeting
-Location: Tifton
-Duration: GA, 99 min
+Location: Tifton, GA
+Duration: 99 min
 Source: livingwordbroadcast.org
 DateCode: 61-0808
 

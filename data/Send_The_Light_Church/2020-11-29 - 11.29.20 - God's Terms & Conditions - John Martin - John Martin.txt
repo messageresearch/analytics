@@ -4,13 +4,14 @@ START OF FILE: 2020-11-29 - 11.29.20 - God's Terms & Conditions - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-29
-Title:   11.29.20 - God's Terms & Conditions - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=3xZBiA11dqU
+Date:     2020-11-29
+Title:    11.29.20 - God's Terms & Conditions - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=3xZBiA11dqU
 ========================================
 
 Description:

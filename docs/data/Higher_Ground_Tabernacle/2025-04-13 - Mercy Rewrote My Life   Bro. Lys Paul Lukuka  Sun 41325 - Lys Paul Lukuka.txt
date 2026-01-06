@@ -4,13 +4,14 @@ START OF FILE: 2025-04-13 - Mercy Rewrote My Life   Bro. Lys Paul Lukuka  Sun 41
 
 SERMON DETAILS
 ========================================
-Date:    2025-04-13
-Title:   Mercy Rewrote My Life  // Bro. Lys Paul Lukuka // Sun 4/13/25
-Speaker: Lys Paul Lukuka
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dREzRHeAKDE
+Date:     2025-04-13
+Title:    Mercy Rewrote My Life  // Bro. Lys Paul Lukuka // Sun 4/13/25
+Speaker:  Lys Paul Lukuka
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 3h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=dREzRHeAKDE
 ========================================
 
 TRANSCRIPT

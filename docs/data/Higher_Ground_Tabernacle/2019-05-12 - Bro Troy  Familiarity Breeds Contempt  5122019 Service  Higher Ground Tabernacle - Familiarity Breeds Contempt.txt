@@ -4,13 +4,14 @@ START OF FILE: 2019-05-12 - Bro Troy  Familiarity Breeds Contempt  5122019 Servi
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-12
-Title:   Bro Troy | Familiarity Breeds Contempt | 5/12/2019 Service | Higher Ground Tabernacle
-Speaker: Familiarity Breeds Contempt
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=db4J3efHQd0
+Date:     2019-05-12
+Title:    Bro Troy | Familiarity Breeds Contempt | 5/12/2019 Service | Higher Ground Tabernacle
+Speaker:  Familiarity Breeds Contempt
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=db4J3efHQd0
 ========================================
 
 Description:

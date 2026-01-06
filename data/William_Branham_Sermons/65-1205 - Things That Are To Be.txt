@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: First Assembly Of God
-Location: Rialto
-Duration: CA, 125 min
+Location: Rialto, CA
+Duration: 125 min
 Source: livingwordbroadcast.org
 DateCode: 65-1205
 

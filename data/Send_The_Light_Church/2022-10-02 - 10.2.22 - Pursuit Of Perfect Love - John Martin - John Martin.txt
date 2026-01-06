@@ -4,13 +4,14 @@ START OF FILE: 2022-10-02 - 10.2.22 - Pursuit Of Perfect Love - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-02
-Title:   10.2.22 - Pursuit Of Perfect Love - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JTaMz_zU5T8
+Date:     2022-10-02
+Title:    10.2.22 - Pursuit Of Perfect Love - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 23m
+Language: English
+URL:      https://www.youtube.com/watch?v=JTaMz_zU5T8
 ========================================
 
 TRANSCRIPT

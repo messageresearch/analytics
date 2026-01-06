@@ -4,13 +4,14 @@ START OF FILE: 2022-03-06 - 3.6.22 - Cultivating Faith - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-06
-Title:   3.6.22 - Cultivating Faith - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yj8pCbb_W3A
+Date:     2022-03-06
+Title:    3.6.22 - Cultivating Faith - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=yj8pCbb_W3A
 ========================================
 
 TRANSCRIPT

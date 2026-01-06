@@ -4,13 +4,14 @@ START OF FILE: 2025-06-08 - 2025.06.08 - Following the Angel. - Unknown Speaker.
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-08
-Title:   2025.06.08 - Following the Angel.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=7MjDYMc0sbk
+Date:     2025-06-08
+Title:    2025.06.08 - Following the Angel.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=7MjDYMc0sbk
 ========================================
 
 TRANSCRIPT

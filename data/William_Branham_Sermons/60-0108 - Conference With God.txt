@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Unity Tabernacle
-Location: Tifton
-Duration: GA, 64 min
+Location: Tifton, GA
+Duration: 64 min
 Source: livingwordbroadcast.org
 DateCode: 60-0108
 

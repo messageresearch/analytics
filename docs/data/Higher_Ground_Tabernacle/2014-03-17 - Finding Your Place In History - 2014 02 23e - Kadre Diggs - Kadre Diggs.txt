@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - Finding Your Place In History - 2014 02 23e - Kadre 
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   Finding Your Place In History - 2014 02 23e - Kadre Diggs
-Speaker: Kadre Diggs
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bMG1rc2s3WY
+Date:     2014-03-17
+Title:    Finding Your Place In History - 2014 02 23e - Kadre Diggs
+Speaker:  Kadre Diggs
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=bMG1rc2s3WY
 ========================================
 
 Description:

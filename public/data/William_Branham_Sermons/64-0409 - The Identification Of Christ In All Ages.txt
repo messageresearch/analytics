@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: National Guard Armory
-Location: Birmingham
-Duration: AL, 87 min
+Location: Birmingham, AL
+Duration: 87 min
 Source: livingwordbroadcast.org
 DateCode: 64-0409
 

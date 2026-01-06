@@ -4,13 +4,14 @@ START OF FILE: 2019-05-01 - Bro Isiah  The Messianic Empire  512019  Higher Grou
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-01
-Title:   Bro Isiah | The Messianic Empire | 5/1/2019 | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VVV5mujeYjc
+Date:     2019-05-01
+Title:    Bro Isiah | The Messianic Empire | 5/1/2019 | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=VVV5mujeYjc
 ========================================
 
 Description:

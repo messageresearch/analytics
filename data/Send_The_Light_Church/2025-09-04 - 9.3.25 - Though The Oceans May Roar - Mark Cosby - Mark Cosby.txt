@@ -4,13 +4,14 @@ START OF FILE: 2025-09-04 - 9.3.25 - Though The Oceans May Roar - Mark Cosby - M
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-04
-Title:   9.3.25 - Though The Oceans May Roar - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QaG5RQepDYs
+Date:     2025-09-04
+Title:    9.3.25 - Though The Oceans May Roar - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=QaG5RQepDYs
 ========================================
 
 TRANSCRIPT

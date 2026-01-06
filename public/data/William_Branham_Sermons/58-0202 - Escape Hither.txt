@@ -3,9 +3,9 @@ Title: Escape Hither
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Come Quickly
-Location: The Hippodrome
-Duration: Waterloo, IA, 58 min
+Venue: The Hippodrome
+Location: Waterloo, IA
+Duration: 58 min
 Source: livingwordbroadcast.org
 DateCode: 58-0202
 

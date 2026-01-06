@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - Loosed From Your Sins - 2014 05 18e - Ben Norrod - B
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   Loosed From Your Sins - 2014 05 18e - Ben Norrod
-Speaker: Ben Norrod
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FSe0jDal2C0
+Date:     2014-05-27
+Title:    Loosed From Your Sins - 2014 05 18e - Ben Norrod
+Speaker:  Ben Norrod
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=FSe0jDal2C0
 ========================================
 
 Description:

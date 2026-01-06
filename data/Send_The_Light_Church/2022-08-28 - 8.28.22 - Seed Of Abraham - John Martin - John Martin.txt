@@ -4,13 +4,14 @@ START OF FILE: 2022-08-28 - 8.28.22 - Seed Of Abraham - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2022-08-28
-Title:   8.28.22 - Seed Of Abraham - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=94Ycol4t3Jo
+Date:     2022-08-28
+Title:    8.28.22 - Seed Of Abraham - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=94Ycol4t3Jo
 ========================================
 
 TRANSCRIPT

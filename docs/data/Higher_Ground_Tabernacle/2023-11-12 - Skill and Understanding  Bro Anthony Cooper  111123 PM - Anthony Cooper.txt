@@ -4,13 +4,14 @@ START OF FILE: 2023-11-12 - Skill and Understanding  Bro Anthony Cooper  111123 
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-12
-Title:   Skill and Understanding | Bro Anthony Cooper | 11/11/23 PM
-Speaker: Anthony Cooper
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=L7UTzhfnNkk
+Date:     2023-11-12
+Title:    Skill and Understanding | Bro Anthony Cooper | 11/11/23 PM
+Speaker:  Anthony Cooper
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=L7UTzhfnNkk
 ========================================
 
 TRANSCRIPT

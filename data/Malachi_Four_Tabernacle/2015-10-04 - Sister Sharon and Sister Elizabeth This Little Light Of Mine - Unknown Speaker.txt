@@ -4,13 +4,14 @@ START OF FILE: 2015-10-04 - Sister Sharon and Sister Elizabeth This Little Light
 
 SERMON DETAILS
 ========================================
-Date:    2015-10-04
-Title:   Sister Sharon and Sister Elizabeth: This Little Light Of Mine
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=9gz9JKatAb8
+Date:     2015-10-04
+Title:    Sister Sharon and Sister Elizabeth: This Little Light Of Mine
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Song Special
+Duration: 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=9gz9JKatAb8
 ========================================
 
 TRANSCRIPT

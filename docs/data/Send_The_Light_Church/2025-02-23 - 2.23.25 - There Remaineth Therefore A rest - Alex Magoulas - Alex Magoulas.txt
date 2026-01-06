@@ -4,13 +4,14 @@ START OF FILE: 2025-02-23 - 2.23.25 - There Remaineth Therefore A rest - Alex Ma
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-23
-Title:   2.23.25 - There Remaineth Therefore A rest - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lP3HkJpus8E
+Date:     2025-02-23
+Title:    2.23.25 - There Remaineth Therefore A rest - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=lP3HkJpus8E
 ========================================
 
 TRANSCRIPT

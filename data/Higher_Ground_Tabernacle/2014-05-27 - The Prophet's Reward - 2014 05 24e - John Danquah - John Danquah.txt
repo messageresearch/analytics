@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - The Prophet's Reward - 2014 05 24e - John Danquah - 
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   The Prophet's Reward - 2014 05 24e - John Danquah
-Speaker: John Danquah
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BAI6Ec8k-XU
+Date:     2014-05-27
+Title:    The Prophet's Reward - 2014 05 24e - John Danquah
+Speaker:  John Danquah
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=BAI6Ec8k-XU
 ========================================
 
 Description:

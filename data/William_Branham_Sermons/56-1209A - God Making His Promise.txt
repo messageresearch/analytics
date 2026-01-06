@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Brooklyn Academy Of Music
-Location: Brooklyn
-Duration: NY, 75 min
+Location: Brooklyn, NY
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 56-1209A
 

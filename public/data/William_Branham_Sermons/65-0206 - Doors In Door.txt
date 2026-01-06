@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Americana Hotel
-Location: Flagstaff
-Duration: AZ, 108 min
+Location: Flagstaff, AZ
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 65-0206
 

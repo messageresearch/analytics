@@ -4,13 +4,14 @@ START OF FILE: 2021-10-31 - Sunday Evening Service  Pastor Isiah Brooks Sunday 1
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-31
-Title:   Sunday Evening Service || Pastor Isiah Brooks|| Sunday 10/31/2021
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=69uIId-QDbw
+Date:     2021-10-31
+Title:    Sunday Evening Service || Pastor Isiah Brooks|| Sunday 10/31/2021
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=69uIId-QDbw
 ========================================
 
 Description:

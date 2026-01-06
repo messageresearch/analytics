@@ -4,13 +4,14 @@ START OF FILE: 2023-03-05 - Elie And Elisha - Bro. Easie Bowa - Sunday 352023 - 
 
 SERMON DETAILS
 ========================================
-Date:    2023-03-05
-Title:   Elie And Elisha - Bro. Easie Bowa - Sunday 3/5/2023
-Speaker: Easie Bowa
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=KBJvN0jhrOA
+Date:     2023-03-05
+Title:    Elie And Elisha - Bro. Easie Bowa - Sunday 3/5/2023
+Speaker:  Easie Bowa
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=KBJvN0jhrOA
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-07-17 - 7.16.25 - His Life Applied - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-17
-Title:   7.16.25 - His Life Applied - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=MLIJf1GXhyU
+Date:     2025-07-17
+Title:    7.16.25 - His Life Applied - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=MLIJf1GXhyU
 ========================================
 
 TRANSCRIPT

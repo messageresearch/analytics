@@ -4,13 +4,14 @@ START OF FILE: 2014-06-25 - Fatherhood - 2014 06 15m - Vusi Livingstone - Vusi L
 
 SERMON DETAILS
 ========================================
-Date:    2014-06-25
-Title:   Fatherhood - 2014 06 15m - Vusi Livingstone
-Speaker: Vusi Livingstone
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=-oat5iC_9FI
+Date:     2014-06-25
+Title:    Fatherhood - 2014 06 15m - Vusi Livingstone
+Speaker:  Vusi Livingstone
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 33m
+Language: English
+URL:      https://www.youtube.com/watch?v=-oat5iC_9FI
 ========================================
 
 Description:

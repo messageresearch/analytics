@@ -4,13 +4,14 @@ START OF FILE: 2020-03-11 - Wednesday Night Service  - Bro Isiah Brooks[Higher G
 
 SERMON DETAILS
 ========================================
-Date:    2020-03-11
-Title:   Wednesday Night Service  - Bro Isiah Brooks[Higher Ground Tabernacle]
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=IbLm4oRzXz4
+Date:     2020-03-11
+Title:    Wednesday Night Service  - Bro Isiah Brooks[Higher Ground Tabernacle]
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=IbLm4oRzXz4
 ========================================
 
 Description:

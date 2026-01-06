@@ -4,13 +4,14 @@ START OF FILE: 2025-01-23 - Mamelodi Church Singing - Ancient Words (Dec Convent
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-23
-Title:   Mamelodi Church Singing - Ancient Words (Dec Convention)
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DkQuybn_PqA
+Date:     2025-01-23
+Title:    Mamelodi Church Singing - Ancient Words (Dec Convention)
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Convention
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=DkQuybn_PqA
 ========================================
 
 TRANSCRIPT

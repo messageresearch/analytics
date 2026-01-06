@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Ramada Inn
-Location: Phoenix
-Duration: AZ, 77 min
+Location: Phoenix, AZ
+Duration: 77 min
 Source: livingwordbroadcast.org
 DateCode: 64-0122
 

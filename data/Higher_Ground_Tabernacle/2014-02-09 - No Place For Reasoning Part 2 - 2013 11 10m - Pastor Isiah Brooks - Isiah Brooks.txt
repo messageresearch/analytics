@@ -4,13 +4,14 @@ START OF FILE: 2014-02-09 - No Place For Reasoning Part 2 - 2013 11 10m - Pastor
 
 SERMON DETAILS
 ========================================
-Date:    2014-02-09
-Title:   No Place For Reasoning Part 2 - 2013 11 10m - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LZRwVGowmqI
+Date:     2014-02-09
+Title:    No Place For Reasoning Part 2 - 2013 11 10m - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=LZRwVGowmqI
 ========================================
 
 Description:

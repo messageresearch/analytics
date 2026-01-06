@@ -4,13 +4,14 @@ START OF FILE: 2019-11-03 - La Marche  Des Enfants de La Lumiere - The Walk of T
 
 SERMON DETAILS
 ========================================
-Date:    2019-11-03
-Title:   La Marche  Des Enfants de La Lumiere - The Walk of The Children of The Light 11/03/19 (HGT)
-Speaker: Unknown Speaker
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=5-Qax1WJOv0
+Date:     2019-11-03
+Title:    La Marche  Des Enfants de La Lumiere - The Walk of The Children of The Light 11/03/19 (HGT)
+Speaker:  Unknown Speaker
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=5-Qax1WJOv0
 ========================================
 
 TRANSCRIPT

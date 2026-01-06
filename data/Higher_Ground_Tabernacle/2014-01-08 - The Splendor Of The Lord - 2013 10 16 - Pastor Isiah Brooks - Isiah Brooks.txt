@@ -4,13 +4,14 @@ START OF FILE: 2014-01-08 - The Splendor Of The Lord - 2013 10 16 - Pastor Isiah
 
 SERMON DETAILS
 ========================================
-Date:    2014-01-08
-Title:   The Splendor Of The Lord - 2013 10 16 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=r0s68Cm_TsM
+Date:     2014-01-08
+Title:    The Splendor Of The Lord - 2013 10 16 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 17m
+Language: English
+URL:      https://www.youtube.com/watch?v=r0s68Cm_TsM
 ========================================
 
 Description:

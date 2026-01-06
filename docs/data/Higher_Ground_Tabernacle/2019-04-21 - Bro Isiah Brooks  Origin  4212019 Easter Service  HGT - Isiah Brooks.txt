@@ -4,13 +4,14 @@ START OF FILE: 2019-04-21 - Bro Isiah Brooks  Origin  4212019 Easter Service  HG
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-21
-Title:   Bro Isiah Brooks | Origin | 4/21/2019 Easter Service | HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yGTcV665oPw
+Date:     2019-04-21
+Title:    Bro Isiah Brooks | Origin | 4/21/2019 Easter Service | HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Easter Program
+Duration: 2h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=yGTcV665oPw
 ========================================
 
 Description:

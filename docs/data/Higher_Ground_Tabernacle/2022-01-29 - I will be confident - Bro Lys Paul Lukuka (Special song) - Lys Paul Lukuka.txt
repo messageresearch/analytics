@@ -4,13 +4,14 @@ START OF FILE: 2022-01-29 - I will be confident - Bro Lys Paul Lukuka (Special s
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-29
-Title:   I will be confident - Bro Lys Paul Lukuka (Special song)
-Speaker: Lys Paul Lukuka
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Q6F6_oy-634
+Date:     2022-01-29
+Title:    I will be confident - Bro Lys Paul Lukuka (Special song)
+Speaker:  Lys Paul Lukuka
+Church:   Higher Ground Tabernacle
+Type:     Song Special
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=Q6F6_oy-634
 ========================================
 
 Description:

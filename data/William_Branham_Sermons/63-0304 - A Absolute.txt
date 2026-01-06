@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: City Auditorium
-Location: Houston
-Duration: TX, 50 min
+Location: Houston, TX
+Duration: 50 min
 Source: livingwordbroadcast.org
 DateCode: 63-0304
 

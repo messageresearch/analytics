@@ -4,13 +4,14 @@ START OF FILE: 2014-05-29 - Building the Temple of God Turning a Corner - Unknow
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-29
-Title:   Building the Temple of God: Turning a Corner
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=00TjuGE_9o0
+Date:     2014-05-29
+Title:    Building the Temple of God: Turning a Corner
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 1h 8m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=00TjuGE_9o0
 ========================================
 
 Description:

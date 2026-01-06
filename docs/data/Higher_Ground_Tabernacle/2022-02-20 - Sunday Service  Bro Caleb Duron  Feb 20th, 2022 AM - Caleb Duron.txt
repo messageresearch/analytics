@@ -4,13 +4,14 @@ START OF FILE: 2022-02-20 - Sunday Service  Bro Caleb Duron  Feb 20th, 2022 AM -
 
 SERMON DETAILS
 ========================================
-Date:    2022-02-20
-Title:   Sunday Service || Bro Caleb Duron || Feb 20th, 2022 AM
-Speaker: Caleb Duron
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QkCpsRFqGYY
+Date:     2022-02-20
+Title:    Sunday Service || Bro Caleb Duron || Feb 20th, 2022 AM
+Speaker:  Caleb Duron
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=QkCpsRFqGYY
 ========================================
 
 Description:

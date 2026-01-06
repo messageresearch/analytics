@@ -4,13 +4,14 @@ START OF FILE: 2020-10-22 - 10.21.20 - The Most Important Election - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-22
-Title:   10.21.20 - The Most Important Election - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4LQOMqU8FF4
+Date:     2020-10-22
+Title:    10.21.20 - The Most Important Election - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=4LQOMqU8FF4
 ========================================
 
 Description:

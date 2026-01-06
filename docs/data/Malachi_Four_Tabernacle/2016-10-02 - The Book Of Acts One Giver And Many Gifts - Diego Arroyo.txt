@@ -4,13 +4,14 @@ START OF FILE: 2016-10-02 - The Book Of Acts One Giver And Many Gifts - Diego Ar
 
 SERMON DETAILS
 ========================================
-Date:    2016-10-02
-Title:   The Book Of Acts: One Giver And Many Gifts
-Speaker: Diego Arroyo
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=akvaqE8spXE
+Date:     2016-10-02
+Title:    The Book Of Acts: One Giver And Many Gifts
+Speaker:  Diego Arroyo
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 2h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=akvaqE8spXE
 ========================================
 
 Description:

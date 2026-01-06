@@ -4,13 +4,14 @@ START OF FILE: 2023-07-02 - The Fourth man in the fire  -  Bro. Isaac Adude  - 0
 
 SERMON DETAILS
 ========================================
-Date:    2023-07-02
-Title:   The Fourth man in the fire  -  Bro. Isaac Adude  - 07/2/2023
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=66meLbi0yUE
+Date:     2023-07-02
+Title:    The Fourth man in the fire  -  Bro. Isaac Adude  - 07/2/2023
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=66meLbi0yUE
 ========================================
 
 Description:

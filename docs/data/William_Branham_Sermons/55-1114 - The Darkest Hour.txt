@@ -3,9 +3,9 @@ Title: The Darkest Hour
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Then Jesus Comes Along
-Location: Tent Meeting
-Duration: San Fernando, CA, 93 min
+Venue: Tent Meeting
+Location: San Fernando, CA
+Duration: 93 min
 Source: livingwordbroadcast.org
 DateCode: 55-1114
 

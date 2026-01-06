@@ -4,13 +4,14 @@ START OF FILE: 2020-08-23 - Sun Afternoon Service - Brother Isiah Brooks - 08232
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-23
-Title:   Sun Afternoon Service - Brother Isiah Brooks - 08/23/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vq9XCf-V3pQ
+Date:     2020-08-23
+Title:    Sun Afternoon Service - Brother Isiah Brooks - 08/23/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=vq9XCf-V3pQ
 ========================================
 
 Description:

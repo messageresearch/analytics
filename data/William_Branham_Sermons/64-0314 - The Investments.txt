@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Beaumont Hotel
-Location: Beaumont
-Duration: TX, 75 min
+Location: Beaumont, TX
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 64-0314
 

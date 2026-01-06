@@ -4,13 +4,14 @@ START OF FILE: 2019-03-17 - Bro Isiah Brooks The Power of Truth Part 2  031719 P
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-17
-Title:   Bro Isiah Brooks |The Power of Truth Part 2 | 03/17/19 PM Service | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vddAe4gICxw
+Date:     2019-03-17
+Title:    Bro Isiah Brooks |The Power of Truth Part 2 | 03/17/19 PM Service | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=vddAe4gICxw
 ========================================
 
 Description:

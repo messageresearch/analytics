@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - 10.23.22 - The Way We Think - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   10.23.22 - The Way We Think - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=lV4iMBo_774
+Date:     2022-10-23
+Title:    10.23.22 - The Way We Think - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=lV4iMBo_774
 ========================================
 
 TRANSCRIPT

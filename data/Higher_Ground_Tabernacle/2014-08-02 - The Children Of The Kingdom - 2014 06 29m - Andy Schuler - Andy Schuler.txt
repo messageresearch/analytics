@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - The Children Of The Kingdom - 2014 06 29m - Andy Sch
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   The Children Of The Kingdom - 2014 06 29m - Andy Schuler
-Speaker: Andy Schuler
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wSzH8vBaY3c
+Date:     2014-08-02
+Title:    The Children Of The Kingdom - 2014 06 29m - Andy Schuler
+Speaker:  Andy Schuler
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 19m
+Language: English
+URL:      https://www.youtube.com/watch?v=wSzH8vBaY3c
 ========================================
 
 Description:

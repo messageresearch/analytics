@@ -4,13 +4,14 @@ START OF FILE: 2025-02-20 - 2.19.25 - Our Journey - George Smith - George Smith.
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-20
-Title:   2.19.25 - Our Journey - George Smith
-Speaker: George Smith
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pswG3EftYQA
+Date:     2025-02-20
+Title:    2.19.25 - Our Journey - George Smith
+Speaker:  George Smith
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 30m
+Language: English
+URL:      https://www.youtube.com/watch?v=pswG3EftYQA
 ========================================
 
 TRANSCRIPT

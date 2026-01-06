@@ -4,13 +4,14 @@ START OF FILE: 2023-11-19 - 11.19.23 - Let No Man's Heart Fail - Timothy Ashong 
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-19
-Title:   11.19.23 - Let No Man's Heart Fail - Timothy Ashong
-Speaker: Timothy Ashong
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=v85OJQElTxc
+Date:     2023-11-19
+Title:    11.19.23 - Let No Man's Heart Fail - Timothy Ashong
+Speaker:  Timothy Ashong
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=v85OJQElTxc
 ========================================
 
 TRANSCRIPT

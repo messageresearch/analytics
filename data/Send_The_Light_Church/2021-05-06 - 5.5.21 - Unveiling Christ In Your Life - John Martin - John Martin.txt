@@ -4,13 +4,14 @@ START OF FILE: 2021-05-06 - 5.5.21 - Unveiling Christ In Your Life - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-06
-Title:   5.5.21 - Unveiling Christ In Your Life - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8iTSEbfDpI8
+Date:     2021-05-06
+Title:    5.5.21 - Unveiling Christ In Your Life - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=8iTSEbfDpI8
 ========================================
 
 Description:

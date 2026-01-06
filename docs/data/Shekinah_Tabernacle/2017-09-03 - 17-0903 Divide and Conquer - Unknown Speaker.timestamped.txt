@@ -1,0 +1,2230 @@
+################################################################################
+TIMESTAMPED TRANSCRIPT
+################################################################################
+Source: 2017-09-03 - 17-0903 Divide and Conquer - Unknown Speaker.txt
+Video ID: NN6M2qU3aiE
+Segments: 2218
+URL: https://www.youtube.com/watch?v=NN6M2qU3aiE
+================================================================================
+Click any timestamp to jump to that point in the video.
+Format: [M:SS] or [H:MM:SS] followed by transcript text.
+================================================================================
+
+[0:01] on the side when you walk down here God
+[0:05] is in this place
+[0:06] the reason God is in this place is
+[0:09] because you're here and he said I'll
+[0:12] never leave you nor forsake you
+[0:14] amen where you go he's with you
+[0:19] amen what a privilege hallelujah amen
+[0:23] this today just lay it all out before
+[0:26] God surrender all to him and allows
+[0:30] anointing to take control of your life
+[0:32] let us anointing teach you amen did the
+[0:36] teacher that's in the pastor the gift
+[0:38] that's in him teach you and let the
+[0:41] anointing confirm it in your life
+[0:42] because spirit just happens way in you
+[0:45] amen let's stand and
+[0:48] it's sing some songs to our king amen
+[0:52] who's excited about Jesus Christ it was
+[0:55] excited about the Lord amen
+[0:58] he's an exciting person he excites me
+[1:00] when I think about him it makes me happy
+[1:03] hallelujah amen
+[1:06] [Music]
+[1:14] [Applause]
+[1:16] is it too
+[1:21] I can hear job say
+[1:24] [Music]
+[1:25] it's eagle eye
+[1:31] if you had loves me
+[1:36] cause disciples went to Jesus told him
+[1:43] and drop at say
+[1:46] [Music]
+[1:48] with the message and this is what
+[1:53] [Applause]
+[1:56] go tell the baby
+[2:01] go down that line desi
+[2:06] go tell John that Coderre race man to
+[2:13] say hello to me
+[2:17] go tell John with my prophet speaks
+[2:21] believe it receive
+[2:24] [Applause]
+[2:26] you don't have to understand it stands
+[2:31] all alone bring it in
+[2:38] my cry
+[2:41] [Music]
+[2:42] yeah
+[2:46] Hey
+[2:47] [Music]
+[2:57] [Applause]
+[3:03] [Music]
+[3:03] [Applause]
+[3:05] [Music]
+[3:14] Briony
+[3:15] [Music]
+[3:29] [Music]
+[3:34] are we
+[3:37] [Applause]
+[3:38] [Music]
+[3:45] testify of me
+[3:47] [Applause]
+[3:50] then I tell you I'd send a lie
+[3:54] he work
+[3:57] [Music]
+[3:57] [Applause]
+[3:58] [Music]
+[3:59] [Applause]
+[4:07] my legacy hey babe go tell John pepper
+[4:12] day
+[4:14] the captain's they have all been
+[4:17] [Music]
+[4:20] Oh
+[4:25] [Applause]
+[4:25] [Music]
+[4:27] [Applause]
+[4:31] [Music]
+[4:37] [Applause]
+[4:39] [Music]
+[4:41] right
+[4:44] ow
+[4:47] let the boys start say
+[4:54] [Applause]
+[5:02] right
+[5:04] [Applause]
+[5:13] [Applause]
+[5:23] [Music]
+[5:24] [Applause]
+[5:30] town
+[5:38] [Music]
+[5:41] Motel
+[5:42] right
+[5:44] [Applause]
+[5:49] [Music]
+[5:51] everyone
+[5:54] it's all alone I'll interpret
+[5:57] ah
+[5:58] [Music]
+[6:03] [Applause]
+[6:05] [Music]
+[6:08] [Applause]
+[6:08] [Music]
+[6:12] Oh
+[6:13] [Music]
+[6:18] [Applause]
+[6:20] [Music]
+[6:24] praise this morning
+[6:25] amen look idiot would you like to coming
+[6:28] up with the service brother with the
+[6:30] word of Prayer
+[6:32] hallelujah the ever new father what a
+[6:39] what a wonderful thought Lord then your
+[6:42] prophet is coming up in the book for us
+[6:44] Lord if we don't have to wonder about it
+[6:46] we don't have to think about it we just
+[6:47] believe it long thank you for your word
+[6:50] lord thank you for your presence in this
+[6:52] place Lord we are suppose that you would
+[6:54] just find joy in our worship Lord and O
+[6:57] Lord just have your way have your way in
+[6:59] this sermon today Lord glorify yourself
+[7:02] we give you all the honor and all the
+[7:04] praise and all the glory in Jesus name
+[7:06] Amen
+[7:10] hey man it's good to be here amen it was
+[7:13] early in the morning by an ancient place
+[7:16] I dwell I find and write for a son man
+[7:24] it was early on in my ancient place
+[7:39] and that is very dirty at the PTA
+[7:45] [Applause]
+[7:47] also get many
+[7:51] for
+[7:58] no it'd be
+[8:01] nachos
+[8:08] [Applause]
+[8:14] hands down down world
+[8:17] [Music]
+[8:19] [Applause]
+[8:20] now rising chromium-based and some love
+[8:26] and he loves his favorite bagel of my
+[8:29] inside
+[8:35] [Applause]
+[8:37] [Music]
+[8:42] there is no way to be away
+[8:50] [Applause]
+[8:54] [Music]
+[8:55] the morning
+[9:10] [Applause]
+[9:22] [Music]
+[9:25] yes
+[9:31] [Music]
+[9:36] [Applause]
+[9:42] [Applause]
+[9:45] [Music]
+[9:59] inside get big shadows I have heard
+[10:13] there is going
+[10:16] [Applause]
+[10:17] sir
+[10:21] so get ready bozo get ready
+[10:28] evening shadows fall I have heard
+[10:35] there is going to be away
+[10:45] [Applause]
+[10:49] already tell us more
+[10:53] I have heard
+[10:58] there is going to be away not all Oh sir
+[11:05] beware the kappa 'break comfy
+[11:10] hey man hallelujah glory to God
+[11:14] these are the days of Elijah amen
+[11:17] hallelujah we read the word of the Lord
+[11:20] amen it breathes are the days of Elijah
+[11:29] bleak Larry the world
+[11:34] and these are the days of the seven
+[11:39] eight Phil
+[11:40] largest nests be restored and
+[11:47] a great trial
+[12:03] [Music]
+[12:05] behold he comes riding on the clouds
+[12:10] shining like Sun and the drama
+[12:17] Oh boys it here up
+[12:21] [Applause]
+[12:22] Oh
+[12:22] [Music]
+[12:29] [Applause]
+[12:40] [Music]
+[12:48] [Music]
+[12:49] these are the days of the harvest famous
+[12:54] right the field rsy
+[12:57] [Applause]
+[13:00] we are the late
+[13:12] riding on the clouds shining like the
+[13:16] Sun
+[13:21] Oh shiny gonna cloud shining like the
+[13:38] Sun head trauma
+[13:42] [Music]
+[13:47] [Applause]
+[13:52] [Applause]
+[14:09] [Music]
+[14:30] [Applause]
+[14:38] there's no God like Jehovah there's no
+[14:42] God like Jehovah there's no God like
+[14:45] Jehovah it's no God like Jehovah there's
+[14:52] no God like Jehovah
+[14:55] there's no God like to Bowl
+[14:59] Oh God like there's no God like Jehovah
+[15:27] Oh God
+[15:30] [Music]
+[15:46] Wow
+[15:47] shiny my son
+[15:54] [Music]
+[16:02] [Applause]
+[16:07] hallelujah blow your face Lord is
+[16:10] shining like the Sun Lord
+[16:11] Oh father amen
+[16:15] oh yes hallelujah as the group of peers
+[16:24] they sing the voice of my beloved it's
+[16:26] manifest in time Amen oh my
+[16:33] the voice of bobble of head beholding
+[16:38] quickly comments this week and oh the
+[16:42] mountains over
+[16:46] I long to hear his voice I love to hear
+[16:51] and say arise my love my fair one
+[16:55] come away it's manifesting time
+[17:01] the fruits are all divine and the lovely
+[17:05] one is coming in playing
+[17:10] Oh cat God's chosen bride me and
+[17:15] shan-dro with my he's that lovely one
+[17:19] and coming in blame you grapes and my
+[17:26] little foxes for the vine and the pinion
+[17:31] losses Walker harvest time
+[17:36] keep your eye on things above don't let
+[17:41] me or you me that lovely one he's coming
+[17:46] in oh it's
+[17:50] [Music]
+[17:53] Tyrande by
+[17:57] it's coming amen Oh to cap God's chosen
+[18:04] bride he's that lovely one man he's
+[18:11] coming
+[18:13] [Music]
+[18:16] oh yeah
+[18:29] [Music]
+[18:40] [Music]
+[18:49] Namie
+[18:50] [Applause]
+[18:58] Redemption
+[19:01] lovely comfortable
+[19:06] Oh in the
+[19:08] the robbed in the secret place so high
+[19:13] till the daybreak and the shadows flee
+[19:17] away
+[19:18] [Music]
+[19:28] he's coming
+[19:37] [Music]
+[19:43] Oh God
+[19:50] - at all
+[19:53] is that lovely one Danny's coming
+[19:57] oh yes Saints we are blessed they have
+[20:04] your seats as we are going to be blessed
+[20:07] by visitors I would like to introduce
+[20:12] and welcome our lovely visitors the
+[20:14] Milan family amen
+[20:16] praise the Lord that they could grace us
+[20:18] with the lovely prisons amen
+[21:31] [Music]
+[21:40] [Music]
+[21:52] [Music]
+[22:24] you're mine
+[22:30] you
+[22:31] [Music]
+[22:42] my
+[22:45] Oh
+[22:45] [Music]
+[22:53] Jesus your own
+[23:06] you
+[23:11] [Music]
+[23:48] I believe
+[23:52] [Music]
+[24:06] Jesus your old
+[24:09] [Music]
+[24:26] [Applause]
+[24:28] embosses
+[24:30] [Music]
+[24:32] you
+[24:35] [Music]
+[24:39] in
+[24:44] [Music]
+[25:08] [Applause]
+[25:14] [Music]
+[25:27] Oh
+[25:34] normally I believe you
+[25:43] [Music]
+[25:52] your might want to believe you man
+[25:59] enough for me Jesus you're old
+[26:12] Jesus your own
+[26:14] [Music]
+[26:20] [Applause]
+[26:35] amen brother John's gonna sing a special
+[26:39] this morning this field is a special
+[26:42] anointing on this song about the woman
+[26:44] at the well a man so just certain
+[26:48] worship as the song is sung amen
+[26:52] and you so glad he came to you
+[26:55] hallelujah
+[27:03] [Music]
+[27:16] she is a lonely woman she's crying
+[27:22] she's longing
+[27:25] [Music]
+[27:32] she is really sad
+[27:36] [Music]
+[27:38] oh the jihad
+[27:47] [Music]
+[27:52] she goes down the route
+[28:01] where she spent so many prayers
+[28:06] [Music]
+[28:14] tomorrow
+[28:15] [Music]
+[28:44] as she comes to
+[28:48] she sees the man sitting down yes sir
+[28:53] would you
+[28:57] [Music]
+[29:01] you're
+[29:04] why ask
+[29:06] [Music]
+[29:16] I am and
+[29:27] brain I
+[29:37] [Music]
+[29:41] come to you
+[29:45] [Music]
+[30:07] what he has done and why is gone
+[30:17] [Music]
+[30:34] [Music]
+[30:43] he prays
+[30:50] [Music]
+[30:56] come to
+[30:58] [Music]
+[31:13] he brings he brings
+[31:18] [Music]
+[31:35] yes
+[31:43] yes
+[31:45] [Music]
+[32:06] stand with me Saints hallelujah praise
+[32:13] His Holy Name
+[32:14] oh what a prospect what a thought on a
+[32:19] reality hallelujah how we thinkin this
+[32:23] morning bless the Lord O my soul
+[32:30] [Music]
+[32:37] listen
+[32:38] [Music]
+[32:41] bless the Lord O my soul O my soul
+[32:49] worship his holy name
+[32:58] sing like never before oh my soul
+[33:07] I worship you
+[33:11] the law
+[33:13] [Music]
+[33:22] my soul worship his home
+[33:28] [Applause]
+[33:29] Oh
+[33:30] [Music]
+[33:31] [Applause]
+[33:41] Oh
+[33:46] [Music]
+[34:04] Oh
+[34:18] [Music]
+[34:28] it's time to
+[34:32] [Applause]
+[34:36] ah
+[34:40] [Applause]
+[34:43] [Music]
+[34:46] [Applause]
+[34:48] with me
+[34:57] Oh
+[35:03] worship is no
+[35:07] [Applause]
+[35:14] whoa
+[35:19] worship
+[35:25] the race
+[35:28] and
+[35:34] your name is great and your
+[35:40] [Applause]
+[35:42] your goodness I will
+[35:46] [Music]
+[35:52] thousand
+[35:58] [Music]
+[36:02] my soul
+[36:09] miss
+[36:12] [Applause]
+[36:14] sing like never
+[36:19] Oh
+[36:22] [Music]
+[36:23] I worship
+[36:29] [Music]
+[36:32] [Applause]
+[36:35] this Bailey the entrance here and my
+[36:43] time has come
+[36:47] my soul will sing your praise ten
+[36:57] thousand years
+[37:00] [Applause]
+[37:02] praise the Lord
+[37:07] my soul
+[37:13] worship missile
+[37:17] [Applause]
+[37:20] sing like never before
+[37:24] Oh
+[37:30] Oh
+[37:30] [Applause]
+[37:30] [Music]
+[37:38] my
+[37:40] [Music]
+[37:42] my soul worship his holy name
+[37:51] they say my my yes
+[38:22] me
+[38:25] [Music]
+[39:01] I spin
+[39:09] created me
+[39:12] [Music]
+[39:20] [Music]
+[39:27] Brian Allen oil
+[39:30] [Music]
+[39:33] me
+[39:35] with
+[39:37] [Music]
+[39:44] [Music]
+[40:05] [Music]
+[40:27] [Music]
+[40:41] Bristow
+[40:42] [Music]
+[41:00] [Music]
+[41:12] [Applause]
+[41:14] [Music]
+[41:43] [Music]
+[41:53] you
+[41:54] right here with
+[42:02] amen
+[42:04] I mean let's just sing one more song
+[42:05] work out the word they sing I have a
+[42:07] maker
+[42:08] amen hello Leah god bless you all happy
+[42:11] Father's Day
+[42:12] all your fathers grandfathers and
+[42:14] great-grandfather's in the back amen
+[42:17] don't miss you
+[42:21] I am a girl
+[42:30] whoa
+[42:34] [Music]
+[42:38] and before even time
+[42:43] my love
+[42:48] is
+[42:49] [Laughter]
+[42:53] he knows mine
+[43:00] he knows my
+[43:05] Oh
+[43:08] you see
+[43:14] [Music]
+[43:15] years
+[43:18] I
+[43:21] [Music]
+[43:25] [Applause]
+[43:29] [Music]
+[43:36] [Music]
+[43:39] and Neil
+[43:44] oh man
+[43:49] I go
+[43:53] [Music]
+[43:55] we know my name
+[43:58] [Music]
+[44:03] No
+[44:04] by
+[44:07] [Music]
+[44:11] see
+[44:14] for too many days too
+[44:19] [Applause]
+[44:20] I have a father I have
+[44:33] he falls diesel
+[44:39] [Music]
+[44:42] man
+[44:46] [Music]
+[44:47] No
+[44:51] ah
+[44:57] he knows my name
+[45:02] [Music]
+[45:07] my every thought that falls and here's
+[45:20] me
+[45:23] I go and you thankful I mean let's just
+[45:38] back it to a little prayer o our Father
+[45:42] in Heaven hallowed be thy name o Lord
+[45:46] Jesus how thankful ya Lord you're our
+[45:49] Father more than our father your husband
+[45:53] you're our bridegroom and our Redeemer
+[45:55] you are everything Lord Father we just
+[45:58] want to commit our lives and fresh into
+[46:01] your hands Lord Jesus we are standing
+[46:04] here for service Lord that you'd be
+[46:06] glorified never exceed and done the
+[46:09] father I pray thee today Lord you would
+[46:11] walk among us Lord that would be very
+[46:14] conscious that you're here Lord Jesus
+[46:16] and father just may we all from the
+[46:18] oldest to the youngest just be yielding
+[46:20] to your to your spirit Lord father may
+[46:24] the serve our sins our wrongs floor
+[46:26] cleanse us of our secret faults Lord
+[46:28] forgive us of our iniquities Lord your
+[46:30] bruised for our iniquities we thank you
+[46:33] for that Lord father you've made away by
+[46:36] your precious blood and I just ask more
+[46:38] Jesus that you would bless each one is
+[46:40] father's here go for your language
+[46:42] barrier today father and just meet every
+[46:45] need father and minister your word Lord
+[46:48] and a noise speaker in here one more
+[46:50] time and we ask father you admit those
+[46:52] who are not here today me
+[46:54] strengthen portion as well we asked
+[46:55] father we just commit the service and
+[46:57] your hands Lord you receive all on the
+[46:59] glory embrace did you deserve it all
+[47:01] father in Jesus Christ's name we ask
+[47:03] these things
+[47:04] amen Amy bless you musicians thank you
+[47:08] I mean it's great to have plans here god
+[47:10] bless you just you feel at home it's
+[47:13] wonderful to have sister Robins parents
+[47:15] here god bless you welcome god bless you
+[47:18] trust you feel at home
+[47:20] amen well it was good well it's good to
+[47:23] be home got your Bibles handy we'll go
+[47:26] to the book of Nehemiah chapter four and
+[47:28] one and then we're going to go to
+[47:31] Ephesians chapter six so all the saints
+[47:34] in our fielding sin their love and this
+[47:37] coming weekend they're all going to come
+[47:39] down and brother Alf was going to preach
+[47:41] for us so come expecting we're gonna
+[47:44] have a glorious time so that's this
+[47:45] coming Sunday I mean so yeah praise the
+[47:50] Lord Nehemiah four and one
+[47:59] Nehemiah Esther job Lewis EMR forum I
+[48:02] just want to take a scripture from here
+[48:04] I'm gonna read one scripture from Sonia
+[48:06] ma gonna read chapter four verses one
+[48:08] down to verse six and then we're gonna
+[48:10] read Ephesians six and twelve it's an
+[48:13] email horn one
+[48:15] this is Nehemiah they're rebuilding the
+[48:18] walls of Jerusalem but it came to pass
+[48:20] that when sanballat heard that we
+[48:23] builded the wall he was wroth and took
+[48:25] great indignation and mocked the Jews
+[48:27] and he spake before his brethren and the
+[48:29] army of Samaria and said what do these
+[48:31] feeble Jews will they fortify themselves
+[48:33] will they sacrifice will they make an
+[48:36] end in a day will they revive the stones
+[48:38] out of the heaps of the rubbish which
+[48:40] are burnt and the answered all those is
+[48:42] yes
+[48:42] now tobiah the ammonite was by him and
+[48:46] he said even that which they build of a
+[48:48] fox go up he shall break this stone wall
+[48:51] here o our God for we are despised and
+[48:55] turn their upon their own head and give
+[48:58] them for a prey in the land of captivity
+[48:59] cover not their iniquity not their sin
+[49:02] be blotted out from before thee for they
+[49:05] have provoked me to anger before the
+[49:07] builders
+[49:07] so built we the wall and all the wall
+[49:10] was joined together until the half
+[49:12] thereof for the people had a mind to
+[49:14] work I mean it was go to Ephesians six
+[49:18] and twelve I'm just gonna read this one
+[49:22] scripture here and we may come back to
+[49:24] the book of Ephesians so if you wish to
+[49:26] keep it handy see how far we get this
+[49:30] morning on this Ephesians six and twelve
+[49:34] very familiar scripture I'm sure for we
+[49:36] wrestle not against flesh and blood but
+[49:39] against principalities against powers
+[49:41] against the rulers of the darkness of
+[49:43] this world against spiritual wickedness
+[49:45] in high places Amen may the Lord bless
+[49:49] this word this morning you may have your
+[49:50] seats I wonder I want to take a bit of
+[49:59] oh maybe just an introduction we'll see
+[50:01] how far we go but I want to take a
+[50:04] thought and and we'll get down to it and
+[50:06] I want to speak on divide and conquer
+[50:09] this is the enemy strategy is to divide
+[50:12] and conquer and I'm going to show you
+[50:14] that as he has divided and he's
+[50:18] conquered nations and peoples then he
+[50:21] comes right down into the family and he
+[50:23] divides and conquers the family the same
+[50:25] way so this is where I'm going to go but
+[50:28] in the same but in the same token we are
+[50:31] living in a season just like Jeremiah
+[50:33] and the Jews were in that in that season
+[50:36] where where they had been called out of
+[50:39] Babylon they have come back into the
+[50:41] promised land and now they have to
+[50:42] rebuild they have to rebuild the city
+[50:45] and it's just like us we were you know
+[50:48] if you if you're going to church history
+[50:50] you see the churches birth to Pentecost
+[50:52] and then and then the Creed's of man
+[50:54] were mixed in as they went along and a
+[50:56] Council of Nicaea and then the and then
+[50:59] the church world went into darkness into
+[51:01] the dark ages and it went into Babylon a
+[51:04] winter confusion but then they came
+[51:06] alike you're a Reformation started and
+[51:09] and the call begin to come coming out my
+[51:13] people come out of her my people and
+[51:16] then so we've heard that call in mistake
+[51:19] come out of her my people beam up I take
+[51:21] ever since so we've we've been called
+[51:23] out of Babylon out of confusion our
+[51:25] mystery babylon we're being called and
+[51:27] we've come into our inheritance into the
+[51:29] Holy Ghost now we have to build now we
+[51:31] have to rebuild that which were that
+[51:33] which they had in the beginning this is
+[51:35] where I'm going you think well where are
+[51:36] you going with this this is what I'm
+[51:37] going that's the that's a sermon in a
+[51:39] bottle as brother our man would say and
+[51:41] I want to read this this is from a
+[51:45] blushing prophet in 1956 brother Burns
+[51:48] made a older call and people are people
+[51:51] are coming and it says to see these
+[51:53] young women coming weeping life before
+[51:56] them throughout the crossroads they are
+[51:58] victims of circumstances what he says do
+[52:02] you realize old men when we were boys
+[52:04] our boys has ten times the temptation we
+[52:08] had sisters you realize that our
+[52:10] daughters has ten times the temptation
+[52:12] you had when you was a girl well what
+[52:15] will her daughter have look at the
+[52:16] things the picture pictures that devil
+[52:19] is painting oh how we need to pray now
+[52:22] we'll go back to you again brother do
+[52:24] you realize you don't pray as half as
+[52:26] much as our fathers did pastor do you
+[52:28] know we don't put as much time in our
+[52:30] knees as the pastor's before us that
+[52:31] woman do you realize we don't instruct
+[52:34] our daughters and pray with her at night
+[52:35] like our mothers did you then what about
+[52:38] it who's guilty we are guilty there's no
+[52:40] way around it we're guilty
+[52:41] he says I'm guilty I'm guilty of not
+[52:43] doing the job of God like I should do
+[52:46] now we say well that's pretty heavy
+[52:48] but he's saying these are these young
+[52:51] women that have come to the altar the
+[52:52] Prophet saying they have victims of
+[52:55] circumstance well what is the
+[52:57] circumstance the circumstances that the
+[53:00] family has become divided that the
+[53:03] parents are not doing the job they
+[53:05] should be doing now there is a
+[53:06] responsibility of the children as well
+[53:08] who's a child here who's living at home
+[53:11] and is dependent on parents now the
+[53:14] scripture tells you Amen this is for
+[53:18] sister Robin now put her handle
+[53:23] but the scripture says for children to
+[53:26] obey the appearance and if you look at
+[53:29] and I don't know if we'll get that far
+[53:30] maybe we're next week but you read in
+[53:32] Romans chapter 1 and you read in 2nd
+[53:35] Timothy
+[53:35] where all the description of all the
+[53:37] sins and then there is disobedient
+[53:39] appearance its fornication adultery
+[53:41] coveted nurse whatever more idolatry and
+[53:44] then disobeyed the parents is in there
+[53:45] and God is not ranking them he's saying
+[53:48] that is in the same bracket as things so
+[53:51] a child a child responsibility even
+[53:54] before they come to an age of
+[53:55] accountability is to obey the appearance
+[53:57] but then it says in the same token that
+[53:59] fathers do not provoke your children to
+[54:01] anger at least they'd be discouraged
+[54:03] right so there is a way to do it but the
+[54:07] children's responsibility to please God
+[54:09] is to actually obey your parents and all
+[54:12] the parents should say amen now there
+[54:16] when real quiet on low what's happened
+[54:18] so finally you've come in to bat for us
+[54:20] for once
+[54:22] now so there are victims these so what I
+[54:27] just read there they are victims of the
+[54:29] circumstance that the family unit has
+[54:33] been divided they are they that is what
+[54:37] they are victims of right because we
+[54:40] have to understand now we know the world
+[54:43] is evil we know it's the most what he
+[54:47] called the most deceptive ages ever be
+[54:49] and we know it's the darkest ages ever
+[54:52] been but the power of God in this age is
+[54:56] greater remember the the anointing that
+[54:58] is present is always greater than the
+[55:01] powers of the enemies always in every
+[55:03] age so we can't we don't need to worry
+[55:06] about oh it's so dark and we're living
+[55:08] in Sodom and Gomorrah and the world is
+[55:10] falling apart
+[55:10] sure it is but but the anointing on the
+[55:13] office of mom and dad I mean the
+[55:16] anointing of the Living God will keep
+[55:18] the children and will keep the family
+[55:20] strong many admire they weren't your
+[55:23] they they got distracted and what the
+[55:26] Kings decree was and what the enemy was
+[55:29] saying and they got discouraged and
+[55:31] things but Nehemiah stayed focused we
+[55:33] must build we're going to rebuild this
+[55:36] it shall rise this prophecy that the
+[55:39] house will be rebuilt hallelujah and the
+[55:42] biggest now he say well had you stopped
+[55:45] at that my children are victims of
+[55:46] circumstance like like these ones it's
+[55:49] very simple if the husband and wife
+[55:51] relationship is solid in every way not
+[55:55] just sharing a bedroom or sharing a
+[55:57] house but you're connected body spirit
+[56:01] and soul you're one if that is strong in
+[56:05] the family unit is strong amen okay if
+[56:12] that is strong then that will defeat
+[56:14] everything but if there's a division now
+[56:18] let's just go to know I'm gonna lower
+[56:22] back round then Oh didn't someone remind
+[56:24] me later first Corinthians eleven just
+[56:27] see how good your memory is cuz we're
+[56:28] going to go there there's a layer and a
+[56:30] family there's layers of protection in
+[56:32] the family and if those layers you say
+[56:35] well my husband's not here or whatever
+[56:37] more there's still a protection there
+[56:39] for you for the family these layers of
+[56:42] defense that God has placed in and it's
+[56:44] when people stand in their office I mean
+[56:47] they say I've been made it because
+[56:49] remember it's not just prophets that are
+[56:51] called or ministers or musicians or
+[56:54] whatever more it's a calling to be a
+[56:56] parent you're being ordained you got to
+[56:59] understand if you have children if you
+[57:02] have children got it before the
+[57:03] foundation of world ordained you're
+[57:05] gonna stand as a father you're gonna
+[57:07] stand as a mother
+[57:08] holy your standard a husband your
+[57:10] standard as a wife it's a god-given
+[57:12] office and God has called you to be in
+[57:15] that office and there's power in that
+[57:17] office hallelujah you've gotta um you
+[57:20] gotta remember that you see cuz what is
+[57:23] what is okay I don't want to jump ahead
+[57:26] of myself now many times we criticize
+[57:28] how young children act sisters dress
+[57:31] brothers act but we are looking at the
+[57:34] wrong thing
+[57:35] they have victims of the circumstance of
+[57:37] other influences coming in because
+[57:40] parents are not in their position now
+[57:42] you cannot stop the world being the
+[57:44] world you know you can't just push a
+[57:47] button and you know we can't just go
+[57:49] find some mouth and
+[57:50] top and build a monastery and live there
+[57:53] I'd get a bit claustrophobic yeah we
+[57:55] could but hey you know but but the world
+[57:58] is still there right so you can't stop
+[58:00] that happening but it's the influence of
+[58:02] the godly mum and dad that influence
+[58:05] always has to be greater in the world
+[58:08] okay now Ecco I'm just gonna read a bit
+[58:15] so it influences in 1964 now my subjects
+[58:19] tinnitus influences you want to read
+[58:22] this story turn to see in chronicles 26
+[58:24] chapter that's use I was a shepherd boy
+[58:27] he was anointed king at the age of
+[58:29] sixteen he was a godly man this man was
+[58:31] a was a good man he had godly parents he
+[58:34] did that which was right on the side of
+[58:35] the Lord now we find that usually how
+[58:39] he's identifying a problem and when the
+[58:41] Prophet was standing here you just go I
+[58:42] remember doing social stage at school
+[58:44] and we learned about the 50s and the 60s
+[58:47] and just as school had just showed after
+[58:49] World War Two in the 50s and the 60s
+[58:52] Society just changed completely and but
+[58:56] the devil has been allowed to do it he's
+[59:00] been allowed to do it you take you take
+[59:02] it was in the paper a few years ago
+[59:05] it was the anniversary of when the
+[59:06] Beatles went to Australia when they did
+[59:09] and it changed the whole social fabric
+[59:11] of that country one one band touring
+[59:14] around released an anointing into that
+[59:16] country and it changed the face of it
+[59:18] and it's just that's in the papers was
+[59:21] documented there one visit and so now so
+[59:26] there's all those things but the
+[59:29] prophetsí is now we find I think today
+[59:32] our gate a great problem of what we
+[59:34] believed to be juvenile do delinquency
+[59:36] is a parent delinquent a home delinquent
+[59:39] our people got away from the things that
+[59:42] they should have stayed with the church
+[59:45] now notice what he's saying the church
+[59:47] got lukewarm or cold and the children
+[59:49] got out into the world so he's not
+[59:52] saying the church got liberal and he's
+[59:55] got lukewarm and cold he identifies that
+[59:58] and when the Prophet speaks he's saying
+[1:00:00] he's saying things very specifically
+[1:00:02] even they say he's just throwing
+[1:00:04] things he's not the right because he's
+[1:00:05] putting an order this is this is what's
+[1:00:07] happened as the church gets cold and
+[1:00:09] lukewarm and then then the children get
+[1:00:12] out into the world because the power and
+[1:00:14] the church I mean should impact now I
+[1:00:18] only have them maybe a Wednesday maybe a
+[1:00:21] Sunday you've got them the rest of the
+[1:00:23] week but when we come together see I
+[1:00:26] want my children be raised in such an
+[1:00:27] atmosphere they know what it's like to
+[1:00:30] see God move they know us like the Feliz
+[1:00:32] presents I mean I feel as anointing come
+[1:00:35] down and see people be transformed Alou
+[1:00:38] you I want them to know what that's like
+[1:00:40] but it's not just in these four walls
+[1:00:42] what happens that should happen at home
+[1:00:44] hallelujah just just just the way we
+[1:00:46] live the atmosphere we carry with us
+[1:00:48] it should unpack them they should know
+[1:00:51] the difference even if they can't maybe
+[1:00:52] identify you know but they should
+[1:00:55] something in the mud say this is God I
+[1:00:57] don't know what this is out in the world
+[1:01:00] they should they they should be you know
+[1:01:02] and printed of them so strongly they
+[1:01:05] should you know what it's like to be in
+[1:01:07] an atmosphere which is terrible who
+[1:01:09] knows what it's like we're not all you
+[1:01:11] know but who knows what it's like to be
+[1:01:12] in his presence they meant so oh I
+[1:01:17] believe our children deserve that kind
+[1:01:19] of being raised in that way now
+[1:01:23] Nehemiah the reason he is successful as
+[1:01:27] you read so Ezra was written before
+[1:01:29] Nehemiah even though their
+[1:01:30] contemporaries they they rebuilt the
+[1:01:32] temple then they rebuilt the city so the
+[1:01:36] word the place of worship was rebuilt
+[1:01:39] first it's just like us God gets us and
+[1:01:42] we're a bunch of rubble
+[1:01:44] I mean we're lost and undone we were
+[1:01:46] chaos and then God calls us and he and
+[1:01:50] he transforms and our soul first and
+[1:01:53] then he fixes the rest of us I mean
+[1:01:56] that's God's patna toys from the inside
+[1:01:58] out because it's from the outside and
+[1:02:00] it's just a it's just a veneer until it
+[1:02:04] hits the inside but it should be the
+[1:02:05] inside first right and so now so they
+[1:02:10] made the word pre have preeminence we
+[1:02:13] must rebuild this temple first that was
+[1:02:16] the burden
+[1:02:17] they had enemies around them they had
+[1:02:19] opposition they said we must rebuild
+[1:02:22] this and they rebuilt it
+[1:02:24] then they rebuilt the city and it's the
+[1:02:26] same thing with you now and you'll see
+[1:02:28] it in the Kings like user or here's a
+[1:02:31] car you know they repaired as always you
+[1:02:34] know you go look at the godly Kings they
+[1:02:35] repair the holes in the temple they
+[1:02:38] repay the temple first normally and then
+[1:02:41] they fix the breaches in the in the city
+[1:02:43] walls or whatever it is but that is
+[1:02:45] their paramount that's what they want to
+[1:02:48] do first we must repair the temple are
+[1:02:51] you with me it's a pattern
+[1:02:53] go go go look in the scripture and then
+[1:02:56] they rebuild in they're successful and
+[1:02:58] God looks after them because we are
+[1:03:01] living in the Amaya's day you have to
+[1:03:03] understand that you you look in the Old
+[1:03:06] Testament and things that the believers
+[1:03:08] went through back there is replaying
+[1:03:10] itself today I could have gone to his a
+[1:03:13] Kai's life and it's exactly the same
+[1:03:16] thing here he is is a godly King he
+[1:03:18] wants to place God take it take the
+[1:03:20] idols out of the land you know rebuild
+[1:03:23] the temple but then the Assyrians are
+[1:03:25] coming and swallowing up everything
+[1:03:26] around them that's exactly what's
+[1:03:28] happening in this day that history
+[1:03:33] repeats itself now Hollywood now I see
+[1:03:38] says the church got lukewarm or cold and
+[1:03:40] the children got out into the world now
+[1:03:44] Hollywood puts out lots of movies and
+[1:03:46] television so forth that's even unseen
+[1:03:48] sit with a curse and use God's name in
+[1:03:50] vain and he used to be it was wrong for
+[1:03:52] children and the holiness churches to go
+[1:03:54] to bio scopes or picture shows now Satan
+[1:03:57] has got one jump ahead of it by bringing
+[1:03:59] it right into the house in the form of
+[1:04:01] television and in uncensored and so
+[1:04:03] forth and that's Satan's way of
+[1:04:05] gradually entering in now that the
+[1:04:10] television is not the problem it's what
+[1:04:13] goes through it is the problem just like
+[1:04:15] you're just like your phone or your iPad
+[1:04:17] or your computer it's nothing wrong with
+[1:04:19] the device it's what is on the device
+[1:04:22] okay now he sees on the same sermon
+[1:04:28] he says that's right that's the one I'm
+[1:04:30] just jumping down a bit now it ain't how
+[1:04:34] close you can come it's how well uh and
+[1:04:38] how well you think your fortify it say
+[1:04:40] just as far away from sin as you can
+[1:04:42] stay right just get as far away as you
+[1:04:45] can
+[1:04:46] I can do this there's no harm in doing
+[1:04:47] this well if there's a question in your
+[1:04:49] mind don't do it at all anything there's
+[1:04:52] a question stay away from it then you
+[1:04:54] see then you're absolutely living by
+[1:04:55] faith if there's no question if there's
+[1:04:57] a question then leave it don't go around
+[1:04:59] it at all and I think that many times
+[1:05:01] that it's the parents that get away he's
+[1:05:05] talking about influences I know I use
+[1:05:08] these quite a few months ago but I
+[1:05:09] wanted to bring it out again I know that
+[1:05:11] sometimes the schools and things that
+[1:05:12] Sunday schools about half an hour an
+[1:05:14] hour on Sunday morning and the world has
+[1:05:16] the kids the rest of the weekend crammed
+[1:05:18] into there more than than a teacher and
+[1:05:20] sometimes many time and many times too
+[1:05:22] many times
+[1:05:23] the teachers got a little quarterly that
+[1:05:25] she teaches about while she paints her
+[1:05:27] lips fixes are here and it's children do
+[1:05:29] the best they can and then they get home
+[1:05:31] and they get no Christian training at
+[1:05:33] all mother's out somewhere to a card
+[1:05:35] party no this is a this is a family
+[1:05:37] divided mother's out somewhere to a card
+[1:05:40] party dad's down at the bowling alley
+[1:05:42] and sisters out with somebody with a hot
+[1:05:44] rod and here you are see where did we
+[1:05:48] where did we go
+[1:05:49] it's a divided family I know this is not
+[1:05:54] a shouting rejoicing service but here we
+[1:05:56] are this is a divided family but God in
+[1:05:59] this this age the anointing of the Lord
+[1:06:01] is to restore family s to bring the
+[1:06:03] family as one unit we're walking
+[1:06:06] together now I'll show you the anointing
+[1:06:09] on the world power is to divide and
+[1:06:12] conquer this is in contrast the
+[1:06:14] anointing upon the believers in the
+[1:06:16] state which is for God to completely
+[1:06:18] rebuild as people as family units and as
+[1:06:21] a bride body around the world into the
+[1:06:23] image of the word this is this is the
+[1:06:26] anointing the word this message has come
+[1:06:28] to rebuild homes to rebuild family
+[1:06:32] relationship husband wife relationship
+[1:06:34] amen now
+[1:06:38] we have been called just like you know
+[1:06:44] we have been taken like the Jews in
+[1:06:46] their near modern Israel day who every
+[1:06:49] Church mix all day returns mix Island
+[1:06:51] Babylon to rebuild Jerusalem and live in
+[1:06:53] the promised land again they were taken
+[1:06:55] out of there they were taken from Israel
+[1:06:57] and sent into captivity in the beginning
+[1:07:00] because they mixed their worship with
+[1:07:01] idol worship and that's why God took
+[1:07:03] them from the land as he promised they
+[1:07:05] he would do but now history and so that
+[1:07:09] is repeated where the church fell at
+[1:07:12] Nicaea where church and state was united
+[1:07:15] and Christianity was mixed with pagan
+[1:07:17] religion and so and the church went into
+[1:07:20] the dark ages but then there was the
+[1:07:22] Reformation and in our full restoration
+[1:07:24] and the same time Allu you you take like
+[1:07:29] you know we can go back to the time of
+[1:07:31] Gideon why is Gideon by himself
+[1:07:34] threshing wheat where's his family
+[1:07:37] where's his father helping you know why
+[1:07:40] is he alone by himself trying to get
+[1:07:42] some wheat it's because the enemy had
+[1:07:44] coming because the people worshipping
+[1:07:46] idols and had divided the family and
+[1:07:49] what was the first thing Gideon was told
+[1:07:51] to do hew down the idol in your father's
+[1:07:53] house start the conquest there start the
+[1:07:57] you know start the you know kicking the
+[1:08:00] enemy out started at home first and then
+[1:08:02] you can heal then you can you know kick
+[1:08:05] them off your land amen the idol you say
+[1:08:09] well we don't have any idols I wish I
+[1:08:12] had that video of that skit from the
+[1:08:13] skit boys how who seen it and and he
+[1:08:16] takes a yo he says the oh these these
+[1:08:18] people who may paint themselves up and
+[1:08:20] they built you know and they build their
+[1:08:22] temples and he's got actually photos of
+[1:08:24] people tribes from Papua New Guinea you
+[1:08:26] only kill it up and feathers and all
+[1:08:28] kinds of things what they do and then he
+[1:08:30] and the shows a temple and they offer
+[1:08:32] sacrifice all these things he says well
+[1:08:34] you can't relate to that okay I'll tell
+[1:08:36] it again it says now there's people in
+[1:08:38] May and they paintin themselves and
+[1:08:40] these people go into these rugby matches
+[1:08:41] and you know American football they're
+[1:08:43] painted blue red white whatever more and
+[1:08:45] they build big temples in his big
+[1:08:47] Stadium and they offer sacrifices you
+[1:08:50] know I was shocked the world's
+[1:08:52] chopped but when the Blues played the
+[1:08:55] Lions they they they had a special haka
+[1:08:58] and you know what the purpose that
+[1:08:59] Huckle was isn't the news we're calling
+[1:09:02] up the spirit of our ancestors so he can
+[1:09:04] defeat this team it was in the New
+[1:09:08] Zealand Herald and people just read that
+[1:09:10] saying oh that's fine but if you have
+[1:09:12] half a Christian brain you would say
+[1:09:14] that is ancestor worship that is pagan
+[1:09:18] as pagan can be so why on earth would
+[1:09:21] you want to identify yourself or your
+[1:09:23] children with anything like that
+[1:09:25] that's it's insanity and that's how oh
+[1:09:31] that's the what do you why they do the
+[1:09:32] haka they calling up we need an
+[1:09:34] anointing to defeat this enemy there's a
+[1:09:37] you know as a soccer team it just comes
+[1:09:39] to mind from I think from from from the
+[1:09:42] UK and it was like this greatest kind of
+[1:09:45] season they've ahead least a city I saw
+[1:09:48] y'all might have the name of a totally
+[1:09:50] wrong but they like the total underdogs
+[1:09:52] in they won what did they and did you
+[1:09:54] see what they did before they started
+[1:09:55] that season they went to a Buddhist
+[1:09:58] temple they went to a Buddhist temple
+[1:10:00] and they had a service there's on BBC
+[1:10:05] news there's no conspiracy so they went
+[1:10:07] to this Buddhist temple and they had the
+[1:10:09] service what were they doing
+[1:10:11] we need an anointing we want to win this
+[1:10:14] trophy we need an anointing the this
+[1:10:19] happened I think last year year before
+[1:10:21] and they won why because they're calling
+[1:10:26] up demon power to win but we're
+[1:10:32] Christians you wanna you want to be
+[1:10:34] careful what you put before you
+[1:10:38] amen you want to be careful the
+[1:10:42] influence you put on your children
+[1:10:44] especially when they're young when they
+[1:10:45] look at you and you're the most please
+[1:10:47] whatever you're most pleased with them
+[1:10:49] in their life they'll want to be walking
+[1:10:50] they'll start running towards that so
+[1:10:53] for example if I was just say if my my
+[1:10:57] girls just say yeah just say yeah my
+[1:10:59] girls they started playing a sport and I
+[1:11:01] was the most enthusiastic
+[1:11:07] a black stick or a silver fern or you
+[1:11:10] know hockey or whatever game they were
+[1:11:12] the whole ambition would begin to go
+[1:11:14] towards that because I am predicting
+[1:11:16] this is what I'm most pleased with with
+[1:11:18] you even if they come to church and all
+[1:11:21] these things what you're most pleased
+[1:11:22] with they want to emulate that they all
+[1:11:25] following me so you've got to be number
+[1:11:28] one you've got to be dead sure whatever
+[1:11:31] they do for the Lord you say I'm so
+[1:11:32] proud of you I'm so pleased hallelujah
+[1:11:36] you know you got to make that number one
+[1:11:38] not not here with something else number
+[1:11:41] one because they'll see cuz they want to
+[1:11:43] be like you did or you mum they want to
+[1:11:45] be like you and so they'll see or mum
+[1:11:48] really love dad dad or mum really like
+[1:11:50] me doing this so it's like the channels
+[1:11:52] their ambition a certain way hello how
+[1:11:57] we do it's true people you can't just
+[1:12:01] you can't just have a Christian under yo
+[1:12:03] are you we're Christians but in reality
+[1:12:05] what are you really serving what are you
+[1:12:07] placing above him because the family is
+[1:12:13] divided because the because the parents
+[1:12:16] are looking at other things now let's go
+[1:12:24] to Daniel chapter 7
+[1:12:30] we're gonna read quite a lengthy reading
+[1:12:33] from here Daniel 7 and we're gonna
+[1:12:35] reverse one down to verse 23 you've got
+[1:12:42] to understand and I trust you do but
+[1:12:44] when you look at what is going on in the
+[1:12:46] world it is all in the scripture you've
+[1:12:49] got to look at the world through
+[1:12:51] scriptural eyes because if you do not
+[1:12:53] then you'll be caught up in the devil's
+[1:12:56] lie and you'll be influenced the wrong
+[1:12:58] way okay so if you can see what is
+[1:13:01] happening through that through the
+[1:13:03] scripture then you can identify oh this
+[1:13:06] is this is what he's doing and this is
+[1:13:08] what he's doing and this is what God is
+[1:13:09] doing amen you got to be able to see and
+[1:13:12] that's why it's so important to find
+[1:13:14] yourself and Bible characters to go back
+[1:13:17] into the scripture and find yourself as
+[1:13:20] Nehemiah or David or David's mighty men
+[1:13:23] are you with me you know what are those
+[1:13:25] because you'll see because if that's the
+[1:13:27] shadow that the believers of the New
+[1:13:30] Testament are the reality so if they did
+[1:13:32] it under the shadow that way and we'll
+[1:13:34] do it in the reality hallelujah yes amen
+[1:13:39] and you can take the same thing you can
+[1:13:41] take the book of Acts you can take that
+[1:13:43] New Testament era just from Pentecost to
+[1:13:46] the destruction of Jerusalem and you can
+[1:13:48] overlay it in this day we live in that's
+[1:13:52] probably another time
+[1:13:53] now Daniel 7 and 1 in the first year of
+[1:13:58] Belshazzar we're going to read this and
+[1:14:00] all we'll just yeah we go king of
+[1:14:02] Babylon Daniel had a dream and visions
+[1:14:04] on us dreams of his heat upon his beard
+[1:14:07] when he wrote the dream and told the
+[1:14:08] some of the matters and Daniel spake and
+[1:14:10] said I saw in my vision by night and
+[1:14:12] behold the four winds of heaven strove
+[1:14:15] upon the great sea and four great beasts
+[1:14:18] come up from the sea diverse one from
+[1:14:20] the other now this is the anointing on
+[1:14:23] the world power right it's the end and
+[1:14:26] we're gonna read about four beasts and
+[1:14:27] the fourth beast is the anointing on the
+[1:14:30] world power on this day and then I'm
+[1:14:33] gonna show you that it breaks and
+[1:14:34] destroys and devours the whole earth and
+[1:14:36] I'm going to show you the tactic it uses
+[1:14:38] in your life and your family life
+[1:14:41] because it can't just
+[1:14:42] the other Sun lofty thing in the it
+[1:14:45] comes down to your Adria comes down to
+[1:14:47] my address right that's where we're
+[1:14:49] going and so first of all the first was
+[1:14:53] like a lion and had eagle's wings and I
+[1:14:55] beheld till the wings are over plucked
+[1:14:57] and it was lifted up from the earth and
+[1:14:59] made stand upon the feet as a man and a
+[1:15:02] man's heart was given to it and I beheld
+[1:15:04] a second beast and the second was like
+[1:15:05] like to a bear and it raised up itself
+[1:15:07] on one side and it had three ribs in the
+[1:15:10] mouth of it between the teeth of it and
+[1:15:13] they said thus unto it arise and devour
+[1:15:15] much flesh and after this I beheld and
+[1:15:18] lo another like a leopard which had upon
+[1:15:21] the back of it four wings of a fowl and
+[1:15:23] the Beast had also four heads and
+[1:15:26] Dominion was given to it and after this
+[1:15:31] I saw in the night vision and behold a
+[1:15:34] fourth beast dreadful and terrible and
+[1:15:38] strong exceedingly Antti that devoured
+[1:15:41] and brake in pieces and stamped the
+[1:15:43] residue with the feet of it and it was
+[1:15:45] diverse from all the beasts that were
+[1:15:47] before it and it had ten horns now what
+[1:15:50] happens is that the first piece we read
+[1:15:52] about was the it's the same as the image
+[1:15:55] of image that the King Nebuchadnezzar
+[1:15:56] dreams about of the head of gold and
+[1:15:59] silver and you know goes down to iron
+[1:16:01] and clay and the feet these are the
+[1:16:03] anointings on those four kingdoms okay
+[1:16:05] so the first beast we read about was the
+[1:16:10] world Empire of Nebuchadnezzar's time
+[1:16:11] and the next one was the Medes and
+[1:16:14] Persians which took the Babylonian
+[1:16:15] Kingdom and then the third one we just
+[1:16:17] read about was the Grecian Empire
+[1:16:20] because they remember Alexander the
+[1:16:22] Great defeated was the Darius and he and
+[1:16:25] he took the Empire now the fourth one it
+[1:16:29] was diverse from all the beasts ever
+[1:16:31] before it and it had ten horns
+[1:16:32] everything in the first three is mixed
+[1:16:34] into the fourth and I considered the
+[1:16:37] horns so in our in verse eight I
+[1:16:39] considered the horns and behold there
+[1:16:41] came up among them another little horn
+[1:16:42] before whom there were three of the
+[1:16:45] first horns plucked up by the roots and
+[1:16:47] behold in this horn were eyes like the
+[1:16:49] eyes of man and a mouth speaking great
+[1:16:50] things now remember the Romans conquered
+[1:16:55] the Greeks
+[1:16:56] and that same anointing is on the world
+[1:16:58] power till now that same it's a mule
+[1:17:03] power we are living under the world was
+[1:17:05] living under that anointing you say well
+[1:17:08] there's no Roman Empire anymore that's
+[1:17:10] true but it went from went from pagan
+[1:17:13] Rome
+[1:17:13] it changed the papal Rome and we can
+[1:17:16] read about that in Revelations 13 and if
+[1:17:19] you go especially into the mo you know
+[1:17:21] the Dark Ages even into the room into
+[1:17:23] the Renaissance even into today the
+[1:17:26] Vatican has has embassies around the
+[1:17:29] world and it's not just a church it's a
+[1:17:32] country as opposed it's a it's a
+[1:17:34] political animal amen
+[1:17:37] you go look at you're looking the like
+[1:17:40] King Henry the eighth's
+[1:17:41] time you know you go look at European
+[1:17:44] history politics there's the king and
+[1:17:47] who was his Prime Minister ninety-nine
+[1:17:49] percent of the time a cardinal and who
+[1:17:52] was the Cardinal reporting to the Pope
+[1:17:53] and who was the Pope and the Cardinal
+[1:17:56] who where was his allegiance it wasn't
+[1:17:58] to the king it was to the Pope so so it
+[1:18:01] it controlled and it's the same thing
+[1:18:04] today just in a different way yeah I
+[1:18:07] mean we're anyway but the same thing
+[1:18:12] this is this is here now and this
+[1:18:15] happens until I beheld till the thrones
+[1:18:16] were cast out an Ancient of Days that
+[1:18:19] sent his garments were white as wool and
+[1:18:21] the hair of his head were like pure wool
+[1:18:23] as throne was like the fiery flame and
+[1:18:26] his wheels as burning fire a fiery
+[1:18:28] stream issued and came forth from before
+[1:18:30] him thousands thousands ministered unto
+[1:18:33] him and ten thousand times ten thousand
+[1:18:35] stood before him the judgment was set
+[1:18:37] and the books are open so this is now
+[1:18:40] this is now the great white throne
+[1:18:41] judgement comes into view so that world
+[1:18:44] powers here but then it's destroyed and
+[1:18:47] here's the great white throne judgment
+[1:18:49] okay and in verse 11 I beheld in because
+[1:18:54] of the voice of the great words which
+[1:18:55] the horn spake I beheld even till the
+[1:18:58] beast was slain and his body destroyed
+[1:19:00] and given to the burning flame which is
+[1:19:02] the lake of fire as concerning the rest
+[1:19:05] of the beasts they had their dominion
+[1:19:07] taken away their lives were prolonged
+[1:19:08] for a season at a time
+[1:19:10] and I saw and the night visions and
+[1:19:13] behold one like the son of man came with
+[1:19:16] the clouds of heaven and came to the
+[1:19:17] Ancient of Days and they brought him
+[1:19:19] near before him and there was given him
+[1:19:21] Dominion and glory and kingdom and all
+[1:19:23] the people nations and languages should
+[1:19:26] serve him his Dominion is an everlasting
+[1:19:27] Dominion which shall not pass away and
+[1:19:30] his kingdom where that which shall not
+[1:19:33] be destroyed now was gonna keep ready
+[1:19:37] and I Daniel was grieved in my spirit in
+[1:19:39] the midst of my body and the visions of
+[1:19:41] my head troubled me and I came nearer
+[1:19:44] and I came near one of them that stood
+[1:19:46] by and asked him the truth of all this
+[1:19:48] and he told me to make and made me know
+[1:19:52] the interpretation of of the things
+[1:19:55] these great beasts which are four are
+[1:19:57] four kings which shall arise out of the
+[1:19:59] earth but the Saints of the Most High
+[1:20:01] shall take the kingdom and possess the
+[1:20:05] kingdom forever even forever and ever
+[1:20:08] now we're going to read that there's
+[1:20:10] actually well we read there that the
+[1:20:12] Saints are given the kingdom but then as
+[1:20:14] we read down it all say that there that
+[1:20:16] the Saints were made war against now
+[1:20:19] worn out but then after judgment are
+[1:20:21] given the kingdom now how can this be
+[1:20:24] where one in one place it says they're
+[1:20:26] given the kingdom and another place the
+[1:20:29] Beast makes war against them and wears
+[1:20:30] out the Saints of the Most High
+[1:20:31] then after judgment they've given the
+[1:20:33] kingdom it's because in the ranks member
+[1:20:36] Saints being sanctified ones so it is
+[1:20:39] all it is the wise and foolish virgin
+[1:20:41] are encompassed in this in this verse so
+[1:20:44] the wise are given the Kingdom they go
+[1:20:46] up in the rapture
+[1:20:47] I trust you one of them right but in the
+[1:20:50] fullest version of stadia and then this
+[1:20:51] beast power wears them out and overcomes
+[1:20:53] them but then after judgment they've
+[1:20:56] given the kingdom because remember the
+[1:20:57] great white throne judgment the the the
+[1:20:59] goats and the sheep are separated and
+[1:21:01] the Sheep had put it into the kingdom
+[1:21:03] and the goats a seat to the lake of fire
+[1:21:05] now and then I'd know the truth of the
+[1:21:09] fourth feast which was diverse from all
+[1:21:11] the others exceedingly dreadful whose
+[1:21:13] teeth rose of iron as nails of brass was
+[1:21:16] devoured
+[1:21:16] breaking pieces and stamped the residue
+[1:21:18] with his feet and of the ten horns which
+[1:21:21] were in his head and the other and of
+[1:21:23] the other which came up
+[1:21:24] before whom three fell even of that horn
+[1:21:27] that that had eyes and a mouth that
+[1:21:28] spake very great things whose look was
+[1:21:31] more stout than his fellows I beheld and
+[1:21:33] the same horn made war with the Saints
+[1:21:35] and prevailed against them as the
+[1:21:38] foolish virgin group until the Ancient
+[1:21:40] of Days came and the judgment was given
+[1:21:42] to the Saints of the Most High and the
+[1:21:43] time came that the Saints possessed the
+[1:21:47] kingdom thus he said the fourth beast
+[1:21:50] shall be the fourth Kingdom upon the
+[1:21:51] earth which shall be diverse from all
+[1:21:53] kingdoms and shall devour the whole
+[1:21:56] earth and shall tread it down and break
+[1:21:59] it in pieces so that's what he's going
+[1:22:03] to do he's going to devour the whole
+[1:22:05] earth he's going to tread it down and
+[1:22:07] he's going to break it into pieces and
+[1:22:10] the ten horns out of this kingdom of ten
+[1:22:14] Kings which shall arise another shall
+[1:22:16] maybe I've gone through fer and the ten
+[1:22:19] horns out of this kingdom which are ten
+[1:22:20] Kings that shall arise in there and
+[1:22:22] another shall rise after them and he
+[1:22:24] shall be diverse from the first and he
+[1:22:26] shall subdue three kings and he shall
+[1:22:28] speak great words against the Most High
+[1:22:30] and we shall wear out the Saints of the
+[1:22:32] Most High and think to change times and
+[1:22:34] laws and they shall be given into his
+[1:22:36] hand until a time and times and a
+[1:22:39] dividing of time so time is one x is two
+[1:22:42] and a divided time is half three and a
+[1:22:44] half three and a half years the Great
+[1:22:45] Tribulation but the judgment shall sit
+[1:22:48] and they shall take away his Dominion
+[1:22:50] and consume and to destroyed until the
+[1:22:52] end and the Kingdom and Dominion and the
+[1:22:54] greatness of the kingdom under the whole
+[1:22:56] heaven shall be given to the people of
+[1:22:57] the saints of the Most High whose
+[1:22:59] kingdom is an everlasting Kingdom and
+[1:23:01] all dominions serve and obey Him here in
+[1:23:04] 2 as the end of the matter as for me
+[1:23:06] Daniel my cogging Nations much troubled
+[1:23:10] me and my countenance changed in me but
+[1:23:12] I kept the matter in my heart
+[1:23:14] so this you say well that's quite a lot
+[1:23:18] of words but he's showing now this is
+[1:23:21] what the devil's going to do he's going
+[1:23:23] to devour the whole earth he's going to
+[1:23:26] break it that he's going to break it
+[1:23:27] into pieces and he's gonna treat it down
+[1:23:29] as verse 23 so now here's this tactic he
+[1:23:33] wants to devalue I'm just going to go
+[1:23:36] from the world I'm gonna go down to you
+[1:23:38] devour he wants a devalue I want to
+[1:23:40] break you to pieces and treat you down
+[1:23:42] and you can see we don't I don't know if
+[1:23:47] we have time but go read revelations
+[1:23:49] chapter 13 after this and it speaks
+[1:23:52] about a it speaks about the same fourth
+[1:23:54] piece we read about with the ten horns
+[1:23:57] and it speaks about the Lamb coming out
+[1:24:00] of the earth which is now a nation not
+[1:24:03] come coming out of a place where there's
+[1:24:05] not much population and that we know is
+[1:24:07] America but then it says he he had he
+[1:24:11] had he was a he was a lamb but then he
+[1:24:14] spake as the dragon so they came a time
+[1:24:17] in America's history where they were
+[1:24:18] because of lamb is freedom of religion
+[1:24:20] they left the old world to comes the new
+[1:24:22] world to you know flee from the
+[1:24:24] persecution of the denominations there
+[1:24:26] they found it they founded the nation as
+[1:24:28] one nation under God but then there
+[1:24:30] comes a time where it turns and it
+[1:24:32] speaks as the dragon speaks so it says
+[1:24:35] the same thing that the Vatican is
+[1:24:37] saying right and so and you'll see it
+[1:24:42] and you know you'll see the tactics of
+[1:24:45] the enemy and you can go from I remember
+[1:24:48] when I read a book on the Boer War Boer
+[1:24:51] War that the that the British they
+[1:24:54] wanted the you know you know the gold
+[1:24:56] and everything but it was outside their
+[1:24:58] territory so they tried to create a
+[1:25:02] incident where a group of them went up
+[1:25:05] there and they tried to do that you know
+[1:25:06] they thought all the British that were
+[1:25:08] already there would rise up in arms and
+[1:25:09] that overthrow the Bulls and it didn't
+[1:25:11] work and then and in that they tried to
+[1:25:14] create an incident where we had out
+[1:25:16] start a war and they they proceeded with
+[1:25:19] it anyway they wanted to devour the
+[1:25:21] place and take control you look at now
+[1:25:24] this is just me but that is just an
+[1:25:28] fellowship I know this is on the
+[1:25:29] internet but oh you look at the show
+[1:25:31] September 11 you see what the enemy does
+[1:25:33] he he he puts people into a place makes
+[1:25:37] the place fall apart and he tries to
+[1:25:39] clean up the pieces and take control
+[1:25:41] you see September 11 have you ever seen
+[1:25:44] such wonderful controlled demolition of
+[1:25:47] buildings before have you looked at
+[1:25:49] videos of controlled demolitions
+[1:25:52] the building just goes and then you see
+[1:25:55] the two towels gonna do perfectly but
+[1:25:58] the planes hit the Midway up like this
+[1:26:01] any any structural engineer would look
+[1:26:04] at that and say that's crazy how could
+[1:26:06] they just go this and there were other
+[1:26:07] buildings around that they just
+[1:26:09] collapsed as well you say well that is
+[1:26:13] that is their building codes really shot
+[1:26:15] or it was it was actually created to
+[1:26:19] start a war to go devour some countries
+[1:26:22] to take control of the resources you go
+[1:26:27] look you go look at Wikipedia that
+[1:26:29] remember all the stuff you say this is
+[1:26:31] crazy no this is what the enemy does but
+[1:26:33] you've got to look it through the Bible
+[1:26:35] eyes you look it through scripture eyes
+[1:26:37] because if you don't you'll be caught up
+[1:26:39] in the misinformation out there and
+[1:26:41] you'll be twisted one way or another
+[1:26:43] yeah you go look at what the CIA has
+[1:26:45] done around the world they've
+[1:26:47] assassinated presidents they have
+[1:26:49] they've armed yo rebel groups to take
+[1:26:51] over countries this is in Central and
+[1:26:54] South America you should go see what
+[1:26:57] they've done the leader of Isis was
+[1:27:00] captured by the Americans then he was
+[1:27:02] released and then now now Isis came into
+[1:27:05] being what's happened and it's been
+[1:27:09] known that they've armed other rebel
+[1:27:11] groups in Syria oh this is conspiracy no
+[1:27:14] it's not this is what the enemy does
+[1:27:16] because he wants to create a vacuum then
+[1:27:19] I'll come save the day cuz I'm Captain
+[1:27:22] America what do you think all the
+[1:27:24] Hollywood movies are there was Rambo
+[1:27:26] taking out the Soviets in Afghanistan
+[1:27:27] and you know all these different yeah
+[1:27:30] America is gonna save the day it's
+[1:27:33] propaganda saying they're the good guys
+[1:27:35] well not really they're not the good
+[1:27:38] guys because they're under a beasts
+[1:27:40] anointing to break the world into pieces
+[1:27:44] and to subdue it you look at the yo you
+[1:27:47] look at this world why is this wished
+[1:27:48] wisest world and it countries are you
+[1:27:51] look at Venezuela standing up against
+[1:27:54] America now I'm not saying for or
+[1:27:56] against but there's just what happened
+[1:27:57] you know was a Hugo Chavez where his
+[1:28:00] nameis is not we're going to do our own
+[1:28:01] thing and then and then he dies and then
+[1:28:05] go
+[1:28:05] look at the country now this riding it's
+[1:28:07] basically bankrupt it's broken what
+[1:28:10] happened with with general I mean the
+[1:28:14] main Colonel was a Gaddafi daran daran
+[1:28:17] northern Africa what was he doing he's
+[1:28:20] just there and then the in the Western
+[1:28:23] powers create an incident and then they
+[1:28:25] go invade the country they get rid of
+[1:28:26] him a look down to chaos
+[1:28:28] well controlling the oil and all these
+[1:28:31] things you gotta look at through braking
+[1:28:34] and then I think countries go on to debt
+[1:28:36] then he comes to mr. IMF International
+[1:28:40] Monetary Fund will help you or help us
+[1:28:43] we'll help you now who do they now who
+[1:28:45] does the country answer to you have to
+[1:28:49] look at these things look at what's
+[1:28:51] going on in America if you if you
+[1:28:53] haven't seen the documentary I've only I
+[1:28:56] heard brother Lonnie Jenkins preach
+[1:28:57] about called the agenda and and the
+[1:29:00] agenda it's a film not made by believers
+[1:29:02] but they but this but this fellow he it
+[1:29:06] was and I think low level politics used
+[1:29:08] to write a letter to the editor
+[1:29:10] it was often and then one day he wrote
+[1:29:13] about the time when he went to a
+[1:29:15] communist party convention thing in
+[1:29:18] America at the time when the Soviet
+[1:29:20] Union was falling apart and the
+[1:29:22] Communist Party in America said this is
+[1:29:24] how we're going to break America we're
+[1:29:26] gonna break immorally we're gonna make
+[1:29:29] her a breaker spiritually and will break
+[1:29:31] her financially and and then so he wrote
+[1:29:35] about that or something along those
+[1:29:36] lines and he just got a massive response
+[1:29:38] and you go look at America what's
+[1:29:40] happened she's been broken spiritually
+[1:29:43] she's been broken morally and how much
+[1:29:47] did let's just raise the debt ceiling I
+[1:29:50] don't know what trillion it is now what
+[1:29:54] what and then what happens well who can
+[1:29:57] pay the debt off maybe my brother Brown
+[1:29:59] who speaks about all these things and he
+[1:30:01] says he says the Vatican has the gold
+[1:30:03] and The Wall Street has all the paper
+[1:30:05] bonds you know their brother paint yo
+[1:30:07] you know they've got the documents your
+[1:30:09] the bonds but only me and then who's
+[1:30:11] going to pay their debt off here comes
+[1:30:13] the Vatican and we can help you out we
+[1:30:14] have all the gold and then what's
+[1:30:16] happened
+[1:30:18] it's the Bible is prophecy brother Bram
+[1:30:21] speaks about these things
+[1:30:23] we are not water and then now you look
+[1:30:26] at America look at what's going on with
+[1:30:28] these yo yo you're the racism and all
+[1:30:30] these things going on
+[1:30:31] the country is falling apart why cuz
+[1:30:34] it's being it's being devoured by the
+[1:30:37] own anointing on itself is devouring
+[1:30:39] itself they meant and people take sides
+[1:30:44] and you know whatever it is the Bible
+[1:30:46] says the world to be drunk let's read
+[1:30:49] that and in in Revelations 18 and 1 down
+[1:30:52] to verse 5 I'm still talking about
+[1:30:57] families by the way but I'm showing you
+[1:30:59] this is the tactic of the enemy because
+[1:31:02] it's not just national level it comes
+[1:31:05] down into your home if you can see what
+[1:31:08] he does there you'll see what he does
+[1:31:10] down here and then look at what's
+[1:31:11] happening and look at look at what what
+[1:31:14] what husbands and fathers are betrayed
+[1:31:16] of betrayed as in the media Homer
+[1:31:20] Simpson he's the he's the typical dad or
+[1:31:25] husband these days this is what's being
+[1:31:28] projected so what's happened now the
+[1:31:33] family is being divided manhood has been
+[1:31:36] broken down amen being a real husband a
+[1:31:40] real dad that's been broken down I meant
+[1:31:43] woman have been lifted up and made
+[1:31:46] objects by the fashion world and if you
+[1:31:49] looked at your they've done studies
+[1:31:51] where because you know how they they
+[1:31:54] they put electrodes and stuff on
+[1:31:56] people's brains and they see which cuts
+[1:31:58] of their brain light up when certain
+[1:31:59] things happen you know they do those
+[1:32:01] studies they did this study so they took
+[1:32:03] me in and they showed them pictures of
+[1:32:06] just just objects like a hammer or a
+[1:32:08] rake or a tool and and certain
+[1:32:10] hemispheres of the brain lit up and then
+[1:32:13] they showed those same men pictures of
+[1:32:15] of half-naked woman you know these
+[1:32:18] models and all these things and the same
+[1:32:20] hemispheres lit up and that's showing
+[1:32:23] that subconsciously when a man sees a
+[1:32:25] woman stripped off naked subconsciously
+[1:32:29] he just says she is a tool
+[1:32:31] she is not a woman amen and this is what
+[1:32:36] the world is now predicted you have to
+[1:32:38] be like this certain thing and all it's
+[1:32:42] liberating
+[1:32:42] no but subconsciously man looks at you
+[1:32:44] and says well actually you're just a
+[1:32:46] tool so woman have been degraded in this
+[1:32:49] day and brother Bram said if you break
+[1:32:52] motherhood you break a nation yeah
+[1:32:56] that's true and after these things
+[1:33:01] revelations 18 and one and after these
+[1:33:05] things to me I I wouldn't I don't want
+[1:33:08] to be treated as at all
+[1:33:10] I feel just an object I'm a person amen
+[1:33:14] it's like it's like all you wonderful
+[1:33:16] sisters you know two objects don't leave
+[1:33:18] the devil trying to grade you down you
+[1:33:20] just a a tool you're a daughter of God
+[1:33:25] revelations 18 one and after these
+[1:33:28] things I saw another angel come down
+[1:33:29] from heaven having great power and the
+[1:33:31] earth was lightened with his glory and
+[1:33:33] he cried mightily with a strong voice
+[1:33:36] saying Babylon the Great is fallen is
+[1:33:38] fallen and has become the habitation of
+[1:33:40] devils and the hold of every foul spirit
+[1:33:42] and a cage of every unclean and hateful
+[1:33:44] bird for all nations have drunk of the
+[1:33:47] wine of the wrath of her fornication and
+[1:33:49] the kings earth have committed
+[1:33:51] fornication with her and the merchants
+[1:33:53] but be of the earth are waxed rich
+[1:33:55] through the abundance of her delicacies
+[1:33:57] and I heard another voice from heaven
+[1:34:00] saying come out of her my people that ye
+[1:34:03] be not partakers of her sins that you
+[1:34:05] received not of her plagues for her sins
+[1:34:07] have reached into unto heaven and God
+[1:34:10] hath remembered her iniquities
+[1:34:12] now this angel this angel here is
+[1:34:15] actually the Ministry of the Prophet
+[1:34:16] where the whole earth is lighted with
+[1:34:19] his glory and he identifies he
+[1:34:22] identifies that Babylon is fallen is
+[1:34:25] fallen I mean the the church system has
+[1:34:28] fallen and says this is the state of her
+[1:34:31] and all nations have been made drunk now
+[1:34:35] what is the what is the tip what is the
+[1:34:37] West especially water what it mean
+[1:34:39] pursue men a woman who pursued we just
+[1:34:42] want a good time
+[1:34:44] we just want a good time we just want to
+[1:34:46] you know sure we have to go to work but
+[1:34:49] you know we just want to pad it up on
+[1:34:51] the weekend we want to go on holiday you
+[1:34:52] know we just want to we just want to
+[1:34:55] enjoy ourselves nothing wrong with
+[1:34:57] enjoying yourself or going on holiday
+[1:35:00] but it's the pursuit and we want to you
+[1:35:03] know we want to refurbish our homes we
+[1:35:06] want all the nice things and people are
+[1:35:08] pursuing these things what's happened
+[1:35:11] all they they get drunk and on pleasure
+[1:35:15] you following me you know the whole
+[1:35:17] world is drunk you know you look at I
+[1:35:20] saw I saw the ignore ignore Gration of
+[1:35:26] President Trump I watched a part of it
+[1:35:28] when they're just walking where they go
+[1:35:30] from where he's where he's sworn in and
+[1:35:32] he's taken I think to the White House
+[1:35:34] and there's like a procession and one
+[1:35:36] part of it is they get out of the limo
+[1:35:38] and they and they walk along where all
+[1:35:40] the people are cheering and I just watch
+[1:35:42] the book where they got out there
+[1:35:43] started walking and I thought to myself
+[1:35:45] this world is drunk because it liked me
+[1:35:50] back in the world I mean when you were
+[1:35:52] back there I trust you're still not back
+[1:35:55] there as if you had a party you don't
+[1:35:57] want some sober guy running your party
+[1:35:59] he's no fun a mint because he is as you
+[1:36:04] know he's no fun you want the guy who's
+[1:36:06] the craziest he does that you know you
+[1:36:08] want him if you're drunk you want that
+[1:36:10] kind of guy
+[1:36:11] if you're sober you don't want that kind
+[1:36:13] of guy and it's and it's like the world
+[1:36:15] why'd they want all we need a we need to
+[1:36:17] save you for America and they get this
+[1:36:19] guy in they wanting their Messiah and
+[1:36:22] and they well the church world over
+[1:36:25] there believes that they heaven and he's
+[1:36:29] a you know this world was made this
+[1:36:33] world is made and then here we are and
+[1:36:35] we're on this side of the world and we
+[1:36:39] just coast along let's just watch what
+[1:36:42] happens though yeah do we not New
+[1:36:45] Zealand just looks out yeah let's just
+[1:36:47] float along she'll be right no worries
+[1:36:50] sweet ass bro
+[1:36:53] what is that that's like some guy
+[1:36:57] sitting in the corner of a party just he
+[1:36:58] just watches it go by he's chill he's
+[1:37:00] not worried it should be worried you
+[1:37:03] don't want to be like that guy I'm not
+[1:37:05] trying to tell jokes but it's how people
+[1:37:06] are this just float don't let's not
+[1:37:08] float let's build this bit let's rebuild
+[1:37:13] Alleluia
+[1:37:15] so now dividing and conquering now the
+[1:37:22] enemy and I might just actually wind up
+[1:37:25] with this I don't want to be too long
+[1:37:26] this morning maybe just for just low
+[1:37:28] foundation but the enemy today is a
+[1:37:30] Roman tactic called divide and conquer
+[1:37:32] who's heard of that who all knows about
+[1:37:35] hide and conquer now they actually
+[1:37:38] adopted that from the Greeks if you go
+[1:37:41] read on Wikipedia because what happens
+[1:37:43] is the Romans they if they found
+[1:37:46] anything good from the place they
+[1:37:47] conquered they absorbed it into the
+[1:37:49] earth into their military into this
+[1:37:52] society so the divide and conquer
+[1:37:56] strategy has been used so this is this
+[1:37:58] is just one example from from Africa
+[1:38:00] which you know I'm sure you're all aware
+[1:38:01] of so the Germans and the Belgium's they
+[1:38:04] ruled Rwanda and Burundi in a colonial
+[1:38:07] capacity now this is just this is just
+[1:38:09] verbatim from from Wikipedia the Germans
+[1:38:12] used a strategy of divide and conquer by
+[1:38:15] placing members of the already dominant
+[1:38:17] Tutsi minority in positions of power
+[1:38:20] when Belgium took over in 1916 the
+[1:38:24] Tutsis and Hutus groups were rearranged
+[1:38:27] according to race I mean yeah according
+[1:38:29] to race instead of occupation Belgium
+[1:38:32] defined tootsies anyone with more than
+[1:38:34] ten cows or a long-nosed while who to
+[1:38:36] meet someone with less than ten cows and
+[1:38:38] a broad knows the socio-economic divide
+[1:38:41] between Tutsis and Hutus continued after
+[1:38:44] independence and was a major factor in
+[1:38:46] the Rwandan genocide the vote what's
+[1:38:49] happened now he comes as fourth beast
+[1:38:51] power coming into a into a continent
+[1:38:54] divide and conquer
+[1:38:55] that's how the British they could be
+[1:38:57] successful against the Scots as well
+[1:38:59] this divide and conquer they meant
+[1:39:02] playing playing one clan against the
+[1:39:04] other you look at New Zealand here come
+[1:39:07] you know you're a read about the musket
+[1:39:08] wars before the land Wars where the
+[1:39:11] musket Wars come from here come
+[1:39:12] missionaries will give you muskets and
+[1:39:16] they arm this tribe because it's going
+[1:39:18] to help their cause and then this tribe
+[1:39:20] massacres this tribe because this tribe
+[1:39:23] doesn't have muskets and this one does
+[1:39:24] have you read have you read about the
+[1:39:27] musket Wars
+[1:39:28] what does that divide and conquer and ok
+[1:39:34] I'll keep reading so when the Romans
+[1:39:35] entered Macedonia from the south and
+[1:39:37] defeated King peeresses of Macedon in
+[1:39:41] the Battle of of Python and 168 BC
+[1:39:47] Macedonia was then divided into four
+[1:39:49] republics that were heavily restricted
+[1:39:52] from relations one with another and
+[1:39:54] other Hellenic States a ruthless purge
+[1:39:58] occurred with allegedly anti Roman
+[1:40:01] citizens being denounced by their
+[1:40:02] compatriots and deported in large
+[1:40:04] numbers so they they conquered Macedonia
+[1:40:07] and then they divided it this is divide
+[1:40:10] and conquer and then during the the
+[1:40:12] Gallic Wars Julius Caesar was able to
+[1:40:15] use a divide and rule strategy to easily
+[1:40:18] defeat the militarily strong Gauls but
+[1:40:21] by the time the Gauls
+[1:40:22] United it was already too late for them
+[1:40:25] divide and conquer and then now he comes
+[1:40:29] into your address let's just jump 2,000
+[1:40:31] years well more than that from from the
+[1:40:33] time of Julius Caesar and he is used he
+[1:40:37] is you society to break the family unit
+[1:40:39] he has used it to break the family unit
+[1:40:47] just just five minutes now it says Dell
+[1:40:51] we let's go let's go to Ephesians six
+[1:40:56] and for this just read a bit here and in
+[1:41:01] animal closer
+[1:41:09] now
+[1:41:13] it's interesting when you read the book
+[1:41:14] of Ephesians it goes from Ephesians 5
+[1:41:17] and it speaks about wives and husbands
+[1:41:23] relationship about how they become one
+[1:41:26] flesh this is what the enemy he doesn't
+[1:41:29] want you to be one and all things right
+[1:41:33] and then as soon as it goes down from
+[1:41:35] that now it goes down to children obey
+[1:41:39] your parents this is the family unit and
+[1:41:42] then after it speaks about that then it
+[1:41:46] says and then it speaks about servants
+[1:41:48] and so on and then then it speaks about
+[1:41:51] finally my brethren be strong in the
+[1:41:52] Lord the power of his might and put on
+[1:41:54] the whole armor of God and verse 11 so
+[1:41:57] he's speaking about now the family needs
+[1:41:59] to be one the family needs to be one and
+[1:42:02] then you put on the whole armor of God
+[1:42:04] then you will stand the enemy okay but
+[1:42:08] the power of the whole family unit is
+[1:42:10] the oneness between husband or wife if
+[1:42:13] that is divided that's why that's why
+[1:42:17] it's so important but well actually you
+[1:42:19] see it in the world what what the world
+[1:42:22] has made marriage to be is not what
+[1:42:25] marriage is marriage in the world is
+[1:42:29] just a physical relationship that has
+[1:42:32] some legal backing and you live in the
+[1:42:34] same house as me to create some
+[1:42:35] stability to have children and it is to
+[1:42:38] have stability it is to have children
+[1:42:40] but that's not the but a real a real
+[1:42:42] marriage is when you actually take them
+[1:42:44] to yourself both ways and you give you
+[1:42:48] have to give you a heart to your spouse
+[1:42:50] it's not rocket science you actually
+[1:42:52] have to give yourself to them just like
+[1:42:54] you give yourself to the Lord he's
+[1:42:56] already he's already given himself to
+[1:42:58] you but you have to respond to his
+[1:43:00] giving right so it's the same thing you
+[1:43:03] actually have to give your whole self to
+[1:43:05] your spouse you cannot hold anything
+[1:43:07] back and that's why and that's why you
+[1:43:12] see people who who live together than
+[1:43:14] they get married
+[1:43:15] that's after get married in the trouble
+[1:43:17] starts because it was fine then but when
+[1:43:19] it when they come to that office of
+[1:43:21] husband wife coming together then
+[1:43:22] there's a trouble because they haven't
+[1:43:24] United themselves with each other
+[1:43:27] amen but now it's important we you have
+[1:43:36] to make sure you say well I don't it's
+[1:43:40] not that way it should be that way it
+[1:43:43] should be that way in in the marriage
+[1:43:45] union where you can first you have to
+[1:43:48] forgive the past and you have to give
+[1:43:50] over the right of holding it against
+[1:43:52] them amen
+[1:43:54] second you have to not only that but
+[1:43:58] then you're going to be willing to say
+[1:43:59] this person that I've United myself to
+[1:44:02] I'm going to take them that's like they
+[1:44:04] you know I know there's children here
+[1:44:06] but you know the marriage union went to
+[1:44:09] become one and the act it's not just a
+[1:44:12] physical thing it's a spiritual thing it
+[1:44:16] is you know spiritually give yourself
+[1:44:17] and then actually spiritually take that
+[1:44:20] person to yourself it's not just a
+[1:44:22] physical act amen
+[1:44:25] and that's why maybe beforehand before
+[1:44:28] you got married it was it was fine but
+[1:44:29] then afterwards is something wrong there
+[1:44:33] has to be a oneness between husband and
+[1:44:36] wife and the word has promised it in the
+[1:44:38] state you say I don't know if we can
+[1:44:41] obtain two that the word has promised it
+[1:44:42] and so you got to really look into the
+[1:44:45] scripture and say well what is really
+[1:44:47] marriage I'm going to close on this
+[1:44:49] justice or what is really mad because
+[1:44:51] what marriage is painted out there is
+[1:44:53] not marriage all that is is a ceremony
+[1:44:56] or maybe an exchanging of rings and
+[1:44:57] maybe some you know at a honeymoon and
+[1:44:59] whatever more and now we live in the
+[1:45:01] same house that's not real marriage we
+[1:45:06] have some musicians to come I'm just
+[1:45:08] gonna continue this next Sunday I don't
+[1:45:10] want to be too long as I got too much I
+[1:45:12] feel I got too much how am i fall but I
+[1:45:14] want you to go think about these things
+[1:45:16] because you say well how do we how do we
+[1:45:20] keep the world out you may not this you
+[1:45:23] can't stop it trying to get in but I
+[1:45:25] tell you if you if you're one with your
+[1:45:29] spouse that there's a oneness in this
+[1:45:32] layers of protection amen and if the
+[1:45:35] word is preeminent then then there's
+[1:45:37] another layer of protection
+[1:45:39] and it's a child's duty now we should we
+[1:45:42] should live in such a way that we do not
+[1:45:45] provoke as it says in the scripture do
+[1:45:47] not provoke your your fathers do not
+[1:45:50] provoke your children to anger at least
+[1:45:53] they'd be discourages this is Colossians
+[1:45:55] 3 and 21 so it says children obey your
+[1:45:58] parents and all things for this is well
+[1:46:00] pleasing unto the Lord and father's
+[1:46:02] provoke not your children to anger at
+[1:46:04] least they be discouraged so we should
+[1:46:06] live a life we should live a life that
+[1:46:08] that when we when we expect our children
+[1:46:12] to obey us that it doesn't actually make
+[1:46:16] them angry we should live a life that
+[1:46:17] makes it easy for them to obey us I mean
+[1:46:20] we shouldn't say take this toothbrush
+[1:46:22] now this is a ridiculous example but
+[1:46:25] that's how some people are they they put
+[1:46:27] the bar way too high for their children
+[1:46:30] you know slark if I seem to endless or
+[1:46:33] Lilia here's these toothbrushes you have
+[1:46:35] to go to the store and buy the paint I
+[1:46:37] want you to paint in the ceiling before
+[1:46:38] tonight and then I'll give you yeah
+[1:46:40] you're gonna get her you're gonna get in
+[1:46:42] a lot of trouble if you don't do it it's
+[1:46:43] impossible for them and they've become
+[1:46:45] discouraged we can't do the standards
+[1:46:47] and they'd probably cry and all these
+[1:46:49] things they don't know how to express I
+[1:46:50] can't do this and you know I know that's
+[1:46:53] a ridiculous example that's how
+[1:46:54] sometimes we you know we sit there by
+[1:46:56] way too high
+[1:46:58] amen we should live in such a way and
+[1:47:01] speak to them in such a way that it's
+[1:47:03] not because if they get this if they
+[1:47:05] become angry they get frustrated and
+[1:47:06] they become discouraged in the Lord
+[1:47:08] because if they can obey us how can they
+[1:47:11] obey God amen we'll pick it up next time
+[1:47:16] now let's sing we have I tell you you
+[1:47:20] say well I don't know what you're
+[1:47:22] talking about today there is an
+[1:47:24] anointing present God is present to
+[1:47:27] unite yourself you with your spouse and
+[1:47:29] to keep the devil out of your home amen
+[1:47:33] you say well I don't know if it can be
+[1:47:36] done the Bible says it can be done two
+[1:47:38] shall become one flesh hallelujah and if
+[1:47:42] it's a promise I'd say Lord of it that's
+[1:47:44] my promise I wanted I want to see it
+[1:47:46] live hallelujah Amen let's dance show
+[1:47:53] they just sing let's just sing number 72
+[1:47:56] and Christ alone my hope is found don't
+[1:48:01] let the devil divide and conquer your
+[1:48:02] life
+[1:48:08] and Christ alone my hope is found he is
+[1:48:16] my life my friend
+[1:48:20] [Music]
+[1:48:23] this solid
+[1:48:27] the pieces
+[1:48:29] [Applause]
+[1:48:32] right
+[1:48:38] [Music]
+[1:48:41] when
+[1:48:42] I
+[1:48:43] [Music]
+[1:48:50] here in the
+[1:48:54] [Music]
+[1:49:02] all this of God
+[1:49:08] get up
+[1:49:11] [Music]
+[1:49:17] [Music]
+[1:49:26] dog was satisfied
+[1:49:31] [Music]
+[1:49:34] cosplay
+[1:49:38] the prize
+[1:49:43] [Music]
+[1:49:45] and
+[1:49:49] light of the
+[1:49:53] [Music]
+[1:50:05] again
+[1:50:06] and
+[1:50:08] yeah
+[1:50:12] [Music]
+[1:50:18] or
+[1:50:19] [Applause]
+[1:50:22] and
+[1:50:24] walk with the branches
+[1:50:28] Oh
+[1:50:30] [Music]
+[1:50:34] no period
+[1:50:36] this is a power
+[1:50:39] [Applause]
+[1:50:42] from my first cry
+[1:50:45] [Music]
+[1:50:46] [Applause]
+[1:50:52] [Music]
+[1:51:03] [Applause]
+[1:51:05] till
+[1:51:08] Oh
+[1:51:12] here in the power
+[1:51:16] nice and uh guilt in life no guilt in
+[1:51:19] life no fear in
+[1:51:24] this is the power of
+[1:51:27] I
+[1:51:29] from my first fried till my no bread
+[1:51:37] my day
+[1:51:47] [Music]
+[1:51:52] [Applause]
+[1:51:53] till he returns or calls me home
+[1:51:59] here in the power of Christ night
+[1:52:06] [Music]
+[1:52:23] pioneer displays I've spoken to you
+[1:52:25] tonight you know it is I I needed Roy
+[1:52:33] arise my love my fair one come away and
+[1:52:37] there's manifesting time they're
+[1:52:39] creatures on the vine arise my love my
+[1:52:42] fair one
+[1:52:43] come away how do you really go oh Jesus
+[1:52:51] I mean let's just stick undefeated
+[1:52:57] hallelujah thank you Lord Jesus I mean I
+[1:53:05] believe that
+[1:53:11] [Music]
+[1:53:22] early in the morning went down on your
+[1:53:27] knees
+[1:53:29] in the garden of gethsemane poured out
+[1:53:33] all please stay father in the Willy
+[1:53:38] tales from me
+[1:53:42] not my will instead
+[1:53:48] read uh although you have take
+[1:53:54] Ms Brown baby
+[1:53:59] [Music]
+[1:54:02] we're marching in spirit
+[1:54:06] [Music]
+[1:54:10] we're watching
+[1:54:15] me
+[1:54:17] Oh
+[1:54:26] my god
+[1:54:27] [Music]
+[1:54:34] [Music]
+[1:54:50] we
+[1:54:53] stop packing
+[1:54:55] [Music]
+[1:55:08] [Music]
+[1:55:18] that take
+[1:55:19] [Music]
+[1:55:26] [Music]
+[1:55:29] Margie is
+[1:55:41] [Music]
+[1:55:46] [Applause]
+[1:55:52] my god
+[1:55:58] [Music]
+[1:55:58] [Applause]
+[1:55:59] [Music]
+[1:56:19] [Music]
+[1:56:37] Lord you've taken the deer take
+[1:56:48] [Music]
+[1:56:49] the dark
+[1:56:51] [Music]
+[1:57:02] [Music]
+[1:57:14] [Music]
+[1:57:20] [Music]
+[1:57:26] [Music]
+[1:57:33] huh
+[1:57:36] they
+[1:57:41] [Music]
+[1:57:49] Oh
+[1:57:49] [Music]
+[1:57:58] big dog
+[1:57:59] [Music]
+[1:58:10] [Music]
+[1:58:15] [Applause]
+[1:58:15] [Music]
+[1:58:22] gracious Heavenly Father How Great Thou
+[1:58:24] art Lord father want to thank you Lord
+[1:58:27] for your mercy
+[1:58:28] thank you look we will walk victorious
+[1:58:30] yes Lord not by our nobility but by your
+[1:58:33] blood by the power of your blood that
+[1:58:34] you have loosed in this endtime father
+[1:58:36] to us our God yes lord I just pray your
+[1:58:39] just Lord may we ponder upon these
+[1:58:41] things that we've heard today father
+[1:58:43] lord I just pray and be clear Lord God
+[1:58:46] and just may we see Lord what the enemy
+[1:58:49] is doing and maybe withstand him father
+[1:58:51] matter we just say I pray every heart in
+[1:58:53] here there there does I would be SME in
+[1:58:56] my house or serve the Lord father may he
+[1:58:58] grant us your glory Lord Jesus father
+[1:59:01] bless each one here and father we just
+[1:59:03] commit the day into your hands father as
+[1:59:06] you go our separate ways Lord may you
+[1:59:08] just dismiss us with your blessing we
+[1:59:10] pray in Jesus Christ's name Amen
+[1:59:22] he's waiting for me
+[1:59:25] he paid me with his beerus you wash away
+[1:59:31] my sin laurie be to Jesus
+[1:59:37] [Music]
+[1:59:41] Oh glory be to Jesus
+[1:59:46] [Music]
+[1:59:54] he walk the raging seas
+[1:59:59] and it's - don't care
+[2:00:01] [Music]
+[2:00:07] and he died man
+[2:00:10] he came
+[2:00:18] [Music]
+[2:00:28] down by the waters
+[2:00:33] [Music]
+[2:00:37] always bursty and safe
+[2:00:41] stiva
+[2:00:44] baby Jesus moisture on my store
+[2:00:51] Laurie
+[2:00:52] [Music]
+[2:00:56] Oh
+[2:01:00] [Music]
+[2:01:05] Walter AJ
+[2:01:08] and he stood on the desert
+[2:01:16] and
+[2:01:17] [Music]
+[2:01:20] heeey
+[2:01:23] and he
+[2:01:27] [Music]
+[2:01:29] lasting God he walked the walk the
+[2:01:33] raging sea
+[2:01:35] and he stood on cow
+[2:01:40] [Music]
+[2:01:43] and he died with
+[2:01:47] he
+[2:01:51] and he met my
+[2:01:55] [Music]
+[2:02:06] he alone
+[2:02:08] [Music]
+[2:02:16] my
+[2:02:20] [Music]
+[2:02:21] King me
+[2:02:30] my
+[2:02:32] [Music]
+[2:02:47] Oh
+[2:02:49] [Music]
+[2:03:08] and he stood on cow
+[2:03:12] [Music]
+[2:03:16] and he died
+[2:03:18] [Music]
+[2:03:26] [Music]
+[2:03:36] [Music]
+[2:03:53] they should sing down from his glory a
+[2:03:57] living story my god and save you came
+[2:04:05] down from his glow from me
+[2:04:18] [Music]
+[2:04:22] Everly
+[2:04:24] so
+[2:04:28] my god
+[2:04:35] [Music]
+[2:04:49] [Music]
+[2:05:56] [Music]
+[2:05:58] Wow
+[2:06:03] [Music]
+[2:06:24] [Music]
+[2:06:35] Oh
+[2:06:41] [Music]
+[2:06:53] way
+[2:06:55] [Music]
+[2:07:02] [Applause]
+[2:07:03] [Music]
+[2:07:07] [Applause]
+[2:07:08] [Music]
+[2:07:16] [Music]
+[2:07:21] nice
+[2:07:30] [Music]
+[2:07:38] [Music]
+[2:07:48] [Applause]
+[2:07:50] [Music]
+[2:08:01] [Music]
+[2:08:09] hm
+[2:08:12] yes
+[2:08:14] [Music]
+[2:08:24] me
+[2:08:26] [Music]
+[2:08:35] sorry
+[2:08:39] sacrifice love now hurry
+[2:08:47] [Music]
+[2:08:55] [Applause]
+[2:08:56] [Music]
+[2:09:00] Oh
+[2:09:08] [Music]
+[2:09:21] [Applause]
+[2:09:22] [Music]
+[2:09:28] [Music]
+[2:09:35] [Music]
+[2:09:48] [Music]
+[2:09:53] Wow
+[2:10:02] [Music]
+[2:10:03] Hey god bless you pretty honest person
+[2:10:06] Jesus Christ
+[2:10:09] [Music]
+[2:10:23] [Music]
+[2:10:44] [Music]
+[2:11:25] [Music]
+[2:11:38] [Music]
+[2:11:53] [Music]
+[2:14:03] [Music]
+[2:14:14] [Music]
+[2:14:22] [Music]
+[2:14:39] [Music]
+[2:14:45] [Music]
+[2:14:55] [Applause]
+[2:14:56] [Music]
+[2:15:40] [Applause]
+[2:15:47] [Music]
+[2:16:11] [Music]
+[2:16:33] [Music]
+[2:16:47] [Music]
+[2:17:40] [Applause]
+[2:17:41] [Music]
+[2:18:06] [Applause]
+[2:18:08] [Music]
+[2:18:15] [Music]

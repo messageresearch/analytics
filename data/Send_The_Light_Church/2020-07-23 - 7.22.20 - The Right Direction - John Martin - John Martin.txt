@@ -4,13 +4,14 @@ START OF FILE: 2020-07-23 - 7.22.20 - The Right Direction - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2020-07-23
-Title:   7.22.20 - The Right Direction - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SYR9xdXNGCI
+Date:     2020-07-23
+Title:    7.22.20 - The Right Direction - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=SYR9xdXNGCI
 ========================================
 
 TRANSCRIPT

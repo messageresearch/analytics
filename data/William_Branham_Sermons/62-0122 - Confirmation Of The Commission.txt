@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Assembly Of God
-Location: Tempe
-Duration: AZ, 126 min
+Location: Tempe, AZ
+Duration: 126 min
 Source: livingwordbroadcast.org
 DateCode: 62-0122
 

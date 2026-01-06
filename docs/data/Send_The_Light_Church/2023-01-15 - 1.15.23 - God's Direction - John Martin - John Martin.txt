@@ -4,13 +4,14 @@ START OF FILE: 2023-01-15 - 1.15.23 - God's Direction - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-15
-Title:   1.15.23 - God's Direction - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=22DthsSccys
+Date:     2023-01-15
+Title:    1.15.23 - God's Direction - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=22DthsSccys
 ========================================
 
 TRANSCRIPT

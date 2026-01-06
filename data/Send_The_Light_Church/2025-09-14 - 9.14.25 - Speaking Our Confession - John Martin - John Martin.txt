@@ -4,13 +4,14 @@ START OF FILE: 2025-09-14 - 9.14.25 - Speaking Our Confession - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2025-09-14
-Title:   9.14.25 - Speaking Our Confession - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0xyqitkJUw4
+Date:     2025-09-14
+Title:    9.14.25 - Speaking Our Confession - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=0xyqitkJUw4
 ========================================
 
 TRANSCRIPT

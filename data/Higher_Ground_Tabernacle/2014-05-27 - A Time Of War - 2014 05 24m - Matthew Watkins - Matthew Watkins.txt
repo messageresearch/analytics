@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - A Time Of War - 2014 05 24m - Matthew Watkins - Matt
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   A Time Of War - 2014 05 24m - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t4czM559QTQ
+Date:     2014-05-27
+Title:    A Time Of War - 2014 05 24m - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=t4czM559QTQ
 ========================================
 
 Description:

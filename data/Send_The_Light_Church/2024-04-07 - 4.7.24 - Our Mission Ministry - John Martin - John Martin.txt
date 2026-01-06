@@ -4,13 +4,14 @@ START OF FILE: 2024-04-07 - 4.7.24 - Our Mission Ministry - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2024-04-07
-Title:   4.7.24 - Our Mission Ministry - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JKvdYz5YqJ8
+Date:     2024-04-07
+Title:    4.7.24 - Our Mission Ministry - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=JKvdYz5YqJ8
 ========================================
 
 TRANSCRIPT

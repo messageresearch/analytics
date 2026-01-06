@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: United Church
-Location: Dawson Creek
-Duration: BC, 105 min
+Location: Dawson Creek, BC
+Duration: 105 min
 Source: livingwordbroadcast.org
 DateCode: 61-0520
 

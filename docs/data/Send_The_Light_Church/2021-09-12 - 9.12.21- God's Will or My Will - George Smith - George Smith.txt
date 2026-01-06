@@ -4,13 +4,14 @@ START OF FILE: 2021-09-12 - 9.12.21- God's Will or My Will - George Smith - Geor
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-12
-Title:   9.12.21- God's Will or My Will? - George Smith
-Speaker: George Smith
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JhlyEVfJ_4c
+Date:     2021-09-12
+Title:    9.12.21- God's Will or My Will? - George Smith
+Speaker:  George Smith
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=JhlyEVfJ_4c
 ========================================
 
 Description:

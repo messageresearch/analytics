@@ -4,13 +4,14 @@ START OF FILE: 2019-06-05 - Bro Samuel Chesa  A Prisoner for Christ   06052019  
 
 SERMON DETAILS
 ========================================
-Date:    2019-06-05
-Title:   Bro Samuel Chesa | A Prisoner for Christ  | 06/05/2019 | HIGHER GROUND TABERNACLE
-Speaker: Samuel Chesa
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=N-3PataPc7Q
+Date:     2019-06-05
+Title:    Bro Samuel Chesa | A Prisoner for Christ  | 06/05/2019 | HIGHER GROUND TABERNACLE
+Speaker:  Samuel Chesa
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=N-3PataPc7Q
 ========================================
 
 Description:

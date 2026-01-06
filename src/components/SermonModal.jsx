@@ -312,12 +312,16 @@ const SnippetRow = ({ id, fullText, term, terms, matchIndex, index, highlightFn 
   )
 }
 
-export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true, onSaveProgress, resumePosition, relatedSermons = [], onSelectRelated }){
+export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true, onSaveProgress, resumePosition, relatedSermons = [], onSelectRelated, requireConsent = false }){
   const [fullText, setFullText] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [viewMode, setViewMode] = useState('snippets')
   const [mentions, setMentions] = useState([])
   const [videoUrl, setVideoUrl] = useState('')
+  const [hasConsented, setHasConsented] = useState(false)
+  const [consentChecked, setConsentChecked] = useState(false)
+  const [showDownloadConsent, setShowDownloadConsent] = useState(false)
+  const [downloadConsentChecked, setDownloadConsentChecked] = useState(false)
   const contentRef = React.useRef(null)
 
   // Track scroll position for reading progress
@@ -411,8 +415,14 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
       }
       
       setMentions(found);
-      if(found.length===0) setViewMode('full')
-      else {
+      if(found.length===0) {
+        // No matches - would show full transcript, so require consent if enabled
+        if (requireConsent && !hasConsented) {
+          setViewMode('consent')
+        } else {
+          setViewMode('full')
+        }
+      } else {
         if(typeof focusMatchIndex === 'number'){
           setViewMode('snippets')
           setTimeout(()=>{
@@ -469,6 +479,15 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     return parts.map((part, i) => i % 2 === 1 ? <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{part}</span> : part)
   }
 
+  const handleDownloadClick = () => {
+    if (requireConsent) {
+      // Always show download consent when requireConsent is enabled
+      setShowDownloadConsent(true)
+    } else {
+      downloadText()
+    }
+  }
+
   const downloadText = () => { 
     const a = document.createElement('a')
     // Decode then selectively encode only problematic chars (spaces, #)
@@ -479,10 +498,63 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     a.href = encodedPath
     a.download = `${sermon.date} - ${sermon.title}.txt`
     a.click()
+    setShowDownloadConsent(false)
+  }
+
+  // Handle clicking Full Transcript tab with consent requirement
+  const handleFullTranscriptClick = () => {
+    if (requireConsent && !hasConsented) {
+      // Show consent prompt instead of switching view
+      setViewMode('consent')
+    } else {
+      setViewMode('full')
+    }
   }
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
+      {/* Download consent modal */}
+      {showDownloadConsent && (
+        <div className="fixed inset-0 bg-black/40 z-[60] flex items-center justify-center p-4" onClick={(e) => { e.stopPropagation(); setShowDownloadConsent(false); setDownloadConsentChecked(false); }}>
+          <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Download Transcript</h3>
+            <label className="flex items-start gap-3 cursor-pointer mb-3">
+              <input 
+                type="checkbox" 
+                checked={downloadConsentChecked}
+                onChange={(e) => setDownloadConsentChecked(e.target.checked)}
+                className="mt-1 w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+              />
+              <span className="text-sm text-gray-700">
+                I am downloading this transcript for research or verification.
+              </span>
+            </label>
+            <p className="text-xs text-gray-500 mb-2 ml-7">
+              Downloading is provided for research and verification, not redistribution. Please use the source video for the full viewing experience.
+            </p>
+            {videoUrl && (
+              <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-red-600 hover:text-red-700 mb-4 ml-7 flex items-center gap-1 font-medium">
+                ▶ {videoUrl}
+              </a>
+            )}
+            <div className="flex gap-3 justify-end mt-4">
+              <button 
+                onClick={() => { setShowDownloadConsent(false); setDownloadConsentChecked(false); }}
+                className="px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={() => { if (downloadConsentChecked) { setHasConsented(true); downloadText(); } }}
+                disabled={!downloadConsentChecked}
+                className={`px-4 py-2 text-sm font-medium rounded-lg ${downloadConsentChecked ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e=>e.stopPropagation()}>
         <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
           <div className="flex-1 pr-4">
@@ -492,9 +564,33 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
             <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
               <span className="bg-white border px-2 py-0.5 rounded">{sermon.church || sermon.venue}</span>
               <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
-              {sermon.wordCount && (
+              {sermon.location && (
+                <span className="bg-teal-50 text-teal-700 border border-teal-200 px-2 py-0.5 rounded">{sermon.location}</span>
+              )}
+              {sermon.speaker && sermon.speaker !== 'Unknown Speaker' && (
+                <span className="bg-purple-50 text-purple-700 border border-purple-200 px-2 py-0.5 rounded">{sermon.speaker}</span>
+              )}
+              {sermon.type && sermon.type !== 'Service' && (
+                <span className="bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded">{sermon.type}</span>
+              )}
+              {sermon.language && sermon.language !== 'Unknown' && (
+                <span className="bg-gray-100 text-gray-700 border border-gray-200 px-2 py-0.5 rounded">{sermon.language}</span>
+              )}
+              {(sermon.durationMinutes > 0 || sermon.durationHrs > 0) && (
                 <span className="bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded">
-                  ~{Math.round(sermon.wordCount / 200)} min read
+                  {sermon.durationMinutes > 0
+                    ? (sermon.durationMinutes >= 60 
+                        ? `${(sermon.durationMinutes / 60).toFixed(1)} hours` 
+                        : `${sermon.durationMinutes} min`)
+                    : (sermon.videoUrl || sermon.url) 
+                      ? (sermon.durationHrs >= 1 ? `${sermon.durationHrs.toFixed(1)} hrs video` : `${Math.round(sermon.durationHrs * 60)} min video`)
+                      : (sermon.durationHrs >= 1 ? `~${sermon.durationHrs.toFixed(1)} hours` : `~${Math.round(sermon.durationHrs * 60)} min`)
+                  }
+                </span>
+              )}
+              {sermon.wordCount > 0 && (
+                <span className="bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded">
+                  {sermon.wordCount.toLocaleString()} words
                 </span>
               )}
               <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
@@ -505,17 +601,61 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
               </a>
             )}
           </div>
-          <div className="flex gap-2"><button onClick={downloadText} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button><button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button></div>
+          <div className="flex gap-2"><button onClick={handleDownloadClick} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button><button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button></div>
         </div>
         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
           <button onClick={()=>setViewMode('snippets')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length===0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
-          <button onClick={()=>setViewMode('full')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+          <button onClick={handleFullTranscriptClick} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
           {relatedSermons.length > 0 && (
             <button onClick={()=>setViewMode('related')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='related' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="share" size={16} /> Related ({relatedSermons.length})</button>
           )}
         </div>
         <div ref={contentRef} className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
           {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : 
+            viewMode==='consent' ? (
+              <div className="max-w-md mx-auto mt-12">
+                <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-amber-800 mb-4 flex items-center gap-2">
+                    <Icon name="alertCircle" size={20} />
+                    View Full Transcript
+                  </h3>
+                  <label className="flex items-start gap-3 cursor-pointer mb-3">
+                    <input 
+                      type="checkbox" 
+                      checked={consentChecked}
+                      onChange={(e) => setConsentChecked(e.target.checked)}
+                      className="mt-1 w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-sm text-gray-700">
+                      I am accessing this transcript for research or verification.
+                    </span>
+                  </label>
+                  <p className="text-xs text-gray-500 mb-2 ml-7">
+                    Please use the source video for the full viewing experience.
+                  </p>
+                  {videoUrl && (
+                    <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-red-600 hover:text-red-700 mb-5 ml-7 flex items-center gap-1 font-medium">
+                      ▶ {videoUrl}
+                    </a>
+                  )}
+                  <div className="flex gap-3 mt-4">
+                    <button 
+                      onClick={() => setViewMode('snippets')}
+                      className="flex-1 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg border"
+                    >
+                      Back to Context
+                    </button>
+                    <button 
+                      onClick={() => { if (consentChecked) { setHasConsented(true); setViewMode('full'); } }}
+                      disabled={!consentChecked}
+                      className={`flex-1 px-4 py-2 text-sm font-medium rounded-lg ${consentChecked ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
+                    >
+                      View Full Transcript
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) :
             viewMode==='snippets' ? (<div className="max-w-3xl mx-auto space-y-4">{mentions.map((m,i)=><SnippetRow key={i} id={`match-${i}`} fullText={fullText} term={m.term} terms={m.terms} matchIndex={m.index} index={i} highlightFn={highlight} />)}</div>) : 
             viewMode==='related' && relatedSermons.length > 0 ? (
               <div className="max-w-3xl mx-auto">

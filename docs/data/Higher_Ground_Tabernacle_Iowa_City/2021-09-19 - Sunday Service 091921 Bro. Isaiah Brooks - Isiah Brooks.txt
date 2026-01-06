@@ -4,13 +4,14 @@ START OF FILE: 2021-09-19 - Sunday Service 091921 Bro. Isaiah Brooks - Isiah Bro
 
 SERMON DETAILS
 ========================================
-Date:    2021-09-19
-Title:   Sunday Service |09/19/21| Bro. Isaiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=RlrwUejEuvw
+Date:     2021-09-19
+Title:    Sunday Service |09/19/21| Bro. Isaiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=RlrwUejEuvw
 ========================================
 
 Description:

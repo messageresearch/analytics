@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Madison Square Garden
-Location: Phoenix
-Duration: AZ, 87 min
+Location: Phoenix, AZ
+Duration: 87 min
 Source: livingwordbroadcast.org
 DateCode: 60-0304
 

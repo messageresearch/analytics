@@ -4,13 +4,14 @@ START OF FILE: 2020-08-13 - 8.12.20 - Save Yourselves - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-13
-Title:   8.12.20 - Save Yourselves - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wV7UV1HarRY
+Date:     2020-08-13
+Title:    8.12.20 - Save Yourselves - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=wV7UV1HarRY
 ========================================
 
 TRANSCRIPT

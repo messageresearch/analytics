@@ -4,13 +4,14 @@ START OF FILE: 2023-10-19 - 10.18.23 - The Choice Is Yours - Bruce Jackowski - B
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-19
-Title:   10.18.23 - The Choice Is Yours - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=H6ym90TTO_0
+Date:     2023-10-19
+Title:    10.18.23 - The Choice Is Yours - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=H6ym90TTO_0
 ========================================
 
 TRANSCRIPT

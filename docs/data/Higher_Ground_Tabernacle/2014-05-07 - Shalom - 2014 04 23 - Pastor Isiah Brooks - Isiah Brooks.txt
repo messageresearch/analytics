@@ -4,13 +4,14 @@ START OF FILE: 2014-05-07 - Shalom - 2014 04 23 - Pastor Isiah Brooks - Isiah Br
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-07
-Title:   Shalom - 2014 04 23 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zO63aHSo_0Y
+Date:     2014-05-07
+Title:    Shalom - 2014 04 23 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=zO63aHSo_0Y
 ========================================
 
 Description:

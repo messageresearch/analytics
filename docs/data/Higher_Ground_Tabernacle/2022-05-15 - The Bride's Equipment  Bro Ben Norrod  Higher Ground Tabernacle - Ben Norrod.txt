@@ -4,13 +4,14 @@ START OF FILE: 2022-05-15 - The Bride's Equipment  Bro Ben Norrod  Higher Ground
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-15
-Title:   The Bride's Equipment || Bro Ben Norrod | Higher Ground Tabernacle
-Speaker: Ben Norrod
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ItwElVZB3YM
+Date:     2022-05-15
+Title:    The Bride's Equipment || Bro Ben Norrod | Higher Ground Tabernacle
+Speaker:  Ben Norrod
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 2m
+Language: English
+URL:      https://www.youtube.com/watch?v=ItwElVZB3YM
 ========================================
 
 TRANSCRIPT

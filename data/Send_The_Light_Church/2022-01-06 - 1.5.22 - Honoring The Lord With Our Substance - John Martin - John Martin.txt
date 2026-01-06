@@ -4,13 +4,14 @@ START OF FILE: 2022-01-06 - 1.5.22 - Honoring The Lord With Our Substance - John
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-06
-Title:   1.5.22 - Honoring The Lord With Our Substance - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jryErum_F-o
+Date:     2022-01-06
+Title:    1.5.22 - Honoring The Lord With Our Substance - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 55m
+Language: English
+URL:      https://www.youtube.com/watch?v=jryErum_F-o
 ========================================
 
 TRANSCRIPT

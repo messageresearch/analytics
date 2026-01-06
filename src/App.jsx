@@ -101,7 +101,22 @@ export default function App({ onSwitchToBranham }){
   const [expandedChannels, setExpandedChannels] = useState(new Set()) // Track which channels are expanded
   const [channelVideoSearch, setChannelVideoSearch] = useState({}) // Track search term per channel
   const [channelVideoSort, setChannelVideoSort] = useState({}) // Track sort config per channel { key, direction }
-  const [channelTranscriptPreview, setChannelTranscriptPreview] = useState(null) // { video, content } for popup
+  const [channelTranscriptPreview, setChannelTranscriptPreview] = useState(null) // video object for SermonModal popup
+  // Global video search table in Data Sources
+  const [globalVideoSearch, setGlobalVideoSearch] = useState('')
+  const [globalVideoSort, setGlobalVideoSort] = useState({ key: 'date', direction: 'desc' })
+  const [showGlobalVideoTable, setShowGlobalVideoTable] = useState(false)
+  
+  // Search History (localStorage)
+  const [searchHistory, setSearchHistory] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('sermon-search-history') || '[]') } catch { return [] }
+  })
+  useEffect(() => { localStorage.setItem('sermon-search-history', JSON.stringify(searchHistory.slice(0, 20))) }, [searchHistory])
+  const addToSearchHistory = useCallback((term) => {
+    if (!term || term.trim().length < 2) return
+    setSearchHistory(prev => [{ term: term.trim(), timestamp: Date.now() }, ...prev.filter(h => h.term !== term.trim())].slice(0, 20))
+  }, [])
+  
   // Pinned popup for main chart - click to freeze the tooltip
   const [mainChartPinnedBucket, setMainChartPinnedBucket] = useState(null)
   const [mainChartPinnedPosition, setMainChartPinnedPosition] = useState({ x: 0, y: 0 })
@@ -109,7 +124,7 @@ export default function App({ onSwitchToBranham }){
   // preview modal removed: clicking a channel now opens its URL directly
 
   // TABLE
-  const [tableFilters, setTableFilters] = useState({ date:'', church:'', speaker:'', title:'', category:'', mentions:'', rate:'' })
+  const [tableFilters, setTableFilters] = useState({ search:'', date:'', church:'', speaker:'', title:'', category:'', mentions:'', rate:'' })
   const [page, setPage] = useState(1)
   const [sortConfig, setSortConfig] = useState({ key: 'mentionCount', direction: 'desc' })
   const PAGE_SIZE = 50
@@ -186,7 +201,7 @@ export default function App({ onSwitchToBranham }){
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
-                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
+                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename, note: meta && meta.note, playlists: meta && meta.playlists, additional_channels: meta && meta.additional_channels }))
               }
               if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed early', e) }
@@ -215,7 +230,7 @@ export default function App({ onSwitchToBranham }){
             let cList = []
             if(Array.isArray(cData)) cList = cData
             else if(cData && typeof cData === 'object'){
-              cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
+              cList = Object.entries(cData).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename, note: meta && meta.note, playlists: meta && meta.playlists, additional_channels: meta && meta.additional_channels }))
             }
             if(cList.length > 0) setChannels(cList)
           } else {
@@ -227,7 +242,7 @@ export default function App({ onSwitchToBranham }){
               let cList = []
               if(Array.isArray(staticChannels)) cList = staticChannels
               else if(staticChannels && typeof staticChannels === 'object'){
-                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename }))
+                cList = Object.entries(staticChannels).map(([name, meta]) => ({ name, url: meta && (meta.url || meta.link || meta.href || (meta.playlists && meta.playlists[0] && `https://www.youtube.com/playlist?list=${meta.playlists[0].id}`)) || '', filename: meta && meta.filename, note: meta && meta.note, playlists: meta && meta.playlists, additional_channels: meta && meta.additional_channels }))
               }
               if(cList.length>0) setChannels(cList)
             }catch(e){ console.warn('Static channels import failed', e) }
@@ -496,6 +511,7 @@ export default function App({ onSwitchToBranham }){
     // Allow analysis when either a term is provided or a raw regex is provided
     if((!term || !term.trim()) && (!rawRegex || !rawRegex.trim())) return
     lastAnalysisRef.current = { term, regex: rawRegex || null, wholeWords: options.wholeWords !== false }
+    addToSearchHistory(term || rawRegex)
     setIsAnalyzing(true)
     setAnalysisProgress({ status: 'Preparing search...', percent: 0 })
     setMatchedTerms([]) // Clear previous matched terms
@@ -1112,6 +1128,17 @@ export default function App({ onSwitchToBranham }){
 
   const processedTableData = useMemo(()=>{
     let data = filteredData.filter(s => s.hasTranscript !== false)
+    // Global search filter
+    if(tableFilters.search) {
+      const q = tableFilters.search.toLowerCase()
+      data = data.filter(s => 
+        (s.title || '').toLowerCase().includes(q) ||
+        (s.church || '').toLowerCase().includes(q) ||
+        (s.speaker || '').toLowerCase().includes(q) ||
+        (s.date || '').toLowerCase().includes(q) ||
+        (s.type || '').toLowerCase().includes(q)
+      )
+    }
     if(tableFilters.date) data = data.filter(s=>s.date.includes(tableFilters.date))
     if(tableFilters.church) data = data.filter(s=>s.church.toLowerCase().includes(tableFilters.church.toLowerCase()))
     if(tableFilters.speaker) data = data.filter(s=>s.speaker && s.speaker.toLowerCase().includes(tableFilters.speaker.toLowerCase()))
@@ -1176,7 +1203,7 @@ export default function App({ onSwitchToBranham }){
             </div>
             <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-4 w-full md:w-auto">
               {dataDate && <div className="text-xs text-gray-400 text-center md:text-right">Updated: {dataDate}</div>}
-              <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{['dashboard','data','about'].map(tab => (<button key={tab} onClick={()=>setView(tab)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition capitalize flex-1 md:flex-none ${view===tab ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab}</button>))}</div>
+              <div className="flex bg-gray-100 p-1 rounded-lg w-full md:w-auto">{[{key:'dashboard',label:'Search & Stats'},{key:'data',label:'Sources'},{key:'about',label:'About'}].map(tab => (<button key={tab.key} onClick={()=>setView(tab.key)} className={`px-3 md:px-4 py-1.5 rounded-md text-xs md:text-sm font-medium transition flex-1 md:flex-none ${view===tab.key ? 'bg-white text-blue-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}>{tab.label}</button>))}</div>
               {onSwitchToBranham && (
                 <button 
                   onClick={onSwitchToBranham} 
@@ -1235,7 +1262,7 @@ export default function App({ onSwitchToBranham }){
                 <div className="bg-blue-100 rounded-lg p-3 space-y-2">
                   <p className="font-semibold">📈 Understanding the Charts:</p>
                   <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Main Dashboard Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
+                    <li><strong>Main Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
                     <li><strong>Rolling Averages:</strong> The rolling average lines smooth out daily fluctuations to reveal trends. A rising rolling average indicates increasing mention frequency over time.</li>
                     <li><strong>Individual Church Charts:</strong> Each church has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
                   </ul>
@@ -1244,15 +1271,15 @@ export default function App({ onSwitchToBranham }){
                 <div className="bg-blue-100 rounded-lg p-3 space-y-2">
                   <p className="font-semibold">📋 Data Views:</p>
                   <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Dashboard Tab:</strong> Visual charts and statistics. Best for seeing trends and patterns at a glance.</li>
-                    <li><strong>Data Tab:</strong> A searchable, sortable table of all sermons. You can filter, sort by any column, and click rows to view sermon details. Great for finding specific sermons or doing detailed analysis.</li>
+                    <li><strong>Search & Stats Tab:</strong> Visual charts and statistics. Best for seeing trends and patterns at a glance.</li>
+                    <li><strong>Sources Tab:</strong> A searchable, sortable table of all sermons. You can filter, sort by any column, and click rows to view sermon details. Great for finding specific sermons or doing detailed analysis.</li>
                   </ul>
                 </div>
                 
                 <div className="bg-blue-100 rounded-lg p-3 space-y-2">
-                  <p className="font-semibold">📜 Transcript List:</p>
+                  <p className="font-semibold">📜 Transcript Search Results:</p>
                   <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Default View:</strong> The transcript list shows all sermons sorted by highest mention count first, with columns for date, title, church, speaker, mention count, and transcript availability.</li>
+                    <li><strong>Default View:</strong> The transcript search results show all sermons sorted by highest mention count first, with columns for date, title, church, speaker, mention count, and transcript availability.</li>
                     <li><strong>Sorting:</strong> Click any column header to sort by that column. Click again to reverse the sort order. An arrow (▲/▼) indicates the current sort direction.</li>
                     <li><strong>Column Resizing:</strong> Drag the border between column headers to resize columns to your preference.</li>
                     <li><strong>Row Selection:</strong> Click on any row to open a detailed modal showing the full sermon information, a direct link to the YouTube video, and (if available) the full transcript text with your search terms highlighted in yellow.</li>
@@ -1266,7 +1293,7 @@ export default function App({ onSwitchToBranham }){
         </div>
 
         <main className="max-w-7xl mx-auto px-4 mt-8">
-          {view !== 'about' && (
+          {view === 'dashboard' && (
           <div className="bg-white p-6 rounded-xl border shadow-sm mb-8">
             <div className="flex justify-between items-center mb-4">
               <div>
@@ -1306,7 +1333,7 @@ export default function App({ onSwitchToBranham }){
           </div>
           )}
 
-          {view !== 'about' && (
+          {view === 'dashboard' && (
           /* Transcript Coverage by Church - shows ENTIRE database, ignores filters */
           <div className={`bg-white p-4 sm:p-6 rounded-xl border shadow-sm mb-8 ${!coverageExpanded ? 'hover:border-blue-300 transition-colors' : ''}`}>
             <div className="flex flex-col gap-3">
@@ -1744,6 +1771,28 @@ export default function App({ onSwitchToBranham }){
 
           {view === 'dashboard' && stats && (
             <>
+              {/* Search History */}
+              {searchHistory.length > 0 && (
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span className="text-xs text-gray-500">Recent:</span>
+                  {searchHistory.slice(0, 8).map((h, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleAnalysis(h.term, '', null, { wholeWords: true })}
+                      className="px-2 py-0.5 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded text-xs transition"
+                    >
+                      {h.term.length > 20 ? h.term.slice(0, 20) + '...' : h.term}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => { if (confirm('Clear search history?')) setSearchHistory([]) }}
+                    className="text-xs text-gray-400 hover:text-red-500"
+                  >
+                    ✕
+                  </button>
+                </div>
+              )}
+
               <TopicAnalyzer onAnalyze={handleAnalysis} isAnalyzing={isAnalyzing} progress={analysisProgress} initialTerm={DEFAULT_TERM} initialVariations={DEFAULT_VARIATIONS} matchedTerms={matchedTerms} totalTranscripts={transcriptStats.withTranscript} />
               
               {/* No Results Found banner - shows when custom search returns 0 matches */}
@@ -1784,14 +1833,14 @@ export default function App({ onSwitchToBranham }){
                   value={stats.maxMentions} 
                   icon="activity" 
                   color="purple" 
-                  sub={stats.peakSermon ? `Click to view transcript` : 'single sermon max'}
+                  sub={stats.peakSermon ? `Click to view transcript mentions` : 'single sermon max'}
                   onClick={stats.peakSermon ? () => { setSelectedSermon({ ...stats.peakSermon, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(0); } : undefined}
                 />
                 <StatCard title="Total Transcripts" value={transcriptStats.withTranscript.toLocaleString()} icon="download" color="gray" sub="searchable database" />
                 <StatCard title="Videos w/o Transcripts" value={transcriptStats.withoutTranscript.toLocaleString()} icon="alertCircle" color="red" sub="transcripts not available" />
               </div>
 
-              <div className="bg-white p-3 sm:p-6 rounded-xl border shadow-sm h-[350px] sm:h-[500px] mb-6 relative overflow-hidden">
+              <div className="bg-white p-3 sm:p-6 rounded-xl border shadow-sm h-[350px] sm:h-[500px] mb-6 relative">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-2 sm:mb-4">
                   <div>
                     <h3 className="font-bold text-gray-800 flex items-center gap-2 text-sm sm:text-base">
@@ -1827,12 +1876,15 @@ export default function App({ onSwitchToBranham }){
                 <ResponsiveContainer width="100%" height="85%">
                   <ComposedChart 
                     data={aggregatedChartData}
-                    onClick={(e) => {
+                    onClick={(e, _, event) => {
                       if (e && e.activePayload && e.activePayload[0]) {
                         const bucket = aggregatedChartData.find(d => d.timestamp === e.activePayload[0].payload.timestamp)
                         if (bucket) {
                           setMainChartPinnedBucket(bucket)
-                          setMainChartPinnedPosition({ x: e.chartX || 200, y: e.chartY || 100 })
+                          // Use mouse event coordinates for fixed positioning
+                          const mouseX = event?.clientX || (e.chartX + 100)
+                          const mouseY = event?.clientY || (e.chartY + 200)
+                          setMainChartPinnedPosition({ x: mouseX, y: mouseY })
                         }
                       }
                     }}
@@ -1890,11 +1942,11 @@ export default function App({ onSwitchToBranham }){
                 {mainChartPinnedBucket && (
                   <div 
                     ref={mainChartPinnedRef}
-                    className="fixed sm:absolute inset-x-2 sm:inset-x-auto bottom-2 sm:bottom-auto bg-white rounded-xl shadow-2xl border border-gray-200 sm:w-96 max-h-[60vh] sm:max-h-[400px] flex flex-col z-50"
-                    style={{ 
-                      left: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.min(mainChartPinnedPosition.x + 60, window.innerWidth - 450) : undefined, 
-                      top: typeof window !== 'undefined' && window.innerWidth >= 640 ? Math.max(20, Math.min(mainChartPinnedPosition.y, 300)) : undefined
-                    }}
+                    className="fixed inset-x-2 sm:inset-x-auto bottom-2 sm:bottom-auto bg-white rounded-xl shadow-2xl border border-gray-200 sm:w-96 max-h-[60vh] sm:max-h-[400px] flex flex-col z-50"
+                    style={typeof window !== 'undefined' && window.innerWidth >= 640 ? { 
+                      left: Math.min(Math.max(20, mainChartPinnedPosition.x + 15), window.innerWidth - 420),
+                      top: Math.min(Math.max(20, mainChartPinnedPosition.y - 50), window.innerHeight - 450)
+                    } : undefined}
                   >
                     <div className="p-4 border-b border-gray-100">
                       <div className="flex justify-between items-start">
@@ -1943,23 +1995,22 @@ export default function App({ onSwitchToBranham }){
                         )}
                       </div>
                     </div>
-                    <div className="text-xs font-medium text-gray-600 px-4 pt-3 pb-2">Click a sermon to view transcript:</div>
-                    <div className="flex-1 overflow-auto px-3 pb-3">
-                      <div className="space-y-2">
+                    <div className="text-xs font-medium text-gray-600 px-3 pt-2 pb-1">Click a sermon to view transcript:</div>
+                    <div className="flex-1 overflow-auto px-2 pb-2">
+                      <div className="space-y-1">
                         {[...(mainChartPinnedBucket.sermons || [])].sort((a,b) => (b.mentionCount || 0) - (a.mentionCount || 0)).map((s,i)=> (
                           <button 
                             key={s.id || i}
                             onClick={()=>{ setSelectedSermon({ ...s, searchTerm: activeRegex || activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term) || null, wholeWords: lastAnalysisRef.current?.wholeWords !== false }); setSelectedSermonFocus(0); setMainChartPinnedBucket(null) }} 
-                            className="w-full text-left p-3 bg-gray-50 rounded-lg border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all group"
+                            className="w-full text-left px-2 py-1.5 bg-gray-50 rounded border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all group"
                           >
-                            <div className="font-medium text-gray-900 group-hover:text-blue-600 line-clamp-2">{s.title || 'Untitled'}</div>
-                            <div className="flex justify-between items-center mt-2 text-xs">
-                              <span className="text-gray-500">{s.church || 'Unknown'}</span>
-                              <span className="text-gray-400">{new Date(s.timestamp).toLocaleDateString()}</span>
-                            </div>
-                            <div className="flex justify-between items-center mt-1 text-xs">
-                              <span className="text-blue-600 font-medium">{s.mentionCount || 0} mentions</span>
-                              {s.durationHrs && <span className="text-gray-400">{s.durationHrs.toFixed(1)} hrs</span>}
+                            <div className="text-sm font-medium text-gray-900 group-hover:text-blue-600 line-clamp-1">{s.title || 'Untitled'}</div>
+                            <div className="flex justify-between items-center text-xs text-gray-500">
+                              <span className="truncate max-w-[140px]">{s.church || 'Unknown'}</span>
+                              <div className="flex items-center gap-2 shrink-0">
+                                <span className="text-blue-600 font-medium">{s.mentionCount || 0}</span>
+                                <span className="text-gray-400">{new Date(s.timestamp).toLocaleDateString()}</span>
+                              </div>
                             </div>
                           </button>
                         ))}
@@ -1995,13 +2046,34 @@ export default function App({ onSwitchToBranham }){
                 )}
               </div>
               <div className="bg-white rounded-xl border shadow-sm mb-8 p-4 sm:p-6 overflow-x-auto">
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
-                  <h3 className="font-bold text-gray-800">Transcript List ({processedTableData.length.toLocaleString()})</h3>
-                  {(customCounts && (activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term))) ? (
-                    <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded font-medium">Sorted by mentions for: <span className="font-semibold">{activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term)}</span></div>
-                  ) : (sortConfig && sortConfig.key === 'mentionCount' && sortConfig.direction === 'desc') ? (
-                    <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded font-medium">Sorted by mentions (high → low)</div>
-                  ) : null}
+                <div className="flex flex-col gap-3 mb-4">
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <h3 className="font-bold text-gray-800">Transcript Search Results ({processedTableData.length.toLocaleString()})</h3>
+                    {(customCounts && (activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term))) ? (
+                      <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded font-medium">Sorted by mentions for: <span className="font-semibold">{activeTerm || (lastAnalysisRef.current && lastAnalysisRef.current.term)}</span></div>
+                    ) : (sortConfig && sortConfig.key === 'mentionCount' && sortConfig.direction === 'desc') ? (
+                      <div className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded font-medium">Sorted by mentions (high → low)</div>
+                    ) : null}
+                  </div>
+                  {/* Table search */}
+                  <div className="relative max-w-md">
+                    <Icon name="search" size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                    <input
+                      type="text"
+                      placeholder="Search table by title, church, speaker, date..."
+                      value={tableFilters.search || ''}
+                      onChange={(e) => setTableFilters(prev => ({ ...prev, search: e.target.value }))}
+                      className="w-full pl-9 pr-8 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                    {tableFilters.search && (
+                      <button 
+                        onClick={() => setTableFilters(prev => ({ ...prev, search: '' }))}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                      >
+                        <Icon name="x" size={14} />
+                      </button>
+                    )}
+                  </div>
                 </div>
                   <VirtualizedTable
                   columns={[
@@ -2012,21 +2084,19 @@ export default function App({ onSwitchToBranham }){
                     { key: 'type', label: 'Type', width: '100px', filterKey: 'category', hideOnMobile: true, render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '90px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '70px', filterKey: 'rate', filterType: 'number', centered: true, hideOnMobile: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'download', label: 'Download', width: '90px', hideOnMobile: true, render: (r) => r.path ? (() => {
-                      const baseUrl = import.meta.env.BASE_URL || '/'
-                      const decodedPath = decodeURIComponent(r.path)
-                      const encodedPath = decodedPath.split('/').map(part => part.replace(/ /g, '%20').replace(/#/g, '%23')).join('/')
-                      return (
-                        <a 
-                          href={`${baseUrl}${encodedPath}`}
-                          download
-                          onClick={(e) => e.stopPropagation()}
-                          className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
-                        >
-                          <Icon name="download" size={12} /> TXT
-                        </a>
-                      )
-                    })() : '—' }
+                    { key: 'wordCount', label: 'Words', width: '80px', hideOnMobile: true, render: (r) => (<span className="text-xs text-gray-500">{r.wordCount?.toLocaleString() || '—'}</span>) },
+                    { key: 'url', label: 'URL', width: '60px', centered: true, render: (r) => (r.url || r.videoUrl) ? (
+                      <a 
+                        href={r.url || r.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded inline-flex"
+                        title="Open YouTube video"
+                      >
+                        <Icon name="externalLink" size={14} />
+                      </a>
+                    ) : '—' }
                   ]}
                   data={processedTableData}
                   rowHeight={64}
@@ -2043,6 +2113,7 @@ export default function App({ onSwitchToBranham }){
 
           {view === 'data' && (
             <div className="grid grid-cols-1 gap-8">
+              {/* COMMENTED OUT: Download Data section - can be re-enabled later
               <div className="bg-white p-8 rounded-xl border shadow-sm">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2"><Icon name="download" /> Download Data</h3>
                 <div className="space-y-3">
@@ -2050,6 +2121,7 @@ export default function App({ onSwitchToBranham }){
                   <button onClick={()=>handleCustomDownload(filteredData.filter(s => s.hasTranscript !== false))} disabled={isZipping} className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition disabled:opacity-50">{isZipping ? <span>{zipProgress}</span> : <span>Download Transcripts For Filtered View ({filteredData.filter(s => s.hasTranscript !== false).length.toLocaleString()} files)</span>}</button>
                 </div>
               </div>
+              */}
               <div className="bg-white p-4 sm:p-8 rounded-xl border shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
                   <div>
@@ -2067,8 +2139,8 @@ export default function App({ onSwitchToBranham }){
                       <option value="date_asc">Latest Date ↑</option>
                     </select>
                     <button onClick={()=>{
-                      const rows = channels.map(c=>([c.name || '', c.url || '', c.filename || '']))
-                      const header = ['name','url','filename']
+                      const rows = channels.map(c=>([c.name || '', c.url || '']))
+                      const header = ['name','url']
                       const lines = [header].concat(rows).map(cols => cols.map(v => `"${(''+ (v||'')).replace(/"/g,'""')}"`).join(','))
                       // Use CRLF and BOM for better Excel compatibility
                       const csvText = '\uFEFF' + lines.join('\r\n')
@@ -2129,6 +2201,221 @@ export default function App({ onSwitchToBranham }){
                     }} className="hidden sm:inline-block text-sm bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded">{isExportingMaster? 'Building…' : 'Export Master'}</button>
                   </div>
                 </div>
+
+                {/* Global Video Search Table */}
+                <div className="mb-6">
+                  <button
+                    onClick={() => setShowGlobalVideoTable(!showGlobalVideoTable)}
+                    className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-800 mb-3"
+                  >
+                    <Icon name={showGlobalVideoTable ? 'chevronDown' : 'chevronRight'} size={16} />
+                    <Icon name="search" size={14} />
+                    {showGlobalVideoTable ? 'Hide' : 'Open'} Searchable Video Database ({rawData.length.toLocaleString()} videos across all channels)
+                  </button>
+                  
+                  {showGlobalVideoTable && (
+                    <div className="border rounded-lg p-4 bg-gray-50">
+                      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+                        <div className="relative flex-1">
+                          <Icon name="search" size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                          <input
+                            type="text"
+                            placeholder="Filter by title, speaker, church, or date..."
+                            value={globalVideoSearch}
+                            onChange={(e) => setGlobalVideoSearch(e.target.value)}
+                            className="w-full pl-9 pr-8 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          />
+                          {globalVideoSearch && (
+                            <button
+                              onClick={() => setGlobalVideoSearch('')}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                            >
+                              <Icon name="x" size={14} />
+                            </button>
+                          )}
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          Filters metadata only. Use the search engine on the Search & Stats tab to search transcript content.
+                        </div>
+                      </div>
+
+                      {(() => {
+                        const searchQ = globalVideoSearch.trim().toLowerCase()
+                        let globalFilteredVideos = rawData.slice()
+                        
+                        // Filter by search query
+                        if (searchQ) {
+                          globalFilteredVideos = globalFilteredVideos.filter(v => 
+                            (v.title || '').toLowerCase().includes(searchQ) ||
+                            (v.speaker || '').toLowerCase().includes(searchQ) ||
+                            (v.church || '').toLowerCase().includes(searchQ) ||
+                            (v.date || '').toLowerCase().includes(searchQ)
+                          )
+                        }
+                        
+                        // Sort
+                        const gSortCfg = globalVideoSort
+                        globalFilteredVideos.sort((a, b) => {
+                          let aVal = a[gSortCfg.key] || ''
+                          let bVal = b[gSortCfg.key] || ''
+                          if (gSortCfg.key === 'date') {
+                            // Sort unknown dates to end
+                            if (!aVal || aVal === 'Unknown Date') aVal = '0000-00-00'
+                            if (!bVal || bVal === 'Unknown Date') bVal = '0000-00-00'
+                          }
+                          if (gSortCfg.key === 'status') {
+                            aVal = a.hasTranscript !== false ? 'yes' : 'no'
+                            bVal = b.hasTranscript !== false ? 'yes' : 'no'
+                          }
+                          if (gSortCfg.key === 'wordCount') {
+                            aVal = a.wordCount || 0
+                            bVal = b.wordCount || 0
+                            const cmp = aVal - bVal
+                            return gSortCfg.direction === 'desc' ? -cmp : cmp
+                          }
+                          const cmp = String(aVal).localeCompare(String(bVal))
+                          return gSortCfg.direction === 'desc' ? -cmp : cmp
+                        })
+                        
+                        // Limit to 100 results for performance
+                        const displayLimit = 100
+                        const hasMore = globalFilteredVideos.length > displayLimit
+                        const displayVideos = globalFilteredVideos.slice(0, displayLimit)
+                        
+                        return (
+                          <>
+                            <div className="text-xs text-gray-500 mb-2">
+                              {searchQ ? (
+                                <>Showing {displayVideos.length.toLocaleString()}{hasMore ? '+' : ''} of {globalFilteredVideos.length.toLocaleString()} matching videos</>
+                              ) : (
+                                <>Showing {displayVideos.length.toLocaleString()} of {rawData.length.toLocaleString()} videos (use search to filter)</>
+                              )}
+                            </div>
+                            <div className="max-h-96 overflow-y-auto border rounded bg-white">
+                              <table className="w-full text-xs">
+                                <thead className="sticky top-0 bg-gray-50 border-b z-10">
+                                  <tr className="text-gray-600 text-left">
+                                    <th 
+                                      className="py-2 px-2 font-medium w-24 cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'date', 
+                                        direction: prev.key === 'date' && prev.direction === 'desc' ? 'asc' : 'desc' 
+                                      }))}
+                                    >
+                                      Date {gSortCfg.key === 'date' && <span className="ml-1">{gSortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                    </th>
+                                    <th 
+                                      className="py-2 px-2 font-medium w-36 hidden sm:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'church', 
+                                        direction: prev.key === 'church' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Church {gSortCfg.key === 'church' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="py-2 px-2 font-medium cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'title', 
+                                        direction: prev.key === 'title' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Title {gSortCfg.key === 'title' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="py-2 px-2 font-medium w-28 hidden md:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'speaker', 
+                                        direction: prev.key === 'speaker' && prev.direction === 'asc' ? 'desc' : 'asc' 
+                                      }))}
+                                    >
+                                      Speaker {gSortCfg.key === 'speaker' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                    </th>
+                                    <th 
+                                      className="py-2 px-2 font-medium w-20 text-right hidden lg:table-cell cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'wordCount', 
+                                        direction: prev.key === 'wordCount' && prev.direction === 'desc' ? 'asc' : 'desc' 
+                                      }))}
+                                    >
+                                      Words {gSortCfg.key === 'wordCount' && <span className="ml-1">{gSortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                    </th>
+                                    <th 
+                                      className="py-2 px-2 font-medium w-20 text-center cursor-pointer hover:bg-gray-100 select-none"
+                                      onClick={() => setGlobalVideoSort(prev => ({ 
+                                        key: 'status', 
+                                        direction: prev.key === 'status' && prev.direction === 'desc' ? 'asc' : 'desc' 
+                                      }))}
+                                    >
+                                      Transcript {gSortCfg.key === 'status' && <span className="ml-1">{gSortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
+                                    </th>
+                                    <th className="py-2 px-2 font-medium w-16 text-center">URL</th>
+                                  </tr>
+                                </thead>
+                                <tbody className="divide-y divide-gray-100">
+                                  {displayVideos.length === 0 ? (
+                                    <tr>
+                                      <td colSpan="7" className="py-8 text-center text-gray-500">
+                                        No videos match your search.
+                                      </td>
+                                    </tr>
+                                  ) : displayVideos.map((video, vi) => (
+                                    <tr 
+                                      key={vi} 
+                                      className={`hover:bg-gray-50 ${video.hasTranscript !== false && video.path ? 'cursor-pointer' : ''}`}
+                                      onClick={() => {
+                                        if (video.hasTranscript !== false && video.path) {
+                                          setChannelTranscriptPreview(video)
+                                        }
+                                      }}
+                                    >
+                                      <td className="py-2 px-2 text-gray-600 whitespace-nowrap">{video.date || 'Unknown'}</td>
+                                      <td className="py-2 px-2 text-gray-600 truncate hidden sm:table-cell max-w-[120px]" title={video.church}>{video.church || '—'}</td>
+                                      <td className="py-2 px-2 text-gray-800 truncate max-w-[150px] sm:max-w-[200px]" title={video.title}>{video.title || 'Untitled'}</td>
+                                      <td className="py-2 px-2 text-gray-600 truncate hidden md:table-cell max-w-[100px]" title={video.speaker}>{video.speaker || '—'}</td>
+                                      <td className="py-2 px-2 text-right text-gray-500 hidden lg:table-cell">{video.wordCount?.toLocaleString() || '—'}</td>
+                                      <td className="py-2 px-2 text-center">
+                                        {video.hasTranscript !== false ? (
+                                          <span className="inline-flex items-center gap-1 text-green-600" title="Transcript available - click row to view">
+                                            <Icon name="check" size={12} /> <span className="hidden sm:inline text-[10px]">Yes</span>
+                                          </span>
+                                        ) : (
+                                          <span className="inline-flex items-center gap-1 text-red-400" title="No transcript">
+                                            <Icon name="x" size={12} /> <span className="hidden sm:inline text-[10px]">No</span>
+                                          </span>
+                                        )}
+                                      </td>
+                                      <td className="py-2 px-2 text-center">
+                                        {(video.url || video.videoUrl) && (
+                                          <a
+                                            href={video.url || video.videoUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                            className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded inline-flex"
+                                            title="Open YouTube video"
+                                          >
+                                            <Icon name="externalLink" size={14} />
+                                          </a>
+                                        )}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                            {hasMore && (
+                              <div className="text-xs text-gray-500 mt-2 text-center">
+                                Showing first {displayLimit} results. Use search to narrow down.
+                              </div>
+                            )}
+                          </>
+                        )
+                      })()}
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 pr-2">
                   {channels.length === 0 && <li className="text-sm text-gray-500">No channels loaded.</li>}
                   {(() => {
@@ -2227,6 +2514,29 @@ export default function App({ onSwitchToBranham }){
                               <div className="min-w-0 flex-1 cursor-pointer hover:bg-gray-100 rounded px-2 -mx-2" onClick={()=>{ const target = c.url || c.link || c.href || '#'; if(target && target !== '#'){ window.open(target, '_blank', 'noopener'); } else { alert('No channel URL available'); } }}>
                                 <div className="font-medium text-gray-700">{name}</div>
                                 <div className="text-xs text-blue-600 truncate"><a href={href} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>{href}</a></div>
+                                {c.note && (
+                                  <div className="text-xs text-amber-600 mt-1 flex items-start gap-1">
+                                    <Icon name="info" size={12} className="mt-0.5 flex-shrink-0" />
+                                    <span>{c.note}</span>
+                                  </div>
+                                )}
+                                {(c.playlists || c.additional_channels) && (
+                                  <div className="text-xs text-gray-500 mt-1 space-y-0.5">
+                                    {c.playlists && c.playlists.map((p, idx) => (
+                                      <div key={`pl-${idx}`} className="flex items-center gap-1">
+                                        <span className="text-gray-400">📋</span>
+                                        <a href={p.url || `https://www.youtube.com/playlist?list=${p.id}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline" onClick={e => e.stopPropagation()}>{p.name || 'Playlist'}</a>
+                                      </div>
+                                    ))}
+                                    {c.additional_channels && c.additional_channels.map((ch, idx) => (
+                                      <div key={`ch-${idx}`} className="flex items-center gap-1">
+                                        <span className="text-gray-400">📺</span>
+                                        <a href={ch.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline" onClick={e => e.stopPropagation()}>{ch.name || 'Additional Channel'}</a>
+                                        {ch.filter && <span className="text-gray-400 text-[10px]">(filtered)</span>}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
                               <div className="flex items-center justify-between sm:justify-end gap-3 flex-shrink-0">
                                 <div className="sm:text-right">
@@ -2247,9 +2557,27 @@ export default function App({ onSwitchToBranham }){
                                   href={c.url || c.link || c.href || '#'} 
                                   target="_blank" 
                                   rel="noopener noreferrer"
-                                  onClick={(e) => { e.stopPropagation(); if(!(c.url || c.link || c.href)) { e.preventDefault(); alert('No channel URL available'); } }}
+                                  onClick={(e) => { 
+                                    e.stopPropagation()
+                                    e.preventDefault()
+                                    // Collect all URLs to open
+                                    const urls = []
+                                    if (c.url || c.link || c.href) urls.push(c.url || c.link || c.href)
+                                    if (c.playlists) c.playlists.forEach(p => {
+                                      const pUrl = p.url || (p.id && `https://www.youtube.com/playlist?list=${p.id}`)
+                                      if (pUrl && !urls.includes(pUrl)) urls.push(pUrl)
+                                    })
+                                    if (c.additional_channels) c.additional_channels.forEach(ch => {
+                                      if (ch.url && !urls.includes(ch.url)) urls.push(ch.url)
+                                    })
+                                    if (urls.length === 0) {
+                                      alert('No channel URL available')
+                                    } else {
+                                      urls.forEach(url => window.open(url, '_blank', 'noopener'))
+                                    }
+                                  }}
                                   className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded transition"
-                                  title="Open YouTube channel"
+                                  title={c.playlists || c.additional_channels ? 'Open all YouTube sources' : 'Open YouTube channel'}
                                 >
                                   <Icon name="externalLink" size={18} />
                                 </a>
@@ -2282,6 +2610,7 @@ export default function App({ onSwitchToBranham }){
                                           </button>
                                         )}
                                       </div>
+                                      {/* COMMENTED OUT: Download All button - bulk download disabled for copyright reasons
                                       <button
                                         onClick={(e) => {
                                           e.stopPropagation()
@@ -2294,6 +2623,7 @@ export default function App({ onSwitchToBranham }){
                                         <Icon name="download" size={14} />
                                         <span>{isZipping ? 'Downloading...' : `Download All (${videosWithTranscripts.length})`}</span>
                                       </button>
+                                      */}
                                     </div>
                                     
                                     {/* Video table */}
@@ -2350,7 +2680,7 @@ export default function App({ onSwitchToBranham }){
                                             >
                                               Transcript {sortCfg.key === 'status' && <span className="ml-1">{sortCfg.direction === 'desc' ? '↓' : '↑'}</span>}
                                             </th>
-                                            <th className="py-2 px-2 font-medium w-24 text-center">Actions</th>
+                                            <th className="py-2 px-2 font-medium w-16 text-center">URL</th>
                                           </tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-100">
@@ -2361,13 +2691,21 @@ export default function App({ onSwitchToBranham }){
                                               </td>
                                             </tr>
                                           ) : filteredVideos.map((video, vi) => (
-                                            <tr key={vi} className="hover:bg-gray-50">
+                                            <tr 
+                                              key={vi} 
+                                              className={`hover:bg-gray-50 ${video.hasTranscript !== false && video.path ? 'cursor-pointer' : ''}`}
+                                              onClick={() => {
+                                                if (video.hasTranscript !== false && video.path) {
+                                                  setChannelTranscriptPreview(video)
+                                                }
+                                              }}
+                                            >
                                               <td className="py-2 px-2 text-gray-600 whitespace-nowrap">{video.date || 'Unknown'}</td>
                                               <td className="py-2 px-2 text-gray-800 truncate max-w-[150px] sm:max-w-[250px]" title={video.title}>{video.title || 'Untitled'}</td>
                                               <td className="py-2 px-2 text-gray-600 truncate hidden sm:table-cell">{video.speaker || '—'}</td>
                                               <td className="py-2 px-2 text-center">
                                                 {video.hasTranscript !== false ? (
-                                                  <span className="inline-flex items-center gap-1 text-green-600" title="Transcript available">
+                                                  <span className="inline-flex items-center gap-1 text-green-600" title="Transcript available - click row to view">
                                                     <Icon name="check" size={12} /> <span className="hidden sm:inline text-[10px]">Yes</span>
                                                   </span>
                                                 ) : (
@@ -2376,77 +2714,19 @@ export default function App({ onSwitchToBranham }){
                                                   </span>
                                                 )}
                                               </td>
-                                              <td className="py-2 px-2">
-                                                <div className="flex items-center justify-center gap-1">
-                                                  {/* View transcript popup */}
-                                                  {video.hasTranscript !== false && video.path && (
-                                                    <button
-                                                      onClick={async (e) => {
-                                                        e.stopPropagation()
-                                                        try {
-                                                          const apiPrefix = import.meta.env.BASE_URL || '/'
-                                                          const res = await fetch(apiPrefix + video.path)
-                                                          if (res.ok) {
-                                                            const content = await res.text()
-                                                            setChannelTranscriptPreview({ video, content })
-                                                          } else {
-                                                            alert('Could not load transcript')
-                                                          }
-                                                        } catch (err) {
-                                                          alert('Error loading transcript: ' + err.message)
-                                                        }
-                                                      }}
-                                                      className="p-1 text-blue-500 hover:text-blue-700 hover:bg-blue-50 rounded"
-                                                      title="View transcript"
-                                                    >
-                                                      <Icon name="eye" size={14} />
-                                                    </button>
-                                                  )}
-                                                  {/* YouTube video link */}
-                                                  {(video.url || video.videoUrl) && (
-                                                    <a
-                                                      href={video.url || video.videoUrl}
-                                                      target="_blank"
-                                                      rel="noopener noreferrer"
-                                                      onClick={(e) => e.stopPropagation()}
-                                                      className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded inline-flex"
-                                                      title="Open YouTube video"
-                                                    >
-                                                      <Icon name="externalLink" size={14} />
-                                                    </a>
-                                                  )}
-                                                  {/* Download individual transcript */}
-                                                  {video.hasTranscript !== false && video.path && (
-                                                    <button
-                                                      onClick={async (e) => {
-                                                        e.stopPropagation()
-                                                        try {
-                                                          const apiPrefix = import.meta.env.BASE_URL || '/'
-                                                          const res = await fetch(apiPrefix + video.path)
-                                                          if (res.ok) {
-                                                            const content = await res.text()
-                                                            const filename = video.path.split('/').pop() || 'transcript.txt'
-                                                            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
-                                                            const url = URL.createObjectURL(blob)
-                                                            const a = document.createElement('a')
-                                                            a.href = url
-                                                            a.download = filename
-                                                            a.click()
-                                                            URL.revokeObjectURL(url)
-                                                          } else {
-                                                            alert('Could not download transcript')
-                                                          }
-                                                        } catch (err) {
-                                                          alert('Error downloading: ' + err.message)
-                                                        }
-                                                      }}
-                                                      className="p-1 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded"
-                                                      title="Download transcript"
-                                                    >
-                                                      <Icon name="download" size={14} />
-                                                    </button>
-                                                  )}
-                                                </div>
+                                              <td className="py-2 px-2 text-center">
+                                                {(video.url || video.videoUrl) && (
+                                                  <a
+                                                    href={video.url || video.videoUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="p-1 text-red-500 hover:text-red-700 hover:bg-red-50 rounded inline-flex"
+                                                    title="Open YouTube video"
+                                                  >
+                                                    <Icon name="externalLink" size={14} />
+                                                  </a>
+                                                )}
                                               </td>
                                             </tr>
                                           ))}
@@ -2464,7 +2744,7 @@ export default function App({ onSwitchToBranham }){
                                         )}
                                       </div>
                                       <div className="text-gray-400">
-                                        Click column headers to sort • Use search to filter
+                                        Click row to view transcript • Click column headers to sort
                                       </div>
                                     </div>
                                   </div>
@@ -2479,69 +2759,13 @@ export default function App({ onSwitchToBranham }){
                 </ul>
                 {/* channel preview modal removed — clicking opens channel URL in a new tab */}
                 
-                {/* Transcript preview popup for expanded channel videos */}
+                {/* Transcript preview popup for expanded channel videos - uses SermonModal for consistent UX */}
                 {channelTranscriptPreview && (
-                  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setChannelTranscriptPreview(null)}>
-                    <div 
-                      className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[85vh] flex flex-col"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {/* Header */}
-                      <div className="flex items-start justify-between p-4 border-b bg-gray-50 rounded-t-lg">
-                        <div className="min-w-0 flex-1 pr-4">
-                          <h3 className="font-bold text-gray-800 truncate">{channelTranscriptPreview.video.title || 'Transcript'}</h3>
-                          <div className="flex flex-wrap gap-2 mt-1 text-xs text-gray-500">
-                            {channelTranscriptPreview.video.date && <span>{channelTranscriptPreview.video.date}</span>}
-                            {channelTranscriptPreview.video.speaker && <span>• {channelTranscriptPreview.video.speaker}</span>}
-                            {channelTranscriptPreview.video.church && <span>• {channelTranscriptPreview.video.church.replace(/_/g, ' ')}</span>}
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          {/* Download button */}
-                          <button
-                            onClick={() => {
-                              const filename = channelTranscriptPreview.video.path?.split('/').pop() || 'transcript.txt'
-                              const blob = new Blob([channelTranscriptPreview.content], { type: 'text/plain;charset=utf-8' })
-                              const url = URL.createObjectURL(blob)
-                              const a = document.createElement('a')
-                              a.href = url
-                              a.download = filename
-                              a.click()
-                              URL.revokeObjectURL(url)
-                            }}
-                            className="p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-200 rounded transition"
-                            title="Download transcript"
-                          >
-                            <Icon name="download" size={18} />
-                          </button>
-                          {/* YouTube link */}
-                          {(channelTranscriptPreview.video.url || channelTranscriptPreview.video.videoUrl) && (
-                            <button
-                              onClick={() => window.open(channelTranscriptPreview.video.url || channelTranscriptPreview.video.videoUrl, '_blank', 'noopener')}
-                              className="p-2 text-red-500 hover:text-red-700 hover:bg-red-50 rounded transition"
-                              title="Watch on YouTube"
-                            >
-                              <Icon name="video" size={18} />
-                            </button>
-                          )}
-                          {/* Close button */}
-                          <button
-                            onClick={() => setChannelTranscriptPreview(null)}
-                            className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded transition"
-                            title="Close"
-                          >
-                            <Icon name="x" size={18} />
-                          </button>
-                        </div>
-                      </div>
-                      {/* Content */}
-                      <div className="flex-1 overflow-y-auto p-4">
-                        <pre className="whitespace-pre-wrap text-sm text-gray-700 font-sans leading-relaxed">
-                          {channelTranscriptPreview.content}
-                        </pre>
-                      </div>
-                    </div>
-                  </div>
+                  <SermonModal 
+                    sermon={channelTranscriptPreview} 
+                    onClose={() => setChannelTranscriptPreview(null)} 
+                    requireConsent={true}
+                  />
                 )}
               </div>
             </div>
@@ -2618,7 +2842,7 @@ export default function App({ onSwitchToBranham }){
             This is a non-commercial journalistic research project. All use of copyrighted material is claimed as fair use for purposes of analysis, reporting, and commentary.
           </div>
         </footer>
-        {selectedSermon && <SermonModal sermon={selectedSermon} focusMatchIndex={selectedSermonFocus} wholeWords={selectedSermon.wholeWords !== false} onClose={()=>{ setSelectedSermon(null); setSelectedSermonFocus(0); }} />}
+        {selectedSermon && <SermonModal sermon={selectedSermon} focusMatchIndex={selectedSermonFocus} wholeWords={selectedSermon.wholeWords !== false} onClose={()=>{ setSelectedSermon(null); setSelectedSermonFocus(0); }} requireConsent={true} />}
         {expandedChart && (()=>{
           // Re-resolve the chart from latest channelTrends so mention counts reflect current `customCounts`.
           // Normalize church names to avoid mismatch due to punctuation/casing/whitespace.

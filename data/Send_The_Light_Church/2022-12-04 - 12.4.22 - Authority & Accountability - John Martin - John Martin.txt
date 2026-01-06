@@ -4,13 +4,14 @@ START OF FILE: 2022-12-04 - 12.4.22 - Authority & Accountability - John Martin -
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-04
-Title:   12.4.22 - Authority & Accountability - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=mvz2qouFTNs
+Date:     2022-12-04
+Title:    12.4.22 - Authority & Accountability - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 7m
+Language: English
+URL:      https://www.youtube.com/watch?v=mvz2qouFTNs
 ========================================
 
 TRANSCRIPT

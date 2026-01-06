@@ -4,13 +4,14 @@ START OF FILE: 2022-06-26 - 6.26.22 - Chosen Soldier - John Martin - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-26
-Title:   6.26.22 - Chosen Soldier - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=xjRyz2rxbxc
+Date:     2022-06-26
+Title:    6.26.22 - Chosen Soldier - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 15m
+Language: English
+URL:      https://www.youtube.com/watch?v=xjRyz2rxbxc
 ========================================
 
 TRANSCRIPT

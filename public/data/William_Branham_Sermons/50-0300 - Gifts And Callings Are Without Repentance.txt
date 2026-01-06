@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Carlsbad Air Base Recreation Center
-Location: Carlsbad
-Duration: NM, 49 min
+Location: Carlsbad, NM
+Duration: 49 min
 Source: livingwordbroadcast.org
 DateCode: 50-0300
 

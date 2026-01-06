@@ -4,13 +4,14 @@ START OF FILE: 2015-06-28 - The Scarlet Thread Displaying The Token - Unknown Sp
 
 SERMON DETAILS
 ========================================
-Date:    2015-06-28
-Title:   The Scarlet Thread: Displaying The Token
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=O8GCmUnP8rE
+Date:     2015-06-28
+Title:    The Scarlet Thread: Displaying The Token
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 2h 15m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=O8GCmUnP8rE
 ========================================
 
 Description:

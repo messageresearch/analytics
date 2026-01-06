@@ -3,9 +3,9 @@ Title: What Hearest Thou
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Elijah?
-Location: Angelus Temple
-Duration: Los Angeles, CA, 96 min
+Venue: Angelus Temple
+Location: Los Angeles, CA
+Duration: 96 min
 Source: livingwordbroadcast.org
 DateCode: 59-0412E
 

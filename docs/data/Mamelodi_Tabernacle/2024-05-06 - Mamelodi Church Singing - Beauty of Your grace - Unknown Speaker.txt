@@ -4,13 +4,14 @@ START OF FILE: 2024-05-06 - Mamelodi Church Singing - Beauty of Your grace - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-06
-Title:   Mamelodi Church Singing - Beauty of Your grace
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=JIfkxpB_W00
+Date:     2024-05-06
+Title:    Mamelodi Church Singing - Beauty of Your grace
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=JIfkxpB_W00
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Santa Clara County Fairgrounds
-Location: San Jose
-Duration: CA, 98 min
+Location: San Jose, CA
+Duration: 98 min
 Source: livingwordbroadcast.org
 DateCode: 59-0422
 

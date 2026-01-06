@@ -4,13 +4,14 @@ START OF FILE: 2025-10-16 - 10.15.25 - Needy People - John Martin - John Martin.
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-16
-Title:   10.15.25 - Needy People - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=qC1aO-mai2c
+Date:     2025-10-16
+Title:    10.15.25 - Needy People - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=qC1aO-mai2c
 ========================================
 
 TRANSCRIPT

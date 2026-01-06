@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - He Knows My Thoughts Afar Off - 2014 06 18 - Alan Ma
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   He Knows My Thoughts Afar Off - 2014 06 18 - Alan Martin
-Speaker: Alan Martin
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=I_PJUWkLMWs
+Date:     2014-08-02
+Title:    He Knows My Thoughts Afar Off - 2014 06 18 - Alan Martin
+Speaker:  Alan Martin
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 35m
+Language: English
+URL:      https://www.youtube.com/watch?v=I_PJUWkLMWs
 ========================================
 
 Description:

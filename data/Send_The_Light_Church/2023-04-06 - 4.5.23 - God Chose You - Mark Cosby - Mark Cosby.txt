@@ -4,13 +4,14 @@ START OF FILE: 2023-04-06 - 4.5.23 - God Chose You - Mark Cosby - Mark Cosby.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-04-06
-Title:   4.5.23 - God Chose You - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=83t6jwJMoTs
+Date:     2023-04-06
+Title:    4.5.23 - God Chose You - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 9m
+Language: English
+URL:      https://www.youtube.com/watch?v=83t6jwJMoTs
 ========================================
 
 TRANSCRIPT

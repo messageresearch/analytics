@@ -4,13 +4,14 @@ START OF FILE: 2018-01-24 - Wednesday, 12418 - Isiah Brooks Recorded.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-01-24
-Title:   Wednesday, 1/24/18
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=g2Lse0veaLg
+Date:     2018-01-24
+Title:    Wednesday, 1/24/18
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=g2Lse0veaLg
 ========================================
 
 Description:

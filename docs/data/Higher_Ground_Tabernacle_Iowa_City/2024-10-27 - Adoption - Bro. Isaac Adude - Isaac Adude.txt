@@ -4,13 +4,14 @@ START OF FILE: 2024-10-27 - Adoption - Bro. Isaac Adude - Isaac Adude.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-10-27
-Title:   Adoption - Bro. Isaac Adude
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=nBS9_WBhmGU
+Date:     2024-10-27
+Title:    Adoption - Bro. Isaac Adude
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 20m
+Language: English
+URL:      https://www.youtube.com/watch?v=nBS9_WBhmGU
 ========================================
 
 Description:

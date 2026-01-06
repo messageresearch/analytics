@@ -4,13 +4,14 @@ START OF FILE: 2014-10-27 - Bro. Luke Gibson Jesus Balanced The Books P. 2 - Luk
 
 SERMON DETAILS
 ========================================
-Date:    2014-10-27
-Title:   Bro. Luke Gibson: Jesus Balanced The Books P. 2
-Speaker: Luke Gibson
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=jJxAsb7lobs
+Date:     2014-10-27
+Title:    Bro. Luke Gibson: Jesus Balanced The Books P. 2
+Speaker:  Luke Gibson
+Church:   Malachi Four Tabernacle
+Type:     Short Service
+Duration: 53m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=jJxAsb7lobs
 ========================================
 
 TRANSCRIPT

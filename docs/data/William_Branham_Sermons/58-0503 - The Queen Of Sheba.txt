@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Weaver High School
-Location: Hartford
-Duration: CT, 97 min
+Location: Hartford, CT
+Duration: 97 min
 Source: livingwordbroadcast.org
 DateCode: 58-0503
 

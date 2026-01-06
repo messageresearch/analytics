@@ -4,13 +4,14 @@ START OF FILE: 2020-08-20 - 8.19.20 - Run With It - John Martin - John Martin.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-20
-Title:   8.19.20 - Run With It - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vSREUKXfUWU
+Date:     2020-08-20
+Title:    8.19.20 - Run With It - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=vSREUKXfUWU
 ========================================
 
 TRANSCRIPT

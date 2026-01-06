@@ -4,13 +4,14 @@ START OF FILE: 2022-07-17 - 7.17.22 - An Expected End - Burley Williams - Burley
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-17
-Title:   7.17.22 - An Expected End - Burley Williams
-Speaker: Burley Williams
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OMpBi-K4iRQ
+Date:     2022-07-17
+Title:    7.17.22 - An Expected End - Burley Williams
+Speaker:  Burley Williams
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 27m
+Language: English
+URL:      https://www.youtube.com/watch?v=OMpBi-K4iRQ
 ========================================
 
 TRANSCRIPT

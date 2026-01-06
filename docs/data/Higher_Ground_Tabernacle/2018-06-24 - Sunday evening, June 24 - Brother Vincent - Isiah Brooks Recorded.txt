@@ -4,13 +4,14 @@ START OF FILE: 2018-06-24 - Sunday evening, June 24 - Brother Vincent - Isiah Br
 
 SERMON DETAILS
 ========================================
-Date:    2018-06-24
-Title:   Sunday evening, June 24 - Brother Vincent
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o4dCV_tdSR0
+Date:     2018-06-24
+Title:    Sunday evening, June 24 - Brother Vincent
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=o4dCV_tdSR0
 ========================================
 
 Description:

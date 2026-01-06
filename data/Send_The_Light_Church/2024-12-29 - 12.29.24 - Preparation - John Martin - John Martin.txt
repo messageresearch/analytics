@@ -4,13 +4,14 @@ START OF FILE: 2024-12-29 - 12.29.24 - Preparation - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-29
-Title:   12.29.24 - Preparation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1tNjR8SevPc
+Date:     2024-12-29
+Title:    12.29.24 - Preparation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=1tNjR8SevPc
 ========================================
 
 TRANSCRIPT

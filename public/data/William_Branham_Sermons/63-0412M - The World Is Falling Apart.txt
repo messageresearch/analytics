@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Western Skies Motel
-Location: Albuquerque
-Duration: NM, 100 min
+Location: Albuquerque, NM
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 63-0412M
 

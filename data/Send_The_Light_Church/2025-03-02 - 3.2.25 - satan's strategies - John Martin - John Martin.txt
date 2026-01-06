@@ -4,13 +4,14 @@ START OF FILE: 2025-03-02 - 3.2.25 - satan's strategies - John Martin - John Mar
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-02
-Title:   3.2.25 - satan's strategies - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=FCLlkS-2WlM
+Date:     2025-03-02
+Title:    3.2.25 - satan's strategies - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=FCLlkS-2WlM
 ========================================
 
 TRANSCRIPT

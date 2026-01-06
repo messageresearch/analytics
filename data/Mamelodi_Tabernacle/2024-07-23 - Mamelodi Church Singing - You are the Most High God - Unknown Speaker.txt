@@ -4,13 +4,14 @@ START OF FILE: 2024-07-23 - Mamelodi Church Singing - You are the Most High God 
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-23
-Title:   Mamelodi Church Singing - You are the Most High God
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=sWBoIFfs5GM
+Date:     2024-07-23
+Title:    Mamelodi Church Singing - You are the Most High God
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Song Special
+Duration: 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=sWBoIFfs5GM
 ========================================
 
 TRANSCRIPT

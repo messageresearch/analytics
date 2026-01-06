@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Municipal Auditorium
-Location: Grass Valley
-Duration: CA, 108 min
+Location: Grass Valley, CA
+Duration: 108 min
 Source: livingwordbroadcast.org
 DateCode: 62-0708
 

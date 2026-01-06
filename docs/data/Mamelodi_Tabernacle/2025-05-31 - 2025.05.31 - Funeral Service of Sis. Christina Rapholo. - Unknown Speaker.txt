@@ -4,13 +4,14 @@ START OF FILE: 2025-05-31 - 2025.05.31 - Funeral Service of Sis. Christina Rapho
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-31
-Title:   2025.05.31 - Funeral Service of Sis. Christina Rapholo.
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=OtrSKOdf9O8
+Date:     2025-05-31
+Title:    2025.05.31 - Funeral Service of Sis. Christina Rapholo.
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=OtrSKOdf9O8
 ========================================
 
 TRANSCRIPT

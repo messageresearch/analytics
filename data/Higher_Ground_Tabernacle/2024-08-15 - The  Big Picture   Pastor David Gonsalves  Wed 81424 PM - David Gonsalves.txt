@@ -4,13 +4,14 @@ START OF FILE: 2024-08-15 - The  Big Picture   Pastor David Gonsalves  Wed 81424
 
 SERMON DETAILS
 ========================================
-Date:    2024-08-15
-Title:   The  Big Picture  | Pastor David Gonsalves | Wed 8/14/24 PM
-Speaker: David Gonsalves
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XljVNxU6Hfo
+Date:     2024-08-15
+Title:    The  Big Picture  | Pastor David Gonsalves | Wed 8/14/24 PM
+Speaker:  David Gonsalves
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=XljVNxU6Hfo
 ========================================
 
 TRANSCRIPT

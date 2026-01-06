@@ -4,13 +4,14 @@ START OF FILE: 2023-10-05 - 10.4.23 - Don't Give Up - Mark Cosby - Mark Cosby.tx
 
 SERMON DETAILS
 ========================================
-Date:    2023-10-05
-Title:   10.4.23 - Don't Give Up - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=g6CXZse__Z4
+Date:     2023-10-05
+Title:    10.4.23 - Don't Give Up - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 36m
+Language: English
+URL:      https://www.youtube.com/watch?v=g6CXZse__Z4
 ========================================
 
 TRANSCRIPT

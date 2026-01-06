@@ -4,13 +4,14 @@ START OF FILE: 2022-05-08 - A Second Miracle  Bro Esaie Bowa  Higher Ground Tabe
 
 SERMON DETAILS
 ========================================
-Date:    2022-05-08
-Title:   A Second Miracle | Bro Esaie Bowa | Higher Ground Tabernacle
-Speaker: Higher Ground
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=SuCwk_SldE8
+Date:     2022-05-08
+Title:    A Second Miracle | Bro Esaie Bowa | Higher Ground Tabernacle
+Speaker:  Higher Ground
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=SuCwk_SldE8
 ========================================
 
 TRANSCRIPT

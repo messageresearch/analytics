@@ -4,13 +4,14 @@ START OF FILE: 2025-12-04 - 12.3.25 - Resting In The Promise - Josh Martin - Jos
 
 SERMON DETAILS
 ========================================
-Date:    2025-12-04
-Title:   12.3.25 - Resting In The Promise - Josh Martin
-Speaker: Josh Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AeRasJ5bNWI
+Date:     2025-12-04
+Title:    12.3.25 - Resting In The Promise - Josh Martin
+Speaker:  Josh Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=AeRasJ5bNWI
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2023-05-28 - 5.28.23 - Undisputed Love - John Martin - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-28
-Title:   5.28.23 - Undisputed Love - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=9pq52nwtEa0
+Date:     2023-05-28
+Title:    5.28.23 - Undisputed Love - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=9pq52nwtEa0
 ========================================
 
 TRANSCRIPT

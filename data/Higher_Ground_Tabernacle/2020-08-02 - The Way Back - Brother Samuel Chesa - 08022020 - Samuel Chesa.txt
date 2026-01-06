@@ -4,13 +4,14 @@ START OF FILE: 2020-08-02 - The Way Back - Brother Samuel Chesa - 08022020 - Sam
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-02
-Title:   The Way Back - Brother Samuel Chesa - 08/02/2020
-Speaker: Samuel Chesa
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4Orx1E-ZYTg
+Date:     2020-08-02
+Title:    The Way Back - Brother Samuel Chesa - 08/02/2020
+Speaker:  Samuel Chesa
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=4Orx1E-ZYTg
 ========================================
 
 Description:

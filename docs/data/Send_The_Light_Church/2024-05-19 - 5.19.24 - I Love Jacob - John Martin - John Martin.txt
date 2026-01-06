@@ -4,13 +4,14 @@ START OF FILE: 2024-05-19 - 5.19.24 - I Love Jacob - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-19
-Title:   5.19.24 - I Love Jacob - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ff0hgf3hN1I
+Date:     2024-05-19
+Title:    5.19.24 - I Love Jacob - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=ff0hgf3hN1I
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2019-03-03 - Bro Kidri Diggs    030319  Higher Ground Tabernacle 
 
 SERMON DETAILS
 ========================================
-Date:    2019-03-03
-Title:   Bro Kidri Diggs |  | 03/03/19 | Higher Ground Tabernacle
-Speaker: Kidri Diggs
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=T06H6IryX4Q
+Date:     2019-03-03
+Title:    Bro Kidri Diggs |  | 03/03/19 | Higher Ground Tabernacle
+Speaker:  Kidri Diggs
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=T06H6IryX4Q
 ========================================
 
 Description:

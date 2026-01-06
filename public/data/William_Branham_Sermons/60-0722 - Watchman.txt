@@ -3,9 +3,9 @@ Title: Watchman
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: What Of The Night?
-Location: Lake County Fairgrounds
-Duration: Lakeport, CA, 100 min
+Venue: Lake County Fairgrounds
+Location: Lakeport, CA
+Duration: 100 min
 Source: livingwordbroadcast.org
 DateCode: 60-0722
 

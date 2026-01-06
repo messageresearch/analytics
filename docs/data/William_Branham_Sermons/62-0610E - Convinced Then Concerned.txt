@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Bible Tabernacle
-Location: Southern Pines
-Duration: NC, 85 min
+Location: Southern Pines, NC
+Duration: 85 min
 Source: livingwordbroadcast.org
 DateCode: 62-0610E
 

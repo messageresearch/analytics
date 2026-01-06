@@ -4,13 +4,14 @@ START OF FILE: 2025-03-09 - 3.9.25 - Power Of Our Attitude - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-09
-Title:   3.9.25 - Power Of Our Attitude - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=veI2JC6oqZs
+Date:     2025-03-09
+Title:    3.9.25 - Power Of Our Attitude - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=veI2JC6oqZs
 ========================================
 
 TRANSCRIPT

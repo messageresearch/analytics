@@ -4,13 +4,14 @@ START OF FILE: 2020-05-10 - 5.10.20 - Happy Mother's Day 2020 - John Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2020-05-10
-Title:   5.10.20 - Happy Mother's Day 2020 - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CJAaghRB-lI
+Date:     2020-05-10
+Title:    5.10.20 - Happy Mother's Day 2020 - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=CJAaghRB-lI
 ========================================
 
 TRANSCRIPT

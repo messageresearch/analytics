@@ -4,13 +4,14 @@ START OF FILE: 2024-07-07 - 7.7.24 - Overcoming Evil - John Martin - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2024-07-07
-Title:   7.7.24 - Overcoming Evil - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=wQrHS_3Dq5g
+Date:     2024-07-07
+Title:    7.7.24 - Overcoming Evil - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=wQrHS_3Dq5g
 ========================================
 
 TRANSCRIPT

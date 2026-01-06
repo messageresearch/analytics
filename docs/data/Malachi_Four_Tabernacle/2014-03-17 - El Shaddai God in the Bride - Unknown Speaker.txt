@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - El Shaddai God in the Bride - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   "El Shaddai" God in the Bride
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1yl4CIH-ZkU
+Date:     2014-03-17
+Title:    "El Shaddai" God in the Bride
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 1h 28m
+Language: English
+URL:      https://www.youtube.com/watch?v=1yl4CIH-ZkU
 ========================================
 
 TRANSCRIPT

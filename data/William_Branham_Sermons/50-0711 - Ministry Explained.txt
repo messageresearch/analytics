@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Tent Meeting
-Location: Minneapolis
-Duration: MN, 51 min
+Location: Minneapolis, MN
+Duration: 51 min
 Source: livingwordbroadcast.org
 DateCode: 50-0711
 

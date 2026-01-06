@@ -4,13 +4,14 @@ START OF FILE: 2021-01-10 - God's Certain Sound - Bro Isaac Adude  Sunday, Janua
 
 SERMON DETAILS
 ========================================
-Date:    2021-01-10
-Title:   God's Certain Sound - Bro Isaac Adude | Sunday, January 10th, 2021 | HGT
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=_qimjyJJ_HQ
+Date:     2021-01-10
+Title:    God's Certain Sound - Bro Isaac Adude | Sunday, January 10th, 2021 | HGT
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=_qimjyJJ_HQ
 ========================================
 
 Description:

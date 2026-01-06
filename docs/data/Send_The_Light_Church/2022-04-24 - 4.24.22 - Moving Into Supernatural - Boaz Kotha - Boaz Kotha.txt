@@ -4,13 +4,14 @@ START OF FILE: 2022-04-24 - 4.24.22 - Moving Into Supernatural - Boaz Kotha - Bo
 
 SERMON DETAILS
 ========================================
-Date:    2022-04-24
-Title:   4.24.22 - Moving Into Supernatural - Boaz Kotha
-Speaker: Boaz Kotha
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6Z-yN5omIj0
+Date:     2022-04-24
+Title:    4.24.22 - Moving Into Supernatural - Boaz Kotha
+Speaker:  Boaz Kotha
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 22m
+Language: English
+URL:      https://www.youtube.com/watch?v=6Z-yN5omIj0
 ========================================
 
 TRANSCRIPT

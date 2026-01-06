@@ -4,13 +4,14 @@ START OF FILE: 2025-05-25 - 5.25.25 - Consider How Great God Is - John Martin - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-25
-Title:   5.25.25 - Consider How Great God Is - John Martin
-Speaker: Consider How Gre
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=75Fc5lTYe3s
+Date:     2025-05-25
+Title:    5.25.25 - Consider How Great God Is - John Martin
+Speaker:  Consider How Gre
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=75Fc5lTYe3s
 ========================================
 
 TRANSCRIPT

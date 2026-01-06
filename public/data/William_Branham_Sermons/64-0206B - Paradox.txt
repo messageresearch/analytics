@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Salad Bowl Restaurant
-Location: Bakersfield
-Duration: CA, 99 min
+Location: Bakersfield, CA
+Duration: 99 min
 Source: livingwordbroadcast.org
 DateCode: 64-0206B
 

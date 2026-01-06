@@ -4,13 +4,14 @@ START OF FILE: 2022-09-04 - 9.4.22 - Study In Galatians - George Smith - George 
 
 SERMON DETAILS
 ========================================
-Date:    2022-09-04
-Title:   9.4.22 - Study In Galatians - George Smith
-Speaker: George Smith
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XQNaMKis9fg
+Date:     2022-09-04
+Title:    9.4.22 - Study In Galatians - George Smith
+Speaker:  George Smith
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 40m
+Language: English
+URL:      https://www.youtube.com/watch?v=XQNaMKis9fg
 ========================================
 
 TRANSCRIPT

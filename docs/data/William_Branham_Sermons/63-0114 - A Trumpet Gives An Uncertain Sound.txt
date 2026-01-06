@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Christian Assembly
-Location: Phoenix
-Duration: AZ, 103 min
+Location: Phoenix, AZ
+Duration: 103 min
 Source: livingwordbroadcast.org
 DateCode: 63-0114
 

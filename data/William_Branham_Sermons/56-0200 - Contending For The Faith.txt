@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Georgetown High School
-Location: Georgetown
-Duration: IN, 75 min
+Location: Georgetown, IN
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 56-0200
 

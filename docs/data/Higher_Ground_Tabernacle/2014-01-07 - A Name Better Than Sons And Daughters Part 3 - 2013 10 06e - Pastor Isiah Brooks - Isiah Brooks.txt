@@ -4,13 +4,14 @@ START OF FILE: 2014-01-07 - A Name Better Than Sons And Daughters Part 3 - 2013 
 
 SERMON DETAILS
 ========================================
-Date:    2014-01-07
-Title:   A Name Better Than Sons And Daughters Part 3 - 2013 10 06e - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=BTu6jVO_3WM
+Date:     2014-01-07
+Title:    A Name Better Than Sons And Daughters Part 3 - 2013 10 06e - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=BTu6jVO_3WM
 ========================================
 
 Description:

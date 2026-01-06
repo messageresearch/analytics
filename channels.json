@@ -32,12 +32,14 @@
     "filename": "CedarHillsChurchOfTheCross.txt"
   },
   "Cloverdale Bibleway": {
-    "url": null,
+    "url": "https://www.youtube.com/@ChristWitnessGuss",
     "filename": "CloverdaleBibleway.txt",
+    "note": "No dedicated YouTube channel exists. Data aggregated from Christ Witness Guss Archive channel (filtered for Ed Byskal/Cloverdale content) and a Cloverdale Bibleway playlist.",
     "playlists": [
       {
         "id": "PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq",
-        "name": "Cloverdale Bibleway"
+        "name": "Cloverdale Bibleway Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq"
       }
     ],
     "additional_channels": [

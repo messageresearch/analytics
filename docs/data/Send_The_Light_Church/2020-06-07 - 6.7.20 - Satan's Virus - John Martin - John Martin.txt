@@ -4,13 +4,14 @@ START OF FILE: 2020-06-07 - 6.7.20 - Satan's Virus - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-07
-Title:   6.7.20 - Satan's Virus - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1uyyWHIzFGc
+Date:     2020-06-07
+Title:    6.7.20 - Satan's Virus - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=1uyyWHIzFGc
 ========================================
 
 TRANSCRIPT

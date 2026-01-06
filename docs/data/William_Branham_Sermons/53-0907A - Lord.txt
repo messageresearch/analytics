@@ -3,9 +3,9 @@ Title: Lord
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Show Us The Father And It Sufficeth Us
-Location: Chicago Gospel Tabernacle
-Duration: Chicago, IL, 86 min
+Venue: Chicago Gospel Tabernacle
+Location: Chicago, IL
+Duration: 86 min
 Source: livingwordbroadcast.org
 DateCode: 53-0907A
 

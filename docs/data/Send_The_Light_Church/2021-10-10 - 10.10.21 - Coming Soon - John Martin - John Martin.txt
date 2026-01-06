@@ -4,13 +4,14 @@ START OF FILE: 2021-10-10 - 10.10.21 - Coming Soon - John Martin - John Martin.t
 
 SERMON DETAILS
 ========================================
-Date:    2021-10-10
-Title:   10.10.21 - Coming Soon - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PVcuD-0uV9w
+Date:     2021-10-10
+Title:    10.10.21 - Coming Soon - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=PVcuD-0uV9w
 ========================================
 
 Description:

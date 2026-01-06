@@ -4,13 +4,14 @@ START OF FILE: 2013-08-26 - HermanoBrother Heriberto Singing a few songs - Unkno
 
 SERMON DETAILS
 ========================================
-Date:    2013-08-26
-Title:   Hermano/Brother Heriberto Singing a few songs
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Worship Service
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=wPj6zrQTqfo
+Date:     2013-08-26
+Title:    Hermano/Brother Heriberto Singing a few songs
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Worship Service
+Duration: 9m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=wPj6zrQTqfo
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2024-09-15 - The Unseen Host - Bro. Isaac Adude - Isaac Adude.txt
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-15
-Title:   The Unseen Host - Bro. Isaac Adude
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=tKZ0A-mTvfM
+Date:     2024-09-15
+Title:    The Unseen Host - Bro. Isaac Adude
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Short Service
+Duration: 21m
+Language: English
+URL:      https://www.youtube.com/watch?v=tKZ0A-mTvfM
 ========================================
 
 Description:

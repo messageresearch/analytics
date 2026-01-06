@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Ramada Inn
-Location: Tucson
-Duration: AZ, 105 min
+Location: Tucson, AZ
+Duration: 105 min
 Source: livingwordbroadcast.org
 DateCode: 64-0427
 

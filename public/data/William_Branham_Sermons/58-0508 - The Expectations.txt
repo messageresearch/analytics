@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Memorial Auditorium
-Location: Burlington
-Duration: VT, 88 min
+Location: Burlington, VT
+Duration: 88 min
 Source: livingwordbroadcast.org
 DateCode: 58-0508
 

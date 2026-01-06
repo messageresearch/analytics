@@ -4,13 +4,14 @@ START OF FILE: 2015-07-19 - I Never Shall Forget The Day - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2015-07-19
-Title:   "I Never Shall Forget The Day"
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=cT9zgRUWsAc
+Date:     2015-07-19
+Title:    "I Never Shall Forget The Day"
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Song Special
+Duration: 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=cT9zgRUWsAc
 ========================================
 
 TRANSCRIPT

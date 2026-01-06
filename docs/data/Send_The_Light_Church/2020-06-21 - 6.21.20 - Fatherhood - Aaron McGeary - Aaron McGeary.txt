@@ -4,13 +4,14 @@ START OF FILE: 2020-06-21 - 6.21.20 - Fatherhood - Aaron McGeary - Aaron McGeary
 
 SERMON DETAILS
 ========================================
-Date:    2020-06-21
-Title:   6.21.20 - Fatherhood - Aaron McGeary
-Speaker: Aaron McGeary
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pM97NNpAM50
+Date:     2020-06-21
+Title:    6.21.20 - Fatherhood - Aaron McGeary
+Speaker:  Aaron McGeary
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 5m
+Language: English
+URL:      https://www.youtube.com/watch?v=pM97NNpAM50
 ========================================
 
 TRANSCRIPT

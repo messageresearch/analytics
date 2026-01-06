@@ -4,13 +4,14 @@ START OF FILE: 2023-06-04 - Only Believe - Bro Isaac Adude - Sun  060423 AM - Is
 
 SERMON DETAILS
 ========================================
-Date:    2023-06-04
-Title:   Only Believe - Bro Isaac Adude - Sun  06/04/23 AM
-Speaker: Isaac Adude
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=57rEUSrzcfc
+Date:     2023-06-04
+Title:    Only Believe - Bro Isaac Adude - Sun  06/04/23 AM
+Speaker:  Isaac Adude
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=57rEUSrzcfc
 ========================================
 
 TRANSCRIPT

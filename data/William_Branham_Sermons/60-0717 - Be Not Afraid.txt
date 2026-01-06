@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: City High School
-Location: Klamath Falls
-Duration: OR, 111 min
+Location: Klamath Falls, OR
+Duration: 111 min
 Source: livingwordbroadcast.org
 DateCode: 60-0717
 

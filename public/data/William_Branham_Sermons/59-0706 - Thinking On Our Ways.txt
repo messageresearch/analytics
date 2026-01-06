@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Church Of Faith
-Location: Cleveland
-Duration: TN, 58 min
+Location: Cleveland, TN
+Duration: 58 min
 Source: livingwordbroadcast.org
 DateCode: 59-0706
 

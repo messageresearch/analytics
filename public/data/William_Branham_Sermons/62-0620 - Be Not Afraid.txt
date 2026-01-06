@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Great Western Exhibit Center
-Location: South Gate
-Duration: CA, 104 min
+Location: South Gate, CA
+Duration: 104 min
 Source: livingwordbroadcast.org
 DateCode: 62-0620
 

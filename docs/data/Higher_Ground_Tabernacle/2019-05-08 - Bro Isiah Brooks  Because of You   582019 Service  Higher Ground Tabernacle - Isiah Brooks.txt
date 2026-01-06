@@ -4,13 +4,14 @@ START OF FILE: 2019-05-08 - Bro Isiah Brooks  Because of You   582019 Service  H
 
 SERMON DETAILS
 ========================================
-Date:    2019-05-08
-Title:   Bro Isiah Brooks | Because of You  | 5/8/2019 Service | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zfY0f6WJvXA
+Date:     2019-05-08
+Title:    Bro Isiah Brooks | Because of You  | 5/8/2019 Service | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=zfY0f6WJvXA
 ========================================
 
 Description:

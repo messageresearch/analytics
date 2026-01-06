@@ -4,13 +4,14 @@ START OF FILE: 2024-02-22 - 2.21.24 - Flourishing In Christ - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2024-02-22
-Title:   2.21.24 - Flourishing In Christ - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gfPLuKDn-qA
+Date:     2024-02-22
+Title:    2.21.24 - Flourishing In Christ - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 39m
+Language: English
+URL:      https://www.youtube.com/watch?v=gfPLuKDn-qA
 ========================================
 
 TRANSCRIPT

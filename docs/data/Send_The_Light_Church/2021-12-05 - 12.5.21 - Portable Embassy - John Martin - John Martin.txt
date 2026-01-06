@@ -4,13 +4,14 @@ START OF FILE: 2021-12-05 - 12.5.21 - Portable Embassy - John Martin - John Mart
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-05
-Title:   12.5.21 - Portable Embassy - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Nal56MeHfRM
+Date:     2021-12-05
+Title:    12.5.21 - Portable Embassy - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=Nal56MeHfRM
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-10-26 - 10.26.25 - I Am With You Always - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-26
-Title:   10.26.25 - I Am With You Always - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=bKlspcB739U
+Date:     2025-10-26
+Title:    10.26.25 - I Am With You Always - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=bKlspcB739U
 ========================================
 
 TRANSCRIPT

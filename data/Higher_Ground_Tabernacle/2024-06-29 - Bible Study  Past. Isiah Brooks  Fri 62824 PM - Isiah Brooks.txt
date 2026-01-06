@@ -4,13 +4,14 @@ START OF FILE: 2024-06-29 - Bible Study  Past. Isiah Brooks  Fri 62824 PM - Isia
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-29
-Title:   Bible Study | Past. Isiah Brooks | Fri 6/28/24 PM
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=QjCqNGHs-os
+Date:     2024-06-29
+Title:    Bible Study | Past. Isiah Brooks | Fri 6/28/24 PM
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Bible Study
+Duration: 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=QjCqNGHs-os
 ========================================
 
 TRANSCRIPT

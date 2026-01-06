@@ -4,13 +4,14 @@ START OF FILE: 2014-05-19 - Creating The Right Atmosphere - 2014 05 04e - Maxwel
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-19
-Title:   Creating The Right Atmosphere - 2014 05 04e - Maxwell Lee
-Speaker: Maxwell Lee
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=pw47p8IbK-U
+Date:     2014-05-19
+Title:    Creating The Right Atmosphere - 2014 05 04e - Maxwell Lee
+Speaker:  Maxwell Lee
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 24m
+Language: English
+URL:      https://www.youtube.com/watch?v=pw47p8IbK-U
 ========================================
 
 Description:

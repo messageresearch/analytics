@@ -4,13 +4,14 @@ START OF FILE: 2025-05-15 - A Vessel of Honor  Bro. Lys Paul Lukuka  Wed 51425 -
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-15
-Title:   A Vessel of Honor // Bro. Lys Paul Lukuka  Wed 5/14/25
-Speaker: Lys Paul Lukuka Wed
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4vNTZbn86qQ
+Date:     2025-05-15
+Title:    A Vessel of Honor // Bro. Lys Paul Lukuka  Wed 5/14/25
+Speaker:  Lys Paul Lukuka Wed
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=4vNTZbn86qQ
 ========================================
 
 TRANSCRIPT

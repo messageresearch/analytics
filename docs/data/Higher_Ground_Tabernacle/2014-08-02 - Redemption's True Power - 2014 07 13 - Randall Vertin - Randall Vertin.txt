@@ -4,13 +4,14 @@ START OF FILE: 2014-08-02 - Redemption's True Power - 2014 07 13 - Randall Verti
 
 SERMON DETAILS
 ========================================
-Date:    2014-08-02
-Title:   Redemption's True Power - 2014 07 13 - Randall Vertin
-Speaker: Randall Vertin
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=dJL7IJ7xNIM
+Date:     2014-08-02
+Title:    Redemption's True Power - 2014 07 13 - Randall Vertin
+Speaker:  Randall Vertin
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 6m
+Language: English
+URL:      https://www.youtube.com/watch?v=dJL7IJ7xNIM
 ========================================
 
 Description:

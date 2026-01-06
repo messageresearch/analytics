@@ -4,13 +4,14 @@ START OF FILE: 2023-12-03 - 12.3.23 - God Chooses His Bride - John Martin - John
 
 SERMON DETAILS
 ========================================
-Date:    2023-12-03
-Title:   12.3.23 - God Chooses His Bride - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=VgmXDS9iBZ0
+Date:     2023-12-03
+Title:    12.3.23 - God Chooses His Bride - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 3m
+Language: English
+URL:      https://www.youtube.com/watch?v=VgmXDS9iBZ0
 ========================================
 
 TRANSCRIPT

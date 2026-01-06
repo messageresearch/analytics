@@ -4,13 +4,14 @@ START OF FILE: 2019-04-28 - The Sounding of the Trumpet -  Pastor Isiah Brooks (
 
 SERMON DETAILS
 ========================================
-Date:    2019-04-28
-Title:   The Sounding of the Trumpet -  Pastor Isiah Brooks (Higher Ground Tabernacle)
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle Iowa City
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=DAUeGCuKQG4
+Date:     2019-04-28
+Title:    The Sounding of the Trumpet -  Pastor Isiah Brooks (Higher Ground Tabernacle)
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle Iowa City
+Type:     Full Sermon
+Duration: 2h 52m
+Language: English
+URL:      https://www.youtube.com/watch?v=DAUeGCuKQG4
 ========================================
 
 TRANSCRIPT

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Marion Hotel
-Location: Salem
-Duration: OR, 55 min
+Location: Salem, OR
+Duration: 55 min
 Source: livingwordbroadcast.org
 DateCode: 62-0719B
 

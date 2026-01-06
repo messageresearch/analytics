@@ -4,13 +4,14 @@ START OF FILE: 2019-09-22 - Bro Samuel  =  Sunday 9222019 - Isiah Brooks.txt
 
 SERMON DETAILS
 ========================================
-Date:    2019-09-22
-Title:   Bro Samuel | = | Sunday 9/22/2019
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=6niVjNXPRfo
+Date:     2019-09-22
+Title:    Bro Samuel | = | Sunday 9/22/2019
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 11m
+Language: English
+URL:      https://www.youtube.com/watch?v=6niVjNXPRfo
 ========================================
 
 Description:

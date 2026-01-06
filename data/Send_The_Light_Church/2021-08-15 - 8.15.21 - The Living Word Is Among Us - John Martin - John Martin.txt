@@ -4,13 +4,14 @@ START OF FILE: 2021-08-15 - 8.15.21 - The Living Word Is Among Us - John Martin 
 
 SERMON DETAILS
 ========================================
-Date:    2021-08-15
-Title:   8.15.21 - The Living Word Is Among Us - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=t93LW40VqZM
+Date:     2021-08-15
+Title:    8.15.21 - The Living Word Is Among Us - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=t93LW40VqZM
 ========================================
 
 Description:

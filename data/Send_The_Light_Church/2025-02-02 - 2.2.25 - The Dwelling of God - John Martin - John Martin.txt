@@ -4,13 +4,14 @@ START OF FILE: 2025-02-02 - 2.2.25 - The Dwelling of God - John Martin - John Ma
 
 SERMON DETAILS
 ========================================
-Date:    2025-02-02
-Title:   2.2.25 - The Dwelling of God - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=AMYx85raJNQ
+Date:     2025-02-02
+Title:    2.2.25 - The Dwelling of God - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=AMYx85raJNQ
 ========================================
 
 TRANSCRIPT

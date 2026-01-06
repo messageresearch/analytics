@@ -4,13 +4,14 @@ START OF FILE: 2025-11-15 - 2025.11.15 - Funeral Service Of  Sister Puledi Ralle
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-15
-Title:   2025.11.15 - Funeral Service Of  Sister Puledi Rallele
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=1opHhm2_6Sk
+Date:     2025-11-15
+Title:    2025.11.15 - Funeral Service Of  Sister Puledi Rallele
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 2h 8m
+Language: English
+URL:      https://www.youtube.com/watch?v=1opHhm2_6Sk
 ========================================
 
 TRANSCRIPT

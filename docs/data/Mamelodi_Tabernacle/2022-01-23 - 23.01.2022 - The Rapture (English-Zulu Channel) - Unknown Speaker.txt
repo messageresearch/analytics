@@ -4,13 +4,14 @@ START OF FILE: 2022-01-23 - 23.01.2022 - The Rapture (English-Zulu Channel) - Un
 
 SERMON DETAILS
 ========================================
-Date:    2022-01-23
-Title:   23.01.2022 - The Rapture (English-Zulu Channel)
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=51dT8hb-DUk
+Date:     2022-01-23
+Title:    23.01.2022 - The Rapture (English-Zulu Channel)
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 3h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=51dT8hb-DUk
 ========================================
 
 Description:

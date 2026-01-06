@@ -4,13 +4,14 @@ START OF FILE: 2018-05-06 - Sunday Morning service, May 6 - Bro Jesse Hoffman - 
 
 SERMON DETAILS
 ========================================
-Date:    2018-05-06
-Title:   Sunday Morning service, May 6 - Bro Jesse Hoffman
-Speaker: Jesse Hoffman
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=TiMgOg8q_A8
+Date:     2018-05-06
+Title:    Sunday Morning service, May 6 - Bro Jesse Hoffman
+Speaker:  Jesse Hoffman
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 45m
+Language: English
+URL:      https://www.youtube.com/watch?v=TiMgOg8q_A8
 ========================================
 
 Description:

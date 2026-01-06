@@ -4,13 +4,14 @@ START OF FILE: 2021-05-24 - I Shall Restore  (Communion)  Pastor Isiah Brooks  5
 
 SERMON DETAILS
 ========================================
-Date:    2021-05-24
-Title:   I Shall Restore  (Communion) || Pastor Isiah Brooks || 5/23/2021 PM
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zMykElWN3fY
+Date:     2021-05-24
+Title:    I Shall Restore  (Communion) || Pastor Isiah Brooks || 5/23/2021 PM
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Communion Service
+Duration: 1h 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=zMykElWN3fY
 ========================================
 
 Description:

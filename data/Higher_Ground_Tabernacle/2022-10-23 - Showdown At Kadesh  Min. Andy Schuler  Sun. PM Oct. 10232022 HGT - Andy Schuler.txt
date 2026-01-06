@@ -4,13 +4,14 @@ START OF FILE: 2022-10-23 - Showdown At Kadesh  Min. Andy Schuler  Sun. PM Oct. 
 
 SERMON DETAILS
 ========================================
-Date:    2022-10-23
-Title:   Showdown At Kadesh | Min. Andy Schuler | Sun. PM Oct. 10/23/2022 HGT
-Speaker: Andy Schuler
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=01uAaypjj1k
+Date:     2022-10-23
+Title:    Showdown At Kadesh | Min. Andy Schuler | Sun. PM Oct. 10/23/2022 HGT
+Speaker:  Andy Schuler
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 34m
+Language: English
+URL:      https://www.youtube.com/watch?v=01uAaypjj1k
 ========================================
 
 TRANSCRIPT

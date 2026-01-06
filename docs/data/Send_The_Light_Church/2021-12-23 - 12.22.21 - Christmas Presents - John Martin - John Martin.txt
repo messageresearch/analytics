@@ -4,13 +4,14 @@ START OF FILE: 2021-12-23 - 12.22.21 - Christmas Presents - John Martin - John M
 
 SERMON DETAILS
 ========================================
-Date:    2021-12-23
-Title:   12.22.21 - Christmas Presents - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Christmas Program
-Language:English
-URL:     https://www.youtube.com/watch?v=eZLhrnBchKc
+Date:     2021-12-23
+Title:    12.22.21 - Christmas Presents - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Christmas Program
+Duration: 1h 47m
+Language: English
+URL:      https://www.youtube.com/watch?v=eZLhrnBchKc
 ========================================
 
 TRANSCRIPT

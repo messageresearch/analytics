@@ -4,13 +4,14 @@ START OF FILE: 2022-03-27 - 3.27.22 - I Don't Know - Roger Rodriguez - Roger Rod
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-27
-Title:   3.27.22 - I Don't Know - Roger Rodriguez
-Speaker: Roger Rodriguez
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=WBUqSwRjhjw
+Date:     2022-03-27
+Title:    3.27.22 - I Don't Know - Roger Rodriguez
+Speaker:  Roger Rodriguez
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=WBUqSwRjhjw
 ========================================
 
 TRANSCRIPT

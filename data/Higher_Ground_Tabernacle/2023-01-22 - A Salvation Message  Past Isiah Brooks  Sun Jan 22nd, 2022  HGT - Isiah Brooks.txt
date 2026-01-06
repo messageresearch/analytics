@@ -4,13 +4,14 @@ START OF FILE: 2023-01-22 - A Salvation Message  Past Isiah Brooks  Sun Jan 22nd
 
 SERMON DETAILS
 ========================================
-Date:    2023-01-22
-Title:   A Salvation Message | Past Isiah Brooks | Sun Jan 22nd, 2022 | HGT
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=OYhnmzVlu8o
+Date:     2023-01-22
+Title:    A Salvation Message | Past Isiah Brooks | Sun Jan 22nd, 2022 | HGT
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 16m
+Language: English
+URL:      https://www.youtube.com/watch?v=OYhnmzVlu8o
 ========================================
 
 TRANSCRIPT

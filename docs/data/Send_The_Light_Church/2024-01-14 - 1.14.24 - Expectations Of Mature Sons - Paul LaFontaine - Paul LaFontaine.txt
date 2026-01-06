@@ -4,13 +4,14 @@ START OF FILE: 2024-01-14 - 1.14.24 - Expectations Of Mature Sons - Paul LaFonta
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-14
-Title:   1.14.24 - Expectations Of Mature Sons - Paul LaFontaine
-Speaker: Paul LaFontaine
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=4g0SvJEW-cw
+Date:     2024-01-14
+Title:    1.14.24 - Expectations Of Mature Sons - Paul LaFontaine
+Speaker:  Paul LaFontaine
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 12m
+Language: English
+URL:      https://www.youtube.com/watch?v=4g0SvJEW-cw
 ========================================
 
 TRANSCRIPT

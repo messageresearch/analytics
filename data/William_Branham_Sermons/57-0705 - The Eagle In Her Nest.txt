@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Sherman Hotel
-Location: Chicago
-Duration: IL, 62 min
+Location: Chicago, IL
+Duration: 62 min
 Source: livingwordbroadcast.org
 DateCode: 57-0705
 

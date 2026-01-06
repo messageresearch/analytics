@@ -4,13 +4,14 @@ START OF FILE: 2024-12-13 - Title The Presence of God In His Children - Neo Makg
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-13
-Title:   Title: The Presence of God In His Children
-Speaker: Neo Makgareetsa
-Church:  Mamelodi Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gRsMa32w6fE
+Date:     2024-12-13
+Title:    Title: The Presence of God In His Children
+Speaker:  Neo Makgareetsa
+Church:   Mamelodi Tabernacle
+Type:     Full Sermon
+Duration: 2h 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=gRsMa32w6fE
 ========================================
 
 Description:

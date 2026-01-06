@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Grace Missionary Church
-Location: Zion
-Duration: IL, 82 min
+Location: Zion, IL
+Duration: 82 min
 Source: livingwordbroadcast.org
 DateCode: 52-0726
 

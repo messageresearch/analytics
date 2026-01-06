@@ -4,13 +4,14 @@ START OF FILE: 2022-07-10 - 7.10.22 - satan's Program - Mark Cosby - Mark Cosby.
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-10
-Title:   7.10.22 - satan's Program - Mark Cosby
-Speaker: Mark Cosby
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vqXTaHP06-o
+Date:     2022-07-10
+Title:    7.10.22 - satan's Program - Mark Cosby
+Speaker:  Mark Cosby
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 44m
+Language: English
+URL:      https://www.youtube.com/watch?v=vqXTaHP06-o
 ========================================
 
 TRANSCRIPT

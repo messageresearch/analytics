@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Chicago Gospel Tabernacle
-Location: Chicago
-Duration: IL, 57 min
+Location: Chicago, IL
+Duration: 57 min
 Source: livingwordbroadcast.org
 DateCode: 53-0903
 

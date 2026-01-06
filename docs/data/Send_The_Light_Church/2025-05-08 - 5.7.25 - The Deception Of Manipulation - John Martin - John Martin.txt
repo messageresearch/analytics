@@ -4,13 +4,14 @@ START OF FILE: 2025-05-08 - 5.7.25 - The Deception Of Manipulation - John Martin
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-08
-Title:   5.7.25 - The Deception Of Manipulation - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LjxxP1hlDbA
+Date:     2025-05-08
+Title:    5.7.25 - The Deception Of Manipulation - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 38m
+Language: English
+URL:      https://www.youtube.com/watch?v=LjxxP1hlDbA
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2020-08-06 - 8.5.20 - What Would You Exchange - John Martin - Joh
 
 SERMON DETAILS
 ========================================
-Date:    2020-08-06
-Title:   8.5.20 - What Would You Exchange? - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ow_sa_LCk2A
+Date:     2020-08-06
+Title:    8.5.20 - What Would You Exchange? - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 57m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ow_sa_LCk2A
 ========================================
 
 TRANSCRIPT

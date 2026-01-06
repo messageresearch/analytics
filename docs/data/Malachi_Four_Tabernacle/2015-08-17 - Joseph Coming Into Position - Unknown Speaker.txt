@@ -4,13 +4,14 @@ START OF FILE: 2015-08-17 - Joseph Coming Into Position - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2015-08-17
-Title:   Joseph: Coming Into Position
-Speaker: Unknown Speaker
-Church:  Malachi Four Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8Q2O3LXTfK0
+Date:     2015-08-17
+Title:    Joseph: Coming Into Position
+Speaker:  Unknown Speaker
+Church:   Malachi Four Tabernacle
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=8Q2O3LXTfK0
 ========================================
 
 TRANSCRIPT

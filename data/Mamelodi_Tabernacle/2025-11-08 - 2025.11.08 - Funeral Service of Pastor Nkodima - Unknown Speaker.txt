@@ -4,13 +4,14 @@ START OF FILE: 2025-11-08 - 2025.11.08 - Funeral Service of Pastor Nkodima - Unk
 
 SERMON DETAILS
 ========================================
-Date:    2025-11-08
-Title:   2025.11.08 - Funeral Service of Pastor Nkodima
-Speaker: Unknown Speaker
-Church:  Mamelodi Tabernacle
-Type:    Memorial Service
-Language:English
-URL:     https://www.youtube.com/watch?v=T5d5jvuCfmE
+Date:     2025-11-08
+Title:    2025.11.08 - Funeral Service of Pastor Nkodima
+Speaker:  Unknown Speaker
+Church:   Mamelodi Tabernacle
+Type:     Memorial Service
+Duration: 5h 49m
+Language: English
+URL:      https://www.youtube.com/watch?v=T5d5jvuCfmE
 ========================================
 
 TRANSCRIPT

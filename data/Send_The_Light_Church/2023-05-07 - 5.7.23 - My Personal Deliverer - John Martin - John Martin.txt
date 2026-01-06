@@ -4,13 +4,14 @@ START OF FILE: 2023-05-07 - 5.7.23 - My Personal Deliverer - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2023-05-07
-Title:   5.7.23 - My Personal Deliverer - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=jC3RH0YVsDo
+Date:     2023-05-07
+Title:    5.7.23 - My Personal Deliverer - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=jC3RH0YVsDo
 ========================================
 
 TRANSCRIPT

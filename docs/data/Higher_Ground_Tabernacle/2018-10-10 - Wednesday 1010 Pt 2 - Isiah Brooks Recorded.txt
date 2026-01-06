@@ -4,13 +4,14 @@ START OF FILE: 2018-10-10 - Wednesday 1010 Pt 2 - Isiah Brooks Recorded.txt
 
 SERMON DETAILS
 ========================================
-Date:    2018-10-10
-Title:   Wednesday 10/10 Pt 2
-Speaker: Isiah Brooks Recorded
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=Ee41_pUHARg
+Date:     2018-10-10
+Title:    Wednesday 10/10 Pt 2
+Speaker:  Isiah Brooks Recorded
+Church:   Higher Ground Tabernacle
+Type:     Short Service
+Duration: 29m
+Language: English
+URL:      https://www.youtube.com/watch?v=Ee41_pUHARg
 ========================================
 
 Description:

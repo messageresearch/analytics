@@ -4,13 +4,14 @@ START OF FILE: 2019-02-03 - Bro Isiah Brooks     Sun even  232019  Higher Ground
 
 SERMON DETAILS
 ========================================
-Date:    2019-02-03
-Title:   Bro Isiah Brooks |   | Sun even  2/32019 | Higher Ground Tabernacle
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=1eXkIVcWLVQ
+Date:     2019-02-03
+Title:    Bro Isiah Brooks |   | Sun even  2/32019 | Higher Ground Tabernacle
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=1eXkIVcWLVQ
 ========================================
 
 Description:

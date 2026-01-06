@@ -4,13 +4,14 @@ START OF FILE: 2020-10-10 - Saturday Afternoon Service - Guest Minister Brother 
 
 SERMON DETAILS
 ========================================
-Date:    2020-10-10
-Title:   Saturday Afternoon Service - Guest Minister Brother Cliff Farmer - 10/10/2020 4 pm
-Speaker: Cliff Farmer
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=LujVIjAFvIA
+Date:     2020-10-10
+Title:    Saturday Afternoon Service - Guest Minister Brother Cliff Farmer - 10/10/2020 4 pm
+Speaker:  Cliff Farmer
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=LujVIjAFvIA
 ========================================
 
 Description:

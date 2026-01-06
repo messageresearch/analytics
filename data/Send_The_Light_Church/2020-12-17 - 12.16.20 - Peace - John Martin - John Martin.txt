@@ -4,13 +4,14 @@ START OF FILE: 2020-12-17 - 12.16.20 - Peace - John Martin - John Martin.txt
 
 SERMON DETAILS
 ========================================
-Date:    2020-12-17
-Title:   12.16.20 - Peace - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=XI2gOtrJhho
+Date:     2020-12-17
+Title:    12.16.20 - Peace - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 59m
+Language: English
+URL:      https://www.youtube.com/watch?v=XI2gOtrJhho
 ========================================
 
 Description:

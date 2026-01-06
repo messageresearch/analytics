@@ -3,9 +3,9 @@ Title: Palmerworm
 Speaker: William Branham
 Type: Sermon
 Language: English
-Venue: Locust
-Location: Cankerworm
-Duration: Caterpillar, Roberts Park Amphitheater, Connersville, IN, 84 min
+Venue: Roberts Park Amphitheater
+Location: Connersville, IN
+Duration: 84 min
 Source: livingwordbroadcast.org
 DateCode: 53-0612
 

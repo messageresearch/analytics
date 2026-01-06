@@ -4,13 +4,14 @@ START OF FILE: 2020-01-08 - Bro Isiah Brooks  The Man Christ Jesus  Wednesday 18
 
 SERMON DETAILS
 ========================================
-Date:    2020-01-08
-Title:   Bro Isiah Brooks | The Man Christ Jesus | Wednesday 1/8/2020
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zsvc3O-KQQs
+Date:     2020-01-08
+Title:    Bro Isiah Brooks | The Man Christ Jesus | Wednesday 1/8/2020
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 46m
+Language: English
+URL:      https://www.youtube.com/watch?v=zsvc3O-KQQs
 ========================================
 
 Description:

@@ -4,8 +4,8 @@ Speaker: William Branham
 Type: Sermon
 Language: English
 Venue: Elliott Auditorium
-Location: Tulare
-Duration: CA, 75 min
+Location: Tulare, CA
+Duration: 75 min
 Source: livingwordbroadcast.org
 DateCode: 64-0215
 

@@ -4,13 +4,14 @@ START OF FILE: 2021-11-07 - 11.7.21 - Respecting God's Way - John Martin - John 
 
 SERMON DETAILS
 ========================================
-Date:    2021-11-07
-Title:   11.7.21 - Respecting God's Way - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=y7PwI6grc4w
+Date:     2021-11-07
+Title:    11.7.21 - Respecting God's Way - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 13m
+Language: English
+URL:      https://www.youtube.com/watch?v=y7PwI6grc4w
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2014-04-12 - Breaking Bread - 2014 03 30e - Randy Sias - Randy Si
 
 SERMON DETAILS
 ========================================
-Date:    2014-04-12
-Title:   Breaking Bread - 2014 03 30e - Randy Sias
-Speaker: Randy Sias
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=vVbrkFDrEwU
+Date:     2014-04-12
+Title:    Breaking Bread - 2014 03 30e - Randy Sias
+Speaker:  Randy Sias
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 25m
+Language: English
+URL:      https://www.youtube.com/watch?v=vVbrkFDrEwU
 ========================================
 
 Description:

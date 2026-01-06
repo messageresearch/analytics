@@ -4,13 +4,14 @@ START OF FILE: 2022-03-20 - The reason, The purpose  Pastor Isiah Brooks  Sunday
 
 SERMON DETAILS
 ========================================
-Date:    2022-03-20
-Title:   The reason, The purpose || Pastor Isiah Brooks || Sunday March 20th 2022
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=PXDtjR9P5ec
+Date:     2022-03-20
+Title:    The reason, The purpose || Pastor Isiah Brooks || Sunday March 20th 2022
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=PXDtjR9P5ec
 ========================================
 
 Description:

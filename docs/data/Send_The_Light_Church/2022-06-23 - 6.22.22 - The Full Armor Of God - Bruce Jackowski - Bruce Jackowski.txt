@@ -4,13 +4,14 @@ START OF FILE: 2022-06-23 - 6.22.22 - The Full Armor Of God - Bruce Jackowski - 
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-23
-Title:   6.22.22 - The Full Armor Of God - Bruce Jackowski
-Speaker: Bruce Jackowski
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=CZdgWAxMTCU
+Date:     2022-06-23
+Title:    6.22.22 - The Full Armor Of God - Bruce Jackowski
+Speaker:  Bruce Jackowski
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 50m
+Language: English
+URL:      https://www.youtube.com/watch?v=CZdgWAxMTCU
 ========================================
 
 TRANSCRIPT

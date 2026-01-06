@@ -4,13 +4,14 @@ START OF FILE: 2014-05-27 - The Mighty Man - 2014 05 25e - Matthew Watkins - Mat
 
 SERMON DETAILS
 ========================================
-Date:    2014-05-27
-Title:   The Mighty Man - 2014 05 25e - Matthew Watkins
-Speaker: Matthew Watkins
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=gIymScqeuTo
+Date:     2014-05-27
+Title:    The Mighty Man - 2014 05 25e - Matthew Watkins
+Speaker:  Matthew Watkins
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 2h 37m
+Language: English
+URL:      https://www.youtube.com/watch?v=gIymScqeuTo
 ========================================
 
 Description:

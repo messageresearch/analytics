@@ -4,13 +4,14 @@ START OF FILE: 2019-06-02 - Bro Troy Svejda  The Fountain of Living Water  06022
 
 SERMON DETAILS
 ========================================
-Date:    2019-06-02
-Title:   Bro Troy Svejda | The Fountain of Living Water | 06/02/2019 | HIGHER GROUND TABERNACLE
-Speaker: Troy Svejda
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ssRP0jr0Lxk
+Date:     2019-06-02
+Title:    Bro Troy Svejda | The Fountain of Living Water | 06/02/2019 | HIGHER GROUND TABERNACLE
+Speaker:  Troy Svejda
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 31m
+Language: English
+URL:      https://www.youtube.com/watch?v=ssRP0jr0Lxk
 ========================================
 
 Description:

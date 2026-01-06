@@ -4,13 +4,14 @@ START OF FILE: 2024-09-15 - 9.15.24 - Understanding Your Day And It's Message - 
 
 SERMON DETAILS
 ========================================
-Date:    2024-09-15
-Title:   9.15.24 - Understanding Your Day And It's Message - Alex Magoulas
-Speaker: Alex Magoulas
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=o8Bo3Ea5LyE
+Date:     2024-09-15
+Title:    9.15.24 - Understanding Your Day And It's Message - Alex Magoulas
+Speaker:  Alex Magoulas
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 2h 4m
+Language: English
+URL:      https://www.youtube.com/watch?v=o8Bo3Ea5LyE
 ========================================
 
 TRANSCRIPT

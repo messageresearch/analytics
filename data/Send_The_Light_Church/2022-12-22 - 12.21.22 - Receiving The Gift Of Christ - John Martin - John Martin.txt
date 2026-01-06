@@ -4,13 +4,14 @@ START OF FILE: 2022-12-22 - 12.21.22 - Receiving The Gift Of Christ - John Marti
 
 SERMON DETAILS
 ========================================
-Date:    2022-12-22
-Title:   12.21.22 - Receiving The Gift Of Christ - John Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=q2EY_jRlu4A
+Date:     2022-12-22
+Title:    12.21.22 - Receiving The Gift Of Christ - John Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=q2EY_jRlu4A
 ========================================
 
 TRANSCRIPT

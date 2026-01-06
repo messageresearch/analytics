@@ -4,13 +4,14 @@ START OF FILE: 2020-11-05 - Face to Face - Pastor Isiah Brooks - Isiah Brooks.tx
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-05
-Title:   Face to Face - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=yTFjlrCjqJI
+Date:     2020-11-05
+Title:    Face to Face - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 18m
+Language: English
+URL:      https://www.youtube.com/watch?v=yTFjlrCjqJI
 ========================================
 
 Description:

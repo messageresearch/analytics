@@ -4,13 +4,14 @@ START OF FILE: 2022-07-21 - 7.20.22 - Being In Sync With God - John  Martin - Jo
 
 SERMON DETAILS
 ========================================
-Date:    2022-07-21
-Title:   7.20.22 - Being In Sync With God - John  Martin
-Speaker: John Martin
-Church:  Send The Light Church
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=2w94h9u0CHE
+Date:     2022-07-21
+Title:    7.20.22 - Being In Sync With God - John  Martin
+Speaker:  John Martin
+Church:   Send The Light Church
+Type:     Full Sermon
+Duration: 1h 54m
+Language: English
+URL:      https://www.youtube.com/watch?v=2w94h9u0CHE
 ========================================
 
 TRANSCRIPT

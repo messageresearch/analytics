@@ -4,13 +4,14 @@ START OF FILE: 2014-03-17 - Caught Up - 2014 01 08 - Pastor Isiah Brooks - Isiah
 
 SERMON DETAILS
 ========================================
-Date:    2014-03-17
-Title:   Caught Up - 2014 01 08 - Pastor Isiah Brooks
-Speaker: Isiah Brooks
-Church:  Higher Ground Tabernacle
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=UD2GyLzWQUU
+Date:     2014-03-17
+Title:    Caught Up - 2014 01 08 - Pastor Isiah Brooks
+Speaker:  Isiah Brooks
+Church:   Higher Ground Tabernacle
+Type:     Full Sermon
+Duration: 1h 14m
+Language: English
+URL:      https://www.youtube.com/watch?v=UD2GyLzWQUU
 ========================================
 
 Description:
