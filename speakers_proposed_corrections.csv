@@ -1,0 +1,106 @@
+from,to,action,reasons
+Annual International Convention,,REMOVE,contains_title_tokens
+Apostle Bernie,,REMOVE,strip_honorific_prefix;single_token_after_clean
+BBC Youth,,REMOVE,contains_title_tokens
+Bro Barry,,REMOVE,strip_honorific_prefix;single_token_after_clean
+Bro. Barry,,REMOVE,strip_honorific_prefix;single_token_after_clean
+Bro. Emmanuel,,REMOVE,strip_honorific_prefix;single_token_after_clean
+Bro. Mervin,,REMOVE,strip_honorific_prefix;single_token_after_clean
+Bro. Thomas,,REMOVE,strip_honorific_prefix;single_token_after_clean
+Childrens Christmas Concert,,REMOVE,contains_title_tokens
+Church Choir,,REMOVE,not_a_speaker
+Circuit Riders,,REMOVE,not_a_speaker
+Ciruit Riders,,REMOVE,not_a_speaker
+Confronting Youth Issues,,REMOVE,contains_title_tokens
+Couples Seminar,,REMOVE,contains_title_tokens
+Coleman August,Coleman,REPLACE,collapse_to_base_prefix
+Coleman December,Coleman,REPLACE,collapse_to_base_prefix
+Coleman February,Coleman,REPLACE,collapse_to_base_prefix
+Coleman Forest Hills,Coleman,REPLACE,collapse_to_base_prefix
+Coleman January,Coleman,REPLACE,collapse_to_base_prefix
+Coleman July,Coleman,REPLACE,collapse_to_base_prefix
+Coleman June,Coleman,REPLACE,collapse_to_base_prefix
+Coleman March,Coleman,REPLACE,collapse_to_base_prefix
+Coleman November,Coleman,REPLACE,collapse_to_base_prefix
+Coleman October,Coleman,REPLACE,collapse_to_base_prefix
+Coleman Puerto Rico,Coleman,REPLACE,collapse_to_base_prefix
+Coleman September,Coleman,REPLACE,collapse_to_base_prefix
+Dr Ernest,,REMOVE,strip_honorific_prefix;single_token_after_clean
+DVF Youth,,REMOVE,contains_title_tokens
+ELT Youth Banquet,,REMOVE,contains_title_tokens
+Happy Easter,,REMOVE,contains_title_tokens
+Isiah Easter,,REMOVE,contains_title_tokens
+Jezebels Pastor,,REMOVE,strip_honorific_suffix;single_token_after_clean
+Merry Christmas,,REMOVE,contains_title_tokens
+Monthly Combined,,REMOVE,contains_title_tokens
+Nevertheless Bro,,REMOVE,strip_honorific_suffix;single_token_after_clean
+Online Concert,,REMOVE,contains_title_tokens
+Picture Slideshow,,REMOVE,contains_title_tokens
+PLY Spiritual Retreat,,REMOVE,contains_title_tokens
+Quick Money Presentation,,REMOVE,contains_title_tokens
+School Special,,REMOVE,contains_title_tokens
+Seven Seals Review,,REMOVE,contains_title_tokens
+TWT Youth,,REMOVE,contains_title_tokens
+Young Adult Banquet,,REMOVE,contains_title_tokens
+Aaron Esquibel Bro,Aaron Esquibel,REPLACE,strip_honorific_suffix
+Alison Duckworth Sis,Alison Duckworth,REPLACE,strip_honorific_suffix
+Ben Guerra Bro,Ben Guerra,REPLACE,strip_honorific_suffix
+Bro John Perozok,John Perozok,REPLACE,strip_honorific_prefix
+Bro. Andrew Glover,Andrew Glover,REPLACE,strip_honorific_prefix
+Bro. Kelechi Asianya,Kelechi Asianya,REPLACE,strip_honorific_prefix
+Calebs Inheritance Past,,REMOVE,strip_honorific_suffix
+Burley Williams Balm,Burley Williams,REPLACE,collapse_to_base_prefix
+Burley Williams Living,Burley Williams,REPLACE,collapse_to_base_prefix
+Chad Lamb Access,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Clothed,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Decisions,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Discernment,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb El-Shaddai,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Emmanuel,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Expectations,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Focused,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Food,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Growth,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Honoring,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Immersed,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Light,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Marys,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Overcoming,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Peniel,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Perfect,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Press,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Redeemable,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Secure,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Victory,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Walking,Chad Lamb,REPLACE,collapse_to_base_prefix
+Chad Lamb Wisdom,Chad Lamb,REPLACE,collapse_to_base_prefix
+Diego Arroyo Ezekiel,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Gen,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Isa,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Jer,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo John,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Mje,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Rom,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Diego Arroyo Sun,Diego Arroyo,REPLACE,collapse_to_base_prefix
+Dr. Ernest Montoya,Ernest Montoya,REPLACE,strip_honorific_prefix
+Dr. Ernesto Montoya,Ernesto Montoya,REPLACE,strip_honorific_prefix
+Ethan Perez Bro,Ethan Perez,REPLACE,strip_honorific_suffix
+Germs Warfare- Bro,,REMOVE,strip_honorific_suffix
+Jacob Hernandez Bro,Jacob Hernandez,REPLACE,strip_honorific_suffix
+Mi Buen Pastor,,REMOVE,strip_honorific_suffix
+Min Isaac Adude,Isaac Adude,REPLACE,strip_honorific_prefix
+Min Joe Adams,Joe Adams,REPLACE,strip_honorific_prefix
+Min SamBlessing Chesa,SamBlessing Chesa,REPLACE,strip_honorific_prefix
+Min. Esaie Bowa,Esaie Bowa,REPLACE,strip_honorific_prefix
+Min. Gabe Tawari,Gabe Tawari,REPLACE,strip_honorific_prefix
+Min. Isaac Adude,Isaac Adude,REPLACE,strip_honorific_prefix
+Min. SamBlessing Chesa,SamBlessing Chesa,REPLACE,strip_honorific_prefix
+Min. William Kaniki,William Kaniki,REPLACE,strip_honorific_prefix
+Past Faustin Lukumuena,Faustin Lukumuena,REPLACE,strip_honorific_prefix
+Past Isiah Brooks,Isiah Brooks,REPLACE,strip_honorific_prefix
+Past. Esaïe Bowa,Esaïe Bowa,REPLACE,strip_honorific_prefix
+Past. Faustin Lukumeuna,Faustin Lukumeuna,REPLACE,strip_honorific_prefix
+Past. Isiah Brooks,Isiah Brooks,REPLACE,strip_honorific_prefix
+Pstr Isiah Brooks,Isiah Brooks,REPLACE,strip_honorific_prefix
+Roberto Figueroa Pastor,Roberto Figueroa,REPLACE,strip_honorific_suffix
+Unshackled - Bro,,REMOVE,strip_honorific_suffix

@@ -1,0 +1,376 @@
+======================================================================
+SPEAKER DETECTION LOG - Heal Archive
+Generated: 2026-01-06 20:27:19
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    42,170
+Speakers Detected:          34,342
+Unknown Speakers:           7,828
+Detection Rate:             81.4%
+
+Speakers Corrected:         13,611
+Speakers Re-detected:       1,117
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+Arizona Believers Church:
+    Total: 547  |  Detected: 158  |  Unknown: 389  |  Rate: 28.9%
+Believer's Spoken Word Tabernacle:
+    Total: 918  |  Detected: 519  |  Unknown: 399  |  Rate: 56.5%
+Believers Christian Fellowship:
+    Total: 1,205  |  Detected: 1,179  |  Unknown: 26  |  Rate: 97.8%
+Bethel Tabernacle:
+    Total: 1,048  |  Detected: 950  |  Unknown: 98  |  Rate: 90.6%
+Bride Tabernacle of Columbia SC:
+    Total: 621  |  Detected: 569  |  Unknown: 52  |  Rate: 91.6%
+Bride of Christ Fellowship:
+    Total: 1,166  |  Detected: 1,154  |  Unknown: 12  |  Rate: 99.0%
+Calgary Living Word Assembly:
+    Total: 703  |  Detected: 514  |  Unknown: 189  |  Rate: 73.1%
+Cedar Hills - Church of the Cross:
+    Total: 1,342  |  Detected: 1,185  |  Unknown: 157  |  Rate: 88.3%
+Christian Life Tabernacle:
+    Total: 1,029  |  Detected: 889  |  Unknown: 140  |  Rate: 86.4%
+Cloverdale Bibleway:
+    Total: 142  |  Detected: 17  |  Unknown: 125  |  Rate: 12.0%
+Coleman Family Ministries:
+    Total: 252  |  Detected: 163  |  Unknown: 89  |  Rate: 64.7%
+Days of the Voice Fellowship:
+    Total: 911  |  Detected: 728  |  Unknown: 183  |  Rate: 79.9%
+EL Tabernacle Ministries:
+    Total: 139  |  Detected: 75  |  Unknown: 64  |  Rate: 54.0%
+Edmonton Restored Word Fellowship:
+    Total: 73  |  Detected: 70  |  Unknown: 3  |  Rate: 95.9%
+End Time Message Tabernacle CA:
+    Total: 12  |  Detected: 11  |  Unknown: 1  |  Rate: 91.7%
+End Time Message Tabernacle CO:
+    Total: 2,044  |  Detected: 1,700  |  Unknown: 344  |  Rate: 83.2%
+Evangelismo Para El Rapto:
+    Total: 237  |  Detected: 75  |  Unknown: 162  |  Rate: 31.6%
+Evening Light Fellowship AZ:
+    Total: 387  |  Detected: 316  |  Unknown: 71  |  Rate: 81.7%
+Evening Light Fellowship CA:
+    Total: 732  |  Detected: 695  |  Unknown: 37  |  Rate: 94.9%
+Evening Light Tabernacle:
+    Total: 1,092  |  Detected: 985  |  Unknown: 107  |  Rate: 90.2%
+Evening Light Tabernacle Elkton KY:
+    Total: 794  |  Detected: 725  |  Unknown: 69  |  Rate: 91.3%
+Faith Tabernacle:
+    Total: 384  |  Detected: 379  |  Unknown: 5  |  Rate: 98.7%
+Flagstaff Mission Tabernacle:
+    Total: 71  |  Detected: 53  |  Unknown: 18  |  Rate: 74.6%
+Full Gospel Lighthouse Tabernacle:
+    Total: 661  |  Detected: 620  |  Unknown: 41  |  Rate: 93.8%
+Good Neighbour Ministries:
+    Total: 1,155  |  Detected: 684  |  Unknown: 471  |  Rate: 59.2%
+Good Shepherd Fellowship:
+    Total: 1,049  |  Detected: 829  |  Unknown: 220  |  Rate: 79.0%
+Grace Tabernacle:
+    Total: 218  |  Detected: 217  |  Unknown: 1  |  Rate: 99.5%
+Grace Tabernacle Nampa:
+    Total: 614  |  Detected: 608  |  Unknown: 6  |  Rate: 99.0%
+Harvest Time Bride Tabernacle:
+    Total: 213  |  Detected: 203  |  Unknown: 10  |  Rate: 95.3%
+Headstone Tabernacle:
+    Total: 1,610  |  Detected: 1,479  |  Unknown: 131  |  Rate: 91.9%
+Higher Ground Tabernacle:
+    Total: 1,202  |  Detected: 1,088  |  Unknown: 114  |  Rate: 90.5%
+Higher Ground Tabernacle Iowa City:
+    Total: 491  |  Detected: 379  |  Unknown: 112  |  Rate: 77.2%
+Inner Veil Ministries:
+    Total: 544  |  Detected: 449  |  Unknown: 95  |  Rate: 82.5%
+Jericho Tabernacle:
+    Total: 1,104  |  Detected: 1,004  |  Unknown: 100  |  Rate: 90.9%
+Literal Life Church:
+    Total: 624  |  Detected: 586  |  Unknown: 38  |  Rate: 93.9%
+Malachi Four Tabernacle:
+    Total: 377  |  Detected: 119  |  Unknown: 258  |  Rate: 31.6%
+Mamelodi Tabernacle:
+    Total: 598  |  Detected: 304  |  Unknown: 294  |  Rate: 50.8%
+New Life Outreach Church Of Pawnee:
+    Total: 481  |  Detected: 466  |  Unknown: 15  |  Rate: 96.9%
+Phoenix Lighthouse Tabernacle:
+    Total: 1,623  |  Detected: 1,617  |  Unknown: 6  |  Rate: 99.6%
+Phoenix Tabernacle Inc.:
+    Total: 1,115  |  Detected: 743  |  Unknown: 372  |  Rate: 66.6%
+Rapturing Grace Tabernacle:
+    Total: 81  |  Detected: 72  |  Unknown: 9  |  Rate: 88.9%
+Send The Light Church:
+    Total: 496  |  Detected: 459  |  Unknown: 37  |  Rate: 92.5%
+Shalom Tabernacle Tucson:
+    Total: 359  |  Detected: 349  |  Unknown: 10  |  Rate: 97.2%
+Shekinah Tabernacle:
+    Total: 1,852  |  Detected: 944  |  Unknown: 908  |  Rate: 51.0%
+Son Of Man Revealed Ministries:
+    Total: 502  |  Detected: 484  |  Unknown: 18  |  Rate: 96.4%
+Spirit Of Truth Assembly:
+    Total: 15  |  Detected: 15  |  Unknown: 0  |  Rate: 100.0%
+Spirit and Truth Tabernacle:
+    Total: 675  |  Detected: 660  |  Unknown: 15  |  Rate: 97.8%
+Spoken Word Church:
+    Total: 3,500  |  Detected: 3,214  |  Unknown: 286  |  Rate: 91.8%
+Spoken Word Tabernacle:
+    Total: 664  |  Detected: 642  |  Unknown: 22  |  Rate: 96.7%
+Tabernaculo Hijos Del Dios Viviente:
+    Total: 179  |  Detected: 162  |  Unknown: 17  |  Rate: 90.5%
+Tabernaculo La Voz Del Septimo:
+    Total: 264  |  Detected: 5  |  Unknown: 259  |  Rate: 1.9%
+Tabernaculo Obra Maestra:
+    Total: 299  |  Detected: 210  |  Unknown: 89  |  Rate: 70.2%
+The Word of God Tabernacle:
+    Total: 277  |  Detected: 28  |  Unknown: 249  |  Rate: 10.1%
+True Word Tabernacle:
+    Total: 244  |  Detected: 210  |  Unknown: 34  |  Rate: 86.1%
+Tucson Tabernacle:
+    Total: 907  |  Detected: 734  |  Unknown: 173  |  Rate: 80.9%
+Word Of Life Church:
+    Total: 778  |  Detected: 499  |  Unknown: 279  |  Rate: 64.1%
+Word of Life Tabernacle:
+    Total: 1,550  |  Detected: 1,151  |  Unknown: 399  |  Rate: 74.3%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Aaron Roberts
+  • Adrian Gengan
+  • Adrian Gengan Sun
+  • Adrian Gray
+  • Andre Pettit
+  • Andrew Bohannon
+  • Annaliese Gloyne
+  • Anneliese Gloyne
+  • Anthony Fiore
+  • Anthony Mantsie
+  • Ariel Ngongo
+  • Artificial Conception
+  • Artificial Resurrections
+  • Baker Caleb
+  • Baker Perfect
+  • Bartholemew Kambale
+  • Belinda Evans
+  • Ben Hill
+  • Ben Norrod
+  • Billy Mbuyi
+  • Blessing Sisters
+  • Bloteh Won
+  • Bob Black
+  • Bobby Rajkumar
+  • Bowa The Philistines
+  • Brazil National
+  • Brian Crowe
+  • Bright-Star Tshimoa
+  • Brooks Darkness
+  • Brooks The Germ
+  • Busobozi Midweek
+  • Caleb Bongongo
+  • Caleb Mbikayi
+  • Caleb Perez
+  • Calvin Daniel Simmons
+  • Catalina Rodriguez
+  • Cedar Hills
+  • Ceil Carter
+  • Chad Lamb
+  • Chintha Ramsunder
+  • Chris Long Phoenix Lighthouse
+  • Dallas Group
+  • Dan Ali
+  • Dan Basikowski
+  • Dan Ngobi
+  • Daniel Gutierrez
+  • Daniel Maynez
+  • Danny Esquibel
+  • Darrell Ward
+  • Darrell Ward Chosen
+  • Darrell Ward Unshackled
+  • David McGeary
+  • David McGeary Sr
+  • David Pollock
+  • Dele Adelodun
+  • Diego Castrillon
+  • Dios Ha Bajado
+  • Don Snow
+  • Dorcas Kanyinda
+  • Dorcas Muteba
+  • Dorcas Tampyree
+  • Doris Nkgapele
+  • Earnestly Contending
+  • Edgar Hill Roscoe
+  • Edgar Roscoe
+  • Eduan Naud
+  • Eduan Naude
+  • Edward F Byskal
+  • Efrain Cubillo
+  • Eke Eke
+  • Eleazar Ruiz
+  • Eli Castillo
+  • Elliott Col
+  • Emmanuel Pineda Zaragoza
+  • Ernest Montoya
+  • Esaie Bowa
+  • Esaie Bowa La
+  • Esaie Bowa No
+  • Esteban Borunda
+  • Esther Mokgonyana
+  • Eulalio Ruiz
+  • Everett Seay
+  • Ezekiel Jeremiah Moreno
+  • Fabio Bernal
+  • Faustin Birthday
+  • Faustin Kalombo
+  • Faustin Lukumuena
+  • Felix Flores
+  • Flint Take
+  • Front Line Workers
+  • Gideon Byekwaso
+  • Glorified Bodies
+  • Grace Tshimoa
+  • Gregoire Mpiana
+  • Gustavo Avila Soto
+  • Hailey Cross
+  • Harold Shifflett
+  • Heavenly Places
+  • Henock Tshitebua
+  • Ignore The Giants
+  • Isaacson McLaughlin
+  • Isabella Maria Martinez
+  • Isiah A Super
+  • Isiah Brooks
+  • Israel Muwawa
+  • Israel Nkodima
+  • Israel Nkodima Tanzania Ubungo
+  • Izolo Namhla Naphakade
+  • Jack Duff
+  • Jason Rajkoomar
+  • Jean Cooks
+  • Jeffries Family
+  • Jeremy Shriner
+  • Jerome Butts
+  • Jerry Cesar
+  • Jesse Smith
+  • Jimmy Alkire
+  • Joel Seays
+  • Joham Garcia
+  • John Alvarado
+  • John Conteh
+  • Jonah Abeyta
+  • Jordan Fraijo
+  • Joseph Amani
+  • Joseph Chikosi
+  • Joshua Muepu
+  • Joshua Ngobi Muwanguzi
+  • Josue Ilunga
+  • Josue Tchona
+  • Julia Tshimoa
+  • Junior Mavinga
+  • K Moore
+  • Karen Pruitt
+  • Kedibone Pheto
+  • Kenneth Middleton
+  • Kofi Antwi
+  • Laura Cazares
+  • Laura Cazares Picture Slideshow
+  • Lloyd Chinamasa
+  • Loris Rolfe
+  • Luis Urrego
+  • Malebo Makuwa
+  • Mamelodi Brothers
+  • Mardochee Kinkaku
+  • Margie Mahabeer
+  • Maria Makofane
+  • Matt Watkins
+  • Matthew McGeary
+  • Medley Sisters
+  • Mercy Kezia
+  • Mercy Kezia Ssempa
+  • Michael Mc Mayo
+  • Mike Patterson
+  • Mo Nkoana
+  • Modern Mediums
+  • Motshekwa Mulaudzi
+  • Mottie Jackson Tate
+  • Narcisse Tshibangu
+  • Nevile Muteba
+  • Neville Kisalu
+  • Neville Mpiana
+  • Neville Muteba
+  • Nickenson Fortune
+  • Nkabinde Rings Renewal
+  • Norris Cummings
+  • North Carolina
+  • Nqobile Ngweya
+  • Ntumba Mutombo
+  • Odipio Charles
+  • Olumuyiwa Omotoyinbo
+  • Onias Bondo
+  • Original Inspiration
+  • Orville Kabamba
+  • Patricia Cooper
+  • Paul Building
+  • Paul G Garcia
+  • Paul Garcia
+  • Peace DVF Specials
+  • Pesado Ebalaza
+  • Philemon Mabunda
+  • Plan Possess Plant
+  • Polycap Epilu Midweek
+  • Preacher Brother Elmer
+  • Raul Gonzalez
+  • Ray Gabriel
+  • Raymond Ottley
+  • Reba Sims
+  • Reuben Kingo
+  • Revelation Resolves Complication
+  • Rigo Cazares
+  • Rita Vuma
+  • Robert Willson
+  • Robson Brothers
+  • Roger Shifflett
+  • Rolando Eduardo Gonzalez Machuca
+  • Rolando Genesis
+  • Rolando Gensis
+  • Ron Spencer
+  • Ronnie Gengan
+  • Ronnie Long
+  • Ross Oglesby
+  • Salome Thema
+  • SamBlessing Chesa
+  • SamBlessing Chesa Sun March
+  • Samson Shetty
+  • Samuel Dale
+  • Sarah Segauke
+  • Sergio Hern
+  • Sergio Navarette Sunrise
+  • Sergio Navarrete
+  • Sharon Lukumuena
+  • Sheila Roscoe
+  • Spiritual Amusia
+  • Ssempa Sisters
+  • Stephen Dodd
+  • Stephen Francis
+  • Steven Wante
+  • Stuart Duckworth
+  • Sunny Ganess
+  • Sydney Mokoena
+  • Talia Mileham
+  • Tazwell Jefferies
+  • Tazwell Jeffries
+  • Thomas Perez
+  • Thomas Perez Sr
+  • Troy Sun
+  • Troy Svedja
+  • Until Then
+  • Victor Moholwa
+  • Wade Dale
+  • Warren Arquisola
+  • Wason Homegoing
+  • Wendall Martin
+  • William M. Branham
+  • Winnie DV Specials
+  • Winnie DVF Specials
+  • Zacharia Mothibi
+  • Zodwa Motshwene
+
+======================================================================
+END OF LOG
+======================================================================

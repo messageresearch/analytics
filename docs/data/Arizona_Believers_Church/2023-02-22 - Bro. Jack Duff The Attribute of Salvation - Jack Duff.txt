@@ -4,13 +4,14 @@ START OF FILE: 2023-02-22 - Bro. Jack Duff The Attribute of Salvation - Jack Duf
 
 SERMON DETAILS
 ========================================
-Date:    2023-02-22
-Title:   Bro. Jack Duff: The Attribute of Salvation
+Date:     2023-02-22
+Title:    Bro. Jack Duff: The Attribute of Salvation
 Speaker: Jack Duff
-Church:  Arizona Believers Church
+Church:   Arizona Believers Church
 Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=0bowcqe_6Bw
+Duration: 51m
+Language: English
+URL:      https://www.youtube.com/watch?v=0bowcqe_6Bw
 ========================================
 
 Description:

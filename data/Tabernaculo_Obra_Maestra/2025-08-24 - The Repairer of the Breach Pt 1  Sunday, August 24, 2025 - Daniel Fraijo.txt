@@ -4,13 +4,14 @@ START OF FILE: 2025-08-24 - The Repairer of the Breach Pt 1  Sunday, August 24, 
 
 SERMON DETAILS
 ========================================
-Date:    2025-08-24
-Title:   The Repairer of the Breach Pt 1 | Sunday, August 24, 2025
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=2SdczfOHlqA
+Date:     2025-08-24
+Title:    The Repairer of the Breach Pt 1 | Sunday, August 24, 2025
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 40m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=2SdczfOHlqA
 ========================================
 
 Description:

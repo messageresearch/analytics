@@ -1,16 +1,17 @@
 ################################################################################
-START OF FILE: 2025-06-01 - 250601-Jason DeMars Quickened into the Seventh Seal Part 2 - Jason DeMars.txt
+START OF FILE: 2025-06-01 - 250601-Jason DeMars Quickened into the Seventh Seal Part 2 - Jason Demars.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
-Date:    2025-06-01
-Title:   250601-Jason DeMars: Quickened into the Seventh Seal Part 2
-Speaker: Jason DeMars
-Church:  Bethel Tabernacle
+Date:     2025-06-01
+Title:    250601-Jason DeMars: Quickened into the Seventh Seal Part 2
+Speaker: Jason Demars
+Church:   Bethel Tabernacle
 Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ApmaNuIJqEw
+Duration: 1h 43m
+Language: English
+URL:      https://www.youtube.com/watch?v=ApmaNuIJqEw
 ========================================
 
 Description:

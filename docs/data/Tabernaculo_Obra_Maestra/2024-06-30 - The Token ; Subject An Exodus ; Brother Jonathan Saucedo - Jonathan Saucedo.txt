@@ -4,13 +4,14 @@ START OF FILE: 2024-06-30 - The Token ; Subject An Exodus ; Brother Jonathan Sau
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-30
-Title:   The Token ; Subject: An Exodus ; Brother Jonathan Saucedo
-Speaker: Jonathan Saucedo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=QjR0veJexow
+Date:     2024-06-30
+Title:    The Token ; Subject: An Exodus ; Brother Jonathan Saucedo
+Speaker:  Jonathan Saucedo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 32m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=QjR0veJexow
 ========================================
 
 TRANSCRIPT

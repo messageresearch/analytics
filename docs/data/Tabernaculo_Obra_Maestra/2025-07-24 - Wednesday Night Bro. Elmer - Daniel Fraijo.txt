@@ -4,13 +4,14 @@ START OF FILE: 2025-07-24 - Wednesday Night Bro. Elmer - Daniel Fraijo.txt
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-24
-Title:   Wednesday Night: Bro. Elmer
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=foru8cH99Ow
+Date:     2025-07-24
+Title:    Wednesday Night: Bro. Elmer
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 1h 45m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=foru8cH99Ow
 ========================================
 
 Description:

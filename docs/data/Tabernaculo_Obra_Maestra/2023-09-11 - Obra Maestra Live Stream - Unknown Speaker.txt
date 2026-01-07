@@ -4,13 +4,14 @@ START OF FILE: 2023-09-11 - Obra Maestra Live Stream - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-09-11
-Title:   Obra Maestra Live Stream
+Date:     2023-09-11
+Title:    Obra Maestra Live Stream
 Speaker: Unknown Speaker
-Church:  Tabernaculo Obra Maestra
+Church:   Tabernaculo Obra Maestra
 Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=jcfcNZhogLI
+Duration: 0m
+Language: English
+URL:      https://www.youtube.com/watch?v=jcfcNZhogLI
 ========================================
 
 Description:

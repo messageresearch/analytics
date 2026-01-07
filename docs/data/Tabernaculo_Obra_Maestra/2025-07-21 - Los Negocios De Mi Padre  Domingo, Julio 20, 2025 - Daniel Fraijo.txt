@@ -4,13 +4,14 @@ START OF FILE: 2025-07-21 - Los Negocios De Mi Padre  Domingo, Julio 20, 2025 - 
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-21
-Title:   Los Negocios De Mi Padre | Domingo, Julio 20, 2025
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=Dhc3mLOZyw0
+Date:     2025-07-21
+Title:    Los Negocios De Mi Padre | Domingo, Julio 20, 2025
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 31m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=Dhc3mLOZyw0
 ========================================
 
 Description:

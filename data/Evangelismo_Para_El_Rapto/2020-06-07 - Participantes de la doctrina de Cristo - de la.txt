@@ -4,14 +4,13 @@ START OF FILE: 2020-06-07 - Participantes de la doctrina de Cristo - de la.txt
 
 SERMON DETAILS
 ========================================
-Date:     2020-06-07
-Title:    Participantes de la doctrina de Cristo"
-Speaker:  de la
-Church:   Evangelismo Para El Rapto
-Type:     Full Sermon
-Duration: 2h 13m
-Language: Spanish
-URL:      https://www.youtube.com/watch?v=n4XCeWHnuME
+Date:    2020-06-07
+Title:   Participantes de la doctrina de Cristo"
+Speaker: de la
+Church:  Evangelismo Para El Rapto
+Type:    Full Sermon
+Language:Spanish
+URL:     https://www.youtube.com/watch?v=n4XCeWHnuME
 ========================================
 
 Description:

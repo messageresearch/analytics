@@ -4,13 +4,14 @@ START OF FILE: 2025-01-12 - One Day at a Time  Bro. Robert Figueroa  Sunday, Jan
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-12
-Title:   One Day at a Time | Bro. Robert Figueroa | Sunday, January 12, 2025
-Speaker: Robert Figueroa
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=x7ZfLxYgOXo
+Date:     2025-01-12
+Title:    One Day at a Time | Bro. Robert Figueroa | Sunday, January 12, 2025
+Speaker:  Robert Figueroa
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 3h 6m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=x7ZfLxYgOXo
 ========================================
 
 Description:

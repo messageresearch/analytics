@@ -4,13 +4,14 @@ START OF FILE: 2025-01-11 - Aceptandonos en el Amado  Pastor Raul Gonzales Galin
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-11
-Title:   Aceptandonos en el Amado | Pastor Raul Gonzales Galindo, Tabernaculo Hijos Del Dios Viviente
-Speaker: Raul Gonzales Galindo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=9QMwUHBUZOA
+Date:     2025-01-11
+Title:    Aceptandonos en el Amado | Pastor Raul Gonzales Galindo, Tabernaculo Hijos Del Dios Viviente
+Speaker:  Raul Gonzales Galindo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 14m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=9QMwUHBUZOA
 ========================================
 
 Description:

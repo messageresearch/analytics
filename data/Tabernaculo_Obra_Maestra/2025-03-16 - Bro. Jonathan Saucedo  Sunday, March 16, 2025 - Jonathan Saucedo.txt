@@ -4,13 +4,14 @@ START OF FILE: 2025-03-16 - Bro. Jonathan Saucedo  Sunday, March 16, 2025 - Jona
 
 SERMON DETAILS
 ========================================
-Date:    2025-03-16
-Title:   Bro. Jonathan Saucedo | Sunday, March 16, 2025
-Speaker: Jonathan Saucedo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=o3a9VN_oW6s
+Date:     2025-03-16
+Title:    Bro. Jonathan Saucedo | Sunday, March 16, 2025
+Speaker:  Jonathan Saucedo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 22m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=o3a9VN_oW6s
 ========================================
 
 Description:

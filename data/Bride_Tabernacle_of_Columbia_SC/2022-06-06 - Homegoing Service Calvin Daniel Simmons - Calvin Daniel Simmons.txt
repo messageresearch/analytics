@@ -4,13 +4,14 @@ START OF FILE: 2022-06-06 - Homegoing Service Calvin Daniel Simmons - Calvin Dan
 
 SERMON DETAILS
 ========================================
-Date:    2022-06-06
-Title:   Homegoing Service: Calvin Daniel Simmons
+Date:     2022-06-06
+Title:    Homegoing Service: Calvin Daniel Simmons
 Speaker: Calvin Daniel Simmons
-Church:  Bride Tabernacle of Columbia SC
+Church:   Bride Tabernacle of Columbia SC
 Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=zRwlBRwYt-g
+Duration: 1h 41m
+Language: English
+URL:      https://www.youtube.com/watch?v=zRwlBRwYt-g
 ========================================
 
 Description:

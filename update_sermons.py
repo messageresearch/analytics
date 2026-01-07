@@ -14,6 +14,7 @@ import platform
 import subprocess
 import csv
 import shutil
+import unicodedata
 import ShalomTabernacleSermonScraperv2 as st_scraper
 from pytubefix import YouTube, Playlist
 from pytubefix.cli import on_progress
@@ -157,6 +158,8 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
         lines.append(f"Speakers Corrected:         {stats_dict['speakers_corrected']:,}")
     if 'speakers_redetected' in stats_dict:
         lines.append(f"Speakers Re-detected:       {stats_dict['speakers_redetected']:,}")
+    if 'speakers_changed_to_unknown' in stats_dict:
+        lines.append(f"Changed To Unknown Speaker: {stats_dict['speakers_changed_to_unknown']:,}")
     if 'transcripts_updated' in stats_dict:
         lines.append(f"Transcripts Updated:        {stats_dict['transcripts_updated']:,}")
     if 'summaries_updated' in stats_dict:
@@ -165,6 +168,37 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
         lines.append(f"Skipped (Same Speaker):     {stats_dict['skipped_same']:,}")
     if 'skipped_not_found' in stats_dict:
         lines.append(f"Skipped (File Not Found):   {stats_dict['skipped_not_found']:,}")
+
+    # Speaker list inventory deltas (speakers.json)
+    if any(k in stats_dict for k in ('unique_speakers_before', 'unique_speakers_after', 'speakers_added', 'speakers_removed')):
+        lines.extend([
+            "",
+            "SPEAKER LIST INVENTORY (speakers.json)",
+            "-" * 40,
+        ])
+        if 'unique_speakers_before' in stats_dict:
+            lines.append(f"Unique Speakers Before:     {stats_dict['unique_speakers_before']:,}")
+        if 'unique_speakers_after' in stats_dict:
+            lines.append(f"Unique Speakers After:      {stats_dict['unique_speakers_after']:,}")
+        if 'speakers_added' in stats_dict:
+            lines.append(f"New Speakers Added:         {stats_dict['speakers_added']:,}")
+        if 'speakers_removed' in stats_dict:
+            lines.append(f"Speakers Removed:           {stats_dict['speakers_removed']:,}")
+
+    # CSV files processed
+    if stats_dict.get('csv_files_processed'):
+        csv_files = list(dict.fromkeys(stats_dict['csv_files_processed']))  # stable de-dupe
+        lines.extend([
+            "",
+            "SUMMARY CSV FILES PROCESSED",
+            "-" * 40,
+            f"Count: {len(csv_files)}",
+        ])
+        max_list = 200
+        for p in csv_files[:max_list]:
+            lines.append(f"  • {p}")
+        if len(csv_files) > max_list:
+            lines.append(f"  • ... ({len(csv_files) - max_list} more omitted)")
     
     # Add church-level breakdown if present
     if 'by_church' in stats_dict and stats_dict['by_church']:
@@ -206,6 +240,79 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
     except Exception as e:
         print(f"⚠️ Error writing log file: {e}")
         return None
+
+
+def write_heal_speaker_corrections_logs(corrections, data_dir, operation_name="Heal Archive"):
+    """Write speaker correction logs (detailed + FROM/TO summary) to CSV files."""
+    if not corrections:
+        return None, None
+
+    timestamp = datetime.datetime.now()
+    logs_dir = os.path.join(data_dir, "heal_logs")
+    os.makedirs(logs_dir, exist_ok=True)
+
+    safe_op = re.sub(r'[^A-Za-z0-9_-]+', '_', operation_name).strip('_')
+    stamp = timestamp.strftime('%Y%m%d_%H%M%S')
+
+    detailed_path = os.path.join(logs_dir, f"heal_speaker_corrections_{safe_op}_{stamp}.csv")
+    summary_path = os.path.join(logs_dir, f"heal_speaker_from_to_{safe_op}_{stamp}.csv")
+
+    fieldnames = [
+        "church",
+        "date",
+        "title",
+        "url",
+        "from_speaker",
+        "to_speaker",
+        "reason",
+    ]
+
+    try:
+        with open(detailed_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            for row in corrections:
+                writer.writerow({k: row.get(k, "") for k in fieldnames})
+    except Exception as e:
+        print(f"⚠️ Failed to write heal corrections log: {e}")
+        detailed_path = None
+
+    from_to_counts = {}
+    for row in corrections:
+        key = (row.get('from_speaker', ''), row.get('to_speaker', ''))
+        from_to_counts[key] = from_to_counts.get(key, 0) + 1
+
+    try:
+        with open(summary_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=["from_speaker", "to_speaker", "count"])
+            writer.writeheader()
+            for (from_s, to_s), count in sorted(from_to_counts.items(), key=lambda x: (-x[1], x[0][0], x[0][1])):
+                writer.writerow({"from_speaker": from_s, "to_speaker": to_s, "count": count})
+    except Exception as e:
+        print(f"⚠️ Failed to write heal FROM/TO summary: {e}")
+        summary_path = None
+
+    return detailed_path, summary_path
+
+
+def _casefold_speaker(name: str) -> str:
+    return speaker_casefold_key(name)
+
+
+def compute_speaker_inventory_delta(before_set, after_set):
+    """Compute case-insensitive speaker inventory delta for speakers.json."""
+    before_keys = {_casefold_speaker(s) for s in (before_set or set()) if (s or '').strip()}
+    after_keys = {_casefold_speaker(s) for s in (after_set or set()) if (s or '').strip()}
+
+    before_keys.discard(_casefold_speaker("Unknown Speaker"))
+    after_keys.discard(_casefold_speaker("Unknown Speaker"))
+
+    return {
+        'unique_speakers_before': len(before_keys),
+        'unique_speakers_after': len(after_keys),
+        'speakers_added': len(after_keys - before_keys),
+        'speakers_removed': len(before_keys - after_keys),
+    }
 
 # --- IMPROVED SPEAKER DETECTION (from speaker_detector.py) ---
 # Known speakers - first names mapped to full names (for completing partial detections)
@@ -394,14 +501,84 @@ def load_json_file(filepath):
     if os.path.exists(filepath):
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
-                return set(json.load(f))
-        except: return set()
+                data = json.load(f)
+
+            # speakers.json: dedupe case-insensitively to avoid duplicates like
+            # "John Smith" vs "john smith".
+            if os.path.basename(filepath) == SPEAKERS_FILE:
+                best_by_key = {}
+                for raw in data:
+                    s = normalize_nfc_text(" ".join((raw or '').split()).strip())
+                    if not s:
+                        continue
+                    key = speaker_casefold_key(s)
+                    current = best_by_key.get(key)
+                    if current is None:
+                        best_by_key[key] = s
+                        continue
+
+                    # Prefer non-ALLCAPS and non-all-lowercase variants when possible.
+                    def rank(v: str):
+                        return (1 if v.isupper() else 0, 1 if v.islower() else 0, v)
+
+                    if rank(s) < rank(current):
+                        best_by_key[key] = s
+
+                return set(best_by_key.values())
+
+            return set(data)
+        except json.JSONDecodeError as e:
+            # Protect against silently treating a hand-edited speakers.json as empty.
+            if os.path.basename(filepath) == SPEAKERS_FILE:
+                print(f"\n❌ ERROR: {SPEAKERS_FILE} is not valid JSON and could be overwritten if the script continues.")
+                print(f"   Fix the JSON formatting (missing commas/quotes/brackets) and re-run.")
+                print(f"   Details: {e}\n")
+                raise
+            return set()
+        except Exception:
+            return set()
     return set()
+
+
+def normalize_nfc_text(value: str) -> str:
+    try:
+        return unicodedata.normalize('NFC', value or '')
+    except Exception:
+        return value or ''
+
+
+def speaker_casefold_key(name: str) -> str:
+    return normalize_nfc_text(" ".join((name or "").split())).casefold()
+
+
+def build_known_speakers_casefold_map(known_speakers) -> dict:
+    return {speaker_casefold_key(s): s for s in known_speakers if (s or "").strip()}
 
 def save_json_file(filepath, data):
     try:
+        if os.path.basename(filepath) == SPEAKERS_FILE:
+            # Deduplicate case-insensitively on write.
+            best_by_key = {}
+            for raw in data:
+                s = normalize_nfc_text(" ".join((raw or '').split()).strip())
+                if not s:
+                    continue
+                key = speaker_casefold_key(s)
+                current = best_by_key.get(key)
+                if current is None:
+                    best_by_key[key] = s
+                    continue
+
+                def rank(v: str):
+                    return (1 if v.isupper() else 0, 1 if v.islower() else 0, v)
+
+                if rank(s) < rank(current):
+                    best_by_key[key] = s
+
+            data = set(best_by_key.values())
+
         with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(sorted(list(data)), f, indent=2)
+            json.dump(sorted(list(data)), f, indent=2, ensure_ascii=False)
     except Exception as e: pass
 
 
@@ -761,6 +938,149 @@ def normalize_speaker(speaker, title=""):
     
     speaker = speaker.strip()
     s_lower = speaker.lower()
+
+    # Common metadata leakage into speaker field (e.g., "<Name> Date/Title/Venue")
+    tokens = re.split(r'\s+', speaker.strip())
+    if len(tokens) >= 3 and tokens[-1].lower() in {"date", "title", "venue"}:
+        base2 = " ".join(tokens[:2]).strip()
+        if is_valid_person_name(base2):
+            return base2
+
+    # Explicit non-speaker title leakage (known bad values observed in data)
+    if s_lower in {
+        "conferencia con dios",
+        "confronting eternal",
+        "correctly overcoming",
+        "corriendo con paciencia",
+        "cosmetic christians",
+        "covenanted blood purging",
+        "creating peace",
+        "crossing jordan",
+        "crying grace",
+        "dark places",
+        "empty vessels",
+        "encourage yourself",
+        "end time evangelism",
+        "end-time transfromation",
+        "enfocando nuestros pensamientos",
+        "enlarging territories",
+        "elohim operating",
+        "elt adult",
+        "embracing deity",
+        "entertaining strangers",
+        "eternal plan",
+        "eternal purpose",
+        "eternal redemption",
+        "eternal separation",
+        "etm tabernacles crossover",
+        "everlasting consequences",
+        "everlasting covenant",
+        "exceeding righteousness",
+        "except ye abide",
+        "exceptional praise",
+        "experiencing fulfillment",
+        "experiencing gods",
+        "extra chair",
+        "face-to-face relationship",
+        "faint yet pursuing",
+        "faiths reaction",
+        "false anointed ones",
+        "false humility",
+        "familiar places",
+        "familiarity breeds contempt",
+        "family idols",
+        "family matters overview",
+        "family positions",
+        "family working together",
+        "forsaken then crowned",
+        "abstract title deed",
+        "ill fly away",
+        "i'll fly away",
+        "infant seeds",
+        "invasion insanity deliverance",
+        "invert always invert",
+        "investigating angels",
+        "humble thyself",
+        "humble yourself",
+        "israel commemoration",
+        "israel gods redemption",
+        "ive been changed",
+        "i've been changed",
+        "ive tried",
+        "i've tried",
+        "only believe",
+        "open channels",
+        "open door",
+        "original inspiration",
+        "original sin",
+        "josephs silver cup",
+        "joshua parallels ephesians",
+        "judgement seat",
+        "lump without leaven",
+        "phoenix lighthouse",
+        "picture perfect",
+        "piezas de rompecabezas",
+        "plan possess plant",
+        "precious promises",
+        "prepared ground",
+        "present context",
+        "present darkness",
+        "present tense manifestation",
+        "present tense revelation",
+        "promise island",
+        "prophecy politics",
+        "prosper lamour parfait",
+        "pure heart",
+        "rapture landscape",
+        "rapturing conditin",
+        "rapturing strength",
+        "rapturing without",
+        "rejected stone",
+        "religion versus relationship",
+        "remaining fruitful",
+        "remaining vigilant",
+        "remembering calvary",
+        "remembering gods gift",
+        "rescue story brother",
+        "resolving evil",
+        "respecting gods",
+        "revelacion espiritual",
+        "revelation brings strength",
+        "revelation resolves complication",
+        "rich young ruler",
+        "right hand",
+        "right now",
+        "righteous mans reward",
+    }:
+        return "Unknown Speaker"
+
+    # Targeted cleanup: remove the trailing word "Special" when it is clearly a suffix
+    # (e.g., "Courtney Dexter Special" -> "Courtney Dexter").
+    if re.match(r'^Courtney\s+Dexter\s+Special$', speaker, re.IGNORECASE):
+        return "Courtney Dexter"
+
+    # Targeted cleanup: remove trailing title leakage for a known speaker.
+    # (e.g., "Aaron McGeary Bittersweet" -> "Aaron McGeary")
+    if re.match(r'^Aaron\s+McGeary\s+Bittersweet$', speaker, re.IGNORECASE):
+        return "Aaron McGeary"
+
+    # Paul Haylett contamination fix
+    # Examples (bad): "Paul Haylett Accepted", "Paul Haylett Anchored", ...
+    # Canonical (good): "Paul Haylett"
+    if re.match(r'^Paul\s+Haylett\b', speaker, re.IGNORECASE):
+        tokens = re.split(r'\s+', speaker.strip())
+        allowed_suffixes = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv'}
+        if len(tokens) == 2:
+            return "Paul Haylett"
+        if len(tokens) >= 3 and tokens[2].lower() in allowed_suffixes:
+            return "Paul Haylett " + tokens[2].rstrip('.')
+        return "Paul Haylett"
+
+    # Targeted cleanup: strip leaked trailing words for known speakers
+    if re.match(r'^Joseph\s+Coleman\s+April$', speaker, re.IGNORECASE):
+        return "Joseph Coleman"
+    if re.match(r'^Jose\s+Hernandez\s+Work$', speaker, re.IGNORECASE):
+        return "Jose Hernandez"
     
     # Specific fix maps - William Branham variations
     william_branham_patterns = [
@@ -789,6 +1109,58 @@ def normalize_speaker(speaker, title=""):
     if "joel pruitt" in s_lower and "youth" in s_lower: return "Joel Pruitt"
     if re.match(r'^Dan\s+Evans$', speaker, re.IGNORECASE): return 'Daniel Evans'
     if re.match(r'^Faustin\s+Luk', speaker, re.IGNORECASE): return 'Faustin Lukumuena'
+
+    # Chad Lamb contamination fix
+    # Examples (bad): "Chad Lamb Access", "Chad Lamb Discernment", ...
+    # Canonical (good): "Chad Lamb"
+    if re.match(r'^Chad\s+Lamb\b', speaker, re.IGNORECASE):
+        tokens = re.split(r'\s+', speaker.strip())
+        # Keep legitimate suffixes like Jr/Sr/II/etc; otherwise collapse to the base name
+        allowed_suffixes = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv'}
+        if len(tokens) == 2:
+            return "Chad Lamb"
+        if len(tokens) >= 3 and tokens[2].lower() in allowed_suffixes:
+            return "Chad Lamb " + tokens[2].rstrip('.')
+        return "Chad Lamb"
+
+    # Diego Arroyo contamination fix
+    # Examples (bad): "Diego Arroyo Gen", "Diego Arroyo Isa", "Diego Arroyo Ezekiel", ...
+    # Canonical (good): "Diego Arroyo"
+    if re.match(r'^Diego\s+Arroyo\b', speaker, re.IGNORECASE):
+        tokens = re.split(r'\s+', speaker.strip())
+        allowed_suffixes = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv'}
+        if len(tokens) == 2:
+            return "Diego Arroyo"
+        if len(tokens) >= 3 and tokens[2].lower() in allowed_suffixes:
+            return "Diego Arroyo " + tokens[2].rstrip('.')
+        return "Diego Arroyo"
+
+    # Burley Williams contamination fix
+    # Examples (bad): "Burley Williams Balm", "Burley Williams Living"
+    # Canonical (good): "Burley Williams"
+    if re.match(r'^Burley\s+Williams\b', speaker, re.IGNORECASE):
+        tokens = re.split(r'\s+', speaker.strip())
+        allowed_suffixes = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv'}
+        if len(tokens) == 2:
+            return "Burley Williams"
+        if len(tokens) >= 3 and tokens[2].lower() in allowed_suffixes:
+            return "Burley Williams " + tokens[2].rstrip('.')
+        return "Burley Williams"
+
+    # Coleman contamination fix
+    # Examples (bad): "Coleman August", "Coleman Puerto Rico", "Coleman Forest Hills"
+    # Canonical (good): "Coleman"
+    # Only collapses when the suffix looks like a month or a known location phrase.
+    if re.match(r'^Coleman\b', speaker, re.IGNORECASE):
+        s = speaker.strip()
+        # Month suffix
+        if re.match(r'^Coleman\s+(January|February|March|April|May|June|July|August|September|October|November|December)\b', s, re.IGNORECASE):
+            return "Coleman"
+        # Location/venue-like suffixes observed in data
+        if re.match(r'^Coleman\s+Puerto\s+Rico\b', s, re.IGNORECASE):
+            return "Coleman"
+        if re.match(r'^Coleman\s+Forest\s+Hills\b', s, re.IGNORECASE):
+            return "Coleman"
 
     # Choir Fixes
     if "choir" in s_lower:
@@ -851,13 +1223,21 @@ def clean_name(name):
     """Clean up extracted name - improved version."""
     if not name:
         return ""
+
+    # Ensure we never keep the .timestamped artifact in speaker names
+    name = name.replace('.timestamped', '')
     
     # Remove leading/trailing punctuation and whitespace
     name = re.sub(r'^[\s\-:,;\.\'\"]+', '', name)
     name = re.sub(r'[\s\-:,;\.\'\"]+$', '', name)
     
-    # Remove leading honorifics
-    name = re.sub(r'^(?:By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Sr\.?|Hna\.?|Hno\.?|Pastor|Ptr\.?|Pst\.?|Bishop|Rev\.?|Evangelist|Guest\s+Minister|Song\s+Leader|Elder|Founding)\s+', '', name, flags=re.IGNORECASE)
+    # Remove leading honorifics (loop to handle stacked prefixes like "Preacher Brother")
+    honorific_prefix_pattern = r'^(?:By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Sr\.?|Hna\.?|Hno\.?|Hno|Past\.?|Pastor\.?|Paster\.?|Pastror\.?|Pstr\.?|Ptr\.?|Pst\.?|Preacher|Bishop|Rev\.?|Dr\.?|Evangelist|Apostle|Deacon|Dcn\.?|Guest\s+Minister|Song\s+Leader|Elder|Founding)\s+'
+    while True:
+        new_name = re.sub(honorific_prefix_pattern, '', name, flags=re.IGNORECASE)
+        if new_name == name:
+            break
+        name = new_name
     
     # Remove dates - especially "on Month" patterns
     name = re.sub(r'\s+on\s+(?:January|February|March|April|May|June|July|August|September|October|November|December).*$', '', name, flags=re.IGNORECASE)
@@ -902,11 +1282,28 @@ def clean_name(name):
     # Remove ALL CAPS suffix (likely sermon titles)
     name = re.sub(r'\s+[A-Z]{2,}(?:\s+[A-Z]{2,})*$', '', name)
     
-    # Remove trailing junk words
+    # Remove trailing honorifics (e.g. "Roberto Figueroa Pastor" -> "Roberto Figueroa")
     name = name.strip(" .,:;-|")
     words = name.split()
-    while words and words[-1].lower() in INVALID_NAME_TERMS:
-        words.pop()
+    trailing_honorifics = {
+        'bro', 'bro.', 'brother', 'bros', 'bros.',
+        'sis', 'sis.', 'sister',
+        'pastor', 'paster', 'pastror', 'pstr', 'pstr.', 'ptr', 'ptr.', 'pst', 'pst.',
+        'preacher',
+        'hno', 'hno.',
+        'rev', 'rev.', 'dr', 'dr.',
+        'bishop', 'evangelist', 'apostle', 'elder',
+        'deacon', 'dcn', 'dcn.'
+    }
+    while words:
+        last = words[-1].lower().strip(".,:;-|")
+        if last in trailing_honorifics:
+            words.pop()
+            continue
+        if last in INVALID_NAME_TERMS:
+            words.pop()
+            continue
+        break
     name = " ".join(words)
     
     # Clean multiple spaces
@@ -922,18 +1319,47 @@ def get_canonical_speaker(speaker, speakers_set, speakers_file):
     """
     if not speaker or speaker == "Unknown Speaker":
         return "Unknown Speaker"
+
+    # Canonicalize before matching/adding. This focuses on REPLACE-style cleanup
+    # (honorific prefixes/suffixes, whitespace, and .timestamped artifacts).
+    speaker = (speaker or '').replace('.timestamped', '').strip()
+    speaker = normalize_speaker(speaker)
+    speaker = clean_name(speaker)
+    speaker = normalize_speaker(speaker)
+    speaker = (speaker or '').strip()
+    if not speaker or speaker == "Unknown Speaker":
+        return "Unknown Speaker"
     # Try to match by first + last name (case-insensitive, ignoring extra spaces)
     def normalize_name(n):
         return " ".join(n.strip().split()).lower()
+
+    def canonical_match(candidate: str):
+        cand_norm = normalize_name(candidate)
+        for existing in speakers_set:
+            if normalize_name(existing) == cand_norm:
+                return existing
+        return None
+
+    # If the detected speaker looks like "<Known Speaker> <extra words>" (title leakage),
+    # collapse to the known canonical speaker. This focuses on REPLACE-style issues and
+    # avoids adding polluted variants to speakers.json.
+    tokens = speaker.split()
+    allowed_suffixes = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv'}
+    if len(tokens) >= 3 and tokens[2].lower() not in allowed_suffixes:
+        base2 = " ".join(tokens[:2])
+        base3 = " ".join(tokens[:3])
+        m = canonical_match(base3) or canonical_match(base2)
+        if m:
+            return m
     speaker_norm = normalize_name(speaker)
     for s in speakers_set:
         if normalize_name(s) == speaker_norm:
             return s  # Return canonical from list
     # If not found, add to speakers.json
-    speakers_set.add(speaker.strip())
+    speakers_set.add(speaker)
     save_json_file(speakers_file, speakers_set)
-    print(f"[NEW SPEAKER ADDED] '{speaker.strip()}' added to {speakers_file}")
-    return speaker.strip()
+    print(f"[NEW SPEAKER ADDED] '{speaker}' added to {speakers_file}")
+    return speaker
 
 def is_valid_person_name(text, title=""):
     """Check if text looks like a valid person name - improved version."""
@@ -944,10 +1370,125 @@ def is_valid_person_name(text, title=""):
     t_lower = text.lower()
     
     # Add specific exceptions for valid names that might otherwise fail
-    valid_exceptions = ["church choir", "bloteh won", "chris take", "tim cross", 
+    valid_exceptions = ["bloteh won", "chris take", "tim cross", 
                        "william m. branham", "isiah brooks", "daniel evans", "caleb perez"]
     if t_lower in valid_exceptions:
         return True
+
+    # Explicit non-speaker group/organization names
+    if t_lower in {"church choir", "circuit riders", "ciruit riders"}:
+        return False
+
+    # Explicit non-speaker titles that have leaked into the speaker field
+    if t_lower in {
+        "conferencia con dios",
+        "confronting eternal",
+        "correctly overcoming",
+        "corriendo con paciencia",
+        "cosmetic christians",
+        "covenanted blood purging",
+        "creating peace",
+        "crossing jordan",
+        "crying grace",
+        "dark places",
+        "empty vessels",
+        "encourage yourself",
+        "end time evangelism",
+        "end-time transfromation",
+        "enfocando nuestros pensamientos",
+        "enlarging territories",
+        "elohim operating",
+        "elt adult",
+        "embracing deity",
+        "entertaining strangers",
+        "eternal plan",
+        "eternal purpose",
+        "eternal redemption",
+        "eternal separation",
+        "etm tabernacles crossover",
+        "everlasting consequences",
+        "everlasting covenant",
+        "exceeding righteousness",
+        "except ye abide",
+        "exceptional praise",
+        "experiencing fulfillment",
+        "experiencing gods",
+        "extra chair",
+        "face-to-face relationship",
+        "faint yet pursuing",
+        "faiths reaction",
+        "false anointed ones",
+        "false humility",
+        "familiar places",
+        "familiarity breeds contempt",
+        "family idols",
+        "family matters overview",
+        "family positions",
+        "family working together",
+        "forsaken then crowned",
+        "abstract title deed",
+        "ill fly away",
+        "i'll fly away",
+        "infant seeds",
+        "invasion insanity deliverance",
+        "invert always invert",
+        "investigating angels",
+        "humble thyself",
+        "humble yourself",
+        "israel commemoration",
+        "israel gods redemption",
+        "ive been changed",
+        "i've been changed",
+        "ive tried",
+        "i've tried",
+        "only believe",
+        "open channels",
+        "open door",
+        "original inspiration",
+        "original sin",
+        "josephs silver cup",
+        "joshua parallels ephesians",
+        "judgement seat",
+        "lump without leaven",
+        "peter skhosana date",
+        "peter skosana title",
+        "peter skosana venue",
+        "phoenix lighthouse",
+        "picture perfect",
+        "piezas de rompecabezas",
+        "plan possess plant",
+        "precious promises",
+        "prepared ground",
+        "present context",
+        "present darkness",
+        "present tense manifestation",
+        "present tense revelation",
+        "promise island",
+        "prophecy politics",
+        "prosper lamour parfait",
+        "pure heart",
+        "rapture landscape",
+        "rapturing conditin",
+        "rapturing strength",
+        "rapturing without",
+        "rejected stone",
+        "religion versus relationship",
+        "remaining fruitful",
+        "remaining vigilant",
+        "remembering calvary",
+        "remembering gods gift",
+        "rescue story brother",
+        "resolving evil",
+        "respecting gods",
+        "revelacion espiritual",
+        "revelation brings strength",
+        "revelation resolves complication",
+        "rich young ruler",
+        "right hand",
+        "right now",
+        "righteous mans reward",
+    }:
+        return False
     
     # Check against NON_NAME_PATTERNS
     for pattern in NON_NAME_PATTERNS:
@@ -1070,23 +1611,62 @@ UNWANTED_SPEAKERS = set([
     # Duplicates and non-speaker entries to heal
     "Eduan Naude", "Eduan Naudé", "Forest Farmer The Fruit", "Forrest Farmer",
     "Financial Jubilee", "Finding Yourself", "Fitly Joined Together", "Five Comings",
-    "Free Indeed Bro Joe Reynolds", "Freedom Released", "Fulfilling The Original"
+    "Free Indeed Bro Joe Reynolds", "Freedom Released", "Fulfilling The Original",
+    # Known title leakage that should never be treated as a speaker
+    "Conferencia Con Dios", "Confronting Eternal", "Correctly Overcoming",
+    "Corriendo Con Paciencia", "Cosmetic Christians", "Covenanted Blood Purging",
+    "Creating Peace", "Crossing Jordan", "Crying Grace", "Dark Places",
+    "Empty Vessels", "Encourage Yourself", "End Time Evangelism",
+    "End-Time Transfromation", "Enfocando Nuestros Pensamientos", "Enlarging Territories",
+    "Elohim Operating", "ELT Adult", "Embracing Deity", "Entertaining Strangers",
+    "Eternal Plan", "Eternal Purpose", "Eternal Redemption", "Eternal Separation",
+    "ETM Tabernacles Crossover", "Everlasting Consequences", "Everlasting Covenant",
+    "Exceeding Righteousness", "Except Ye Abide", "Exceptional Praise",
+    "Experiencing Fulfillment", "Experiencing Gods", "Extra Chair",
+    "Face-to-face Relationship", "Faint Yet Pursuing", "Faiths Reaction",
+    "False Anointed Ones", "False Humility", "Familiar Places",
+    "Familiarity Breeds Contempt", "Family Idols", "Family Matters Overview",
+    "Family Positions", "Family Working Together", "Forsaken Then Crowned",
+    "Abstract Title Deed", "Ill Fly Away", "I'll Fly Away", "Infant Seeds",
+    "Invasion Insanity Deliverance", "Invert Always Invert", "Investigating Angels",
+    "Humble Thyself", "Humble Yourself", "Israel Commemoration",
+    "Israel Gods Redemption", "Ive Been Changed", "I've Been Changed", "Ive Tried", "I've Tried",
+    "Only Believe", "Open Channels", "Open Door", "Original Inspiration", "Original Sin",
+    "Josephs Silver Cup", "Joshua Parallels Ephesians", "Judgement Seat", "Lump Without Leaven"
+    ,
+    "Peter Skhosana Date", "Peter Skosana Title", "Peter Skosana Venue",
+    "Phoenix Lighthouse", "Picture Perfect", "Piezas De Rompecabezas", "Plan Possess Plant",
+    "Precious Promises", "Prepared Ground", "Present Context", "Present Darkness",
+    "Present Tense Manifestation", "Present Tense Revelation", "Promise Island",
+    "Prophecy Politics", "Prosper Lamour Parfait", "Pure Heart", "Rapture Landscape",
+    "Rapturing Conditin", "Rapturing Strength", "Rapturing Without", "Rejected Stone",
+    "Religion Versus Relationship", "Remaining Fruitful", "Remaining Vigilant",
+    "Remembering Calvary", "Remembering Gods Gift", "Rescue Story Brother",
+    "Resolving Evil", "Respecting Gods", "Revelacion Espiritual",
+    "Revelation Brings Strength", "Revelation Resolves Complication", "Rich Young Ruler",
+    "Right Hand", "Right Now", "Righteous Mans Reward"
 ])
 
-def heal_archive(data_dir, force=False):
+def heal_archive(data_dir, force=False, churches=None):
     print("\n" + "="*60)
     print("🚑 STARTING DEEP ARCHIVE HEALING & CLEANUP")
     print(f"heal_archive called with data_dir={data_dir}, force={force}")
+    if churches:
+        print(f"   🎯 Filtering to {len(churches)} church(es)")
     if force:
         print("   ⚠️ FORCE MODE: Re-processing all entries.")
     print("="*60)
     print("About to iterate church folders...")
     
+    speakers_before_set = load_json_file(SPEAKERS_FILE)
     updated_files_count = 0
     cleaned_speakers = set()
+    speaker_corrections_log_rows = []
+    csv_files_processed = []
     
     # Load known speakers for full speaker detection
     known_speakers = load_json_file(SPEAKERS_FILE)
+    known_casefold = build_known_speakers_casefold_map(known_speakers)
     
     # Statistics tracking for speaker detection
     heal_stats = {
@@ -1103,12 +1683,20 @@ def heal_archive(data_dir, force=False):
     shadow_rows = []
     shadow_header = ["speaker_name", "source", "detected_date", "notes"]
     
+    allowed_churches = None
+    if churches:
+        allowed_churches = {c.replace(' ', '_').casefold() for c in churches if c}
+
     # 1. Iterate over every Church Folder
     for church_folder in os.listdir(data_dir):
         church_path = os.path.join(data_dir, church_folder)
         if not os.path.isdir(church_path): continue
+
+        if allowed_churches is not None and church_folder.casefold() not in allowed_churches:
+            continue
         
         summary_path = os.path.join(data_dir, f"{church_folder}_Summary.csv")
+        csv_files_processed.append(summary_path)
         if not os.path.exists(summary_path): continue
         
         print(f"   🏥 Healing: {church_folder.replace('_', ' ')}...")
@@ -1176,6 +1764,8 @@ def heal_archive(data_dir, force=False):
 
         for row in rows:
             original_speaker = row.get('speaker', 'Unknown Speaker')
+            raw_original_speaker = original_speaker
+            speaker_reason = ""
             
             # Track stats
             church_stats['total'] += 1
@@ -1198,6 +1788,7 @@ def heal_archive(data_dir, force=False):
                 print(f"      - Healing unwanted speaker: '{original_speaker}' -> 'Unknown Speaker'")
                 original_speaker = 'Unknown Speaker'
                 row['speaker'] = 'Unknown Speaker'
+                speaker_reason = "unwanted_speaker"
             
 
             # --- STEP 1: SMART SPEAKER & TYPE CORRECTION ---
@@ -1221,6 +1812,8 @@ def heal_archive(data_dir, force=False):
             else:
                 # Only run smart correction if it's not a special case
                 new_speaker = smart_speaker_correction(original_speaker, original_title)
+                if new_speaker != original_speaker:
+                    speaker_reason = speaker_reason or "smart_correction"
 
             # --- STEP 1.5: FULL SPEAKER DETECTION FOR UNKNOWN SPEAKERS ---
             # If speaker is still unknown after smart correction, run full detection algorithm
@@ -1234,10 +1827,14 @@ def heal_archive(data_dir, force=False):
                     new_speaker = detected_speaker
                     heal_stats['speakers_redetected'] += 1
                     print(f"      🔍 DETECTED: '{original_title[:40]}...' -> {new_speaker}")
+                    speaker_reason = speaker_reason or "redetected"
                     if is_new:
-                        heal_stats['new_speakers'].add(new_speaker)
-                        known_speakers.add(new_speaker)
-                        print(f"      🎉 NEW SPEAKER LEARNED: {new_speaker}")
+                        key = speaker_casefold_key(new_speaker)
+                        if key and key not in known_casefold:
+                            heal_stats['new_speakers'].add(new_speaker)
+                            known_speakers.add(new_speaker)
+                            known_casefold[key] = new_speaker
+                            print(f"      🎉 NEW SPEAKER LEARNED: {new_speaker}")
 
             # --- STEP 2: SONG DETECTION FROM CONTENT (can override above) ---
             # Construct filename to find transcript
@@ -1313,6 +1910,19 @@ def heal_archive(data_dir, force=False):
             row['type'] = new_type
             new_rows.append(row)
             cleaned_speakers.add(canonical_speaker)
+
+            from_s = (raw_original_speaker or '').strip()
+            to_s = (canonical_speaker or '').strip()
+            if from_s != to_s:
+                speaker_corrections_log_rows.append({
+                    "church": church_folder.replace('_', ' '),
+                    "date": (original_date or '').strip(),
+                    "title": (original_title or '').strip(),
+                    "url": (row.get('url', '') or '').strip(),
+                    "from_speaker": from_s,
+                    "to_speaker": to_s,
+                    "reason": speaker_reason or "healed",
+                })
             if change_detected or force:
                 updated_files_count += 1
             
@@ -1414,6 +2024,29 @@ def heal_archive(data_dir, force=False):
     print(f"✅ Healing Complete. Corrected {updated_files_count} files/entries.")
     print(f"✨ Global Speaker List Optimized: {len(final_speakers)} unique speakers.")
     print(f"🔍 Speakers Re-detected: {heal_stats['speakers_redetected']}")
+
+    # Log speaker inventory deltas (speakers.json) + which CSVs were processed
+    heal_stats.update(compute_speaker_inventory_delta(speakers_before_set, final_speakers))
+    heal_stats['csv_files_processed'] = [p for p in csv_files_processed if p]
+    heal_stats['speakers_changed_to_unknown'] = sum(
+        1 for r in speaker_corrections_log_rows
+        if (r.get('to_speaker') == 'Unknown Speaker') and (r.get('from_speaker') != 'Unknown Speaker')
+    )
+
+    # Write detailed speaker FROM/TO logs for this healing run
+    detailed_csv, summary_csv = write_heal_speaker_corrections_logs(
+        speaker_corrections_log_rows,
+        data_dir=data_dir,
+        operation_name="Heal Archive",
+    )
+    if detailed_csv or summary_csv:
+        print(f"🧾 Speaker corrections recorded: {len(speaker_corrections_log_rows)}")
+        if detailed_csv:
+            print(f"   📄 Detailed log: {detailed_csv}")
+        if summary_csv:
+            print(f"   📄 FROM/TO summary: {summary_csv}")
+
+    heal_stats['speakers_corrected'] = len(speaker_corrections_log_rows)
     
     # Write speaker detection log
     write_speaker_detection_log(heal_stats, operation_name="Heal Archive")
@@ -1464,6 +2097,9 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
     if not corrections:
         print("   ⚠️ No corrections found in CSV")
         return
+
+    speakers_before_set = load_json_file(SPEAKERS_FILE)
+    csv_files_processed = [csv_path]
     
     # Group corrections by church for efficient processing
     by_church = {}
@@ -1484,6 +2120,7 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
         church_folder = church_name.replace(' ', '_')
         church_dir = os.path.join(DATA_DIR, church_folder)
         summary_path = os.path.join(DATA_DIR, f"{church_folder}_Summary.csv")
+        csv_files_processed.append(summary_path)
         
         print(f"\n   🏥 Processing: {church_name} ({len(church_corrections)} corrections)")
         
@@ -1605,16 +2242,20 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
     # Update speakers.json with new speakers
     known_speakers = load_json_file(SPEAKERS_FILE)
     new_speakers_added = set()
+    known_casefold = {speaker_casefold_key(s): s for s in known_speakers}
     for correction in corrections:
         new_speaker = correction.get('speaker_detected', '').strip()
         if new_speaker and new_speaker != "Unknown Speaker":
             new_speaker = normalize_speaker(new_speaker)
             new_speaker = clean_name(new_speaker)
             if new_speaker and is_valid_person_name(new_speaker):
-                if new_speaker not in known_speakers:
+                key = speaker_casefold_key(new_speaker)
+                if key not in known_casefold:
                     new_speakers_added.add(new_speaker)
-                known_speakers.add(new_speaker)
+                    known_speakers.add(new_speaker)
+                    known_casefold[key] = new_speaker
     save_json_file(SPEAKERS_FILE, known_speakers)
+    speakers_after_set = load_json_file(SPEAKERS_FILE)
     
     print("\n" + "="*60)
     print("📊 SPEAKER HEALING SUMMARY")
@@ -1638,7 +2279,10 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
         'skipped_same': skipped_same,
         'skipped_not_found': skipped_not_found,
         'new_speakers': new_speakers_added,
+        'speakers_changed_to_unknown': 0,
+        'csv_files_processed': [p for p in csv_files_processed if p],
     }
+    stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
     write_speaker_detection_log(stats, operation_name="Heal Speakers from CSV")
 
 
@@ -3582,8 +4226,9 @@ def identify_speaker_dynamic(title, description, known_speakers):
     # Check for known speakers in text (title + description)
     found_speakers = set()
     search_text = f"{title}\n{description}"
+    search_text_casefold = search_text.casefold()
     for name in known_speakers:
-        if name in search_text:
+        if name and name.casefold() in search_text_casefold:
             found_speakers.add(name)
     
     # Try all pattern extraction functions on title in order
@@ -4593,8 +5238,11 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         'total_processed': 0,
         'speakers_detected': 0,
         'unknown_speakers': 0,
-        'new_speakers': set()
+        'new_speakers': set(),
+        'csv_files_processed': [get_summary_file_path(church_name, ".csv")]
     }
+
+    known_casefold = build_known_speakers_casefold_map(known_speakers)
     
     channel_url = config['url']
     clean_channel_name = church_name.replace(' ', '_')
@@ -4766,8 +5414,14 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
 
         if manual_speaker:
             speaker = normalize_speaker(manual_speaker)
-            if speaker not in known_speakers:
+            speaker = clean_name(speaker)
+            key = speaker_casefold_key(speaker)
+            existing = known_casefold.get(key) if key else None
+            if existing:
+                speaker = existing
+            elif speaker and speaker != "Unknown Speaker":
                 known_speakers.add(speaker)
+                known_casefold[key] = speaker
                 channel_stats['new_speakers'].add(speaker)
                 save_json_file(SPEAKERS_FILE, known_speakers)
         else:
@@ -4775,9 +5429,16 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             speaker = normalize_speaker(speaker)
             speaker = clean_name(speaker) 
             if is_new:
-                print(f"   🎉 LEARNED NEW SPEAKER: {speaker}")
-                channel_stats['new_speakers'].add(speaker)
-                save_json_file(SPEAKERS_FILE, known_speakers)
+                key = speaker_casefold_key(speaker)
+                existing = known_casefold.get(key) if key else None
+                if existing:
+                    speaker = existing
+                elif speaker and speaker != "Unknown Speaker" and is_valid_person_name(speaker):
+                    print(f"   🎉 LEARNED NEW SPEAKER: {speaker}")
+                    known_speakers.add(speaker)
+                    known_casefold[key] = speaker
+                    channel_stats['new_speakers'].add(speaker)
+                    save_json_file(SPEAKERS_FILE, known_speakers)
 
         video_type = determine_video_type(title, speaker)
         if video_type == "Memorial Service" and speaker != "William M. Branham":
@@ -4818,8 +5479,11 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             elif is_bad_date: needs_download = True 
             elif speaker != "Unknown Speaker" and speaker != old_speaker:
                 print(f"[{count}/{total}] 📝 CORRECTING SPEAKER: {old_speaker} -> {speaker}")
-                if old_speaker in known_speakers:
-                    known_speakers.remove(old_speaker)
+                old_key = speaker_casefold_key(old_speaker)
+                canonical_old = known_casefold.get(old_key) if old_key else None
+                if canonical_old and canonical_old in known_speakers:
+                    known_speakers.remove(canonical_old)
+                    known_casefold.pop(old_key, None)
                     save_json_file(SPEAKERS_FILE, known_speakers)
                 if old_lang != "Unknown":
                     update_file_header_and_name(channel_dir, history_entry, speaker, old_date, title, church_name, old_lang, video_type)
@@ -5409,7 +6073,7 @@ def main():
 
         if args.heal:
             print("Running deep archive healing & cleanup...")
-            heal_archive(DATA_DIR, force=args.force)
+            heal_archive(DATA_DIR, force=args.force, churches=args.church)
             return
 
         channels = load_config()
@@ -5427,7 +6091,8 @@ def main():
             print("\\n" + "="*60)
             print("🔄 FULL SCRAPE: Processing ALL videos in ALL channels")
             print("="*60)
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             # Filter by specific churches if provided
             channels_to_process = channels
@@ -5442,12 +6107,16 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Full Scrape (All Videos)")
             print("\\n✅ Full scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5458,7 +6127,8 @@ def main():
             print("\\n" + "="*60)
             print("🆕 NEW VIDEOS ONLY: Skipping videos with existing transcripts")
             print("="*60)
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             channels_to_process = channels
             if args.church:
@@ -5472,12 +6142,16 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="New Videos Only Scrape")
             print("\\n✅ New videos scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5488,7 +6162,8 @@ def main():
             print("\\n" + "="*60)
             print("🔁 RETRY NO TRANSCRIPT: Re-checking videos without transcripts")
             print("="*60)
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             channels_to_process = channels
             if args.church:
@@ -5502,12 +6177,16 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Retry No Transcript")
             print("\\n✅ Retry complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5517,7 +6196,8 @@ def main():
         if args.days:
             print(f"\\n🔄 PARTIAL SCRAPE: Last {args.days} days for ALL channels")
             print("="*50)
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             for name, config in channels.items():
                 channel_stats = process_channel(name, config, known_speakers, days_back=args.days)
                 if channel_stats:
@@ -5525,12 +6205,16 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape (Last {args.days} Days)")
             print(f"\\n✅ Partial scrape ({args.days} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5538,7 +6222,8 @@ def main():
         
         # When running with --recent, we don't need a menu.
         if args.recent:
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             for name, config in channels.items():
                 channel_stats = process_channel(name, config, known_speakers, days_back=1)
                 if channel_stats:
@@ -5546,12 +6231,16 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
                             'detected': channel_stats.get('speakers_detected', 0),
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Recent Scrape (Last 24 Hours)")
             print("\\n✅ Recent scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5579,7 +6268,8 @@ def main():
                 print(f"  • {name}")
             print()
             
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             for name, config in unscraped_channels.items():
                 print(f"\\n{'='*50}")
                 print(f"SCRAPING: {name}")
@@ -5590,6 +6280,7 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
@@ -5597,6 +6288,9 @@ def main():
                             'unknown': channel_stats.get('unknown_speakers', 0)
                         }
             
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape (CLI)")
             print(f"\\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5618,7 +6312,30 @@ def main():
         action = input("\n👉 Enter Number: ").strip()
         
         if action == '3':
-            heal_archive(DATA_DIR)
+            print("\n--- DEEP SELF-HEALING & CLEANUP (No Scraping) ---")
+            print("This heals existing Summary CSV + transcript headers/filenames.")
+            print("Choose one channel or all channels.\n")
+
+            channel_names = list(channels.keys())
+            for i, name in enumerate(channel_names, 1):
+                print(f"  {i}. {name}")
+            print("  0. All Channels")
+            choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
+
+            if choice == '0' or not choice:
+                heal_archive(DATA_DIR)
+                return
+
+            try:
+                idx = int(choice) - 1
+                if 0 <= idx < len(channel_names):
+                    heal_archive(DATA_DIR, churches=[channel_names[idx]])
+                else:
+                    print("Invalid selection.")
+                return
+            except ValueError:
+                print("Invalid input.")
+                return
             return
         
         if action == '4':
@@ -5665,7 +6382,8 @@ def main():
             print(f"  0. All Channels")
             choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
             
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             if choice == '0':
                 print(f"\n🔄 Scanning ALL channels for videos from the last {days_back} days...\n")
@@ -5676,6 +6394,7 @@ def main():
                         all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                         all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                         all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                        all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                         if channel_stats.get('total_processed', 0) > 0:
                             all_stats['by_church'][name] = {
                                 'total': channel_stats.get('total_processed', 0),
@@ -5695,6 +6414,7 @@ def main():
                             all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                             all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                             all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                            all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                             if channel_stats.get('total_processed', 0) > 0:
                                 all_stats['by_church'][name] = {
                                     'total': channel_stats.get('total_processed', 0),
@@ -5708,6 +6428,9 @@ def main():
                     print("Invalid input.")
                     return
             
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape Menu (Last {days_back} Days)")
             print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5748,7 +6471,8 @@ def main():
             
             choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
             
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             if choice == '0':
                 print(f"\n🔄 Scraping ALL {len(unscraped_channels)} unscraped channels...\n")
@@ -5762,6 +6486,7 @@ def main():
                         all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                         all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                         all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                        all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                         if channel_stats.get('total_processed', 0) > 0:
                             all_stats['by_church'][name] = {
                                 'total': channel_stats.get('total_processed', 0),
@@ -5781,6 +6506,7 @@ def main():
                             all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                             all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                             all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                            all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                             if channel_stats.get('total_processed', 0) > 0:
                                 all_stats['by_church'][name] = {
                                     'total': channel_stats.get('total_processed', 0),
@@ -5794,6 +6520,9 @@ def main():
                     print("Invalid input.")
                     return
             
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape")
             print(f"\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
             heal_archive(DATA_DIR)
@@ -5812,6 +6541,7 @@ def main():
                 if 0 <= idx < len(channel_names):
                     channel_name = channel_names[idx]
                     print(f"\n🔄 Scraping {channel_name}...\n")
+                    speakers_before_set = load_json_file(SPEAKERS_FILE)
                     channel_stats = process_channel(channel_name, channels[channel_name], known_speakers)
                     if channel_stats and channel_stats.get('total_processed', 0) > 0:
                         all_stats = {
@@ -5819,19 +6549,24 @@ def main():
                             'speakers_detected': channel_stats.get('speakers_detected', 0),
                             'unknown_speakers': channel_stats.get('unknown_speakers', 0),
                             'new_speakers': channel_stats.get('new_speakers', set()),
+                            'csv_files_processed': channel_stats.get('csv_files_processed', []),
                             'by_church': {channel_name: {
                                 'total': channel_stats.get('total_processed', 0),
                                 'detected': channel_stats.get('speakers_detected', 0),
                                 'unknown': channel_stats.get('unknown_speakers', 0)
                             }}
                         }
+                        speakers_after_set = load_json_file(SPEAKERS_FILE)
+                        all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+                        all_stats['speakers_changed_to_unknown'] = 0
                         write_speaker_detection_log(all_stats, operation_name=f"Single Channel Scrape: {channel_name}")
                 else:
                     print("Invalid selection.")
             except ValueError:
                 print("Invalid input.")
         elif action == '2':
-            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set()}
+            speakers_before_set = load_json_file(SPEAKERS_FILE)
+            all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             # Sort channels: unscraped first, then alphabetically
             def channel_sort_key(item):
@@ -5861,6 +6596,7 @@ def main():
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
                     all_stats['unknown_speakers'] += channel_stats.get('unknown_speakers', 0)
                     all_stats['new_speakers'].update(channel_stats.get('new_speakers', set()))
+                    all_stats['csv_files_processed'].extend(channel_stats.get('csv_files_processed', []))
                     if channel_stats.get('total_processed', 0) > 0:
                         all_stats['by_church'][name] = {
                             'total': channel_stats.get('total_processed', 0),
@@ -5873,6 +6609,9 @@ def main():
                 else:
                     print(f"\n🎉 Finished {name}. All channels complete!")
                     
+            speakers_after_set = load_json_file(SPEAKERS_FILE)
+            all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
+            all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="All Channels Full Scrape")
         else:
             print("Invalid action. Exiting.")

@@ -4,13 +4,14 @@ START OF FILE: 2025-07-28 - Under the Token, Under the Cloud, Under Abraham's Co
 
 SERMON DETAILS
 ========================================
-Date:    2025-07-28
-Title:   Under the Token, Under the Cloud, Under Abraham's Covenant | Bro. Sergio Hernandez | Sunday 07/27/25
-Speaker: Sergio Hernandez
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=F8kXC0GgOWg
+Date:     2025-07-28
+Title:    Under the Token, Under the Cloud, Under Abraham's Covenant | Bro. Sergio Hernandez | Sunday 07/27/25
+Speaker:  Sergio Hernandez
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 3h 24m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=F8kXC0GgOWg
 ========================================
 
 Description:

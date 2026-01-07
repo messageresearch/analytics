@@ -4,13 +4,14 @@ START OF FILE: 2024-12-22 - The Eleventh Hour Communion, Foot Washing, a Day of 
 
 SERMON DETAILS
 ========================================
-Date:    2024-12-22
-Title:   The Eleventh Hour Communion, Foot Washing, a Day of Remembrance, Sacred, and Holy | Sunday 12/22/24
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=hdToWQD5usQ
+Date:     2024-12-22
+Title:    The Eleventh Hour Communion, Foot Washing, a Day of Remembrance, Sacred, and Holy | Sunday 12/22/24
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Communion Service
+Duration: 2h 13m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=hdToWQD5usQ
 ========================================
 
 Description:

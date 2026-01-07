@@ -4,13 +4,16 @@ START OF FILE: 2023-08-13 - Bro. Joel Pruitt - Joel Pruitt.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-08-13
-Title:   Bro. Joel Pruitt
+Date:     2023-08-13
+Title:    Bro. Joel Pruitt
 Speaker: Joel Pruitt
-Church:  Word of Life Tabernacle
+Church:   Word of Life Tabernacle
 Type:    Song / Worship
-Language:English
-URL:     https://www.youtube.com/watch?v=_FvtLXIa_eA
+Duration: 1m
+Language: English
+URL:      https://www.youtube.com/watch?v=_FvtLXIa_eA
 ========================================
 
+TRANSCRIPT
+========================================
 [Music] yes we're walking up the King's Highway well it's a little try the different key well it's a highway there we go to heaven oh none can walk up there but the pyramid well it's a Highway to Heaven we're walking up the Kings Highway if you're not walking start while I'm talking we're walking up the King Highway oh Christ walks beside you and angels will guide you we're walking up the King's Highway well it's a Highway to Heaven none can't walk up there but the pure at heart will

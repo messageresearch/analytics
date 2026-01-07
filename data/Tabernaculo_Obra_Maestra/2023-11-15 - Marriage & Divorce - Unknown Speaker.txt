@@ -4,13 +4,14 @@ START OF FILE: 2023-11-15 - Marriage & Divorce - Unknown Speaker.txt
 
 SERMON DETAILS
 ========================================
-Date:    2023-11-15
-Title:   Marriage & Divorce
-Speaker: Unknown Speaker
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=8LnI79W0sZc
+Date:     2023-11-15
+Title:    Marriage & Divorce
+Speaker:  Unknown Speaker
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 1h 58m
+Language: English
+URL:      https://www.youtube.com/watch?v=8LnI79W0sZc
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2025-01-01 - The Conflict  Bro. Robert Figueroa  Saturday,  Janua
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-01
-Title:   The Conflict | Bro. Robert Figueroa | Saturday,  January 1, 2025
-Speaker: Robert Figueroa
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=8hYAHnlJDqQ
+Date:     2025-01-01
+Title:    The Conflict | Bro. Robert Figueroa | Saturday,  January 1, 2025
+Speaker:  Robert Figueroa
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 50m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=8hYAHnlJDqQ
 ========================================
 
 Description:

@@ -4,13 +4,14 @@ START OF FILE: 2013-02-25 - Brother Baker Perfect Worship - Baker Perfect.txt
 
 SERMON DETAILS
 ========================================
-Date:    2013-02-25
-Title:   Brother Baker: Perfect Worship
+Date:     2013-02-25
+Title:    Brother Baker: Perfect Worship
 Speaker: Baker Perfect
-Church:  Malachi Four Tabernacle
-Type:    Worship Service
-Language:English
-URL:     https://www.youtube.com/watch?v=OXQiCzlsbPU
+Church:   Malachi Four Tabernacle
+Type:    Full Sermon
+Duration: 10m
+Language: English
+URL:      https://www.youtube.com/watch?v=OXQiCzlsbPU
 ========================================
 
 TRANSCRIPT

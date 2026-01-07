@@ -4,13 +4,14 @@ START OF FILE: 2024-05-05 - Minister Peter Okosun A Parallel Eden - Peter Okosun
 
 SERMON DETAILS
 ========================================
-Date:    2024-05-05
-Title:   Minister Peter Okosun A Parallel Eden
-Speaker: Peter Okosun
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=QLBDQpy2VnA
+Date:     2024-05-05
+Title:    Minister Peter Okosun A Parallel Eden
+Speaker:  Peter Okosun
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 53m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=QLBDQpy2VnA
 ========================================
 
 Description:

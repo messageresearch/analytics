@@ -4,13 +4,14 @@ START OF FILE: 2020-11-07 - Homegoing Service Sis. Mottie Jackson Tate - Mottie 
 
 SERMON DETAILS
 ========================================
-Date:    2020-11-07
-Title:   Homegoing Service: Sis. Mottie Jackson Tate
+Date:     2020-11-07
+Title:    Homegoing Service: Sis. Mottie Jackson Tate
 Speaker: Mottie Jackson Tate
-Church:  Bride Tabernacle of Columbia SC
+Church:   Bride Tabernacle of Columbia SC
 Type:    Full Sermon
-Language:English
-URL:     https://www.youtube.com/watch?v=ZPuxXqKodvs
+Duration: 42m
+Language: English
+URL:      https://www.youtube.com/watch?v=ZPuxXqKodvs
 ========================================
 
 Description:

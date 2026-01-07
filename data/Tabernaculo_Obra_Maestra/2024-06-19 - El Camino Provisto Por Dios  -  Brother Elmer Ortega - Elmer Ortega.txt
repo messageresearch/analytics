@@ -4,13 +4,14 @@ START OF FILE: 2024-06-19 - El Camino Provisto Por Dios  -  Brother Elmer Ortega
 
 SERMON DETAILS
 ========================================
-Date:    2024-06-19
-Title:   El Camino Provisto Por Dios  -  Brother Elmer Ortega
-Speaker: Elmer Ortega
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=R4wcZQ6cF2A
+Date:     2024-06-19
+Title:    El Camino Provisto Por Dios  -  Brother Elmer Ortega
+Speaker:  Elmer Ortega
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 1m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=R4wcZQ6cF2A
 ========================================
 
 TRANSCRIPT

@@ -4,13 +4,14 @@ START OF FILE: 2025-05-02 - 4th Anniversary Services Pt.1  Bro. Juan De Dios  Fr
 
 SERMON DETAILS
 ========================================
-Date:    2025-05-02
-Title:   4th Anniversary Services Pt.1 | Bro. Juan De Dios | Friday, May 2, 2025
-Speaker: Juan De Dios
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=wkBrKEQkytI
+Date:     2025-05-02
+Title:    4th Anniversary Services Pt.1 | Bro. Juan De Dios | Friday, May 2, 2025
+Speaker:  Juan De Dios
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=wkBrKEQkytI
 ========================================
 
 Description:

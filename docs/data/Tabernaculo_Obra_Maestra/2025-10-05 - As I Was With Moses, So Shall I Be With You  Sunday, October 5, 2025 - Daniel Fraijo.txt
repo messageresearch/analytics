@@ -4,13 +4,14 @@ START OF FILE: 2025-10-05 - As I Was With Moses, So Shall I Be With You  Sunday,
 
 SERMON DETAILS
 ========================================
-Date:    2025-10-05
-Title:   As I Was With Moses, So Shall I Be With You | Sunday, October 5, 2025
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=bLIDIQ9snrc
+Date:     2025-10-05
+Title:    As I Was With Moses, So Shall I Be With You | Sunday, October 5, 2025
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 2h 31m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=bLIDIQ9snrc
 ========================================
 
 Description:

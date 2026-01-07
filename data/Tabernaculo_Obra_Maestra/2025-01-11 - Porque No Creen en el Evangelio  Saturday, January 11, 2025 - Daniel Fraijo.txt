@@ -4,13 +4,14 @@ START OF FILE: 2025-01-11 - Porque No Creen en el Evangelio  Saturday, January 1
 
 SERMON DETAILS
 ========================================
-Date:    2025-01-11
-Title:   Porque No Creen en el Evangelio | Saturday, January 11, 2025
-Speaker: Daniel Fraijo
-Church:  Tabernaculo Obra Maestra
-Type:    Full Sermon
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=rUopccgW_qo
+Date:     2025-01-11
+Title:    Porque No Creen en el Evangelio | Saturday, January 11, 2025
+Speaker:  Daniel Fraijo
+Church:   Tabernaculo Obra Maestra
+Type:     Full Sermon
+Duration: 1h 40m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=rUopccgW_qo
 ========================================
 
 Description:

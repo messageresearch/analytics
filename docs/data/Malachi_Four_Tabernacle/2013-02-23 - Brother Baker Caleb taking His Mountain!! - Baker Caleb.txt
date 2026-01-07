@@ -4,13 +4,14 @@ START OF FILE: 2013-02-23 - Brother Baker Caleb taking His Mountain!! - Baker Ca
 
 SERMON DETAILS
 ========================================
-Date:    2013-02-23
-Title:   Brother Baker: Caleb taking His Mountain!!
+Date:     2013-02-23
+Title:    Brother Baker: Caleb taking His Mountain!!
 Speaker: Baker Caleb
-Church:  Malachi Four Tabernacle
-Type:    Service
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=JwAHLfoVEYk
+Church:   Malachi Four Tabernacle
+Type:    Full Sermon
+Duration: 4m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=JwAHLfoVEYk
 ========================================
 
 TRANSCRIPT

@@ -1,0 +1,4 @@
+speaker,score,reasons
+Coleman September,6,has_event_keyword;trailing_month
+Joe Adams October,6,has_event_keyword;trailing_month
+Sergio Navarette Sunrise,6,has_event_keyword;trailing_marker

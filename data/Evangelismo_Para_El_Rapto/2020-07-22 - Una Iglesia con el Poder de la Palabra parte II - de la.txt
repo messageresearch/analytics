@@ -4,14 +4,13 @@ START OF FILE: 2020-07-22 - Una Iglesia con el Poder de la Palabra parte II - de
 
 SERMON DETAILS
 ========================================
-Date:     2020-07-22
-Title:    "Una Iglesia con el Poder de la Palabra" parte II
-Speaker:  de la
-Church:   Evangelismo Para El Rapto
-Type:     Short Service
-Duration: 56m
-Language: Spanish
-URL:      https://www.youtube.com/watch?v=ar2vQ9VyDbI
+Date:    2020-07-22
+Title:   "Una Iglesia con el Poder de la Palabra" parte II
+Speaker: de la
+Church:  Evangelismo Para El Rapto
+Type:    Full Sermon
+Language:Spanish
+URL:     https://www.youtube.com/watch?v=ar2vQ9VyDbI
 ========================================
 
 Description:

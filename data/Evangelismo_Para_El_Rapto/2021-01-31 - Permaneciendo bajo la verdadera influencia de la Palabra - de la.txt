@@ -4,14 +4,13 @@ START OF FILE: 2021-01-31 - Permaneciendo bajo la verdadera influencia de la Pal
 
 SERMON DETAILS
 ========================================
-Date:     2021-01-31
-Title:    "Permaneciendo bajo la verdadera influencia de la Palabra"
-Speaker:  de la
-Church:   Evangelismo Para El Rapto
-Type:     Full Sermon
-Duration: 1h 19m
-Language: Spanish
-URL:      https://www.youtube.com/watch?v=xsKCtfU5WW4
+Date:    2021-01-31
+Title:   "Permaneciendo bajo la verdadera influencia de la Palabra"
+Speaker: de la
+Church:  Evangelismo Para El Rapto
+Type:    Full Sermon
+Language:Spanish
+URL:     https://www.youtube.com/watch?v=xsKCtfU5WW4
 ========================================
 
 Description:
