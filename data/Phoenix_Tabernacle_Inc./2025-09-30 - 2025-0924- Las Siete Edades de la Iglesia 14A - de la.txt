@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2025-09-30 - 2025-0924- Las Siete Edades de la Iglesia #14A - de la.txt
+START OF FILE: 2025-09-30 - 2025-0924- Las Siete Edades de la Iglesia 14A - de la.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2025-09-30
 Title:    2025-0924- Las Siete Edades de la Iglesia #14A
-Speaker:  de la
+Speaker: de la
 Church:   Phoenix Tabernacle Inc.
-Type:     Short Service
+Type:    Church Service
 Duration: 56m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=omBU5gixOaM

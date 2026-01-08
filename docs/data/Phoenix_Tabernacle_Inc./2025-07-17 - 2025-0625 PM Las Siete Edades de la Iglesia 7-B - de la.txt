@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2025-07-17 - 2025-0625 PM Las Siete Edades de la Iglesia #7-B - de la.txt
+START OF FILE: 2025-07-17 - 2025-0625 PM Las Siete Edades de la Iglesia 7-B - de la.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2025-07-17
 Title:    2025-0625 PM Las Siete Edades de la Iglesia #7-B
-Speaker:  de la
+Speaker: de la
 Church:   Phoenix Tabernacle Inc.
-Type:     Short Service
+Type:    Church Service
 Duration: 49m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=9q7PxSxRNN0

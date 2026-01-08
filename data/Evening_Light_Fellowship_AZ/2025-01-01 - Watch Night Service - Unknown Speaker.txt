@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-01-01
 Title:    Watch Night Service
-Speaker:  Unknown Speaker
+Speaker: Unknown Speaker
 Church:   Evening Light Fellowship AZ
-Type:     Full Sermon
+Type:    Church Service
 Duration: 3h 45m
 Language: English
 URL:      https://www.youtube.com/watch?v=KIKLjvx7-dY

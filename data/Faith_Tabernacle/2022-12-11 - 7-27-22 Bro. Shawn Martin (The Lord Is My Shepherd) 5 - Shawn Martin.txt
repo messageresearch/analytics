@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-12-11 - 7-27-22 Bro. Shawn Martin (The Lord Is My Shepherd) #5 - Shawn Martin.txt
+START OF FILE: 2022-12-11 - 7-27-22 Bro. Shawn Martin (The Lord Is My Shepherd) 5 - Shawn Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-12-11
 Title:   7-27-22 Bro. Shawn Martin (The Lord Is My Shepherd) #5
 Speaker: Shawn Martin
 Church:  Faith Tabernacle
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=zSCc671athg
 ========================================

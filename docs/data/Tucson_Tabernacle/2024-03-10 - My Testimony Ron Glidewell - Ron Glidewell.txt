@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2024-03-10
 Title:    My Testimony: Ron Glidewell
-Speaker:  Ron Glidewell
+Speaker: Ron Glidewell
 Church:   Tucson Tabernacle
-Type:     Testimony Service
+Type:    Testimonies
 Duration: 2h 24m
 Language: English
 URL:      https://www.youtube.com/watch?v=OMLUO_eLpCc

@@ -4,6 +4,7 @@ import re
 import csv
 import datetime
 import zipfile
+import hashlib
 from pathlib import Path
 
 # --- SHARED CONFIGURATION ---
@@ -58,6 +59,25 @@ def extract_first_youtube(text):
             mm = re.search(r"https?://\S+", line)
             if mm: return mm.group(0)
     return ''
+
+
+def extract_youtube_video_id(url: str) -> str:
+    if not url:
+        return ''
+    # Common formats:
+    # - https://www.youtube.com/watch?v=VIDEOID
+    # - https://youtu.be/VIDEOID
+    # - https://www.youtube.com/shorts/VIDEOID
+    m = re.search(r"(?:v=|youtu\.be/|/shorts/)([A-Za-z0-9_\-]{6,})", url)
+    if not m:
+        return ''
+    return m.group(1)
+
+
+def stable_short_hash(text: str, length: int = 12) -> str:
+    if text is None:
+        text = ''
+    return hashlib.sha1(text.encode('utf-8', errors='ignore')).hexdigest()[:length]
 
 
 def parse_sermon(filepath, church, filename, summary_map=None):
@@ -125,7 +145,7 @@ def parse_sermon(filepath, church, filename, summary_map=None):
 
         return {
             "meta": {
-                "id": filename,
+                "id": rel_path,
                 "church": church,
                 "date": date_str,
                 "year": year,
@@ -332,7 +352,8 @@ def main():
             print(f"   Processing: {church_display}...")
             
             for filename in os.listdir(church_path):
-                if filename.endswith(".txt") and not filename.endswith(".timestamped.txt"):
+                lower_name = filename.lower()
+                if lower_name.endswith(".txt") and not lower_name.endswith(".timestamped.txt") and not lower_name.endswith(" - timestamped.txt"):
                     file_full_path = os.path.join(church_path, filename)
                     # zipf.write(file_full_path, arcname=f"{church_folder}/{filename}")
                     
@@ -377,6 +398,7 @@ def main():
     # Now add entries for videos WITHOUT transcripts from CSV summaries
     print("   Adding videos without transcripts from CSV summaries...")
     no_transcript_count = 0
+    no_transcript_seen_videos = set()  # normalized_church|video_id_or_url_hash
     for fname in os.listdir(DATA_DIR):
         if fname.endswith("_Summary.csv"):
             path = os.path.join(DATA_DIR, fname)
@@ -414,6 +436,14 @@ def main():
                         check_key = normalize_key(title) + '|' + normalize_key(date_str)
                         if check_key in transcripts_found:
                             continue
+
+                        # Skip duplicates for the same YouTube video (often appears multiple times in *_Summary.csv)
+                        video_id = extract_youtube_video_id(video_url)
+                        video_key = video_id if video_id else stable_short_hash(video_url)
+                        dedupe_key = normalize_key(church_name) + '|' + video_key
+                        if dedupe_key in no_transcript_seen_videos:
+                            continue
+                        no_transcript_seen_videos.add(dedupe_key)
                         
                         # Parse date/year
                         year = "Unknown"
@@ -433,7 +463,8 @@ def main():
                         if speaker in SPEAKER_HEAL_LIST:
                             speaker = "Unknown Speaker"
                         
-                        entry_id = f"NO_TRANSCRIPT_{church_name}_{date_str}_{normalize_key(title)[:30]}"
+                        # Include video_key so IDs are unique and stable across regenerations
+                        entry_id = f"NO_TRANSCRIPT_{normalize_key(church_name)}_{date_str}_{normalize_key(title)[:30]}_{video_key}"
                         all_meta.append({
                             "id": entry_id,
                             "church": church_name,

@@ -8,7 +8,7 @@ Date:    2025-11-23
 Title:   2025-Nov-23 Spoken Word Church Live Streaming
 Speaker: Spoken Word
 Church:  Spoken Word Church
-Type:    Service
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=8wpRtbUSRks
 ========================================

@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2023-04-13
 Title:    04/12/23 Pastor: Raul Gonzalez Predicador: Sergio Hernandez
-Speaker:  Raul Gonzalez Predicador
+Speaker: Raul Gonzalez Predicador
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:     Short Service
+Type:    Church Service
 Duration: 59m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=XjMIDNtUuhE

@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-09-10 - Speak The Word - Unknown Speaker.txt
+START OF FILE: 2023-09-10 - Speak The Word - Donny Reagan.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-09-10
 Title:   Speak The Word
 Speaker: Donny Reagan
 Church:  Word Of Life Church
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=h0AqYhFQ6IQ
 ========================================

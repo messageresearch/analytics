@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2025-10-15 - 2025-1008- Doctrina de las Edades #1 - de la.txt
+START OF FILE: 2025-10-15 - 2025-1008- Doctrina de las Edades 1 - de la.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2025-10-15
 Title:    2025-1008- Doctrina de las Edades #1
-Speaker:  de la
+Speaker: de la
 Church:   Phoenix Tabernacle Inc.
-Type:     Full Sermon
+Type:    Church Service
 Duration: 1h 13m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=yVO4zh9CUi0

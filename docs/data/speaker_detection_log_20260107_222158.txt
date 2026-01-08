@@ -1,0 +1,228 @@
+======================================================================
+SPEAKER DETECTION LOG - Heal Archive
+Generated: 2026-01-07 22:21:58
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    56,893
+Unknown Speakers (Before):  8,927
+Unknown Speakers (After):   10,429
+Speakers Detected:          46,464
+Detection Rate:             81.7%
+
+Speakers Corrected:         13,915
+Speakers Re-detected:       277
+Changed To Unknown Speaker: 1,680
+
+SPEAKER LIST INVENTORY (speakers.json)
+----------------------------------------
+Unique Speakers Before:     2,173
+Unique Speakers After:      2,154
+New Speakers Added:         40
+Speakers Removed:           59
+
+SUMMARY CSV FILES PROCESSED
+----------------------------------------
+Count: 61
+  • data/Malachi_Four_Tabernacle_Summary.csv
+  • data/Faith_Tabernacle_Summary.csv
+  • data/Jericho_Tabernacle_Summary.csv
+  • data/Good_Neighbour_Ministries_Summary.csv
+  • data/Send_The_Light_Church_Summary.csv
+  • data/Spirit_and_Truth_Tabernacle_Summary.csv
+  • data/Inner_Veil_Ministries_Summary.csv
+  • data/Calgary_Living_Word_Assembly_Summary.csv
+  • data/Shekinah_Tabernacle_Summary.csv
+  • data/Coleman_Family_Ministries_Summary.csv
+  • data/William_Branham_Sermons_Summary.csv
+  • data/Higher_Ground_Tabernacle_Summary.csv
+  • data/Shalom_Tabernacle_Tucson_Summary.csv
+  • data/The_Word_of_God_Tabernacle_Summary.csv
+  • data/Literal_Life_Church_Summary.csv
+  • data/Full_Gospel_Lighthouse_Tabernacle_Summary.csv
+  • data/Edmonton_Restored_Word_Fellowship_Summary.csv
+  • data/Spoken_Word_Church_Summary.csv
+  • data/Tabernaculo_Hijos_Del_Dios_Viviente_Summary.csv
+  • data/New_Hope_Revival_Ministries_Summary.csv
+  • data/Good_Shepherd_Fellowship_Summary.csv
+  • data/Rapturing_Grace_Tabernacle_Summary.csv
+  • data/Evening_Light_Tabernacle_Summary.csv
+  • data/Grace_Tabernacle_Nampa_Summary.csv
+  • data/Days_of_the_Voice_Fellowship_Summary.csv
+  • data/Word_of_Life_Tabernacle_Summary.csv
+  • data/Believers_Christian_Fellowship_Summary.csv
+  • data/End_Time_Message_Tabernacle_CO_Summary.csv
+  • data/Phoenix_Tabernacle_Inc._Summary.csv
+  • data/End_Time_Message_Tabernacle_CA_Summary.csv
+  • data/Cloverdale_Bibleway_Summary.csv
+  • data/Evening_Light_Fellowship_AZ_Summary.csv
+  • data/Bride_of_Christ_Fellowship_Summary.csv
+  • data/Higher_Ground_Tabernacle_Iowa_City_Summary.csv
+  • data/New_Life_Outreach_Church_Of_Pawnee_Summary.csv
+  • data/Phoenix_Lighthouse_Tabernacle_Summary.csv
+  • data/Cedar_Hills_-_Church_of_the_Cross_Summary.csv
+  • data/Spoken_Word_Tabernacle_Summary.csv
+  • data/Voice_of_Truth_Tabernacle_Summary.csv
+  • data/Evening_Light_Fellowship_CA_Summary.csv
+  • data/Flagstaff_Mission_Tabernacle_Summary.csv
+  • data/Bride_Tabernacle_of_Columbia_SC_Summary.csv
+  • data/Tucson_Tabernacle_Summary.csv
+  • data/Headstone_Tabernacle_Summary.csv
+  • data/True_Word_Tabernacle_Summary.csv
+  • data/Bethel_Tabernacle_Summary.csv
+  • data/Believer's_Spoken_Word_Tabernacle_Summary.csv
+  • data/Tabernaculo_Obra_Maestra_Summary.csv
+  • data/Tabernaculo_La_Voz_Del_Septimo_Summary.csv
+  • data/heal_logs_Summary.csv
+  • data/Spirit_Of_Truth_Assembly_Summary.csv
+  • data/Christian_Life_Tabernacle_Summary.csv
+  • data/Mamelodi_Tabernacle_Summary.csv
+  • data/Grace_Tabernacle_Summary.csv
+  • data/Arizona_Believers_Church_Summary.csv
+  • data/Evening_Light_Tabernacle_Elkton_KY_Summary.csv
+  • data/Son_Of_Man_Revealed_Ministries_Summary.csv
+  • data/Harvest_Time_Bride_Tabernacle_Summary.csv
+  • data/Evangelismo_Para_El_Rapto_Summary.csv
+  • data/Word_Of_Life_Church_Summary.csv
+  • data/EL_Tabernacle_Ministries_Summary.csv
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+Arizona Believers Church:
+    Total: 556  |  Detected: 164  |  Unknown: 392  |  Rate: 29.5%
+Believer's Spoken Word Tabernacle:
+    Total: 1,144  |  Detected: 583  |  Unknown: 561  |  Rate: 51.0%
+Believers Christian Fellowship:
+    Total: 2,132  |  Detected: 2,102  |  Unknown: 30  |  Rate: 98.6%
+Bethel Tabernacle:
+    Total: 1,286  |  Detected: 1,183  |  Unknown: 103  |  Rate: 92.0%
+Bride Tabernacle of Columbia SC:
+    Total: 617  |  Detected: 562  |  Unknown: 55  |  Rate: 91.1%
+Bride of Christ Fellowship:
+    Total: 1,200  |  Detected: 1,187  |  Unknown: 13  |  Rate: 98.9%
+Calgary Living Word Assembly:
+    Total: 1,059  |  Detected: 822  |  Unknown: 237  |  Rate: 77.6%
+Cedar Hills - Church of the Cross:
+    Total: 1,525  |  Detected: 1,347  |  Unknown: 178  |  Rate: 88.3%
+Christian Life Tabernacle:
+    Total: 1,050  |  Detected: 908  |  Unknown: 142  |  Rate: 86.5%
+Cloverdale Bibleway:
+    Total: 957  |  Detected: 629  |  Unknown: 328  |  Rate: 65.7%
+Coleman Family Ministries:
+    Total: 256  |  Detected: 139  |  Unknown: 117  |  Rate: 54.3%
+Days of the Voice Fellowship:
+    Total: 973  |  Detected: 776  |  Unknown: 197  |  Rate: 79.8%
+EL Tabernacle Ministries:
+    Total: 155  |  Detected: 80  |  Unknown: 75  |  Rate: 51.6%
+Edmonton Restored Word Fellowship:
+    Total: 74  |  Detected: 71  |  Unknown: 3  |  Rate: 95.9%
+End Time Message Tabernacle CA:
+    Total: 19  |  Detected: 17  |  Unknown: 2  |  Rate: 89.5%
+End Time Message Tabernacle CO:
+    Total: 2,081  |  Detected: 1,371  |  Unknown: 710  |  Rate: 65.9%
+Evangelismo Para El Rapto:
+    Total: 234  |  Detected: 78  |  Unknown: 156  |  Rate: 33.3%
+Evening Light Fellowship AZ:
+    Total: 612  |  Detected: 506  |  Unknown: 106  |  Rate: 82.7%
+Evening Light Fellowship CA:
+    Total: 1,075  |  Detected: 998  |  Unknown: 77  |  Rate: 92.8%
+Evening Light Tabernacle:
+    Total: 1,765  |  Detected: 1,637  |  Unknown: 128  |  Rate: 92.7%
+Evening Light Tabernacle Elkton KY:
+    Total: 900  |  Detected: 829  |  Unknown: 71  |  Rate: 92.1%
+Faith Tabernacle:
+    Total: 387  |  Detected: 382  |  Unknown: 5  |  Rate: 98.7%
+Flagstaff Mission Tabernacle:
+    Total: 71  |  Detected: 52  |  Unknown: 19  |  Rate: 73.2%
+Full Gospel Lighthouse Tabernacle:
+    Total: 961  |  Detected: 936  |  Unknown: 25  |  Rate: 97.4%
+Good Neighbour Ministries:
+    Total: 1,364  |  Detected: 853  |  Unknown: 511  |  Rate: 62.5%
+Good Shepherd Fellowship:
+    Total: 1,414  |  Detected: 1,161  |  Unknown: 253  |  Rate: 82.1%
+Grace Tabernacle:
+    Total: 220  |  Detected: 216  |  Unknown: 4  |  Rate: 98.2%
+Grace Tabernacle Nampa:
+    Total: 1,084  |  Detected: 1,077  |  Unknown: 7  |  Rate: 99.4%
+Harvest Time Bride Tabernacle:
+    Total: 210  |  Detected: 199  |  Unknown: 11  |  Rate: 94.8%
+Headstone Tabernacle:
+    Total: 2,754  |  Detected: 2,599  |  Unknown: 155  |  Rate: 94.4%
+Higher Ground Tabernacle:
+    Total: 1,357  |  Detected: 1,237  |  Unknown: 120  |  Rate: 91.2%
+Higher Ground Tabernacle Iowa City:
+    Total: 561  |  Detected: 423  |  Unknown: 138  |  Rate: 75.4%
+Inner Veil Ministries:
+    Total: 598  |  Detected: 485  |  Unknown: 113  |  Rate: 81.1%
+Jericho Tabernacle:
+    Total: 1,734  |  Detected: 1,600  |  Unknown: 134  |  Rate: 92.3%
+Literal Life Church:
+    Total: 949  |  Detected: 893  |  Unknown: 56  |  Rate: 94.1%
+Malachi Four Tabernacle:
+    Total: 379  |  Detected: 127  |  Unknown: 252  |  Rate: 33.5%
+Mamelodi Tabernacle:
+    Total: 650  |  Detected: 283  |  Unknown: 367  |  Rate: 43.5%
+New Hope Revival Ministries:
+    Total: 935  |  Detected: 702  |  Unknown: 233  |  Rate: 75.1%
+New Life Outreach Church Of Pawnee:
+    Total: 492  |  Detected: 476  |  Unknown: 16  |  Rate: 96.7%
+Phoenix Lighthouse Tabernacle:
+    Total: 1,838  |  Detected: 1,814  |  Unknown: 24  |  Rate: 98.7%
+Phoenix Tabernacle Inc.:
+    Total: 1,524  |  Detected: 1,203  |  Unknown: 321  |  Rate: 78.9%
+Rapturing Grace Tabernacle:
+    Total: 122  |  Detected: 111  |  Unknown: 11  |  Rate: 91.0%
+Send The Light Church:
+    Total: 716  |  Detected: 605  |  Unknown: 111  |  Rate: 84.5%
+Shalom Tabernacle Tucson:
+    Total: 367  |  Detected: 356  |  Unknown: 11  |  Rate: 97.0%
+Shekinah Tabernacle:
+    Total: 2,093  |  Detected: 884  |  Unknown: 1,209  |  Rate: 42.2%
+Son Of Man Revealed Ministries:
+    Total: 428  |  Detected: 401  |  Unknown: 27  |  Rate: 93.7%
+Spirit Of Truth Assembly:
+    Total: 11  |  Detected: 11  |  Unknown: 0  |  Rate: 100.0%
+Spirit and Truth Tabernacle:
+    Total: 1,185  |  Detected: 1,171  |  Unknown: 14  |  Rate: 98.8%
+Spoken Word Church:
+    Total: 5,321  |  Detected: 4,655  |  Unknown: 666  |  Rate: 87.5%
+Spoken Word Tabernacle:
+    Total: 1,131  |  Detected: 1,105  |  Unknown: 26  |  Rate: 97.7%
+Tabernaculo Hijos Del Dios Viviente:
+    Total: 185  |  Detected: 169  |  Unknown: 16  |  Rate: 91.4%
+Tabernaculo La Voz Del Septimo:
+    Total: 256  |  Detected: 34  |  Unknown: 222  |  Rate: 13.3%
+Tabernaculo Obra Maestra:
+    Total: 271  |  Detected: 189  |  Unknown: 82  |  Rate: 69.7%
+The Word of God Tabernacle:
+    Total: 509  |  Detected: 50  |  Unknown: 459  |  Rate: 9.8%
+True Word Tabernacle:
+    Total: 349  |  Detected: 314  |  Unknown: 35  |  Rate: 90.0%
+Tucson Tabernacle:
+    Total: 743  |  Detected: 570  |  Unknown: 173  |  Rate: 76.7%
+Voice of Truth Tabernacle:
+    Total: 2,150  |  Detected: 1,993  |  Unknown: 157  |  Rate: 92.7%
+Word Of Life Church:
+    Total: 716  |  Detected: 350  |  Unknown: 366  |  Rate: 48.9%
+Word of Life Tabernacle:
+    Total: 1,188  |  Detected: 789  |  Unknown: 399  |  Rate: 66.4%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Adrian Gengan Sun
+  • Ariel Ngongo
+  • Chris Long Phoenix Lighthouse
+  • David McGeary
+  • Dele Adelodun
+  • Edgar Roscoe
+  • Nevertheless Bro Darrell Ward
+  • Original Reality Present Context
+  • Rolando Eduardo Gonzalez Machuca
+  • Ronnie Long
+  • Sergio Hern
+  • Thomas Perez
+
+======================================================================
+END OF LOG
+======================================================================

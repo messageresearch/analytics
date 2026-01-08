@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2024-02-03
 Title:    Bro. George Smith Youth Service
-Speaker:  George Smith
+Speaker: George Smith
 Church:   Bethel Tabernacle
-Type:     Youth Service
+Type:    Youth Service
 Duration: 58m
 Language: English
 URL:      https://www.youtube.com/watch?v=YbQc5s9HFmo

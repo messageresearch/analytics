@@ -8,7 +8,7 @@ Date:     2024-06-27
 Title:    Preacher: Brother Elmer
 Speaker: Elmer
 Church:   Tabernaculo Obra Maestra
-Type:    Full Sermon
+Type:    Church Service
 Duration: 1h 45m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=Pbt2ZTlwYBs

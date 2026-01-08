@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-07-01 - He Has Come to Our House - Unknown Speaker.txt
+START OF FILE: 2023-07-01 - He Has Come to Our House - Ron Spencer.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-07-01
 Title:   He Has Come to Our House
 Speaker: Ron Spencer
 Church:  Word Of Life Church
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=MzEgcRnw6Sk
 ========================================

@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-06-05
 Title:    Brother Forest Farmer
-Speaker:  Forest Farmer
+Speaker: Forest Farmer
 Church:   Faith Tabernacle
-Type:     Full Sermon
+Type:    Church Service
 Duration: 1h 49m
 Language: English
 URL:      https://www.youtube.com/watch?v=EPqcE5ELu-M

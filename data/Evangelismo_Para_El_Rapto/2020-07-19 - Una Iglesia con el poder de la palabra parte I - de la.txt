@@ -8,7 +8,7 @@ Date:    2020-07-19
 Title:   Una Iglesia con el poder de la palabra parte I
 Speaker: de la
 Church:  Evangelismo Para El Rapto
-Type:    Service
+Type:    Church Service
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=rkpZyOe64co
 ========================================

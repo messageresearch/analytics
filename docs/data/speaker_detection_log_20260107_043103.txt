@@ -1,0 +1,132 @@
+======================================================================
+SPEAKER DETECTION LOG - Unscraped Channels Scrape
+Generated: 2026-01-07 04:31:03
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    2,775
+Speakers Detected:          1,954
+Unknown Speakers:           821
+Detection Rate:             70.4%
+
+Changed To Unknown Speaker: 0
+
+SPEAKER LIST INVENTORY (speakers.json)
+----------------------------------------
+Unique Speakers Before:     2,060
+Unique Speakers After:      2,152
+New Speakers Added:         92
+Speakers Removed:           0
+
+SUMMARY CSV FILES PROCESSED
+----------------------------------------
+Count: 2
+  • data/New_Hope_Revival_Ministries_Summary.csv
+  • data/Voice_of_Truth_Tabernacle_Summary.csv
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+New Hope Revival Ministries:
+    Total: 820  |  Detected: 394  |  Unknown: 426  |  Rate: 48.0%
+Voice of Truth Tabernacle:
+    Total: 1,955  |  Detected: 1,560  |  Unknown: 395  |  Rate: 79.8%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Adolfo Romero
+  • Algo Mejor
+  • Alicia Garcia
+  • Andrew Glover
+  • Ben Shamel
+  • Bernie Garcia
+  • Beyond Shadows
+  • Bobby Weerts
+  • Break Free
+  • Case Dismissed
+  • Claiming Wh
+  • Climbing Mountains
+  • Dale Schamel
+  • Dale Shamel
+  • David Templeton
+  • De Identidad
+  • De Tras Del Velo
+  • Derek Field
+  • Diego Moreno
+  • Dios Nos Quiere Sanos
+  • Duane Jackson
+  • Eduardo Beltran
+  • Elfriede Wittmeier
+  • Eliazer Hernandez
+  • Eliezer Hernandez
+  • Ella Es El
+  • Erik Sanchez
+  • Fabian Palma
+  • Felix Tapia
+  • Fidel Avila
+  • Formando Palabras
+  • Francisco Olguin
+  • Francisco Paez
+  • Gamaliel Martinez
+  • Gerald Hicks
+  • Guillermo Avila
+  • Gustavo Avila
+  • Haukur Hauksson
+  • Higher Calling
+  • Isaac Arellano
+  • Ismael Castro
+  • Javier Villa
+  • John Tay
+  • John The Beloved
+  • John Wayabire
+  • Jose Eliezer Hernandez
+  • Joseph Ruiters
+  • Josue Garcia
+  • Juan Arnoldus
+  • La Carrera
+  • La Segunda Venida
+  • Lalo Ruiz
+  • Lukewarm Mentality
+  • Luzmila Ruiz
+  • Marcia Tapia
+  • Marcial Tapia-Alex Perez
+  • Marcos Santana
+  • Mariana Ferrer
+  • Marta Lopez
+  • Maximo Lopez
+  • Maximo Y
+  • Michael Canedo
+  • Mind Battle
+  • Misael Zavala
+  • No Busquemos Belleza
+  • Oscar Moreno
+  • Patrick Fredrick Kiyingi
+  • Pearry Green
+  • Por Tus Palabras
+  • Rapture Revelation
+  • Recruiting Soldiers
+  • Reporte Misionero
+  • Return Unto
+  • Rogelio Ferrer
+  • Rompiendo El Ciclo
+  • Ronnie Long
+  • Samuel Gonzalez
+  • Santiago Moreira
+  • Se Virgen Prudente
+  • Set Apart
+  • Sigue Persistiendo
+  • Slave Mentality
+  • Soy Un Milagro
+  • Steven L Shelley
+  • Steven Shelley
+  • Tito Moreira La
+  • Vidal Moreno
+  • William Diaz
+  • William Martell
+  • Yo Soy La Novia
+  • Yoel Euceda
+  • de Los Echos
+
+======================================================================
+END OF LOG
+======================================================================

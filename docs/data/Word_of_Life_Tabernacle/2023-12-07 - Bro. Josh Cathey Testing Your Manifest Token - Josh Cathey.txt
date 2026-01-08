@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2023-12-07
 Title:    Bro. Josh Cathey "Testing Your Manifest Token"
-Speaker:  Josh Cathey
+Speaker: Josh Cathey
 Church:   Word of Life Tabernacle
-Type:     Full Sermon
+Type:    Church Service
 Duration: 1h 58m
 Language: English
 URL:      https://www.youtube.com/watch?v=4KRHlgRHZ7k

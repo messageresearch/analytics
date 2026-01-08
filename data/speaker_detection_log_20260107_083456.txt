@@ -1,0 +1,45 @@
+======================================================================
+SPEAKER DETECTION LOG - Single Channel Scrape: Cloverdale Bibleway
+Generated: 2026-01-07 08:34:56
+======================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total Entries Processed:    956
+Speakers Detected:          424
+Unknown Speakers:           532
+Detection Rate:             44.4%
+
+Changed To Unknown Speaker: 0
+
+SPEAKER LIST INVENTORY (speakers.json)
+----------------------------------------
+Unique Speakers Before:     2,180
+Unique Speakers After:      2,188
+New Speakers Added:         8
+Speakers Removed:           0
+
+SUMMARY CSV FILES PROCESSED
+----------------------------------------
+Count: 1
+  • data/Cloverdale_Bibleway_Summary.csv
+
+BY CHURCH BREAKDOWN
+----------------------------------------
+Cloverdale Bibleway:
+    Total: 956  |  Detected: 424  |  Unknown: 532  |  Rate: 44.4%
+
+NEW SPEAKERS DISCOVERED
+----------------------------------------
+  • Birth Pains
+  • Broken Cisterns
+  • Charlotte Keckler
+  • Ed Byska
+  • Ed Byskal Cloverdale Bibleway
+  • Ed Byskal-Cloverdale Bibleway
+  • Edy Byskal
+  • Lamb And Dove
+
+======================================================================
+END OF LOG
+======================================================================

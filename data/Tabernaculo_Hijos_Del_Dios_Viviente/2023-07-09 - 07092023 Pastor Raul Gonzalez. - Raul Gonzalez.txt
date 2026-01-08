@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2023-07-09
 Title:    07/09/2023 Pastor: Raul Gonzalez.
-Speaker:  Raul Gonzalez
+Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:     Short Service
+Type:    Church Service
 Duration: 38m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=4jCG_3pUoeo

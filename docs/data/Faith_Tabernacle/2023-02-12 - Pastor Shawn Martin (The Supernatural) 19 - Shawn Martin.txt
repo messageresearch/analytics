@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-02-12 - Pastor Shawn Martin (The Supernatural) #19 - Shawn Martin.txt
+START OF FILE: 2023-02-12 - Pastor Shawn Martin (The Supernatural) 19 - Shawn Martin.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-02-12
 Title:   Pastor Shawn Martin (The Supernatural) #19
 Speaker: Shawn Martin
 Church:  Faith Tabernacle
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=zgMKGeT2Ecw
 ========================================

@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2018-01-03 - 2018-0103 America#1 (1996-0714) Pastor Bernie G Garcia - Bernie G Garcia.txt
+START OF FILE: 2018-01-03 - 2018-0103 America1 (1996-0714) Pastor Bernie G Garcia - Bernie G Garcia.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2018-01-03
 Title:    2018-0103 America#1 (1996-0714) Pastor Bernie G Garcia
-Speaker:  Bernie G Garcia
+Speaker: Bernie G Garcia
 Church:   Phoenix Tabernacle Inc.
-Type:     Full Sermon
+Type:    Church Service
 Duration: 1h 12m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=STlCr3tCChM

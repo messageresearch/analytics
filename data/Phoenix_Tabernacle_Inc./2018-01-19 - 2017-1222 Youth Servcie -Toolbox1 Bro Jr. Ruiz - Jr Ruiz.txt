@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2018-01-19 - 2017-1222 Youth Servcie -Toolbox#1 Bro Jr. Ruiz - Jr Ruiz.txt
+START OF FILE: 2018-01-19 - 2017-1222 Youth Servcie -Toolbox1 Bro Jr. Ruiz - Jr Ruiz.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2018-01-19
 Title:    2017-1222 Youth Servcie -Toolbox#1 Bro Jr. Ruiz
-Speaker:  Jr Ruiz
+Speaker: Jr Ruiz
 Church:   Phoenix Tabernacle Inc.
-Type:     Full Sermon
+Type:    Church Service
 Duration: 2h 35m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=d1y4K_hi2OE

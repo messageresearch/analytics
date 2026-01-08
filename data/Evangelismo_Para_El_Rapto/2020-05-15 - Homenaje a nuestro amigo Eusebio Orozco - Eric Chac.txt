@@ -8,7 +8,7 @@ Date:    2020-05-15
 Title:   Homenaje a nuestro amigo Eusebio Orozco
 Speaker: Eric Chac
 Church:  Evangelismo Para El Rapto
-Type:    Service
+Type:    Church Service
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=ObtC2UnFXpk
 ========================================

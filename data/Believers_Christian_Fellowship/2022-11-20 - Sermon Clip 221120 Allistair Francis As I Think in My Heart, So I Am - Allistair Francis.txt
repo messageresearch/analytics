@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2022-11-20
 Title:    Sermon Clip: 221120 Allistair Francis: As I Think in My Heart, So I Am
-Speaker:  Allistair Francis
+Speaker: Allistair Francis
 Church:   Believers Christian Fellowship
-Type:     Sermon Clip
+Type:    Sermon Clip
 Duration: 3m
 Language: English
 URL:      https://www.youtube.com/watch?v=RkJkiVT_xyM

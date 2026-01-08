@@ -8,7 +8,7 @@ Date:    2020-04-01
 Title:   El fundamento de una esperanza verdadera
 Speaker: de la
 Church:  Evangelismo Para El Rapto
-Type:    Service
+Type:    Church Service
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=R5V-DkibzOI
 ========================================

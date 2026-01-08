@@ -8,7 +8,7 @@ Date:    2021-03-19
 Title:   Mi Buen Pastor
 Speaker: Mi Buen
 Church:  Evangelismo Para El Rapto
-Type:    Service
+Type:    Church Service
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=8kDOL68Y8Ug
 ========================================

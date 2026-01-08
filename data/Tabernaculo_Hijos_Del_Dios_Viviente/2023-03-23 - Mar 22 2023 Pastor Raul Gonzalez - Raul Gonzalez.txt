@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2023-03-23
 Title:    Mar 22 2023 Pastor: Raul Gonzalez
-Speaker:  Raul Gonzalez
+Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:     Short Service
+Type:    Church Service
 Duration: 39m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=IXkSoOUfmkA

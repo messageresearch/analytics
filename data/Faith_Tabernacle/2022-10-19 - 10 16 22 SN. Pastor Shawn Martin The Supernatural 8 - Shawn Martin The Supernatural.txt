@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2022-10-19 - 10 16 22 SN. Pastor Shawn Martin The Supernatural #8 - Shawn Martin The Supernatural.txt
+START OF FILE: 2022-10-19 - 10 16 22 SN. Pastor Shawn Martin The Supernatural 8 - Shawn Martin The Supernatural.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2022-10-19
 Title:   10 16 22 SN. Pastor Shawn Martin The Supernatural #8
 Speaker: Shawn Martin The Supernatural
 Church:  Faith Tabernacle
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=bRFBsk7lkg0
 ========================================

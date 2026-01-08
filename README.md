@@ -69,6 +69,16 @@ This is why the project required extensive optimization—most web apps never ne
 
 ## 🏗️ Architecture
 
+### Server Architecture (Static Site / Jamstack)
+
+This project uses a **Serverless / Static Site Architecture** (often referred to as Jamstack). It does **not** rely on a traditional backend server (like Node.js, Django, or Rails) running 24/7.
+
+1.  **No Active Server**: The live site is hosted on **GitHub Pages**, which acts as a simple file server (CDN). There is no database engine running in the background.
+2.  **Build-Time Backend**: The Python scripts (`update_sermons.py`, `generate_site_data.py`) act as a "build-time backend." They run locally to ingest data, process transcripts, and generate static JSON files.
+3.  **API is just Files**: When the frontend "fetches data," it is simply downloading static JSON files generated during the build process.
+    *   **Pros:** Zero hosting costs, high performance (CDN), unhackable (no DB to injection).
+    *   **Cons:** Data is only as fresh as the last deployment; no real-time user-to-user features.
+
 ### Data Pipeline (Python)
 
 #### `update_sermons.py` (5,888 lines)
@@ -161,6 +171,46 @@ The main dashboard combining search, filtering, and visualization.
 **`src/utils/regexExpander.js`** - Search term expansion
 - Converts simple terms into regex patterns
 - Handles common misspellings of "Branham"
+
+---
+
+## ⚙️ Configuration Module
+
+The `config/` folder contains centralized configuration shared between the Python backend and JavaScript frontend.
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `speakers_config.json` | Speaker normalization rules, invalid speakers list |
+| `search_config.json` | Search regex patterns, chunk sizes, UI constants |
+| `shared_config.py` | Python module to load configs with fallbacks |
+| `generate_frontend_constants.py` | Script to generate JS constants from config |
+
+### Developer Usage
+
+**Python Scripts:**
+```python
+from config import shared_config
+
+# Get invalid speakers (returns set)
+invalid = shared_config.get_invalid_speakers()
+
+# Normalize a speaker name
+speaker = shared_config.normalize_speaker_name("Dan Evans")  # Returns "Daniel Evans"
+```
+
+**Adding a New Invalid Speaker:**
+1. Edit `config/speakers_config.json`
+2. Add the name to the `invalid_speakers` array
+3. Run `python3 generate_site_data.py` to regenerate site data
+
+**Syncing Frontend Constants:**
+After modifying `search_config.json`, run:
+```bash
+python3 config/generate_frontend_constants.py
+npm run build
+```
 
 ---
 

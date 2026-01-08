@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2021-09-12 - TWT Live Stream 09122021 Bro Nathan Erickson #2 - Nathan Erickson.txt
+START OF FILE: 2021-09-12 - TWT Live Stream 09122021 Bro Nathan Erickson 2 - Nathan Erickson.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2021-09-12
 Title:   TWT Live Stream 09/12/2021 Bro Nathan Erickson #2
 Speaker: Nathan Erickson
 Church:  True Word Tabernacle
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=IdN95xM8EoQ
 ========================================

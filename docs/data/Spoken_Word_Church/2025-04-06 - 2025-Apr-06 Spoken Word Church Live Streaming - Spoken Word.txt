@@ -8,7 +8,7 @@ Date:    2025-04-06
 Title:   2025-Apr-06 Spoken Word Church Live Streaming
 Speaker: Spoken Word
 Church:  Spoken Word Church
-Type:    Service
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=S_aYv2Pxh0c
 ========================================

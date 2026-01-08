@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2023-09-24 - Singing Service - Unknown Speaker.txt
+START OF FILE: 2023-09-24 - Singing Service - Donny Reagan.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2023-09-24
 Title:   Singing Service
 Speaker: Donny Reagan
 Church:  Word Of Life Church
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=RG4P7uX56X4
 ========================================

@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2025-06-25 - 2025-0618 Las Siete Edades de la Iglesia #7-A - de la.txt
+START OF FILE: 2025-06-25 - 2025-0618 Las Siete Edades de la Iglesia 7-A - de la.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2025-06-25
 Title:    2025-0618 Las Siete Edades de la Iglesia #7-A
-Speaker:  de la
+Speaker: de la
 Church:   Phoenix Tabernacle Inc.
-Type:     Short Service
+Type:    Church Service
 Duration: 54m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=RsMdzRT5QJ0

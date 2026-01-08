@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2024-12-05
 Title:    Wednesday
-Speaker:  Daniel Fraijo
+Speaker: Daniel Fraijo
 Church:   Tabernaculo Obra Maestra
-Type:     Short Service
+Type:    Church Service
 Duration: 47m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=RffRi4Wkk3k

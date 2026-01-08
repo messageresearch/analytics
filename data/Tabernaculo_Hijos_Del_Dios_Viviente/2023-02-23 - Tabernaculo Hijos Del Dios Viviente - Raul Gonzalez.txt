@@ -1,14 +1,14 @@
 ################################################################################
-START OF FILE: 2023-02-23 - Tabernaculo HIjos Del Dios Viviente - Raul Gonzalez.txt
+START OF FILE: 2023-02-23 - Tabernaculo Hijos Del Dios Viviente - Raul Gonzalez.txt
 ################################################################################
 
 SERMON DETAILS
 ========================================
 Date:     2023-02-23
 Title:    Tabernaculo HIjos Del Dios Viviente
-Speaker:  Raul Gonzalez
+Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:     Short Service
+Type:    Church Service
 Duration: 21m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=WeY7abXBfXk

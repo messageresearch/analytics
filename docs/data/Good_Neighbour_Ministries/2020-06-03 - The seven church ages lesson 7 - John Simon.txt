@@ -1,5 +1,5 @@
 ################################################################################
-START OF FILE: 2020-06-03 - The seven church ages lesson 7 - John Simon.txt
+START OF FILE: 2020-06-03 - The Seven Church Ages Lesson 7 - John Simon.txt
 ################################################################################
 
 SERMON DETAILS
@@ -8,7 +8,7 @@ Date:    2020-06-03
 Title:   The seven church ages lesson 7
 Speaker: John Simon
 Church:  Good Neighbour Ministries
-Type:    Full Sermon
+Type:    Church Service
 Language:English
 URL:     https://www.youtube.com/watch?v=x4DEFRi09JY
 ========================================

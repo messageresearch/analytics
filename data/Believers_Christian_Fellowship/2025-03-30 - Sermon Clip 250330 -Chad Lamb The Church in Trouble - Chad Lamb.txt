@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-03-30
 Title:    Sermon Clip: 250330 -Chad Lamb: The Church in Trouble
-Speaker:  Chad Lamb
+Speaker: Chad Lamb
 Church:   Believers Christian Fellowship
-Type:     Sermon Clip
+Type:    Sermon Clip
 Duration: 3m
 Language: English
 URL:      https://www.youtube.com/watch?v=7VfRXwamUHM

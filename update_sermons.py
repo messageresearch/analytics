@@ -28,6 +28,7 @@ except ImportError:
 # --- CONFIGURATION ---
 CONFIG_FILES = ["channels.json", "config.json"]
 SPEAKERS_FILE = "speakers.json"
+SPEAKERS_CONFIG_FILE = "config/speakers_config.json"
 DATA_DIR = "data"
 SHALOM_CSV_NAME = "shalom_tabernacle_sermons.csv"
 
@@ -107,7 +108,7 @@ SONG_TITLES = {
 
 CATEGORY_TITLES = {
     "Testimonies", "Prayer Meeting", "Worship Night", "Prayer Bible Study",
-    "New Years Day Items", "Picture Slideshow"
+    "New Years Day Items", "Picture Slideshow", "Church Service"
 }
 
 # --- SPEAKER DETECTION LOG FUNCTION ---
@@ -134,6 +135,7 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
     total = stats_dict.get('total_processed', 0)
     detected = stats_dict.get('speakers_detected', 0)
     unknown = stats_dict.get('unknown_speakers', 0)
+    unknown_before = stats_dict.get('unknown_speakers_before', None)
     
     # Calculate detection rate
     detection_rate = (detected / total * 100) if total > 0 else 0
@@ -147,11 +149,18 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
         "SUMMARY STATISTICS",
         "-" * 40,
         f"Total Entries Processed:    {total:,}",
+    ]
+    if unknown_before is not None:
+         lines.append(f"Unknown Speakers (Before):  {unknown_before:,}")
+         lines.append(f"Unknown Speakers (After):   {unknown:,}")
+    else:
+         lines.append(f"Unknown Speakers:           {unknown:,}")
+
+    lines.extend([
         f"Speakers Detected:          {detected:,}",
-        f"Unknown Speakers:           {unknown:,}",
         f"Detection Rate:             {detection_rate:.1f}%",
         "",
-    ]
+    ])
     
     # Add optional stats if present
     if 'speakers_corrected' in stats_dict:
@@ -525,6 +534,10 @@ def load_json_file(filepath):
                         best_by_key[key] = s
 
                 return set(best_by_key.values())
+            
+            # If it is a dictionary (config file), return as is.
+            if isinstance(data, dict):
+                return data
 
             return set(data)
         except json.JSONDecodeError as e:
@@ -1232,7 +1245,8 @@ def clean_name(name):
     name = re.sub(r'[\s\-:,;\.\'\"]+$', '', name)
     
     # Remove leading honorifics (loop to handle stacked prefixes like "Preacher Brother")
-    honorific_prefix_pattern = r'^(?:By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Sr\.?|Hna\.?|Hno\.?|Hno|Past\.?|Pastor\.?|Paster\.?|Pastror\.?|Pstr\.?|Ptr\.?|Pst\.?|Preacher|Bishop|Rev\.?|Dr\.?|Evangelist|Apostle|Deacon|Dcn\.?|Guest\s+Minister|Song\s+Leader|Elder|Founding)\s+'
+    # Added matching for "Bro.Lastname" or "Bro.Firstname" without space (e.g., "Bro.John Smith")
+    honorific_prefix_pattern = r'^(?:By|Pr\.?|Br\.?|Bro\.?|Brother|Brothers|Bros\.?|Sister|Sis\.?|Sr\.?|Hna\.?|Hno\.?|Hno|Past\.?|Pastor\.?|Paster\.?|Pastror\.?|Pstr\.?|Ptr\.?|Pst\.?|Preacher|Bishop|Rev\.?|Dr\.?|Evangelist|Apostle|Deacon|Dcn\.?|Guest\s+Minister|Song\s+Leader|Elder|Founding)(?:\s+|(?:(?<=\.)(?=[a-zA-Z])))'
     while True:
         new_name = re.sub(honorific_prefix_pattern, '', name, flags=re.IGNORECASE)
         if new_name == name:
@@ -1579,22 +1593,32 @@ def analyze_content_for_song(filepath):
 
 def smart_speaker_correction(current_speaker, title):
     """
-    Attempts to fix "Bad Speaker" entries like:
-    - "Aaron McGeary, Emotional Faith" (Name + Title)
-    - "Already Won" (Title mistakenly used as Name)
+    Attempts to fix "Bad Speakers" using extensive normalization rules from config
+    and pattern matching logic.
     """
+    # Load configuration 
+    try:
+        config_data = load_json_file(SPEAKERS_CONFIG_FILE)
+        normalization_rules = config_data.get("normalization_rules", {})
+    except:
+        normalization_rules = {}
+
     # 1. Clean basic prefixes
     clean = clean_name(current_speaker)
     norm = normalize_speaker(clean)
     
-    # 2. Check for "Name, Title" pattern. Be less aggressive.
+    # 2. Apply Config-Driven Normalization Rules
+    if norm in normalization_rules:
+        return normalization_rules[norm]
+        
+    # 3. Check for "Name, Title" pattern. Be less aggressive.
     # If a comma is present, trust that it's separating speakers and just clean them.
     if "," in norm:
         parts = split_multiple_speakers(norm)
         cleaned_parts = [clean_name(p) for p in parts]
         return ", ".join(cleaned_parts)
 
-    # 3. Check for "Title as Speaker" pattern
+    # 4. Check for "Title as Speaker" pattern
     # If the current speaker string is found identically in the Title, 
     # and the Title has OTHER words that look like a Name.
     if norm in title and not is_valid_person_name(norm):
@@ -1607,45 +1631,19 @@ def smart_speaker_correction(current_speaker, title):
 
     return norm
 
-UNWANTED_SPEAKERS = set([
-    # Duplicates and non-speaker entries to heal
-    "Eduan Naude", "Eduan Naudé", "Forest Farmer The Fruit", "Forrest Farmer",
-    "Financial Jubilee", "Finding Yourself", "Fitly Joined Together", "Five Comings",
-    "Free Indeed Bro Joe Reynolds", "Freedom Released", "Fulfilling The Original",
-    # Known title leakage that should never be treated as a speaker
-    "Conferencia Con Dios", "Confronting Eternal", "Correctly Overcoming",
-    "Corriendo Con Paciencia", "Cosmetic Christians", "Covenanted Blood Purging",
-    "Creating Peace", "Crossing Jordan", "Crying Grace", "Dark Places",
-    "Empty Vessels", "Encourage Yourself", "End Time Evangelism",
-    "End-Time Transfromation", "Enfocando Nuestros Pensamientos", "Enlarging Territories",
-    "Elohim Operating", "ELT Adult", "Embracing Deity", "Entertaining Strangers",
-    "Eternal Plan", "Eternal Purpose", "Eternal Redemption", "Eternal Separation",
-    "ETM Tabernacles Crossover", "Everlasting Consequences", "Everlasting Covenant",
-    "Exceeding Righteousness", "Except Ye Abide", "Exceptional Praise",
-    "Experiencing Fulfillment", "Experiencing Gods", "Extra Chair",
-    "Face-to-face Relationship", "Faint Yet Pursuing", "Faiths Reaction",
-    "False Anointed Ones", "False Humility", "Familiar Places",
-    "Familiarity Breeds Contempt", "Family Idols", "Family Matters Overview",
-    "Family Positions", "Family Working Together", "Forsaken Then Crowned",
-    "Abstract Title Deed", "Ill Fly Away", "I'll Fly Away", "Infant Seeds",
-    "Invasion Insanity Deliverance", "Invert Always Invert", "Investigating Angels",
-    "Humble Thyself", "Humble Yourself", "Israel Commemoration",
-    "Israel Gods Redemption", "Ive Been Changed", "I've Been Changed", "Ive Tried", "I've Tried",
-    "Only Believe", "Open Channels", "Open Door", "Original Inspiration", "Original Sin",
-    "Josephs Silver Cup", "Joshua Parallels Ephesians", "Judgement Seat", "Lump Without Leaven"
-    ,
-    "Peter Skhosana Date", "Peter Skosana Title", "Peter Skosana Venue",
-    "Phoenix Lighthouse", "Picture Perfect", "Piezas De Rompecabezas", "Plan Possess Plant",
-    "Precious Promises", "Prepared Ground", "Present Context", "Present Darkness",
-    "Present Tense Manifestation", "Present Tense Revelation", "Promise Island",
-    "Prophecy Politics", "Prosper Lamour Parfait", "Pure Heart", "Rapture Landscape",
-    "Rapturing Conditin", "Rapturing Strength", "Rapturing Without", "Rejected Stone",
-    "Religion Versus Relationship", "Remaining Fruitful", "Remaining Vigilant",
-    "Remembering Calvary", "Remembering Gods Gift", "Rescue Story Brother",
-    "Resolving Evil", "Respecting Gods", "Revelacion Espiritual",
-    "Revelation Brings Strength", "Revelation Resolves Complication", "Rich Young Ruler",
-    "Right Hand", "Right Now", "Righteous Mans Reward"
-])
+# Load UNWANTED_SPEAKERS from JSON Config
+UNWANTED_SPEAKERS = set()
+try:
+    _sp_config = load_json_file(SPEAKERS_CONFIG_FILE)
+    if _sp_config and "invalid_speakers" in _sp_config:
+        UNWANTED_SPEAKERS = set(_sp_config["invalid_speakers"])
+except Exception as e:
+    print(f"⚠️ Warning: Could not load invalid_speakers from {SPEAKERS_CONFIG_FILE}: {e}")
+    # Fallback/Default set only if config fails significantly
+    UNWANTED_SPEAKERS = set([
+        "Unknown Speaker", "Guest Speaker", "Various Speakers", 
+        "Song Service", "Testimony", "Prayer", "Worship"
+    ])
 
 def heal_archive(data_dir, force=False, churches=None):
     print("\n" + "="*60)
@@ -1673,6 +1671,7 @@ def heal_archive(data_dir, force=False, churches=None):
         'total_processed': 0,
         'speakers_detected': 0,
         'unknown_speakers': 0,
+        'unknown_speakers_before': 0,
         'speakers_redetected': 0,
         'speakers_corrected': 0,
         'new_speakers': set(),
@@ -1770,6 +1769,8 @@ def heal_archive(data_dir, force=False, churches=None):
             # Track stats
             church_stats['total'] += 1
             heal_stats['total_processed'] += 1
+            if not original_speaker or original_speaker.strip() == "" or original_speaker.strip() == "Unknown Speaker":
+                heal_stats['unknown_speakers_before'] += 1
             
             # Collect detected speaker for shadow master file
             detected_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -1851,6 +1852,46 @@ def heal_archive(data_dir, force=False, churches=None):
                 new_type = "Song / Worship"
             elif "choir" in new_speaker.lower():
                 new_type = "Choir"
+            else:
+                # --- STEP 2.5: RE-EVALUATE CATEGORY ---
+                duration_minutes = 0
+                try: 
+                    # CSV duration is usually in seconds
+                    duration_minutes = float(row.get('duration', 0)) / 60.0
+                except: pass
+                
+                # If duration missing in CSV, check if we have a file to estimate from
+                if duration_minutes == 0 and os.path.exists(old_filepath):
+                    try:
+                        with open(old_filepath, 'r', encoding='utf-8') as f:
+                            # Quick check for timestamped file structure
+                            first_chars = f.read(50)
+                            if '<' in first_chars and '>' in first_chars: # Simplistic check for timestamp tags
+                                # It's timestamped, this is hard to parse quickly without reading whole file
+                                # Let's assume average file size correlation or just skip
+                                pass
+                            else:
+                                # Dictionary method: crude word count estimate
+                                f.seek(0, 2) # Seek end
+                                size = f.tell()
+                                # Avg 130 wpm, approx 5 chars per word + space = 6 bytes/word.
+                                # 130 wpm * 6 = 780 bytes/min.
+                                duration_minutes = size / 780.0
+                    except: pass
+                
+                description = row.get('description', '')
+                text_to_search = (original_title + " " + description).lower()
+                
+                recalc_type = determine_video_type(original_title, duration_minutes, new_speaker, text_to_search)
+                
+                # Logic to preserve manual "Short Clip" if we don't know duration
+                if recalc_type == "Church Service" and duration_minutes == 0:
+                    if original_type in ["Short Clip", "Short Service"]:
+                        new_type = "Short Clip"
+                    else:
+                        new_type = "Church Service" # Upgrade "Full Sermon" -> "Church Service"
+                else:
+                    new_type = recalc_type
                 
             # --- STEP 3: APPLY UPDATES ---
             
@@ -4247,6 +4288,16 @@ def identify_speaker_dynamic(title, description, known_speakers):
     
     # If we found a speaker from title, verify/enhance with description
     if title_speaker:
+        # --- NEW VALIDATION AND NORMALIZATION ---
+        # Apply smart correction first
+        title_speaker = smart_speaker_correction(title_speaker, title)
+        
+        # Check against blocklists
+        if title_speaker in UNWANTED_SPEAKERS or title_speaker in CATEGORY_TITLES or title_speaker in SONG_TITLES:
+             title_speaker = None
+        # ----------------------------------------
+        
+    if title_speaker:
         desc_speaker = extract_speaker_from_description(description)
         if desc_speaker:
             # If title detection looks like a topic (not a real name), prefer description
@@ -4261,7 +4312,13 @@ def identify_speaker_dynamic(title, description, known_speakers):
     # No speaker from title - try description with full pattern matching
     desc_speaker = extract_speaker_from_description(description)
     if desc_speaker:
-        return normalize_speaker(desc_speaker, title), False
+        # --- NEW VALIDATION AND NORMALIZATION ---
+        desc_speaker = smart_speaker_correction(desc_speaker, title)
+        if desc_speaker in UNWANTED_SPEAKERS or desc_speaker in CATEGORY_TITLES or desc_speaker in SONG_TITLES:
+             pass # Continue to other fallbacks
+        else:
+            return normalize_speaker(desc_speaker, title), False
+        # ----------------------------------------
     
     # Try more patterns on description as fallback
     if description and not is_boilerplate_description(description):
@@ -4371,7 +4428,7 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     
     # Testimony Service
     if any(term in text_to_search for term in ["testimony", "testimonies"]):
-        return "Testimony Service"
+        return "Testimonies"
     
     # Sermon Clip
     if any(term in text_to_search for term in ["clip", "excerpt", "highlight"]): 
@@ -4426,16 +4483,16 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
         if speaker == "Unknown Speaker": 
             return "Worship Service"
     
-    # Full Sermon - videos 60+ minutes with identified speaker
+    # Church Service - videos 60+ minutes with identified speaker
     if duration_minutes >= 60:
-        return "Full Sermon"
+        return "Church Service"
     
-    # Short Service - videos under 60 minutes (not matching other categories)
+    # Short Clip - videos under 60 minutes (not matching other categories)
     if duration_minutes > 0 and duration_minutes < 60:
-        return "Short Service"
+        return "Short Clip"
     
     # Default when duration unknown
-    return "Service"
+    return "Church Service"
 
 def determine_language(title, yt_obj):
     title_lower = title.lower()
@@ -5425,7 +5482,13 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 channel_stats['new_speakers'].add(speaker)
                 save_json_file(SPEAKERS_FILE, known_speakers)
         else:
-            speaker, is_new = identify_speaker_dynamic(title, "", known_speakers)
+            # Extract description snippet if available to improve initial detection
+            desc_snippet = ""
+            try:
+                desc_snippet = video.get('descriptionSnippet', {}).get('runs', [{}])[0].get('text', "")
+            except: pass
+            
+            speaker, is_new = identify_speaker_dynamic(title, desc_snippet, known_speakers)
             speaker = normalize_speaker(speaker)
             speaker = clean_name(speaker) 
             if is_new:
@@ -5570,6 +5633,17 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                     segments = xml_to_timestamped_segments(raw_xml)
                     if segments and save_timestamp_data(filepath, video_id, segments):
                         print(f"   📍 Timestamps saved ({len(segments)} segments).")
+
+            # Print comprehensive metadata for user verification
+            print(f"   📊 SUMMARY DATA:")
+            print(f"      Date:     {sermon_date}")
+            print(f"      Title:    {title}")
+            print(f"      Speaker:  {speaker}")
+            print(f"      Type:     {video_type}")
+            print(f"      Lang:     {language}")
+            print(f"      Status:   {status}")
+            print(f"      Duration: {int(duration_minutes) if duration_minutes else 0} min")
+            print(f"      URL:      {video_url}")
 
             current_summary_list.append({
                 "date": sermon_date, "status": status, "speaker": speaker,
@@ -6118,8 +6192,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Full Scrape (All Videos)")
-            print("\\n✅ Full scrape complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print("\\n✅ Full scrape complete.")
             return
 
         # Handle --new-only scrape mode (skip videos we already have)
@@ -6153,8 +6226,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="New Videos Only Scrape")
-            print("\\n✅ New videos scrape complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print("\\n✅ New videos scrape complete.")
             return
 
         # Handle --retry-no-transcript mode (only retry videos marked "No Transcript")
@@ -6188,8 +6260,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Retry No Transcript")
-            print("\\n✅ Retry complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print("\\n✅ Retry complete.")
             return
         
         # When running with --days, process all channels for that time period
@@ -6216,8 +6287,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape (Last {args.days} Days)")
-            print(f"\\n✅ Partial scrape ({args.days} days) complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print(f"\\n✅ Partial scrape ({args.days} days) complete.")
             return
         
         # When running with --recent, we don't need a menu.
@@ -6242,8 +6312,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Recent Scrape (Last 24 Hours)")
-            print("\\n✅ Recent scrape complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print("\\n✅ Recent scrape complete.")
             return
 
         # When running with --unscraped, scrape only channels without Summary CSV
@@ -6292,8 +6361,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape (CLI)")
-            print(f"\\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print(f"\\n✅ Unscraped channels scrape complete.")
             return
 
         # --- MENU ---
@@ -6386,9 +6454,46 @@ def main():
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
             if choice == '0':
-                print(f"\n🔄 Scanning ALL channels for videos from the last {days_back} days...\n")
-                for name, config in channels.items():
-                    channel_stats = process_channel(name, config, known_speakers, days_back=days_back)
+                print("\n--- PARTIAL SCRAPE SUB-OPTIONS ---")
+                print(" 1. Force Scrape All Channels (Standard)")
+                print(" 2. Scrape New Channels Only")
+                print(" 3. Scrape Channels with Missing Transcripts Only")
+                sub_choice = input("\n👉 Enter Mode (1-3): ").strip()
+
+                target_channels = channels.items()
+                retry_no_transcript = False
+
+                if sub_choice == '2':
+                    filtered = []
+                    for name, config in channels.items():
+                        path = get_summary_file_path(name, ".csv")
+                        if not os.path.exists(path):
+                            filtered.append((name, config))
+                    target_channels = filtered
+                    if not target_channels:
+                        print("✅ No new channels found.")
+                        return
+                    print(f"📊 Found {len(target_channels)} new channels.")
+
+                elif sub_choice == '3':
+                    retry_no_transcript = True
+                elif sub_choice != '1':
+                    print("Invalid selection.")
+                    return
+
+                print(f"\n🔄 Scanning channels for videos from the last {days_back} days...\n")
+                
+                # Sort for consistency (unscraped first)
+                def channel_sort_key(item):
+                    name, config = item
+                    summary_path = get_summary_file_path(name, ".csv")
+                    has_summary = os.path.exists(summary_path)
+                    return (0 if not has_summary else 1, name.lower())
+                
+                sorted_channels = sorted(target_channels, key=channel_sort_key)
+                
+                for name, config in sorted_channels:
+                    channel_stats = process_channel(name, config, known_speakers, days_back=days_back, retry_no_transcript_only=retry_no_transcript)
                     if channel_stats:
                         all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                         all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -6432,8 +6537,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape Menu (Last {days_back} Days)")
-            print(f"\n✅ Partial scrape ({days_back} days) complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print(f"\n✅ Partial scrape ({days_back} days) complete.")
             return
         
         if action == '6':
@@ -6524,8 +6628,7 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape")
-            print(f"\n✅ Unscraped channels scrape complete. Running Post-Scrape Self-Healing...")
-            heal_archive(DATA_DIR)
+            print(f"\n✅ Unscraped channels scrape complete.")
             return
 
         # --- CHANNEL SELECTION ---
@@ -6565,24 +6668,51 @@ def main():
             except ValueError:
                 print("Invalid input.")
         elif action == '2':
+            print("\n--- ALL CHANNELS SCRAPE ---")
+            print(" 1. Force Scrape All Channels (Scan everything)")
+            print(" 2. Scrape New Channels Only (Skip churches with existing data)")
+            print(" 3. Scrape Channels with Missing Transcripts Only")
+            sub_choice = input("\n👉 Enter Mode (1-3): ").strip()
+
+            target_channels = channels.items()
+            retry_no_transcript = False
+
+            if sub_choice == '2':
+                # Filter to unscraped only
+                filtered = []
+                for name, config in channels.items():
+                    summary_path = get_summary_file_path(name, ".csv")
+                    if not os.path.exists(summary_path):
+                        filtered.append((name, config))
+                target_channels = filtered
+                if not target_channels:
+                    print("✅ No new channels found.")
+                    return
+                print(f"📊 Found {len(target_channels)} new channels.")
+
+            elif sub_choice == '3':
+                retry_no_transcript = True
+                # Start with all channels, process_channel will filter internally 
+                # or we can pre-filter here if we want to be smarter, but process_channel handles it.
+                pass 
+            
+            elif sub_choice != '1':
+                print("Invalid selection.")
+                return
+
             speakers_before_set = load_json_file(SPEAKERS_FILE)
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
             
-            # Sort channels: unscraped first, then alphabetically
+            # Sort channels for consistent processing order
+            # If standard/force scrape: unscraped first, then alphabetical
             def channel_sort_key(item):
                 name, config = item
                 summary_path = get_summary_file_path(name, ".csv")
                 has_summary = os.path.exists(summary_path)
-                # Return tuple: (0 if unscraped else 1, name) for sorting
                 return (0 if not has_summary else 1, name.lower())
             
-            sorted_channels = sorted(channels.items(), key=channel_sort_key)
+            sorted_channels = sorted(target_channels, key=channel_sort_key)
             total_channels = len(sorted_channels)
-            
-            # Count unscraped for display
-            unscraped_count = sum(1 for name, _ in sorted_channels if not os.path.exists(get_summary_file_path(name, ".csv")))
-            if unscraped_count > 0:
-                print(f"\n📋 Processing order: {unscraped_count} unscraped channel(s) first, then {total_channels - unscraped_count} existing channel(s)")
             
             for idx, (name, config) in enumerate(sorted_channels, 1):
                 remaining = total_channels - idx
@@ -6590,7 +6720,7 @@ def main():
                 print(f"📺 CHANNEL {idx}/{total_channels}: {name}")
                 print(f"{'='*60}")
                 
-                channel_stats = process_channel(name, config, known_speakers)
+                channel_stats = process_channel(name, config, known_speakers, retry_no_transcript_only=retry_no_transcript)
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -6612,7 +6742,13 @@ def main():
             speakers_after_set = load_json_file(SPEAKERS_FILE)
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
-            write_speaker_detection_log(all_stats, operation_name="All Channels Full Scrape")
+            
+            log_title = "All Channels Scrape"
+            if sub_choice == '2': log_title = "New Channels Only Scrape"
+            if sub_choice == '3': log_title = "Retry Missing Transcripts Scrape"
+            
+            write_speaker_detection_log(all_stats, operation_name=log_title)
+            print(f"\n✅ {log_title} complete.")
         else:
             print("Invalid action. Exiting.")
     except Exception as e:
