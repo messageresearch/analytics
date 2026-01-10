@@ -118,6 +118,7 @@
     "Right Hand",
     "Right Now",
     "Righteous Mans Reward"
+    "What Will The End Be Now Available on Storehouse!"
   ],
   
   "normalization_rules": {
@@ -172,7 +173,9 @@
     "Prophet William M. Branham": "William M. Branham",
     "Branham": "William M. Branham",
     "Isiah Brooks": "Isiah Brooks",
-    "Isaiah Brooks": "Isiah Brooks"
+    "Isaiah Brooks": "Isiah Brooks",
+    "Friday, 14 Apostle Edgar H. Roscoe":"Edgar H. Roscoe",
+    "Apostle Edgar H. Roscoe": "Edgar H. Roscoe",
   },
   
   "canonical_speakers": {

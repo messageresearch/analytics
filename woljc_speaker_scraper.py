@@ -25,7 +25,8 @@ from difflib import SequenceMatcher
 # Configuration
 BASE_URL = "https://www.woljc.com"
 SERMON_PAGES = {
-    2025: "/sermon-list/",
+    2026: "sermon-list"
+    2025: "/2025-sermons/",
     2024: "/2024-sermons/",
     2023: "/2023-sermons/",
     2022: "/2022-sermon-list/",

@@ -53,10 +53,10 @@ INVALID_NAME_TERMS = {
     "prayer", "worship", "testimony", "testimonies", "communion", "baptism",
     "evening", "morning", "wednesday", "sunday", "dedication", "meeting", "study",
     "sermon", "message", "part", "chapter", "verse", "volume", "thunders", "reviewing",
-    "live", "stream", "update", "announcement", "q&a",
+    "live", "stream", "update", "announcement", "q&a", "unknown", "speaker",
     "discussion", "teaching", "preaching", "song", "music", "choir", "harmony",
     "guest", "minister", "ministry", "revival", "conference",
-    "report", "mission", "position", "clip", "wedding", "book", "items",
+    "report", "mission", "missions", "position", "clip", "wedding", "book", "items",
     "carriers", "vessel", "partnership", "seed", "garden", "situations",
     "control", "life", "power", "glory", "faith", "love", "hope", "fear",
     "video", "series", "restoration", "process", "year", "month",
@@ -65,12 +65,14 @@ INVALID_NAME_TERMS = {
     "vbs", "cancel", "culture", "night", "altar", "call", "civil", "war", "project",
     # song lyrics / sermon title words
     "here", "room", "enemies", "scattered", "masterpiece", "holding", "another", "fire",
-    "grudges", "holy", "convocations", "great", "thou", "art", "deer", "because",
+    "grudges", "holy", "convocations", "great", "thou", "deer", "because",
     "choose", "die", "need", "thee", "every", "speak", "stand", "courage", "reign",
     "amazed", "thank", "want", "more", "worthy", "vida", "near", "lost",
-    "fort", "collins", "friend", "alpha", "elijah", "parallel", "carried", "table",
+    "friend", "alpha", "parallel", "carried", "table",
     "crossed", "over", "token", "applied", "display", "real", "id", "face",
     "ready", "translation", "cycle", "death", "approval", "works", "kingdom", "sessions",
+    "end", "time", "expectations", "method", "vindicated", "slaves", "no", "longer",
+    "vs", "versus", "obediencia", "desobediencia", "light", "darkness", "manifest", "manifestation",
     "things", "that", "were", "was", "this", "those", "these", "are", "be", "if",
     "have", "had", "do", "did", "say", "said", "see", "saw", "go", "went", "did",
     "come", "came", "give", "gave", "make", "made", "know", "still",
@@ -85,7 +87,110 @@ INVALID_NAME_TERMS = {
     "already", "praised", "box", "alabaster", "mountain", "lead", "redeemed",
     # language / foreign terms
     "servicio", "reunion", "en", "frances", "espanol", "domingo",
-    "miercoles", "ibikorwa", "ikirundi", "vy", "vas"
+    "miercoles", "ibikorwa", "ikirundi", "vy", "vas",
+    # Audit found terms
+    "condescendiendo", "milagro", "morar", "present", "tense", "messiah", "gastronomics",
+    "intelligence", "resonance", "conception", "resurrections", "cooking", "cantantando",
+    "adoracion", "watching", "fulfilled", "pleasing", "ngisebenzise", "moya",
+    "oyingcwele", "boldness", "access", "confidence", "badger", "skin", "mastering",
+    "circumstances", "separation", "brings", "inspiration", "pentecost", "jubilee",
+    "million", "miracles", "anointing", "burial", "strengthen", "feeble", "knees",
+    "excuses", "approaching", "perfection", "striving", "corruption", "choice",
+    "revealing", "progressive", "sentence", "harlot", "knoweth",
+    "salvation", "without", "iglesia", "tomalo", "vuelta", "diffrent", "different", "rain", 
+    "missions",
+    # Audit 2026-01-08 additions
+    "overcomer", "resting", "authority", "capitalize", "victory", "hearken", "diligently", 
+    "unto", "scared", "battle", "children", "spoken", "word", "identified", "treasure", 
+    "transitions", "stepping", "standing", "serving", "rising", "rejoicing", "reflecting",
+    "preserving", "preparing", "positive", "positioned", "peace", "overcoming", "mothers",
+    "members", "living", "grace", "foot", "follow", "father", "drink", "desperation",
+    "creatures", "created", "christmas", "beyond", "possessing", "restored", "thanksgiving",
+    "teach", "seeds", "keep", "identity", "hold", "delight", "count", "choices", "build",
+    "unclogging", "trophies", "seeing", "recognizing", "prevailing", "pressing", "ordained",
+    "liberty", "elected", "creating", "suffer", "little", "long",
+    # Spanish/English Audit 2026-01-08 Round 2
+    "sucesor", "circuncision", "poder", "vivificador", "viendo", "invisible", "tengo", 
+    "bases", "regalo", "perfecto", "acercarnos", "importa", "dia", "adopcion", "buscando", 
+    "bendicion", "aprovechando", "momento", "importancia", "noviasgo", "puedo", "crecer", 
+    "quiere", "usted", "salvacion", "mundo", "necesita", "ayuda", "nuevas", "inexhaustible",
+    "crucial", "moments", "edificando", "refocus", "moviendonos", "maestro", "stewardship",
+    "calzados", "coming", "deja", "exito", "formando", "genesis", "gensis", "grupos", 
+    "jose", "napa", "orando", "tema", "todo", "ya", "arrepentimiento", "condiciones", 
+    "provando", "un", "dvfellowship", "interviews", "interview",
+    "novia", "esposa", "cree", "creer", "solamente", "religion", "weakness", "strength",
+    "proposito", "despierta", "reconociendo", "quienes", "somos", "frecuencia", "fundamento",
+    "fundamental", "principio", "profundizarse", "resurrection", "resurreccion", "esperando",
+    "report", "mission", "missions", "rain", "different", "diffrent",
+    # Audit 2026-01-08 Round 3
+    "herederos", "religion", "solamente", "interviews", "presencia", "santisimo", "moments", 
+    "chapters", "experience", "election", "forgiveness", "praise", "authority", "interview",
+    "interviewing", "interviewed", "interviewee", "interviewer", "conviction", "perseverancia",
+    "crisis", "tabernaculo", "obra", "maestra", "spiritual", "supernatural", "throw", "jonah", "jonas",
+    "genetics", "overboard",
+    # Deep Audit additions
+    "believers", "sisters", "brothers", "spirits", "musical", "banquet", "statements", 
+    "codes", "restoring", "births", "vanities", "alone", "faithful", "deliver", 
+    "voices", "healing", "vision", "walking", "shoes", "ashamed", "remaineth", 
+    "submission", "lived", "rights", "closing", "belittling", "wounded", "lying",
+    "peculiar", "rapture", "deliverer", "unashamed", "provision", "conscious",
+    # Round 2 Deep Audit Additions
+    "understanding", "pains", "reports", "modern", "always", "story", "concerned",
+    "suddenly", "special", "specials", "tethered", "gathered", "showdown", "overloaded",
+    "unveiling", "libertad", "crucificaron", "heaven", "comments", "change", "response",
+    "dimensions", "beauty", "forth", "bones", "rebels", "givers",
+    "higher", "hurry", "form", "bajado", "doing", "done", "sastre", "lado",
+    "loveth", "remains", "animal", "temor", "quickening", "spirit",
+    # Round 3 Deep Audit Additions (Safe)
+    "shaddai", "perezoso", "leakage", "weaponry", "sparrows", "possession", "virgins", "foundation", "shepherd",
+    "cravings", "manifested", "media", "servant", "eagle", "revelacion", "hid", "teofania", "tastes", "crabgrass",
+    "symmetry", "meat", "seals", "yerushaliyim", "persistiendo", "mentality", "vessels", "secreto", "yokes",
+    "affidavit", "reconciliation", "unlimited", "resources", "dolorosa", "recognition", "arcangel", "convention",
+    "framing", "reality", "whiter", "forever", "awaits", "indeed", "nursing", "weds", "visit", "visiting",
+    "homegoing", "smell", "scent", "odor", "perverted", "pure", "language", "nuggets", "deception", "reflected",
+    "calling", "ground", "walls", "savage", "broken", "calling",
+    # Round 4 Deep Audit Additions
+    "gauging", "success", "edification", "sangre", "attitude", "tabernacled", "conclusion", "vertical", "receiving", 
+    "assembly", "required", "choosing", "prophecy", "apostasy", "pleasure", "question", "holiness", "humility", 
+    "blessings", "forgetting", "workers", "along", "front", "mas", "mental", "deity", "que", "heavenly", "set",
+    "places", "apart", "redeeming", "believing", "marriage",
+    # Round 5 Deep Audit Additions (Safe)
+    "seminar", "hearing", "finding", "thoughts", "friends", "jealousy", "knowing", "beholding", "running", 
+    "commissioned", "missionary", "welcome", "bienvenidos", "grit", "stability", "nature", "family", 
+    "group", "sunday",
+    # Round 6 Deep Audit Additions
+    "comings", "future", "events", "giving", "losing", "enduring", "thread", "scarlet", "rahab", "reporte", 
+    "misionero", "medley", "loving", "streaming", "error", "wisdom", "violent", "christianity", "throne", 
+    "dying", "confronting", "youth", "issues", "birthday", "contending", "whom",
+    # Round 7 Deep Audit Additions (Junk Phrases)
+    "and when", "and take", "and take the helmet", "and then", "there the eagles will gather",
+    "forsaken then crowned excerpt", "le témoignage dun vrai temoin", "la parábola de la levadura",
+    "miembros vivientes.. expectativa", "el misterio de su voluntad", "el templo de la dinámica",
+    "fue asi familia espinoza sequera", "restaurando la gloria", "total dependency and surrender",
+    "and when the tempter comes", "true sons, born sons, filled sons", "blow a trumpet, sound an alarm",
+    "boundaries starve unbelief and feed", "extrait adoration, louange",
+    "ive been changed the cockman", "young men and women renewing",
+    "hannah slachta, too many times", "parental influenceinfluencia de padres",
+    "toda la armadura de dios", "at-one-ment", "and then, dead men",
+    "los hijos de dios manifestados", "hurt people, hurt people iii",
+    "hurt people, hurt people ii", "hurt people, hurt people",
+    "humiliation, then glorification", "la guerra espiritual",
+    "los negocios de mi padre", "el camino provisto por dios", "shamgar a man convinced",
+    "rompiendo el ciclo", "el absoluto the absolute", "la gran galeria de dios",
+    "una perla de gran valor", "profundizandonos con dios going deeper",
+    "aun con tentaciones", "la segunda venida", "declarando victoria",
+    "la palabra sangrante", "el hombre espiritual", "fe disruptiva",
+    "promesas rotas", "hay esperanza", "bendiceme", "enfermedades espirituales",
+    "desempaquear para irnos", "peregrinos extranjeros", "quien soy",
+    "locos lindosbeautiful crazy", "la piedra rechazada", "la puerta abierta",
+    "recorriendo la biblia", "despues de la batalla", "graduation ceremony",
+    "awards ceremony", "miracle baby", "sis carla price",
+    # Round 8 Deep Audit Additions (New Junk)
+    "abierto", "battlefield", "capitulo", "changed", "character", "deliverance", 
+    "donde esta tu fe", "elohim", "faithfulness", "hallelujah", "idolatry", 
+    "jericho", "kingdoms", "maturity", "overcomers", "preocupado", "preparation", 
+    "sardis", "selahammahlekoth", "shalom", "testify", "thirst", "solomon", "esthers",
+    "familiarity breeds contempt", "the return", "de los echos", "de los hechos",
 }
 
 SONG_TITLES = {
@@ -111,6 +216,50 @@ CATEGORY_TITLES = {
     "New Years Day Items", "Picture Slideshow", "Church Service"
 }
 
+# --- MASTER CSV GENERATION ---
+def generate_master_csv():
+    """
+    Combine all church summary CSV files into a single master CSV file.
+    Writes to: data/master_sermons_summary.csv
+    """
+    import glob
+    
+    master_file_path = os.path.join(DATA_DIR, "master_sermons_summary.csv")
+    summary_files = glob.glob(os.path.join(DATA_DIR, "*_Summary.csv"))
+    
+    if not summary_files:
+        print("⚠️ No summary CSV files found to combine.")
+        return
+    
+    # Read all CSV files and combine
+    all_rows = []
+    fieldnames = None
+    
+    for csv_file in sorted(summary_files):
+        try:
+            with open(csv_file, 'r', encoding='utf-8', errors='replace') as f:
+                reader = csv.DictReader(f)
+                if fieldnames is None:
+                    fieldnames = reader.fieldnames
+                for row in reader:
+                    all_rows.append(row)
+        except Exception as e:
+            print(f"⚠️ Error reading {csv_file}: {e}")
+    
+    if not all_rows or not fieldnames:
+        print("⚠️ No data to write to master CSV.")
+        return
+    
+    # Write master CSV
+    try:
+        with open(master_file_path, 'w', encoding='utf-8', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(all_rows)
+        print(f"✅ Master CSV generated: {master_file_path} ({len(all_rows):,} sermons)")
+    except Exception as e:
+        print(f"❌ Error writing master CSV: {e}")
+
 # --- SPEAKER DETECTION LOG FUNCTION ---
 def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
     """
@@ -129,8 +278,10 @@ def write_speaker_detection_log(stats_dict, operation_name="Speaker Detection"):
         operation_name: Name of the operation for the log header
     """
     timestamp = datetime.datetime.now()
+    logs_dir = "logs/speaker_detection"
+    os.makedirs(logs_dir, exist_ok=True)
     filename = f"speaker_detection_log_{timestamp.strftime('%Y%m%d_%H%M%S')}.txt"
-    filepath = os.path.join(DATA_DIR, filename)
+    filepath = os.path.join(logs_dir, filename)
     
     total = stats_dict.get('total_processed', 0)
     detected = stats_dict.get('speakers_detected', 0)
@@ -257,7 +408,7 @@ def write_heal_speaker_corrections_logs(corrections, data_dir, operation_name="H
         return None, None
 
     timestamp = datetime.datetime.now()
-    logs_dir = os.path.join(data_dir, "heal_logs")
+    logs_dir = "logs/healing"
     os.makedirs(logs_dir, exist_ok=True)
 
     safe_op = re.sub(r'[^A-Za-z0-9_-]+', '_', operation_name).strip('_')
@@ -345,17 +496,23 @@ HONORIFIC_PATTERN = r'(?:' + '|'.join(HONORIFICS) + r')'
 SPEAKER_INDICATORS = [
     r'by', r'with', r'from', r'featuring', r'feat\.?', r'ft\.?', 
     r'ministered\s+by', r'preached\s+by', r'delivered\s+by',
-    r'speaker[:\s]', r'minister[:\s]',
+    r'speaker[:\s]', r'minister[:\s]', r'interviews',
 ]
 
 # Pattern for name-like sequences (capitalized words)
-NAME_PATTERN = r"[A-Z][a-z]+(?:[\s'-][A-Z][a-z]+)*"
+# EXCLUDE common title starters/connectors from continuing a name chain
+NAME_STOP_WORDS = r"(?:No|The|A|An|Is|In|On|At|To|For|Of|By|With|My|His|Her|Your|Our|Who|What|Where|When|Why|How|\d|Wednesday|Sunday|Monday|Tuesday|Thursday|Friday|Saturday|Morning|Evening|Night|Service|Meeting|Sermon|Part|Pt|Series)"
+# Updated Name Pattern:
+# 1. Start with Capital word (NOT a stop word) - OR two capital letters (e.g. IT) - OR specific lowercase name "martin"
+# 2. Continue with Capital words (NOT stop words) preceded by separator
+# 3. Supports accented characters (Latin-1 Supplement \xC0-\xFF) for names like "Magaña", "René"
+NAME_PATTERN = r"(?:(?!" + NAME_STOP_WORDS + r"\b)(?:[A-Z\xC0-\xD6\xD8-\xDE][a-z\xDF-\xF6\xF8-\xFF]+|[A-Z]{2,}|martin)(?:[\s'-](?!" + NAME_STOP_WORDS + r"\b)(?:[A-Z\xC0-\xD6\xD8-\xDE][a-z\xDF-\xF6\xF8-\xFF]+|[A-Z]{2,}))*)"
 
 # Words/patterns that should NOT be considered names (expanded from speaker_detector.py)
 NON_NAME_PATTERNS = [
     r'^Part\b', r'^Pt\.?\b', r'^Episode\b', r'^Ep\.?\b', r'^Vol\.?\b',
     r'^The\b', r'^A\b', r'^An\b', r'^This\b', r'^That\b', r'^Our\b', r'^My\b',
-    r'^God\b', r'^Jesus\b', r'^Christ\b', r'^Lord\b', r'^Holy\b', r'^Spirit\b',
+    r'^God\b', r'^Jesus$', r'^Christ\b', r'^Lord\b', r'^Holy\b', r'^Spirit\b',
     r'^Sunday\b', r'^Monday\b', r'^Tuesday\b', r'^Wednesday\b', r'^Thursday\b', r'^Friday\b', r'^Saturday\b',
     r'^January\b', r'^February\b', r'^March\b', r'^April\b', r'^May\b', r'^June\b',
     r'^July\b', r'^August\b', r'^September\b', r'^October\b', r'^November\b', r'^December\b',
@@ -1232,10 +1389,54 @@ def normalize_speaker(speaker, title=""):
     
     return speaker.strip()
 
+def is_likely_name_part(text):
+    """Check if a comma-separated part looks like a name component."""
+    clean = text.strip()
+    if not clean: return False
+    if not clean[0].isupper(): return False
+    # Check against global invalid terms
+    if clean.lower() in INVALID_NAME_TERMS: return False
+    # Check commonly mistaken numeric/date parts
+    if any(c.isdigit() for c in clean): return False
+    return True
+
 def clean_name(name):
     """Clean up extracted name - improved version."""
     if not name:
         return ""
+    
+    # 1. Handle "Name, Title" pattern where comma separates valid name from noise
+    # ALSO handle "Name, Name" pattern (keep multiple names)
+    if "," in name:
+        parts = [p.strip() for p in name.split(",")]
+        kept_parts = []
+        if parts:
+            kept_parts.append(parts[0]) # Always keep base
+            
+            for p in parts[1:]:
+                p_lower = p.lower()
+                valid_suffixes = ['jr', 'jr.', 'sr', 'sr.', 'iii', 'iv', 'phd', 'md', 'esq']
+                
+                # Check if suffix
+                is_suffix = False
+                if p_lower == "de la": # Legacy special handling
+                    is_suffix = True
+                elif any(p_lower.startswith(s) for s in valid_suffixes):
+                    is_suffix = True
+                
+                if is_suffix:
+                    continue # Strip suffixes (legacy behavior)
+                
+                # If not a suffix, is it a name?
+                if is_likely_name_part(p):
+                    kept_parts.append(p)
+                # Else it is garbage/title -> Strip
+            
+            name = ", ".join(kept_parts)
+
+    # Remove " de la" if it's trailing at end of string (special user request)
+    if name.strip().lower().endswith(" de la"):
+        name = name.strip()[:-6].strip()
 
     # Ensure we never keep the .timestamped artifact in speaker names
     name = name.replace('.timestamped', '')
@@ -1293,8 +1494,10 @@ def clean_name(name):
     # Remove trailing numbers like "1 of 2"
     name = re.sub(r'\s*[\[\(]?\d+\s+of\s+\d+[\]\)]?$', '', name, flags=re.IGNORECASE)
     
-    # Remove ALL CAPS suffix (likely sermon titles)
-    name = re.sub(r'\s+[A-Z]{2,}(?:\s+[A-Z]{2,})*$', '', name)
+    # Remove ALL CAPS suffix (likely sermon titles), but preserve short ALL CAPS surnames (e.g. "OVID")
+    # Strategy: remove only if the ALL CAPS sequence is long (>5 chars) or multiple words > 3 chars
+    name = re.sub(r'\s+[A-Z]{6,}(?:\s+[A-Z]+)*$', '', name) # Remove LONG all caps
+    name = re.sub(r'\s+[A-Z]{2,}\s+[A-Z]{2,}\s+[A-Z]{2,}.*$', '', name) # Remove 3+ all caps words sequence
     
     # Remove trailing honorifics (e.g. "Roberto Figueroa Pastor" -> "Roberto Figueroa")
     name = name.strip(" .,:;-|")
@@ -1382,10 +1585,25 @@ def is_valid_person_name(text, title=""):
     
     text = text.strip()
     t_lower = text.lower()
+
+    # Handle comma-separated multiple speakers
+    if "," in text:
+        # Check if it matches an exception first (like "art magana, sr.")
+        valid_exceptions_check = ["art magaña, sr.", "art magaña, jr.", "art magana, sr", "art magana, jr"] # minimal check before full list
+        if t_lower in valid_exceptions_check: 
+             pass # Fall through to normal exception check
+        else:
+             parts = [p.strip() for p in text.split(',') if p.strip()]
+             # If it looks like suffix "Name, Jr", clean_name usually handles it. 
+             # But if we see it here, check if last part is suffix like "Jr" or "Sr" which is not a name
+             if len(parts) > 1 and parts[-1].lower().replace('.','') not in ['jr', 'sr', 'iii', 'iv', 'esq', 'md', 'phd']:
+                  return all(is_valid_person_name(p) for p in parts)
     
     # Add specific exceptions for valid names that might otherwise fail
     valid_exceptions = ["bloteh won", "chris take", "tim cross", 
-                       "william m. branham", "isiah brooks", "daniel evans", "caleb perez"]
+                       "william m. branham", "isiah brooks", "daniel evans", "caleb perez",
+                       "art magaña", "art magana", "art magaña, sr.", "art magaña, jr.", "art magana, sr", "art magana, jr",
+                       "it mojolabe", "katumba james", "meryl kinkonda", "martin shalom", "diego cantos", "juan espinoza juancho"]
     if t_lower in valid_exceptions:
         return True
 
@@ -1394,7 +1612,9 @@ def is_valid_person_name(text, title=""):
         return False
 
     # Explicit non-speaker titles that have leaked into the speaker field
-    if t_lower in {
+    title_list = {
+        "i",
+        "redemption", "intellectual", "operating", "bethel", "poured", "benefits", "purchased", "optics", "gentile", "fatherhood", "gratitude", "champion", "rapturing", "composed", "argentina", "coordination", "presuming", "artificial", "becoming", "maintain", "amazing", "falling", "expression", "expectation", "pressurized", "merrily", "surrounded", "perseverance", "daystar", "valley", "furlong", "adoption", "greatest", "security", "perplexity", "respeto", "brotherly", "emotional", "eternity", "original", "eating", "hungry", "influenced", "prospering", "moment", "established", "appropriate", "unaltered", "tested", "return", "opportunity", "priesthood", "nobody", "highway", "apostolic", "conduct", "fathers", "breathe", "harvest", "thankful", "predestinated", "nothing", "happiness", "atmospheres", "freewill", "prosper", "revelation", "enquiring", "byfaith", "prepared", "testing", "proving", "lifted", "misunderstanding", "multiplying", "washed", "accountability", "silence", "melody", "bloodline", "gethsemane", "remember", "witness", "messianic", "pruning", "watchnight", "eternal", "forgive", "emergency", "emotions", "caught", "fiftieth", "reformation", "credits", "representation", "serpent", "earnestly", "recover", "sealed", "friendship", "sacrifice", "climbing", "transformation", "unhindered", "trained", "anchored", "determination", "casting", "traits", "gratefulness", "elevation", "junctions", "impossible", "victories", "citizens", "comfort", "conflicting", "remembering", "theomorphy", "redeemable", "untapped", "settle", "impressions", "unwrapped", "uncentered", "unglazed", "unwaxed", "sonlit", "brilliant", "poison", "sympathetic", "musings", "wasteland", "relevant", "relatable", "marked", "framed", "antifaith", "integrity", "ruined", "fashioned", "deceptive", "ugliness", "sacred", "accepting", "complicated", "example", "ministered", "restitution", "groaning", "ruling", "conditions", "privileged", "refined", "measured", "sifted", "ambassadors", "courtroom", "thankfulness", "changes", "philemon", "gentle", "embracing", "influences", "loneliness", "switching", "trapped", "passing", "reaction", "examination", "purifying", "feeling", "maintaining", "inspired", "parenthood", "responsibility", "bitterness", "communtion", "dressed", "peacemakers", "untitled", "weapon", "prince", "nevertheless", "changer", "stages", "questioning", "reunited", "raised", "managing", "smaller", "literal", "available", "pulling", "strange", "glorious", "performed", "lovely", "evidence", "witnessing", "flight", "partakers", "hindrances", "endure", "examples", "impregnated", "leadership", "beneficiaries", "eyewitness", "messiahettes", "somebody", "inoculated", "masterbuilder", "fallen", "graves", "scatter", "protection", "anticipating", "ordination", "shaped", "quickened", "homecoming", "business", "according", "podcast", "prison", "influence", "paradox", "predestination", "constant", "learning", "unbreakable", "weaponizing", "necesito", "letting", "lukewarm", "siempre", "obedience", "declarando", "apocalipsis", "uniting", "watchman", "conditioning", "horses", "waymaker", "identification", "cherish", "mighty", "further", "rescue", "newness", "belief", "refiners", "justified", "staying", "unveiled", "remembered", "exhorted", "samson", "season", "manifesting", "stimulation", "cursed", "undisturbed", "finishers", "dangerous", "favored", "exchange", "condemnation", "strong", "consistently", "chasing", "working", "promises", "abundance", "believe", "exalted", "speechless", "impacted", "reversal", "covenant", "pursuing", "worshipping", "familiar", "functioning", "introduction", "mistakes", "annual", "excerpt", "lovest", "charity", "temperance", "virtue", "forgiving", "secret", "remaining", "engulf", "abounding", "favour", "hungering", "exceptional", "discernment", "cheerful", "appetite", "heeled", "effective", "battling",
         "conferencia con dios",
         "confronting eternal",
         "correctly overcoming",
@@ -1501,7 +1721,8 @@ def is_valid_person_name(text, title=""):
         "right hand",
         "right now",
         "righteous mans reward",
-    }:
+    }
+    if t_lower in title_list:
         return False
     
     # Check against NON_NAME_PATTERNS
@@ -1510,17 +1731,25 @@ def is_valid_person_name(text, title=""):
             return False
     
     # Reject obvious junk
-    if t_lower.startswith(("the ", "a ", "an ", "i ", "my ", "if ", "this ", "that ", "when ", "where ", "what ", "how ", "why ")): 
+    if t_lower.startswith(("the ", "a ", "an ", "i ", "my ", "if ", "this ", "that ", "when ", "where ", "what ", "how ", "why ",
+                           "in ", "on ", "at ", "to ", "for ", "by ", "with ")): 
         return False
-    if t_lower.endswith((" the", " a", " is", " are", " was", " be")):
+    if t_lower.endswith((" the", " a", " is", " are", " was", " be", " in", " on", " at", " to", " for", " by", " with", " and", " or")):
         return False
+    
+    # Reject names containing " and " without honorifics (mirroring final_validation)
+    if " and " in t_lower or " & " in t_lower:
+         if not any(h in t_lower for h in ["bro", "sis", "pas", "rev", "bish", "eld"]):
+              # Simple heuristic rejection for single word matches e.g. "Bread and Wine"
+              if len(t_lower.split()) < 4: 
+                  return False
     
     # Reject service/content words
     service_words = ["hymn", "service", "sermon", "worship", "meeting", "prayer", "song", 
                      "baptism", "dedication", "funeral", "memorial", "testimony", "testimonies",
                      "communion", "supper", "revival", "conference", "camp"]
     for word in service_words:
-        if word in t_lower:
+        if re.search(r'\b' + re.escape(word) + r'\b', t_lower):
             return False
     
     # Reject topic keywords
@@ -1529,17 +1758,31 @@ def is_valid_person_name(text, title=""):
     for word in topic_keywords:
         if t_lower.startswith(word + " ") or t_lower.endswith(" " + word):
             return False
+
+    # CRITICAL: Reject names with digits (dates, years, numbers)
+    if any(char.isdigit() for char in text):
+        return False
+
+    # CRITICAL: Reject dates using broad patterns
+    if re.search(r'\b(?:january|february|march|april|may|june|july|august|september|october|november|december)\b', t_lower):
+        return False
     
     # Check invalid terms
     text_words = t_lower.split()
     for word in text_words:
         w_clean = word.strip(".,:;-")
         if w_clean in INVALID_NAME_TERMS:
-            return False
+             # Special exception for "Jesus" if it is part of a name (e.g. Jesus Rendon)
+             # But reject "Jesus Christ", "Lord Jesus", "Jesus" alone
+             if w_clean == 'jesus' and len(text_words) > 1:
+                  if any(x in t_lower for x in ['christ', 'lord', 'god', 'king', 'saviour', 'savior']):
+                       return False
+                  continue
+             return False
     
-    # Must have reasonable word count (2-5 words typical for names)
+    # Must have reasonable word count (1-5 words typical for names, detecting "Ben", "Art")
     words = text.split()
-    if not (2 <= len(words) <= 5):
+    if not (1 <= len(words) <= 5):
         return False
     
     # Capitalization Check
@@ -1554,13 +1797,6 @@ def is_valid_person_name(text, title=""):
             return False
         if not w[0].isupper():
             if w.lower() not in allowed_lowercase: 
-                return False
-    
-    # Use spaCy if available for entity checking
-    if nlp:
-        doc = nlp(text)
-        for ent in doc.ents:
-            if ent.label_ in ["ORG", "DATE", "TIME", "GPE", "PRODUCT", "FAC", "EVENT", "LAW", "WORK_OF_ART"]: 
                 return False
     
     return True
@@ -1709,7 +1945,9 @@ def heal_archive(data_dir, force=False, churches=None):
         try:
             with open(summary_path, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
-                headers = reader.fieldnames
+                headers = list(reader.fieldnames) if reader.fieldnames else []
+                if "church" not in headers:
+                    headers.append("church")
                 rows = list(reader)
         except: continue
         
@@ -1753,7 +1991,8 @@ def heal_archive(data_dir, force=False, churches=None):
                     "url": url,
                     "last_checked": last_checked,
                     "language": language,
-                    "type": video_type
+                    "type": video_type,
+                    "church": church_folder.replace('_', ' ')
                 }
                 rows.append(new_row)
                 summary_keys.add((date, title, speaker))
@@ -1762,6 +2001,10 @@ def heal_archive(data_dir, force=False, churches=None):
                 print(f"      ✔ Already in summary: {txt_file}")
 
         for row in rows:
+            # Ensure church field is populated
+            if "church" not in row or not row["church"]:
+                row["church"] = church_folder.replace('_', ' ')
+
             original_speaker = row.get('speaker', 'Unknown Speaker')
             raw_original_speaker = original_speaker
             speaker_reason = ""
@@ -1816,11 +2059,17 @@ def heal_archive(data_dir, force=False, churches=None):
                 if new_speaker != original_speaker:
                     speaker_reason = speaker_reason or "smart_correction"
 
+            # --- VALIDITY CHECK (Applies expanded blocklists) ---
+            if new_speaker != "Unknown Speaker" and not is_valid_person_name(new_speaker):
+                 # print(f"      - Invalidated speaker: '{new_speaker}' -> 'Unknown Speaker'")
+                 new_speaker = "Unknown Speaker"
+                 speaker_reason = "invalid_name_check"
+
             # --- STEP 1.5: FULL SPEAKER DETECTION FOR UNKNOWN SPEAKERS ---
             # If speaker is still unknown after smart correction, run full detection algorithm
             if new_speaker == "Unknown Speaker" or not new_speaker:
                 description = row.get('description', '')
-                detected_speaker, is_new = identify_speaker_dynamic(original_title, description, known_speakers)
+                detected_speaker, is_new = identify_speaker_dynamic(original_title, description, known_speakers, date_str=original_date)
                 detected_speaker = normalize_speaker(detected_speaker)
                 detected_speaker = clean_name(detected_speaker)
                 
@@ -1856,8 +2105,8 @@ def heal_archive(data_dir, force=False, churches=None):
                 # --- STEP 2.5: RE-EVALUATE CATEGORY ---
                 duration_minutes = 0
                 try: 
-                    # CSV duration is usually in seconds
-                    duration_minutes = float(row.get('duration', 0)) / 60.0
+                    # CSV duration is stored in minutes
+                    duration_minutes = float(row.get('duration', 0))
                 except: pass
                 
                 # If duration missing in CSV, check if we have a file to estimate from
@@ -1877,6 +2126,8 @@ def heal_archive(data_dir, force=False, churches=None):
                                 # Avg 130 wpm, approx 5 chars per word + space = 6 bytes/word.
                                 # 130 wpm * 6 = 780 bytes/min.
                                 duration_minutes = size / 780.0
+                                # Save estimated duration to row
+                                row['duration'] = int(duration_minutes)
                     except: pass
                 
                 description = row.get('description', '')
@@ -2618,14 +2869,14 @@ def add_timestamps_for_video(video_url_or_id, data_dir=None):
 
 def backfill_timestamps(data_dir=None, dry_run=False, churches=None, limit=None):
     """
-    Backfill timestamped transcript data for existing .txt files that are missing .timestamps.json.
+    Backfill timestamped transcript data for existing .txt files that are missing .timestamped.txt.
     
     This function:
     1. Scans all transcript .txt files in data_dir
-    2. Checks if each file has a corresponding .timestamps.json
+    2. Checks if each file has a corresponding .timestamped.txt
     3. If missing, extracts the video ID from the URL in the file
     4. Fetches the caption XML from YouTube
-    5. Parses timestamps and creates the .timestamps.json file
+    5. Parses timestamps and creates the .timestamped.txt file
     
     Args:
         data_dir: Path to data directory (defaults to DATA_DIR)
@@ -2852,12 +3103,14 @@ def migrate_csv_add_church_names(data_dir):
     return updated_count, skipped_count
 
 
-def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=None):
+def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=None, force_all=False):
     """
-    Scrape duration metadata for videos that are missing it in CSV summary files.
+    Scrape duration metadata for videos in CSV summary files.
     """
     print("\n" + "="*60)
     print("⏱️ BACKFILLING VIDEO DURATION METADATA")
+    if force_all:
+        print("   ⚠️ FORCE MODE: Checking ALL videos, even if duration exists")
     if dry_run:
         print("   🔍 DRY RUN MODE - No changes will be made")
     if churches:
@@ -2884,6 +3137,36 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
         csv_path = os.path.join(data_dir, csv_file)
         print(f"\n📂 Processing: {church_name}")
         
+        # --- Pre-scan filenames to map Video IDs -> Filepaths ---
+        # This resolves the issue where constructed filenames don't match actual files on disk
+        church_folder_name = csv_file.replace('_Summary.csv', '')
+        church_dir = os.path.join(data_dir, church_folder_name)
+        video_id_to_file_map = {}
+        
+        if os.path.exists(church_dir) and os.path.isdir(church_dir):
+            print(f"   🔎 Building file map for {church_folder_name}...")
+            for fname in os.listdir(church_dir):
+                if fname.endswith('.txt') and not fname.endswith('.timestamped.txt'):
+                    fpath = os.path.join(church_dir, fname)
+                    try:
+                        with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
+                            # Read first 50 lines to find URL or ID
+                            head = [next(f) for _ in range(50)]
+                            content_head = "".join(head)
+                            
+                            # Extract ID
+                            vid_match = re.search(r'(?:v=|youtu\.be/|vi/)([\w\-]{11})', content_head)
+                            if vid_match:
+                                vid = vid_match.group(1)
+                                video_id_to_file_map[vid] = fpath
+                    except StopIteration:
+                        pass # empty file
+                    except Exception as e:
+                        pass # read error
+            print(f"   🗺️ Mapped {len(video_id_to_file_map)} transcript files")
+        else:
+            print(f"   ⚠️ Church directory not found: {church_dir}")
+
         try:
             # Read existing CSV
             rows = []
@@ -2891,24 +3174,26 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
                 reader = csv.DictReader(f)
                 rows = list(reader)
             
-            # Find entries missing duration
-            missing_duration = []
+            # Find entries to process
+            items_to_process = []
             for i, row in enumerate(rows):
                 duration = row.get('duration', '')
-                if not duration or duration == '0' or duration == '':
+                is_missing = not duration or duration == '0' or duration == ''
+                
+                if force_all or is_missing:
                     url = row.get('url', '')
                     if url and 'watch?v=' in url:
-                        missing_duration.append((i, row))
+                        items_to_process.append((i, row))
             
-            if not missing_duration:
-                print(f"   ✓ All {len(rows)} entries have duration")
+            if not items_to_process:
+                print(f"   ✓ No applicable entries found (Force Mode: {force_all})")
                 total_skipped += len(rows)
                 continue
             
-            print(f"   📊 Found {len(missing_duration)} entries missing duration")
+            print(f"   📊 Found {len(items_to_process)} entries to check")
             
             # Apply limit
-            to_process = missing_duration[:limit] if limit else missing_duration
+            to_process = items_to_process[:limit] if limit else items_to_process
             
             updated_in_church = 0
             for idx, (row_idx, row) in enumerate(to_process, 1):
@@ -2929,9 +3214,76 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
                     duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
                     duration_minutes = int(duration_seconds / 60) if duration_seconds else 0
                     
+                    # Format as standard time string (H:M)
+                    hours = int(duration_minutes // 60)
+                    mins = int(duration_minutes % 60)
+                    if hours > 0:
+                        duration_fmt = f"{hours}h {mins}m"
+                    else:
+                        duration_fmt = f"{mins}m"
+                    
                     rows[row_idx]['duration'] = duration_minutes
-                    print(f"      ✅ Duration: {duration_minutes}m")
+                    print(f"      ✅ Duration: {duration_fmt}")
                     updated_in_church += 1
+
+                    # --- AUTOMATIC HEALING: Transcript Header & Category ---
+                    if not dry_run:
+                        # Re-evaluate Video Type based on new duration
+                        orig_type = row.get('type', 'Full Sermon').strip()
+                        orig_date = row.get('date', '').strip()
+                        orig_title = row.get('title', '').strip()
+                        orig_speaker = row.get('speaker', '').strip()
+                        desc = row.get('description', '')
+                        text_search = (orig_title + " " + desc).lower()
+                        
+                        recalc_type = determine_video_type(orig_title, duration_minutes, orig_speaker, text_search)
+                        
+                        # Apply specific logic overrides
+                        new_type = orig_type
+                        if recalc_type == "Church Service" and duration_minutes > 0:
+                            if orig_type in ["Short Clip", "Short Service"]:
+                                new_type = "Short Clip"  # Trust manual short clip labels
+                            else:
+                                new_type = "Church Service"
+                        else:
+                            new_type = recalc_type
+                        
+                        if new_type != orig_type:
+                            rows[row_idx]['type'] = new_type
+                            print(f"      🔄 Healed Type: {orig_type} -> {new_type}")
+
+                        # Update Transcript File Header
+                        # Use the pre-built map to find the actual file on disk
+                        filepath = video_id_to_file_map.get(video_id)
+                        
+                        if filepath and os.path.exists(filepath):
+                            try:
+                                with open(filepath, 'r', encoding='utf-8') as tf:
+                                    content = tf.read()
+                                
+                                # 1. Update/Add Duration
+                                if "Duration:" in content:
+                                    content = re.sub(r'Duration:.*', f'Duration: {duration_fmt}', content)
+                                else:
+                                    # Insert before Language or Type (common headers)
+                                    insert_marker = "Language:"
+                                    if insert_marker in content:
+                                        content = content.replace(insert_marker, f"Duration: {duration_fmt}\n{insert_marker}")
+                                    else:
+                                        # Fallback: Insert after Start of File line if present, else top
+                                        lines = content.split('\n')
+                                        if len(lines) > 3:
+                                            lines.insert(3, f"Duration: {duration_fmt}")
+                                            content = '\n'.join(lines)
+                                
+                                # 2. Update Type if changed
+                                if new_type != orig_type:
+                                    content = re.sub(r'Type:.*', f'Type:    {new_type}', content)
+                                
+                                with open(filepath, 'w', encoding='utf-8') as tf:
+                                    tf.write(content)
+                            except Exception as th_err:
+                                print(f"      ⚠️ Failed to update transcript header: {th_err}")
                     
                 except Exception as e:
                     print(f"      ❌ Error: {str(e)[:40]}")
@@ -2940,11 +3292,14 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
             # Write updated CSV
             if not dry_run and updated_in_church > 0:
                 fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
-                with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-                    writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
-                    writer.writeheader()
-                    writer.writerows(rows)
-                print(f"   📝 Saved {updated_in_church} duration updates")
+                try:
+                    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                        writer.writeheader()
+                        writer.writerows(rows)
+                    print(f"   📝 Saved {updated_in_church} duration updates to CSV")
+                except Exception as save_err:
+                    print(f"   ❌ Error saving CSV: {save_err}")
             
             total_updated += updated_in_church
             
@@ -3201,7 +3556,8 @@ def remove_dates(text):
 
 def extract_speaker_pattern1(title):
     """Pattern 1: Honorific + Name - 'Bro. Ron Spencer', 'Pastor John Smith'"""
-    pattern = rf'{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
+    # Removed recursive NAME_PATTERN repetition since NAME_PATTERN handles multi-word names
+    pattern = rf'{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN})'
     matches = re.findall(pattern, title, re.IGNORECASE)
     for match in matches:
         name = clean_name(match)
@@ -3218,6 +3574,16 @@ def extract_speaker_pattern1(title):
     return None
 
 def extract_speaker_pattern2(title):
+    """Pattern 2: Multi-Speaker 'Bro. Name & Bro. Name'"""
+    # Updated to rely on NAME_PATTERN
+    pattern = rf'(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+({NAME_PATTERN})\s*&\s*(?:Bro\.|Brother|Sis\.|Sister|Pastor)\s+({NAME_PATTERN})'
+    match = re.search(pattern, title, re.IGNORECASE)
+    if match:
+        name1 = clean_name(match.group(1))
+        name2 = clean_name(match.group(2))
+        if name1 and name2:
+            return f"{name1}, {name2}"
+    return None
     """Pattern 2: '- Name on Date' or '- Name'"""
     pattern = rf'[-–—]\s*{HONORIFIC_PATTERN}[\s\.]+({NAME_PATTERN}(?:\s+{NAME_PATTERN})*)'
     match = re.search(pattern, title, re.IGNORECASE)
@@ -3615,7 +3981,9 @@ def extract_speaker_pattern34(title):
     pattern = r"Sisters?['\s]+([A-Z][a-z]+(?:\s+and\s+[A-Z][a-z]+)?)"
     match = re.search(pattern, title)
     if match:
-        name = clean_name(match.group(1))
+        raw_name = match.group(1)
+        raw_name = raw_name.replace(" and ", ", ")
+        name = clean_name(raw_name)
         if is_valid_name(name):
             return name
     return None
@@ -4025,6 +4393,10 @@ def final_validation(speaker, title=""):
     if not speaker or speaker == "Unknown Speaker":
         return speaker
     
+    # Delegate core validity check to the robust function
+    if not is_valid_person_name(speaker, title):
+        return "Unknown Speaker"
+
     speaker = speaker.strip()
     
     # Handle "By Name" pattern FIRST - extract just the name
@@ -4036,14 +4408,30 @@ def final_validation(speaker, title=""):
         else:
             return "Unknown Speaker"
     
-    # Block names starting with prepositions/articles
-    if re.match(r'^(?:in|to|of|by|on|at|for|and|the)\s+', speaker, re.IGNORECASE):
+    # Block names starting with prepositions/articles/conjunctions
+    if re.match(r'^(?:in|to|of|by|on|at|for|and|the|a|an)\s+', speaker, re.IGNORECASE):
         return "Unknown Speaker"
     
-    # Block names ending with "and" or "&" (incomplete multi-speaker)
-    if re.search(r'\s+(?:and|&)\s*$', speaker, re.IGNORECASE):
+    # Block names containing " and " unless it looks like a multi-speaker pair with honorifics
+    # e.g. "Bro Ben and Bro John" is OK. "Faith and Hope" is suspicious.
+    if " and " in speaker.lower() or " & " in speaker:
+        # Check if honorific present
+        if not re.search(r'(?:Bro|Sis|Pas|Rev|Bish|Eld)', speaker, re.IGNORECASE):
+             # Exception: "Name Surname & Name Surname" (2+ words each side)
+             parts = re.split(r'\s+(?:and|&)\s+', speaker)
+             if len(parts) == 2 and len(parts[0].split()) >= 2 and len(parts[1].split()) >= 2:
+                 pass # Allow "John Doe & Jane Doe"
+             else:
+                 return "Unknown Speaker"
+
+    # Block names ending with "and" or "&" (incomplete multi-speaker) or stop words
+    if re.search(r'\s+(?:and|&|in|on|at|to|by|for)\s*$', speaker, re.IGNORECASE):
         return "Unknown Speaker"
     
+    # CRITICAL: Reject Date-like speakers (Month names) inside final_validation too
+    if re.search(r'\b(?:january|february|march|april|may|june|july|august|september|october|november|december)\b', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
     # Block "School" as a standalone name
     if speaker.lower() == 'school':
         return "Unknown Speaker"
@@ -4073,17 +4461,22 @@ def final_validation(speaker, title=""):
             return "Unknown Speaker"
     
     # Apply normalization
-    speaker = normalize_speaker(speaker, title)
+    speaker_norm = normalize_speaker(speaker, title)
+    speaker = speaker_norm
+
     if not speaker:
         return "Unknown Speaker"
     
     # Clean the name
-    speaker = clean_name(speaker)
+    speaker_clean = clean_name(speaker)
+    speaker = speaker_clean
+
     if not speaker:
         return "Unknown Speaker"
     
     # Validate
     if not is_valid_name(speaker):
+        # Try one more time with just the first two words
         # Try one more time with just the first two words
         words = speaker.split()
         if len(words) >= 2:
@@ -4250,10 +4643,101 @@ def extract_speaker_from_description(description):
     
     return None
 
-def identify_speaker_dynamic(title, description, known_speakers):
+# --- WMB DATA LOADING ---
+WMB_TRANSCRIPTS_MAP = {}
+WMB_CODES_SET = set()
+
+def load_wmb_transcripts_map(wmb_path="data/William_Branham_Sermons"):
+    """
+    Load William Branham sermon catalogue for cross-referencing.
+    Populates WMB_TRANSCRIPTS_MAP (Date -> List of (Code, Title))
+    and WMB_CODES_SET (Set of Codes e.g. '60-1211E').
+    """
+    global WMB_TRANSCRIPTS_MAP, WMB_CODES_SET
+    WMB_TRANSCRIPTS_MAP = {}
+    WMB_CODES_SET = set()
+    
+    if not os.path.exists(wmb_path):
+        return
+
+    for filename in os.listdir(wmb_path):
+        if not filename.endswith(".txt"):
+            continue
+            
+        # Format: YY-MMDD[Suf] - Title.txt
+        # Example: 60-1211E - The Laodicean Church Age.txt
+        parts = filename.split(" - ", 1)
+        if len(parts) != 2:
+            continue
+            
+        code_part = parts[0].strip() # 60-1211E
+        title_part = parts[1].replace(".txt", "").strip() # The Laodicean Church Age
+        
+        # Parse date from Code
+        # Code: YY-MMDD[Suf]
+        # Regex: (\d{2})-(\d{2})(\d{2})([A-Za-z]?)
+        match = re.match(r'^(\d{2})-(\d{2})(\d{2})([A-Za-z]?)$', code_part)
+        if match:
+            yy, mm, dd, suf = match.groups()
+            year = "19" + yy
+            date_str = f"{year}-{mm}-{dd}"
+            
+            if date_str not in WMB_TRANSCRIPTS_MAP:
+                WMB_TRANSCRIPTS_MAP[date_str] = []
+            
+            WMB_TRANSCRIPTS_MAP[date_str].append((code_part, title_part))
+            WMB_CODES_SET.add(code_part)
+
+def identify_speaker_dynamic(title, description, known_speakers, date_str=None):
     """
     Enhanced speaker identification using 70+ pattern extraction functions.
+    Supports cross-referencing valid sermon dates with William Branham database.
     """
+    # Initialize WMB map if empty
+    if not WMB_TRANSCRIPTS_MAP:
+        load_wmb_transcripts_map()
+    
+    # CRITICAL: WMB Cross-Check (Dates <= 1965)
+    if date_str and date_str != "Unknown Date" and WMB_TRANSCRIPTS_MAP:
+        try:
+             # Check if date is pre-1966
+             ds_parts = date_str.split('-')
+             if len(ds_parts) == 3 and int(ds_parts[0]) <= 1965:
+                 wmb_candidates = WMB_TRANSCRIPTS_MAP.get(date_str, [])
+                 title_lower = title.lower()
+                 
+                 found_wmb = False
+                 for code, wmb_title in wmb_candidates:
+                     wmb_title_lower = wmb_title.lower()
+                     code_lower = code.lower()
+                     
+                     # Check 1: DateCode match (e.g. "60-1211E") anywhere in title
+                     if code_lower in title_lower:
+                         found_wmb = True
+                         break
+                         
+                     # Check 2: Strong Title Match
+                     if len(wmb_title) > 8 and wmb_title_lower in title_lower:
+                         found_wmb = True
+                         break
+                         
+                     # Check 3: Candidate title matches WMB title
+                     if title_lower in wmb_title_lower and len(title) > 8:
+                         found_wmb = True
+                         break
+                 
+                 # Check 4: DateCode prefix checking (e.g. "60-1211" without suffix)
+                 if not found_wmb:
+                     short_code = f"{ds_parts[0][2:]}-{ds_parts[1]}{ds_parts[2]}" # YY-MMDD
+                     if short_code in title:
+                         found_wmb = True
+                         
+                 if found_wmb:
+                     return "William M. Branham", True
+
+        except Exception:
+            pass
+
     # First check Tucson Tabernacle hardcoded speakers (scraped from their website)
     if title in TUCSON_TABERNACLE_SPEAKERS:
         return TUCSON_TABERNACLE_SPEAKERS[title], True
@@ -4314,7 +4798,11 @@ def identify_speaker_dynamic(title, description, known_speakers):
     if desc_speaker:
         # --- NEW VALIDATION AND NORMALIZATION ---
         desc_speaker = smart_speaker_correction(desc_speaker, title)
-        if desc_speaker in UNWANTED_SPEAKERS or desc_speaker in CATEGORY_TITLES or desc_speaker in SONG_TITLES:
+        
+        # Apply strict validity check
+        if not is_valid_person_name(desc_speaker, title):
+             pass # Invalid name
+        elif desc_speaker in UNWANTED_SPEAKERS or desc_speaker in CATEGORY_TITLES or desc_speaker in SONG_TITLES:
              pass # Continue to other fallbacks
         else:
             return normalize_speaker(desc_speaker, title), False
@@ -5091,7 +5579,7 @@ def metadata_only_scan(church_name, config, known_speakers):
                     if existing.get('date') == 'Unknown Date':
                         existing['date'] = determine_sermon_date(title, description, yt_obj)
                     if existing.get('speaker') == 'Unknown Speaker':
-                        speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+                        speaker, _ = identify_speaker_dynamic(title, description, known_speakers, date_str=existing.get('date'))
                         speaker = normalize_speaker(speaker)
                         speaker = clean_name(speaker)
                         existing['speaker'] = speaker
@@ -5119,7 +5607,7 @@ def metadata_only_scan(church_name, config, known_speakers):
             sermon_date = determine_sermon_date(title, description, yt_obj)
             
             # Identify speaker from title and description
-            speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+            speaker, _ = identify_speaker_dynamic(title, description, known_speakers, date_str=sermon_date)
             speaker = normalize_speaker(speaker)
             speaker = clean_name(speaker)
             
@@ -5595,7 +6083,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                     pass
             
             if speaker == "Unknown Speaker":
-                speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+                speaker, _ = identify_speaker_dynamic(title, description, known_speakers, date_str=sermon_date)
                 speaker = normalize_speaker(speaker)
                 speaker = clean_name(speaker)
             
@@ -5792,7 +6280,10 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             key = (entry.get('date', ''), entry.get('title', ''), entry.get('speaker', ''))
             url_to_entry[str(key)] = entry
     
+    # Enable church field population
     final_summary_list = list(url_to_entry.values())
+    for entry in final_summary_list:
+        entry['church'] = church_name
     
     # Write the updated summary CSV
     try:
@@ -5994,7 +6485,7 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
                 
                 # Update speaker if currently unknown
                 if speaker == 'Unknown Speaker' and description:
-                    new_speaker, _ = identify_speaker_dynamic(title, description, known_speakers)
+                    new_speaker, _ = identify_speaker_dynamic(title, description, known_speakers, date_str=sermon_date)
                     new_speaker = normalize_speaker(new_speaker)
                     new_speaker = clean_name(new_speaker)
                     if new_speaker != 'Unknown Speaker':
@@ -6375,6 +6866,8 @@ def main():
         print(" 5. Partial Scrape (Last N Days)")
         print(" 6. Heal Speakers from CSV (speaker_detected)")
         print(" 7. Scrape Unscraped Channels Only (No Summary CSV)")
+        print(" 8. Backfill Video Duration (Metadata Scrape)")
+        print(" 9. Backfill Missing Timestamped Transcripts")
         print("="*50)
         
         action = input("\n👉 Enter Number: ").strip()
@@ -6631,6 +7124,88 @@ def main():
             print(f"\n✅ Unscraped channels scrape complete.")
             return
 
+        if action == '8':
+            print("\n--- BACKFILL VIDEO DURATION (Metadata Scrape) ---")
+            print("This scans videos for duration metadata and fetches it from YouTube.")
+            print("It automatically updates transcript headers with standard time format (Hours:Minutes).")
+            print("It also re-heals video types (e.g., Short Clip vs Sermon) based on the new duration.\n")
+            
+            print(" 1. Scan MISSING durations only (Faster)")
+            print(" 2. Scan ALL videos (Update/Overwrite everything)")
+            sub_choice = input("\n👉 Enter choice (1-2): ").strip()
+            
+            force_all_choice = False
+            if sub_choice == '2':
+                force_all_choice = True
+            elif sub_choice != '1':
+                print("Invalid choice, defaulting to MISSING only.")
+            
+            print("\nAvailable channels:")
+            channel_names = list(channels.keys())
+            for i, name in enumerate(channel_names, 1):
+                print(f"  {i}. {name}")
+            print(f"  0. All Channels")
+            
+            choice = input("\n👉 Enter channel number (or 0 for all): ").strip()
+            
+            churches_arg = None
+            if choice != '0' and choice:
+                try:
+                    idx = int(choice) - 1
+                    if 0 <= idx < len(channel_names):
+                        churches_arg = channel_names[idx]
+                        print(f"\n📂 Targeted Channel: {churches_arg}")
+                    else:
+                        print("Invalid selection.")
+                        return
+                except ValueError:
+                    print("Invalid input.")
+                    return
+            else:
+                print("\n📂 Targeted Channel: ALL")
+            
+            backfill_duration_metadata(DATA_DIR, churches=churches_arg, force_all=force_all_choice)
+            return
+
+        if action == '9':
+            print("\n--- BACKFILL MISSING TIMESTAMPED TRANSCRIPTS ---")
+            print("This scans for plain transcript files (.txt) without a corresponding")
+            print("timestamped version (.timestamped.txt) and fetches them from YouTube.\n")
+            
+            print(" 1. Process ALL Channels")
+            print(" 2. Select a specific Channel")
+            
+            sub_choice = input("\n👉 Enter choice (1-2): ").strip()
+            
+            churches_arg = None
+            
+            if sub_choice == '1':
+                print("\n📂 Targeted Channel: ALL")
+            elif sub_choice == '2':
+                print("\nAvailable channels:")
+                channel_names = list(channels.keys())
+                for i, name in enumerate(channel_names, 1):
+                    print(f"  {i}. {name}")
+                
+                choice = input("\n👉 Enter channel number: ").strip()
+                try:
+                    idx = int(choice) - 1
+                    if 0 <= idx < len(channel_names):
+                        churches_arg = [channel_names[idx]]
+                        print(f"\n📂 Targeted Channel: {churches_arg[0]}")
+                    else:
+                        print("Invalid selection.")
+                        return
+                except ValueError:
+                    print("Invalid input.")
+                    return
+            else:
+                print("Invalid selection.")
+                return
+            
+            backfill_timestamps(DATA_DIR, churches=churches_arg)
+            return
+
         # --- CHANNEL SELECTION ---
         channel_name = ""
         if action == '1':
@@ -6749,6 +7324,10 @@ def main():
             
             write_speaker_detection_log(all_stats, operation_name=log_title)
             print(f"\n✅ {log_title} complete.")
+            
+            # Generate master CSV after all channels are processed
+            print("\n📊 Generating master CSV...")
+            generate_master_csv()
         else:
             print("Invalid action. Exiting.")
     except Exception as e:
@@ -6756,6 +7335,10 @@ def main():
         import traceback
 
         traceback.print_exc()
+    finally:
+        # Always generate master CSV at the end, regardless of which action was taken
+        print("\n📊 Generating master CSV...")
+        generate_master_csv()
 
 # === Ensure this is at the very end of the file ===
 print("=== update_sermons.py script started ===")
