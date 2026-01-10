@@ -495,6 +495,44 @@ def main():
     if skipped_future > 0:
         print(f"   ⚠️  Skipped {skipped_future} sermons with invalid future dates (year > {current_year})")
 
+    # --- DEDUPLICATION: Remove duplicate entries by video URL ---
+    # This handles cases where the same video appears in multiple church folders or with different metadata
+    # CRITICAL: Keep the NEWEST metadata (highest timestamp) for each video, as older copies may be outdated/archived
+    print(f"   Deduplicating entries by video URL (total before: {len(all_meta)})...")
+    seen_urls = {}  # maps videoUrl -> (index_in_dedup_meta, entry, timestamp)
+    dedup_meta = []
+    duplicates_removed = 0
+    
+    for i, entry in enumerate(all_meta):
+        url = entry.get('videoUrl', '')
+        if url:
+            timestamp = entry.get('timestamp', 0)
+            if url in seen_urls:
+                # This is a duplicate - check if this one is newer
+                idx_in_dedup, existing_entry, existing_timestamp = seen_urls[url]
+                if timestamp > existing_timestamp:
+                    # This entry is NEWER - replace the old one
+                    dedup_meta[idx_in_dedup] = entry
+                    seen_urls[url] = (idx_in_dedup, entry, timestamp)
+                    print(f"     Replacing with newer metadata: {entry.get('title', 'Unknown')[:50]} (newer timestamp: {timestamp})")
+                else:
+                    # Existing entry is newer or same age - discard this one
+                    duplicates_removed += 1
+                    print(f"     Removing older duplicate: {entry.get('title', 'Unknown')[:50]} (older timestamp: {timestamp})")
+            else:
+                # First occurrence of this URL
+                idx_in_dedup = len(dedup_meta)
+                dedup_meta.append(entry)
+                seen_urls[url] = (idx_in_dedup, entry, timestamp)
+        else:
+            # No URL, keep it (shouldn't happen but just in case)
+            dedup_meta.append(entry)
+    
+    if duplicates_removed > 0:
+        print(f"   ✅ Removed {duplicates_removed} duplicate entries (kept newest metadata for all unique URLs)")
+    
+    all_meta = dedup_meta
+
     master_data = {
         "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalChunks": chunk_index,

@@ -190,6 +190,15 @@ fetch(encodedPath)
 
 ## ⚠️ CRITICAL: Data File Conventions
 
+### Deduplication Strategy - KEEP LATEST METADATA
+When the same video URL appears in multiple church folders or with multiple entries:
+- **ALWAYS deduplicate by video URL**
+- **KEEP the entry with the NEWEST timestamp** (most recent metadata)
+- Remove older/archived copies that may have stale information
+- This is critical because old copies may be in read-only archives or contain outdated speaker names/titles
+
+Implementation: Compare timestamps when duplicates are found and keep the one with the highest timestamp value.
+
 ### Transcript file types
 - `.txt` - Plain transcript (no timestamps)
 - `.timestamped.txt` - Transcript with YouTube timestamps

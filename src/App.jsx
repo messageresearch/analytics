@@ -1128,6 +1128,9 @@ export default function App({ onSwitchToBranham }){
 
   const processedTableData = useMemo(()=>{
     let data = filteredData.filter(s => s.hasTranscript !== false)
+    // CRITICAL: Filter out transcripts with zero mentions from search results
+    // Only show transcripts that actually contain the search term
+    data = data.filter(s => s.mentionCount > 0)
     // Global search filter
     if(tableFilters.search) {
       const q = tableFilters.search.toLowerCase()
