@@ -220,13 +220,30 @@ export default function App({ onSwitchToBranham }){
           let cData = null
           for(const p of tries){
             try{
+              if(!p || typeof p !== 'string') continue
               // console.debug('Trying channels path', p)
               const r = await fetch(p)
-              if(r && r.ok){ cRes = r; break }
+              if(r && r.ok){
+                const ct = (r.headers.get('content-type') || '').toLowerCase()
+                // Avoid trying to parse SPA fallback HTML as JSON (Safari throws a generic SyntaxError).
+                if(ct.includes('text/html')) continue
+                cRes = r
+                break
+              }
             }catch(e){}
           }
           if(cRes){
-            cData = await cRes.json()
+            try {
+              const text = await cRes.text()
+              const trimmed = (text || '').trim()
+              if (trimmed.startsWith('<!doctype') || trimmed.startsWith('<html') || trimmed.startsWith('<!DOCTYPE')) {
+                throw new Error('channels.json returned HTML')
+              }
+              cData = JSON.parse(text)
+            } catch (e) {
+              console.warn('Failed to parse channels.json, falling back to defaults', e)
+              cData = null
+            }
             let cList = []
             if(Array.isArray(cData)) cList = cData
             else if(cData && typeof cData === 'object'){

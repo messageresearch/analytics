@@ -171,6 +171,22 @@ def parse_sermon(filepath, church, filename, summary_map=None, duration_map=None
         # Note: # must be encoded as %23 or it gets treated as URL fragment
         rel_path = f"data/{church}/{filename}".replace(" ", "%20").replace("#", "%23")
 
+        # Timestamped transcript availability (sibling file next to the plain .txt)
+        # Supports the canonical ".timestamped.txt" naming and an older " - timestamped.txt" variant.
+        has_timestamped = False
+        timestamped_rel_path = None
+        if filename.lower().endswith('.txt'):
+            dirpath = os.path.dirname(filepath)
+            candidates = [
+                filename[:-4] + '.timestamped.txt',
+                filename[:-4] + ' - timestamped.txt',
+            ]
+            for cand in candidates:
+                if os.path.exists(os.path.join(dirpath, cand)):
+                    has_timestamped = True
+                    timestamped_rel_path = f"data/{church}/{cand}".replace(" ", "%20").replace("#", "%23")
+                    break
+
         # Try to find a YouTube URL inside the transcript first
         video_url = extract_first_youtube(content)
 
@@ -203,8 +219,11 @@ def parse_sermon(filepath, church, filename, summary_map=None, duration_map=None
             "mentionCount": branham_mentions,
             "wordCount": word_count,
             "path": rel_path,
-            "videoUrl": video_url or ""
+            "videoUrl": video_url or "",
+            "hasTimestamped": has_timestamped,
         }
+        if timestamped_rel_path is not None:
+            meta["timestampedPath"] = timestamped_rel_path
         # Add durationMinutes only if available
         if duration_minutes is not None:
             meta["durationMinutes"] = duration_minutes
@@ -618,10 +637,24 @@ def main():
         json.dump(available_churches, f)
     print(f"   ✅ Generated {available_path} with {len(available_churches)} churches")
 
+    # Ensure channels.json is available under site_api/ for the frontend.
+    # The app may fetch `${BASE_URL}site_api/channels.json`.
+    channels_src = 'channels.json'
+    channels_dst = os.path.join(OUTPUT_DIR, 'channels.json')
+    try:
+        if os.path.exists(channels_src):
+            import shutil
+            shutil.copy2(channels_src, channels_dst)
+            print(f"   ✅ Copied {channels_src} → {channels_dst}")
+    except Exception as e:
+        print(f"   ⚠️  Failed to copy {channels_src} into {OUTPUT_DIR}/: {e}")
+
     # Copy data/ and site_api/ to docs/ for GitHub Pages deployment
+    # Also copy to public/ for the Vite dev server (serves static files from public/).
     import shutil
     import subprocess
     DOCS_DIR = "docs"
+    PUBLIC_DIR = "public"
     print(f"\n   Syncing to {DOCS_DIR}/ for GitHub Pages...")
     
     # Helper to robustly remove directory (handles iCloud sync issues)
@@ -645,6 +678,19 @@ def main():
     robust_rmtree(docs_api)
     shutil.copytree(OUTPUT_DIR, docs_api)
     print(f"   ✅ Copied {OUTPUT_DIR}/ → {docs_api}/")
+
+    # Sync to public/ for local dev
+    print(f"\n   Syncing to {PUBLIC_DIR}/ for local dev...")
+
+    public_data = os.path.join(PUBLIC_DIR, DATA_DIR)
+    robust_rmtree(public_data)
+    shutil.copytree(DATA_DIR, public_data)
+    print(f"   ✅ Copied {DATA_DIR}/ → {public_data}/")
+
+    public_api = os.path.join(PUBLIC_DIR, OUTPUT_DIR)
+    robust_rmtree(public_api)
+    shutil.copytree(OUTPUT_DIR, public_api)
+    print(f"   ✅ Copied {OUTPUT_DIR}/ → {public_api}/")
 
     print("\n✅ GENERATION COMPLETE")
 

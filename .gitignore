@@ -1,6 +1,10 @@
 node_modules
 .DS_Store
 
+# Generated dev-only outputs (Vite serves from public/)
+public/data/
+public/site_api/
+
 # Python
 __pycache__/
 *.pyc

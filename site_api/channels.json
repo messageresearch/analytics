@@ -1,0 +1,264 @@
+{
+  "Arizona Believers Church": {
+    "url": "https://www.youtube.com/@ArizonaBelieversChurch",
+    "filename": "ArizonaBelieversChurch.txt"
+  },
+  "Believer's Spoken Word Tabernacle": {
+    "url": "https://www.youtube.com/@bswtsermons",
+    "filename": "BelieversSpokenWordTabernacle.txt"
+  },
+  "Believers Christian Fellowship": {
+    "url": "https://www.youtube.com/@believerschristianfellowsh2466",
+    "filename": "BelieversChristianFellowship.txt"
+  },
+  "Bethel Tabernacle": {
+    "url": "https://www.youtube.com/@betheltabernacle5343",
+    "filename": "BethelTabernacle.txt"
+  },
+  "Bride of Christ Fellowship": {
+    "url": "https://www.youtube.com/@brideofchristfellowshipakr6099",
+    "filename": "BrideOfChristFellowship.txt"
+  },
+  "Bride Tabernacle of Columbia SC": {
+    "url": "https://www.youtube.com/@bridetabernacleofcolumbias7937",
+    "filename": "BrideTabernacleOfColumbiaSC.txt"
+  },
+  "Calgary Living Word Assembly": {
+    "url": "https://www.youtube.com/@calgarylivingwordassembly",
+    "filename": "CalgaryLivingWordAssembly.txt"
+  },
+  "Cedar Hills - Church of the Cross": {
+    "url": "https://www.youtube.com/@CedarHillsChurchoftheCross",
+    "filename": "CedarHillsChurchOfTheCross.txt"
+  },
+  "Cloverdale Bibleway": {
+    "url": "https://www.youtube.com/@ChristWitnessGuss",
+    "filename": "CloverdaleBibleway.txt",
+    "note": "No dedicated YouTube channel exists. Data aggregated from Christ Witness Guss Archive channel (filtered for Ed Byskal/Cloverdale content) and a Cloverdale Bibleway playlist.",
+    "playlists": [
+      {
+        "id": "PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq",
+        "name": "Cloverdale Bibleway Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLcc7wUjgrVTg2B5X6UsXiZO5jrrrS3ESq"
+      }
+    ],
+    "additional_channels": [
+      {
+        "url": "https://www.youtube.com/@ChristWitnessGuss",
+        "name": "Christ Witness Guss Archive",
+        "filter": {
+          "require_any": ["Ed Byskal", "Cloverdale Bibleway"],
+          "match_in": ["title", "description"]
+        },
+        "date_format": "YY MMDD"
+      }
+    ]
+  },
+  "Christian Life Tabernacle": {
+    "url": "https://www.youtube.com/@ChristianLifeTabernacleDFW",
+    "filename": "ChristianLifeTabernacle.txt"
+  },
+  "Coleman Family Ministries": {
+    "url": "https://www.youtube.com/@ColemanFamily27",
+    "filename": "ColemanFamilyMinistries.txt"
+  },
+  "Days of the Voice Fellowship": {
+    "url": "https://www.youtube.com/@dvfellowship",
+    "filename": "DaysOfTheVoiceFellowship.txt"
+  },
+  "EL Tabernacle Ministries": {
+    "url": "https://www.youtube.com/@ELTabernacleMinistries",
+    "filename": "ELTabernacleMinistries.txt"
+  },
+  "Edmonton Restored Word Fellowship": {
+    "url": "https://www.youtube.com/@EdmontonRWF",
+    "filename": "EdmontonRestoredWordFellowship.txt"
+  },
+  "End Time Message Tabernacle CA": {
+    "url": "https://www.youtube.com/@ETMTab",
+    "filename": "EndTimeMessageTabernacleCA.txt"
+  },
+  "End Time Message Tabernacle CO": {
+    "url": "https://www.youtube.com/@EndTimeMessageTabernacle",
+    "filename": "EndTimeMessageTabernacleCO.txt"
+  },
+  "Evangelismo Para El Rapto": {
+    "url": "https://www.youtube.com/@evangelismoparaelraptojuan2097",
+    "filename": "EvangelismoParaElRapto.txt"
+  },
+  "Evening Light Fellowship AZ": {
+    "url": "https://www.youtube.com/@eveninglightfellowshipaz",
+    "filename": "EveningLightFellowshipAZ.txt"
+  },
+  "Evening Light Fellowship CA": {
+    "url": "https://www.youtube.com/@eveninglightfellowship",
+    "filename": "EveningLightFellowshipCA.txt"
+  },
+  "Evening Light Tabernacle": {
+    "url": "https://www.youtube.com/@EveningLightTabernacle",
+    "filename": "EveningLightTabernacle.txt"
+  },
+  "Evening Light Tabernacle Elkton KY": {
+    "url": "https://www.youtube.com/@eveninglighttabernacleelkt5317",
+    "filename": "EveningLightTabernacleElktonKY.txt"
+  },
+  "Faith Tabernacle": {
+    "url": "https://www.youtube.com/@faithtabernacle7296",
+    "filename": "FaithTabernacle.txt"
+  },
+  "Flagstaff Mission Tabernacle": {
+    "url": "https://www.youtube.com/@flagstaffmissiontabernacle5927",
+    "filename": "FlagstaffMissionTabernacle.txt"
+  },
+  "Full Gospel Lighthouse Tabernacle": {
+    "url": "https://www.youtube.com/@FullGospelLighthouseTabernacle",
+    "filename": "FullGospelLighthouseTabernacle.txt"
+  },
+  "Good Neighbour Ministries": {
+    "url": "https://www.youtube.com/@goodneighbourministries4198",
+    "filename": "GoodNeighbourMinistries.txt"
+  },
+  "Good Shepherd Fellowship": {
+    "url": "https://www.youtube.com/@GoodShepherdFellowship",
+    "filename": "GoodShepherdFellowship.txt"
+  },
+  "Grace Tabernacle": {
+    "url": "https://www.youtube.com/@GraceTabernacle",
+    "filename": "GraceTabernacle.txt"
+  },
+  "Grace Tabernacle Nampa": {
+    "url": "https://www.youtube.com/@GraceTabernacleNampa",
+    "filename": "GraceTabernacleNampa.txt"
+  },
+  "Harvest Time Bride Tabernacle": {
+    "url": "https://www.youtube.com/@harvesttimebridetabernacle8220",
+    "filename": "HarvestTimeBrideTabernacle.txt"
+  },
+  "Headstone Tabernacle": {
+    "url": "https://www.youtube.com/@Headstonetabernacle",
+    "filename": "HeadstoneTabernacle.txt"
+  },
+  "Higher Ground Tabernacle": {
+    "url": "https://www.youtube.com/@HigherGroundTabernacle",
+    "filename": "HigherGroundTabernacle.txt"
+  },
+  "Higher Ground Tabernacle Iowa City": {
+    "url": "https://www.youtube.com/@highergroundtabernacle7063",
+    "filename": "HigherGroundTabernacleIowaCity.txt"
+  },
+  "Inner Veil Ministries": {
+    "url": "https://www.youtube.com/@innerveilministries",
+    "filename": "InnerVeilMinistries.txt"
+  },
+  "Jericho Tabernacle": {
+    "url": "https://www.youtube.com/@JerichoTabernacle/videos",
+    "filename": "JerichoTabernacle.txt"
+  },
+  "Literal Life Church": {
+    "url": "https://www.youtube.com/@LiteralLifeChurch",
+    "filename": "LiteralLifeChurch.txt"
+  },
+  "Malachi Four Tabernacle": {
+    "url": "https://www.youtube.com/@MalachiFourTabernacle",
+    "filename": "MalachiFourTabernacle.txt"
+  },
+  "Mamelodi Tabernacle": {
+    "url": "https://www.youtube.com/@mameloditabernacleinterpre9002",
+    "filename": "MamelodiTabernacle.txt"
+  },
+  "New Life Outreach Church Of Pawnee": {
+    "url": "https://www.youtube.com/@newlifeoutreachchurchpawnee",
+    "filename": "NewLifeOutreachChurchOfPawnee.txt"
+  },
+  "New Hope Revival Ministries": {
+    "url": "https://www.youtube.com/@StevenLShelley",
+    "filename": "NewHopeRevivalMinistries.txt"
+  },
+  "Phoenix Lighthouse Tabernacle": {
+    "url": "https://www.youtube.com/@PhoenixLighthouseTabernacle",
+    "filename": "PhoenixLighthouseTabernacle.txt"
+  },
+  "Phoenix Tabernacle Inc.": {
+    "url": "https://www.youtube.com/@phoenixtabernacleinc.servi2657",
+    "filename": "PhoenixTabernacleInc.txt"
+  },
+  "Rapturing Grace Tabernacle": {
+    "url": "https://www.youtube.com/@rapturinggrace",
+    "filename": "RapturingGraceTabernacle.txt"
+  },
+  "Send The Light Church": {
+    "url": "https://www.youtube.com/@sendthelightchurch9361",
+    "filename": "SendTheLightChurch.txt"
+  },
+  "Shalom Tabernacle Tucson": {
+    "url": "https://www.youtube.com/@shalomtabernacletucson4714",
+    "filename": "ShalomTabernacleTucson.txt"
+  },
+  "Shekinah Tabernacle": {
+    "url": "https://www.youtube.com/@ShekinahTabernacleWellington",
+    "filename": "ShekinahTabernacle.txt"
+  },
+  "Son Of Man Revealed Ministries": {
+    "url": "https://www.youtube.com/@sonofmanrevealedministries",
+    "filename": "SonOfManRevealedMinistries.txt"
+  },
+  "Spirit and Truth Tabernacle": {
+    "url": "https://www.youtube.com/@SpiritandTruthTabernacle",
+    "filename": "SpiritAndTruthTabernacle.txt"
+  },
+  "Spirit Of Truth Assembly": {
+    "url": "https://www.youtube.com/@SpiritOfTruthAssembly",
+    "filename": "SpiritOfTruthAssembly.txt"
+  },
+  "Spoken Word Church": {
+    "url": "https://www.youtube.com/@SpokenWordBride",
+    "filename": "SpokenWordChurch.txt"
+  },
+  "Spoken Word Tabernacle": {
+    "url": "https://www.youtube.com/@spokenwordtabernacle9151",
+    "filename": "SpokenWordTabernacle.txt"
+  },
+  "Tabernaculo Hijos Del Dios Viviente": {
+    "url": "https://www.youtube.com/@TabernaculoHijosDelDiosVivient",
+    "filename": "TabernaculoHijosDelDiosViviente.txt"
+  },
+  "Tabernaculo La Voz Del Septimo": {
+    "url": "https://www.youtube.com/@tabernaculolavozdelseptimo395",
+    "filename": "TabernaculoLaVozDelSeptimo.txt"
+  },
+  "Tabernaculo Obra Maestra": {
+    "url": "https://www.youtube.com/@obramaestra5497",
+    "filename": "TabernaculoObraMaestra.txt"
+  },
+  "The Word of God Tabernacle": {
+    "url": "https://www.youtube.com/@thewordofgodtabernacle",
+    "filename": "TheWordOfGodTabernacle.txt"
+  },
+  "True Word Tabernacle": {
+    "url": "https://www.youtube.com/@truewordtabernacle9297",
+    "filename": "TrueWordTabernacle.txt"
+  },
+  "Tucson Tabernacle": {
+    "url": "https://www.youtube.com/@TucsonTabernacle",
+    "filename": "TucsonTabernacle.txt"
+  },
+  "Voice of Truth Tabernacle": {
+    "url": "https://www.youtube.com/@comehigher",
+    "filename": "VoiceOfTruthTabernacle.txt"
+  },
+  "Word Of Life Church": {
+    "url": "https://www.youtube.com/@woljclivestream7237",
+    "filename": "WordOfLifeChurch.txt",
+    "legacyNames": ["Happy Valley Church Of Jesus Christ"],
+    "playlists": [
+      {
+        "id": "PLcc7wUjgrVThVM5u2fmIcdUjEYbs-gFL_",
+        "name": "Happy Valley Church of Jesus Christ (Legacy)"
+      }
+    ]
+  },
+  "Word of Life Tabernacle": {
+    "url": "https://www.youtube.com/@wordoflifetabernaclehardya7993",
+    "filename": "WordOfLifeTabernacle.txt"
+  }
+}

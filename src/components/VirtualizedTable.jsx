@@ -163,7 +163,13 @@ export default function VirtualizedTable({
 
   // Custom inner element for react-window to force computed width
   const InnerElement = forwardRef(({ style, children, ...rest }, ref) => {
-    const newStyle = { ...style, width: Math.max(style?.width || 0, totalWidth) }
+    const rawWidth = style?.width
+    const widthPx = typeof rawWidth === 'number'
+      ? rawWidth
+      : (typeof rawWidth === 'string' && rawWidth.endsWith('px'))
+        ? (parseFloat(rawWidth) || 0)
+        : 0
+    const newStyle = { ...style, width: Math.max(widthPx, totalWidth) }
     return (
       <div ref={ref} style={newStyle} {...rest}>
         {children}
@@ -171,8 +177,8 @@ export default function VirtualizedTable({
     )
   })
 
-  const SortIndicator = ({ key }) => {
-    if (!sortConfig || sortConfig.key !== key) return null
+  const SortIndicator = ({ colKey }) => {
+    if (!sortConfig || sortConfig.key !== colKey) return null
     return <span className="ml-2 text-xs">{sortConfig.direction === 'asc' ? '▲' : '▼'}</span>
   }
 
@@ -246,7 +252,7 @@ export default function VirtualizedTable({
                 <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center ${col.centered ? 'justify-center' : ''}`}>
                   <button onClick={() => onSort(col.key)} className={`flex items-center w-full hover:text-gray-900 ${col.centered ? 'justify-center text-center' : 'text-left'}`}>
                     <span className="truncate">{col.label}</span>
-                    <SortIndicator key={col.key} />
+                    <SortIndicator colKey={col.key} />
                   </button>
                 </div>
                 {!isMobile && idx < columns.length - 1 && (

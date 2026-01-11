@@ -2,6 +2,205 @@ import React, { useState, useEffect } from 'react'
 import Icon from './Icon'
 import { DEFAULT_REGEX_STR } from '../constants_local'
 
+const TIMESTAMP_TOKEN_REGEX = /\[(\d{1,2}:\d{2}(?::\d{2})?)\]/g
+
+const safeDecodeURIComponent = (value) => {
+  if (typeof value !== 'string') return ''
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return value
+  }
+}
+
+// IMPORTANT: Do NOT use encodeURIComponent() for transcript paths.
+// Only encode spaces and '#' (hash breaks URLs by becoming a fragment).
+const normalizeTranscriptPathForUrl = (maybeEncodedPath) => {
+  const decoded = safeDecodeURIComponent(maybeEncodedPath)
+  return decoded
+    .split('/')
+    .map((part) => part.replace(/ /g, '%20').replace(/#/g, '%23'))
+    .join('/')
+}
+
+const buildCandidateUrls = (basePath, normalizedPath) => {
+  const rel = (normalizedPath || '').replace(/^\/+/, '')
+  const base = typeof basePath === 'string' && basePath.length ? basePath : '/'
+  const withBase = new URL(rel, `${window.location.origin}${base}`).toString()
+  const fromRoot = new URL(`/${rel}`, window.location.origin).toString()
+
+  // Try base-prefixed first (GitHub Pages + base='/analytics/'), then root.
+  // De-dupe in case both resolve to the same URL.
+  return Array.from(new Set([withBase, fromRoot]))
+}
+
+const getTranscriptFetchCacheMode = () => {
+  // In dev, Vite can previously serve index.html for missing/static edge cases (e.g. %23 paths),
+  // and browsers may cache that HTML. Use no-store to avoid stale HTML masking real files.
+  return import.meta.env.DEV ? 'no-store' : 'force-cache'
+}
+
+const timestampToSeconds = (ts) => {
+  if (!ts) return null
+  const parts = ts.split(':').map(p => parseInt(p, 10))
+  if (parts.some(n => Number.isNaN(n))) return null
+  if (parts.length === 2) {
+    const [m, s] = parts
+    return m * 60 + s
+  }
+  if (parts.length === 3) {
+    const [h, m, s] = parts
+    return h * 3600 + m * 60 + s
+  }
+  return null
+}
+
+const buildYouTubeUrlAtSeconds = (videoUrl, seconds) => {
+  if (!videoUrl || typeof videoUrl !== 'string' || seconds == null) return null
+  try {
+    const url = new URL(videoUrl)
+    url.searchParams.set('t', String(seconds))
+    return url.toString()
+  } catch {
+    return null
+  }
+}
+
+const renderTimestampLinks = (text, videoUrl) => {
+  if (!text) return text
+  if (!videoUrl) return text
+
+  TIMESTAMP_TOKEN_REGEX.lastIndex = 0
+
+  const parts = []
+  let lastIndex = 0
+  let match
+  while ((match = TIMESTAMP_TOKEN_REGEX.exec(text)) !== null) {
+    const full = match[0]
+    const ts = match[1]
+    const start = match.index
+    const end = start + full.length
+
+    if (start > lastIndex) parts.push(text.slice(lastIndex, start))
+
+    const seconds = timestampToSeconds(ts)
+    const href = buildYouTubeUrlAtSeconds(videoUrl, seconds)
+    if (href) {
+      parts.push(
+        <a
+          key={`${start}-${ts}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 hover:text-blue-900 underline"
+          onClick={(e) => e.stopPropagation()}
+          title={`Open YouTube at ${ts}`}
+        >
+          {full}
+        </a>
+      )
+    } else {
+      parts.push(full)
+    }
+    lastIndex = end
+  }
+
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex))
+  return parts
+}
+
+const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+// Fast mapping from a match position in the plain transcript to an approximate
+// position in the timestamped transcript. This avoids expensive full-text
+// searches for every match when there are many results.
+const approximateIndexInTimestamped = (plainTextLen, matchIndex, timestampedText, fallbackNeedle) => {
+  if (!timestampedText || !plainTextLen || plainTextLen <= 0) return null
+  const tsLen = timestampedText.length
+  if (tsLen === 0) return null
+
+  const ratio = Math.min(1, Math.max(0, matchIndex / plainTextLen))
+  const base = Math.min(tsLen - 1, Math.max(0, Math.floor(ratio * tsLen)))
+
+  const needle = (fallbackNeedle || '').toString().trim()
+  if (!needle) return base
+
+  // Small local search around the approximate position to improve accuracy.
+  const windowRadius = 6000
+  const start = Math.max(0, base - windowRadius)
+  const end = Math.min(tsLen, base + windowRadius)
+  const hay = timestampedText.slice(start, end).toLowerCase()
+  const idx = hay.indexOf(needle.toLowerCase())
+  if (idx !== -1) return start + idx
+  return base
+}
+
+const getWordsAroundIndex = (text, idx, before = 3, after = 6) => {
+  if (!text) return []
+  const wordRe = /\b[\w']+\b/g
+  const words = []
+  let m
+  while ((m = wordRe.exec(text)) !== null) {
+    words.push({ word: m[0], index: m.index, end: m.index + m[0].length })
+  }
+  if (words.length === 0) return []
+
+  let center = -1
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].index <= idx && idx < words[i].end) {
+      center = i
+      break
+    }
+  }
+  if (center === -1) {
+    // fallback: closest word before idx
+    for (let i = words.length - 1; i >= 0; i--) {
+      if (words[i].index <= idx) {
+        center = i
+        break
+      }
+    }
+  }
+  if (center === -1) center = 0
+
+  const start = Math.max(0, center - before)
+  const end = Math.min(words.length, center + after + 1)
+  return words.slice(start, end).map(w => w.word).filter(w => w.length >= 2)
+}
+
+const findApproximateIndexInTimestamped = (plainText, matchIndex, timestampedText, fallbackNeedle) => {
+  if (!timestampedText) return null
+
+  const words = getWordsAroundIndex(plainText, matchIndex, 3, 6)
+    .map(w => w.replace(/^'+|'+$/g, ''))
+    .filter(Boolean)
+
+  const joiner = '(?:\\s|\\[[^\\]]+\\])+' // allow timestamps between words
+
+  // Try to find a nearby anchor phrase (3..8 words) in the timestamped transcript.
+  const maxLen = Math.min(8, words.length)
+  for (let len = maxLen; len >= 3; len--) {
+    for (let offset = 0; offset <= words.length - len; offset++) {
+      const subset = words.slice(offset, offset + len)
+      const pattern = `(?:\\[[^\\]]+\\]\\s*)?` + subset.map(w => `\\b${escapeRegex(w)}\\b`).join(joiner)
+      const re = new RegExp(pattern, 'i')
+      const idx = timestampedText.search(re)
+      if (idx !== -1) return idx
+    }
+  }
+
+  // Fallback: look for the matched term itself.
+  if (fallbackNeedle) {
+    const needle = String(fallbackNeedle).trim()
+    if (needle) {
+      const idx = timestampedText.toLowerCase().indexOf(needle.toLowerCase())
+      if (idx !== -1) return idx
+    }
+  }
+
+  return null
+}
+
 // Helper: Convert wildcard pattern to regex for highlighting
 const wildcardToRegex = (pattern) => {
   let escaped = pattern.replace(/[.+^${}()|[\]\\]/g, '\\$&')
@@ -298,22 +497,55 @@ const buildSearchRegex = (searchTerm, wholeWords = true) => {
   }
 }
 
-const SnippetRow = ({ id, fullText, term, terms, matchIndex, index, highlightFn }) => {
+const SnippetRow = ({ id, fullText, plainTextForAnchor, timestampedTextForAnchor, term, terms, matchIndex, index, highlightFn, useLineSnippets = false }) => {
   const [expanded, setExpanded] = useState(false)
-  const context = expanded ? 600 : 200
-  const start = Math.max(0, matchIndex - context)
-  const end = Math.min(fullText.length, matchIndex + (term?.length||0) + context)
-  const snippetText = (start>0? '...' : '') + fullText.substring(start,end) + (end<fullText.length ? '...' : '')
+
+  let snippetText = ''
+  if (useLineSnippets) {
+    let effectiveText = fullText
+    let effectiveIndex = matchIndex
+
+    // When showing timestamped transcript, map the plain match to a nearby location in the timestamped text
+    if (timestampedTextForAnchor && plainTextForAnchor) {
+      const fallbackNeedle = (terms && Array.isArray(terms) && terms.length > 0) ? terms[0] : term
+      const mapped = approximateIndexInTimestamped(plainTextForAnchor.length, matchIndex, timestampedTextForAnchor, fallbackNeedle)
+      if (typeof mapped === 'number' && mapped >= 0) {
+        effectiveText = timestampedTextForAnchor
+        effectiveIndex = mapped
+      }
+    }
+
+    // Use a match-centered character window. This prevents many matches on the same
+    // timestamped line from rendering as identical snippet blocks.
+    const contextChars = expanded ? 1400 : 520
+    const startIdx = Math.max(0, effectiveIndex - contextChars)
+    const endIdx = Math.min(effectiveText.length, effectiveIndex + contextChars)
+    snippetText = (startIdx > 0 ? '...' : '') + effectiveText.slice(startIdx, endIdx) + (endIdx < effectiveText.length ? '...' : '')
+  } else {
+    const context = expanded ? 600 : 200
+    const start = Math.max(0, matchIndex - context)
+    const end = Math.min(fullText.length, matchIndex + (term?.length || 0) + context)
+    snippetText = (start > 0 ? '...' : '') + fullText.substring(start, end) + (end < fullText.length ? '...' : '')
+  }
+
+  const renderedSnippet = React.useMemo(() => highlightFn(snippetText, term, terms), [snippetText, term, terms, highlightFn])
+
   return (
     <div id={id} onClick={()=>setExpanded(!expanded)} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group">
       <div className="flex justify-between items-start mb-2"><p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p><button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">{expanded ? <><Icon name="chevronUp" size={12} /> Collapse</> : <><Icon name="chevronDown" size={12} /> Expand</>}</button></div>
-      <p className="text-gray-800 leading-relaxed font-serif text-sm">{highlightFn(snippetText, term, terms)}</p>
+      <p className="text-gray-800 leading-relaxed font-serif text-sm">{renderedSnippet}</p>
     </div>
   )
 }
 
 export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, wholeWords = true, onSaveProgress, resumePosition, relatedSermons = [], onSelectRelated, requireConsent = false }){
-  const [fullText, setFullText] = useState('')
+  const [plainText, setPlainText] = useState('')
+  const [timestampedText, setTimestampedText] = useState('')
+  const [hasTimestamped, setHasTimestamped] = useState(false)
+  const [checkingTimestamped, setCheckingTimestamped] = useState(false)
+  const [showTimestamps, setShowTimestamps] = useState(false)
+  const [loadingTimestamped, setLoadingTimestamped] = useState(false)
+
   const [isLoading, setIsLoading] = useState(true)
   const [viewMode, setViewMode] = useState('snippets')
   const [mentions, setMentions] = useState([])
@@ -345,7 +577,9 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
 
   // Resume scroll position on mount
   useEffect(() => {
-    if (resumePosition && contentRef.current && !isLoading) {
+    // Only restore reading progress for the Full Transcript view.
+    // Context/snippets should always start at the top.
+    if (viewMode === 'full' && resumePosition && contentRef.current && !isLoading) {
       setTimeout(() => {
         const el = contentRef.current
         if (el) {
@@ -353,86 +587,175 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
         }
       }, 100)
     }
-  }, [resumePosition, isLoading])
+  }, [resumePosition, isLoading, viewMode])
+
+  // Always start Context (snippets) at the top.
+  useEffect(() => {
+    if (isLoading) return
+    if (viewMode !== 'snippets') return
+    const el = contentRef.current
+    if (!el) return
+    el.scrollTop = 0
+  }, [viewMode, isLoading])
 
   useEffect(()=>{
     setIsLoading(true)
+    setShowTimestamps(false)
+    setHasTimestamped(false)
+    setTimestampedText('')
+    setCheckingTimestamped(false)
+    setLoadingTimestamped(false)
+    setVideoUrl(sermon.videoUrl || sermon.url || '')
     
     // Handle missing path
     if (!sermon.path) {
-      setFullText('Transcript not available. (No path configured)')
+      setPlainText('Transcript not available. (No path configured)')
       setIsLoading(false)
       setViewMode('full')
       return
     }
     
     const basePath = import.meta.env.BASE_URL || '/'
-    // First decode path (in case it's already URL-encoded from metadata), then re-encode
-    // Only encode characters that actually break URLs (spaces, #, etc.) but NOT safe chars like commas
-    // encodeURIComponent encodes too aggressively - commas become %2C but files have literal commas
-    const decodedPath = decodeURIComponent(sermon.path)
-    const encodedPath = decodedPath.split('/').map(part => 
-      part.replace(/ /g, '%20').replace(/#/g, '%23')
-    ).join('/')
-    const fetchPath = encodedPath.startsWith('/') ? `${basePath}${encodedPath.slice(1)}` : `${basePath}${encodedPath}`
-    console.log('[SermonModal] DEBUG: sermon.path =', sermon.path)
-    console.log('[SermonModal] DEBUG: decodedPath =', decodedPath)
-    console.log('[SermonModal] DEBUG: encodedPath =', encodedPath)
-    console.log('[SermonModal] DEBUG: fetchPath =', fetchPath)
-    fetch(fetchPath).then(res => {
-      console.log('[SermonModal] Response:', res.status, res.headers.get('content-type')) // Debug log
-      if (!res.ok) return 'Transcript not available.'
-      // Check content-type to avoid HTML fallback pages
-      const contentType = res.headers.get('content-type') || ''
-      if (contentType.includes('text/html')) {
-        return 'Transcript not available. (File not found)'
+    const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
+    const plainCandidates = buildCandidateUrls(basePath, encodedPath)
+
+    const decodedTimestamped = (() => {
+      if (sermon.timestampedPath) return safeDecodeURIComponent(sermon.timestampedPath)
+      const decodedPlain = safeDecodeURIComponent(sermon.path)
+      if (decodedPlain.endsWith('.timestamped.txt')) return decodedPlain
+      if (decodedPlain.endsWith('.txt')) return decodedPlain.slice(0, -4) + '.timestamped.txt'
+      return decodedPlain + '.timestamped.txt'
+    })()
+
+    const encodedTimestamped = normalizeTranscriptPathForUrl(decodedTimestamped)
+    const timestampedCandidates = buildCandidateUrls(basePath, encodedTimestamped)
+    const timestampedFetchPath = timestampedCandidates[0]
+
+    const fetchFirstAvailableText = async (urls) => {
+      const cacheMode = getTranscriptFetchCacheMode()
+      for (const url of urls) {
+        try {
+          const res = await fetch(url, { cache: cacheMode })
+          if (!res.ok) continue
+          const ct = (res.headers.get('content-type') || '').toLowerCase()
+          if (ct.includes('text/html')) continue
+          const text = await res.text()
+          const trimmed = (text || '').trim()
+          if (trimmed.startsWith('<!doctype') || trimmed.startsWith('<html') || trimmed.startsWith('<!DOCTYPE')) continue
+          return text
+        } catch {
+          // try next
+        }
       }
-      return res.text()
-    }).then(text=>{
-      // Additional check: if content looks like HTML, it's probably a 404 fallback
-      if (text.trim().startsWith('<!doctype') || text.trim().startsWith('<html') || text.trim().startsWith('<!DOCTYPE')) {
-        setFullText('Transcript not available. The transcript file may be missing or corrupted.')
+      return null
+    }
+
+    // Prefer metadata flag (no network probe). Fallback to probe only for older metadata.
+    const hasMetaHasTimestamped = typeof sermon.hasTimestamped === 'boolean'
+    if (hasMetaHasTimestamped) {
+      const ok = Boolean(sermon.hasTimestamped)
+      setHasTimestamped(ok)
+      if (ok) {
+        // Default ON when timestamped transcript exists
+        setShowTimestamps(true)
+        // Defer so the plain transcript can paint immediately.
+        setTimeout(() => loadTimestamped(timestampedFetchPath), 0)
+      }
+    } else {
+      setCheckingTimestamped(true)
+      const probeTimestamped = async () => {
+        try {
+          const head = await fetch(timestampedFetchPath, { method: 'HEAD', cache: getTranscriptFetchCacheMode() })
+          if (!head.ok) return false
+          const contentType = head.headers.get('content-type') || ''
+          if (contentType.includes('text/html')) return false
+          return true
+        } catch {
+          // Fallback: small Range request (some hosts may not support HEAD reliably)
+          try {
+            const r = await fetch(timestampedFetchPath, { headers: { Range: 'bytes=0-2047' }, cache: getTranscriptFetchCacheMode() })
+            if (!r.ok) return false
+            const contentType = r.headers.get('content-type') || ''
+            if (contentType.includes('text/html')) return false
+            const t = await r.text()
+            const trimmed = (t || '').trim()
+            if (trimmed.startsWith('<!doctype') || trimmed.startsWith('<html') || trimmed.startsWith('<!DOCTYPE')) return false
+            const hasAnyTimestampToken = /\[(\d{1,2}:\d{2}(?::\d{2})?)\]/.test(trimmed)
+            return trimmed.includes('TIMESTAMPED TRANSCRIPT') || hasAnyTimestampToken
+          } catch {
+            return false
+          }
+        }
+      }
+
+      probeTimestamped().then(ok => {
+        setHasTimestamped(Boolean(ok))
+        setCheckingTimestamped(false)
+        if (ok) {
+          setShowTimestamps(true)
+          setTimeout(() => loadTimestamped(timestampedFetchPath), 0)
+        }
+      }).catch(() => {
+        setHasTimestamped(false)
+        setCheckingTimestamped(false)
+      })
+    }
+
+    ;(async () => {
+      const text = await fetchFirstAvailableText(plainCandidates)
+      if (!text) {
+        setPlainText('Transcript not available. (File not found)')
         setIsLoading(false)
         setViewMode('full')
         return
       }
-      
-      setFullText(text); setIsLoading(false)
+
+      setPlainText(text)
+      setIsLoading(false)
       // Extract YouTube URL from transcript if available
       const ytMatch = text.match(/https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[A-Za-z0-9_\-]+|youtu\.be\/[A-Za-z0-9_\-]+)/i)
-      if(ytMatch) setVideoUrl(ytMatch[0])
-      
-      // Check if this is a proximity search
-      const proximityMatches = findProximityMatches(text, sermon.searchTerm)
-      let found
-      if (proximityMatches !== null) {
-        // Use proximity-aware matches
-        found = proximityMatches
-      } else {
-        // Regular search - pass wholeWords setting
-        const regex = buildSearchRegex(sermon.searchTerm, wholeWords)
-        found = []; let match; while((match = regex.exec(text)) !== null) { found.push({ index: match.index, term: match[0] }) }
-      }
-      
-      setMentions(found);
-      if(found.length===0) {
-        // No matches - would show full transcript, so require consent if enabled
-        if (requireConsent && !hasConsented) {
-          setViewMode('consent')
-        } else {
-          setViewMode('full')
-        }
-      } else {
-        if(typeof focusMatchIndex === 'number'){
-          setViewMode('snippets')
-          setTimeout(()=>{
-            const el = document.getElementById(`match-${focusMatchIndex}`)
-            if(el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          }, 150)
-        }
-      }
-    }).catch(()=>{ setFullText('Error loading transcript.'); setIsLoading(false) })
+
+      if (ytMatch) setVideoUrl(ytMatch[0])
+      else setVideoUrl(sermon.videoUrl || sermon.url || '')
+
+    })().catch(()=>{ setPlainText('Error loading transcript.'); setIsLoading(false) })
   }, [sermon, wholeWords])
+
+  const displayText = showTimestamps && timestampedText ? timestampedText : plainText
+
+  // Mentions are ALWAYS computed from the plain transcript so counts/ordering stay stable.
+  useEffect(() => {
+    if (!plainText) return
+
+    const proximityMatches = findProximityMatches(plainText, sermon.searchTerm)
+    let found
+    if (proximityMatches !== null) {
+      found = proximityMatches
+    } else {
+      const regex = buildSearchRegex(sermon.searchTerm, wholeWords)
+      found = []
+      let match
+      while ((match = regex.exec(plainText)) !== null) {
+        found.push({ index: match.index, term: match[0] })
+      }
+    }
+
+    setMentions(found)
+
+    if (found.length === 0) {
+      if (requireConsent && !hasConsented) setViewMode('consent')
+      else setViewMode('full')
+      return
+    }
+
+    if (typeof focusMatchIndex === 'number') {
+      setViewMode('snippets')
+      setTimeout(() => {
+        const el = document.getElementById(`match-${focusMatchIndex}`)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 150)
+    }
+  }, [plainText, sermon.searchTerm, wholeWords])
 
   const highlight = (text, term, terms) => {
     if(!text) return ''
@@ -476,7 +799,62 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     }
     // split using a case-insensitive regex; captured groups become array entries at odd indices
     const parts = text.split(splitter)
-    return parts.map((part, i) => i % 2 === 1 ? <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{part}</span> : part)
+    return parts.flatMap((part, i) => {
+      if (i % 2 === 1) {
+        return <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{part}</span>
+      }
+      const rendered = renderTimestampLinks(part, showTimestamps ? videoUrl : null)
+      return Array.isArray(rendered) ? rendered : [rendered]
+    })
+  }
+
+    const fullTranscriptContent = React.useMemo(() => {
+      return highlight(displayText, sermon.searchTerm)
+    }, [displayText, sermon.searchTerm, showTimestamps, videoUrl, wholeWords])
+
+  const loadTimestamped = async (prefetchedPath = null) => {
+    if (!sermon.path) return
+    if (timestampedText) return
+
+    setLoadingTimestamped(true)
+
+    const basePath = import.meta.env.BASE_URL || '/'
+    const candidates = prefetchedPath
+      ? Array.from(new Set([prefetchedPath, ...buildCandidateUrls(basePath, prefetchedPath)]))
+      : (() => {
+          const decoded = safeDecodeURIComponent(sermon.timestampedPath || sermon.path)
+          const decodedTimestamped = sermon.timestampedPath
+            ? decoded
+            : decoded.endsWith('.timestamped.txt')
+              ? decoded
+              : decoded.endsWith('.txt')
+                ? decoded.slice(0, -4) + '.timestamped.txt'
+                : decoded + '.timestamped.txt'
+          const normalized = normalizeTranscriptPathForUrl(decodedTimestamped)
+          return buildCandidateUrls(basePath, normalized)
+        })()
+
+    try {
+      let loaded = null
+      for (const url of candidates) {
+        const res = await fetch(url, { cache: getTranscriptFetchCacheMode() })
+        if (!res.ok) continue
+        const contentType = (res.headers.get('content-type') || '').toLowerCase()
+        if (contentType.includes('text/html')) continue
+        const text = await res.text()
+        const trimmed = (text || '').trim()
+        if (trimmed.startsWith('<!doctype') || trimmed.startsWith('<html') || trimmed.startsWith('<!DOCTYPE')) continue
+        loaded = text
+        break
+      }
+      if (!loaded) throw new Error('not ok')
+      setTimestampedText(loaded)
+    } catch {
+      setHasTimestamped(false)
+      setShowTimestamps(false)
+    } finally {
+      setLoadingTimestamped(false)
+    }
   }
 
   const handleDownloadClick = () => {
@@ -491,11 +869,10 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
   const downloadText = () => { 
     const a = document.createElement('a')
     // Decode then selectively encode only problematic chars (spaces, #)
-    const decodedPath = decodeURIComponent(sermon.path)
-    const encodedPath = decodedPath.split('/').map(part => 
-      part.replace(/ /g, '%20').replace(/#/g, '%23')
-    ).join('/')
-    a.href = encodedPath
+    const basePath = import.meta.env.BASE_URL || '/'
+    const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
+    const href = buildCandidateUrls(basePath, encodedPath)[0]
+    a.href = href
     a.download = `${sermon.date} - ${sermon.title}.txt`
     a.click()
     setShowDownloadConsent(false)
@@ -606,6 +983,42 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
         <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
           <button onClick={()=>setViewMode('snippets')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length===0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
           <button onClick={handleFullTranscriptClick} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+          <div className="flex items-center gap-3">
+            <label
+              className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md select-none ${hasTimestamped && showTimestamps ? 'bg-blue-100 text-blue-700' : 'text-gray-500'} ${(checkingTimestamped || loadingTimestamped) ? 'opacity-60 cursor-wait' : hasTimestamped ? 'cursor-pointer' : 'opacity-50 cursor-not-allowed'}`}
+              title={hasTimestamped ? 'Toggle timestamped transcript' : 'Timestamped transcript not available'}
+            >
+              <input
+                type="checkbox"
+                checked={hasTimestamped ? showTimestamps : false}
+                disabled={!hasTimestamped || loadingTimestamped || checkingTimestamped}
+                onChange={async (e) => {
+                  const next = e.target.checked
+                  if (next) {
+                    setShowTimestamps(true)
+                    await loadTimestamped()
+                  } else {
+                    setShowTimestamps(false)
+                  }
+                }}
+                className="sr-only peer"
+              />
+              <div className={`relative w-10 h-6 rounded-full ${hasTimestamped ? 'bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-blue-200' : 'bg-gray-200'} peer-focus:outline-none peer-focus:ring-4 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-4`} />
+              <span>
+                {checkingTimestamped ? 'Checking…' : loadingTimestamped ? 'Loading…' : 'Timestamps'}
+              </span>
+            </label>
+
+            {hasTimestamped ? (
+              <span className="text-xs text-gray-500">
+                Click a timestamp to watch the source video at that moment.
+              </span>
+            ) : (
+              <span className="text-xs text-gray-400">
+                Timestamps not available for this transcript.
+              </span>
+            )}
+          </div>
           {relatedSermons.length > 0 && (
             <button onClick={()=>setViewMode('related')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='related' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="share" size={16} /> Related ({relatedSermons.length})</button>
           )}
@@ -656,7 +1069,25 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
                 </div>
               </div>
             ) :
-            viewMode==='snippets' ? (<div className="max-w-3xl mx-auto space-y-4">{mentions.map((m,i)=><SnippetRow key={i} id={`match-${i}`} fullText={fullText} term={m.term} terms={m.terms} matchIndex={m.index} index={i} highlightFn={highlight} />)}</div>) : 
+            viewMode==='snippets' ? (
+              <div className="max-w-3xl mx-auto space-y-4">
+                {mentions.map((m,i)=>(
+                  <SnippetRow
+                    key={i}
+                    id={`match-${i}`}
+                    fullText={plainText}
+                    plainTextForAnchor={plainText}
+                    timestampedTextForAnchor={showTimestamps ? timestampedText : ''}
+                    term={m.term}
+                    terms={m.terms}
+                    matchIndex={m.index}
+                    index={i}
+                    highlightFn={highlight}
+                    useLineSnippets={showTimestamps}
+                  />
+                ))}
+              </div>
+            ) : 
             viewMode==='related' && relatedSermons.length > 0 ? (
               <div className="max-w-3xl mx-auto">
                 <h3 className="text-lg font-bold text-gray-800 mb-4">Related Sermons</h3>
@@ -684,7 +1115,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
                 </div>
               </div>
             ) :
-            <div className="max-w-3xl mx-auto whitespace-pre-wrap">{highlight(fullText, sermon.searchTerm)}</div>
+            <div className="max-w-3xl mx-auto whitespace-pre-wrap">{fullTranscriptContent}</div>
           }
         </div>
       </div>
