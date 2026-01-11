@@ -47,6 +47,48 @@ def normalize_key(s):
     if not s: return ''
     return re.sub(r'[^0-9a-z]+', '', s.lower())
 
+def parse_duration_to_minutes(duration_str):
+    """Parse duration string (e.g., '68', '1:23:45') into minutes as float."""
+    if not duration_str or not str(duration_str).strip():
+        return None
+    s = str(duration_str).strip()
+    if s.lower() in {"na", "n/a", "nan", "none", "null", "unknown", "0", "0.0"}:
+        return None
+    # Handle mm:ss or hh:mm:ss format
+    if ':' in s:
+        parts = s.split(':')
+        if all(p.isdigit() for p in parts):
+            # Convert to total seconds, then to minutes
+            total_seconds = sum(int(p) * (60 ** (len(parts)-1-i)) for i, p in enumerate(parts))
+            if total_seconds > 0:
+                return total_seconds / 60.0
+    # Try parsing as numeric (already in minutes)
+    try:
+        val = float(s)
+        return val if val > 0 else None
+    except:
+        return None
+
+def load_duration_map():
+    """Load URL→durationMinutes from all *_Summary.csv files."""
+    import glob
+    duration_map = {}
+    csv_files = glob.glob(os.path.join(DATA_DIR, '*_Summary.csv'))
+    for csv_path in csv_files:
+        try:
+            with open(csv_path, 'r', encoding='utf-8', newline='') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    url = str(row.get('url', '')).strip()
+                    dur_str = str(row.get('duration', '')).strip()
+                    if url:
+                        dur_minutes = parse_duration_to_minutes(dur_str)
+                        if dur_minutes is not None:
+                            duration_map[url] = dur_minutes
+        except Exception as e:
+            print(f"   Warning: Could not load durations from {csv_path}: {e}")
+    return duration_map
+
 
 def extract_first_youtube(text):
     if not text: return ''
@@ -80,7 +122,7 @@ def stable_short_hash(text: str, length: int = 12) -> str:
     return hashlib.sha1(text.encode('utf-8', errors='ignore')).hexdigest()[:length]
 
 
-def parse_sermon(filepath, church, filename, summary_map=None):
+def parse_sermon(filepath, church, filename, summary_map=None, duration_map=None):
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -143,22 +185,32 @@ def parse_sermon(filepath, church, filename, summary_map=None):
                 if tkey in summary_map:
                     video_url = summary_map[tkey]
 
+        # Look up duration from CSV if available
+        duration_minutes = None
+        if duration_map and video_url:
+            duration_minutes = duration_map.get(video_url)
+
+        meta = {
+            "id": rel_path,
+            "church": church,
+            "date": date_str,
+            "year": year,
+            "timestamp": ts,
+            "title": title,
+            "speaker": speaker,
+            "type": video_type,
+            "language": language,
+            "mentionCount": branham_mentions,
+            "wordCount": word_count,
+            "path": rel_path,
+            "videoUrl": video_url or ""
+        }
+        # Add durationMinutes only if available
+        if duration_minutes is not None:
+            meta["durationMinutes"] = duration_minutes
+
         return {
-            "meta": {
-                "id": rel_path,
-                "church": church,
-                "date": date_str,
-                "year": year,
-                "timestamp": ts,
-                "title": title,
-                "speaker": speaker,
-                "type": video_type,
-                "language": language,
-                "mentionCount": branham_mentions,
-                "wordCount": word_count,
-                "path": rel_path,
-                "videoUrl": video_url or ""
-            },
+            "meta": meta,
             "text": content
         }
     except Exception as e:
@@ -337,6 +389,11 @@ def main():
     current_year = datetime.datetime.now().year
     skipped_future = 0
     
+    # Load duration data from CSV files
+    print(f"   Loading duration data from CSV files...")
+    duration_map = load_duration_map()
+    print(f"   Loaded {len(duration_map)} durations from CSV files")
+    
     # Track which videos have transcripts (by normalized title|date key)
     transcripts_found = set()
     
@@ -357,7 +414,7 @@ def main():
                     file_full_path = os.path.join(church_path, filename)
                     # zipf.write(file_full_path, arcname=f"{church_folder}/{filename}")
                     
-                    data = parse_sermon(file_full_path, church_folder, filename) # Keep folder name for path
+                    data = parse_sermon(file_full_path, church_folder, filename, summary_map=None, duration_map=duration_map)
                     if data:
                         # Filter out invalid future years (data entry errors)
                         try:

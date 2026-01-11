@@ -2925,7 +2925,7 @@ def backfill_timestamps(data_dir=None, dry_run=False, churches=None, limit=None)
     else:
         church_folders = all_church_folders
     
-    # Count total .txt files without .timestamps.json for progress
+    # Count total .txt files that actually need timestamped siblings for progress
     total_to_process = 0
     for church_folder in church_folders:
         church_path = os.path.join(data_dir, church_folder)
@@ -2934,10 +2934,12 @@ def backfill_timestamps(data_dir=None, dry_run=False, churches=None, limit=None)
         if church_folder.startswith('.') or church_folder.endswith('.csv'):
             continue
         for filename in os.listdir(church_path):
-            if filename.endswith('.txt'):
-                json_path = os.path.join(church_path, filename.replace('.txt', '.timestamps.json'))
-                if not os.path.exists(json_path):
-                    total_to_process += 1
+            if not filename.endswith('.txt') or filename.endswith('.timestamped.txt'):
+                continue
+            txt_path = os.path.join(church_path, filename)
+            timestamped_path = txt_path.replace('.txt', '.timestamped.txt')
+            if not os.path.exists(timestamped_path):
+                total_to_process += 1
     
     print(f"   📄 Found {total_to_process} transcript files without timestamps")
     
