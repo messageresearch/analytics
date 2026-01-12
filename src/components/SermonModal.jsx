@@ -111,10 +111,19 @@ const renderTimestampLinks = (text, videoUrl) => {
 
 const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
+const TIMESTAMP_GAP_REGEX_PART = '(?:\\s|\\[[^\\]]+\\]\\s*)+'
+
+const applyTimestampGaps = (pattern) => {
+  if (!pattern) return pattern
+  // Replace whitespace runs with a pattern that also allows [M:SS] tokens between words.
+  return pattern.replace(/\\s\+/g, TIMESTAMP_GAP_REGEX_PART)
+}
+
 // Fast mapping from a match position in the plain transcript to an approximate
 // position in the timestamped transcript. This avoids expensive full-text
 // searches for every match when there are many results.
-const approximateIndexInTimestamped = (plainTextLen, matchIndex, timestampedText, fallbackNeedle) => {
+const approximateIndexInTimestamped = (plainText, matchIndex, timestampedText, fallbackNeedle) => {
+  const plainTextLen = plainText ? plainText.length : 0
   if (!timestampedText || !plainTextLen || plainTextLen <= 0) return null
   const tsLen = timestampedText.length
   if (tsLen === 0) return null
@@ -122,17 +131,103 @@ const approximateIndexInTimestamped = (plainTextLen, matchIndex, timestampedText
   const ratio = Math.min(1, Math.max(0, matchIndex / plainTextLen))
   const base = Math.min(tsLen - 1, Math.max(0, Math.floor(ratio * tsLen)))
 
-  const needle = (fallbackNeedle || '').toString().trim()
-  if (!needle) return base
-
-  // Small local search around the approximate position to improve accuracy.
-  const windowRadius = 6000
+  // Local-window search around the approximate position to improve accuracy.
+  // Use anchor phrases derived from the plain transcript and allow timestamps between words.
+  const windowRadius = 8000
   const start = Math.max(0, base - windowRadius)
   const end = Math.min(tsLen, base + windowRadius)
-  const hay = timestampedText.slice(start, end).toLowerCase()
-  const idx = hay.indexOf(needle.toLowerCase())
-  if (idx !== -1) return start + idx
+  const hay = timestampedText.slice(start, end)
+  const target = base - start
+
+  const words = getWordsAroundIndex(plainText, matchIndex, 3, 6)
+    .map(w => w.replace(/^'+|'+$/g, ''))
+    .filter(Boolean)
+
+  const findClosestByRegex = (re) => {
+    if (!re) return null
+    let best = null
+    let guard = 0
+    let m
+    while ((m = re.exec(hay)) !== null && guard < 120) {
+      const idx = m.index
+      const dist = Math.abs(idx - target)
+      if (!best || dist < best.dist) best = { idx, dist }
+      if (dist === 0) break
+      // Avoid infinite loops on zero-length matches
+      if (m.index === re.lastIndex) re.lastIndex++
+      guard++
+    }
+    return best ? (start + best.idx) : null
+  }
+
+  // 1) Best effort: search for a nearby multi-word anchor phrase.
+  const joiner = TIMESTAMP_GAP_REGEX_PART
+  const maxLen = Math.min(8, words.length)
+  for (let len = maxLen; len >= 3; len--) {
+    for (let offset = 0; offset <= words.length - len; offset++) {
+      const subset = words.slice(offset, offset + len)
+      const pattern = subset.map(w => `\\b${escapeRegex(w)}\\b`).join(joiner)
+      const re = new RegExp(pattern, 'ig')
+      const hit = findClosestByRegex(re)
+      if (typeof hit === 'number') return hit
+    }
+  }
+
+  // 2) Fallback: search for the matched term itself, allowing timestamps between words.
+  const needle = (fallbackNeedle || '').toString().trim()
+  if (needle) {
+    let needlePattern = escapeRegex(needle)
+    needlePattern = needlePattern.replace(/\s+/g, '\\s+')
+    needlePattern = applyTimestampGaps(needlePattern)
+    const re = new RegExp(needlePattern, 'ig')
+    const hit = findClosestByRegex(re)
+    if (typeof hit === 'number') return hit
+  }
+
   return base
+}
+
+const firstTimestampTokenIndex = (text) => {
+  if (!text) return null
+  const idx = text.search(/\[(\d{1,2}:\d{2}(?::\d{2})?)\]/)
+  return idx >= 0 ? idx : null
+}
+
+const buildLineSnippet = (text, index, linesBefore, linesAfter, maxChars) => {
+  if (!text) return ''
+  const len = text.length
+  const at = Math.min(Math.max(0, index || 0), Math.max(0, len - 1))
+
+  // Find the line containing `at`
+  const lineStart = text.lastIndexOf('\n', at - 1) + 1
+  const lineEnd = (() => {
+    const e = text.indexOf('\n', at)
+    return e === -1 ? len : e
+  })()
+
+  // Expand to surrounding lines
+  let start = lineStart
+  for (let i = 0; i < linesBefore; i++) {
+    const prev = text.lastIndexOf('\n', Math.max(0, start - 2))
+    if (prev === -1) { start = 0; break }
+    start = prev + 1
+  }
+
+  let end = lineEnd
+  for (let i = 0; i < linesAfter; i++) {
+    const next = text.indexOf('\n', end + 1)
+    if (next === -1) { end = len; break }
+    end = next
+  }
+
+  // If the selected region is huge (very long lines), cap by chars around `at`.
+  if (maxChars && (end - start) > maxChars) {
+    const half = Math.floor(maxChars / 2)
+    start = Math.max(0, at - half)
+    end = Math.min(len, at + half)
+  }
+
+  return (start > 0 ? '...' : '') + text.slice(start, end) + (end < len ? '...' : '')
 }
 
 const getWordsAroundIndex = (text, idx, before = 3, after = 6) => {
@@ -508,19 +603,26 @@ const SnippetRow = ({ id, fullText, plainTextForAnchor, timestampedTextForAnchor
     // When showing timestamped transcript, map the plain match to a nearby location in the timestamped text
     if (timestampedTextForAnchor && plainTextForAnchor) {
       const fallbackNeedle = (terms && Array.isArray(terms) && terms.length > 0) ? terms[0] : term
-      const mapped = approximateIndexInTimestamped(plainTextForAnchor.length, matchIndex, timestampedTextForAnchor, fallbackNeedle)
+      const mapped = approximateIndexInTimestamped(plainTextForAnchor, matchIndex, timestampedTextForAnchor, fallbackNeedle)
       if (typeof mapped === 'number' && mapped >= 0) {
         effectiveText = timestampedTextForAnchor
         effectiveIndex = mapped
       }
     }
 
-    // Use a match-centered character window. This prevents many matches on the same
-    // timestamped line from rendering as identical snippet blocks.
-    const contextChars = expanded ? 1400 : 520
-    const startIdx = Math.max(0, effectiveIndex - contextChars)
-    const endIdx = Math.min(effectiveText.length, effectiveIndex + contextChars)
-    snippetText = (startIdx > 0 ? '...' : '') + effectiveText.slice(startIdx, endIdx) + (endIdx < effectiveText.length ? '...' : '')
+    // If we landed in the timestamped preamble/header, jump to the first real timestamp.
+    if (effectiveText === timestampedTextForAnchor) {
+      const firstTs = firstTimestampTokenIndex(effectiveText)
+      if (typeof firstTs === 'number' && firstTs >= 0 && effectiveIndex < firstTs) {
+        effectiveIndex = firstTs
+      }
+    }
+
+    // Prefer line-based snippets so adjacent matches don't look identical.
+    const linesBefore = expanded ? 5 : 2
+    const linesAfter = expanded ? 6 : 3
+    const maxChars = expanded ? 2400 : 1100
+    snippetText = buildLineSnippet(effectiveText, effectiveIndex, linesBefore, linesAfter, maxChars)
   } else {
     const context = expanded ? 600 : 200
     const start = Math.max(0, matchIndex - context)
@@ -531,9 +633,9 @@ const SnippetRow = ({ id, fullText, plainTextForAnchor, timestampedTextForAnchor
   const renderedSnippet = React.useMemo(() => highlightFn(snippetText, term, terms), [snippetText, term, terms, highlightFn])
 
   return (
-    <div id={id} onClick={()=>setExpanded(!expanded)} className="bg-gray-50 p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group">
-      <div className="flex justify-between items-start mb-2"><p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p><button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">{expanded ? <><Icon name="chevronUp" size={12} /> Collapse</> : <><Icon name="chevronDown" size={12} /> Expand</>}</button></div>
-      <p className="text-gray-800 leading-relaxed font-serif text-sm">{renderedSnippet}</p>
+    <div id={id} onClick={()=>setExpanded(!expanded)} className="bg-gray-50 p-3 sm:p-4 rounded-lg border-l-4 border-yellow-400 shadow-sm transition-all duration-300 cursor-pointer hover:bg-blue-50 group overflow-hidden">
+      <div className="flex justify-between items-start mb-1.5 sm:mb-2"><p className="text-gray-400 text-xs font-sans font-bold uppercase tracking-wide group-hover:text-blue-500">Match #{index+1}</p><button className="text-xs text-blue-600 font-medium flex items-center gap-1 opacity-60 group-hover:opacity-100">{expanded ? <><Icon name="chevronUp" size={12} /> Collapse</> : <><Icon name="chevronDown" size={12} /> Expand</>}</button></div>
+      <p className="text-gray-800 leading-relaxed font-serif text-[13px] sm:text-sm break-words">{renderedSnippet}</p>
     </div>
   )
 }
@@ -555,6 +657,100 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
   const [showDownloadConsent, setShowDownloadConsent] = useState(false)
   const [downloadConsentChecked, setDownloadConsentChecked] = useState(false)
   const contentRef = React.useRef(null)
+  const touchStartYRef = React.useRef(0)
+  const [fullHighlightPhase, setFullHighlightPhase] = React.useState(0)
+
+  // Prevent the page behind the modal from scrolling/bouncing (mobile Safari overscroll).
+  useEffect(() => {
+    const scrollY = window.scrollY
+    const prevBodyOverflow = document.body.style.overflow
+    const prevBodyPosition = document.body.style.position
+    const prevBodyTop = document.body.style.top
+    const prevBodyWidth = document.body.style.width
+    const prevHtmlOverflow = document.documentElement.style.overflow
+
+    document.documentElement.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${scrollY}px`
+    document.body.style.width = '100%'
+
+    return () => {
+      document.documentElement.style.overflow = prevHtmlOverflow
+      document.body.style.overflow = prevBodyOverflow
+      document.body.style.position = prevBodyPosition
+      document.body.style.top = prevBodyTop
+      document.body.style.width = prevBodyWidth
+      window.scrollTo(0, scrollY)
+    }
+  }, [])
+
+  // iOS Safari can still "rubber-band" scroll fixed overlays.
+  // Prevent overscroll past the top/bottom of the modal's scroll container,
+  // prevent touch scrolling outside the scroll container, and block horizontal
+  // pan gestures inside the scroller (to avoid sideways rubber-banding).
+  useEffect(() => {
+    const scroller = contentRef.current
+    if (!scroller) return
+
+    const isIos = typeof navigator !== 'undefined' && /iP(ad|hone|od)/.test(navigator.userAgent)
+    if (!isIos) return
+
+    const onTouchStart = (e) => {
+      const t = e.touches && e.touches[0]
+      if (!t) return
+      touchStartYRef.current = t.clientY
+      // stash X on the same ref object to avoid adding another ref
+      touchStartYRef.currentX = t.clientX
+    }
+
+    const onTouchMove = (e) => {
+      const t = e.touches && e.touches[0]
+      if (!t) return
+
+      // If touch is outside the scroller, block it.
+      const target = e.target
+      if (target && scroller && !scroller.contains(target)) {
+        e.preventDefault()
+        return
+      }
+
+      const currentY = t.clientY
+      const currentX = t.clientX
+      const startX = touchStartYRef.currentX || 0
+      const deltaY = currentY - touchStartYRef.current
+      const deltaX = currentX - startX
+
+      // Block horizontal pan inside the transcript area.
+      if (Math.abs(deltaX) > Math.abs(deltaY) + 6) {
+        e.preventDefault()
+        return
+      }
+
+      const scrollTop = scroller.scrollTop
+      const maxScrollTop = scroller.scrollHeight - scroller.clientHeight
+
+      const atTop = scrollTop <= 0
+      const atBottom = scrollTop >= maxScrollTop - 1
+
+      // deltaY > 0 means user is pulling content down (scrolling up)
+      // deltaY < 0 means user is pushing content up (scrolling down)
+      if ((atTop && deltaY > 0) || (atBottom && deltaY < 0)) {
+        e.preventDefault()
+      }
+    }
+
+    // Use { passive: false } so preventDefault works on iOS.
+    scroller.addEventListener('touchstart', onTouchStart, { passive: true })
+    scroller.addEventListener('touchmove', onTouchMove, { passive: false })
+    document.addEventListener('touchmove', onTouchMove, { passive: false })
+
+    return () => {
+      scroller.removeEventListener('touchstart', onTouchStart)
+      scroller.removeEventListener('touchmove', onTouchMove)
+      document.removeEventListener('touchmove', onTouchMove)
+    }
+  }, [contentRef])
 
   // Track scroll position for reading progress
   useEffect(() => {
@@ -723,6 +919,23 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
 
   const displayText = showTimestamps && timestampedText ? timestampedText : plainText
 
+  const highlightTermsForFullTranscript = React.useMemo(() => {
+    if (!mentions || mentions.length === 0) return null
+    const set = new Set()
+    for (const m of mentions) {
+      if (m && Array.isArray(m.terms) && m.terms.length > 0) {
+        for (const t of m.terms) {
+          if (t) set.add(String(t))
+        }
+      } else if (m && m.term) {
+        set.add(String(m.term))
+      }
+    }
+    const arr = Array.from(set)
+    // Safety cap: avoid creating an excessively large regex.
+    return arr.length > 60 ? arr.slice(0, 60) : arr
+  }, [mentions])
+
   // Mentions are ALWAYS computed from the plain transcript so counts/ordering stay stable.
   useEffect(() => {
     if (!plainText) return
@@ -765,7 +978,10 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     if (terms && Array.isArray(terms) && terms.length > 0) {
       const escaped = terms.map(t => {
         if (hasWildcard(t)) return wildcardToRegex(t)
-        return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        let p = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        p = p.replace(/\s+/g, '\\s+')
+        if (showTimestamps) p = applyTimestampGaps(p)
+        return p
       })
       splitter = new RegExp(`\\b(${escaped.join('|')})\\b`, 'gi')
     } else {
@@ -774,7 +990,10 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
       if (booleanTerms) {
         const escaped = booleanTerms.map(t => {
           if (hasWildcard(t)) return wildcardToRegex(t)
-          return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+          let p = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+          p = p.replace(/\s+/g, '\\s+')
+          if (showTimestamps) p = applyTimestampGaps(p)
+          return p
         })
         splitter = new RegExp(`\\b(${escaped.join('|')})\\b`, 'gi')
       } else {
@@ -782,13 +1001,21 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
         try {
           // For regular terms, respect the wholeWords setting
           if (wholeWords && !t.includes('\\b')) {
-            const escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            let escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            escaped = escaped.replace(/\s+/g, '\\s+')
+            if (showTimestamps) escaped = applyTimestampGaps(escaped)
             splitter = new RegExp(`\\b(${escaped})\\b`, 'gi')
           } else {
-            splitter = new RegExp(`(${t})`, 'gi')
+            // If the user provided a regex, keep it; but in timestamp mode
+            // allow timestamps between literal whitespace where possible.
+            let pattern = `(${t})`
+            if (showTimestamps) pattern = applyTimestampGaps(pattern)
+            splitter = new RegExp(pattern, 'gi')
           }
         } catch (e) {
-          const escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+          let escaped = t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+          escaped = escaped.replace(/\s+/g, '\\s+')
+          if (showTimestamps) escaped = applyTimestampGaps(escaped)
           if (wholeWords) {
             splitter = new RegExp(`\\b(${escaped})\\b`, 'gi')
           } else {
@@ -801,16 +1028,36 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     const parts = text.split(splitter)
     return parts.flatMap((part, i) => {
       if (i % 2 === 1) {
-        return <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{part}</span>
+        const rendered = renderTimestampLinks(part, showTimestamps ? videoUrl : null)
+        return <span key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">{rendered}</span>
       }
       const rendered = renderTimestampLinks(part, showTimestamps ? videoUrl : null)
       return Array.isArray(rendered) ? rendered : [rendered]
     })
   }
 
-    const fullTranscriptContent = React.useMemo(() => {
-      return highlight(displayText, sermon.searchTerm)
-    }, [displayText, sermon.searchTerm, showTimestamps, videoUrl, wholeWords])
+  // Rendering the full highlighted transcript can be expensive on mobile.
+  // To avoid a one-time blank/frozen screen on first open, render a lightweight
+  // plain transcript first, then swap to the highlighted version after paint.
+  useEffect(() => {
+    if (viewMode !== 'full') return
+    setFullHighlightPhase(0)
+    const id = window.requestAnimationFrame(() => setFullHighlightPhase(1))
+    return () => window.cancelAnimationFrame(id)
+  }, [viewMode, displayText, showTimestamps, videoUrl, highlightTermsForFullTranscript, wholeWords, sermon.searchTerm])
+
+  const fullTranscriptContent = React.useMemo(() => {
+    if (viewMode !== 'full') return null
+
+    if (fullHighlightPhase === 0) {
+      // Fast path: show plain text (with timestamp links when enabled).
+      return renderTimestampLinks(displayText, showTimestamps ? videoUrl : null)
+    }
+
+    // Highlight using the actual matched terms so the Full Transcript view stays
+    // consistent with the Search Results list (and works for complex queries).
+    return highlight(displayText, sermon.searchTerm, highlightTermsForFullTranscript)
+  }, [viewMode, fullHighlightPhase, displayText, sermon.searchTerm, highlightTermsForFullTranscript, showTimestamps, videoUrl, wholeWords])
 
   const loadTimestamped = async (prefetchedPath = null) => {
     if (!sermon.path) return
@@ -889,7 +1136,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
   }
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-start sm:items-center justify-center p-2 sm:p-4 overscroll-none overflow-hidden" onClick={onClose}>
       {/* Download consent modal */}
       {showDownloadConsent && (
         <div className="fixed inset-0 bg-black/40 z-[60] flex items-center justify-center p-4" onClick={(e) => { e.stopPropagation(); setShowDownloadConsent(false); setDownloadConsentChecked(false); }}>
@@ -932,60 +1179,77 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
           </div>
         </div>
       )}
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[90vh] flex flex-col overflow-hidden" onClick={e=>e.stopPropagation()}>
-        <div className="p-5 border-b bg-gray-50 flex justify-between items-start">
-          <div className="flex-1 pr-4">
-            <div className="flex items-center gap-2">
-              <h2 className="text-xl font-bold text-gray-900 line-clamp-1">{sermon.title}</h2>
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl h-[95dvh] sm:h-[90vh] flex flex-col overflow-hidden touch-pan-y" onClick={e=>e.stopPropagation()}>
+        <div className="p-3 sm:p-5 border-b bg-gray-50 flex gap-3 items-start">
+          <div className="min-w-0 flex-1 pr-1 sm:pr-4">
+            <div className="flex items-start gap-2 min-w-0">
+              <h2 className="min-w-0 flex-1 text-base sm:text-xl font-bold text-gray-900 truncate">{sermon.title}</h2>
             </div>
-            <div className="flex flex-wrap gap-2 mt-2 text-sm text-gray-600">
-              <span className="bg-white border px-2 py-0.5 rounded">{sermon.church || sermon.venue}</span>
-              <span className="bg-white border px-2 py-0.5 rounded">{sermon.date}</span>
-              {sermon.location && (
-                <span className="bg-teal-50 text-teal-700 border border-teal-200 px-2 py-0.5 rounded">{sermon.location}</span>
+            <div className="mt-2 flex items-center gap-2">
+              <div className="min-w-0 flex-1 flex flex-nowrap sm:flex-wrap gap-2 text-xs sm:text-sm text-gray-600 overflow-x-auto sm:overflow-visible">
+                <span className="bg-white border px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.church || sermon.venue}</span>
+                <span className="bg-white border px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.date}</span>
+                {sermon.location && (
+                  <span className="bg-teal-50 text-teal-700 border border-teal-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.location}</span>
+                )}
+                {sermon.speaker && sermon.speaker !== 'Unknown Speaker' && (
+                  <span className="bg-purple-50 text-purple-700 border border-purple-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.speaker}</span>
+                )}
+                {sermon.type && sermon.type !== 'Service' && (
+                  <span className="bg-amber-50 text-amber-700 border border-amber-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.type}</span>
+                )}
+                {sermon.language && sermon.language !== 'Unknown' && (
+                  <span className="bg-gray-100 text-gray-700 border border-gray-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">{sermon.language}</span>
+                )}
+                {(sermon.durationMinutes > 0 || sermon.durationHrs > 0) && (
+                  <span className="bg-blue-50 text-blue-700 border border-blue-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">
+                    {sermon.durationMinutes > 0
+                      ? (sermon.durationMinutes >= 60 
+                          ? `${(sermon.durationMinutes / 60).toFixed(1)} hours` 
+                          : `${sermon.durationMinutes} min`)
+                      : (sermon.videoUrl || sermon.url) 
+                        ? (sermon.durationHrs >= 1 ? `${sermon.durationHrs.toFixed(1)} hrs video` : `${Math.round(sermon.durationHrs * 60)} min video`)
+                        : (sermon.durationHrs >= 1 ? `~${sermon.durationHrs.toFixed(1)} hours` : `~${Math.round(sermon.durationHrs * 60)} min`)
+                    }
+                  </span>
+                )}
+                {sermon.wordCount > 0 && (
+                  <span className="bg-indigo-50 text-indigo-700 border border-indigo-200 px-1.5 sm:px-2 py-0.5 rounded whitespace-nowrap">
+                    {sermon.wordCount.toLocaleString()} words
+                  </span>
+                )}
+                <span className="bg-green-100 text-green-800 border border-green-200 px-1.5 sm:px-2 py-0.5 rounded font-bold whitespace-nowrap">{mentions.length} Matches</span>
+              </div>
+              {videoUrl && (
+                <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="hidden sm:inline-block shrink-0 px-3 py-1 bg-red-600 text-white text-xs sm:text-sm hover:bg-red-700 rounded font-medium whitespace-nowrap">
+                  ▶ Watch on YouTube
+                </a>
               )}
-              {sermon.speaker && sermon.speaker !== 'Unknown Speaker' && (
-                <span className="bg-purple-50 text-purple-700 border border-purple-200 px-2 py-0.5 rounded">{sermon.speaker}</span>
-              )}
-              {sermon.type && sermon.type !== 'Service' && (
-                <span className="bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded">{sermon.type}</span>
-              )}
-              {sermon.language && sermon.language !== 'Unknown' && (
-                <span className="bg-gray-100 text-gray-700 border border-gray-200 px-2 py-0.5 rounded">{sermon.language}</span>
-              )}
-              {(sermon.durationMinutes > 0 || sermon.durationHrs > 0) && (
-                <span className="bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded">
-                  {sermon.durationMinutes > 0
-                    ? (sermon.durationMinutes >= 60 
-                        ? `${(sermon.durationMinutes / 60).toFixed(1)} hours` 
-                        : `${sermon.durationMinutes} min`)
-                    : (sermon.videoUrl || sermon.url) 
-                      ? (sermon.durationHrs >= 1 ? `${sermon.durationHrs.toFixed(1)} hrs video` : `${Math.round(sermon.durationHrs * 60)} min video`)
-                      : (sermon.durationHrs >= 1 ? `~${sermon.durationHrs.toFixed(1)} hours` : `~${Math.round(sermon.durationHrs * 60)} min`)
-                  }
-                </span>
-              )}
-              {sermon.wordCount > 0 && (
-                <span className="bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded">
-                  {sermon.wordCount.toLocaleString()} words
-                </span>
-              )}
-              <span className="bg-green-100 text-green-800 border border-green-200 px-2 py-0.5 rounded font-bold">{mentions.length} Matches</span>
             </div>
+          </div>
+          <div className="flex gap-2 shrink-0">
             {videoUrl && (
-              <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="inline-block mt-3 px-3 py-1 bg-red-600 text-white text-sm hover:bg-red-700 rounded font-medium">
-                ▶ Watch on YouTube
+              <a
+                href={videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sm:hidden p-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg font-bold"
+                onClick={(e) => e.stopPropagation()}
+                title="Watch on YouTube"
+              >
+                ▶
               </a>
             )}
+            <button onClick={handleDownloadClick} className="p-1.5 sm:p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button>
+            <button onClick={onClose} className="p-1.5 sm:p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button>
           </div>
-          <div className="flex gap-2"><button onClick={handleDownloadClick} className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg"><Icon name="download" /></button><button onClick={onClose} className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg"><Icon name="x" /></button></div>
         </div>
-        <div className="px-6 py-3 border-b flex gap-4 bg-white shadow-sm z-10">
-          <button onClick={()=>setViewMode('snippets')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length===0}><Icon name="eye" size={16} /> Context ({mentions.length})</button>
-          <button onClick={handleFullTranscriptClick} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
-          <div className="flex items-center gap-3">
+        <div className="px-3 sm:px-6 py-2 sm:py-3 border-b flex flex-wrap items-center gap-2 sm:gap-4 bg-white shadow-sm z-10">
+          <button onClick={()=>setViewMode('snippets')} className={`flex items-center gap-2 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-1.5 rounded-md ${viewMode==='snippets' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`} disabled={mentions.length===0}><Icon name="eye" size={16} /> Search Results ({mentions.length})</button>
+          <button onClick={handleFullTranscriptClick} className={`flex items-center gap-2 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-1.5 rounded-md ${viewMode==='full' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="alignLeft" size={16} /> Full Transcript</button>
+          <div className="flex items-center gap-2 sm:gap-3 sm:ml-auto">
             <label
-              className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md select-none ${hasTimestamped && showTimestamps ? 'bg-blue-100 text-blue-700' : 'text-gray-500'} ${(checkingTimestamped || loadingTimestamped) ? 'opacity-60 cursor-wait' : hasTimestamped ? 'cursor-pointer' : 'opacity-50 cursor-not-allowed'}`}
+              className={`flex items-center gap-2 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-1.5 rounded-md select-none ${hasTimestamped && showTimestamps ? 'bg-blue-100 text-blue-700' : 'text-gray-500'} ${(checkingTimestamped || loadingTimestamped) ? 'opacity-60 cursor-wait' : hasTimestamped ? 'cursor-pointer' : 'opacity-50 cursor-not-allowed'}`}
               title={hasTimestamped ? 'Toggle timestamped transcript' : 'Timestamped transcript not available'}
             >
               <input
@@ -1010,20 +1274,24 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
             </label>
 
             {hasTimestamped ? (
-              <span className="text-xs text-gray-500">
+              <span className="hidden sm:inline text-xs text-gray-500">
                 Click a timestamp to watch the source video at that moment.
               </span>
             ) : (
-              <span className="text-xs text-gray-400">
+              <span className="hidden sm:inline text-xs text-gray-400">
                 Timestamps not available for this transcript.
               </span>
             )}
           </div>
           {relatedSermons.length > 0 && (
-            <button onClick={()=>setViewMode('related')} className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md ${viewMode==='related' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="share" size={16} /> Related ({relatedSermons.length})</button>
+            <button onClick={()=>setViewMode('related')} className={`flex items-center gap-2 text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 sm:py-1.5 rounded-md ${viewMode==='related' ? 'bg-blue-100 text-blue-700' : 'text-gray-500'}`}><Icon name="share" size={16} /> Related ({relatedSermons.length})</button>
           )}
         </div>
-        <div ref={contentRef} className="flex-1 overflow-y-auto p-8 bg-white font-serif text-gray-800 leading-relaxed text-base">
+        <div
+          ref={contentRef}
+          className="flex-1 overflow-y-auto overflow-x-hidden p-3 sm:p-8 bg-white font-serif text-gray-800 leading-relaxed text-sm sm:text-base overscroll-none touch-pan-y"
+          style={{ WebkitOverflowScrolling: 'touch' }}
+        >
           {isLoading ? <p className="text-center text-gray-400 italic">Loading content...</p> : 
             viewMode==='consent' ? (
               <div className="max-w-md mx-auto mt-12">
@@ -1070,7 +1338,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
               </div>
             ) :
             viewMode==='snippets' ? (
-              <div className="max-w-3xl mx-auto space-y-4">
+              <div className="max-w-3xl mx-auto max-w-full space-y-3 sm:space-y-4">
                 {mentions.map((m,i)=>(
                   <SnippetRow
                     key={i}
@@ -1115,7 +1383,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
                 </div>
               </div>
             ) :
-            <div className="max-w-3xl mx-auto whitespace-pre-wrap">{fullTranscriptContent}</div>
+            <div className="max-w-3xl mx-auto max-w-full whitespace-pre-wrap break-words">{fullTranscriptContent}</div>
           }
         </div>
       </div>

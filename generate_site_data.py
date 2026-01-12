@@ -47,6 +47,41 @@ def normalize_key(s):
     if not s: return ''
     return re.sub(r'[^0-9a-z]+', '', s.lower())
 
+
+def apply_metadata_corrections(title: str, speaker: str, video_type: str):
+    """Apply targeted, deterministic corrections to speaker/type metadata."""
+    title = (title or '').strip()
+    speaker = (speaker or '').strip()
+    video_type = (video_type or '').strip()
+
+    norm_title = normalize_key(title)
+    norm_speaker = normalize_key(speaker)
+    norm_type = normalize_key(video_type)
+
+    # Eliminate bogus speaker value.
+    if norm_speaker == 'biblestudy':
+        speaker = 'Unknown Speaker'
+        norm_speaker = 'unknownspeaker'
+
+    # Remove the "Bible Study" category; treat it as Service.
+    if norm_type == 'biblestudy':
+        video_type = 'Service'
+        norm_type = 'service'
+
+    # "I Am Joseph" is a title, not a speaker.
+    # Seen as e.g. "15-1213 I am Joseph" with speaker "Joseph".
+    if 'iamjoseph' in norm_title and norm_speaker == 'joseph':
+        speaker = 'Unknown Speaker'
+        norm_speaker = 'unknownspeaker'
+
+    # Br Ed Byskal testimony about WMB sometimes gets misattributed to WMB.
+    if 'edbyskal' in norm_title and 'testimony' in norm_title and 'william' in norm_title and norm_speaker in {
+        'williammbranham', 'williambranham', 'branham', 'wmb'
+    }:
+        speaker = 'Ed Byskal'
+
+    return speaker, video_type
+
 def parse_duration_to_minutes(duration_str):
     """Parse duration string (e.g., '68', '1:23:45') into minutes as float."""
     if not duration_str or not str(duration_str).strip():
@@ -142,6 +177,8 @@ def parse_sermon(filepath, church, filename, summary_map=None, duration_map=None
             speaker = "Unknown Speaker"
         video_type = type_match.group(1).strip() if type_match else "Full Sermon"
         language = lang_match.group(1).strip() if lang_match else "English"
+
+        speaker, video_type = apply_metadata_corrections(title, speaker, video_type)
         
         try:
             ts = datetime.datetime.strptime(date_str, "%Y-%m-%d").timestamp() * 1000
@@ -374,6 +411,8 @@ def main():
                                 candidates = [c.strip() for c in r if c and 'youtube.com' not in c and 'youtu.be' not in c and not re.match(r"^(19|20)\d{2}-\d{2}-\d{2}$", c.strip())]
                                 if candidates:
                                     title = max(candidates, key=lambda s: len(s))
+
+                            speaker, vtype = apply_metadata_corrections(title, speaker or 'Unknown Speaker', vtype or '')
                             # final id
                             uid = normalize_key(church_name) + '_' + normalize_key(title) + '_' + (date.replace('-', '') if date else '')
                             # Skip duplicates (same id)
@@ -538,6 +577,8 @@ def main():
                         # Heal speakers
                         if speaker in SPEAKER_HEAL_LIST:
                             speaker = "Unknown Speaker"
+
+                        speaker, vtype = apply_metadata_corrections(title, speaker or 'Unknown Speaker', vtype or '')
                         
                         # Include video_key so IDs are unique and stable across regenerations
                         entry_id = f"NO_TRANSCRIPT_{normalize_key(church_name)}_{date_str}_{normalize_key(title)[:30]}_{video_key}"

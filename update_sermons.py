@@ -2143,6 +2143,9 @@ def heal_archive(data_dir, force=False, churches=None):
                         new_type = "Church Service" # Upgrade "Full Sermon" -> "Church Service"
                 else:
                     new_type = recalc_type
+
+            # --- MANUAL OVERRIDES (one-off corrections) ---
+            new_speaker, new_type = apply_manual_metadata_overrides(original_title, new_speaker, new_type)
                 
             # --- STEP 3: APPLY UPDATES ---
             
@@ -4910,7 +4913,8 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     if any(term in text_to_search for term in ["prayer meeting", "prayer service"]):
         return "Prayer Meeting"
     if any(term in text_to_search for term in ["bible study", "bible class"]):
-        return "Bible Study"
+        # Collapse Bible Study into the generic Service category.
+        return "Church Service"
     
     # Q&A Sessions
     if any(term in text_to_search for term in ["q&a", "q & a", "questions and answers", "question and answer"]):
@@ -4983,6 +4987,39 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     
     # Default when duration unknown
     return "Church Service"
+
+
+def apply_manual_metadata_overrides(title, speaker, video_type):
+    """Central place for one-off corrections that must persist via update_sermons.py.
+
+    Returns (speaker, video_type).
+    """
+    title_text = (title or "").strip()
+    speaker_text = (speaker or "").strip()
+    type_text = (video_type or "").strip()
+
+    # 1) "I Am Joseph" is a sermon title, not a speaker.
+    if re.search(r"\bi\s*am\s*joseph\b", title_text, re.IGNORECASE):
+        speaker_text = "Unknown Speaker"
+
+    # 2) "Br Ed Byskal ... witness regarding ... William Branham" should be Ed Byskal.
+    if (
+        re.search(r"\bed\s+byskal\b", title_text, re.IGNORECASE)
+        and re.search(r"\b(testimony|witness)\b", title_text, re.IGNORECASE)
+        and re.search(r"\bbranham\b", title_text, re.IGNORECASE)
+        and speaker_text in {"", "Unknown Speaker", "William M. Branham"}
+    ):
+        speaker_text = "Ed Byskal"
+
+    # 3) Remove Bible Study as a speaker; fold Bible Study into Service.
+    if speaker_text.casefold() in {"bible study", "prayer bible study"}:
+        speaker_text = "Unknown Speaker"
+        type_text = "Church Service"
+
+    if type_text.casefold() in {"bible study", "prayer bible study"}:
+        type_text = "Church Service"
+
+    return speaker_text, type_text
 
 def determine_language(title, yt_obj):
     title_lower = title.lower()
@@ -5624,6 +5661,8 @@ def metadata_only_scan(church_name, config, known_speakers):
             video_type = determine_video_type(title, speaker, None, yt_obj, description)
             if video_type == "Memorial Service" and speaker != "William M. Branham":
                 speaker = "Unknown Speaker"
+
+            speaker, video_type = apply_manual_metadata_overrides(title, speaker, video_type)
             
             # Sanitize description for CSV
             desc_for_csv = description.replace('\n', ' ').replace('\r', ' ')[:500] if description else ""
@@ -5996,6 +6035,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         video_type = determine_video_type(title, speaker)
         if video_type == "Memorial Service" and speaker != "William M. Branham":
             speaker = "Unknown Speaker"
+
+            speaker, video_type = apply_manual_metadata_overrides(title, speaker, video_type)
         
         # Track speaker detection stats
         channel_stats['total_processed'] += 1
@@ -6092,6 +6133,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             video_type = determine_video_type(title, speaker, transcript_text, yt_obj, description)
             if video_type == "Memorial Service" and speaker != "William M. Branham":
                 speaker = "Unknown Speaker"
+
+            speaker, video_type = apply_manual_metadata_overrides(title, speaker, video_type)
             
             # Print speaker and category identification
             duration_str = f"{int(duration_minutes)}m" if duration_minutes > 0 else "?"
