@@ -20,6 +20,24 @@ import LazyChannelChart from './components/LazyChannelChart'
 import useDebouncedCallback from './hooks/useDebouncedCallback'
 import { DEFAULT_TERM, DEFAULT_REGEX_STR, DEFAULT_VARIATIONS, WORDS_PER_MINUTE, CHART_POINT_THRESHOLD, getColor } from './constants_local'
 
+const DURATION_RANGES = [
+  { label: '≤ 30 min', maxMinutes: 30 },
+  { label: '30–60 min', maxMinutes: 60 },
+  { label: '60–90 min', maxMinutes: 90 },
+  { label: '90–120 min', maxMinutes: 120 },
+  { label: '2+ hours', maxMinutes: Infinity }
+]
+
+const DURATION_RANGE_OPTIONS = DURATION_RANGES.map(r => r.label)
+
+function getDurationRangeLabel(minutes) {
+  if (minutes == null || !Number.isFinite(minutes) || minutes <= 0) return null
+  for (const r of DURATION_RANGES) {
+    if (minutes <= r.maxMinutes) return r.label
+  }
+  return DURATION_RANGES[DURATION_RANGES.length - 1].label
+}
+
 // --- ERROR BOUNDARY ---
 class ErrorBoundary extends Component {
   constructor(props) { super(props); this.state = { hasError: false, error: null }; }
@@ -80,6 +98,7 @@ export default function App({ onSwitchToBranham }){
   const [selYears, setSelYearsRaw] = useState([])
   const [selTypes, setSelTypesRaw] = useState([])
   const [selLangs, setSelLangsRaw] = useState([])
+  const [selDurations, setSelDurationsRaw] = useState([])
   
   // Deferred filter setters - keeps UI responsive during 26K item filter operations
   const setSelChurches = useCallback((v) => startFilterTransition(() => setSelChurchesRaw(v)), [])
@@ -88,6 +107,7 @@ export default function App({ onSwitchToBranham }){
   const setSelYears = useCallback((v) => startFilterTransition(() => setSelYearsRaw(v)), [])
   const setSelTypes = useCallback((v) => startFilterTransition(() => setSelTypesRaw(v)), [])
   const setSelLangs = useCallback((v) => startFilterTransition(() => setSelLangsRaw(v)), [])
+  const setSelDurations = useCallback((v) => startFilterTransition(() => setSelDurationsRaw(v)), [])
   
   const [rollingWeeks, setRollingWeeks] = useState(26)
   const [aggregateWindow, setAggregateWindow] = useState(26)
@@ -266,7 +286,24 @@ export default function App({ onSwitchToBranham }){
           }
         }catch(e){ console.warn('Using default channels', e) }
         const currentTimestamp = new Date().getTime()
-        const list = (json.sermons || []).filter(s=>s.timestamp <= currentTimestamp).map(s=>{ const durationHrs = (s.wordCount / WORDS_PER_MINUTE) / 60; return { ...s, path: s.path, durationHrs: durationHrs>0?durationHrs:0.5, mentionsPerHour: durationHrs>0?parseFloat((s.mentionCount / durationHrs).toFixed(1)):0 } })
+        const list = (json.sermons || [])
+          .filter(s=>s.timestamp <= currentTimestamp)
+          .map(s=>{
+            const actualDurationMinutes = s.durationMinutes != null && Number(s.durationMinutes) > 0 ? Number(s.durationMinutes) : null
+            const estimatedDurationMinutes = s.wordCount && Number(s.wordCount) > 0 ? (Number(s.wordCount) / WORDS_PER_MINUTE) : null
+            const durationMinutesEffective = actualDurationMinutes ?? estimatedDurationMinutes
+            const durationHrs = durationMinutesEffective && durationMinutesEffective > 0 ? (durationMinutesEffective / 60) : 0.5
+            const durationRange = getDurationRangeLabel(durationMinutesEffective)
+            return {
+              ...s,
+              path: s.path,
+              durationMinutes: actualDurationMinutes,
+              durationMinutesEffective,
+              durationRange,
+              durationHrs,
+              mentionsPerHour: durationHrs > 0 ? parseFloat(((s.mentionCount || 0) / durationHrs).toFixed(1)) : 0
+            }
+          })
         setRawData(list); setTotalChunks(json.totalChunks || 0); setApiPrefix(prefix)
         // Use raw setters for initial load (no transition delay needed)
         setSelChurchesRaw([...new Set(list.map(s=>s.church))]);
@@ -275,6 +312,7 @@ export default function App({ onSwitchToBranham }){
         const currentYear = new Date().getFullYear(); const years = [...new Set(list.map(s=>s.year))].filter(y=>parseInt(y) <= currentYear).sort().reverse(); const defaultYears = years.filter(y=>parseInt(y) >= 2010); setSelYearsRaw(defaultYears.length>0?defaultYears:years)
         const types = [...new Set(list.map(s=>s.type))]; setSelTypesRaw(types)
         const langs = [...new Set(list.map(s=>s.language))]; setSelLangsRaw(langs)  // Default: ALL languages selected
+        setSelDurationsRaw(DURATION_RANGE_OPTIONS) // Default: ALL duration ranges selected
         
         // Load pre-computed default search terms if available (eliminates sluggish auto-run)
         if (json.defaultSearchTerms && Array.isArray(json.defaultSearchTerms)) {
@@ -288,7 +326,7 @@ export default function App({ onSwitchToBranham }){
   },[])
 
   // All unique options from raw data (used for reset and initial state)
-  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title') } }, [rawData])
+  const options = useMemo(()=>{ const getUnique = (k) => [...new Set(rawData.map(s=>s[k]))].filter(Boolean).sort(); return { churches: getUnique('church'), speakers: getUnique('speaker'), years: getUnique('year').reverse(), types: getUnique('type'), langs: getUnique('language'), titles: getUnique('title'), durations: DURATION_RANGE_OPTIONS } }, [rawData])
   
   // SMART CASCADING FILTERS: Options adjust based on selected churches
   // Simpler cascade: Church → Speakers/Titles/Years/Types/Langs (all based only on church)
@@ -337,7 +375,8 @@ export default function App({ onSwitchToBranham }){
       titles: titlesFiltered,
       years: yearsFiltered,
       types: typesFiltered,
-      langs: langsFiltered
+      langs: langsFiltered,
+      durations: options.durations
     }
   }, [rawData, options, selChurches, selSpeakers])
 
@@ -386,20 +425,26 @@ export default function App({ onSwitchToBranham }){
     titles: new Set(selTitles),
     years: new Set(selYears),
     types: new Set(selTypes),
-    langs: new Set(selLangs)
-  }), [selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs])
+    langs: new Set(selLangs),
+    durations: new Set(selDurations)
+  }), [selChurches, selSpeakers, selTitles, selYears, selTypes, selLangs, selDurations])
+
+  const durationFilterIsAll = useMemo(() => {
+    return selDurations.length >= options.durations.length
+  }, [selDurations, options.durations.length])
   
   const filteredData = useMemo(()=> {
-    const { churches, speakers, titles, years, types, langs } = filterSets
+    const { churches, speakers, titles, years, types, langs, durations } = filterSets
     return enrichedData.filter(s => 
       churches.has(s.church) && 
       speakers.has(s.speaker) && 
       titles.has(s.title) && 
       years.has(s.year) && 
       types.has(s.type) && 
-      langs.has(s.language)
+      langs.has(s.language) &&
+      (durationFilterIsAll || (s.durationRange && durations.has(s.durationRange)))
     )
-  }, [enrichedData, filterSets])
+  }, [enrichedData, filterSets, durationFilterIsAll])
 
   // Church coverage stats for horizontal bar chart (independent of filters)
   const [coverageShowPercent, setCoverageShowPercent] = useState(false)
@@ -1046,8 +1091,9 @@ export default function App({ onSwitchToBranham }){
            selSpeakers.length < options.speakers.length ||
            selYears.length < options.years.length ||
            selTypes.length < options.types.length ||
-           selLangs.length < options.langs.length
-  }, [selChurches, selSpeakers, selYears, selTypes, selLangs, options])
+           selLangs.length < options.langs.length ||
+           selDurations.length < options.durations.length
+  }, [selChurches, selSpeakers, selYears, selTypes, selLangs, selDurations, options])
   
   // Clear all filters function
   const clearAllFilters = useCallback(() => {
@@ -1057,6 +1103,7 @@ export default function App({ onSwitchToBranham }){
     setSelYearsRaw(options.years)
     setSelTypesRaw(options.types)
     setSelLangsRaw(options.langs)
+    setSelDurationsRaw(options.durations)
   }, [options])
 
   const aggregatedChartData = useMemo(()=>{
@@ -1325,7 +1372,7 @@ export default function App({ onSwitchToBranham }){
                   {isPending && <span className="ml-2 text-blue-500">⟳</span>}
                 </div>
               </div>
-              <button onClick={()=>{ setSelChurchesRaw(options.churches); setSelSpeakersRaw(options.speakers); setSelTitlesRaw(options.titles); setSelYearsRaw(options.years); setSelTypesRaw(options.types); setSelLangsRaw(options.langs) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
+              <button onClick={()=>{ setSelChurchesRaw(options.churches); setSelSpeakersRaw(options.speakers); setSelTitlesRaw(options.titles); setSelYearsRaw(options.years); setSelTypesRaw(options.types); setSelLangsRaw(options.langs); setSelDurationsRaw(options.durations) }} className="text-xs text-blue-600 font-medium hover:underline">Reset All</button>
             </div>
             {/* Smart filter hint - always visible */}
             <div className="text-xs text-blue-600 bg-blue-50 rounded px-2 py-1 mb-3 flex items-center gap-1">
@@ -1349,6 +1396,7 @@ export default function App({ onSwitchToBranham }){
               <MultiSelect label={`Years${selYears.length > 0 ? ` (${Math.min(...selYears.map(y => parseInt(y)))}–${Math.max(...selYears.map(y => parseInt(y)))})` : ''}`} options={filteredOptions.years} selected={selYears} onChange={setSelYears} allOptions={options.years} />
               <MultiSelect label="Categories" options={filteredOptions.types} selected={selTypes} onChange={setSelTypes} allOptions={options.types} />
               <MultiSelect label="Languages" options={filteredOptions.langs} selected={selLangs} onChange={setSelLangs} allOptions={options.langs} />
+              <MultiSelect label="Duration" options={filteredOptions.durations} selected={selDurations} onChange={setSelDurations} allOptions={options.durations} />
             </div>
           </div>
           )}
@@ -2104,7 +2152,7 @@ export default function App({ onSwitchToBranham }){
                     { key: 'type', label: 'Type', width: '100px', filterKey: 'category', hideOnMobile: true, render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
                     { key: 'mentionCount', label: 'Mentions', width: '90px', filterKey: 'mentions', filterType: 'number', centered: true, render: (r) => (<div className={`text-center font-bold ${r.mentionCount===0 ? 'text-red-500' : 'text-blue-600'}`}>{r.mentionCount}</div>) },
                     { key: 'mentionsPerHour', label: 'Rate/Hr', width: '70px', filterKey: 'rate', filterType: 'number', centered: true, hideOnMobile: true, render: (r) => (<div className="text-center text-xs">{r.mentionsPerHour}</div>) },
-                    { key: 'wordCount', label: 'Words', width: '80px', hideOnMobile: true, render: (r) => (<span className="text-xs text-gray-500">{r.wordCount?.toLocaleString() || '—'}</span>) },
+                    { key: 'wordCount', label: 'Words', width: '80px', hideOnMobile: true, centered: true, render: (r) => (<div className="text-center text-xs text-gray-500">{r.wordCount?.toLocaleString() || '—'}</div>) },
                     { key: 'url', label: 'URL', width: '60px', centered: true, render: (r) => (r.url || r.videoUrl) ? (
                       <a 
                         href={r.url || r.videoUrl}

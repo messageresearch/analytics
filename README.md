@@ -1,6 +1,6 @@
 # Message Analytics - Sermon Transcript Search Engine
 
-A powerful, full-text search engine and analytics dashboard for exploring **31,000+ sermon transcripts** from over **57 churches** in the William Branham Message community. The platform enables users to search any topic or phrase across all transcripts and visualize mention trends over time.
+A powerful, full-text search engine and analytics dashboard for exploring **33,000+ sermon transcripts** from over **59 churches** in the William Branham Message community. The platform enables users to search any topic or phrase across all transcripts and visualize mention trends over time.
 
 **Live Site:** [messageanalytics.github.io](https://messageanalytics.github.io)
 
@@ -9,15 +9,66 @@ A powerful, full-text search engine and analytics dashboard for exploring **31,0
 ## 🎯 Project Overview
 
 This project solves a unique challenge: making decades of sermon content searchable and analyzable. The core feature is tracking mentions of "Brother Branham" (William Branham) across all transcripts, but the search engine supports **any search term** including:
-- Boolean queries (`catholic AND gold NOT silver`)
-- Regular expressions
-- Phrase matching with variations
+
+### User-facing tour
+
+- **Search & Stats**: Instantly search across all transcripts, filter by speaker, church, or date, and view live statistics (total sermons, churches, matches, etc.). Click any result to open a modal with transcript, jump-to-timestamp links, and metadata.
+- **Sources (Data)**: Explore a per-channel breakdown of all sources, including scrape stats, last update, and direct YouTube links. Search and filter the table to audit data coverage and channel health.
+- **Branham Archive**: Dedicated app for the William Branham sermon collection, with advanced search, transcript jump links, and metadata. Includes its own stats and chunked data for fast access.
 
 ### Key Statistics
-- **31,000+** searchable transcripts
-- **57** churches tracked
-- **125,000+** default term matches
-- **44,000+** total videos indexed (including those without transcripts)
+- **33,317** searchable transcripts
+- **59** churches tracked
+- **142,944** default term matches
+- **41,417** total videos indexed (including those without transcripts)
+
+---
+
+## ⭐ Major Recent Updates (Jan 2026)
+
+### 1) Timestamped transcripts + click-to-jump video verification
+
+A major research/verification upgrade: many sermons now have a companion **timestamped transcript** (a sibling `*.timestamped.txt` file) containing inline time tokens like `[12:34]`.
+
+In the sermon viewer, these timestamps become **clickable links** that open the YouTube video **at the exact moment** the line was spoken. This dramatically improves:
+- **Verification**: instantly check the source audio/video context
+- **Research & analysis**: rapidly jump between relevant moments
+- **Citation workflows**: share links that land on the quote
+
+### 2) Branham Archive added (William Branham sermons)
+
+The site now includes a dedicated **Branham Archive** experience (a separate app/view) designed specifically for searching and analyzing William Branham’s own sermons.
+
+Key benefits:
+- **Separation of datasets**: keeps the modern church transcript corpus distinct from WMB’s sermon corpus
+- **Purpose-built metadata**: venue, location, date codes, duration, and detected topics (theme tags)
+- **Faster navigation**: a focused interface for WMB-only research without needing to filter out unrelated channels
+
+### 3) Improved speaker detection + metadata reliability
+
+Speaker detection and metadata extraction have been hardened in multiple ways:
+- **Improved speaker detection logic** in `update_sermons.py` (NLP + heuristics + explicit non-person pattern filtering)
+- **Metadata healing** to correct common misattributions and normalize invalid speakers
+- **Better source metadata capture** (e.g., backfilling missing descriptions and improving URL recovery)
+- **Deduplication strategy**: when the same video appears multiple times, keep the newest metadata to avoid stale copies
+
+### 4) Mobile performance & stability improvements
+
+The app has explicit mobile-first performance safeguards for large-scale searches:
+- **Memory-conscious search behavior** (e.g., skipping expensive caching paths on mobile)
+- **Virtualized tables** with mobile column hiding (`hideOnMobile`) and tuned row sizing
+- UI refinements that reduce lockups during heavy scans and filtering
+
+### 5) Revamped “Sources” (Data) tab for dataset transparency + fast lookup
+
+The **Sources** tab was expanded into a practical data-audit + lookup hub:
+- **Channel scrape status at a glance**: see which channels are included, how many transcripts are present per channel, and the **latest transcript date** per channel (helps spot stale or not-yet-scraped sources)
+- **Searchable video databases**:
+  - a **global** searchable table across all channels (metadata search by title/speaker/church/date)
+  - **per-channel** expandable tables with quick search + column sorting
+- **Direct source linking**: one-click links back to the original YouTube video for verification
+- **Quick transcript preview**: when a transcript exists, rows can open the transcript viewer directly
+- **Exports**: export the channels list (CSV) and build a master CSV of sermon metadata (including YouTube links)
 
 ---
 
@@ -26,42 +77,43 @@ This project solves a unique challenge: making decades of sermon content searcha
 ### Codebase
 | Category | Size |
 |----------|------|
-| **Frontend (React/JS)** | 6,314 lines |
-| **Main App Component** | 2,610 lines |
-| **UI Components** | 2,153 lines |
-| **Python Scripts** | 8,188 lines |
-| **Total Code** | ~14,500 lines |
+| **Frontend (React/JS)** | 10,707 lines |
+| **Main App Component** | 2,927 lines |
+| **UI Components** | 3,161 lines |
+| **Python Scripts** | 13,642 lines |
+| **Total Code** | ~24,349 lines |
 
 ### Raw Data (`data/`)
 | Metric | Value |
 |--------|-------|
-| **Total Size** | 2.5 GB |
-| **Transcript Files** | 42,992 files |
-| **Average File Size** | 59.5 KB |
-| **Total Raw Text** | 2.4 GB |
-| **Churches/Folders** | 57 |
-| **Largest Transcript** | 348 KB (multi-hour service) |
+| **Total Size** | 4.7 GB |
+| **Transcript Files (plain)** | 37,974 files |
+| **Transcript Files (timestamped)** | 37,426 files |
+| **Average File Size (plain)** | 57.0 KB |
+| **Total Raw Text (plain)** | 2.0 GB |
+| **Churches/Folders** | 60 |
+| **Largest Transcript (plain)** | 286 KB (multi-hour service) |
 
 ### Processed Data (`site_api/`)
 | Metric | Value |
 |--------|-------|
-| **Total Size** | 1.7 GB |
-| **JSON Chunk Files** | 342 files |
+| **Total Size** | 2.0 GB |
+| **JSON Chunk Files** | 392 files |
 | **Chunk Size Limit** | ~5 MB each |
-| **Indexed Sermons** | 35,201 |
+| **Indexed Sermons** | 41,417 |
 
 ### Production Build (`docs/`)
 | Metric | Value |
 |--------|-------|
-| **Total Size** | 4.3 GB |
+| **Total Size** | 8.4 GB |
 | **Includes** | Frontend + Data + API |
 
 ### What the Browser Must Handle
 When a user loads the dashboard:
-1. **Initial metadata**: ~500 KB (sermon index, no full text)
-2. **On search**: Downloads 342 JSON chunks totaling **1.7 GB** of searchable text
-3. **In memory**: Processes **35,000+ sermon records** with filtering, sorting, charting
-4. **Rendering**: Virtualized table handles **31,000+ rows** without crashing
+1. **Initial metadata**: ~32 MB (sermon index, no full text)
+2. **On search**: Downloads 392 JSON chunks totaling **2.0 GB** of searchable text
+3. **In memory**: Processes **41,000+ sermon records** with filtering, sorting, charting
+4. **Rendering**: Virtualized table handles **33,000+ transcript rows** without crashing
 
 This is why the project required extensive optimization—most web apps never need to handle datasets this large in the browser.
 
@@ -86,10 +138,12 @@ The main scraper that fetches sermon transcripts from YouTube channels.
 
 **Key Features:**
 - **Multi-source scraping**: Uses `pytubefix`, `scrapetube`, and YouTube APIs
-- **Transcript extraction**: Downloads auto-generated captions with timestamps
-- **NLP-powered speaker detection**: Uses `spaCy` to identify speakers from video titles when metadata is missing
+- **Transcript extraction**: Downloads auto-generated captions and builds local transcript files
+- **Timestamped transcript generation**: Creates `*.timestamped.txt` companions when timestamp data is available (and includes backfill tools to add timestamps to older transcripts)
+- **NLP-powered speaker detection**: Uses `spaCy` plus hardened heuristics to identify speakers from titles when metadata is missing
 - **Smart caching**: Tracks video ages to avoid re-processing old content
 - **Healing logic**: Auto-corrects common metadata issues (wrong speakers, song detection)
+- **Metadata backfills**: Utilities to backfill missing metadata (e.g., descriptions) into existing transcript files
 - **Rate limiting**: Randomized delays to avoid API throttling
 
 **Speaker Detection Logic:**
@@ -108,8 +162,12 @@ Processes raw transcript files into optimized JSON chunks for the frontend.
 - **Chunked output**: Splits 31K+ sermons into ~5MB JSON chunks for efficient loading
 - **Pre-computed regex matches**: Runs the default "Brother Branham" regex at build time
 - **Metadata extraction**: Parses date, speaker, title, type, language from each file
-- **Duration estimation**: Calculates sermon length from timestamps
+- **Duration support**: attaches `durationMinutes` when duration metadata is available (from the per-church `*_Summary.csv` outputs)
+- **Timestamp feature support**: emits `hasTimestamped` and `timestampedPath` when a `*.timestamped.txt` companion exists
 - **CSV generation**: Creates master spreadsheet of all sermons
+
+#### `generate_wmb_site_data.py`
+Generates a dedicated static API for the **Branham Archive** in `wmb_api/` (its own `metadata.json` + `text_chunk_*.json` files), using the same chunking strategy as the main archive.
 
 #### `validate_filenames.py` (194 lines)
 Prevents GitHub Pages deployment failures caused by problematic filenames.
@@ -136,10 +194,17 @@ Specialized scraper for Word of Life Church speaker metadata.
 #### Core Application (`src/App.jsx` - 2,609 lines)
 The main dashboard combining search, filtering, and visualization.
 
+The frontend now supports two experiences:
+- **Main Archive** (church YouTube channels)
+- **Branham Archive** (William Branham sermons), lazy-loaded and routed via URL hash (`#branham`)
+
 **State Management:**
 - Uses React hooks with `useTransition` for non-blocking filter updates
 - Pre-computes filter Sets for O(1) lookups (critical for 26K+ items)
 - Memoized computations with `useMemo` to prevent expensive recalculations
+
+**Dataset transparency / auditing:**
+- The **Sources** view exposes channel coverage and scrape recency, plus searchable metadata tables with direct YouTube linking.
 
 #### Components
 
@@ -148,7 +213,8 @@ The main dashboard combining search, filtering, and visualization.
 | `TopicAnalyzerDefault.jsx` | Search interface with term input, variations, and regex support |
 | `VirtualizedTable.jsx` | Renders 31K rows using `react-window` for smooth scrolling |
 | `StatCard.jsx` | Dashboard metric tiles with truncation for long text |
-| `SermonModal.jsx` | Full transcript viewer with search highlighting |
+| `SermonModal.jsx` | Full transcript viewer with search highlighting, including **timestamped transcript toggle** and clickable **jump-to-YouTube timestamp** links when available |
+| `BranhamApp.jsx` | Dedicated William Branham sermon archive UI (WMB-only searching, browsing, and analysis) |
 | `ChartModal.jsx` | Expanded chart view with date picker |
 | `ChannelChart.jsx` | Per-church activity visualization |
 | `LazyChannelChart.jsx` | Lazy-loaded charts for performance |
@@ -301,6 +367,15 @@ Result: Filter time reduced from ~150ms to ~5ms.
 - Reduced concurrent fetch count
 - Aggressive garbage collection hints
 
+### Challenge 8: Verification (jump to the exact spoken moment)
+**Problem**: Full-text search results are useful, but research and reporting require fast verification in the original source.
+
+**Solution**:
+- Add timestamped transcripts (`*.timestamped.txt`) containing inline tokens like `[12:34]`
+- In the sermon viewer, render timestamps as clickable links that open YouTube at `t=<seconds>`
+
+This turns transcript search into a direct **quote → source audio/video** workflow.
+
 ### Challenge 7: GitHub Pages Filename Limits
 **Problem**: YouTube titles with Unicode caused deployment failures.
 
@@ -389,6 +464,9 @@ Untested commits have caused production outages due to:
 │   ├── metadata.json
 │   ├── text_chunk_*.json
 │   └── master_sermons.csv
+├── wmb_api/                # Branham Archive JSON chunks
+│   ├── metadata.json
+│   └── text_chunk_*.json
 ├── src/                    # React frontend source
 │   ├── components/
 │   ├── utils/

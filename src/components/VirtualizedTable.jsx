@@ -249,10 +249,15 @@ export default function VirtualizedTable({
           >
             {columns.map((col, idx) => (
               <div key={col.key} className="relative">
-                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center ${col.centered ? 'justify-center' : ''}`}>
-                  <button onClick={() => onSort(col.key)} className={`flex items-center w-full hover:text-gray-900 ${col.centered ? 'justify-center text-center' : 'text-left'}`}>
-                    <span className="truncate">{col.label}</span>
-                    <SortIndicator colKey={col.key} />
+                <div className={col.headerClass || `text-xs text-gray-600 font-medium flex items-center w-full`}>
+                  <button
+                    onClick={() => onSort(col.key)}
+                    className={`w-full hover:text-gray-900 ${col.centered ? 'text-center' : 'text-left'}`}
+                  >
+                    <div className={`flex items-center w-full ${col.centered ? 'justify-center text-center' : ''}`}>
+                      <span className={col.centered ? '' : 'truncate'}>{col.label}</span>
+                      <SortIndicator colKey={col.key} />
+                    </div>
                   </button>
                 </div>
                 {!isMobile && idx < columns.length - 1 && (
