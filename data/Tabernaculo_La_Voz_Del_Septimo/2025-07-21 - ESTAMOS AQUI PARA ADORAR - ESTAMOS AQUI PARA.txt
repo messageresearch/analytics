@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-07-21
 Title:    ESTAMOS AQUI PARA ADORAR
-Speaker: ESTAMOS AQUI PARA
+Speaker:  ESTAMOS AQUI PARA
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:     Short Clip
 Duration: 5m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=KoipaQWkwrQ

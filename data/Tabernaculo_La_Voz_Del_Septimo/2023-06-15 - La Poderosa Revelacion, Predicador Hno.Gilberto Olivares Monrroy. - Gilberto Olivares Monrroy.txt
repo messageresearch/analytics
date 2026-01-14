@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2023-06-15
 Title:    La Poderosa Revelacion, Predicador Hno.Gilberto Olivares Monrroy.
-Speaker: Gilberto Olivares Monrroy
+Speaker:  Gilberto Olivares Monrroy
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:     Church Service
 Duration: 1h 43m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=TuqEse0OlOM

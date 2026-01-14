@@ -16,3 +16,14 @@ logs/audit/*.log
 logs/healing/*.csv
 logs/healing/*.txt
 logs/speaker_detection/*.txt
+
+.env
+.env
+docs/data/
+docs/site_api/
+docs/wmb_api/
+upload_to_r2.py
+check_r2_count.py
+sync_to_r2.sh
+upload_sync.log
+upload.log

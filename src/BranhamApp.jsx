@@ -322,7 +322,7 @@ export default function BranhamApp({ onSwitchToMain }) {
     
     try {
       const zip = new JSZip()
-      const baseUrl = import.meta.env.BASE_URL || '/'
+      const baseUrl = import.meta.env.VITE_DATA_URL || import.meta.env.BASE_URL || '/'
       let successCount = 0
       
       for (let i = 0; i < sermonsWithPaths.length; i++) {
@@ -525,7 +525,9 @@ export default function BranhamApp({ onSwitchToMain }) {
     let isMounted = true
     const loadData = async () => {
       try {
+        const r2Url = import.meta.env.VITE_DATA_URL
         const metaPaths = [
+          ...(r2Url ? [`${r2Url}wmb_api/metadata.json`] : []),
           'wmb_api/metadata.json',
           '/wmbmentions.github.io/wmb_api/metadata.json',
           'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/wmb_api/metadata.json',
@@ -536,7 +538,11 @@ export default function BranhamApp({ onSwitchToMain }) {
           try {
             res = await fetch(path)
             if (res.ok) {
-              prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/wmb_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/wmb_api/' : 'wmb_api/')
+              if (r2Url && path.startsWith(r2Url)) {
+                prefix = `${r2Url}wmb_api/`
+              } else {
+                prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/wmb_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/wmb_api/' : 'wmb_api/')
+              }
               break
             }
           } catch (e) {}

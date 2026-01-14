@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2022-03-31
 Title:    HNO. SANTANA
-Speaker: SANTANA
+Speaker:  SANTANA
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:     Short Clip
 Duration: 4m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=t5N_iag-W20

@@ -182,7 +182,9 @@ export default function App({ onSwitchToBranham }){
     const init = async ()=>{
       try{
         // Try multiple paths for metadata.json with fallback to raw.githubusercontent
+        const r2Url = import.meta.env.VITE_DATA_URL
         const metaPaths = [
+          ...(r2Url ? [`${r2Url}site_api/metadata.json`] : []),
           'site_api/metadata.json',
           '/wmbmentions.github.io/site_api/metadata.json',
           'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/metadata.json',
@@ -194,7 +196,11 @@ export default function App({ onSwitchToBranham }){
           try {
             res = await fetch(path)
             if (res.ok) {
-              prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/site_api/' : 'site_api/')
+              if (r2Url && path.startsWith(r2Url)) {
+                prefix = `${r2Url}site_api/`
+              } else {
+                prefix = path.includes('raw.githubusercontent') ? 'https://raw.githubusercontent.com/messageanalytics/wmbmentions.github.io/main/docs/site_api/' : (path.includes('/wmbmentions.github.io/') ? '/wmbmentions.github.io/site_api/' : 'site_api/')
+              }
               break
             }
           } catch (e) {}

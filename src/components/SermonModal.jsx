@@ -26,11 +26,22 @@ const normalizeTranscriptPathForUrl = (maybeEncodedPath) => {
 const buildCandidateUrls = (basePath, normalizedPath) => {
   const rel = (normalizedPath || '').replace(/^\/+/, '')
   const base = typeof basePath === 'string' && basePath.length ? basePath : '/'
-  const withBase = new URL(rel, `${window.location.origin}${base}`).toString()
+
+  let baseUrl
+  try {
+    // Check if base is absolute (e.g. R2 URL)
+    // eslint-disable-next-line no-new
+    new URL(base)
+    baseUrl = base
+  } catch {
+    // Relative path - resolve against current origin
+    baseUrl = new URL(base, window.location.origin).toString()
+  }
+
+  const withBase = new URL(rel, baseUrl).toString()
   const fromRoot = new URL(`/${rel}`, window.location.origin).toString()
 
-  // Try base-prefixed first (GitHub Pages + base='/analytics/'), then root.
-  // De-dupe in case both resolve to the same URL.
+  // Try base-prefixed first, then root fallback
   return Array.from(new Set([withBase, fromRoot]))
 }
 
@@ -811,7 +822,8 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
       return
     }
     
-    const basePath = import.meta.env.BASE_URL || '/'
+    // Check for R2 data URL first
+    const basePath = import.meta.env.VITE_DATA_URL || import.meta.env.BASE_URL || '/'
     const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
     const plainCandidates = buildCandidateUrls(basePath, encodedPath)
 
@@ -1065,7 +1077,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
 
     setLoadingTimestamped(true)
 
-    const basePath = import.meta.env.BASE_URL || '/'
+    const basePath = import.meta.env.VITE_DATA_URL || import.meta.env.BASE_URL || '/'
     const candidates = prefetchedPath
       ? Array.from(new Set([prefetchedPath, ...buildCandidateUrls(basePath, prefetchedPath)]))
       : (() => {
@@ -1116,7 +1128,7 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
   const downloadText = () => { 
     const a = document.createElement('a')
     // Decode then selectively encode only problematic chars (spaces, #)
-    const basePath = import.meta.env.BASE_URL || '/'
+    const basePath = import.meta.env.VITE_DATA_URL || import.meta.env.BASE_URL || '/'
     const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
     const href = buildCandidateUrls(basePath, encodedPath)[0]
     a.href = href

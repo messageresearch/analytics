@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-12-08
 Title:    ESCOGIDO, LLAMADO, UNGIDO Y COLOCADO
-Speaker: ESCOGIDO
+Speaker:  ESCOGIDO
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:     Church Service
 Duration: 2h 10m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=qj7cfOjIU5c

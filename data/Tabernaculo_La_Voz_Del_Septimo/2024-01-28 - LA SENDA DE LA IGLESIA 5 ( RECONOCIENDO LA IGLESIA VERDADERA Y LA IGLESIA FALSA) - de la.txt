@@ -4,13 +4,14 @@ START OF FILE: 2024-01-28 - LA SENDA DE LA IGLESIA 5 ( RECONOCIENDO LA IGLESIA V
 
 SERMON DETAILS
 ========================================
-Date:    2024-01-28
-Title:   LA SENDA DE LA IGLESIA #5 ( RECONOCIENDO LA IGLESIA VERDADERA Y LA IGLESIA FALSA)
-Speaker: de la
-Church:  Tabernaculo La Voz Del Septimo
-Type:    Church Service
-Language:Spanish
-URL:     https://www.youtube.com/watch?v=KZpVN8WAH14
+Date:     2024-01-28
+Title:    LA SENDA DE LA IGLESIA #5 ( RECONOCIENDO LA IGLESIA VERDADERA Y LA IGLESIA FALSA)
+Speaker:  de la
+Church:   Tabernaculo La Voz Del Septimo
+Type:     Church Service
+Duration: 1h 58m
+Language: Spanish
+URL:      https://www.youtube.com/watch?v=KZpVN8WAH14
 ========================================
 
 Description:
