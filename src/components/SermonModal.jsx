@@ -1125,15 +1125,57 @@ export default function SermonModal({ sermon, onClose, focusMatchIndex = 0, whol
     }
   }
 
-  const downloadText = () => { 
-    const a = document.createElement('a')
+  const downloadText = async () => { 
     // Decode then selectively encode only problematic chars (spaces, #)
     const basePath = import.meta.env.VITE_DATA_URL || import.meta.env.BASE_URL || '/'
-    const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
-    const href = buildCandidateUrls(basePath, encodedPath)[0]
-    a.href = href
-    a.download = `${sermon.date} - ${sermon.title}.txt`
-    a.click()
+    
+    let downloadUrl
+    let filename
+
+    // Logic to choose between timestamped vs plain
+    // Duplicate the path construction logic from the effect above
+    if (showTimestamps && hasTimestamped) {
+      const decodedTimestamped = (() => {
+        if (sermon.timestampedPath) return safeDecodeURIComponent(sermon.timestampedPath)
+        const decodedPlain = safeDecodeURIComponent(sermon.path)
+        if (decodedPlain.endsWith('.timestamped.txt')) return decodedPlain
+        if (decodedPlain.endsWith('.txt')) return decodedPlain.slice(0, -4) + '.timestamped.txt'
+        return decodedPlain + '.timestamped.txt'
+      })()
+
+      const encodedTimestamped = normalizeTranscriptPathForUrl(decodedTimestamped)
+      downloadUrl = buildCandidateUrls(basePath, encodedTimestamped)[0]
+      filename = `${sermon.date} - ${sermon.title}.timestamped.txt`
+    } else {
+      const encodedPath = normalizeTranscriptPathForUrl(sermon.path)
+      downloadUrl = buildCandidateUrls(basePath, encodedPath)[0]
+      filename = `${sermon.date} - ${sermon.title}.txt`
+    }
+
+    try {
+      // Fetch as blob to force download (avoid opening in tab)
+      const resp = await fetch(downloadUrl)
+      if (!resp.ok) throw new Error(`Download failed: ${resp.status}`)
+      const blob = await resp.blob()
+      const url = URL.createObjectURL(blob)
+      
+      const a = document.createElement('a')
+      a.href = url
+      a.download = filename
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      console.error('Download fetch failed, falling back to direct link', err)
+      const a = document.createElement('a')
+      a.href = downloadUrl
+      a.download = filename
+      a.target = '_blank'
+      a.rel = 'noopener noreferrer'
+      a.click()
+    }
+    
     setShowDownloadConsent(false)
   }
 
