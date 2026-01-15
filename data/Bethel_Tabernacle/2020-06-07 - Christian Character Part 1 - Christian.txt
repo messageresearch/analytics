@@ -8,7 +8,7 @@ Date:     2020-06-07
 Title:    Christian Character Part 1
 Speaker: Christian
 Church:   Bethel Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 32m
 Language: English
 URL:      https://www.youtube.com/watch?v=hhtOI4DrRtc

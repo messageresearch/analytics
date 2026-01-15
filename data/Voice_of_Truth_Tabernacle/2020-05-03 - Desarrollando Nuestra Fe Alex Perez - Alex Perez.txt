@@ -8,7 +8,7 @@ Date:     2020-05-03
 Title:    Desarrollando Nuestra Fe | Alex Perez
 Speaker: Alex Perez
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 32m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=CehE4u0dIso

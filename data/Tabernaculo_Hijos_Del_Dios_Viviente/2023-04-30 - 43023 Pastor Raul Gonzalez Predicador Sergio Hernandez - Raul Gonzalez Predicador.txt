@@ -8,7 +8,7 @@ Date:     2023-04-30
 Title:    4/30/23 Pastor: Raul Gonzalez Predicador: Sergio Hernandez
 Speaker: Raul Gonzalez Predicador
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 34m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=85t8_sv32qQ

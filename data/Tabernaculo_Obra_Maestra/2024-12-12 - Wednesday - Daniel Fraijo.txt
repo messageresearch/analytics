@@ -8,7 +8,7 @@ Date:    2024-12-12
 Title:   Wednesday
 Speaker: Daniel Fraijo
 Church:  Tabernaculo Obra Maestra
-Type:    Church Service
+Type:    Short Clip
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=zsX-jspbDYU
 ========================================

@@ -8,7 +8,7 @@ Date:    2023-06-13
 Title:   Youth Bible Study
 Speaker: Aaron Oglesby
 Church:  Word Of Life Church
-Type:    Church Service
+Type:    Youth Service
 Language:English
 URL:     https://www.youtube.com/watch?v=BtrV1OrrZ9o
 ========================================

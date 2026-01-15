@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2022-01-01
 Title:    New Year Live Service
-Speaker:  Unknown Speaker
+Speaker: Unknown Speaker
 Church:   Voice of Truth Tabernacle
-Type:     New Year Service
+Type:    New Year Service
 Duration: 3h 41m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=D8d_khxofBo

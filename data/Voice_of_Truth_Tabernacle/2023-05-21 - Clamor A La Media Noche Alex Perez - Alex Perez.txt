@@ -8,7 +8,7 @@ Date:     2023-05-21
 Title:    Clamor A La Media Noche | Alex Perez
 Speaker: Alex Perez
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 42m
 Language: English
 URL:      https://www.youtube.com/watch?v=0HdIkC_NmXA

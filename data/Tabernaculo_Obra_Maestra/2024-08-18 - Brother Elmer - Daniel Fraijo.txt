@@ -8,7 +8,7 @@ Date:    2024-08-18
 Title:   Brother Elmer
 Speaker: Daniel Fraijo
 Church:  Tabernaculo Obra Maestra
-Type:    Church Service
+Type:    Short Clip
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=PHzl_TkIcPE
 ========================================

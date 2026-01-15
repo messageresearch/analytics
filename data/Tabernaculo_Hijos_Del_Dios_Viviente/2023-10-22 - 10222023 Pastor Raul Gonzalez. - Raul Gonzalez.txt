@@ -8,7 +8,7 @@ Date:     2023-10-22
 Title:    10/22/2023 Pastor: Raul Gonzalez.
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 50m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=m7Uu4F8zS4I

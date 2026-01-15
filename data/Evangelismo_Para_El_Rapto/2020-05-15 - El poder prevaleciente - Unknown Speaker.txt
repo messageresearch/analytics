@@ -8,7 +8,7 @@ Date:     2020-05-15
 Title:    "El poder prevaleciente"
 Speaker: Unknown Speaker
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 51m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=N1ZUFXQrgEo

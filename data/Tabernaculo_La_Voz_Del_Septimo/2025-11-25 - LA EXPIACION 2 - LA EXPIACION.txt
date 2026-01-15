@@ -6,9 +6,9 @@ SERMON DETAILS
 ========================================
 Date:     2025-11-25
 Title:    LA EXPIACIÓN # 2
-Speaker:  LA EXPIACIÓN
+Speaker: LA EXPIACIÓN
 Church:   Tabernaculo La Voz Del Septimo
-Type:     Church Service
+Type:    Church Service
 Duration: 1h 50m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=jOC_q59k0Gw

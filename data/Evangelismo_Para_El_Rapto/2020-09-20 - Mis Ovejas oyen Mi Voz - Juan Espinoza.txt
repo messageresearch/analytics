@@ -8,7 +8,7 @@ Date:     2020-09-20
 Title:    "Mis Ovejas oyen Mi Voz"
 Speaker: Juan Espinoza
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 16m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=liJL-FV5mns

@@ -8,7 +8,7 @@ Date:     2017-09-17
 Title:    17-0917 Mocking Worship
 Speaker: Unknown Speaker
 Church:   Shekinah Tabernacle
-Type:    Church Service
+Type:    Worship Service
 Duration: 3h 3m
 Language: English
 URL:      https://www.youtube.com/watch?v=CfZbB24qisY

@@ -8,7 +8,7 @@ Date:    2021-08-04
 Title:   Warning Promise And Reward
 Speaker: Warning Promise And Reward
 Church:  Good Neighbour Ministries
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=yEUObzh2Dlc
 ========================================

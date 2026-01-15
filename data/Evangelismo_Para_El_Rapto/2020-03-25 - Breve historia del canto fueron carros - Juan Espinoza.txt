@@ -8,7 +8,7 @@ Date:     2020-03-25
 Title:    Breve historia del canto "fueron carros"
 Speaker: Juan Espinoza
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 5m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=LocF69v-V9k

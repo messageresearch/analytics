@@ -8,7 +8,7 @@ Date:     2023-12-11
 Title:    This Is Not It | Esto No Es Todo | Pastor Tito Moreira
 Speaker: Tito Moreira
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 42m
 Language: English
 URL:      https://www.youtube.com/watch?v=WslRe1qoeoo

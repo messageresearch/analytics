@@ -8,7 +8,7 @@ Date:     2022-09-09
 Title:    Servicio de Testimonios | Campamento Ponderosa 2022
 Speaker: Unknown Speaker
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Testimonies
 Duration: 2h 15m
 Language: English
 URL:      https://www.youtube.com/watch?v=gnGgunEOhNo

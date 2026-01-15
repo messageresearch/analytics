@@ -8,7 +8,7 @@ Date:    2018-03-01
 Title:   There The Eagles Will Gather
 Speaker: There The Eagles Will Gather
 Church:  Coleman Family Ministries
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=4Y92_BPCiCE
 ========================================

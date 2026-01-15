@@ -8,7 +8,7 @@ Date:    2020-06-29
 Title:   The Missing Ingredient
 Speaker: John Simon
 Church:  Good Neighbour Ministries
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=wY69SiWk5TM
 ========================================

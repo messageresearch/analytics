@@ -8,7 +8,7 @@ Date:     2023-04-24
 Title:    Predicador Invitado: Pastor Arturo Betancurt, Tabernaculo Zoe, El Paso Texas. Abril 23, 2023
 Speaker: Arturo Betancurt
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 36m
 Language: English
 URL:      https://www.youtube.com/watch?v=Xgm3Dle5T6Y

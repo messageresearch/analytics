@@ -8,7 +8,7 @@ Date:     2024-03-03
 Title:    03/03/2024 Pastor: Raul Gonzalez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 27m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=wdCmjsquMF4

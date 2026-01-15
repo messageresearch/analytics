@@ -8,7 +8,7 @@ Date:     2023-12-14
 Title:    Live Service | Pastor Tito Moreira
 Speaker: Tito Moreira
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 7m
 Language: English
 URL:      https://www.youtube.com/watch?v=IUHlCEJFiGw

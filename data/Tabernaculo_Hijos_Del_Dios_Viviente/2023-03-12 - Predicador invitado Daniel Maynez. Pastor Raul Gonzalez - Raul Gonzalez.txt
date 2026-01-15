@@ -8,7 +8,7 @@ Date:     2023-03-12
 Title:    Predicador invitado: Daniel Maynez. Pastor: Raul Gonzalez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 13m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=psb2lVgCTkA

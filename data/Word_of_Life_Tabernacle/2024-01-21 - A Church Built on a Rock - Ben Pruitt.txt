@@ -8,7 +8,7 @@ Date:     2024-01-21
 Title:    A Church Built on a Rock
 Speaker: Ben Pruitt
 Church:   Word of Life Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 41m
 Language: English
 URL:      https://www.youtube.com/watch?v=vgwc-YcoZ_c

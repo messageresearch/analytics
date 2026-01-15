@@ -8,7 +8,7 @@ Date:     2022-01-02
 Title:    Una Nueva Temporada En Mi Vida | Fidel Avila
 Speaker: Fidel Avila
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 56m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=YLxSxTrOo5o

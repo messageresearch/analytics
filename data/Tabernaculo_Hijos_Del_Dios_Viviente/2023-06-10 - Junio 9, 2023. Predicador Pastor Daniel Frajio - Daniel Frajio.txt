@@ -8,7 +8,7 @@ Date:     2023-06-10
 Title:    Junio 9, 2023. Predicador: Pastor Daniel Frajio
 Speaker: Daniel Frajio
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 26m
 Language: English
 URL:      https://www.youtube.com/watch?v=0oFJ-VBWZhk

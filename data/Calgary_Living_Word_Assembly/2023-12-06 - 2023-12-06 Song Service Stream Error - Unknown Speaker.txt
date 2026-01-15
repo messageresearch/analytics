@@ -8,7 +8,7 @@ Date:     2023-12-06
 Title:    2023-12-06 Song Service Stream Error
 Speaker: Unknown Speaker
 Church:   Calgary Living Word Assembly
-Type:    Church Service
+Type:    Song / Worship
 Duration: 20m
 Language: English
 URL:      https://www.youtube.com/watch?v=wPfAN9u9PU0

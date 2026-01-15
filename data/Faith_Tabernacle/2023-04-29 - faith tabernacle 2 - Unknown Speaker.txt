@@ -8,7 +8,7 @@ Date:     2023-04-29
 Title:    faith tabernacle 2
 Speaker: Unknown Speaker
 Church:   Faith Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 43m
 Language: English
 URL:      https://www.youtube.com/watch?v=npdlEUITzAk

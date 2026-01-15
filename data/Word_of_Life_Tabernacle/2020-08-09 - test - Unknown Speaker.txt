@@ -8,7 +8,7 @@ Date:     2020-08-09
 Title:    test
 Speaker: Unknown Speaker
 Church:   Word of Life Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 6m
 Language: English
 URL:      https://www.youtube.com/watch?v=6YRyiIztIT4

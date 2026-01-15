@@ -8,7 +8,7 @@ Date:     2025-09-21
 Title:    Made Manifest - Br. Donald Snow
 Speaker:  Donald Snow
 Church:   Calgary Living Word Assembly
-Type:     Testimony Service
+Type:    Church Service
 Duration: 3m
 Language: English
 URL:      https://www.youtube.com/watch?v=IV4_bmJlJlk

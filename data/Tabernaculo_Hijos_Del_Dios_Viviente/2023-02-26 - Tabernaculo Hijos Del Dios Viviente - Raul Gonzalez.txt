@@ -8,7 +8,7 @@ Date:     2023-02-26
 Title:    Tabernaculo Hijos Del Dios Viviente
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 29m
 Language: English
 URL:      https://www.youtube.com/watch?v=Ex1QtTlm438

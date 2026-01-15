@@ -8,7 +8,7 @@ Date:     2026-01-04
 Title:    Sunday PM Service | Phoenix Lighthouse Tabernacle
 Speaker: Unknown Speaker
 Church:   Phoenix Lighthouse Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 43m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=c0kDLrADAgQ

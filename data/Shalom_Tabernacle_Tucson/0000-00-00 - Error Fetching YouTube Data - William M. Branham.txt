@@ -8,7 +8,7 @@ Date:     0000-00-00
 Title:    Error Fetching YouTube Data
 Speaker: William M. Branham
 Church:   Shalom Tabernacle Tucson
-Type:    Church Service
+Type:    Tape Service
 Duration: 3h 14m
 Language: English
 URL:      https://www.youtube.com/watch?v=CFf2R3xSgpE

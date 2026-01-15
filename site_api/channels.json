@@ -224,7 +224,27 @@
   },
   "Tabernaculo La Voz Del Septimo": {
     "url": "https://www.youtube.com/@tabernaculolavozdelseptimo395",
-    "filename": "TabernaculoLaVozDelSeptimo.txt"
+    "filename": "TabernaculoLaVozDelSeptimo.txt",
+    "additional_channels": [
+      {
+        "url": "https://www.youtube.com/@yoelvelazco",
+        "name": "Yoel Velazco",
+        "filter": {
+          "require_any": ["Gilberto Olivarez", "TABERNACULO LA VOZ DEL SEPTIMO ANGEL"],
+          "match_in": ["title", "description"],
+          "case_insensitive": true
+        }
+      },
+      {
+        "url": "https://www.youtube.com/@dariok.s.745",
+        "name": "Dario K. S.",
+        "filter": {
+          "require_any": ["Gilberto Olivarez", "TABERNACULO LA VOZ DEL SEPTIMO ANGEL"],
+          "match_in": ["title", "description"],
+          "case_insensitive": true
+        }
+      }
+    ]
   },
   "Tabernaculo Obra Maestra": {
     "url": "https://www.youtube.com/@obramaestra5497",

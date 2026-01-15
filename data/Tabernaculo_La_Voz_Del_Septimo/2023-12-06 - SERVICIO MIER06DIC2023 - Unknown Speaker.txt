@@ -8,7 +8,7 @@ Date:     2023-12-06
 Title:    SERVICIO MIER/06/DIC/2023
 Speaker: Unknown Speaker
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 12m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=eijoBlswrzw

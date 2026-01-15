@@ -8,7 +8,7 @@ Date:     2023-03-05
 Title:    Mar 05, 2023 Pastor: Raul Gonzalez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 49m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=xLitkMJeTRo

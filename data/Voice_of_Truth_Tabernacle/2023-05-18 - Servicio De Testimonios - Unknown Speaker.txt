@@ -8,7 +8,7 @@ Date:     2023-05-18
 Title:    Servicio De Testimonios
 Speaker: Unknown Speaker
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Testimonies
 Duration: 1h 24m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=x-z1-6s8vKQ

@@ -8,7 +8,7 @@ Date:     2023-12-03
 Title:    12/03/2023 Pastor: Raul Gonzalez , Predicador Invitado: Hno. Sergio Hernandez
 Speaker: Sergio Hernandez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 23m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=9hlFp0yn4yo

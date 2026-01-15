@@ -8,7 +8,7 @@ Date:     2023-04-20
 Title:    4/19/22 Pastor: Raul Gonzalez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 46m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=UEb_L1t5ipM

@@ -8,7 +8,7 @@ Date:    2025-11-13
 Title:   This is the Evening time. It's later than we think
 Speaker: Daniel Fraijo
 Church:  Tabernaculo Obra Maestra
-Type:    Church Service
+Type:    Short Clip
 Language:Spanish
 URL:     https://www.youtube.com/watch?v=UiABGsjTTSM
 ========================================

@@ -8,7 +8,7 @@ Date:     2021-09-12
 Title:    TWT Live Stream 09/12/2021 Bro Nathan Erickson
 Speaker: Nathan Erickson
 Church:   True Word Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 50m
 Language: English
 URL:      https://www.youtube.com/watch?v=58bJL7VF-Z4

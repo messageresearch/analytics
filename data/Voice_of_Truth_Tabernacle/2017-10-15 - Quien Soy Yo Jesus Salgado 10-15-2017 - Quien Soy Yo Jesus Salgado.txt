@@ -8,7 +8,7 @@ Date:     2017-10-15
 Title:    Quien Soy Yo? | Jesus Salgado | 10-15-2017
 Speaker: Quien Soy Yo Jesus Salgado
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 45m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=b75GyZKB-qo

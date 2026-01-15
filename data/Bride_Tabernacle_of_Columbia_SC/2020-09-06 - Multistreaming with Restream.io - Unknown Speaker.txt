@@ -8,7 +8,7 @@ Date:    2020-09-06
 Title:   Multistreaming with Restream.io
 Speaker: Unknown Speaker
 Church:  Bride Tabernacle of Columbia SC
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=sd-GufuJmgU
 ========================================

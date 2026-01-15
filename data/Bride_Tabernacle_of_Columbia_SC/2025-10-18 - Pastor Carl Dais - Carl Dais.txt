@@ -8,7 +8,7 @@ Date:    2025-10-18
 Title:   Pastor Carl Dais
 Speaker: Carl Dais
 Church:  Bride Tabernacle of Columbia SC
-Type:    Church Service
+Type:    Sunday School
 Language:English
 URL:     https://www.youtube.com/watch?v=rFuidJtjR8I
 ========================================

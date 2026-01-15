@@ -8,7 +8,7 @@ Date:     2021-01-17
 Title:    Yo Soy el Camino | Jose Eliezer Hernandez
 Speaker: Eliezer Hernandez
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 32m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=v7-yxQv6fJ0

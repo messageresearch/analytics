@@ -8,7 +8,7 @@ Date:    2021-06-09
 Title:   Balaam's Trick
 Speaker: John Simon
 Church:  Good Neighbour Ministries
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=hQ88A0NapOI
 ========================================

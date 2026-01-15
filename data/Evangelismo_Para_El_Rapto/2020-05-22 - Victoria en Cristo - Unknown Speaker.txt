@@ -8,7 +8,7 @@ Date:     2020-05-22
 Title:    "Victoria en Cristo"
 Speaker: Unknown Speaker
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 3m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=fVfq-ATBc1k

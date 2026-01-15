@@ -8,7 +8,7 @@ Date:     2022-05-12
 Title:    El Templo de Dios | Eliezer Hernandez
 Speaker: Eliezer Hernandez
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 25m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=hkX3GLl1Ihk

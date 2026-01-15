@@ -8,7 +8,7 @@ Date:     2023-12-01
 Title:    Y Su Nombre Fue Juan | Diego Moreno, Isaak Moreno & Gustavo Avila
 Speaker: Y Su Nombre Fue Juan
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 2h 4m
 Language: English
 URL:      https://www.youtube.com/watch?v=9knclZMiS9s

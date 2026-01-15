@@ -8,7 +8,7 @@ Date:     2023-11-24
 Title:    SERVICIO DOM./12/NOV./2023/P.M.
 Speaker: Unknown Speaker
 Church:   Tabernaculo La Voz Del Septimo
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 13m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=JL2a05e23DM

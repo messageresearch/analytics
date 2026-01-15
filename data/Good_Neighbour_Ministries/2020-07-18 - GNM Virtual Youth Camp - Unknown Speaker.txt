@@ -8,7 +8,7 @@ Date:    2020-07-18
 Title:   GNM Virtual Youth Camp
 Speaker: Unknown Speaker
 Church:  Good Neighbour Ministries
-Type:    Youth Camp
+Type:    Youth Service
 Language:English
 URL:     https://www.youtube.com/watch?v=0863tEYd1bM
 ========================================

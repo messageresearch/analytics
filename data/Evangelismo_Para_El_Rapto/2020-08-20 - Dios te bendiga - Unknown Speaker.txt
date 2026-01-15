@@ -8,7 +8,7 @@ Date:     2020-08-20
 Title:    "Dios te bendiga"
 Speaker: Unknown Speaker
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 2m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=MkhY0feD6LA

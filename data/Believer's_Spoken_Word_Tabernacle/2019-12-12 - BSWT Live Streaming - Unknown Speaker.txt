@@ -8,7 +8,7 @@ Date:     2019-12-12
 Title:    BSWT Live Streaming
 Speaker: Unknown Speaker
 Church:   Believer's Spoken Word Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 44m
 Language: English
 URL:      https://www.youtube.com/watch?v=mDONyJ1Vik8

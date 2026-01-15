@@ -8,7 +8,7 @@ Date:     2020-04-29
 Title:    "En toda fuerza" juan espinoza jr
 Speaker: Juan Espinoza JR
 Church:   Evangelismo Para El Rapto
-Type:    Church Service
+Type:    Short Clip
 Duration: 3m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=vVzXAyD_KIU

@@ -191,6 +191,44 @@ INVALID_NAME_TERMS = {
     "jericho", "kingdoms", "maturity", "overcomers", "preocupado", "preparation", 
     "sardis", "selahammahlekoth", "shalom", "testify", "thirst", "solomon", "esthers",
     "familiarity breeds contempt", "the return", "de los echos", "de los hechos",
+    # Round 9 Deep Audit - Single Word False Positives (titles misdetected as speakers)
+    "perfect", "esther", "mamelodi", "headstone", "fourth", "divine", "complete",
+    "inheritance", "demonology", "congregational", "admiration", "adoption", "announcement",
+    "assurance", "bitterness", "commitment", "communion", "conducted", "connection",
+    "conviction", "dedication", "deliverance", "demonstration", "dependence", "determination",
+    "devotion", "direction", "discernment", "dominion", "elevation", "encouragement",
+    "endowment", "engagement", "enlightenment", "establishment", "examination", "expectation",
+    "expression", "extension", "extraction", "formation", "foundation", "generation",
+    "glorification", "graduation", "habitation", "identification", "illumination", "imitation",
+    "impartation", "implementation", "implication", "incarnation", "inclination", "indication",
+    "infiltration", "information", "inhabitation", "initiation", "innovation", "inspiration",
+    "installation", "instruction", "integration", "intensification", "intercession", "interpretation",
+    "intervention", "introduction", "investigation", "invitation", "irrigation", "isolation",
+    "jubilation", "justification", "lamentation", "liberation", "limitation", "location",
+    "manifestation", "meditation", "memorization", "ministration", "modification", "motivation",
+    "multiplication", "navigation", "negotiation", "observation", "occupation", "operation",
+    "opposition", "ordination", "orientation", "origination", "participation", "penetration",
+    "perception", "perfection", "persecution", "petition", "population", "position",
+    "possession", "predestination", "prediction", "preparation", "presentation", "preservation",
+    "proclamation", "progression", "prohibition", "projection", "promotion", "pronunciation",
+    "proportion", "proposition", "protection", "provocation", "publication", "qualification",
+    "quotation", "realization", "recitation", "recognition", "recommendation", "reconciliation",
+    "recreation", "redemption", "reflection", "reformation", "regeneration", "regulation",
+    "reincarnation", "rejection", "relation", "relaxation", "relocation", "renovation",
+    "repetition", "representation", "reproduction", "reputation", "reservation", "resignation",
+    "resolution", "restoration", "restriction", "resurrection", "retaliation", "revelation",
+    "revolution", "sanctification", "satisfaction", "separation", "simplification", "situation",
+    "specification", "speculation", "stabilization", "stimulation", "stipulation", "submission",
+    "substitution", "supplication", "supposition", "suspension", "temptation", "termination",
+    "transformation", "translation", "transportation", "tribulation", "unification", "validation",
+    "verification", "vindication", "visitation", "vocalization",
+    # Round 9 - Time/Service patterns as single words
+    "monday", "tuesday", "thursday", "friday", "saturday",
+    # Round 9 - Common title words that appear as single-word speakers
+    "token", "seals", "breach", "stature", "shuck", "heir", "anointed", "attraction",
+    "paradox", "parallel", "masterpiece", "unwrapped", "uncentered", "unglazed", "unwaxed",
+    "sonlit", "brilliant", "resolving", "deformation", "conducted", "composed", "performed",
+    "magnum", "opus", "resonance", "graceshame", "lifexdeath", "musics", "movement",
 }
 
 SONG_TITLES = {
@@ -213,7 +251,20 @@ SONG_TITLES = {
 
 CATEGORY_TITLES = {
     "Testimonies", "Prayer Meeting", "Worship Night", "Prayer Bible Study",
-    "New Years Day Items", "Picture Slideshow", "Church Service"
+    "New Years Day Items", "Picture Slideshow", "Church Service",
+    # Time-based patterns that get detected as speakers
+    "Sunday Morning", "Sunday Evening", "Sunday Night", "Sunday Service",
+    "Monday Morning", "Monday Evening", "Monday Night", "Monday Service",
+    "Tuesday Morning", "Tuesday Evening", "Tuesday Night", "Tuesday Service",
+    "Wednesday Morning", "Wednesday Evening", "Wednesday Night", "Wednesday Service",
+    "Thursday Morning", "Thursday Evening", "Thursday Night", "Thursday Service",
+    "Friday Morning", "Friday Evening", "Friday Night", "Friday Service",
+    "Saturday Morning", "Saturday Evening", "Saturday Night", "Saturday Service",
+    "Sunday Morning Service", "Wednesday Evening Service", "Friday Evening Service",
+    "Communion Service", "Youth Service", "Baptismal Service", "Deliverance Service",
+    "Prayer Service", "Worship Service", "Memorial Service", "Dedication Service",
+    # Single words that are categories, not speakers
+    "Congregation", "Congregational", "Choir", "Childrens",
 }
 
 # --- MASTER CSV GENERATION ---
@@ -484,8 +535,8 @@ KNOWN_SPEAKERS_MAP = {
 
 # Common honorific prefixes used in sermon titles
 HONORIFICS = [
-    r'Bro\.?', r'Brother', r'Sis\.?', r'Sister', r'Pastor', r'Pr\.?', r'Rev\.?', 
-    r'Reverend', r'Elder', r'Deacon', r'Minister', r'Dr\.?', r'Bishop', 
+    r'Bro\.?', r'Brother', r'Sis\.?', r'Sister', r'Pastor', r'Pr\.?', r'Rev\.?',
+    r'Reverend', r'Elder', r'Deacon', r'Minister', r'Min\.?', r'Dr\.?', r'Bishop',
     r'Apostle', r'Evangelist', r'Prophet', r'Hno\.?', r'Hermano', r'Hermana',
     r'Founder', r'Associate\s+Pastor', r'Ministering', r'Ministered\s+by',
     r'Br\.?', r'Sr\.?', r'Ptr\.?', r'Pst\.?', r'Past\.?', r'Founding\s+Pastor',
@@ -1280,6 +1331,59 @@ def normalize_speaker(speaker, title=""):
     if re.match(r'^Dan\s+Evans$', speaker, re.IGNORECASE): return 'Daniel Evans'
     if re.match(r'^Faustin\s+Luk', speaker, re.IGNORECASE): return 'Faustin Lukumuena'
 
+    # --- ROUND 9 AUDIT ADDITIONS ---
+
+    # Fix incomplete names
+    if re.match(r'^H\s+Simmons$', speaker, re.IGNORECASE): return 'Henry Simmons'
+    if re.match(r'^William\s+Marrion$', speaker, re.IGNORECASE): return 'Unknown Speaker'  # Incomplete Branham
+    if re.match(r'^Apostle\s+Bernie$', speaker, re.IGNORECASE): return 'Unknown Speaker'  # Incomplete - need full name
+    if re.match(r'^de\s+la$', speaker, re.IGNORECASE): return 'Unknown Speaker'  # Fragment
+
+    # Block time-based patterns
+    if re.match(r'^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\s+(Morning|Evening|Night|Service)', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
+    # Block single words that are clearly titles
+    single_word_titles = {
+        'perfect', 'esther', 'mamelodi', 'headstone', 'fourth', 'divine', 'complete',
+        'inheritance', 'demonology', 'congregational', 'congregation', 'choir', 'childrens',
+        'thomas', 'coleman', 'steven', 'bernie', 'william', 'daniel', 'abraham',
+        'anthony', 'joseph', 'ronnie', 'brooks', 'joshua', 'emmanuel', 'carlos', 'faustin',
+        'conducted', 'composed', 'performed', 'graceshame', 'lifexdeath', 'musics', 'movement',
+        'token', 'seals', 'breach', 'stature', 'shuck', 'heir', 'anointed', 'attraction',
+        'paradox', 'parallel', 'masterpiece', 'unwrapped', 'uncentered', 'unglazed', 'unwaxed',
+        'sonlit', 'brilliant', 'resolving', 'deformation', 'magnum', 'opus', 'resonance',
+    }
+    if re.match(r'^[A-Z][a-z]+$', speaker):
+        if speaker.lower() in single_word_titles:
+            return "Unknown Speaker"
+
+    # Block speakers starting with articles (sermon titles)
+    if re.match(r'^(The|A|An)\s+[A-Z]', speaker):
+        return "Unknown Speaker"
+
+    # Block speakers containing Part/Pt numbers
+    if re.search(r'\b(Pt\.?|Part)\s*\d', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
+    # Block speakers with 4+ digit numbers (dates, codes)
+    if re.search(r'\d{4,}', speaker):
+        return "Unknown Speaker"
+
+    # Block speakers with parentheses
+    if '(' in speaker or ')' in speaker:
+        return "Unknown Speaker"
+
+    # Block speakers starting with numbers
+    if re.match(r'^\d', speaker):
+        return "Unknown Speaker"
+
+    # Block gerund + preposition patterns
+    if re.match(r'^[A-Z][a-z]+ing\s+(The|In|To|Of|With|On|A|An|For|At|By)\s+', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
+    # --- END ROUND 9 AUDIT ADDITIONS ---
+
     # Chad Lamb contamination fix
     # Examples (bad): "Chad Lamb Access", "Chad Lamb Discernment", ...
     # Canonical (good): "Chad Lamb"
@@ -1766,7 +1870,47 @@ def is_valid_person_name(text, title=""):
     # CRITICAL: Reject dates using broad patterns
     if re.search(r'\b(?:january|february|march|april|may|june|july|august|september|october|november|december)\b', t_lower):
         return False
-    
+
+    # --- ROUND 9 AUDIT ADDITIONS ---
+
+    # Reject time-based patterns (Sunday Morning, Wednesday Evening, etc.)
+    if re.match(r'^(sunday|monday|tuesday|wednesday|thursday|friday|saturday)\s+(morning|evening|night|service)', t_lower):
+        return False
+
+    # Reject single words that are in CATEGORY_TITLES
+    if text in CATEGORY_TITLES or text.title() in CATEGORY_TITLES:
+        return False
+
+    # Reject Part/Pt numbers (sermon series)
+    if re.search(r'\b(pt\.?|part)\s*\d', t_lower):
+        return False
+
+    # Reject speakers starting with articles (sermon titles)
+    if re.match(r'^(the|a|an)\s+', t_lower):
+        return False
+
+    # Reject gerund + preposition patterns (sermon titles)
+    if re.match(r'^[a-z]+ing\s+(the|in|to|of|with|on|a|an|for|at|by)\s+', t_lower):
+        return False
+
+    # Reject "X Of Y" patterns (sermon titles) unless it looks like a name
+    if re.search(r'\s+of\s+[a-z]', t_lower):
+        words = text.split()
+        # Allow "Juan Carlos of Mexico" style but reject "Token Of Life"
+        if len(words) < 2 or words[0].lower() in INVALID_NAME_TERMS:
+            return False
+
+    # Reject speakers with parentheses
+    if '(' in text or ')' in text:
+        return False
+
+    # Reject incomplete/fragment names
+    incomplete_names = {'de la', 'william marrion', 'h simmons', 'apostle bernie'}
+    if t_lower in incomplete_names:
+        return False
+
+    # --- END ROUND 9 AUDIT ADDITIONS ---
+
     # Check invalid terms
     text_words = t_lower.split()
     for word in text_words:
@@ -2096,8 +2240,20 @@ def heal_archive(data_dir, force=False, churches=None):
             is_song = False
             if os.path.exists(old_filepath):
                 is_song = analyze_content_for_song(old_filepath)
-                
-            if is_song:
+
+            # Exclude certain titles from Song / Worship classification even if content looks song-like
+            # These are services that may have short musical segments but aren't primarily songs
+            title_lower = original_title.lower()
+            song_exclusion_patterns = [
+                "live service", "sermon clip", "homegoing", "home going",
+                "memorial", "funeral", "dedication service", "baptism", "communion",
+                "wedding", "tribute", "testimony", "testimonies",
+                "youth camp", "youth retreat", "tent revival", "convention", "conference",
+                "bethel stream", "live stream"
+            ]
+            is_excluded_from_song = any(pattern in title_lower for pattern in song_exclusion_patterns)
+
+            if is_song and not is_excluded_from_song:
                 new_type = "Song / Worship"
             elif "choir" in new_speaker.lower():
                 new_type = "Choir"
@@ -2131,9 +2287,14 @@ def heal_archive(data_dir, force=False, churches=None):
                     except: pass
                 
                 description = row.get('description', '')
-                text_to_search = (original_title + " " + description).lower()
-                
-                recalc_type = determine_video_type(original_title, duration_minutes, new_speaker, text_to_search)
+
+                # Create a mock object with duration for determine_video_type
+                class MockYT:
+                    def __init__(self, dur_min):
+                        self.length = dur_min * 60 if dur_min else 0
+                mock_yt = MockYT(duration_minutes) if duration_minutes else None
+
+                recalc_type = determine_video_type(original_title, new_speaker, None, mock_yt, description)
                 
                 # Logic to preserve manual "Short Clip" if we don't know duration
                 if recalc_type == "Church Service" and duration_minutes == 0:
@@ -3239,9 +3400,14 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
                         orig_title = row.get('title', '').strip()
                         orig_speaker = row.get('speaker', '').strip()
                         desc = row.get('description', '')
-                        text_search = (orig_title + " " + desc).lower()
-                        
-                        recalc_type = determine_video_type(orig_title, duration_minutes, orig_speaker, text_search)
+
+                        # Create a mock object with duration for determine_video_type
+                        class MockYT:
+                            def __init__(self, dur_min):
+                                self.length = dur_min * 60 if dur_min else 0
+                        mock_yt = MockYT(duration_minutes) if duration_minutes else None
+
+                        recalc_type = determine_video_type(orig_title, orig_speaker, None, mock_yt, desc)
                         
                         # Apply specific logic overrides
                         new_type = orig_type
@@ -4464,7 +4630,77 @@ def final_validation(speaker, title=""):
     for pattern in bad_patterns:
         if re.search(pattern, speaker, re.IGNORECASE):
             return "Unknown Speaker"
-    
+
+    # --- ROUND 9 AUDIT ADDITIONS ---
+
+    # Block speakers starting with articles (The, A, An) - these are sermon titles
+    if re.match(r'^(The|A|An)\s+[A-Z]', speaker):
+        return "Unknown Speaker"
+
+    # Block speakers containing Part/Pt numbers - these are sermon series
+    if re.search(r'\b(Pt\.?|Part)\s*\d', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
+    # Block speakers containing 4+ digit numbers (dates, sermon codes)
+    if re.search(r'\d{4,}', speaker):
+        return "Unknown Speaker"
+
+    # Block speakers with parentheses (usually sermon details)
+    if '(' in speaker or ')' in speaker:
+        return "Unknown Speaker"
+
+    # Block gerund + preposition/article patterns (sermon title patterns)
+    if re.match(r'^[A-Z][a-z]+ing\s+(The|In|To|Of|With|On|A|An|For|At|By)\s+', speaker, re.IGNORECASE):
+        return "Unknown Speaker"
+
+    # Block "X Of Y" patterns that are clearly sermon titles (not names like "Son of Man")
+    if re.search(r'\s+Of\s+[A-Z][a-z]+', speaker) and not re.match(r'^[A-Z][a-z]+\s+[A-Z][a-z]+\s+Of\s+', speaker):
+        # Exception: allow "X of Y" only if first two words look like a name
+        words = speaker.split()
+        if len(words) < 2 or words[0].lower() in INVALID_NAME_TERMS:
+            return "Unknown Speaker"
+
+    # Block single-word speakers that match INVALID_NAME_TERMS
+    if re.match(r'^[A-Z][a-z]+$', speaker):
+        if speaker.lower() in INVALID_NAME_TERMS:
+            return "Unknown Speaker"
+
+    # Block speakers that match CATEGORY_TITLES exactly
+    if speaker in CATEGORY_TITLES or speaker.title() in CATEGORY_TITLES:
+        return "Unknown Speaker"
+
+    # Block speakers starting with numbers
+    if re.match(r'^\d', speaker):
+        return "Unknown Speaker"
+
+    # Block incomplete/fragment names
+    incomplete_names = {'de la', 'William Marrion', 'H Simmons', 'Apostle Bernie'}
+    if speaker in incomplete_names:
+        return "Unknown Speaker"
+
+    # Block "Name Name The Title" patterns (sermon title attached to speaker name)
+    if re.search(r'^[A-Z][a-z]+\s+[A-Z][a-z]+\s+The\s+[A-Z]', speaker):
+        return "Unknown Speaker"
+
+    # Block "Name Name + Title Words" patterns (e.g., "Chad Lamb Religion Versus Relationship")
+    title_indicators = ['Religion', 'Versus', 'Relationship', 'Discerning', 'Unexpected', 'Fulfillment',
+                        'Seven', 'Seals', 'True', 'Pride', 'Token', 'Tape', 'Visions', 'Tactics',
+                        'Power', 'Gene', 'Arrow', 'Attitude', 'Importance', 'Promise', 'Hands',
+                        'Severity', 'Understanding', 'Deceived']
+    for indicator in title_indicators:
+        if re.search(r'^[A-Z][a-z]+\s+[A-Z][a-z]+\s+' + indicator + r'\b', speaker, re.I):
+            return "Unknown Speaker"
+
+    # Block patterns ending with "Of Something" that look like sermon titles
+    if re.search(r"'s\s+[A-Z][a-z]+\s+Of\s+", speaker):  # "God's Arrow Of"
+        return "Unknown Speaker"
+    if re.search(r'^[A-Z][a-z]+\s+Of\s+[A-Z][a-z]+$', speaker):  # "Attitude Of Love"
+        return "Unknown Speaker"
+    if re.search(r'Of\s+[A-Z][a-z]+$', speaker) and len(speaker.split()) > 3:  # Long "X Of Y" patterns
+        return "Unknown Speaker"
+
+    # --- END ROUND 9 AUDIT ADDITIONS ---
+
     # Apply normalization
     speaker_norm = normalize_speaker(speaker, title)
     speaker = speaker_norm
@@ -4890,7 +5126,7 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
         return "Communion Service"
     
     # Youth/Children's Programs
-    if any(term in text_to_search for term in ["youth camp", "youth service", "youth meeting"]):
+    if any(term in text_to_search for term in ["youth camp", "youth service", "youth meeting", "youth program", "youth panel", "youth skit", "youth retreat", "youth bible", "youth concert"]):
         return "Youth Service"
     if any(term in text_to_search for term in ["sunday school", "children's", "childrens"]) or ("kids" in title_lower):
         return "Sunday School"
@@ -4905,8 +5141,8 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     if "new year" in text_to_search:
         return "New Year Service"
     
-    # Convention/Camp Meeting
-    if any(term in text_to_search for term in ["convention", "camp meeting", "campmeeting"]):
+    # Convention/Camp Meeting/Conference
+    if any(term in text_to_search for term in ["convention", "conference", "camp meeting", "campmeeting"]):
         return "Convention"
     
     # Prayer Meeting/Bible Study
@@ -4920,8 +5156,8 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     if any(term in text_to_search for term in ["q&a", "q & a", "questions and answers", "question and answer"]):
         return "Q&A Session"
     
-    # Testimony Service
-    if any(term in text_to_search for term in ["testimony", "testimonies"]):
+    # Testimony Service (English and Spanish)
+    if any(term in text_to_search for term in ["testimony", "testimonies", "testimonio", "testimonios", "testimonial"]):
         return "Testimonies"
     
     # Sermon Clip
@@ -4931,7 +5167,11 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     # Song Special - explicit title/description match first
     if any(term in text_to_search for term in ["song special", "special song"]):
         return "Song Special"
-    
+
+    # Song / Worship - explicit song service or medley patterns
+    if any(term in text_to_search for term in ["song service", "praise medley", "worship medley", "singing service", "praise service"]):
+        return "Song / Worship"
+
     # Worship Service - explicit title/description match
     if "worship service" in text_to_search:
         return "Worship Service"

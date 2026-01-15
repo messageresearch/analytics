@@ -8,7 +8,7 @@ Date:     2025-12-31
 Title:    12/31/2025 Servicio de fin de Año Predicador:Hno Godsway Akpabli 
 Speaker: Godsway Akpabli
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 57m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=khuDFECUrvM

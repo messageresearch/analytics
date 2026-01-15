@@ -8,7 +8,7 @@ Date:    2023-09-04
 Title:   Obra Maestra Live Stream
 Speaker: Unknown Speaker
 Church:  Tabernaculo Obra Maestra
-Type:    Church Service
+Type:    Short Clip
 Language:English
 URL:     https://www.youtube.com/watch?v=8uH36pyW-gY
 ========================================

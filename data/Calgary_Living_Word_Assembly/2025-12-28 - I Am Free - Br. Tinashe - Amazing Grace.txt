@@ -8,7 +8,7 @@ Date:     2025-12-28
 Title:    I Am Free - Br. Tinashe
 Speaker:  Amazing Grace
 Church:   Calgary Living Word Assembly
-Type:     Song Special
+Type:    Church Service
 Duration: 7m
 Language: English
 URL:      https://www.youtube.com/watch?v=bkt3Xr7JJwo

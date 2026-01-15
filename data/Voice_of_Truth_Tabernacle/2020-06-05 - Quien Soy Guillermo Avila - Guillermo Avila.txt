@@ -8,7 +8,7 @@ Date:     2020-06-05
 Title:    Quien Soy? | Guillermo Avila
 Speaker: Guillermo Avila
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 2h 5m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=XjXoYULKaJw

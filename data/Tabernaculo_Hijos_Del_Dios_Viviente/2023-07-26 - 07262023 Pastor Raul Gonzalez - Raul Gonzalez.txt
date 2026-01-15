@@ -8,7 +8,7 @@ Date:     2023-07-26
 Title:    07/26/2023 Pastor: Raul Gonzalez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 15m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=oRKq2vGbnB8

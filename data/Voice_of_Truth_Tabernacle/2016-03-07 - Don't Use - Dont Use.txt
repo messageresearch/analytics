@@ -8,7 +8,7 @@ Date:     2016-03-07
 Title:    Don't Use
 Speaker: Dont Use
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 11m
 Language: English
 URL:      https://www.youtube.com/watch?v=EkFNEIx9hlQ

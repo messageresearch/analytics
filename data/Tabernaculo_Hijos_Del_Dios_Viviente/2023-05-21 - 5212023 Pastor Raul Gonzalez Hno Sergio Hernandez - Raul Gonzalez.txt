@@ -8,7 +8,7 @@ Date:     2023-05-21
 Title:    5/21/2023 Pastor: Raul Gonzalez Hno: Sergio Hernandez
 Speaker: Raul Gonzalez
 Church:   Tabernaculo Hijos Del Dios Viviente
-Type:    Church Service
+Type:    Short Clip
 Duration: 34m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=x3Qm6e1ZeNY

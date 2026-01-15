@@ -8,7 +8,7 @@ Date:     2021-12-12
 Title:    Promesas Rotas | Guillermo Avila
 Speaker: Guillermo Avila
 Church:   Voice of Truth Tabernacle
-Type:    Church Service
+Type:    Short Clip
 Duration: 1h 40m
 Language: Spanish
 URL:      https://www.youtube.com/watch?v=H6YINjPip4A
