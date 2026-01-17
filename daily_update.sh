@@ -175,11 +175,11 @@ echo ""
 if [ "$SKIP_SCRAPE" = true ]; then
     log "Step 1b/7: Skipping retry (--skip-scrape)"
 else
-    log "Step 1b/7: Retrying videos with missing transcripts..."
+    log "Step 1b/7: Retrying videos with missing transcripts (last $DAYS days)..."
     if [ "$DRY_RUN" = true ]; then
-        log "  [DRY RUN] Would run: python3 update_sermons.py --retry-no-transcript"
+        log "  [DRY RUN] Would run: python3 update_sermons.py --retry-no-transcript --days $DAYS"
     else
-        if python3 update_sermons.py --retry-no-transcript 2>&1 | tee -a "$LOG_FILE"; then
+        if python3 update_sermons.py --retry-no-transcript --days "$DAYS" 2>&1 | tee -a "$LOG_FILE"; then
             log_success "Step 1b.1 complete: Transcript retry finished"
         else
             log_warning "Step 1b.1: Transcript retry had issues (non-fatal)"

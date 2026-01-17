@@ -7810,7 +7810,10 @@ def main():
         # Handle --retry-no-transcript mode (only retry videos marked "No Transcript")
         if args.retry_no_transcript:
             print("\\n" + "="*60)
-            print("🔁 RETRY NO TRANSCRIPT: Re-checking videos without transcripts")
+            if args.days:
+                print(f"🔁 RETRY NO TRANSCRIPT: Re-checking videos without transcripts (last {args.days} days)")
+            else:
+                print("🔁 RETRY NO TRANSCRIPT: Re-checking videos without transcripts (ALL TIME)")
             print("="*60)
             speakers_before_set = load_json_file(SPEAKERS_FILE)
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
@@ -7827,7 +7830,7 @@ def main():
                     print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
                     print("   Remaining churches will be processed on next run.")
                     break
-                channel_stats = process_channel(name, config, known_speakers, limit=args.limit, retry_no_transcript_only=True)
+                channel_stats = process_channel(name, config, known_speakers, limit=args.limit, days_back=args.days, retry_no_transcript_only=True)
                 completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
