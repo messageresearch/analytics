@@ -1,0 +1,28 @@
+[0;34m[2026-01-15 17:52:54][0m ==============================================
+[0;34m[2026-01-15 17:52:54][0m   Daily Update Started
+[0;34m[2026-01-15 17:52:54][0m ==============================================
+[0;34m[2026-01-15 17:52:54][0m Working directory: /Users/johncalvo/github/messageresearch_analytics
+[0;34m[2026-01-15 17:52:54][0m Log file: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260115_175254.log
+[0;34m[2026-01-15 17:52:54][0m Days to look back: 7
+[0;34m[2026-01-15 17:52:54][0m Dry run: true
+[0;34m[2026-01-15 17:52:54][0m Step 1a/7: Scraping new videos from last 7 days...
+[0;34m[2026-01-15 17:52:54][0m   [DRY RUN] Would run: python3 update_sermons.py --days 7
+[0;34m[2026-01-15 17:52:54][0m Step 1b/7: Retrying videos with missing transcripts...
+[0;34m[2026-01-15 17:52:54][0m   [DRY RUN] Would run: python3 update_sermons.py --retry-no-transcript
+[0;34m[2026-01-15 17:52:54][0m Step 1b/7: Fixing corrupt/missing metadata...
+[0;34m[2026-01-15 17:52:54][0m   [DRY RUN] Would run: python3 update_sermons.py --fix-corrupt
+[0;34m[2026-01-15 17:52:54][0m Step 2/7: Generating site data...
+[0;34m[2026-01-15 17:52:54][0m   [DRY RUN] Would run: python3 generate_site_data.py
+[0;34m[2026-01-15 17:52:54][0m Step 3/7: Uploading to R2...
+[0;34m[2026-01-15 17:52:54][0m   [DRY RUN] Would run: ./sync_to_r2.sh
+[0;34m[2026-01-15 17:52:54][0m Step 4/7: Building site...
+[0;34m[2026-01-15 17:52:55][0m   [DRY RUN] Would run: npm run build:gh
+[0;34m[2026-01-15 17:52:55][0m Step 5/7: Validating filenames...
+[0;34m[2026-01-15 17:52:55][0m   [DRY RUN] Would run: python3 validate_filenames.py
+[0;34m[2026-01-15 17:52:55][0m Step 6/7: Checking for changes to commit...
+[0;34m[2026-01-15 17:52:55][0m   [DRY RUN] Would check git status and commit if changes exist
+[0;34m[2026-01-15 17:52:55][0m ==============================================
+[0;32m[2026-01-15 17:52:55]   Daily Update Complete![0m
+[0;34m[2026-01-15 17:52:55][0m ==============================================
+[0;34m[2026-01-15 17:52:55][0m Total time: 0m 1s
+[0;34m[2026-01-15 17:52:55][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260115_175254.log

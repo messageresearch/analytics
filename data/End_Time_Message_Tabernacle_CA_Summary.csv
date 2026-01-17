@@ -1,13 +1,13 @@
-date,status,speaker,title,url,last_checked,language,type,description,duration,church
-2023-07-30,Success,Unknown Speaker,23-0730AM,https://www.youtube.com/watch?v=8hqebux37Lo,2026-01-12,Unknown,Church Service,,211,End Time Message Tabernacle CA
-2023-07-29,Success,Unknown Speaker,23-0729PM,https://www.youtube.com/watch?v=ABae2SSCLy0,2026-01-12,Unknown,Church Service,,313,End Time Message Tabernacle CA
-2023-07-29,Success,Unknown Speaker,23-0729YP,https://www.youtube.com/watch?v=HclagHnQbPE,2026-01-12,Unknown,Church Service,,163,End Time Message Tabernacle CA
-2023-07-28,Success,Unknown Speaker,23-0728PM,https://www.youtube.com/watch?v=Ofws6ZBHm_o,2026-01-12,Unknown,Church Service,,225,End Time Message Tabernacle CA
-2023-07-27,No Transcript,Nathan Erickson,23-0727PM - It's Not Robbery - Bro. Nathan Erickson,https://www.youtube.com/watch?v=81TdJ_VbuRo,2026-01-04,Unknown,Church Service,"Thursday, July 27, 2023 pm",194,End Time Message Tabernacle CA
-2023-05-01,Success,Lester Roloff,Dr. Law & Dr. Grace,https://www.youtube.com/watch?v=AnhDo_vgvh8,2026-01-04,English,Church Service,A theatrical presentation of Dr. Law & Dr. Grace Adapted from the sermon by evangelist Lester Roloff,173,End Time Message Tabernacle CA
-2022-07-31,Success,Unknown Speaker,22-0731PM,https://www.youtube.com/watch?v=dlhnbJl8LQc,2026-01-12,Unknown,Church Service,,261,End Time Message Tabernacle CA
-2022-07-31,Success,Unknown Speaker,22-0731AM,https://www.youtube.com/watch?v=RnZibd4zEQo,2026-01-12,Unknown,Church Service,,273,End Time Message Tabernacle CA
-2022-07-30,Success,Unknown Speaker,22-0730PM,https://www.youtube.com/watch?v=MaSpU2q0H78,2026-01-12,Unknown,Church Service,,247,End Time Message Tabernacle CA
-2022-07-30,Success,Unknown Speaker,22-0730YP,https://www.youtube.com/watch?v=S2x6aMgvQls,2026-01-12,Unknown,Church Service,,152,End Time Message Tabernacle CA
-2022-07-29,Success,Unknown Speaker,22-0729PM,https://www.youtube.com/watch?v=dftCnbjmu3M,2026-01-12,Unknown,Church Service,,227,End Time Message Tabernacle CA
-2022-07-28,Success,Unknown Speaker,22-0728PM,https://www.youtube.com/watch?v=0jRiNnWUAJs,2026-01-12,Unknown,Church Service,,201,End Time Message Tabernacle CA
+date,status,speaker,title,url,last_checked,language,type,description,duration,church,first_scraped,video_status,video_removed_date
+2023-07-27,No Transcript,Nathan Erickson,23-0727PM - It's Not Robbery - Bro. Nathan Erickson,https://www.youtube.com/watch?v=81TdJ_VbuRo,2026-01-16,Unknown,Church Service,"Thursday, July 27, 2023 pm",194,End Time Message Tabernacle CA,2026-01-16,available,
+2023-07-30,Success,The Secret of His Coming,23-0730AM,https://www.youtube.com/watch?v=8hqebux37Lo,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2023-07-29,Success,Authority to Destroy Satan's Works Pt.2,23-0729PM,https://www.youtube.com/watch?v=ABae2SSCLy0,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2023-07-29,Success,God’s Economy,23-0729YP,https://www.youtube.com/watch?v=HclagHnQbPE,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2023-07-28,Success,Authority to Destroy Satan's Works,23-0728PM,https://www.youtube.com/watch?v=Ofws6ZBHm_o,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2023-05-01,Success,Lester Roloff,Dr. Law & Dr. Grace,https://www.youtube.com/watch?v=AnhDo_vgvh8,2026-01-04,English,Church Service,A theatrical presentation of Dr. Law & Dr. Grace Adapted from the sermon by evangelist Lester Roloff,173.0,End Time Message Tabernacle CA,2026-01-04,available,
+2022-07-31,Success,Addressing The Troops,22-0731PM,https://www.youtube.com/watch?v=dlhnbJl8LQc,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2022-07-31,Success,Is There Hope For Revival (Part 2),22-0731AM,https://www.youtube.com/watch?v=RnZibd4zEQo,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2022-07-30,Success,In a Mess,22-0730PM,https://www.youtube.com/watch?v=MaSpU2q0H78,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2022-07-30,Success,The Zeal Of My Father's House,22-0730YP,https://www.youtube.com/watch?v=S2x6aMgvQls,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2022-07-29,Success,Is There Hope Of Revival,22-0729PM,https://www.youtube.com/watch?v=dftCnbjmu3M,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,
+2022-07-28,Success,"The Days of Miracles, It's Our Turn",22-0728PM,https://www.youtube.com/watch?v=0jRiNnWUAJs,2026-01-14,Unknown,Full Sermon,,,End Time Message Tabernacle CA,2026-01-14,available,

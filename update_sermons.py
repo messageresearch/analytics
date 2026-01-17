@@ -15,6 +15,9 @@ import subprocess
 import csv
 import shutil
 import unicodedata
+import signal
+import sys
+import threading
 import ShalomTabernacleSermonScraperv2 as st_scraper
 from pytubefix import YouTube, Playlist
 from pytubefix.cli import on_progress
@@ -88,6 +91,8 @@ INVALID_NAME_TERMS = {
     # language / foreign terms
     "servicio", "reunion", "en", "frances", "espanol", "domingo",
     "miercoles", "ibikorwa", "ikirundi", "vy", "vas",
+    # Spanish radio program terms (Radio La Voz Del Tiempo Final)
+    "oracion", "mundial", "devocional", "matutino", "despertar", "diario",
     # Audit found terms
     "condescendiendo", "milagro", "morar", "present", "tense", "messiah", "gastronomics",
     "intelligence", "resonance", "conception", "resurrections", "cooking", "cantantando",
@@ -108,7 +113,8 @@ INVALID_NAME_TERMS = {
     "creatures", "created", "christmas", "beyond", "possessing", "restored", "thanksgiving",
     "teach", "seeds", "keep", "identity", "hold", "delight", "count", "choices", "build",
     "unclogging", "trophies", "seeing", "recognizing", "prevailing", "pressing", "ordained",
-    "liberty", "elected", "creating", "suffer", "little", "long",
+    "liberty", "elected", "creating", "suffer", "little",
+    # Note: "long" removed - it's a valid surname (Ronnie Long, etc.)
     # Spanish/English Audit 2026-01-08 Round 2
     "sucesor", "circuncision", "poder", "vivificador", "viendo", "invisible", "tengo", 
     "bases", "regalo", "perfecto", "acercarnos", "importa", "dia", "adopcion", "buscando", 
@@ -266,6 +272,66 @@ CATEGORY_TITLES = {
     # Single words that are categories, not speakers
     "Congregation", "Congregational", "Choir", "Childrens",
 }
+
+# --- GRACEFUL SHUTDOWN STATE ---
+_shutdown_requested = threading.Event()
+
+def handle_shutdown_signal(signum, frame):
+    """Handle SIGINT (Ctrl+C) and SIGTERM gracefully."""
+    if _shutdown_requested.is_set():
+        print("\n\n⚠️  Force shutdown requested. Exiting immediately...")
+        sys.exit(1)
+
+    signal_name = "SIGINT (Ctrl+C)" if signum == signal.SIGINT else "SIGTERM"
+    print(f"\n\n🛑 {signal_name} received. Finishing current church before stopping...")
+    print("   (Press Ctrl+C again to force quit)")
+    _shutdown_requested.set()
+
+def should_shutdown():
+    """Check if graceful shutdown was requested."""
+    return _shutdown_requested.is_set()
+
+def reset_shutdown_state():
+    """Reset shutdown state for fresh runs."""
+    _shutdown_requested.clear()
+
+# --- ATOMIC FILE OPERATIONS ---
+def atomic_write_csv(filepath, rows, fieldnames):
+    """Write CSV atomically using temp file + rename to prevent corruption."""
+    temp_path = filepath + '.tmp'
+    try:
+        with open(temp_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+        os.replace(temp_path, filepath)  # Atomic on POSIX
+    except Exception as e:
+        # Clean up temp file on error
+        if os.path.exists(temp_path):
+            try:
+                os.remove(temp_path)
+            except:
+                pass
+        raise e
+
+def atomic_write_json(filepath, data, sort_if_list=True):
+    """Write JSON atomically using temp file + rename to prevent corruption."""
+    temp_path = filepath + '.tmp'
+    try:
+        with open(temp_path, 'w', encoding='utf-8') as f:
+            if sort_if_list and isinstance(data, (list, set)):
+                json.dump(sorted(list(data)), f, indent=2, ensure_ascii=False)
+            else:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+        os.replace(temp_path, filepath)  # Atomic on POSIX
+    except Exception as e:
+        # Clean up temp file on error
+        if os.path.exists(temp_path):
+            try:
+                os.remove(temp_path)
+            except:
+                pass
+        raise e
 
 # --- MASTER CSV GENERATION ---
 def generate_master_csv():
@@ -2686,7 +2752,7 @@ def heal_speakers_from_csv(csv_path="data/master_sermons_with_speaker_detected.c
         # Write updated summary CSV
         if summary_modified and summary_rows:
             try:
-                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"]
                 with open(summary_path, 'w', newline='', encoding='utf-8') as f:
                     writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
                     writer.writeheader()
@@ -3245,7 +3311,7 @@ def migrate_csv_add_church_names(data_dir):
                     rows.append(row)
             
             # Define complete fieldnames including new columns
-            fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+            fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"]
             
             # Write updated CSV
             with open(csv_path, 'w', newline='', encoding='utf-8') as f:
@@ -3462,7 +3528,7 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
             
             # Write updated CSV
             if not dry_run and updated_in_church > 0:
-                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+                fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"]
                 try:
                     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
                         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
@@ -3688,7 +3754,7 @@ def heal_video_categories(data_dir, dry_run=False, churches=None):
                 
                 # Write updated CSV
                 if not dry_run:
-                    fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"]
+                    fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"]
                     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
                         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
                         writer.writeheader()
@@ -3712,6 +3778,635 @@ def heal_video_categories(data_dir, dry_run=False, churches=None):
     print("="*60)
     
     return total_fixed, total_unchanged
+
+
+def recover_unknown_speakers(data_dir, dry_run=False, churches=None, limit=None):
+    """
+    Re-run speaker detection on entries with 'Unknown Speaker' to recover
+    speakers using improved detection algorithms.
+
+    This function:
+    1. Finds all entries with 'Unknown Speaker'
+    2. Re-runs speaker detection using title and description
+    3. Updates only if a valid speaker is found
+    4. Renames transcript files to match new speaker
+    5. Reports statistics on recovered speakers
+    """
+    print("\n" + "="*60)
+    print("🔍 RECOVERING UNKNOWN SPEAKERS")
+    if dry_run:
+        print("   🔍 DRY RUN MODE - No changes will be made")
+    if churches:
+        print(f"   📂 Filtering to churches: {churches}")
+    if limit:
+        print(f"   📊 Limit: {limit} entries")
+    print("="*60)
+
+    # Load known speakers
+    known_speakers = load_json_file(SPEAKERS_FILE) or set()
+    if isinstance(known_speakers, list):
+        known_speakers = set(known_speakers)
+
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+
+    total_unknown = 0
+    total_recovered = 0
+    total_still_unknown = 0
+    recovered_speakers = {}  # Track which speakers were recovered and how many
+    processed_count = 0
+
+    for csv_file in sorted(csv_files):
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+        church_folder = csv_file.replace('_Summary.csv', '')
+        church_path = os.path.join(data_dir, church_folder)
+
+        # Filter by church if specified
+        if churches:
+            church_list = [c.strip().lower() for c in churches.split(',')]
+            if not any(c in church_name.lower() for c in church_list):
+                continue
+
+        csv_path = os.path.join(data_dir, csv_file)
+
+        try:
+            # Read existing CSV
+            rows = []
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                rows = list(reader)
+
+            recovered_in_church = 0
+            unknown_in_church = 0
+            modified = False
+
+            for row in rows:
+                speaker = row.get('speaker', 'Unknown Speaker').strip()
+
+                # Only process Unknown Speaker entries
+                if speaker != 'Unknown Speaker':
+                    continue
+
+                # Check limit
+                if limit and processed_count >= limit:
+                    break
+
+                unknown_in_church += 1
+                total_unknown += 1
+                processed_count += 1
+
+                title = row.get('title', '')
+                description = row.get('description', '')
+                date = row.get('date', '')
+
+                # Try to detect speaker
+                detected_speaker, _ = identify_speaker_dynamic(title, description, known_speakers, date_str=date)
+
+                if detected_speaker and detected_speaker != 'Unknown Speaker':
+                    # Validate and clean
+                    detected_speaker = normalize_speaker(detected_speaker, title)
+                    detected_speaker = clean_name(detected_speaker)
+                    validated = final_validation(detected_speaker, title)
+
+                    if validated and validated != 'Unknown Speaker':
+                        # Successfully recovered a speaker!
+                        if not dry_run:
+                            # Rename transcript file if it exists
+                            old_safe_title = sanitize_filename(title)
+                            old_filename = f"{date} - {old_safe_title} - Unknown Speaker.txt"
+                            old_filepath = os.path.join(church_path, old_filename)
+
+                            if os.path.exists(old_filepath):
+                                new_safe_speaker = sanitize_filename(validated)
+                                new_filename = f"{date} - {old_safe_title} - {new_safe_speaker}.txt"
+                                new_filepath = os.path.join(church_path, new_filename)
+
+                                try:
+                                    # Also update header in transcript file
+                                    with open(old_filepath, 'r', encoding='utf-8') as f:
+                                        content = f.read()
+
+                                    # Update header if present
+                                    if 'Speaker: Unknown Speaker' in content:
+                                        content = content.replace('Speaker: Unknown Speaker', f'Speaker: {validated}')
+                                        with open(old_filepath, 'w', encoding='utf-8') as f:
+                                            f.write(content)
+
+                                    # Rename file
+                                    os.rename(old_filepath, new_filepath)
+
+                                    # Also handle timestamped file if exists
+                                    old_ts = old_filepath.replace('.txt', '.timestamped.txt')
+                                    new_ts = new_filepath.replace('.txt', '.timestamped.txt')
+                                    if os.path.exists(old_ts):
+                                        os.rename(old_ts, new_ts)
+                                except Exception as e:
+                                    print(f"      ⚠️ Error renaming file: {e}")
+
+                            row['speaker'] = validated
+                            modified = True
+
+                        recovered_in_church += 1
+                        total_recovered += 1
+                        recovered_speakers[validated] = recovered_speakers.get(validated, 0) + 1
+
+                        if dry_run:
+                            print(f"      Would recover: '{title[:40]}...' -> {validated}")
+                    else:
+                        total_still_unknown += 1
+                else:
+                    total_still_unknown += 1
+
+                # Check limit again
+                if limit and processed_count >= limit:
+                    break
+
+            if recovered_in_church > 0:
+                print(f"   📂 {church_name}: {recovered_in_church} speakers recovered (of {unknown_in_church} unknown)")
+
+                # Write updated CSV
+                if not dry_run and modified:
+                    fieldnames = ["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"]
+                    with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
+                        writer.writeheader()
+                        writer.writerows(rows)
+
+            # Check limit
+            if limit and processed_count >= limit:
+                print(f"\n   ⚠️ Limit of {limit} entries reached.")
+                break
+
+        except Exception as e:
+            print(f"   ❌ Error processing {csv_file}: {e}")
+            import traceback
+            traceback.print_exc()
+
+    print("\n" + "="*60)
+    print("📊 SPEAKER RECOVERY SUMMARY")
+    print(f"   📋 Total Unknown Speaker entries: {total_unknown}")
+    print(f"   ✅ Speakers recovered: {total_recovered} ({100*total_recovered/max(total_unknown,1):.1f}%)")
+    print(f"   ❓ Still unknown: {total_still_unknown}")
+
+    if recovered_speakers:
+        print("\n   🎤 Top recovered speakers:")
+        for speaker, count in sorted(recovered_speakers.items(), key=lambda x: -x[1])[:20]:
+            print(f"      {speaker}: {count}")
+
+    print("="*60)
+
+    # Regenerate master CSV if changes were made
+    if total_recovered > 0 and not dry_run:
+        print("\n📊 Regenerating master CSV...")
+        generate_master_csv()
+
+    return total_recovered, total_still_unknown
+
+
+def fix_corrupt_entries(data_dir, dry_run=False, churches=None):
+    """
+    Fix corrupt data entries in CSV files.
+
+    Fixes:
+    1. Speakers that are dates/numbers (e.g., "251019", "032722") → "Unknown Speaker"
+    2. Speakers that are category titles (e.g., "Worship", "Testimony") → "Unknown Speaker"
+    3. Invalid dates ("0000-00-00", "Error") → "Unknown Date"
+    4. Cloverdale Bibleway date fix: 2-digit years (63-xxxx → 1963-xxxx)
+    5. Shekinah Tabernacle date fix: YYMMDD misparse
+    6. Remove entries with invalid URLs (e.g., "Full Sermon")
+    """
+    import pandas as pd
+
+    print("="*60)
+    print("🔧 FIXING CORRUPT ENTRIES")
+    print("="*60)
+    if dry_run:
+        print("   [DRY RUN - No changes will be made]")
+
+    # Category titles that should not be speakers
+    CATEGORY_AS_SPEAKER = {
+        'church service', 'song', 'worship', 'testimony', 'bible study',
+        'sermon', 'message', 'service', 'youth service', 'sunday service'
+    }
+
+    # Load invalid speakers from config
+    invalid_speakers_config = set()
+    try:
+        with open(SPEAKERS_CONFIG_FILE, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+            invalid_speakers_config = set(config.get('invalid_speakers', []))
+    except Exception as e:
+        print(f"   ⚠️ Could not load speakers config: {e}")
+
+    total_fixes = {
+        'speaker_dates': 0,
+        'speaker_categories': 0,
+        'speaker_invalid_config': 0,
+        'invalid_dates': 0,
+        'cloverdale_dates': 0,
+        'shekinah_dates': 0,
+        'invalid_urls': 0
+    }
+
+    churches_to_process = []
+    for item in sorted(os.listdir(data_dir)):
+        item_path = os.path.join(data_dir, item)
+        if os.path.isdir(item_path) and item not in ['__pycache__', '.git']:
+            if churches:
+                if item.lower().replace('_', ' ') in churches.lower() or churches.lower() in item.lower():
+                    churches_to_process.append(item)
+            else:
+                churches_to_process.append(item)
+
+    for church_folder in churches_to_process:
+        church_display = church_folder.replace('_', ' ')
+
+        # Find CSV file - it's in data_dir with format {church_folder}_Summary.csv
+        csv_filename = f"{church_folder}_Summary.csv"
+        csv_path = os.path.join(data_dir, csv_filename)
+        if not os.path.exists(csv_path):
+            continue
+
+        try:
+            df = pd.read_csv(csv_path)
+        except Exception as e:
+            print(f"   ❌ Error reading {church_display}: {e}")
+            continue
+
+        church_fixes = {k: 0 for k in total_fixes.keys()}
+        modified = False
+        rows_to_drop = []
+
+        for idx, row in df.iterrows():
+            speaker = str(row.get('speaker', ''))
+            date = str(row.get('date', ''))
+            url = str(row.get('url', ''))
+
+            # Fix 1: Speakers that are dates/numbers
+            if speaker and speaker != 'Unknown Speaker':
+                # Check if speaker is mostly digits (like 251019, 032722)
+                digits_only = re.sub(r'[^0-9]', '', speaker)
+                if len(digits_only) >= 5 and len(digits_only) / len(speaker.replace(' ', '')) > 0.7:
+                    if not dry_run:
+                        df.at[idx, 'speaker'] = 'Unknown Speaker'
+                    church_fixes['speaker_dates'] += 1
+                    modified = True
+                    continue
+                # Check if speaker is just a small number (part number like 1, 2, 24)
+                if re.match(r'^\d{1,3}$', speaker.strip()):
+                    if not dry_run:
+                        df.at[idx, 'speaker'] = 'Unknown Speaker'
+                    church_fixes['speaker_dates'] += 1
+                    modified = True
+                    continue
+
+            # Fix 2: Speakers that are category titles
+            if speaker and speaker.lower().strip() in CATEGORY_AS_SPEAKER:
+                if not dry_run:
+                    df.at[idx, 'speaker'] = 'Unknown Speaker'
+                church_fixes['speaker_categories'] += 1
+                modified = True
+                continue
+
+            # Fix 2b: Speakers in invalid_speakers config (program names, etc.)
+            if speaker and speaker in invalid_speakers_config:
+                if not dry_run:
+                    df.at[idx, 'speaker'] = 'Unknown Speaker'
+                church_fixes['speaker_invalid_config'] += 1
+                modified = True
+                continue
+
+            # Fix 3: Invalid dates
+            if date in ['0000-00-00', 'Error', '']:
+                if not dry_run:
+                    df.at[idx, 'date'] = 'Unknown Date'
+                church_fixes['invalid_dates'] += 1
+                modified = True
+
+            # Fix 3b: Impossible future dates (> 2100 or years like 3023, etc.)
+            date_match = re.match(r'^(\d{4})-\d{2}-\d{2}$', date)
+            if date_match:
+                year = int(date_match.group(1))
+                if year > 2100 or year < 1900:
+                    if not dry_run:
+                        df.at[idx, 'date'] = 'Unknown Date'
+                    church_fixes['invalid_dates'] += 1
+                    modified = True
+
+            # Fix 4: Cloverdale Bibleway - fix 2-digit year dates (2063 → 1963)
+            if church_folder == 'Cloverdale_Bibleway':
+                if re.match(r'^20[5-9]\d-', date):  # Years 2050-2099 likely wrong
+                    fixed_year = int(date[:4]) - 100  # 2063 → 1963
+                    fixed_date = f"{fixed_year}{date[4:]}"
+                    if not dry_run:
+                        df.at[idx, 'date'] = fixed_date
+                    church_fixes['cloverdale_dates'] += 1
+                    modified = True
+
+            # Fix 5: Shekinah Tabernacle - fix YYMMDD misparse
+            # Pattern: 2027-07-25 should be 2025-07-27 (date and year swapped)
+            if church_folder == 'Shekinah_Tabernacle':
+                if re.match(r'^20(2[7-9]|[3-9]\d)-', date):  # Years 2027-2099
+                    # These are likely DDMMYY being parsed as YYMMDD
+                    # 270725 was parsed as 2027-07-25, but should be 2025-07-27
+                    # Check if day > 12 (month can't be > 12)
+                    parts = date.split('-')
+                    if len(parts) == 3:
+                        year, month, day = parts
+                        if int(day) > 12 or int(year) > 2026:
+                            # Swap day and year suffix: 2027-07-25 → 2025-07-27
+                            new_year = f"20{day}"
+                            new_day = year[2:]  # Get last 2 digits of misread year
+                            fixed_date = f"{new_year}-{month}-{new_day}"
+                            if not dry_run:
+                                df.at[idx, 'date'] = fixed_date
+                            church_fixes['shekinah_dates'] += 1
+                            modified = True
+
+            # Fix 6: Invalid URLs
+            if url and url.lower() in ['full sermon', 'unknown', '']:
+                rows_to_drop.append(idx)
+                church_fixes['invalid_urls'] += 1
+
+        # Remove rows with invalid URLs
+        if rows_to_drop and not dry_run:
+            df = df.drop(rows_to_drop)
+            modified = True
+
+        # Save if modified
+        if modified and not dry_run:
+            df.to_csv(csv_path, index=False)
+
+        # Report church fixes
+        church_total = sum(church_fixes.values())
+        if church_total > 0:
+            for k, v in church_fixes.items():
+                total_fixes[k] += v
+            print(f"   📂 {church_display}: {church_total} fixes")
+            for k, v in church_fixes.items():
+                if v > 0:
+                    print(f"      - {k.replace('_', ' ')}: {v}")
+
+    # Summary
+    print("\n" + "="*60)
+    print("📊 CORRUPT ENTRY FIX SUMMARY")
+    grand_total = sum(total_fixes.values())
+    print(f"   Total fixes: {grand_total}")
+    for k, v in total_fixes.items():
+        if v > 0:
+            print(f"   - {k.replace('_', ' ')}: {v}")
+    print("="*60)
+
+    if grand_total > 0 and not dry_run:
+        print("\n📊 Regenerating master CSV...")
+        generate_master_csv()
+
+    return total_fixes
+
+
+def add_preservation_metadata(data_dir, dry_run=False):
+    """
+    Add preservation metadata fields to all CSV files.
+
+    New fields:
+    - first_scraped: When entry was first added (defaults to last_checked if not set)
+    - video_status: Current availability ("available", "unavailable", "unknown")
+    - video_removed_date: When video was detected as removed (if applicable)
+    """
+    import pandas as pd
+    from datetime import datetime
+
+    print("="*60)
+    print("📦 ADDING PRESERVATION METADATA")
+    print("="*60)
+    if dry_run:
+        print("   [DRY RUN - No changes will be made]")
+
+    today = datetime.now().strftime('%Y-%m-%d')
+    total_updated = 0
+
+    # Find all summary CSVs
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+
+    for csv_file in sorted(csv_files):
+        csv_path = os.path.join(data_dir, csv_file)
+        church_name = csv_file.replace('_Summary.csv', '').replace('_', ' ')
+
+        try:
+            df = pd.read_csv(csv_path)
+        except Exception as e:
+            print(f"   ❌ Error reading {church_name}: {e}")
+            continue
+
+        modified = False
+        added_fields = []
+
+        # Add first_scraped column (defaults to last_checked or today)
+        if 'first_scraped' not in df.columns:
+            df['first_scraped'] = df.get('last_checked', today)
+            added_fields.append('first_scraped')
+            modified = True
+
+        # Add video_status column (defaults to 'available' for Success entries)
+        if 'video_status' not in df.columns:
+            df['video_status'] = df['status'].apply(
+                lambda s: 'available' if s in ['Success', 'Metadata Only', 'No Transcript'] else 'unknown'
+            )
+            added_fields.append('video_status')
+            modified = True
+
+        # Add video_removed_date column (empty for now)
+        if 'video_removed_date' not in df.columns:
+            df['video_removed_date'] = ''
+            added_fields.append('video_removed_date')
+            modified = True
+
+        if modified:
+            total_updated += 1
+            if added_fields:
+                print(f"   📂 {church_name}: Added {', '.join(added_fields)}")
+            if not dry_run:
+                df.to_csv(csv_path, index=False)
+
+    print("\n" + "="*60)
+    print(f"📊 PRESERVATION METADATA SUMMARY")
+    print(f"   Files updated: {total_updated}")
+    print("="*60)
+
+    if total_updated > 0 and not dry_run:
+        print("\n📊 Regenerating master CSV...")
+        generate_master_csv()
+
+    return total_updated
+
+
+def enrich_metadata(data_dir, dry_run=False, churches=None, limit=None):
+    """
+    Fetch missing metadata from YouTube for entries that have:
+    - Missing duration (0 or null)
+    - Missing description (empty)
+    - Unknown Date
+
+    Uses pytubefix to fetch video info and fills in missing fields.
+    """
+    print("="*60)
+    print("🔄 ENRICHING METADATA FROM YOUTUBE")
+    print("="*60)
+    if dry_run:
+        print("   [DRY RUN - No changes will be made]")
+    if churches:
+        print(f"   Churches filter: {churches}")
+    if limit:
+        print(f"   Limit: {limit} entries")
+
+    # Parse churches filter
+    church_filter = None
+    if churches:
+        church_filter = [c.strip().replace(' ', '_') for c in churches.split(',')]
+
+    total_enriched = 0
+    total_failed = 0
+    processed = 0
+
+    # Find all Summary CSV files
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('_Summary.csv')]
+
+    for csv_file in sorted(csv_files):
+        if limit and processed >= limit:
+            break
+
+        church_name = csv_file.rsplit('_Summary.csv', 1)[0]
+
+        # Apply church filter
+        if church_filter and church_name not in church_filter:
+            continue
+
+        csv_path = os.path.join(data_dir, csv_file)
+
+        try:
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                headers = reader.fieldnames
+                rows = list(reader)
+        except Exception as e:
+            print(f"   ⚠️ Error reading {csv_file}: {e}")
+            continue
+
+        # Find entries needing enrichment (missing duration, description, or Unknown Date)
+        entries_to_enrich = []
+        for i, row in enumerate(rows):
+            url = row.get('url', '').strip()
+            if not url or 'youtube.com' not in url and 'youtu.be' not in url:
+                continue
+
+            needs_enrichment = False
+            missing = []
+
+            # Check duration
+            duration = row.get('duration', '')
+            if not duration or duration in ['', '0', '0.0'] or float(duration or 0) == 0:
+                needs_enrichment = True
+                missing.append('duration')
+
+            # Check description
+            description = row.get('description', '')
+            if not description or description.strip() == '':
+                needs_enrichment = True
+                missing.append('description')
+
+            # Check date
+            date = row.get('date', '')
+            if date in ['Unknown Date', 'Unknown', 'Error', '']:
+                needs_enrichment = True
+                missing.append('date')
+
+            if needs_enrichment:
+                entries_to_enrich.append((i, row, missing))
+
+        if not entries_to_enrich:
+            continue
+
+        print(f"\n   📂 {church_name.replace('_', ' ')}: {len(entries_to_enrich)} entries to enrich")
+
+        modified = False
+        for idx, (row_idx, row, missing) in enumerate(entries_to_enrich):
+            if limit and processed >= limit:
+                break
+            processed += 1
+
+            title = row.get('title', 'Unknown')[:50]
+            url = row.get('url', '')
+
+            print(f"      [{idx+1}/{len(entries_to_enrich)}] {title}... (missing: {', '.join(missing)})")
+
+            if dry_run:
+                continue
+
+            try:
+                time.sleep(1)  # Rate limiting
+                yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
+
+                enriched_fields = []
+
+                # Enrich duration
+                if 'duration' in missing and yt_obj.length:
+                    duration_min = round(yt_obj.length / 60, 1)
+                    rows[row_idx]['duration'] = str(duration_min)
+                    enriched_fields.append(f'duration={duration_min}m')
+                    modified = True
+
+                # Enrich description
+                if 'description' in missing and yt_obj.description:
+                    rows[row_idx]['description'] = yt_obj.description[:500]
+                    enriched_fields.append('description')
+                    modified = True
+
+                # Enrich date
+                if 'date' in missing:
+                    new_date = determine_sermon_date(title, yt_obj.description or '', yt_obj)
+                    if new_date and new_date != "Unknown Date":
+                        rows[row_idx]['date'] = new_date
+                        enriched_fields.append(f'date={new_date}')
+                        modified = True
+                    elif yt_obj.publish_date:
+                        new_date = yt_obj.publish_date.strftime("%Y-%m-%d")
+                        rows[row_idx]['date'] = new_date
+                        enriched_fields.append(f'date={new_date}')
+                        modified = True
+
+                if enriched_fields:
+                    total_enriched += 1
+                    print(f"         ✅ Enriched: {', '.join(enriched_fields)}")
+                else:
+                    total_failed += 1
+                    print(f"         ⚠️ No data available")
+
+            except Exception as e:
+                total_failed += 1
+                print(f"         ❌ Error: {str(e)[:60]}")
+
+        # Write back the CSV if modified
+        if modified and not dry_run:
+            try:
+                with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=headers)
+                    writer.writeheader()
+                    writer.writerows(rows)
+                print(f"      💾 Saved {csv_file}")
+            except Exception as e:
+                print(f"      ❌ Error saving {csv_file}: {e}")
+
+    print("\n" + "="*60)
+    print("📊 ENRICHMENT SUMMARY")
+    print(f"   Processed: {processed}")
+    print(f"   Enriched: {total_enriched}")
+    print(f"   Failed: {total_failed}")
+    print("="*60)
+
+    if total_enriched > 0 and not dry_run:
+        print("\n📊 Regenerating master CSV...")
+        generate_master_csv()
+
+    return total_enriched, total_failed
 
 
 # --- SPEAKER EXTRACTION PATTERN FUNCTIONS ---
@@ -5919,7 +6614,10 @@ def metadata_only_scan(church_name, config, known_speakers):
                 "type": video_type,
                 "description": desc_for_csv,
                 "duration": int(duration_minutes) if duration_minutes else 0,
-                "church": church_name
+                "church": church_name,
+                "first_scraped": today_str,
+                "video_status": "available",
+                "video_removed_date": ""
             }
             new_count += 1
             
@@ -5937,7 +6635,10 @@ def metadata_only_scan(church_name, config, known_speakers):
                 "type": "Unknown",
                 "description": "",
                 "duration": 0,
-                "church": church_name
+                "church": church_name,
+                "first_scraped": today_str,
+                "video_status": "unknown",
+                "video_removed_date": ""
             }
             new_count += 1
     
@@ -5947,7 +6648,7 @@ def metadata_only_scan(church_name, config, known_speakers):
     
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"])
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"])
             writer.writeheader()
             writer.writerows(summary_list)
         print(f"\n   ✅ SCAN COMPLETE")
@@ -5987,26 +6688,61 @@ def update_file_header_and_name(channel_dir, old_entry, new_speaker, new_date, t
 def clean_history_of_bad_speakers(history):
     """
     Clean up bad speaker names in history entries.
-    
+
     ARCHIVAL RULE: We NEVER delete entries from history. If a speaker name is
     invalid, we reset it to "Unknown Speaker" but preserve all other data.
     This ensures we never lose scraped transcripts or metadata.
+
+    NOTE: This function is conservative - it only resets CLEARLY invalid speakers
+    (like dates, category titles, empty strings). It preserves speakers that were
+    set by heal, even if they don't pass strict is_valid_person_name() checks.
+    The heal process handles comprehensive speaker validation separately.
     """
     cleaned_history = {}
     fixed_count = 0
+
+    # Patterns that are CLEARLY invalid speakers (not person names)
+    clearly_invalid_patterns = [
+        r'^\d{4}-\d{2}-\d{2}',  # Date patterns like 2024-01-15
+        r'^\d{6,}',  # Long number sequences
+        r'^https?://',  # URLs
+    ]
+
     for url, entry in history.items():
-        speaker = entry.get('speaker', '')
-        # Basic check - "Brother X" or "Sister X" patterns are kept as-is
-        if "Brother " in speaker or "Sister " in speaker:
+        speaker = entry.get('speaker', '').strip()
+
+        # Keep if already Unknown Speaker
+        if speaker == 'Unknown Speaker' or not speaker:
             cleaned_history[url] = entry
-        elif not is_valid_person_name(speaker):
-            # ARCHIVAL: Don't delete! Just reset the speaker to Unknown
+            continue
+
+        # Keep if it has honorific prefixes (likely valid)
+        if any(prefix in speaker for prefix in ["Brother ", "Sister ", "Bro.", "Sis.", "Pastor ", "Rev.", "Elder "]):
+            cleaned_history[url] = entry
+            continue
+
+        # Only reset if CLEARLY invalid
+        is_clearly_invalid = False
+
+        # Check against clearly invalid patterns
+        for pattern in clearly_invalid_patterns:
+            if re.match(pattern, speaker):
+                is_clearly_invalid = True
+                break
+
+        # Check if it's a category title (these are definitely not speakers)
+        if speaker in CATEGORY_TITLES:
+            is_clearly_invalid = True
+
+        if is_clearly_invalid:
             fixed_entry = entry.copy()
             fixed_entry['speaker'] = 'Unknown Speaker'
             cleaned_history[url] = fixed_entry
             fixed_count += 1
         else:
+            # Preserve existing speaker - heal already validated it
             cleaned_history[url] = entry
+
     if fixed_count > 0:
         print(f"   🧹 Reset {fixed_count} invalid speaker names to 'Unknown Speaker' (entries preserved).")
     return cleaned_history
@@ -6341,7 +7077,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 except: pass
 
         if not needs_download and history_entry:
-            history_entry['speaker'] = speaker
+            # Preserve healed speaker if new detection returns Unknown
+            history_entry['speaker'] = speaker if speaker != "Unknown Speaker" else history_entry.get('speaker', 'Unknown Speaker')
             history_entry['title'] = title
             history_entry['type'] = video_type
             history_entry['last_checked'] = today_str
@@ -6423,7 +7160,10 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 "title": title, "url": video_url, "last_checked": today_str,
                 "language": language, "type": video_type, "description": desc_for_csv,
                 "duration": int(duration_minutes) if duration_minutes else 0,
-                "church": church_name
+                "church": church_name,
+                "first_scraped": today_str,
+                "video_status": "available",
+                "video_removed_date": ""
             })
         except Exception as e:
             print(f"   ❌ Error: {str(e)}")
@@ -6431,7 +7171,10 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 "date": "Error", "status": "Failed", "speaker": "Unknown",
                 "title": title, "url": video_url, "last_checked": today_str,
                 "language": "Unknown", "type": "Unknown", "description": "",
-                "duration": 0, "church": church_name
+                "duration": 0, "church": church_name,
+                "first_scraped": today_str,
+                "video_status": "unknown",
+                "video_removed_date": ""
             })
 
     csv_path = get_summary_file_path(church_name, ".csv")
@@ -6506,7 +7249,12 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                 "last_checked": last_checked,
                 "language": language,
                 "type": video_type,
-                "description": ""  # Empty for legacy files
+                "description": "",  # Empty for legacy files
+                "duration": 0,
+                "church": church_name,
+                "first_scraped": last_checked,
+                "video_status": "available",
+                "video_removed_date": ""
             })
             summary_keys.add((date, title, speaker))
     
@@ -6573,7 +7321,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
     # Write the updated summary CSV
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church"])
+            writer = csv.DictWriter(f, fieldnames=["date", "status", "speaker", "title", "url", "last_checked", "language", "type", "description", "duration", "church", "first_scraped", "video_status", "video_removed_date"])
             writer.writeheader()
             writer.writerows(final_summary_list)
     except Exception as e:
@@ -6808,7 +7556,8 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
                 
                 # Update CSV entry
                 entry['status'] = 'Success'
-                entry['speaker'] = speaker
+                # Preserve healed speaker if new detection returns Unknown
+                entry['speaker'] = speaker if speaker != "Unknown Speaker" else entry.get('speaker', 'Unknown Speaker')
                 entry['date'] = sermon_date
                 entry['language'] = language
                 entry['last_checked'] = today_str
@@ -6826,7 +7575,7 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
         if retried > 0:
             try:
                 with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-                    fieldnames = ['date', 'status', 'speaker', 'title', 'url', 'last_checked', 'language', 'type', 'description', 'duration', 'church']
+                    fieldnames = ['date', 'status', 'speaker', 'title', 'url', 'last_checked', 'language', 'type', 'description', 'duration', 'church', 'first_scraped', 'video_status', 'video_removed_date']
                     writer = csv.DictWriter(f, fieldnames=fieldnames)
                     writer.writeheader()
                     writer.writerows(rows)
@@ -6848,6 +7597,12 @@ def retry_metadata_only_videos(data_dir, churches=None, limit=None, include_no_t
 
 def main():
     prevent_sleep()
+
+    # Register signal handlers for graceful shutdown
+    signal.signal(signal.SIGINT, handle_shutdown_signal)
+    signal.signal(signal.SIGTERM, handle_shutdown_signal)
+    reset_shutdown_state()  # Clear any previous shutdown state
+
     try:
         parser = argparse.ArgumentParser(description="Update sermon transcripts from YouTube channels.")
         parser.add_argument('--recent', action='store_true', help="Only process videos uploaded in the last 24 hours.")
@@ -6860,6 +7615,10 @@ def main():
         parser.add_argument('--migrate-church-names', action='store_true', help="Add church name column to all existing CSV summary files.")
         parser.add_argument('--heal-categories', action='store_true', help="Re-evaluate and fix video type categories based on title, description, and duration.")
         parser.add_argument('--heal-dates', action='store_true', help="Fix 'Unknown Date' entries by fetching YouTube publish dates.")
+        parser.add_argument('--recover-speakers', action='store_true', help="Re-run speaker detection on 'Unknown Speaker' entries to recover speakers.")
+        parser.add_argument('--fix-corrupt', action='store_true', help="Fix corrupt data entries (dates as speakers, category names as speakers, invalid dates, etc.)")
+        parser.add_argument('--add-preservation-metadata', action='store_true', help="Add preservation metadata fields (first_scraped, video_status, video_removed_date) to CSV files.")
+        parser.add_argument('--enrich', action='store_true', help="Fetch missing metadata (duration, description, date) from YouTube for entries missing it.")
         parser.add_argument('--dry-run', action='store_true', help="Show what would be done without making changes (for backfill operations).")
         parser.add_argument('--church', type=str, action='append', help="Specific church(es) to process (can be used multiple times).")
         parser.add_argument('--limit', type=int, default=None, help="Maximum number of files to process.")
@@ -6899,6 +7658,29 @@ def main():
             print("Healing Unknown Date entries...")
             churches_str = ','.join(args.church) if args.church else None
             heal_unknown_dates(DATA_DIR, dry_run=args.dry_run, churches=churches_str, limit=args.limit)
+            return
+
+        if args.recover_speakers:
+            print("Recovering speakers from Unknown Speaker entries...")
+            churches_str = ','.join(args.church) if args.church else None
+            recover_unknown_speakers(DATA_DIR, dry_run=args.dry_run, churches=churches_str, limit=args.limit)
+            return
+
+        if args.fix_corrupt:
+            print("Fixing corrupt data entries...")
+            churches_str = ','.join(args.church) if args.church else None
+            fix_corrupt_entries(DATA_DIR, dry_run=args.dry_run, churches=churches_str)
+            return
+
+        if args.add_preservation_metadata:
+            print("Adding preservation metadata fields...")
+            add_preservation_metadata(DATA_DIR, dry_run=args.dry_run)
+            return
+
+        if args.enrich:
+            print("Enriching metadata from YouTube...")
+            churches_str = ','.join(args.church) if args.church else None
+            enrich_metadata(DATA_DIR, dry_run=args.dry_run, churches=churches_str, limit=args.limit)
             return
 
         if args.list_pending:
@@ -6950,8 +7732,15 @@ def main():
                 channels_to_process = {k: v for k, v in channels.items() if k in args.church}
                 print(f"   Filtering to {len(channels_to_process)} specified church(es)")
             
+            completed_churches = 0
+            total_churches = len(channels_to_process)
             for name, config in channels_to_process.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 channel_stats = process_channel(name, config, known_speakers, limit=args.limit)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -6968,7 +7757,10 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Full Scrape (All Videos)")
-            print("\\n✅ Full scrape complete.")
+            if should_shutdown():
+                print("\\n⏸️  Full scrape interrupted gracefully.")
+            else:
+                print("\\n✅ Full scrape complete.")
             return
 
         # Handle --new-only scrape mode (skip videos we already have)
@@ -6983,9 +7775,16 @@ def main():
             if args.church:
                 channels_to_process = {k: v for k, v in channels.items() if k in args.church}
                 print(f"   Filtering to {len(channels_to_process)} specified church(es)")
-            
+
+            completed_churches = 0
+            total_churches = len(channels_to_process)
             for name, config in channels_to_process.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 channel_stats = process_channel(name, config, known_speakers, limit=args.limit, skip_existing=True)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -7002,7 +7801,10 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="New Videos Only Scrape")
-            print("\\n✅ New videos scrape complete.")
+            if should_shutdown():
+                print("\\n⏸️  New videos scrape interrupted gracefully.")
+            else:
+                print("\\n✅ New videos scrape complete.")
             return
 
         # Handle --retry-no-transcript mode (only retry videos marked "No Transcript")
@@ -7017,9 +7819,16 @@ def main():
             if args.church:
                 channels_to_process = {k: v for k, v in channels.items() if k in args.church}
                 print(f"   Filtering to {len(channels_to_process)} specified church(es)")
-            
+
+            completed_churches = 0
+            total_churches = len(channels_to_process)
             for name, config in channels_to_process.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 channel_stats = process_channel(name, config, known_speakers, limit=args.limit, retry_no_transcript_only=True)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -7036,17 +7845,27 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Retry No Transcript")
-            print("\\n✅ Retry complete.")
+            if should_shutdown():
+                print("\\n⏸️  Retry interrupted gracefully.")
+            else:
+                print("\\n✅ Retry complete.")
             return
-        
+
         # When running with --days, process all channels for that time period
         if args.days:
             print(f"\\n🔄 PARTIAL SCRAPE: Last {args.days} days for ALL channels")
             print("="*50)
             speakers_before_set = load_json_file(SPEAKERS_FILE)
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
+            completed_churches = 0
+            total_churches = len(channels)
             for name, config in channels.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 channel_stats = process_channel(name, config, known_speakers, days_back=args.days)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -7063,15 +7882,25 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name=f"Partial Scrape (Last {args.days} Days)")
-            print(f"\\n✅ Partial scrape ({args.days} days) complete.")
+            if should_shutdown():
+                print(f"\\n⏸️  Partial scrape ({args.days} days) interrupted gracefully.")
+            else:
+                print(f"\\n✅ Partial scrape ({args.days} days) complete.")
             return
-        
+
         # When running with --recent, we don't need a menu.
         if args.recent:
             speakers_before_set = load_json_file(SPEAKERS_FILE)
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
+            completed_churches = 0
+            total_churches = len(channels)
             for name, config in channels.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 channel_stats = process_channel(name, config, known_speakers, days_back=1)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -7088,14 +7917,17 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Recent Scrape (Last 24 Hours)")
-            print("\\n✅ Recent scrape complete.")
+            if should_shutdown():
+                print("\\n⏸️  Recent scrape interrupted gracefully.")
+            else:
+                print("\\n✅ Recent scrape complete.")
             return
 
         # When running with --unscraped, scrape only channels without Summary CSV
         if args.unscraped:
             print("\\n🔄 UNSCRAPED CHANNELS ONLY")
             print("="*50)
-            
+
             # Find unscraped channels (no Summary CSV)
             unscraped_channels = {}
             for name, config in channels.items():
@@ -7103,23 +7935,30 @@ def main():
                 summary_path = os.path.join(DATA_DIR, f"{normalized_name}_Summary.csv")
                 if not os.path.exists(summary_path):
                     unscraped_channels[name] = config
-            
+
             if not unscraped_channels:
                 print("✅ All channels have been scraped! No unscraped channels found.")
                 return
-            
+
             print(f"Found {len(unscraped_channels)} unscraped channel(s):")
             for name in unscraped_channels.keys():
                 print(f"  • {name}")
             print()
-            
+
             speakers_before_set = load_json_file(SPEAKERS_FILE)
             all_stats = {'total_processed': 0, 'speakers_detected': 0, 'unknown_speakers': 0, 'by_church': {}, 'new_speakers': set(), 'csv_files_processed': []}
+            completed_churches = 0
+            total_churches = len(unscraped_channels)
             for name, config in unscraped_channels.items():
+                if should_shutdown():
+                    print(f"\n✅ Graceful shutdown: Completed {completed_churches}/{total_churches} churches")
+                    print("   Remaining churches will be processed on next run.")
+                    break
                 print(f"\\n{'='*50}")
                 print(f"SCRAPING: {name}")
                 print(f"{'='*50}")
                 channel_stats = process_channel(name, config, known_speakers)
+                completed_churches += 1
                 if channel_stats:
                     all_stats['total_processed'] += channel_stats.get('total_processed', 0)
                     all_stats['speakers_detected'] += channel_stats.get('speakers_detected', 0)
@@ -7137,7 +7976,10 @@ def main():
             all_stats.update(compute_speaker_inventory_delta(speakers_before_set, speakers_after_set))
             all_stats['speakers_changed_to_unknown'] = 0
             write_speaker_detection_log(all_stats, operation_name="Unscraped Channels Scrape (CLI)")
-            print(f"\\n✅ Unscraped channels scrape complete.")
+            if should_shutdown():
+                print("\\n⏸️  Unscraped channels scrape interrupted gracefully.")
+            else:
+                print(f"\\n✅ Unscraped channels scrape complete.")
             return
 
         # --- MENU ---

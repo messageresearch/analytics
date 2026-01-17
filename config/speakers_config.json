@@ -174,7 +174,24 @@
     "Chad Lamb Tape Service",
     "Rebekahs Resolve",
     "Plan Possess Plant",
-    "Deformation"
+    "Deformation",
+
+    "Oracion Mundial",
+    "Oracion Mundia",
+    "Oracin Mundial",
+    "Orecion Mundial",
+    "Oaracion Mundial",
+    "Oracon Mundial",
+    "Devocional Matutino",
+    "Devocional Matutno",
+    "Devocional Mtutino",
+    "Devocional Matuitimo",
+    "Devoccional Matutno",
+    "Devocinal Matutino",
+    "Devocionasl Matutino",
+    "Pan Diario",
+    "Despertar Con Cristo",
+    "Desesperaciones"
   ],
   
   "normalization_rules": {
@@ -228,6 +245,10 @@
     "Prophet William Branham": "William M. Branham",
     "Prophet William M. Branham": "William M. Branham",
     "Branham": "William M. Branham",
+    "Marrion Branham": "William M. Branham",
+    "Willian Marrion Branham": "William M. Branham",
+    "William Marrion Branaham": "William M. Branham",
+    "W M B": "William M. Branham",
     "Isiah Brooks": "Isiah Brooks",
     "Isaiah Brooks": "Isiah Brooks",
     "Friday, 14 Apostle Edgar H. Roscoe":"Edgar H. Roscoe",
