@@ -7050,8 +7050,8 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
             else:
                 # For regular YouTube videos, use publishedTimeText
                 published_time_text = video.get('publishedTimeText', {}).get('simpleText', '')
-                if published_time_text and not parse_published_time(published_time_text, max_days=days_back):
-                    continue  # Skip if the video is older than days_back
+                if not published_time_text or not parse_published_time(published_time_text, max_days=days_back):
+                    continue  # Skip if no date info or older than days_back
         manual_speaker = video.get('manual_speaker')
 
         if manual_speaker:
