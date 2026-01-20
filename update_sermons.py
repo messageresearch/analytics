@@ -7032,7 +7032,7 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         count += 1
         video_id = video['videoId']
         video_url = f"https://www.youtube.com/watch?v={video['videoId']}"
-        try: title = video['title']['runs'][0]['text']
+        try: title = video['title']['runs'][0]['text'] or "Unknown Title"
         except: title = "Unknown Title"
         
         # Check if the video is recent enough to be processed (when using days_back filter)
@@ -7125,9 +7125,9 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                     if dt_check.year < 2005: is_bad_date = True
             except: pass
 
-            if old_lang == "Unknown" or old_lang == "": needs_download = True 
-            elif is_bad_date: needs_download = True 
-            elif speaker != "Unknown Speaker" and speaker != old_speaker:
+            if old_lang == "Unknown" or old_lang == "": needs_download = True
+            elif is_bad_date: needs_download = True
+            elif speaker and speaker != "Unknown Speaker" and speaker != old_speaker:
                 print(f"[{count}/{total}] 📝 CORRECTING SPEAKER: {old_speaker} -> {speaker}")
                 old_key = speaker_casefold_key(old_speaker)
                 canonical_old = known_casefold.get(old_key) if old_key else None
