@@ -18,6 +18,7 @@ import unicodedata
 import signal
 import sys
 import threading
+import concurrent.futures
 import ShalomTabernacleSermonScraperv2 as st_scraper
 from pytubefix import YouTube, Playlist
 from pytubefix.cli import on_progress
@@ -294,6 +295,43 @@ def should_shutdown():
 def reset_shutdown_state():
     """Reset shutdown state for fresh runs."""
     _shutdown_requested.clear()
+
+# --- YOUTUBE TIMEOUT WRAPPER ---
+YOUTUBE_TIMEOUT_SECONDS = 30
+
+def youtube_with_timeout(url, client=None, use_oauth=False, allow_oauth_cache=True, timeout=YOUTUBE_TIMEOUT_SECONDS):
+    """
+    Create a YouTube object with a timeout to prevent hanging on problematic videos.
+
+    Args:
+        url: YouTube video URL
+        client: Client type (e.g., 'WEB', 'ANDROID') - if None, uses default
+        use_oauth: Whether to use OAuth
+        allow_oauth_cache: Whether to allow OAuth caching
+        timeout: Maximum seconds to wait (default: 30)
+
+    Returns:
+        YouTube object if successful, None if timeout or error
+    """
+    def create_youtube():
+        if client:
+            yt = YouTube(url, client=client, use_oauth=use_oauth, allow_oauth_cache=allow_oauth_cache)
+        else:
+            yt = YouTube(url, use_oauth=use_oauth, allow_oauth_cache=allow_oauth_cache)
+        # Force metadata fetch to happen now (this is what can hang)
+        _ = yt.title
+        return yt
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(create_youtube)
+        try:
+            return future.result(timeout=timeout)
+        except concurrent.futures.TimeoutError:
+            print(f"      ⏱️ TIMEOUT ({timeout}s) fetching: {url[:60]}...")
+            return None
+        except Exception as e:
+            # Re-raise the exception so caller can handle it
+            raise e
 
 # --- ATOMIC FILE OPERATIONS ---
 def atomic_write_csv(filepath, rows, fieldnames):
@@ -3439,10 +3477,14 @@ def backfill_duration_metadata(data_dir, dry_run=False, churches=None, limit=Non
                     continue
                 
                 print(f"   [{idx}/{len(to_process)}] Fetching: {title}...")
-                
+
                 try:
                     time.sleep(1)  # Rate limiting
-                    yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
+                    yt_obj = youtube_with_timeout(url, use_oauth=False, allow_oauth_cache=True)
+                    if yt_obj is None:
+                        print(f"      ❌ Skipped (timeout)")
+                        total_errors += 1
+                        continue
                     duration_seconds = yt_obj.length if hasattr(yt_obj, 'length') else 0
                     duration_minutes = int(duration_seconds / 60) if duration_seconds else 0
                     
@@ -3634,12 +3676,15 @@ def heal_unknown_dates(data_dir, dry_run=False, churches=None, limit=None):
             
             try:
                 time.sleep(1)  # Rate limiting
-                yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
-                
+                yt_obj = youtube_with_timeout(url, use_oauth=False, allow_oauth_cache=True)
+                if yt_obj is None:
+                    total_failed += 1
+                    continue
+
                 # Try to get date from title/description first
                 description = yt_obj.description or ""
                 new_date = determine_sermon_date(title, description, yt_obj)
-                
+
                 if new_date and new_date != "Unknown Date":
                     rows[row_idx]['date'] = new_date
                     modified = True
@@ -3656,7 +3701,7 @@ def heal_unknown_dates(data_dir, dry_run=False, churches=None, limit=None):
                     else:
                         total_failed += 1
                         print(f"         ❌ Could not determine date")
-                        
+
             except Exception as e:
                 total_failed += 1
                 print(f"         ❌ Error: {str(e)[:50]}")
@@ -4343,7 +4388,10 @@ def enrich_metadata(data_dir, dry_run=False, churches=None, limit=None):
 
             try:
                 time.sleep(1)  # Rate limiting
-                yt_obj = YouTube(url, use_oauth=False, allow_oauth_cache=True)
+                yt_obj = youtube_with_timeout(url, use_oauth=False, allow_oauth_cache=True)
+                if yt_obj is None:
+                    total_failed += 1
+                    continue
 
                 enriched_fields = []
 
@@ -6298,9 +6346,9 @@ def save_timestamp_data(filepath, video_id, segments):
 
 def fetch_captions_with_client(video_id, client_type):
     url = f"https://www.youtube.com/watch?v={video_id}"
-    yt = YouTube(url, client=client_type, use_oauth=False, allow_oauth_cache=False)
-    try: _ = yt.title 
-    except: return None, None
+    yt = youtube_with_timeout(url, client=client_type, use_oauth=False, allow_oauth_cache=False)
+    if yt is None:
+        return None, None
     caption_track = None
     search_order = ['en', 'a.en', 'en-US', 'es', 'a.es', 'fr', 'pt']
     for code in search_order:
@@ -6544,9 +6592,11 @@ def metadata_only_scan(church_name, config, known_speakers):
                 print(f"   [{i}/{len(unique_videos)}] UNLISTED REFRESH: {title[:50]}...")
                 try:
                     time.sleep(1)  # Rate limiting
-                    yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
+                    yt_obj = youtube_with_timeout(video_url, use_oauth=False, allow_oauth_cache=True)
+                    if yt_obj is None:
+                        continue
                     description = yt_obj.description or ""
-                    
+
                     # Update metadata if we got better info
                     if description and not existing.get('description'):
                         existing['description'] = description.replace('\n', ' ').replace('\r', ' ')[:500]
@@ -6573,10 +6623,30 @@ def metadata_only_scan(church_name, config, known_speakers):
         
         # New video - fetch metadata from YouTube
         print(f"   [{i}/{len(unique_videos)}] NEW: {title[:60]}...")
-        
+
         try:
             time.sleep(1)  # Rate limiting
-            yt_obj = YouTube(video_url, use_oauth=False, allow_oauth_cache=True)
+            yt_obj = youtube_with_timeout(video_url, use_oauth=False, allow_oauth_cache=True)
+            if yt_obj is None:
+                # Add with minimal info on timeout
+                existing_history[video_url] = {
+                    "date": "Unknown Date",
+                    "status": "Metadata Error",
+                    "speaker": "Unknown Speaker",
+                    "title": title,
+                    "url": video_url,
+                    "last_checked": today_str,
+                    "language": "Unknown",
+                    "type": "Unknown",
+                    "description": "",
+                    "duration": 0,
+                    "church": church_name,
+                    "first_scraped": today_str,
+                    "video_status": "unknown",
+                    "video_removed_date": ""
+                }
+                new_count += 1
+                continue
             description = yt_obj.description or ""
             sermon_date = determine_sermon_date(title, description, yt_obj)
             
