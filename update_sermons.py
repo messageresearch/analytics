@@ -1009,14 +1009,15 @@ def video_matches_filter(video, filter_config, yt_object=None):
     return False
 
 
-def fetch_additional_channel_videos(channel_config, limit=None):
+def fetch_additional_channel_videos(channel_config, limit=None, days_back=None):
     """
     Fetch videos from an additional channel with filtering support.
-    
+
     Args:
         channel_config: Dictionary with 'url', 'name', 'filter', and optionally 'date_format'
         limit: Maximum number of videos to fetch (None for all)
-    
+        days_back: Only include videos from the last N days (None for all)
+
     Returns:
         Tuple of (matching_videos, total_scanned, filtered_out)
     """
@@ -1042,13 +1043,27 @@ def fetch_additional_channel_videos(channel_config, limit=None):
         
         print(f"      📊 Found {len(all_videos)} videos total")
         
+        # Apply date filter first if days_back is set
+        if days_back:
+            date_filtered = []
+            for video in all_videos:
+                published_time_text = video.get('publishedTimeText', {}).get('simpleText', '')
+                if published_time_text and parse_published_time(published_time_text, max_days=days_back):
+                    date_filtered.append(video)
+            print(f"      📅 Date filter: {len(date_filtered)} videos within {days_back} days (skipped {len(all_videos) - len(date_filtered)} older)")
+            all_videos = date_filtered
+
         if not filter_config:
+            for video in all_videos:
+                video['_from_additional_channel'] = True
+                video['_additional_channel_name'] = channel_name
+                video['_date_format'] = channel_config.get('date_format')
             return all_videos, len(all_videos), 0
-        
-        # Apply filter
+
+        # Apply content filter
         require_terms = filter_config.get('require_any', [])
         print(f"      🔍 Filtering for: {', '.join(require_terms)}")
-        
+
         for video in all_videos:
             if video_matches_filter(video, filter_config):
                 # Mark the video with the source channel info
@@ -1056,7 +1071,7 @@ def fetch_additional_channel_videos(channel_config, limit=None):
                 video['_additional_channel_name'] = channel_name
                 video['_date_format'] = channel_config.get('date_format')
                 matching_videos.append(video)
-        
+
         filtered_out = len(all_videos) - len(matching_videos)
         print(f"      ✅ {len(matching_videos)} videos matched filter ({filtered_out} filtered out)")
         
@@ -6957,23 +6972,28 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         else:
             print(f"   ℹ️ No channel URL - scanning playlists only...")
         
-        # Also fetch videos from configured playlists (e.g., legacy/archived content)
+        # Fetch videos from configured playlists (legacy/archived content)
+        # Skip playlists when days_back is set - they're for archive content
         playlists = config.get('playlists', [])
-        for playlist_info in playlists:
-            playlist_id = playlist_info.get('id')
-            playlist_name = playlist_info.get('name', playlist_id)
-            if playlist_id:
-                print(f"   📋 Scanning playlist: {playlist_name}...")
-                playlist_videos = fetch_playlist_videos(playlist_id, limit=limit)
-                print(f"      Found {len(playlist_videos)} videos in playlist.")
-                all_videos.extend(playlist_videos)
-        
+        if days_back:
+            if playlists:
+                print(f"   📋 Skipping {len(playlists)} playlist(s) - using {days_back}-day filter")
+        else:
+            for playlist_info in playlists:
+                playlist_id = playlist_info.get('id')
+                playlist_name = playlist_info.get('name', playlist_id)
+                if playlist_id:
+                    print(f"   📋 Scanning playlist: {playlist_name}...")
+                    playlist_videos = fetch_playlist_videos(playlist_id, limit=limit)
+                    print(f"      Found {len(playlist_videos)} videos in playlist.")
+                    all_videos.extend(playlist_videos)
+
         # Fetch videos from additional channels (with filtering)
         additional_channels = config.get('additional_channels', [])
         for add_channel in additional_channels:
             add_channel_name = add_channel.get('name', 'Additional Channel')
             print(f"   📺 Processing additional channel: {add_channel_name}...")
-            matching_videos, total_scanned, filtered_out = fetch_additional_channel_videos(add_channel, limit=limit)
+            matching_videos, total_scanned, filtered_out = fetch_additional_channel_videos(add_channel, limit=limit, days_back=days_back)
             if matching_videos:
                 all_videos.extend(matching_videos)
 
