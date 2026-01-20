@@ -1,0 +1,2445 @@
+[0;34m[2026-01-19 21:08:42][0m ==============================================
+[0;34m[2026-01-19 21:08:42][0m   Daily Update Started
+[0;34m[2026-01-19 21:08:42][0m ==============================================
+[0;34m[2026-01-19 21:08:42][0m Working directory: /Users/johncalvo/github/messageresearch_analytics
+[0;34m[2026-01-19 21:08:42][0m Log file: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260119_210842.log
+[0;34m[2026-01-19 21:08:42][0m Days to look back: 7
+[0;34m[2026-01-19 21:08:42][0m Dry run: false
+[0;34m[2026-01-19 21:08:42][0m Step 1a/7: Scraping new videos from last 7 days...
+=== update_sermons.py script started ===
+\n🔄 PARTIAL SCRAPE: Last 7 days for ALL channels
+==================================================
+\n--------------------------------------------------
+Processing Channel: Arizona Believers Church
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 551
+[1/551] PROCESSING: Bro. Isaac Hatfield: It is Recognizing Time
+   👤 Speaker: Isaac Hatfield | 📂 Type: Youth Service | ⏱️ 70m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (1919 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Bro. Isaac Hatfield: It is Recognizing Time
+      Speaker:  Isaac Hatfield
+      Type:     Youth Service
+      Lang:     English
+      Status:   Success
+      Duration: 70 min
+      URL:      https://www.youtube.com/watch?v=3A-y3eCirHo
+[2/551] PROCESSING: The Christian Mindset Pt. 1
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 77m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2042 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    The Christian Mindset Pt. 1
+      Speaker:  
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 77 min
+      URL:      https://www.youtube.com/watch?v=Ora7Kmx2BCk
+   📦 Preserved 548 historical entries not found in current scan.
+SUCCESS: Arizona Believers Church complete.
+\n--------------------------------------------------
+Processing Channel: Believer's Spoken Word Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 916
+[1/916] PROCESSING: BSWT LIVE
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 158m
+   ✅ File updated.
+   📍 Timestamps saved (3436 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    BSWT LIVE
+      Speaker:  
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 158 min
+      URL:      https://www.youtube.com/watch?v=oubRTiOZN9I
+   📦 Preserved 914 historical entries not found in current scan.
+SUCCESS: Believer's Spoken Word Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Believers Christian Fellowship
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1210
+[1/1210] PROCESSING: Sermon Clip: 260111 - Chris Take: When Water Pours Wine
+   👤 Speaker: Chris Take | 📂 Type: Sermon Clip | ⏱️ 2m
+   ✅ File updated.
+   📍 Timestamps saved (78 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-11
+      Title:    Sermon Clip: 260111 - Chris Take: When Water Pours Wine
+      Speaker:  Chris Take
+      Type:     Sermon Clip
+      Lang:     English
+      Status:   Success
+      Duration: 2 min
+      URL:      https://www.youtube.com/watch?v=kcPMF_Cbca8
+[2/1210] PROCESSING: 260111 - Chris Take: When Water Pours Wine
+   👤 Speaker: Chris Take | 📂 Type: Church Service | ⏱️ 107m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-11
+      Title:    260111 - Chris Take: When Water Pours Wine
+      Speaker:  Chris Take
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 107 min
+      URL:      https://www.youtube.com/watch?v=WLCuSA61DAI
+   📦 Preserved 1208 historical entries not found in current scan.
+SUCCESS: Believers Christian Fellowship complete.
+\n--------------------------------------------------
+Processing Channel: Bethel Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 1 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 1037
+[1/1037] PROCESSING: Sunday Service: Demonology, The Spiritual Realm Pt. 6 - Bro. Jason Watkins
+   👤 Speaker: Jason Watkins | 📂 Type: Church Service | ⏱️ 130m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2381 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Sunday Service: Demonology, The Spiritual Realm Pt. 6 - Bro. Jason Watkins
+      Speaker:  Jason Watkins
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 130 min
+      URL:      https://www.youtube.com/watch?v=VLL6wzfW9gA
+[2/1037] PROCESSING: Sunday School: The Word Dynamo Pt.3 -Bro Matthew Smith
+   👤 Speaker: Matthew Smith | 📂 Type: Sunday School | ⏱️ 35m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (732 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Sunday School: The Word Dynamo Pt.3 -Bro Matthew Smith
+      Speaker:  Matthew Smith
+      Type:     Sunday School
+      Lang:     English
+      Status:   Success
+      Duration: 35 min
+      URL:      https://www.youtube.com/watch?v=eiOCn3FVBTs
+[3/1037] PROCESSING: 260114- Kidri Diggs: Authority Of Sons
+   👤 Speaker: Kidri Diggs | 📂 Type: Church Service | ⏱️ 117m
+   ✅ File updated.
+   📍 Timestamps saved (2533 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    260114- Kidri Diggs: Authority Of Sons
+      Speaker:  Kidri Diggs
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 117 min
+      URL:      https://www.youtube.com/watch?v=Y0kFumBPGYY
+[868/1037] PROCESSING: The Greatest Birth in History - Jean Watkins (Christmas Program 2023)
+   👤 Speaker: Jean Watkins | 📂 Type: Christmas Program | ⏱️ 19m
+   ✅ File updated.
+   📍 Timestamps saved (399 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-16
+      Title:    The Greatest Birth in History - Jean Watkins (Christmas Program 2023)
+      Speaker:  Jean Watkins
+      Type:     Christmas Program
+      Lang:     English
+      Status:   Success
+      Duration: 19 min
+      URL:      https://www.youtube.com/watch?v=d1ftzwowKT8
+   📦 Preserved 1033 historical entries not found in current scan.
+SUCCESS: Bethel Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Bride of Christ Fellowship
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1168
+[1/1168] PROCESSING: (1-18-26PM) Sunday Evening Service - David Hawkins
+   👤 Speaker: David Hawkins | 📂 Type: Church Service | ⏱️ 72m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    (1-18-26PM) Sunday Evening Service - David Hawkins
+      Speaker:  David Hawkins
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 72 min
+      URL:      https://www.youtube.com/watch?v=_YuB-g-mubQ
+[2/1168] PROCESSING: (1-18-26AM) Sunday Morning Service- David Hawkins
+   👤 Speaker: David Hawkins | 📂 Type: Church Service | ⏱️ 80m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2203 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    (1-18-26AM) Sunday Morning Service- David Hawkins
+      Speaker:  David Hawkins
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 80 min
+      URL:      https://www.youtube.com/watch?v=oyrao33rtuo
+   📦 Preserved 1166 historical entries not found in current scan.
+SUCCESS: Bride of Christ Fellowship complete.
+\n--------------------------------------------------
+Processing Channel: Bride Tabernacle of Columbia SC
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 620
+[1/620] PROCESSING: Minister E. Legette: "Choosing Faith Over Fear"
+   👤 Speaker:  | 📂 Type: Sunday School | ⏱️ 107m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2269 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Minister E. Legette: "Choosing Faith Over Fear"
+      Speaker:  
+      Type:     Sunday School
+      Lang:     English
+      Status:   Success
+      Duration: 107 min
+      URL:      https://www.youtube.com/watch?v=uc01sYh4cZI
+[2/620] PROCESSING: Pastor H. Simmons: "Walking by Faith or Walking by Sight"
+   👤 Speaker: H. Simmons | 📂 Type: Sunday School | ⏱️ 82m
+   ✅ File updated.
+   📍 Timestamps saved (1591 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-17
+      Title:    Pastor H. Simmons: "Walking by Faith or Walking by Sight"
+      Speaker:  H. Simmons
+      Type:     Sunday School
+      Lang:     English
+      Status:   Success
+      Duration: 82 min
+      URL:      https://www.youtube.com/watch?v=TQMi8iftfUM
+   📦 Preserved 618 historical entries not found in current scan.
+SUCCESS: Bride Tabernacle of Columbia SC complete.
+\n--------------------------------------------------
+Processing Channel: Calgary Living Word Assembly
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 2 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 707
+[1/707] PROCESSING: 2026-01-18 Bro. Barry - Jehovah Shalom Part 3
+   👤 Speaker: Barry Johnson | 📂 Type: Church Service | ⏱️ 106m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2293 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    2026-01-18 Bro. Barry - Jehovah Shalom Part 3
+      Speaker:  Barry Johnson
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 106 min
+      URL:      https://www.youtube.com/watch?v=HKuJQwzcWYM
+[2/707] PROCESSING: 2026-01-18 Bro. Barry - Jehovah Shalom Part 2
+   👤 Speaker: Barry Johnson | 📂 Type: Short Clip | ⏱️ 54m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    2026-01-18 Bro. Barry - Jehovah Shalom Part 2
+      Speaker:  Barry Johnson
+      Type:     Short Clip
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 54 min
+      URL:      https://www.youtube.com/watch?v=0HCxjNmVnkk
+[3/707] PROCESSING: Bro. Emmanuel - The Choice from Christ
+   👤 Speaker: Emmanuel Sarpong | 📂 Type: Church Service | ⏱️ 113m
+   ✅ File updated.
+   📍 Timestamps saved (2152 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Bro. Emmanuel - The Choice from Christ
+      Speaker:  Emmanuel Sarpong
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 113 min
+      URL:      https://www.youtube.com/watch?v=5oWGOHddGN0
+[380/707] 📝 CORRECTING SPEAKER: Unknown Speaker -> 
+   🔄 Updated/Renamed file: 2026-01-18 - The Original Life - .txt
+   📦 Preserved 699 historical entries not found in current scan.
+SUCCESS: Calgary Living Word Assembly complete.
+\n--------------------------------------------------
+Processing Channel: Cedar Hills - Church of the Cross
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1238
+[1/1238] PROCESSING: Jan 18, 2026 | Bro. Jimmy Alkire
+   👤 Speaker: Jimmy Alkire | 📂 Type: Church Service | ⏱️ 144m
+   ✅ Transcript downloaded & Saved (Lang: Spanish).
+   📍 Timestamps saved (2017 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Jan 18, 2026 | Bro. Jimmy Alkire
+      Speaker:  Jimmy Alkire
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 144 min
+      URL:      https://www.youtube.com/watch?v=ct00y9gNT2Q
+[2/1238] PROCESSING: Jan 14, 2026 | Bro. Emilio Perez Jr. & Bro. Salvador Guerrero
+   👤 Speaker: Emilio Perez Jr | 📂 Type: Church Service | ⏱️ 116m
+   ✅ File updated.
+   📍 Timestamps saved (1934 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Jan 14, 2026 | Bro. Emilio Perez Jr. & Bro. Salvador Guerrero
+      Speaker:  Emilio Perez Jr
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 116 min
+      URL:      https://www.youtube.com/watch?v=ziurpPuRtRk
+   📦 Preserved 1236 historical entries not found in current scan.
+SUCCESS: Cedar Hills - Church of the Cross complete.
+\n--------------------------------------------------
+Processing Channel: Cloverdale Bibleway
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Scanning playlist: Cloverdale Bibleway Playlist...
+      Found 142 videos in playlist.
+   📺 Processing additional channel: Christ Witness Guss Archive...
+      🌐 Scanning channel: Christ Witness Guss Archive...
+      📊 Found 815 videos total
+      🔍 Filtering for: Ed Byskal, Cloverdale Bibleway
+      ✅ 395 videos matched filter (420 filtered out)
+   Videos found: 957
+   📦 Preserved 957 historical entries not found in current scan.
+SUCCESS: Cloverdale Bibleway complete.
+\n--------------------------------------------------
+Processing Channel: Christian Life Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 901
+[1/901] PROCESSING: [2026-01-18pm] Sunday Evening Service | Br. Matthew McGeary
+   👤 Speaker: Matthew McGeary | 📂 Type: Church Service | ⏱️ 132m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2629 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    [2026-01-18pm] Sunday Evening Service | Br. Matthew McGeary
+      Speaker:  Matthew McGeary
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 132 min
+      URL:      https://www.youtube.com/watch?v=SghZZv6Z39Y
+[2/901] PROCESSING: [2026-01-18am] The Mystery Of His Will | Br. Cosmin Stefan
+   👤 Speaker: Cosmin Stefan | 📂 Type: Church Service | ⏱️ 213m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (4286 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    [2026-01-18am] The Mystery Of His Will | Br. Cosmin Stefan
+      Speaker:  Cosmin Stefan
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 213 min
+      URL:      https://www.youtube.com/watch?v=fXeO3rbw7zw
+[3/901] PROCESSING: [2026-01-14wed] Against the Gates of Hell - Br. Sergio Hernandez
+   👤 Speaker: Sergio Hernandez | 📂 Type: Church Service | ⏱️ 123m
+   ✅ File updated.
+   📍 Timestamps saved (2537 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    [2026-01-14wed] Against the Gates of Hell - Br. Sergio Hernandez
+      Speaker:  Sergio Hernandez
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 123 min
+      URL:      https://www.youtube.com/watch?v=XIJQ8dIINW0
+   📦 Preserved 898 historical entries not found in current scan.
+SUCCESS: Christian Life Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Coleman Family Ministries
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 252
+   📦 Preserved 252 historical entries not found in current scan.
+SUCCESS: Coleman Family Ministries complete.
+\n--------------------------------------------------
+Processing Channel: Days of the Voice Fellowship
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 783
+[1/783] PROCESSING: 26-0118M Limitless God With Unlimited Blessings || Bro Martin Shalom
+   👤 Speaker: Martin | 📂 Type: Church Service | ⏱️ 203m
+   ✅ File updated.
+   📍 Timestamps saved (3009 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    26-0118M Limitless God With Unlimited Blessings || Bro Martin Shalom
+      Speaker:  Martin
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 203 min
+      URL:      https://www.youtube.com/watch?v=zUlx02Lin9I
+   📦 Preserved 782 historical entries not found in current scan.
+SUCCESS: Days of the Voice Fellowship complete.
+\n--------------------------------------------------
+Processing Channel: EL Tabernacle Ministries
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 6 unlisted videos from summary CSV.
+   Videos found: 133
+[32/133] PROCESSING: Will Los Angeles Go This Year? - Apostle Edgar H. Roscoe || 16 Jan 2026
+   👤 Speaker: Edgar Roscoe | 📂 Type: Church Service | ⏱️ 83m
+   ✅ File updated.
+   📍 Timestamps saved (1513 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-16
+      Title:    Will Los Angeles Go This Year? - Apostle Edgar H. Roscoe || 16 Jan 2026
+      Speaker:  Edgar Roscoe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 83 min
+      URL:      https://www.youtube.com/watch?v=ytIIkByUyQU
+   📦 Preserved 132 historical entries not found in current scan.
+SUCCESS: EL Tabernacle Ministries complete.
+\n--------------------------------------------------
+Processing Channel: Edmonton Restored Word Fellowship
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 1 unlisted videos from summary CSV.
+   Videos found: 77
+   📦 Preserved 75 historical entries not found in current scan.
+SUCCESS: Edmonton Restored Word Fellowship complete.
+\n--------------------------------------------------
+Processing Channel: End Time Message Tabernacle CA
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 12
+   📦 Preserved 12 historical entries not found in current scan.
+SUCCESS: End Time Message Tabernacle CA complete.
+\n--------------------------------------------------
+Processing Channel: End Time Message Tabernacle CO
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 2 unlisted videos from summary CSV.
+   Videos found: 1823
+[1/1823] PROCESSING: 01-18-26 | Have You Met The Lord Jesus Christ Yet? - Pt4: Peter's Conversion
+   👤 Speaker: Faustin Lukumuena | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     Unknown Date
+      Title:    01-18-26 | Have You Met The Lord Jesus Christ Yet? - Pt4: Peter's Conversion
+      Speaker:  Faustin Lukumuena
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=qcocsgOui3k
+[2/1823] PROCESSING: 01-14-26 | Christ My Final Tying Post: Bro. Richard Lubaki
+   👤 Speaker: Richard Lubaki | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     Unknown Date
+      Title:    01-14-26 | Christ My Final Tying Post: Bro. Richard Lubaki
+      Speaker:  Richard Lubaki
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=3Xr6ntsK6EU
+[362/1823] PROCESSING: 01-18-25 | I Know A Man Who Can - Sis. Patience Mavinga & Saints 
+   👤 Speaker: Patience Mavinga | 📂 Type: Short Clip | ⏱️ 7m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (115 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    01-18-25 | I Know A Man Who Can - Sis. Patience Mavinga & Saints 
+      Speaker:  Patience Mavinga
+      Type:     Short Clip
+      Lang:     English
+      Status:   Success
+      Duration: 7 min
+      URL:      https://www.youtube.com/watch?v=LTfOHgXArGU
+   📦 Preserved 1820 historical entries not found in current scan.
+SUCCESS: End Time Message Tabernacle CO complete.
+\n--------------------------------------------------
+Processing Channel: Evangelismo Para El Rapto
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 1 unlisted videos from summary CSV.
+   Videos found: 224
+   📦 Preserved 224 historical entries not found in current scan.
+SUCCESS: Evangelismo Para El Rapto complete.
+\n--------------------------------------------------
+Processing Channel: Evening Light Fellowship AZ
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 389
+[1/389] PROCESSING: Faith Is Changing Our Dimensional Thinking About God - Bro. Ron Peterson
+   👤 Speaker: Ron Peterson | 📂 Type: Church Service | ⏱️ 170m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (3036 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    Faith Is Changing Our Dimensional Thinking About God - Bro. Ron Peterson
+      Speaker:  Ron Peterson
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 170 min
+      URL:      https://www.youtube.com/watch?v=EgxjVV00vjs
+[2/389] PROCESSING: Transforming Power - Bro. Steve Klar
+   👤 Speaker: Steve Klar | 📂 Type: Church Service | ⏱️ 120m
+   ✅ File updated.
+   📍 Timestamps saved (2316 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Transforming Power - Bro. Steve Klar
+      Speaker:  Steve Klar
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 120 min
+      URL:      https://www.youtube.com/watch?v=uAxxboZEWAg
+   📦 Preserved 387 historical entries not found in current scan.
+SUCCESS: Evening Light Fellowship AZ complete.
+\n--------------------------------------------------
+Processing Channel: Evening Light Fellowship CA
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 737
+[1/737] PROCESSING: 20260118 - A Position of Dominion  Pt. 5 - The Nature Of Our Battle - Bro Jon Curlett
+   👤 Speaker: Jon Curlett | 📂 Type: Church Service | ⏱️ 141m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    20260118 - A Position of Dominion  Pt. 5 - The Nature Of Our Battle - Bro Jon Curlett
+      Speaker:  Jon Curlett
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 141 min
+      URL:      https://www.youtube.com/watch?v=13KQYen68CU
+[2/737] PROCESSING: 20260114 - Hold The Line - Bro Jon Curlett
+   👤 Speaker: Jon Curlett | 📂 Type: Church Service | ⏱️ 143m
+   ✅ File updated.
+   📍 Timestamps saved (3185 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    20260114 - Hold The Line - Bro Jon Curlett
+      Speaker:  Jon Curlett
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 143 min
+      URL:      https://www.youtube.com/watch?v=RGlpMbSpkuE
+   📦 Preserved 735 historical entries not found in current scan.
+SUCCESS: Evening Light Fellowship CA complete.
+\n--------------------------------------------------
+Processing Channel: Evening Light Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 4 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 1071
+[1/1071] PROCESSING: The Mountain Movers: Bringing Order Out of Chaos, Part 3 - Bro. Tim Pruitt on January 18, 2026
+   👤 Speaker: Tim Pruitt | 📂 Type: Church Service | ⏱️ 193m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (3814 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    The Mountain Movers: Bringing Order Out of Chaos, Part 3 - Bro. Tim Pruitt on January 18, 2026
+      Speaker:  Tim Pruitt
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 193 min
+      URL:      https://www.youtube.com/watch?v=lwLjRjxjXio
+[2/1071] PROCESSING: Wings of Faith - Bro. Timothy Pruitt on January 14, 2026
+   👤 Speaker: Timothy Pruitt | 📂 Type: Church Service | ⏱️ 98m
+   ✅ File updated.
+   📍 Timestamps saved (2226 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    Wings of Faith - Bro. Timothy Pruitt on January 14, 2026
+      Speaker:  Timothy Pruitt
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 98 min
+      URL:      https://www.youtube.com/watch?v=h-5k3Mpb0QA
+[537/1071] PROCESSING: You're Not Finished - Bro. Jeremy Butts
+   👤 Speaker: Jeremy Butts | 📂 Type: Short Clip | ⏱️ 4m
+   ✅ File updated.
+   📍 Timestamps saved (64 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    You're Not Finished - Bro. Jeremy Butts
+      Speaker:  Jeremy Butts
+      Type:     Short Clip
+      Lang:     English
+      Status:   Success
+      Duration: 4 min
+      URL:      https://www.youtube.com/watch?v=kULcyzKckBw
+[538/1071] PROCESSING: Rise Above It All - ELT Choir
+   👤 Speaker: Rise Above | 📂 Type: Short Clip | ⏱️ 4m
+   ✅ File updated.
+   📍 Timestamps saved (57 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Rise Above It All - ELT Choir
+      Speaker:  Rise Above
+      Type:     Short Clip
+      Lang:     English
+      Status:   Success
+      Duration: 4 min
+      URL:      https://www.youtube.com/watch?v=7qpWKyJ5ejY
+[539/1071] PROCESSING: Working On Her Testimony - Sis. Alyssa Taggart & Sis. Laura Burns
+   👤 Speaker: Alyssa Taggart | 📂 Type: Testimonies | ⏱️ 4m
+   ✅ File updated.
+   📍 Timestamps saved (55 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Working On Her Testimony - Sis. Alyssa Taggart & Sis. Laura Burns
+      Speaker:  Alyssa Taggart
+      Type:     Testimonies
+      Lang:     English
+      Status:   Success
+      Duration: 4 min
+      URL:      https://www.youtube.com/watch?v=4CG5Ps3BgDc
+[540/1071] PROCESSING: Beulah Land - Bro. Jason Taggart & Bro. Jonathan Middleton
+   👤 Speaker: Jason Taggart | 📂 Type: Short Clip | ⏱️ 4m
+   ✅ File updated.
+   📍 Timestamps saved (52 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Beulah Land - Bro. Jason Taggart & Bro. Jonathan Middleton
+      Speaker:  Jason Taggart
+      Type:     Short Clip
+      Lang:     English
+      Status:   Success
+      Duration: 4 min
+      URL:      https://www.youtube.com/watch?v=7gjaNWmrN1k
+[541/1071] PROCESSING: Go Rest High On That Mountain - Bro. Phillip Roncali & Sis. Laura Burns
+   👤 Speaker: Phillip Roncali | 📂 Type: Short Clip | ⏱️ 3m
+   ✅ File updated.
+   📍 Timestamps saved (43 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Go Rest High On That Mountain - Bro. Phillip Roncali & Sis. Laura Burns
+      Speaker:  Phillip Roncali
+      Type:     Short Clip
+      Lang:     English
+      Status:   Success
+      Duration: 3 min
+      URL:      https://www.youtube.com/watch?v=IUChNcCn1t0
+   📦 Preserved 1064 historical entries not found in current scan.
+SUCCESS: Evening Light Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Evening Light Tabernacle Elkton KY
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 628
+[1/628] PROCESSING: Bro. Brad Powell • Sun. • 1/18/26 • Abrahams Seed, Fully Equipped
+   👤 Speaker: Brad Powell | 📂 Type: Church Service | ⏱️ 166m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2957 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Bro. Brad Powell • Sun. • 1/18/26 • Abrahams Seed, Fully Equipped
+      Speaker:  Brad Powell
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 166 min
+      URL:      https://www.youtube.com/watch?v=onXNfvugq_4
+[2/628] PROCESSING: Bro. Brad Powell • Wed. • 1/14/26 • Abrahams Seed
+   👤 Speaker: Brad Powell | 📂 Type: Church Service | ⏱️ 112m
+   ✅ File updated.
+   📍 Timestamps saved (1976 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Bro. Brad Powell • Wed. • 1/14/26 • Abrahams Seed
+      Speaker:  Brad Powell
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=fhSLvfqlVIA
+   📦 Preserved 626 historical entries not found in current scan.
+SUCCESS: Evening Light Tabernacle Elkton KY complete.
+\n--------------------------------------------------
+Processing Channel: Faith Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 384
+[1/384] PROCESSING: Pastor Shawn Martin "The Believer Has Protection"
+   👤 Speaker: Shawn Martin | 📂 Type: Church Service | ⏱️ 150m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2854 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Pastor Shawn Martin "The Believer Has Protection"
+      Speaker:  Shawn Martin
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 150 min
+      URL:      https://www.youtube.com/watch?v=ahXN0zkiCC4
+[2/384] PROCESSING: Pastor Shawn Martin "Sons Of God Are Led By His Spirit"
+   👤 Speaker: Shawn Martin | 📂 Type: Church Service | ⏱️ 112m
+   ✅ File updated.
+   📍 Timestamps saved (2166 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Pastor Shawn Martin "Sons Of God Are Led By His Spirit"
+      Speaker:  Shawn Martin
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=e51gvXueFTY
+   📦 Preserved 382 historical entries not found in current scan.
+SUCCESS: Faith Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Flagstaff Mission Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 10 unlisted videos from summary CSV.
+   Videos found: 70
+[1/70] PROCESSING: Sunday Morning Service - January 18, 2026
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 158m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (3027 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Sunday Morning Service - January 18, 2026
+      Speaker:  
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 158 min
+      URL:      https://www.youtube.com/watch?v=mf3fUQLMoQU
+[2/70] PROCESSING: Wednesday Evening Service - January 14, 2026
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 97m
+   ✅ File updated.
+   📍 Timestamps saved (1458 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    Wednesday Evening Service - January 14, 2026
+      Speaker:  
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 97 min
+      URL:      https://www.youtube.com/watch?v=4srVRC8rxtY
+   📦 Preserved 68 historical entries not found in current scan.
+SUCCESS: Flagstaff Mission Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Full Gospel Lighthouse Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 660
+[1/660] PROCESSING: "Giving the Lord Glory That Is Due Him" - Bro. Tom Byler on January 18th, 2026
+   👤 Speaker: Tom Byler | 📂 Type: Church Service | ⏱️ 150m
+   ✅ File updated.
+   📍 Timestamps saved (3087 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    "Giving the Lord Glory That Is Due Him" - Bro. Tom Byler on January 18th, 2026
+      Speaker:  Tom Byler
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 150 min
+      URL:      https://www.youtube.com/watch?v=xCJHx6NRBS8
+[2/660] PROCESSING: "Entering the Holiest by the Blood" - Bro. Tom Byler on January 17th, 2026
+   👤 Speaker: Tom Byler | 📂 Type: Church Service | ⏱️ 172m
+   ✅ File updated.
+   📍 Timestamps saved (3247 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-17
+      Title:    "Entering the Holiest by the Blood" - Bro. Tom Byler on January 17th, 2026
+      Speaker:  Tom Byler
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 172 min
+      URL:      https://www.youtube.com/watch?v=6n9sFzgAwL0
+   📦 Preserved 658 historical entries not found in current scan.
+SUCCESS: Full Gospel Lighthouse Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Good Neighbour Ministries
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1158
+[1/1158] PROCESSING: The Bridegroom Call - Part 3 (The Purpose Of God - Part 16) - Pastor Danny Mazzilli
+   👤 Speaker: Danny Mazzilli | 📂 Type: Church Service | ⏱️ 135m
+   ✅ File updated.
+   📍 Timestamps saved (2243 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    The Bridegroom Call - Part 3 (The Purpose Of God - Part 16) - Pastor Danny Mazzilli
+      Speaker:  Danny Mazzilli
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 135 min
+      URL:      https://www.youtube.com/watch?v=l2eEPABLFWQ
+[2/1158] PROCESSING: The Bridegroom Call - Part 2 (The Purpose Of God - Part 15) - Pastor Danny Mazzilli
+   👤 Speaker: Danny Mazzilli | 📂 Type: Church Service | ⏱️ 74m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    The Bridegroom Call - Part 2 (The Purpose Of God - Part 15) - Pastor Danny Mazzilli
+      Speaker:  Danny Mazzilli
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 74 min
+      URL:      https://www.youtube.com/watch?v=RsPzcVZX4JQ
+   📦 Preserved 1156 historical entries not found in current scan.
+SUCCESS: Good Neighbour Ministries complete.
+\n--------------------------------------------------
+Processing Channel: Good Shepherd Fellowship
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1034
+[1/1034] PROCESSING: 1/18/26 Sunday Service: Pastor Bloteh Won - Sparring Partner Pt 3: Speaking The Truth in Love
+   👤 Speaker: Bloteh Won | 📂 Type: Church Service | ⏱️ 186m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (3314 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    1/18/26 Sunday Service: Pastor Bloteh Won - Sparring Partner Pt 3: Speaking The Truth in Love
+      Speaker:  Bloteh Won
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 186 min
+      URL:      https://www.youtube.com/watch?v=EBN9tCFfMew
+[2/1034] PROCESSING: 1/18/26 Sunday School: Bro William Branham - 63-1222 God's Gifts Always Find Their Places (Ending)
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 19m
+   ✅ File updated.
+   📍 Timestamps saved (430 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    1/18/26 Sunday School: Bro William Branham - 63-1222 God's Gifts Always Find Their Places (Ending)
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     English
+      Status:   Success
+      Duration: 19 min
+      URL:      https://www.youtube.com/watch?v=gy2p6DRthWM
+[3/1034] PROCESSING: 01/14/2026 Wednesday Service: Pastor Bloteh Won - Bless The Lord Oh My Soul
+   👤 Speaker: Bloteh Won | 📂 Type: Church Service | ⏱️ 101m
+   ✅ File updated.
+   📍 Timestamps saved (1910 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    01/14/2026 Wednesday Service: Pastor Bloteh Won - Bless The Lord Oh My Soul
+      Speaker:  Bloteh Won
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 101 min
+      URL:      https://www.youtube.com/watch?v=tiYf4hRPtyo
+   📦 Preserved 1029 historical entries not found in current scan.
+SUCCESS: Good Shepherd Fellowship complete.
+\n--------------------------------------------------
+Processing Channel: Grace Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 4 unlisted videos from summary CSV.
+   Videos found: 217
+[1/217] PROCESSING: Bro Andrew Glover | Sunday Morning Service | 1-18-26
+   👤 Speaker: Andrew Glover | 📂 Type: Church Service | ⏱️ 149m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (3450 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Bro Andrew Glover | Sunday Morning Service | 1-18-26
+      Speaker:  Andrew Glover
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 149 min
+      URL:      https://www.youtube.com/watch?v=WNph-jG02nY
+[2/217] PROCESSING: Bro Andrew Glover | Spiritual Concentration (Concentrated On The Attraction) | 1-14-26
+   👤 Speaker: Andrew Glover | 📂 Type: Church Service | ⏱️ 148m
+   ✅ File updated.
+   📍 Timestamps saved (3034 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Bro Andrew Glover | Spiritual Concentration (Concentrated On The Attraction) | 1-14-26
+      Speaker:  Andrew Glover
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 148 min
+      URL:      https://www.youtube.com/watch?v=EtjlTnQQEKA
+   📦 Preserved 215 historical entries not found in current scan.
+SUCCESS: Grace Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Grace Tabernacle Nampa
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 589
+[1/589] PROCESSING: January 18, 2026 - Bro. Paul Haylett "The Brides Position #2"
+   👤 Speaker: Paul Haylett | 📂 Type: Church Service | ⏱️ 131m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2673 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    January 18, 2026 - Bro. Paul Haylett "The Brides Position #2"
+      Speaker:  Paul Haylett
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 131 min
+      URL:      https://www.youtube.com/watch?v=4bLhCbRBC1s
+[2/589] PROCESSING: January 14, 2025 - Bro David Dienhart "Her Head - Christ"
+   👤 Speaker: David Dienhart | 📂 Type: Church Service | ⏱️ 121m
+   ✅ File updated.
+   📍 Timestamps saved (2367 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-01-14
+      Title:    January 14, 2025 - Bro David Dienhart "Her Head - Christ"
+      Speaker:  David Dienhart
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 121 min
+      URL:      https://www.youtube.com/watch?v=oS9OcRNwxbY
+[3/589] PROCESSING: January 11, 2026 - Bro. Paul Haylett - "The Brides Position"
+   👤 Speaker: Paul Haylett | 📂 Type: Short Clip | ⏱️ 0m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-11
+      Title:    January 11, 2026 - Bro. Paul Haylett - "The Brides Position"
+      Speaker:  Paul Haylett
+      Type:     Short Clip
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=KqRqJtfun18
+   📦 Preserved 586 historical entries not found in current scan.
+SUCCESS: Grace Tabernacle Nampa complete.
+\n--------------------------------------------------
+Processing Channel: Harvest Time Bride Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 2 unlisted videos from summary CSV.
+   Videos found: 203
+[6/203] PROCESSING: Sun. Jan. 18, 2026 Pastor Dale Langstaff
+   👤 Speaker: Dale Langstaff | 📂 Type: Church Service | ⏱️ 109m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2159 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Sun. Jan. 18, 2026 Pastor Dale Langstaff
+      Speaker:  Dale Langstaff
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 109 min
+      URL:      https://www.youtube.com/watch?v=p0ltFxk6xbk
+   📦 Preserved 198 historical entries not found in current scan.
+SUCCESS: Harvest Time Bride Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Headstone Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1596
+[1/1596] PROCESSING: The House That Love Built - Pastor Olumuyiwa Omotoyinbo  Nnewi, Nigeria
+   👤 Speaker: Olumuyiwa Omotoyinbo | 📂 Type: Church Service | ⏱️ 179m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    The House That Love Built - Pastor Olumuyiwa Omotoyinbo  Nnewi, Nigeria
+      Speaker:  Olumuyiwa Omotoyinbo
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 179 min
+      URL:      https://www.youtube.com/watch?v=xjiAqYzx64o
+[2/1596] PROCESSING: The Open Book Of Our Redemptive Rights  - Pastor Theo Ovid - India
+   👤 Speaker: Theo Ovid | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     Unknown Date
+      Title:    The Open Book Of Our Redemptive Rights  - Pastor Theo Ovid - India
+      Speaker:  Theo Ovid
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=_rL09n5l7Gg
+   📦 Preserved 1594 historical entries not found in current scan.
+SUCCESS: Headstone Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Higher Ground Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 1163
+[1/1163] PROCESSING: Victory in Death // Min. Isaac Adude // Sun 1/18/26 AM
+   👤 Speaker: Isaac Adude | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     Unknown Date
+      Title:    Victory in Death // Min. Isaac Adude // Sun 1/18/26 AM
+      Speaker:  Isaac Adude
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=0lVW4CoDPsE
+[2/1163] PROCESSING: The Super Race // Bro. Esaie Bowa // Wed 1/14/26 PM
+   👤 Speaker: Esaie Bowa | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     Unknown Date
+      Title:    The Super Race // Bro. Esaie Bowa // Wed 1/14/26 PM
+      Speaker:  Esaie Bowa
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=lMcX4CDhpOM
+   📦 Preserved 1161 historical entries not found in current scan.
+SUCCESS: Higher Ground Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Higher Ground Tabernacle Iowa City
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 469
+   📦 Preserved 469 historical entries not found in current scan.
+SUCCESS: Higher Ground Tabernacle Iowa City complete.
+\n--------------------------------------------------
+Processing Channel: Inner Veil Ministries
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 484
+[300/484] PROCESSING: The World That Jesus Died For        |    Pastor Ibale Stephen      |    18.O1.2026
+   👤 Speaker: Ibale Stephen | 📂 Type: Church Service | ⏱️ 172m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2944 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    The World That Jesus Died For        |    Pastor Ibale Stephen      |    18.O1.2026
+      Speaker:  Ibale Stephen
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 172 min
+      URL:      https://www.youtube.com/watch?v=Yhw3R_kb4Ac
+   📦 Preserved 483 historical entries not found in current scan.
+SUCCESS: Inner Veil Ministries complete.
+\n--------------------------------------------------
+Processing Channel: Jericho Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 1 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 961
+[2/961] PROCESSING: Respeto #2 - Hno. Jose Flores
+   👤 Speaker: Emmanuel Santos | 📂 Type: Church Service | ⏱️ 148m
+   ✅ Transcript downloaded & Saved (Lang: Spanish).
+   📍 Timestamps saved (2296 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    Respeto #2 - Hno. Jose Flores
+      Speaker:  Emmanuel Santos
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 148 min
+      URL:      https://www.youtube.com/watch?v=v8nXoBG8mK0
+[3/961] PROCESSING: The Secret Of Transformation - Bro. Communion Kitsisa
+   👤 Speaker: Emmanuel Santos | 📂 Type: Communion Service | ⏱️ 130m
+   ✅ File updated.
+   📍 Timestamps saved (2401 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-17
+      Title:    The Secret Of Transformation - Bro. Communion Kitsisa
+      Speaker:  Emmanuel Santos
+      Type:     Communion Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 130 min
+      URL:      https://www.youtube.com/watch?v=Z626a-MOzF4
+[4/961] PROCESSING: Recognizing Your Day And Its Message (64-0726M) - Rev. William Marrion Branham
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 78m
+   ✅ File updated.
+   📍 Timestamps saved (1003 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    Recognizing Your Day And Its Message (64-0726M) - Rev. William Marrion Branham
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 78 min
+      URL:      https://www.youtube.com/watch?v=t0j3Sv2hcug
+   📦 Preserved 957 historical entries not found in current scan.
+SUCCESS: Jericho Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Literal Life Church
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 592
+[2/592] PROCESSING: “Running Back to You” sung by Kenny, Grace and Hannah Slachta at Literal Life Church
+   👤 Speaker: Hannah Slachta | 📂 Type: Short Clip | ⏱️ 5m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-13
+      Title:    “Running Back to You” sung by Kenny, Grace and Hannah Slachta at Literal Life Church
+      Speaker:  Hannah Slachta
+      Type:     Short Clip
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 5 min
+      URL:      https://www.youtube.com/watch?v=2J1qtqZLTZQ
+   📦 Preserved 591 historical entries not found in current scan.
+SUCCESS: Literal Life Church complete.
+\n--------------------------------------------------
+Processing Channel: Malachi Four Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 375
+   📦 Preserved 375 historical entries not found in current scan.
+SUCCESS: Malachi Four Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Mamelodi Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 426 unlisted videos from summary CSV.
+   Videos found: 606
+   📦 Preserved 605 historical entries not found in current scan.
+SUCCESS: Mamelodi Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: MOTRC
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 71
+[1/71] PROCESSING: How to Read the Book of Revelation Part 1 - Br Allistair Francis
+   👤 Speaker: Allistair Francis | 📂 Type: Church Service | ⏱️ 67m
+   ✅ File updated.
+   📍 Timestamps saved (1414 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    How to Read the Book of Revelation Part 1 - Br Allistair Francis
+      Speaker:  Allistair Francis
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 67 min
+      URL:      https://www.youtube.com/watch?v=Qy7hberDXUg
+[2/71] PROCESSING: Discouraged by the Message and the Prophet - The Message on Trial
+   👤 Speaker: Allistair | 📂 Type: Testimonies | ⏱️ 125m
+   ✅ File updated.
+   📍 Timestamps saved (2831 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-16
+      Title:    Discouraged by the Message and the Prophet - The Message on Trial
+      Speaker:  Allistair
+      Type:     Testimonies
+      Lang:     English
+      Status:   Success
+      Duration: 125 min
+      URL:      https://www.youtube.com/watch?v=2doctzIpqvU
+[3/71] PROCESSING: Knowing God and Knowing the Devil P3 - Br Allistair Francis
+   👤 Speaker: Allistair Francis | 📂 Type: Sermon Clip | ⏱️ 147m
+   ✅ File updated.
+   📍 Timestamps saved (3471 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    Knowing God and Knowing the Devil P3 - Br Allistair Francis
+      Speaker:  Allistair Francis
+      Type:     Sermon Clip
+      Lang:     English
+      Status:   Success
+      Duration: 147 min
+      URL:      https://www.youtube.com/watch?v=RPdgUhro-So
+   📦 Preserved 68 historical entries not found in current scan.
+SUCCESS: MOTRC complete.
+\n--------------------------------------------------
+Processing Channel: New Life Outreach Church Of Pawnee
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 425
+[1/425] PROCESSING: 2026-01-18 Bro Wendall Martin "The Flesh Lusts Against The Spirit"
+   👤 Speaker: Wendall Martin | 📂 Type: Church Service | ⏱️ 121m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    2026-01-18 Bro Wendall Martin "The Flesh Lusts Against The Spirit"
+      Speaker:  Wendall Martin
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 121 min
+      URL:      https://www.youtube.com/watch?v=UZNNGoGnQTo
+[2/425] PROCESSING: 2026-01-18 Bro Wendall Martin "The Superiority Of Jesus"
+   👤 Speaker: Wendall Martin | 📂 Type: Church Service | ⏱️ 145m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (2718 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    2026-01-18 Bro Wendall Martin "The Superiority Of Jesus"
+      Speaker:  Wendall Martin
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 145 min
+      URL:      https://www.youtube.com/watch?v=qgIxfKAvQJY
+[3/425] PROCESSING: 2026-01-14 Bro David Gadman "I've Got A Right To Praise Him"
+   👤 Speaker: David Gadman | 📂 Type: Church Service | ⏱️ 121m
+   ✅ File updated.
+   📍 Timestamps saved (2523 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-14
+      Title:    2026-01-14 Bro David Gadman "I've Got A Right To Praise Him"
+      Speaker:  David Gadman
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 121 min
+      URL:      https://www.youtube.com/watch?v=4qbFwcykCvU
+   📦 Preserved 422 historical entries not found in current scan.
+SUCCESS: New Life Outreach Church Of Pawnee complete.
+\n--------------------------------------------------
+Processing Channel: New Hope Revival Ministries
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 823
+[2/823] PROCESSING: Sunday Morning Service
+   👤 Speaker: Steven Shelley | 📂 Type: Church Service | ⏱️ 202m
+   ✅ Transcript downloaded & Saved (Lang: English).
+   📍 Timestamps saved (4075 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-19
+      Title:    Sunday Morning Service
+      Speaker:  Steven Shelley
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 202 min
+      URL:      https://www.youtube.com/watch?v=bfakZf_cGlo
+   📦 Preserved 820 historical entries not found in current scan.
+SUCCESS: New Hope Revival Ministries complete.
+\n--------------------------------------------------
+Processing Channel: Phoenix Lighthouse Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 1 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 1232
+[1/1232] PROCESSING: El Poder De Dios Para Transformar #1 | Minister Milton Reyes | Phoenix Lighthouse Tabernacle
+   👤 Speaker: Milton Reyes | 📂 Type: Church Service | ⏱️ 114m
+   ✅ File updated.
+   📍 Timestamps saved (1542 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    El Poder De Dios Para Transformar #1 | Minister Milton Reyes | Phoenix Lighthouse Tabernacle
+      Speaker:  Milton Reyes
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 114 min
+      URL:      https://www.youtube.com/watch?v=OsXY6HYt39Y
+[2/1232] PROCESSING: Mission Report: La Paz, Mexico | Minister Eliseo Moreno | Phoenix Lighthouse Tabernacle
+   👤 Speaker: Eliseo Moreno | 📂 Type: Church Service | ⏱️ 153m
+   ✅ File updated.
+   📍 Timestamps saved (2294 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Mission Report: La Paz, Mexico | Minister Eliseo Moreno | Phoenix Lighthouse Tabernacle
+      Speaker:  Eliseo Moreno
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 153 min
+      URL:      https://www.youtube.com/watch?v=aMhAQuL9sd8
+[1032/1232] PROCESSING: El Poder De Dios Para Transformar #2 | Apostle Pastor Bernie G. García | PLT
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 81m
+   ✅ File updated.
+   📍 Timestamps saved (1084 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-15
+      Title:    El Poder De Dios Para Transformar #2 | Apostle Pastor Bernie G. García | PLT
+      Speaker:  
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 81 min
+      URL:      https://www.youtube.com/watch?v=HUN3akZib9w
+   📦 Preserved 1229 historical entries not found in current scan.
+SUCCESS: Phoenix Lighthouse Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Phoenix Tabernacle Inc.
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   📋 Added 1 unlisted videos from summary CSV.
+   Videos found: 1117
+[890/1117] PROCESSING: Amanece, Llega el Día - Hno. Juan Francisco & Hna. Juliana Facio
+   👤 Speaker: Juan Francisco | 📂 Type: Short Clip | ⏱️ 4m
+   ✅ File updated.
+   📍 Timestamps saved (50 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    Amanece, Llega el Día - Hno. Juan Francisco & Hna. Juliana Facio
+      Speaker:  Juan Francisco
+      Type:     Short Clip
+      Lang:     Spanish
+      Status:   Success
+      Duration: 4 min
+      URL:      https://www.youtube.com/watch?v=Ml5-7mWt30s
+   📦 Preserved 1116 historical entries not found in current scan.
+SUCCESS: Phoenix Tabernacle Inc. complete.
+\n--------------------------------------------------
+Processing Channel: Radio La Voz Del Tiempo Final
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 971
+[1/971] PROCESSING: 5 sello parte # 4
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 139m
+   ✅ File updated.
+   📍 Timestamps saved (2654 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    5 sello parte # 4
+      Speaker:  
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 139 min
+      URL:      https://www.youtube.com/watch?v=5LI7wGLc-uQ
+   📦 Preserved 968 historical entries not found in current scan.
+SUCCESS: Radio La Voz Del Tiempo Final complete.
+\n--------------------------------------------------
+Processing Channel: Rapturing Grace Tabernacle
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Scanning YouTube for videos...
+   Videos found: 81
+   📦 Preserved 81 historical entries not found in current scan.
+SUCCESS: Rapturing Grace Tabernacle complete.
+\n--------------------------------------------------
+Processing Channel: Send The Light Church
+   📊 Scan Limit: Videos from the last 7 days.
+   🧹 Reset 1 invalid speaker names to 'Unknown Speaker' (entries preserved).
+   🔍 Scanning YouTube for videos...
+   Videos found: 498
+[1/498] PROCESSING: 1.18.26 - I  Am committed To Overcoming - John Martin
+   👤 Speaker: John Martin | 📂 Type: Church Service | ⏱️ 100m
+   ✅ File updated.
+   📍 Timestamps saved (2050 segments).
+   📊 SUMMARY DATA:
+      Date:     2026-01-18
+      Title:    1.18.26 - I  Am committed To Overcoming - John Martin
+      Speaker:  John Martin
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 100 min
+      URL:      https://www.youtube.com/watch?v=CdEHQBEx9Hc
+   📦 Preserved 497 historical entries not found in current scan.
+SUCCESS: Send The Light Church complete.
+\n--------------------------------------------------
+Processing Channel: Shalom Tabernacle Tucson
+   📊 Scan Limit: Videos from the last 7 days.
+   🔍 Detecting Shalom Tabernacle... Engaging Hybrid Mode.
+   📂 Loading Shalom CSV Database: data/shalom_tabernacle_sermons.csv
+   📚 Loaded 333 videos from CSV database.
+   🌐 Scraping website for new uploads (First 3 pages)...
+   🌐 [Website Scraper] Scanning first 3 pages of Shalom Tabernacle...
+   🌐 [Website Scraper] Found 30 sermon pages. Extracting data...
+   🌐 Found 30 videos on recent pages.
+   ✨ Merged Total: 333 videos (0 new found).
+   Videos found: 333
+[1/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=sLd_iaSNpg4
+[2/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=bLZnm-QD0bU
+[3/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=ZNDQDMdzWLE
+[4/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=sQdpJdjm4As
+[5/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=ryJG12jiPeg
+[6/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=42CLqQmEsXo
+[7/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=NFpSTvHunYk
+[8/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=B_OJkqCX9Jo
+[9/333] PROCESSING: Error Fetching YouTube Data
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ ?
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     N/A
+      Title:    Error Fetching YouTube Data
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 0 min
+      URL:      https://www.youtube.com/watch?v=JJe7f7ByeU0
+[11/333] PROCESSING: Sunday Morning 01-11-26
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 190m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-11
+      Title:    Sunday Morning 01-11-26
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 190 min
+      URL:      https://www.youtube.com/watch?v=JKDeOSuBvR4
+[13/333] PROCESSING: Sunday Morning 01-04-26
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 165m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2026-01-04
+      Title:    Sunday Morning 01-04-26
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 165 min
+      URL:      https://www.youtube.com/watch?v=OLzA7GYAwMM
+[19/333] PROCESSING: The Sovereignty of God - Pastor Brother Israel Powe -,12/14/25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 124m
+   ✅ File updated.
+   📍 Timestamps saved (2243 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-12-14
+      Title:    The Sovereignty of God - Pastor Brother Israel Powe -,12/14/25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 124 min
+      URL:      https://www.youtube.com/watch?v=1BnowKec_2U
+[21/333] PROCESSING: Sunday Evening 12-14-25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 112m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-12-14
+      Title:    Sunday Evening 12-14-25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=h1HnOaqa3QI
+[27/333] PROCESSING: Sunday Morning 11-30-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 159m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-11-30
+      Title:    Sunday Morning 11-30-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 159 min
+      URL:      https://www.youtube.com/watch?v=sF5VKESUXzk
+[36/333] PROCESSING: Friday Evening 11-07-25
+   👤 Speaker: George Smith | 📂 Type: Church Service | ⏱️ 142m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-11-08
+      Title:    Friday Evening 11-07-25
+      Speaker:  George Smith
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 142 min
+      URL:      https://www.youtube.com/watch?v=s57l7ZWJOyw
+[37/333] PROCESSING: Sunday Morning  11-02-25
+   👤 Speaker: Luis Aguilar | 📂 Type: Church Service | ⏱️ 163m
+   ✅ File updated.
+   📍 Timestamps saved (3069 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-11-02
+      Title:    Sunday Morning  11-02-25
+      Speaker:  Luis Aguilar
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 163 min
+      URL:      https://www.youtube.com/watch?v=Qt5Q6cj4fps
+[38/333] PROCESSING: Wednesday Evening  10-29-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 134m
+   ✅ File updated.
+   📍 Timestamps saved (2088 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-30
+      Title:    Wednesday Evening  10-29-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 134 min
+      URL:      https://www.youtube.com/watch?v=ikaVi-qRUbA
+[39/333] PROCESSING: Sunday Morning  10-26-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 151m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-10-26
+      Title:    Sunday Morning  10-26-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 151 min
+      URL:      https://www.youtube.com/watch?v=-nCx7cKnF7g
+[40/333] PROCESSING: Sunday Evening  10-26-25
+   👤 Speaker: Nathaniel Berrett | 📂 Type: Church Service | ⏱️ 144m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-10-26
+      Title:    Sunday Evening  10-26-25
+      Speaker:  Nathaniel Berrett
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 144 min
+      URL:      https://www.youtube.com/watch?v=vaHbd5mdSKo
+[42/333] PROCESSING: Sunday Morning  10-19-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 164m
+   ✅ File updated.
+   📍 Timestamps saved (2984 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-19
+      Title:    Sunday Morning  10-19-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 164 min
+      URL:      https://www.youtube.com/watch?v=x_qmYhEYG8A
+[45/333] PROCESSING: Sunday Evening  10-12-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 123m
+   ✅ File updated.
+   📍 Timestamps saved (2123 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-12
+      Title:    Sunday Evening  10-12-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 123 min
+      URL:      https://www.youtube.com/watch?v=SFmQpAM0q40
+[46/333] PROCESSING: Sunday Morning  10-12-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 183m
+   ✅ File updated.
+   📍 Timestamps saved (3364 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-12
+      Title:    Sunday Morning  10-12-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 183 min
+      URL:      https://www.youtube.com/watch?v=MFVNN62zeME
+[47/333] PROCESSING: Wednesday Evening  10-08-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 143m
+   ✅ File updated.
+   📍 Timestamps saved (2196 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-09
+      Title:    Wednesday Evening  10-08-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 143 min
+      URL:      https://www.youtube.com/watch?v=OwBxVN4FHzY
+[48/333] PROCESSING: Sunday Morning  10-05-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 157m
+   ✅ File updated.
+   📍 Timestamps saved (2960 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-10-05
+      Title:    Sunday Morning  10-05-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 157 min
+      URL:      https://www.youtube.com/watch?v=ZiwxpzgcVBE
+[51/333] PROCESSING: Sunday Evening  09-28-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 127m
+   ✅ File updated.
+   📍 Timestamps saved (2059 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-09-28
+      Title:    Sunday Evening  09-28-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 127 min
+      URL:      https://www.youtube.com/watch?v=EFnPrC0--p0
+[53/333] PROCESSING: Wednesday Evening  09-24-25
+   👤 Speaker: George Smith | 📂 Type: Church Service | ⏱️ 108m
+   ✅ File updated.
+   📍 Timestamps saved (2242 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-09-25
+      Title:    Wednesday Evening  09-24-25
+      Speaker:  George Smith
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 108 min
+      URL:      https://www.youtube.com/watch?v=ZkEHVEPuhO0
+[54/333] PROCESSING: Sunday Morning  09-21-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 181m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-09-21
+      Title:    Sunday Morning  09-21-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 181 min
+      URL:      https://www.youtube.com/watch?v=FnI_iVCOGzI
+[55/333] PROCESSING: Wednesday Evening  09-17-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 121m
+   ✅ File updated.
+   📍 Timestamps saved (1834 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-09-18
+      Title:    Wednesday Evening  09-17-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 121 min
+      URL:      https://www.youtube.com/watch?v=QMlaRaKsyAk
+[56/333] PROCESSING: Sunday Evening  09-14-25
+   👤 Speaker: Aaron Guerra | 📂 Type: Church Service | ⏱️ 126m
+   ✅ File updated.
+   📍 Timestamps saved (2324 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-09-14
+      Title:    Sunday Evening  09-14-25
+      Speaker:  Aaron Guerra
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 126 min
+      URL:      https://www.youtube.com/watch?v=gXlUICLkanY
+[57/333] PROCESSING: Sunday Morning  09-14-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 159m
+   ✅ File updated.
+   📍 Timestamps saved (2980 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-09-14
+      Title:    Sunday Morning  09-14-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 159 min
+      URL:      https://www.youtube.com/watch?v=6Gh-lzleVE0
+[61/333] PROCESSING: Sunday Evening 08-24-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 148m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-08-31
+      Title:    Sunday Evening 08-24-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 148 min
+      URL:      https://www.youtube.com/watch?v=6JdxDVAnYBk
+[72/333] PROCESSING: Sunday Morning 08-03-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 164m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-08-03
+      Title:    Sunday Morning 08-03-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 164 min
+      URL:      https://www.youtube.com/watch?v=CzLbs0rrhBM
+[75/333] PROCESSING: Sunday Evening 07-27-25
+   👤 Speaker: Robert Figueroa | 📂 Type: Church Service | ⏱️ 163m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-07-27
+      Title:    Sunday Evening 07-27-25
+      Speaker:  Robert Figueroa
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 163 min
+      URL:      https://www.youtube.com/watch?v=ebVbGuRYEUU
+[89/333] PROCESSING: Saturday Singing 06-14-25
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 106m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-06-15
+      Title:    Saturday Singing 06-14-25
+      Speaker:  
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 106 min
+      URL:      https://www.youtube.com/watch?v=w2vPltYEYBg
+[90/333] PROCESSING: Wednesday Evening 06-11-25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 114m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-06-12
+      Title:    Wednesday Evening 06-11-25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 114 min
+      URL:      https://www.youtube.com/watch?v=c1d2Eo8ckhw
+[95/333] PROCESSING: Sunday Evening 04-20-25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 187m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-05-04
+      Title:    Sunday Evening 04-20-25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 187 min
+      URL:      https://www.youtube.com/watch?v=pKs9ku2iHCc
+[99/333] PROCESSING: Sun Morning 04-20-25
+   👤 Speaker: Eli Castillo | 📂 Type: Church Service | ⏱️ 184m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-04-20
+      Title:    Sun Morning 04-20-25
+      Speaker:  Eli Castillo
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 184 min
+      URL:      https://www.youtube.com/watch?v=rXthxTKcsVA
+[104/333] PROCESSING: Sunday Evening 04-06-25
+   👤 Speaker: Benny Perry | 📂 Type: Church Service | ⏱️ 150m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-04-07
+      Title:    Sunday Evening 04-06-25
+      Speaker:  Benny Perry
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 150 min
+      URL:      https://www.youtube.com/watch?v=ZQbWB0c0xBw
+[112/333] PROCESSING: Wednesday Evening 03-19-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 105m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-03-20
+      Title:    Wednesday Evening 03-19-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 105 min
+      URL:      https://www.youtube.com/watch?v=7Sw5gCk-_m8
+[114/333] PROCESSING: Sunday Morning 03-16-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 189m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-03-16
+      Title:    Sunday Morning 03-16-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 189 min
+      URL:      https://www.youtube.com/watch?v=96j_sK-Zx5w
+[121/333] PROCESSING: Sunday Evening 02-23-25
+   👤 Speaker:  | 📂 Type: Church Service | ⏱️ 133m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-02-23
+      Title:    Sunday Evening 02-23-25
+      Speaker:  
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 133 min
+      URL:      https://www.youtube.com/watch?v=eHVg8Gni53U
+[122/333] PROCESSING: Wednesday 02/19/25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 129m
+   ✅ File updated.
+   📍 Timestamps saved (2136 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-02-20
+      Title:    Wednesday 02/19/25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     English
+      Status:   Success
+      Duration: 129 min
+      URL:      https://www.youtube.com/watch?v=oAA-ZGiWGFw
+[123/333] PROCESSING: Sunday PM 2-16-25
+   👤 Speaker: Ike Lafontaine | 📂 Type: Church Service | ⏱️ 97m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-02-17
+      Title:    Sunday PM 2-16-25
+      Speaker:  Ike Lafontaine
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 97 min
+      URL:      https://www.youtube.com/watch?v=CXSKbKvnW7U
+[124/333] PROCESSING: Sunday 02-16-25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 194m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-02-16
+      Title:    Sunday 02-16-25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 194 min
+      URL:      https://www.youtube.com/watch?v=LK8N6eXE62I
+[126/333] PROCESSING: Sunday pm 02/09/25
+   👤 Speaker: George Moore | 📂 Type: Church Service | ⏱️ 147m
+   ✅ File updated.
+   📍 Timestamps saved (2449 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-02-09
+      Title:    Sunday pm 02/09/25
+      Speaker:  George Moore
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 147 min
+      URL:      https://www.youtube.com/watch?v=0iy-dKD-q8w
+[127/333] PROCESSING: Wednesday pm 02/05/25
+   👤 Speaker: Horacio Elio Paez | 📂 Type: Church Service | ⏱️ 133m
+   ✅ File updated.
+   📍 Timestamps saved (2286 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-02-06
+      Title:    Wednesday pm 02/05/25
+      Speaker:  Horacio Elio Paez
+      Type:     Church Service
+      Lang:     Spanish
+      Status:   Success
+      Duration: 133 min
+      URL:      https://www.youtube.com/watch?v=7VE1q0fBXsM
+[128/333] PROCESSING: Sunday am 02/02/25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 187m
+   ✅ File updated.
+   📍 Timestamps saved (3201 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-02-02
+      Title:    Sunday am 02/02/25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 187 min
+      URL:      https://www.youtube.com/watch?v=SMyRwRPrAWs
+[129/333] PROCESSING: Sunday pm 02/02/25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 154m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-02-02
+      Title:    Sunday pm 02/02/25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 154 min
+      URL:      https://www.youtube.com/watch?v=me2AbFvrUmU
+[130/333] PROCESSING: Wednesday pm 01/29/25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 121m
+   ✅ File updated.
+   📍 Timestamps saved (2020 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-01-30
+      Title:    Wednesday pm 01/29/25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     English
+      Status:   Success
+      Duration: 121 min
+      URL:      https://www.youtube.com/watch?v=cz0LE8Cg9Vo
+[131/333] PROCESSING: Sunday Am 01/26/25
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 153m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-01-26
+      Title:    Sunday Am 01/26/25
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 153 min
+      URL:      https://www.youtube.com/watch?v=KQcVRSeo2ak
+[132/333] PROCESSING: Sunday pm 01/26/25
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 134m
+   ✅ File updated.
+   📍 Timestamps saved (2571 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-01-26
+      Title:    Sunday pm 01/26/25
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     English
+      Status:   Success
+      Duration: 134 min
+      URL:      https://www.youtube.com/watch?v=-kU6PxulxTc
+[133/333] PROCESSING: Wednesday pm 01/22/2025
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 112m
+   ✅ File updated.
+   📍 Timestamps saved (1668 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-01-23
+      Title:    Wednesday pm 01/22/2025
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=xOwsjSE1swU
+[134/333] PROCESSING: Sunday AM 01/19/25
+   👤 Speaker: Adolfo Mata | 📂 Type: Church Service | ⏱️ 153m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-01-19
+      Title:    Sunday AM 01/19/25
+      Speaker:  Adolfo Mata
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 153 min
+      URL:      https://www.youtube.com/watch?v=gGAMHiFeoyM
+[135/333] PROCESSING: Wednesday pm 01/15/25
+   👤 Speaker: Mennow Friesen | 📂 Type: Church Service | ⏱️ 98m
+   ✅ File updated.
+   📍 Timestamps saved (1659 segments).
+   📊 SUMMARY DATA:
+      Date:     2025-01-16
+      Title:    Wednesday pm 01/15/25
+      Speaker:  Mennow Friesen
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 98 min
+      URL:      https://www.youtube.com/watch?v=oWsU0BNNPB0
+[140/333] PROCESSING: Tuesday PM 12-31-24
+   👤 Speaker: Josh Cathey, Brother Will Oliphant | 📂 Type: Church Service | ⏱️ 185m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2025-01-01
+      Title:    Tuesday PM 12-31-24
+      Speaker:  Josh Cathey, Brother Will Oliphant
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 185 min
+      URL:      https://www.youtube.com/watch?v=KqY7Kl8BgnE
+[141/333] PROCESSING: Sunday PM 12-29-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 99m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-12-29
+      Title:    Sunday PM 12-29-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 99 min
+      URL:      https://www.youtube.com/watch?v=I1w-WUaytn8
+[149/333] PROCESSING: Sunday AM 12-08-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 171m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-12-08
+      Title:    Sunday AM 12-08-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 171 min
+      URL:      https://www.youtube.com/watch?v=4J5ppLeG0IM
+[156/333] PROCESSING: Sunday PM 11-17-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 122m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-11-17
+      Title:    Sunday PM 11-17-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 122 min
+      URL:      https://www.youtube.com/watch?v=m0u_Ctxjg_0
+[160/333] PROCESSING: Shalom Tabernacle - Evening Annual Meeting 2024
+   👤 Speaker: George Fergusson | 📂 Type: Church Service | ⏱️ 200m
+   ✅ File updated.
+   📍 Timestamps saved (3975 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-11-10
+      Title:    Shalom Tabernacle - Evening Annual Meeting 2024
+      Speaker:  George Fergusson
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 200 min
+      URL:      https://www.youtube.com/watch?v=kPtp43ec2dQ
+[162/333] PROCESSING: 9th Anniversary Meetings - Friday Night
+   👤 Speaker: Ted Posedly | 📂 Type: Church Service | ⏱️ 169m
+   ✅ File updated.
+   📍 Timestamps saved (3319 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-11-09
+      Title:    9th Anniversary Meetings - Friday Night
+      Speaker:  Ted Posedly
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 169 min
+      URL:      https://www.youtube.com/watch?v=dw758FG6Oro
+[165/333] PROCESSING: Wednesday PM 10-30-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 112m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-10-31
+      Title:    Wednesday PM 10-30-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=kAmiB5lq1Hk
+[166/333] PROCESSING: Sunday AM 10-27-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 160m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-10-27
+      Title:    Sunday AM 10-27-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 160 min
+      URL:      https://www.youtube.com/watch?v=51oayqkNReA
+[183/333] PROCESSING: Wednesday 9/11/24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 114m
+   ✅ File updated.
+   📍 Timestamps saved (1647 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-09-12
+      Title:    Wednesday 9/11/24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 114 min
+      URL:      https://www.youtube.com/watch?v=chJtK5yHGbw
+[186/333] PROCESSING: Sunday PM 9-1-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 156m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-09-01
+      Title:    Sunday PM 9-1-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 156 min
+      URL:      https://www.youtube.com/watch?v=e3Doh8f91WQ
+[189/333] PROCESSING: A Chance To Make a Choice - Sunday PM 8-25-24
+   👤 Speaker: George Moore | 📂 Type: Church Service | ⏱️ 111m
+   ✅ File updated.
+   📍 Timestamps saved (1883 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-08-25
+      Title:    A Chance To Make a Choice - Sunday PM 8-25-24
+      Speaker:  George Moore
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 111 min
+      URL:      https://www.youtube.com/watch?v=ZaUMevj16qA
+[190/333] PROCESSING: Who's a real Believer? You're looking at One! -Bro. Moore 8-25-24 AM
+   👤 Speaker: George Moore | 📂 Type: Church Service | ⏱️ 140m
+   ✅ File updated.
+   📍 Timestamps saved (2378 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-08-25
+      Title:    Who's a real Believer? You're looking at One! -Bro. Moore 8-25-24 AM
+      Speaker:  George Moore
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 140 min
+      URL:      https://www.youtube.com/watch?v=Rv1UHUigMjk
+[192/333] PROCESSING: Sunday AM 8-18-24
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 153m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-08-18
+      Title:    Sunday AM 8-18-24
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 153 min
+      URL:      https://www.youtube.com/watch?v=fy7DqZ_OGgQ
+[194/333] PROCESSING: Sunday AM 8/11/24
+   👤 Speaker: William M. Branham | 📂 Type: Tape Service | ⏱️ 153m
+   ✅ File updated.
+   📍 Timestamps saved (2339 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-08-11
+      Title:    Sunday AM 8/11/24
+      Speaker:  William M. Branham
+      Type:     Tape Service
+      Lang:     English
+      Status:   Success
+      Duration: 153 min
+      URL:      https://www.youtube.com/watch?v=7T1jzvg8kOY
+[204/333] PROCESSING: Sunday 7-14-24 am
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 150m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-07-14
+      Title:    Sunday 7-14-24 am
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 150 min
+      URL:      https://www.youtube.com/watch?v=Vlh2TqMAtVk
+[209/333] PROCESSING: Sunday 6/30/24 pm
+   👤 Speaker: Josh Cathey | 📂 Type: Church Service | ⏱️ 118m
+   ✅ File updated.
+   📍 Timestamps saved (2259 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-06-30
+      Title:    Sunday 6/30/24 pm
+      Speaker:  Josh Cathey
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 118 min
+      URL:      https://www.youtube.com/watch?v=Q27k7ryIX-c
+[211/333] PROCESSING: Sunday PM 6-23-24
+   👤 Speaker: Confido Banza | 📂 Type: Church Service | ⏱️ 168m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-06-23
+      Title:    Sunday PM 6-23-24
+      Speaker:  Confido Banza
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 168 min
+      URL:      https://www.youtube.com/watch?v=3rxVzXQDs80
+[212/333] PROCESSING: 6/23/2024 Sunday am
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 133m
+   ✅ File updated.
+   📍 Timestamps saved (2357 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-06-23
+      Title:    6/23/2024 Sunday am
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 133 min
+      URL:      https://www.youtube.com/watch?v=0cz06i9KWsA
+[213/333] PROCESSING: Wednesday Prayer Meeting 6/19/2024
+   👤 Speaker: Israel Powe | 📂 Type: Prayer Meeting | ⏱️ 112m
+   ✅ File updated.
+   📍 Timestamps saved (1438 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-06-20
+      Title:    Wednesday Prayer Meeting 6/19/2024
+      Speaker:  Israel Powe
+      Type:     Prayer Meeting
+      Lang:     English
+      Status:   Success
+      Duration: 112 min
+      URL:      https://www.youtube.com/watch?v=rbPAs6l5QzU
+[216/333] PROCESSING: How to Receive More Power - Prayer 6-12-24 pm
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 125m
+   ✅ File updated.
+   📍 Timestamps saved (1666 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-06-13
+      Title:    How to Receive More Power - Prayer 6-12-24 pm
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 125 min
+      URL:      https://www.youtube.com/watch?v=Q3y7twargmc
+[217/333] PROCESSING: What is the Purpose of All This? 6-9-24 pm
+   👤 Speaker: George Moore | 📂 Type: Church Service | ⏱️ 146m
+   ✅ File updated.
+   📍 Timestamps saved (2514 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-06-09
+      Title:    What is the Purpose of All This? 6-9-24 pm
+      Speaker:  George Moore
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 146 min
+      URL:      https://www.youtube.com/watch?v=vQw-tUW_UKw
+[220/333] PROCESSING: I am a True Believer 6-2-24 am
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 161m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-06-02
+      Title:    I am a True Believer 6-2-24 am
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 161 min
+      URL:      https://www.youtube.com/watch?v=fvZQ6f5aBk4
+[221/333] PROCESSING: I am a True Believer (Part 2) 6-2-24 pm
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 106m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-06-02
+      Title:    I am a True Believer (Part 2) 6-2-24 pm
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 106 min
+      URL:      https://www.youtube.com/watch?v=PJORuo7sXtA
+[222/333] PROCESSING: Prayer the Great Keynote 5-29-24 pm
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 105m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-05-30
+      Title:    Prayer the Great Keynote 5-29-24 pm
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 105 min
+      URL:      https://www.youtube.com/watch?v=hxsFC1iGsHs
+[224/333] PROCESSING: Model Servant - Lord I Am At Your Service 5-26-2024 am
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 155m
+   ✅ File updated.
+   📍 Timestamps saved (2785 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-05-26
+      Title:    Model Servant - Lord I Am At Your Service 5-26-2024 am
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 155 min
+      URL:      https://www.youtube.com/watch?v=t0JR0z65bP4
+[225/333] PROCESSING: Wednesday 5/22/24 Prayer Meeting
+   👤 Speaker: Israel Powe | 📂 Type: Prayer Meeting | ⏱️ 128m
+   ✅ File updated.
+   📍 Timestamps saved (1939 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-05-23
+      Title:    Wednesday 5/22/24 Prayer Meeting
+      Speaker:  Israel Powe
+      Type:     Prayer Meeting
+      Lang:     English
+      Status:   Success
+      Duration: 128 min
+      URL:      https://www.youtube.com/watch?v=Hge6KminpjY
+[227/333] PROCESSING: Fine Tune the Instrument / Heart 5-19-2024 am
+   👤 Speaker: Joel Jenson | 📂 Type: Church Service | ⏱️ 194m
+   ✅ File updated.
+   📍 Timestamps saved (3536 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-05-19
+      Title:    Fine Tune the Instrument / Heart 5-19-2024 am
+      Speaker:  Joel Jenson
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 194 min
+      URL:      https://www.youtube.com/watch?v=B3NQdgFljbI
+[228/333] PROCESSING: 5-18-2024 Memorial
+   👤 Speaker: Unknown Speaker | 📂 Type: Memorial Service | ⏱️ 136m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-05-18
+      Title:    5-18-2024 Memorial
+      Speaker:  Unknown Speaker
+      Type:     Memorial Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 136 min
+      URL:      https://www.youtube.com/watch?v=YravEIHakKE
+[232/333] PROCESSING: Rights - Sunday 5-5-24 pm
+   👤 Speaker: Armando Rivera | 📂 Type: Church Service | ⏱️ 134m
+   ✅ File updated.
+   📍 Timestamps saved (2073 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-05-05
+      Title:    Rights - Sunday 5-5-24 pm
+      Speaker:  Armando Rivera
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 134 min
+      URL:      https://www.youtube.com/watch?v=DvVXfYZe0M4
+[233/333] PROCESSING: COD - Communion 5-1-24 pm
+   👤 Speaker: Israel Powe | 📂 Type: Communion Service | ⏱️ 117m
+   ✅ File updated.
+   📍 Timestamps saved (1678 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-05-02
+      Title:    COD - Communion 5-1-24 pm
+      Speaker:  Israel Powe
+      Type:     Communion Service
+      Lang:     English
+      Status:   Success
+      Duration: 117 min
+      URL:      https://www.youtube.com/watch?v=kTyVB7YSFuA
+[240/333] PROCESSING: You Are Free 4-14-24 am
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 170m
+   ❌ No Transcript found (Lang: Unknown).
+   📊 SUMMARY DATA:
+      Date:     2024-04-14
+      Title:    You Are Free 4-14-24 am
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     Unknown
+      Status:   No Transcript
+      Duration: 170 min
+      URL:      https://www.youtube.com/watch?v=cc5o8yAmpsM
+[242/333] PROCESSING: Easter, the Answer to Pain  3-31-2024 am
+   👤 Speaker: Israel Powe | 📂 Type: Easter Program | ⏱️ 188m
+   ✅ File updated.
+   📍 Timestamps saved (3161 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-03-31
+      Title:    Easter, the Answer to Pain  3-31-2024 am
+      Speaker:  Israel Powe
+      Type:     Easter Program
+      Lang:     English
+      Status:   Success
+      Duration: 188 min
+      URL:      https://www.youtube.com/watch?v=RcqUvJLF6dg
+[249/333] PROCESSING: COD: Praying and Fasting 3-13-2024 pm
+   👤 Speaker: Israel Powe | 📂 Type: Church Service | ⏱️ 119m
+   ✅ File updated.
+   📍 Timestamps saved (1833 segments).
+   📊 SUMMARY DATA:
+      Date:     2024-03-14
+      Title:    COD: Praying and Fasting 3-13-2024 pm
+      Speaker:  Israel Powe
+      Type:     Church Service
+      Lang:     English
+      Status:   Success
+      Duration: 119 min
+      URL:      https://www.youtube.com/watch?v=UjD0Ii-09Rw[0;31m[2026-01-19 21:54:04] ERROR: Step 1a failed: Scraping encountered an error[0m

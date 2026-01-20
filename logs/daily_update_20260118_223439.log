@@ -9084,3 +9084,115 @@ Max filename bytes: 255
 [0;32m[2026-01-19 19:44:39] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-19 19:44:39][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-19 19:46:00][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 0d996bf61] Daily update: 2026-01-19
+ 570 files changed, 108104 insertions(+), 27378 deletions(-)
+ create mode 100644 audit_duplicate_urls.py
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-18 - BSWT LIVE - .timestamped.txt
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-18 - BSWT LIVE - .txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-17 - Pastor H. Simmons Walking by Faith or Walking by Sight - H. Simmons.timestamped.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-17 - Pastor H. Simmons Walking by Faith or Walking by Sight - H. Simmons.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-11 - 2026-01-11 Bro. Barry J. -Jehovah Shalom - Jehovah.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-11 - 2026-01-11 Bro. Barry J. -Jehovah Shalom - Jehovah.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - Fill My Way With Love - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - Fill My Way With Love - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - In Christ Alone - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - In Christ Alone - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - The Original Life - Unknown Speaker.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - The Original Life - Unknown Speaker.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - When We All Get To Heaven - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - When We All Get To Heaven - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - Your Cries Have Awoken The Master - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - Your Cries Have Awoken The Master - .txt
+ create mode 100644 data/Days_of_the_Voice_Fellowship/2026-01-18 - 26-0118M Limitless God With Unlimited Blessings Bro Martin Shalom - Martin.timestamped.txt
+ create mode 100644 data/Days_of_the_Voice_Fellowship/2026-01-18 - 26-0118M Limitless God With Unlimited Blessings Bro Martin Shalom - Martin.txt
+ create mode 100644 data/Edmonton_Restored_Word_Fellowship/2026-01-18 - RWF 2026 01 18 Moses Ndala Charity Never Faileth - Moses Ndala.timestamped.txt
+ create mode 100644 data/Edmonton_Restored_Word_Fellowship/2026-01-18 - RWF 2026 01 18 Moses Ndala Charity Never Faileth - Moses Ndala.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Beulah Land - Bro. Jason Taggart & Bro. Jonathan Middleton - Jason Taggart.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Beulah Land - Bro. Jason Taggart & Bro. Jonathan Middleton - Jason Taggart.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Go Rest High On That Mountain - Bro. Phillip Roncali & Sis. Laura Burns - Phillip Roncali.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Go Rest High On That Mountain - Bro. Phillip Roncali & Sis. Laura Burns - Phillip Roncali.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Rise Above It All - ELT Choir - Rise Above.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Rise Above It All - ELT Choir - Rise Above.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Working On Her Testimony - Sis. Alyssa Taggart & Sis. Laura Burns - Alyssa Taggart.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - Working On Her Testimony - Sis. Alyssa Taggart & Sis. Laura Burns - Alyssa Taggart.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - You're Not Finished - Bro. Jeremy Butts - Jeremy Butts.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - You're Not Finished - Bro. Jeremy Butts - Jeremy Butts.txt
+ create mode 100644 data/Full_Gospel_Lighthouse_Tabernacle/2026-01-17 - Entering the Holiest by the Blood - Bro. Tom Byler on January 17th, 2026 - Tom Byler.timestamped.txt
+ create mode 100644 data/Full_Gospel_Lighthouse_Tabernacle/2026-01-17 - Entering the Holiest by the Blood - Bro. Tom Byler on January 17th, 2026 - Tom Byler.txt
+ create mode 100644 data/Full_Gospel_Lighthouse_Tabernacle/2026-01-18 - Giving the Lord Glory That Is Due Him - Bro. Tom Byler on January 18th, 2026 - Tom Byler.timestamped.txt
+ create mode 100644 data/Full_Gospel_Lighthouse_Tabernacle/2026-01-18 - Giving the Lord Glory That Is Due Him - Bro. Tom Byler on January 18th, 2026 - Tom Byler.txt
+ create mode 100644 data/Good_Neighbour_Ministries/2026-01-18 - The Bridegroom Call - Part 3 (The Purpose Of God - Part 16) - Pastor Danny Mazzilli - Danny Mazzilli.timestamped.txt
+ create mode 100644 data/Good_Neighbour_Ministries/2026-01-18 - The Bridegroom Call - Part 3 (The Purpose Of God - Part 16) - Pastor Danny Mazzilli - Danny Mazzilli.txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-18 - 11826 Sunday School Bro William Branham - 63-1222 God's Gifts Always Find Their Places (Ending) - William M. Branham.timestamped.txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-18 - 11826 Sunday School Bro William Branham - 63-1222 God's Gifts Always Find Their Places (Ending) - William M. Branham.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-18 - Bro Andrew Glover Spiritual Concentration (Concentrated On The Attraction) 1-14-26 - Andrew Glover.timestamped.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-18 - Bro Andrew Glover Spiritual Concentration (Concentrated On The Attraction) 1-14-26 - Andrew Glover.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-17 - The Secret Of Transformation - Bro. Communion Kitsisa - Emmanuel Santos.timestamped.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-17 - The Secret Of Transformation - Bro. Communion Kitsisa - Emmanuel Santos.txt
+ create mode 100644 data/MOTRC/2026-01-18 - How to Read the Book of Revelation Part 1 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-18 - How to Read the Book of Revelation Part 1 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-18 - 2026.01.18 Be Settled And Know Who You Are. - .timestamped.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-18 - 2026.01.18 Be Settled And Know Who You Are. - .txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-18 - El Poder De Dios Para Transformar 1 Minister Milton Reyes Phoenix Lighthouse Tabernacle - Milton Reyes.timestamped.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-18 - El Poder De Dios Para Transformar 1 Minister Milton Reyes Phoenix Lighthouse Tabernacle - Milton Reyes.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-18 - Mission Report La Paz, Mexico Minister Eliseo Moreno Phoenix Lighthouse Tabernacle - Eliseo Moreno.timestamped.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-18 - Mission Report La Paz, Mexico Minister Eliseo Moreno Phoenix Lighthouse Tabernacle - Eliseo Moreno.txt
+ create mode 100644 data/Phoenix_Tabernacle_Inc./2026-01-18 - Amanece, Llega el Dia - Hno. Juan Francisco & Hna. Juliana Facio - Juan Francisco.timestamped.txt
+ create mode 100644 data/Phoenix_Tabernacle_Inc./2026-01-18 - Amanece, Llega el Dia - Hno. Juan Francisco & Hna. Juliana Facio - Juan Francisco.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-17 - Solicito para l gracia de Dios - .timestamped.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-17 - Solicito para l gracia de Dios - .txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-18 - 5 sello parte 4 - .timestamped.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-18 - 5 sello parte 4 - .txt
+ create mode 100644 data/Send_The_Light_Church/2026-01-18 - 1.18.26 - I Am committed To Overcoming - John Martin - John Martin.timestamped.txt
+ create mode 100644 data/Send_The_Light_Church/2026-01-18 - 1.18.26 - I Am committed To Overcoming - John Martin - John Martin.txt
+ create mode 100644 data/Shekinah_Tabernacle/2026-01-18 - 180126 - Not Having A Victim Mentality - Bro Ben Gloyne - Ben Gloyne.timestamped.txt
+ create mode 100644 data/Shekinah_Tabernacle/2026-01-18 - 180126 - Not Having A Victim Mentality - Bro Ben Gloyne - Ben Gloyne.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-17 - 2026 Visions & Goals Guided By The Word Pastor Adrian Gengan 11-Jan-2026 - Adrian Gengan.timestamped.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-17 - 2026 Visions & Goals Guided By The Word Pastor Adrian Gengan 11-Jan-2026 - Adrian Gengan.txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-15 - Bro. Diego Arroyo Preeminence Preeminencia PT. 3 - Diego Arroyo.timestamped.txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-15 - Bro. Diego Arroyo Preeminence Preeminencia PT. 3 - Diego Arroyo.txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-18 - Bro. Diego Arroyo Preeminence Preeminencia PT. 4 - Diego Arroyo.timestamped.txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-18 - Bro. Diego Arroyo Preeminence Preeminencia PT. 4 - Diego Arroyo.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-17 - 26-0117 - (Fellowship Meeting) Why David Won - Darrell Ward - Darrell Ward.timestamped.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-17 - 26-0117 - (Fellowship Meeting) Why David Won - Darrell Ward - Darrell Ward.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-18 - 26-0118am - The Hour is Come - Darrell Ward - Darrell Ward.timestamped.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-18 - 26-0118am - The Hour is Come - Darrell Ward - Darrell Ward.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-18 - 26-0118am - The Love of God - Manuel Valencia - Manuel Valencia.timestamped.txt
+ create mode 100644 data/Spoken_Word_Church/2026-01-18 - 26-0118am - The Love of God - Manuel Valencia - Manuel Valencia.txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-14 - 01142026 La imitacion del cristianismo - .timestamped.txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-14 - 01142026 La imitacion del cristianismo - .txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-18 - 01182026 La imitacion del cristianismo 2Pt. - .timestamped.txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-18 - 01182026 La imitacion del cristianismo 2Pt. - .txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-17 - 01.17.26 Letting Go To Receive - Dejandolo Todo Para Recibir Isaac Arellano & Fidel Avila - Fidel Avila, Isaac Arellano.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-17 - 01.17.26 Letting Go To Receive - Dejandolo Todo Para Recibir Isaac Arellano & Fidel Avila - Fidel Avila, Isaac Arellano.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-17 - 1.16.26 All Or Nothing - Todo O Nada Eliezer Hernandez & Vidal Moreno - Eliezer Hernandez.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-17 - 1.16.26 All Or Nothing - Todo O Nada Eliezer Hernandez & Vidal Moreno - Eliezer Hernandez.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-18 - 1.18.25 Not a Visit, a Dwelling - No Una Visita, Una Morada Pastor Tito Moreira - Tito Moreira.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-18 - 1.18.25 Not a Visit, a Dwelling - No Una Visita, Una Morada Pastor Tito Moreira - Tito Moreira.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-08-22 - Bro. Steve Newsome Memorial Service - 08222025 - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-08-31 - Godliness Pt.1 - 08312025 - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-09-07 - Godliness Pt.2 - 09072025 - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-11-16 - Godliness Pt.7 - 111625 - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-12-28 - Godliness Pt.12 - 122825 - Unknown Speaker.timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2026-01-18 - Godliness Pt.14 - 1182026 - Godliness.timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2026-01-18 - Godliness Pt.14 - 1182026 - Godliness.txt
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-18 - The Way of a Transgressor Bro. Josh Cathey - Josh Cathey.timestamped.txt
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-18 - The Way of a Transgressor Bro. Josh Cathey - Josh Cathey.txt
+ create mode 100644 logs/daily_update_20260118_223439.log
+[0;34m[2026-01-19 19:47:10][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   bcded9672..0d996bf61  main -> main
+[0;32m[2026-01-19 19:51:42] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-19 19:51:42][0m ==============================================
+[0;32m[2026-01-19 19:51:42]   Daily Update Complete![0m
+[0;34m[2026-01-19 19:51:42][0m ==============================================
+[0;34m[2026-01-19 19:51:42][0m Total time: 1277m 2s
+[0;34m[2026-01-19 19:51:42][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260118_223439.log
