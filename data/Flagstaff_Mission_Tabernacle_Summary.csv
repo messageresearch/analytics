@@ -1,6 +1,7 @@
 date,status,speaker,title,url,last_checked,language,type,description,duration,church,first_scraped,video_status,video_removed_date
-2026-01-14,Success,"January 14, 2026",Wednesday Evening Service,https://www.youtube.com/watch?v=4srVRC8rxtY,2026-01-16,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-16,available,
-2026-01-11,Success,"January 11, 2026",Sunday Morning Service,https://www.youtube.com/watch?v=XjyMC2K3qSQ,2026-01-16,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-16,available,
+2026-01-18,No Transcript,,"Sunday Morning Service - January 18, 2026",https://www.youtube.com/watch?v=mf3fUQLMoQU,2026-01-18,Unknown,Church Service,,0.0,Flagstaff Mission Tabernacle,2026-01-18,available,
+2026-01-14,Success,"January 14, 2026",Wednesday Evening Service,https://www.youtube.com/watch?v=4srVRC8rxtY,2026-01-18,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-18,available,
+2026-01-11,Success,"January 11, 2026",Sunday Morning Service,https://www.youtube.com/watch?v=XjyMC2K3qSQ,2026-01-18,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-18,available,
 2024-03-31,No Transcript,,This Blood- FMT Choir,https://www.youtube.com/watch?v=v9bo6nyij5w,2026-01-16,Unknown,Short Clip,This song was recorded live at Flagstaff Tabernacle.,5.0,Flagstaff Mission Tabernacle,2026-01-16,available,
 2024-03-08,No Transcript,Isaac Robson,Psalms 34- Isaac Robson,https://www.youtube.com/watch?v=7OYiulLF4cA,2026-01-16,Unknown,Short Clip,This song was recorded live at Flagstaff Tabernacle.,4.0,Flagstaff Mission Tabernacle,2026-01-16,available,
 2024-03-07,No Transcript,Stephen Martinez,Restless- Wendy Daulton & Stephen Martinez,https://www.youtube.com/watch?v=3WrPoCz1FRc,2026-01-16,Unknown,Short Clip,This song was recorded live at Flagstaff Tabernacle.,4.0,Flagstaff Mission Tabernacle,2026-01-16,available,
@@ -31,7 +32,7 @@ date,status,speaker,title,url,last_checked,language,type,description,duration,ch
 2025-12-31,Success,"December 31, 2025",Wednesday Evening Service,https://www.youtube.com/watch?v=mM8EtqBH6xQ,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,
 2025-12-28,Success,"December 28, 2025",Sunday Afternoon Service,https://www.youtube.com/watch?v=pbdfpxN1-FM,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,
 2025-12-28,Success,"December 28, 2025",Sunday Morning Service,https://www.youtube.com/watch?v=4pRFXCa4bsw,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,
-2025-12-27,Success,Unknown Speaker,Vivian Gordy Woody,https://www.youtube.com/watch?v=xiXd40yv5k0,2026-01-16,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-16,available,
+2025-12-27,Success,Unknown Speaker,Vivian Gordy Woody,https://www.youtube.com/watch?v=xiXd40yv5k0,2026-01-18,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-18,available,
 2025-12-21,Success,"December 21, 2025",Sunday Morning Service,https://www.youtube.com/watch?v=T68TERyD8C0,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,
 2025-12-17,Success,"December 17, 2025",Wednesday Evening Service,https://www.youtube.com/watch?v=GzzQDjljlVA,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,
 2025-12-14,Success,"December 14, 2025",Sunday Morning Service,https://www.youtube.com/watch?v=yBGeXIBeeHY,2026-01-15,Unknown,Full Sermon,,0.0,Flagstaff Mission Tabernacle,2026-01-15,available,

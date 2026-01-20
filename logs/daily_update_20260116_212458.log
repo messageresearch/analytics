@@ -10185,3 +10185,155 @@ Max filename bytes: 255
 [0;32m[2026-01-17 00:48:34] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-17 00:48:34][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-17 00:48:34][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main bcded9672] Daily update: 2026-01-17
+ 307 files changed, 159413 insertions(+), 44340 deletions(-)
+ create mode 100644 data/Arizona_Believers_Church/2026-01-14 - All Things Common Pt. 2 - .timestamped.txt
+ create mode 100644 data/Arizona_Believers_Church/2026-01-14 - All Things Common Pt. 2 - .txt
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-12 - Embracing Deity - Part 3 - Samuel Browning - Samuel Browning.timestamped.txt
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-12 - Embracing Deity - Part 3 - Samuel Browning - Samuel Browning.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-16 - The Greatest Birth in History - Jean Watkins (Christmas Program 2023) - Jean Watkins.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-16 - The Greatest Birth in History - Jean Watkins (Christmas Program 2023) - Jean Watkins.txt
+ create mode 100644 data/EL_Tabernacle_Ministries/2026-01-16 - Will Los Angeles Go This Year - Apostle Edgar H. Roscoe 16 Jan 2026 - Edgar Roscoe.timestamped.txt
+ create mode 100644 data/EL_Tabernacle_Ministries/2026-01-16 - Will Los Angeles Go This Year - Apostle Edgar H. Roscoe 16 Jan 2026 - Edgar Roscoe.txt
+ rename data/Edmonton_Restored_Word_Fellowship/{2026-01-15 - RWF 2026 01 14 Moses Ndala Let Thy Kingdom Come - Unknown Speaker.txt => 2026-01-15 - RWF 2026 01 14 Moses Ndala Let Thy Kingdom Come - Moses Ndala.txt} (99%)
+ create mode 100644 data/MOTRC/2025-07-22 - The Holy Spirit & the Holy Ghost - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-07-22 - The Holy Spirit & the Holy Ghost - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-07-28 - Q&A on The Holy Ghost and Sexuality - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-07-28 - Q&A on The Holy Ghost and Sexuality - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-08-07 - Q&A Wisdom and Story of Doctrines of the Message (P1) - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-08-07 - Q&A Wisdom and Story of Doctrines of the Message (P1) - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-08-08 - Q&A Wisdom and Story of Doctrines of the Message (P2) - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-08-08 - Q&A Wisdom and Story of Doctrines of the Message (P2) - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-08-14 - Q&A on The Holy Ghost and Sexuality P2 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-08-14 - Q&A on The Holy Ghost and Sexuality P2 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-08-29 - Q&A on the Holy Ghost P3 - Begotten, Born, Then Converted - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-08-29 - Q&A on the Holy Ghost P3 - Begotten, Born, Then Converted - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-08-31 - Q&A on Star of David, Studying the Message the Right Way and Born of Water and Spirit - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-08-31 - Q&A on Star of David, Studying the Message the Right Way and Born of Water and Spirit - .txt
+ create mode 100644 data/MOTRC/2025-09-03 - Begotten, Born and Then Converted 2 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-03 - Begotten, Born and Then Converted 2 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-09 - The Image and Likeness of God P1 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-09 - The Image and Likeness of God P1 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-10 - The Mind of Trusting in Systems Our Belief vs Modern Systems - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-10 - The Mind of Trusting in Systems Our Belief vs Modern Systems - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-13 - The Image and Likeness of God P2 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-13 - The Image and Likeness of God P2 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-18 - Two Baptisms and Three Purgings - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-18 - Two Baptisms and Three Purgings - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-23 - Stature of a Perfect Man P1 [Partakers of the Divine Nature] - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-23 - Stature of a Perfect Man P1 [Partakers of the Divine Nature] - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-09-30 - Q&A on Incarnate Angels and Bypassing Theophany - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-09-30 - Q&A on Incarnate Angels and Bypassing Theophany - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-03 - The Mysterious Element The Burning Heart - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-03 - The Mysterious Element The Burning Heart - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-06 - The Story of God And Man P1 - Br Allistair Francis gospeltruth - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-06 - The Story of God And Man P1 - Br Allistair Francis gospeltruth - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-08 - Redemption In Two Parts - The Story of God and Man motivation redemption - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-08 - Redemption In Two Parts - The Story of God and Man motivation redemption - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-09 - The Coming of The Lord Is Personal. - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-09 - The Coming of The Lord Is Personal. - .txt
+ create mode 100644 data/MOTRC/2025-10-14 - The Purposeful Nature - Br Allistair Francis natureofgod - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-14 - The Purposeful Nature - Br Allistair Francis natureofgod - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-16 - The Story of God And Man P2 - Br Allistair Francis gospeltruth - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-16 - The Story of God And Man P2 - Br Allistair Francis gospeltruth - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-18 - Speak The Word of the Lord - The Purpose for your day - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-18 - Speak The Word of the Lord - The Purpose for your day - .txt
+ create mode 100644 data/MOTRC/2025-10-20 - Sons of God Shouted - The Story of God and Man 2 freedom - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-20 - Sons of God Shouted - The Story of God and Man 2 freedom - .txt
+ create mode 100644 data/MOTRC/2025-10-23 - The Story of God And Man P3 - Br Allistair Francis sermon - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-23 - The Story of God And Man P3 - Br Allistair Francis sermon - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-10-25 - What is Sonship Receiving the Heavenly Inheritance - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-25 - What is Sonship Receiving the Heavenly Inheritance - .txt
+ create mode 100644 data/MOTRC/2025-10-29 - How Was Our Sonship Given To Us - Story of Man and God - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-29 - How Was Our Sonship Given To Us - Story of Man and God - .txt
+ create mode 100644 data/MOTRC/2025-10-30 - Stature of a Perfect Man P2 [The Seven Virtues] - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-10-30 - Stature of a Perfect Man P2 [The Seven Virtues] - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-11-04 - Q&A - The Truth of How to Fast the Right Way - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-04 - Q&A - The Truth of How to Fast the Right Way - .txt
+ create mode 100644 data/MOTRC/2025-11-07 - Seven Virtues Conclusion - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-07 - Seven Virtues Conclusion - .txt
+ create mode 100644 data/MOTRC/2025-11-08 - The Story of God and Man P4 - Becoming Sons P3 - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-08 - The Story of God and Man P4 - Becoming Sons P3 - .txt
+ create mode 100644 data/MOTRC/2025-11-11 - The Story of God and Man P5 - Sons of God Find The Truth truthseekers - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-11 - The Story of God and Man P5 - Sons of God Find The Truth truthseekers - .txt
+ create mode 100644 data/MOTRC/2025-11-13 - Knowledge vs Faith - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-13 - Knowledge vs Faith - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-11-19 - Stature of a Perfect Man P3 [Faith P1] - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-19 - Stature of a Perfect Man P3 [Faith P1] - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-11-22 - Doubt vs Faith - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-22 - Doubt vs Faith - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-11-24 - The Story of God and Man P6 - Gathering Together in One All Things in Christ - Gathering Together.timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-24 - The Story of God and Man P6 - Gathering Together in One All Things in Christ - Gathering Together.txt
+ create mode 100644 data/MOTRC/2025-11-28 - Dispensation of The Bride - The Fullness of Times - Allistair.timestamped.txt
+ create mode 100644 data/MOTRC/2025-11-28 - Dispensation of The Bride - The Fullness of Times - Allistair.txt
+ create mode 100644 data/MOTRC/2025-12-06 - Knowing God and Knowing the Devil P1 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-06 - Knowing God and Knowing the Devil P1 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-12-10 - Who and What is God - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-10 - Who and What is God - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-12-13 - The Throne Of God P1 - Where He Chooses to Place His Name - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-13 - The Throne Of God P1 - Where He Chooses to Place His Name - .txt
+ create mode 100644 data/MOTRC/2025-12-16 - The Throne Of God P2 A Tabernacle..... - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-16 - The Throne Of God P2 A Tabernacle..... - .txt
+ create mode 100644 data/MOTRC/2025-12-19 - The Throne Of God P3 The Most Holy Place P1 - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-19 - The Throne Of God P3 The Most Holy Place P1 - .txt
+ create mode 100644 data/MOTRC/2025-12-23 - Q&A on The Holy Ghost, Sexuality and The Hebrews 6 and 10 Confusion - And Then.timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-23 - Q&A on The Holy Ghost, Sexuality and The Hebrews 6 and 10 Confusion - And Then.txt
+ create mode 100644 data/MOTRC/2025-12-26 - The Throne Of God P4 The Most Holy Place P2 - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-26 - The Throne Of God P4 The Most Holy Place P2 - .txt
+ create mode 100644 data/MOTRC/2025-12-28 - Knowing God and Knowing the Devil P2 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-28 - Knowing God and Knowing the Devil P2 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2025-12-30 - The Throne Of God P5 The Most Holy Place P3 - The Veil of Covering - .timestamped.txt
+ create mode 100644 data/MOTRC/2025-12-30 - The Throne Of God P5 The Most Holy Place P3 - The Veil of Covering - .txt
+ create mode 100644 data/MOTRC/2026-01-02 - The Throne of God P6 The Most Holy Place P4 - The Realm of God's Presence - .timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-02 - The Throne of God P6 The Most Holy Place P4 - The Realm of God's Presence - .txt
+ create mode 100644 data/MOTRC/2026-01-04 - The Throne of God P7 The Inner Court P1 - The Table of Shewbread-Bread of the Presence - .timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-04 - The Throne of God P7 The Inner Court P1 - The Table of Shewbread-Bread of the Presence - .txt
+ create mode 100644 data/MOTRC/2026-01-06 - Morally Gray Area - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-06 - Morally Gray Area - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2026-01-14 - Knowing God and Knowing the Devil P3 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-14 - Knowing God and Knowing the Devil P3 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/MOTRC/2026-01-16 - Discouraged by the Message and the Prophet - The Message on Trial - Allistair.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-16 - Discouraged by the Message and the Prophet - The Message on Trial - Allistair.txt
+ create mode 100644 data/MOTRC_Summary.csv
+ create mode 100644 data/Mamelodi_Tabernacle/2021-06-06 - 2021-06-06 The Order of His Coming To The Gentiles And To The Jews Vol 12 - .timestamped.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2021-06-06 - 2021-06-06 The Order of His Coming To The Gentiles And To The Jews Vol 12 - .txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-16 - 2026 01 11 The Children of The Light Vol 2 - .timestamped.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-16 - 2026 01 11 The Children of The Light Vol 2 - .txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-16 - When Mercy Walks In - .timestamped.txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-16 - When Mercy Walks In - .txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-04-01 - Anointing & Positioning in the Year of YHWH Pastor Adrian Gengan 04-01-2026 - Adrian Gengan.timestamped.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-04-01 - Anointing & Positioning in the Year of YHWH Pastor Adrian Gengan 04-01-2026 - Adrian Gengan.txt
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-11 - Scriptures Pertaining to Eternal Attributes II - Bro Kweku Ohene-Offei (01-11-2026) - Unknown Speaker.timestamped.txt
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-11 - Scriptures Pertaining to Eternal Attributes II - Bro Kweku Ohene-Offei (01-11-2026) - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-08-22 - Bro. Steve Newsome Memorial Service - 08222025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-08-28 - Sis. Patricia Cooper, Funeral Service - 08282025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-08-31 - Godliness Pt.1 - 08312025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-09-07 - Godliness Pt.2 - 09072025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-09-28 - Godliness Pt.4 - 09282025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-10-05 - Godliness Pt.5 - 10052025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-10-26 - Godliness Pt.6 - 102625 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-10-26 - Godliness Pt.6 - 102625 - Unknown Speaker.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-11-16 - Godliness Pt.7 - 111625 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-11-23 - Godliness Pt.8 - 112325 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-11-30 - Godliness Pt.9 - 113025 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-12-28 - We Have Found Him  -  Bro. Darrell Ward - 122725 - Unknown Speaker.timestamped.txt
+ delete mode 100644 data/Word_Of_Life_Church/2025-12-28 - We Have Found Him  -  Bro. Darrell Ward - 122725 - Unknown Speaker.txt
+ create mode 100644 logs/daily_update_20260116_212458.log
+ create mode 100644 site_api/text_chunk_400.json
+[0;34m[2026-01-17 00:48:55][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   9afa7db14..bcded9672  main -> main
+[0;32m[2026-01-17 00:50:13] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-17 00:50:13][0m ==============================================
+[0;32m[2026-01-17 00:50:13]   Daily Update Complete![0m
+[0;34m[2026-01-17 00:50:13][0m ==============================================
+[0;34m[2026-01-17 00:50:13][0m Total time: 205m 15s
+[0;34m[2026-01-17 00:50:13][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260116_212458.log
