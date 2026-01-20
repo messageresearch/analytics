@@ -5871,7 +5871,7 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     # Youth/Children's Programs
     if any(term in text_to_search for term in ["youth camp", "youth service", "youth meeting", "youth program", "youth panel", "youth skit", "youth retreat", "youth bible", "youth concert"]):
         return "Youth Service"
-    if any(term in title_lower for term in ["sunday school", "children's", "childrens"]) or ("kids" in title_lower):
+    if "sunday school" in title_lower:
         return "Sunday School"
     
     # Special Holiday Programs
@@ -7036,12 +7036,22 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
         except: title = "Unknown Title"
         
         # Check if the video is recent enough to be processed (when using days_back filter)
-        if days_back and church_name != "Shalom Tabernacle" and church_name != "Shalom Tabernacle Tucson":
-            published_time_text = video.get('publishedTimeText', {}).get('simpleText', '')
-            if not parse_published_time(published_time_text, max_days=days_back):
-                continue # Skip if the video is older than days_back
-
         manual_date = video.get('manual_date')
+        if days_back:
+            # For videos with manual_date (e.g., Shalom Tabernacle), check date directly
+            if manual_date and manual_date != "Unknown Date" and manual_date != "0000-00-00":
+                try:
+                    video_date = datetime.datetime.strptime(manual_date, "%Y-%m-%d").date()
+                    cutoff_date = datetime.date.today() - datetime.timedelta(days=days_back)
+                    if video_date < cutoff_date:
+                        continue  # Skip if older than days_back
+                except:
+                    pass  # If date parsing fails, let it through
+            else:
+                # For regular YouTube videos, use publishedTimeText
+                published_time_text = video.get('publishedTimeText', {}).get('simpleText', '')
+                if published_time_text and not parse_published_time(published_time_text, max_days=days_back):
+                    continue  # Skip if the video is older than days_back
         manual_speaker = video.get('manual_speaker')
 
         if manual_speaker:
