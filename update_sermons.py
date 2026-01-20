@@ -5871,7 +5871,7 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     # Youth/Children's Programs
     if any(term in text_to_search for term in ["youth camp", "youth service", "youth meeting", "youth program", "youth panel", "youth skit", "youth retreat", "youth bible", "youth concert"]):
         return "Youth Service"
-    if any(term in text_to_search for term in ["sunday school", "children's", "childrens"]) or ("kids" in title_lower):
+    if any(term in title_lower for term in ["sunday school", "children's", "childrens"]) or ("kids" in title_lower):
         return "Sunday School"
     
     # Special Holiday Programs
