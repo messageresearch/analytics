@@ -5862,7 +5862,11 @@ def determine_video_type(title, speaker, transcript_text=None, yt_obj=None, desc
     
     # Tape Service - William Branham recordings
     if speaker == "William M. Branham": return "Tape Service"
-    
+
+    # Podcast
+    if "podcast" in title_lower:
+        return "Podcast"
+
     # Memorial/Funeral Services
     if any(term in text_to_search for term in ["memorial", "celebrating the life", "funeral", "home going", "homegoing", "tribute", "in memory", "in loving memory"]): 
         return "Memorial Service"
