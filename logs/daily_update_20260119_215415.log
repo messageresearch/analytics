@@ -11798,3 +11798,474 @@ Max filename bytes: 255
 [0;32m[2026-01-20 02:28:14] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-20 02:28:14][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-20 02:28:14][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 774dce3e2] Daily update: 2026-01-20
+ 935 files changed, 371644 insertions(+), 17464 deletions(-)
+ create mode 100644 data/Arizona_Believers_Church/2026-01-18 - Bro. Isaac Hatfield It is Recognizing Time - Isaac Hatfield.timestamped.txt
+ create mode 100644 data/Arizona_Believers_Church/2026-01-18 - Bro. Isaac Hatfield It is Recognizing Time - Isaac Hatfield.txt
+ create mode 100644 data/Arizona_Believers_Church/2026-01-18 - The Christian Mindset Pt. 1 - .timestamped.txt
+ create mode 100644 data/Arizona_Believers_Church/2026-01-18 - The Christian Mindset Pt. 1 - .txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - Sunday School The Word Dynamo Pt.3 -Bro Matthew Smith - Matthew Smith.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - Sunday School The Word Dynamo Pt.3 -Bro Matthew Smith - Matthew Smith.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - Sunday Service Demonology, The Spiritual Realm Pt. 6 - Bro. Jason Watkins - Jason Watkins.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - Sunday Service Demonology, The Spiritual Realm Pt. 6 - Bro. Jason Watkins - Jason Watkins.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-18 - Minister E. Legette Choosing Faith Over Fear - .timestamped.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-18 - Minister E. Legette Choosing Faith Over Fear - .txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-18 - (1-18-26AM) Sunday Morning Service- David Hawkins - David Hawkins.timestamped.txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-18 - (1-18-26AM) Sunday Morning Service- David Hawkins - David Hawkins.txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-19 - (1-18-26PM) Sunday Evening Service - David Hawkins - David Hawkins.timestamped.txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-19 - (1-18-26PM) Sunday Evening Service - David Hawkins - David Hawkins.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - 2026-01-18 Bro. Barry - Jehovah Shalom Part 3 - Barry Johnson.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - 2026-01-18 Bro. Barry - Jehovah Shalom Part 3 - Barry Johnson.txt
+ rename data/Calgary_Living_Word_Assembly/{2026-01-18 - The Original Life - Unknown Speaker.txt => 2026-01-18 - The Original Life - .txt} (94%)
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-18 - Jan 18, 2026 Bro. Jimmy Alkire - Jimmy Alkire.timestamped.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-18 - Jan 18, 2026 Bro. Jimmy Alkire - Jimmy Alkire.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-18 - [2026-01-18am] The Mystery Of His Will Br. Cosmin Stefan - Cosmin Stefan.timestamped.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-18 - [2026-01-18am] The Mystery Of His Will Br. Cosmin Stefan - Cosmin Stefan.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-18 - [2026-01-18pm] Sunday Evening Service Br. Matthew McGeary - Matthew McGeary.timestamped.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-18 - [2026-01-18pm] Sunday Evening Service Br. Matthew McGeary - Matthew McGeary.txt
+ rename data/Cloverdale_Bibleway/{2017-10-04 -  - Unknown Speaker.txt => 2017-10-04 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2018-10-15 -  - Unknown Speaker.txt => 2018-10-15 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2018-12-16 -  - Unknown Speaker.txt => 2018-12-16 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2018-12-24 -  - Unknown Speaker.txt => 2018-12-24 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2018-12-26 -  - Unknown Speaker.txt => 2018-12-26 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2019-01-26 -  - Unknown Speaker.txt => 2019-01-26 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2019-01-27 -  - Unknown Speaker.txt => 2019-01-27 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2019-06-08 -  - Unknown Speaker.txt => 2019-06-08 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2019-06-21 -  - Unknown Speaker.txt => 2019-06-21 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2019-08-05 -  - Unknown Speaker.txt => 2019-08-05 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2019-08-16 -  - Unknown Speaker.txt => 2019-08-16 -  - .txt} (95%)
+ rename data/Cloverdale_Bibleway/{2020-03-15 -  - Unknown Speaker.txt => 2020-03-15 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-04-06 -  - Unknown Speaker.txt => 2020-04-06 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2020-04-08 -  - Unknown Speaker.txt => 2020-04-08 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-04-10 -  - Unknown Speaker.txt => 2020-04-10 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2020-04-14 -  - Unknown Speaker.txt => 2020-04-14 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2020-04-17 -  - Unknown Speaker.txt => 2020-04-17 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-04-20 -  - Unknown Speaker.txt => 2020-04-20 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2020-04-24 -  - Unknown Speaker.txt => 2020-04-24 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-05-02 -  - Unknown Speaker.txt => 2020-05-02 -  - .txt} (97%)
+ rename data/Cloverdale_Bibleway/{2020-05-09 -  - Unknown Speaker.txt => 2020-05-09 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-09-11 -  - Unknown Speaker.txt => 2020-09-11 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-09-17 -  - Unknown Speaker.txt => 2020-09-17 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2020-09-20 -  - Unknown Speaker.txt => 2020-09-20 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2021-03-15 -  - Unknown Speaker.txt => 2021-03-15 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2021-03-18 -  - Unknown Speaker.txt => 2021-03-18 -  - .txt} (94%)
+ rename data/Cloverdale_Bibleway/{2021-03-20 -  - Unknown Speaker.txt => 2021-03-20 -  - .txt} (94%)
+ rename data/Cloverdale_Bibleway/{2021-03-29 -  - Unknown Speaker.txt => 2021-03-29 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2021-07-29 -  - Unknown Speaker.txt => 2021-07-29 -  - .txt} (97%)
+ rename data/Cloverdale_Bibleway/{2021-07-30 -  - Unknown Speaker.txt => 2021-07-30 -  - .txt} (97%)
+ rename data/Cloverdale_Bibleway/{2021-09-30 -  - Unknown Speaker.txt => 2021-09-30 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2021-10-01 -  - Unknown Speaker.txt => 2021-10-01 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2021-10-20 -  - Unknown Speaker.txt => 2021-10-20 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2021-10-21 -  - Unknown Speaker.txt => 2021-10-21 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2021-10-28 -  - Unknown Speaker.txt => 2021-10-28 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2021-11-01 -  - Unknown Speaker.txt => 2021-11-01 -  - .txt} (94%)
+ rename data/Cloverdale_Bibleway/{2022-01-03 -  - Unknown Speaker.txt => 2022-01-03 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-01-06 -  - Unknown Speaker.txt => 2022-01-06 -  - .txt} (89%)
+ rename data/Cloverdale_Bibleway/{2022-02-09 -  - Michael Rae.txt => 2022-02-09 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-02-16 -  - Unknown Speaker.txt => 2022-02-16 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-03-14 -  - Unknown Speaker.txt => 2022-03-14 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2022-05-17 -  - Ron Spencer.txt => 2022-05-17 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2022-05-23 -  - David Mayeur.txt => 2022-05-23 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-05-24 -  - Timothy Pruitt.txt => 2022-05-24 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-05-25 -  - Timothy Pruitt.txt => 2022-05-25 -  - .txt} (95%)
+ rename data/Cloverdale_Bibleway/{2022-05-26 -  - Unknown Speaker.txt => 2022-05-26 -  - .txt} (98%)
+ delete mode 100644 data/Cloverdale_Bibleway/2022-05-26 -  - Ron Spencer.txt
+ rename data/Cloverdale_Bibleway/{2022-05-29 -  - Tim Pruitt.txt => 2022-05-29 -  - .txt} (93%)
+ rename data/Cloverdale_Bibleway/{2022-06-04 -  - David Mayeur.txt => 2022-06-04 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-06-07 -  - Jesus Dropped.txt => 2022-06-07 -  - .txt} (95%)
+ rename data/Cloverdale_Bibleway/{2022-07-06 -  - Unknown Speaker.txt => 2022-07-06 -  - .txt} (87%)
+ rename data/Cloverdale_Bibleway/{2022-08-17 -  - Unknown Speaker.txt => 2022-08-17 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2022-12-12 -  - Michael Rae.txt => 2022-12-12 -  - .txt} (97%)
+ delete mode 100644 data/Cloverdale_Bibleway/2022-12-12 -  - Unknown Speaker.txt
+ rename data/Cloverdale_Bibleway/{2023-05-03 -  - Michael Rae.txt => 2023-05-03 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2023-05-14 -  - Unknown Speaker.txt => 2023-05-14 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2023-09-04 -  - Unknown Speaker.txt => 2023-09-04 -  - .txt} (97%)
+ rename data/Cloverdale_Bibleway/{2023-09-28 -  - Unknown Speaker.txt => 2023-09-28 -  - .txt} (99%)
+ rename data/Cloverdale_Bibleway/{2024-05-21 -  - Unknown Speaker.txt => 2024-05-21 -  - .txt} (94%)
+ rename data/Cloverdale_Bibleway/{2024-09-23 -  - Unknown Speaker.txt => 2024-09-23 -  - .txt} (88%)
+ rename data/Cloverdale_Bibleway/{2024-10-02 -  - Unknown Speaker.txt => 2024-10-02 -  - .txt} (96%)
+ rename data/Cloverdale_Bibleway/{2024-11-09 -  - Unknown Speaker.txt => 2024-11-09 -  - .txt} (94%)
+ rename data/Cloverdale_Bibleway/{2025-03-12 -  - Unknown Speaker.txt => 2025-03-12 -  - .txt} (98%)
+ rename data/Cloverdale_Bibleway/{2025-05-12 -  - Unknown Speaker.txt => 2025-05-12 -  - .txt} (95%)
+ rename data/Cloverdale_Bibleway/{2025-09-30 -  - Unknown Speaker.txt => 2025-09-30 -  - .txt} (94%)
+ create mode 100644 data/End_Time_Message_Tabernacle_CO/2026-01-19 - 01-18-25 I Know A Man Who Can - Sis. Patience Mavinga & Saints - Patience Mavinga.timestamped.txt
+ create mode 100644 data/End_Time_Message_Tabernacle_CO/2026-01-19 - 01-18-25 I Know A Man Who Can - Sis. Patience Mavinga & Saints - Patience Mavinga.txt
+ create mode 100644 data/Evening_Light_Fellowship_AZ/2026-01-19 - Faith Is Changing Our Dimensional Thinking About God - Bro. Ron Peterson - Ron Peterson.timestamped.txt
+ create mode 100644 data/Evening_Light_Fellowship_AZ/2026-01-19 - Faith Is Changing Our Dimensional Thinking About God - Bro. Ron Peterson - Ron Peterson.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - The Mountain Movers Bringing Order Out of Chaos, Part 3 - Bro. Tim Pruitt on January 18, 2026 - Tim Pruitt.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle/2026-01-18 - The Mountain Movers Bringing Order Out of Chaos, Part 3 - Bro. Tim Pruitt on January 18, 2026 - Tim Pruitt.txt
+ create mode 100644 data/Evening_Light_Tabernacle_Elkton_KY/2026-01-18 - Bro. Brad Powell - Sun. - 11826 - Abrahams Seed, Fully Equipped - Brad Powell.timestamped.txt
+ create mode 100644 data/Evening_Light_Tabernacle_Elkton_KY/2026-01-18 - Bro. Brad Powell - Sun. - 11826 - Abrahams Seed, Fully Equipped - Brad Powell.txt
+ create mode 100644 data/Faith_Tabernacle/2026-01-18 - Pastor Shawn Martin The Believer Has Protection - Shawn Martin.timestamped.txt
+ create mode 100644 data/Faith_Tabernacle/2026-01-18 - Pastor Shawn Martin The Believer Has Protection - Shawn Martin.txt
+ create mode 100644 data/Flagstaff_Mission_Tabernacle/2026-01-18 - Sunday Morning Service - January 18, 2026 - .timestamped.txt
+ create mode 100644 data/Flagstaff_Mission_Tabernacle/2026-01-18 - Sunday Morning Service - January 18, 2026 - .txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-19 - 11826 Sunday Service Pastor Bloteh Won - Sparring Partner Pt 3 Speaking The Truth in Love - Bloteh Won.timestamped.txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-19 - 11826 Sunday Service Pastor Bloteh Won - Sparring Partner Pt 3 Speaking The Truth in Love - Bloteh Won.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-18 - Bro Andrew Glover Sunday Morning Service 1-18-26 - Andrew Glover.timestamped.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-18 - Bro Andrew Glover Sunday Morning Service 1-18-26 - Andrew Glover.txt
+ create mode 100644 data/Grace_Tabernacle_Nampa/2026-01-18 - January 18, 2026 - Bro. Paul Haylett The Brides Position 2 - Paul Haylett.timestamped.txt
+ create mode 100644 data/Grace_Tabernacle_Nampa/2026-01-18 - January 18, 2026 - Bro. Paul Haylett The Brides Position 2 - Paul Haylett.txt
+ create mode 100644 data/Harvest_Time_Bride_Tabernacle/2026-01-18 - Sun. Jan. 18, 2026 Pastor Dale Langstaff - Dale Langstaff.timestamped.txt
+ create mode 100644 data/Harvest_Time_Bride_Tabernacle/2026-01-18 - Sun. Jan. 18, 2026 Pastor Dale Langstaff - Dale Langstaff.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-18 - The House That Love Built - Pastor Olumuyiwa Omotoyinbo Nnewi, Nigeria - Olumuyiwa Omotoyinbo.timestamped.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-18 - The House That Love Built - Pastor Olumuyiwa Omotoyinbo Nnewi, Nigeria - Olumuyiwa Omotoyinbo.txt
+ create mode 100644 data/Inner_Veil_Ministries/2026-01-19 - The World That Jesus Died For Pastor Ibale Stephen 18.O1.2026 - Ibale Stephen.timestamped.txt
+ create mode 100644 data/Inner_Veil_Ministries/2026-01-19 - The World That Jesus Died For Pastor Ibale Stephen 18.O1.2026 - Ibale Stephen.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-19 - Respeto 2 - Hno. Jose Flores - Emmanuel Santos.timestamped.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-19 - Respeto 2 - Hno. Jose Flores - Emmanuel Santos.txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-19 - Sunday Morning Service - Steven Shelley.timestamped.txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-19 - Sunday Morning Service - Steven Shelley.txt
+ create mode 100644 data/New_Life_Outreach_Church_Of_Pawnee/2026-01-18 - 2026-01-18 Bro Wendall Martin The Superiority Of Jesus - Wendall Martin.timestamped.txt
+ create mode 100644 data/New_Life_Outreach_Church_Of_Pawnee/2026-01-18 - 2026-01-18 Bro Wendall Martin The Superiority Of Jesus - Wendall Martin.txt
+ create mode 100644 data/Shalom_Tabernacle_Tucson/0000-00-00 - Error Fetching YouTube Data - Bill Lingar.timestamped.txt
+ create mode 100644 data/Shalom_Tabernacle_Tucson/0000-00-00 - Error Fetching YouTube Data - Bill Lingar.txt
+ create mode 100644 data/Shalom_Tabernacle_Tucson/0000-00-00 - Error Fetching YouTube Data - Israel Powe.timestamped.txt
+ create mode 100644 data/Shalom_Tabernacle_Tucson/0000-00-00 - Error Fetching YouTube Data - Israel Powe.txt
+ create mode 100644 data/Tabernaculo_Obra_Maestra/2026-01-18 - The Parables of Jesus Pt 4 Sunday, January 18, 2026 - Daniel Fraijo.timestamped.txt
+ create mode 100644 data/Tabernaculo_Obra_Maestra/2026-01-18 - The Parables of Jesus Pt 4 Sunday, January 18, 2026 - Daniel Fraijo.txt
+ create mode 100644 data/The_Word_of_God_Tabernacle/2026-01-19 - The Word Of God Tabernacle - 1182026 - .timestamped.txt
+ create mode 100644 data/The_Word_of_God_Tabernacle/2026-01-19 - The Word Of God Tabernacle - 1182026 - .txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-18 - Ask, Seek, and Knock (Matthew 77-14) Daniel Evans - Daniel Evans.timestamped.txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-18 - Ask, Seek, and Knock (Matthew 77-14) Daniel Evans - Daniel Evans.txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-19 - Children's Church. Sunday, January 18th 5PM 2026. Tucson Tabernacle. - .timestamped.txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-19 - Children's Church. Sunday, January 18th 5PM 2026. Tucson Tabernacle. - .txt
+ create mode 100644 data/Word_Of_Life_Church/2014-08-20 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2014-08-20 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-07-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-07-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-07-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-07-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-01 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-01 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-04 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2017-08-04 -  - Unknown Speaker.txt => 2017-08-04 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2017-08-20 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-08-20 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-09-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-09-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-17 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-17 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-19 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-19 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-21 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2017-10-21 -  - Unknown Speaker.txt => 2017-10-21 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2017-10-25 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-25 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-28 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-10-28 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-01 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2017-11-01 -  - Unknown Speaker.txt => 2017-11-01 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2017-11-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-09 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-09 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-17 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-17 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-19 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-19 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-23 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-11-23 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-12-01 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2017-12-01 -  - Unknown Speaker.txt => 2017-12-01 -  - .txt} (97%)
+ create mode 100644 data/Word_Of_Life_Church/2017-12-09 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-12-09 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2017-12-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2017-12-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-21 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-21 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-25 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-25 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-01-30 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-01-30 -  - Unknown Speaker.txt => 2018-01-30 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2018-02-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-15 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-02-15 -  - Unknown Speaker.txt => 2018-02-15 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2018-02-21 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-21 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-24 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-24 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-02-28 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-02-28 -  - Unknown Speaker.txt => 2018-02-28 -  - .txt} (96%)
+ create mode 100644 data/Word_Of_Life_Church/2018-03-02 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-02 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-08 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-08 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-17 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-17 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-28 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-03-28 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-04-10 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-04-10 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-04-13 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-04-13 -  - Unknown Speaker.txt => 2018-04-13 -  - .txt} (97%)
+ create mode 100644 data/Word_Of_Life_Church/2018-04-15 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-04-15 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-04-27 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-04-27 -  - Unknown Speaker.txt => 2018-04-27 -  - .txt} (96%)
+ create mode 100644 data/Word_Of_Life_Church/2018-05-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-05-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-05-23 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-05-23 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-05-24 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-05-24 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-01 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-06-01 -  - Unknown Speaker.txt => 2018-06-01 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2018-06-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-15 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-15 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-17 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-17 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-18 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-18 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-25 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-06-25 -  - Unknown Speaker.txt => 2018-06-25 -  - .txt} (98%)
+ create mode 100644 data/Word_Of_Life_Church/2018-06-30 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-06-30 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-08 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-07-08 -  - Unknown Speaker.txt => 2018-07-08 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2018-07-09 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-09 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-23 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-07-23 -  - Unknown Speaker.txt => 2018-07-23 -  - .txt} (95%)
+ create mode 100644 data/Word_Of_Life_Church/2018-07-28 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-07-28 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-04 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-04 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-05 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-05 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-06 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-08-06 -  - Unknown Speaker.txt => 2018-08-06 -  - .txt} (95%)
+ create mode 100644 data/Word_Of_Life_Church/2018-08-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-11 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-08-11 -  - Unknown Speaker.txt => 2018-08-11 -  - .txt} (94%)
+ create mode 100644 data/Word_Of_Life_Church/2018-08-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-08-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-09-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-09-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-09-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-09-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-10-30 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-10-30 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-10-31 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2018-10-31 -  - Unknown Speaker.txt => 2018-10-31 -  - .txt} (97%)
+ create mode 100644 data/Word_Of_Life_Church/2018-12-26 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-12-26 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2018-12-27 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2018-12-27 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-01-23 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-01-23 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-04 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-04 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-05 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-05 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-02-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-06-17 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2019-06-17 -  - Unknown Speaker.txt => 2019-06-17 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2019-06-18 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-06-18 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-06-30 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-06-30 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-07-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-07-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-07-10 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-07-10 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-08 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-08 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-16 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-16 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-22 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-08-22 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-09-18 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2019-09-18 -  - Unknown Speaker.txt => 2019-09-18 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2019-09-22 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-09-22 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-10-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-10-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-10-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-10-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2019-10-10 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2019-10-10 -  - Unknown Speaker.txt => 2019-10-10 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2019-11-13 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2019-11-13 -  - Unknown Speaker.txt => 2019-11-13 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2019-11-16 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2019-11-16 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-02-28 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-02-28 -  - Unknown Speaker.txt => 2020-02-28 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2020-03-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-03-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-03-27 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-03-27 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-04-04 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-04-04 -  - Unknown Speaker.txt => 2020-04-04 -  - .txt} (95%)
+ create mode 100644 data/Word_Of_Life_Church/2020-04-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-04-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-04-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-04-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-15 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-15 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-18 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-06-18 -  - Unknown Speaker.txt => 2020-06-18 -  - .txt} (96%)
+ create mode 100644 data/Word_Of_Life_Church/2020-06-20 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-20 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-21 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-06-21 -  - Unknown Speaker.txt => 2020-06-21 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2020-06-25 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-06-25 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-02 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-02 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-15 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-15 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-16 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-16 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-20 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-07-20 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-08-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-08-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-08-19 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-08-19 -  - Unknown Speaker.txt => 2020-08-19 -  - .txt} (93%)
+ create mode 100644 data/Word_Of_Life_Church/2020-09-01 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-09-01 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-09-10 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-09-10 -  - Unknown Speaker.txt => 2020-09-10 -  - .txt} (96%)
+ create mode 100644 data/Word_Of_Life_Church/2020-09-26 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-09-26 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-10-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-10-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-10-19 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-10-19 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-04 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-11-04 -  - Unknown Speaker.txt => 2020-11-04 -  - .txt} (98%)
+ create mode 100644 data/Word_Of_Life_Church/2020-11-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-10 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-11-10 -  - Unknown Speaker.txt => 2020-11-10 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2020-11-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-16 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-16 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-19 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-19 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-23 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-23 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-30 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-11-30 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-12-03 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2020-12-03 -  - Unknown Speaker.txt => 2020-12-03 -  - .txt} (96%)
+ create mode 100644 data/Word_Of_Life_Church/2020-12-11 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-12-11 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2020-12-31 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2020-12-31 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-01-12 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-01-12 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-01-15 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-01-15 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-01-28 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2021-01-28 -  - Unknown Speaker.txt => 2021-01-28 -  - .txt} (97%)
+ create mode 100644 data/Word_Of_Life_Church/2021-03-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-03-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-04-29 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-04-29 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-05-10 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-05-10 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-05-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-05-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-08-29 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-08-29 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-10-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-10-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-10-11 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2021-10-11 -  - Unknown Speaker.txt => 2021-10-11 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2021-10-17 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-10-17 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-11-06 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-11-06 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2021-12-30 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2021-12-30 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-06-01 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-06-01 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-06-11 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2022-06-11 -  - Donny Reagan.txt => 2022-06-11 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2022-07-13 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-07-13 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-07-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-07-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-07-16 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-07-16 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-08-07 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-08-07 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-08-08 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2022-08-08 -  - Donny Reagan.txt => 2022-08-08 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2022-08-09 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-08-09 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-08-11 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2022-08-11 -  - Unknown Speaker.txt => 2022-08-11 -  - .txt} (99%)
+ create mode 100644 data/Word_Of_Life_Church/2022-09-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-09-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2022-09-14 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2022-09-14 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2023-07-03 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2023-07-03 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2023-07-05 -  - .timestamped.txt
+ create mode 100644 data/Word_Of_Life_Church/2023-07-05 -  - .txt
+ create mode 100644 data/Word_Of_Life_Church/2023-07-06 -  - .timestamped.txt
+ rename data/Word_Of_Life_Church/{2023-07-06 -  - Unknown Speaker.txt => 2023-07-06 -  - .txt} (90%)
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-19 - The Way of a Transgressor Bro Josh Cathey Sunday Evening 11826 - Josh Cathey.timestamped.txt
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-19 - The Way of a Transgressor Bro Josh Cathey Sunday Evening 11826 - Josh Cathey.txt
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-19 - The Way of a Transgressor Bro. Josh Cathey Sunday Night 1-18-26 - Josh Cathey.timestamped.txt
+ create mode 100644 data/Word_of_Life_Tabernacle/2026-01-19 - The Way of a Transgressor Bro. Josh Cathey Sunday Night 1-18-26 - Josh Cathey.txt
+ create mode 100644 logs/daily_update_20260119_210842.log
+ create mode 100644 logs/daily_update_20260119_215415.log
+ create mode 100644 site_api/text_chunk_401.json
+ create mode 100644 site_api/text_chunk_402.json
+[0;34m[2026-01-20 02:32:49][0m Step 6: Pushing to remote...
+error: RPC failed; curl 55 Send failure: Broken pipe
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+[1;33m[2026-01-20 03:12:40] WARNING: Step 6: Push failed (changes saved locally)[0m
+[0;34m[2026-01-20 03:12:40][0m ==============================================
+[0;32m[2026-01-20 03:12:40]   Daily Update Complete![0m
+[0;34m[2026-01-20 03:12:40][0m ==============================================
+[0;34m[2026-01-20 03:12:40][0m Total time: 318m 25s
+[0;34m[2026-01-20 03:12:40][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260119_215415.log

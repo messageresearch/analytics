@@ -154,6 +154,12 @@
     "url": "https://www.youtube.com/@JerichoTabernacle/videos",
     "filename": "JerichoTabernacle.txt"
   },
+  "Pastor Jesse Smith": {
+    "url": "https://www.youtube.com/@JesseSmithAkronBrideofChrist",
+    "filename": "PastorJesseSmith.txt",
+    "default_speaker": "Jesse Smith",
+    "default_type": "Commentary"
+  },
   "Literal Life Church": {
     "url": "https://www.youtube.com/@LiteralLifeChurch",
     "filename": "LiteralLifeChurch.txt"
