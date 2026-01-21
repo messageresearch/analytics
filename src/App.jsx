@@ -1335,9 +1335,9 @@ export default function App({ onSwitchToBranham }){
                 <div className="bg-blue-100 rounded-lg p-3 space-y-2">
                   <p className="font-semibold">📈 Understanding the Charts:</p>
                   <ul className="list-disc list-inside space-y-1 ml-2">
-                    <li><strong>Main Chart:</strong> Shows aggregated data across all selected churches. Displays total mentions over time with sermon counts.</li>
+                    <li><strong>Main Chart:</strong> Shows aggregated data across all selected channels. Displays total mentions over time with sermon counts.</li>
                     <li><strong>Rolling Averages:</strong> The rolling average lines smooth out daily fluctuations to reveal trends. A rising rolling average indicates increasing mention frequency over time.</li>
-                    <li><strong>Individual Church Charts:</strong> Each church has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
+                    <li><strong>Individual Channel Charts:</strong> Each channel has its own chart showing mentions and sermon counts. Click on a chart to expand it for more detail. Hover over data points to see exact values.</li>
                   </ul>
                 </div>
                 
@@ -1372,7 +1372,7 @@ export default function App({ onSwitchToBranham }){
               <div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2"><Icon name="filter" /> Filter Database</h3>
                 <div className="text-xs text-gray-500 mt-1">
-                  Selected Churches: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • 
+                  Selected Channels: <span className="font-medium text-gray-700">{selChurches.length.toLocaleString()}</span> • 
                   Speakers: <span className="font-medium text-gray-700">{selSpeakers.filter(s => filteredOptions.speakers.includes(s)).length.toLocaleString()} of {filteredOptions.speakers.length.toLocaleString()} available</span> • 
                   Transcripts: <span className="font-medium text-gray-700">{filteredData.filter(s => s.hasTranscript !== false).length.toLocaleString()} of {transcriptStats.withTranscript.toLocaleString()}</span>
                   {isPending && <span className="ml-2 text-blue-500">⟳</span>}
@@ -1383,10 +1383,10 @@ export default function App({ onSwitchToBranham }){
             {/* Smart filter hint - always visible */}
             <div className="text-xs text-blue-600 bg-blue-50 rounded px-2 py-1 mb-3 flex items-center gap-1">
               <Icon name="info" size={12} />
-              <span>Smart filters: Options adjust based on selected churches</span>
+              <span>Smart filters: Options adjust based on selected channels</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-              <MultiSelect label="Churches" options={options.churches} selected={selChurches} onChange={setSelChurches} medium aliases={churchAliases} />
+              <MultiSelect label="Channels" options={options.churches} selected={selChurches} onChange={setSelChurches} medium aliases={churchAliases} />
               <div>
                 <MultiSelect label="Speakers" options={filteredOptions.speakers} selected={selSpeakers} onChange={setSelSpeakers} wide allOptions={options.speakers} />
                 <div className="text-xs text-amber-600 mt-1 flex items-center gap-1" title="Speaker names are extracted from video titles/descriptions and may be incomplete or inaccurate">
@@ -1420,9 +1420,9 @@ export default function App({ onSwitchToBranham }){
                   <Icon name={coverageExpanded ? 'chevronDown' : 'chevronRight'} size={16} />
                 </div>
                 <h3 className="font-bold text-gray-800 flex items-center gap-2 text-sm sm:text-base">
-                  <Icon name="barChart" /> <span>Coverage by Church</span>
+                  <Icon name="barChart" /> <span>Coverage by Channel</span>
                 </h3>
-                <span className="text-xs text-gray-500 w-full sm:w-auto sm:ml-2">({churchCoverageData.length} churches • <span className="text-green-600">{transcriptStats.withTranscript.toLocaleString()} with transcripts</span> • <span className="text-red-500">{transcriptStats.withoutTranscript.toLocaleString()} without</span>)</span>
+                <span className="text-xs text-gray-500 w-full sm:w-auto sm:ml-2">({churchCoverageData.length} channels • <span className="text-green-600">{transcriptStats.withTranscript.toLocaleString()} with transcripts</span> • <span className="text-red-500">{transcriptStats.withoutTranscript.toLocaleString()} without</span>)</span>
                 {!coverageExpanded && <span className="text-xs text-blue-500 font-medium hidden sm:inline">Click to expand</span>}
               </div>
               
@@ -2102,8 +2102,8 @@ export default function App({ onSwitchToBranham }){
                 >
                   <div className="flex items-center gap-2">
                     <Icon name={chartsCollapsed ? 'chevronRight' : 'chevronDown'} size={18} className={chartsCollapsed ? 'text-blue-600' : 'text-gray-500'} />
-                    <h3 className={`font-bold ${chartsCollapsed ? 'text-blue-800' : 'text-gray-800'}`}>Individual Church Charts</h3>
-                    <span className="text-sm text-gray-500">({channelTrends.length} churches)</span>
+                    <h3 className={`font-bold ${chartsCollapsed ? 'text-blue-800' : 'text-gray-800'}`}>Individual Channel Charts</h3>
+                    <span className="text-sm text-gray-500">({channelTrends.length} channels)</span>
                   </div>
                   <span className={`text-sm font-medium ${chartsCollapsed ? 'text-blue-600 bg-blue-100 px-3 py-1 rounded-full' : 'text-xs text-gray-400'}`}>
                     {chartsCollapsed ? '▶ Click to view charts' : 'Click to collapse'}
@@ -2152,7 +2152,7 @@ export default function App({ onSwitchToBranham }){
                   <VirtualizedTable
                   columns={[
                     { key: 'date', label: 'Date', width: '110px', filterKey: 'date', filterPlaceholder: 'YYYY-MM', render: (r) => r.date },
-                    { key: 'church', label: 'Church', width: '160px', filterKey: 'church', hideOnMobile: true, render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
+                    { key: 'church', label: 'Channel', width: '160px', filterKey: 'church', hideOnMobile: true, render: (r) => (<span className="bg-gray-100 px-2 py-1 rounded text-xs font-semibold text-gray-600">{r.church}</span>) },
                     { key: 'speaker', label: 'Speaker', width: '140px', filterKey: 'speaker', hideOnMobile: true, render: (r) => (<span className="text-xs text-gray-600 truncate">{r.speaker || '—'}</span>) },
                     { key: 'title', label: 'Title', width: '2fr', filterKey: 'title', render: (r) => (<div className="font-medium text-gray-900 truncate">{r.title}</div>) },
                     { key: 'type', label: 'Type', width: '100px', filterKey: 'category', hideOnMobile: true, render: (r) => (<span className="bg-gray-50 px-2 py-1 rounded text-xs border">{r.type}</span>) },
@@ -2385,7 +2385,7 @@ export default function App({ onSwitchToBranham }){
                                         direction: prev.key === 'church' && prev.direction === 'asc' ? 'desc' : 'asc' 
                                       }))}
                                     >
-                                      Church {gSortCfg.key === 'church' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
+                                      Channel {gSortCfg.key === 'church' && <span className="ml-1">{gSortCfg.direction === 'asc' ? '↑' : '↓'}</span>}
                                     </th>
                                     <th 
                                       className="py-2 px-2 font-medium cursor-pointer hover:bg-gray-100 select-none"
