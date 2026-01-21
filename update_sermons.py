@@ -7112,7 +7112,17 @@ def process_channel(church_name, config, known_speakers, limit=None, recent_only
                     channel_stats['new_speakers'].add(speaker)
                     save_json_file(SPEAKERS_FILE, known_speakers)
 
+        # Apply channel default_speaker if configured (overrides all detection)
+        default_speaker = config.get('default_speaker')
+        if default_speaker:
+            speaker = default_speaker
+
         video_type = determine_video_type(title, speaker)
+
+        # Apply channel default_type if configured (but let specific detections like Podcast override)
+        default_type = config.get('default_type')
+        if default_type and video_type == "Church Service":
+            video_type = default_type
         if video_type == "Memorial Service" and speaker != "William M. Branham":
             speaker = "Unknown Speaker"
 
