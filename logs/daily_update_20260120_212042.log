@@ -8714,3 +8714,1022 @@ Max filename bytes: 255
 [0;32m[2026-01-21 00:09:54] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-21 00:09:54][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-21 00:09:55][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 41bf9dfb7] Daily update: 2026-01-21
+ 1222 files changed, 456646 insertions(+), 12006 deletions(-)
+ rename data/Believer's_Spoken_Word_Tabernacle/{2026-01-18 - BSWT LIVE - .txt => 2026-01-18 - Redemption in the Book of Revelation - Trevor Emond - Trevor Emond.txt} (99%)
+ create mode 100644 data/MOTRC/2026-01-20 - How to Read the Book of Revelation Part 2 - Br Allistair Francis - Allistair Francis.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-20 - How to Read the Book of Revelation Part 2 - Br Allistair Francis - Allistair Francis.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-03 - True Repentance, Part 1 of 3 (1) - Matthew.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-03 - True Repentance, Part 1 of 3 (1) - Matthew.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-03 - True Repentance, Part 2 of 3 (2) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-03 - True Repentance, Part 2 of 3 (2) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - 3 Prophesies of William Branham (6) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - 3 Prophesies of William Branham (6) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - Long Dresses and the Bible (5) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - Long Dresses and the Bible (5) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - Makeup and the Bible (4) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - Makeup and the Bible (4) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - The Message of the Hour (7) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-04 - The Message of the Hour (7) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-20 - Word From the Lord - Sister Karen Saunders (10.19.14) - Karen Saunders.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-10-20 - Word From the Lord - Sister Karen Saunders (10.19.14) - Karen Saunders.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-12-22 - 7 Problems With the Trinity Doctrine - Part 2 of 2 (10) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2014-12-22 - 7 Problems With the Trinity Doctrine - Part 2 of 2 (10) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-01-31 - 3 Works of Grace, Part 1 of 2 (11) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-01-31 - 3 Works of Grace, Part 1 of 2 (11) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-02-01 - 3 Works of Grace, Part 2 of 2 (12) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-02-01 - 3 Works of Grace, Part 2 of 2 (12) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-02-19 - Water Baptism in the Name of the Lord Jesus Christ (13) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-02-19 - Water Baptism in the Name of the Lord Jesus Christ (13) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-04-08 - Thus Saith the Lord - Future Prophesies of William Branham (14) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-04-08 - Thus Saith the Lord - Future Prophesies of William Branham (14) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-08-09 - Are Tongues The Evidence of the Holy Ghost (15) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-08-09 - Are Tongues The Evidence of the Holy Ghost (15) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-08-20 - Modest Clothing 4 Bible Guidelines (16) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-08-20 - Modest Clothing 4 Bible Guidelines (16) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-10-12 - The Evidence of the Holy Ghost According to Jesus (17) - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-10-12 - The Evidence of the Holy Ghost According to Jesus (17) - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-11-25 - Mystery Babylon The Roman Catholic Church Part 1 of 3 (18) - Mystery Babylon.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-11-25 - Mystery Babylon The Roman Catholic Church Part 1 of 3 (18) - Mystery Babylon.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-02 - (12-2-15) Serpent Seed - By Simon Smith - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-02 - (12-2-15) Serpent Seed - By Simon Smith - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-07 - Mystery Babylon The Roman Catholic Church Part 3 of 3 (20) - Unknown Speaker.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-07 - Mystery Babylon The Roman Catholic Church Part 3 of 3 (20) - Unknown Speaker.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-19 - Long Hair and the Bible, Part 1 of 2 (21) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2015-12-19 - Long Hair and the Bible, Part 1 of 2 (21) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-01-03 - (1-3-16AM) The Future Home, Part 1 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-01-03 - (1-3-16AM) The Future Home, Part 1 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-01-31 - (1-31-16) Worship Concert - Loris Rolfe - Loris Rolfe.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-01-31 - (1-31-16) Worship Concert - Loris Rolfe - Loris Rolfe.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-02-17 - (2-17-16) The Rapture Is Pre-Tribulation - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-02-17 - (2-17-16) The Rapture Is Pre-Tribulation - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-03-16 - (3-16-16) The 7 Parable-Mysteries of Jesus Christ - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-03-16 - (3-16-16) The 7 Parable-Mysteries of Jesus Christ - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-04-01 - (4-1-16) The Approach To War The Power of Music - Ben Norrod - Ben Norrod.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-04-01 - (4-1-16) The Approach To War The Power of Music - Ben Norrod - Ben Norrod.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-18 - Long Hair and the Bible, Part 2 or 2 (22) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-18 - Long Hair and the Bible, Part 2 or 2 (22) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-20 - Mystery Babylon The Roman Catholic Church, Part 2 of 3 (19) - Mystery Babylon.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-20 - Mystery Babylon The Roman Catholic Church, Part 2 of 3 (19) - Mystery Babylon.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-23 - Homosexuality and Bible, Part 1 of 2 (24) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-23 - Homosexuality and Bible, Part 1 of 2 (24) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-25 - Homosexuality and the Bible, Part 2 of 2 (25) - Unknown Speaker.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-06-25 - Homosexuality and the Bible, Part 2 of 2 (25) - Unknown Speaker.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-12 - William Branham Messenger of the Hour, Part 1 of 4 (26) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-12 - William Branham Messenger of the Hour, Part 1 of 4 (26) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-15 - William Branham Messenger of the Hour, Part 2 of 4 (27) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-15 - William Branham Messenger of the Hour, Part 2 of 4 (27) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-22 - William Branham Messenger of the Hour, Part 3 of 4 (28) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-22 - William Branham Messenger of the Hour, Part 3 of 4 (28) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-29 - William Branham Messenger of the Hour, Part 4 of 4 (29) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-07-29 - William Branham Messenger of the Hour, Part 4 of 4 (29) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-11-16 - 5 Reasons The Rapture Is Pre-Tribulation (30) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-11-16 - 5 Reasons The Rapture Is Pre-Tribulation (30) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-14 - The Rapture Mystery and the Bible, Part 1 of 5 (31) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-14 - The Rapture Mystery and the Bible, Part 1 of 5 (31) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-17 - The Rapture Mystery and the Bible, Part 2 of 5 (32) - Who I.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-17 - The Rapture Mystery and the Bible, Part 2 of 5 (32) - Who I.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-24 - The Rapture Mystery and the Bible, Part 3 of 5 (33) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-24 - The Rapture Mystery and the Bible, Part 3 of 5 (33) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-26 - The Rapture Mystery and the Bible, Part 4 of 5 (34) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-26 - The Rapture Mystery and the Bible, Part 4 of 5 (34) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-27 - The Rapture Mystery and the Bible, Part 5 of 5 (35) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2016-12-27 - The Rapture Mystery and the Bible, Part 5 of 5 (35) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-01-17 - Modest Clothing 4 Bible Guidelines, Part 1 of 2 (2017 Version) (36) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-01-17 - Modest Clothing 4 Bible Guidelines, Part 1 of 2 (2017 Version) (36) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-01-18 - Modest Clothing 4 Bible Guidelines, Part 2 of 2 (2017 Version) (37) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-01-18 - Modest Clothing 4 Bible Guidelines, Part 2 of 2 (2017 Version) (37) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-03-12 - Marriage, Divorce, and the Bible, Part 1 of 2 (38) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-03-12 - Marriage, Divorce, and the Bible, Part 1 of 2 (38) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-04-01 - Marriage, Divorce and the Bible, Part 2 of 2 (39) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-04-01 - Marriage, Divorce and the Bible, Part 2 of 2 (39) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-06-17 - The Book of Revelation - Overview of All 22 Chapters (40) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-06-17 - The Book of Revelation - Overview of All 22 Chapters (40) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-06-30 - The Serpent Seed 9 Bible Proofs, Part 1 of 3 (41) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-06-30 - The Serpent Seed 9 Bible Proofs, Part 1 of 3 (41) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-04 - The Serpent Seed 9 Bible Proofs, Part 2 of 3 (42) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-04 - The Serpent Seed 9 Bible Proofs, Part 2 of 3 (42) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-05 - The Serpent Seed 9 Bible Proofs, Part 3 of 3 (43) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-05 - The Serpent Seed 9 Bible Proofs, Part 3 of 3 (43) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-17 - The Book of Revelation, Chapter 1 (44) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-17 - The Book of Revelation, Chapter 1 (44) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-31 - The Book of Revelation, Chapters 2 & 3 (45) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-07-31 - The Book of Revelation, Chapters 2 & 3 (45) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-10-24 - The Book of Revelation, Chapters 4 & 5 (46) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-10-24 - The Book of Revelation, Chapters 4 & 5 (46) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-10 - (12-10-17AM) The Book of Ephesians, Part 12 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-10 - (12-10-17AM) The Book of Ephesians, Part 12 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-22 - The Book of Revelation, Chapter 6 (47) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-22 - The Book of Revelation, Chapter 6 (47) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-26 - The Book of Revelation, Chapter 7 (48) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2017-12-26 - The Book of Revelation, Chapter 7 (48) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-02 - High Heels and the Bible (49) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-02 - High Heels and the Bible (49) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-03 - The Book of Revelation, Chapter 8 (50) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-03 - The Book of Revelation, Chapter 8 (50) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-03 - The Book of Revelation, Chapter 9 (51) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-03 - The Book of Revelation, Chapter 9 (51) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-05 - The Book of Revelation, Chapter 10 (52) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-05 - The Book of Revelation, Chapter 10 (52) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-21 - The Book of Revelation, Chapter 11 (53) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-04-21 - The Book of Revelation, Chapter 11 (53) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-06-29 - The Book of Revelation, Chapter 12 (54) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-06-29 - The Book of Revelation, Chapter 12 (54) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-07-16 - Jewelry, Tattoos and the Bible (55) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-07-16 - Jewelry, Tattoos and the Bible (55) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-08-03 - The Book of Revelation, Chapter 13 (56) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-08-03 - The Book of Revelation, Chapter 13 (56) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-11-03 - Tithing and the Bible Should Christians Tithe Part 1 of 2 (57) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-11-03 - Tithing and the Bible Should Christians Tithe Part 1 of 2 (57) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-11-07 - Tithes and the Bible Should Christians Tithe Part 2 of 2 (58) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-11-07 - Tithes and the Bible Should Christians Tithe Part 2 of 2 (58) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-12-29 - The Home Church, Part 1 of 3 Faithful, Increasing Church Attendance (59) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2018-12-29 - The Home Church, Part 1 of 3 Faithful, Increasing Church Attendance (59) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-01-05 - The Home Church, Part 2 of 3 Sunday Worship, Having a Pastor, Growing Thru 5 Preaching Gifts (60) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-01-05 - The Home Church, Part 2 of 3 Sunday Worship, Having a Pastor, Growing Thru 5 Preaching Gifts (60) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-01-12 - The Home Church, Part 3 of 3 Having a Church Family, Financial Support, The Final Gathering (61) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-01-12 - The Home Church, Part 3 of 3 Having a Church Family, Financial Support, The Final Gathering (61) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-02-23 - New Book Restoring Christian Modesty - Coming March 2019 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-02-23 - New Book Restoring Christian Modesty - Coming March 2019 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-03-12 - New Book NOW AVAILABLE - March 12, 2019 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-03-12 - New Book NOW AVAILABLE - March 12, 2019 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-04-07 - Do the 10 Commandments Apply to Christians (62) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-04-07 - Do the 10 Commandments Apply to Christians (62) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-06-05 - Abominations and the Bible (63) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-06-05 - Abominations and the Bible (63) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-06-28 - The Book of Revelation, Chapter 14 (64) - Mount Zion.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-06-28 - The Book of Revelation, Chapter 14 (64) - Mount Zion.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-07-30 - Predestination and the Bible (65) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-07-30 - Predestination and the Bible (65) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-09-20 - Wise & Foolish Virgins 2 Kinds of Christians in 2 Separate Resurrections (66) - Matthew.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-09-20 - Wise & Foolish Virgins 2 Kinds of Christians in 2 Separate Resurrections (66) - Matthew.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-11-12 - Hell is NOT Eternal According to the Bible, Part 1 or 2 (67) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-11-12 - Hell is NOT Eternal According to the Bible, Part 1 or 2 (67) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-12-31 - Hell is NOT Eternal According to the Bible, Part 2 of 2 (68) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2019-12-31 - Hell is NOT Eternal According to the Bible, Part 2 of 2 (68) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-02-29 - 7 False Teachings of the Jeffersonville Tape Church Movement (69) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-02-29 - 7 False Teachings of the Jeffersonville Tape Church Movement (69) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-03-08 - Morning Routine Seek Ye First The Kingdom (70) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-03-08 - Morning Routine Seek Ye First The Kingdom (70) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-03-25 - NOT Every Word William Branham Said Was 'Thus Saith The LORD' - Yet He's a True Prophet (71) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-03-25 - NOT Every Word William Branham Said Was 'Thus Saith The LORD' - Yet He's a True Prophet (71) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-04-06 - The Sin of Gambling and How To Be a Wise Steward of God's Money (72) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-04-06 - The Sin of Gambling and How To Be a Wise Steward of God's Money (72) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-04-25 - William Branham's Absolute Was Jesus Christ-NOT His Tapes (73) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-04-25 - William Branham's Absolute Was Jesus Christ-NOT His Tapes (73) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-05-25 - The Token is Holy Ghost Baptism-NOT The Tapes (74) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-05-25 - The Token is Holy Ghost Baptism-NOT The Tapes (74) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-23 - Running The Race For Christ Testimony of Jesse Smith (75) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-23 - Running The Race For Christ Testimony of Jesse Smith (75) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-28 - Chapter 1 Audio - A Biblical Foundation For Your Outward Appearance By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-28 - Chapter 1 Audio - A Biblical Foundation For Your Outward Appearance By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-30 - Chapter 2 Audio - How To Apply Old Testament Scripture To The New Testament By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-07-30 - Chapter 2 Audio - How To Apply Old Testament Scripture To The New Testament By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-01 - Chapter 3 Audio - The Four Guidelines For Modest Clothing By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-01 - Chapter 3 Audio - The Four Guidelines For Modest Clothing By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-04 - Chapter 4 Audio - Hair Length By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-04 - Chapter 4 Audio - Hair Length By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-05 - Chapter 5 Audio - Jewelry, Makeup, Tattoos, and High Heels By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-05 - Chapter 5 Audio - Jewelry, Makeup, Tattoos, and High Heels By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-06 - Chapter 6 Audio - Connecting the History of American Fashion and the Bible By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-06 - Chapter 6 Audio - Connecting the History of American Fashion and the Bible By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-07 - Chapter 7 Audio - YouTube Testimonies, Questions and Answers By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-07 - Chapter 7 Audio - YouTube Testimonies, Questions and Answers By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-08 - Chapter 8 Audio - The Perfect Will of God By Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-08 - Chapter 8 Audio - The Perfect Will of God By Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-12 - Does Water Baptism Save Can You Get the Holy Ghost Baptism Before You're Baptized in Water (76) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-12 - Does Water Baptism Save Can You Get the Holy Ghost Baptism Before You're Baptized in Water (76) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-23 - (8-23-20AM) Sunday Morning - Simon Smith - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-23 - (8-23-20AM) Sunday Morning - Simon Smith - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-23 - (8-23-20PM) Sunday Evening Service - Simon Smith - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-23 - (8-23-20PM) Sunday Evening Service - Simon Smith - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-27 - (8-26-20) Returning to Pentecost, Then to Heaven - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-27 - (8-26-20) Returning to Pentecost, Then to Heaven - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-30 - (8-30-20AM) Returning to Pentecost, Then Returning to Heaven, Pt. 2 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-30 - (8-30-20AM) Returning to Pentecost, Then Returning to Heaven, Pt. 2 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-31 - (8-30-20PM) Take Ye Heed, Watch and Pray - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-08-31 - (8-30-20PM) Take Ye Heed, Watch and Pray - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-03 - (9-2-20) The Book of Philippians, Pt. 10 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-03 - (9-2-20) The Book of Philippians, Pt. 10 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-06 - (9-6-20) The Book of Philippians Pt. 11 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-06 - (9-6-20) The Book of Philippians Pt. 11 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-07 - (9-6-20PM) The Mystery of God's Will Pt. 3 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-07 - (9-6-20PM) The Mystery of God's Will Pt. 3 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-10 - (9-9-20) The Mystery of God's Will, Pt. 4 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-10 - (9-9-20) The Mystery of God's Will, Pt. 4 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-11 - Tape Boys are NOT Part of Jesus' Fivefold Ministry (77) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-11 - Tape Boys are NOT Part of Jesus' Fivefold Ministry (77) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-13 - (9-13-20AM) The Mystery of God's Will, Part 5 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-13 - (9-13-20AM) The Mystery of God's Will, Part 5 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-14 - (9-13-20PM) The Mystery of God's Will, Pt. 6 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-14 - (9-13-20PM) The Mystery of God's Will, Pt. 6 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-17 - (9-16-20) Prove All Things, Part 11 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-17 - (9-16-20) Prove All Things, Part 11 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-20 - (9-19-20) Saturday Evening Service - Keith Randolph - Keith Randolph.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-20 - (9-19-20) Saturday Evening Service - Keith Randolph - Keith Randolph.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-20 - (9-20-20) Sunday Morning Service - Keith Randolph - Keith Randolph.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-20 - (9-20-20) Sunday Morning Service - Keith Randolph - Keith Randolph.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-23 - (9-23-20) The Mystery of God's Will, Pt. 7 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-23 - (9-23-20) The Mystery of God's Will, Pt. 7 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-27 - (9-27-20AM) Prove All Things Pt. 12 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-27 - (9-27-20AM) Prove All Things Pt. 12 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-28 - (9-27-20PM) Lessons From Angels - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-28 - (9-27-20PM) Lessons From Angels - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-30 - (9-30-20) Prove All Things, Pt. 13 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-09-30 - (9-30-20) Prove All Things, Pt. 13 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-04 - (10-4-20AM) Prove All Things, Pt. 14 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-04 - (10-4-20AM) Prove All Things, Pt. 14 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-05 - (10-4-20PM) The Latter Reign Showdown - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-05 - (10-4-20PM) The Latter Reign Showdown - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-08 - (10-7-20) Prove All Things, Part 15 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-08 - (10-7-20) Prove All Things, Part 15 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-11 - (10-11-20AM) Prove All Things Pt 16 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-11 - (10-11-20AM) Prove All Things Pt 16 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-12 - (10-11-20PM) Blessings and Curses - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-12 - (10-11-20PM) Blessings and Curses - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-15 - (10-14-20) The Mystery of God's Will, Pt. 8 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-15 - (10-14-20) The Mystery of God's Will, Pt. 8 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-18 - (10-18-20AM) Sunday Morning Worship - Ben Norrod - Ben Norrod.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-18 - (10-18-20AM) Sunday Morning Worship - Ben Norrod - Ben Norrod.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-18 - (10-18-20PM) Sunday Evening Worship - Ben Norrod - Ben Norrod.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-18 - (10-18-20PM) Sunday Evening Worship - Ben Norrod - Ben Norrod.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-21 - (10-21-20) Blessings and Curses, Pt. 2 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-21 - (10-21-20) Blessings and Curses, Pt. 2 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-25 - (10-25-20AM) The Book of Philippians, Pt. 12 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-25 - (10-25-20AM) The Book of Philippians, Pt. 12 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-26 - (10-25-20PM) The Mystery of God's Will, Pt. 9 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-26 - (10-25-20PM) The Mystery of God's Will, Pt. 9 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-29 - (10-29-20) The Dark Comprehended Not The Light And The Contrast Thereof - Randy Vertin - Randy Vertin.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-29 - (10-29-20) The Dark Comprehended Not The Light And The Contrast Thereof - Randy Vertin - Randy Vertin.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-31 - (10-30-20) The Contrast Of God In The Believer - Randy Vertin - Randy Vertin.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-31 - (10-30-20) The Contrast Of God In The Believer - Randy Vertin - Randy Vertin.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-31 - (10-31-20) Opening The Channels - Randy Vertin - Randy Vertin.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-10-31 - (10-31-20) Opening The Channels - Randy Vertin - Randy Vertin.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-01 - (11-01-20) I Will Remember - Randy Vertin - Randy Vertin.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-01 - (11-01-20) I Will Remember - Randy Vertin - Randy Vertin.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-05 - (11-4-20) Praying For and Seeking Peace In Our Nation - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-05 - (11-4-20) Praying For and Seeking Peace In Our Nation - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-07 - How to Receive the Holy Ghost and How You'll Act When He Comes (78) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-07 - How to Receive the Holy Ghost and How You'll Act When He Comes (78) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-08 - (11-08-20) A Little Leaven, Leaveneth The Whole Lump - Nathaniel Sias - Nathaniel Sias.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-08 - (11-08-20) A Little Leaven, Leaveneth The Whole Lump - Nathaniel Sias - Nathaniel Sias.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-12 - (11-11-20) The Mystery of Israel's Spiritual Blindness - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-12 - (11-11-20) The Mystery of Israel's Spiritual Blindness - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-15 - (11-15-20AM) Blessings and Curses, Pt. 3 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-15 - (11-15-20AM) Blessings and Curses, Pt. 3 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-16 - (11-15-20) Blessings and Curses, Pt. 4 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-16 - (11-15-20) Blessings and Curses, Pt. 4 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-19 - (11-18-20) Blessings and Curses, Pt. 5 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-19 - (11-18-20) Blessings and Curses, Pt. 5 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-22 - (11-22-20AM) Sunday Evening Service - Simon Smith - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-22 - (11-22-20AM) Sunday Evening Service - Simon Smith - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-22 - (11-22-20AM) Sunday Morning Worship - Simon Smith - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-11-22 - (11-22-20AM) Sunday Morning Worship - Simon Smith - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-12-19 - Is Joseph Branham a Prophet No, At Least Not Yet (79) - Brotherly Kindness.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2020-12-19 - Is Joseph Branham a Prophet No, At Least Not Yet (79) - Brotherly Kindness.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-01-18 - The Book of Revelation, Chapter 15 (80) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-01-18 - The Book of Revelation, Chapter 15 (80) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-01-27 - 10 Best Books I've Read + 5 Honorable Mention + Announcement (81) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-01-27 - 10 Best Books I've Read + 5 Honorable Mention + Announcement (81) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-02-06 - The Book of Revelation, Chapter 16 (82) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-02-06 - The Book of Revelation, Chapter 16 (82) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-03-14 - Is Bro. Branham's 6th Vision Fulfilled By Kamala Harris and Joe Biden It Doesn't Seem To Be (83) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-03-14 - Is Bro. Branham's 6th Vision Fulfilled By Kamala Harris and Joe Biden It Doesn't Seem To Be (83) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-04-10 - William Branham Did NOT Pretend to Speak in Tongues [Defending Jesus' Message and Messenger] (84) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-04-10 - William Branham Did NOT Pretend to Speak in Tongues [Defending Jesus' Message and Messenger] (84) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-05-01 - First Look - Cover Concept for June 2021 Book The 12 New Testament Mysteries Revealed - Cover Concept.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-05-01 - First Look - Cover Concept for June 2021 Book The 12 New Testament Mysteries Revealed - Cover Concept.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-06-30 - Clarence Larkin, William Branham, & the Plagiarism Accusation Defending Jesus' Messenger (85) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-06-30 - Clarence Larkin, William Branham, & the Plagiarism Accusation Defending Jesus' Messenger (85) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-07 - New Book Available-The 12 New Testament Mysteries Revealed - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-07 - New Book Available-The 12 New Testament Mysteries Revealed - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-19 - Audio Book- Introduction Chapter God's Mysteries Are For You-The 12 N.T. Mysteries Revealed - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-19 - Audio Book- Introduction Chapter God's Mysteries Are For You-The 12 N.T. Mysteries Revealed - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-20 - Audio Book-Chapter 1 The Mystery of the Godhead- From The 12 New Testament Mysteries - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-20 - Audio Book-Chapter 1 The Mystery of the Godhead- From The 12 New Testament Mysteries - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-22 - Audio Book- Chapter 2 The Mystery of Israel's Spiritual Blindness-The 12 N.T. Mysteries Revealed - Israel, Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-22 - Audio Book- Chapter 2 The Mystery of Israel's Spiritual Blindness-The 12 N.T. Mysteries Revealed - Israel, Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-24 - Audio Book-Chapter 3 The Mystery of the New Testament Church Composed of Both Jew and Gentile - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-24 - Audio Book-Chapter 3 The Mystery of the New Testament Church Composed of Both Jew and Gentile - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-27 - Audio Book-Chapter 4 The Mystery of the New Testament Church as the Bride of Christ - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-08-27 - Audio Book-Chapter 4 The Mystery of the New Testament Church as the Bride of Christ - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-01 - Audio Book-Chapter 5 The Mystery of the Godliness Restored to Man- From Author & Pastor J. Smith - J Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-01 - Audio Book-Chapter 5 The Mystery of the Godliness Restored to Man- From Author & Pastor J. Smith - J Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-09 - Audio Book-Chapter 6 The Mystery of Christ In You The Baptism of the Holy Ghost by Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-09 - Audio Book-Chapter 6 The Mystery of Christ In You The Baptism of the Holy Ghost by Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-19 - Audio Book-Chapter 7 The Mystery of the Seven Stars and Seven Golden Candlesticks- By J. Smith - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-19 - Audio Book-Chapter 7 The Mystery of the Seven Stars and Seven Golden Candlesticks- By J. Smith - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-30 - Audio Book-Chapter 9 The Mystery of Babylon The Great- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-09-30 - Audio Book-Chapter 9 The Mystery of Babylon The Great- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-10-13 - Audio Book-Chapter 10 The Mystery of Iniquity- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-10-13 - Audio Book-Chapter 10 The Mystery of Iniquity- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-10-28 - Audio Book-Chapter 8 The Mystery of the Kingdom of Heaven- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-10-28 - Audio Book-Chapter 8 The Mystery of the Kingdom of Heaven- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-02 - Audio Book-Chapter 11 The Mystery of the God's Will- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-02 - Audio Book-Chapter 11 The Mystery of the God's Will- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-06 - Audio Book-Chapter 12 The Mystery of the Rapture- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-06 - Audio Book-Chapter 12 The Mystery of the Rapture- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-12 - Audio Book-Chapter 13 Elijah Shall Restore All Things- By Pastor and Author Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-12 - Audio Book-Chapter 13 Elijah Shall Restore All Things- By Pastor and Author Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-16 - Eagles Represent Prophets and Believers - Defending Jesus' Message and Messenger (86) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-16 - Eagles Represent Prophets and Believers - Defending Jesus' Message and Messenger (86) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-24 - Is Revelation 7 the Wise (Bride) or Foolish Virgin (87) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-24 - Is Revelation 7 the Wise (Bride) or Foolish Virgin (87) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-25 - Difference Between the Two Seventh Angels of Revelation (88) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-25 - Difference Between the Two Seventh Angels of Revelation (88) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-29 - Esther Did NOT Wear Makeup + Questions and Answers (89) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-29 - Esther Did NOT Wear Makeup + Questions and Answers (89) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-30 - The Word That Fell on the Day of Pentecost Will Not Work For This Day Defending The Message (90) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-11-30 - The Word That Fell on the Day of Pentecost Will Not Work For This Day Defending The Message (90) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-11 - 6 Reasons Ministers Are NOT Required to Marry Virgins - Understanding Opinions of Bro. Branham (91) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-11 - 6 Reasons Ministers Are NOT Required to Marry Virgins - Understanding Opinions of Bro. Branham (91) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-16 - Does Genesis 41 Disprove The Serpent Seed Doctrine (92) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-16 - Does Genesis 41 Disprove The Serpent Seed Doctrine (92) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-20 - Pajama Pants, Leggings, Beards, and the Bible (93) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-20 - Pajama Pants, Leggings, Beards, and the Bible (93) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-22 - The Seven Church Ages Foreshadowed in the Old Testament (94) - Branham Taught.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-22 - The Seven Church Ages Foreshadowed in the Old Testament (94) - Branham Taught.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-28 - Bro. Branham's Human Side Welcomed Correction + Who Are You To Correct God's Prophet (95) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2021-12-28 - Bro. Branham's Human Side Welcomed Correction + Who Are You To Correct God's Prophet (95) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-06 - Is a Woman Spiritually Dead (Not Born Again) If She Cuts Her Hair (96) - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-06 - Is a Woman Spiritually Dead (Not Born Again) If She Cuts Her Hair (96) - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-20 - Testimony A Cancellation of Debt (97) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-20 - Testimony A Cancellation of Debt (97) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-26 - Branham Jellyfish Churches Despise Doctrine + Necessity of Doctrine + The Attack on Doctrine (98) - Importance.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-26 - Branham Jellyfish Churches Despise Doctrine + Necessity of Doctrine + The Attack on Doctrine (98) - Importance.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-31 - Is Braided Hair, Broided Hair, or the Plaiting of Hair Sinful No. 1 Tim. 29 & 1 Peter 33 (99) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-01-31 - Is Braided Hair, Broided Hair, or the Plaiting of Hair Sinful No. 1 Tim. 29 & 1 Peter 33 (99) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-02 - Displaying Pictures of Jesus Christ is NOT a Sin + Hoffman's Head of Christ (100) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-02 - Displaying Pictures of Jesus Christ is NOT a Sin + Hoffman's Head of Christ (100) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-08 - You Can Be Saved But Not Yet Born Again By The Holy Ghost Baptism in Your Soul (101) - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-08 - You Can Be Saved But Not Yet Born Again By The Holy Ghost Baptism in Your Soul (101) - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-17 - New Birth and Baptism of the Holy Ghost Are One And The Same (102) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-02-17 - New Birth and Baptism of the Holy Ghost Are One And The Same (102) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-01 - 14 Signs of the End Times (103) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-01 - 14 Signs of the End Times (103) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-11 - Podcast 1 What Is The Message Defending The Message Podcast - Philip.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-11 - Podcast 1 What Is The Message Defending The Message Podcast - Philip.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-15 - Husbands, Love Your Wives, As Christ Loved the Church + Domestic Abuse is Always Evil (104) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-15 - Husbands, Love Your Wives, As Christ Loved the Church + Domestic Abuse is Always Evil (104) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-28 - Podcast 2 4 Classes of Believers & Prophets Came After Jesus - Defending The Message Podcast - Philip.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-03-28 - Podcast 2 4 Classes of Believers & Prophets Came After Jesus - Defending The Message Podcast - Philip.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-04 - 3 Instances of Weeping Wailing Gnashing of Teeth + Foolish Virgins In The Tribulation (105) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-04 - 3 Instances of Weeping Wailing Gnashing of Teeth + Foolish Virgins In The Tribulation (105) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-08 - Did Columba Live During His Church Age + Rightly Dividing Quotes From 7 Ch. Ages & 7 Seals (106) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-08 - Did Columba Live During His Church Age + Rightly Dividing Quotes From 7 Ch. Ages & 7 Seals (106) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-22 - The Brown Bear Vision Was a Conditional Promise + Brief Responses to Other Accusations (107) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-22 - The Brown Bear Vision Was a Conditional Promise + Brief Responses to Other Accusations (107) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-27 - Podcast 3 Seven Seals Plagiarized No, Jesus Revealed 7 Seals to Branham [Charles Taze] Russell] - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-04-27 - Podcast 3 Seven Seals Plagiarized No, Jesus Revealed 7 Seals to Branham [Charles Taze] Russell] - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-12 - The 1977 Prediction of William Branham (108) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-12 - The 1977 Prediction of William Branham (108) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-19 - Podcast 4 Abounding in Brotherly Kindness and Love - You'll Know Jesus' True Church By Their Love - Brotherly Kindness.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-19 - Podcast 4 Abounding in Brotherly Kindness and Love - You'll Know Jesus' True Church By Their Love - Brotherly Kindness.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-25 - Married to an Unbeliever 5 Guidelines To Live By (109) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-25 - Married to an Unbeliever 5 Guidelines To Live By (109) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-31 - Milk or Meat Christianity 6 Elementary Doctrines in Hebrews 5 & 6 (110) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-05-31 - Milk or Meat Christianity 6 Elementary Doctrines in Hebrews 5 & 6 (110) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-13 - How to Overcome Pornography & Lust of the Eyes + Brother Branham and The River of No Return (111) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-13 - How to Overcome Pornography & Lust of the Eyes + Brother Branham and The River of No Return (111) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-15 - Podcast 5 Testimonies of Ameen Lee and Jesse Smith How the Bible Message Transformed Our Lives - Ameen Lee, Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-15 - Podcast 5 Testimonies of Ameen Lee and Jesse Smith How the Bible Message Transformed Our Lives - Ameen Lee, Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-27 - Interracial Marriage, William Branham, and the Bible God Ordains Interracial Marriages (112) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-06-27 - Interracial Marriage, William Branham, and the Bible God Ordains Interracial Marriages (112) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-01 - Follow Up on 6th Major Vision Is the Woman Kamala, Mary, or Catholic Church (113) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-01 - Follow Up on 6th Major Vision Is the Woman Kamala, Mary, or Catholic Church (113) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-08 - Science Snakes Once Had Legs + Which Fruit Did Adam Partake Of More Serpent Seed Evidence (114) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-08 - Science Snakes Once Had Legs + Which Fruit Did Adam Partake Of More Serpent Seed Evidence (114) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-18 - Is The Bride-Church Seen in Revelation Chapters 4 to 19 (115) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-18 - Is The Bride-Church Seen in Revelation Chapters 4 to 19 (115) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-18 - Podcast 6 Austin Laramee Testimony, Part 1of 3 - Ife O.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-18 - Podcast 6 Austin Laramee Testimony, Part 1of 3 - Ife O.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-27 - Are Message Believers the Greatest Christians of All Time The Bride Pride GOAT Debate (116) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-27 - Are Message Believers the Greatest Christians of All Time The Bride Pride GOAT Debate (116) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-30 - Without Sensation William Branham and the Baptism of the Holy Ghost w the Same Sensation (117) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-07-30 - Without Sensation William Branham and the Baptism of the Holy Ghost w the Same Sensation (117) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-09 - Podcast 7 Austin Laramee Testimony, Part 2 of 3 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-09 - Podcast 7 Austin Laramee Testimony, Part 2 of 3 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-10 - Podcast 8 Austin Laramee Testimony, Part 3 of 3 - Austin.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-10 - Podcast 8 Austin Laramee Testimony, Part 3 of 3 - Austin.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-12 - The Bride's Revival 4 Kinds of Revival Taught By William Branham (118) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-12 - The Bride's Revival 4 Kinds of Revival Taught By William Branham (118) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-20 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes, Yet He Was a True Prophet, Part 1 of 4 (119) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-20 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes, Yet He Was a True Prophet, Part 1 of 4 (119) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-26 - Podcast 10 Sister Naomi's Testimony, Part 1 of 3 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-26 - Podcast 10 Sister Naomi's Testimony, Part 1 of 3 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-30 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes; Yet He's a True Prophet, Part 2 of 4 (120) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-08-30 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes; Yet He's a True Prophet, Part 2 of 4 (120) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-05 - Lukewarm NEVER applies to the SOUL of a Holy Ghost Filled Christian (121) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-05 - Lukewarm NEVER applies to the SOUL of a Holy Ghost Filled Christian (121) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-07 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes; Yet He's a True Prophet, Part 3 of 4 (122) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-07 - 60+ Proofs the Tapes of Bro. Branham Have Mistakes; Yet He's a True Prophet, Part 3 of 4 (122) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-20 - Podcast 13 Sister Naomi's Testimony, Part 2 of 3 - Philip.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-20 - Podcast 13 Sister Naomi's Testimony, Part 2 of 3 - Philip.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-27 - The Book of Revelation, Chapters 17 & 18 (123) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-27 - The Book of Revelation, Chapters 17 & 18 (123) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-29 - Podcast 14 Sister Naomi's Testimony, Part 3 of 3 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-09-29 - Podcast 14 Sister Naomi's Testimony, Part 3 of 3 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-01 - The Book of Revelation, Chapter 19 (124) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-01 - The Book of Revelation, Chapter 19 (124) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-03 - The Book of Revelation, Chapter 20 (125) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-03 - The Book of Revelation, Chapter 20 (125) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-04 - The Book of Revelation, Chapter 21 (126) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-04 - The Book of Revelation, Chapter 21 (126) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-06 - The Book of Revelation, Chapter 22 (127) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-06 - The Book of Revelation, Chapter 22 (127) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-26 - The Nephilim or Giants of Genesis 64 (128) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-26 - The Nephilim or Giants of Genesis 64 (128) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-31 - Question Why Did Bro. Branham Say a Man Can Divorce His Wife Is She Cuts Her Hair (129) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-10-31 - Question Why Did Bro. Branham Say a Man Can Divorce His Wife Is She Cuts Her Hair (129) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-07 - Different Kinds of Types of Fillings, Love, Faith, Fruits, and More (130) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-07 - Different Kinds of Types of Fillings, Love, Faith, Fruits, and More (130) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-07 - Podcast 15 How Many 1933 Ohio River Baptisms - 14 or 500 Question and Answer - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-07 - Podcast 15 How Many 1933 Ohio River Baptisms - 14 or 500 Question and Answer - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-25 - Jesus Revealed The FIRST SEAL to Bro. Branham-NOT Plagiarized from Larkin and Russel (131) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-25 - Jesus Revealed The FIRST SEAL to Bro. Branham-NOT Plagiarized from Larkin and Russel (131) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-29 - Podcast 16 Roy Davis, Leo & Gene, Plagiarism, Re-Evaluating Bro. Branham's Ministry-Brief Answers - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-11-29 - Podcast 16 Roy Davis, Leo & Gene, Plagiarism, Re-Evaluating Bro. Branham's Ministry-Brief Answers - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-02 - 4 Reasons I Don't Set Up a Christmas Tree + Bro. Branham and Christmas (132) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-02 - 4 Reasons I Don't Set Up a Christmas Tree + Bro. Branham and Christmas (132) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-13 - Jesus Revealed The SECOND SEAL to Bro. Branham-NOT Plagiarized From Russel, Larkin, Smith (133) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-13 - Jesus Revealed The SECOND SEAL to Bro. Branham-NOT Plagiarized From Russel, Larkin, Smith (133) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-29 - Podcast 18 Sister Houa's Testimony, Part 1 of 3 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-29 - Podcast 18 Sister Houa's Testimony, Part 1 of 3 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-31 - Jesus Revealed The THIRD SEAL to Branham-NOT Plagiarized From Russel, Larkin, Smith (134) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2022-12-31 - Jesus Revealed The THIRD SEAL to Branham-NOT Plagiarized From Russel, Larkin, Smith (134) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-04 - Podcast 19 Sister Houa's Testimony, Part 2 of 3 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-04 - Podcast 19 Sister Houa's Testimony, Part 2 of 3 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-10 - Jesus Revealed The FOURTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (135) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-10 - Jesus Revealed The FOURTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (135) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-25 - Great One To Rise After Bro. Branham 4 Reasons There is NO Great One or 8th Messenger (136) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-01-25 - Great One To Rise After Bro. Branham 4 Reasons There is NO Great One or 8th Messenger (136) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-03 - Jesus Revealed The FIFTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (137) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-03 - Jesus Revealed The FIFTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (137) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-15 - Courtship and Engagement Bible Study 5 Foundational Bible Principles (138) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-15 - Courtship and Engagement Bible Study 5 Foundational Bible Principles (138) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-18 - Asbury Revival-A Message Believer's Response + 6 Types of Revival_William Branham's Message (139) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-18 - Asbury Revival-A Message Believer's Response + 6 Types of Revival_William Branham's Message (139) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-20 - Podcast 23 Can People Be Saved Outside the Message + Asbury Revival Audio - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-02-20 - Podcast 23 Can People Be Saved Outside the Message + Asbury Revival Audio - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-04 - Jesus Revealed The SIXTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (140) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-04 - Jesus Revealed The SIXTH SEAL to William Branham-NOT Plagiarized From Russel, Larkin, Smith (140) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-18 - WHEN Will Los Angeles Sink William Branham's Prophecy About the California Earthquake (141) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-18 - WHEN Will Los Angeles Sink William Branham's Prophecy About the California Earthquake (141) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-21 - Jesus Revealed The SEVENTH SEAL to William Branham-NOT Plagiarized from Larkin or Russel (142) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-21 - Jesus Revealed The SEVENTH SEAL to William Branham-NOT Plagiarized from Larkin or Russel (142) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-22 - Seven Seals on the BACKSIDE of the Book 14 or 7 Seals Bro. Branham GREW In His Revelation (143) - Branham GREW.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-22 - Seven Seals on the BACKSIDE of the Book 14 or 7 Seals Bro. Branham GREW In His Revelation (143) - Branham GREW.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-28 - Podcast 26 Are YOU The Message Part 1 of 2 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-28 - Podcast 26 Are YOU The Message Part 1 of 2 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-29 - Podcast 27 Are YOU The Message Part 2 of 2 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-03-29 - Podcast 27 Are YOU The Message Part 2 of 2 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-04 - Daniel's 70 Weeks 5 Reasons There's ONE WEEK Left For Israel_William Branham's Teachings (144) - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-04 - Daniel's 70 Weeks 5 Reasons There's ONE WEEK Left For Israel_William Branham's Teachings (144) - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-15 - 30 Bible Verses Bro. Branham Used To Define The Message of the Hour- What Is The Message (145) - Branham Used.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-15 - 30 Bible Verses Bro. Branham Used To Define The Message of the Hour- What Is The Message (145) - Branham Used.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-22 - 1st of 24 Lies From Branham Tabernacle Every Word on Tape is THUS SAITH THE LORD (146) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-22 - 1st of 24 Lies From Branham Tabernacle Every Word on Tape is THUS SAITH THE LORD (146) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-23 - 2nd & 3rd of 24 Lies of Branham Tabernacle All Answers Are On Tapes + Unquestionably Believe (147) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-23 - 2nd & 3rd of 24 Lies of Branham Tabernacle All Answers Are On Tapes + Unquestionably Believe (147) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-26 - 4th of 24 Lies Branham Tabernacle's False Vision of Denominational Mandate to Play the Tapes (148) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-26 - 4th of 24 Lies Branham Tabernacle's False Vision of Denominational Mandate to Play the Tapes (148) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-29 - 5th, 6th of 24 Branham Tabernacle Lies Tapes ARE The TOKEN & Tape Boys Are True 5 Fold (149) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-29 - 5th, 6th of 24 Branham Tabernacle Lies Tapes ARE The TOKEN & Tape Boys Are True 5 Fold (149) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-30 - Laying Foundational Bible Truth, Sermon 2 - Junction City (4.30.23) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-04-30 - Laying Foundational Bible Truth, Sermon 2 - Junction City (4.30.23) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-03 - 7th, 8th of 24 Branham Tab. LIES Identical to Jesus & Demas Name Calling, Live Ministry (150) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-03 - 7th, 8th of 24 Branham Tab. LIES Identical to Jesus & Demas Name Calling, Live Ministry (150) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-13 - 9th, 10th of 24+ Lies From Branham Tabernacle Two Lies About Revelation 226-9,16 (151) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-13 - 9th, 10th of 24+ Lies From Branham Tabernacle Two Lies About Revelation 226-9,16 (151) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-17 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 1_Debunking False Accusation (152) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-17 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 1_Debunking False Accusation (152) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-20 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 2_Debunking False Accusation (153) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-20 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 2_Debunking False Accusation (153) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-30 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 3_Debunking False Accusation (154) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-05-30 - Jim Jones Did NOT Believe William Branham's Bible Message, Part 3_Debunking False Accusation (154) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-07 - 11th, 12th of 24+ Lies From Branham Tabernacle Tapes = The Absolute + Make Believers Preach (155) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-07 - 11th, 12th of 24+ Lies From Branham Tabernacle Tapes = The Absolute + Make Believers Preach (155) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-14 - 5 Parallels Between Branham Tabernacle & Roman Catholic Church + 3 Powerful Observations (156) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-14 - 5 Parallels Between Branham Tabernacle & Roman Catholic Church + 3 Powerful Observations (156) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-19 - Power of Infallibility Quote From The Church Age Book - 6 Points To Understand It Correctly (157) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-19 - Power of Infallibility Quote From The Church Age Book - 6 Points To Understand It Correctly (157) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-20 - The Church Age Book 2 Mistakes I've Found & 3 Additions To Bro. Branham's Tapes (158) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-20 - The Church Age Book 2 Mistakes I've Found & 3 Additions To Bro. Branham's Tapes (158) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-26 - 13th Lie Tape Churches are THUS SAITH THE LORD in the Perfect Will of God (159) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-06-26 - 13th Lie Tape Churches are THUS SAITH THE LORD in the Perfect Will of God (159) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-08 - Is the Holy Spirit Received Before Love on the Stature of a Perfect Man (160) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-08 - Is the Holy Spirit Received Before Love on the Stature of a Perfect Man (160) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-11 - February 28, 1963 Arizona Cloud 4 Reasons I Believe It's of Supernatural Origin (161) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-11 - February 28, 1963 Arizona Cloud 4 Reasons I Believe It's of Supernatural Origin (161) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-18 - Is The Church Age Book Valid Lee Vayle & Sister Vayle's Involvement (162) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-18 - Is The Church Age Book Valid Lee Vayle & Sister Vayle's Involvement (162) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-21 - Book Review Some Thoughts About Balance in the Message, By Kyle Morton (163) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-21 - Book Review Some Thoughts About Balance in the Message, By Kyle Morton (163) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-22 - Nice Spiritual Lift - 3 Songs From Brother Branham's Tapes (164) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-22 - Nice Spiritual Lift - 3 Songs From Brother Branham's Tapes (164) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-25 - Find Your PURPOSE, Be Up and At It! Inspiration and Motivation From William Branham (165) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-07-25 - Find Your PURPOSE, Be Up and At It! Inspiration and Motivation From William Branham (165) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-01 - 14th of 24+ Branham Tabernacle Lies Bro. Branham and Current Branham Tabernacle are GOATs (166) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-01 - 14th of 24+ Branham Tabernacle Lies Bro. Branham and Current Branham Tabernacle are GOATs (166) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-03 - 15th of 24+ Lies From Branham Tab. No One JudgesCorrects a Prophet YET Son Corrects Father (167) - YET Son Corrects.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-03 - 15th of 24+ Lies From Branham Tab. No One JudgesCorrects a Prophet YET Son Corrects Father (167) - YET Son Corrects.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-07 - 16-22 LIES of 24+ Lies Coming From Branham Tabernacle (168) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-07 - 16-22 LIES of 24+ Lies Coming From Branham Tabernacle (168) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-08 - 23rd & 24th of 24+ Branham Tabernacle Lies Push Play & Obey is the Perfect Will of God (169) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-08 - 23rd & 24th of 24+ Branham Tabernacle Lies Push Play & Obey is the Perfect Will of God (169) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-15 - Laboring For Eternal Rewards 25+ Acts of Worship To Lay Up Treasures in Heaven (170) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-15 - Laboring For Eternal Rewards 25+ Acts of Worship To Lay Up Treasures in Heaven (170) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-16 - 12 Terms For The Baptism of the Holy Ghost; Bro. Branham FillingNew BirthBaptism are Same (171) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-16 - 12 Terms For The Baptism of the Holy Ghost; Bro. Branham FillingNew BirthBaptism are Same (171) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-19 - Bible Teaching on DANCING and William Branham's Dancing (172) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-19 - Bible Teaching on DANCING and William Branham's Dancing (172) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-23 - 6 THUS SAITH THE LORD Statements From William Branham That Have Come To Pass (173) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-08-23 - 6 THUS SAITH THE LORD Statements From William Branham That Have Come To Pass (173) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-05 - Bride Walks in Abraham's Steps + Bro. Branham Teaching on Abraham + Last Sign Before Rapture (174) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-05 - Bride Walks in Abraham's Steps + Bro. Branham Teaching on Abraham + Last Sign Before Rapture (174) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-09 - Podcast 12 Defenses of the Marriage and Divorce Sermon From Brother Branham (Episode 47) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-09 - Podcast 12 Defenses of the Marriage and Divorce Sermon From Brother Branham (Episode 47) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-16 - Dumb Devil Prideful Phrase + Bro. Branham Satan a Genius at His Job + Word Defeats Satan (175) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-16 - Dumb Devil Prideful Phrase + Bro. Branham Satan a Genius at His Job + Word Defeats Satan (175) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-30 - William Branham Overcame Racist Upbringing - False Racism Accusation Against Brother Branham (176) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-09-30 - William Branham Overcame Racist Upbringing - False Racism Accusation Against Brother Branham (176) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-07 - Get a Clear Cut Decision From God - Two William Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-07 - Get a Clear Cut Decision From God - Two William Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-10 - Who is the Rich Man Choose Character in a Spouse William Branham Quote - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-10 - Who is the Rich Man Choose Character in a Spouse William Branham Quote - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-18 - Truth Means More Than Life Itself - Is Your Life Worthy of the Gospel - William Branham Quote - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-18 - Truth Means More Than Life Itself - Is Your Life Worthy of the Gospel - William Branham Quote - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-20 - The Third Pull, Rapturing Faith, The Squeeze - William Branham Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-20 - The Third Pull, Rapturing Faith, The Squeeze - William Branham Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-28 - Podcast The Passing of Brother Billy Paul Branham + The Red Flags of Branham Tabernacle's 24+ Lies - Billy Paul Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-10-28 - Podcast The Passing of Brother Billy Paul Branham + The Red Flags of Branham Tabernacle's 24+ Lies - Billy Paul Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-01 - Did Jesus Pray to HIMSELF 6 Godhead Questions + Brother Branham Quotes (177) - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-01 - Did Jesus Pray to HIMSELF 6 Godhead Questions + Brother Branham Quotes (177) - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-04 - NEVER Baptize in the Name of William Branham - ONLY Baptize in the Name of LORD Jesus Christ (178) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-04 - NEVER Baptize in the Name of William Branham - ONLY Baptize in the Name of LORD Jesus Christ (178) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-09 - Women Can Operate All 9 Gifts of the Holy Ghost In Their Order Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-09 - Women Can Operate All 9 Gifts of the Holy Ghost In Their Order Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-13 - The 7th Angel Finishes the Mystery of God + Scofield's List of Bible Mysteries Bro. Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-13 - The 7th Angel Finishes the Mystery of God + Scofield's List of Bible Mysteries Bro. Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-14 - Branham Elvis Presley was a Modern Day Judas Iscariot + How Could God Bless Elvis' Vulgarity - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-14 - Branham Elvis Presley was a Modern Day Judas Iscariot + How Could God Bless Elvis' Vulgarity - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-16 - Junction City Sermon 1 - The Mystery of God is Finished (3323) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-16 - Junction City Sermon 1 - The Mystery of God is Finished (3323) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-17 - Boycott, Temptation Will Come As Follows - Brother Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-17 - Boycott, Temptation Will Come As Follows - Brother Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-18 - Add Virtues THEN Comes the SealingCapping of the Baptism of the Holy Ghost - Bro. Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-18 - Add Virtues THEN Comes the SealingCapping of the Baptism of the Holy Ghost - Bro. Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-21 - Feelling BLUE Read Romans 4, God's Divine Commentary About Abraham Brother Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-21 - Feelling BLUE Read Romans 4, God's Divine Commentary About Abraham Brother Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-22 - 1951 Rapture Prophecy God Will Take Away Denominational Barriers Before Rapture - Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-22 - 1951 Rapture Prophecy God Will Take Away Denominational Barriers Before Rapture - Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-23 - Difference Between Balaam and Moses Moses Teaching Was Perfect - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-23 - Difference Between Balaam and Moses Moses Teaching Was Perfect - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-24 - Deeds of Nicolaitans - How to Overcome the Antichrist Spirit's 4 Steps to Spiritual Death (179) - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-24 - Deeds of Nicolaitans - How to Overcome the Antichrist Spirit's 4 Steps to Spiritual Death (179) - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-25 - Junction City Sermon 3 - Sound Doctrine vs Doctrines of Devils (6123) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-25 - Junction City Sermon 3 - Sound Doctrine vs Doctrines of Devils (6123) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-25 - The Former Rain Ministry of the Prophet-Messenger, William Branham - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-25 - The Former Rain Ministry of the Prophet-Messenger, William Branham - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-27 - You Cry or BOO HOO at the New Birth, or the Baptism of the Holy Ghost - William Branham Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-27 - You Cry or BOO HOO at the New Birth, or the Baptism of the Holy Ghost - William Branham Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-28 - Junction City Sermon 4 The Seven Seals (61523) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-28 - Junction City Sermon 4 The Seven Seals (61523) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-29 - 7 Seals Greatest Realms of Revelation & Most Glorious Services of Brother Branham's Ministry - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-29 - 7 Seals Greatest Realms of Revelation & Most Glorious Services of Brother Branham's Ministry - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-30 - Junction City Sermon 5 - Music and Worship - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-11-30 - Junction City Sermon 5 - Music and Worship - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-02 - 3 Debates William Branham Was Associated With + Paul DebatedReasoned + God Vindicates Debate (180) - Associate.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-02 - 3 Debates William Branham Was Associated With + Paul DebatedReasoned + God Vindicates Debate (180) - Associate.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-04 - Meda Rebuked Brother Branham + He Was Afraid to Fail + Jesus Healed Him From a 9 Day Sinus Infection - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-04 - Meda Rebuked Brother Branham + He Was Afraid to Fail + Jesus Healed Him From a 9 Day Sinus Infection - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-06 - Voice Said You're NOT an O.T. Prophet, But Apostolic Prophet + - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-06 - Voice Said You're NOT an O.T. Prophet, But Apostolic Prophet + - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-08 - Secret is Increasing Your Gracious Service + Make More Tapes + David Danced More, Bro Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-08 - Secret is Increasing Your Gracious Service + Make More Tapes + David Danced More, Bro Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-09 - Junction City Sermon 6 - Anointed Ones At The End Times + Can Satan Heal (72723) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-09 - Junction City Sermon 6 - Anointed Ones At The End Times + Can Satan Heal (72723) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-11 - 1961 Squeeze Prophecy + Tongues and Interpretation From The Message of Grace Sermon - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-11 - 1961 Squeeze Prophecy + Tongues and Interpretation From The Message of Grace Sermon - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-13 - Mrs Steffy Poem Honor To Whom Honor + Bro. Branham Wished to Send Jerry Steffy to Art School - Branham Wished.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-13 - Mrs Steffy Poem Honor To Whom Honor + Bro. Branham Wished to Send Jerry Steffy to Art School - Branham Wished.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-13 - Part 1 William Branham, Rock and Roll, and Music - The Prophet's Vision Condemning Rock and Roll - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-13 - Part 1 William Branham, Rock and Roll, and Music - The Prophet's Vision Condemning Rock and Roll - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-16 - Tried It The Greatest Thrill is Living for Others - Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-16 - Tried It The Greatest Thrill is Living for Others - Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-18 - Are Church Ages in the Bible Yes, of course! Bible PROOF for Seven Church Ages - William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-18 - Are Church Ages in the Bible Yes, of course! Bible PROOF for Seven Church Ages - William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-19 - Joshua's Consolation As God Was With Moses, He'd Be With Me + God Won't Leave Me If I'm Trying - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-19 - Joshua's Consolation As God Was With Moses, He'd Be With Me + God Won't Leave Me If I'm Trying - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-21 - SO ENCOURAGING! You've Done What God Asked You To Do + God Has Place for Good Doctors, Bro. Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-21 - SO ENCOURAGING! You've Done What God Asked You To Do + God Has Place for Good Doctors, Bro. Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-22 - Why I'm a Message Believer - 9 Reasons Why I Follow the Bible Teachings of William Branham - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-22 - Why I'm a Message Believer - 9 Reasons Why I Follow the Bible Teachings of William Branham - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-23 - Junction City Sermon 7 The Serpent Seed (81023) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-23 - Junction City Sermon 7 The Serpent Seed (81023) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-25 - Eliezer-Duty for Brother Branham as Model Servant to Go Get the Bride, Based on Genesis 247 - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-25 - Eliezer-Duty for Brother Branham as Model Servant to Go Get the Bride, Based on Genesis 247 - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-27 - Part 2 William Branham, Rock and Roll, and Music - 8 Bible Requirements For Music and Songs - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-27 - Part 2 William Branham, Rock and Roll, and Music - 8 Bible Requirements For Music and Songs - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-28 - A Lot of Times I Don't Feel Saved, But I'm Saved By God's Promise - Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-28 - A Lot of Times I Don't Feel Saved, But I'm Saved By God's Promise - Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-31 - Pray for 2024! New Year's Prayer for 1963 From God's Prophet Brother William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2023-12-31 - Pray for 2024! New Year's Prayer for 1963 From God's Prophet Brother William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-01 - Plan For 2024 Like Brother Branham Planned for a New Year in Prayer, Waiting, and Inspiration - Branham Planned.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-01 - Plan For 2024 Like Brother Branham Planned for a New Year in Prayer, Waiting, and Inspiration - Branham Planned.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-03 - CHANTS of Pentecostal Worship Bring Healing + Bro. Branham Wanted Chants on Tape to Listen To - Branham Wanted Chants.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-03 - CHANTS of Pentecostal Worship Bring Healing + Bro. Branham Wanted Chants on Tape to Listen To - Branham Wanted Chants.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-06 - SHORTS Why Did Brother Branham Wear Shorts + Defending William Branham as a Genuine Prophet of God - Branham Wear Shorts.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-06 - SHORTS Why Did Brother Branham Wear Shorts + Defending William Branham as a Genuine Prophet of God - Branham Wear Shorts.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-13 - POWERFUL! RE-BAPTISM Typed in Joseph's REBURIAL! Revelation God Gave to Simon Smith in Dec 2023 - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-13 - POWERFUL! RE-BAPTISM Typed in Joseph's REBURIAL! Revelation God Gave to Simon Smith in Dec 2023 - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-15 - Part 2 WHY I am a Message Believer + I Love Following the Bible Based Ministry of Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-15 - Part 2 WHY I am a Message Believer + I Love Following the Bible Based Ministry of Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-18 - Greatest Hour of Testing + The New Birth Held Him + Who am I to Question God's Majesty Bro. Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-18 - Greatest Hour of Testing + The New Birth Held Him + Who am I to Question God's Majesty Bro. Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-19 - FLATTOPS Brother Branham Said They Acceptable Based Upon the Word of God - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-19 - FLATTOPS Brother Branham Said They Acceptable Based Upon the Word of God - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-20 - HAUNTED By a Critical Spirit, So Lord, Let Me Just Love + Honesty of True Prophet Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-20 - HAUNTED By a Critical Spirit, So Lord, Let Me Just Love + Honesty of True Prophet Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-22 - Third Pull is SOVEREIGNLY Given + WAIT For Orders to Speak Like Jesus Waited + Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-22 - Third Pull is SOVEREIGNLY Given + WAIT For Orders to Speak Like Jesus Waited + Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-24 - Junction City Sermon 8 The Mystery of the Godhead - Jesse Smith (111223) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-24 - Junction City Sermon 8 The Mystery of the Godhead - Jesse Smith (111223) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-27 - BRIDE Has 100s of Differences From All Other Churches - ABSOLUTE BIBLE PROOF We Are Jesus's Bride - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-27 - BRIDE Has 100s of Differences From All Other Churches - ABSOLUTE BIBLE PROOF We Are Jesus's Bride - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-30 - DEAD BIRDS - Bro. Branham ASHAMED His Church Name-Called Their Sister Church on Gift Operation - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-01-30 - DEAD BIRDS - Bro. Branham ASHAMED His Church Name-Called Their Sister Church on Gift Operation - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-03 - Bible Bride-Types But They DON'T Pertain to Salvation - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-03 - Bible Bride-Types But They DON'T Pertain to Salvation - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-06 - 13 METAPHORS of MAKE-BELIEVERS, The Shipwrecked Faith of Judas + Bro. Branham's 4 Classes of People - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-06 - 13 METAPHORS of MAKE-BELIEVERS, The Shipwrecked Faith of Judas + Bro. Branham's 4 Classes of People - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-08 - Junction City Sermon 9 The Mystery of the Church as the Bride of Jesus Christ (1-21-24) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-08 - Junction City Sermon 9 The Mystery of the Church as the Bride of Jesus Christ (1-21-24) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-11 - William Branham VINDICATED For Exposing Hollywood's Past and Present Cross Dressing Agenda - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-11 - William Branham VINDICATED For Exposing Hollywood's Past and Present Cross Dressing Agenda - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-13 - Take The Wind OUT of Satan's Sails With ROMANS 838 & JOHN 637 - Overcome FEAR! Bro. Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-13 - Take The Wind OUT of Satan's Sails With ROMANS 838 & JOHN 637 - Overcome FEAR! Bro. Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-15 - Bro. Branham Directed The Bride by Amazing Grace - Branham Directed.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-15 - Bro. Branham Directed The Bride by Amazing Grace - Branham Directed.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-17 - FLOOR DANCING Is Dancing By The Altar Wrong + Bro. Branham Preached on Pulpit w Feet Swinging Off - Branham Preached.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-17 - FLOOR DANCING Is Dancing By The Altar Wrong + Bro. Branham Preached on Pulpit w Feet Swinging Off - Branham Preached.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-19 - God of VARIETY! Some Are Dogmatic, Blusterous, Scholarly, Prayer Warriors, Immature (Corinthians) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-19 - God of VARIETY! Some Are Dogmatic, Blusterous, Scholarly, Prayer Warriors, Immature (Corinthians) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-20 - MEN, I Will Comb You Down + Men Measured By Bags In Knees By Prayer + Men, Don't Be Sick Kittens - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-20 - MEN, I Will Comb You Down + Men Measured By Bags In Knees By Prayer + Men, Don't Be Sick Kittens - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-23 - I DON'T Need a Man to TEACH Me - I DOUBT You've Got It + Five Fold Ministry = God's Dress Wear - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-23 - I DON'T Need a Man to TEACH Me - I DOUBT You've Got It + Five Fold Ministry = God's Dress Wear - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-25 - TENSION = BLESSING! Anyone With Life is Struggling + Spirit Filled Christians Driven to Minor Sins - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-25 - TENSION = BLESSING! Anyone With Life is Struggling + Spirit Filled Christians Driven to Minor Sins - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-27 - DANGERS of Leaving The Message of William Branham + Jesus Revealed the Bible Message to Bro. Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-02-27 - DANGERS of Leaving The Message of William Branham + Jesus Revealed the Bible Message to Bro. Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-02 - DANGERS of Leaving the Message of William Branham, Part 2 - 5 More False Doctrines w EVIL SPIRITS - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-02 - DANGERS of Leaving the Message of William Branham, Part 2 - 5 More False Doctrines w EVIL SPIRITS - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-05 - Can People OUTSIDE The Message of the Hour Make the Rapture - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-05 - Can People OUTSIDE The Message of the Hour Make the Rapture - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-08 - How Far Can Christians Fall Into Sin +Wise Virgins, Foolish Virgins + Major and Minor Sins - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-08 - How Far Can Christians Fall Into Sin +Wise Virgins, Foolish Virgins + Major and Minor Sins - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-13 - PART 2, How Far Can a Christian Fall In Sin + Major & Minor Sins + You Can Know Who's Born Again - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-13 - PART 2, How Far Can a Christian Fall In Sin + Major & Minor Sins + You Can Know Who's Born Again - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-15 - Moses MADE Promised Land By GRACE + Mistakes NOT Remembered! God Only Sees What You TRIED To Do! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-15 - Moses MADE Promised Land By GRACE + Mistakes NOT Remembered! God Only Sees What You TRIED To Do! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-19 - The Seven Thunders, Part 1 9 of 13 Reasons I Believe The 7 Thunders Have ALREADY Uttered BUT OPEN - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-19 - The Seven Thunders, Part 1 9 of 13 Reasons I Believe The 7 Thunders Have ALREADY Uttered BUT OPEN - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-23 - PART 2, Seven Thunders Reasons 10-14 That The Thunders ALREADY Uttered, BUT I'm Open to Revelation - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-23 - PART 2, Seven Thunders Reasons 10-14 That The Thunders ALREADY Uttered, BUT I'm Open to Revelation - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-26 - Bro. Branham JESUS is the ONLY Way, Truth, Life, Door, Peace! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-26 - Bro. Branham JESUS is the ONLY Way, Truth, Life, Door, Peace! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-29 - The MERITS of Jesus Christ's Blood He Died For Me - Debunking Slander Against Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-03-29 - The MERITS of Jesus Christ's Blood He Died For Me - Debunking Slander Against Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-02 - I'll Ride This Trail Again - What Does It Mean 3 Possible Explanations of Brother Branham's Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-02 - I'll Ride This Trail Again - What Does It Mean 3 Possible Explanations of Brother Branham's Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-04 - Bride Follows Abraham's Journey in 3 Works of Grace and Rapture Brother Willian Branham - Willian Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-04 - Bride Follows Abraham's Journey in 3 Works of Grace and Rapture Brother Willian Branham - Willian Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-06 - I'm NOT The Word-JESUS is The Word! Bro. Branham Said Prophets are NOT Fulness of the Word - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-06 - I'm NOT The Word-JESUS is The Word! Bro. Branham Said Prophets are NOT Fulness of the Word - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-10 - GLUTTONY An Idol Today, Like in Noah's Day as Jesus Predicted in Luke 1726-30 - William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-10 - GLUTTONY An Idol Today, Like in Noah's Day as Jesus Predicted in Luke 1726-30 - William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-13 - Answering 6 Believe The Sign Questions Proving William Branham is a Genuine Prophet of God - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-13 - Answering 6 Believe The Sign Questions Proving William Branham is a Genuine Prophet of God - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-18 - Question What About Roy Davis Baptizing Brother Branham + DEFENDING Bro. Branham's Godly Character - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-18 - Question What About Roy Davis Baptizing Brother Branham + DEFENDING Bro. Branham's Godly Character - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-20 - Question Lack of Empathy For Those Who Left the Message Jesus Has Divine Empathy For All Who Come - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-20 - Question Lack of Empathy For Those Who Left the Message Jesus Has Divine Empathy For All Who Come - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-26 - Everything For Christians is UNSEEN and By FAITH! Brother Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-26 - Everything For Christians is UNSEEN and By FAITH! Brother Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-27 - I'm a Victim of Identity Theft - I WOULD NEVER ASK FOR MONEY - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-04-27 - I'm a Victim of Identity Theft - I WOULD NEVER ASK FOR MONEY - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-01 - Look At Your SACRIFICE, JESUS, For Divine Healing! Don't Focus on, I'm Not Worthy - Bro. Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-01 - Look At Your SACRIFICE, JESUS, For Divine Healing! Don't Focus on, I'm Not Worthy - Bro. Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-03 - Part 2 Answering 6 Believe The Sign Questions & Comment About The Prophet Test - Deut. 1820-22 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-03 - Part 2 Answering 6 Believe The Sign Questions & Comment About The Prophet Test - Deut. 1820-22 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-07 - REVELATION! King Saul Used TITLES Instead of David's Name - False Father, Son, Holy Ghost Baptism - Simon Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-07 - REVELATION! King Saul Used TITLES Instead of David's Name - False Father, Son, Holy Ghost Baptism - Simon Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-14 - Junction City Sermon 10 But In The Days of the Voice (5424) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-14 - Junction City Sermon 10 But In The Days of the Voice (5424) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-16 - Q Is Joseph Branham a Prophet + Bro. Branham Used MAYBE About Joseph, Rebekah, and Billy Paul - Branham Used.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-16 - Q Is Joseph Branham a Prophet + Bro. Branham Used MAYBE About Joseph, Rebekah, and Billy Paul - Branham Used.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-18 - B.B. It's NOT RIGHT for Branham Tabernacle to Have Bro. Branham's Name & It Shouldn't Be There - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-18 - B.B. It's NOT RIGHT for Branham Tabernacle to Have Bro. Branham's Name & It Shouldn't Be There - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-22 - AMOS 37-8 The LION's VOICE is the WORD of THUS SAITH THE LORD - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-22 - AMOS 37-8 The LION's VOICE is the WORD of THUS SAITH THE LORD - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-25 - Q Prophet's Prediction That DIDN'T Come Pass 3-4 Examples David, Jonah, Isaiah, Brethren - ISAIAH.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-05-25 - Q Prophet's Prediction That DIDN'T Come Pass 3-4 Examples David, Jonah, Isaiah, Brethren - ISAIAH.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-01 - REVELATION! Serpent Seed is in the 7 Seals in REVELATION Ch. 5 - Bro. Branham Quote, Ashamed 1965 - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-01 - REVELATION! Serpent Seed is in the 7 Seals in REVELATION Ch. 5 - Bro. Branham Quote, Ashamed 1965 - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-03 - The Tent Vision 4 Reasons I Believe It Was Fulfilled in March 1963 During The Seven Seals Sermons - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-03 - The Tent Vision 4 Reasons I Believe It Was Fulfilled in March 1963 During The Seven Seals Sermons - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-08 - For NEW Believers - Top 10 Bible Teachings of Brother William Branham's Message of the Hour - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-08 - For NEW Believers - Top 10 Bible Teachings of Brother William Branham's Message of the Hour - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-12 - Junction City Sermon 11 Predestination, The Book of Life, and Hell is Not Eternal (6624) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-12 - Junction City Sermon 11 Predestination, The Book of Life, and Hell is Not Eternal (6624) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-12 - Q The Seventh Seal It's the Day and Hour of the Rapture, Mark 1332 + Shout, Voice, Trump Debate - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-12 - Q The Seventh Seal It's the Day and Hour of the Rapture, Mark 1332 + Shout, Voice, Trump Debate - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-18 - Q Is Michael the Archangel Christ NO! Jesus = Mighty Angel of Rev. 101, Bible Teaching on Michael - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-18 - Q Is Michael the Archangel Christ NO! Jesus = Mighty Angel of Rev. 101, Bible Teaching on Michael - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-21 - Junction City Sermon 12 The Millennium (62024) - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-21 - Junction City Sermon 12 The Millennium (62024) - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-24 - Who is the Future Antichrist, or False Prophet It'll be the Pope of Rome, as Bro. Branham Taught - Branham Taught.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-06-24 - Who is the Future Antichrist, or False Prophet It'll be the Pope of Rome, as Bro. Branham Taught - Branham Taught.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-01 - AVOID Vain Babblings, Endless Questions of the Accusers of Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-01 - AVOID Vain Babblings, Endless Questions of the Accusers of Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-02 - Q Is the Message Fresh Manna or Stale Holy Ghost Still Pouring Out in Brother Branham's Message - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-02 - Q Is the Message Fresh Manna or Stale Holy Ghost Still Pouring Out in Brother Branham's Message - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-05 - Junction City Sermon 13 The Waters of Separation Confess Your Sins Before Church - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-05 - Junction City Sermon 13 The Waters of Separation Confess Your Sins Before Church - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-13 - The Mark of the Beast From Cain to the Present - Bro. Branham Taught True Seal of the Holy Ghost - Branham Taught.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-13 - The Mark of the Beast From Cain to the Present - Bro. Branham Taught True Seal of the Holy Ghost - Branham Taught.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-15 - Q What About Kenneth Hagin's Supposed 1964 Prophecy of Brother Branham's Death I Don't Believe It - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-15 - Q What About Kenneth Hagin's Supposed 1964 Prophecy of Brother Branham's Death I Don't Believe It - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-17 - TRUTH on The Elijah of This Day is the Lord Jesus Christ...NOT a Man, God! Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-17 - TRUTH on The Elijah of This Day is the Lord Jesus Christ...NOT a Man, God! Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-24 - MARK of the Beast DURING Great Tribulation Mark in Hand, Forehead; William Branham's Bible Teaching - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-24 - MARK of the Beast DURING Great Tribulation Mark in Hand, Forehead; William Branham's Bible Teaching - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-27 - Junction City Sermon 14 - The 3 Works of Grace (7-18-24) - Junction City.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-27 - Junction City Sermon 14 - The 3 Works of Grace (7-18-24) - Junction City.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-29 - The MARK of His NAME Full of Blasphemous Names - Bro. Branham's Bible Teaching on Mark of the Beast - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-07-29 - The MARK of His NAME Full of Blasphemous Names - Bro. Branham's Bible Teaching on Mark of the Beast - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-01 - 666 The NUMBER of the Beast, Vicarius Filli Dei, Vicar of Christ, Brother Branham's Bible Teaching - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-01 - 666 The NUMBER of the Beast, Vicarius Filli Dei, Vicar of Christ, Brother Branham's Bible Teaching - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-05 - How is Jesus BOTH High Priest AND JEHOVAH GOD Godhead Question - Bro. Branham Teaches Bible Truth - Branham Teaches.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-05 - How is Jesus BOTH High Priest AND JEHOVAH GOD Godhead Question - Bro. Branham Teaches Bible Truth - Branham Teaches.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-06 - Junction City Sermon 15 The Future Home - Jesse Smith (8-1-24) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-06 - Junction City Sermon 15 The Future Home - Jesse Smith (8-1-24) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-07 - Is Hair Coloring, Tinting, and Highlights Okay 4 Principles From Brother Branham's Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-07 - Is Hair Coloring, Tinting, and Highlights Okay 4 Principles From Brother Branham's Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-12 - Is Mercy or Redemption Over No, NEVER Think That! JESUS is Doing At Least 4 Duties In Heaven - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-12 - Is Mercy or Redemption Over No, NEVER Think That! JESUS is Doing At Least 4 Duties In Heaven - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-14 - What is a Pastor How is He Elected Bible Teaching and Brother Branham Quotes on Pastors, Elections - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-14 - What is a Pastor How is He Elected Bible Teaching and Brother Branham Quotes on Pastors, Elections - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-19 - Junction City Sermon 16 The Absolute and the Message - Jesse Smith (8-15-24) - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-19 - Junction City Sermon 16 The Absolute and the Message - Jesse Smith (8-15-24) - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-24 - IMAGE Erected to the Beast United Protestantism & Catholicism - Brother Branham Warned Christians! - Branham Warned Christians.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-24 - IMAGE Erected to the Beast United Protestantism & Catholicism - Brother Branham Warned Christians! - Branham Warned Christians.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-31 - BACKSLIDERS Can God Save Them Yes! Also, Bro. Branham Said We Backslider Every Day (In Our Minds) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-08-31 - BACKSLIDERS Can God Save Them Yes! Also, Bro. Branham Said We Backslider Every Day (In Our Minds) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-02 - Podcast Bible Versions, Part 1 with Guest Pastor Cameron Smith - Why We're KJV Only - Cameron Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-02 - Podcast Bible Versions, Part 1 with Guest Pastor Cameron Smith - Why We're KJV Only - Cameron Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-11 - Part 1 The Fear of the LORD - Old Testament Bible Study - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-11 - Part 1 The Fear of the LORD - Old Testament Bible Study - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-14 - Part 2 The Fear of the LORD in New Testament Verses - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-14 - Part 2 The Fear of the LORD in New Testament Verses - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-18 - Part 3 The Fear of the LORD - Brother Branham Quotes & Conclusion - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-18 - Part 3 The Fear of the LORD - Brother Branham Quotes & Conclusion - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-19 - Reaction Derek Prince's Claims About the True Prophet, Bro. Branham + Why Did Gordon Lindsay Leave - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-19 - Reaction Derek Prince's Claims About the True Prophet, Bro. Branham + Why Did Gordon Lindsay Leave - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-25 - God Loves To Test Us - Be Certain of God! Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-25 - God Loves To Test Us - Be Certain of God! Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-28 - Reaction Tucker, John Rich Attack the Scofield Bible and Pre-Tribulation Rapture - Brother Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-09-28 - Reaction Tucker, John Rich Attack the Scofield Bible and Pre-Tribulation Rapture - Brother Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-05 - Any Scripture Left to be Fulfilled BEFORE the Rapture Bro. Branham Said Revelation 1316 is One! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-05 - Any Scripture Left to be Fulfilled BEFORE the Rapture Bro. Branham Said Revelation 1316 is One! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-10 - King Saul Was Saved - Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-10 - King Saul Was Saved - Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-12 - Podcast Bible Versions, Part 2 w Guest Pastor Cameron Smith - 5 Message Doctrines ChangedAttacked - Cameron Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-12 - Podcast Bible Versions, Part 2 w Guest Pastor Cameron Smith - 5 Message Doctrines ChangedAttacked - Cameron Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-18 - Will I Make It JESUS Already Made It For Me! Brother Branham Quote - Branham Quote.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-18 - Will I Make It JESUS Already Made It For Me! Brother Branham Quote - Branham Quote.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-26 - APOSTLE What is an Apostle Brother Branham Quotes and Bible Verses - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-26 - APOSTLE What is an Apostle Brother Branham Quotes and Bible Verses - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-31 - IT'S TIME! Time to Lay Aside, Lamp Trimming Time, Malachi 4 Time, Uniting Time! Bro. Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-10-31 - IT'S TIME! Time to Lay Aside, Lamp Trimming Time, Malachi 4 Time, Uniting Time! Bro. Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-02 - EVANGELIST What is an Evangelist Bible Verses and Quotes from Brother William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-02 - EVANGELIST What is an Evangelist Bible Verses and Quotes from Brother William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-06 - All 5 Preaching Gifts William Branham and Saint Paul Had All 5 Preaching Gifts - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-06 - All 5 Preaching Gifts William Branham and Saint Paul Had All 5 Preaching Gifts - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-09 - JUDGMENT SEAT of CHRIST Rewards For Wise Virgin, Holy Ghost Filled Saints + William Branham Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-09 - JUDGMENT SEAT of CHRIST Rewards For Wise Virgin, Holy Ghost Filled Saints + William Branham Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-19 - PODCAST Sister Lena's Testimony, Part 1 of 2 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-19 - PODCAST Sister Lena's Testimony, Part 1 of 2 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-20 - Reaction to TrumpVance 2024 Election + Brother William Branham Quotes on Future USA Persecution - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-20 - Reaction to TrumpVance 2024 Election + Brother William Branham Quotes on Future USA Persecution - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-23 - Is Rev. 101-7 Fulfilled Bro. Branham Quotes Connecting the Life Magazine Cloud Picture w Rev. 10 - Branham Quotes Connecting.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-23 - Is Rev. 101-7 Fulfilled Bro. Branham Quotes Connecting the Life Magazine Cloud Picture w Rev. 10 - Branham Quotes Connecting.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-29 - Bro. Branham PRAYED God Would Correct His MISTAKES in the People's Hearts He Was NOT Infallible - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-11-29 - Bro. Branham PRAYED God Would Correct His MISTAKES in the People's Hearts He Was NOT Infallible - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-02 - 3 PROOFS of the Seven Major Visions Brother Branham Prophesied in 1933 - Branham Prophesied.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-02 - 3 PROOFS of the Seven Major Visions Brother Branham Prophesied in 1933 - Branham Prophesied.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-05 - The SHOUT 4 Bible Verses Bro. Branham Used to Teach The Shout From 1 Thessalonians 416 - Branham Used.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-05 - The SHOUT 4 Bible Verses Bro. Branham Used to Teach The Shout From 1 Thessalonians 416 - Branham Used.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-09 - PODCAST Sister Lena's Testimony, Part 2 of 2 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-09 - PODCAST Sister Lena's Testimony, Part 2 of 2 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-14 - All You Ever Loved and All That Ever Loved You - William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-14 - All You Ever Loved and All That Ever Loved You - William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-21 - Question Was Carol Ruth Strubler the Little Girl From The Deep Calleth To The Deep Prayer Line - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-21 - Question Was Carol Ruth Strubler the Little Girl From The Deep Calleth To The Deep Prayer Line - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-24 - Christmas Bro. Branham's Gratitude For Christmas Cards and Gifts + Harsh Quote Gift Swapping - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-24 - Christmas Bro. Branham's Gratitude For Christmas Cards and Gifts + Harsh Quote Gift Swapping - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-26 - PROPHET What is a Prophet New Testament Preaching Prophet, 6 Qualifications, William Branham - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-26 - PROPHET What is a Prophet New Testament Preaching Prophet, 6 Qualifications, William Branham - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-28 - Order of EVENTS 7 Year Great Tribulation Period. William Branham, Sixth Seal, Daniel's 70th Week - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2024-12-28 - Order of EVENTS 7 Year Great Tribulation Period. William Branham, Sixth Seal, Daniel's 70th Week - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-04 - Let US Make Does NOT Teach God is 3 Persons; William Branham's Godhead Revelation on Genesis 126 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-04 - Let US Make Does NOT Teach God is 3 Persons; William Branham's Godhead Revelation on Genesis 126 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-13 - Repent, Los Angeles! William Branham's Warning to LA; LA Fires in January 2025 - Israel.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-13 - Repent, Los Angeles! William Branham's Warning to LA; LA Fires in January 2025 - Israel.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-21 - Response to Criticism of 3 Vids Interracial Marriage, Minister Marry Virgins, 7 Year Tribulation - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-21 - Response to Criticism of 3 Vids Interracial Marriage, Minister Marry Virgins, 7 Year Tribulation - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-25 - TEACHER What is a Teacher in the Five Fold Ministry William Branham's Teaching Rain, Joel 223 - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-25 - TEACHER What is a Teacher in the Five Fold Ministry William Branham's Teaching Rain, Joel 223 - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-31 - Bro. Branham LOVED Orman Neville's PREACHING Radio Ministry, Five Fold Ministry - Branham LOVED Orman Neville.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-01-31 - Bro. Branham LOVED Orman Neville's PREACHING Radio Ministry, Five Fold Ministry - Branham LOVED Orman Neville.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-08 - Reaction Justin Peters Calling William Branham False Prophet, Charlatan - Defending The Message - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-08 - Reaction Justin Peters Calling William Branham False Prophet, Charlatan - Defending The Message - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-19 - Q Two Separate Elijah Ministries in Malachi 45-6 Yes! John the Baptist AND William Branham - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-19 - Q Two Separate Elijah Ministries in Malachi 45-6 Yes! John the Baptist AND William Branham - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-22 - Interracial Marriage PERFECT & GOD'S CHOICE For Moses and Zipporah - William Branham Quotes - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-02-22 - Interracial Marriage PERFECT & GOD'S CHOICE For Moses and Zipporah - William Branham Quotes - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-01 - Is Donald Trump a FORERUNNER of the POPE-ANTICHRIST Prophet William Branham Antichrist Growing! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-01 - Is Donald Trump a FORERUNNER of the POPE-ANTICHRIST Prophet William Branham Antichrist Growing! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-11 - PODCAST Bible Versions, Part 3 w Guest Pastor Cameron Smith - 6-10 Verses Attacked - Cameron Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-11 - PODCAST Bible Versions, Part 3 w Guest Pastor Cameron Smith - 6-10 Verses Attacked - Cameron Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-15 - Pay Tithes FIRST I Want To Pay Him My Tithings First - Bro. Branham Learned His First Duty To God - Branham Learned.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-15 - Pay Tithes FIRST I Want To Pay Him My Tithings First - Bro. Branham Learned His First Duty To God - Branham Learned.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-17 - Q Daniel 79-14 Proves Trinity NO! God En Morphe as Ancient of Days and One Like The Son of Man - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-17 - Q Daniel 79-14 Proves Trinity NO! God En Morphe as Ancient of Days and One Like The Son of Man - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-19 - Bro. Branham HOPED, PRAYED His Children Would Have Great Ministries But They Were Not Prophets - Branham HOPED.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-19 - Bro. Branham HOPED, PRAYED His Children Would Have Great Ministries But They Were Not Prophets - Branham HOPED.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-22 - Hybrids 4 More Bible Truths on Interracial Marriage - Bro. Branham Quotes, 6 Interracial Marriages - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-22 - Hybrids 4 More Bible Truths on Interracial Marriage - Bro. Branham Quotes, 6 Interracial Marriages - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-31 - 3 Times God Was SILENT to Bro. Branham Sharon Rose's Death, Sinus Infection, God, You Owe Me - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-03-31 - 3 Times God Was SILENT to Bro. Branham Sharon Rose's Death, Sinus Infection, God, You Owe Me - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-02 - Q Why Can the ELECT NOT Be Deceived Matthew 2424 - Elect are Predestinated & Have Spirit of Truth - Matthew.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-02 - Q Why Can the ELECT NOT Be Deceived Matthew 2424 - Elect are Predestinated & Have Spirit of Truth - Matthew.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-05 - Bro. Branham Using TRINITY in a POSITIVE Way + Timeline of Progressive Revelation on the Godhead - Branham Using.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-05 - Bro. Branham Using TRINITY in a POSITIVE Way + Timeline of Progressive Revelation on the Godhead - Branham Using.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-14 - 3 BIBLES Bro. Branham Quotes on Stars, Pyramid, Bible Were NOT Doctrine But Illustrations, Signs - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-14 - 3 BIBLES Bro. Branham Quotes on Stars, Pyramid, Bible Were NOT Doctrine But Illustrations, Signs - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-23 - The New Pope From USA Questions About Pope Francis and The New Pope - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-23 - The New Pope From USA Questions About Pope Francis and The New Pope - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-26 - Should Believers Go to College Find God's Will + Bro. Branham Ensured His Children Got an Education - Branham Ensured.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-26 - Should Believers Go to College Find God's Will + Bro. Branham Ensured His Children Got an Education - Branham Ensured.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-28 - Pillar of Fire Visibly Appears to Vindicate Church Ages on January 8, 1961 - William Branham Prophet - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-04-28 - Pillar of Fire Visibly Appears to Vindicate Church Ages on January 8, 1961 - William Branham Prophet - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-01 - Birth Control Pills Are a DISGRACE - Bro. Brother Did NOT Endorse Pills; Children Are a Reward! - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-01 - Birth Control Pills Are a DISGRACE - Bro. Brother Did NOT Endorse Pills; Children Are a Reward! - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-07 - None of His - Are Trinitarians Born Again - Is Confession Always Done Through the PastorPriest - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-07 - None of His - Are Trinitarians Born Again - Is Confession Always Done Through the PastorPriest - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-21 - New Pope Leo XIV Predicted 71 Years Ago By God's Prophet William Branham - 7 Questions & Answers - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-21 - New Pope Leo XIV Predicted 71 Years Ago By God's Prophet William Branham - 7 Questions & Answers - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-26 - Q Women Evangelists No Women Preachers! Bro. Branham Women Preachers = Balaam in Permissive Will - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-05-26 - Q Women Evangelists No Women Preachers! Bro. Branham Women Preachers = Balaam in Permissive Will - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-02 - Bro. Branham HUMBLY Calls Himself a Jellyfish and a Son of Kish - Like Saint Paul O Wretched Man! - Branham HUMBLY Calls Himself.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-02 - Bro. Branham HUMBLY Calls Himself a Jellyfish and a Son of Kish - Like Saint Paul O Wretched Man! - Branham HUMBLY Calls Himself.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-06 - Awfullest Cult WON'T Go To Church, Nor Work - False Teachings of Current Branham Tabernacle - Branham HUMBLY Calls Himself.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-06 - Awfullest Cult WON'T Go To Church, Nor Work - False Teachings of Current Branham Tabernacle - Branham HUMBLY Calls Himself.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-11 - Q WORK For Holy Ghost Yes! WORK=OBEY - Bro. Branham Taught Rest = Baptism of the Holy Ghost - Branham Taught Rest.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-11 - Q WORK For Holy Ghost Yes! WORK=OBEY - Bro. Branham Taught Rest = Baptism of the Holy Ghost - Branham Taught Rest.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-14 - 5 Parallels w Branham Tabernacle & King Ahaz Shutting the Church Doors - Idolatry of Branham Tab - Branham HUMBLY Calls Himself.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-14 - 5 Parallels w Branham Tabernacle & King Ahaz Shutting the Church Doors - Idolatry of Branham Tab - Branham HUMBLY Calls Himself.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-16 - Do We Hear From Our Theophany 3 Kinds of Bodies FleshTerrestrial, TheophanyCelestial, Glorified - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-16 - Do We Hear From Our Theophany 3 Kinds of Bodies FleshTerrestrial, TheophanyCelestial, Glorified - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-17 - 2 Times Hearing From SOMEONE ELSE'S Theophany But NOT Their Own - Jesus and King Saul - Glorified Body.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-17 - 2 Times Hearing From SOMEONE ELSE'S Theophany But NOT Their Own - Jesus and King Saul - Glorified Body.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-19 - 2 Possible Scriptures About Hearing From Our Theophany & Glorified Body Being Near For Healing - Glorified Body.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-19 - 2 Possible Scriptures About Hearing From Our Theophany & Glorified Body Being Near For Healing - Glorified Body.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-20 - Spirit of BURNING Puts You In Service, Keeps From Quitting, Dissolves Doubt - 7 Bible Examples - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-20 - Spirit of BURNING Puts You In Service, Keeps From Quitting, Dissolves Doubt - 7 Bible Examples - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-27 - Love Letter Discerning Lies of Branham Tabernacle's Blogposts - Bro. Branham Supported Preachers - Branham Supported Preachers.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-27 - Love Letter Discerning Lies of Branham Tabernacle's Blogposts - Bro. Branham Supported Preachers - Branham Supported Preachers.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-28 - Preach UNTIL JESUS Returns! Don't Press Play and Disobey - Bro. Branham Preaches Great Commission - Branham Preaches.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-28 - Preach UNTIL JESUS Returns! Don't Press Play and Disobey - Bro. Branham Preaches Great Commission - Branham Preaches.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-30 - John 17 Does NOT Prove The Trinity - The Godhead Mystery is Jesus's Humanity Praying to His Deity - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-06-30 - John 17 Does NOT Prove The Trinity - The Godhead Mystery is Jesus's Humanity Praying to His Deity - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-02 - Heb 18 Does NOT Prove Trinity - Thy Throne O God (Representative) - Jesus Fully Man and Fully God - Branham Using Trinity.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-02 - Heb 18 Does NOT Prove Trinity - Thy Throne O God (Representative) - Jesus Fully Man and Fully God - Branham Using Trinity.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-04 - 4 Reasons Why I Started This Youtube Channel - William Branham is a True Prophet of God - Branham Loved.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-04 - 4 Reasons Why I Started This Youtube Channel - William Branham is a True Prophet of God - Branham Loved.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-07 - Brother Branham's MASTERPIECE The Wheat Plant's 5 Bible Revelations - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-07 - Brother Branham's MASTERPIECE The Wheat Plant's 5 Bible Revelations - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-11 - Bro. Branham is NOT the ONLY Voice - The Bride Has a Voice, The Spirit and the Bride Say Come - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-11 - Bro. Branham is NOT the ONLY Voice - The Bride Has a Voice, The Spirit and the Bride Say Come - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-17 - WHERE is GOD and His Throne In Heaven & In Our Souls - Bro. Branham's Revelation 4 Throne Guards - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-17 - WHERE is GOD and His Throne In Heaven & In Our Souls - Bro. Branham's Revelation 4 Throne Guards - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-19 - You HAVEN'T BlasphemedCrossed the Line! Lutheran Dean Bro. Hegre Blasphemed, Repented, Born Again! - Hegre Blasphemed.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-19 - You HAVEN'T BlasphemedCrossed the Line! Lutheran Dean Bro. Hegre Blasphemed, Repented, Born Again! - Hegre Blasphemed.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-23 - CONTEXT of Heard From Your Theophany - Little Eagle Heard Scream of God; Not His Own Scream - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-23 - CONTEXT of Heard From Your Theophany - Little Eagle Heard Scream of God; Not His Own Scream - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-28 - STILL BE LOST Yet Have the Baptism of the Holy Ghost The Human SpiritMind Baptism v. Soul Baptism - Born Again.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-28 - STILL BE LOST Yet Have the Baptism of the Holy Ghost The Human SpiritMind Baptism v. Soul Baptism - Born Again.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-30 - 8 Old Testament TYPES of the 3 Works of Grace - Bro. Branham My Message Exactly Today! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-07-30 - 8 Old Testament TYPES of the 3 Works of Grace - Bro. Branham My Message Exactly Today! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-07 - Why Do Good People Suffer 5 Reasons We Suffer_Bro. Branham Job Suffered to Perfect His Spirit - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-07 - Why Do Good People Suffer 5 Reasons We Suffer_Bro. Branham Job Suffered to Perfect His Spirit - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-16 - Job Was BOTH Perfect and Vile - Blood Sacrifice Made Him Perfect; Bro. Branham Job's Fear Caused It - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-16 - Job Was BOTH Perfect and Vile - Blood Sacrifice Made Him Perfect; Bro. Branham Job's Fear Caused It - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-23 - MIDDLE of Road - 3 Ways the GOAT Preachers & 7th Seal Preachers Step Away From Bible Truth - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-23 - MIDDLE of Road - 3 Ways the GOAT Preachers & 7th Seal Preachers Step Away From Bible Truth - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-29 - NOT 4 Works of Grace - Baptism of the Holy Ghost Made a Way For the Holy Ghost Itself Bro. Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-08-29 - NOT 4 Works of Grace - Baptism of the Holy Ghost Made a Way For the Holy Ghost Itself Bro. Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-06 - Prayer Card False Accusation - Defending God's Prophet William Branham - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-06 - Prayer Card False Accusation - Defending God's Prophet William Branham - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-13 - The Bride Age - 6 Quotes - It Is Bro. Branham's Revival That Followed The Azusa Street Revival - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-13 - The Bride Age - 6 Quotes - It Is Bro. Branham's Revival That Followed The Azusa Street Revival - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-20 - 6 Kinds of Angels - Brother Branham Had An Angel Commissioned To Him - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-20 - 6 Kinds of Angels - Brother Branham Had An Angel Commissioned To Him - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-30 - Charlie Kirk and JFK - Brother Branham No One Deserves To Die Like That - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-09-30 - Charlie Kirk and JFK - Brother Branham No One Deserves To Die Like That - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-04 - Major (Weightier) and Minor Doctrines + Pertain To Salvation Brother Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-04 - Major (Weightier) and Minor Doctrines + Pertain To Salvation Brother Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-11 - PREACHER (NOT a Tape Boy) Making Bro. Branham TAPES EQUAL TO THE BIBLE, Plus 3 More False Teachings - Branham TAPES EQUAL.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-11 - PREACHER (NOT a Tape Boy) Making Bro. Branham TAPES EQUAL TO THE BIBLE, Plus 3 More False Teachings - Branham TAPES EQUAL.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-25 - 80+ Proofs The Tapes of William Branham Have Mistakes YET He Is a True Prophet of God (Part 4 of 4) - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-25 - 80+ Proofs The Tapes of William Branham Have Mistakes YET He Is a True Prophet of God (Part 4 of 4) - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-31 - No Tapes, No Token Lie Coming From Branham Tabernacle and the Deity SpiritDoctrine of Nicolaitans - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-10-31 - No Tapes, No Token Lie Coming From Branham Tabernacle and the Deity SpiritDoctrine of Nicolaitans - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-03 - NO Mortal Man Can Set Every Word of Bible Correctly In Order - Brother Branham's Humility, Honesty - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-03 - NO Mortal Man Can Set Every Word of Bible Correctly In Order - Brother Branham's Humility, Honesty - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-05 - Q Play Tapes in Actual, Live Church Services Brother Branham Came to RESTORE The Book of Acts - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-05 - Q Play Tapes in Actual, Live Church Services Brother Branham Came to RESTORE The Book of Acts - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-09 - B.B. Pastors Have HIGHER Office Than Brother Branham! - What Do Tape Boys Think of This Quote - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-09 - B.B. Pastors Have HIGHER Office Than Brother Branham! - What Do Tape Boys Think of This Quote - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-21 - B.B I Just LISTEN, SAY AMEN, FOLLOW PREACHERS - Bro. Branham LOVED 5 Fold Ministry; Tape Boys Lie - Branham LOVED.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-21 - B.B I Just LISTEN, SAY AMEN, FOLLOW PREACHERS - Bro. Branham LOVED 5 Fold Ministry; Tape Boys Lie - Branham LOVED.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-28 - Branham Tabernacle WAS Registered in Indiana as Non-Profit, Tax Deductible, Licensed to Preach - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-28 - Branham Tabernacle WAS Registered in Indiana as Non-Profit, Tax Deductible, Licensed to Preach - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-30 - Birthday Cakes, Presents, and Parties + Our Eternal Birthday + Bro. Branham Thanks a Million! - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-11-30 - Birthday Cakes, Presents, and Parties + Our Eternal Birthday + Bro. Branham Thanks a Million! - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-02 - Serpent Seed How Does Romans 512-19 Fit By ADAM Sin Entered the World - Wasn't It Eve's Fault - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-02 - Serpent Seed How Does Romans 512-19 Fit By ADAM Sin Entered the World - Wasn't It Eve's Fault - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-06 - SHAME for Samson to Have Long Hair No! Plus 10+ Types of Jesus Christ in Samson's Life - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-06 - SHAME for Samson to Have Long Hair No! Plus 10+ Types of Jesus Christ in Samson's Life - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-10 - Youth Camps, Youth Meetings, Annual Conventions, Revivals - Are They Biblical Bro. Branham Quotes - Branham Quotes.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-10 - Youth Camps, Youth Meetings, Annual Conventions, Revivals - Are They Biblical Bro. Branham Quotes - Branham Quotes.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-13 - Kirk Cameron Considering Hell is NOT Eternal - Revelation Given to William Branham From Jesus - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-13 - Kirk Cameron Considering Hell is NOT Eternal - Revelation Given to William Branham From Jesus - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-17 - I'd Rather Have the TAPES Than The Bible! HERESY! All Bro. Branham's Revelations Came From Bible - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-17 - I'd Rather Have the TAPES Than The Bible! HERESY! All Bro. Branham's Revelations Came From Bible - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-20 - JD Vance and Brother Branham Rebuke Cat Ladies - God Loves Motherhood - Elect Lady vs. Cat Ladies - Branham Rebuke.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-20 - JD Vance and Brother Branham Rebuke Cat Ladies - God Loves Motherhood - Elect Lady vs. Cat Ladies - Branham Rebuke.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-22 - ONLY Commission is to HEAR 25th Lie Coming Out of Branham Tabernacle - Branham Preaches.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-22 - ONLY Commission is to HEAR 25th Lie Coming Out of Branham Tabernacle - Branham Preaches.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-24 - 60 Years Later Remembering God's TRUE PROPHET, William Branham - Prayer of Thanksgiving to Jesus - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-24 - 60 Years Later Remembering God's TRUE PROPHET, William Branham - Prayer of Thanksgiving to Jesus - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-29 - 2025 Review - Top 10 Videos of 2025 + Top 10 Videos Since 2013 - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-29 - 2025 Review - Top 10 Videos of 2025 + Top 10 Videos Since 2013 - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-31 - Tape Churches TRAINED to Transgress Hebrews 1024-25 - True Churches Are Scripturally Trained - Branham HUMBLY Calls Himself.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2025-12-31 - Tape Churches TRAINED to Transgress Hebrews 1024-25 - True Churches Are Scripturally Trained - Branham HUMBLY Calls Himself.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-05 - REVELATION A Bride From Jesus's Side - Water, Blood, Spirit + Born of Water and Spirit, John 35 - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-05 - REVELATION A Bride From Jesus's Side - Water, Blood, Spirit + Born of Water and Spirit, John 35 - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-15 - The Donny Morton Reader's Digest Accusation v. William Branham - Did THUS SAITH THE LORD Fail - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-15 - The Donny Morton Reader's Digest Accusation v. William Branham - Did THUS SAITH THE LORD Fail - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-15 - The Donny Morton Reader's Digest Accusation v. William Branham - Did THUS SAITH THE LORD Fail - William M. Branham.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-15 - The Donny Morton Reader's Digest Accusation v. William Branham - Did THUS SAITH THE LORD Fail - William M. Branham.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-17 - 5 Qs About Church Order Gifts Tongues, Interpretations, Prophecy - Meet in Private Room - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-17 - 5 Qs About Church Order Gifts Tongues, Interpretations, Prophecy - Meet in Private Room - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-17 - 5 Qs About Church Order Gifts Tongues, Interpretations, Prophecy - Meet in Private Room - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-17 - 5 Qs About Church Order Gifts Tongues, Interpretations, Prophecy - Meet in Private Room - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-19 - B.B. MODERN KORAH Invades Pulpits = Tape Churches - In Each Age The Church Goes Astray Balanced - .timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-19 - B.B. MODERN KORAH Invades Pulpits = Tape Churches - In Each Age The Church Goes Astray Balanced - .txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-19 - B.B. MODERN KORAH Invades Pulpits = Tape Churches - In Each Age The Church Goes Astray Balanced - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-19 - B.B. MODERN KORAH Invades Pulpits = Tape Churches - In Each Age The Church Goes Astray Balanced - Jesse Smith.txt
+ create mode 100644 data/Pastor_Jesse_Smith_Summary.csv
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-18 - Angel of the Covenant - Bro Ancy Mettilus (01-18-2026) - Ancy Mettilus.timestamped.txt
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-18 - Angel of the Covenant - Bro Ancy Mettilus (01-18-2026) - Ancy Mettilus.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-19 - 1.19.26 But God - Pero Dios Alex Perez - Alex Perez.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-19 - 1.19.26 But God - Pero Dios Alex Perez - Alex Perez.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-20 - 1.20.26 El Dios de lo Imposible - The God of the Impossible Eduardo Beltran - Eduardo Beltran.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-20 - 1.20.26 El Dios de lo Imposible - The God of the Impossible Eduardo Beltran - Eduardo Beltran.txt
+ create mode 100644 docs/assets/BranhamApp-C7T7scn5.js
+ create mode 100644 docs/assets/index-G697-XsW.js
+ create mode 100644 logs/daily_update_20260120_212042.log
+ create mode 100644 site_api/text_chunk_403.json
+ create mode 100644 site_api/text_chunk_404.json
+ create mode 100644 site_api/text_chunk_405.json
+[0;34m[2026-01-21 00:27:14][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   3623ef99e..41bf9dfb7  main -> main
+[0;32m[2026-01-21 00:30:46] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-21 00:30:46][0m ==============================================
+[0;32m[2026-01-21 00:30:46]   Daily Update Complete![0m
+[0;34m[2026-01-21 00:30:46][0m ==============================================
+[0;34m[2026-01-21 00:30:46][0m Total time: 190m 4s
+[0;34m[2026-01-21 00:30:46][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260120_212042.log
