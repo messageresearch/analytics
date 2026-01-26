@@ -8030,3 +8030,47 @@ Max filename bytes: 255
 [0;32m[2026-01-24 01:40:37] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-24 01:40:37][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-24 01:40:41][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 3fd7c8141] Daily update: 2026-01-24
+ 295 files changed, 40054 insertions(+), 11492 deletions(-)
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-23 - BSWT LIVE - .timestamped.txt
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-23 - BSWT LIVE - .txt
+ create mode 100644 data/Believers_Christian_Fellowship/2026-01-21 - Sermon Clip 260121 - Chad Lamb A Friend Loveth at All Times - Chad Lamb.timestamped.txt
+ create mode 100644 data/Believers_Christian_Fellowship/2026-01-21 - Sermon Clip 260121 - Chad Lamb A Friend Loveth at All Times - Chad Lamb.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - 260118- Jason Watkins Demonology, The Spiritual Realm Pt. 6 - Jason Watkins.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-18 - 260118- Jason Watkins Demonology, The Spiritual Realm Pt. 6 - Jason Watkins.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-21 - 260121- Jason Watkins Demonology, The Spiritual Realm Pt. 7 - Jason Watkins.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-21 - 260121- Jason Watkins Demonology, The Spiritual Realm Pt. 7 - Jason Watkins.txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-23 - (1-22-26) Confidence Without Character Pt. 3 - Jesse Smith - Jesse Smith.timestamped.txt
+ create mode 100644 data/Bride_of_Christ_Fellowship/2026-01-23 - (1-22-26) Confidence Without Character Pt. 3 - Jesse Smith - Jesse Smith.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-21 - [2026-01-21wed] The Character Of The Heart Br David McGeary Jr. - David McGeary Jr.timestamped.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-21 - [2026-01-21wed] The Character Of The Heart Br David McGeary Jr. - David McGeary Jr.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-22 - Pastor Matt Morse An Unwelcome Treaty 1-21-26 PM - Matt Morse.timestamped.txt
+ create mode 100644 data/Grace_Tabernacle/2026-01-22 - Pastor Matt Morse An Unwelcome Treaty 1-21-26 PM - Matt Morse.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-23 - Give The More Earnest Heed To The Things Which We Have Heard (Prayer Meeting) - Pastor Theo Ovid - Theo Ovid.timestamped.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-23 - Give The More Earnest Heed To The Things Which We Have Heard (Prayer Meeting) - Pastor Theo Ovid - Theo Ovid.txt
+ create mode 100644 data/Literal_Life_Church/2026-01-23 - What Love Is This sung by Vivian Leitner & Isabelle Slachta at Literal Life Church - Isabelle Slachta.timestamped.txt
+ create mode 100644 data/Literal_Life_Church/2026-01-23 - What Love Is This sung by Vivian Leitner & Isabelle Slachta at Literal Life Church - Isabelle Slachta.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-22 - Oracion Mundial - .timestamped.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-22 - Oracion Mundial - .txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-23 - Oracion Mundial - .timestamped.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-23 - Oracion Mundial - .txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-22 - Bro. Diego Arroyo Preeminence Preeminencia PT. 5 - Diego Arroyo.timestamped.txt
+ create mode 100644 data/Spirit_Of_Truth_Assembly/2026-01-22 - Bro. Diego Arroyo Preeminence Preeminencia PT. 5 - Diego Arroyo.txt
+ create mode 100644 logs/daily_update_20260124_000256.log
+[0;34m[2026-01-24 01:41:18][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   a8229706f..3fd7c8141  main -> main
+[0;32m[2026-01-24 01:43:11] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-24 01:43:11][0m ==============================================
+[0;32m[2026-01-24 01:43:11]   Daily Update Complete![0m
+[0;34m[2026-01-24 01:43:11][0m ==============================================
+[0;34m[2026-01-24 01:43:11][0m Total time: 100m 15s
+[0;34m[2026-01-24 01:43:11][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260124_000256.log
