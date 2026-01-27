@@ -9122,3 +9122,87 @@ Max filename bytes: 255
 [0;32m[2026-01-25 23:38:28] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-25 23:38:28][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-25 23:38:30][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 4f6a18592] Daily update: 2026-01-25
+ 513 files changed, 84812 insertions(+), 12008 deletions(-)
+ create mode 100644 data/Arizona_Believers_Church/2026-01-21 - Bro. Joseph Gordon Where Would I Go from Your Presence - Joseph Gordon.timestamped.txt
+ create mode 100644 data/Arizona_Believers_Church/2026-01-21 - Bro. Joseph Gordon Where Would I Go from Your Presence - Joseph Gordon.txt
+ rename data/Believer's_Spoken_Word_Tabernacle/{2026-01-23 - BSWT LIVE - .txt => 2026-01-23 - Accumulation of Godly Confidence - Samuel Browning - Samuel Browning.txt} (99%)
+ create mode 100644 data/Bethel_Tabernacle/2026-01-25 - 260125- Jason Watkins Looking To the Divine in 2026 - Jason Watkins.timestamped.txt
+ create mode 100644 data/Bethel_Tabernacle/2026-01-25 - 260125- Jason Watkins Looking To the Divine in 2026 - Jason Watkins.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-24 - Pastor H. Simmons Faith Without Works is Dead - H. Simmons.timestamped.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-24 - Pastor H. Simmons Faith Without Works is Dead - H. Simmons.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - 2026-01-18 Bro. Barry - Jehovah Shalom Part 2 (Second Half - Stream error) - Barry Johnson.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-18 - 2026-01-18 Bro. Barry - Jehovah Shalom Part 2 (Second Half - Stream error) - Barry Johnson.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-21 - 2026-01-21 Bro. Barry - Spiritual Gifts Pt. 12 Gift Of Prophecy - Barry Johnson.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-21 - 2026-01-21 Bro. Barry - Spiritual Gifts Pt. 12 Gift Of Prophecy - Barry Johnson.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-24 - 2026-01-24 Bro. Maxwell Boateng - Restoring A Shaven Experience - Maxwell Boateng.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-24 - 2026-01-24 Bro. Maxwell Boateng - Restoring A Shaven Experience - Maxwell Boateng.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - 2026-01-25 Bro. Maxwell Boateng - THE SYMPHONY - Maxwell Boateng.timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - 2026-01-25 Bro. Maxwell Boateng - THE SYMPHONY - Maxwell Boateng.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - God Will Work It out - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - God Will Work It out - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - I Will Praise You - Choir - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - I Will Praise You - Choir - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - Listen To Our Hearts - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - Listen To Our Hearts - .txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - What A Day That Will Be - .timestamped.txt
+ create mode 100644 data/Calgary_Living_Word_Assembly/2026-01-25 - What A Day That Will Be - .txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-22 - Jan 21, 2026 Bro. Ronnie Gonzalez & Bro. William Perez - Ronnie Gonzalez.timestamped.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-22 - Jan 21, 2026 Bro. Ronnie Gonzalez & Bro. William Perez - Ronnie Gonzalez.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-11 - 05-0811E Joshua's Burden-Cloverdale Bibleway Camp- Br Ron Spencer (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-11 - 05-0811E Joshua's Burden-Cloverdale Bibleway Camp- Br Ron Spencer (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-13 - 05-0813E Our Time Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-13 - 05-0813E Our Time Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-14 - 05 0814M Joshua's Burden Pt-3, Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2005-08-14 - 05 0814M Joshua's Burden Pt-3, Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2006-08-10 - 06-0810E Ordained Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2006-08-10 - 06-0810E Ordained Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2006-08-13 - 06-0813M We Have a Sure Word Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2006-08-13 - 06-0813M We Have a Sure Word Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Days_of_the_Voice_Fellowship/2026-01-25 - 26-0125M A Certain Season Bro Talemwa Busobozi - Talemwa Busobozi.timestamped.txt
+ create mode 100644 data/Days_of_the_Voice_Fellowship/2026-01-25 - 26-0125M A Certain Season Bro Talemwa Busobozi - Talemwa Busobozi.txt
+ create mode 100644 data/Edmonton_Restored_Word_Fellowship/2026-01-25 - RWF 2026 01 25 Moses Ndala Charity Is the Bond of Perfectness - Moses Ndala.timestamped.txt
+ create mode 100644 data/Edmonton_Restored_Word_Fellowship/2026-01-25 - RWF 2026 01 25 Moses Ndala Charity Is the Bond of Perfectness - Moses Ndala.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-25 - When You Are Dying And Christ Is Coming To Life - Pastor Theo Ovid - Theo Ovid.timestamped.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-25 - When You Are Dying And Christ Is Coming To Life - Pastor Theo Ovid - Theo Ovid.txt
+ create mode 100644 data/Higher_Ground_Tabernacle_Iowa_City/2026-01-25 - The Absolute - Bro. Jean Lumbala - Jean Lumbala.timestamped.txt
+ create mode 100644 data/Higher_Ground_Tabernacle_Iowa_City/2026-01-25 - The Absolute - Bro. Jean Lumbala - Jean Lumbala.txt
+ create mode 100644 data/Inner_Veil_Ministries/2026-01-25 - Inner Veil Ministries Youth Original Composed Music Concert - Sunday, 25. 01. 2026 - Stephen.timestamped.txt
+ create mode 100644 data/Inner_Veil_Ministries/2026-01-25 - Inner Veil Ministries Youth Original Composed Music Concert - Sunday, 25. 01. 2026 - Stephen.txt
+ create mode 100644 data/MOTRC/2026-01-24 - How to read the Book of Revelation Part 3, The Salutation of the Book - Importance.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-24 - How to read the Book of Revelation Part 3, The Salutation of the Book - Importance.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-24 - Mamelodi Church Instrumental - Precious Name - Precious Name.timestamped.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-24 - Mamelodi Church Instrumental - Precious Name - Precious Name.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-24 - Bro. Branham Did NOT Teach Arianism - Trinitarians Rotate Between Polytheism and Modalism - Jesse Smith.timestamped.txt
+ create mode 100644 data/Pastor_Jesse_Smith/2026-01-24 - Bro. Branham Did NOT Teach Arianism - Trinitarians Rotate Between Polytheism and Modalism - Jesse Smith.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-25 - El Poder De Dios Para Transformar 1 Minister Alfredo Garcia Phoenix Lighthouse Tabernacle - Alfredo Garcia.timestamped.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-25 - El Poder De Dios Para Transformar 1 Minister Alfredo Garcia Phoenix Lighthouse Tabernacle - Alfredo Garcia.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-25 - Sunday PM Service Phoenix Lighthouse Tabernacle - .timestamped.txt
+ create mode 100644 data/Phoenix_Lighthouse_Tabernacle/2026-01-25 - Sunday PM Service Phoenix Lighthouse Tabernacle - .txt
+ create mode 100644 data/Phoenix_Tabernacle_Inc./2026-01-18 - Dawn Breaks, Day Arrives - Brother Juan Francisco & Sister Juliana Facio - Juan Francisco.timestamped.txt
+ create mode 100644 data/Phoenix_Tabernacle_Inc./2026-01-18 - Dawn Breaks, Day Arrives - Brother Juan Francisco & Sister Juliana Facio - Juan Francisco.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-25 - Sesto sello 1 - .timestamped.txt
+ create mode 100644 data/Radio_La_Voz_Del_Tiempo_Final/2026-01-25 - Sesto sello 1 - .txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-25 - 01252026 La Simiente de discrepancia - La Simiente.timestamped.txt
+ create mode 100644 data/Tabernaculo_Hijos_Del_Dios_Viviente/2026-01-25 - 01252026 La Simiente de discrepancia - La Simiente.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-25 - 1.25.26 The Sowing That Produces - La Siembra Que Produce Pastor Tito Moreira - Tito Moreira.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-25 - 1.25.26 The Sowing That Produces - La Siembra Que Produce Pastor Tito Moreira - Tito Moreira.txt
+ create mode 100644 logs/daily_update_20260125_214722.log
+ create mode 100644 site_api/text_chunk_406.json
+[0;34m[2026-01-25 23:39:29][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   3fd7c8141..4f6a18592  main -> main
+[0;32m[2026-01-25 23:43:16] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-25 23:43:16][0m ==============================================
+[0;32m[2026-01-25 23:43:16]   Daily Update Complete![0m
+[0;34m[2026-01-25 23:43:16][0m ==============================================
+[0;34m[2026-01-25 23:43:16][0m Total time: 115m 54s
+[0;34m[2026-01-25 23:43:16][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260125_214722.log
