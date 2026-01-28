@@ -8051,3 +8051,88 @@ Max filename bytes: 255
 [0;32m[2026-01-26 22:20:30] Step 5 complete: Filenames validated[0m
 [0;34m[2026-01-26 22:20:30][0m Step 6/7: Checking for changes to commit...
 [0;34m[2026-01-26 22:20:34][0m Step 6: Changes detected, committing...
+🔍 Validating filenames...
+Scanning data for filename issues...
+Max filename bytes: 255
+============================================================
+
+============================================================
+✅ No filename issues found!
+✅ Filename validation passed!
+[main 5423ec131] Daily update: 2026-01-26
+ 421 files changed, 101144 insertions(+), 9896 deletions(-)
+ create mode 100644 data/Believer's_Spoken_Word_Tabernacle/2026-01-23 - Accumulation of Godly Confidence - Samuel Browning - Samuel Browning.timestamped.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-25 - Pastor H. Simmons The Authority of the Believer - H. Simmons.timestamped.txt
+ create mode 100644 data/Bride_Tabernacle_of_Columbia_SC/2026-01-25 - Pastor H. Simmons The Authority of the Believer - H. Simmons.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-26 - Jan 25 2026 Pastor Caleb T. Perez - The India Report - Caleb Perez.timestamped.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-26 - Jan 25 2026 Pastor Caleb T. Perez - The India Report - Caleb Perez.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-26 - Jan 25 2026 Sunday Evening India Report - Aaron Esquibel, Carlos Hill, Mark Chavez.timestamped.txt
+ create mode 100644 data/Cedar_Hills_-_Church_of_the_Cross/2026-01-26 - Jan 25 2026 Sunday Evening India Report - Aaron Esquibel, Carlos Hill, Mark Chavez.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-25 - [2026-01-25] Living In the Moment Br. Matthew McGeary - Matthew McGeary.timestamped.txt
+ create mode 100644 data/Christian_Life_Tabernacle/2026-01-25 - [2026-01-25] Living In the Moment Br. Matthew McGeary - Matthew McGeary.txt
+ create mode 100644 data/Cloverdale_Bibleway/2008-08-07 - 08 0807 The Parable Of Our Lives Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2008-08-07 - 08 0807 The Parable Of Our Lives Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2008-08-09 - 08-0809 We've Received An Angelic Visitation Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2008-08-09 - 08-0809 We've Received An Angelic Visitation Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-12 - 10 0812 The Invitation Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-12 - 10 0812 The Invitation Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-14 - 10-0814e The Dispute Over Our Body Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-14 - 10-0814e The Dispute Over Our Body Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-15 - 10 0815m Pressing Forward Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2010-08-15 - 10 0815m Pressing Forward Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2017-08-02 - 17-0802E God Wants a Relationship With You Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2017-08-02 - 17-0802E God Wants a Relationship With You Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2017-08-03 - 17 0803 A New Identity Br Ron Spencer Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2017-08-03 - 17 0803 A New Identity Br Ron Spencer Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2026-01-26 - 07 0707e The Passion of Our Revival Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2026-01-26 - 07 0707e The Passion of Our Revival Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Cloverdale_Bibleway/2026-01-26 - 10 0813e Our God Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.timestamped.txt
+ create mode 100644 data/Cloverdale_Bibleway/2026-01-26 - 10 0813e Our God Br Ron Spencer, Cloverdale Bibleway Camp (BC, Canada) - Ron Spencer.txt
+ create mode 100644 data/Evening_Light_Fellowship_CA/2026-01-25 - 20260125 - A Position of Dominion Pt 6 - The Prevailing Revelation Of Our Victory - Bro Jon Curlett - Jon Curlett.timestamped.txt
+ create mode 100644 data/Evening_Light_Fellowship_CA/2026-01-25 - 20260125 - A Position of Dominion Pt 6 - The Prevailing Revelation Of Our Victory - Bro Jon Curlett - Jon Curlett.txt
+ create mode 100644 data/Flagstaff_Mission_Tabernacle/2026-01-25 - Questions and Answers - January 25, 2026 - .timestamped.txt
+ create mode 100644 data/Flagstaff_Mission_Tabernacle/2026-01-25 - Questions and Answers - January 25, 2026 - .txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-26 - 12526 Sunday Service Bro Ariel Nogongo - Behold The Word In Plain View - Ariel Nogongo.timestamped.txt
+ create mode 100644 data/Good_Shepherd_Fellowship/2026-01-26 - 12526 Sunday Service Bro Ariel Nogongo - Behold The Word In Plain View - Ariel Nogongo.txt
+ create mode 100644 data/Grace_Tabernacle_Nampa/2026-01-25 - January 25, 2026 - Bro David Dienhart The Queen, Charity - David Dienhart.timestamped.txt
+ create mode 100644 data/Grace_Tabernacle_Nampa/2026-01-25 - January 25, 2026 - Bro David Dienhart The Queen, Charity - David Dienhart.txt
+ create mode 100644 data/Harvest_Time_Bride_Tabernacle/2026-01-25 - Sun. Jan. 25, 2026 Pastor Dale Langstaff - Dale Langstaff.timestamped.txt
+ create mode 100644 data/Harvest_Time_Bride_Tabernacle/2026-01-25 - Sun. Jan. 25, 2026 Pastor Dale Langstaff - Dale Langstaff.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-25 - Headstone Tabernacle Live Stream - .timestamped.txt
+ create mode 100644 data/Headstone_Tabernacle/2026-01-25 - Headstone Tabernacle Live Stream - .txt
+ create mode 100644 data/Higher_Ground_Tabernacle/2026-01-25 - Having His Authority Past. Isiah Brooks Sun 12526 AM - Isiah brooks.timestamped.txt
+ create mode 100644 data/Higher_Ground_Tabernacle/2026-01-25 - Having His Authority Past. Isiah Brooks Sun 12526 AM - Isiah brooks.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-26 - El Cordero Perfecto (Cristo Jesus Inventario) - Hno. Juanito Saucedo - Juanito Saucedo.timestamped.txt
+ create mode 100644 data/Jericho_Tabernacle/2026-01-26 - El Cordero Perfecto (Cristo Jesus Inventario) - Hno. Juanito Saucedo - Juanito Saucedo.txt
+ create mode 100644 data/MOTRC/2026-01-26 - How to read the Book of Revelation Part 4, The Key to the Book of Revelations - Unknown Speaker.timestamped.txt
+ create mode 100644 data/MOTRC/2026-01-26 - How to read the Book of Revelation Part 4, The Key to the Book of Revelations - Unknown Speaker.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-25 - 2026.01.25 The Advisor's Advice In Mamelodi Tabernacle. - .timestamped.txt
+ create mode 100644 data/Mamelodi_Tabernacle/2026-01-25 - 2026.01.25 The Advisor's Advice In Mamelodi Tabernacle. - .txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-26 - Sunday Morning Service - Steven Shelley.timestamped.txt
+ create mode 100644 data/New_Hope_Revival_Ministries/2026-01-26 - Sunday Morning Service - Steven Shelley.txt
+ create mode 100644 data/New_Life_Outreach_Church_Of_Pawnee/2026-01-25 - 2026-01-25 Bro Wendall Martin White Like Snow - Wendall Martin.timestamped.txt
+ create mode 100644 data/New_Life_Outreach_Church_Of_Pawnee/2026-01-25 - 2026-01-25 Bro Wendall Martin White Like Snow - Wendall Martin.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-25 - Holy Ghost Super Intelligence vs Artificial Intelligence Pastor Adrian Gengan Sun 18 Jan 2026 - Adrian Gengan.timestamped.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-25 - Holy Ghost Super Intelligence vs Artificial Intelligence Pastor Adrian Gengan Sun 18 Jan 2026 - Adrian Gengan.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-26 - The Exodus Bro Randy Sias (Ohio, USA) 25 Jan 2026 - Randy Sias.timestamped.txt
+ create mode 100644 data/Son_Of_Man_Revealed_Ministries/2026-01-26 - The Exodus Bro Randy Sias (Ohio, USA) 25 Jan 2026 - Randy Sias.txt
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-25 - The Blood Still Speaks - Bro Dale Smith (01-25-2026) - Dale Smith.timestamped.txt
+ create mode 100644 data/Spirit_and_Truth_Tabernacle/2026-01-25 - The Blood Still Speaks - Bro Dale Smith (01-25-2026) - Dale Smith.txt
+ create mode 100644 data/Tabernaculo_Obra_Maestra/2026-01-25 - The Parables of Jesus Sunday, January 25, 2026 - Daniel Fraijo.timestamped.txt
+ create mode 100644 data/Tabernaculo_Obra_Maestra/2026-01-25 - The Parables of Jesus Sunday, January 25, 2026 - Daniel Fraijo.txt
+ create mode 100644 data/True_Word_Tabernacle/2026-01-26 - Bro. Wayne Lawson - Jesus Superior To Angels - Hebrews Pt 5 - (Sun 8172025) - Wayne Lawson.timestamped.txt
+ create mode 100644 data/True_Word_Tabernacle/2026-01-26 - Bro. Wayne Lawson - Jesus Superior To Angels - Hebrews Pt 5 - (Sun 8172025) - Wayne Lawson.txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-25 - The Golden Rule Daniel Evans - Daniel Evans.timestamped.txt
+ create mode 100644 data/Tucson_Tabernacle/2026-01-25 - The Golden Rule Daniel Evans - Daniel Evans.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-25 - 1.25.26 El Orden Conforme Al Modelo Misael Zavala & Moises Ramirez - Misael Zavala.timestamped.txt
+ create mode 100644 data/Voice_of_Truth_Tabernacle/2026-01-25 - 1.25.26 El Orden Conforme Al Modelo Misael Zavala & Moises Ramirez - Misael Zavala.txt
+ create mode 100644 logs/daily_update_20260126_203336.log
+[0;34m[2026-01-26 22:21:34][0m Step 6: Pushing to remote...
+To https://github.com/messageresearch/analytics.git
+   4f6a18592..5423ec131  main -> main
+[0;32m[2026-01-26 22:24:41] Step 6 complete: Changes committed and pushed[0m
+[0;34m[2026-01-26 22:24:41][0m ==============================================
+[0;32m[2026-01-26 22:24:41]   Daily Update Complete![0m
+[0;34m[2026-01-26 22:24:41][0m ==============================================
+[0;34m[2026-01-26 22:24:41][0m Total time: 111m 4s
+[0;34m[2026-01-26 22:24:41][0m Log saved to: /Users/johncalvo/github/messageresearch_analytics/logs/daily_update_20260126_203336.log
